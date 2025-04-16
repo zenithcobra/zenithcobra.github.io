@@ -1,3 +1,33 @@
+import os
+import datetime
+from shutil import move
+
+# List of files to check
+file_names = [
+    "MLB STANDINGS AND SCHEDULE.txt",
+    "BLUE JAYS HISTORY.txt",
+    "GAME REPORTS.txt",
+    "LEAGUE LEADERS.txt",
+    "TOP LEAGUE LEADERS.txt"
+]
+
+# Folder to move files into
+reports_folder = "mlb_reports"
+
+# Ensure the folder exists
+os.makedirs(reports_folder, exist_ok=True)
+
+# Get the current date in YYYY-MM-DD format
+current_date = datetime.datetime.now().strftime("%Y-%m-%d")
+
+# Check for each file and move it if it exists
+for file_name in file_names:
+    if os.path.exists(file_name):
+        # Create the new file name with the date appended
+        new_file_name = f"{os.path.splitext(file_name)[0]}-{current_date}{os.path.splitext(file_name)[1]}"
+        # Move the file to the reports folder with the new name
+        move(file_name, os.path.join(reports_folder, new_file_name))
+
 # Standing and schedule into text file
 import statsapi
 from datetime import datetime, timedelta
