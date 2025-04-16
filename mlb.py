@@ -354,7 +354,7 @@ for text_file in text_files:
 
     # Create an HTML file
     html_filename = os.path.splitext(text_file)[0] + ".html"
-    html_filepath = os.path.join(output_dir, html_filename)
+    html_filepath = os.path.join(html_filename)
     html_files.append(html_filename)
 
     # Write the HTML content
