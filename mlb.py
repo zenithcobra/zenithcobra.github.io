@@ -285,6 +285,7 @@ with open(file_path, "r") as file:
         # Extract data
         name = " ".join(parts[:2])  # First and last name
         team = " ".join(parts[2:-3])  # Team name
+        name = name + " " + team
         stat_type = parts[-3]  # Statistic type (e.g., AVG, HR)
         year = parts[-2]  # Year
         value = parts[-1]  # Statistic value
