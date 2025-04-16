@@ -336,7 +336,7 @@ ranked_players = sorted(player_stats.items(), key=lambda x: calculate_score(x[1]
 line_str = "Top 5 Players: " + mlb_date_str
 output_lines = [line_str]
 for i, (player, stats) in enumerate(ranked_players[:5], start=1):
-    output_lines.append(f"{i}. {player}")
+    output_lines.append(f"\n{i}. {player}")
     for stat_type, values in stats.items():
         output_lines.append(f"   {stat_type}: {', '.join([f'{v[0]}: {v[1]}' for v in values])}")
 output_lines.append("")  # Add a blank line at the end
