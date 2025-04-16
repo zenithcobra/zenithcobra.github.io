@@ -365,7 +365,7 @@ for text_file in text_files:
         html_file.write(f"<a href='index.html'>Back to Index</a>\n</body>\n</html>")
 
 # Generate the index.html file
-index_filepath = os.path.join(output_dir, "index.html")
+index_filepath = os.path.join("index.html")
 with open(index_filepath, "w") as index_file:
     index_file.write(f"<!DOCTYPE html>\n<html>\n<head>\n<title>Index</title>\n{flexbox_css}</head>\n<body>\n")
     index_file.write("<div class='content'>\n<h1>Index</h1>\n<ul>\n")
