@@ -294,6 +294,68 @@ else:
 
 print(f"Output written to {file_name}")
 
+#----
+import os
+
+# File path
+file_path = "LEAGUE LEADERS.txt"
+
+# Read the file and parse the data
+player_stats = {}
+with open(file_path, "r") as file:
+    lines = file.readlines()
+
+# Extract the date from the first line
+file_date = lines[0].strip()
+
+# Parse the rest of the lines
+for line in lines[1:]:
+    parts = line.strip().split()
+    if len(parts) < 6:
+        continue  # Skip invalid lines
+
+    # Extract data
+    name = " ".join(parts[:2])  # First and last name
+    team = " ".join(parts[2:-3])  # Team name
+    stat_type = parts[-3]  # Statistic type (e.g., AVG, HR)
+    year = parts[-2]  # Year
+    value = parts[-1]  # Statistic value
+
+    # Create a unique key for each player and stat
+    key = (stat_type, year)
+    if key not in player_stats:
+        player_stats[key] = []
+    player_stats[key].append((name, team, value))
+
+# Sort the stats alphabetically by player name
+sorted_stats = {}
+for key, players in player_stats.items():
+    sorted_stats[key] = sorted(players, key=lambda x: (x[0], x[1]))
+
+# Prepare the sorted data for prepending
+sorted_output = [f"Sorted Stats as of {file_date}:\n"]
+for (stat_type, year), players in sorted_stats.items():
+    sorted_output.append(f"\n{stat_type} {year}:\n")
+    for name, team, value in players:
+        sorted_output.append(f"{name:<20} {team:<25} {value}")
+
+# Combine the sorted data into a single string
+sorted_output_text = "\n".join(sorted_output)
+
+# Read the original file content
+with open(file_path, "r") as file:
+    original_content = file.read()
+
+# Prepend the sorted data to the original content
+new_content = sorted_output_text + "\n\n" + original_content
+
+# Write the updated content back to the file
+with open(file_path, "w") as file:
+    file.write(new_content)
+
+print(f"File '{file_path}' has been updated with sorted stats prepended.")
+#------
+
 from collections import defaultdict
 import os
 from datetime import datetime
