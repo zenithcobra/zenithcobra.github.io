@@ -1,0 +1,45 @@
+ab = at bats
+hr = home run
+era = earned run average - pitching stat
+fip =fielding independant pitching
+
+Notes
+
+bad stats to look at 
+pitching W-L% - pitching stat - its bad because you can have a bad win loss % but still be one of the best pitchers - anyone can do 3 stretchs but can do over 10games
+
+hrs/abs
+
+good pitching stats (defense)
+    innings pitched
+    ERA - earned run average per 9 innings pitched
+    FIP - basically ERA but removes every outcome that isn't a hr,walk,hit by pitch,strikeouts
+    ERA+ - era but adjust for certain factors so you can compare different eras of baseball - this will put all pitchers on a even playing field
+    WHIP - walks hits allowed per inning pitchs - if a pitchers whip is 1.5 every 2 innings a base runner is going to get on base
+    the /9s
+        bb/9 - walks - lower the better
+        k/9 - strikeouts - higher the better
+        hr/9 - home runs allowed - lower the better
+
+good hitting stats (offense)
+    BA - batting average - 4 out 10 abs = .400 BA - doesnt factor walks or getting base-hits like doubles triples and homers
+    OBP - on base percentage - same as ba but gives you credit for walking - which a walk is the same amoint of bases as a single
+    OPS - on base plus slugging - adds together on b ase percentage and slugging percentage - how often you are getting on base and driving for power - leaders are always the leaders in the league
+    OPS+ - this like era+ makes the league average 100. so if the stat reads 160 it is 60% better than all the players in the league
+    SB - stolen bases - this is only for fast players
+    HR - homeruns - 
+
+    BA vs quality of contact - if thhey have a low batting average but high quality of contact the odds they will get better is good
+    average exit velocity - if higher your BA average should be higher
+
+both bitting and hitting
+    WAR - confusing stat - wins above replacement - best players in baseball have good WARs 
+
+
+baseballreference - simple
+baseballsavant - overall - red is good blue is bad
+fangraphs - advanced
+
+fantasyalarm
+statmuse
+
