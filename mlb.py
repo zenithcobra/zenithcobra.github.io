@@ -35,6 +35,8 @@ from datetime import datetime, timedelta
 # Get current date
 mlb_date = datetime.now().strftime("%m/%d/%Y")
 file_date = datetime.now().strftime("%Y-%m-%d")
+
+
 import os
 from datetime import datetime, timedelta
 import statsapi
@@ -65,8 +67,123 @@ today_schedule_content = "Today's Schedule:\n" + "\n".join(
     f'{x.get("game_id")} -> {x.get("summary")}' for x in schedule
 )
 
+# ------------
+# Import necessary modules
+import os  # For file operations
+import statsapi  # For accessing MLB stats and data
+import stats_helper  # Custom helper module for stats (assumed to be user-defined)
+from datetime import datetime  # For working with dates and times
+
+# File name for storing league leader stats
+# file_name = "aLEAGUE LEADERS.txt"
+
+# Collect the new content to write
+mlb_games_today = []  # List to store today's MLB games
+mlb_date = datetime.now().strftime("%m/%d/%Y")  # Get the current date in MM/DD/YYYY format
+
+game_ids = []
+# Fetch today's schedule
+sched = statsapi.schedule(start_date=mlb_date, end_date=mlb_date)
+for x in sched:  # Iterate through the schedule
+    mlb_games_today.append(x.get('away_name'))  # Add away team names to the list
+    mlb_games_today.append(x.get('home_name'))  # Add home team names to the list
+    game_ids.append(x.get('away_id'))
+    game_ids.append(x.get('home_id'))
+
+
+# GET rosters for all teams playing
+all_players_today = []
+for x in game_ids:
+    lines_to_split = statsapi.roster(x).split("\n")
+    for y in lines_to_split:
+        string_to_split = y.split()
+        bring_together = string_to_split[2:]
+        player_names = ""
+        for z in bring_together:
+            player_names += z + " "
+        players_names = player_names.strip()  # Remove leading/trailing whitespace
+        all_players_today.append(player_names)  # Print the player names
+
+# Collect stats for other categories and years
+categories = [  # List of stat categories to fetch
+    'onBasePlusSlugging',
+    'obp',
+    'battingAverage',
+    'homeRuns',
+]
+names_for_analyzing = []
+for a in categories:
+    beans = statsapi.league_leader_data(a, season=2025, limit=10, statGroup='hitting')
+    # print(' ')
+    # print(a)
+    for x in beans:
+        for y in all_players_today:
+            if x[1].strip() == y.strip():  # Compare stripped names
+                # print(f'{x[2]:<22} {x[1]:<24} {x[3]:<20}')
+                names_for_analyzing.append(x[1].strip())
+
+# for v in names_for_analyzing:
+#     print(v)
+from collections import Counter
+
+# Assuming 'names_for_analyzing' is the list of names produced by your code
+# Example: names_for_analyzing = ["John Doe", "Jane Smith", "John Doe", "Alice Brown", "Jane Smith", "John Doe"]
+
+# Count the frequency of each name
+name_counts = Counter(names_for_analyzing)
+
+# Get the top 7 names based on frequency
+top_7_names = [name for name, count in name_counts.most_common(7)]
+
+# Print the top 7 names
+# print("Top 7 Names by Frequency:")
+# for name in top_7_names:
+#     print(name)
+# print(top_7_names)
+
+list_of_players = []
+for y in top_7_names:
+    player = {}
+    #print(statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==y), 'hitting', 'season'))
+    beans1 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==y), 'hitting', 'season')
+    # print(beans1.get('first_name') + ' ' + beans1.get('last_name'))
+    player.update({"player_name": beans1.get('first_name') + ' ' + beans1.get('last_name')})
+    # print(beans1.get('current_team'))
+    player.update({"team": beans1.get('current_team')})
+    beans2 = beans1.get('stats')
+    for t in beans2:
+        beans3 = t.get('stats')
+        # print('obp ' + beans3.get('obp'))
+        player.update({"obp": beans3.get('obp')})
+        # print('ops ' + beans3.get('ops'))
+        player.update({"ops": beans3.get('ops')})
+        # print('avg ' + beans3.get('avg'))
+        player.update({"avg": beans3.get('avg')})
+    list_of_players.append(player)
+
+leaders_content = []
+for x in list_of_players:
+    leaders_content.append('\n')
+    line1 = x.get('player_name')
+    leaders_content.append(line1)
+    line2 = x.get('team')
+    leaders_content.append(line2)
+    line3 = 'obp: ' + x.get('obp')
+    leaders_content.append(line3)
+    line4 = 'ops: ' + x.get('ops')
+    leaders_content.append(line4)
+    line5 = 'avg: ' + x.get('avg')
+    leaders_content.append(line5)
+    # leaders_content.append('\n')
+
+
+# Combine all outputs into a single string
+outputy_text = "\n".join(map(str, leaders_content))
+# -------------
+
+
 new_content = (
-    standings_content + "\n" + today_schedule_content + "\n" + yesterday_schedule_content
+    standings_content + "\n" + today_schedule_content + "\n" + outputy_text
 )
 
 # Check if the file exists
@@ -217,10 +334,12 @@ if os.path.exists(file_name):
     # Prepend only if new content is not already in the file
     if new_content not in existing_content:
         with open(file_name, "w") as f:
+            f.write(yesterday_schedule_content)
             f.write(new_content + "\n" + existing_content)
 else:
     # Write new content if the file doesn't exist
     with open(file_name, "w") as f:
+        f.write(yesterday_schedule_content)
         f.write(new_content)
 
 print(f"Output written to {file_name}")
