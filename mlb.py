@@ -174,8 +174,12 @@ for x in list_of_players:
     leaders_content.append(line4)
     line5 = 'avg: ' + x.get('avg')
     leaders_content.append(line5)
-    # leaders_content.append('\n')
-
+    leaders_content.append('vs pitcher: ')
+    leaders_content.append('AB: ')
+    leaders_content.append('H: ')
+    leaders_content.append('HR: ')
+    leaders_content.append('RBI: ')
+    leaders_content.append('AVG: ')
 
 # Combine all outputs into a single string
 outputy_text = "\n".join(map(str, leaders_content))
