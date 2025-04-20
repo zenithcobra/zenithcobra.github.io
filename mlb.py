@@ -582,6 +582,11 @@ with open(index_filepath, "w") as index_file:
     index_file.write("<div class='content'>\n<h1>Index</h1>\n<ul>\n")
     for html_file in html_files:
         index_file.write(f"<li><a href='{html_file}'>{html_file}</a></li>\n")
+    index_file.write(f"<li><a href='https://www.fantasyalarm.com/mlb/lineups'>BVP checker</a></li>\n")
+    index_file.write(f"<li><a href='https://www.baseball-reference.com'>baseball-reference</a></li>\n")
+    index_file.write(f"<li><a href='https://baseballsavant.mlb.com'>baseball-savant</a></li>\n")
+    index_file.write(f"<li><a href='https://www.fangraphs.com'>fangraphs</a></li>\n")
+    index_file.write(f"<li><a href='https://www.statmuse.com/mlb'>Stat muse</a></li>\n")
     index_file.write("</ul>\n</div>\n</body>\n</html>")
 
 print(f"HTML files have been generated in the '{output_dir}' directory.")
