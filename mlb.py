@@ -159,11 +159,19 @@ for y in top_7_names:
         player.update({"ops": beans3.get('ops')})
         # print('avg ' + beans3.get('avg'))
         player.update({"avg": beans3.get('avg')})
+        player.update({"hr": beans3.get('homeRuns')})
     list_of_players.append(player)
 
 leaders_content = []
+leaders_content.append('\n')
+leaders_content.append('quick list of top players see more comprehensive below')
+leaders_content.append(' ')
+for a in list_of_players:
+    leaders_content.append(str('- ' + a.get('player_name') + ' -> ' + a.get('team')))
+    
+leaders_content.append('\n')
 for x in list_of_players:
-    leaders_content.append('\n')
+    
     line1 = x.get('player_name')
     leaders_content.append(line1)
     line2 = x.get('team')
@@ -174,12 +182,15 @@ for x in list_of_players:
     leaders_content.append(line4)
     line5 = 'avg: ' + x.get('avg')
     leaders_content.append(line5)
+    line6 = 'hr: ' + str(x.get('hr'))
+    leaders_content.append(line6)
     leaders_content.append('vs pitcher: ')
     leaders_content.append('AB: ')
     leaders_content.append('H: ')
     leaders_content.append('HR: ')
     leaders_content.append('RBI: ')
     leaders_content.append('AVG: ')
+    leaders_content.append('\n')
 
 # Combine all outputs into a single string
 outputy_text = "\n".join(map(str, leaders_content))
