@@ -1,0 +1,594 @@
+<table border='1'>
+  <tr>
+    <th>Player</th>
+    <th>Team</th>
+    <th>Games</th>
+    <th>At Bats</th>
+    <th>Runs</th>
+    <th>Hits</th>
+    <th>HR</th>
+    <th>RBI</th>
+    <th>BB</th>
+    <th>K</th>
+    <th>BA</th>
+    <th>OBA</th>
+    <th>Slug%</th>
+    <th>Last Game Date</th>
+  </tr>
+  <tr>
+    <td>J.P. Crawford</td>
+    <td>Seattle Mariners</td>
+    <td>14</td>
+    <td>56</td>
+    <td>10</td>
+    <td>21</td>
+    <td>3</td>
+    <td>13</td>
+    <td>9</td>
+    <td>10</td>
+    <td>.375</td>
+    <td>.462</td>
+    <td>.554</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Freddie Freeman</td>
+    <td>Los Angeles Dodgers</td>
+    <td>11</td>
+    <td>42</td>
+    <td>10</td>
+    <td>19</td>
+    <td>4</td>
+    <td>14</td>
+    <td>7</td>
+    <td>6</td>
+    <td>.452</td>
+    <td>.531</td>
+    <td>.810</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Zach Neto</td>
+    <td>Los Angeles Angels</td>
+    <td>11</td>
+    <td>45</td>
+    <td>7</td>
+    <td>16</td>
+    <td>3</td>
+    <td>5</td>
+    <td>2</td>
+    <td>12</td>
+    <td>.356</td>
+    <td>.383</td>
+    <td>.644</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Dansby Swanson</td>
+    <td>Chicago Cubs</td>
+    <td>8</td>
+    <td>30</td>
+    <td>10</td>
+    <td>14</td>
+    <td>3</td>
+    <td>5</td>
+    <td>2</td>
+    <td>7</td>
+    <td>.467</td>
+    <td>.500</td>
+    <td>.833</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Victor Robles</td>
+    <td>Unknown Team</td>
+    <td>8</td>
+    <td>37</td>
+    <td>3</td>
+    <td>12</td>
+    <td>0</td>
+    <td>2</td>
+    <td>0</td>
+    <td>6</td>
+    <td>.324</td>
+    <td>.342</td>
+    <td>.405</td>
+    <td>2025-04-06</td>
+  </tr>
+  <tr>
+    <td>Harrison Bader</td>
+    <td>Minnesota Twins</td>
+    <td>8</td>
+    <td>28</td>
+    <td>6</td>
+    <td>12</td>
+    <td>0</td>
+    <td>2</td>
+    <td>3</td>
+    <td>5</td>
+    <td>.429</td>
+    <td>.484</td>
+    <td>.536</td>
+    <td>2025-05-04</td>
+  </tr>
+  <tr>
+    <td>Ryan Jeffers</td>
+    <td>Minnesota Twins</td>
+    <td>8</td>
+    <td>31</td>
+    <td>5</td>
+    <td>11</td>
+    <td>2</td>
+    <td>10</td>
+    <td>4</td>
+    <td>5</td>
+    <td>.355</td>
+    <td>.429</td>
+    <td>.645</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Vladimir Guerrero Jr.</td>
+    <td>Unknown Team</td>
+    <td>8</td>
+    <td>31</td>
+    <td>6</td>
+    <td>9</td>
+    <td>2</td>
+    <td>6</td>
+    <td>3</td>
+    <td>9</td>
+    <td>.290</td>
+    <td>.343</td>
+    <td>.484</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Riley Greene</td>
+    <td>Detroit Tigers</td>
+    <td>7</td>
+    <td>28</td>
+    <td>7</td>
+    <td>13</td>
+    <td>4</td>
+    <td>8</td>
+    <td>1</td>
+    <td>3</td>
+    <td>.464</td>
+    <td>.500</td>
+    <td>.893</td>
+    <td>2025-05-04</td>
+  </tr>
+  <tr>
+    <td>Santiago Espinal</td>
+    <td>Cincinnati Reds</td>
+    <td>7</td>
+    <td>27</td>
+    <td>2</td>
+    <td>12</td>
+    <td>0</td>
+    <td>6</td>
+    <td>1</td>
+    <td>5</td>
+    <td>.444</td>
+    <td>.464</td>
+    <td>.519</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Javier Baez</td>
+    <td>Unknown Team</td>
+    <td>7</td>
+    <td>28</td>
+    <td>9</td>
+    <td>12</td>
+    <td>3</td>
+    <td>10</td>
+    <td>1</td>
+    <td>6</td>
+    <td>.429</td>
+    <td>.467</td>
+    <td>.893</td>
+    <td>2025-05-04</td>
+  </tr>
+  <tr>
+    <td>Manny Machado</td>
+    <td>San Diego Padres</td>
+    <td>7</td>
+    <td>27</td>
+    <td>6</td>
+    <td>11</td>
+    <td>1</td>
+    <td>5</td>
+    <td>3</td>
+    <td>8</td>
+    <td>.407</td>
+    <td>.467</td>
+    <td>.593</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Jake Meyers</td>
+    <td>Houston Astros</td>
+    <td>7</td>
+    <td>24</td>
+    <td>4</td>
+    <td>11</td>
+    <td>2</td>
+    <td>8</td>
+    <td>3</td>
+    <td>1</td>
+    <td>.458</td>
+    <td>.519</td>
+    <td>.833</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Victor Scott</td>
+    <td>Unknown Team</td>
+    <td>7</td>
+    <td>23</td>
+    <td>3</td>
+    <td>9</td>
+    <td>1</td>
+    <td>5</td>
+    <td>3</td>
+    <td>8</td>
+    <td>.391</td>
+    <td>.462</td>
+    <td>.565</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Hunter Goodman</td>
+    <td>Colorado Rockies</td>
+    <td>7</td>
+    <td>27</td>
+    <td>2</td>
+    <td>9</td>
+    <td>1</td>
+    <td>6</td>
+    <td>0</td>
+    <td>6</td>
+    <td>.333</td>
+    <td>.333</td>
+    <td>.444</td>
+    <td>2025-05-04</td>
+  </tr>
+  <tr>
+    <td>Brendan Donovan</td>
+    <td>St. Louis Cardinals</td>
+    <td>7</td>
+    <td>25</td>
+    <td>4</td>
+    <td>8</td>
+    <td>0</td>
+    <td>3</td>
+    <td>3</td>
+    <td>1</td>
+    <td>.320</td>
+    <td>.414</td>
+    <td>.360</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Mauricio Dubon</td>
+    <td>Unknown Team</td>
+    <td>7</td>
+    <td>25</td>
+    <td>2</td>
+    <td>7</td>
+    <td>0</td>
+    <td>5</td>
+    <td>0</td>
+    <td>1</td>
+    <td>.280</td>
+    <td>.280</td>
+    <td>.280</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Byron Buxton</td>
+    <td>Minnesota Twins</td>
+    <td>6</td>
+    <td>26</td>
+    <td>3</td>
+    <td>10</td>
+    <td>2</td>
+    <td>5</td>
+    <td>1</td>
+    <td>8</td>
+    <td>.385</td>
+    <td>.407</td>
+    <td>.654</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>James Wood</td>
+    <td>Washington Nationals</td>
+    <td>6</td>
+    <td>24</td>
+    <td>3</td>
+    <td>9</td>
+    <td>1</td>
+    <td>2</td>
+    <td>4</td>
+    <td>6</td>
+    <td>.375</td>
+    <td>.464</td>
+    <td>.583</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Travis D'Arnaud</td>
+    <td>Unknown Team</td>
+    <td>6</td>
+    <td>20</td>
+    <td>2</td>
+    <td>8</td>
+    <td>0</td>
+    <td>0</td>
+    <td>2</td>
+    <td>6</td>
+    <td>.400</td>
+    <td>.455</td>
+    <td>.600</td>
+    <td>2025-05-03</td>
+  </tr>
+  <tr>
+    <td>Jackson Holliday</td>
+    <td>Baltimore Orioles</td>
+    <td>6</td>
+    <td>19</td>
+    <td>4</td>
+    <td>8</td>
+    <td>2</td>
+    <td>3</td>
+    <td>0</td>
+    <td>3</td>
+    <td>.421</td>
+    <td>.421</td>
+    <td>.737</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Luke Keaschall</td>
+    <td>Unknown Team</td>
+    <td>6</td>
+    <td>19</td>
+    <td>4</td>
+    <td>7</td>
+    <td>0</td>
+    <td>2</td>
+    <td>5</td>
+    <td>2</td>
+    <td>.368</td>
+    <td>.538</td>
+    <td>.526</td>
+    <td>2025-04-25</td>
+  </tr>
+  <tr>
+    <td>Ryan Bliss</td>
+    <td>Unknown Team</td>
+    <td>6</td>
+    <td>20</td>
+    <td>1</td>
+    <td>6</td>
+    <td>1</td>
+    <td>3</td>
+    <td>1</td>
+    <td>6</td>
+    <td>.300</td>
+    <td>.333</td>
+    <td>.500</td>
+    <td>2025-04-08</td>
+  </tr>
+  <tr>
+    <td>Steven Kwan</td>
+    <td>Cleveland Guardians</td>
+    <td>5</td>
+    <td>22</td>
+    <td>3</td>
+    <td>10</td>
+    <td>0</td>
+    <td>2</td>
+    <td>2</td>
+    <td>1</td>
+    <td>.455</td>
+    <td>.500</td>
+    <td>.545</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Jonny Deluca</td>
+    <td>Unknown Team</td>
+    <td>5</td>
+    <td>18</td>
+    <td>4</td>
+    <td>9</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>3</td>
+    <td>.500</td>
+    <td>.500</td>
+    <td>.611</td>
+    <td>2025-04-06</td>
+  </tr>
+  <tr>
+    <td>Alejandro Kirk</td>
+    <td>Toronto Blue Jays</td>
+    <td>5</td>
+    <td>21</td>
+    <td>1</td>
+    <td>9</td>
+    <td>1</td>
+    <td>4</td>
+    <td>0</td>
+    <td>1</td>
+    <td>.429</td>
+    <td>.429</td>
+    <td>.571</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Trea Turner</td>
+    <td>Philadelphia Phillies</td>
+    <td>5</td>
+    <td>23</td>
+    <td>4</td>
+    <td>9</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>3</td>
+    <td>.391</td>
+    <td>.417</td>
+    <td>.435</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Trey Sweeney</td>
+    <td>Detroit Tigers</td>
+    <td>5</td>
+    <td>20</td>
+    <td>3</td>
+    <td>8</td>
+    <td>2</td>
+    <td>7</td>
+    <td>0</td>
+    <td>6</td>
+    <td>.400</td>
+    <td>.400</td>
+    <td>.700</td>
+    <td>2025-05-04</td>
+  </tr>
+  <tr>
+    <td>Yainer Diaz</td>
+    <td>Houston Astros</td>
+    <td>5</td>
+    <td>20</td>
+    <td>4</td>
+    <td>8</td>
+    <td>1</td>
+    <td>2</td>
+    <td>0</td>
+    <td>3</td>
+    <td>.400</td>
+    <td>.429</td>
+    <td>.600</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Austin Riley</td>
+    <td>Atlanta Braves</td>
+    <td>5</td>
+    <td>20</td>
+    <td>3</td>
+    <td>7</td>
+    <td>2</td>
+    <td>5</td>
+    <td>1</td>
+    <td>6</td>
+    <td>.350</td>
+    <td>.409</td>
+    <td>.700</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Mark Vientos</td>
+    <td>New York Mets</td>
+    <td>5</td>
+    <td>19</td>
+    <td>2</td>
+    <td>6</td>
+    <td>0</td>
+    <td>0</td>
+    <td>2</td>
+    <td>4</td>
+    <td>.316</td>
+    <td>.381</td>
+    <td>.316</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Wilmer Flores</td>
+    <td>San Francisco Giants</td>
+    <td>5</td>
+    <td>20</td>
+    <td>3</td>
+    <td>6</td>
+    <td>0</td>
+    <td>4</td>
+    <td>2</td>
+    <td>3</td>
+    <td>.300</td>
+    <td>.364</td>
+    <td>.400</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Riley Adams</td>
+    <td>Washington Nationals</td>
+    <td>5</td>
+    <td>17</td>
+    <td>3</td>
+    <td>5</td>
+    <td>2</td>
+    <td>6</td>
+    <td>0</td>
+    <td>7</td>
+    <td>.294</td>
+    <td>.294</td>
+    <td>.706</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Brendan Rodgers</td>
+    <td>Houston Astros</td>
+    <td>5</td>
+    <td>19</td>
+    <td>3</td>
+    <td>5</td>
+    <td>1</td>
+    <td>3</td>
+    <td>1</td>
+    <td>7</td>
+    <td>.263</td>
+    <td>.300</td>
+    <td>.421</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Wyatt Langford</td>
+    <td>Texas Rangers</td>
+    <td>5</td>
+    <td>19</td>
+    <td>2</td>
+    <td>5</td>
+    <td>0</td>
+    <td>2</td>
+    <td>2</td>
+    <td>4</td>
+    <td>.263</td>
+    <td>.318</td>
+    <td>.263</td>
+    <td>2025-05-06</td>
+  </tr>
+  <tr>
+    <td>Alec Burleson</td>
+    <td>St. Louis Cardinals</td>
+    <td>5</td>
+    <td>19</td>
+    <td>3</td>
+    <td>5</td>
+    <td>2</td>
+    <td>5</td>
+    <td>1</td>
+    <td>2</td>
+    <td>.263</td>
+    <td>.300</td>
+    <td>.632</td>
+    <td>2025-05-06</td>
+  </tr>
+</table>
