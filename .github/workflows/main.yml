@@ -1,6 +1,7 @@
 name: Run MLB Script Every Hour
 
 on:
+  push:
   schedule:
     - cron: "0 * * * *"  # Runs every hour at the start of the hour
 
