@@ -2,7 +2,7 @@ name: Run MLB Script Every Hour
 
 on:
   schedule:
- - cron: "0 */6 * * *"  # Runs every 6 hours at the start of the hour
+  - cron: "0 */6 * * *"  # Runs every 6 hours at the start of the hour
 
 jobs:
   run-script:
