@@ -112,13 +112,13 @@ ops:    .000
 
 Away Pitcher:  Bailey Ober       Minnesota Twins          
 Home  Batter:  Ramón Urías       Baltimore Orioles        
- AB:       4
+ AB:       5
   H:       0
  HR:       0
 AVG:    .000
 RBI:       0
-obp:    .000
-ops:    .000
+obp:    .167
+ops:    .167
 
 
 Home Pitcher:  Dean Kremer       Baltimore Orioles        
@@ -155,17 +155,6 @@ ops:   1.417
 
 
 Home Pitcher:  Dean Kremer       Baltimore Orioles        
-Away  Batter:  Ty France         Minnesota Twins          
- AB:      12
-  H:       3
- HR:       0
-AVG:    .250
-RBI:       1
-obp:    .308
-ops:    .558
-
-
-Home Pitcher:  Dean Kremer       Baltimore Orioles        
 Away  Batter:  Brooks Lee        Minnesota Twins          
  AB:       3
   H:       0
@@ -174,6 +163,17 @@ AVG:    .000
 RBI:       0
 obp:    .000
 ops:    .000
+
+
+Home Pitcher:  Dean Kremer       Baltimore Orioles        
+Away  Batter:  Ty France         Minnesota Twins          
+ AB:      12
+  H:       3
+ HR:       0
+AVG:    .250
+RBI:       1
+obp:    .308
+ops:    .558
 
 
 Home Pitcher:  Dean Kremer       Baltimore Orioles        
@@ -220,50 +220,61 @@ obp:    .000
 ops:    .000
 
 
+Home Pitcher:  Dean Kremer       Baltimore Orioles        
+Away  Batter:  Christian Vázquez Minnesota Twins          
+ AB:       5
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
 Batter vs Pitcher Stats:
 
 Away Pitcher:  Erick Fedde       St. Louis Cardinals      
 Home  Batter:  Kyle Schwarber    Philadelphia Phillies    
- AB:       7
+ AB:       8
   H:       3
  HR:       1
-AVG:    .429
+AVG:    .375
 RBI:       1
-obp:    .556
-ops:   1.556
+obp:    .500
+ops:   1.375
 
 
 Away Pitcher:  Erick Fedde       St. Louis Cardinals      
 Home  Batter:  Bryce Harper      Philadelphia Phillies    
- AB:      22
+ AB:      23
   H:      11
  HR:       6
-AVG:    .500
+AVG:    .478
 RBI:       9
-obp:    .593
-ops:   1.957
+obp:    .571
+ops:   1.875
 
 
 Away Pitcher:  Erick Fedde       St. Louis Cardinals      
 Home  Batter:  Max Kepler        Philadelphia Phillies    
- AB:       2
+ AB:       3
   H:       1
  HR:       0
-AVG:    .500
+AVG:    .333
 RBI:       1
-obp:    .500
-ops:   1.000
+obp:    .333
+ops:    .666
 
 
 Away Pitcher:  Erick Fedde       St. Louis Cardinals      
 Home  Batter:  Nick Castellanos  Philadelphia Phillies    
- AB:       5
-  H:       1
+ AB:       6
+  H:       2
  HR:       0
-AVG:    .200
+AVG:    .333
 RBI:       2
-obp:    .167
-ops:    .367
+obp:    .286
+ops:    .619
 
 
 Away Pitcher:  Erick Fedde       St. Louis Cardinals      
@@ -279,24 +290,24 @@ ops:    .875
 
 Away Pitcher:  Erick Fedde       St. Louis Cardinals      
 Home  Batter:  Bryson Stott      Philadelphia Phillies    
- AB:       3
+ AB:       5
   H:       1
  HR:       0
-AVG:    .333
+AVG:    .200
 RBI:       0
-obp:    .500
-ops:    .833
+obp:    .333
+ops:    .533
 
 
 Away Pitcher:  Erick Fedde       St. Louis Cardinals      
 Home  Batter:  Trea Turner       Philadelphia Phillies    
- AB:       2
+ AB:       4
   H:       0
  HR:       0
 AVG:    .000
 RBI:       0
-obp:    .333
-ops:    .333
+obp:    .200
+ops:    .200
 
 
 Away Pitcher:  Erick Fedde       St. Louis Cardinals      
@@ -306,19 +317,19 @@ Home  Batter:  Alec Bohm         Philadelphia Phillies
  HR:       0
 AVG:    .200
 RBI:       1
-obp:    .250
-ops:    .450
+obp:    .308
+ops:    .508
 
 
 Away Pitcher:  Erick Fedde       St. Louis Cardinals      
 Home  Batter:  Brandon Marsh     Philadelphia Phillies    
- AB:       5
+ AB:       6
   H:       3
  HR:       0
-AVG:    .600
+AVG:    .500
 RBI:       1
-obp:    .667
-ops:   1.667
+obp:    .571
+ops:   1.404
 
 
 Home Pitcher:  Jesús Luzardo     Philadelphia Phillies    
@@ -328,8 +339,8 @@ Away  Batter:  Willson Contreras St. Louis Cardinals
  HR:       0
 AVG:    .286
 RBI:       0
-obp:    .375
-ops:    .804
+obp:    .444
+ops:    .873
 
 
 Home Pitcher:  Jesús Luzardo     Philadelphia Phillies    
@@ -350,30 +361,52 @@ Away  Batter:  Iván Herrera      St. Louis Cardinals
  HR:       0
 AVG:    .000
 RBI:       0
+obp:    .333
+ops:    .333
+
+
+Home Pitcher:  Jesús Luzardo     Philadelphia Phillies    
+Away  Batter:  Nolan Arenado     St. Louis Cardinals      
+ AB:      11
+  H:       2
+ HR:       0
+AVG:    .182
+RBI:       1
+obp:    .182
+ops:    .364
+
+
+Home Pitcher:  Jesús Luzardo     Philadelphia Phillies    
+Away  Batter:  Masyn Winn        St. Louis Cardinals      
+ AB:       2
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
 obp:    .000
 ops:    .000
 
 
 Home Pitcher:  Jesús Luzardo     Philadelphia Phillies    
-Away  Batter:  Nolan Arenado     St. Louis Cardinals      
- AB:      10
-  H:       2
+Away  Batter:  Pedro Pagés       St. Louis Cardinals      
+ AB:       1
+  H:       0
  HR:       0
-AVG:    .200
-RBI:       1
-obp:    .200
-ops:    .400
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
 
 
 Home Pitcher:  Jesús Luzardo     Philadelphia Phillies    
 Away  Batter:  Jordan Walker     St. Louis Cardinals      
- AB:       5
+ AB:       6
   H:       1
  HR:       0
-AVG:    .200
+AVG:    .167
 RBI:       0
-obp:    .200
-ops:    .400
+obp:    .167
+ops:    .334
 
 
 Batter vs Pitcher Stats:
@@ -612,14 +645,25 @@ ops:   1.333
 
 
 Home Pitcher:  Gavin Williams    Cleveland Guardians      
-Away  Batter:  William Contreras Milwaukee Brewers        
- AB:       0
+Away  Batter:  Christian Yelich  Milwaukee Brewers        
+ AB:       1
   H:       0
  HR:       0
 AVG:    .000
 RBI:       0
+obp:    .000
+ops:    .000
+
+
+Home Pitcher:  Gavin Williams    Cleveland Guardians      
+Away  Batter:  William Contreras Milwaukee Brewers        
+ AB:       1
+  H:       1
+ HR:       0
+AVG:   1.000
+RBI:       0
 obp:   1.000
-ops:   1.000
+ops:   2.000
 
 
 Home Pitcher:  Gavin Williams    Cleveland Guardians      
@@ -645,8 +689,19 @@ ops:    .666
 
 
 Home Pitcher:  Gavin Williams    Cleveland Guardians      
+Away  Batter:  Caleb Durbin      Milwaukee Brewers        
+ AB:       1
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Home Pitcher:  Gavin Williams    Cleveland Guardians      
 Away  Batter:  Sal Frelick       Milwaukee Brewers        
- AB:       2
+ AB:       3
   H:       0
  HR:       0
 AVG:    .000
