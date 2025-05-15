@@ -18,50 +18,82 @@
   <tr>
     <td>Manny Machado</td>
     <td>San Diego Padres</td>
-    <td>13</td>
-    <td>48</td>
-    <td>13</td>
-    <td>22</td>
+    <td>14</td>
+    <td>50</td>
+    <td>15</td>
+    <td>24</td>
     <td>1</td>
     <td>9</td>
-    <td>7</td>
+    <td>9</td>
     <td>10</td>
-    <td>.458</td>
-    <td>.527</td>
-    <td>.604</td>
-    <td>2025-05-13</td>
+    <td>.480</td>
+    <td>.559</td>
+    <td>.620</td>
+    <td>2025-05-14</td>
   </tr>
   <tr>
     <td>Cody Bellinger</td>
     <td>New York Yankees</td>
-    <td>9</td>
-    <td>38</td>
+    <td>10</td>
+    <td>42</td>
     <td>7</td>
-    <td>12</td>
+    <td>13</td>
     <td>2</td>
     <td>5</td>
     <td>4</td>
-    <td>7</td>
-    <td>.316</td>
-    <td>.381</td>
+    <td>9</td>
+    <td>.310</td>
+    <td>.370</td>
     <td>.500</td>
-    <td>2025-05-13</td>
+    <td>2025-05-14</td>
   </tr>
   <tr>
-    <td>Alec Bohm</td>
-    <td>Philadelphia Phillies</td>
-    <td>8</td>
-    <td>29</td>
+    <td>Jose Ramirez</td>
+    <td>Unknown Team</td>
+    <td>9</td>
+    <td>32</td>
+    <td>9</td>
+    <td>13</td>
+    <td>3</td>
+    <td>7</td>
+    <td>6</td>
     <td>4</td>
+    <td>.406</td>
+    <td>.513</td>
+    <td>.781</td>
+    <td>2025-05-14</td>
+  </tr>
+  <tr>
+    <td>Ryan Mountcastle</td>
+    <td>Baltimore Orioles</td>
+    <td>9</td>
+    <td>37</td>
+    <td>2</td>
     <td>12</td>
+    <td>0</td>
+    <td>6</td>
+    <td>2</td>
+    <td>6</td>
+    <td>.324</td>
+    <td>.350</td>
+    <td>.432</td>
+    <td>2025-05-14</td>
+  </tr>
+  <tr>
+    <td>Ernie Clement</td>
+    <td>Toronto Blue Jays</td>
+    <td>8</td>
+    <td>31</td>
+    <td>5</td>
+    <td>13</td>
     <td>1</td>
     <td>3</td>
-    <td>3</td>
-    <td>6</td>
-    <td>.414</td>
-    <td>.485</td>
-    <td>.552</td>
-    <td>2025-05-12</td>
+    <td>1</td>
+    <td>7</td>
+    <td>.419</td>
+    <td>.424</td>
+    <td>.613</td>
+    <td>2025-05-14</td>
   </tr>
   <tr>
     <td>Victor Robles</td>
@@ -80,148 +112,132 @@
     <td>2025-04-06</td>
   </tr>
   <tr>
-    <td>Jose Ramirez</td>
-    <td>Unknown Team</td>
-    <td>8</td>
-    <td>29</td>
-    <td>7</td>
-    <td>12</td>
-    <td>2</td>
-    <td>4</td>
-    <td>5</td>
-    <td>4</td>
-    <td>.414</td>
-    <td>.514</td>
-    <td>.724</td>
-    <td>2025-05-13</td>
-  </tr>
-  <tr>
-    <td>Connor Norby</td>
-    <td>Miami Marlins</td>
-    <td>8</td>
-    <td>28</td>
-    <td>4</td>
-    <td>10</td>
-    <td>1</td>
-    <td>3</td>
-    <td>2</td>
-    <td>6</td>
-    <td>.357</td>
-    <td>.400</td>
-    <td>.607</td>
-    <td>2025-05-13</td>
-  </tr>
-  <tr>
-    <td>Nico Hoerner</td>
-    <td>Chicago Cubs</td>
-    <td>8</td>
-    <td>31</td>
-    <td>7</td>
-    <td>9</td>
-    <td>0</td>
-    <td>2</td>
-    <td>0</td>
-    <td>3</td>
-    <td>.290</td>
-    <td>.312</td>
-    <td>.387</td>
-    <td>2025-05-13</td>
-  </tr>
-  <tr>
-    <td>Ernie Clement</td>
-    <td>Toronto Blue Jays</td>
-    <td>7</td>
-    <td>28</td>
-    <td>5</td>
-    <td>12</td>
-    <td>1</td>
-    <td>3</td>
-    <td>1</td>
-    <td>7</td>
-    <td>.429</td>
-    <td>.433</td>
-    <td>.643</td>
-    <td>2025-05-13</td>
-  </tr>
-  <tr>
-    <td>Fernando Tatis Jr.</td>
-    <td>Unknown Team</td>
-    <td>7</td>
-    <td>29</td>
-    <td>10</td>
-    <td>9</td>
-    <td>3</td>
-    <td>8</td>
-    <td>4</td>
-    <td>4</td>
-    <td>.310</td>
-    <td>.394</td>
-    <td>.655</td>
-    <td>2025-05-13</td>
-  </tr>
-  <tr>
     <td>Xavier Edwards</td>
     <td>Miami Marlins</td>
-    <td>7</td>
-    <td>28</td>
+    <td>8</td>
+    <td>32</td>
     <td>3</td>
-    <td>9</td>
+    <td>10</td>
     <td>0</td>
     <td>1</td>
     <td>4</td>
-    <td>6</td>
-    <td>.321</td>
-    <td>.406</td>
-    <td>.321</td>
-    <td>2025-05-13</td>
-  </tr>
-  <tr>
-    <td>Ryan Mountcastle</td>
-    <td>Baltimore Orioles</td>
     <td>7</td>
-    <td>28</td>
-    <td>0</td>
-    <td>9</td>
-    <td>0</td>
-    <td>5</td>
-    <td>1</td>
-    <td>5</td>
-    <td>.321</td>
-    <td>.333</td>
-    <td>.429</td>
-    <td>2025-05-11</td>
-  </tr>
-  <tr>
-    <td>Hunter Goodman</td>
-    <td>Colorado Rockies</td>
-    <td>6</td>
-    <td>26</td>
-    <td>6</td>
-    <td>12</td>
-    <td>1</td>
-    <td>7</td>
-    <td>0</td>
-    <td>4</td>
-    <td>.462</td>
-    <td>.462</td>
-    <td>.808</td>
-    <td>2025-05-13</td>
+    <td>.312</td>
+    <td>.389</td>
+    <td>.312</td>
+    <td>2025-05-14</td>
   </tr>
   <tr>
     <td>Jeremy Pena</td>
     <td>Unknown Team</td>
-    <td>6</td>
-    <td>27</td>
+    <td>7</td>
+    <td>31</td>
+    <td>5</td>
+    <td>15</td>
+    <td>2</td>
+    <td>11</td>
+    <td>1</td>
+    <td>3</td>
+    <td>.484</td>
+    <td>.485</td>
+    <td>.774</td>
+    <td>2025-05-14</td>
+  </tr>
+  <tr>
+    <td>Gunnar Henderson</td>
+    <td>Baltimore Orioles</td>
+    <td>7</td>
+    <td>31</td>
+    <td>5</td>
+    <td>11</td>
+    <td>3</td>
+    <td>7</td>
+    <td>2</td>
+    <td>8</td>
+    <td>.355</td>
+    <td>.394</td>
+    <td>.742</td>
+    <td>2025-05-14</td>
+  </tr>
+  <tr>
+    <td>Lars Nootbaar</td>
+    <td>St. Louis Cardinals</td>
+    <td>7</td>
+    <td>30</td>
     <td>5</td>
     <td>11</td>
     <td>2</td>
+    <td>6</td>
+    <td>3</td>
+    <td>5</td>
+    <td>.367</td>
+    <td>.412</td>
+    <td>.633</td>
+    <td>2025-05-14</td>
+  </tr>
+  <tr>
+    <td>Josh Naylor</td>
+    <td>Arizona Diamondbacks</td>
+    <td>7</td>
+    <td>30</td>
+    <td>4</td>
     <td>9</td>
     <td>1</td>
+    <td>4</td>
+    <td>1</td>
+    <td>4</td>
+    <td>.300</td>
+    <td>.323</td>
+    <td>.467</td>
+    <td>2025-05-14</td>
+  </tr>
+  <tr>
+    <td>Brandon Nimmo</td>
+    <td>New York Mets</td>
+    <td>7</td>
+    <td>26</td>
     <td>3</td>
+    <td>8</td>
+    <td>1</td>
+    <td>3</td>
+    <td>1</td>
+    <td>5</td>
+    <td>.308</td>
+    <td>.357</td>
+    <td>.538</td>
+    <td>2025-05-14</td>
+  </tr>
+  <tr>
+    <td>Aaron Judge</td>
+    <td>New York Yankees</td>
+    <td>6</td>
+    <td>25</td>
+    <td>6</td>
+    <td>12</td>
+    <td>3</td>
+    <td>7</td>
+    <td>4</td>
+    <td>8</td>
+    <td>.480</td>
+    <td>.533</td>
+    <td>.960</td>
+    <td>2025-05-14</td>
+  </tr>
+  <tr>
+    <td>Trevor Larnach</td>
+    <td>Minnesota Twins</td>
+    <td>6</td>
+    <td>26</td>
+    <td>5</td>
+    <td>10</td>
+    <td>3</td>
+    <td>7</td>
+    <td>1</td>
+    <td>8</td>
+    <td>.385</td>
     <td>.407</td>
-    <td>.414</td>
-    <td>.704</td>
-    <td>2025-05-13</td>
+    <td>.846</td>
+    <td>2025-05-14</td>
   </tr>
   <tr>
     <td>Corey Seager</td>
@@ -240,36 +256,20 @@
     <td>2025-05-10</td>
   </tr>
   <tr>
-    <td>Josh Naylor</td>
-    <td>Arizona Diamondbacks</td>
+    <td>Alexander Canario</td>
+    <td>Pittsburgh Pirates</td>
     <td>6</td>
-    <td>25</td>
-    <td>3</td>
-    <td>7</td>
+    <td>21</td>
+    <td>2</td>
+    <td>8</td>
     <td>1</td>
-    <td>4</td>
     <td>1</td>
-    <td>4</td>
-    <td>.280</td>
-    <td>.308</td>
-    <td>.480</td>
-    <td>2025-05-13</td>
-  </tr>
-  <tr>
-    <td>Brandon Nimmo</td>
-    <td>New York Mets</td>
+    <td>2</td>
     <td>6</td>
-    <td>22</td>
-    <td>3</td>
-    <td>7</td>
-    <td>1</td>
-    <td>3</td>
-    <td>1</td>
-    <td>5</td>
-    <td>.318</td>
-    <td>.375</td>
-    <td>.591</td>
-    <td>2025-05-13</td>
+    <td>.381</td>
+    <td>.435</td>
+    <td>.619</td>
+    <td>2025-05-14</td>
   </tr>
   <tr>
     <td>Luke Keaschall</td>
@@ -304,20 +304,20 @@
     <td>2025-04-08</td>
   </tr>
   <tr>
-    <td>Aaron Judge</td>
-    <td>New York Yankees</td>
-    <td>5</td>
-    <td>21</td>
-    <td>5</td>
-    <td>10</td>
+    <td>Andrew Vaughn</td>
+    <td>Chicago White Sox</td>
+    <td>6</td>
+    <td>23</td>
     <td>2</td>
     <td>6</td>
+    <td>2</td>
     <td>4</td>
-    <td>6</td>
-    <td>.476</td>
-    <td>.538</td>
-    <td>.905</td>
-    <td>2025-05-13</td>
+    <td>0</td>
+    <td>5</td>
+    <td>.261</td>
+    <td>.261</td>
+    <td>.652</td>
+    <td>2025-05-14</td>
   </tr>
   <tr>
     <td>Jonny Deluca</td>
@@ -336,52 +336,68 @@
     <td>2025-04-06</td>
   </tr>
   <tr>
-    <td>Gavin Sheets</td>
-    <td>San Diego Padres</td>
+    <td>Shea Langeliers</td>
+    <td>Athletics</td>
     <td>5</td>
-    <td>23</td>
-    <td>3</td>
+    <td>20</td>
+    <td>4</td>
     <td>9</td>
     <td>1</td>
-    <td>8</td>
-    <td>0</td>
     <td>5</td>
-    <td>.391</td>
-    <td>.391</td>
-    <td>.652</td>
-    <td>2025-05-13</td>
+    <td>2</td>
+    <td>4</td>
+    <td>.450</td>
+    <td>.500</td>
+    <td>.650</td>
+    <td>2025-05-14</td>
   </tr>
   <tr>
-    <td>Lars Nootbaar</td>
-    <td>St. Louis Cardinals</td>
+    <td>Josh Jung</td>
+    <td>Texas Rangers</td>
     <td>5</td>
-    <td>22</td>
+    <td>18</td>
+    <td>4</td>
+    <td>9</td>
+    <td>3</td>
+    <td>7</td>
+    <td>1</td>
+    <td>4</td>
+    <td>.500</td>
+    <td>.526</td>
+    <td>1.000</td>
+    <td>2025-05-14</td>
+  </tr>
+  <tr>
+    <td>Mark Vientos</td>
+    <td>New York Mets</td>
+    <td>5</td>
+    <td>19</td>
     <td>3</td>
     <td>8</td>
     <td>1</td>
-    <td>4</td>
     <td>2</td>
-    <td>2</td>
-    <td>.364</td>
-    <td>.417</td>
-    <td>.591</td>
-    <td>2025-05-12</td>
+    <td>0</td>
+    <td>3</td>
+    <td>.421</td>
+    <td>.421</td>
+    <td>.632</td>
+    <td>2025-05-14</td>
   </tr>
   <tr>
-    <td>Gunnar Henderson</td>
-    <td>Baltimore Orioles</td>
+    <td>Riley Greene</td>
+    <td>Detroit Tigers</td>
     <td>5</td>
-    <td>22</td>
+    <td>19</td>
     <td>4</td>
-    <td>7</td>
+    <td>8</td>
     <td>2</td>
-    <td>4</td>
+    <td>6</td>
     <td>1</td>
-    <td>7</td>
-    <td>.318</td>
-    <td>.348</td>
-    <td>.727</td>
-    <td>2025-05-11</td>
+    <td>3</td>
+    <td>.421</td>
+    <td>.450</td>
+    <td>.842</td>
+    <td>2025-05-14</td>
   </tr>
   <tr>
     <td>Andres Gimenez</td>
@@ -400,20 +416,36 @@
     <td>2025-05-07</td>
   </tr>
   <tr>
-    <td>Alexander Canario</td>
-    <td>Pittsburgh Pirates</td>
+    <td>Ivan Herrera</td>
+    <td>Unknown Team</td>
     <td>5</td>
-    <td>17</td>
+    <td>18</td>
+    <td>4</td>
+    <td>7</td>
+    <td>1</td>
+    <td>3</td>
     <td>2</td>
+    <td>4</td>
+    <td>.389</td>
+    <td>.455</td>
+    <td>.667</td>
+    <td>2025-05-14</td>
+  </tr>
+  <tr>
+    <td>Michael Harris II</td>
+    <td>Unknown Team</td>
+    <td>5</td>
+    <td>19</td>
+    <td>1</td>
     <td>6</td>
-    <td>1</td>
-    <td>1</td>
+    <td>0</td>
     <td>2</td>
-    <td>5</td>
-    <td>.353</td>
-    <td>.421</td>
-    <td>.647</td>
-    <td>2025-05-13</td>
+    <td>2</td>
+    <td>2</td>
+    <td>.316</td>
+    <td>.381</td>
+    <td>.474</td>
+    <td>2025-05-14</td>
   </tr>
   <tr>
     <td>Myles Straw</td>
@@ -429,38 +461,38 @@
     <td>.353</td>
     <td>.353</td>
     <td>.412</td>
-    <td>2025-05-13</td>
+    <td>2025-05-14</td>
   </tr>
   <tr>
-    <td>Andrew Vaughn</td>
-    <td>Chicago White Sox</td>
-    <td>5</td>
-    <td>19</td>
-    <td>2</td>
-    <td>5</td>
-    <td>2</td>
-    <td>3</td>
-    <td>0</td>
-    <td>5</td>
-    <td>.263</td>
-    <td>.263</td>
-    <td>.684</td>
-    <td>2025-05-13</td>
-  </tr>
-  <tr>
-    <td>Yoan Moncada</td>
-    <td>Unknown Team</td>
+    <td>J.T. Realmuto</td>
+    <td>Philadelphia Phillies</td>
     <td>5</td>
     <td>17</td>
-    <td>4</td>
+    <td>3</td>
+    <td>6</td>
+    <td>1</td>
+    <td>3</td>
+    <td>3</td>
     <td>5</td>
+    <td>.353</td>
+    <td>.450</td>
+    <td>.647</td>
+    <td>2025-05-14</td>
+  </tr>
+  <tr>
+    <td>Harrison Bader</td>
+    <td>Minnesota Twins</td>
+    <td>5</td>
+    <td>15</td>
+    <td>1</td>
+    <td>6</td>
     <td>0</td>
     <td>2</td>
-    <td>4</td>
-    <td>3</td>
-    <td>.294</td>
-    <td>.429</td>
-    <td>.529</td>
-    <td>2025-05-13</td>
+    <td>1</td>
+    <td>1</td>
+    <td>.400</td>
+    <td>.438</td>
+    <td>.533</td>
+    <td>2025-05-14</td>
   </tr>
 </table>
