@@ -1,0 +1,42 @@
+name: Run1
+
+on:
+  schedule:
+  - cron: "0 5,17 * * *"  # Runs at 5 AM and 5 PM UTC
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v2  # Checkout the repository content to the GitHub runner
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.12.1  # Specify the Python version
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run the Python script
+        run: |
+          python script1_matches_today.py
+          python script3_yesterdays_report.py
+          python script6_get_standings.py
+          python script4_todays_schedule.py
+          python script5_match_overviews.py
+          python script7_teams_today_list.py
+          python script8_process_bvp.py
+          python script10_make_index.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Automated commit by GitHub Actions"
+          git push

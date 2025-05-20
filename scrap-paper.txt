@@ -39,6 +39,20 @@ run3 - run every hour
     script10_make_index
 
 
+    matches_today yesterdays_report get_standings todays_schedule match_overviews teams_today_list process_bvp make_index
+
+
+    script2_get_streaks
+    script6_get_standings
+    script4_todays_schedule
+    script5_match_overviews
+    script7_teams_today_list
+    script8_process_bvp
+    script9_process_streaks
+    script10_make_index
+
+    script4_todays_schedule
+    script10_make_index
 
 
 

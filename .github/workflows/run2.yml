@@ -1,8 +1,8 @@
-name: Run MLB Script Every Hour
+name: Run2
 
 on:
   schedule:
-  - cron: "0 */6 * * *"  # Runs every 6 hours at the start of the hour
+  - cron: "0 10 * * *"  # Runs at 10 utc = 6am est
 
 jobs:
   run-script:
@@ -24,7 +24,14 @@ jobs:
 
       - name: Run the Python script
         run: |
-          python mlbv5.py
+          python script2_get_streaks.py
+          python script6_get_standings.py
+          python script4_todays_schedule.py
+          python script5_match_overviews.py
+          python script7_teams_today_list.py
+          python script8_process_bvp.py
+          python script9_process_streaks.py
+          python script10_make_index.py
 
       - name: Commit and push changes
         run: |
