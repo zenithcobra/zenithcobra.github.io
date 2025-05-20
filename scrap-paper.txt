@@ -13,14 +13,16 @@
 
 cron: "0 5,17 * * *"  # Runs at 5 AM and 5 PM UTC
 run 1 - at 5 utc and 17 utc = 1am est and 5pm est
-    script1_matches_today
-    script3_yesterdays_report
-    script6_get_standings
-    script4_todays_schedule
-    script5_match_overviews
-    script7_teams_today_list
-    script8_process_bvp
-    script10_make_index
+    script1_matches_today.py
+    script2_get_streaks.py
+    script3_yesterdays_report.py
+    script4_todays_schedule.py
+    script5_match_overviews.py
+    script6_get_standings.py
+    script7_teams_today_list.py
+    script8_process_bvp.py
+    script9_process_streaks.py
+    script10_make_index.py
 
 cron: "0 10 * * *"  # Runs at 10 utc = 6am est
 run2 - at 10am utc
@@ -42,17 +44,9 @@ run3 - run every hour
     matches_today yesterdays_report get_standings todays_schedule match_overviews teams_today_list process_bvp make_index
 
 
-    script2_get_streaks
-    script6_get_standings
-    script4_todays_schedule
-    script5_match_overviews
-    script7_teams_today_list
-    script8_process_bvp
-    script9_process_streaks
-    script10_make_index
+    get_streaks get_standings todays_schedule match_overviews teams_today_list process_bvp process_streaks make_index
 
-    script4_todays_schedule
-    script10_make_index
+    todays_schedule make_index
 
 
 
