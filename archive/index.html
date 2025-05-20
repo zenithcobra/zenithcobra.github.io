@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MLB Report</title>
-    <style>
+<style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -15,14 +15,17 @@
             top: 0;
             background-color: #333;
             overflow: hidden;
+            # overflow-x: auto;
             z-index: 1000;
+            white-space: nowrap; /* Prevent wrapping */
         }
         .navbar a {
             float: left;
             display: block;
             color: white;
             text-align: center;
-            padding: 14px 16px;
+            padding: 8px 10px; /* Reduced padding */
+            font-size: 12px; /* Smaller font size */
             text-decoration: none;
         }
         .navbar a:hover {
@@ -37,10 +40,12 @@
 <body>
     <div class="navbar">
         <a href="#useful-links">Links</a>
-        <a href="#parlay-banned-list">Parlay Banned List</a>
-        <a href="#todays-report">Today's Report</a>
-        <a href="#match-overviews">Match Overviews</a>
-        <a href="#bvp-stats">Batter vs Pitcher Stats</a>
+        <a href="#parlay-banned-list">Banned</a>
+        <a href="#yesterdays-report">History</a>
+        <a href="#standings">Standings</a>
+        <a href="#todays-schedule">Schedule</a>
+        <a href="#match-overviews">Matchups</a>
+        <a href="#bvp-stats">BvP</a>
         <a href="#streaks">Streaks</a>
     </div>
     <div class="content">
@@ -58,553 +63,439 @@
         <h2 id="parlay-banned-list">Parlay Banned List</h2>
         <pre>- corbin burns
 - Luis Castillo</pre>
-        <h2 id="todays-report">Today's Report</h2>
+        <h2 id="yesterdays-report">Yesterdays History</h2>
         <pre>
 Yesterday's Schedule:
-2025-05-06 - Cleveland Guardians (9) @ Washington Nationals (10) (Final)
-
-Final     1 2 3 4 5 6 7 8 9  R   H   E  
-Guardians 1 1 0 0 0 0 6 0 1  9   14  2  
-Nationals 1 0 2 0 1 2 4 0 0  10  10  0  
-
-Carlos Santana pops out to third baseman José Tena in foul territory.
-Top 1 - Cleveland Guardians: 1, Washington Nationals: 0
-
-Nathaniel Lowe singles on a line drive to center fielder Angel Martínez. CJ Abrams scores. James Wood to 2nd.
-Bottom 1 - Cleveland Guardians: 1, Washington Nationals: 1
-
-Nolan Jones homers (2) on a fly ball to right field.
-Top 2 - Cleveland Guardians: 2, Washington Nationals: 1
-
-James Wood homers (10) on a fly ball to right field. CJ Abrams scores.
-Bottom 3 - Cleveland Guardians: 2, Washington Nationals: 3
-
-Alex Call singles on a line drive to center fielder Angel Martínez. Jacob Young scores.
-Bottom 5 - Cleveland Guardians: 2, Washington Nationals: 4
-
-Jacob Young singles on a line drive to center fielder Angel Martínez. Keibert Ruiz scores. Luis García Jr. scores. Jacob Young to 2nd. Jacob Young advances to 2nd, on a throwing error by center fielder Angel Martínez.
-Bottom 6 - Cleveland Guardians: 2, Washington Nationals: 6
-
-Jhonkensy Noel doubles (2) on a sharp line drive to left fielder Alex Call. Angel Martínez scores. Steven Kwan to 3rd.
-Top 7 - Cleveland Guardians: 3, Washington Nationals: 6
-
-José Ramírez singles on a ground ball to shortstop CJ Abrams. Steven Kwan scores. Jhonkensy Noel to 3rd.
-Top 7 - Cleveland Guardians: 4, Washington Nationals: 6
-
-Kyle Manzardo grounds into a force out, shortstop CJ Abrams to second baseman Luis García Jr. Jhonkensy Noel scores. José Ramírez out at 2nd. Kyle Manzardo to 1st.
-Top 7 - Cleveland Guardians: 5, Washington Nationals: 6
-
-Gabriel Arias singles on a line drive to left fielder Alex Call. Kyle Manzardo scores. Carlos Santana scores. Bo Naylor to 2nd.
-Top 7 - Cleveland Guardians: 7, Washington Nationals: 6
-
-Angel Martínez singles on a ground ball to shortstop CJ Abrams. Bo Naylor scores. Nolan Jones out at home, shortstop CJ Abrams.
-Top 7 - Cleveland Guardians: 8, Washington Nationals: 6
-
-Keibert Ruiz singles on a ground ball to right fielder Jhonkensy Noel. Alex Call scores. Nathaniel Lowe to 3rd.
-Bottom 7 - Cleveland Guardians: 8, Washington Nationals: 7
-
-Dylan Crews doubles (2) on a fly ball to left fielder Steven Kwan. Nathaniel Lowe scores. Keibert Ruiz to 3rd.
-Bottom 7 - Cleveland Guardians: 8, Washington Nationals: 8
-
-José Tena doubles (3) on a line drive to center fielder Angel Martínez. Keibert Ruiz scores. Dylan Crews scores.
-Bottom 7 - Cleveland Guardians: 8, Washington Nationals: 10
-
-Gabriel Arias out on a sacrifice fly to right fielder Dylan Crews. Carlos Santana scores.
-Top 9 - Cleveland Guardians: 9, Washington Nationals: 10
-
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-
-2025-05-06 - Cleveland Guardians (9) @ Washington Nationals (1) (Final)
-
-Final     1 2 3 4 5 6 7 8 9  R   H   E  
-Guardians 0 0 0 0 0 3 3 2 1  9   8   0  
-Nationals 0 0 0 0 0 1 0 0 0  1   4   0  
-
-Carlos Santana homers (4) on a line drive to right field. Steven Kwan scores. José Ramírez scores.
-Top 6 - Cleveland Guardians: 3, Washington Nationals: 0
-
-Riley Adams homers (2) on a fly ball to right center field.
-Bottom 6 - Cleveland Guardians: 3, Washington Nationals: 1
-
-Brayan Rocchio reaches on a fielder's choice, fielded by shortstop CJ Abrams. Nolan Jones scores. Daniel Schneemann to 3rd.
-Top 7 - Cleveland Guardians: 4, Washington Nationals: 1
-
-Steven Kwan doubles (7) on a line drive to right fielder Dylan Crews. Brayan Rocchio scores.
-Top 7 - Cleveland Guardians: 6, Washington Nationals: 1
-
-Daniel Schneemann homers (5) on a fly ball to right field.
-Top 8 - Cleveland Guardians: 8, Washington Nationals: 1
-
-Austin Hedges homers (3) on a fly ball to left field.
-Top 9 - Cleveland Guardians: 9, Washington Nationals: 1
-
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-
-2025-05-06 - Los Angeles Dodgers (4) @ Miami Marlins (5) (Final)
-
-Final   1 2 3 4 5 6 7 8 9 10 R   H   E  
-Dodgers 1 0 0 0 0 2 1 0 0 0  4   8   0  
-Marlins 0 0 0 0 2 2 0 0 0 1  5   11  0  
-
-Freddie Freeman singles on a ground ball to right fielder Jesús Sánchez. Andy Pages scores.
-Top 1 - Los Angeles Dodgers: 1, Miami Marlins: 0
-
-Liam Hicks homers (2) on a fly ball to right field. Matt Mervis scores.
-Bottom 5 - Los Angeles Dodgers: 1, Miami Marlins: 2
-
-Shohei Ohtani homers (10) on a fly ball to right field.
-Top 6 - Los Angeles Dodgers: 2, Miami Marlins: 2
-
-Freddie Freeman homers (8) on a fly ball to center field.
-Top 6 - Los Angeles Dodgers: 3, Miami Marlins: 2
-
-Connor Norby doubles (4) on a sharp fly ball to left fielder Michael Conforto. Agustín Ramírez scores.
-Bottom 6 - Los Angeles Dodgers: 3, Miami Marlins: 3
-
-Dane Myers singles on a sharp line drive to center fielder James Outman. Connor Norby scores.
-Bottom 6 - Los Angeles Dodgers: 3, Miami Marlins: 4
-
-Shohei Ohtani doubles (6) on a line drive to right fielder Jesús Sánchez. Hyeseong Kim scores.
-Top 7 - Los Angeles Dodgers: 4, Miami Marlins: 4
-
-Jesús Sánchez singles on a ground ball to center fielder James Outman. Xavier Edwards scores. Kyle Stowers to 3rd. Agustín Ramírez to 2nd.
-Bottom 10 - Los Angeles Dodgers: 4, Miami Marlins: 5
-
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-
-2025-05-06 - Texas Rangers (6) @ Boston Red Sox (1) (Final)
+2025-05-19 - Cincinnati Reds (7) @ Pittsburgh Pirates (1) (Final)
 
 Final   1 2 3 4 5 6 7 8 9  R   H   E  
-Rangers 1 0 0 5 0 0 0 0 0  6   16  0  
-Red Sox 0 0 0 0 0 1 0 0 0  1   6   0  
+Reds    1 0 0 0 0 1 0 2 3  7   12  0  
+Pirates 1 0 0 0 0 0 0 0 0  1   5   1  
 
-Wild pitch by pitcher Lucas Giolito. Wyatt Langford scores. Joc Pederson out at 2nd, catcher Carlos Narváez to second baseman Kristian Campbell.
-Top 1 - Texas Rangers: 1, Boston Red Sox: 0
+Austin Hays doubles (6) on a sharp line drive to left fielder Tommy Pham. Elly De La Cruz scores. Austin Hays to 3rd.
+Top 1 - Cincinnati Reds: 1, Pittsburgh Pirates: 0
 
-Joc Pederson hits a ground-rule double (4) on a line drive to right field. Corey Seager scores.
-Top 4 - Texas Rangers: 2, Boston Red Sox: 0
+Joey Bart doubles (5) on a sharp fly ball to center fielder TJ Friedl. Bryan Reynolds scores.
+Bottom 1 - Cincinnati Reds: 1, Pittsburgh Pirates: 1
 
-Adolis García out on a sacrifice fly to right fielder Wilyer Abreu. Joc Pederson scores.
-Top 4 - Texas Rangers: 3, Boston Red Sox: 0
+Gavin Lux doubles (13) on a line drive to left fielder Tommy Pham. Austin Hays scores.
+Top 6 - Cincinnati Reds: 2, Pittsburgh Pirates: 1
 
-Jonah Heim singles on a ground ball to center fielder Ceddanne Rafaela. Marcus Semien scores. Evan Carter to 3rd.
-Top 4 - Texas Rangers: 4, Boston Red Sox: 0
+Elly De La Cruz doubles (7) on a sharp line drive to left fielder Tommy Pham. TJ Friedl scores. Elly De La Cruz to 3rd.
+Top 8 - Cincinnati Reds: 3, Pittsburgh Pirates: 1
 
-Josh Smith singles on a ground ball to right fielder Wilyer Abreu. Evan Carter scores. Jonah Heim to 3rd.
-Top 4 - Texas Rangers: 5, Boston Red Sox: 0
+Austin Hays singles on a ground ball to center fielder Alexander Canario. Elly De La Cruz scores.
+Top 8 - Cincinnati Reds: 4, Pittsburgh Pirates: 1
 
-Wyatt Langford singles on a sharp line drive to center fielder Ceddanne Rafaela. Jonah Heim scores. Josh Smith to 2nd.
-Top 4 - Texas Rangers: 6, Boston Red Sox: 0
+Matt McLain out on a sacrifice fly to right fielder Bryan Reynolds. Will Benson scores.
+Top 9 - Cincinnati Reds: 5, Pittsburgh Pirates: 1
 
-Kristian Campbell singles on a ground ball to center fielder Evan Carter. Alex Bregman scores.
-Bottom 6 - Texas Rangers: 6, Boston Red Sox: 1
+TJ Friedl singles on a line drive to right fielder Bryan Reynolds. Tyler Stephenson scores.
+Top 9 - Cincinnati Reds: 6, Pittsburgh Pirates: 1
+
+Elly De La Cruz doubles (8) on a sharp line drive to right fielder Bryan Reynolds. TJ Friedl scores. Santiago Espinal to 3rd.
+Top 9 - Cincinnati Reds: 7, Pittsburgh Pirates: 1
 
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
-2025-05-06 - Philadelphia Phillies (8) @ Tampa Bay Rays (4) (Final)
+2025-05-19 - Chicago Cubs (7) @ Miami Marlins (8) (Final)
+
+Final   1 2 3 4 5 6 7 8 9  R   H   E  
+Cubs    0 0 0 3 0 4 0 0 0  7   12  0  
+Marlins 2 0 0 0 4 0 0 0 2  8   11  0  
+
+Jesús Sánchez homers (2) on a line drive to center field.
+Bottom 1 - Chicago Cubs: 0, Miami Marlins: 1
+
+Agustín Ramírez homers (6) on a fly ball to left center field.
+Bottom 1 - Chicago Cubs: 0, Miami Marlins: 2
+
+Miguel Amaya homers (4) on a fly ball to left field. Michael Busch scores. Nico Hoerner scores.
+Top 4 - Chicago Cubs: 3, Miami Marlins: 2
+
+Liam Hicks triples (1) on a fly ball to center fielder Pete Crow-Armstrong. Connor Norby scores.
+Bottom 5 - Chicago Cubs: 3, Miami Marlins: 3
+
+Javier Sanoja singles on a sharp ground ball to center fielder Pete Crow-Armstrong. Liam Hicks scores.
+Bottom 5 - Chicago Cubs: 3, Miami Marlins: 4
+
+Jesús Sánchez singles on a ground ball to center fielder Pete Crow-Armstrong. Javier Sanoja scores.
+Bottom 5 - Chicago Cubs: 3, Miami Marlins: 5
+
+Otto Lopez singles on a ground ball to left fielder Seiya Suzuki. Jesús Sánchez scores.
+Bottom 5 - Chicago Cubs: 3, Miami Marlins: 6
+
+Moisés Ballesteros singles on a ground ball to first baseman Eric Wagaman, deflected by pitcher Jesus Tinoco. Michael Busch scores. Dansby Swanson to 3rd. Nico Hoerner to 2nd.
+Top 6 - Chicago Cubs: 4, Miami Marlins: 6
+
+Marlins challenged (tag play), call on the field was overturned: Miguel Amaya doubles (9) on a sharp line drive to center fielder Derek Hill, deflected by left fielder Kyle Stowers. Dansby Swanson scores. Nico Hoerner scores. Moisés Ballesteros out at home on the throw, center fielder Derek Hill to second baseman Otto Lopez to catcher Agustín Ramírez. Miguel Amaya to 3rd.
+Top 6 - Chicago Cubs: 6, Miami Marlins: 6
+
+Matt Shaw hits a ground-rule double (2) on a fly ball to right field. Miguel Amaya scores.
+Top 6 - Chicago Cubs: 7, Miami Marlins: 6
+
+Jesús Sánchez triples (1) on a sharp ground ball to right fielder Kyle Tucker. Derek Hill scores. Javier Sanoja scores. Jesús Sánchez to 2nd.
+Bottom 9 - Chicago Cubs: 7, Miami Marlins: 8
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+2025-05-19 - New York Mets (1) @ Boston Red Sox (3) (Final)
+
+Final   1 2 3 4 5 6 7 8 9  R   H   E  
+Mets    0 0 1 0 0 0 0 0 0  1   8   1  
+Red Sox 2 1 0 0 0 0 0 0 0  3   8   1  
+
+Alex Bregman grounds out, second baseman Jeff McNeil to first baseman Pete Alonso. Jarren Duran scores.
+Bottom 1 - New York Mets: 0, Boston Red Sox: 1
+
+Trevor Story singles on a ground ball to shortstop Francisco Lindor. Rafael Devers scores.
+Bottom 1 - New York Mets: 0, Boston Red Sox: 2
+
+Jarren Duran triples (6) on a ground ball to right fielder Juan Soto. Carlos Narváez scores.
+Bottom 2 - New York Mets: 0, Boston Red Sox: 3
+
+Tyrone Taylor singles on a line drive to center fielder Ceddanne Rafaela. Francisco Alvarez scores.
+Top 3 - New York Mets: 1, Boston Red Sox: 3
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+2025-05-19 - Houston Astros (4) @ Tampa Bay Rays (3) (Final)
+
+Final  1 2 3 4 5 6 7 8 9  R   H   E  
+Astros 0 3 0 0 0 0 1 0 0  4   11  1  
+Rays   0 0 0 0 2 1 0 0 0  3   7   0  
+
+Victor Caratini homers (3) on a fly ball to right center field.
+Top 2 - Houston Astros: 1, Tampa Bay Rays: 0
+
+Cam Smith doubles (4) on a line drive to left fielder Christopher Morel. Jake Meyers scores.
+Top 2 - Houston Astros: 2, Tampa Bay Rays: 0
+
+Chas McCormick singles on a line drive to center fielder Kameron Misner. Cam Smith scores.
+Top 2 - Houston Astros: 3, Tampa Bay Rays: 0
+
+Danny Jansen homers (3) on a fly ball to right field. Brandon Lowe scores.
+Bottom 5 - Houston Astros: 3, Tampa Bay Rays: 2
+
+José Caballero doubles (8) on a sharp line drive to left fielder Chas McCormick. Yandy Díaz scores.
+Bottom 6 - Houston Astros: 3, Tampa Bay Rays: 3
+
+Jake Meyers homers (3) on a fly ball to right field.
+Top 7 - Houston Astros: 4, Tampa Bay Rays: 3
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+2025-05-19 - Cleveland Guardians @ Minnesota Twins (Suspended: Rain)
+
+Live      1 2 3 4 5 6 7 8 9  R   H   E  
+Guardians 1 0 0 0            1   3   0  
+Twins     1 1 0 0            2   4   0  
+
+Kyle Manzardo doubles (5) on a sharp line drive to center fielder Harrison Bader. Angel Martínez scores.
+Top 1 - Cleveland Guardians: 1, Minnesota Twins: 0
+
+Ty France singles on a ground ball to center fielder Nolan Jones. Ryan Jeffers scores. Royce Lewis to 2nd.
+Bottom 1 - Cleveland Guardians: 1, Minnesota Twins: 1
+
+Willi Castro doubles (8) on a line drive to right fielder Will Brennan. Harrison Bader scores.
+Bottom 2 - Cleveland Guardians: 1, Minnesota Twins: 2
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+2025-05-19 - Seattle Mariners (5) @ Chicago White Sox (1) (Final)
+
+Final     1 2 3 4 5 6 7 8 9  R   H   E  
+Mariners  0 0 1 0 0 0 0 4 0  5   8   0  
+White Sox 0 0 0 0 0 0 0 0 1  1   5   1  
+
+Jorge Polanco singles on a ground ball to right fielder Joshua Palacios. Ben Williamson scores. J.P. Crawford to 3rd.
+Top 3 - Seattle Mariners: 1, Chicago White Sox: 0
+
+Julio Rodríguez hits a grand slam (8) to left field. Ben Williamson scores. J.P. Crawford scores. Mitch Garver scores.
+Top 8 - Seattle Mariners: 5, Chicago White Sox: 0
+
+Andrew Vaughn singles on a line drive to center fielder Julio Rodríguez. Chase Meidroth scores. Matt Thaiss to 3rd. Luis Robert Jr. to 2nd.
+Bottom 9 - Seattle Mariners: 5, Chicago White Sox: 1
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+2025-05-19 - Baltimore Orioles (4) @ Milwaukee Brewers (5) (Final)
+
+Final   1 2 3 4 5 6 7 8 9  R   H   E  
+Orioles 0 1 0 0 0 0 3 0 0  4   6   0  
+Brewers 0 3 0 0 1 0 0 1 0  5   11  1  
+
+Ramón Laureano homers (6) on a fly ball to left center field.
+Top 2 - Baltimore Orioles: 1, Milwaukee Brewers: 0
+
+Caleb Durbin singles on a line drive to left fielder Dylan Carlson. Rhys Hoskins scores. Isaac Collins to 3rd. Caleb Durbin to 2nd.
+Bottom 2 - Baltimore Orioles: 1, Milwaukee Brewers: 1
+
+Brice Turang singles on a line drive to right fielder Ramón Laureano. Isaac Collins scores. Caleb Durbin scores. Brice Turang out at 2nd on the throw, right fielder Ramón Laureano to first baseman Ryan Mountcastle to shortstop Gunnar Henderson to first baseman Ryan Mountcastle to second baseman Jackson Holliday to shortstop Gunnar Henderson.
+Bottom 2 - Baltimore Orioles: 1, Milwaukee Brewers: 3
+
+William Contreras doubles (6) on a sharp line drive to center fielder Cedric Mullins. Brice Turang scores.
+Bottom 5 - Baltimore Orioles: 1, Milwaukee Brewers: 4
+
+Cedric Mullins homers (10) on a fly ball to right field. Ryan O'Hearn scores. Ramón Urías scores.
+Top 7 - Baltimore Orioles: 4, Milwaukee Brewers: 4
+
+William Contreras singles on a ground ball to center fielder Cedric Mullins, deflected by shortstop Gunnar Henderson. Brice Turang scores.
+Bottom 8 - Baltimore Orioles: 4, Milwaukee Brewers: 5
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+2025-05-19 - Detroit Tigers (4) @ St. Louis Cardinals (11) (Final)
+
+Final     1 2 3 4 5 6 7 8 9  R   H   E  
+Tigers    0 0 0 0 0 0 0 1 3  4   8   1  
+Cardinals 1 0 0 1 3 0 6 0 0  11  16  1  
+
+Brendan Donovan singles on a ground ball to left fielder Akil Baddoo. Lars Nootbaar scores.
+Bottom 1 - Detroit Tigers: 0, St. Louis Cardinals: 1
+
+Pedro Pagés grounds out, third baseman Zach McKinstry to first baseman Colt Keith.
+Bottom 4 - Detroit Tigers: 0, St. Louis Cardinals: 2
+
+Willson Contreras grounds out, shortstop Trey Sweeney to first baseman Colt Keith. Lars Nootbaar scores. Masyn Winn to 3rd. Brendan Donovan to 2nd.
+Bottom 5 - Detroit Tigers: 0, St. Louis Cardinals: 3
+
+Iván Herrera reaches on a fielder's choice, fielded by second baseman Gleyber Torres. Masyn Winn scores. Brendan Donovan to 3rd.
+Bottom 5 - Detroit Tigers: 0, St. Louis Cardinals: 4
+
+Nolan Arenado grounds into a force out, shortstop Trey Sweeney to second baseman Gleyber Torres. Brendan Donovan scores. Iván Herrera out at 2nd. Nolan Arenado to 1st.
+Bottom 5 - Detroit Tigers: 0, St. Louis Cardinals: 5
+
+Iván Herrera singles on a ground ball to right fielder Kerry Carpenter. Brendan Donovan scores. Willson Contreras to 3rd.
+Bottom 7 - Detroit Tigers: 0, St. Louis Cardinals: 6
+
+Jordan Walker doubles (3) on a sharp line drive to center fielder Riley Greene. Willson Contreras scores. Iván Herrera scores.
+Bottom 7 - Detroit Tigers: 0, St. Louis Cardinals: 8
+
+Pedro Pagés homers (3) on a fly ball to left field. Jordan Walker scores.
+Bottom 7 - Detroit Tigers: 0, St. Louis Cardinals: 10
+
+Lars Nootbaar out on a sacrifice fly to left fielder Akil Baddoo. Victor Scott II scores.
+Bottom 7 - Detroit Tigers: 0, St. Louis Cardinals: 11
+
+Akil Baddoo doubles (1) on a line drive to left fielder Lars Nootbaar. Trey Sweeney scores. Dillon Dingler to 3rd.
+Top 8 - Detroit Tigers: 1, St. Louis Cardinals: 11
+
+Andy Ibáñez doubles (3) on a line drive to left fielder Lars Nootbaar. Justyn-Henry Malloy scores. Spencer Torkelson to 3rd.
+Top 9 - Detroit Tigers: 2, St. Louis Cardinals: 11
+
+Trey Sweeney out on a sacrifice fly to right fielder Jordan Walker. Spencer Torkelson scores. Andy Ibáñez to 3rd.
+Top 9 - Detroit Tigers: 3, St. Louis Cardinals: 11
+
+Dillon Dingler grounds out, third baseman Jose Barrero to first baseman Yohel Pozo. Andy Ibáñez scores.
+Top 9 - Detroit Tigers: 4, St. Louis Cardinals: 11
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+2025-05-19 - Philadelphia Phillies (9) @ Colorado Rockies (3) (Final)
 
 Final    1 2 3 4 5 6 7 8 9  R   H   E  
-Phillies 0 3 0 0 0 0 0 4 1  8   13  0  
-Rays     0 0 0 2 0 0 0 1 1  4   6   0  
+Phillies 0 0 0 0 1 0 1 4 3  9   17  1  
+Rockies  1 0 1 0 0 1 0 0 0  3   6   1  
 
-Kyle Schwarber homers (12) on a fly ball to left center field.
-Top 2 - Philadelphia Phillies: 1, Tampa Bay Rays: 0
+Ezequiel Tovar homers (2) on a fly ball to left field.
+Bottom 1 - Philadelphia Phillies: 0, Colorado Rockies: 1
 
-Alec Bohm homers (1) on a fly ball to right field. Nick Castellanos scores.
-Top 2 - Philadelphia Phillies: 3, Tampa Bay Rays: 0
+Ezequiel Tovar singles on a line drive to right fielder Nick Castellanos. Jordan Beck scores.
+Bottom 3 - Philadelphia Phillies: 0, Colorado Rockies: 2
 
-Yandy Díaz homers (5) on a fly ball to right center field. Brandon Lowe scores.
-Bottom 4 - Philadelphia Phillies: 3, Tampa Bay Rays: 2
+Bryce Harper singles on a line drive to left fielder Jordan Beck. Trea Turner scores.
+Top 5 - Philadelphia Phillies: 1, Colorado Rockies: 2
 
-Kyle Schwarber singles on a line drive to right fielder Travis Jankowski. Trea Turner scores. Bryce Harper to 2nd.
-Top 8 - Philadelphia Phillies: 4, Tampa Bay Rays: 2
+Brenton Doyle hits a ground-rule double (5) on a fly ball to left-center field. Michael Toglia scores.
+Bottom 6 - Philadelphia Phillies: 1, Colorado Rockies: 3
 
-Nick Castellanos homers (4) on a fly ball to right center field. Bryce Harper scores. Kyle Schwarber scores.
-Top 8 - Philadelphia Phillies: 7, Tampa Bay Rays: 2
+Bryce Harper out on a sacrifice fly to center fielder Brenton Doyle. Brandon Marsh scores.
+Top 7 - Philadelphia Phillies: 2, Colorado Rockies: 3
 
-Chandler Simpson out on a sacrifice fly to left fielder Max Kepler. Travis Jankowski scores.
-Bottom 8 - Philadelphia Phillies: 7, Tampa Bay Rays: 3
+Alec Bohm homers (3) on a fly ball to center field. Nick Castellanos scores.
+Top 8 - Philadelphia Phillies: 4, Colorado Rockies: 3
 
-Nick Castellanos singles on a sharp line drive to right fielder Travis Jankowski. Bryce Harper scores. Kyle Schwarber to 2nd.
-Top 9 - Philadelphia Phillies: 8, Tampa Bay Rays: 3
+Trea Turner doubles (8) on a line drive to right fielder Mickey Moniak. Edmundo Sosa scores. Brandon Marsh scores.
+Top 8 - Philadelphia Phillies: 6, Colorado Rockies: 3
 
-Junior Caminero out on a sacrifice fly to right fielder Nick Castellanos. Jonathan Aranda scores. Kameron Misner to 3rd.
-Bottom 9 - Philadelphia Phillies: 8, Tampa Bay Rays: 4
+Kyle Schwarber homers (16) on a fly ball to right field.
+Top 9 - Philadelphia Phillies: 7, Colorado Rockies: 3
 
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-
-2025-05-06 - San Diego Padres (3) @ New York Yankees (12) (Final)
-
-Final   1 2 3 4 5 6 7 8 9  R   H   E  
-Padres  0 0 0 2 0 0 1 0 0  3   10  1  
-Yankees 0 0 0 2 0 0 100 0  12  10  1  
-
-Jason Heyward out on a sacrifice fly to left fielder Cody Bellinger. Jackson Merrill scores.
-Top 4 - San Diego Padres: 2, New York Yankees: 0
-
-Aaron Judge homers (12) on a fly ball to right field.
-Bottom 4 - San Diego Padres: 2, New York Yankees: 1
-
-Jasson Domínguez singles on a ground ball to right fielder Fernando Tatis Jr. Cody Bellinger scores. Jasson Domínguez to 2nd. Throwing error by right fielder Fernando Tatis Jr.
-Bottom 4 - San Diego Padres: 2, New York Yankees: 2
-
-Fernando Tatis Jr. doubles (5) on a line drive to right fielder Aaron Judge. Gavin Sheets scores. Elias Díaz to 3rd.
-Top 7 - San Diego Padres: 3, New York Yankees: 2
-
-Austin Wells singles on a ground ball to right fielder Fernando Tatis Jr. Jasson Domínguez scores. Anthony Volpe to 2nd.
-Bottom 7 - San Diego Padres: 3, New York Yankees: 3
-
-Trent Grisham walks. Anthony Volpe scores. Austin Wells to 3rd. Paul Goldschmidt to 2nd.
-Bottom 7 - San Diego Padres: 3, New York Yankees: 4
-
-Ben Rice doubles (8) on a ground ball to right fielder Fernando Tatis Jr. Austin Wells scores. Paul Goldschmidt scores. Trent Grisham to 3rd.
-Bottom 7 - San Diego Padres: 3, New York Yankees: 6
-
-Cody Bellinger singles on a line drive to right fielder Fernando Tatis Jr. Trent Grisham scores. Oswald Peraza to 3rd. Aaron Judge to 2nd.
-Bottom 7 - San Diego Padres: 3, New York Yankees: 7
-
-Anthony Volpe singles on a ground ball to third baseman Manny Machado. Oswald Peraza scores. Aaron Judge to 3rd. Cody Bellinger to 2nd.
-Bottom 7 - San Diego Padres: 3, New York Yankees: 8
-
-Austin Wells hits a grand slam (7) to right field. Aaron Judge scores. Cody Bellinger scores. Anthony Volpe scores.
-Bottom 7 - San Diego Padres: 3, New York Yankees: 12
+Edmundo Sosa homers (1) on a fly ball to left field. Nick Castellanos scores.
+Top 9 - Philadelphia Phillies: 9, Colorado Rockies: 3
 
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
-2025-05-06 - Cincinnati Reds (1) @ Atlanta Braves (2) (Final)
+2025-05-19 - Kansas City Royals (3) @ San Francisco Giants (1) (Final)
 
-Final  1 2 3 4 5 6 7 8 9 10 R   H   E  
-Reds   0 0 0 0 0 0 0 1 0 0  1   7   0  
-Braves 0 0 0 0 0 0 0 0 1 1  2   8   0  
+Final  1 2 3 4 5 6 7 8 9  R   H   E  
+Royals 0 0 0 0 0 0 0 2 1  3   10  0  
+Giants 0 0 0 0 0 0 0 1 0  1   6   1  
 
-Santiago Espinal singles on a line drive to left fielder Alex Verdugo. Elly De La Cruz scores.
-Top 8 - Cincinnati Reds: 1, Atlanta Braves: 0
+Vinnie Pasquantino homers (8) on a fly ball to right center field. Cavan Biggio scores.
+Top 8 - Kansas City Royals: 2, San Francisco Giants: 0
 
-Michael Harris II doubles (7) on a line drive to right fielder Jake Fraley. Stuart Fairchild scores.
-Bottom 9 - Cincinnati Reds: 1, Atlanta Braves: 1
+Jung Hoo Lee doubles (13) on a line drive to right fielder Hunter Renfroe. Sam Huff scores. Heliot Ramos to 3rd.
+Bottom 8 - Kansas City Royals: 2, San Francisco Giants: 1
 
-Marcell Ozuna singles on a sharp line drive to left fielder Jacob Hurtubise. Alex Verdugo scores. Austin Riley to 2nd.
-Bottom 10 - Cincinnati Reds: 1, Atlanta Braves: 2
-
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-
-2025-05-06 - San Francisco Giants (14) @ Chicago Cubs (5) (Final)
-
-Final  1 2 3 4 5 6 7 8 9 1011 R   H   E  
-Giants 0 2 2 1 0 0 0 0 0 0 9  14  16  1  
-Cubs   0 0 2 0 1 0 0 0 2 0 0  5   8   2  
-
-Heliot Ramos singles on a ground ball to third baseman Jon Berti. Matt Chapman scores. LaMonte Wade Jr. to 3rd. Throwing error by third baseman Jon Berti.
-Top 2 - San Francisco Giants: 1, Chicago Cubs: 0
-
-Patrick Bailey out on a sacrifice fly to left fielder Ian Happ. LaMonte Wade Jr. scores.
-Top 2 - San Francisco Giants: 2, Chicago Cubs: 0
-
-Jung Hoo Lee homers (4) on a fly ball to right field. Willy Adames scores.
-Top 3 - San Francisco Giants: 4, Chicago Cubs: 0
-
-Miguel Amaya homers (3) on a fly ball to left center field. Dansby Swanson scores.
-Bottom 3 - San Francisco Giants: 4, Chicago Cubs: 2
-
-Brett Wisely out on a sacrifice bunt to second baseman Nico Hoerner. Heliot Ramos scores.
-Top 4 - San Francisco Giants: 5, Chicago Cubs: 2
-
-Jon Berti singles on a ground ball to second baseman Brett Wisely. Dansby Swanson scores.
-Bottom 5 - San Francisco Giants: 5, Chicago Cubs: 3
-
-Justin Turner singles on a sharp ground ball to right fielder Mike Yastrzemski. Pete Crow-Armstrong scores. Carson Kelly to 3rd.
-Bottom 9 - San Francisco Giants: 5, Chicago Cubs: 4
-
-Kyle Tucker singles on a sharp ground ball to center fielder Jung Hoo Lee. Carson Kelly scores. Vidal Bruján to 2nd.
-Bottom 9 - San Francisco Giants: 5, Chicago Cubs: 5
-
-Patrick Bailey singles on a line drive to center fielder Pete Crow-Armstrong. Christian Koss scores. Heliot Ramos to 3rd.
-Top 11 - San Francisco Giants: 6, Chicago Cubs: 5
-
-Brett Wisely hits a sacrifice bunt. Heliot Ramos scores. Patrick Bailey to 2nd. Brett Wisely to 1st.
-Top 11 - San Francisco Giants: 7, Chicago Cubs: 5
-
-Cubs challenged (hit by pitch), call on the field was upheld: Willy Adames hit by pitch. Patrick Bailey scores. Brett Wisely to 3rd. Mike Yastrzemski to 2nd.
-Top 11 - San Francisco Giants: 8, Chicago Cubs: 5
-
-Jung Hoo Lee singles on a line drive to right fielder Kyle Tucker. Brett Wisely scores. Mike Yastrzemski to 3rd. Willy Adames to 2nd.
-Top 11 - San Francisco Giants: 9, Chicago Cubs: 5
-
-Matt Chapman singles on a sharp ground ball to left fielder Ian Happ. Mike Yastrzemski scores. Willy Adames scores. Jung Hoo Lee to 2nd.
-Top 11 - San Francisco Giants: 11, Chicago Cubs: 5
-
-Wilmer Flores singles on a line drive to left fielder Ian Happ. Jung Hoo Lee scores. Matt Chapman to 3rd.
-Top 11 - San Francisco Giants: 12, Chicago Cubs: 5
-
-Heliot Ramos doubles (9) on a sharp line drive to left fielder Ian Happ. Matt Chapman scores. Wilmer Flores to 3rd.
-Top 11 - San Francisco Giants: 13, Chicago Cubs: 5
-
-Patrick Bailey out on a sacrifice fly to center fielder Pete Crow-Armstrong. Wilmer Flores scores.
-Top 11 - San Francisco Giants: 14, Chicago Cubs: 5
+Kyle Isbel singles on a line drive to center fielder Jung Hoo Lee. Maikel Garcia scores. Hunter Renfroe out at 3rd on the throw, center fielder Jung Hoo Lee to shortstop Willy Adames.
+Top 9 - Kansas City Royals: 3, San Francisco Giants: 1
 
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
-2025-05-06 - Baltimore Orioles (1) @ Minnesota Twins (9) (Final)
-
-Final   1 2 3 4 5 6 7 8 9  R   H   E  
-Orioles 0 0 0 1 0 0 0 0 0  1   3   2  
-Twins   0 0 5 0 0 0 4 0 0  9   10  0  
-
-Byron Buxton doubles (5) on a sharp line drive to left fielder Dylan Carlson. Trevor Larnach scores. Willi Castro to 3rd.
-Bottom 3 - Baltimore Orioles: 0, Minnesota Twins: 1
-
-Ryan Jeffers singles on a line drive to right fielder Heston Kjerstad. Willi Castro scores. Byron Buxton scores.
-Bottom 3 - Baltimore Orioles: 0, Minnesota Twins: 3
-
-Carlos Correa homers (2) on a fly ball to left center field. Ryan Jeffers scores.
-Bottom 3 - Baltimore Orioles: 0, Minnesota Twins: 5
-
-Ryan Mountcastle doubles (6) on a sharp line drive to left fielder Willi Castro. Gunnar Henderson scores.
-Top 4 - Baltimore Orioles: 1, Minnesota Twins: 5
-
-Byron Buxton homers (8) on a fly ball to left field. Jonah Bride scores. Willi Castro scores.
-Bottom 7 - Baltimore Orioles: 1, Minnesota Twins: 8
-
-Carlos Correa singles on a line drive to center fielder Cedric Mullins. Ty France scores.
-Bottom 7 - Baltimore Orioles: 1, Minnesota Twins: 9
-
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-
-2025-05-06 - Chicago White Sox (3) @ Kansas City Royals (4) (Final)
+2025-05-19 - Los Angeles Angels (4) @ Athletics (3) (Final)
 
 Final     1 2 3 4 5 6 7 8 9  R   H   E  
-White Sox 0 0 0 1 0 1 0 1 0  3   10  1  
-Royals    0 0 0 0 0 1 0 1 2  4   8   1  
+Angels    1 0 3 0 0 0 0 0 0  4   8   1  
+Athletics 2 0 0 0 1 0 0 0 0  3   7   0  
 
-Brooks Baldwin singles on a ground ball to left fielder Drew Waters. Matt Thaiss scores. Andrew Vaughn to 2nd.
-Top 4 - Chicago White Sox: 1, Kansas City Royals: 0
+Nolan Schanuel homers (3) on a fly ball to right center field.
+Top 1 - Los Angeles Angels: 1, Athletics: 0
 
-Andrew Vaughn reaches on a fielder's choice, fielded by third baseman Jonathan India. Matt Thaiss scores. Fielding error by third baseman Jonathan India.
-Top 6 - Chicago White Sox: 2, Kansas City Royals: 0
+Brent Rooker grounds into a double play, second baseman Luis Rengifo to shortstop Zach Neto to first baseman Nolan Schanuel. Lawrence Butler scores. Jacob Wilson to 3rd. Tyler Soderstrom out at 2nd. Brent Rooker out at 1st.
+Bottom 1 - Los Angeles Angels: 1, Athletics: 1
 
-Kyle Isbel homers (3) on a line drive to right center field.
-Bottom 6 - Chicago White Sox: 2, Kansas City Royals: 1
+Shea Langeliers singles on a ground ball to third baseman Yoán Moncada. Jacob Wilson scores.
+Bottom 1 - Los Angeles Angels: 1, Athletics: 2
 
-Josh Rojas singles on a ground ball to left fielder Drew Waters. Jacob Amaya scores. Brooks Baldwin to 2nd.
-Top 8 - Chicago White Sox: 3, Kansas City Royals: 1
+Yoán Moncada grounds out, second baseman Luis Urías to first baseman Nick Kurtz. Zach Neto scores. Nolan Schanuel to 3rd.
+Top 3 - Los Angeles Angels: 2, Athletics: 2
 
-Salvador Perez doubles (12) on a sharp line drive to left fielder Brooks Baldwin. Vinnie Pasquantino scores.
-Bottom 8 - Chicago White Sox: 3, Kansas City Royals: 2
+Taylor Ward homers (13) on a fly ball to left field. Nolan Schanuel scores.
+Top 3 - Los Angeles Angels: 4, Athletics: 2
 
-Jonathan India singles on a ground ball to shortstop Jacob Amaya. Mark Canha scores. Drew Waters to 3rd. Freddy Fermin to 2nd.
-Bottom 9 - Chicago White Sox: 3, Kansas City Royals: 3
-
-Bobby Witt Jr. singles on a fly ball to center fielder Luis Robert Jr. Drew Waters scores. Freddy Fermin to 3rd. Jonathan India to 2nd.
-Bottom 9 - Chicago White Sox: 3, Kansas City Royals: 4
+Brent Rooker singles on a line drive to left fielder Taylor Ward. Tyler Soderstrom scores.
+Bottom 5 - Los Angeles Angels: 4, Athletics: 3
 
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
-2025-05-06 - Houston Astros (3) @ Milwaukee Brewers (4) (Final)
+2025-05-19 - Arizona Diamondbacks (9) @ Los Angeles Dodgers (5) (Final)
 
 Final   1 2 3 4 5 6 7 8 9  R   H   E  
-Astros  0 0 0 0 0 0 3 0 0  3   5   0  
-Brewers 4 0 0 0 0 0 0 0 0  4   6   0  
+D-backs 2 1 4 0 0 0 0 2 0  9   11  0  
+Dodgers 0 0 0 1 0 2 0 0 2  5   6   0  
 
-Rhys Hoskins doubles (4) on a sharp fly ball to center fielder Jake Meyers. Brice Turang scores. William Contreras scores.
-Bottom 1 - Houston Astros: 0, Milwaukee Brewers: 2
+Eugenio Suárez doubles (9) on a fly ball to center fielder Hyeseong Kim, deflected by right fielder Teoscar Hernández. Ketel Marte scores. Lourdes Gurriel Jr. to 3rd.
+Top 1 - Arizona Diamondbacks: 1, Los Angeles Dodgers: 0
 
-Jake Bauers homers (3) on a fly ball to center field. Rhys Hoskins scores.
-Bottom 1 - Houston Astros: 0, Milwaukee Brewers: 4
+Josh Naylor grounds out, second baseman Tommy Edman to first baseman Freddie Freeman. Lourdes Gurriel Jr. scores. Eugenio Suárez to 3rd.
+Top 1 - Arizona Diamondbacks: 2, Los Angeles Dodgers: 0
 
-Brendan Rodgers homers (1) on a fly ball to right field. Yainer Diaz scores. Jake Meyers scores.
-Top 7 - Houston Astros: 3, Milwaukee Brewers: 4
+Geraldo Perdomo out on a sacrifice fly to left fielder Michael Conforto. Tim Tawa scores.
+Top 2 - Arizona Diamondbacks: 3, Los Angeles Dodgers: 0
 
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Lourdes Gurriel Jr. homers (8) on a fly ball to left center field. Corbin Carroll scores.
+Top 3 - Arizona Diamondbacks: 5, Los Angeles Dodgers: 0
 
-2025-05-06 - Pittsburgh Pirates (1) @ St. Louis Cardinals (2) (Final)
+Gabriel Moreno homers (2) on a fly ball to left center field. Josh Naylor scores.
+Top 3 - Arizona Diamondbacks: 7, Los Angeles Dodgers: 0
 
-Final     1 2 3 4 5 6 7 8 9  R   H   E  
-Pirates   0 0 0 0 0 1 0 0 0  1   4   0  
-Cardinals 0 0 0 0 0 2 0 0 0  2   4   0  
+Mookie Betts homers (7) on a fly ball to left field.
+Bottom 4 - Arizona Diamondbacks: 7, Los Angeles Dodgers: 1
 
-Ke'Bryan Hayes doubles (3) on a line drive to center fielder Victor Scott II. Oneil Cruz scores.
-Top 6 - Pittsburgh Pirates: 1, St. Louis Cardinals: 0
+Shohei Ohtani homers (17) on a fly ball to left field.
+Bottom 6 - Arizona Diamondbacks: 7, Los Angeles Dodgers: 2
 
-Alec Burleson doubles (4) on a line drive to left fielder Alexander Canario. Nolan Arenado scores. Willson Contreras scores.
-Bottom 6 - Pittsburgh Pirates: 1, St. Louis Cardinals: 2
+Mookie Betts homers (8) on a fly ball to left center field.
+Bottom 6 - Arizona Diamondbacks: 7, Los Angeles Dodgers: 3
 
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Geraldo Perdomo homers (6) on a fly ball to center field. Pavin Smith scores.
+Top 8 - Arizona Diamondbacks: 9, Los Angeles Dodgers: 3
 
-2025-05-06 - Toronto Blue Jays (3) @ Los Angeles Angels (8) (Final)
+Teoscar Hernández grounds into a force out, third baseman Eugenio Suárez to second baseman Ketel Marte. Freddie Freeman scores. Will Smith out at 2nd. Teoscar Hernández to 1st.
+Bottom 9 - Arizona Diamondbacks: 9, Los Angeles Dodgers: 4
 
-Final     1 2 3 4 5 6 7 8 9  R   H   E  
-Blue Jays 2 0 0 0 0 0 0 1 0  3   9   1  
-Angels    2 0 0 0 0 0 0 6 0  8   9   0  
-
-George Springer homers (4) on a fly ball to left center field. Vladimir Guerrero Jr. scores.
-Top 1 - Toronto Blue Jays: 2, Los Angeles Angels: 0
-
-Taylor Ward homers (7) on a fly ball to center field. Zach Neto scores.
-Bottom 1 - Toronto Blue Jays: 2, Los Angeles Angels: 2
-
-Anthony Santander homers (5) on a fly ball to right field.
-Top 8 - Toronto Blue Jays: 3, Los Angeles Angels: 2
-
-Nolan Schanuel hits a sacrifice bunt. Zach Neto scores. Nolan Schanuel to 2nd. Fielding error by third baseman Ernie Clement.
-Bottom 8 - Toronto Blue Jays: 3, Los Angeles Angels: 3
-
-Logan O'Hoppe singles on a line drive to left fielder Myles Straw. Nolan Schanuel scores. Taylor Ward to 2nd.
-Bottom 8 - Toronto Blue Jays: 3, Los Angeles Angels: 4
-
-Yoán Moncada homers (1) on a fly ball to right field. Taylor Ward scores. Logan O'Hoppe scores.
-Bottom 8 - Toronto Blue Jays: 3, Los Angeles Angels: 7
-
-Jo Adell homers (3) on a fly ball to center field.
-Bottom 8 - Toronto Blue Jays: 3, Los Angeles Angels: 8
+Tommy Edman singles on a ground ball to right fielder Corbin Carroll. Teoscar Hernández scores. Michael Conforto to 2nd.
+Bottom 9 - Arizona Diamondbacks: 9, Los Angeles Dodgers: 5
 
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-
-2025-05-06 - New York Mets (1) @ Arizona Diamondbacks (5) (Final)
-
-Final   1 2 3 4 5 6 7 8 9  R   H   E  
-Mets    0 0 1 0 0 0 0 0 0  1   4   1  
-D-backs 0 0 0 2 0 2 1 0 0  5   8   0  
-
-Pete Alonso walks. Tyrone Taylor scores. Francisco Lindor to 3rd. Juan Soto to 2nd.
-Top 3 - New York Mets: 1, Arizona Diamondbacks: 0
-
-Josh Naylor grounds into a force out, second baseman Jeff McNeil to shortstop Francisco Lindor. Randal Grichuk scores. Eugenio Suárez out at 2nd. Josh Naylor to 1st.
-Bottom 4 - New York Mets: 1, Arizona Diamondbacks: 1
-
-Geraldo Perdomo grounds out, shortstop Francisco Lindor to first baseman Pete Alonso. Josh Naylor scores. Lourdes Gurriel Jr. to 3rd.
-Bottom 4 - New York Mets: 1, Arizona Diamondbacks: 2
-
-Lourdes Gurriel Jr. homers (6) on a fly ball to left center field. Josh Naylor scores.
-Bottom 6 - New York Mets: 1, Arizona Diamondbacks: 4
-
-Josh Naylor out on a sacrifice fly to left fielder Brandon Nimmo. Corbin Carroll scores.
-Bottom 7 - New York Mets: 1, Arizona Diamondbacks: 5
-
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-
-2025-05-06 - Seattle Mariners (5) @ Athletics (3) (Final)
-
-Final     1 2 3 4 5 6 7 8 9  R   H   E  
-Mariners  1 1 0 0 0 0 0 0 3  5   10  1  
-Athletics 1 0 1 0 0 0 0 1 0  3   10  0  
-
-Julio Rodríguez homers (6) on a fly ball to center field.
-Top 1 - Seattle Mariners: 1, Athletics: 0
-
-Miguel Andujar singles on a ground ball to right fielder Dylan Moore. Brent Rooker scores. Miguel Andujar out at 2nd on the throw, right fielder Dylan Moore to first baseman Donovan Solano to shortstop J.P. Crawford.
-Bottom 1 - Seattle Mariners: 1, Athletics: 1
-
-Miles Mastrobuoni doubles (2) on a fly ball to left fielder Tyler Soderstrom. Ben Williamson scores.
-Top 2 - Seattle Mariners: 2, Athletics: 1
-
-Brent Rooker singles on a ground ball to center fielder Julio Rodríguez. Nick Kurtz scores.
-Bottom 3 - Seattle Mariners: 2, Athletics: 2
-
-Miguel Andujar singles on a ground ball to center fielder Julio Rodríguez. Brent Rooker scores. Tyler Soderstrom to 2nd.
-Bottom 8 - Seattle Mariners: 2, Athletics: 3
-
-Cal Raleigh singles on a line drive to right fielder Lawrence Butler. Jorge Polanco scores. Julio Rodríguez scores. Leo Rivas to 3rd.
-Top 9 - Seattle Mariners: 4, Athletics: 3
-
-Dylan Moore out on a sacrifice fly to right fielder Lawrence Butler. Leo Rivas scores.
-Top 9 - Seattle Mariners: 5, Athletics: 3
-
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-
-2025-05-06 - Detroit Tigers @ Colorado Rockies (Postponed)
-
-Preview 1 2 3 4 5 6 7 8 9  R   H   E  
-Tigers                     0   0   0  
-Rockies                    0   0   0  
-
-
-
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-
-
-MLB Standings:
+</pre>
+        <h2 id="standings">Standings</h2>
+        <pre>MLB Standings:
 American League East
 Rank Team                   W   L   GB  (E#) WC Rank WC GB (E#)
- 1   New York Yankees      20  16   -    -      -      -    -  
- 2   Boston Red Sox        18  19  2.5  124     5     2.0  124 
- 3   Tampa Bay Rays        16  19  3.5  124     7     3.0  124 
- 4   Toronto Blue Jays     16  19  3.5  124     8     3.0  124 
- 5   Baltimore Orioles     13  21  6.0  122    11     5.5  122 
+ 1   New York Yankees      27  19   -    -      -      -    -  
+ 2   Boston Red Sox        24  25  4.5  111     6     2.5  113 
+ 3   Toronto Blue Jays     22  24  5.0  112     7     3.0  114 
+ 4   Tampa Bay Rays        21  26  6.5  110    10     4.5  112 
+ 5   Baltimore Orioles     15  31  12.0 105    11    10.0  107 
 
 American League Central
 Rank Team                   W   L   GB  (E#) WC Rank WC GB (E#)
- 1   Detroit Tigers        22  13   -    -      -      -    -  
- 2   Cleveland Guardians   21  15  1.5  126     1    +1.5   -  
- 3   Kansas City Royals    21  16  2.0  125     2    +1.0   -  
- 4   Minnesota Twins       16  20  6.5  121     9     3.5  123 
- 5   Chicago White Sox     10  26  12.5 115    12     9.5  117 
+ 1   Detroit Tigers        31  17   -    -      -      -    -  
+ 2   Minnesota Twins       26  21  4.5  111     1    +0.5   -  
+ 3   Kansas City Royals    27  22  4.5  110     2    +0.5   -  
+ 4   Cleveland Guardians   25  21  5.0  111     3      -    -  
+ 5   Chicago White Sox     14  34  17.0  98    12    12.0  104 
 
 American League West
 Rank Team                   W   L   GB  (E#) WC Rank WC GB (E#)
- 1   Seattle Mariners      21  14   -    -      -      -    -  
- 2   Athletics             20  17  2.0  125     3      -    -  
- 3   Texas Rangers         18  18  3.5  124     4     1.5  125 
- 4   Houston Astros        17  18  4.0  124     6     2.0  125 
- 5   Los Angeles Angels    14  20  6.5  122    10     4.5  123 
+ 1   Seattle Mariners      27  19   -    -      -      -    -  
+ 2   Houston Astros        25  22  2.5  114     4     0.5  116 
+ 3   Texas Rangers         25  23  3.0  113     5     1.0  115 
+ 4   Athletics             22  26  6.0  110     8     4.0  112 
+ 5   Los Angeles Angels    21  25  6.0  111     9     4.0  113 
 
 National League East
 Rank Team                   W   L   GB  (E#) WC Rank WC GB (E#)
- 1   New York Mets         23  14   -    -      -      -    -  
- 2   Philadelphia Phillies 20  15  2.0  125     3      -    -  
- 3   Atlanta Braves        17  18  5.0  122     8     3.0  125 
- 4   Washington Nationals  17  20  6.0  120     9     4.0  123 
- 5   Miami Marlins         14  21  8.0  119    10     6.0  122 
+ 1   Philadelphia Phillies 29  18   -    -      -      -    -  
+ 2   New York Mets         29  19  0.5  115     1    +1.0   -  
+ 3   Atlanta Braves        24  23  5.0  111     6     3.5  112 
+ 4   Washington Nationals  21  27  8.5  107     9     7.0  108 
+ 5   Miami Marlins         19  27  9.5  107    10     8.0  108 
 
 National League Central
 Rank Team                   W   L   GB  (E#) WC Rank WC GB (E#)
- 1   Chicago Cubs          22  15   -    -      -      -    -  
- 2   Milwaukee Brewers     19  18  3.0  123     5     2.0  125 
- 3   Cincinnati Reds       18  19  4.0  122     6     3.0  124 
- 4   St. Louis Cardinals   18  19  4.0  122     7     3.0  124 
- 5   Pittsburgh Pirates    12  25  10.0 116    11     9.0  118 
+ 1   Chicago Cubs          28  20   -    -      -      -    -  
+ 2   St. Louis Cardinals   27  21  1.0  114     4     1.0  114 
+ 3   Cincinnati Reds       25  24  3.5  111     7     3.5  111 
+ 4   Milwaukee Brewers     23  25  5.0  110     8     5.0  110 
+ 5   Pittsburgh Pirates    15  33  13.0 102    11    13.0  102 
 
 National League West
 Rank Team                   W   L   GB  (E#) WC Rank WC GB (E#)
- 1   Los Angeles Dodgers   24  12   -    -      -      -    -  
- 2   San Diego Padres      23  12  0.5  127     1    +3.0   -  
- 3   San Francisco Giants  23  14  1.5  125     2    +2.0   -  
- 4   Arizona Diamondbacks  19  17  5.0  122     4     1.5  126 
- 5   Colorado Rockies       6  28  17.0 111    12    13.5  115 
+ 1   Los Angeles Dodgers   29  19   -    -      -      -    -  
+ 2   San Diego Padres      27  18  0.5  116     2    +0.5   -  
+ 3   San Francisco Giants  28  20  1.0  114     3      -    -  
+ 4   Arizona Diamondbacks  26  22  3.0  112     5     2.0  113 
+ 5   Colorado Rockies       8  39  20.5  95    12    19.5   96 
 
-
-
-Today's Schedule:
-2025-05-07 - Cleveland Guardians @ Washington Nationals (Scheduled)
-2025-05-07 - Houston Astros @ Milwaukee Brewers (Scheduled)
-2025-05-07 - Pittsburgh Pirates @ St. Louis Cardinals (Pre-Game)
-2025-05-07 - San Francisco Giants @ Chicago Cubs (Scheduled)
-2025-05-07 - Seattle Mariners @ Athletics (Scheduled)
-2025-05-07 - New York Mets @ Arizona Diamondbacks (Scheduled)
-2025-05-07 - Los Angeles Dodgers @ Miami Marlins (Scheduled)
-2025-05-07 - Texas Rangers @ Boston Red Sox (Scheduled)
-2025-05-07 - Philadelphia Phillies @ Tampa Bay Rays (Scheduled)
-2025-05-07 - San Diego Padres @ New York Yankees (Scheduled)
-2025-05-07 - Cincinnati Reds @ Atlanta Braves (Scheduled)
-2025-05-07 - Baltimore Orioles @ Minnesota Twins (Scheduled)
-2025-05-07 - Chicago White Sox @ Kansas City Royals (Scheduled)
-2025-05-07 - Detroit Tigers @ Colorado Rockies (Scheduled)
-2025-05-07 - Toronto Blue Jays @ Los Angeles Angels (Scheduled)</pre>
+</pre>
+        <h2 id="todays-schedule">Today's Schedule</h2>
+        <pre>Today's Schedule:
+2025-05-20 - Cleveland Guardians @ Minnesota Twins (Suspended: Rain)
+2025-05-20 - Cincinnati Reds @ Pittsburgh Pirates (Scheduled)
+2025-05-20 - Chicago Cubs @ Miami Marlins (Scheduled)
+2025-05-20 - New York Mets @ Boston Red Sox (Scheduled)
+2025-05-20 - Atlanta Braves @ Washington Nationals (Scheduled)
+2025-05-20 - Houston Astros @ Tampa Bay Rays (Scheduled)
+2025-05-20 - Texas Rangers @ New York Yankees (Scheduled)
+2025-05-20 - San Diego Padres @ Toronto Blue Jays (Scheduled)
+2025-05-20 - Cleveland Guardians @ Minnesota Twins (Scheduled)
+2025-05-20 - Seattle Mariners @ Chicago White Sox (Scheduled)
+2025-05-20 - Baltimore Orioles @ Milwaukee Brewers (Scheduled)
+2025-05-20 - Detroit Tigers @ St. Louis Cardinals (Scheduled)
+2025-05-20 - Philadelphia Phillies @ Colorado Rockies (Scheduled)
+2025-05-20 - Kansas City Royals @ San Francisco Giants (Scheduled)
+2025-05-20 - Los Angeles Angels @ Athletics (Scheduled)
+2025-05-20 - Arizona Diamondbacks @ Los Angeles Dodgers (Scheduled)</pre>
         <h2 id="match-overviews">Match Overviews</h2>
-        <pre>Match: AWAY: Cleveland Guardians vs HOME: Washington Nationals
+        <pre>Match: AWAY: Cleveland Guardians vs HOME: Minnesota Twins
 
 Away Probable Pitcher: Logan Allen
-    ERA: 4.57
-    Strikeouts per 9 Innings: 7.80
+    ERA: 4.50
+    Strikeouts per 9 Innings: 7.81
 
-Home Probable Pitcher: Michael Soroka
-    ERA: 3.73
-    Strikeouts per 9 Innings: 7.80
+Home Probable Pitcher: Bailey Ober
+    ERA: 3.76
+    Strikeouts per 9 Innings: 9.08
 
 Away Team Home Run Leaders:
-  - Kyle Manzardo: 8 HR
-  - Bo Naylor: 5 HR
-  - José Ramírez: 5 HR
-  - Daniel Schneemann: 5 HR
+  - Kyle Manzardo: 10 HR
+  - José Ramírez: 9 HR
+  - Bo Naylor: 6 HR
+  - Daniel Schneemann: 6 HR
   - Gabriel Arias: 4 HR
   - Steven Kwan: 4 HR
   - Carlos Santana: 4 HR
@@ -613,566 +504,550 @@ Away Team Home Run Leaders:
   - Jhonkensy Noel: 2 HR
 
 Home Team Home Run Leaders:
-  - James Wood: 10 HR
-  - Nathaniel Lowe: 6 HR
-  - Josh Bell: 5 HR
-  - CJ Abrams: 4 HR
-  - Dylan Crews: 4 HR
-  - Luis García Jr.: 3 HR
+  - Byron Buxton: 10 HR
+  - Trevor Larnach: 7 HR
+  - Harrison Bader: 4 HR
+  - Brooks Lee: 4 HR
+  - Kody Clemens: 3 HR
+  - Ty France: 3 HR
+  - Ryan Jeffers: 3 HR
+  - Willi Castro: 2 HR
+  - Carlos Correa: 2 HR
+  - Edouard Julien: 2 HR
+
+Match: AWAY: Cincinnati Reds vs HOME: Pittsburgh Pirates
+
+Away Probable Pitcher: Nick Martinez
+    ERA: 4.06
+    Strikeouts per 9 Innings: 6.47
+
+Home Probable Pitcher: Bailey Falter
+    ERA: 4.55
+    Strikeouts per 9 Innings: 6.94
+
+Away Team Home Run Leaders:
+  - Elly De La Cruz: 8 HR
+  - Austin Hays: 6 HR
+  - Matt McLain: 6 HR
+  - Will Benson: 5 HR
+  - Spencer Steer: 4 HR
+  - Jake Fraley: 3 HR
+  - TJ Friedl: 3 HR
+  - Noelvi Marte: 3 HR
+  - Jose Trevino: 3 HR
+  - Austin Wynns: 3 HR
+
+Home Team Home Run Leaders:
+  - Oneil Cruz: 8 HR
+  - Bryan Reynolds: 6 HR
+  - Alexander Canario: 3 HR
+  - Andrew McCutchen: 3 HR
+  - Adam Frazier: 2 HR
+  - Matt Gorski: 2 HR
+  - Jared Triolo: 2 HR
+  - Enmanuel Valdez: 2 HR
+  - Joey Bart: 1 HR
+  - Henry Davis: 1 HR
+  - Nick Gonzales: 1 HR
+  - Ke'Bryan Hayes: 1 HR
+  - Isiah Kiner-Falefa: 1 HR
+
+Match: AWAY: Chicago Cubs vs HOME: Miami Marlins
+
+Away Probable Pitcher: Jameson Taillon
+    ERA: 3.92
+    Strikeouts per 9 Innings: 7.91
+
+Home Probable Pitcher: Ryan Weathers
+    ERA: 5.01
+    Strikeouts per 9 Innings: 7.38
+
+Away Team Home Run Leaders:
+  - Pete Crow-Armstrong: 12 HR
+  - Seiya Suzuki: 11 HR
+  - Dansby Swanson: 10 HR
+  - Kyle Tucker: 10 HR
+  - Carson Kelly: 8 HR
+  - Michael Busch: 7 HR
+  - Miguel Amaya: 4 HR
+  - Ian Happ: 3 HR
+  - Matt Shaw: 1 HR
+
+Home Team Home Run Leaders:
+  - Kyle Stowers: 10 HR
+  - Matt Mervis: 7 HR
+  - Agustín Ramírez: 6 HR
+  - Liam Hicks: 4 HR
+  - Otto Lopez: 3 HR
+  - Dane Myers: 3 HR
+  - Eric Wagaman: 3 HR
+  - Derek Hill: 2 HR
+  - Connor Norby: 2 HR
+  - Jesús Sánchez: 2 HR
+
+Match: AWAY: New York Mets vs HOME: Boston Red Sox
+
+Away Probable Pitcher: Clay Holmes
+    ERA: 3.64
+    Strikeouts per 9 Innings: 9.51
+
+Home Probable Pitcher: Walker Buehler
+    ERA: 3.31
+    Strikeouts per 9 Innings: 9.43
+
+Away Team Home Run Leaders:
+  - Pete Alonso: 9 HR
+  - Francisco Lindor: 9 HR
+  - Brandon Nimmo: 8 HR
+  - Juan Soto: 8 HR
+  - Brett Baty: 5 HR
+  - Mark Vientos: 5 HR
+  - Starling Marte: 2 HR
+  - Jeff McNeil: 2 HR
+  - Francisco Alvarez: 1 HR
+  - Tyrone Taylor: 1 HR
+  - Luis Torrens: 1 HR
+  - Jesse Winker: 1 HR
+
+Home Team Home Run Leaders:
+  - Wilyer Abreu: 11 HR
+  - Alex Bregman: 11 HR
+  - Rafael Devers: 9 HR
+  - Trevor Story: 6 HR
+  - Kristian Campbell: 5 HR
+  - Carlos Narváez: 4 HR
+  - Triston Casas: 3 HR
+  - Jarren Duran: 3 HR
+  - Rob Refsnyder: 3 HR
+  - David Hamilton: 2 HR
+  - Ceddanne Rafaela: 2 HR
+
+Match: AWAY: Atlanta Braves vs HOME: Washington Nationals
+
+Away Probable Pitcher: 
+Home Probable Pitcher: Mitchell Parker
+    ERA: 4.30
+    Strikeouts per 9 Innings: 7.39
+
+Away Team Home Run Leaders:
+  - Matt Olson: 9 HR
+  - Sean Murphy: 8 HR
+  - Marcell Ozuna: 8 HR
+  - Austin Riley: 8 HR
+  - Ozzie Albies: 5 HR
+  - Drake Baldwin: 5 HR
+  - Michael Harris II: 3 HR
+  - Jarred Kelenic: 2 HR
+  - Eli White: 2 HR
+
+Home Team Home Run Leaders:
+  - James Wood: 12 HR
+  - CJ Abrams: 8 HR
+  - Nathaniel Lowe: 8 HR
+  - Josh Bell: 6 HR
+  - Dylan Crews: 6 HR
+  - Luis García Jr.: 4 HR
   - Riley Adams: 2 HR
   - Amed Rosario: 2 HR
   - Keibert Ruiz: 2 HR
 
-Match: AWAY: Houston Astros vs HOME: Milwaukee Brewers
+Match: AWAY: Houston Astros vs HOME: Tampa Bay Rays
 
-Away Probable Pitcher: Framber Valdez
-    ERA: 3.35
-    Strikeouts per 9 Innings: 8.74
-
-Home Probable Pitcher: Quinn Priester
-    ERA: 6.15
-    Strikeouts per 9 Innings: 6.29
+Away Probable Pitcher: Brandon Walter
+Home Probable Pitcher: Zack Littell
+    ERA: 3.96
+    Strikeouts per 9 Innings: 7.62
 
 Away Team Home Run Leaders:
+  - Isaac Paredes: 7 HR
+  - Jeremy Peña: 6 HR
+  - Yainer Diaz: 5 HR
+  - Christian Walker: 5 HR
   - Jose Altuve: 4 HR
-  - Isaac Paredes: 4 HR
-  - Jeremy Peña: 4 HR
-  - Christian Walker: 4 HR
   - Yordan Alvarez: 3 HR
-  - Yainer Diaz: 3 HR
+  - Victor Caratini: 3 HR
+  - Jake Meyers: 3 HR
   - Cam Smith: 3 HR
-  - Jake Meyers: 2 HR
-  - Victor Caratini: 1 HR
   - Zach Dezenzo: 1 HR
   - Brendan Rodgers: 1 HR
 
 Home Team Home Run Leaders:
-  - Jackson Chourio: 6 HR
-  - Christian Yelich: 6 HR
-  - Rhys Hoskins: 4 HR
-  - Jake Bauers: 3 HR
-  - William Contreras: 3 HR
-  - Brice Turang: 3 HR
-  - Vinny Capra: 1 HR
-  - Isaac Collins: 1 HR
-  - Caleb Durbin: 1 HR
-  - Sal Frelick: 1 HR
-  - Eric Haase: 1 HR
+  - Junior Caminero: 8 HR
+  - Brandon Lowe: 7 HR
+  - Jonathan Aranda: 6 HR
+  - Yandy Díaz: 6 HR
+  - Kameron Misner: 4 HR
+  - Danny Jansen: 3 HR
+  - Christopher Morel: 3 HR
+  - José Caballero: 1 HR
+  - Josh Lowe: 1 HR
+  - Taylor Walls: 1 HR
 
-Match: AWAY: Pittsburgh Pirates vs HOME: St. Louis Cardinals
+Match: AWAY: Texas Rangers vs HOME: New York Yankees
 
-Away Probable Pitcher: Mitch Keller
-    ERA: 4.58
-    Strikeouts per 9 Innings: 8.70
+Away Probable Pitcher: Patrick Corbin
+    ERA: 4.49
+    Strikeouts per 9 Innings: 8.20
 
-Home Probable Pitcher: Sonny Gray
-    ERA: 3.52
-    Strikeouts per 9 Innings: 8.93
+Home Probable Pitcher: Will Warren
+    ERA: 6.64
+    Strikeouts per 9 Innings: 11.17
 
 Away Team Home Run Leaders:
-  - Oneil Cruz: 8 HR
-  - Bryan Reynolds: 5 HR
-  - Andrew McCutchen: 3 HR
-  - Adam Frazier: 2 HR
-  - Enmanuel Valdez: 2 HR
-  - Joey Bart: 1 HR
-  - Alexander Canario: 1 HR
-  - Henry Davis: 1 HR
-  - Nick Gonzales: 1 HR
-  - Matt Gorski: 1 HR
-  - Ke'Bryan Hayes: 1 HR
+  - Wyatt Langford: 9 HR
+  - Josh Jung: 7 HR
+  - Adolis García: 6 HR
+  - Corey Seager: 6 HR
+  - Jonah Heim: 5 HR
+  - Jake Burger: 4 HR
+  - Josh Smith: 4 HR
+  - Marcus Semien: 3 HR
+  - Joc Pederson: 2 HR
+  - Evan Carter: 1 HR
+  - Dustin Harris: 1 HR
+  - Kyle Higashioka: 1 HR
+  - Leody Taveras: 1 HR
 
 Home Team Home Run Leaders:
-  - Willson Contreras: 5 HR
-  - Lars Nootbaar: 5 HR
-  - Iván Herrera: 4 HR
-  - Nolan Arenado: 3 HR
-  - Brendan Donovan: 3 HR
-  - Masyn Winn: 3 HR
-  - Alec Burleson: 2 HR
-  - Pedro Pagés: 2 HR
-  - Victor Scott II: 2 HR
-  - Jordan Walker: 2 HR
+  - Aaron Judge: 15 HR
+  - Trent Grisham: 12 HR
+  - Ben Rice: 9 HR
+  - Austin Wells: 8 HR
+  - Cody Bellinger: 7 HR
+  - Jazz Chisholm Jr.: 7 HR
+  - Anthony Volpe: 6 HR
+  - Jasson Domínguez: 5 HR
+  - Paul Goldschmidt: 5 HR
+  - Oswald Peraza: 2 HR
 
-Match: AWAY: San Francisco Giants vs HOME: Chicago Cubs
+Match: AWAY: San Diego Padres vs HOME: Toronto Blue Jays
 
-Away Probable Pitcher: Robbie Ray
-    ERA: 3.96
-    Strikeouts per 9 Innings: 11.03
+Away Probable Pitcher: Dylan Cease
+    ERA: 3.79
+    Strikeouts per 9 Innings: 10.81
 
-Home Probable Pitcher: Ben Brown
-    ERA: 4.05
-    Strikeouts per 9 Innings: 10.28
-
+Home Probable Pitcher: 
 Away Team Home Run Leaders:
-  - Matt Chapman: 7 HR
-  - Wilmer Flores: 7 HR
-  - Heliot Ramos: 5 HR
-  - Mike Yastrzemski: 5 HR
-  - Willy Adames: 4 HR
-  - Jung Hoo Lee: 4 HR
-  - Luis Matos: 3 HR
-  - Tyler Fitzgerald: 2 HR
-  - Sam Huff: 1 HR
-  - LaMonte Wade Jr.: 1 HR
+  - Fernando Tatis Jr.: 12 HR
+  - Gavin Sheets: 6 HR
+  - Jackson Merrill: 4 HR
+  - Luis Arraez: 3 HR
+  - Xander Bogaerts: 3 HR
+  - Jake Cronenworth: 3 HR
+  - Elias Díaz: 3 HR
+  - Manny Machado: 3 HR
+  - Jason Heyward: 2 HR
+  - Martín Maldonado: 2 HR
 
 Home Team Home Run Leaders:
-  - Pete Crow-Armstrong: 9 HR
-  - Seiya Suzuki: 9 HR
-  - Kyle Tucker: 9 HR
-  - Carson Kelly: 8 HR
-  - Dansby Swanson: 7 HR
-  - Michael Busch: 6 HR
-  - Miguel Amaya: 3 HR
-  - Ian Happ: 3 HR
-  - Matt Shaw: 1 HR
+  - Daulton Varsho: 6 HR
+  - Vladimir Guerrero Jr.: 5 HR
+  - Anthony Santander: 5 HR
+  - George Springer: 5 HR
+  - Bo Bichette: 4 HR
+  - Andrés Giménez: 3 HR
+  - Alejandro Kirk: 3 HR
+  - Nathan Lukes: 3 HR
+  - Addison Barger: 2 HR
+  - Ernie Clement: 1 HR
+  - Tyler Heineman: 1 HR
+  - Alan Roden: 1 HR
+  - Myles Straw: 1 HR
 
-Match: AWAY: Seattle Mariners vs HOME: Athletics
+Match: AWAY: Cleveland Guardians vs HOME: Minnesota Twins
 
-Away Probable Pitcher: Bryan Woo
-    ERA: 3.31
-    Strikeouts per 9 Innings: 8.44
+Away Probable Pitcher: Gavin Williams
+    ERA: 4.10
+    Strikeouts per 9 Innings: 9.50
 
-Home Probable Pitcher: Gunnar Hoglund
-    ERA: 1.50
-    Strikeouts per 9 Innings: 10.50
+Home Probable Pitcher: Chris Paddack
+    ERA: 4.34
+    Strikeouts per 9 Innings: 8.61
 
 Away Team Home Run Leaders:
-  - Cal Raleigh: 12 HR
-  - Jorge Polanco: 9 HR
-  - Dylan Moore: 6 HR
-  - Julio Rodríguez: 6 HR
-  - Randy Arozarena: 5 HR
-  - Rowdy Tellez: 4 HR
-  - J.P. Crawford: 3 HR
+  - Kyle Manzardo: 10 HR
+  - José Ramírez: 9 HR
+  - Bo Naylor: 6 HR
+  - Daniel Schneemann: 6 HR
+  - Gabriel Arias: 4 HR
+  - Steven Kwan: 4 HR
+  - Carlos Santana: 4 HR
+  - Austin Hedges: 3 HR
+  - Nolan Jones: 2 HR
+  - Jhonkensy Noel: 2 HR
+
+Home Team Home Run Leaders:
+  - Byron Buxton: 10 HR
+  - Trevor Larnach: 7 HR
+  - Harrison Bader: 4 HR
+  - Brooks Lee: 4 HR
+  - Kody Clemens: 3 HR
+  - Ty France: 3 HR
+  - Ryan Jeffers: 3 HR
+  - Willi Castro: 2 HR
+  - Carlos Correa: 2 HR
+  - Edouard Julien: 2 HR
+
+Match: AWAY: Seattle Mariners vs HOME: Chicago White Sox
+
+Away Probable Pitcher: 
+Home Probable Pitcher: Bryse Wilson
+    ERA: 4.71
+    Strikeouts per 9 Innings: 6.53
+
+Away Team Home Run Leaders:
+  - Cal Raleigh: 15 HR
+  - Jorge Polanco: 10 HR
+  - Julio Rodríguez: 8 HR
+  - Rowdy Tellez: 8 HR
+  - Dylan Moore: 7 HR
+  - Randy Arozarena: 6 HR
+  - J.P. Crawford: 4 HR
   - Luke Raley: 2 HR
   - Ryan Bliss: 1 HR
   - Mitch Garver: 1 HR
   - Ben Williamson: 1 HR
 
 Home Team Home Run Leaders:
-  - Brent Rooker: 9 HR
-  - Tyler Soderstrom: 9 HR
-  - Shea Langeliers: 7 HR
-  - Lawrence Butler: 5 HR
-  - Luis Urías: 5 HR
-  - JJ Bleday: 4 HR
-  - Jacob Wilson: 3 HR
-  - Miguel Andujar: 2 HR
-  - Seth Brown: 1 HR
-  - Max Muncy: 1 HR
+  - Miguel Vargas: 6 HR
+  - Andrew Benintendi: 5 HR
+  - Luis Robert Jr.: 5 HR
+  - Andrew Vaughn: 5 HR
+  - Brooks Baldwin: 3 HR
+  - Lenyn Sosa: 3 HR
+  - Tim Elko: 2 HR
+  - Nick Maton: 2 HR
+  - Michael A. Taylor: 2 HR
+  - Chase Meidroth: 1 HR
+  - Joshua Palacios: 1 HR
+  - Austin Slater: 1 HR
+  - Matt Thaiss: 1 HR
 
-Match: AWAY: New York Mets vs HOME: Arizona Diamondbacks
+Match: AWAY: Baltimore Orioles vs HOME: Milwaukee Brewers
 
-Away Probable Pitcher: Kodai Senga
-    ERA: 2.73
-    Strikeouts per 9 Innings: 10.66
+Away Probable Pitcher: Keegan Akin
+    ERA: 4.60
+    Strikeouts per 9 Innings: 9.42
 
-Home Probable Pitcher: Merrill Kelly
-    ERA: 3.83
-    Strikeouts per 9 Innings: 8.05
-
-Away Team Home Run Leaders:
-  - Pete Alonso: 9 HR
-  - Francisco Lindor: 7 HR
-  - Brandon Nimmo: 7 HR
-  - Juan Soto: 5 HR
-  - Mark Vientos: 4 HR
-  - Starling Marte: 2 HR
-  - Francisco Alvarez: 1 HR
-  - Brett Baty: 1 HR
-  - Jeff McNeil: 1 HR
-  - Tyrone Taylor: 1 HR
-  - Luis Torrens: 1 HR
-  - Jesse Winker: 1 HR
-
-Home Team Home Run Leaders:
-  - Corbin Carroll: 10 HR
-  - Eugenio Suárez: 10 HR
-  - Lourdes Gurriel Jr.: 6 HR
-  - Geraldo Perdomo: 5 HR
-  - Tim Tawa: 5 HR
-  - Josh Naylor: 4 HR
-  - Pavin Smith: 4 HR
-  - Jose Herrera: 1 HR
-
-Match: AWAY: Los Angeles Dodgers vs HOME: Miami Marlins
-
-Away Probable Pitcher: 
-Home Probable Pitcher: Valente Bellozo
-    ERA: 3.87
-    Strikeouts per 9 Innings: 5.64
+Home Probable Pitcher: Logan Henderson
+    ERA: 2.45
+    Strikeouts per 9 Innings: 13.09
 
 Away Team Home Run Leaders:
-  - Shohei Ohtani: 10 HR
-  - Teoscar Hernández: 9 HR
-  - Tommy Edman: 8 HR
-  - Freddie Freeman: 8 HR
-  - Andy Pages: 6 HR
-  - Mookie Betts: 5 HR
-  - Enrique Hernández: 5 HR
-  - Will Smith: 3 HR
-  - Michael Conforto: 2 HR
-  - Max Muncy: 1 HR
-  - Miguel Rojas: 1 HR
-
-Home Team Home Run Leaders:
-  - Matt Mervis: 7 HR
-  - Kyle Stowers: 6 HR
-  - Agustín Ramírez: 4 HR
-  - Dane Myers: 3 HR
-  - Eric Wagaman: 3 HR
-  - Liam Hicks: 2 HR
-  - Otto Lopez: 2 HR
-  - Griffin Conine: 1 HR
-  - Derek Hill: 1 HR
-  - Connor Norby: 1 HR
-  - Javier Sanoja: 1 HR
-  - Jesús Sánchez: 1 HR
-
-Match: AWAY: Texas Rangers vs HOME: Boston Red Sox
-
-Away Probable Pitcher: Tyler Mahle
-    ERA: 4.15
-    Strikeouts per 9 Innings: 9.43
-
-Home Probable Pitcher: Tanner Houck
-    ERA: 3.77
-    Strikeouts per 9 Innings: 8.61
-
-Away Team Home Run Leaders:
-  - Wyatt Langford: 6 HR
-  - Adolis García: 4 HR
-  - Jonah Heim: 4 HR
-  - Corey Seager: 4 HR
-  - Jake Burger: 3 HR
-  - Josh Smith: 3 HR
-  - Josh Jung: 2 HR
-  - Marcus Semien: 2 HR
-  - Dustin Harris: 1 HR
-  - Kyle Higashioka: 1 HR
-  - Leody Taveras: 1 HR
-
-Home Team Home Run Leaders:
-  - Alex Bregman: 8 HR
-  - Wilyer Abreu: 7 HR
-  - Rafael Devers: 5 HR
-  - Trevor Story: 5 HR
-  - Kristian Campbell: 4 HR
-  - Triston Casas: 3 HR
-  - Carlos Narváez: 3 HR
-  - Jarren Duran: 2 HR
-  - Ceddanne Rafaela: 2 HR
-  - Rob Refsnyder: 2 HR
-
-Match: AWAY: Philadelphia Phillies vs HOME: Tampa Bay Rays
-
-Away Probable Pitcher: Cristopher Sánchez
-    ERA: 3.67
-    Strikeouts per 9 Innings: 8.28
-
-Home Probable Pitcher: Shane Baz
-    ERA: 3.49
-    Strikeouts per 9 Innings: 8.96
-
-Away Team Home Run Leaders:
-  - Kyle Schwarber: 12 HR
-  - Bryce Harper: 6 HR
-  - Max Kepler: 5 HR
-  - Nick Castellanos: 4 HR
-  - J.T. Realmuto: 3 HR
-  - Bryson Stott: 2 HR
-  - Alec Bohm: 1 HR
-  - Brandon Marsh: 1 HR
-  - Johan Rojas: 1 HR
-  - Trea Turner: 1 HR
-  - Weston Wilson: 1 HR
-
-Home Team Home Run Leaders:
-  - Junior Caminero: 6 HR
-  - Jonathan Aranda: 5 HR
-  - Yandy Díaz: 5 HR
-  - Brandon Lowe: 4 HR
-  - Kameron Misner: 3 HR
-  - Christopher Morel: 3 HR
-  - José Caballero: 1 HR
-  - Danny Jansen: 1 HR
-  - Taylor Walls: 1 HR
-
-Match: AWAY: San Diego Padres vs HOME: New York Yankees
-
-Away Probable Pitcher: Dylan Cease
-    ERA: 3.82
-    Strikeouts per 9 Innings: 10.78
-
-Home Probable Pitcher: Max Fried
-    ERA: 2.97
-    Strikeouts per 9 Innings: 8.74
-
-Away Team Home Run Leaders:
-  - Fernando Tatis Jr.: 8 HR
-  - Gavin Sheets: 4 HR
-  - Luis Arraez: 3 HR
-  - Elias Díaz: 3 HR
-  - Manny Machado: 3 HR
-  - Jackson Merrill: 3 HR
-  - Jake Cronenworth: 2 HR
-  - Xander Bogaerts: 1 HR
-  - Jason Heyward: 1 HR
-  - Martín Maldonado: 1 HR
-
-Home Team Home Run Leaders:
-  - Aaron Judge: 12 HR
-  - Trent Grisham: 9 HR
-  - Ben Rice: 8 HR
-  - Jazz Chisholm Jr.: 7 HR
-  - Austin Wells: 7 HR
-  - Anthony Volpe: 5 HR
-  - Cody Bellinger: 4 HR
-  - Paul Goldschmidt: 3 HR
-  - Jasson Domínguez: 2 HR
-  - Oswaldo Cabrera: 1 HR
-  - J.C. Escarra: 1 HR
-  - Oswald Peraza: 1 HR
-
-Match: AWAY: Cincinnati Reds vs HOME: Atlanta Braves
-
-Away Probable Pitcher: Hunter Greene
-    ERA: 3.76
-    Strikeouts per 9 Innings: 11.28
-
-Home Probable Pitcher: Grant Holmes
-    ERA: 3.78
-    Strikeouts per 9 Innings: 9.23
-
-Away Team Home Run Leaders:
-  - Elly De La Cruz: 5 HR
-  - Austin Hays: 5 HR
-  - Matt McLain: 4 HR
-  - Jake Fraley: 3 HR
-  - Noelvi Marte: 3 HR
-  - Spencer Steer: 3 HR
-  - Jose Trevino: 3 HR
-  - Austin Wynns: 3 HR
-  - Jeimer Candelario: 2 HR
-  - Christian Encarnacion-Strand: 2 HR
-
-Home Team Home Run Leaders:
-  - Austin Riley: 8 HR
-  - Sean Murphy: 7 HR
-  - Matt Olson: 6 HR
-  - Ozzie Albies: 5 HR
-  - Marcell Ozuna: 5 HR
-  - Michael Harris II: 3 HR
-  - Drake Baldwin: 2 HR
-  - Jarred Kelenic: 2 HR
-  - Eli White: 2 HR
-
-Match: AWAY: Baltimore Orioles vs HOME: Minnesota Twins
-
-Away Probable Pitcher: Charlie Morton
-    ERA: 4.09
-    Strikeouts per 9 Innings: 8.66
-
-Home Probable Pitcher: Simeon Woods Richardson
-    ERA: 4.28
-    Strikeouts per 9 Innings: 8.09
-
-Away Team Home Run Leaders:
-  - Cedric Mullins: 7 HR
+  - Cedric Mullins: 10 HR
+  - Gunnar Henderson: 7 HR
   - Ryan O'Hearn: 7 HR
-  - Jackson Holliday: 4 HR
+  - Jackson Holliday: 6 HR
+  - Ramón Laureano: 6 HR
+  - Heston Kjerstad: 4 HR
   - Adley Rutschman: 4 HR
   - Jordan Westburg: 4 HR
-  - Gunnar Henderson: 3 HR
-  - Heston Kjerstad: 3 HR
-  - Ramón Laureano: 3 HR
   - Ryan Mountcastle: 2 HR
   - Tyler O'Neill: 2 HR
   - Ramón Urías: 2 HR
 
 Home Team Home Run Leaders:
-  - Byron Buxton: 8 HR
-  - Trevor Larnach: 4 HR
-  - Harrison Bader: 3 HR
-  - Ty France: 3 HR
-  - Carlos Correa: 2 HR
-  - Ryan Jeffers: 2 HR
-  - Edouard Julien: 2 HR
-  - Brooks Lee: 2 HR
-  - Willi Castro: 1 HR
-  - Kody Clemens: 1 HR
-  - Jose Miranda: 1 HR
-  - Matt Wallner: 1 HR
+  - Jackson Chourio: 7 HR
+  - Christian Yelich: 7 HR
+  - Rhys Hoskins: 5 HR
+  - William Contreras: 4 HR
+  - Jake Bauers: 3 HR
+  - Brice Turang: 3 HR
+  - Sal Frelick: 2 HR
+  - Eric Haase: 2 HR
+  - Vinny Capra: 1 HR
+  - Isaac Collins: 1 HR
+  - Caleb Durbin: 1 HR
+  - Joey Ortiz: 1 HR
 
-Match: AWAY: Chicago White Sox vs HOME: Kansas City Royals
+Match: AWAY: Detroit Tigers vs HOME: St. Louis Cardinals
 
-Away Probable Pitcher: Jonathan Cannon
-    ERA: 4.44
-    Strikeouts per 9 Innings: 6.82
+Away Probable Pitcher: Tarik Skubal
+    ERA: 3.31
+    Strikeouts per 9 Innings: 10.35
 
-Home Probable Pitcher: Michael Wacha
-    ERA: 3.88
-    Strikeouts per 9 Innings: 7.95
-
-Away Team Home Run Leaders:
-  - Andrew Benintendi: 5 HR
-  - Luis Robert Jr.: 5 HR
-  - Brooks Baldwin: 3 HR
-  - Andrew Vaughn: 3 HR
-  - Nick Maton: 2 HR
-  - Lenyn Sosa: 2 HR
-  - Miguel Vargas: 2 HR
-  - Joshua Palacios: 1 HR
-  - Austin Slater: 1 HR
-  - Michael A. Taylor: 1 HR
-  - Matt Thaiss: 1 HR
-
-Home Team Home Run Leaders:
-  - Vinnie Pasquantino: 6 HR
-  - Maikel Garcia: 4 HR
-  - Bobby Witt Jr.: 4 HR
-  - Kyle Isbel: 3 HR
-  - Salvador Perez: 2 HR
-  - Cavan Biggio: 1 HR
-  - Freddy Fermin: 1 HR
-  - Jonathan India: 1 HR
-  - Luke Maile: 1 HR
-  - Michael Massey: 1 HR
-  - MJ Melendez: 1 HR
-  - Drew Waters: 1 HR
-
-Match: AWAY: Detroit Tigers vs HOME: Colorado Rockies
-
-Away Probable Pitcher: Jackson Jobe
-    ERA: 2.89
-    Strikeouts per 9 Innings: 6.43
-
-Home Probable Pitcher: Chase Dollander
-    ERA: 6.48
-    Strikeouts per 9 Innings: 9.00
+Home Probable Pitcher: Erick Fedde
+    ERA: 4.71
+    Strikeouts per 9 Innings: 7.08
 
 Away Team Home Run Leaders:
-  - Spencer Torkelson: 10 HR
-  - Kerry Carpenter: 8 HR
-  - Riley Greene: 8 HR
+  - Spencer Torkelson: 12 HR
+  - Riley Greene: 11 HR
+  - Kerry Carpenter: 9 HR
+  - Javier Báez: 6 HR
+  - Gleyber Torres: 5 HR
   - Dillon Dingler: 4 HR
-  - Gleyber Torres: 4 HR
-  - Javier Báez: 3 HR
-  - Colt Keith: 3 HR
-  - Trey Sweeney: 3 HR
+  - Colt Keith: 4 HR
+  - Trey Sweeney: 4 HR
   - Andy Ibáñez: 2 HR
-  - Justyn-Henry Malloy: 1 HR
-  - Zach McKinstry: 1 HR
+  - Zach McKinstry: 2 HR
 
 Home Team Home Run Leaders:
-  - Jordan Beck: 5 HR
-  - Hunter Goodman: 5 HR
+  - Lars Nootbaar: 7 HR
+  - Willson Contreras: 6 HR
+  - Iván Herrera: 5 HR
+  - Masyn Winn: 5 HR
+  - Nolan Arenado: 4 HR
+  - Alec Burleson: 4 HR
+  - Brendan Donovan: 3 HR
+  - Pedro Pagés: 3 HR
+  - Jordan Walker: 3 HR
+  - Victor Scott II: 2 HR
+
+Match: AWAY: Philadelphia Phillies vs HOME: Colorado Rockies
+
+Away Probable Pitcher: Jesús Luzardo
+    ERA: 4.07
+    Strikeouts per 9 Innings: 9.80
+
+Home Probable Pitcher: Antonio Senzatela
+    ERA: 4.99
+    Strikeouts per 9 Innings: 5.87
+
+Away Team Home Run Leaders:
+  - Kyle Schwarber: 16 HR
+  - Bryce Harper: 7 HR
+  - Max Kepler: 5 HR
+  - Nick Castellanos: 4 HR
+  - J.T. Realmuto: 4 HR
+  - Bryson Stott: 4 HR
+  - Alec Bohm: 3 HR
+  - Trea Turner: 2 HR
+  - Brandon Marsh: 1 HR
+  - Johan Rojas: 1 HR
+  - Edmundo Sosa: 1 HR
+  - Weston Wilson: 1 HR
+
+Home Team Home Run Leaders:
+  - Jordan Beck: 8 HR
+  - Hunter Goodman: 7 HR
+  - Ryan McMahon: 6 HR
+  - Michael Toglia: 6 HR
   - Brenton Doyle: 4 HR
-  - Ryan McMahon: 3 HR
   - Mickey Moniak: 3 HR
-  - Michael Toglia: 3 HR
+  - Kyle Farmer: 2 HR
+  - Ezequiel Tovar: 2 HR
   - Adael Amador: 1 HR
   - Sean Bouchard: 1 HR
   - Braxton Fulford: 1 HR
   - Zac Veen: 1 HR
 
-Match: AWAY: Toronto Blue Jays vs HOME: Los Angeles Angels
+Match: AWAY: Kansas City Royals vs HOME: San Francisco Giants
 
-Away Probable Pitcher: José Berríos
-    ERA: 4.07
-    Strikeouts per 9 Innings: 8.58
+Away Probable Pitcher: Michael Lorenzen
+    ERA: 3.98
+    Strikeouts per 9 Innings: 7.38
 
-Home Probable Pitcher: Yusei Kikuchi
-    ERA: 4.55
-    Strikeouts per 9 Innings: 9.26
+Home Probable Pitcher: Hayden Birdsong
+    ERA: 4.15
+    Strikeouts per 9 Innings: 10.67
 
 Away Team Home Run Leaders:
-  - Anthony Santander: 5 HR
-  - Vladimir Guerrero Jr.: 4 HR
-  - George Springer: 4 HR
-  - Andrés Giménez: 3 HR
-  - Alejandro Kirk: 2 HR
-  - Daulton Varsho: 2 HR
-  - Bo Bichette: 1 HR
-  - Tyler Heineman: 1 HR
-  - Nathan Lukes: 1 HR
-  - Alan Roden: 1 HR
-  - Myles Straw: 1 HR
+  - Vinnie Pasquantino: 8 HR
+  - Maikel Garcia: 5 HR
+  - Bobby Witt Jr.: 5 HR
+  - Kyle Isbel: 3 HR
+  - Michael Massey: 2 HR
+  - Salvador Perez: 2 HR
+  - Cavan Biggio: 1 HR
+  - Freddy Fermin: 1 HR
+  - Jonathan India: 1 HR
+  - Luke Maile: 1 HR
+  - MJ Melendez: 1 HR
+  - Drew Waters: 1 HR
 
 Home Team Home Run Leaders:
-  - Logan O'Hoppe: 9 HR
+  - Wilmer Flores: 10 HR
+  - Matt Chapman: 8 HR
+  - Heliot Ramos: 8 HR
+  - Jung Hoo Lee: 6 HR
+  - Willy Adames: 5 HR
+  - Mike Yastrzemski: 5 HR
+  - Luis Matos: 3 HR
+  - Tyler Fitzgerald: 2 HR
+  - Sam Huff: 1 HR
+  - Christian Koss: 1 HR
+  - LaMonte Wade Jr.: 1 HR
+
+Match: AWAY: Los Angeles Angels vs HOME: Athletics
+
+Away Probable Pitcher: Kyle Hendricks
+    ERA: 3.72
+    Strikeouts per 9 Innings: 7.12
+
+Home Probable Pitcher: Gunnar Hoglund
+    ERA: 3.78
+    Strikeouts per 9 Innings: 8.10
+
+Away Team Home Run Leaders:
+  - Taylor Ward: 13 HR
+  - Logan O'Hoppe: 10 HR
   - Mike Trout: 9 HR
-  - Taylor Ward: 7 HR
+  - Zach Neto: 7 HR
+  - Kyren Paris: 6 HR
   - Jorge Soler: 6 HR
-  - Kyren Paris: 5 HR
-  - Zach Neto: 4 HR
-  - Jo Adell: 3 HR
-  - Nolan Schanuel: 2 HR
-  - Yoán Moncada: 1 HR
-  - Luis Rengifo: 1 HR
+  - Jo Adell: 5 HR
+  - Matthew Lugo: 3 HR
+  - Yoán Moncada: 3 HR
+  - Nolan Schanuel: 3 HR
+
+Home Team Home Run Leaders:
+  - Brent Rooker: 10 HR
+  - Tyler Soderstrom: 10 HR
+  - Shea Langeliers: 8 HR
+  - JJ Bleday: 6 HR
+  - Lawrence Butler: 6 HR
+  - Luis Urías: 6 HR
+  - Jacob Wilson: 5 HR
+  - Miguel Andujar: 3 HR
+  - Seth Brown: 1 HR
+  - Nick Kurtz: 1 HR
+  - Max Muncy: 1 HR
+  - Max Schuemann: 1 HR
+
+Match: AWAY: Arizona Diamondbacks vs HOME: Los Angeles Dodgers
+
+Away Probable Pitcher: Ryne Nelson
+    ERA: 4.61
+    Strikeouts per 9 Innings: 7.06
+
+Home Probable Pitcher: Yoshinobu Yamamoto
+    ERA: 2.68
+    Strikeouts per 9 Innings: 10.47
+
+Away Team Home Run Leaders:
+  - Corbin Carroll: 14 HR
+  - Eugenio Suárez: 14 HR
+  - Lourdes Gurriel Jr.: 8 HR
+  - Ketel Marte: 6 HR
+  - Geraldo Perdomo: 6 HR
+  - Josh Naylor: 5 HR
+  - Tim Tawa: 5 HR
+  - Pavin Smith: 4 HR
+  - Gabriel Moreno: 2 HR
+  - Randal Grichuk: 1 HR
+  - Jose Herrera: 1 HR
+  - Alek Thomas: 1 HR
+
+Home Team Home Run Leaders:
+  - Shohei Ohtani: 17 HR
+  - Freddie Freeman: 9 HR
+  - Teoscar Hernández: 9 HR
+  - Andy Pages: 9 HR
+  - Mookie Betts: 8 HR
+  - Tommy Edman: 8 HR
+  - Enrique Hernández: 7 HR
+  - Will Smith: 4 HR
+  - Max Muncy: 3 HR
+  - Michael Conforto: 2 HR
+  - James Outman: 2 HR
 
 </pre>
         <h2 id="bvp-stats">Batter vs Pitcher Stats</h2>
         <pre>Batter vs Pitcher Stats:
 
 Away Pitcher:  Logan Allen       Cleveland Guardians      
-Home  Batter:  Josh Bell         Washington Nationals     
- AB:       5
-  H:       1
- HR:       1
-AVG:    .200
-RBI:       1
-obp:    .200
-ops:   1.000
-
-
-Home Pitcher:  Michael Soroka    Washington Nationals     
-Away  Batter:  Bo Naylor         Cleveland Guardians      
- AB:       3
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .250
-ops:    .250
-
-
-Home Pitcher:  Michael Soroka    Washington Nationals     
-Away  Batter:  José Ramírez      Cleveland Guardians      
- AB:       6
-  H:       2
- HR:       0
-AVG:    .333
-RBI:       0
-obp:    .500
-ops:   1.000
-
-
-Home Pitcher:  Michael Soroka    Washington Nationals     
-Away  Batter:  Gabriel Arias     Cleveland Guardians      
- AB:       4
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Home Pitcher:  Michael Soroka    Washington Nationals     
-Away  Batter:  Steven Kwan       Cleveland Guardians      
- AB:       5
-  H:       1
- HR:       0
-AVG:    .200
-RBI:       0
-obp:    .200
-ops:    .400
-
-
-Home Pitcher:  Michael Soroka    Washington Nationals     
-Away  Batter:  Carlos Santana    Cleveland Guardians      
+Home  Batter:  Byron Buxton      Minnesota Twins          
  AB:       4
   H:       0
  HR:       0
@@ -1182,425 +1057,30 @@ obp:    .200
 ops:    .200
 
 
-Home Pitcher:  Michael Soroka    Washington Nationals     
-Away  Batter:  Austin Hedges     Cleveland Guardians      
- AB:       2
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Home Pitcher:  Michael Soroka    Washington Nationals     
-Away  Batter:  Nolan Jones       Cleveland Guardians      
- AB:       2
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Batter vs Pitcher Stats:
-
-Away Pitcher:  Framber Valdez    Houston Astros           
-Home  Batter:  Rhys Hoskins      Milwaukee Brewers        
- AB:       2
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Away Pitcher:  Framber Valdez    Houston Astros           
-Home  Batter:  Jake Bauers       Milwaukee Brewers        
- AB:       1
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Away Pitcher:  Framber Valdez    Houston Astros           
-Home  Batter:  Vinny Capra       Milwaukee Brewers        
- AB:       2
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Away Pitcher:  Framber Valdez    Houston Astros           
-Home  Batter:  Eric Haase        Milwaukee Brewers        
- AB:      10
-  H:       3
- HR:       0
-AVG:    .300
-RBI:       1
-obp:    .300
-ops:    .600
-
-
-Home Pitcher:  Quinn Priester    Milwaukee Brewers        
-Away  Batter:  Christian Walker  Houston Astros           
- AB:       1
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .500
-ops:    .500
-
-
-Batter vs Pitcher Stats:
-
-Away Pitcher:  Mitch Keller      Pittsburgh Pirates       
-Home  Batter:  Willson Contreras St. Louis Cardinals      
- AB:      22
-  H:       7
- HR:       1
-AVG:    .318
-RBI:       2
-obp:    .423
-ops:   1.014
-
-
-Away Pitcher:  Mitch Keller      Pittsburgh Pirates       
-Home  Batter:  Lars Nootbaar     St. Louis Cardinals      
- AB:      18
-  H:       6
- HR:       1
-AVG:    .333
-RBI:       2
-obp:    .478
-ops:   1.034
-
-
-Away Pitcher:  Mitch Keller      Pittsburgh Pirates       
-Home  Batter:  Nolan Arenado     St. Louis Cardinals      
- AB:      27
-  H:       4
- HR:       1
-AVG:    .148
-RBI:       4
-obp:    .179
-ops:    .475
-
-
-Away Pitcher:  Mitch Keller      Pittsburgh Pirates       
-Home  Batter:  Brendan Donovan   St. Louis Cardinals      
- AB:      21
-  H:       5
- HR:       1
-AVG:    .238
-RBI:       1
-obp:    .304
-ops:    .733
-
-
-Away Pitcher:  Mitch Keller      Pittsburgh Pirates       
-Home  Batter:  Masyn Winn        St. Louis Cardinals      
- AB:      15
-  H:       4
- HR:       0
-AVG:    .267
-RBI:       0
-obp:    .313
-ops:    .780
-
-
-Away Pitcher:  Mitch Keller      Pittsburgh Pirates       
-Home  Batter:  Alec Burleson     St. Louis Cardinals      
- AB:      15
-  H:       4
- HR:       1
-AVG:    .267
-RBI:       2
-obp:    .313
-ops:    .846
-
-
-Away Pitcher:  Mitch Keller      Pittsburgh Pirates       
-Home  Batter:  Pedro Pagés       St. Louis Cardinals      
- AB:       9
-  H:       2
- HR:       0
-AVG:    .222
-RBI:       1
-obp:    .222
-ops:    .444
-
-
-Away Pitcher:  Mitch Keller      Pittsburgh Pirates       
-Home  Batter:  Victor Scott II   St. Louis Cardinals      
- AB:       3
-  H:       1
- HR:       0
-AVG:    .333
-RBI:       0
-obp:    .333
-ops:    .666
-
-
-Away Pitcher:  Mitch Keller      Pittsburgh Pirates       
-Home  Batter:  Jordan Walker     St. Louis Cardinals      
- AB:       6
-  H:       2
- HR:       0
-AVG:    .333
-RBI:       0
-obp:    .333
-ops:    .666
-
-
-Home Pitcher:  Sonny Gray        St. Louis Cardinals      
-Away  Batter:  Oneil Cruz        Pittsburgh Pirates       
- AB:       5
-  H:       1
- HR:       0
-AVG:    .200
-RBI:       0
-obp:    .200
-ops:    .600
-
-
-Home Pitcher:  Sonny Gray        St. Louis Cardinals      
-Away  Batter:  Bryan Reynolds    Pittsburgh Pirates       
- AB:      21
-  H:       7
- HR:       3
-AVG:    .333
-RBI:       4
-obp:    .364
-ops:   1.221
-
-
-Home Pitcher:  Sonny Gray        St. Louis Cardinals      
-Away  Batter:  Andrew McCutchen  Pittsburgh Pirates       
- AB:      15
-  H:       3
- HR:       0
-AVG:    .200
-RBI:       2
-obp:    .294
-ops:    .627
-
-
-Home Pitcher:  Sonny Gray        St. Louis Cardinals      
-Away  Batter:  Adam Frazier      Pittsburgh Pirates       
- AB:      20
-  H:       3
- HR:       0
-AVG:    .150
-RBI:       2
-obp:    .150
-ops:    .300
-
-
-Home Pitcher:  Sonny Gray        St. Louis Cardinals      
-Away  Batter:  Enmanuel Valdez   Pittsburgh Pirates       
- AB:       2
-  H:       1
- HR:       0
-AVG:    .500
-RBI:       0
-obp:    .500
-ops:   1.000
-
-
-Home Pitcher:  Sonny Gray        St. Louis Cardinals      
-Away  Batter:  Joey Bart         Pittsburgh Pirates       
+Away Pitcher:  Logan Allen       Cleveland Guardians      
+Home  Batter:  Ty France         Minnesota Twins          
  AB:       4
   H:       1
  HR:       0
 AVG:    .250
 RBI:       0
-obp:    .400
-ops:    .900
-
-
-Home Pitcher:  Sonny Gray        St. Louis Cardinals      
-Away  Batter:  Henry Davis       Pittsburgh Pirates       
- AB:       2
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Home Pitcher:  Sonny Gray        St. Louis Cardinals      
-Away  Batter:  Nick Gonzales     Pittsburgh Pirates       
- AB:       6
-  H:       3
- HR:       0
-AVG:    .500
-RBI:       0
 obp:    .500
-ops:   1.333
+ops:    .750
 
 
-Home Pitcher:  Sonny Gray        St. Louis Cardinals      
-Away  Batter:  Ke'Bryan Hayes    Pittsburgh Pirates       
- AB:      11
+Away Pitcher:  Logan Allen       Cleveland Guardians      
+Home  Batter:  Ryan Jeffers      Minnesota Twins          
+ AB:       7
   H:       2
  HR:       0
-AVG:    .182
-RBI:       2
-obp:    .182
-ops:    .364
-
-
-Batter vs Pitcher Stats:
-
-Away Pitcher:  Robbie Ray        San Francisco Giants     
-Home  Batter:  Kyle Tucker       Chicago Cubs             
- AB:       9
-  H:       4
- HR:       2
-AVG:    .444
-RBI:       3
-obp:    .444
-ops:   1.555
-
-
-Away Pitcher:  Robbie Ray        San Francisco Giants     
-Home  Batter:  Dansby Swanson    Chicago Cubs             
- AB:      12
-  H:       2
- HR:       1
-AVG:    .167
-RBI:       2
-obp:    .286
-ops:    .703
-
-
-Away Pitcher:  Robbie Ray        San Francisco Giants     
-Home  Batter:  Ian Happ          Chicago Cubs             
- AB:       2
-  H:       0
- HR:       0
-AVG:    .000
+AVG:    .286
 RBI:       0
-obp:    .000
-ops:    .000
+obp:    .375
+ops:    .804
 
 
-Home Pitcher:  Ben Brown         Chicago Cubs             
-Away  Batter:  Willy Adames      San Francisco Giants     
- AB:       3
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Batter vs Pitcher Stats:
-
-Away Pitcher:  Bryan Woo         Seattle Mariners         
-Home  Batter:  Brent Rooker      Athletics                
- AB:      14
-  H:       1
- HR:       1
-AVG:    .071
-RBI:       1
-obp:    .071
-ops:    .357
-
-
-Away Pitcher:  Bryan Woo         Seattle Mariners         
-Home  Batter:  Tyler Soderstrom  Athletics                
- AB:      10
-  H:       3
- HR:       1
-AVG:    .300
-RBI:       1
-obp:    .364
-ops:    .964
-
-
-Away Pitcher:  Bryan Woo         Seattle Mariners         
-Home  Batter:  Shea Langeliers   Athletics                
- AB:       6
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Away Pitcher:  Bryan Woo         Seattle Mariners         
-Home  Batter:  Lawrence Butler   Athletics                
- AB:      13
-  H:       1
- HR:       0
-AVG:    .077
-RBI:       0
-obp:    .143
-ops:    .220
-
-
-Away Pitcher:  Bryan Woo         Seattle Mariners         
-Home  Batter:  JJ Bleday         Athletics                
- AB:      12
-  H:       3
- HR:       0
-AVG:    .250
-RBI:       0
-obp:    .308
-ops:    .641
-
-
-Away Pitcher:  Bryan Woo         Seattle Mariners         
-Home  Batter:  Jacob Wilson      Athletics                
- AB:       5
-  H:       2
- HR:       0
-AVG:    .400
-RBI:       0
-obp:    .500
-ops:    .900
-
-
-Away Pitcher:  Bryan Woo         Seattle Mariners         
-Home  Batter:  Miguel Andujar    Athletics                
- AB:       5
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .167
-ops:    .167
-
-
-Away Pitcher:  Bryan Woo         Seattle Mariners         
-Home  Batter:  Seth Brown        Athletics                
- AB:      12
-  H:       3
- HR:       0
-AVG:    .250
-RBI:       1
-obp:    .231
-ops:    .481
-
-
-Batter vs Pitcher Stats:
-
-Away Pitcher:  Kodai Senga       New York Mets            
-Home  Batter:  Corbin Carroll    Arizona Diamondbacks     
+Away Pitcher:  Logan Allen       Cleveland Guardians      
+Home  Batter:  Willi Castro      Minnesota Twins          
  AB:       9
   H:       2
  HR:       0
@@ -1610,9 +1090,42 @@ obp:    .222
 ops:    .444
 
 
-Away Pitcher:  Kodai Senga       New York Mets            
-Home  Batter:  Eugenio Suárez    Arizona Diamondbacks     
+Away Pitcher:  Logan Allen       Cleveland Guardians      
+Home  Batter:  Carlos Correa     Minnesota Twins          
  AB:       5
+  H:       1
+ HR:       0
+AVG:    .200
+RBI:       0
+obp:    .333
+ops:    .533
+
+
+Home Pitcher:  Bailey Ober       Minnesota Twins          
+Away  Batter:  Kyle Manzardo     Cleveland Guardians      
+ AB:       6
+  H:       1
+ HR:       0
+AVG:    .167
+RBI:       0
+obp:    .167
+ops:    .334
+
+
+Home Pitcher:  Bailey Ober       Minnesota Twins          
+Away  Batter:  José Ramírez      Cleveland Guardians      
+ AB:      22
+  H:       7
+ HR:       1
+AVG:    .318
+RBI:       3
+obp:    .375
+ops:    .920
+
+
+Home Pitcher:  Bailey Ober       Minnesota Twins          
+Away  Batter:  Bo Naylor         Cleveland Guardians      
+ AB:       9
   H:       0
  HR:       0
 AVG:    .000
@@ -1621,65 +1134,89 @@ obp:    .000
 ops:    .000
 
 
-Away Pitcher:  Kodai Senga       New York Mets            
-Home  Batter:  Lourdes Gurriel Jr. Arizona Diamondbacks     
- AB:       7
+Home Pitcher:  Bailey Ober       Minnesota Twins          
+Away  Batter:  Daniel Schneemann Cleveland Guardians      
+ AB:       3
   H:       1
  HR:       0
-AVG:    .143
+AVG:    .333
 RBI:       0
+obp:    .500
+ops:    .833
+
+
+Home Pitcher:  Bailey Ober       Minnesota Twins          
+Away  Batter:  Gabriel Arias     Cleveland Guardians      
+ AB:       3
+  H:       1
+ HR:       0
+AVG:    .333
+RBI:       0
+obp:    .333
+ops:   1.000
+
+
+Home Pitcher:  Bailey Ober       Minnesota Twins          
+Away  Batter:  Steven Kwan       Cleveland Guardians      
+ AB:      15
+  H:       1
+ HR:       0
+AVG:    .067
+RBI:       0
+obp:    .067
+ops:    .134
+
+
+Home Pitcher:  Bailey Ober       Minnesota Twins          
+Away  Batter:  Carlos Santana    Cleveland Guardians      
+ AB:      13
+  H:       2
+ HR:       0
+AVG:    .154
+RBI:       0
+obp:    .154
+ops:    .308
+
+
+Home Pitcher:  Bailey Ober       Minnesota Twins          
+Away  Batter:  Austin Hedges     Cleveland Guardians      
+ AB:       1
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Home Pitcher:  Bailey Ober       Minnesota Twins          
+Away  Batter:  Nolan Jones       Cleveland Guardians      
+ AB:       7
+  H:       1
+ HR:       1
+AVG:    .143
+RBI:       1
 obp:    .143
-ops:    .286
+ops:    .714
 
 
-Away Pitcher:  Kodai Senga       New York Mets            
-Home  Batter:  Geraldo Perdomo   Arizona Diamondbacks     
- AB:       7
+Home Pitcher:  Bailey Ober       Minnesota Twins          
+Away  Batter:  Jhonkensy Noel    Cleveland Guardians      
+ AB:       6
   H:       1
  HR:       0
-AVG:    .143
-RBI:       0
-obp:    .250
-ops:    .393
+AVG:    .167
+RBI:       1
+obp:    .167
+ops:    .334
 
 
-Away Pitcher:  Kodai Senga       New York Mets            
-Home  Batter:  Tim Tawa          Arizona Diamondbacks     
- AB:       1
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .500
-ops:    .500
+Batter vs Pitcher Stats:
 
-
-Away Pitcher:  Kodai Senga       New York Mets            
-Home  Batter:  Josh Naylor       Arizona Diamondbacks     
- AB:       1
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .500
-ops:    .500
-
-
-Away Pitcher:  Kodai Senga       New York Mets            
-Home  Batter:  Pavin Smith       Arizona Diamondbacks     
- AB:       2
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Away Pitcher:  Kodai Senga       New York Mets            
-Home  Batter:  Jose Herrera      Arizona Diamondbacks     
- AB:       2
-  H:       1
+Away Pitcher:  Nick Martinez     Cincinnati Reds          
+Home  Batter:  Oneil Cruz        Pittsburgh Pirates       
+ AB:       4
+  H:       2
  HR:       0
 AVG:    .500
 RBI:       0
@@ -1687,64 +1224,108 @@ obp:    .500
 ops:   1.000
 
 
-Home Pitcher:  Merrill Kelly     Arizona Diamondbacks     
-Away  Batter:  Pete Alonso       New York Mets            
- AB:      16
-  H:       5
- HR:       3
-AVG:    .313
-RBI:       7
-obp:    .313
-ops:   1.251
-
-
-Home Pitcher:  Merrill Kelly     Arizona Diamondbacks     
-Away  Batter:  Francisco Lindor  New York Mets            
+Away Pitcher:  Nick Martinez     Cincinnati Reds          
+Home  Batter:  Bryan Reynolds    Pittsburgh Pirates       
  AB:       8
   H:       2
+ HR:       1
+AVG:    .250
+RBI:       2
+obp:    .250
+ops:    .875
+
+
+Away Pitcher:  Nick Martinez     Cincinnati Reds          
+Home  Batter:  Andrew McCutchen  Pittsburgh Pirates       
+ AB:      10
+  H:       3
+ HR:       0
+AVG:    .300
+RBI:       0
+obp:    .300
+ops:    .600
+
+
+Away Pitcher:  Nick Martinez     Cincinnati Reds          
+Home  Batter:  Adam Frazier      Pittsburgh Pirates       
+ AB:       2
+  H:       1
+ HR:       0
+AVG:    .500
+RBI:       1
+obp:    .500
+ops:   1.000
+
+
+Away Pitcher:  Nick Martinez     Cincinnati Reds          
+Home  Batter:  Jared Triolo      Pittsburgh Pirates       
+ AB:       3
+  H:       1
+ HR:       0
+AVG:    .333
+RBI:       0
+obp:    .500
+ops:    .833
+
+
+Away Pitcher:  Nick Martinez     Cincinnati Reds          
+Home  Batter:  Joey Bart         Pittsburgh Pirates       
+ AB:       7
+  H:       2
+ HR:       0
+AVG:    .286
+RBI:       1
+obp:    .286
+ops:    .715
+
+
+Away Pitcher:  Nick Martinez     Cincinnati Reds          
+Home  Batter:  Henry Davis       Pittsburgh Pirates       
+ AB:       1
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Nick Martinez     Cincinnati Reds          
+Home  Batter:  Nick Gonzales     Pittsburgh Pirates       
+ AB:       4
+  H:       1
  HR:       0
 AVG:    .250
 RBI:       0
-obp:    .400
-ops:    .775
+obp:    .250
+ops:    .500
 
 
-Home Pitcher:  Merrill Kelly     Arizona Diamondbacks     
-Away  Batter:  Brandon Nimmo     New York Mets            
- AB:       5
+Away Pitcher:  Nick Martinez     Cincinnati Reds          
+Home  Batter:  Isiah Kiner-Falefa Pittsburgh Pirates       
+ AB:       6
   H:       2
  HR:       0
-AVG:    .400
-RBI:       2
-obp:    .500
-ops:   1.100
+AVG:    .333
+RBI:       1
+obp:    .333
+ops:    .666
 
 
-Home Pitcher:  Merrill Kelly     Arizona Diamondbacks     
-Away  Batter:  Juan Soto         New York Mets            
- AB:      16
-  H:       4
+Home Pitcher:  Bailey Falter     Pittsburgh Pirates       
+Away  Batter:  Elly De La Cruz   Cincinnati Reds          
+ AB:      10
+  H:       2
  HR:       0
-AVG:    .250
+AVG:    .200
 RBI:       0
 obp:    .333
-ops:    .646
+ops:    .533
 
 
-Home Pitcher:  Merrill Kelly     Arizona Diamondbacks     
-Away  Batter:  Mark Vientos      New York Mets            
- AB:       1
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .500
-ops:    .500
-
-
-Home Pitcher:  Merrill Kelly     Arizona Diamondbacks     
-Away  Batter:  Francisco Alvarez New York Mets            
- AB:       3
+Home Pitcher:  Bailey Falter     Pittsburgh Pirates       
+Away  Batter:  Austin Hays       Cincinnati Reds          
+ AB:       2
   H:       0
  HR:       0
 AVG:    .000
@@ -1753,153 +1334,52 @@ obp:    .000
 ops:    .000
 
 
-Home Pitcher:  Merrill Kelly     Arizona Diamondbacks     
-Away  Batter:  Jeff McNeil       New York Mets            
- AB:       9
-  H:       2
- HR:       2
-AVG:    .222
+Home Pitcher:  Bailey Falter     Pittsburgh Pirates       
+Away  Batter:  Spencer Steer     Cincinnati Reds          
+ AB:      14
+  H:       7
+ HR:       1
+AVG:    .500
 RBI:       4
-obp:    .222
-ops:   1.111
+obp:    .588
+ops:   1.445
 
 
-Home Pitcher:  Merrill Kelly     Arizona Diamondbacks     
-Away  Batter:  Tyrone Taylor     New York Mets            
- AB:       6
+Home Pitcher:  Bailey Falter     Pittsburgh Pirates       
+Away  Batter:  Jake Fraley       Cincinnati Reds          
+ AB:       3
   H:       1
  HR:       0
-AVG:    .167
-RBI:       3
-obp:    .167
-ops:    .334
-
-
-Home Pitcher:  Merrill Kelly     Arizona Diamondbacks     
-Away  Batter:  Luis Torrens      New York Mets            
- AB:       1
-  H:       0
- HR:       0
-AVG:    .000
+AVG:    .333
 RBI:       0
-obp:    .500
-ops:    .500
+obp:    .333
+ops:    .666
 
 
-Home Pitcher:  Merrill Kelly     Arizona Diamondbacks     
-Away  Batter:  Jesse Winker      New York Mets            
+Home Pitcher:  Bailey Falter     Pittsburgh Pirates       
+Away  Batter:  TJ Friedl         Cincinnati Reds          
  AB:       6
+  H:       2
+ HR:       1
+AVG:    .333
+RBI:       1
+obp:    .429
+ops:   1.262
+
+
+Home Pitcher:  Bailey Falter     Pittsburgh Pirates       
+Away  Batter:  Noelvi Marte      Cincinnati Reds          
+ AB:       3
   H:       1
  HR:       0
-AVG:    .167
-RBI:       1
-obp:    .167
-ops:    .667
-
-
-Batter vs Pitcher Stats:
-
-Away Pitcher:  Tyler Mahle       Texas Rangers            
-Home  Batter:  Alex Bregman      Boston Red Sox           
- AB:      10
-  H:       4
- HR:       0
-AVG:    .400
-RBI:       0
-obp:    .400
-ops:    .900
-
-
-Away Pitcher:  Tyler Mahle       Texas Rangers            
-Home  Batter:  Wilyer Abreu      Boston Red Sox           
- AB:       3
-  H:       2
- HR:       0
-AVG:    .667
-RBI:       0
-obp:    .667
-ops:   1.667
-
-
-Away Pitcher:  Tyler Mahle       Texas Rangers            
-Home  Batter:  Rafael Devers     Boston Red Sox           
- AB:       3
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       1
-obp:    .250
-ops:    .250
-
-
-Away Pitcher:  Tyler Mahle       Texas Rangers            
-Home  Batter:  Trevor Story      Boston Red Sox           
- AB:      16
-  H:       2
- HR:       0
-AVG:    .125
-RBI:       0
-obp:    .125
-ops:    .250
-
-
-Away Pitcher:  Tyler Mahle       Texas Rangers            
-Home  Batter:  Kristian Campbell Boston Red Sox           
- AB:       0
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:   1.000
-ops:   1.000
-
-
-Away Pitcher:  Tyler Mahle       Texas Rangers            
-Home  Batter:  Triston Casas     Boston Red Sox           
- AB:       1
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Away Pitcher:  Tyler Mahle       Texas Rangers            
-Home  Batter:  Carlos Narváez    Boston Red Sox           
- AB:       0
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:   1.000
-ops:   1.000
-
-
-Away Pitcher:  Tyler Mahle       Texas Rangers            
-Home  Batter:  Jarren Duran      Boston Red Sox           
- AB:       1
-  H:       0
- HR:       0
-AVG:    .000
+AVG:    .333
 RBI:       0
 obp:    .500
-ops:    .500
+ops:    .833
 
 
-Away Pitcher:  Tyler Mahle       Texas Rangers            
-Home  Batter:  Ceddanne Rafaela  Boston Red Sox           
- AB:       1
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .500
-ops:    .500
-
-
-Away Pitcher:  Tyler Mahle       Texas Rangers            
-Home  Batter:  Rob Refsnyder     Boston Red Sox           
+Home Pitcher:  Bailey Falter     Pittsburgh Pirates       
+Away  Batter:  Jose Trevino      Cincinnati Reds          
  AB:       2
   H:       0
  HR:       0
@@ -1909,120 +1389,54 @@ obp:    .333
 ops:    .333
 
 
-Home Pitcher:  Tanner Houck      Boston Red Sox           
-Away  Batter:  Wyatt Langford    Texas Rangers            
- AB:       6
-  H:       2
- HR:       0
-AVG:    .333
-RBI:       0
-obp:    .333
-ops:    .666
-
-
-Home Pitcher:  Tanner Houck      Boston Red Sox           
-Away  Batter:  Adolis García     Texas Rangers            
- AB:       8
-  H:       4
- HR:       2
-AVG:    .500
-RBI:       2
-obp:    .667
-ops:   2.042
-
-
-Home Pitcher:  Tanner Houck      Boston Red Sox           
-Away  Batter:  Jonah Heim        Texas Rangers            
- AB:       7
-  H:       4
- HR:       3
-AVG:    .571
-RBI:       5
-obp:    .571
-ops:   2.571
-
-
-Home Pitcher:  Tanner Houck      Boston Red Sox           
-Away  Batter:  Corey Seager      Texas Rangers            
- AB:      12
-  H:       1
- HR:       0
-AVG:    .083
-RBI:       0
-obp:    .154
-ops:    .237
-
-
-Home Pitcher:  Tanner Houck      Boston Red Sox           
-Away  Batter:  Jake Burger       Texas Rangers            
- AB:       5
-  H:       1
- HR:       0
-AVG:    .200
-RBI:       1
-obp:    .200
-ops:    .600
-
-
-Home Pitcher:  Tanner Houck      Boston Red Sox           
-Away  Batter:  Josh Smith        Texas Rangers            
- AB:       6
-  H:       2
- HR:       0
-AVG:    .333
-RBI:       0
-obp:    .333
-ops:    .833
-
-
-Home Pitcher:  Tanner Houck      Boston Red Sox           
-Away  Batter:  Josh Jung         Texas Rangers            
- AB:       7
-  H:       1
- HR:       0
-AVG:    .143
-RBI:       0
-obp:    .143
-ops:    .286
-
-
-Home Pitcher:  Tanner Houck      Boston Red Sox           
-Away  Batter:  Marcus Semien     Texas Rangers            
- AB:      18
-  H:       3
- HR:       0
-AVG:    .167
-RBI:       1
-obp:    .167
-ops:    .389
-
-
-Home Pitcher:  Tanner Houck      Boston Red Sox           
-Away  Batter:  Kyle Higashioka   Texas Rangers            
- AB:       3
-  H:       1
- HR:       0
-AVG:    .333
-RBI:       0
-obp:    .500
-ops:    .833
-
-
-Home Pitcher:  Tanner Houck      Boston Red Sox           
-Away  Batter:  Leody Taveras     Texas Rangers            
- AB:       4
-  H:       3
- HR:       1
-AVG:    .750
-RBI:       2
-obp:    .778
-ops:   2.278
-
-
 Batter vs Pitcher Stats:
 
-Away Pitcher:  Cristopher Sánchez Philadelphia Phillies    
-Home  Batter:  Junior Caminero   Tampa Bay Rays           
+Away Pitcher:  Jameson Taillon   Chicago Cubs             
+Home  Batter:  Kyle Stowers      Miami Marlins            
+ AB:       2
+  H:       2
+ HR:       2
+AVG:   1.000
+RBI:       2
+obp:   1.000
+ops:   5.000
+
+
+Away Pitcher:  Jameson Taillon   Chicago Cubs             
+Home  Batter:  Matt Mervis       Miami Marlins            
+ AB:       2
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Jameson Taillon   Chicago Cubs             
+Home  Batter:  Agustín Ramírez   Miami Marlins            
+ AB:       3
+  H:       2
+ HR:       1
+AVG:    .667
+RBI:       1
+obp:    .667
+ops:   2.667
+
+
+Away Pitcher:  Jameson Taillon   Chicago Cubs             
+Home  Batter:  Eric Wagaman      Miami Marlins            
+ AB:       2
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Jameson Taillon   Chicago Cubs             
+Home  Batter:  Connor Norby      Miami Marlins            
  AB:       3
   H:       0
  HR:       0
@@ -2032,20 +1446,9 @@ obp:    .000
 ops:    .000
 
 
-Away Pitcher:  Cristopher Sánchez Philadelphia Phillies    
-Home  Batter:  Yandy Díaz        Tampa Bay Rays           
- AB:       6
-  H:       2
- HR:       0
-AVG:    .333
-RBI:       0
-obp:    .333
-ops:    .666
-
-
-Away Pitcher:  Cristopher Sánchez Philadelphia Phillies    
-Home  Batter:  Christopher Morel Tampa Bay Rays           
- AB:       4
+Away Pitcher:  Jameson Taillon   Chicago Cubs             
+Home  Batter:  Jesús Sánchez     Miami Marlins            
+ AB:       5
   H:       0
  HR:       0
 AVG:    .000
@@ -2054,63 +1457,197 @@ obp:    .000
 ops:    .000
 
 
-Away Pitcher:  Cristopher Sánchez Philadelphia Phillies    
-Home  Batter:  José Caballero    Tampa Bay Rays           
+Home Pitcher:  Ryan Weathers     Miami Marlins            
+Away  Batter:  Pete Crow-Armstrong Chicago Cubs             
  AB:       2
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Home Pitcher:  Ryan Weathers     Miami Marlins            
+Away  Batter:  Seiya Suzuki      Chicago Cubs             
+ AB:       3
+  H:       1
+ HR:       1
+AVG:    .333
+RBI:       1
+obp:    .333
+ops:   1.666
+
+
+Home Pitcher:  Ryan Weathers     Miami Marlins            
+Away  Batter:  Dansby Swanson    Chicago Cubs             
+ AB:       6
   H:       1
  HR:       0
-AVG:    .500
-RBI:       0
-obp:    .667
-ops:   1.167
+AVG:    .167
+RBI:       2
+obp:    .167
+ops:    .500
 
 
-Away Pitcher:  Cristopher Sánchez Philadelphia Phillies    
-Home  Batter:  Danny Jansen      Tampa Bay Rays           
- AB:       3
-  H:       2
- HR:       0
-AVG:    .667
-RBI:       0
-obp:    .667
-ops:   1.667
-
-
-Away Pitcher:  Cristopher Sánchez Philadelphia Phillies    
-Home  Batter:  Taylor Walls      Tampa Bay Rays           
- AB:       4
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Home Pitcher:  Shane Baz         Tampa Bay Rays           
-Away  Batter:  Bryce Harper      Philadelphia Phillies    
- AB:       2
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Home Pitcher:  Shane Baz         Tampa Bay Rays           
-Away  Batter:  Max Kepler        Philadelphia Phillies    
+Home Pitcher:  Ryan Weathers     Miami Marlins            
+Away  Batter:  Kyle Tucker       Chicago Cubs             
  AB:       1
   H:       0
  HR:       0
 AVG:    .000
 RBI:       0
+obp:    .500
+ops:    .500
+
+
+Home Pitcher:  Ryan Weathers     Miami Marlins            
+Away  Batter:  Carson Kelly      Chicago Cubs             
+ AB:       4
+  H:       1
+ HR:       0
+AVG:    .250
+RBI:       0
+obp:    .400
+ops:    .650
+
+
+Home Pitcher:  Ryan Weathers     Miami Marlins            
+Away  Batter:  Miguel Amaya      Chicago Cubs             
+ AB:       3
+  H:       1
+ HR:       0
+AVG:    .333
+RBI:       0
+obp:    .333
+ops:    .666
+
+
+Home Pitcher:  Ryan Weathers     Miami Marlins            
+Away  Batter:  Ian Happ          Chicago Cubs             
+ AB:       8
+  H:       2
+ HR:       0
+AVG:    .250
+RBI:       0
+obp:    .250
+ops:    .500
+
+
+Batter vs Pitcher Stats:
+
+Away Pitcher:  Clay Holmes       New York Mets            
+Home  Batter:  Wilyer Abreu      Boston Red Sox           
+ AB:       2
+  H:       1
+ HR:       0
+AVG:    .500
+RBI:       1
+obp:    .667
+ops:   1.667
+
+
+Away Pitcher:  Clay Holmes       New York Mets            
+Home  Batter:  Alex Bregman      Boston Red Sox           
+ AB:       4
+  H:       1
+ HR:       0
+AVG:    .250
+RBI:       0
+obp:    .250
+ops:    .500
+
+
+Away Pitcher:  Clay Holmes       New York Mets            
+Home  Batter:  Rafael Devers     Boston Red Sox           
+ AB:       5
+  H:       1
+ HR:       0
+AVG:    .200
+RBI:       0
+obp:    .333
+ops:    .533
+
+
+Away Pitcher:  Clay Holmes       New York Mets            
+Home  Batter:  Trevor Story      Boston Red Sox           
+ AB:       5
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
 obp:    .000
 ops:    .000
 
 
-Home Pitcher:  Shane Baz         Tampa Bay Rays           
-Away  Batter:  Nick Castellanos  Philadelphia Phillies    
+Away Pitcher:  Clay Holmes       New York Mets            
+Home  Batter:  Triston Casas     Boston Red Sox           
+ AB:       3
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Clay Holmes       New York Mets            
+Home  Batter:  Jarren Duran      Boston Red Sox           
+ AB:       4
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Clay Holmes       New York Mets            
+Home  Batter:  Rob Refsnyder     Boston Red Sox           
+ AB:       2
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Clay Holmes       New York Mets            
+Home  Batter:  David Hamilton    Boston Red Sox           
+ AB:       3
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Clay Holmes       New York Mets            
+Home  Batter:  Ceddanne Rafaela  Boston Red Sox           
+ AB:       3
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .250
+ops:    .250
+
+
+Home Pitcher:  Walker Buehler    Boston Red Sox           
+Away  Batter:  Pete Alonso       New York Mets            
+ AB:      14
+  H:       5
+ HR:       4
+AVG:    .357
+RBI:       8
+obp:    .357
+ops:   1.571
+
+
+Home Pitcher:  Walker Buehler    Boston Red Sox           
+Away  Batter:  Francisco Lindor  New York Mets            
  AB:       2
   H:       1
  HR:       1
@@ -2120,8 +1657,63 @@ obp:    .500
 ops:   2.500
 
 
-Home Pitcher:  Shane Baz         Tampa Bay Rays           
-Away  Batter:  Bryson Stott      Philadelphia Phillies    
+Home Pitcher:  Walker Buehler    Boston Red Sox           
+Away  Batter:  Brandon Nimmo     New York Mets            
+ AB:      10
+  H:       2
+ HR:       0
+AVG:    .200
+RBI:       2
+obp:    .333
+ops:    .733
+
+
+Home Pitcher:  Walker Buehler    Boston Red Sox           
+Away  Batter:  Juan Soto         New York Mets            
+ AB:      10
+  H:       2
+ HR:       0
+AVG:    .200
+RBI:       1
+obp:    .333
+ops:    .533
+
+
+Home Pitcher:  Walker Buehler    Boston Red Sox           
+Away  Batter:  Starling Marte    New York Mets            
+ AB:       6
+  H:       2
+ HR:       0
+AVG:    .333
+RBI:       1
+obp:    .500
+ops:   1.167
+
+
+Home Pitcher:  Walker Buehler    Boston Red Sox           
+Away  Batter:  Jeff McNeil       New York Mets            
+ AB:       9
+  H:       1
+ HR:       0
+AVG:    .111
+RBI:       0
+obp:    .200
+ops:    .311
+
+
+Home Pitcher:  Walker Buehler    Boston Red Sox           
+Away  Batter:  Tyrone Taylor     New York Mets            
+ AB:       2
+  H:       1
+ HR:       0
+AVG:    .500
+RBI:       0
+obp:    .500
+ops:   1.500
+
+
+Home Pitcher:  Walker Buehler    Boston Red Sox           
+Away  Batter:  Luis Torrens      New York Mets            
  AB:       3
   H:       0
  HR:       0
@@ -2131,7 +1723,644 @@ obp:    .000
 ops:    .000
 
 
-Home Pitcher:  Shane Baz         Tampa Bay Rays           
+Home Pitcher:  Walker Buehler    Boston Red Sox           
+Away  Batter:  Jesse Winker      New York Mets            
+ AB:      15
+  H:       4
+ HR:       2
+AVG:    .267
+RBI:       3
+obp:    .267
+ops:    .934
+
+
+Batter vs Pitcher Stats:
+
+Away Pitcher:  Patrick Corbin    Texas Rangers            
+Home  Batter:  Aaron Judge       New York Yankees         
+ AB:      10
+  H:       2
+ HR:       1
+AVG:    .200
+RBI:       1
+obp:    .333
+ops:    .933
+
+
+Away Pitcher:  Patrick Corbin    Texas Rangers            
+Home  Batter:  Trent Grisham     New York Yankees         
+ AB:       7
+  H:       1
+ HR:       0
+AVG:    .143
+RBI:       0
+obp:    .250
+ops:    .393
+
+
+Away Pitcher:  Patrick Corbin    Texas Rangers            
+Home  Batter:  Cody Bellinger    New York Yankees         
+ AB:      20
+  H:       8
+ HR:       0
+AVG:    .400
+RBI:       2
+obp:    .478
+ops:    .928
+
+
+Away Pitcher:  Patrick Corbin    Texas Rangers            
+Home  Batter:  Jazz Chisholm Jr. New York Yankees         
+ AB:       7
+  H:       2
+ HR:       1
+AVG:    .286
+RBI:       4
+obp:    .375
+ops:   1.375
+
+
+Away Pitcher:  Patrick Corbin    Texas Rangers            
+Home  Batter:  Anthony Volpe     New York Yankees         
+ AB:       4
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .200
+ops:    .200
+
+
+Away Pitcher:  Patrick Corbin    Texas Rangers            
+Home  Batter:  Paul Goldschmidt  New York Yankees         
+ AB:      10
+  H:       3
+ HR:       0
+AVG:    .300
+RBI:       0
+obp:    .417
+ops:    .817
+
+
+Away Pitcher:  Patrick Corbin    Texas Rangers            
+Home  Batter:  Oswald Peraza     New York Yankees         
+ AB:       2
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Home Pitcher:  Will Warren       New York Yankees         
+Away  Batter:  Leody Taveras     Texas Rangers            
+ AB:       2
+  H:       1
+ HR:       0
+AVG:    .500
+RBI:       0
+obp:    .500
+ops:   1.000
+
+
+Batter vs Pitcher Stats:
+
+Away Pitcher:  Gavin Williams    Cleveland Guardians      
+Home  Batter:  Byron Buxton      Minnesota Twins          
+ AB:       7
+  H:       3
+ HR:       0
+AVG:    .429
+RBI:       2
+obp:    .500
+ops:   1.071
+
+
+Away Pitcher:  Gavin Williams    Cleveland Guardians      
+Home  Batter:  Trevor Larnach    Minnesota Twins          
+ AB:       6
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .143
+ops:    .143
+
+
+Away Pitcher:  Gavin Williams    Cleveland Guardians      
+Home  Batter:  Harrison Bader    Minnesota Twins          
+ AB:       0
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:   1.000
+ops:   1.000
+
+
+Away Pitcher:  Gavin Williams    Cleveland Guardians      
+Home  Batter:  Brooks Lee        Minnesota Twins          
+ AB:       2
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Gavin Williams    Cleveland Guardians      
+Home  Batter:  Ty France         Minnesota Twins          
+ AB:       2
+  H:       1
+ HR:       0
+AVG:    .500
+RBI:       0
+obp:    .500
+ops:   1.000
+
+
+Away Pitcher:  Gavin Williams    Cleveland Guardians      
+Home  Batter:  Ryan Jeffers      Minnesota Twins          
+ AB:       7
+  H:       3
+ HR:       0
+AVG:    .429
+RBI:       1
+obp:    .429
+ops:   1.000
+
+
+Away Pitcher:  Gavin Williams    Cleveland Guardians      
+Home  Batter:  Willi Castro      Minnesota Twins          
+ AB:       6
+  H:       1
+ HR:       0
+AVG:    .167
+RBI:       0
+obp:    .286
+ops:    .619
+
+
+Away Pitcher:  Gavin Williams    Cleveland Guardians      
+Home  Batter:  Carlos Correa     Minnesota Twins          
+ AB:       5
+  H:       2
+ HR:       0
+AVG:    .400
+RBI:       0
+obp:    .400
+ops:    .800
+
+
+Away Pitcher:  Gavin Williams    Cleveland Guardians      
+Home  Batter:  Edouard Julien    Minnesota Twins          
+ AB:       4
+  H:       1
+ HR:       1
+AVG:    .250
+RBI:       1
+obp:    .625
+ops:   1.625
+
+
+Home Pitcher:  Chris Paddack     Minnesota Twins          
+Away  Batter:  Kyle Manzardo     Cleveland Guardians      
+ AB:       2
+  H:       1
+ HR:       0
+AVG:    .500
+RBI:       0
+obp:    .500
+ops:   1.000
+
+
+Home Pitcher:  Chris Paddack     Minnesota Twins          
+Away  Batter:  José Ramírez      Cleveland Guardians      
+ AB:       5
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Home Pitcher:  Chris Paddack     Minnesota Twins          
+Away  Batter:  Bo Naylor         Cleveland Guardians      
+ AB:       2
+  H:       1
+ HR:       1
+AVG:    .500
+RBI:       1
+obp:    .500
+ops:   2.500
+
+
+Home Pitcher:  Chris Paddack     Minnesota Twins          
+Away  Batter:  Daniel Schneemann Cleveland Guardians      
+ AB:       2
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Home Pitcher:  Chris Paddack     Minnesota Twins          
+Away  Batter:  Gabriel Arias     Cleveland Guardians      
+ AB:       5
+  H:       2
+ HR:       0
+AVG:    .400
+RBI:       0
+obp:    .400
+ops:   1.000
+
+
+Home Pitcher:  Chris Paddack     Minnesota Twins          
+Away  Batter:  Steven Kwan       Cleveland Guardians      
+ AB:       3
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Home Pitcher:  Chris Paddack     Minnesota Twins          
+Away  Batter:  Carlos Santana    Cleveland Guardians      
+ AB:       1
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .500
+ops:    .500
+
+
+Home Pitcher:  Chris Paddack     Minnesota Twins          
+Away  Batter:  Austin Hedges     Cleveland Guardians      
+ AB:       3
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Home Pitcher:  Chris Paddack     Minnesota Twins          
+Away  Batter:  Nolan Jones       Cleveland Guardians      
+ AB:       1
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Home Pitcher:  Chris Paddack     Minnesota Twins          
+Away  Batter:  Jhonkensy Noel    Cleveland Guardians      
+ AB:       2
+  H:       1
+ HR:       0
+AVG:    .500
+RBI:       0
+obp:    .500
+ops:   1.000
+
+
+Batter vs Pitcher Stats:
+
+Away Pitcher:  Keegan Akin       Baltimore Orioles        
+Home  Batter:  Jackson Chourio   Milwaukee Brewers        
+ AB:       1
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Keegan Akin       Baltimore Orioles        
+Home  Batter:  Christian Yelich  Milwaukee Brewers        
+ AB:       2
+  H:       1
+ HR:       0
+AVG:    .500
+RBI:       0
+obp:    .500
+ops:   1.500
+
+
+Away Pitcher:  Keegan Akin       Baltimore Orioles        
+Home  Batter:  William Contreras Milwaukee Brewers        
+ AB:       1
+  H:       1
+ HR:       0
+AVG:   1.000
+RBI:       0
+obp:   1.000
+ops:   2.000
+
+
+Away Pitcher:  Keegan Akin       Baltimore Orioles        
+Home  Batter:  Brice Turang      Milwaukee Brewers        
+ AB:       1
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Keegan Akin       Baltimore Orioles        
+Home  Batter:  Sal Frelick       Milwaukee Brewers        
+ AB:       1
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Keegan Akin       Baltimore Orioles        
+Home  Batter:  Eric Haase        Milwaukee Brewers        
+ AB:       2
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .333
+ops:    .333
+
+
+Away Pitcher:  Keegan Akin       Baltimore Orioles        
+Home  Batter:  Joey Ortiz        Milwaukee Brewers        
+ AB:       1
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Batter vs Pitcher Stats:
+
+Away Pitcher:  Tarik Skubal      Detroit Tigers           
+Home  Batter:  Lars Nootbaar     St. Louis Cardinals      
+ AB:       1
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       1
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Tarik Skubal      Detroit Tigers           
+Home  Batter:  Willson Contreras St. Louis Cardinals      
+ AB:       3
+  H:       1
+ HR:       0
+AVG:    .333
+RBI:       0
+obp:    .333
+ops:    .666
+
+
+Away Pitcher:  Tarik Skubal      Detroit Tigers           
+Home  Batter:  Nolan Arenado     St. Louis Cardinals      
+ AB:       4
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Home Pitcher:  Erick Fedde       St. Louis Cardinals      
+Away  Batter:  Spencer Torkelson Detroit Tigers           
+ AB:       3
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Home Pitcher:  Erick Fedde       St. Louis Cardinals      
+Away  Batter:  Riley Greene      Detroit Tigers           
+ AB:       5
+  H:       1
+ HR:       0
+AVG:    .200
+RBI:       0
+obp:    .200
+ops:    .400
+
+
+Home Pitcher:  Erick Fedde       St. Louis Cardinals      
+Away  Batter:  Kerry Carpenter   Detroit Tigers           
+ AB:       2
+  H:       2
+ HR:       1
+AVG:   1.000
+RBI:       1
+obp:   1.000
+ops:   3.500
+
+
+Home Pitcher:  Erick Fedde       St. Louis Cardinals      
+Away  Batter:  Javier Báez       Detroit Tigers           
+ AB:       8
+  H:       4
+ HR:       2
+AVG:    .500
+RBI:       4
+obp:    .600
+ops:   1.975
+
+
+Home Pitcher:  Erick Fedde       St. Louis Cardinals      
+Away  Batter:  Gleyber Torres    Detroit Tigers           
+ AB:       9
+  H:       2
+ HR:       1
+AVG:    .222
+RBI:       1
+obp:    .300
+ops:    .856
+
+
+Home Pitcher:  Erick Fedde       St. Louis Cardinals      
+Away  Batter:  Colt Keith        Detroit Tigers           
+ AB:       4
+  H:       1
+ HR:       0
+AVG:    .250
+RBI:       0
+obp:    .400
+ops:    .650
+
+
+Batter vs Pitcher Stats:
+
+Away Pitcher:  Jesús Luzardo     Philadelphia Phillies    
+Home  Batter:  Ryan McMahon      Colorado Rockies         
+ AB:       6
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Jesús Luzardo     Philadelphia Phillies    
+Home  Batter:  Michael Toglia    Colorado Rockies         
+ AB:       3
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Jesús Luzardo     Philadelphia Phillies    
+Home  Batter:  Brenton Doyle     Colorado Rockies         
+ AB:       3
+  H:       1
+ HR:       1
+AVG:    .333
+RBI:       1
+obp:    .333
+ops:   1.666
+
+
+Away Pitcher:  Jesús Luzardo     Philadelphia Phillies    
+Home  Batter:  Kyle Farmer       Colorado Rockies         
+ AB:       7
+  H:       1
+ HR:       0
+AVG:    .143
+RBI:       0
+obp:    .143
+ops:    .286
+
+
+Away Pitcher:  Jesús Luzardo     Philadelphia Phillies    
+Home  Batter:  Ezequiel Tovar    Colorado Rockies         
+ AB:       3
+  H:       1
+ HR:       0
+AVG:    .333
+RBI:       0
+obp:    .333
+ops:   1.000
+
+
+Home Pitcher:  Antonio Senzatela Colorado Rockies         
+Away  Batter:  Kyle Schwarber    Philadelphia Phillies    
+ AB:      10
+  H:       3
+ HR:       1
+AVG:    .300
+RBI:       5
+obp:    .300
+ops:   1.000
+
+
+Home Pitcher:  Antonio Senzatela Colorado Rockies         
+Away  Batter:  Bryce Harper      Philadelphia Phillies    
+ AB:      15
+  H:       5
+ HR:       2
+AVG:    .333
+RBI:       3
+obp:    .444
+ops:   1.244
+
+
+Home Pitcher:  Antonio Senzatela Colorado Rockies         
+Away  Batter:  Max Kepler        Philadelphia Phillies    
+ AB:       4
+  H:       1
+ HR:       0
+AVG:    .250
+RBI:       0
+obp:    .500
+ops:    .750
+
+
+Home Pitcher:  Antonio Senzatela Colorado Rockies         
+Away  Batter:  Nick Castellanos  Philadelphia Phillies    
+ AB:      10
+  H:       4
+ HR:       0
+AVG:    .400
+RBI:       3
+obp:    .455
+ops:   1.155
+
+
+Home Pitcher:  Antonio Senzatela Colorado Rockies         
+Away  Batter:  J.T. Realmuto     Philadelphia Phillies    
+ AB:      13
+  H:       6
+ HR:       0
+AVG:    .462
+RBI:       0
+obp:    .500
+ops:    .962
+
+
+Home Pitcher:  Antonio Senzatela Colorado Rockies         
+Away  Batter:  Bryson Stott      Philadelphia Phillies    
+ AB:       2
+  H:       2
+ HR:       0
+AVG:   1.000
+RBI:       0
+obp:   1.000
+ops:   2.000
+
+
+Home Pitcher:  Antonio Senzatela Colorado Rockies         
+Away  Batter:  Alec Bohm         Philadelphia Phillies    
+ AB:       5
+  H:       1
+ HR:       0
+AVG:    .200
+RBI:       1
+obp:    .167
+ops:    .367
+
+
+Home Pitcher:  Antonio Senzatela Colorado Rockies         
+Away  Batter:  Trea Turner       Philadelphia Phillies    
+ AB:      15
+  H:       7
+ HR:       0
+AVG:    .467
+RBI:       0
+obp:    .467
+ops:   1.000
+
+
+Home Pitcher:  Antonio Senzatela Colorado Rockies         
 Away  Batter:  Brandon Marsh     Philadelphia Phillies    
  AB:       2
   H:       0
@@ -2142,691 +2371,65 @@ obp:    .000
 ops:    .000
 
 
-Home Pitcher:  Shane Baz         Tampa Bay Rays           
-Away  Batter:  Johan Rojas       Philadelphia Phillies    
- AB:       2
-  H:       1
- HR:       0
-AVG:    .500
-RBI:       0
-obp:    .500
-ops:   1.000
-
-
-Home Pitcher:  Shane Baz         Tampa Bay Rays           
-Away  Batter:  Trea Turner       Philadelphia Phillies    
- AB:       3
-  H:       1
- HR:       0
-AVG:    .333
-RBI:       0
-obp:    .333
-ops:    .666
-
-
-Home Pitcher:  Shane Baz         Tampa Bay Rays           
-Away  Batter:  Weston Wilson     Philadelphia Phillies    
- AB:       1
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .500
-ops:    .500
-
-
 Batter vs Pitcher Stats:
 
-Away Pitcher:  Dylan Cease       San Diego Padres         
-Home  Batter:  Aaron Judge       New York Yankees         
- AB:      10
-  H:       4
- HR:       1
-AVG:    .400
-RBI:       4
-obp:    .500
-ops:   1.400
-
-
-Away Pitcher:  Dylan Cease       San Diego Padres         
-Home  Batter:  Trent Grisham     New York Yankees         
- AB:       1
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .500
-ops:    .500
-
-
-Away Pitcher:  Dylan Cease       San Diego Padres         
-Home  Batter:  Austin Wells      New York Yankees         
- AB:       3
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Away Pitcher:  Dylan Cease       San Diego Padres         
-Home  Batter:  Anthony Volpe     New York Yankees         
- AB:       5
-  H:       2
- HR:       0
-AVG:    .400
-RBI:       0
-obp:    .500
-ops:    .900
-
-
-Away Pitcher:  Dylan Cease       San Diego Padres         
-Home  Batter:  Cody Bellinger    New York Yankees         
- AB:       8
-  H:       1
- HR:       0
-AVG:    .125
-RBI:       0
-obp:    .125
-ops:    .250
-
-
-Away Pitcher:  Dylan Cease       San Diego Padres         
-Home  Batter:  Paul Goldschmidt  New York Yankees         
- AB:       5
-  H:       3
- HR:       0
-AVG:    .600
-RBI:       0
-obp:    .667
-ops:   1.267
-
-
-Away Pitcher:  Dylan Cease       San Diego Padres         
-Home  Batter:  Oswaldo Cabrera   New York Yankees         
- AB:       3
-  H:       1
- HR:       0
-AVG:    .333
-RBI:       0
-obp:    .333
-ops:    .666
-
-
-Home Pitcher:  Max Fried         New York Yankees         
-Away  Batter:  Fernando Tatis Jr. San Diego Padres         
- AB:       5
-  H:       2
- HR:       0
-AVG:    .400
-RBI:       0
-obp:    .571
-ops:   1.171
-
-
-Home Pitcher:  Max Fried         New York Yankees         
-Away  Batter:  Luis Arraez       San Diego Padres         
- AB:       8
-  H:       4
- HR:       0
-AVG:    .500
-RBI:       0
-obp:    .600
-ops:   1.100
-
-
-Home Pitcher:  Max Fried         New York Yankees         
-Away  Batter:  Elias Díaz        San Diego Padres         
- AB:      11
-  H:       3
- HR:       0
-AVG:    .273
-RBI:       0
-obp:    .333
-ops:    .606
-
-
-Home Pitcher:  Max Fried         New York Yankees         
-Away  Batter:  Manny Machado     San Diego Padres         
+Away Pitcher:  Michael Lorenzen  Kansas City Royals       
+Home  Batter:  Wilmer Flores     San Francisco Giants     
  AB:      14
-  H:       1
- HR:       1
-AVG:    .071
-RBI:       2
-obp:    .278
-ops:    .564
-
-
-Home Pitcher:  Max Fried         New York Yankees         
-Away  Batter:  Jackson Merrill   San Diego Padres         
- AB:       2
-  H:       2
- HR:       0
-AVG:   1.000
-RBI:       0
-obp:   1.000
-ops:   2.000
-
-
-Home Pitcher:  Max Fried         New York Yankees         
-Away  Batter:  Jake Cronenworth  San Diego Padres         
- AB:      12
-  H:       3
- HR:       0
-AVG:    .250
-RBI:       1
-obp:    .250
-ops:    .500
-
-
-Home Pitcher:  Max Fried         New York Yankees         
-Away  Batter:  Xander Bogaerts   San Diego Padres         
- AB:       8
-  H:       2
- HR:       0
-AVG:    .250
-RBI:       0
-obp:    .250
-ops:    .500
-
-
-Home Pitcher:  Max Fried         New York Yankees         
-Away  Batter:  Jason Heyward     San Diego Padres         
- AB:       2
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Home Pitcher:  Max Fried         New York Yankees         
-Away  Batter:  Martín Maldonado  San Diego Padres         
- AB:       2
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Batter vs Pitcher Stats:
-
-Away Pitcher:  Hunter Greene     Cincinnati Reds          
-Home  Batter:  Austin Riley      Atlanta Braves           
- AB:       9
-  H:       3
- HR:       0
-AVG:    .333
-RBI:       0
-obp:    .333
-ops:    .889
-
-
-Away Pitcher:  Hunter Greene     Cincinnati Reds          
-Home  Batter:  Sean Murphy       Atlanta Braves           
- AB:       4
-  H:       1
- HR:       0
-AVG:    .250
-RBI:       1
-obp:    .500
-ops:   1.000
-
-
-Away Pitcher:  Hunter Greene     Cincinnati Reds          
-Home  Batter:  Matt Olson        Atlanta Braves           
- AB:       8
-  H:       2
- HR:       1
-AVG:    .250
-RBI:       1
-obp:    .333
-ops:    .958
-
-
-Away Pitcher:  Hunter Greene     Cincinnati Reds          
-Home  Batter:  Ozzie Albies      Atlanta Braves           
- AB:       3
-  H:       1
- HR:       0
-AVG:    .333
-RBI:       0
-obp:    .600
-ops:    .933
-
-
-Away Pitcher:  Hunter Greene     Cincinnati Reds          
-Home  Batter:  Marcell Ozuna     Atlanta Braves           
- AB:       6
-  H:       1
- HR:       0
-AVG:    .167
-RBI:       1
-obp:    .250
-ops:    .417
-
-
-Away Pitcher:  Hunter Greene     Cincinnati Reds          
-Home  Batter:  Jarred Kelenic    Atlanta Braves           
- AB:       3
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Home Pitcher:  Grant Holmes      Atlanta Braves           
-Away  Batter:  Elly De La Cruz   Cincinnati Reds          
- AB:       4
-  H:       2
- HR:       0
-AVG:    .500
-RBI:       0
-obp:    .500
-ops:   1.250
-
-
-Home Pitcher:  Grant Holmes      Atlanta Braves           
-Away  Batter:  Austin Hays       Cincinnati Reds          
- AB:       1
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Home Pitcher:  Grant Holmes      Atlanta Braves           
-Away  Batter:  Jake Fraley       Cincinnati Reds          
- AB:       3
-  H:       2
- HR:       0
-AVG:    .667
-RBI:       1
-obp:    .500
-ops:   1.167
-
-
-Home Pitcher:  Grant Holmes      Atlanta Braves           
-Away  Batter:  Noelvi Marte      Cincinnati Reds          
- AB:       4
-  H:       1
- HR:       0
-AVG:    .250
-RBI:       0
-obp:    .250
-ops:    .500
-
-
-Home Pitcher:  Grant Holmes      Atlanta Braves           
-Away  Batter:  Spencer Steer     Cincinnati Reds          
- AB:       3
-  H:       1
- HR:       0
-AVG:    .333
-RBI:       2
-obp:    .500
-ops:   1.167
-
-
-Home Pitcher:  Grant Holmes      Atlanta Braves           
-Away  Batter:  Jeimer Candelario Cincinnati Reds          
- AB:       1
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .500
-ops:    .500
-
-
-Batter vs Pitcher Stats:
-
-Away Pitcher:  Charlie Morton    Baltimore Orioles        
-Home  Batter:  Byron Buxton      Minnesota Twins          
- AB:       3
-  H:       1
- HR:       0
-AVG:    .333
-RBI:       0
-obp:    .500
-ops:   1.500
-
-
-Away Pitcher:  Charlie Morton    Baltimore Orioles        
-Home  Batter:  Harrison Bader    Minnesota Twins          
- AB:       4
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Away Pitcher:  Charlie Morton    Baltimore Orioles        
-Home  Batter:  Ty France         Minnesota Twins          
- AB:       6
-  H:       3
- HR:       0
-AVG:    .500
-RBI:       1
-obp:    .500
-ops:   1.333
-
-
-Away Pitcher:  Charlie Morton    Baltimore Orioles        
-Home  Batter:  Kody Clemens      Minnesota Twins          
- AB:       3
-  H:       2
- HR:       0
-AVG:    .667
-RBI:       0
-obp:    .667
-ops:   1.667
-
-
-Home Pitcher:  Simeon Woods Richardson Minnesota Twins          
-Away  Batter:  Ramón Laureano    Baltimore Orioles        
- AB:       4
-  H:       1
- HR:       0
-AVG:    .250
-RBI:       0
-obp:    .250
-ops:    .500
-
-
-Batter vs Pitcher Stats:
-
-Away Pitcher:  Jonathan Cannon   Chicago White Sox        
-Home  Batter:  Vinnie Pasquantino Kansas City Royals       
- AB:       8
-  H:       1
- HR:       0
-AVG:    .125
-RBI:       0
-obp:    .125
-ops:    .250
-
-
-Away Pitcher:  Jonathan Cannon   Chicago White Sox        
-Home  Batter:  Maikel Garcia     Kansas City Royals       
- AB:       7
-  H:       1
- HR:       0
-AVG:    .143
-RBI:       0
-obp:    .143
-ops:    .429
-
-
-Away Pitcher:  Jonathan Cannon   Chicago White Sox        
-Home  Batter:  Bobby Witt Jr.    Kansas City Royals       
- AB:       7
-  H:       3
- HR:       0
-AVG:    .429
-RBI:       1
-obp:    .500
-ops:   1.071
-
-
-Away Pitcher:  Jonathan Cannon   Chicago White Sox        
-Home  Batter:  Kyle Isbel        Kansas City Royals       
- AB:       6
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Away Pitcher:  Jonathan Cannon   Chicago White Sox        
-Home  Batter:  Salvador Perez    Kansas City Royals       
- AB:       8
-  H:       2
- HR:       0
-AVG:    .250
-RBI:       1
-obp:    .250
-ops:    .500
-
-
-Away Pitcher:  Jonathan Cannon   Chicago White Sox        
-Home  Batter:  Michael Massey    Kansas City Royals       
- AB:       6
-  H:       2
- HR:       1
-AVG:    .333
-RBI:       2
-obp:    .333
-ops:   1.500
-
-
-Away Pitcher:  Jonathan Cannon   Chicago White Sox        
-Home  Batter:  MJ Melendez       Kansas City Royals       
- AB:       5
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Away Pitcher:  Jonathan Cannon   Chicago White Sox        
-Home  Batter:  Drew Waters       Kansas City Royals       
- AB:       2
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Home Pitcher:  Michael Wacha     Kansas City Royals       
-Away  Batter:  Andrew Benintendi Chicago White Sox        
- AB:      14
-  H:       2
- HR:       0
-AVG:    .143
-RBI:       0
-obp:    .143
-ops:    .286
-
-
-Home Pitcher:  Michael Wacha     Kansas City Royals       
-Away  Batter:  Luis Robert Jr.   Chicago White Sox        
- AB:       7
-  H:       2
- HR:       0
-AVG:    .286
-RBI:       1
-obp:    .444
-ops:    .873
-
-
-Home Pitcher:  Michael Wacha     Kansas City Royals       
-Away  Batter:  Brooks Baldwin    Chicago White Sox        
- AB:       5
-  H:       1
- HR:       0
-AVG:    .200
-RBI:       0
-obp:    .200
-ops:    .400
-
-
-Home Pitcher:  Michael Wacha     Kansas City Royals       
-Away  Batter:  Andrew Vaughn     Chicago White Sox        
- AB:      21
-  H:       5
- HR:       2
-AVG:    .238
-RBI:       6
-obp:    .238
-ops:    .857
-
-
-Home Pitcher:  Michael Wacha     Kansas City Royals       
-Away  Batter:  Lenyn Sosa        Chicago White Sox        
- AB:       7
-  H:       2
- HR:       0
-AVG:    .286
-RBI:       0
-obp:    .286
-ops:    .572
-
-
-Home Pitcher:  Michael Wacha     Kansas City Royals       
-Away  Batter:  Miguel Vargas     Chicago White Sox        
- AB:       3
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .000
-ops:    .000
-
-
-Home Pitcher:  Michael Wacha     Kansas City Royals       
-Away  Batter:  Michael A. Taylor Chicago White Sox        
- AB:      14
-  H:       4
- HR:       0
-AVG:    .286
-RBI:       0
-obp:    .286
-ops:    .643
-
-
-Batter vs Pitcher Stats:
-
-Batter vs Pitcher Stats:
-
-Away Pitcher:  José Berríos      Toronto Blue Jays        
-Home  Batter:  Mike Trout        Los Angeles Angels       
- AB:       8
-  H:       3
- HR:       0
-AVG:    .375
-RBI:       0
-obp:    .545
-ops:    .920
-
-
-Away Pitcher:  José Berríos      Toronto Blue Jays        
-Home  Batter:  Taylor Ward       Los Angeles Angels       
- AB:       9
-  H:       3
- HR:       0
-AVG:    .333
-RBI:       1
-obp:    .400
-ops:    .956
-
-
-Away Pitcher:  José Berríos      Toronto Blue Jays        
-Home  Batter:  Jorge Soler       Los Angeles Angels       
- AB:      23
-  H:       6
- HR:       1
-AVG:    .261
-RBI:       4
-obp:    .296
-ops:    .731
-
-
-Away Pitcher:  José Berríos      Toronto Blue Jays        
-Home  Batter:  Jo Adell          Los Angeles Angels       
- AB:       1
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .500
-ops:    .500
-
-
-Away Pitcher:  José Berríos      Toronto Blue Jays        
-Home  Batter:  Nolan Schanuel    Los Angeles Angels       
- AB:       2
-  H:       0
- HR:       0
-AVG:    .000
-RBI:       0
-obp:    .333
-ops:    .333
-
-
-Away Pitcher:  José Berríos      Toronto Blue Jays        
-Home  Batter:  Yoán Moncada      Los Angeles Angels       
- AB:      39
-  H:      12
- HR:       3
-AVG:    .308
-RBI:       7
-obp:    .386
-ops:   1.001
-
-
-Away Pitcher:  José Berríos      Toronto Blue Jays        
-Home  Batter:  Luis Rengifo      Los Angeles Angels       
- AB:       7
-  H:       5
- HR:       1
-AVG:    .714
-RBI:       2
-obp:    .714
-ops:   2.285
-
-
-Home Pitcher:  Yusei Kikuchi     Los Angeles Angels       
-Away  Batter:  Anthony Santander Toronto Blue Jays        
- AB:      19
-  H:       5
- HR:       1
-AVG:    .263
-RBI:       3
-obp:    .417
-ops:    .838
-
-
-Home Pitcher:  Yusei Kikuchi     Los Angeles Angels       
-Away  Batter:  Vladimir Guerrero Jr. Toronto Blue Jays        
- AB:       5
-  H:       2
- HR:       0
-AVG:    .400
-RBI:       0
-obp:    .500
-ops:    .900
-
-
-Home Pitcher:  Yusei Kikuchi     Los Angeles Angels       
-Away  Batter:  George Springer   Toronto Blue Jays        
- AB:      16
   H:       7
+ HR:       3
+AVG:    .500
+RBI:       5
+obp:    .533
+ops:   1.676
+
+
+Away Pitcher:  Michael Lorenzen  Kansas City Royals       
+Home  Batter:  Matt Chapman      San Francisco Giants     
+ AB:       6
+  H:       2
  HR:       0
-AVG:    .438
-RBI:       1
-obp:    .471
-ops:   1.034
+AVG:    .333
+RBI:       0
+obp:    .429
+ops:    .762
 
 
-Home Pitcher:  Yusei Kikuchi     Los Angeles Angels       
-Away  Batter:  Andrés Giménez    Toronto Blue Jays        
+Away Pitcher:  Michael Lorenzen  Kansas City Royals       
+Home  Batter:  Heliot Ramos      San Francisco Giants     
+ AB:       3
+  H:       2
+ HR:       0
+AVG:    .667
+RBI:       0
+obp:    .667
+ops:   1.334
+
+
+Away Pitcher:  Michael Lorenzen  Kansas City Royals       
+Home  Batter:  Willy Adames      San Francisco Giants     
+ AB:       4
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Michael Lorenzen  Kansas City Royals       
+Home  Batter:  Mike Yastrzemski  San Francisco Giants     
+ AB:       5
+  H:       2
+ HR:       0
+AVG:    .400
+RBI:       0
+obp:    .400
+ops:    .800
+
+
+Away Pitcher:  Michael Lorenzen  Kansas City Royals       
+Home  Batter:  LaMonte Wade Jr.  San Francisco Giants     
  AB:       5
   H:       0
  HR:       0
@@ -2836,8 +2439,221 @@ obp:    .167
 ops:    .167
 
 
-Home Pitcher:  Yusei Kikuchi     Los Angeles Angels       
-Away  Batter:  Daulton Varsho    Toronto Blue Jays        
+Batter vs Pitcher Stats:
+
+Away Pitcher:  Kyle Hendricks    Los Angeles Angels       
+Home  Batter:  Brent Rooker      Athletics                
+ AB:       3
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Kyle Hendricks    Los Angeles Angels       
+Home  Batter:  Luis Urías        Athletics                
+ AB:      20
+  H:       4
+ HR:       0
+AVG:    .200
+RBI:       1
+obp:    .238
+ops:    .538
+
+
+Away Pitcher:  Kyle Hendricks    Los Angeles Angels       
+Home  Batter:  Miguel Andujar    Athletics                
+ AB:       3
+  H:       3
+ HR:       0
+AVG:   1.000
+RBI:       3
+obp:   1.000
+ops:   2.333
+
+
+Away Pitcher:  Kyle Hendricks    Los Angeles Angels       
+Home  Batter:  Max Muncy         Athletics                
+ AB:      12
+  H:       3
+ HR:       1
+AVG:    .250
+RBI:       1
+obp:    .357
+ops:    .940
+
+
+Batter vs Pitcher Stats:
+
+Away Pitcher:  Ryne Nelson       Arizona Diamondbacks     
+Home  Batter:  Shohei Ohtani     Los Angeles Dodgers      
+ AB:       8
+  H:       1
+ HR:       0
+AVG:    .125
+RBI:       0
+obp:    .125
+ops:    .250
+
+
+Away Pitcher:  Ryne Nelson       Arizona Diamondbacks     
+Home  Batter:  Freddie Freeman   Los Angeles Dodgers      
+ AB:      10
+  H:       2
+ HR:       0
+AVG:    .200
+RBI:       0
+obp:    .273
+ops:    .473
+
+
+Away Pitcher:  Ryne Nelson       Arizona Diamondbacks     
+Home  Batter:  Teoscar Hernández Los Angeles Dodgers      
+ AB:       4
+  H:       3
+ HR:       0
+AVG:    .750
+RBI:       2
+obp:    .833
+ops:   1.833
+
+
+Away Pitcher:  Ryne Nelson       Arizona Diamondbacks     
+Home  Batter:  Andy Pages        Los Angeles Dodgers      
+ AB:       7
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Away Pitcher:  Ryne Nelson       Arizona Diamondbacks     
+Home  Batter:  Mookie Betts      Los Angeles Dodgers      
+ AB:       8
+  H:       2
+ HR:       0
+AVG:    .250
+RBI:       0
+obp:    .333
+ops:    .708
+
+
+Away Pitcher:  Ryne Nelson       Arizona Diamondbacks     
+Home  Batter:  Enrique Hernández Los Angeles Dodgers      
+ AB:       2
+  H:       1
+ HR:       0
+AVG:    .500
+RBI:       0
+obp:    .500
+ops:   1.000
+
+
+Away Pitcher:  Ryne Nelson       Arizona Diamondbacks     
+Home  Batter:  Will Smith        Los Angeles Dodgers      
+ AB:       8
+  H:       1
+ HR:       0
+AVG:    .125
+RBI:       0
+obp:    .222
+ops:    .347
+
+
+Away Pitcher:  Ryne Nelson       Arizona Diamondbacks     
+Home  Batter:  Max Muncy         Los Angeles Dodgers      
+ AB:       4
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .333
+ops:    .333
+
+
+Away Pitcher:  Ryne Nelson       Arizona Diamondbacks     
+Home  Batter:  Michael Conforto  Los Angeles Dodgers      
+ AB:      11
+  H:       3
+ HR:       1
+AVG:    .273
+RBI:       1
+obp:    .333
+ops:    .969
+
+
+Away Pitcher:  Ryne Nelson       Arizona Diamondbacks     
+Home  Batter:  James Outman      Los Angeles Dodgers      
+ AB:       3
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Home Pitcher:  Yoshinobu Yamamoto Los Angeles Dodgers      
+Away  Batter:  Corbin Carroll    Arizona Diamondbacks     
+ AB:       8
+  H:       0
+ HR:       0
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
+
+
+Home Pitcher:  Yoshinobu Yamamoto Los Angeles Dodgers      
+Away  Batter:  Eugenio Suárez    Arizona Diamondbacks     
+ AB:       7
+  H:       1
+ HR:       0
+AVG:    .143
+RBI:       0
+obp:    .250
+ops:    .536
+
+
+Home Pitcher:  Yoshinobu Yamamoto Los Angeles Dodgers      
+Away  Batter:  Lourdes Gurriel Jr. Arizona Diamondbacks     
+ AB:       8
+  H:       1
+ HR:       0
+AVG:    .125
+RBI:       0
+obp:    .125
+ops:    .250
+
+
+Home Pitcher:  Yoshinobu Yamamoto Los Angeles Dodgers      
+Away  Batter:  Ketel Marte       Arizona Diamondbacks     
+ AB:       7
+  H:       3
+ HR:       1
+AVG:    .429
+RBI:       1
+obp:    .556
+ops:   1.556
+
+
+Home Pitcher:  Yoshinobu Yamamoto Los Angeles Dodgers      
+Away  Batter:  Geraldo Perdomo   Arizona Diamondbacks     
+ AB:       2
+  H:       1
+ HR:       0
+AVG:    .500
+RBI:       0
+obp:    .500
+ops:   1.000
+
+
+Home Pitcher:  Yoshinobu Yamamoto Los Angeles Dodgers      
+Away  Batter:  Josh Naylor       Arizona Diamondbacks     
  AB:       3
   H:       1
  HR:       0
@@ -2847,26 +2663,37 @@ obp:    .333
 ops:    .666
 
 
-Home Pitcher:  Yusei Kikuchi     Los Angeles Angels       
-Away  Batter:  Bo Bichette       Toronto Blue Jays        
- AB:       9
-  H:       1
+Home Pitcher:  Yoshinobu Yamamoto Los Angeles Dodgers      
+Away  Batter:  Pavin Smith       Arizona Diamondbacks     
+ AB:       2
+  H:       0
  HR:       0
-AVG:    .111
+AVG:    .000
 RBI:       0
-obp:    .200
-ops:    .311
+obp:    .333
+ops:    .333
 
 
-Home Pitcher:  Yusei Kikuchi     Los Angeles Angels       
-Away  Batter:  Myles Straw       Toronto Blue Jays        
- AB:      12
+Home Pitcher:  Yoshinobu Yamamoto Los Angeles Dodgers      
+Away  Batter:  Gabriel Moreno    Arizona Diamondbacks     
+ AB:       5
   H:       2
+ HR:       1
+AVG:    .400
+RBI:       4
+obp:    .400
+ops:   1.400
+
+
+Home Pitcher:  Yoshinobu Yamamoto Los Angeles Dodgers      
+Away  Batter:  Alek Thomas       Arizona Diamondbacks     
+ AB:       2
+  H:       0
  HR:       0
-AVG:    .167
-RBI:       2
-obp:    .286
-ops:    .453
+AVG:    .000
+RBI:       0
+obp:    .000
+ops:    .000
 
 
 </pre>
@@ -2874,6 +2701,7 @@ ops:    .453
         <table border='1'>
   <tr>
     <th>Player</th>
+    <th>Team</th>
     <th>Games</th>
     <th>At Bats</th>
     <th>Runs</th>
@@ -2888,67 +2716,40 @@ ops:    .453
     <th>Last Game Date</th>
   </tr>
   <tr>
-    <td>J.P. Crawford</td>
-    <td>14</td>
-    <td>56</td>
-    <td>10</td>
-    <td>21</td>
-    <td>3</td>
+    <td>Cody Bellinger</td>
+    <td>New York Yankees</td>
     <td>13</td>
-    <td>9</td>
-    <td>10</td>
-    <td>.375</td>
-    <td>.462</td>
-    <td>.554</td>
-    <td>2025-05-06</td>
-  </tr>
-  <tr>
-    <td>Freddie Freeman</td>
+    <td>53</td>
     <td>11</td>
-    <td>42</td>
-    <td>10</td>
-    <td>19</td>
+    <td>20</td>
     <td>4</td>
-    <td>14</td>
-    <td>7</td>
-    <td>6</td>
-    <td>.452</td>
-    <td>.531</td>
-    <td>.810</td>
-    <td>2025-05-06</td>
-  </tr>
-  <tr>
-    <td>Zach Neto</td>
-    <td>11</td>
-    <td>45</td>
-    <td>7</td>
-    <td>16</td>
-    <td>3</td>
-    <td>5</td>
-    <td>2</td>
     <td>12</td>
-    <td>.356</td>
-    <td>.383</td>
-    <td>.644</td>
-    <td>2025-05-06</td>
+    <td>7</td>
+    <td>10</td>
+    <td>.377</td>
+    <td>.450</td>
+    <td>.679</td>
+    <td>2025-05-18</td>
   </tr>
   <tr>
-    <td>Dansby Swanson</td>
+    <td>Ivan Herrera</td>
+    <td>Unknown Team</td>
+    <td>9</td>
+    <td>33</td>
     <td>8</td>
-    <td>30</td>
-    <td>10</td>
-    <td>14</td>
-    <td>3</td>
-    <td>5</td>
+    <td>15</td>
+    <td>1</td>
+    <td>9</td>
     <td>2</td>
-    <td>7</td>
-    <td>.467</td>
+    <td>5</td>
+    <td>.455</td>
     <td>.500</td>
-    <td>.833</td>
-    <td>2025-05-06</td>
+    <td>.667</td>
+    <td>2025-05-19</td>
   </tr>
   <tr>
     <td>Victor Robles</td>
+    <td>Unknown Team</td>
     <td>8</td>
     <td>37</td>
     <td>3</td>
@@ -2963,247 +2764,312 @@ ops:    .453
     <td>2025-04-06</td>
   </tr>
   <tr>
-    <td>Harrison Bader</td>
+    <td>Xavier Edwards</td>
+    <td>Miami Marlins</td>
     <td>8</td>
-    <td>28</td>
-    <td>6</td>
-    <td>12</td>
-    <td>0</td>
-    <td>2</td>
+    <td>32</td>
     <td>3</td>
-    <td>5</td>
-    <td>.429</td>
-    <td>.484</td>
-    <td>.536</td>
-    <td>2025-05-04</td>
-  </tr>
-  <tr>
-    <td>Ryan Jeffers</td>
-    <td>8</td>
-    <td>31</td>
-    <td>5</td>
-    <td>11</td>
-    <td>2</td>
     <td>10</td>
-    <td>4</td>
-    <td>5</td>
-    <td>.355</td>
-    <td>.429</td>
-    <td>.645</td>
-    <td>2025-05-06</td>
-  </tr>
-  <tr>
-    <td>Vladimir Guerrero Jr.</td>
-    <td>8</td>
-    <td>31</td>
-    <td>6</td>
-    <td>9</td>
-    <td>2</td>
-    <td>6</td>
-    <td>3</td>
-    <td>9</td>
-    <td>.290</td>
-    <td>.343</td>
-    <td>.484</td>
-    <td>2025-05-06</td>
-  </tr>
-  <tr>
-    <td>Riley Greene</td>
-    <td>7</td>
-    <td>28</td>
-    <td>7</td>
-    <td>13</td>
-    <td>4</td>
-    <td>8</td>
+    <td>0</td>
     <td>1</td>
-    <td>3</td>
-    <td>.464</td>
-    <td>.500</td>
-    <td>.893</td>
-    <td>2025-05-04</td>
+    <td>4</td>
+    <td>7</td>
+    <td>.312</td>
+    <td>.389</td>
+    <td>.312</td>
+    <td>2025-05-14</td>
   </tr>
   <tr>
-    <td>Santiago Espinal</td>
-    <td>7</td>
-    <td>27</td>
+    <td>Spencer Steer</td>
+    <td>Cincinnati Reds</td>
+    <td>8</td>
+    <td>28</td>
     <td>2</td>
-    <td>12</td>
+    <td>9</td>
+    <td>1</td>
+    <td>1</td>
     <td>0</td>
     <td>6</td>
+    <td>.321</td>
+    <td>.321</td>
+    <td>.571</td>
+    <td>2025-05-19</td>
+  </tr>
+  <tr>
+    <td>Jake Burger</td>
+    <td>Unknown Team</td>
+    <td>8</td>
+    <td>27</td>
     <td>1</td>
+    <td>9</td>
+    <td>1</td>
+    <td>4</td>
+    <td>2</td>
     <td>5</td>
-    <td>.444</td>
-    <td>.464</td>
+    <td>.333</td>
+    <td>.379</td>
     <td>.519</td>
-    <td>2025-05-06</td>
+    <td>2025-05-18</td>
   </tr>
   <tr>
-    <td>Javier Baez</td>
+    <td>Will Benson</td>
+    <td>Unknown Team</td>
     <td>7</td>
-    <td>28</td>
-    <td>9</td>
-    <td>12</td>
-    <td>3</td>
-    <td>10</td>
-    <td>1</td>
-    <td>6</td>
-    <td>.429</td>
-    <td>.467</td>
-    <td>.893</td>
-    <td>2025-05-04</td>
-  </tr>
-  <tr>
-    <td>Manny Machado</td>
-    <td>7</td>
-    <td>27</td>
+    <td>23</td>
     <td>6</td>
     <td>11</td>
-    <td>1</td>
     <td>5</td>
+    <td>10</td>
     <td>3</td>
-    <td>8</td>
+    <td>5</td>
+    <td>.478</td>
+    <td>.538</td>
+    <td>1.217</td>
+    <td>2025-05-19</td>
+  </tr>
+  <tr>
+    <td>Chase Meidroth</td>
+    <td>Chicago White Sox</td>
+    <td>7</td>
+    <td>27</td>
+    <td>5</td>
+    <td>11</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>5</td>
     <td>.407</td>
     <td>.467</td>
     <td>.593</td>
-    <td>2025-05-06</td>
+    <td>2025-05-19</td>
   </tr>
   <tr>
-    <td>Jake Meyers</td>
+    <td>Kyle Stowers</td>
+    <td>Miami Marlins</td>
     <td>7</td>
-    <td>24</td>
-    <td>4</td>
-    <td>11</td>
-    <td>2</td>
-    <td>8</td>
-    <td>3</td>
-    <td>1</td>
-    <td>.458</td>
-    <td>.519</td>
-    <td>.833</td>
-    <td>2025-05-06</td>
-  </tr>
-  <tr>
-    <td>Victor Scott</td>
-    <td>7</td>
-    <td>23</td>
-    <td>3</td>
-    <td>9</td>
-    <td>1</td>
-    <td>5</td>
-    <td>3</td>
-    <td>8</td>
-    <td>.391</td>
-    <td>.462</td>
-    <td>.565</td>
-    <td>2025-05-06</td>
-  </tr>
-  <tr>
-    <td>Hunter Goodman</td>
-    <td>7</td>
-    <td>27</td>
-    <td>2</td>
-    <td>9</td>
-    <td>1</td>
-    <td>6</td>
-    <td>0</td>
-    <td>6</td>
-    <td>.333</td>
-    <td>.333</td>
-    <td>.444</td>
-    <td>2025-05-04</td>
-  </tr>
-  <tr>
-    <td>Brendan Donovan</td>
-    <td>7</td>
-    <td>25</td>
-    <td>4</td>
-    <td>8</td>
-    <td>0</td>
-    <td>3</td>
-    <td>3</td>
-    <td>1</td>
-    <td>.320</td>
-    <td>.414</td>
-    <td>.360</td>
-    <td>2025-05-06</td>
-  </tr>
-  <tr>
-    <td>Mauricio Dubon</td>
-    <td>7</td>
-    <td>25</td>
-    <td>2</td>
-    <td>7</td>
-    <td>0</td>
-    <td>5</td>
-    <td>0</td>
-    <td>1</td>
-    <td>.280</td>
-    <td>.280</td>
-    <td>.280</td>
-    <td>2025-05-06</td>
-  </tr>
-  <tr>
-    <td>Byron Buxton</td>
-    <td>6</td>
     <td>26</td>
+    <td>4</td>
+    <td>10</td>
+    <td>3</td>
+    <td>4</td>
+    <td>1</td>
+    <td>9</td>
+    <td>.385</td>
+    <td>.448</td>
+    <td>.885</td>
+    <td>2025-05-19</td>
+  </tr>
+  <tr>
+    <td>Geraldo Perdomo</td>
+    <td>Arizona Diamondbacks</td>
+    <td>7</td>
+    <td>22</td>
+    <td>5</td>
+    <td>8</td>
+    <td>1</td>
+    <td>7</td>
+    <td>4</td>
+    <td>2</td>
+    <td>.364</td>
+    <td>.429</td>
+    <td>.682</td>
+    <td>2025-05-19</td>
+  </tr>
+  <tr>
+    <td>Julio Rodriguez</td>
+    <td>Unknown Team</td>
+    <td>7</td>
+    <td>29</td>
+    <td>4</td>
+    <td>8</td>
+    <td>2</td>
+    <td>8</td>
+    <td>0</td>
+    <td>6</td>
+    <td>.276</td>
+    <td>.276</td>
+    <td>.517</td>
+    <td>2025-05-19</td>
+  </tr>
+  <tr>
+    <td>Josh Bell</td>
+    <td>Washington Nationals</td>
+    <td>7</td>
+    <td>26</td>
+    <td>2</td>
+    <td>7</td>
+    <td>1</td>
+    <td>1</td>
+    <td>3</td>
+    <td>7</td>
+    <td>.269</td>
+    <td>.345</td>
+    <td>.423</td>
+    <td>2025-05-18</td>
+  </tr>
+  <tr>
+    <td>Drake Baldwin</td>
+    <td>Atlanta Braves</td>
+    <td>6</td>
+    <td>21</td>
+    <td>5</td>
+    <td>12</td>
+    <td>2</td>
+    <td>6</td>
+    <td>0</td>
+    <td>2</td>
+    <td>.571</td>
+    <td>.571</td>
+    <td>.952</td>
+    <td>2025-05-18</td>
+  </tr>
+  <tr>
+    <td>Jackson Holliday</td>
+    <td>Baltimore Orioles</td>
+    <td>6</td>
+    <td>28</td>
     <td>3</td>
     <td>10</td>
     <td>2</td>
     <td>5</td>
-    <td>1</td>
-    <td>8</td>
-    <td>.385</td>
-    <td>.407</td>
-    <td>.654</td>
-    <td>2025-05-06</td>
+    <td>0</td>
+    <td>4</td>
+    <td>.357</td>
+    <td>.379</td>
+    <td>.643</td>
+    <td>2025-05-19</td>
   </tr>
   <tr>
-    <td>James Wood</td>
+    <td>Jarren Duran</td>
+    <td>Boston Red Sox</td>
     <td>6</td>
-    <td>24</td>
+    <td>26</td>
+    <td>4</td>
+    <td>10</td>
+    <td>1</td>
+    <td>7</td>
+    <td>2</td>
+    <td>6</td>
+    <td>.385</td>
+    <td>.429</td>
+    <td>.731</td>
+    <td>2025-05-19</td>
+  </tr>
+  <tr>
+    <td>Corey Seager</td>
+    <td>Texas Rangers</td>
+    <td>6</td>
+    <td>27</td>
+    <td>9</td>
+    <td>9</td>
+    <td>2</td>
+    <td>6</td>
+    <td>0</td>
     <td>3</td>
+    <td>.333</td>
+    <td>.333</td>
+    <td>.630</td>
+    <td>2025-05-10</td>
+  </tr>
+  <tr>
+    <td>Austin Hays</td>
+    <td>Unknown Team</td>
+    <td>6</td>
+    <td>23</td>
+    <td>2</td>
     <td>9</td>
     <td>1</td>
-    <td>2</td>
-    <td>4</td>
     <td>6</td>
-    <td>.375</td>
-    <td>.464</td>
-    <td>.583</td>
-    <td>2025-05-06</td>
+    <td>1</td>
+    <td>6</td>
+    <td>.391</td>
+    <td>.400</td>
+    <td>.652</td>
+    <td>2025-05-19</td>
   </tr>
   <tr>
-    <td>Travis D'Arnaud</td>
+    <td>Luis Arraez</td>
+    <td>San Diego Padres</td>
+    <td>6</td>
+    <td>23</td>
+    <td>2</td>
+    <td>8</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>.348</td>
+    <td>.375</td>
+    <td>.391</td>
+    <td>2025-05-18</td>
+  </tr>
+  <tr>
+    <td>Liam Hicks</td>
+    <td>Miami Marlins</td>
     <td>6</td>
     <td>20</td>
-    <td>2</td>
-    <td>8</td>
-    <td>0</td>
-    <td>0</td>
-    <td>2</td>
-    <td>6</td>
-    <td>.400</td>
-    <td>.455</td>
-    <td>.600</td>
-    <td>2025-05-03</td>
-  </tr>
-  <tr>
-    <td>Jackson Holliday</td>
-    <td>6</td>
-    <td>19</td>
     <td>4</td>
     <td>8</td>
-    <td>2</td>
     <td>3</td>
+    <td>6</td>
+    <td>1</td>
+    <td>1</td>
+    <td>.400</td>
+    <td>.429</td>
+    <td>1.000</td>
+    <td>2025-05-19</td>
+  </tr>
+  <tr>
+    <td>Jose Caballero</td>
+    <td>Unknown Team</td>
+    <td>6</td>
+    <td>23</td>
+    <td>4</td>
+    <td>8</td>
     <td>0</td>
+    <td>2</td>
+    <td>1</td>
+    <td>5</td>
+    <td>.348</td>
+    <td>.375</td>
+    <td>.522</td>
+    <td>2025-05-19</td>
+  </tr>
+  <tr>
+    <td>Miguel Andujar</td>
+    <td>Athletics</td>
+    <td>6</td>
+    <td>24</td>
+    <td>2</td>
+    <td>8</td>
+    <td>1</td>
+    <td>4</td>
+    <td>0</td>
+    <td>4</td>
+    <td>.333</td>
+    <td>.333</td>
+    <td>.542</td>
+    <td>2025-05-17</td>
+  </tr>
+  <tr>
+    <td>Ozzie Albies</td>
+    <td>Atlanta Braves</td>
+    <td>6</td>
+    <td>23</td>
     <td>3</td>
-    <td>.421</td>
-    <td>.421</td>
-    <td>.737</td>
-    <td>2025-05-06</td>
+    <td>8</td>
+    <td>0</td>
+    <td>2</td>
+    <td>2</td>
+    <td>5</td>
+    <td>.348</td>
+    <td>.423</td>
+    <td>.391</td>
+    <td>2025-05-18</td>
   </tr>
   <tr>
     <td>Luke Keaschall</td>
+    <td>Unknown Team</td>
     <td>6</td>
     <td>19</td>
     <td>4</td>
@@ -3219,6 +3085,7 @@ ops:    .453
   </tr>
   <tr>
     <td>Ryan Bliss</td>
+    <td>Unknown Team</td>
     <td>6</td>
     <td>20</td>
     <td>1</td>
@@ -3233,22 +3100,24 @@ ops:    .453
     <td>2025-04-08</td>
   </tr>
   <tr>
-    <td>Steven Kwan</td>
+    <td>Ramon Laureano</td>
+    <td>Unknown Team</td>
     <td>5</td>
-    <td>22</td>
-    <td>3</td>
-    <td>10</td>
-    <td>0</td>
-    <td>2</td>
-    <td>2</td>
+    <td>19</td>
+    <td>4</td>
+    <td>11</td>
     <td>1</td>
-    <td>.455</td>
-    <td>.500</td>
-    <td>.545</td>
-    <td>2025-05-06</td>
+    <td>3</td>
+    <td>1</td>
+    <td>2</td>
+    <td>.579</td>
+    <td>.619</td>
+    <td>.842</td>
+    <td>2025-05-19</td>
   </tr>
   <tr>
     <td>Jonny Deluca</td>
+    <td>Unknown Team</td>
     <td>5</td>
     <td>18</td>
     <td>4</td>
@@ -3263,169 +3132,164 @@ ops:    .453
     <td>2025-04-06</td>
   </tr>
   <tr>
-    <td>Alejandro Kirk</td>
+    <td>Amed Rosario</td>
+    <td>Washington Nationals</td>
+    <td>5</td>
+    <td>18</td>
+    <td>2</td>
+    <td>8</td>
+    <td>0</td>
+    <td>4</td>
+    <td>1</td>
+    <td>5</td>
+    <td>.444</td>
+    <td>.524</td>
+    <td>.500</td>
+    <td>2025-05-15</td>
+  </tr>
+  <tr>
+    <td>Maikel Garcia</td>
+    <td>Kansas City Royals</td>
+    <td>5</td>
+    <td>18</td>
+    <td>2</td>
+    <td>8</td>
+    <td>1</td>
+    <td>3</td>
+    <td>2</td>
+    <td>5</td>
+    <td>.444</td>
+    <td>.500</td>
+    <td>.778</td>
+    <td>2025-05-19</td>
+  </tr>
+  <tr>
+    <td>Andres Gimenez</td>
+    <td>Unknown Team</td>
+    <td>5</td>
+    <td>19</td>
+    <td>2</td>
+    <td>7</td>
+    <td>0</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>.368</td>
+    <td>.368</td>
+    <td>.421</td>
+    <td>2025-05-07</td>
+  </tr>
+  <tr>
+    <td>Tomas Nido</td>
+    <td>Unknown Team</td>
+    <td>5</td>
+    <td>19</td>
+    <td>3</td>
+    <td>7</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5</td>
+    <td>.368</td>
+    <td>.368</td>
+    <td>.368</td>
+    <td>2025-05-19</td>
+  </tr>
+  <tr>
+    <td>Heliot Ramos</td>
+    <td>San Francisco Giants</td>
+    <td>5</td>
+    <td>19</td>
+    <td>3</td>
+    <td>7</td>
+    <td>1</td>
+    <td>5</td>
+    <td>2</td>
+    <td>4</td>
+    <td>.368</td>
+    <td>.409</td>
+    <td>.579</td>
+    <td>2025-05-19</td>
+  </tr>
+  <tr>
+    <td>Dansby Swanson</td>
+    <td>Chicago Cubs</td>
+    <td>5</td>
+    <td>20</td>
+    <td>5</td>
+    <td>7</td>
+    <td>1</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+    <td>.350</td>
+    <td>.391</td>
+    <td>.500</td>
+    <td>2025-05-19</td>
+  </tr>
+  <tr>
+    <td>Taylor Ward</td>
+    <td>Los Angeles Angels</td>
+    <td>5</td>
+    <td>20</td>
+    <td>5</td>
+    <td>6</td>
+    <td>4</td>
+    <td>6</td>
+    <td>3</td>
+    <td>7</td>
+    <td>.300</td>
+    <td>.391</td>
+    <td>.950</td>
+    <td>2025-05-19</td>
+  </tr>
+  <tr>
+    <td>Daulton Varsho</td>
+    <td>Toronto Blue Jays</td>
     <td>5</td>
     <td>21</td>
-    <td>1</td>
-    <td>9</td>
-    <td>1</td>
-    <td>4</td>
-    <td>0</td>
-    <td>1</td>
-    <td>.429</td>
-    <td>.429</td>
-    <td>.571</td>
-    <td>2025-05-06</td>
-  </tr>
-  <tr>
-    <td>Trea Turner</td>
-    <td>5</td>
-    <td>23</td>
-    <td>4</td>
-    <td>9</td>
-    <td>0</td>
-    <td>0</td>
-    <td>1</td>
-    <td>3</td>
-    <td>.391</td>
-    <td>.417</td>
-    <td>.435</td>
-    <td>2025-05-06</td>
-  </tr>
-  <tr>
-    <td>Trey Sweeney</td>
-    <td>5</td>
-    <td>20</td>
-    <td>3</td>
-    <td>8</td>
-    <td>2</td>
-    <td>7</td>
-    <td>0</td>
     <td>6</td>
-    <td>.400</td>
-    <td>.400</td>
-    <td>.700</td>
-    <td>2025-05-04</td>
-  </tr>
-  <tr>
-    <td>Yainer Diaz</td>
-    <td>5</td>
-    <td>20</td>
-    <td>4</td>
-    <td>8</td>
-    <td>1</td>
-    <td>2</td>
-    <td>0</td>
-    <td>3</td>
-    <td>.400</td>
-    <td>.429</td>
-    <td>.600</td>
-    <td>2025-05-06</td>
-  </tr>
-  <tr>
-    <td>Austin Riley</td>
-    <td>5</td>
-    <td>20</td>
-    <td>3</td>
-    <td>7</td>
-    <td>2</td>
-    <td>5</td>
-    <td>1</td>
     <td>6</td>
-    <td>.350</td>
-    <td>.409</td>
-    <td>.700</td>
-    <td>2025-05-06</td>
-  </tr>
-  <tr>
-    <td>Mark Vientos</td>
-    <td>5</td>
-    <td>19</td>
-    <td>2</td>
-    <td>6</td>
-    <td>0</td>
-    <td>0</td>
-    <td>2</td>
-    <td>4</td>
-    <td>.316</td>
-    <td>.381</td>
-    <td>.316</td>
-    <td>2025-05-06</td>
-  </tr>
-  <tr>
-    <td>Wilmer Flores</td>
-    <td>5</td>
-    <td>20</td>
     <td>3</td>
     <td>6</td>
     <td>0</td>
-    <td>4</td>
-    <td>2</td>
-    <td>3</td>
-    <td>.300</td>
-    <td>.364</td>
-    <td>.400</td>
-    <td>2025-05-06</td>
+    <td>5</td>
+    <td>.286</td>
+    <td>.286</td>
+    <td>.810</td>
+    <td>2025-05-18</td>
   </tr>
   <tr>
-    <td>Riley Adams</td>
+    <td>Agustin Ramirez</td>
+    <td>Unknown Team</td>
     <td>5</td>
     <td>17</td>
-    <td>3</td>
-    <td>5</td>
-    <td>2</td>
-    <td>6</td>
-    <td>0</td>
-    <td>7</td>
-    <td>.294</td>
-    <td>.294</td>
-    <td>.706</td>
-    <td>2025-05-06</td>
-  </tr>
-  <tr>
-    <td>Brendan Rodgers</td>
-    <td>5</td>
-    <td>19</td>
-    <td>3</td>
-    <td>5</td>
-    <td>1</td>
-    <td>3</td>
-    <td>1</td>
-    <td>7</td>
-    <td>.263</td>
-    <td>.300</td>
-    <td>.421</td>
-    <td>2025-05-06</td>
-  </tr>
-  <tr>
-    <td>Wyatt Langford</td>
-    <td>5</td>
-    <td>19</td>
-    <td>2</td>
-    <td>5</td>
-    <td>0</td>
-    <td>2</td>
-    <td>2</td>
     <td>4</td>
-    <td>.263</td>
-    <td>.318</td>
-    <td>.263</td>
-    <td>2025-05-06</td>
-  </tr>
-  <tr>
-    <td>Alec Burleson</td>
-    <td>5</td>
-    <td>19</td>
+    <td>6</td>
+    <td>2</td>
     <td>3</td>
     <td>5</td>
+    <td>4</td>
+    <td>.353</td>
+    <td>.500</td>
+    <td>.824</td>
+    <td>2025-05-19</td>
+  </tr>
+  <tr>
+    <td>Daniel Schneemann</td>
+    <td>Cleveland Guardians</td>
+    <td>5</td>
+    <td>18</td>
     <td>2</td>
     <td>5</td>
     <td>1</td>
-    <td>2</td>
-    <td>.263</td>
-    <td>.300</td>
-    <td>.632</td>
-    <td>2025-05-06</td>
+    <td>1</td>
+    <td>1</td>
+    <td>3</td>
+    <td>.278</td>
+    <td>.316</td>
+    <td>.444</td>
+    <td>2025-05-18</td>
   </tr>
 </table>
     </div>
