@@ -1,8 +1,14 @@
 # order of operations
 
 - get match_today data every 6 hours?
+    - script1 script1_matches_today.py
 - get streak data once a day around 6am
+    - script2 script2_get_streaks.py
 - get schedule data every 30 min?
+    - script3_get_schedule.py
+
+
+    
 - process index.html after evry schedule grab?
 
 
