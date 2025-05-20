@@ -1,8 +1,8 @@
-name: Run MLB Script Every Hour
+name: Run3 - todays_schedule make_index
 
 on:
   schedule:
-  - cron: "0 */6 * * *"  # Runs every 6 hours at the start of the hour
+  - cron: "0 * * * *"  # Runs every hour at the start of the hour
 
 jobs:
   run-script:
@@ -24,7 +24,8 @@ jobs:
 
       - name: Run the Python script
         run: |
-          python mlbv5.py
+          python script4_todays_schedule.py
+          python script10_make_index.py
 
       - name: Commit and push changes
         run: |
