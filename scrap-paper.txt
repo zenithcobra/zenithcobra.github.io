@@ -11,7 +11,35 @@
 - process streaks                        - script9_process_streaks.py
 - process index                          - script10_make_index.py
 
- process index.html after evry schedule grab?
+cron: "0 5,17 * * *"  # Runs at 5 AM and 5 PM UTC
+run 1 - at 5 utc and 17 utc = 1am est and 5pm est
+    script1_matches_today
+    script3_yesterdays_report
+    script6_get_standings
+    script4_todays_schedule
+    script5_match_overviews
+    script7_teams_today_list
+    script8_process_bvp
+    script10_make_index
+
+cron: "0 10 * * *"  # Runs at 10 utc = 6am est
+run2 - at 10am utc
+    script2_get_streaks
+    script6_get_standings
+    script4_todays_schedule
+    script5_match_overviews
+    script7_teams_today_list
+    script8_process_bvp
+    script9_process_streaks
+    script10_make_index
+
+- cron: "0 * * * *"  # Runs every hour at the start of the hour
+run3 - run every hour
+    script4_todays_schedule
+    script10_make_index
+
+
+
 
 
 # Data
