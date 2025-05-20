@@ -1,15 +1,17 @@
 # order of operations
 
-- get match_today data every 6 hours?
-    - script1 script1_matches_today.py
-- get streak data once a day around 6am
-    - script2 script2_get_streaks.py
-- get schedule data every 30 min?
-    - script3_get_schedule.py
+- get match_today data every 6 hours?    - script1_matches_today.py
+- get streak data once a day around 6am  - script2_get_streaks.py
+- get yesterdays report every 6 hours    - script3_yesterdays_report.py
+- get schedule data every 30 min?        - script4_todays_schedule.py
+- get match-overviews every 4 hours?     - script5_match_overviews.py
+- get standings today                    - script6_get_standings.py
+- process teams todays list              - script7_teams_today_list.py
+- process batter vs pitcher              - script8_process_bvp.py
+- process streaks                        - script9_process_streaks.py
+- process index                          - script10_make_index.py
 
-
-    
-- process index.html after evry schedule grab?
+ process index.html after evry schedule grab?
 
 
 # Data
@@ -24,26 +26,3 @@ teams today
 players today
 pitchers today
 batters today
-
-
-# Match Overviews
-
-## Pitchers
-
-pitcher, team, era, so9
-Matthew Boyd, (chicago cubs), 4.76, 8.81
-Griffin Canning, (new york mets), 4.63, 8.60
-etc .....
-
-## Batters
-
-batter, team, hr's
-Kyle Tucker (chicago cubs):         10 HR
-Pete Crow-Armstrong (chicago cubs):  9 HR
-Seiya Suzuki (chicago cubs):         9 HR
-Carson Kelly (chicago cubs):         8 HR
-Dansby Swanson (chicago cubs):       8 HR
-Michael Busch (chicago cubs):        7 HR
-Miguel Amaya (chicago cubs):         3 HR
-Ian Happ (chicago cubs):             3 HR
-Matt Shaw (chicago cubs):            1 HR
