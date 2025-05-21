@@ -345,7 +345,7 @@ Bottom 9 - Los Angeles Angels: 7, Athletics: 5
 NEXT GAME:
 2025-05-20 10:10 PM EDT
 Arizona Diamondbacks   3    @
-Los Angeles Dodgers    2
+Los Angeles Dodgers    4
 
 Will Smith doubles (9) on a sharp line drive to left fielder Lourdes Gurriel Jr. Freddie Freeman scores.
 Bottom 4 - Arizona Diamondbacks: 0, Los Angeles Dodgers: 1
@@ -358,6 +358,12 @@ Top 10 - Arizona Diamondbacks: 3, Los Angeles Dodgers: 1
 
 Tommy Edman doubles (5) on a line drive to left fielder Lourdes Gurriel Jr. Enrique Hernández scores.
 Bottom 10 - Arizona Diamondbacks: 3, Los Angeles Dodgers: 2
+
+Will Smith hit by pitch. Tommy Edman scores. Shohei Ohtani to 3rd. Freddie Freeman to 2nd.
+Bottom 10 - Arizona Diamondbacks: 3, Los Angeles Dodgers: 3
+
+Max Muncy out on a sacrifice fly to center fielder Tim Tawa. Shohei Ohtani scores.
+Bottom 10 - Arizona Diamondbacks: 3, Los Angeles Dodgers: 4
 
 NEXT GAME:
 2025-05-20 07:40 PM EDT
@@ -541,6 +547,12 @@ Rank Team                   W   L   GB  (E#) WC Rank WC GB (E#)
 <td>Chicago White Sox</td>
 <td>2.05</td>
 <td>8.01</td>
+</tr>
+<tr>
+<td>Daniel Lynch IV</td>
+<td>Kansas City Royals</td>
+<td>4.67</td>
+<td>7.40</td>
 </tr>
 <tr>
 <td>Logan Webb</td>
@@ -3437,6 +3449,198 @@ document.addEventListener('DOMContentLoaded', function() {
     })));
 });
 </script>
+<h3>Away Pitcher: Daniel Lynch IV Kansas City Royals</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Matt Chapman (San Francisco Giants)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Heliot Ramos (San Francisco Giants)</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1.000</td>
+<td>0</td>
+<td>1.000</td>
+<td>2.000</td>
+</tr>
+<tr>
+<td>Luis Matos (San Francisco Giants)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Tyler Fitzgerald (San Francisco Giants)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Sam Huff (San Francisco Giants)</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1.000</td>
+<td>0</td>
+<td>1.000</td>
+<td>2.000</td>
+</tr>
+<tr>
+<td>LaMonte Wade Jr. (San Francisco Giants)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Logan Webb San Francisco Giants</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Bobby Witt Jr. (Kansas City Royals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Kyle Isbel (Kansas City Royals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Salvador Perez (Kansas City Royals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Cavan Biggio (Kansas City Royals)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jonathan India (Kansas City Royals)</td>
+<td>10</td>
+<td>4</td>
+<td>1</td>
+<td>.400</td>
+<td>1</td>
+<td>.455</td>
+<td>1.255</td>
+</tr>
+<tr>
+<td>Luke Maile (Kansas City Royals)</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td>MJ Melendez (Kansas City Royals)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.667</td>
+<td>.667</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
 <h3>Away Pitcher: Tylor Megill New York Mets</h3>
 <table border='1'>
 <tr>
@@ -4930,22 +5134,6 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>2025-05-20</td>
   </tr>
   <tr>
-    <td>Kyle Stowers</td>
-    <td>Miami Marlins</td>
-    <td>8</td>
-    <td>29</td>
-    <td>4</td>
-    <td>12</td>
-    <td>3</td>
-    <td>4</td>
-    <td>1</td>
-    <td>9</td>
-    <td>.414</td>
-    <td>.469</td>
-    <td>.862</td>
-    <td>2025-05-20</td>
-  </tr>
-  <tr>
     <td>Victor Robles</td>
     <td>Washington Nationals</td>
     <td>8</td>
@@ -4962,20 +5150,20 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>2025-04-06</td>
   </tr>
   <tr>
-    <td>Xavier Edwards</td>
+    <td>Kyle Stowers</td>
     <td>Miami Marlins</td>
     <td>8</td>
-    <td>32</td>
-    <td>3</td>
-    <td>10</td>
-    <td>0</td>
-    <td>1</td>
+    <td>29</td>
     <td>4</td>
-    <td>7</td>
-    <td>.312</td>
-    <td>.389</td>
-    <td>.312</td>
-    <td>2025-05-14</td>
+    <td>12</td>
+    <td>3</td>
+    <td>4</td>
+    <td>1</td>
+    <td>9</td>
+    <td>.414</td>
+    <td>.469</td>
+    <td>.862</td>
+    <td>2025-05-20</td>
   </tr>
   <tr>
     <td>Geraldo Perdomo</td>
@@ -4994,6 +5182,22 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>2025-05-20</td>
   </tr>
   <tr>
+    <td>Xavier Edwards</td>
+    <td>Miami Marlins</td>
+    <td>8</td>
+    <td>32</td>
+    <td>3</td>
+    <td>10</td>
+    <td>0</td>
+    <td>1</td>
+    <td>4</td>
+    <td>7</td>
+    <td>.312</td>
+    <td>.389</td>
+    <td>.312</td>
+    <td>2025-05-14</td>
+  </tr>
+  <tr>
     <td>Jackson Holliday</td>
     <td>Baltimore Orioles</td>
     <td>7</td>
@@ -5010,22 +5214,6 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>2025-05-20</td>
   </tr>
   <tr>
-    <td>Ozzie Albies</td>
-    <td>Atlanta Braves</td>
-    <td>7</td>
-    <td>27</td>
-    <td>4</td>
-    <td>9</td>
-    <td>0</td>
-    <td>2</td>
-    <td>2</td>
-    <td>5</td>
-    <td>.333</td>
-    <td>.400</td>
-    <td>.407</td>
-    <td>2025-05-20</td>
-  </tr>
-  <tr>
     <td>Luis Arraez</td>
     <td>San Diego Padres</td>
     <td>7</td>
@@ -5038,6 +5226,22 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>0</td>
     <td>.333</td>
     <td>.357</td>
+    <td>.407</td>
+    <td>2025-05-20</td>
+  </tr>
+  <tr>
+    <td>Ozzie Albies</td>
+    <td>Atlanta Braves</td>
+    <td>7</td>
+    <td>27</td>
+    <td>4</td>
+    <td>9</td>
+    <td>0</td>
+    <td>2</td>
+    <td>2</td>
+    <td>5</td>
+    <td>.333</td>
+    <td>.400</td>
     <td>.407</td>
     <td>2025-05-20</td>
   </tr>
@@ -5106,22 +5310,6 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>2025-05-10</td>
   </tr>
   <tr>
-    <td>Liam Hicks</td>
-    <td>Miami Marlins</td>
-    <td>6</td>
-    <td>20</td>
-    <td>4</td>
-    <td>8</td>
-    <td>3</td>
-    <td>6</td>
-    <td>1</td>
-    <td>1</td>
-    <td>.400</td>
-    <td>.429</td>
-    <td>1.000</td>
-    <td>2025-05-19</td>
-  </tr>
-  <tr>
     <td>Heliot Ramos</td>
     <td>San Francisco Giants</td>
     <td>6</td>
@@ -5136,6 +5324,22 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>.423</td>
     <td>.545</td>
     <td>2025-05-20</td>
+  </tr>
+  <tr>
+    <td>Liam Hicks</td>
+    <td>Miami Marlins</td>
+    <td>6</td>
+    <td>20</td>
+    <td>4</td>
+    <td>8</td>
+    <td>3</td>
+    <td>6</td>
+    <td>1</td>
+    <td>1</td>
+    <td>.400</td>
+    <td>.429</td>
+    <td>1.000</td>
+    <td>2025-05-19</td>
   </tr>
   <tr>
     <td>Luke Keaschall</td>
@@ -5234,22 +5438,6 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>2025-05-15</td>
   </tr>
   <tr>
-    <td>Andres Gimenez</td>
-    <td>New York Mets</td>
-    <td>5</td>
-    <td>19</td>
-    <td>2</td>
-    <td>7</td>
-    <td>0</td>
-    <td>2</td>
-    <td>0</td>
-    <td>0</td>
-    <td>.368</td>
-    <td>.368</td>
-    <td>.421</td>
-    <td>2025-05-07</td>
-  </tr>
-  <tr>
     <td>Yandy Diaz</td>
     <td>Tampa Bay Rays</td>
     <td>5</td>
@@ -5328,6 +5516,22 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>.474</td>
     <td>.529</td>
     <td>2025-05-20</td>
+  </tr>
+  <tr>
+    <td>Andres Gimenez</td>
+    <td>New York Mets</td>
+    <td>5</td>
+    <td>19</td>
+    <td>2</td>
+    <td>7</td>
+    <td>0</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>.368</td>
+    <td>.368</td>
+    <td>.421</td>
+    <td>2025-05-07</td>
   </tr>
   <tr>
     <td>Will Smith</td>
