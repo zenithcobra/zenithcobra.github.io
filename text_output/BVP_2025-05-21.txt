@@ -1,0 +1,9062 @@
+<h1>Batter vs Pitcher Stats</h1>
+<h3>Away Pitcher: Brady Singer Cincinnati Reds</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Oneil Cruz (Pittsburgh Pirates)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.500</td>
+<td>.900</td>
+</tr>
+<tr>
+<td>Bryan Reynolds (Pittsburgh Pirates)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>2</td>
+<td>.250</td>
+<td>.625</td>
+</tr>
+<tr>
+<td>Alexander Canario (Pittsburgh Pirates)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Andrew McCutchen (Pittsburgh Pirates)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Adam Frazier (Pittsburgh Pirates)</td>
+<td>9</td>
+<td>3</td>
+<td>1</td>
+<td>.333</td>
+<td>3</td>
+<td>.455</td>
+<td>1.344</td>
+</tr>
+<tr>
+<td>Jared Triolo (Pittsburgh Pirates)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Enmanuel Valdez (Pittsburgh Pirates)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.333</td>
+<td>.333</td>
+</tr>
+<tr>
+<td>Joey Bart (Pittsburgh Pirates)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.500</td>
+<td>.833</td>
+</tr>
+<tr>
+<td>Henry Davis (Pittsburgh Pirates)</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1.000</td>
+<td>1</td>
+<td>1.000</td>
+<td>2.000</td>
+</tr>
+<tr>
+<td>Nick Gonzales (Pittsburgh Pirates)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>1</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Ke'Bryan Hayes (Pittsburgh Pirates)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.500</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Isiah Kiner-Falefa (Pittsburgh Pirates)</td>
+<td>12</td>
+<td>5</td>
+<td>0</td>
+<td>.417</td>
+<td>3</td>
+<td>.500</td>
+<td>.917</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Andrew Heaney Pittsburgh Pirates</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Elly De La Cruz (Cincinnati Reds)</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>.333</td>
+<td>4</td>
+<td>.333</td>
+<td>1.666</td>
+</tr>
+<tr>
+<td>Austin Hays (Cincinnati Reds)</td>
+<td>10</td>
+<td>5</td>
+<td>2</td>
+<td>.500</td>
+<td>2</td>
+<td>.583</td>
+<td>1.883</td>
+</tr>
+<tr>
+<td>Spencer Steer (Cincinnati Reds)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jake Fraley (Cincinnati Reds)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>TJ Friedl (Cincinnati Reds)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.667</td>
+<td>1.167</td>
+</tr>
+<tr>
+<td>Noelvi Marte (Cincinnati Reds)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jose Trevino (Cincinnati Reds)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.400</td>
+</tr>
+<tr>
+<td>Austin Wynns (Cincinnati Reds)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Hunter Brown Houston Astros</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Brandon Lowe (Tampa Bay Rays)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.500</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Brandon Lowe (Tampa Bay Rays)</td>
+<td>12</td>
+<td>1</td>
+<td>1</td>
+<td>.083</td>
+<td>1</td>
+<td>.214</td>
+<td>.547</td>
+</tr>
+<tr>
+<td>Brandon Lowe (Tampa Bay Rays)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>3</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Brandon Lowe (Tampa Bay Rays)</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+<td>.400</td>
+<td>1</td>
+<td>.500</td>
+<td>1.700</td>
+</tr>
+<tr>
+<td>Brandon Lowe (Tampa Bay Rays)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Brandon Lowe (Tampa Bay Rays)</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>.667</td>
+<td>1</td>
+<td>.800</td>
+<td>2.467</td>
+</tr>
+<tr>
+<td>Brandon Lowe (Tampa Bay Rays)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Brandon Lowe (Tampa Bay Rays)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Brandon Lowe (Tampa Bay Rays)</td>
+<td>15</td>
+<td>3</td>
+<td>1</td>
+<td>.200</td>
+<td>3</td>
+<td>.250</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Yandy Díaz (Tampa Bay Rays)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.500</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Yandy Díaz (Tampa Bay Rays)</td>
+<td>12</td>
+<td>1</td>
+<td>1</td>
+<td>.083</td>
+<td>1</td>
+<td>.214</td>
+<td>.547</td>
+</tr>
+<tr>
+<td>Yandy Díaz (Tampa Bay Rays)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>3</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Yandy Díaz (Tampa Bay Rays)</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+<td>.400</td>
+<td>1</td>
+<td>.500</td>
+<td>1.700</td>
+</tr>
+<tr>
+<td>Yandy Díaz (Tampa Bay Rays)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Yandy Díaz (Tampa Bay Rays)</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>.667</td>
+<td>1</td>
+<td>.800</td>
+<td>2.467</td>
+</tr>
+<tr>
+<td>Yandy Díaz (Tampa Bay Rays)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Yandy Díaz (Tampa Bay Rays)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Yandy Díaz (Tampa Bay Rays)</td>
+<td>15</td>
+<td>3</td>
+<td>1</td>
+<td>.200</td>
+<td>3</td>
+<td>.250</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Jonathan Aranda (Tampa Bay Rays)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.500</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Jonathan Aranda (Tampa Bay Rays)</td>
+<td>12</td>
+<td>1</td>
+<td>1</td>
+<td>.083</td>
+<td>1</td>
+<td>.214</td>
+<td>.547</td>
+</tr>
+<tr>
+<td>Jonathan Aranda (Tampa Bay Rays)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>3</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Jonathan Aranda (Tampa Bay Rays)</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+<td>.400</td>
+<td>1</td>
+<td>.500</td>
+<td>1.700</td>
+</tr>
+<tr>
+<td>Jonathan Aranda (Tampa Bay Rays)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Jonathan Aranda (Tampa Bay Rays)</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>.667</td>
+<td>1</td>
+<td>.800</td>
+<td>2.467</td>
+</tr>
+<tr>
+<td>Jonathan Aranda (Tampa Bay Rays)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Jonathan Aranda (Tampa Bay Rays)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jonathan Aranda (Tampa Bay Rays)</td>
+<td>15</td>
+<td>3</td>
+<td>1</td>
+<td>.200</td>
+<td>3</td>
+<td>.250</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Kameron Misner (Tampa Bay Rays)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.500</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Kameron Misner (Tampa Bay Rays)</td>
+<td>12</td>
+<td>1</td>
+<td>1</td>
+<td>.083</td>
+<td>1</td>
+<td>.214</td>
+<td>.547</td>
+</tr>
+<tr>
+<td>Kameron Misner (Tampa Bay Rays)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>3</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Kameron Misner (Tampa Bay Rays)</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+<td>.400</td>
+<td>1</td>
+<td>.500</td>
+<td>1.700</td>
+</tr>
+<tr>
+<td>Kameron Misner (Tampa Bay Rays)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Kameron Misner (Tampa Bay Rays)</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>.667</td>
+<td>1</td>
+<td>.800</td>
+<td>2.467</td>
+</tr>
+<tr>
+<td>Kameron Misner (Tampa Bay Rays)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Kameron Misner (Tampa Bay Rays)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Kameron Misner (Tampa Bay Rays)</td>
+<td>15</td>
+<td>3</td>
+<td>1</td>
+<td>.200</td>
+<td>3</td>
+<td>.250</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Josh Lowe (Tampa Bay Rays)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.500</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Josh Lowe (Tampa Bay Rays)</td>
+<td>12</td>
+<td>1</td>
+<td>1</td>
+<td>.083</td>
+<td>1</td>
+<td>.214</td>
+<td>.547</td>
+</tr>
+<tr>
+<td>Josh Lowe (Tampa Bay Rays)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>3</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Josh Lowe (Tampa Bay Rays)</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+<td>.400</td>
+<td>1</td>
+<td>.500</td>
+<td>1.700</td>
+</tr>
+<tr>
+<td>Josh Lowe (Tampa Bay Rays)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Josh Lowe (Tampa Bay Rays)</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>.667</td>
+<td>1</td>
+<td>.800</td>
+<td>2.467</td>
+</tr>
+<tr>
+<td>Josh Lowe (Tampa Bay Rays)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Josh Lowe (Tampa Bay Rays)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Josh Lowe (Tampa Bay Rays)</td>
+<td>15</td>
+<td>3</td>
+<td>1</td>
+<td>.200</td>
+<td>3</td>
+<td>.250</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>José Caballero (Tampa Bay Rays)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.500</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>José Caballero (Tampa Bay Rays)</td>
+<td>12</td>
+<td>1</td>
+<td>1</td>
+<td>.083</td>
+<td>1</td>
+<td>.214</td>
+<td>.547</td>
+</tr>
+<tr>
+<td>José Caballero (Tampa Bay Rays)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>3</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>José Caballero (Tampa Bay Rays)</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+<td>.400</td>
+<td>1</td>
+<td>.500</td>
+<td>1.700</td>
+</tr>
+<tr>
+<td>José Caballero (Tampa Bay Rays)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>José Caballero (Tampa Bay Rays)</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>.667</td>
+<td>1</td>
+<td>.800</td>
+<td>2.467</td>
+</tr>
+<tr>
+<td>José Caballero (Tampa Bay Rays)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>José Caballero (Tampa Bay Rays)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>José Caballero (Tampa Bay Rays)</td>
+<td>15</td>
+<td>3</td>
+<td>1</td>
+<td>.200</td>
+<td>3</td>
+<td>.250</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Curtis Mead (Tampa Bay Rays)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.500</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Curtis Mead (Tampa Bay Rays)</td>
+<td>12</td>
+<td>1</td>
+<td>1</td>
+<td>.083</td>
+<td>1</td>
+<td>.214</td>
+<td>.547</td>
+</tr>
+<tr>
+<td>Curtis Mead (Tampa Bay Rays)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>3</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Curtis Mead (Tampa Bay Rays)</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+<td>.400</td>
+<td>1</td>
+<td>.500</td>
+<td>1.700</td>
+</tr>
+<tr>
+<td>Curtis Mead (Tampa Bay Rays)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Curtis Mead (Tampa Bay Rays)</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>.667</td>
+<td>1</td>
+<td>.800</td>
+<td>2.467</td>
+</tr>
+<tr>
+<td>Curtis Mead (Tampa Bay Rays)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Curtis Mead (Tampa Bay Rays)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Curtis Mead (Tampa Bay Rays)</td>
+<td>15</td>
+<td>3</td>
+<td>1</td>
+<td>.200</td>
+<td>3</td>
+<td>.250</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Taylor Walls (Tampa Bay Rays)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Taj Bradley Tampa Bay Rays</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Isaac Paredes (Houston Astros)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>0</td>
+<td>.250</td>
+<td>.432</td>
+</tr>
+<tr>
+<td>Isaac Paredes (Houston Astros)</td>
+<td>16</td>
+<td>2</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.535</td>
+</tr>
+<tr>
+<td>Isaac Paredes (Houston Astros)</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>.500</td>
+<td>3</td>
+<td>.600</td>
+<td>2.600</td>
+</tr>
+<tr>
+<td>Isaac Paredes (Houston Astros)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Isaac Paredes (Houston Astros)</td>
+<td>8</td>
+<td>4</td>
+<td>1</td>
+<td>.500</td>
+<td>3</td>
+<td>.500</td>
+<td>1.625</td>
+</tr>
+<tr>
+<td>Isaac Paredes (Houston Astros)</td>
+<td>17</td>
+<td>3</td>
+<td>2</td>
+<td>.176</td>
+<td>5</td>
+<td>.176</td>
+<td>.705</td>
+</tr>
+<tr>
+<td>Isaac Paredes (Houston Astros)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Isaac Paredes (Houston Astros)</td>
+<td>10</td>
+<td>3</td>
+<td>0</td>
+<td>.300</td>
+<td>0</td>
+<td>.500</td>
+<td>.800</td>
+</tr>
+<tr>
+<td>Isaac Paredes (Houston Astros)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Isaac Paredes (Houston Astros)</td>
+<td>8</td>
+<td>3</td>
+<td>1</td>
+<td>.375</td>
+<td>2</td>
+<td>.500</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td>Jeremy Peña (Houston Astros)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>0</td>
+<td>.250</td>
+<td>.432</td>
+</tr>
+<tr>
+<td>Jeremy Peña (Houston Astros)</td>
+<td>16</td>
+<td>2</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.535</td>
+</tr>
+<tr>
+<td>Jeremy Peña (Houston Astros)</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>.500</td>
+<td>3</td>
+<td>.600</td>
+<td>2.600</td>
+</tr>
+<tr>
+<td>Jeremy Peña (Houston Astros)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Jeremy Peña (Houston Astros)</td>
+<td>8</td>
+<td>4</td>
+<td>1</td>
+<td>.500</td>
+<td>3</td>
+<td>.500</td>
+<td>1.625</td>
+</tr>
+<tr>
+<td>Jeremy Peña (Houston Astros)</td>
+<td>17</td>
+<td>3</td>
+<td>2</td>
+<td>.176</td>
+<td>5</td>
+<td>.176</td>
+<td>.705</td>
+</tr>
+<tr>
+<td>Jeremy Peña (Houston Astros)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jeremy Peña (Houston Astros)</td>
+<td>10</td>
+<td>3</td>
+<td>0</td>
+<td>.300</td>
+<td>0</td>
+<td>.500</td>
+<td>.800</td>
+</tr>
+<tr>
+<td>Jeremy Peña (Houston Astros)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jeremy Peña (Houston Astros)</td>
+<td>8</td>
+<td>3</td>
+<td>1</td>
+<td>.375</td>
+<td>2</td>
+<td>.500</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td>Yainer Diaz (Houston Astros)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>0</td>
+<td>.250</td>
+<td>.432</td>
+</tr>
+<tr>
+<td>Yainer Diaz (Houston Astros)</td>
+<td>16</td>
+<td>2</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.535</td>
+</tr>
+<tr>
+<td>Yainer Diaz (Houston Astros)</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>.500</td>
+<td>3</td>
+<td>.600</td>
+<td>2.600</td>
+</tr>
+<tr>
+<td>Yainer Diaz (Houston Astros)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Yainer Diaz (Houston Astros)</td>
+<td>8</td>
+<td>4</td>
+<td>1</td>
+<td>.500</td>
+<td>3</td>
+<td>.500</td>
+<td>1.625</td>
+</tr>
+<tr>
+<td>Yainer Diaz (Houston Astros)</td>
+<td>17</td>
+<td>3</td>
+<td>2</td>
+<td>.176</td>
+<td>5</td>
+<td>.176</td>
+<td>.705</td>
+</tr>
+<tr>
+<td>Yainer Diaz (Houston Astros)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Yainer Diaz (Houston Astros)</td>
+<td>10</td>
+<td>3</td>
+<td>0</td>
+<td>.300</td>
+<td>0</td>
+<td>.500</td>
+<td>.800</td>
+</tr>
+<tr>
+<td>Yainer Diaz (Houston Astros)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Yainer Diaz (Houston Astros)</td>
+<td>8</td>
+<td>3</td>
+<td>1</td>
+<td>.375</td>
+<td>2</td>
+<td>.500</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td>Christian Walker (Houston Astros)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>0</td>
+<td>.250</td>
+<td>.432</td>
+</tr>
+<tr>
+<td>Christian Walker (Houston Astros)</td>
+<td>16</td>
+<td>2</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.535</td>
+</tr>
+<tr>
+<td>Christian Walker (Houston Astros)</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>.500</td>
+<td>3</td>
+<td>.600</td>
+<td>2.600</td>
+</tr>
+<tr>
+<td>Christian Walker (Houston Astros)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Christian Walker (Houston Astros)</td>
+<td>8</td>
+<td>4</td>
+<td>1</td>
+<td>.500</td>
+<td>3</td>
+<td>.500</td>
+<td>1.625</td>
+</tr>
+<tr>
+<td>Christian Walker (Houston Astros)</td>
+<td>17</td>
+<td>3</td>
+<td>2</td>
+<td>.176</td>
+<td>5</td>
+<td>.176</td>
+<td>.705</td>
+</tr>
+<tr>
+<td>Christian Walker (Houston Astros)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Christian Walker (Houston Astros)</td>
+<td>10</td>
+<td>3</td>
+<td>0</td>
+<td>.300</td>
+<td>0</td>
+<td>.500</td>
+<td>.800</td>
+</tr>
+<tr>
+<td>Christian Walker (Houston Astros)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Christian Walker (Houston Astros)</td>
+<td>8</td>
+<td>3</td>
+<td>1</td>
+<td>.375</td>
+<td>2</td>
+<td>.500</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td>Jose Altuve (Houston Astros)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>0</td>
+<td>.250</td>
+<td>.432</td>
+</tr>
+<tr>
+<td>Jose Altuve (Houston Astros)</td>
+<td>16</td>
+<td>2</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.535</td>
+</tr>
+<tr>
+<td>Jose Altuve (Houston Astros)</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>.500</td>
+<td>3</td>
+<td>.600</td>
+<td>2.600</td>
+</tr>
+<tr>
+<td>Jose Altuve (Houston Astros)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Jose Altuve (Houston Astros)</td>
+<td>8</td>
+<td>4</td>
+<td>1</td>
+<td>.500</td>
+<td>3</td>
+<td>.500</td>
+<td>1.625</td>
+</tr>
+<tr>
+<td>Jose Altuve (Houston Astros)</td>
+<td>17</td>
+<td>3</td>
+<td>2</td>
+<td>.176</td>
+<td>5</td>
+<td>.176</td>
+<td>.705</td>
+</tr>
+<tr>
+<td>Jose Altuve (Houston Astros)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jose Altuve (Houston Astros)</td>
+<td>10</td>
+<td>3</td>
+<td>0</td>
+<td>.300</td>
+<td>0</td>
+<td>.500</td>
+<td>.800</td>
+</tr>
+<tr>
+<td>Jose Altuve (Houston Astros)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jose Altuve (Houston Astros)</td>
+<td>8</td>
+<td>3</td>
+<td>1</td>
+<td>.375</td>
+<td>2</td>
+<td>.500</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td>Yordan Alvarez (Houston Astros)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>1</td>
+<td>.400</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Jake Meyers (Houston Astros)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>0</td>
+<td>.250</td>
+<td>.432</td>
+</tr>
+<tr>
+<td>Jake Meyers (Houston Astros)</td>
+<td>16</td>
+<td>2</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.535</td>
+</tr>
+<tr>
+<td>Jake Meyers (Houston Astros)</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>.500</td>
+<td>3</td>
+<td>.600</td>
+<td>2.600</td>
+</tr>
+<tr>
+<td>Jake Meyers (Houston Astros)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Jake Meyers (Houston Astros)</td>
+<td>8</td>
+<td>4</td>
+<td>1</td>
+<td>.500</td>
+<td>3</td>
+<td>.500</td>
+<td>1.625</td>
+</tr>
+<tr>
+<td>Jake Meyers (Houston Astros)</td>
+<td>17</td>
+<td>3</td>
+<td>2</td>
+<td>.176</td>
+<td>5</td>
+<td>.176</td>
+<td>.705</td>
+</tr>
+<tr>
+<td>Jake Meyers (Houston Astros)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jake Meyers (Houston Astros)</td>
+<td>10</td>
+<td>3</td>
+<td>0</td>
+<td>.300</td>
+<td>0</td>
+<td>.500</td>
+<td>.800</td>
+</tr>
+<tr>
+<td>Jake Meyers (Houston Astros)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jake Meyers (Houston Astros)</td>
+<td>8</td>
+<td>3</td>
+<td>1</td>
+<td>.375</td>
+<td>2</td>
+<td>.500</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td>Cam Smith (Houston Astros)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>0</td>
+<td>.250</td>
+<td>.432</td>
+</tr>
+<tr>
+<td>Cam Smith (Houston Astros)</td>
+<td>16</td>
+<td>2</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.535</td>
+</tr>
+<tr>
+<td>Cam Smith (Houston Astros)</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>.500</td>
+<td>3</td>
+<td>.600</td>
+<td>2.600</td>
+</tr>
+<tr>
+<td>Cam Smith (Houston Astros)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Cam Smith (Houston Astros)</td>
+<td>8</td>
+<td>4</td>
+<td>1</td>
+<td>.500</td>
+<td>3</td>
+<td>.500</td>
+<td>1.625</td>
+</tr>
+<tr>
+<td>Cam Smith (Houston Astros)</td>
+<td>17</td>
+<td>3</td>
+<td>2</td>
+<td>.176</td>
+<td>5</td>
+<td>.176</td>
+<td>.705</td>
+</tr>
+<tr>
+<td>Cam Smith (Houston Astros)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Cam Smith (Houston Astros)</td>
+<td>10</td>
+<td>3</td>
+<td>0</td>
+<td>.300</td>
+<td>0</td>
+<td>.500</td>
+<td>.800</td>
+</tr>
+<tr>
+<td>Cam Smith (Houston Astros)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Cam Smith (Houston Astros)</td>
+<td>8</td>
+<td>3</td>
+<td>1</td>
+<td>.375</td>
+<td>2</td>
+<td>.500</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td>Mauricio Dubón (Houston Astros)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>0</td>
+<td>.250</td>
+<td>.432</td>
+</tr>
+<tr>
+<td>Mauricio Dubón (Houston Astros)</td>
+<td>16</td>
+<td>2</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.535</td>
+</tr>
+<tr>
+<td>Mauricio Dubón (Houston Astros)</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>.500</td>
+<td>3</td>
+<td>.600</td>
+<td>2.600</td>
+</tr>
+<tr>
+<td>Mauricio Dubón (Houston Astros)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Mauricio Dubón (Houston Astros)</td>
+<td>8</td>
+<td>4</td>
+<td>1</td>
+<td>.500</td>
+<td>3</td>
+<td>.500</td>
+<td>1.625</td>
+</tr>
+<tr>
+<td>Mauricio Dubón (Houston Astros)</td>
+<td>17</td>
+<td>3</td>
+<td>2</td>
+<td>.176</td>
+<td>5</td>
+<td>.176</td>
+<td>.705</td>
+</tr>
+<tr>
+<td>Mauricio Dubón (Houston Astros)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Mauricio Dubón (Houston Astros)</td>
+<td>10</td>
+<td>3</td>
+<td>0</td>
+<td>.300</td>
+<td>0</td>
+<td>.500</td>
+<td>.800</td>
+</tr>
+<tr>
+<td>Mauricio Dubón (Houston Astros)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Mauricio Dubón (Houston Astros)</td>
+<td>8</td>
+<td>3</td>
+<td>1</td>
+<td>.375</td>
+<td>2</td>
+<td>.500</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td>Brendan Rodgers (Houston Astros)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>0</td>
+<td>.250</td>
+<td>.432</td>
+</tr>
+<tr>
+<td>Brendan Rodgers (Houston Astros)</td>
+<td>16</td>
+<td>2</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.535</td>
+</tr>
+<tr>
+<td>Brendan Rodgers (Houston Astros)</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>.500</td>
+<td>3</td>
+<td>.600</td>
+<td>2.600</td>
+</tr>
+<tr>
+<td>Brendan Rodgers (Houston Astros)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Brendan Rodgers (Houston Astros)</td>
+<td>8</td>
+<td>4</td>
+<td>1</td>
+<td>.500</td>
+<td>3</td>
+<td>.500</td>
+<td>1.625</td>
+</tr>
+<tr>
+<td>Brendan Rodgers (Houston Astros)</td>
+<td>17</td>
+<td>3</td>
+<td>2</td>
+<td>.176</td>
+<td>5</td>
+<td>.176</td>
+<td>.705</td>
+</tr>
+<tr>
+<td>Brendan Rodgers (Houston Astros)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Brendan Rodgers (Houston Astros)</td>
+<td>10</td>
+<td>3</td>
+<td>0</td>
+<td>.300</td>
+<td>0</td>
+<td>.500</td>
+<td>.800</td>
+</tr>
+<tr>
+<td>Brendan Rodgers (Houston Astros)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Brendan Rodgers (Houston Astros)</td>
+<td>8</td>
+<td>3</td>
+<td>1</td>
+<td>.375</td>
+<td>2</td>
+<td>.500</td>
+<td>1.250</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Logan Allen Cleveland Guardians</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Byron Buxton (Minnesota Twins)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.200</td>
+<td>.200</td>
+</tr>
+<tr>
+<td>Trevor Larnach (Minnesota Twins)</td>
+<td>11</td>
+<td>6</td>
+<td>0</td>
+<td>.545</td>
+<td>2</td>
+<td>.538</td>
+<td>1.083</td>
+</tr>
+<tr>
+<td>Trevor Larnach (Minnesota Twins)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.333</td>
+<td>.583</td>
+</tr>
+<tr>
+<td>Trevor Larnach (Minnesota Twins)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Trevor Larnach (Minnesota Twins)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Trevor Larnach (Minnesota Twins)</td>
+<td>28</td>
+<td>7</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.300</td>
+<td>.586</td>
+</tr>
+<tr>
+<td>Trevor Larnach (Minnesota Twins)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>2</td>
+<td>.400</td>
+<td>1.400</td>
+</tr>
+<tr>
+<td>Trevor Larnach (Minnesota Twins)</td>
+<td>20</td>
+<td>4</td>
+<td>1</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.733</td>
+</tr>
+<tr>
+<td>Trevor Larnach (Minnesota Twins)</td>
+<td>14</td>
+<td>3</td>
+<td>0</td>
+<td>.214</td>
+<td>1</td>
+<td>.313</td>
+<td>.599</td>
+</tr>
+<tr>
+<td>Trevor Larnach (Minnesota Twins)</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.125</td>
+<td>.125</td>
+</tr>
+<tr>
+<td>Trevor Larnach (Minnesota Twins)</td>
+<td>21</td>
+<td>5</td>
+<td>0</td>
+<td>.238</td>
+<td>3</td>
+<td>.227</td>
+<td>.513</td>
+</tr>
+<tr>
+<td>Trevor Larnach (Minnesota Twins)</td>
+<td>21</td>
+<td>5</td>
+<td>0</td>
+<td>.238</td>
+<td>1</td>
+<td>.360</td>
+<td>.598</td>
+</tr>
+<tr>
+<td>Harrison Bader (Minnesota Twins)</td>
+<td>11</td>
+<td>6</td>
+<td>0</td>
+<td>.545</td>
+<td>2</td>
+<td>.538</td>
+<td>1.083</td>
+</tr>
+<tr>
+<td>Harrison Bader (Minnesota Twins)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.333</td>
+<td>.583</td>
+</tr>
+<tr>
+<td>Harrison Bader (Minnesota Twins)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Harrison Bader (Minnesota Twins)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Harrison Bader (Minnesota Twins)</td>
+<td>28</td>
+<td>7</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.300</td>
+<td>.586</td>
+</tr>
+<tr>
+<td>Harrison Bader (Minnesota Twins)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>2</td>
+<td>.400</td>
+<td>1.400</td>
+</tr>
+<tr>
+<td>Harrison Bader (Minnesota Twins)</td>
+<td>20</td>
+<td>4</td>
+<td>1</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.733</td>
+</tr>
+<tr>
+<td>Harrison Bader (Minnesota Twins)</td>
+<td>14</td>
+<td>3</td>
+<td>0</td>
+<td>.214</td>
+<td>1</td>
+<td>.313</td>
+<td>.599</td>
+</tr>
+<tr>
+<td>Harrison Bader (Minnesota Twins)</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.125</td>
+<td>.125</td>
+</tr>
+<tr>
+<td>Harrison Bader (Minnesota Twins)</td>
+<td>21</td>
+<td>5</td>
+<td>0</td>
+<td>.238</td>
+<td>3</td>
+<td>.227</td>
+<td>.513</td>
+</tr>
+<tr>
+<td>Harrison Bader (Minnesota Twins)</td>
+<td>21</td>
+<td>5</td>
+<td>0</td>
+<td>.238</td>
+<td>1</td>
+<td>.360</td>
+<td>.598</td>
+</tr>
+<tr>
+<td>Brooks Lee (Minnesota Twins)</td>
+<td>11</td>
+<td>6</td>
+<td>0</td>
+<td>.545</td>
+<td>2</td>
+<td>.538</td>
+<td>1.083</td>
+</tr>
+<tr>
+<td>Brooks Lee (Minnesota Twins)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.333</td>
+<td>.583</td>
+</tr>
+<tr>
+<td>Brooks Lee (Minnesota Twins)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Brooks Lee (Minnesota Twins)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Brooks Lee (Minnesota Twins)</td>
+<td>28</td>
+<td>7</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.300</td>
+<td>.586</td>
+</tr>
+<tr>
+<td>Brooks Lee (Minnesota Twins)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>2</td>
+<td>.400</td>
+<td>1.400</td>
+</tr>
+<tr>
+<td>Brooks Lee (Minnesota Twins)</td>
+<td>20</td>
+<td>4</td>
+<td>1</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.733</td>
+</tr>
+<tr>
+<td>Brooks Lee (Minnesota Twins)</td>
+<td>14</td>
+<td>3</td>
+<td>0</td>
+<td>.214</td>
+<td>1</td>
+<td>.313</td>
+<td>.599</td>
+</tr>
+<tr>
+<td>Brooks Lee (Minnesota Twins)</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.125</td>
+<td>.125</td>
+</tr>
+<tr>
+<td>Brooks Lee (Minnesota Twins)</td>
+<td>21</td>
+<td>5</td>
+<td>0</td>
+<td>.238</td>
+<td>3</td>
+<td>.227</td>
+<td>.513</td>
+</tr>
+<tr>
+<td>Brooks Lee (Minnesota Twins)</td>
+<td>21</td>
+<td>5</td>
+<td>0</td>
+<td>.238</td>
+<td>1</td>
+<td>.360</td>
+<td>.598</td>
+</tr>
+<tr>
+<td>Ty France (Minnesota Twins)</td>
+<td>11</td>
+<td>6</td>
+<td>0</td>
+<td>.545</td>
+<td>2</td>
+<td>.538</td>
+<td>1.083</td>
+</tr>
+<tr>
+<td>Ty France (Minnesota Twins)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.333</td>
+<td>.583</td>
+</tr>
+<tr>
+<td>Ty France (Minnesota Twins)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Ty France (Minnesota Twins)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Ty France (Minnesota Twins)</td>
+<td>28</td>
+<td>7</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.300</td>
+<td>.586</td>
+</tr>
+<tr>
+<td>Ty France (Minnesota Twins)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>2</td>
+<td>.400</td>
+<td>1.400</td>
+</tr>
+<tr>
+<td>Ty France (Minnesota Twins)</td>
+<td>20</td>
+<td>4</td>
+<td>1</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.733</td>
+</tr>
+<tr>
+<td>Ty France (Minnesota Twins)</td>
+<td>14</td>
+<td>3</td>
+<td>0</td>
+<td>.214</td>
+<td>1</td>
+<td>.313</td>
+<td>.599</td>
+</tr>
+<tr>
+<td>Ty France (Minnesota Twins)</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.125</td>
+<td>.125</td>
+</tr>
+<tr>
+<td>Ty France (Minnesota Twins)</td>
+<td>21</td>
+<td>5</td>
+<td>0</td>
+<td>.238</td>
+<td>3</td>
+<td>.227</td>
+<td>.513</td>
+</tr>
+<tr>
+<td>Ty France (Minnesota Twins)</td>
+<td>21</td>
+<td>5</td>
+<td>0</td>
+<td>.238</td>
+<td>1</td>
+<td>.360</td>
+<td>.598</td>
+</tr>
+<tr>
+<td>Ryan Jeffers (Minnesota Twins)</td>
+<td>11</td>
+<td>6</td>
+<td>0</td>
+<td>.545</td>
+<td>2</td>
+<td>.538</td>
+<td>1.083</td>
+</tr>
+<tr>
+<td>Ryan Jeffers (Minnesota Twins)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.333</td>
+<td>.583</td>
+</tr>
+<tr>
+<td>Ryan Jeffers (Minnesota Twins)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Ryan Jeffers (Minnesota Twins)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Ryan Jeffers (Minnesota Twins)</td>
+<td>28</td>
+<td>7</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.300</td>
+<td>.586</td>
+</tr>
+<tr>
+<td>Ryan Jeffers (Minnesota Twins)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>2</td>
+<td>.400</td>
+<td>1.400</td>
+</tr>
+<tr>
+<td>Ryan Jeffers (Minnesota Twins)</td>
+<td>20</td>
+<td>4</td>
+<td>1</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.733</td>
+</tr>
+<tr>
+<td>Ryan Jeffers (Minnesota Twins)</td>
+<td>14</td>
+<td>3</td>
+<td>0</td>
+<td>.214</td>
+<td>1</td>
+<td>.313</td>
+<td>.599</td>
+</tr>
+<tr>
+<td>Ryan Jeffers (Minnesota Twins)</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.125</td>
+<td>.125</td>
+</tr>
+<tr>
+<td>Ryan Jeffers (Minnesota Twins)</td>
+<td>21</td>
+<td>5</td>
+<td>0</td>
+<td>.238</td>
+<td>3</td>
+<td>.227</td>
+<td>.513</td>
+</tr>
+<tr>
+<td>Ryan Jeffers (Minnesota Twins)</td>
+<td>21</td>
+<td>5</td>
+<td>0</td>
+<td>.238</td>
+<td>1</td>
+<td>.360</td>
+<td>.598</td>
+</tr>
+<tr>
+<td>Willi Castro (Minnesota Twins)</td>
+<td>11</td>
+<td>6</td>
+<td>0</td>
+<td>.545</td>
+<td>2</td>
+<td>.538</td>
+<td>1.083</td>
+</tr>
+<tr>
+<td>Willi Castro (Minnesota Twins)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.333</td>
+<td>.583</td>
+</tr>
+<tr>
+<td>Willi Castro (Minnesota Twins)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Willi Castro (Minnesota Twins)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Willi Castro (Minnesota Twins)</td>
+<td>28</td>
+<td>7</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.300</td>
+<td>.586</td>
+</tr>
+<tr>
+<td>Willi Castro (Minnesota Twins)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>2</td>
+<td>.400</td>
+<td>1.400</td>
+</tr>
+<tr>
+<td>Willi Castro (Minnesota Twins)</td>
+<td>20</td>
+<td>4</td>
+<td>1</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.733</td>
+</tr>
+<tr>
+<td>Willi Castro (Minnesota Twins)</td>
+<td>14</td>
+<td>3</td>
+<td>0</td>
+<td>.214</td>
+<td>1</td>
+<td>.313</td>
+<td>.599</td>
+</tr>
+<tr>
+<td>Willi Castro (Minnesota Twins)</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.125</td>
+<td>.125</td>
+</tr>
+<tr>
+<td>Willi Castro (Minnesota Twins)</td>
+<td>21</td>
+<td>5</td>
+<td>0</td>
+<td>.238</td>
+<td>3</td>
+<td>.227</td>
+<td>.513</td>
+</tr>
+<tr>
+<td>Willi Castro (Minnesota Twins)</td>
+<td>21</td>
+<td>5</td>
+<td>0</td>
+<td>.238</td>
+<td>1</td>
+<td>.360</td>
+<td>.598</td>
+</tr>
+<tr>
+<td>Carlos Correa (Minnesota Twins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Bailey Ober Minnesota Twins</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Kyle Manzardo (Cleveland Guardians)</td>
+<td>14</td>
+<td>3</td>
+<td>1</td>
+<td>.214</td>
+<td>3</td>
+<td>.313</td>
+<td>.742</td>
+</tr>
+<tr>
+<td>Kyle Manzardo (Cleveland Guardians)</td>
+<td>17</td>
+<td>1</td>
+<td>0</td>
+<td>.059</td>
+<td>2</td>
+<td>.059</td>
+<td>.177</td>
+</tr>
+<tr>
+<td>Kyle Manzardo (Cleveland Guardians)</td>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>.111</td>
+<td>0</td>
+<td>.111</td>
+<td>.222</td>
+</tr>
+<tr>
+<td>Kyle Manzardo (Cleveland Guardians)</td>
+<td>17</td>
+<td>3</td>
+<td>0</td>
+<td>.176</td>
+<td>0</td>
+<td>.176</td>
+<td>.470</td>
+</tr>
+<tr>
+<td>Kyle Manzardo (Cleveland Guardians)</td>
+<td>22</td>
+<td>3</td>
+<td>1</td>
+<td>.136</td>
+<td>1</td>
+<td>.174</td>
+<td>.447</td>
+</tr>
+<tr>
+<td>Kyle Manzardo (Cleveland Guardians)</td>
+<td>21</td>
+<td>11</td>
+<td>1</td>
+<td>.524</td>
+<td>5</td>
+<td>.565</td>
+<td>1.279</td>
+</tr>
+<tr>
+<td>Kyle Manzardo (Cleveland Guardians)</td>
+<td>41</td>
+<td>7</td>
+<td>0</td>
+<td>.171</td>
+<td>0</td>
+<td>.190</td>
+<td>.361</td>
+</tr>
+<tr>
+<td>Kyle Manzardo (Cleveland Guardians)</td>
+<td>9</td>
+<td>2</td>
+<td>0</td>
+<td>.222</td>
+<td>1</td>
+<td>.300</td>
+<td>.633</td>
+</tr>
+<tr>
+<td>Kyle Manzardo (Cleveland Guardians)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.500</td>
+<td>.900</td>
+</tr>
+<tr>
+<td>Kyle Manzardo (Cleveland Guardians)</td>
+<td>61</td>
+<td>14</td>
+<td>3</td>
+<td>.230</td>
+<td>6</td>
+<td>.288</td>
+<td>.747</td>
+</tr>
+<tr>
+<td>José Ramírez (Cleveland Guardians)</td>
+<td>14</td>
+<td>3</td>
+<td>1</td>
+<td>.214</td>
+<td>3</td>
+<td>.313</td>
+<td>.742</td>
+</tr>
+<tr>
+<td>José Ramírez (Cleveland Guardians)</td>
+<td>17</td>
+<td>1</td>
+<td>0</td>
+<td>.059</td>
+<td>2</td>
+<td>.059</td>
+<td>.177</td>
+</tr>
+<tr>
+<td>José Ramírez (Cleveland Guardians)</td>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>.111</td>
+<td>0</td>
+<td>.111</td>
+<td>.222</td>
+</tr>
+<tr>
+<td>José Ramírez (Cleveland Guardians)</td>
+<td>17</td>
+<td>3</td>
+<td>0</td>
+<td>.176</td>
+<td>0</td>
+<td>.176</td>
+<td>.470</td>
+</tr>
+<tr>
+<td>José Ramírez (Cleveland Guardians)</td>
+<td>22</td>
+<td>3</td>
+<td>1</td>
+<td>.136</td>
+<td>1</td>
+<td>.174</td>
+<td>.447</td>
+</tr>
+<tr>
+<td>José Ramírez (Cleveland Guardians)</td>
+<td>21</td>
+<td>11</td>
+<td>1</td>
+<td>.524</td>
+<td>5</td>
+<td>.565</td>
+<td>1.279</td>
+</tr>
+<tr>
+<td>José Ramírez (Cleveland Guardians)</td>
+<td>41</td>
+<td>7</td>
+<td>0</td>
+<td>.171</td>
+<td>0</td>
+<td>.190</td>
+<td>.361</td>
+</tr>
+<tr>
+<td>José Ramírez (Cleveland Guardians)</td>
+<td>9</td>
+<td>2</td>
+<td>0</td>
+<td>.222</td>
+<td>1</td>
+<td>.300</td>
+<td>.633</td>
+</tr>
+<tr>
+<td>José Ramírez (Cleveland Guardians)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.500</td>
+<td>.900</td>
+</tr>
+<tr>
+<td>José Ramírez (Cleveland Guardians)</td>
+<td>61</td>
+<td>14</td>
+<td>3</td>
+<td>.230</td>
+<td>6</td>
+<td>.288</td>
+<td>.747</td>
+</tr>
+<tr>
+<td>Bo Naylor (Cleveland Guardians)</td>
+<td>14</td>
+<td>3</td>
+<td>1</td>
+<td>.214</td>
+<td>3</td>
+<td>.313</td>
+<td>.742</td>
+</tr>
+<tr>
+<td>Bo Naylor (Cleveland Guardians)</td>
+<td>17</td>
+<td>1</td>
+<td>0</td>
+<td>.059</td>
+<td>2</td>
+<td>.059</td>
+<td>.177</td>
+</tr>
+<tr>
+<td>Bo Naylor (Cleveland Guardians)</td>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>.111</td>
+<td>0</td>
+<td>.111</td>
+<td>.222</td>
+</tr>
+<tr>
+<td>Bo Naylor (Cleveland Guardians)</td>
+<td>17</td>
+<td>3</td>
+<td>0</td>
+<td>.176</td>
+<td>0</td>
+<td>.176</td>
+<td>.470</td>
+</tr>
+<tr>
+<td>Bo Naylor (Cleveland Guardians)</td>
+<td>22</td>
+<td>3</td>
+<td>1</td>
+<td>.136</td>
+<td>1</td>
+<td>.174</td>
+<td>.447</td>
+</tr>
+<tr>
+<td>Bo Naylor (Cleveland Guardians)</td>
+<td>21</td>
+<td>11</td>
+<td>1</td>
+<td>.524</td>
+<td>5</td>
+<td>.565</td>
+<td>1.279</td>
+</tr>
+<tr>
+<td>Bo Naylor (Cleveland Guardians)</td>
+<td>41</td>
+<td>7</td>
+<td>0</td>
+<td>.171</td>
+<td>0</td>
+<td>.190</td>
+<td>.361</td>
+</tr>
+<tr>
+<td>Bo Naylor (Cleveland Guardians)</td>
+<td>9</td>
+<td>2</td>
+<td>0</td>
+<td>.222</td>
+<td>1</td>
+<td>.300</td>
+<td>.633</td>
+</tr>
+<tr>
+<td>Bo Naylor (Cleveland Guardians)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.500</td>
+<td>.900</td>
+</tr>
+<tr>
+<td>Bo Naylor (Cleveland Guardians)</td>
+<td>61</td>
+<td>14</td>
+<td>3</td>
+<td>.230</td>
+<td>6</td>
+<td>.288</td>
+<td>.747</td>
+</tr>
+<tr>
+<td>Daniel Schneemann (Cleveland Guardians)</td>
+<td>14</td>
+<td>3</td>
+<td>1</td>
+<td>.214</td>
+<td>3</td>
+<td>.313</td>
+<td>.742</td>
+</tr>
+<tr>
+<td>Daniel Schneemann (Cleveland Guardians)</td>
+<td>17</td>
+<td>1</td>
+<td>0</td>
+<td>.059</td>
+<td>2</td>
+<td>.059</td>
+<td>.177</td>
+</tr>
+<tr>
+<td>Daniel Schneemann (Cleveland Guardians)</td>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>.111</td>
+<td>0</td>
+<td>.111</td>
+<td>.222</td>
+</tr>
+<tr>
+<td>Daniel Schneemann (Cleveland Guardians)</td>
+<td>17</td>
+<td>3</td>
+<td>0</td>
+<td>.176</td>
+<td>0</td>
+<td>.176</td>
+<td>.470</td>
+</tr>
+<tr>
+<td>Daniel Schneemann (Cleveland Guardians)</td>
+<td>22</td>
+<td>3</td>
+<td>1</td>
+<td>.136</td>
+<td>1</td>
+<td>.174</td>
+<td>.447</td>
+</tr>
+<tr>
+<td>Daniel Schneemann (Cleveland Guardians)</td>
+<td>21</td>
+<td>11</td>
+<td>1</td>
+<td>.524</td>
+<td>5</td>
+<td>.565</td>
+<td>1.279</td>
+</tr>
+<tr>
+<td>Daniel Schneemann (Cleveland Guardians)</td>
+<td>41</td>
+<td>7</td>
+<td>0</td>
+<td>.171</td>
+<td>0</td>
+<td>.190</td>
+<td>.361</td>
+</tr>
+<tr>
+<td>Daniel Schneemann (Cleveland Guardians)</td>
+<td>9</td>
+<td>2</td>
+<td>0</td>
+<td>.222</td>
+<td>1</td>
+<td>.300</td>
+<td>.633</td>
+</tr>
+<tr>
+<td>Daniel Schneemann (Cleveland Guardians)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.500</td>
+<td>.900</td>
+</tr>
+<tr>
+<td>Daniel Schneemann (Cleveland Guardians)</td>
+<td>61</td>
+<td>14</td>
+<td>3</td>
+<td>.230</td>
+<td>6</td>
+<td>.288</td>
+<td>.747</td>
+</tr>
+<tr>
+<td>Carlos Santana (Cleveland Guardians)</td>
+<td>14</td>
+<td>3</td>
+<td>1</td>
+<td>.214</td>
+<td>3</td>
+<td>.313</td>
+<td>.742</td>
+</tr>
+<tr>
+<td>Carlos Santana (Cleveland Guardians)</td>
+<td>17</td>
+<td>1</td>
+<td>0</td>
+<td>.059</td>
+<td>2</td>
+<td>.059</td>
+<td>.177</td>
+</tr>
+<tr>
+<td>Carlos Santana (Cleveland Guardians)</td>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>.111</td>
+<td>0</td>
+<td>.111</td>
+<td>.222</td>
+</tr>
+<tr>
+<td>Carlos Santana (Cleveland Guardians)</td>
+<td>17</td>
+<td>3</td>
+<td>0</td>
+<td>.176</td>
+<td>0</td>
+<td>.176</td>
+<td>.470</td>
+</tr>
+<tr>
+<td>Carlos Santana (Cleveland Guardians)</td>
+<td>22</td>
+<td>3</td>
+<td>1</td>
+<td>.136</td>
+<td>1</td>
+<td>.174</td>
+<td>.447</td>
+</tr>
+<tr>
+<td>Carlos Santana (Cleveland Guardians)</td>
+<td>21</td>
+<td>11</td>
+<td>1</td>
+<td>.524</td>
+<td>5</td>
+<td>.565</td>
+<td>1.279</td>
+</tr>
+<tr>
+<td>Carlos Santana (Cleveland Guardians)</td>
+<td>41</td>
+<td>7</td>
+<td>0</td>
+<td>.171</td>
+<td>0</td>
+<td>.190</td>
+<td>.361</td>
+</tr>
+<tr>
+<td>Carlos Santana (Cleveland Guardians)</td>
+<td>9</td>
+<td>2</td>
+<td>0</td>
+<td>.222</td>
+<td>1</td>
+<td>.300</td>
+<td>.633</td>
+</tr>
+<tr>
+<td>Carlos Santana (Cleveland Guardians)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.500</td>
+<td>.900</td>
+</tr>
+<tr>
+<td>Carlos Santana (Cleveland Guardians)</td>
+<td>61</td>
+<td>14</td>
+<td>3</td>
+<td>.230</td>
+<td>6</td>
+<td>.288</td>
+<td>.747</td>
+</tr>
+<tr>
+<td>Gabriel Arias (Cleveland Guardians)</td>
+<td>14</td>
+<td>3</td>
+<td>1</td>
+<td>.214</td>
+<td>3</td>
+<td>.313</td>
+<td>.742</td>
+</tr>
+<tr>
+<td>Gabriel Arias (Cleveland Guardians)</td>
+<td>17</td>
+<td>1</td>
+<td>0</td>
+<td>.059</td>
+<td>2</td>
+<td>.059</td>
+<td>.177</td>
+</tr>
+<tr>
+<td>Gabriel Arias (Cleveland Guardians)</td>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>.111</td>
+<td>0</td>
+<td>.111</td>
+<td>.222</td>
+</tr>
+<tr>
+<td>Gabriel Arias (Cleveland Guardians)</td>
+<td>17</td>
+<td>3</td>
+<td>0</td>
+<td>.176</td>
+<td>0</td>
+<td>.176</td>
+<td>.470</td>
+</tr>
+<tr>
+<td>Gabriel Arias (Cleveland Guardians)</td>
+<td>22</td>
+<td>3</td>
+<td>1</td>
+<td>.136</td>
+<td>1</td>
+<td>.174</td>
+<td>.447</td>
+</tr>
+<tr>
+<td>Gabriel Arias (Cleveland Guardians)</td>
+<td>21</td>
+<td>11</td>
+<td>1</td>
+<td>.524</td>
+<td>5</td>
+<td>.565</td>
+<td>1.279</td>
+</tr>
+<tr>
+<td>Gabriel Arias (Cleveland Guardians)</td>
+<td>41</td>
+<td>7</td>
+<td>0</td>
+<td>.171</td>
+<td>0</td>
+<td>.190</td>
+<td>.361</td>
+</tr>
+<tr>
+<td>Gabriel Arias (Cleveland Guardians)</td>
+<td>9</td>
+<td>2</td>
+<td>0</td>
+<td>.222</td>
+<td>1</td>
+<td>.300</td>
+<td>.633</td>
+</tr>
+<tr>
+<td>Gabriel Arias (Cleveland Guardians)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.500</td>
+<td>.900</td>
+</tr>
+<tr>
+<td>Gabriel Arias (Cleveland Guardians)</td>
+<td>61</td>
+<td>14</td>
+<td>3</td>
+<td>.230</td>
+<td>6</td>
+<td>.288</td>
+<td>.747</td>
+</tr>
+<tr>
+<td>Steven Kwan (Cleveland Guardians)</td>
+<td>14</td>
+<td>3</td>
+<td>1</td>
+<td>.214</td>
+<td>3</td>
+<td>.313</td>
+<td>.742</td>
+</tr>
+<tr>
+<td>Steven Kwan (Cleveland Guardians)</td>
+<td>17</td>
+<td>1</td>
+<td>0</td>
+<td>.059</td>
+<td>2</td>
+<td>.059</td>
+<td>.177</td>
+</tr>
+<tr>
+<td>Steven Kwan (Cleveland Guardians)</td>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>.111</td>
+<td>0</td>
+<td>.111</td>
+<td>.222</td>
+</tr>
+<tr>
+<td>Steven Kwan (Cleveland Guardians)</td>
+<td>17</td>
+<td>3</td>
+<td>0</td>
+<td>.176</td>
+<td>0</td>
+<td>.176</td>
+<td>.470</td>
+</tr>
+<tr>
+<td>Steven Kwan (Cleveland Guardians)</td>
+<td>22</td>
+<td>3</td>
+<td>1</td>
+<td>.136</td>
+<td>1</td>
+<td>.174</td>
+<td>.447</td>
+</tr>
+<tr>
+<td>Steven Kwan (Cleveland Guardians)</td>
+<td>21</td>
+<td>11</td>
+<td>1</td>
+<td>.524</td>
+<td>5</td>
+<td>.565</td>
+<td>1.279</td>
+</tr>
+<tr>
+<td>Steven Kwan (Cleveland Guardians)</td>
+<td>41</td>
+<td>7</td>
+<td>0</td>
+<td>.171</td>
+<td>0</td>
+<td>.190</td>
+<td>.361</td>
+</tr>
+<tr>
+<td>Steven Kwan (Cleveland Guardians)</td>
+<td>9</td>
+<td>2</td>
+<td>0</td>
+<td>.222</td>
+<td>1</td>
+<td>.300</td>
+<td>.633</td>
+</tr>
+<tr>
+<td>Steven Kwan (Cleveland Guardians)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.500</td>
+<td>.900</td>
+</tr>
+<tr>
+<td>Steven Kwan (Cleveland Guardians)</td>
+<td>61</td>
+<td>14</td>
+<td>3</td>
+<td>.230</td>
+<td>6</td>
+<td>.288</td>
+<td>.747</td>
+</tr>
+<tr>
+<td>Austin Hedges (Cleveland Guardians)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Nolan Jones (Cleveland Guardians)</td>
+<td>14</td>
+<td>3</td>
+<td>1</td>
+<td>.214</td>
+<td>3</td>
+<td>.313</td>
+<td>.742</td>
+</tr>
+<tr>
+<td>Nolan Jones (Cleveland Guardians)</td>
+<td>17</td>
+<td>1</td>
+<td>0</td>
+<td>.059</td>
+<td>2</td>
+<td>.059</td>
+<td>.177</td>
+</tr>
+<tr>
+<td>Nolan Jones (Cleveland Guardians)</td>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>.111</td>
+<td>0</td>
+<td>.111</td>
+<td>.222</td>
+</tr>
+<tr>
+<td>Nolan Jones (Cleveland Guardians)</td>
+<td>17</td>
+<td>3</td>
+<td>0</td>
+<td>.176</td>
+<td>0</td>
+<td>.176</td>
+<td>.470</td>
+</tr>
+<tr>
+<td>Nolan Jones (Cleveland Guardians)</td>
+<td>22</td>
+<td>3</td>
+<td>1</td>
+<td>.136</td>
+<td>1</td>
+<td>.174</td>
+<td>.447</td>
+</tr>
+<tr>
+<td>Nolan Jones (Cleveland Guardians)</td>
+<td>21</td>
+<td>11</td>
+<td>1</td>
+<td>.524</td>
+<td>5</td>
+<td>.565</td>
+<td>1.279</td>
+</tr>
+<tr>
+<td>Nolan Jones (Cleveland Guardians)</td>
+<td>41</td>
+<td>7</td>
+<td>0</td>
+<td>.171</td>
+<td>0</td>
+<td>.190</td>
+<td>.361</td>
+</tr>
+<tr>
+<td>Nolan Jones (Cleveland Guardians)</td>
+<td>9</td>
+<td>2</td>
+<td>0</td>
+<td>.222</td>
+<td>1</td>
+<td>.300</td>
+<td>.633</td>
+</tr>
+<tr>
+<td>Nolan Jones (Cleveland Guardians)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.500</td>
+<td>.900</td>
+</tr>
+<tr>
+<td>Nolan Jones (Cleveland Guardians)</td>
+<td>61</td>
+<td>14</td>
+<td>3</td>
+<td>.230</td>
+<td>6</td>
+<td>.288</td>
+<td>.747</td>
+</tr>
+<tr>
+<td>Jhonkensy Noel (Cleveland Guardians)</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>.167</td>
+<td>1</td>
+<td>.167</td>
+<td>.334</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Cade Horton Chicago Cubs</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Kyle Stowers (Miami Marlins)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>2</td>
+<td>.556</td>
+<td>1.223</td>
+</tr>
+<tr>
+<td>Kyle Stowers (Miami Marlins)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Kyle Stowers (Miami Marlins)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Kyle Stowers (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Kyle Stowers (Miami Marlins)</td>
+<td>6</td>
+<td>4</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.714</td>
+<td>1.547</td>
+</tr>
+<tr>
+<td>Kyle Stowers (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Kyle Stowers (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Kyle Stowers (Miami Marlins)</td>
+<td>8</td>
+<td>3</td>
+<td>0</td>
+<td>.375</td>
+<td>2</td>
+<td>.375</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Kyle Stowers (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Kyle Stowers (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Kyle Stowers (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.400</td>
+</tr>
+<tr>
+<td>Matt Mervis (Miami Marlins)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>2</td>
+<td>.556</td>
+<td>1.223</td>
+</tr>
+<tr>
+<td>Matt Mervis (Miami Marlins)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Matt Mervis (Miami Marlins)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Matt Mervis (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Matt Mervis (Miami Marlins)</td>
+<td>6</td>
+<td>4</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.714</td>
+<td>1.547</td>
+</tr>
+<tr>
+<td>Matt Mervis (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Matt Mervis (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Matt Mervis (Miami Marlins)</td>
+<td>8</td>
+<td>3</td>
+<td>0</td>
+<td>.375</td>
+<td>2</td>
+<td>.375</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Matt Mervis (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Matt Mervis (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Matt Mervis (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.400</td>
+</tr>
+<tr>
+<td>Agustín Ramírez (Miami Marlins)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>2</td>
+<td>.556</td>
+<td>1.223</td>
+</tr>
+<tr>
+<td>Agustín Ramírez (Miami Marlins)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Agustín Ramírez (Miami Marlins)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Agustín Ramírez (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Agustín Ramírez (Miami Marlins)</td>
+<td>6</td>
+<td>4</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.714</td>
+<td>1.547</td>
+</tr>
+<tr>
+<td>Agustín Ramírez (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Agustín Ramírez (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Agustín Ramírez (Miami Marlins)</td>
+<td>8</td>
+<td>3</td>
+<td>0</td>
+<td>.375</td>
+<td>2</td>
+<td>.375</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Agustín Ramírez (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Agustín Ramírez (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Agustín Ramírez (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.400</td>
+</tr>
+<tr>
+<td>Otto Lopez (Miami Marlins)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>2</td>
+<td>.556</td>
+<td>1.223</td>
+</tr>
+<tr>
+<td>Otto Lopez (Miami Marlins)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Otto Lopez (Miami Marlins)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Otto Lopez (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Otto Lopez (Miami Marlins)</td>
+<td>6</td>
+<td>4</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.714</td>
+<td>1.547</td>
+</tr>
+<tr>
+<td>Otto Lopez (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Otto Lopez (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Otto Lopez (Miami Marlins)</td>
+<td>8</td>
+<td>3</td>
+<td>0</td>
+<td>.375</td>
+<td>2</td>
+<td>.375</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Otto Lopez (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Otto Lopez (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Otto Lopez (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.400</td>
+</tr>
+<tr>
+<td>Eric Wagaman (Miami Marlins)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>2</td>
+<td>.556</td>
+<td>1.223</td>
+</tr>
+<tr>
+<td>Eric Wagaman (Miami Marlins)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Eric Wagaman (Miami Marlins)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Eric Wagaman (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Eric Wagaman (Miami Marlins)</td>
+<td>6</td>
+<td>4</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.714</td>
+<td>1.547</td>
+</tr>
+<tr>
+<td>Eric Wagaman (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Eric Wagaman (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Eric Wagaman (Miami Marlins)</td>
+<td>8</td>
+<td>3</td>
+<td>0</td>
+<td>.375</td>
+<td>2</td>
+<td>.375</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Eric Wagaman (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Eric Wagaman (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Eric Wagaman (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.400</td>
+</tr>
+<tr>
+<td>Derek Hill (Miami Marlins)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>2</td>
+<td>.556</td>
+<td>1.223</td>
+</tr>
+<tr>
+<td>Derek Hill (Miami Marlins)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Derek Hill (Miami Marlins)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Derek Hill (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Derek Hill (Miami Marlins)</td>
+<td>6</td>
+<td>4</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.714</td>
+<td>1.547</td>
+</tr>
+<tr>
+<td>Derek Hill (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Derek Hill (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Derek Hill (Miami Marlins)</td>
+<td>8</td>
+<td>3</td>
+<td>0</td>
+<td>.375</td>
+<td>2</td>
+<td>.375</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Derek Hill (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Derek Hill (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Derek Hill (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.400</td>
+</tr>
+<tr>
+<td>Connor Norby (Miami Marlins)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>2</td>
+<td>.556</td>
+<td>1.223</td>
+</tr>
+<tr>
+<td>Connor Norby (Miami Marlins)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Connor Norby (Miami Marlins)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Connor Norby (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Connor Norby (Miami Marlins)</td>
+<td>6</td>
+<td>4</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.714</td>
+<td>1.547</td>
+</tr>
+<tr>
+<td>Connor Norby (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Connor Norby (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Connor Norby (Miami Marlins)</td>
+<td>8</td>
+<td>3</td>
+<td>0</td>
+<td>.375</td>
+<td>2</td>
+<td>.375</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Connor Norby (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Connor Norby (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Connor Norby (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.400</td>
+</tr>
+<tr>
+<td>Jesús Sánchez (Miami Marlins)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>2</td>
+<td>.556</td>
+<td>1.223</td>
+</tr>
+<tr>
+<td>Jesús Sánchez (Miami Marlins)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jesús Sánchez (Miami Marlins)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jesús Sánchez (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jesús Sánchez (Miami Marlins)</td>
+<td>6</td>
+<td>4</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.714</td>
+<td>1.547</td>
+</tr>
+<tr>
+<td>Jesús Sánchez (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jesús Sánchez (Miami Marlins)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Jesús Sánchez (Miami Marlins)</td>
+<td>8</td>
+<td>3</td>
+<td>0</td>
+<td>.375</td>
+<td>2</td>
+<td>.375</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Jesús Sánchez (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Jesús Sánchez (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Jesús Sánchez (Miami Marlins)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.400</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Max Meyer Miami Marlins</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Pete Crow-Armstrong (Chicago Cubs)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Pete Crow-Armstrong (Chicago Cubs)</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.167</td>
+<td>.334</td>
+</tr>
+<tr>
+<td>Pete Crow-Armstrong (Chicago Cubs)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>0</td>
+<td>.222</td>
+<td>.347</td>
+</tr>
+<tr>
+<td>Pete Crow-Armstrong (Chicago Cubs)</td>
+<td>6</td>
+<td>3</td>
+<td>1</td>
+<td>.500</td>
+<td>1</td>
+<td>.571</td>
+<td>1.571</td>
+</tr>
+<tr>
+<td>Pete Crow-Armstrong (Chicago Cubs)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>1</td>
+<td>.750</td>
+<td>2.083</td>
+</tr>
+<tr>
+<td>Pete Crow-Armstrong (Chicago Cubs)</td>
+<td>12</td>
+<td>3</td>
+<td>1</td>
+<td>.250</td>
+<td>1</td>
+<td>.357</td>
+<td>.857</td>
+</tr>
+<tr>
+<td>Pete Crow-Armstrong (Chicago Cubs)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>2</td>
+<td>.200</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Pete Crow-Armstrong (Chicago Cubs)</td>
+<td>8</td>
+<td>2</td>
+<td>1</td>
+<td>.250</td>
+<td>2</td>
+<td>.250</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Pete Crow-Armstrong (Chicago Cubs)</td>
+<td>8</td>
+<td>1</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.722</td>
+</tr>
+<tr>
+<td>Seiya Suzuki (Chicago Cubs)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Seiya Suzuki (Chicago Cubs)</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.167</td>
+<td>.334</td>
+</tr>
+<tr>
+<td>Seiya Suzuki (Chicago Cubs)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>0</td>
+<td>.222</td>
+<td>.347</td>
+</tr>
+<tr>
+<td>Seiya Suzuki (Chicago Cubs)</td>
+<td>6</td>
+<td>3</td>
+<td>1</td>
+<td>.500</td>
+<td>1</td>
+<td>.571</td>
+<td>1.571</td>
+</tr>
+<tr>
+<td>Seiya Suzuki (Chicago Cubs)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>1</td>
+<td>.750</td>
+<td>2.083</td>
+</tr>
+<tr>
+<td>Seiya Suzuki (Chicago Cubs)</td>
+<td>12</td>
+<td>3</td>
+<td>1</td>
+<td>.250</td>
+<td>1</td>
+<td>.357</td>
+<td>.857</td>
+</tr>
+<tr>
+<td>Seiya Suzuki (Chicago Cubs)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>2</td>
+<td>.200</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Seiya Suzuki (Chicago Cubs)</td>
+<td>8</td>
+<td>2</td>
+<td>1</td>
+<td>.250</td>
+<td>2</td>
+<td>.250</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Seiya Suzuki (Chicago Cubs)</td>
+<td>8</td>
+<td>1</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.722</td>
+</tr>
+<tr>
+<td>Kyle Tucker (Chicago Cubs)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Kyle Tucker (Chicago Cubs)</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.167</td>
+<td>.334</td>
+</tr>
+<tr>
+<td>Kyle Tucker (Chicago Cubs)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>0</td>
+<td>.222</td>
+<td>.347</td>
+</tr>
+<tr>
+<td>Kyle Tucker (Chicago Cubs)</td>
+<td>6</td>
+<td>3</td>
+<td>1</td>
+<td>.500</td>
+<td>1</td>
+<td>.571</td>
+<td>1.571</td>
+</tr>
+<tr>
+<td>Kyle Tucker (Chicago Cubs)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>1</td>
+<td>.750</td>
+<td>2.083</td>
+</tr>
+<tr>
+<td>Kyle Tucker (Chicago Cubs)</td>
+<td>12</td>
+<td>3</td>
+<td>1</td>
+<td>.250</td>
+<td>1</td>
+<td>.357</td>
+<td>.857</td>
+</tr>
+<tr>
+<td>Kyle Tucker (Chicago Cubs)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>2</td>
+<td>.200</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Kyle Tucker (Chicago Cubs)</td>
+<td>8</td>
+<td>2</td>
+<td>1</td>
+<td>.250</td>
+<td>2</td>
+<td>.250</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Kyle Tucker (Chicago Cubs)</td>
+<td>8</td>
+<td>1</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.722</td>
+</tr>
+<tr>
+<td>Dansby Swanson (Chicago Cubs)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Dansby Swanson (Chicago Cubs)</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.167</td>
+<td>.334</td>
+</tr>
+<tr>
+<td>Dansby Swanson (Chicago Cubs)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>0</td>
+<td>.222</td>
+<td>.347</td>
+</tr>
+<tr>
+<td>Dansby Swanson (Chicago Cubs)</td>
+<td>6</td>
+<td>3</td>
+<td>1</td>
+<td>.500</td>
+<td>1</td>
+<td>.571</td>
+<td>1.571</td>
+</tr>
+<tr>
+<td>Dansby Swanson (Chicago Cubs)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>1</td>
+<td>.750</td>
+<td>2.083</td>
+</tr>
+<tr>
+<td>Dansby Swanson (Chicago Cubs)</td>
+<td>12</td>
+<td>3</td>
+<td>1</td>
+<td>.250</td>
+<td>1</td>
+<td>.357</td>
+<td>.857</td>
+</tr>
+<tr>
+<td>Dansby Swanson (Chicago Cubs)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>2</td>
+<td>.200</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Dansby Swanson (Chicago Cubs)</td>
+<td>8</td>
+<td>2</td>
+<td>1</td>
+<td>.250</td>
+<td>2</td>
+<td>.250</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Dansby Swanson (Chicago Cubs)</td>
+<td>8</td>
+<td>1</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.722</td>
+</tr>
+<tr>
+<td>Michael Busch (Chicago Cubs)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Michael Busch (Chicago Cubs)</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.167</td>
+<td>.334</td>
+</tr>
+<tr>
+<td>Michael Busch (Chicago Cubs)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>0</td>
+<td>.222</td>
+<td>.347</td>
+</tr>
+<tr>
+<td>Michael Busch (Chicago Cubs)</td>
+<td>6</td>
+<td>3</td>
+<td>1</td>
+<td>.500</td>
+<td>1</td>
+<td>.571</td>
+<td>1.571</td>
+</tr>
+<tr>
+<td>Michael Busch (Chicago Cubs)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>1</td>
+<td>.750</td>
+<td>2.083</td>
+</tr>
+<tr>
+<td>Michael Busch (Chicago Cubs)</td>
+<td>12</td>
+<td>3</td>
+<td>1</td>
+<td>.250</td>
+<td>1</td>
+<td>.357</td>
+<td>.857</td>
+</tr>
+<tr>
+<td>Michael Busch (Chicago Cubs)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>2</td>
+<td>.200</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Michael Busch (Chicago Cubs)</td>
+<td>8</td>
+<td>2</td>
+<td>1</td>
+<td>.250</td>
+<td>2</td>
+<td>.250</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Michael Busch (Chicago Cubs)</td>
+<td>8</td>
+<td>1</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.722</td>
+</tr>
+<tr>
+<td>Miguel Amaya (Chicago Cubs)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Miguel Amaya (Chicago Cubs)</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.167</td>
+<td>.334</td>
+</tr>
+<tr>
+<td>Miguel Amaya (Chicago Cubs)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>0</td>
+<td>.222</td>
+<td>.347</td>
+</tr>
+<tr>
+<td>Miguel Amaya (Chicago Cubs)</td>
+<td>6</td>
+<td>3</td>
+<td>1</td>
+<td>.500</td>
+<td>1</td>
+<td>.571</td>
+<td>1.571</td>
+</tr>
+<tr>
+<td>Miguel Amaya (Chicago Cubs)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>1</td>
+<td>.750</td>
+<td>2.083</td>
+</tr>
+<tr>
+<td>Miguel Amaya (Chicago Cubs)</td>
+<td>12</td>
+<td>3</td>
+<td>1</td>
+<td>.250</td>
+<td>1</td>
+<td>.357</td>
+<td>.857</td>
+</tr>
+<tr>
+<td>Miguel Amaya (Chicago Cubs)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>2</td>
+<td>.200</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Miguel Amaya (Chicago Cubs)</td>
+<td>8</td>
+<td>2</td>
+<td>1</td>
+<td>.250</td>
+<td>2</td>
+<td>.250</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Miguel Amaya (Chicago Cubs)</td>
+<td>8</td>
+<td>1</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.722</td>
+</tr>
+<tr>
+<td>Ian Happ (Chicago Cubs)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Ian Happ (Chicago Cubs)</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.167</td>
+<td>.334</td>
+</tr>
+<tr>
+<td>Ian Happ (Chicago Cubs)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>0</td>
+<td>.222</td>
+<td>.347</td>
+</tr>
+<tr>
+<td>Ian Happ (Chicago Cubs)</td>
+<td>6</td>
+<td>3</td>
+<td>1</td>
+<td>.500</td>
+<td>1</td>
+<td>.571</td>
+<td>1.571</td>
+</tr>
+<tr>
+<td>Ian Happ (Chicago Cubs)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>1</td>
+<td>.750</td>
+<td>2.083</td>
+</tr>
+<tr>
+<td>Ian Happ (Chicago Cubs)</td>
+<td>12</td>
+<td>3</td>
+<td>1</td>
+<td>.250</td>
+<td>1</td>
+<td>.357</td>
+<td>.857</td>
+</tr>
+<tr>
+<td>Ian Happ (Chicago Cubs)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>2</td>
+<td>.200</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Ian Happ (Chicago Cubs)</td>
+<td>8</td>
+<td>2</td>
+<td>1</td>
+<td>.250</td>
+<td>2</td>
+<td>.250</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Ian Happ (Chicago Cubs)</td>
+<td>8</td>
+<td>1</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.722</td>
+</tr>
+<tr>
+<td>Matt Shaw (Chicago Cubs)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Matt Shaw (Chicago Cubs)</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.167</td>
+<td>.334</td>
+</tr>
+<tr>
+<td>Matt Shaw (Chicago Cubs)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>0</td>
+<td>.222</td>
+<td>.347</td>
+</tr>
+<tr>
+<td>Matt Shaw (Chicago Cubs)</td>
+<td>6</td>
+<td>3</td>
+<td>1</td>
+<td>.500</td>
+<td>1</td>
+<td>.571</td>
+<td>1.571</td>
+</tr>
+<tr>
+<td>Matt Shaw (Chicago Cubs)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>1</td>
+<td>.750</td>
+<td>2.083</td>
+</tr>
+<tr>
+<td>Matt Shaw (Chicago Cubs)</td>
+<td>12</td>
+<td>3</td>
+<td>1</td>
+<td>.250</td>
+<td>1</td>
+<td>.357</td>
+<td>.857</td>
+</tr>
+<tr>
+<td>Matt Shaw (Chicago Cubs)</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>.200</td>
+<td>2</td>
+<td>.200</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Matt Shaw (Chicago Cubs)</td>
+<td>8</td>
+<td>2</td>
+<td>1</td>
+<td>.250</td>
+<td>2</td>
+<td>.250</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Matt Shaw (Chicago Cubs)</td>
+<td>8</td>
+<td>1</td>
+<td>1</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.722</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Chad Patrick Milwaukee Brewers</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Gunnar Henderson (Baltimore Orioles)</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1.000</td>
+<td>0</td>
+<td>1.000</td>
+<td>2.000</td>
+</tr>
+<tr>
+<td>Jackson Holliday (Baltimore Orioles)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Brant Hurter Detroit Tigers</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Willson Contreras (St. Louis Cardinals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Willson Contreras (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Willson Contreras (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.286</td>
+<td>.486</td>
+</tr>
+<tr>
+<td>Willson Contreras (St. Louis Cardinals)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>0</td>
+<td>.125</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Willson Contreras (St. Louis Cardinals)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.333</td>
+<td>.583</td>
+</tr>
+<tr>
+<td>Willson Contreras (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Willson Contreras (St. Louis Cardinals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Willson Contreras (St. Louis Cardinals)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.667</td>
+<td>1.667</td>
+</tr>
+<tr>
+<td>Willson Contreras (St. Louis Cardinals)</td>
+<td>5</td>
+<td>3</td>
+<td>1</td>
+<td>.600</td>
+<td>3</td>
+<td>.600</td>
+<td>1.800</td>
+</tr>
+<tr>
+<td>Willson Contreras (St. Louis Cardinals)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Nolan Arenado (St. Louis Cardinals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Nolan Arenado (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Nolan Arenado (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.286</td>
+<td>.486</td>
+</tr>
+<tr>
+<td>Nolan Arenado (St. Louis Cardinals)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>0</td>
+<td>.125</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Nolan Arenado (St. Louis Cardinals)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.333</td>
+<td>.583</td>
+</tr>
+<tr>
+<td>Nolan Arenado (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Nolan Arenado (St. Louis Cardinals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Nolan Arenado (St. Louis Cardinals)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.667</td>
+<td>1.667</td>
+</tr>
+<tr>
+<td>Nolan Arenado (St. Louis Cardinals)</td>
+<td>5</td>
+<td>3</td>
+<td>1</td>
+<td>.600</td>
+<td>3</td>
+<td>.600</td>
+<td>1.800</td>
+</tr>
+<tr>
+<td>Nolan Arenado (St. Louis Cardinals)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Iván Herrera (St. Louis Cardinals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Iván Herrera (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Iván Herrera (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.286</td>
+<td>.486</td>
+</tr>
+<tr>
+<td>Iván Herrera (St. Louis Cardinals)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>0</td>
+<td>.125</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Iván Herrera (St. Louis Cardinals)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.333</td>
+<td>.583</td>
+</tr>
+<tr>
+<td>Iván Herrera (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Iván Herrera (St. Louis Cardinals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Iván Herrera (St. Louis Cardinals)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.667</td>
+<td>1.667</td>
+</tr>
+<tr>
+<td>Iván Herrera (St. Louis Cardinals)</td>
+<td>5</td>
+<td>3</td>
+<td>1</td>
+<td>.600</td>
+<td>3</td>
+<td>.600</td>
+<td>1.800</td>
+</tr>
+<tr>
+<td>Iván Herrera (St. Louis Cardinals)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Masyn Winn (St. Louis Cardinals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Masyn Winn (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Masyn Winn (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.286</td>
+<td>.486</td>
+</tr>
+<tr>
+<td>Masyn Winn (St. Louis Cardinals)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>0</td>
+<td>.125</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Masyn Winn (St. Louis Cardinals)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.333</td>
+<td>.583</td>
+</tr>
+<tr>
+<td>Masyn Winn (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Masyn Winn (St. Louis Cardinals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Masyn Winn (St. Louis Cardinals)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.667</td>
+<td>1.667</td>
+</tr>
+<tr>
+<td>Masyn Winn (St. Louis Cardinals)</td>
+<td>5</td>
+<td>3</td>
+<td>1</td>
+<td>.600</td>
+<td>3</td>
+<td>.600</td>
+<td>1.800</td>
+</tr>
+<tr>
+<td>Masyn Winn (St. Louis Cardinals)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Alec Burleson (St. Louis Cardinals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Alec Burleson (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Alec Burleson (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.286</td>
+<td>.486</td>
+</tr>
+<tr>
+<td>Alec Burleson (St. Louis Cardinals)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>0</td>
+<td>.125</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Alec Burleson (St. Louis Cardinals)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.333</td>
+<td>.583</td>
+</tr>
+<tr>
+<td>Alec Burleson (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Alec Burleson (St. Louis Cardinals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Alec Burleson (St. Louis Cardinals)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.667</td>
+<td>1.667</td>
+</tr>
+<tr>
+<td>Alec Burleson (St. Louis Cardinals)</td>
+<td>5</td>
+<td>3</td>
+<td>1</td>
+<td>.600</td>
+<td>3</td>
+<td>.600</td>
+<td>1.800</td>
+</tr>
+<tr>
+<td>Alec Burleson (St. Louis Cardinals)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Brendan Donovan (St. Louis Cardinals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Brendan Donovan (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Brendan Donovan (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.286</td>
+<td>.486</td>
+</tr>
+<tr>
+<td>Brendan Donovan (St. Louis Cardinals)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>0</td>
+<td>.125</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Brendan Donovan (St. Louis Cardinals)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.333</td>
+<td>.583</td>
+</tr>
+<tr>
+<td>Brendan Donovan (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Brendan Donovan (St. Louis Cardinals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Brendan Donovan (St. Louis Cardinals)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.667</td>
+<td>1.667</td>
+</tr>
+<tr>
+<td>Brendan Donovan (St. Louis Cardinals)</td>
+<td>5</td>
+<td>3</td>
+<td>1</td>
+<td>.600</td>
+<td>3</td>
+<td>.600</td>
+<td>1.800</td>
+</tr>
+<tr>
+<td>Brendan Donovan (St. Louis Cardinals)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jordan Walker (St. Louis Cardinals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Jordan Walker (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Jordan Walker (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.286</td>
+<td>.486</td>
+</tr>
+<tr>
+<td>Jordan Walker (St. Louis Cardinals)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>0</td>
+<td>.125</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Jordan Walker (St. Louis Cardinals)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.333</td>
+<td>.583</td>
+</tr>
+<tr>
+<td>Jordan Walker (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Jordan Walker (St. Louis Cardinals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Jordan Walker (St. Louis Cardinals)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.667</td>
+<td>1.667</td>
+</tr>
+<tr>
+<td>Jordan Walker (St. Louis Cardinals)</td>
+<td>5</td>
+<td>3</td>
+<td>1</td>
+<td>.600</td>
+<td>3</td>
+<td>.600</td>
+<td>1.800</td>
+</tr>
+<tr>
+<td>Jordan Walker (St. Louis Cardinals)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Victor Scott II (St. Louis Cardinals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Victor Scott II (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Victor Scott II (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.286</td>
+<td>.486</td>
+</tr>
+<tr>
+<td>Victor Scott II (St. Louis Cardinals)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>0</td>
+<td>.125</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Victor Scott II (St. Louis Cardinals)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.333</td>
+<td>.583</td>
+</tr>
+<tr>
+<td>Victor Scott II (St. Louis Cardinals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Victor Scott II (St. Louis Cardinals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Victor Scott II (St. Louis Cardinals)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.667</td>
+<td>1.667</td>
+</tr>
+<tr>
+<td>Victor Scott II (St. Louis Cardinals)</td>
+<td>5</td>
+<td>3</td>
+<td>1</td>
+<td>.600</td>
+<td>3</td>
+<td>.600</td>
+<td>1.800</td>
+</tr>
+<tr>
+<td>Victor Scott II (St. Louis Cardinals)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Andre Pallante St. Louis Cardinals</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Riley Greene (Detroit Tigers)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Riley Greene (Detroit Tigers)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.400</td>
+<td>.733</td>
+</tr>
+<tr>
+<td>Riley Greene (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Riley Greene (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Riley Greene (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.167</td>
+<td>.567</td>
+</tr>
+<tr>
+<td>Riley Greene (Detroit Tigers)</td>
+<td>11</td>
+<td>3</td>
+<td>2</td>
+<td>.273</td>
+<td>3</td>
+<td>.273</td>
+<td>1.091</td>
+</tr>
+<tr>
+<td>Riley Greene (Detroit Tigers)</td>
+<td>6</td>
+<td>5</td>
+<td>1</td>
+<td>.833</td>
+<td>5</td>
+<td>.889</td>
+<td>2.389</td>
+</tr>
+<tr>
+<td>Riley Greene (Detroit Tigers)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.625</td>
+<td>1.025</td>
+</tr>
+<tr>
+<td>Riley Greene (Detroit Tigers)</td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>.600</td>
+<td>1</td>
+<td>.600</td>
+<td>1.200</td>
+</tr>
+<tr>
+<td>Riley Greene (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.500</td>
+<td>.700</td>
+</tr>
+<tr>
+<td>Riley Greene (Detroit Tigers)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>2</td>
+<td>.308</td>
+<td>.490</td>
+</tr>
+<tr>
+<td>Riley Greene (Detroit Tigers)</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.143</td>
+<td>.143</td>
+</tr>
+<tr>
+<td>Spencer Torkelson (Detroit Tigers)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Spencer Torkelson (Detroit Tigers)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.400</td>
+<td>.733</td>
+</tr>
+<tr>
+<td>Spencer Torkelson (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Spencer Torkelson (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Spencer Torkelson (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.167</td>
+<td>.567</td>
+</tr>
+<tr>
+<td>Spencer Torkelson (Detroit Tigers)</td>
+<td>11</td>
+<td>3</td>
+<td>2</td>
+<td>.273</td>
+<td>3</td>
+<td>.273</td>
+<td>1.091</td>
+</tr>
+<tr>
+<td>Spencer Torkelson (Detroit Tigers)</td>
+<td>6</td>
+<td>5</td>
+<td>1</td>
+<td>.833</td>
+<td>5</td>
+<td>.889</td>
+<td>2.389</td>
+</tr>
+<tr>
+<td>Spencer Torkelson (Detroit Tigers)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.625</td>
+<td>1.025</td>
+</tr>
+<tr>
+<td>Spencer Torkelson (Detroit Tigers)</td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>.600</td>
+<td>1</td>
+<td>.600</td>
+<td>1.200</td>
+</tr>
+<tr>
+<td>Spencer Torkelson (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.500</td>
+<td>.700</td>
+</tr>
+<tr>
+<td>Spencer Torkelson (Detroit Tigers)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>2</td>
+<td>.308</td>
+<td>.490</td>
+</tr>
+<tr>
+<td>Spencer Torkelson (Detroit Tigers)</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.143</td>
+<td>.143</td>
+</tr>
+<tr>
+<td>Kerry Carpenter (Detroit Tigers)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Kerry Carpenter (Detroit Tigers)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.400</td>
+<td>.733</td>
+</tr>
+<tr>
+<td>Kerry Carpenter (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Kerry Carpenter (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Kerry Carpenter (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.167</td>
+<td>.567</td>
+</tr>
+<tr>
+<td>Kerry Carpenter (Detroit Tigers)</td>
+<td>11</td>
+<td>3</td>
+<td>2</td>
+<td>.273</td>
+<td>3</td>
+<td>.273</td>
+<td>1.091</td>
+</tr>
+<tr>
+<td>Kerry Carpenter (Detroit Tigers)</td>
+<td>6</td>
+<td>5</td>
+<td>1</td>
+<td>.833</td>
+<td>5</td>
+<td>.889</td>
+<td>2.389</td>
+</tr>
+<tr>
+<td>Kerry Carpenter (Detroit Tigers)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.625</td>
+<td>1.025</td>
+</tr>
+<tr>
+<td>Kerry Carpenter (Detroit Tigers)</td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>.600</td>
+<td>1</td>
+<td>.600</td>
+<td>1.200</td>
+</tr>
+<tr>
+<td>Kerry Carpenter (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.500</td>
+<td>.700</td>
+</tr>
+<tr>
+<td>Kerry Carpenter (Detroit Tigers)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>2</td>
+<td>.308</td>
+<td>.490</td>
+</tr>
+<tr>
+<td>Kerry Carpenter (Detroit Tigers)</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.143</td>
+<td>.143</td>
+</tr>
+<tr>
+<td>Javier Báez (Detroit Tigers)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Javier Báez (Detroit Tigers)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.400</td>
+<td>.733</td>
+</tr>
+<tr>
+<td>Javier Báez (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Javier Báez (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Javier Báez (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.167</td>
+<td>.567</td>
+</tr>
+<tr>
+<td>Javier Báez (Detroit Tigers)</td>
+<td>11</td>
+<td>3</td>
+<td>2</td>
+<td>.273</td>
+<td>3</td>
+<td>.273</td>
+<td>1.091</td>
+</tr>
+<tr>
+<td>Javier Báez (Detroit Tigers)</td>
+<td>6</td>
+<td>5</td>
+<td>1</td>
+<td>.833</td>
+<td>5</td>
+<td>.889</td>
+<td>2.389</td>
+</tr>
+<tr>
+<td>Javier Báez (Detroit Tigers)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.625</td>
+<td>1.025</td>
+</tr>
+<tr>
+<td>Javier Báez (Detroit Tigers)</td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>.600</td>
+<td>1</td>
+<td>.600</td>
+<td>1.200</td>
+</tr>
+<tr>
+<td>Javier Báez (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.500</td>
+<td>.700</td>
+</tr>
+<tr>
+<td>Javier Báez (Detroit Tigers)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>2</td>
+<td>.308</td>
+<td>.490</td>
+</tr>
+<tr>
+<td>Javier Báez (Detroit Tigers)</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.143</td>
+<td>.143</td>
+</tr>
+<tr>
+<td>Gleyber Torres (Detroit Tigers)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Gleyber Torres (Detroit Tigers)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.400</td>
+<td>.733</td>
+</tr>
+<tr>
+<td>Gleyber Torres (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Gleyber Torres (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Gleyber Torres (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.167</td>
+<td>.567</td>
+</tr>
+<tr>
+<td>Gleyber Torres (Detroit Tigers)</td>
+<td>11</td>
+<td>3</td>
+<td>2</td>
+<td>.273</td>
+<td>3</td>
+<td>.273</td>
+<td>1.091</td>
+</tr>
+<tr>
+<td>Gleyber Torres (Detroit Tigers)</td>
+<td>6</td>
+<td>5</td>
+<td>1</td>
+<td>.833</td>
+<td>5</td>
+<td>.889</td>
+<td>2.389</td>
+</tr>
+<tr>
+<td>Gleyber Torres (Detroit Tigers)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.625</td>
+<td>1.025</td>
+</tr>
+<tr>
+<td>Gleyber Torres (Detroit Tigers)</td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>.600</td>
+<td>1</td>
+<td>.600</td>
+<td>1.200</td>
+</tr>
+<tr>
+<td>Gleyber Torres (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.500</td>
+<td>.700</td>
+</tr>
+<tr>
+<td>Gleyber Torres (Detroit Tigers)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>2</td>
+<td>.308</td>
+<td>.490</td>
+</tr>
+<tr>
+<td>Gleyber Torres (Detroit Tigers)</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.143</td>
+<td>.143</td>
+</tr>
+<tr>
+<td>Dillon Dingler (Detroit Tigers)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Dillon Dingler (Detroit Tigers)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.400</td>
+<td>.733</td>
+</tr>
+<tr>
+<td>Dillon Dingler (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Dillon Dingler (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Dillon Dingler (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.167</td>
+<td>.567</td>
+</tr>
+<tr>
+<td>Dillon Dingler (Detroit Tigers)</td>
+<td>11</td>
+<td>3</td>
+<td>2</td>
+<td>.273</td>
+<td>3</td>
+<td>.273</td>
+<td>1.091</td>
+</tr>
+<tr>
+<td>Dillon Dingler (Detroit Tigers)</td>
+<td>6</td>
+<td>5</td>
+<td>1</td>
+<td>.833</td>
+<td>5</td>
+<td>.889</td>
+<td>2.389</td>
+</tr>
+<tr>
+<td>Dillon Dingler (Detroit Tigers)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.625</td>
+<td>1.025</td>
+</tr>
+<tr>
+<td>Dillon Dingler (Detroit Tigers)</td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>.600</td>
+<td>1</td>
+<td>.600</td>
+<td>1.200</td>
+</tr>
+<tr>
+<td>Dillon Dingler (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.500</td>
+<td>.700</td>
+</tr>
+<tr>
+<td>Dillon Dingler (Detroit Tigers)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>2</td>
+<td>.308</td>
+<td>.490</td>
+</tr>
+<tr>
+<td>Dillon Dingler (Detroit Tigers)</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.143</td>
+<td>.143</td>
+</tr>
+<tr>
+<td>Colt Keith (Detroit Tigers)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Colt Keith (Detroit Tigers)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.400</td>
+<td>.733</td>
+</tr>
+<tr>
+<td>Colt Keith (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Colt Keith (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Colt Keith (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.167</td>
+<td>.567</td>
+</tr>
+<tr>
+<td>Colt Keith (Detroit Tigers)</td>
+<td>11</td>
+<td>3</td>
+<td>2</td>
+<td>.273</td>
+<td>3</td>
+<td>.273</td>
+<td>1.091</td>
+</tr>
+<tr>
+<td>Colt Keith (Detroit Tigers)</td>
+<td>6</td>
+<td>5</td>
+<td>1</td>
+<td>.833</td>
+<td>5</td>
+<td>.889</td>
+<td>2.389</td>
+</tr>
+<tr>
+<td>Colt Keith (Detroit Tigers)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.625</td>
+<td>1.025</td>
+</tr>
+<tr>
+<td>Colt Keith (Detroit Tigers)</td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>.600</td>
+<td>1</td>
+<td>.600</td>
+<td>1.200</td>
+</tr>
+<tr>
+<td>Colt Keith (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.500</td>
+<td>.700</td>
+</tr>
+<tr>
+<td>Colt Keith (Detroit Tigers)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>2</td>
+<td>.308</td>
+<td>.490</td>
+</tr>
+<tr>
+<td>Colt Keith (Detroit Tigers)</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.143</td>
+<td>.143</td>
+</tr>
+<tr>
+<td>Trey Sweeney (Detroit Tigers)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Trey Sweeney (Detroit Tigers)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.400</td>
+<td>.733</td>
+</tr>
+<tr>
+<td>Trey Sweeney (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Trey Sweeney (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Trey Sweeney (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.167</td>
+<td>.567</td>
+</tr>
+<tr>
+<td>Trey Sweeney (Detroit Tigers)</td>
+<td>11</td>
+<td>3</td>
+<td>2</td>
+<td>.273</td>
+<td>3</td>
+<td>.273</td>
+<td>1.091</td>
+</tr>
+<tr>
+<td>Trey Sweeney (Detroit Tigers)</td>
+<td>6</td>
+<td>5</td>
+<td>1</td>
+<td>.833</td>
+<td>5</td>
+<td>.889</td>
+<td>2.389</td>
+</tr>
+<tr>
+<td>Trey Sweeney (Detroit Tigers)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.625</td>
+<td>1.025</td>
+</tr>
+<tr>
+<td>Trey Sweeney (Detroit Tigers)</td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>.600</td>
+<td>1</td>
+<td>.600</td>
+<td>1.200</td>
+</tr>
+<tr>
+<td>Trey Sweeney (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.500</td>
+<td>.700</td>
+</tr>
+<tr>
+<td>Trey Sweeney (Detroit Tigers)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>2</td>
+<td>.308</td>
+<td>.490</td>
+</tr>
+<tr>
+<td>Trey Sweeney (Detroit Tigers)</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.143</td>
+<td>.143</td>
+</tr>
+<tr>
+<td>Zach McKinstry (Detroit Tigers)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Zach McKinstry (Detroit Tigers)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.400</td>
+<td>.733</td>
+</tr>
+<tr>
+<td>Zach McKinstry (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.333</td>
+<td>.533</td>
+</tr>
+<tr>
+<td>Zach McKinstry (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Zach McKinstry (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.167</td>
+<td>.567</td>
+</tr>
+<tr>
+<td>Zach McKinstry (Detroit Tigers)</td>
+<td>11</td>
+<td>3</td>
+<td>2</td>
+<td>.273</td>
+<td>3</td>
+<td>.273</td>
+<td>1.091</td>
+</tr>
+<tr>
+<td>Zach McKinstry (Detroit Tigers)</td>
+<td>6</td>
+<td>5</td>
+<td>1</td>
+<td>.833</td>
+<td>5</td>
+<td>.889</td>
+<td>2.389</td>
+</tr>
+<tr>
+<td>Zach McKinstry (Detroit Tigers)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.625</td>
+<td>1.025</td>
+</tr>
+<tr>
+<td>Zach McKinstry (Detroit Tigers)</td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>.600</td>
+<td>1</td>
+<td>.600</td>
+<td>1.200</td>
+</tr>
+<tr>
+<td>Zach McKinstry (Detroit Tigers)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.500</td>
+<td>.700</td>
+</tr>
+<tr>
+<td>Zach McKinstry (Detroit Tigers)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>2</td>
+<td>.308</td>
+<td>.490</td>
+</tr>
+<tr>
+<td>Zach McKinstry (Detroit Tigers)</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.143</td>
+<td>.143</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Shane Smith Chicago White Sox</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Cal Raleigh (Seattle Mariners)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jorge Polanco (Seattle Mariners)</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>1.000</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Julio Rodríguez (Seattle Mariners)</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1.000</td>
+<td>3</td>
+<td>1.000</td>
+<td>5.000</td>
+</tr>
+<tr>
+<td>Rowdy Tellez (Seattle Mariners)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Randy Arozarena (Seattle Mariners)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>J.P. Crawford (Seattle Mariners)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.500</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Ben Williamson (Seattle Mariners)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Daniel Lynch IV Kansas City Royals</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Matt Chapman (San Francisco Giants)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Heliot Ramos (San Francisco Giants)</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1.000</td>
+<td>0</td>
+<td>1.000</td>
+<td>2.000</td>
+</tr>
+<tr>
+<td>Luis Matos (San Francisco Giants)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Tyler Fitzgerald (San Francisco Giants)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Sam Huff (San Francisco Giants)</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1.000</td>
+<td>0</td>
+<td>1.000</td>
+<td>2.000</td>
+</tr>
+<tr>
+<td>LaMonte Wade Jr. (San Francisco Giants)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Logan Webb San Francisco Giants</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Bobby Witt Jr. (Kansas City Royals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Kyle Isbel (Kansas City Royals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Salvador Perez (Kansas City Royals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Cavan Biggio (Kansas City Royals)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jonathan India (Kansas City Royals)</td>
+<td>10</td>
+<td>4</td>
+<td>1</td>
+<td>.400</td>
+<td>1</td>
+<td>.455</td>
+<td>1.255</td>
+</tr>
+<tr>
+<td>Luke Maile (Kansas City Royals)</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td>MJ Melendez (Kansas City Royals)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.667</td>
+<td>.667</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Gavin Williams Cleveland Guardians</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Byron Buxton (Minnesota Twins)</td>
+<td>7</td>
+<td>3</td>
+<td>0</td>
+<td>.429</td>
+<td>2</td>
+<td>.500</td>
+<td>1.071</td>
+</tr>
+<tr>
+<td>Trevor Larnach (Minnesota Twins)</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.143</td>
+<td>.143</td>
+</tr>
+<tr>
+<td>Harrison Bader (Minnesota Twins)</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>1.000</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Brooks Lee (Minnesota Twins)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Ty France (Minnesota Twins)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Ryan Jeffers (Minnesota Twins)</td>
+<td>7</td>
+<td>3</td>
+<td>0</td>
+<td>.429</td>
+<td>1</td>
+<td>.429</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Willi Castro (Minnesota Twins)</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.286</td>
+<td>.619</td>
+</tr>
+<tr>
+<td>Carlos Correa (Minnesota Twins)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.400</td>
+<td>.800</td>
+</tr>
+<tr>
+<td>Edouard Julien (Minnesota Twins)</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>.250</td>
+<td>1</td>
+<td>.625</td>
+<td>1.625</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Chris Paddack Minnesota Twins</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Kyle Manzardo (Cleveland Guardians)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>José Ramírez (Cleveland Guardians)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Bo Naylor (Cleveland Guardians)</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>.500</td>
+<td>1</td>
+<td>.500</td>
+<td>2.500</td>
+</tr>
+<tr>
+<td>Daniel Schneemann (Cleveland Guardians)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Carlos Santana (Cleveland Guardians)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.500</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Gabriel Arias (Cleveland Guardians)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>0</td>
+<td>.400</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Steven Kwan (Cleveland Guardians)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Austin Hedges (Cleveland Guardians)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Nolan Jones (Cleveland Guardians)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jhonkensy Noel (Cleveland Guardians)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Tylor Megill New York Mets</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Wilyer Abreu (Boston Red Sox)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>1</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Alex Bregman (Boston Red Sox)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>1</td>
+<td>.400</td>
+<td>.800</td>
+</tr>
+<tr>
+<td>Rafael Devers (Boston Red Sox)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>1</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Triston Casas (Boston Red Sox)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.500</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Jarren Duran (Boston Red Sox)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>1</td>
+<td>.500</td>
+<td>1.500</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Garrett Crochet Boston Red Sox</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Pete Alonso (New York Mets)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Francisco Lindor (New York Mets)</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>1.666</td>
+</tr>
+<tr>
+<td>Mark Vientos (New York Mets)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Starling Marte (New York Mets)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Tyrone Taylor (New York Mets)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Luis Torrens (New York Mets)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jesse Winker (New York Mets)</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1.000</td>
+<td>0</td>
+<td>1.000</td>
+<td>2.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: AJ Smith-Shawver Atlanta Braves</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>James Wood (Washington Nationals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>CJ Abrams (Washington Nationals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.400</td>
+</tr>
+<tr>
+<td>Nathaniel Lowe (Washington Nationals)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.333</td>
+<td>.333</td>
+</tr>
+<tr>
+<td>Josh Bell (Washington Nationals)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Luis García Jr. (Washington Nationals)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>1</td>
+<td>.667</td>
+<td>1.334</td>
+</tr>
+<tr>
+<td>Amed Rosario (Washington Nationals)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.333</td>
+<td>.333</td>
+</tr>
+<tr>
+<td>Keibert Ruiz (Washington Nationals)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.200</td>
+<td>.200</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Trevor Williams Washington Nationals</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Matt Olson (Atlanta Braves)</td>
+<td>10</td>
+<td>2</td>
+<td>1</td>
+<td>.200</td>
+<td>4</td>
+<td>.385</td>
+<td>.885</td>
+</tr>
+<tr>
+<td>Sean Murphy (Atlanta Braves)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Marcell Ozuna (Atlanta Braves)</td>
+<td>35</td>
+<td>11</td>
+<td>0</td>
+<td>.314</td>
+<td>4</td>
+<td>.351</td>
+<td>.694</td>
+</tr>
+<tr>
+<td>Austin Riley (Atlanta Braves)</td>
+<td>20</td>
+<td>2</td>
+<td>0</td>
+<td>.100</td>
+<td>2</td>
+<td>.100</td>
+<td>.300</td>
+</tr>
+<tr>
+<td>Ozzie Albies (Atlanta Braves)</td>
+<td>17</td>
+<td>5</td>
+<td>0</td>
+<td>.294</td>
+<td>2</td>
+<td>.368</td>
+<td>.780</td>
+</tr>
+<tr>
+<td>Drake Baldwin (Atlanta Braves)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>1</td>
+<td>.667</td>
+<td>1.334</td>
+</tr>
+<tr>
+<td>Michael Harris II (Atlanta Braves)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.222</td>
+<td>.472</td>
+</tr>
+<tr>
+<td>Jarred Kelenic (Atlanta Braves)</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.500</td>
+</tr>
+<tr>
+<td>Eli White (Atlanta Braves)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Jacob deGrom Texas Rangers</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Aaron Judge (New York Yankees)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>1</td>
+<td>.375</td>
+<td>.775</td>
+</tr>
+<tr>
+<td>Cody Bellinger (New York Yankees)</td>
+<td>16</td>
+<td>3</td>
+<td>1</td>
+<td>.188</td>
+<td>1</td>
+<td>.188</td>
+<td>.688</td>
+</tr>
+<tr>
+<td>Jazz Chisholm Jr. (New York Yankees)</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>1.666</td>
+</tr>
+<tr>
+<td>Paul Goldschmidt (New York Yankees)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>1</td>
+<td>.222</td>
+<td>.347</td>
+</tr>
+<tr>
+<td>Oswald Peraza (New York Yankees)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Ryan Yarbrough New York Yankees</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Wyatt Langford (Texas Rangers)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>1</td>
+<td>.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Josh Jung (Texas Rangers)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Adolis García (Texas Rangers)</td>
+<td>8</td>
+<td>2</td>
+<td>1</td>
+<td>.250</td>
+<td>2</td>
+<td>.333</td>
+<td>.958</td>
+</tr>
+<tr>
+<td>Jonah Heim (Texas Rangers)</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>.250</td>
+<td>1</td>
+<td>.400</td>
+<td>1.400</td>
+</tr>
+<tr>
+<td>Corey Seager (Texas Rangers)</td>
+<td>5</td>
+<td>1</td>
+<td>1</td>
+<td>.200</td>
+<td>1</td>
+<td>.200</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Jake Burger (Texas Rangers)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>2</td>
+<td>.500</td>
+<td>1.300</td>
+</tr>
+<tr>
+<td>Josh Smith (Texas Rangers)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.400</td>
+<td>.400</td>
+</tr>
+<tr>
+<td>Marcus Semien (Texas Rangers)</td>
+<td>23</td>
+<td>6</td>
+<td>1</td>
+<td>.261</td>
+<td>3</td>
+<td>.320</td>
+<td>.798</td>
+</tr>
+<tr>
+<td>Joc Pederson (Texas Rangers)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Kyle Higashioka (Texas Rangers)</td>
+<td>9</td>
+<td>2</td>
+<td>0</td>
+<td>.222</td>
+<td>0</td>
+<td>.300</td>
+<td>.522</td>
+</tr>
+<tr>
+<td>Leody Taveras (Texas Rangers)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Randy Vásquez San Diego Padres</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Vladimir Guerrero Jr. (Toronto Blue Jays)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.667</td>
+<td>1.667</td>
+</tr>
+<tr>
+<td>Anthony Santander (Toronto Blue Jays)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.600</td>
+<td>1.267</td>
+</tr>
+<tr>
+<td>Daulton Varsho (Toronto Blue Jays)</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>1.000</td>
+<td>3</td>
+<td>1.000</td>
+<td>4.000</td>
+</tr>
+<tr>
+<td>George Springer (Toronto Blue Jays)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Bo Bichette (Toronto Blue Jays)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Alejandro Kirk (Toronto Blue Jays)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Kevin Gausman Toronto Blue Jays</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Fernando Tatis Jr. (San Diego Padres)</td>
+<td>17</td>
+<td>8</td>
+<td>2</td>
+<td>.471</td>
+<td>3</td>
+<td>.500</td>
+<td>1.382</td>
+</tr>
+<tr>
+<td>Gavin Sheets (San Diego Padres)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.400</td>
+<td>.900</td>
+</tr>
+<tr>
+<td>Luis Arraez (San Diego Padres)</td>
+<td>9</td>
+<td>7</td>
+<td>0</td>
+<td>.778</td>
+<td>0</td>
+<td>.778</td>
+<td>1.667</td>
+</tr>
+<tr>
+<td>Xander Bogaerts (San Diego Padres)</td>
+<td>54</td>
+<td>17</td>
+<td>1</td>
+<td>.315</td>
+<td>5</td>
+<td>.351</td>
+<td>.758</td>
+</tr>
+<tr>
+<td>Jake Cronenworth (San Diego Padres)</td>
+<td>14</td>
+<td>1</td>
+<td>0</td>
+<td>.071</td>
+<td>0</td>
+<td>.071</td>
+<td>.142</td>
+</tr>
+<tr>
+<td>Elias Díaz (San Diego Padres)</td>
+<td>11</td>
+<td>3</td>
+<td>1</td>
+<td>.273</td>
+<td>3</td>
+<td>.273</td>
+<td>.818</td>
+</tr>
+<tr>
+<td>Manny Machado (San Diego Padres)</td>
+<td>19</td>
+<td>6</td>
+<td>2</td>
+<td>.316</td>
+<td>3</td>
+<td>.316</td>
+<td>.948</td>
+</tr>
+<tr>
+<td>Jason Heyward (San Diego Padres)</td>
+<td>9</td>
+<td>2</td>
+<td>1</td>
+<td>.222</td>
+<td>2</td>
+<td>.222</td>
+<td>.778</td>
+</tr>
+<tr>
+<td>Martín Maldonado (San Diego Padres)</td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Taijuan Walker Philadelphia Phillies</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Hunter Goodman (Colorado Rockies)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.333</td>
+<td>.333</td>
+</tr>
+<tr>
+<td>Ryan McMahon (Colorado Rockies)</td>
+<td>9</td>
+<td>3</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.333</td>
+<td>.777</td>
+</tr>
+<tr>
+<td>Michael Toglia (Colorado Rockies)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Brenton Doyle (Colorado Rockies)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Mickey Moniak (Colorado Rockies)</td>
+<td>5</td>
+<td>3</td>
+<td>0</td>
+<td>.600</td>
+<td>0</td>
+<td>.600</td>
+<td>2.000</td>
+</tr>
+<tr>
+<td>Kyle Farmer (Colorado Rockies)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.667</td>
+<td>1.334</td>
+</tr>
+<tr>
+<td>Ezequiel Tovar (Colorado Rockies)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Jack Kochanowicz Los Angeles Angels</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Brent Rooker (Athletics)</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>1.000</td>
+<td>3</td>
+<td>1.000</td>
+<td>3.500</td>
+</tr>
+<tr>
+<td>JJ Bleday (Athletics)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.500</td>
+</tr>
+<tr>
+<td>Lawrence Butler (Athletics)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>3</td>
+<td>.667</td>
+<td>1.667</td>
+</tr>
+<tr>
+<td>Miguel Andujar (Athletics)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Seth Brown (Athletics)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Max Muncy (Athletics)</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1.000</td>
+<td>1</td>
+<td>1.000</td>
+<td>3.000</td>
+</tr>
+<tr>
+<td>Max Schuemann (Athletics)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>1</td>
+<td>.500</td>
+<td>.500</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: JP Sears Athletics</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Taylor Ward (Los Angeles Angels)</td>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>.111</td>
+<td>0</td>
+<td>.200</td>
+<td>.311</td>
+</tr>
+<tr>
+<td>Logan O'Hoppe (Los Angeles Angels)</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.286</td>
+<td>.453</td>
+</tr>
+<tr>
+<td>Mike Trout (Los Angeles Angels)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Zach Neto (Los Angeles Angels)</td>
+<td>7</td>
+<td>4</td>
+<td>1</td>
+<td>.571</td>
+<td>1</td>
+<td>.571</td>
+<td>1.571</td>
+</tr>
+<tr>
+<td>Kyren Paris (Los Angeles Angels)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.500</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Jo Adell (Los Angeles Angels)</td>
+<td>7</td>
+<td>2</td>
+<td>0</td>
+<td>.286</td>
+<td>1</td>
+<td>.375</td>
+<td>.661</td>
+</tr>
+<tr>
+<td>Yoán Moncada (Los Angeles Angels)</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>.750</td>
+<td>7</td>
+<td>.800</td>
+<td>3.800</td>
+</tr>
+<tr>
+<td>Nolan Schanuel (Los Angeles Angels)</td>
+<td>8</td>
+<td>2</td>
+<td>1</td>
+<td>.250</td>
+<td>1</td>
+<td>.333</td>
+<td>.958</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Corbin Burnes Arizona Diamondbacks</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Shohei Ohtani (Los Angeles Dodgers)</td>
+<td>8</td>
+<td>4</td>
+<td>1</td>
+<td>.500</td>
+<td>1</td>
+<td>.556</td>
+<td>1.431</td>
+</tr>
+<tr>
+<td>Freddie Freeman (Los Angeles Dodgers)</td>
+<td>12</td>
+<td>3</td>
+<td>0</td>
+<td>.250</td>
+<td>2</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Teoscar Hernández (Los Angeles Dodgers)</td>
+<td>8</td>
+<td>2</td>
+<td>1</td>
+<td>.250</td>
+<td>3</td>
+<td>.250</td>
+<td>.875</td>
+</tr>
+<tr>
+<td>Andy Pages (Los Angeles Dodgers)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.333</td>
+<td>.666</td>
+</tr>
+<tr>
+<td>Mookie Betts (Los Angeles Dodgers)</td>
+<td>12</td>
+<td>3</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.308</td>
+<td>.641</td>
+</tr>
+<tr>
+<td>Tommy Edman (Los Angeles Dodgers)</td>
+<td>33</td>
+<td>7</td>
+<td>0</td>
+<td>.212</td>
+<td>0</td>
+<td>.278</td>
+<td>.581</td>
+</tr>
+<tr>
+<td>Enrique Hernández (Los Angeles Dodgers)</td>
+<td>11</td>
+<td>2</td>
+<td>0</td>
+<td>.182</td>
+<td>0</td>
+<td>.250</td>
+<td>.523</td>
+</tr>
+<tr>
+<td>Will Smith (Los Angeles Dodgers)</td>
+<td>11</td>
+<td>1</td>
+<td>0</td>
+<td>.091</td>
+<td>1</td>
+<td>.091</td>
+<td>.182</td>
+</tr>
+<tr>
+<td>Max Muncy (Los Angeles Dodgers)</td>
+<td>12</td>
+<td>1</td>
+<td>0</td>
+<td>.083</td>
+<td>0</td>
+<td>.267</td>
+<td>.350</td>
+</tr>
+<tr>
+<td>Michael Conforto (Los Angeles Dodgers)</td>
+<td>14</td>
+<td>2</td>
+<td>0</td>
+<td>.143</td>
+<td>1</td>
+<td>.133</td>
+<td>.347</td>
+</tr>
+<tr>
+<td>James Outman (Los Angeles Dodgers)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Dustin May Los Angeles Dodgers</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Corbin Carroll (Arizona Diamondbacks)</td>
+<td>11</td>
+<td>3</td>
+<td>0</td>
+<td>.273</td>
+<td>3</td>
+<td>.273</td>
+<td>.909</td>
+</tr>
+<tr>
+<td>Eugenio Suárez (Arizona Diamondbacks)</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>1.666</td>
+</tr>
+<tr>
+<td>Lourdes Gurriel Jr. (Arizona Diamondbacks)</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Ketel Marte (Arizona Diamondbacks)</td>
+<td>10</td>
+<td>1</td>
+<td>0</td>
+<td>.100</td>
+<td>1</td>
+<td>.100</td>
+<td>.200</td>
+</tr>
+<tr>
+<td>Geraldo Perdomo (Arizona Diamondbacks)</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td>.143</td>
+<td>0</td>
+<td>.333</td>
+<td>.476</td>
+</tr>
+<tr>
+<td>Josh Naylor (Arizona Diamondbacks)</td>
+<td>11</td>
+<td>4</td>
+<td>0</td>
+<td>.364</td>
+<td>3</td>
+<td>.364</td>
+<td>.819</td>
+</tr>
+<tr>
+<td>Tim Tawa (Arizona Diamondbacks)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.667</td>
+<td>1.167</td>
+</tr>
+<tr>
+<td>Pavin Smith (Arizona Diamondbacks)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.667</td>
+<td>1.334</td>
+</tr>
+<tr>
+<td>Gabriel Moreno (Arizona Diamondbacks)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Alek Thomas (Arizona Diamondbacks)</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.111</td>
+<td>.111</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+</body>
+</html>
