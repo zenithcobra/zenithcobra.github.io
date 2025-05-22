@@ -531,7 +531,7 @@ Rank Team                   W   L   GB  (E#) WC Rank WC GB (E#)
 </pre>
         <h2 id="todays-schedule">Today's Schedule</h2>
         <pre>Today's Schedule:
-2025-05-22 12:35 PM EDT - Texas Rangers (0) @ New York Yankees (0) (Top of the 2nd)
+2025-05-22 12:35 PM EDT - Texas Rangers (0) @ New York Yankees (0) (Middle of the 2nd)
 2025-05-22 01:07 PM EDT - San Diego Padres @ Toronto Blue Jays (Warmup)
 2025-05-22 03:10 PM EDT - Philadelphia Phillies @ Colorado Rockies (Pre
 2025-05-22 03:35 PM EDT - Los Angeles Angels @ Athletics (Pre
@@ -558,8 +558,8 @@ Rank Team                   W   L   GB  (E#) WC Rank WC GB (E#)
 <tr>
 <td>Carlos Rodón</td>
 <td>New York Yankees</td>
-<td>3.82</td>
-<td>10.03</td>
+<td>3.81</td>
+<td>10.02</td>
 </tr>
 <tr>
 <td>Stephen Kolek</td>
@@ -642,8 +642,8 @@ Rank Team                   W   L   GB  (E#) WC Rank WC GB (E#)
 <tr>
 <td>George Kirby</td>
 <td>Seattle Mariners</td>
-<td>N/A</td>
-<td>N/A</td>
+<td>3.43</td>
+<td>8.51</td>
 </tr>
 <tr>
 <td>Lance McCullers Jr.</td>
@@ -1760,13 +1760,13 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 <tr>
 <td>Cody Bellinger (New York Yankees)</td>
-<td>5</td>
+<td>6</td>
 <td>2</td>
 <td>0</td>
-<td>.400</td>
+<td>.333</td>
 <td>2</td>
-<td>.400</td>
-<td>1.000</td>
+<td>.333</td>
+<td>.833</td>
 </tr>
 <tr>
 <td>Austin Wells (New York Yankees)</td>
@@ -1800,13 +1800,13 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 <tr>
 <td>Paul Goldschmidt (New York Yankees)</td>
-<td>15</td>
-<td>4</td>
+<td>16</td>
+<td>5</td>
 <td>0</td>
-<td>.267</td>
-<td>1</td>
 <td>.313</td>
-<td>.646</td>
+<td>1</td>
+<td>.353</td>
+<td>.728</td>
 </tr>
 </table>
 <br>
@@ -3200,6 +3200,238 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>.000</td>
 <td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: George Kirby Seattle Mariners</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Isaac Paredes (Houston Astros)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>1</td>
+<td>.400</td>
+<td>.800</td>
+</tr>
+<tr>
+<td>Jeremy Peña (Houston Astros)</td>
+<td>16</td>
+<td>4</td>
+<td>0</td>
+<td>.250</td>
+<td>2</td>
+<td>.294</td>
+<td>.544</td>
+</tr>
+<tr>
+<td>Yainer Diaz (Houston Astros)</td>
+<td>15</td>
+<td>4</td>
+<td>0</td>
+<td>.267</td>
+<td>0</td>
+<td>.267</td>
+<td>.534</td>
+</tr>
+<tr>
+<td>Christian Walker (Houston Astros)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.333</td>
+<td>.666</td>
+</tr>
+<tr>
+<td>Jose Altuve (Houston Astros)</td>
+<td>13</td>
+<td>2</td>
+<td>0</td>
+<td>.154</td>
+<td>0</td>
+<td>.214</td>
+<td>.368</td>
+</tr>
+<tr>
+<td>Yordan Alvarez (Houston Astros)</td>
+<td>14</td>
+<td>3</td>
+<td>0</td>
+<td>.214</td>
+<td>0</td>
+<td>.214</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Victor Caratini (Houston Astros)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>.666</td>
+</tr>
+<tr>
+<td>Jake Meyers (Houston Astros)</td>
+<td>9</td>
+<td>2</td>
+<td>0</td>
+<td>.222</td>
+<td>1</td>
+<td>.222</td>
+<td>.444</td>
+</tr>
+<tr>
+<td>Mauricio Dubón (Houston Astros)</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td>.143</td>
+<td>0</td>
+<td>.143</td>
+<td>.286</td>
+</tr>
+<tr>
+<td>Brendan Rodgers (Houston Astros)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Lance McCullers Jr. Houston Astros</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Cal Raleigh (Seattle Mariners)</td>
+<td>7</td>
+<td>2</td>
+<td>0</td>
+<td>.286</td>
+<td>0</td>
+<td>.444</td>
+<td>.730</td>
+</tr>
+<tr>
+<td>Jorge Polanco (Seattle Mariners)</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>.500</td>
+<td>1</td>
+<td>.667</td>
+<td>2.667</td>
+</tr>
+<tr>
+<td>Dylan Moore (Seattle Mariners)</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td>.143</td>
+<td>0</td>
+<td>.333</td>
+<td>.619</td>
+</tr>
+<tr>
+<td>Randy Arozarena (Seattle Mariners)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.333</td>
+<td>.666</td>
+</tr>
+<tr>
+<td>J.P. Crawford (Seattle Mariners)</td>
+<td>18</td>
+<td>4</td>
+<td>0</td>
+<td>.222</td>
+<td>0</td>
+<td>.300</td>
+<td>.689</td>
+</tr>
+<tr>
+<td>Mitch Garver (Seattle Mariners)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Leody Taveras (Seattle Mariners)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.600</td>
 </tr>
 </table>
 <br>
