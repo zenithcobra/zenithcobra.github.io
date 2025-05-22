@@ -5,6 +5,7 @@
 import csv
 import os
 import json
+import statsapi
 from datetime import datetime, timedelta
 from rapidfuzz import fuzz
 
@@ -14,10 +15,22 @@ with open("text_output/hitting-streak.csv", "r", encoding="utf-8") as file:
 
 # Extract the first line as table_labels
 table_labels = csv_data.pop(0)
+table_labels.insert(1, "team")
 
 # Filter out any lines that match the labels
 players_on_a_streak = [row for row in csv_data if row != table_labels]
 
+filtered = []
+for z in players_on_a_streak:
+    try:
+        team = statsapi.lookup_team(statsapi.lookup_player(z[0])[0].get('currentTeam').get('id'))[0].get('name')
+        filtered.append([z[0], team, z[1], z[2], z[3], z[4], z[5], z[6]])
+        print(team)
+    except Exception as e:
+        print(f"Error processing player {z[0]}: {e}")
+        # Handle the error as needed (e.g., log it, skip the player, etc.)
+
+players_on_a_streak = filtered
 # -------------------------------
 
 # # open all_players_with_teams.csv and read the data into a list
@@ -27,7 +40,8 @@ players_on_a_streak = [row for row in csv_data if row != table_labels]
 # # Compare the players_on_a_streak with all_players_data and add team names to players_on_a_streak
 # for player in players_on_a_streak:
 #     player_name = player[0]  # Assuming the player's name is in the first column
-#     team_name = None
+#     tea)
+m_name = None
 #     best_match_score = 0  # Track the best match score
 #     best_match_team = None  # Track the team name of the best match
 
