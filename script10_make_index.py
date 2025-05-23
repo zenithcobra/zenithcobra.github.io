@@ -143,8 +143,11 @@ with open("docs/index2.html", "r", encoding="utf-8") as file:
 # Find all tables in the HTML
 tables = soup.find_all("table")
 
-# Add a checkbox column to each table
-for table in tables:
+# Add a checkbox column and unique IDs to each table
+for table_index, table in enumerate(tables):
+    # Add a unique ID to the table
+    table['id'] = f"table_{table_index}"
+
     # Add a header for the checkbox column
     header_row = table.find("tr")
     if header_row:
@@ -154,7 +157,7 @@ for table in tables:
 
     # Add a checkbox to each row
     rows = table.find_all("tr")[1:]  # Skip the header row
-    for row in rows:
+    for row_index, row in enumerate(rows):
         checkbox_cell = soup.new_tag("td")
         checkbox = soup.new_tag("input", type="checkbox", onclick="saveCheckboxState(this)")
         checkbox_cell.append(checkbox)
@@ -164,19 +167,24 @@ for table in tables:
 script = soup.new_tag("script")
 script.string = """
 function saveCheckboxState(checkbox) {
-    const tableIndex = Array.from(checkbox.closest('table').parentNode.children).indexOf(checkbox.closest('table'));
+    const table = checkbox.closest('table');
+    const tableId = table.id;
     const rowIndex = Array.from(checkbox.closest('tr').parentNode.children).indexOf(checkbox.closest('tr'));
     const checkboxState = checkbox.checked ? '1' : '0';
-    document.cookie = `table_${tableIndex}_row_${rowIndex}=${checkboxState}; path=/`;
+
+    // Set cookie with 1-day expiration
+    const expirationDate = new Date();
+    expirationDate.setDate(expirationDate.getDate() + 1); // 1 day from now
+    document.cookie = `${tableId}_row_${rowIndex}=${checkboxState}; path=/; expires=${expirationDate.toUTCString()}`;
 }
 
 function loadCheckboxStates() {
     const cookies = document.cookie.split('; ');
     cookies.forEach(cookie => {
         const [key, value] = cookie.split('=');
-        if (key.startsWith('table_')) {
-            const [_, tableIndex, __, rowIndex] = key.split('_');
-            const table = document.querySelectorAll('table')[tableIndex];
+        if (key.includes('_row_')) {
+            const [tableId, _, rowIndex] = key.split('_');
+            const table = document.getElementById(tableId);
             if (table) {
                 const row = table.querySelectorAll('tr')[rowIndex];
                 if (row) {
