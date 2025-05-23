@@ -23,23 +23,23 @@
 </tr>
 <tr>
 <td>Rafael Devers (Boston Red Sox)</td>
-<td>8</td>
-<td>2</td>
+<td>11</td>
+<td>3</td>
 <td>0</td>
-<td>.250</td>
+<td>.273</td>
 <td>0</td>
 <td>.333</td>
-<td>.583</td>
+<td>.606</td>
 </tr>
 <tr>
 <td>Trevor Story (Boston Red Sox)</td>
-<td>4</td>
+<td>6</td>
 <td>1</td>
 <td>0</td>
-<td>.250</td>
+<td>.167</td>
 <td>0</td>
-<td>.250</td>
-<td>.500</td>
+<td>.286</td>
+<td>.453</td>
 </tr>
 <tr>
 <td>Kristian Campbell (Boston Red Sox)</td>
@@ -63,13 +63,13 @@
 </tr>
 <tr>
 <td>Jarren Duran (Boston Red Sox)</td>
-<td>9</td>
+<td>12</td>
 <td>1</td>
 <td>0</td>
-<td>.111</td>
+<td>.083</td>
 <td>2</td>
-<td>.111</td>
-<td>.444</td>
+<td>.083</td>
+<td>.333</td>
 </tr>
 <tr>
 <td>Rob Refsnyder (Boston Red Sox)</td>
@@ -83,13 +83,13 @@
 </tr>
 <tr>
 <td>Ceddanne Rafaela (Boston Red Sox)</td>
-<td>6</td>
+<td>8</td>
 <td>1</td>
 <td>0</td>
-<td>.167</td>
+<td>.125</td>
 <td>0</td>
-<td>.167</td>
-<td>.334</td>
+<td>.125</td>
+<td>.250</td>
 </tr>
 </table>
 <br>
@@ -2041,6 +2041,67 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>1.000</td>
 <td>2.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Clarke Schmidt New York Yankees</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Ryan McMahon (Colorado Rockies)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Brenton Doyle (Colorado Rockies)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Ezequiel Tovar (Colorado Rockies)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
 </tr>
 </table>
 <br>
