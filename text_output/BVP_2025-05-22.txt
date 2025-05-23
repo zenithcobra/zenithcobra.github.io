@@ -1,0 +1,1749 @@
+<h1>Batter vs Pitcher Stats</h1>
+<h3>Away Pitcher: Nathan Eovaldi Texas Rangers</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Aaron Judge (New York Yankees)</td>
+<td>34</td>
+<td>12</td>
+<td>2</td>
+<td>.353</td>
+<td>3</td>
+<td>.421</td>
+<td>1.009</td>
+</tr>
+<tr>
+<td>Trent Grisham (New York Yankees)</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>1.000</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Ben Rice (New York Yankees)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Cody Bellinger (New York Yankees)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>2</td>
+<td>.400</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Austin Wells (New York Yankees)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>2</td>
+<td>.500</td>
+<td>1.500</td>
+</tr>
+<tr>
+<td>Jazz Chisholm Jr. (New York Yankees)</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td>.143</td>
+<td>0</td>
+<td>.143</td>
+<td>.286</td>
+</tr>
+<tr>
+<td>Anthony Volpe (New York Yankees)</td>
+<td>14</td>
+<td>1</td>
+<td>0</td>
+<td>.071</td>
+<td>0</td>
+<td>.071</td>
+<td>.142</td>
+</tr>
+<tr>
+<td>Paul Goldschmidt (New York Yankees)</td>
+<td>15</td>
+<td>4</td>
+<td>0</td>
+<td>.267</td>
+<td>1</td>
+<td>.313</td>
+<td>.646</td>
+</tr>
+<tr>
+<td>Oswald Peraza (New York Yankees)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.500</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Carlos Rodón New York Yankees</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Wyatt Langford (Texas Rangers)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.167</td>
+<td>.167</td>
+</tr>
+<tr>
+<td>Josh Jung (Texas Rangers)</td>
+<td>7</td>
+<td>3</td>
+<td>1</td>
+<td>.429</td>
+<td>1</td>
+<td>.500</td>
+<td>1.357</td>
+</tr>
+<tr>
+<td>Jake Burger (Texas Rangers)</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Adolis García (Texas Rangers)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.333</td>
+<td>.833</td>
+</tr>
+<tr>
+<td>Jonah Heim (Texas Rangers)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.500</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Corey Seager (Texas Rangers)</td>
+<td>9</td>
+<td>4</td>
+<td>1</td>
+<td>.444</td>
+<td>2</td>
+<td>.444</td>
+<td>1.222</td>
+</tr>
+<tr>
+<td>Josh Smith (Texas Rangers)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Marcus Semien (Texas Rangers)</td>
+<td>23</td>
+<td>4</td>
+<td>1</td>
+<td>.174</td>
+<td>2</td>
+<td>.208</td>
+<td>.512</td>
+</tr>
+<tr>
+<td>Sam Haggerty (Texas Rangers)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Kyle Higashioka (Texas Rangers)</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Stephen Kolek San Diego Padres</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Vladimir Guerrero Jr. (Toronto Blue Jays)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Anthony Santander (Toronto Blue Jays)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Bo Bichette (Toronto Blue Jays)</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1.000</td>
+<td>0</td>
+<td>1.000</td>
+<td>2.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Bowden Francis Toronto Blue Jays</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Fernando Tatis Jr. (San Diego Padres)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.333</td>
+<td>.333</td>
+</tr>
+<tr>
+<td>Xander Bogaerts (San Diego Padres)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jake Cronenworth (San Diego Padres)</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1.000</td>
+<td>0</td>
+<td>1.000</td>
+<td>2.000</td>
+</tr>
+<tr>
+<td>Elias Díaz (San Diego Padres)</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>1.000</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Manny Machado (San Diego Padres)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Ranger Suárez Philadelphia Phillies</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Hunter Goodman (Colorado Rockies)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>1</td>
+<td>.500</td>
+<td>1.500</td>
+</tr>
+<tr>
+<td>Ryan McMahon (Colorado Rockies)</td>
+<td>10</td>
+<td>4</td>
+<td>1</td>
+<td>.400</td>
+<td>3</td>
+<td>.455</td>
+<td>1.255</td>
+</tr>
+<tr>
+<td>Michael Toglia (Colorado Rockies)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Brenton Doyle (Colorado Rockies)</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td>.143</td>
+<td>0</td>
+<td>.250</td>
+<td>.393</td>
+</tr>
+<tr>
+<td>Kyle Farmer (Colorado Rockies)</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.222</td>
+<td>.222</td>
+</tr>
+<tr>
+<td>Ezequiel Tovar (Colorado Rockies)</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td>.143</td>
+<td>0</td>
+<td>.333</td>
+<td>.476</td>
+</tr>
+<tr>
+<td>Sean Bouchard (Colorado Rockies)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Nick Martini (Colorado Rockies)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Germán Márquez Colorado Rockies</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Kyle Schwarber (Philadelphia Phillies)</td>
+<td>19</td>
+<td>7</td>
+<td>2</td>
+<td>.368</td>
+<td>3</td>
+<td>.455</td>
+<td>1.192</td>
+</tr>
+<tr>
+<td>Bryce Harper (Philadelphia Phillies)</td>
+<td>23</td>
+<td>7</td>
+<td>0</td>
+<td>.304</td>
+<td>1</td>
+<td>.360</td>
+<td>.751</td>
+</tr>
+<tr>
+<td>Max Kepler (Philadelphia Phillies)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.625</td>
+</tr>
+<tr>
+<td>J.T. Realmuto (Philadelphia Phillies)</td>
+<td>20</td>
+<td>6</td>
+<td>0</td>
+<td>.300</td>
+<td>2</td>
+<td>.375</td>
+<td>.825</td>
+</tr>
+<tr>
+<td>Nick Castellanos (Philadelphia Phillies)</td>
+<td>14</td>
+<td>5</td>
+<td>1</td>
+<td>.357</td>
+<td>2</td>
+<td>.400</td>
+<td>1.114</td>
+</tr>
+<tr>
+<td>Bryson Stott (Philadelphia Phillies)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Alec Bohm (Philadelphia Phillies)</td>
+<td>12</td>
+<td>6</td>
+<td>1</td>
+<td>.500</td>
+<td>4</td>
+<td>.500</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td>Trea Turner (Philadelphia Phillies)</td>
+<td>20</td>
+<td>5</td>
+<td>0</td>
+<td>.250</td>
+<td>4</td>
+<td>.318</td>
+<td>.668</td>
+</tr>
+<tr>
+<td>Brandon Marsh (Philadelphia Phillies)</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.167</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Edmundo Sosa (Philadelphia Phillies)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.500</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Tyler Anderson Los Angeles Angels</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Brent Rooker (Athletics)</td>
+<td>12</td>
+<td>3</td>
+<td>1</td>
+<td>.250</td>
+<td>1</td>
+<td>.400</td>
+<td>.900</td>
+</tr>
+<tr>
+<td>Shea Langeliers (Athletics)</td>
+<td>10</td>
+<td>2</td>
+<td>1</td>
+<td>.200</td>
+<td>3</td>
+<td>.200</td>
+<td>.700</td>
+</tr>
+<tr>
+<td>Lawrence Butler (Athletics)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.667</td>
+<td>1.334</td>
+</tr>
+<tr>
+<td>JJ Bleday (Athletics)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Luis Urías (Athletics)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Miguel Andujar (Athletics)</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.167</td>
+<td>.167</td>
+</tr>
+<tr>
+<td>Seth Brown (Athletics)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Max Muncy (Athletics)</td>
+<td>12</td>
+<td>3</td>
+<td>2</td>
+<td>.250</td>
+<td>2</td>
+<td>.308</td>
+<td>1.058</td>
+</tr>
+<tr>
+<td>Max Schuemann (Athletics)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.200</td>
+<td>.200</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Luis Severino Athletics</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Taylor Ward (Los Angeles Angels)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Mike Trout (Los Angeles Angels)</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+<td>.500</td>
+<td>1</td>
+<td>.667</td>
+<td>1.917</td>
+</tr>
+<tr>
+<td>Zach Neto (Los Angeles Angels)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.333</td>
+<td>.666</td>
+</tr>
+<tr>
+<td>Jorge Soler (Los Angeles Angels)</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>.125</td>
+<td>1</td>
+<td>.125</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Yoán Moncada (Los Angeles Angels)</td>
+<td>12</td>
+<td>4</td>
+<td>1</td>
+<td>.333</td>
+<td>2</td>
+<td>.333</td>
+<td>1.083</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Tanner Bibee Cleveland Guardians</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Riley Greene (Detroit Tigers)</td>
+<td>12</td>
+<td>3</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.308</td>
+<td>.641</td>
+</tr>
+<tr>
+<td>Spencer Torkelson (Detroit Tigers)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.667</td>
+<td>1.334</td>
+</tr>
+<tr>
+<td>Kerry Carpenter (Detroit Tigers)</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+<td>.500</td>
+<td>3</td>
+<td>.500</td>
+<td>2.000</td>
+</tr>
+<tr>
+<td>Javier Báez (Detroit Tigers)</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>.167</td>
+<td>2</td>
+<td>.143</td>
+<td>.310</td>
+</tr>
+<tr>
+<td>Gleyber Torres (Detroit Tigers)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.333</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Dillon Dingler (Detroit Tigers)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Colt Keith (Detroit Tigers)</td>
+<td>9</td>
+<td>4</td>
+<td>0</td>
+<td>.444</td>
+<td>3</td>
+<td>.500</td>
+<td>1.167</td>
+</tr>
+<tr>
+<td>Andy Ibáñez (Detroit Tigers)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.750</td>
+<td>1.417</td>
+</tr>
+<tr>
+<td>Zach McKinstry (Detroit Tigers)</td>
+<td>13</td>
+<td>4</td>
+<td>0</td>
+<td>.308</td>
+<td>2</td>
+<td>.357</td>
+<td>.742</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Jack Flaherty Detroit Tigers</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Kyle Manzardo (Cleveland Guardians)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>José Ramírez (Cleveland Guardians)</td>
+<td>20</td>
+<td>5</td>
+<td>2</td>
+<td>.250</td>
+<td>3</td>
+<td>.250</td>
+<td>.800</td>
+</tr>
+<tr>
+<td>Bo Naylor (Cleveland Guardians)</td>
+<td>7</td>
+<td>2</td>
+<td>1</td>
+<td>.286</td>
+<td>1</td>
+<td>.375</td>
+<td>1.089</td>
+</tr>
+<tr>
+<td>Carlos Santana (Cleveland Guardians)</td>
+<td>14</td>
+<td>2</td>
+<td>0</td>
+<td>.143</td>
+<td>0</td>
+<td>.250</td>
+<td>.393</td>
+</tr>
+<tr>
+<td>Daniel Schneemann (Cleveland Guardians)</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.125</td>
+<td>.125</td>
+</tr>
+<tr>
+<td>Steven Kwan (Cleveland Guardians)</td>
+<td>9</td>
+<td>3</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.400</td>
+<td>.733</td>
+</tr>
+<tr>
+<td>Austin Hedges (Cleveland Guardians)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Nolan Jones (Cleveland Guardians)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.333</td>
+<td>.333</td>
+</tr>
+<tr>
+<td>Jhonkensy Noel (Cleveland Guardians)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: AJ Smith-Shawver Atlanta Braves</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>James Wood (Washington Nationals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>CJ Abrams (Washington Nationals)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.400</td>
+</tr>
+<tr>
+<td>Nathaniel Lowe (Washington Nationals)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.333</td>
+<td>.333</td>
+</tr>
+<tr>
+<td>Josh Bell (Washington Nationals)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Luis García Jr. (Washington Nationals)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>1</td>
+<td>.667</td>
+<td>1.334</td>
+</tr>
+<tr>
+<td>Amed Rosario (Washington Nationals)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.333</td>
+<td>.333</td>
+</tr>
+<tr>
+<td>Keibert Ruiz (Washington Nationals)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.200</td>
+<td>.200</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Trevor Williams Washington Nationals</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Matt Olson (Atlanta Braves)</td>
+<td>10</td>
+<td>2</td>
+<td>1</td>
+<td>.200</td>
+<td>4</td>
+<td>.385</td>
+<td>.885</td>
+</tr>
+<tr>
+<td>Sean Murphy (Atlanta Braves)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+<tr>
+<td>Marcell Ozuna (Atlanta Braves)</td>
+<td>35</td>
+<td>11</td>
+<td>0</td>
+<td>.314</td>
+<td>4</td>
+<td>.351</td>
+<td>.694</td>
+</tr>
+<tr>
+<td>Austin Riley (Atlanta Braves)</td>
+<td>20</td>
+<td>2</td>
+<td>0</td>
+<td>.100</td>
+<td>2</td>
+<td>.100</td>
+<td>.300</td>
+</tr>
+<tr>
+<td>Ozzie Albies (Atlanta Braves)</td>
+<td>17</td>
+<td>5</td>
+<td>0</td>
+<td>.294</td>
+<td>2</td>
+<td>.368</td>
+<td>.780</td>
+</tr>
+<tr>
+<td>Drake Baldwin (Atlanta Braves)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>1</td>
+<td>.667</td>
+<td>1.334</td>
+</tr>
+<tr>
+<td>Michael Harris II (Atlanta Braves)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.222</td>
+<td>.472</td>
+</tr>
+<tr>
+<td>Jarred Kelenic (Atlanta Braves)</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.500</td>
+</tr>
+<tr>
+<td>Eli White (Atlanta Braves)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: George Kirby Seattle Mariners</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Isaac Paredes (Houston Astros)</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>.400</td>
+<td>1</td>
+<td>.400</td>
+<td>.800</td>
+</tr>
+<tr>
+<td>Jeremy Peña (Houston Astros)</td>
+<td>16</td>
+<td>4</td>
+<td>0</td>
+<td>.250</td>
+<td>2</td>
+<td>.294</td>
+<td>.544</td>
+</tr>
+<tr>
+<td>Yainer Diaz (Houston Astros)</td>
+<td>15</td>
+<td>4</td>
+<td>0</td>
+<td>.267</td>
+<td>0</td>
+<td>.267</td>
+<td>.534</td>
+</tr>
+<tr>
+<td>Christian Walker (Houston Astros)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.333</td>
+<td>.666</td>
+</tr>
+<tr>
+<td>Jose Altuve (Houston Astros)</td>
+<td>13</td>
+<td>2</td>
+<td>0</td>
+<td>.154</td>
+<td>0</td>
+<td>.214</td>
+<td>.368</td>
+</tr>
+<tr>
+<td>Yordan Alvarez (Houston Astros)</td>
+<td>14</td>
+<td>3</td>
+<td>0</td>
+<td>.214</td>
+<td>0</td>
+<td>.214</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Victor Caratini (Houston Astros)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>.666</td>
+</tr>
+<tr>
+<td>Jake Meyers (Houston Astros)</td>
+<td>9</td>
+<td>2</td>
+<td>0</td>
+<td>.222</td>
+<td>1</td>
+<td>.222</td>
+<td>.444</td>
+</tr>
+<tr>
+<td>Mauricio Dubón (Houston Astros)</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td>.143</td>
+<td>0</td>
+<td>.143</td>
+<td>.286</td>
+</tr>
+<tr>
+<td>Brendan Rodgers (Houston Astros)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Lance McCullers Jr. Houston Astros</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Cal Raleigh (Seattle Mariners)</td>
+<td>7</td>
+<td>2</td>
+<td>0</td>
+<td>.286</td>
+<td>0</td>
+<td>.444</td>
+<td>.730</td>
+</tr>
+<tr>
+<td>Jorge Polanco (Seattle Mariners)</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>.500</td>
+<td>1</td>
+<td>.667</td>
+<td>2.667</td>
+</tr>
+<tr>
+<td>Dylan Moore (Seattle Mariners)</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td>.143</td>
+<td>0</td>
+<td>.333</td>
+<td>.619</td>
+</tr>
+<tr>
+<td>Randy Arozarena (Seattle Mariners)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.333</td>
+<td>.666</td>
+</tr>
+<tr>
+<td>J.P. Crawford (Seattle Mariners)</td>
+<td>18</td>
+<td>4</td>
+<td>0</td>
+<td>.222</td>
+<td>0</td>
+<td>.300</td>
+<td>.689</td>
+</tr>
+<tr>
+<td>Mitch Garver (Seattle Mariners)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Leody Taveras (Seattle Mariners)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.600</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Away Pitcher: Cade Povich Baltimore Orioles</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Alex Bregman (Boston Red Sox)</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>.200</td>
+<td>0</td>
+<td>.200</td>
+<td>.400</td>
+</tr>
+<tr>
+<td>Rafael Devers (Boston Red Sox)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.333</td>
+<td>.583</td>
+</tr>
+<tr>
+<td>Trevor Story (Boston Red Sox)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Kristian Campbell (Boston Red Sox)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>1</td>
+<td>.500</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Triston Casas (Boston Red Sox)</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.667</td>
+<td>1.334</td>
+</tr>
+<tr>
+<td>Jarren Duran (Boston Red Sox)</td>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>.111</td>
+<td>2</td>
+<td>.111</td>
+<td>.444</td>
+</tr>
+<tr>
+<td>Rob Refsnyder (Boston Red Sox)</td>
+<td>7</td>
+<td>4</td>
+<td>1</td>
+<td>.571</td>
+<td>2</td>
+<td>.625</td>
+<td>1.768</td>
+</tr>
+<tr>
+<td>Ceddanne Rafaela (Boston Red Sox)</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.167</td>
+<td>.334</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+<h3>Home Pitcher: Lucas Giolito Boston Red Sox</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Cedric Mullins (Baltimore Orioles)</td>
+<td>13</td>
+<td>8</td>
+<td>0</td>
+<td>.615</td>
+<td>0</td>
+<td>.615</td>
+<td>1.615</td>
+</tr>
+<tr>
+<td>Ryan O'Hearn (Baltimore Orioles)</td>
+<td>25</td>
+<td>4</td>
+<td>1</td>
+<td>.160</td>
+<td>3</td>
+<td>.154</td>
+<td>.474</td>
+</tr>
+<tr>
+<td>Ramón Laureano (Baltimore Orioles)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>1</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Adley Rutschman (Baltimore Orioles)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.333</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Ryan Mountcastle (Baltimore Orioles)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>.666</td>
+</tr>
+<tr>
+<td>Tyler O'Neill (Baltimore Orioles)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.667</td>
+<td>1.167</td>
+</tr>
+<tr>
+<td>Ramón Urías (Baltimore Orioles)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<h1>Pitchers Overview</h1>
+<table border='1'>
+<tr>
+<th>NAME</th>
+<th>TEAM</th>
+<th>ERA</th>
+<th>SO9</th>
+</tr>
+<tr>
+<td>Nathan Eovaldi</td>
+<td>Texas Rangers</td>
+<td>3.97</td>
+<td>7.84</td>
+</tr>
+<tr>
+<td>Carlos Rodón</td>
+<td>New York Yankees</td>
+<td>3.80</td>
+<td>10.04</td>
+</tr>
+<tr>
+<td>Stephen Kolek</td>
+<td>San Diego Padres</td>
+<td>4.38</td>
+<td>7.50</td>
+</tr>
+<tr>
+<td>Bowden Francis</td>
+<td>Toronto Blue Jays</td>
+<td>3.58</td>
+<td>7.92</td>
+</tr>
+<tr>
+<td>Ranger Suárez</td>
+<td>Philadelphia Phillies</td>
+<td>3.45</td>
+<td>8.23</td>
+</tr>
+<tr>
+<td>Germán Márquez</td>
+<td>Colorado Rockies</td>
+<td>4.57</td>
+<td>8.54</td>
+</tr>
+<tr>
+<td>Tyler Anderson</td>
+<td>Los Angeles Angels</td>
+<td>4.22</td>
+<td>7.54</td>
+</tr>
+<tr>
+<td>Luis Severino</td>
+<td>Athletics</td>
+<td>3.83</td>
+<td>9.21</td>
+</tr>
+<tr>
+<td>Tanner Bibee</td>
+<td>Cleveland Guardians</td>
+<td>3.36</td>
+<td>8.91</td>
+</tr>
+<tr>
+<td>Jack Flaherty</td>
+<td>Detroit Tigers</td>
+<td>3.68</td>
+<td>10.25</td>
+</tr>
+<tr>
+<td>Mike Burrows</td>
+<td>Pittsburgh Pirates</td>
+<td>2.70</td>
+<td>5.40</td>
+</tr>
+<tr>
+<td>AJ Smith-Shawver</td>
+<td>Atlanta Braves</td>
+<td>2.90</td>
+<td>8.43</td>
+</tr>
+<tr>
+<td>Trevor Williams</td>
+<td>Washington Nationals</td>
+<td>4.38</td>
+<td>7.39</td>
+</tr>
+<tr>
+<td>George Kirby</td>
+<td>Seattle Mariners</td>
+<td>3.43</td>
+<td>8.51</td>
+</tr>
+<tr>
+<td>Lance McCullers Jr.</td>
+<td>Houston Astros</td>
+<td>3.53</td>
+<td>9.98</td>
+</tr>
+<tr>
+<td>Cade Povich</td>
+<td>Baltimore Orioles</td>
+<td>5.21</td>
+<td>7.96</td>
+</tr>
+<tr>
+<td>Lucas Giolito</td>
+<td>Boston Red Sox</td>
+<td>4.48</td>
+<td>9.52</td>
+</tr>
+</table>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
