@@ -20,17 +20,24 @@ table_labels.insert(1, "team")
 # Filter out any lines that match the labels
 players_on_a_streak = [row for row in csv_data if row != table_labels]
 
-filtered = []
+holder = []
 for z in players_on_a_streak:
+    filtered = []
     try:
         team = statsapi.lookup_team(statsapi.lookup_player(z[0])[0].get('currentTeam').get('id'))[0].get('name')
-        filtered.append([z[0], team, z[1], z[2], z[3], z[4], z[5], z[6]])
+        for a in z:
+            filtered.append(a)
+        filtered.insert(1, team)
         print(team)
     except Exception as e:
         print(f"Error processing player {z[0]}: {e}")
         # Handle the error as needed (e.g., log it, skip the player, etc.)
-
-players_on_a_streak = filtered
+        team = "..."
+        for a in z:
+            filtered.append(a)
+        filtered.insert(1, "Unknown Team")
+    holder.append(filtered)
+players_on_a_streak = holder
 # -------------------------------
 
 # # open all_players_with_teams.csv and read the data into a list
@@ -66,30 +73,30 @@ m_name = None
 # table_labels.insert(1,"Team")  # Add the new column label for team names
 # # -------------------------------
 # # Load the list of teams playing today from the JSON file
-# with open("text_output/teams_playing_today.json", "r", encoding="utf-8") as file:
-#     teams_playing_today = json.load(file)
+with open("text_output/teams_playing_today.json", "r", encoding="utf-8") as file:
+    teams_playing_today = json.load(file)
 
-# # Filter out rows in players_on_a_streak that don't match the teams playing today
-# filtered_players_on_a_streak = []
-# for player in players_on_a_streak:
-#     player_team = player[1]  # Assuming the team name is in the second column
-#     best_match_score = 0
-#     best_match_team = None
+# Filter out rows in players_on_a_streak that don't match the teams playing today
+filtered_players_on_a_streak = []
+for player in players_on_a_streak:
+    player_team = player[1]  # Assuming the team name is in the second column
+    best_match_score = 0
+    best_match_team = None
 
-#     # Search for the player's team in teams_playing_today using fuzzy matching
-#     for team in teams_playing_today:
-#         match_score = fuzz.ratio(player_team, team)  # Calculate the similarity score
+    # Search for the player's team in teams_playing_today using fuzzy matching
+    for team in teams_playing_today:
+        match_score = fuzz.ratio(player_team, team)  # Calculate the similarity score
 
-#         if match_score > best_match_score:  # Update the best match if the score is higher
-#             best_match_score = match_score
-#             best_match_team = team
+        if match_score > best_match_score:  # Update the best match if the score is higher
+            best_match_score = match_score
+            best_match_team = team
 
-#     # If the best match score is above a threshold, keep the player
-#     if best_match_score >= 80:  # Adjust the threshold as needed
-#         filtered_players_on_a_streak.append(player)
+    # If the best match score is above a threshold, keep the player
+    if best_match_score >= 80:  # Adjust the threshold as needed
+        filtered_players_on_a_streak.append(player)
 
-# # Replace the original players_on_a_streak with the filtered list
-# players_on_a_streak = filtered_players_on_a_streak
+# Replace the original players_on_a_streak with the filtered list
+players_on_a_streak = filtered_players_on_a_streak
 # -------------------------------
 
 # JavaScript for making tables sortable
