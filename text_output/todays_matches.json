@@ -51,12 +51,12 @@
         ],
         "home_team_leaders_hr": [
             {
-                "name": "Rafael Devers",
+                "name": "Wilyer Abreu",
                 "homeRuns": "12"
             },
             {
-                "name": "Wilyer Abreu",
-                "homeRuns": "11"
+                "name": "Rafael Devers",
+                "homeRuns": "12"
             },
             {
                 "name": "Alex Bregman",
@@ -75,15 +75,15 @@
                 "homeRuns": "5"
             },
             {
+                "name": "Jarren Duran",
+                "homeRuns": "4"
+            },
+            {
                 "name": "Rob Refsnyder",
                 "homeRuns": "4"
             },
             {
                 "name": "Triston Casas",
-                "homeRuns": "3"
-            },
-            {
-                "name": "Jarren Duran",
                 "homeRuns": "3"
             },
             {
@@ -93,53 +93,16 @@
             {
                 "name": "Ceddanne Rafaela",
                 "homeRuns": "2"
+            },
+            {
+                "name": "Abraham Toro",
+                "homeRuns": "2"
             }
         ],
         "home_id": 111,
         "home_probable_pitcher": "Hunter Dobbins",
         "away_probable_pitcher": "Zach Eflin",
         "BvP_stats": [
-            {
-                "bvp_stats": {
-                    "gamesplayed": 7,
-                    "flyouts": null,
-                    "groundouts": 2,
-                    "airouts": 5,
-                    "runs": null,
-                    "doubles": 4,
-                    "triples": 0,
-                    "homeruns": 2,
-                    "strikeouts": 5,
-                    "baseonballs": 0,
-                    "intentionalwalks": 0,
-                    "hits": 7,
-                    "hitbypitch": 0,
-                    "avg": ".368",
-                    "atbats": 19,
-                    "obp": ".368",
-                    "slg": ".895",
-                    "ops": "1.263",
-                    "caughtstealing": null,
-                    "stolenbases": null,
-                    "stolenbasepercentage": null,
-                    "groundintodoubleplay": 0,
-                    "groundintotripleplay": 0,
-                    "numberofpitches": 82,
-                    "plateappearances": 19,
-                    "totalbases": 17,
-                    "rbi": 4,
-                    "leftonbase": 5,
-                    "sacbunts": 0,
-                    "sacflies": 0,
-                    "babip": ".417",
-                    "groundoutstoairouts": "0.40",
-                    "catchersinterference": 0,
-                    "atbatsperhomerun": "9.50"
-                },
-                "bvp_matchup": "pitcher: Zach Eflin vs batter: Rafael Devers",
-                "pitcher": "Zach Eflin",
-                "batter": "Rafael Devers"
-            },
             {
                 "bvp_stats": {
                     "gamesplayed": 5,
@@ -180,6 +143,47 @@
                 "bvp_matchup": "pitcher: Zach Eflin vs batter: Wilyer Abreu",
                 "pitcher": "Zach Eflin",
                 "batter": "Wilyer Abreu"
+            },
+            {
+                "bvp_stats": {
+                    "gamesplayed": 7,
+                    "flyouts": null,
+                    "groundouts": 2,
+                    "airouts": 5,
+                    "runs": null,
+                    "doubles": 4,
+                    "triples": 0,
+                    "homeruns": 2,
+                    "strikeouts": 5,
+                    "baseonballs": 0,
+                    "intentionalwalks": 0,
+                    "hits": 7,
+                    "hitbypitch": 0,
+                    "avg": ".368",
+                    "atbats": 19,
+                    "obp": ".368",
+                    "slg": ".895",
+                    "ops": "1.263",
+                    "caughtstealing": null,
+                    "stolenbases": null,
+                    "stolenbasepercentage": null,
+                    "groundintodoubleplay": 0,
+                    "groundintotripleplay": 0,
+                    "numberofpitches": 82,
+                    "plateappearances": 19,
+                    "totalbases": 17,
+                    "rbi": 4,
+                    "leftonbase": 5,
+                    "sacbunts": 0,
+                    "sacflies": 0,
+                    "babip": ".417",
+                    "groundoutstoairouts": "0.40",
+                    "catchersinterference": 0,
+                    "atbatsperhomerun": "9.50"
+                },
+                "bvp_matchup": "pitcher: Zach Eflin vs batter: Rafael Devers",
+                "pitcher": "Zach Eflin",
+                "batter": "Rafael Devers"
             },
             {
                 "bvp_stats": {
@@ -306,6 +310,47 @@
             },
             {
                 "bvp_stats": {
+                    "gamesplayed": 3,
+                    "flyouts": null,
+                    "groundouts": 1,
+                    "airouts": 3,
+                    "runs": null,
+                    "doubles": 0,
+                    "triples": 0,
+                    "homeruns": 0,
+                    "strikeouts": 4,
+                    "baseonballs": 0,
+                    "intentionalwalks": 0,
+                    "hits": 1,
+                    "hitbypitch": 0,
+                    "avg": ".111",
+                    "atbats": 9,
+                    "obp": ".111",
+                    "slg": ".111",
+                    "ops": ".222",
+                    "caughtstealing": null,
+                    "stolenbases": null,
+                    "stolenbasepercentage": null,
+                    "groundintodoubleplay": 0,
+                    "groundintotripleplay": 0,
+                    "numberofpitches": 31,
+                    "plateappearances": 9,
+                    "totalbases": 1,
+                    "rbi": 0,
+                    "leftonbase": 4,
+                    "sacbunts": 0,
+                    "sacflies": 0,
+                    "babip": ".200",
+                    "groundoutstoairouts": "0.33",
+                    "catchersinterference": 0,
+                    "atbatsperhomerun": "-.--"
+                },
+                "bvp_matchup": "pitcher: Zach Eflin vs batter: Jarren Duran",
+                "pitcher": "Zach Eflin",
+                "batter": "Jarren Duran"
+            },
+            {
+                "bvp_stats": {
                     "gamesplayed": 1,
                     "flyouts": null,
                     "groundouts": 1,
@@ -385,47 +430,6 @@
                 "bvp_matchup": "pitcher: Zach Eflin vs batter: Triston Casas",
                 "pitcher": "Zach Eflin",
                 "batter": "Triston Casas"
-            },
-            {
-                "bvp_stats": {
-                    "gamesplayed": 3,
-                    "flyouts": null,
-                    "groundouts": 1,
-                    "airouts": 3,
-                    "runs": null,
-                    "doubles": 0,
-                    "triples": 0,
-                    "homeruns": 0,
-                    "strikeouts": 4,
-                    "baseonballs": 0,
-                    "intentionalwalks": 0,
-                    "hits": 1,
-                    "hitbypitch": 0,
-                    "avg": ".111",
-                    "atbats": 9,
-                    "obp": ".111",
-                    "slg": ".111",
-                    "ops": ".222",
-                    "caughtstealing": null,
-                    "stolenbases": null,
-                    "stolenbasepercentage": null,
-                    "groundintodoubleplay": 0,
-                    "groundintotripleplay": 0,
-                    "numberofpitches": 31,
-                    "plateappearances": 9,
-                    "totalbases": 1,
-                    "rbi": 0,
-                    "leftonbase": 4,
-                    "sacbunts": 0,
-                    "sacflies": 0,
-                    "babip": ".200",
-                    "groundoutstoairouts": "0.33",
-                    "catchersinterference": 0,
-                    "atbatsperhomerun": "-.--"
-                },
-                "bvp_matchup": "pitcher: Zach Eflin vs batter: Jarren Duran",
-                "pitcher": "Zach Eflin",
-                "batter": "Jarren Duran"
             },
             {
                 "bvp_stats": {
@@ -563,12 +567,12 @@
         ],
         "home_team_leaders_hr": [
             {
-                "name": "Rafael Devers",
+                "name": "Wilyer Abreu",
                 "homeRuns": "12"
             },
             {
-                "name": "Wilyer Abreu",
-                "homeRuns": "11"
+                "name": "Rafael Devers",
+                "homeRuns": "12"
             },
             {
                 "name": "Alex Bregman",
@@ -587,6 +591,10 @@
                 "homeRuns": "5"
             },
             {
+                "name": "Jarren Duran",
+                "homeRuns": "4"
+            },
+            {
                 "name": "Rob Refsnyder",
                 "homeRuns": "4"
             },
@@ -595,15 +603,15 @@
                 "homeRuns": "3"
             },
             {
-                "name": "Jarren Duran",
-                "homeRuns": "3"
-            },
-            {
                 "name": "David Hamilton",
                 "homeRuns": "2"
             },
             {
                 "name": "Ceddanne Rafaela",
+                "homeRuns": "2"
+            },
+            {
+                "name": "Abraham Toro",
                 "homeRuns": "2"
             }
         ],
@@ -676,6 +684,10 @@
             },
             {
                 "name": "Harrison Bader",
+                "homeRuns": "5"
+            },
+            {
+                "name": "Kody Clemens",
                 "homeRuns": "4"
             },
             {
@@ -685,10 +697,6 @@
             {
                 "name": "Brooks Lee",
                 "homeRuns": "4"
-            },
-            {
-                "name": "Kody Clemens",
-                "homeRuns": "3"
             },
             {
                 "name": "Carlos Correa",
@@ -1287,40 +1295,40 @@
             },
             {
                 "bvp_stats": {
-                    "gamesplayed": 2,
+                    "gamesplayed": 3,
                     "flyouts": null,
                     "groundouts": 0,
-                    "airouts": 1,
+                    "airouts": 2,
                     "runs": null,
                     "doubles": 1,
                     "triples": 0,
                     "homeruns": 1,
-                    "strikeouts": 0,
+                    "strikeouts": 1,
                     "baseonballs": 0,
                     "intentionalwalks": 0,
                     "hits": 5,
                     "hitbypitch": 0,
-                    "avg": ".833",
-                    "atbats": 6,
-                    "obp": ".833",
-                    "slg": "1.500",
-                    "ops": "2.333",
+                    "avg": ".625",
+                    "atbats": 8,
+                    "obp": ".625",
+                    "slg": "1.125",
+                    "ops": "1.750",
                     "caughtstealing": null,
                     "stolenbases": null,
                     "stolenbasepercentage": null,
                     "groundintodoubleplay": 0,
                     "groundintotripleplay": 0,
-                    "numberofpitches": 18,
-                    "plateappearances": 6,
+                    "numberofpitches": 24,
+                    "plateappearances": 8,
                     "totalbases": 9,
                     "rbi": 2,
-                    "leftonbase": 0,
+                    "leftonbase": 2,
                     "sacbunts": 0,
                     "sacflies": 0,
-                    "babip": ".800",
+                    "babip": ".667",
                     "groundoutstoairouts": "0.00",
                     "catchersinterference": 0,
-                    "atbatsperhomerun": "6.00"
+                    "atbatsperhomerun": "8.00"
                 },
                 "bvp_matchup": "pitcher: Zebby Matthews vs batter: Michael Massey",
                 "pitcher": "Zebby Matthews",
@@ -1328,7 +1336,7 @@
             },
             {
                 "bvp_stats": {
-                    "gamesplayed": 1,
+                    "gamesplayed": 2,
                     "flyouts": null,
                     "groundouts": 1,
                     "airouts": 1,
@@ -1336,29 +1344,29 @@
                     "doubles": 0,
                     "triples": 0,
                     "homeruns": 0,
-                    "strikeouts": 0,
+                    "strikeouts": 1,
                     "baseonballs": 0,
                     "intentionalwalks": 0,
-                    "hits": 0,
+                    "hits": 1,
                     "hitbypitch": 0,
-                    "avg": ".000",
-                    "atbats": 2,
-                    "obp": ".000",
-                    "slg": ".000",
-                    "ops": ".000",
+                    "avg": ".250",
+                    "atbats": 4,
+                    "obp": ".250",
+                    "slg": ".250",
+                    "ops": ".500",
                     "caughtstealing": null,
                     "stolenbases": null,
                     "stolenbasepercentage": null,
                     "groundintodoubleplay": 0,
                     "groundintotripleplay": 0,
-                    "numberofpitches": 11,
-                    "plateappearances": 2,
-                    "totalbases": 0,
+                    "numberofpitches": 19,
+                    "plateappearances": 4,
+                    "totalbases": 1,
                     "rbi": 0,
                     "leftonbase": 0,
                     "sacbunts": 0,
                     "sacflies": 0,
-                    "babip": ".000",
+                    "babip": ".333",
                     "groundoutstoairouts": "1.00",
                     "catchersinterference": 0,
                     "atbatsperhomerun": "-.--"
@@ -1407,6 +1415,47 @@
                 "bvp_matchup": "pitcher: Zebby Matthews vs batter: MJ Melendez",
                 "pitcher": "Zebby Matthews",
                 "batter": "MJ Melendez"
+            },
+            {
+                "bvp_stats": {
+                    "gamesplayed": 1,
+                    "flyouts": null,
+                    "groundouts": 0,
+                    "airouts": 0,
+                    "runs": null,
+                    "doubles": 0,
+                    "triples": 0,
+                    "homeruns": 0,
+                    "strikeouts": 1,
+                    "baseonballs": 0,
+                    "intentionalwalks": 0,
+                    "hits": 0,
+                    "hitbypitch": 0,
+                    "avg": ".000",
+                    "atbats": 1,
+                    "obp": ".000",
+                    "slg": ".000",
+                    "ops": ".000",
+                    "caughtstealing": null,
+                    "stolenbases": null,
+                    "stolenbasepercentage": null,
+                    "groundintodoubleplay": 0,
+                    "groundintotripleplay": 0,
+                    "numberofpitches": 8,
+                    "plateappearances": 1,
+                    "totalbases": 0,
+                    "rbi": 0,
+                    "leftonbase": 2,
+                    "sacbunts": 0,
+                    "sacflies": 0,
+                    "babip": ".---",
+                    "groundoutstoairouts": "-.--",
+                    "catchersinterference": 0,
+                    "atbatsperhomerun": "-.--"
+                },
+                "bvp_matchup": "pitcher: Zebby Matthews vs batter: Drew Waters",
+                "pitcher": "Zebby Matthews",
+                "batter": "Drew Waters"
             }
         ]
     },
@@ -1453,15 +1502,7 @@
             },
             {
                 "name": "Randal Grichuk",
-                "homeRuns": "1"
-            },
-            {
-                "name": "Jose Herrera",
-                "homeRuns": "1"
-            },
-            {
-                "name": "Alek Thomas",
-                "homeRuns": "1"
+                "homeRuns": "2"
             }
         ],
         "home_team_leaders_hr": [
@@ -4646,174 +4687,10 @@
         ],
         "home_id": 144,
         "home_probable_pitcher": "Grant Holmes",
-        "away_probable_pitcher": "Michael King",
+        "away_probable_pitcher": "Sean Reynolds",
         "BvP_stats": [
             {
                 "bvp_stats": {
-                    "gamesplayed": 2,
-                    "flyouts": null,
-                    "groundouts": 0,
-                    "airouts": 2,
-                    "runs": null,
-                    "doubles": 0,
-                    "triples": 0,
-                    "homeruns": 0,
-                    "strikeouts": 0,
-                    "baseonballs": 1,
-                    "intentionalwalks": 0,
-                    "hits": 0,
-                    "hitbypitch": 0,
-                    "avg": ".000",
-                    "atbats": 2,
-                    "obp": ".333",
-                    "slg": ".000",
-                    "ops": ".333",
-                    "caughtstealing": null,
-                    "stolenbases": null,
-                    "stolenbasepercentage": null,
-                    "groundintodoubleplay": 0,
-                    "groundintotripleplay": 0,
-                    "numberofpitches": 12,
-                    "plateappearances": 3,
-                    "totalbases": 0,
-                    "rbi": 0,
-                    "leftonbase": 1,
-                    "sacbunts": 0,
-                    "sacflies": 0,
-                    "babip": ".000",
-                    "groundoutstoairouts": "0.00",
-                    "catchersinterference": 0,
-                    "atbatsperhomerun": "-.--"
-                },
-                "bvp_matchup": "pitcher: Michael King vs batter: Matt Olson",
-                "pitcher": "Michael King",
-                "batter": "Matt Olson"
-            },
-            {
-                "bvp_stats": {
-                    "gamesplayed": 2,
-                    "flyouts": null,
-                    "groundouts": 1,
-                    "airouts": 0,
-                    "runs": null,
-                    "doubles": 0,
-                    "triples": 0,
-                    "homeruns": 0,
-                    "strikeouts": 0,
-                    "baseonballs": 2,
-                    "intentionalwalks": 0,
-                    "hits": 0,
-                    "hitbypitch": 0,
-                    "avg": ".000",
-                    "atbats": 1,
-                    "obp": ".667",
-                    "slg": ".000",
-                    "ops": ".667",
-                    "caughtstealing": null,
-                    "stolenbases": null,
-                    "stolenbasepercentage": null,
-                    "groundintodoubleplay": 1,
-                    "groundintotripleplay": 0,
-                    "numberofpitches": 14,
-                    "plateappearances": 3,
-                    "totalbases": 0,
-                    "rbi": 0,
-                    "leftonbase": 1,
-                    "sacbunts": 0,
-                    "sacflies": 0,
-                    "babip": ".000",
-                    "groundoutstoairouts": "1.00",
-                    "catchersinterference": 0,
-                    "atbatsperhomerun": "-.--"
-                },
-                "bvp_matchup": "pitcher: Michael King vs batter: Marcell Ozuna",
-                "pitcher": "Michael King",
-                "batter": "Marcell Ozuna"
-            },
-            {
-                "bvp_stats": {
-                    "gamesplayed": 2,
-                    "flyouts": null,
-                    "groundouts": 0,
-                    "airouts": 1,
-                    "runs": null,
-                    "doubles": 0,
-                    "triples": 0,
-                    "homeruns": 0,
-                    "strikeouts": 1,
-                    "baseonballs": 0,
-                    "intentionalwalks": 0,
-                    "hits": 1,
-                    "hitbypitch": 0,
-                    "avg": ".333",
-                    "atbats": 3,
-                    "obp": ".333",
-                    "slg": ".333",
-                    "ops": ".666",
-                    "caughtstealing": null,
-                    "stolenbases": null,
-                    "stolenbasepercentage": null,
-                    "groundintodoubleplay": 0,
-                    "groundintotripleplay": 0,
-                    "numberofpitches": 17,
-                    "plateappearances": 3,
-                    "totalbases": 1,
-                    "rbi": 0,
-                    "leftonbase": 1,
-                    "sacbunts": 0,
-                    "sacflies": 0,
-                    "babip": ".500",
-                    "groundoutstoairouts": "0.00",
-                    "catchersinterference": 0,
-                    "atbatsperhomerun": "-.--"
-                },
-                "bvp_matchup": "pitcher: Michael King vs batter: Austin Riley",
-                "pitcher": "Michael King",
-                "batter": "Austin Riley"
-            },
-            {
-                "bvp_stats": {
-                    "gamesplayed": 1,
-                    "flyouts": null,
-                    "groundouts": 1,
-                    "airouts": 0,
-                    "runs": null,
-                    "doubles": 0,
-                    "triples": 0,
-                    "homeruns": 1,
-                    "strikeouts": 0,
-                    "baseonballs": 0,
-                    "intentionalwalks": 0,
-                    "hits": 1,
-                    "hitbypitch": 0,
-                    "avg": ".500",
-                    "atbats": 2,
-                    "obp": ".500",
-                    "slg": "2.000",
-                    "ops": "2.500",
-                    "caughtstealing": null,
-                    "stolenbases": null,
-                    "stolenbasepercentage": null,
-                    "groundintodoubleplay": 0,
-                    "groundintotripleplay": 0,
-                    "numberofpitches": 8,
-                    "plateappearances": 2,
-                    "totalbases": 4,
-                    "rbi": 3,
-                    "leftonbase": 2,
-                    "sacbunts": 0,
-                    "sacflies": 0,
-                    "babip": ".000",
-                    "groundoutstoairouts": "1.00",
-                    "catchersinterference": 0,
-                    "atbatsperhomerun": "2.00"
-                },
-                "bvp_matchup": "pitcher: Michael King vs batter: Ozzie Albies",
-                "pitcher": "Michael King",
-                "batter": "Ozzie Albies"
-            },
-            {
-                "bvp_stats": {
                     "gamesplayed": 1,
                     "flyouts": null,
                     "groundouts": 0,
@@ -4823,88 +4700,6 @@
                     "triples": 0,
                     "homeruns": 0,
                     "strikeouts": 1,
-                    "baseonballs": 1,
-                    "intentionalwalks": 0,
-                    "hits": 0,
-                    "hitbypitch": 0,
-                    "avg": ".000",
-                    "atbats": 1,
-                    "obp": ".500",
-                    "slg": ".000",
-                    "ops": ".500",
-                    "caughtstealing": null,
-                    "stolenbases": null,
-                    "stolenbasepercentage": null,
-                    "groundintodoubleplay": 0,
-                    "groundintotripleplay": 0,
-                    "numberofpitches": 13,
-                    "plateappearances": 2,
-                    "totalbases": 0,
-                    "rbi": 0,
-                    "leftonbase": 0,
-                    "sacbunts": 0,
-                    "sacflies": 0,
-                    "babip": ".---",
-                    "groundoutstoairouts": "-.--",
-                    "catchersinterference": 0,
-                    "atbatsperhomerun": "-.--"
-                },
-                "bvp_matchup": "pitcher: Michael King vs batter: Drake Baldwin",
-                "pitcher": "Michael King",
-                "batter": "Drake Baldwin"
-            },
-            {
-                "bvp_stats": {
-                    "gamesplayed": 2,
-                    "flyouts": null,
-                    "groundouts": 1,
-                    "airouts": 0,
-                    "runs": null,
-                    "doubles": 0,
-                    "triples": 0,
-                    "homeruns": 0,
-                    "strikeouts": 1,
-                    "baseonballs": 0,
-                    "intentionalwalks": 0,
-                    "hits": 1,
-                    "hitbypitch": 0,
-                    "avg": ".333",
-                    "atbats": 3,
-                    "obp": ".333",
-                    "slg": ".333",
-                    "ops": ".666",
-                    "caughtstealing": null,
-                    "stolenbases": null,
-                    "stolenbasepercentage": null,
-                    "groundintodoubleplay": 0,
-                    "groundintotripleplay": 0,
-                    "numberofpitches": 11,
-                    "plateappearances": 3,
-                    "totalbases": 1,
-                    "rbi": 0,
-                    "leftonbase": 3,
-                    "sacbunts": 0,
-                    "sacflies": 0,
-                    "babip": ".500",
-                    "groundoutstoairouts": "1.00",
-                    "catchersinterference": 0,
-                    "atbatsperhomerun": "-.--"
-                },
-                "bvp_matchup": "pitcher: Michael King vs batter: Michael Harris II",
-                "pitcher": "Michael King",
-                "batter": "Michael Harris II"
-            },
-            {
-                "bvp_stats": {
-                    "gamesplayed": 1,
-                    "flyouts": null,
-                    "groundouts": 1,
-                    "airouts": 0,
-                    "runs": null,
-                    "doubles": 0,
-                    "triples": 0,
-                    "homeruns": 0,
-                    "strikeouts": 0,
                     "baseonballs": 0,
                     "intentionalwalks": 0,
                     "hits": 0,
@@ -4919,21 +4714,21 @@
                     "stolenbasepercentage": null,
                     "groundintodoubleplay": 0,
                     "groundintotripleplay": 0,
-                    "numberofpitches": 2,
+                    "numberofpitches": 4,
                     "plateappearances": 1,
                     "totalbases": 0,
                     "rbi": 0,
-                    "leftonbase": 1,
+                    "leftonbase": 2,
                     "sacbunts": 0,
                     "sacflies": 0,
-                    "babip": ".000",
-                    "groundoutstoairouts": "1.00",
+                    "babip": ".---",
+                    "groundoutstoairouts": "-.--",
                     "catchersinterference": 0,
                     "atbatsperhomerun": "-.--"
                 },
-                "bvp_matchup": "pitcher: Michael King vs batter: Jarred Kelenic",
-                "pitcher": "Michael King",
-                "batter": "Jarred Kelenic"
+                "bvp_matchup": "pitcher: Sean Reynolds vs batter: Austin Riley",
+                "pitcher": "Sean Reynolds",
+                "batter": "Austin Riley"
             },
             {
                 "bvp_stats": {
@@ -4972,9 +4767,50 @@
                     "catchersinterference": 0,
                     "atbatsperhomerun": "-.--"
                 },
-                "bvp_matchup": "pitcher: Michael King vs batter: Ronald Acu\u00f1a Jr.",
-                "pitcher": "Michael King",
-                "batter": "Ronald Acu\u00f1a Jr."
+                "bvp_matchup": "pitcher: Sean Reynolds vs batter: Ozzie Albies",
+                "pitcher": "Sean Reynolds",
+                "batter": "Ozzie Albies"
+            },
+            {
+                "bvp_stats": {
+                    "gamesplayed": 1,
+                    "flyouts": null,
+                    "groundouts": 0,
+                    "airouts": 0,
+                    "runs": null,
+                    "doubles": 0,
+                    "triples": 0,
+                    "homeruns": 0,
+                    "strikeouts": 1,
+                    "baseonballs": 0,
+                    "intentionalwalks": 0,
+                    "hits": 0,
+                    "hitbypitch": 0,
+                    "avg": ".000",
+                    "atbats": 1,
+                    "obp": ".000",
+                    "slg": ".000",
+                    "ops": ".000",
+                    "caughtstealing": null,
+                    "stolenbases": null,
+                    "stolenbasepercentage": null,
+                    "groundintodoubleplay": 0,
+                    "groundintotripleplay": 0,
+                    "numberofpitches": 5,
+                    "plateappearances": 1,
+                    "totalbases": 0,
+                    "rbi": 0,
+                    "leftonbase": 1,
+                    "sacbunts": 0,
+                    "sacflies": 0,
+                    "babip": ".---",
+                    "groundoutstoairouts": "-.--",
+                    "catchersinterference": 0,
+                    "atbatsperhomerun": "-.--"
+                },
+                "bvp_matchup": "pitcher: Sean Reynolds vs batter: Jarred Kelenic",
+                "pitcher": "Sean Reynolds",
+                "batter": "Jarred Kelenic"
             },
             {
                 "bvp_stats": {

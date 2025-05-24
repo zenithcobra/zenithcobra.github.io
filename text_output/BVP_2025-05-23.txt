@@ -1575,7 +1575,7 @@ document.addEventListener('DOMContentLoaded', function() {
     })));
 });
 </script>
-<h3>Home Pitcher: Jonathan Cannon Chicago White Sox</h3>
+<h3>Home Pitcher: Bryse Wilson Chicago White Sox</h3>
 <table border='1'>
 <tr>
 <th>Batter</th>
@@ -1594,12 +1594,12 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>.000</td>
 <td>0</td>
-<td>.333</td>
-<td>.333</td>
+<td>.000</td>
+<td>.000</td>
 </tr>
 <tr>
 <td>Jake Burger (Texas Rangers)</td>
-<td>3</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>.000</td>
@@ -1610,22 +1610,32 @@ document.addEventListener('DOMContentLoaded', function() {
 <tr>
 <td>Adolis García (Texas Rangers)</td>
 <td>3</td>
+<td>1</td>
 <td>0</td>
+<td>.333</td>
 <td>0</td>
-<td>.000</td>
-<td>0</td>
-<td>.000</td>
-<td>.000</td>
+<td>.333</td>
+<td>.666</td>
 </tr>
 <tr>
-<td>Corey Seager (Texas Rangers)</td>
+<td>Jonah Heim (Texas Rangers)</td>
 <td>2</td>
 <td>1</td>
 <td>0</td>
 <td>.500</td>
 <td>0</td>
-<td>.667</td>
-<td>1.167</td>
+<td>.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Corey Seager (Texas Rangers)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.333</td>
+<td>.333</td>
 </tr>
 <tr>
 <td>Josh Smith (Texas Rangers)</td>
@@ -1634,28 +1644,48 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>.000</td>
 <td>0</td>
-<td>.333</td>
-<td>.333</td>
+<td>.000</td>
+<td>.000</td>
 </tr>
 <tr>
 <td>Marcus Semien (Texas Rangers)</td>
-<td>3</td>
+<td>7</td>
 <td>2</td>
+<td>0</td>
+<td>.286</td>
+<td>0</td>
+<td>.286</td>
+<td>.572</td>
+</tr>
+<tr>
+<td>Joc Pederson (Texas Rangers)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.400</td>
+<td>.400</td>
+</tr>
+<tr>
+<td>Kyle Higashioka (Texas Rangers)</td>
 <td>1</td>
-<td>.667</td>
 <td>1</td>
-<td>.667</td>
-<td>2.334</td>
+<td>0</td>
+<td>1.000</td>
+<td>0</td>
+<td>1.000</td>
+<td>3.000</td>
 </tr>
 <tr>
 <td>Leody Taveras (Texas Rangers)</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>.000</td>
+<td>4</td>
 <td>1</td>
-<td>.000</td>
-<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>1</td>
+<td>.250</td>
+<td>.500</td>
 </tr>
 </table>
 <br>

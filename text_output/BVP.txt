@@ -12,16 +12,6 @@
 <th>OPS</th>
 </tr>
 <tr>
-<td>Rafael Devers (Boston Red Sox)</td>
-<td>19</td>
-<td>7</td>
-<td>2</td>
-<td>.368</td>
-<td>4</td>
-<td>.368</td>
-<td>1.263</td>
-</tr>
-<tr>
 <td>Wilyer Abreu (Boston Red Sox)</td>
 <td>13</td>
 <td>5</td>
@@ -30,6 +20,16 @@
 <td>1</td>
 <td>.385</td>
 <td>1.077</td>
+</tr>
+<tr>
+<td>Rafael Devers (Boston Red Sox)</td>
+<td>19</td>
+<td>7</td>
+<td>2</td>
+<td>.368</td>
+<td>4</td>
+<td>.368</td>
+<td>1.263</td>
 </tr>
 <tr>
 <td>Alex Bregman (Boston Red Sox)</td>
@@ -62,6 +62,16 @@
 <td>3.000</td>
 </tr>
 <tr>
+<td>Jarren Duran (Boston Red Sox)</td>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>.111</td>
+<td>0</td>
+<td>.111</td>
+<td>.222</td>
+</tr>
+<tr>
 <td>Rob Refsnyder (Boston Red Sox)</td>
 <td>3</td>
 <td>1</td>
@@ -80,16 +90,6 @@
 <td>0</td>
 <td>.200</td>
 <td>.200</td>
-</tr>
-<tr>
-<td>Jarren Duran (Boston Red Sox)</td>
-<td>9</td>
-<td>1</td>
-<td>0</td>
-<td>.111</td>
-<td>0</td>
-<td>.111</td>
-<td>.222</td>
 </tr>
 <tr>
 <td>David Hamilton (Boston Red Sox)</td>
@@ -315,23 +315,23 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 <tr>
 <td>Michael Massey (Kansas City Royals)</td>
-<td>6</td>
+<td>8</td>
 <td>5</td>
 <td>1</td>
-<td>.833</td>
+<td>.625</td>
 <td>2</td>
-<td>.833</td>
-<td>2.333</td>
+<td>.625</td>
+<td>1.750</td>
 </tr>
 <tr>
 <td>Freddy Fermin (Kansas City Royals)</td>
-<td>2</td>
+<td>4</td>
+<td>1</td>
 <td>0</td>
+<td>.250</td>
 <td>0</td>
-<td>.000</td>
-<td>0</td>
-<td>.000</td>
-<td>.000</td>
+<td>.250</td>
+<td>.500</td>
 </tr>
 <tr>
 <td>MJ Melendez (Kansas City Royals)</td>
@@ -342,6 +342,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1</td>
 <td>.400</td>
 <td>1.400</td>
+</tr>
+<tr>
+<td>Drew Waters (Kansas City Royals)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
 </tr>
 </table>
 <br>
@@ -1312,7 +1322,7 @@ document.addEventListener('DOMContentLoaded', function() {
     })));
 });
 </script>
-<h3>Away Pitcher: Michael King San Diego Padres</h3>
+<h3>Away Pitcher: Sean Reynolds San Diego Padres</h3>
 <table border='1'>
 <tr>
 <th>Batter</th>
@@ -1325,64 +1335,24 @@ document.addEventListener('DOMContentLoaded', function() {
 <th>OPS</th>
 </tr>
 <tr>
-<td>Matt Olson (Atlanta Braves)</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>.000</td>
-<td>0</td>
-<td>.333</td>
-<td>.333</td>
-</tr>
-<tr>
-<td>Marcell Ozuna (Atlanta Braves)</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>.000</td>
-<td>0</td>
-<td>.667</td>
-<td>.667</td>
-</tr>
-<tr>
 <td>Austin Riley (Atlanta Braves)</td>
-<td>3</td>
 <td>1</td>
 <td>0</td>
-<td>.333</td>
 <td>0</td>
-<td>.333</td>
-<td>.666</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
 </tr>
 <tr>
 <td>Ozzie Albies (Atlanta Braves)</td>
-<td>2</td>
-<td>1</td>
-<td>1</td>
-<td>.500</td>
-<td>3</td>
-<td>.500</td>
-<td>2.500</td>
-</tr>
-<tr>
-<td>Drake Baldwin (Atlanta Braves)</td>
-<td>1</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>.000</td>
 <td>0</td>
-<td>.500</td>
-<td>.500</td>
-</tr>
-<tr>
-<td>Michael Harris II (Atlanta Braves)</td>
-<td>3</td>
-<td>1</td>
-<td>0</td>
-<td>.333</td>
-<td>0</td>
-<td>.333</td>
-<td>.666</td>
+<td>1.000</td>
+<td>1.000</td>
 </tr>
 <tr>
 <td>Jarred Kelenic (Atlanta Braves)</td>
@@ -1393,16 +1363,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>.000</td>
 <td>.000</td>
-</tr>
-<tr>
-<td>Ronald Acuña Jr. (Atlanta Braves)</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>.000</td>
-<td>0</td>
-<td>1.000</td>
-<td>1.000</td>
 </tr>
 </table>
 <br>
