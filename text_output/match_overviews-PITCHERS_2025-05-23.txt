@@ -1,0 +1,207 @@
+<h1>Pitchers Overview</h1>
+<table border='1'>
+<tr>
+<th>NAME</th>
+<th>TEAM</th>
+<th>ERA</th>
+<th>SO9</th>
+</tr>
+<tr>
+<td>Cade Povich</td>
+<td>Baltimore Orioles</td>
+<td>5.07</td>
+<td>8.07</td>
+</tr>
+<tr>
+<td>Brayan Bello</td>
+<td>Boston Red Sox</td>
+<td>4.39</td>
+<td>8.02</td>
+</tr>
+<tr>
+<td>Lucas Giolito</td>
+<td>Boston Red Sox</td>
+<td>4.48</td>
+<td>9.52</td>
+</tr>
+<tr>
+<td>Matthew Boyd</td>
+<td>Chicago Cubs</td>
+<td>4.75</td>
+<td>8.85</td>
+</tr>
+<tr>
+<td>Hunter Greene</td>
+<td>Cincinnati Reds</td>
+<td>3.74</td>
+<td>11.33</td>
+</tr>
+<tr>
+<td>Freddy Peralta</td>
+<td>Milwaukee Brewers</td>
+<td>3.71</td>
+<td>11.18</td>
+</tr>
+<tr>
+<td>Paul Skenes</td>
+<td>Pittsburgh Pirates</td>
+<td>2.12</td>
+<td>10.67</td>
+</tr>
+<tr>
+<td>Landen Roupp</td>
+<td>San Francisco Giants</td>
+<td>3.83</td>
+<td>8.78</td>
+</tr>
+<tr>
+<td>MacKenzie Gore</td>
+<td>Washington Nationals</td>
+<td>4.13</td>
+<td>10.24</td>
+</tr>
+<tr>
+<td>Eric Lauer</td>
+<td>Toronto Blue Jays</td>
+<td>4.26</td>
+<td>8.59</td>
+</tr>
+<tr>
+<td>Drew Rasmussen</td>
+<td>Tampa Bay Rays</td>
+<td>2.95</td>
+<td>8.60</td>
+</tr>
+<tr>
+<td>Slade Cecconi</td>
+<td>Cleveland Guardians</td>
+<td>6.03</td>
+<td>7.60</td>
+</tr>
+<tr>
+<td>Jackson Jobe</td>
+<td>Detroit Tigers</td>
+<td>3.74</td>
+<td>7.06</td>
+</tr>
+<tr>
+<td>Clayton Kershaw</td>
+<td>Los Angeles Dodgers</td>
+<td>2.51</td>
+<td>9.73</td>
+</tr>
+<tr>
+<td>Griffin Canning</td>
+<td>New York Mets</td>
+<td>4.59</td>
+<td>8.57</td>
+</tr>
+<tr>
+<td>Nick Pivetta</td>
+<td>San Diego Padres</td>
+<td>4.67</td>
+<td>9.96</td>
+</tr>
+<tr>
+<td>Chris Sale</td>
+<td>Atlanta Braves</td>
+<td>3.05</td>
+<td>11.11</td>
+</tr>
+<tr>
+<td>Tyler Mahle</td>
+<td>Texas Rangers</td>
+<td>4.09</td>
+<td>9.30</td>
+</tr>
+<tr>
+<td>Sean Burke</td>
+<td>Chicago White Sox</td>
+<td>3.76</td>
+<td>7.39</td>
+</tr>
+<tr>
+<td>Emerson Hancock</td>
+<td>Seattle Mariners</td>
+<td>5.18</td>
+<td>5.94</td>
+</tr>
+<tr>
+<td>Ryan Gusto</td>
+<td>Houston Astros</td>
+<td>4.65</td>
+<td>9.29</td>
+</tr>
+<tr>
+<td>Noah Cameron</td>
+<td>Kansas City Royals</td>
+<td>0.71</td>
+<td>4.26</td>
+</tr>
+<tr>
+<td>Pablo López</td>
+<td>Minnesota Twins</td>
+<td>3.83</td>
+<td>9.34</td>
+</tr>
+<tr>
+<td>Zac Gallen</td>
+<td>Arizona Diamondbacks</td>
+<td>3.41</td>
+<td>9.75</td>
+</tr>
+<tr>
+<td>Miles Mikolas</td>
+<td>St. Louis Cardinals</td>
+<td>4.14</td>
+<td>6.48</td>
+</tr>
+<tr>
+<td>Clarke Schmidt</td>
+<td>New York Yankees</td>
+<td>3.99</td>
+<td>8.84</td>
+</tr>
+<tr>
+<td>Tanner Gordon</td>
+<td>Colorado Rockies</td>
+<td>8.19</td>
+<td>6.64</td>
+</tr>
+<tr>
+<td>Sandy Alcantara</td>
+<td>Miami Marlins</td>
+<td>3.52</td>
+<td>7.86</td>
+</tr>
+<tr>
+<td>Yusei Kikuchi</td>
+<td>Los Angeles Angels</td>
+<td>4.50</td>
+<td>9.24</td>
+</tr>
+<tr>
+<td>Zack Wheeler</td>
+<td>Philadelphia Phillies</td>
+<td>3.31</td>
+<td>9.34</td>
+</tr>
+</table>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
