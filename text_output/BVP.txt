@@ -13,13 +13,13 @@
 </tr>
 <tr>
 <td>Spencer Torkelson (Detroit Tigers)</td>
-<td>6</td>
-<td>3</td>
+<td>4</td>
+<td>2</td>
 <td>1</td>
 <td>.500</td>
 <td>2</td>
-<td>.571</td>
-<td>1.904</td>
+<td>.600</td>
+<td>2.100</td>
 </tr>
 <tr>
 <td>Riley Greene (Detroit Tigers)</td>
@@ -43,26 +43,16 @@
 </tr>
 <tr>
 <td>Javier Báez (Detroit Tigers)</td>
-<td>4</td>
 <td>2</td>
+<td>1</td>
 <td>0</td>
 <td>.500</td>
 <td>1</td>
-<td>.600</td>
-<td>1.350</td>
+<td>.667</td>
+<td>1.167</td>
 </tr>
 <tr>
 <td>Gleyber Torres (Detroit Tigers)</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>.000</td>
-<td>0</td>
-<td>.333</td>
-<td>.333</td>
-</tr>
-<tr>
-<td>Dillon Dingler (Detroit Tigers)</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -83,13 +73,13 @@
 </tr>
 <tr>
 <td>Andy Ibáñez (Detroit Tigers)</td>
+<td>7</td>
 <td>4</td>
-<td>3</td>
 <td>2</td>
-<td>.750</td>
-<td>4</td>
-<td>.750</td>
-<td>3.000</td>
+<td>.571</td>
+<td>5</td>
+<td>.571</td>
+<td>2.000</td>
 </tr>
 </table>
 <br>
@@ -355,6 +345,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
+<td>Ryan O'Hearn (Baltimore Orioles)</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>.500</td>
+<td>1</td>
+<td>.600</td>
+<td>1.350</td>
+</tr>
+<tr>
 <td>Gunnar Henderson (Baltimore Orioles)</td>
 <td>3</td>
 <td>0</td>
@@ -365,18 +365,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Ryan O'Hearn (Baltimore Orioles)</td>
-<td>3</td>
-<td>1</td>
-<td>0</td>
-<td>.333</td>
-<td>1</td>
-<td>.333</td>
-<td>1.000</td>
-</tr>
-<tr>
 <td>Jackson Holliday (Baltimore Orioles)</td>
-<td>2</td>
+<td>5</td>
 <td>0</td>
 <td>0</td>
 <td>.000</td>
@@ -456,8 +446,298 @@ document.addEventListener('DOMContentLoaded', function() {
 <th>OPS</th>
 </tr>
 <tr>
+<td>James Wood (Washington Nationals)</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td>.143</td>
+<td>1</td>
+<td>.143</td>
+<td>.429</td>
+</tr>
+<tr>
+<td>James Wood (Washington Nationals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>James Wood (Washington Nationals)</td>
+<td>14</td>
+<td>3</td>
+<td>0</td>
+<td>.214</td>
+<td>1</td>
+<td>.267</td>
+<td>.553</td>
+</tr>
+<tr>
+<td>James Wood (Washington Nationals)</td>
+<td>18</td>
+<td>6</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.368</td>
+<td>.924</td>
+</tr>
+<tr>
+<td>James Wood (Washington Nationals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>James Wood (Washington Nationals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>James Wood (Washington Nationals)</td>
+<td>18</td>
+<td>4</td>
+<td>0</td>
+<td>.222</td>
+<td>1</td>
+<td>.250</td>
+<td>.528</td>
+</tr>
+<tr>
+<td>James Wood (Washington Nationals)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>James Wood (Washington Nationals)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>.833</td>
+</tr>
+<tr>
+<td>James Wood (Washington Nationals)</td>
+<td>12</td>
+<td>3</td>
+<td>1</td>
+<td>.250</td>
+<td>3</td>
+<td>.438</td>
+<td>1.021</td>
+</tr>
+<tr>
+<td>James Wood (Washington Nationals)</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>James Wood (Washington Nationals)</td>
+<td>12</td>
+<td>2</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.167</td>
+<td>.417</td>
+</tr>
+<tr>
+<td>CJ Abrams (Washington Nationals)</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td>.143</td>
+<td>1</td>
+<td>.143</td>
+<td>.429</td>
+</tr>
+<tr>
+<td>CJ Abrams (Washington Nationals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>CJ Abrams (Washington Nationals)</td>
+<td>14</td>
+<td>3</td>
+<td>0</td>
+<td>.214</td>
+<td>1</td>
+<td>.267</td>
+<td>.553</td>
+</tr>
+<tr>
+<td>CJ Abrams (Washington Nationals)</td>
+<td>18</td>
+<td>6</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.368</td>
+<td>.924</td>
+</tr>
+<tr>
+<td>CJ Abrams (Washington Nationals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>CJ Abrams (Washington Nationals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>CJ Abrams (Washington Nationals)</td>
+<td>18</td>
+<td>4</td>
+<td>0</td>
+<td>.222</td>
+<td>1</td>
+<td>.250</td>
+<td>.528</td>
+</tr>
+<tr>
+<td>CJ Abrams (Washington Nationals)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>CJ Abrams (Washington Nationals)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>.833</td>
+</tr>
+<tr>
+<td>CJ Abrams (Washington Nationals)</td>
+<td>12</td>
+<td>3</td>
+<td>1</td>
+<td>.250</td>
+<td>3</td>
+<td>.438</td>
+<td>1.021</td>
+</tr>
+<tr>
 <td>CJ Abrams (Washington Nationals)</td>
 <td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>CJ Abrams (Washington Nationals)</td>
+<td>12</td>
+<td>2</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.167</td>
+<td>.417</td>
+</tr>
+<tr>
+<td>Nathaniel Lowe (Washington Nationals)</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td>.143</td>
+<td>1</td>
+<td>.143</td>
+<td>.429</td>
+</tr>
+<tr>
+<td>Nathaniel Lowe (Washington Nationals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Nathaniel Lowe (Washington Nationals)</td>
+<td>14</td>
+<td>3</td>
+<td>0</td>
+<td>.214</td>
+<td>1</td>
+<td>.267</td>
+<td>.553</td>
+</tr>
+<tr>
+<td>Nathaniel Lowe (Washington Nationals)</td>
+<td>18</td>
+<td>6</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.368</td>
+<td>.924</td>
+</tr>
+<tr>
+<td>Nathaniel Lowe (Washington Nationals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Nathaniel Lowe (Washington Nationals)</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>.000</td>
@@ -467,27 +747,357 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 <tr>
 <td>Nathaniel Lowe (Washington Nationals)</td>
-<td>13</td>
+<td>18</td>
+<td>4</td>
+<td>0</td>
+<td>.222</td>
+<td>1</td>
+<td>.250</td>
+<td>.528</td>
+</tr>
+<tr>
+<td>Nathaniel Lowe (Washington Nationals)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Nathaniel Lowe (Washington Nationals)</td>
+<td>6</td>
 <td>2</td>
 <td>0</td>
-<td>.154</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>.833</td>
+</tr>
+<tr>
+<td>Nathaniel Lowe (Washington Nationals)</td>
+<td>12</td>
+<td>3</td>
+<td>1</td>
+<td>.250</td>
+<td>3</td>
+<td>.438</td>
+<td>1.021</td>
+</tr>
+<tr>
+<td>Nathaniel Lowe (Washington Nationals)</td>
+<td>2</td>
+<td>1</td>
 <td>0</td>
-<td>.214</td>
-<td>.368</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Nathaniel Lowe (Washington Nationals)</td>
+<td>12</td>
+<td>2</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.167</td>
+<td>.417</td>
 </tr>
 <tr>
 <td>Josh Bell (Washington Nationals)</td>
 <td>7</td>
+<td>1</td>
+<td>0</td>
+<td>.143</td>
+<td>1</td>
+<td>.143</td>
+<td>.429</td>
+</tr>
+<tr>
+<td>Josh Bell (Washington Nationals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Josh Bell (Washington Nationals)</td>
+<td>14</td>
+<td>3</td>
+<td>0</td>
+<td>.214</td>
+<td>1</td>
+<td>.267</td>
+<td>.553</td>
+</tr>
+<tr>
+<td>Josh Bell (Washington Nationals)</td>
+<td>18</td>
+<td>6</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.368</td>
+<td>.924</td>
+</tr>
+<tr>
+<td>Josh Bell (Washington Nationals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Josh Bell (Washington Nationals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Josh Bell (Washington Nationals)</td>
+<td>18</td>
+<td>4</td>
+<td>0</td>
+<td>.222</td>
+<td>1</td>
+<td>.250</td>
+<td>.528</td>
+</tr>
+<tr>
+<td>Josh Bell (Washington Nationals)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Josh Bell (Washington Nationals)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>.833</td>
+</tr>
+<tr>
+<td>Josh Bell (Washington Nationals)</td>
+<td>12</td>
+<td>3</td>
+<td>1</td>
+<td>.250</td>
+<td>3</td>
+<td>.438</td>
+<td>1.021</td>
+</tr>
+<tr>
+<td>Josh Bell (Washington Nationals)</td>
 <td>2</td>
 <td>1</td>
-<td>.286</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Josh Bell (Washington Nationals)</td>
+<td>12</td>
+<td>2</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.167</td>
+<td>.417</td>
+</tr>
+<tr>
+<td>Riley Adams (Washington Nationals)</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td>.143</td>
+<td>1</td>
+<td>.143</td>
+<td>.429</td>
+</tr>
+<tr>
+<td>Riley Adams (Washington Nationals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Riley Adams (Washington Nationals)</td>
+<td>14</td>
 <td>3</td>
-<td>.545</td>
-<td>1.259</td>
+<td>0</td>
+<td>.214</td>
+<td>1</td>
+<td>.267</td>
+<td>.553</td>
+</tr>
+<tr>
+<td>Riley Adams (Washington Nationals)</td>
+<td>18</td>
+<td>6</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.368</td>
+<td>.924</td>
+</tr>
+<tr>
+<td>Riley Adams (Washington Nationals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Riley Adams (Washington Nationals)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Riley Adams (Washington Nationals)</td>
+<td>18</td>
+<td>4</td>
+<td>0</td>
+<td>.222</td>
+<td>1</td>
+<td>.250</td>
+<td>.528</td>
+</tr>
+<tr>
+<td>Riley Adams (Washington Nationals)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Riley Adams (Washington Nationals)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>.833</td>
+</tr>
+<tr>
+<td>Riley Adams (Washington Nationals)</td>
+<td>12</td>
+<td>3</td>
+<td>1</td>
+<td>.250</td>
+<td>3</td>
+<td>.438</td>
+<td>1.021</td>
 </tr>
 <tr>
 <td>Riley Adams (Washington Nationals)</td>
 <td>2</td>
+<td>1</td>
+<td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Riley Adams (Washington Nationals)</td>
+<td>12</td>
+<td>2</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.167</td>
+<td>.417</td>
+</tr>
+<tr>
+<td>Amed Rosario (Washington Nationals)</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td>.143</td>
+<td>1</td>
+<td>.143</td>
+<td>.429</td>
+</tr>
+<tr>
+<td>Amed Rosario (Washington Nationals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+<tr>
+<td>Amed Rosario (Washington Nationals)</td>
+<td>14</td>
+<td>3</td>
+<td>0</td>
+<td>.214</td>
+<td>1</td>
+<td>.267</td>
+<td>.553</td>
+</tr>
+<tr>
+<td>Amed Rosario (Washington Nationals)</td>
+<td>18</td>
+<td>6</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.368</td>
+<td>.924</td>
+</tr>
+<tr>
+<td>Amed Rosario (Washington Nationals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Amed Rosario (Washington Nationals)</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>.000</td>
@@ -497,13 +1107,63 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 <tr>
 <td>Amed Rosario (Washington Nationals)</td>
+<td>18</td>
+<td>4</td>
+<td>0</td>
+<td>.222</td>
+<td>1</td>
+<td>.250</td>
+<td>.528</td>
+</tr>
+<tr>
+<td>Amed Rosario (Washington Nationals)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Amed Rosario (Washington Nationals)</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>.833</td>
+</tr>
+<tr>
+<td>Amed Rosario (Washington Nationals)</td>
 <td>12</td>
-<td>5</td>
+<td>3</td>
+<td>1</td>
+<td>.250</td>
+<td>3</td>
+<td>.438</td>
+<td>1.021</td>
+</tr>
+<tr>
+<td>Amed Rosario (Washington Nationals)</td>
+<td>2</td>
+<td>1</td>
 <td>0</td>
+<td>.500</td>
+<td>0</td>
+<td>.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Amed Rosario (Washington Nationals)</td>
+<td>12</td>
+<td>2</td>
+<td>0</td>
+<td>.167</td>
+<td>0</td>
+<td>.167</td>
 <td>.417</td>
-<td>0</td>
-<td>.462</td>
-<td>1.129</td>
 </tr>
 </table>
 <br>
@@ -538,23 +1198,813 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 <tr>
 <td>Wilmer Flores (San Francisco Giants)</td>
+<td>7</td>
 <td>4</td>
+<td>0</td>
+<td>.571</td>
+<td>1</td>
+<td>.700</td>
+<td>1.557</td>
+</tr>
+<tr>
+<td>Wilmer Flores (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>1</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Wilmer Flores (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.500</td>
+<td>.833</td>
+</tr>
+<tr>
+<td>Wilmer Flores (San Francisco Giants)</td>
 <td>3</td>
 <td>0</td>
-<td>.750</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Wilmer Flores (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Wilmer Flores (San Francisco Giants)</td>
+<td>4</td>
 <td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Wilmer Flores (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>1.666</td>
+</tr>
+<tr>
+<td>Wilmer Flores (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Wilmer Flores (San Francisco Giants)</td>
+<td>9</td>
+<td>2</td>
+<td>1</td>
+<td>.222</td>
+<td>3</td>
+<td>.300</td>
+<td>.856</td>
+</tr>
+<tr>
+<td>Matt Chapman (San Francisco Giants)</td>
+<td>7</td>
+<td>4</td>
+<td>0</td>
+<td>.571</td>
+<td>1</td>
+<td>.700</td>
+<td>1.557</td>
+</tr>
+<tr>
+<td>Matt Chapman (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>1</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Matt Chapman (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.500</td>
 <td>.833</td>
-<td>1.833</td>
+</tr>
+<tr>
+<td>Matt Chapman (San Francisco Giants)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Matt Chapman (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Matt Chapman (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Matt Chapman (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>1.666</td>
+</tr>
+<tr>
+<td>Matt Chapman (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Matt Chapman (San Francisco Giants)</td>
+<td>9</td>
+<td>2</td>
+<td>1</td>
+<td>.222</td>
+<td>3</td>
+<td>.300</td>
+<td>.856</td>
+</tr>
+<tr>
+<td>Heliot Ramos (San Francisco Giants)</td>
+<td>7</td>
+<td>4</td>
+<td>0</td>
+<td>.571</td>
+<td>1</td>
+<td>.700</td>
+<td>1.557</td>
+</tr>
+<tr>
+<td>Heliot Ramos (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>1</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Heliot Ramos (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.500</td>
+<td>.833</td>
+</tr>
+<tr>
+<td>Heliot Ramos (San Francisco Giants)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Heliot Ramos (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Heliot Ramos (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Heliot Ramos (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>1.666</td>
+</tr>
+<tr>
+<td>Heliot Ramos (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Heliot Ramos (San Francisco Giants)</td>
+<td>9</td>
+<td>2</td>
+<td>1</td>
+<td>.222</td>
+<td>3</td>
+<td>.300</td>
+<td>.856</td>
+</tr>
+<tr>
+<td>Jung Hoo Lee (San Francisco Giants)</td>
+<td>7</td>
+<td>4</td>
+<td>0</td>
+<td>.571</td>
+<td>1</td>
+<td>.700</td>
+<td>1.557</td>
+</tr>
+<tr>
+<td>Jung Hoo Lee (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>1</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jung Hoo Lee (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.500</td>
+<td>.833</td>
+</tr>
+<tr>
+<td>Jung Hoo Lee (San Francisco Giants)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Jung Hoo Lee (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Jung Hoo Lee (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Jung Hoo Lee (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>1.666</td>
+</tr>
+<tr>
+<td>Jung Hoo Lee (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Jung Hoo Lee (San Francisco Giants)</td>
+<td>9</td>
+<td>2</td>
+<td>1</td>
+<td>.222</td>
+<td>3</td>
+<td>.300</td>
+<td>.856</td>
 </tr>
 <tr>
 <td>Willy Adames (San Francisco Giants)</td>
-<td>5</td>
+<td>7</td>
+<td>4</td>
+<td>0</td>
+<td>.571</td>
+<td>1</td>
+<td>.700</td>
+<td>1.557</td>
+</tr>
+<tr>
+<td>Willy Adames (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>1</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Willy Adames (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.500</td>
+<td>.833</td>
+</tr>
+<tr>
+<td>Willy Adames (San Francisco Giants)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Willy Adames (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Willy Adames (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Willy Adames (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>1.666</td>
+</tr>
+<tr>
+<td>Willy Adames (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Willy Adames (San Francisco Giants)</td>
+<td>9</td>
 <td>2</td>
 <td>1</td>
-<td>.400</td>
-<td>2</td>
+<td>.222</td>
+<td>3</td>
+<td>.300</td>
+<td>.856</td>
+</tr>
+<tr>
+<td>Mike Yastrzemski (San Francisco Giants)</td>
+<td>7</td>
+<td>4</td>
+<td>0</td>
+<td>.571</td>
+<td>1</td>
+<td>.700</td>
+<td>1.557</td>
+</tr>
+<tr>
+<td>Mike Yastrzemski (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>1</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Mike Yastrzemski (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
 <td>.500</td>
-<td>1.500</td>
+<td>.833</td>
+</tr>
+<tr>
+<td>Mike Yastrzemski (San Francisco Giants)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Mike Yastrzemski (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Mike Yastrzemski (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Mike Yastrzemski (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>1.666</td>
+</tr>
+<tr>
+<td>Mike Yastrzemski (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Mike Yastrzemski (San Francisco Giants)</td>
+<td>9</td>
+<td>2</td>
+<td>1</td>
+<td>.222</td>
+<td>3</td>
+<td>.300</td>
+<td>.856</td>
+</tr>
+<tr>
+<td>Tyler Fitzgerald (San Francisco Giants)</td>
+<td>7</td>
+<td>4</td>
+<td>0</td>
+<td>.571</td>
+<td>1</td>
+<td>.700</td>
+<td>1.557</td>
+</tr>
+<tr>
+<td>Tyler Fitzgerald (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>1</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Tyler Fitzgerald (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.500</td>
+<td>.833</td>
+</tr>
+<tr>
+<td>Tyler Fitzgerald (San Francisco Giants)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Tyler Fitzgerald (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Tyler Fitzgerald (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Tyler Fitzgerald (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>1.666</td>
+</tr>
+<tr>
+<td>Tyler Fitzgerald (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Tyler Fitzgerald (San Francisco Giants)</td>
+<td>9</td>
+<td>2</td>
+<td>1</td>
+<td>.222</td>
+<td>3</td>
+<td>.300</td>
+<td>.856</td>
+</tr>
+<tr>
+<td>Sam Huff (San Francisco Giants)</td>
+<td>7</td>
+<td>4</td>
+<td>0</td>
+<td>.571</td>
+<td>1</td>
+<td>.700</td>
+<td>1.557</td>
+</tr>
+<tr>
+<td>Sam Huff (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>1</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Sam Huff (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.500</td>
+<td>.833</td>
+</tr>
+<tr>
+<td>Sam Huff (San Francisco Giants)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>Sam Huff (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Sam Huff (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Sam Huff (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>1.666</td>
+</tr>
+<tr>
+<td>Sam Huff (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>Sam Huff (San Francisco Giants)</td>
+<td>9</td>
+<td>2</td>
+<td>1</td>
+<td>.222</td>
+<td>3</td>
+<td>.300</td>
+<td>.856</td>
+</tr>
+<tr>
+<td>LaMonte Wade Jr. (San Francisco Giants)</td>
+<td>7</td>
+<td>4</td>
+<td>0</td>
+<td>.571</td>
+<td>1</td>
+<td>.700</td>
+<td>1.557</td>
+</tr>
+<tr>
+<td>LaMonte Wade Jr. (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>1</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>LaMonte Wade Jr. (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.500</td>
+<td>.833</td>
+</tr>
+<tr>
+<td>LaMonte Wade Jr. (San Francisco Giants)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.250</td>
+<td>.250</td>
+</tr>
+<tr>
+<td>LaMonte Wade Jr. (San Francisco Giants)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>LaMonte Wade Jr. (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>LaMonte Wade Jr. (San Francisco Giants)</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>.333</td>
+<td>1</td>
+<td>.333</td>
+<td>1.666</td>
+</tr>
+<tr>
+<td>LaMonte Wade Jr. (San Francisco Giants)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.250</td>
+<td>.500</td>
+</tr>
+<tr>
+<td>LaMonte Wade Jr. (San Francisco Giants)</td>
+<td>9</td>
+<td>2</td>
+<td>1</td>
+<td>.222</td>
+<td>3</td>
+<td>.300</td>
+<td>.856</td>
 </tr>
 </table>
 <br>
@@ -829,6 +2279,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.438</td>
 <td>1.152</td>
 </tr>
+<tr>
+<td>Reese McGuire (Chicago Cubs)</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>.500</td>
+<td>1</td>
+<td>.500</td>
+<td>2.500</td>
+</tr>
 </table>
 <br>
 
@@ -861,16 +2321,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <th>OPS</th>
 </tr>
 <tr>
-<td>Junior Caminero (Tampa Bay Rays)</td>
-<td>3</td>
-<td>1</td>
-<td>0</td>
-<td>.333</td>
-<td>0</td>
-<td>.333</td>
-<td>.666</td>
-</tr>
-<tr>
 <td>Brandon Lowe (Tampa Bay Rays)</td>
 <td>14</td>
 <td>7</td>
@@ -879,6 +2329,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>7</td>
 <td>.563</td>
 <td>1.849</td>
+</tr>
+<tr>
+<td>Junior Caminero (Tampa Bay Rays)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>0</td>
+<td>.333</td>
+<td>.666</td>
 </tr>
 <tr>
 <td>Yandy Díaz (Tampa Bay Rays)</td>
@@ -921,6 +2381,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
+<td>Curtis Mead (Tampa Bay Rays)</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>.667</td>
+<td>1</td>
+<td>.667</td>
+<td>2.334</td>
+</tr>
+<tr>
 <td>Christopher Morel (Tampa Bay Rays)</td>
 <td>6</td>
 <td>0</td>
@@ -939,16 +2409,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>.083</td>
 <td>.166</td>
-</tr>
-<tr>
-<td>Curtis Mead (Tampa Bay Rays)</td>
-<td>3</td>
-<td>2</td>
-<td>1</td>
-<td>.667</td>
-<td>1</td>
-<td>.667</td>
-<td>2.334</td>
 </tr>
 <tr>
 <td>José Caballero (Tampa Bay Rays)</td>
@@ -1023,13 +2483,13 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 <tr>
 <td>Anthony Santander (Toronto Blue Jays)</td>
-<td>9</td>
+<td>12</td>
 <td>2</td>
 <td>0</td>
-<td>.222</td>
+<td>.167</td>
 <td>0</td>
-<td>.222</td>
-<td>.444</td>
+<td>.167</td>
+<td>.334</td>
 </tr>
 <tr>
 <td>George Springer (Toronto Blue Jays)</td>
@@ -1043,7 +2503,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 <tr>
 <td>Bo Bichette (Toronto Blue Jays)</td>
-<td>3</td>
+<td>6</td>
 <td>0</td>
 <td>0</td>
 <td>.000</td>
@@ -1073,7 +2533,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 <tr>
 <td>Addison Barger (Toronto Blue Jays)</td>
-<td>3</td>
+<td>6</td>
 <td>0</td>
 <td>0</td>
 <td>.000</td>
@@ -1251,6 +2711,77 @@ document.addEventListener('DOMContentLoaded', function() {
     })));
 });
 </script>
+<h3>Home Pitcher: Colton Gordon Houston Astros</h3>
+<table border='1'>
+<tr>
+<th>Batter</th>
+<th>AB</th>
+<th>H</th>
+<th>HR</th>
+<th>AVG</th>
+<th>RBI</th>
+<th>OBP</th>
+<th>OPS</th>
+</tr>
+<tr>
+<td>Cal Raleigh (Seattle Mariners)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Dylan Moore (Seattle Mariners)</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
+</tr>
+<tr>
+<td>Randy Arozarena (Seattle Mariners)</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1.000</td>
+<td>0</td>
+<td>1.000</td>
+<td>2.000</td>
+</tr>
+<tr>
+<td>Mitch Garver (Seattle Mariners)</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>.333</td>
+<td>2</td>
+<td>.333</td>
+<td>1.000</td>
+</tr>
+</table>
+<br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
 <h3>Away Pitcher: Kris Bubic Kansas City Royals</h3>
 <table border='1'>
 <tr>
@@ -1285,13 +2816,13 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 <tr>
 <td>Harrison Bader (Minnesota Twins)</td>
-<td>2</td>
+<td>5</td>
 <td>0</td>
 <td>0</td>
 <td>.000</td>
 <td>0</td>
-<td>.500</td>
-<td>.500</td>
+<td>.286</td>
+<td>.286</td>
 </tr>
 <tr>
 <td>Kody Clemens (Minnesota Twins)</td>
@@ -1305,17 +2836,17 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 <tr>
 <td>Ty France (Minnesota Twins)</td>
-<td>11</td>
-<td>8</td>
+<td>14</td>
+<td>9</td>
 <td>0</td>
-<td>.727</td>
-<td>2</td>
-<td>.750</td>
-<td>1.750</td>
+<td>.643</td>
+<td>3</td>
+<td>.667</td>
+<td>1.524</td>
 </tr>
 <tr>
 <td>Brooks Lee (Minnesota Twins)</td>
-<td>1</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>.000</td>
@@ -1325,13 +2856,13 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 <tr>
 <td>Carlos Correa (Minnesota Twins)</td>
-<td>4</td>
+<td>7</td>
 <td>3</td>
 <td>1</td>
-<td>.750</td>
+<td>.429</td>
 <td>3</td>
-<td>.833</td>
-<td>2.583</td>
+<td>.556</td>
+<td>1.556</td>
 </tr>
 <tr>
 <td>Ryan Jeffers (Minnesota Twins)</td>
@@ -1345,13 +2876,13 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 <tr>
 <td>Willi Castro (Minnesota Twins)</td>
-<td>15</td>
+<td>17</td>
 <td>4</td>
 <td>2</td>
-<td>.267</td>
+<td>.235</td>
 <td>3</td>
-<td>.267</td>
-<td>.934</td>
+<td>.235</td>
+<td>.823</td>
 </tr>
 </table>
 <br>
@@ -1576,6 +3107,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.833</td>
 </tr>
 <tr>
+<td>Austin Slater (Chicago White Sox)</td>
+<td>18</td>
+<td>7</td>
+<td>1</td>
+<td>.389</td>
+<td>7</td>
+<td>.389</td>
+<td>1.000</td>
+</tr>
+<tr>
 <td>Michael A. Taylor (Chicago White Sox)</td>
 <td>10</td>
 <td>4</td>
@@ -1708,6 +3249,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.533</td>
 </tr>
 <tr>
+<td>Masyn Winn (St. Louis Cardinals)</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>.250</td>
+<td>0</td>
+<td>.400</td>
+<td>.650</td>
+</tr>
+<tr>
 <td>Nolan Arenado (St. Louis Cardinals)</td>
 <td>5</td>
 <td>2</td>
@@ -1726,16 +3277,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>.000</td>
 <td>.000</td>
-</tr>
-<tr>
-<td>Masyn Winn (St. Louis Cardinals)</td>
-<td>4</td>
-<td>1</td>
-<td>0</td>
-<td>.250</td>
-<td>0</td>
-<td>.400</td>
-<td>.650</td>
 </tr>
 <tr>
 <td>Alec Burleson (St. Louis Cardinals)</td>
@@ -1810,43 +3351,53 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 <tr>
 <td>Eugenio Suárez (Arizona Diamondbacks)</td>
-<td>8</td>
+<td>10</td>
+<td>4</td>
+<td>0</td>
+<td>.400</td>
 <td>2</td>
-<td>0</td>
-<td>.250</td>
-<td>0</td>
-<td>.250</td>
-<td>.500</td>
+<td>.400</td>
+<td>.800</td>
 </tr>
 <tr>
 <td>Lourdes Gurriel Jr. (Arizona Diamondbacks)</td>
-<td>3</td>
-<td>1</td>
+<td>5</td>
+<td>2</td>
 <td>0</td>
-<td>.333</td>
+<td>.400</td>
 <td>2</td>
 <td>.500</td>
-<td>.833</td>
+<td>.900</td>
 </tr>
 <tr>
 <td>Ketel Marte (Arizona Diamondbacks)</td>
-<td>3</td>
-<td>1</td>
+<td>5</td>
+<td>2</td>
 <td>0</td>
-<td>.333</td>
+<td>.400</td>
 <td>0</td>
-<td>.333</td>
-<td>.666</td>
+<td>.400</td>
+<td>.800</td>
+</tr>
+<tr>
+<td>Geraldo Perdomo (Arizona Diamondbacks)</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>.000</td>
+<td>0</td>
+<td>.000</td>
+<td>.000</td>
 </tr>
 <tr>
 <td>Josh Naylor (Arizona Diamondbacks)</td>
-<td>19</td>
-<td>6</td>
+<td>21</td>
+<td>7</td>
 <td>2</td>
-<td>.316</td>
+<td>.333</td>
 <td>5</td>
-<td>.350</td>
-<td>.982</td>
+<td>.364</td>
+<td>1.031</td>
 </tr>
 <tr>
 <td>Randal Grichuk (Arizona Diamondbacks)</td>
@@ -2012,13 +3563,13 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 <tr>
 <td>Paul Goldschmidt (New York Yankees)</td>
-<td>21</td>
-<td>8</td>
-<td>2</td>
-<td>.381</td>
+<td>22</td>
 <td>9</td>
-<td>.458</td>
-<td>1.220</td>
+<td>2</td>
+<td>.409</td>
+<td>9</td>
+<td>.480</td>
+<td>1.253</td>
 </tr>
 </table>
 <br>
