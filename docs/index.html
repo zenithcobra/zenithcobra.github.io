@@ -3936,14 +3936,23 @@ document.addEventListener('DOMContentLoaded', function() {
 </pre></div><div id="checked-section"><h2>Checked</h2><table border="1" id="checked-table"></table></div><script>
 function handleCheckboxClick(checkbox) {
     const row = checkbox.closest('tr');
+    const table = checkbox.closest('table');
+    const tableId = table.id;
+    const rowIndex = Array.from(table.querySelectorAll('tr')).indexOf(row);
     const checkedTable = document.getElementById('checked-table');
 
     if (checkbox.checked) {
+        // Save the checkbox state in localStorage
+        localStorage.setItem(`${tableId}_row_${rowIndex}`, '1');
+
         // Clone the row and add it to the "Checked" table
         const clonedRow = row.cloneNode(true);
         clonedRow.querySelector('input[type="checkbox"]').remove(); // Remove the checkbox from the cloned row
         checkedTable.appendChild(clonedRow);
     } else {
+        // Remove the checkbox state from localStorage
+        localStorage.removeItem(`${tableId}_row_${rowIndex}`);
+
         // Remove the row from the "Checked" table if it exists
         const rows = checkedTable.querySelectorAll('tr');
         rows.forEach(checkedRow => {
@@ -3955,9 +3964,9 @@ function handleCheckboxClick(checkbox) {
 }
 
 function loadCheckboxStates() {
-    const cookies = document.cookie.split('; ');
-    cookies.forEach(cookie => {
-        const [key, value] = cookie.split('=');
+    // Iterate through all keys in localStorage
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
         if (key.includes('_row_')) {
             const [tableId, _, rowIndex] = key.split('_');
             const table = document.getElementById(tableId);
@@ -3966,7 +3975,7 @@ function loadCheckboxStates() {
                 if (row) {
                     const checkbox = row.querySelector('input[type="checkbox"]');
                     if (checkbox) {
-                        checkbox.checked = value === '1';
+                        checkbox.checked = localStorage.getItem(key) === '1';
                         if (checkbox.checked) {
                             const checkedTable = document.getElementById('checked-table');
                             const clonedRow = row.cloneNode(true);
@@ -3977,7 +3986,7 @@ function loadCheckboxStates() {
                 }
             }
         }
-    });
+    }
 }
 
 window.onload = loadCheckboxStates;
