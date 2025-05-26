@@ -120,7 +120,7 @@ with open(bvp_file_path, "w") as file:
         file.write(sortable_script)
 
     # Write the closing HTML tags
-    file.write("</body>\n</html>\n")
+    # file.write("</body>\n</html>\n")
 
 print(f"New BVP file saved to {bvp_file_path}")
 if os.path.exists(backup_file_path):
