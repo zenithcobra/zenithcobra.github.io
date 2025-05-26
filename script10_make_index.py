@@ -241,15 +241,27 @@ for table_index, table in enumerate(tables):
         checkbox_cell.append(checkbox)
         row.insert(0, checkbox_cell)
 
+# # Add a "Checked" section at the bottom of the page
+# checked_section = soup.new_tag("div", id="checked-section")
+# checked_heading = soup.new_tag("h2")
+# checked_heading.string = "Checked"
+# checked_section.append(checked_heading)
+# checked_table = soup.new_tag("table", id="checked-table", border="1")
+# checked_section.append(checked_table)
+# soup.body.append(checked_section)
 # Add a "Checked" section at the bottom of the page
 checked_section = soup.new_tag("div", id="checked-section")
 checked_heading = soup.new_tag("h2")
 checked_heading.string = "Checked"
 checked_section.append(checked_heading)
-checked_table = soup.new_tag("table", id="checked-table", border="1")
-checked_section.append(checked_table)
-soup.body.append(checked_section)
 
+# Create a <pre> tag to wrap the table
+pre_tag = soup.new_tag("pre")
+checked_table = soup.new_tag("table", id="checked-table", border="1")
+pre_tag.append(checked_table)  # Add the table inside the <pre> tag
+checked_section.append(pre_tag)  # Add the <pre> tag to the section
+
+soup.body.append(checked_section)
 # # Add JavaScript to handle copying rows to the "Checked" section
 # script = soup.new_tag("script")
 # script.string = """
