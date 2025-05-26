@@ -1,12 +1,12 @@
 <h1>Batters Overview</h1>
-<table border='1'>
+<table border="1">
 <tr>
 <th>NAME</th>
 <th>TEAM</th>
 <th>HRs</th>
 </tr>
 <tr>
-<td>Wilmer Flores</td>
+<td>Wilmer Flores (DH)</td>
 <td>San Francisco Giants</td>
 <td>10</td>
 </tr>
@@ -86,7 +86,7 @@
 <td>6</td>
 </tr>
 <tr>
-<td>Gleyber Torres</td>
+<td>Gleyber Torres (DH)</td>
 <td>Detroit Tigers</td>
 <td>5</td>
 </tr>
@@ -121,7 +121,7 @@
 <td>12</td>
 </tr>
 <tr>
-<td>Rafael Devers</td>
+<td>Rafael Devers (DH)</td>
 <td>Boston Red Sox</td>
 <td>12</td>
 </tr>
@@ -281,7 +281,7 @@
 <td>1</td>
 </tr>
 <tr>
-<td>Nick Martini</td>
+<td>Nick Martini (DH)</td>
 <td>Colorado Rockies</td>
 <td>1</td>
 </tr>
@@ -296,7 +296,7 @@
 <td>14</td>
 </tr>
 <tr>
-<td>Seiya Suzuki</td>
+<td>Seiya Suzuki (DH)</td>
 <td>Chicago Cubs</td>
 <td>14</td>
 </tr>
@@ -1346,8 +1346,6 @@
 <td>3</td>
 </tr>
 </table>
-
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
