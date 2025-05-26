@@ -119,6 +119,33 @@ for y in todays_matches:
     # print("\n")
     
 
+# save batters list to a csv file
+import csv
+import os
+
+# Ensure the "text_output" folder exists
+os.makedirs("text_output", exist_ok=True)
+
+# File path for the CSV file
+csv_file_path = "text_output/batters_today.csv"
+
+# Save the batters list to a CSV file
+with open(csv_file_path, mode="w", newline="", encoding="utf-8") as file:
+    # Define the CSV field names (keys from the batter dictionaries)
+    fieldnames = ["type", "name", "team", "HR"]
+    
+    # Create a CSV writer object
+    writer = csv.DictWriter(file, fieldnames=fieldnames)
+    
+    # Write the header row
+    writer.writeheader()
+    
+    # Write the rows for each batter
+    writer.writerows(batters)
+
+print(f"Batters saved to {csv_file_path}")
+
+
 
 # for x in pitchers:
 #     print(x)
