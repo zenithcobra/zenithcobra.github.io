@@ -262,7 +262,7 @@ pre_tag.append(checked_table)  # Add the table inside the <pre> tag
 checked_section.append(pre_tag)  # Add the <pre> tag to the section
 
 soup.body.append(checked_section)
-para_tag = soup.new_tag("p")
+para_tag = soup.new_tag("pre")
 para_tag.string = "\n\n\n\n\n\n\n\n"
 soup.body.append(para_tag)
 # Locate the "Streaks" section in the HTML
