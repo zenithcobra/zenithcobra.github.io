@@ -122,7 +122,7 @@ html_content = f"""
         <h2 id="bvp-stats">Batter vs Pitcher Stats</h2>
         <pre>{bvp_content}</pre>
         <h2 id="streaks">Streaks</h2>
-        {streaks_content}
+        <pre>{streaks_content}</pre>
     </div>
 </body>
 </html>
