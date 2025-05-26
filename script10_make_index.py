@@ -138,6 +138,79 @@ print(f"HTML file saved to {output_html_path}")
 # PArt 2: Add checkboxes to the tables in index2.html
 # --------------------------------------------------------
 
+# from bs4 import BeautifulSoup
+
+# # Read the input HTML file
+# with open("docs/index2.html", "r", encoding="utf-8") as file:
+#     soup = BeautifulSoup(file, "html.parser")
+
+# # Find all tables in the HTML
+# tables = soup.find_all("table")
+
+# # Add a checkbox column and unique IDs to each table
+# for table_index, table in enumerate(tables):
+#     # Add a unique ID to the table
+#     table['id'] = f"table_{table_index}"
+
+#     # Add a header for the checkbox column
+#     header_row = table.find("tr")
+#     if header_row:
+#         checkbox_header = soup.new_tag("th")
+#         checkbox_header.string = "Select"
+#         header_row.insert(0, checkbox_header)
+
+#     # Add a checkbox to each row
+#     rows = table.find_all("tr")[1:]  # Skip the header row
+#     for row_index, row in enumerate(rows):
+#         checkbox_cell = soup.new_tag("td")
+#         checkbox = soup.new_tag("input", type="checkbox", onclick="saveCheckboxState(this)")
+#         checkbox_cell.append(checkbox)
+#         row.insert(0, checkbox_cell)
+
+# # Add JavaScript to handle saving checkbox states in cookies
+# script = soup.new_tag("script")
+# script.string = """
+# function saveCheckboxState(checkbox) {
+#     const table = checkbox.closest('table');
+#     const tableId = table.id;
+#     const rowIndex = Array.from(checkbox.closest('tr').parentNode.children).indexOf(checkbox.closest('tr'));
+#     const checkboxState = checkbox.checked ? '1' : '0';
+
+#     // Set cookie with 1-day expiration
+#     const expirationDate = new Date();
+#     expirationDate.setDate(expirationDate.getDate() + 1); // 1 day from now
+#     document.cookie = `${tableId}_row_${rowIndex}=${checkboxState}; path=/; expires=${expirationDate.toUTCString()}`;
+# }
+
+# function loadCheckboxStates() {
+#     const cookies = document.cookie.split('; ');
+#     cookies.forEach(cookie => {
+#         const [key, value] = cookie.split('=');
+#         if (key.includes('_row_')) {
+#             const [tableId, _, rowIndex] = key.split('_');
+#             const table = document.getElementById(tableId);
+#             if (table) {
+#                 const row = table.querySelectorAll('tr')[rowIndex];
+#                 if (row) {
+#                     const checkbox = row.querySelector('input[type="checkbox"]');
+#                     if (checkbox) {
+#                         checkbox.checked = value === '1';
+#                     }
+#                 }
+#             }
+#         }
+#     });
+# }
+
+# window.onload = loadCheckboxStates;
+# """
+# soup.body.append(script)
+
+# # Write the modified HTML to a new file
+# with open("docs/index.html", "w", encoding="utf-8") as file:
+#     file.write(str(soup))
+
+
 from bs4 import BeautifulSoup
 
 # Read the input HTML file
@@ -163,23 +236,41 @@ for table_index, table in enumerate(tables):
     rows = table.find_all("tr")[1:]  # Skip the header row
     for row_index, row in enumerate(rows):
         checkbox_cell = soup.new_tag("td")
-        checkbox = soup.new_tag("input", type="checkbox", onclick="saveCheckboxState(this)")
+        checkbox = soup.new_tag("input", type="checkbox", onclick="handleCheckboxClick(this)")
         checkbox_cell.append(checkbox)
         row.insert(0, checkbox_cell)
 
-# Add JavaScript to handle saving checkbox states in cookies
+# Add a "Checked" section at the bottom of the page
+checked_section = soup.new_tag("div", id="checked-section")
+checked_heading = soup.new_tag("h2")
+checked_heading.string = "Checked"
+checked_section.append(checked_heading)
+checked_table = soup.new_tag("table", id="checked-table", border="1")
+checked_section.append(checked_table)
+soup.body.append(checked_section)
+
+# Add JavaScript to handle copying rows to the "Checked" section
 script = soup.new_tag("script")
 script.string = """
-function saveCheckboxState(checkbox) {
+function handleCheckboxClick(checkbox) {
+    const row = checkbox.closest('tr');
     const table = checkbox.closest('table');
-    const tableId = table.id;
-    const rowIndex = Array.from(checkbox.closest('tr').parentNode.children).indexOf(checkbox.closest('tr'));
-    const checkboxState = checkbox.checked ? '1' : '0';
+    const checkedTable = document.getElementById('checked-table');
 
-    // Set cookie with 1-day expiration
-    const expirationDate = new Date();
-    expirationDate.setDate(expirationDate.getDate() + 1); // 1 day from now
-    document.cookie = `${tableId}_row_${rowIndex}=${checkboxState}; path=/; expires=${expirationDate.toUTCString()}`;
+    if (checkbox.checked) {
+        // Clone the row and add it to the "Checked" table
+        const clonedRow = row.cloneNode(true);
+        clonedRow.querySelector('input[type="checkbox"]').remove(); // Remove the checkbox from the cloned row
+        checkedTable.appendChild(clonedRow);
+    } else {
+        // Remove the row from the "Checked" table if it exists
+        const rows = checkedTable.querySelectorAll('tr');
+        rows.forEach(checkedRow => {
+            if (checkedRow.isEqualNode(row.cloneNode(true))) {
+                checkedRow.remove();
+            }
+        });
+    }
 }
 
 function loadCheckboxStates() {
@@ -195,6 +286,12 @@ function loadCheckboxStates() {
                     const checkbox = row.querySelector('input[type="checkbox"]');
                     if (checkbox) {
                         checkbox.checked = value === '1';
+                        if (checkbox.checked) {
+                            const checkedTable = document.getElementById('checked-table');
+                            const clonedRow = row.cloneNode(true);
+                            clonedRow.querySelector('input[type="checkbox"]').remove();
+                            checkedTable.appendChild(clonedRow);
+                        }
                     }
                 }
             }
