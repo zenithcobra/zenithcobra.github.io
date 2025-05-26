@@ -14,6 +14,7 @@ match_overview_pitchers_path = "text_output/match_overviews-PITCHERS.txt"
 match_overview_batters_path = "text_output/match_overviews-BATTERS.txt"
 bvp_path = "text_output/BVP.txt"
 streaks_path = "text_output/streaks.txt"
+
 output_html_path = "docs/index2.html"
 
 # Read the contents of the text files
@@ -133,6 +134,9 @@ with open(output_html_path, "w") as output_file:
 
 print(f"HTML file saved to {output_html_path}")
 
+# --------------------------------------------------------
+# PArt 2: Add checkboxes to the tables in index2.html
+# --------------------------------------------------------
 
 from bs4 import BeautifulSoup
 
