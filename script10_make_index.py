@@ -94,6 +94,7 @@ html_content = f"""
         <a href="#match-overviews-batters">Batters</a>
         <a href="#bvp-stats">BvP</a>
         <a href="#streaks">Streaks</a>
+        <a href="#checked-section">Checked</a>
     </div>
     <div class="content">
         <h1 id="useful-links">Useful Links</h1>
@@ -123,6 +124,8 @@ html_content = f"""
         <pre>{bvp_content}</pre>
         <h2 id="streaks">Streaks</h2>
         <pre>{streaks_content}</pre>
+        <h2 id="checked-section">Checked</h2>
+        <table id="checked-table" border="1"></table>
     </div>
 </body>
 </html>
@@ -240,14 +243,7 @@ for table_index, table in enumerate(tables):
         checkbox_cell.append(checkbox)
         row.insert(0, checkbox_cell)
 
-# Add a "Checked" section at the bottom of the page
-checked_section = soup.new_tag("div", id="checked-section")
-checked_heading = soup.new_tag("h2")
-checked_heading.string = "Checked"
-checked_section.append(checked_heading)
-checked_table = soup.new_tag("table", id="checked-table", border="1")
-checked_section.append(checked_table)
-soup.body.append(checked_section)
+
 
 # Add JavaScript to handle copying rows to the "Checked" section
 script = soup.new_tag("script")
