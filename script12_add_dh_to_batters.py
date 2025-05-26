@@ -67,7 +67,7 @@ table_cells = soup.find_all("td")
 # Modify names in the table if they appear in the all_names list
 for cell in table_cells:
     if cell.text.strip() in all_names:  # Check if the name is in the all_names list
-        cell.string = f"{cell.text.strip()} (DH)"  # Append "(DH)" to the name
+        cell.string = f"(DH) {cell.text.strip()}"  # Append "(DH)" to the name
 
 # Save the modified HTML back to the file
 with open(file_path, "w", encoding="utf-8") as file:
