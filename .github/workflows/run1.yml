@@ -33,6 +33,7 @@ jobs:
           python script7_teams_today_list.py
           python script8_process_bvp.py
           python script9_process_streaks.py
+          python script12_add_dh_to_batters.py
           python script10_make_index.py
 
       - name: Commit and push changes

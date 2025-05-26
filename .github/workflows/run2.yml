@@ -2,7 +2,7 @@ name: Run2 - todays_schedule make_index
 
 on:
   schedule:
-    - cron: "0 17-23 * * *"  # Runs every hour from 5 PM to 11 PM UTC
+    - cron: "*/30 12-23 * * *"  # Runs every 30 minutes from 2 PM to 11 PM UTC#
 
 jobs:
   run-script:
@@ -25,6 +25,7 @@ jobs:
       - name: Run the Python script
         run: |
           python script4_todays_schedule.py
+          python script12_add_dh_to_batters.py
           python script10_make_index.py
 
       - name: Commit and push changes
