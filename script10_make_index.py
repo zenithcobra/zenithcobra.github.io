@@ -124,8 +124,7 @@ html_content = f"""
         <pre>{bvp_content}</pre>
         <h2 id="streaks">Streaks</h2>
         <pre>{streaks_content}</pre>
-        <h2 id="checked-section">Checked</h2>
-        <table id="checked-table" border="1"></table>
+
     </div>
 </body>
 </html>
@@ -213,7 +212,6 @@ print(f"HTML file saved to {output_html_path}")
 # with open("docs/index.html", "w", encoding="utf-8") as file:
 #     file.write(str(soup))
 
-
 from bs4 import BeautifulSoup
 
 # Read the input HTML file
@@ -243,14 +241,20 @@ for table_index, table in enumerate(tables):
         checkbox_cell.append(checkbox)
         row.insert(0, checkbox_cell)
 
-
+# Add a "Checked" section at the bottom of the page
+checked_section = soup.new_tag("div", id="checked-section")
+checked_heading = soup.new_tag("h2")
+checked_heading.string = "Checked"
+checked_section.append(checked_heading)
+checked_table = soup.new_tag("table", id="checked-table", border="1")
+checked_section.append(checked_table)
+soup.body.append(checked_section)
 
 # Add JavaScript to handle copying rows to the "Checked" section
 script = soup.new_tag("script")
 script.string = """
 function handleCheckboxClick(checkbox) {
     const row = checkbox.closest('tr');
-    const table = checkbox.closest('table');
     const checkedTable = document.getElementById('checked-table');
 
     if (checkbox.checked) {
