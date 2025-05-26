@@ -261,7 +261,7 @@ checked_table = soup.new_tag("table", id="checked-table", border="1")
 pre_tag.append(checked_table)  # Add the table inside the <pre> tag
 checked_section.append(pre_tag)  # Add the <pre> tag to the section
 
-# soup.body.append(checked_section)
+soup.body.append(checked_section)
 # Locate the "Streaks" section in the HTML
 # streaks_section = soup.find("h2", id="streaks")
 
