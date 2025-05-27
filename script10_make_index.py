@@ -125,7 +125,7 @@ html_content = f"""
         <pre>{match_overview_pitchers_content}</pre>
         <h2 id="match-overviews-batters">Batter Match Overviews</h2>
         <pre>{match_overview_batters_content}</pre>
-        <h2 id="match-overviews-batters">DH Batters</h2>
+        <h2 id="dh-batters">DH Batters</h2>
         <pre>{dh_batters_content}</pre>
         <h2 id="bvp-stats">Batter vs Pitcher Stats</h2>
         <pre>{bvp_content}</pre>

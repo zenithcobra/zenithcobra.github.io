@@ -81,8 +81,8 @@ soup = BeautifulSoup(html_content, "html.parser")
 # Find the table in the HTML
 table = soup.find("table")
 
-# Create a new table for matching rows
-new_table = BeautifulSoup("<table></table>", "html.parser").table
+# Create a new table for matching rows with a border of 1
+new_table = BeautifulSoup('<table border="1"></table>', "html.parser").table
 
 if table:
     # Copy the header row to the new table
@@ -102,9 +102,30 @@ if table:
                 # Append the row to the new table
                 new_table.append(row)
 
+# Add the sortable script to the HTML
+sortable_script = """
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+"""
+
 # Save the new table to the output file
 with open(output_file_path, "w", encoding="utf-8") as file:
     file.write(str(new_table))
+    file.write(sortable_script)
 
 print(f"Filtered table saved to {output_file_path}")
 # --------------
