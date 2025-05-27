@@ -81,7 +81,7 @@ if "Toronto" in toronto_game.get('summary'):
     url_pattern = r'(https?://[^\s]+)'
 
     # Replace URLs with clickable HTML links
-    highlights_with_links = re.sub(url_pattern, r'<a href="\1" target="_blank">\1</a>', highlights)
+    highlights_with_links = re.sub(url_pattern, r'<a href="\1" target="_blank">video link</a>', highlights)
 
 
 
