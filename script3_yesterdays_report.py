@@ -59,8 +59,25 @@ for x in sorted_list:
     # print(readable_format)
     # print(x)
     # print(x)
+    # scoring_plays = statsapi.game_scoring_plays(x.get("game_id"))
+    # new_scoring_plays = ""
+    # Get scoring plays as a string
+    scoring_plays = statsapi.game_scoring_plays(x.get("game_id"))
+
+    # Convert the scoring plays string into a list of lines
+    scoring_plays_list = scoring_plays.split("\n")
+
+    # Filter the lines to only include those that contain "homers"
+    filtered_plays = [line for line in scoring_plays_list if "homers" in line]
+
+    # Process each kept line to only include the part before the first ")"
+    processed_plays = [line.split(")")[0] + ")" for line in filtered_plays if ")" in line]
+
+    # Join the processed lines back into a string if needed
+    new_scoring_plays = "\n".join(processed_plays)
+
     x.update({"time_scheduled": readable_format})
-    x.update({"scoring_plays": statsapi.game_scoring_plays(x.get("game_id"))})
+    x.update({"scoring_plays": new_scoring_plays})
     yesterdays_content.append(
         f"{x.get('time_scheduled')}\n"
         # f"Status: {x.get('')}\n"
