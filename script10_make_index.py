@@ -12,6 +12,7 @@ standings_path = "text_output/standings.txt"
 today_schedule_path = "text_output/todays_schedule.txt"
 match_overview_pitchers_path = "text_output/match_overviews-PITCHERS.txt"
 match_overview_batters_path = "text_output/match_overviews-BATTERS.txt"
+dh_batters_path = "text_output/DH_BATTERS.txt"
 bvp_path = "text_output/BVP.txt"
 streaks_path = "text_output/streaks.txt"
 
@@ -35,6 +36,9 @@ with open(match_overview_pitchers_path, "r") as match_overview_pitchers_file:
     
 with open(match_overview_batters_path, "r") as match_overview_batters_file:
     match_overview_batters_content = match_overview_batters_file.read()
+
+with open(dh_batters_path, "r") as dh_batters_file:
+    dh_batters_content = dh_batters_file.read()
 
 with open(bvp_path, "r") as bvp_file:
     bvp_content = bvp_file.read()
@@ -92,6 +96,7 @@ html_content = f"""
         <a href="#todays-schedule">Schedule</a>
         <a href="#match-overviews-pitchers">Pitchers</a>
         <a href="#match-overviews-batters">Batters</a>
+        <a href="#dh-batters">DH's</a>
         <a href="#bvp-stats">BvP</a>
         <a href="#streaks">Streaks</a>
         <a href="#checked-section">Checked</a>
@@ -120,6 +125,8 @@ html_content = f"""
         <pre>{match_overview_pitchers_content}</pre>
         <h2 id="match-overviews-batters">Batter Match Overviews</h2>
         <pre>{match_overview_batters_content}</pre>
+        <h2 id="match-overviews-batters">DH Batters</h2>
+        <pre>{dh_batters_content}</pre>
         <h2 id="bvp-stats">Batter vs Pitcher Stats</h2>
         <pre>{bvp_content}</pre>
         <h2 id="streaks">Streaks</h2>
