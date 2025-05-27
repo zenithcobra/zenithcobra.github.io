@@ -1,8 +1,8 @@
-<h1>Batter vs Pitcher Stats</h1>
-<h3>Away Pitcher: Dustin May Los Angeles Dodgers</h3>
 <table border='1'>
 <tr>
 <th>Batter</th>
+<th>Team</th>
+<th>Pitcher</th>
 <th>AB</th>
 <th>H</th>
 <th>HR</th>
@@ -12,7 +12,9 @@
 <th>OPS</th>
 </tr>
 <tr>
-<td>Austin Hedges (Cleveland Guardians)</td>
+<td>Austin Hedges</td>
+<td>Cleveland Guardians</td>
+<td>Dustin May</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
@@ -21,39 +23,10 @@
 <td>1.000</td>
 <td>5.000</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Home Pitcher: Tanner Bibee Cleveland Guardians</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Shohei Ohtani (Los Angeles Dodgers)</td>
+<td>Shohei Ohtani</td>
+<td>Los Angeles Dodgers</td>
+<td>Tanner Bibee</td>
 <td>6</td>
 <td>2</td>
 <td>1</td>
@@ -63,7 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.166</td>
 </tr>
 <tr>
-<td>Freddie Freeman (Los Angeles Dodgers)</td>
+<td>Freddie Freeman</td>
+<td>Los Angeles Dodgers</td>
+<td>Tanner Bibee</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -73,7 +48,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Andy Pages (Los Angeles Dodgers)</td>
+<td>Andy Pages</td>
+<td>Los Angeles Dodgers</td>
+<td>Tanner Bibee</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -83,7 +60,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Mookie Betts (Los Angeles Dodgers)</td>
+<td>Mookie Betts</td>
+<td>Los Angeles Dodgers</td>
+<td>Tanner Bibee</td>
 <td>3</td>
 <td>1</td>
 <td>0</td>
@@ -93,7 +72,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.333</td>
 </tr>
 <tr>
-<td>Tommy Edman (Los Angeles Dodgers)</td>
+<td>Tommy Edman</td>
+<td>Los Angeles Dodgers</td>
+<td>Tanner Bibee</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -103,7 +84,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.250</td>
 </tr>
 <tr>
-<td>Enrique Hernández (Los Angeles Dodgers)</td>
+<td>Enrique Hernández</td>
+<td>Los Angeles Dodgers</td>
+<td>Tanner Bibee</td>
 <td>2</td>
 <td>1</td>
 <td>0</td>
@@ -113,7 +96,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.000</td>
 </tr>
 <tr>
-<td>Will Smith (Los Angeles Dodgers)</td>
+<td>Will Smith</td>
+<td>Los Angeles Dodgers</td>
+<td>Tanner Bibee</td>
 <td>2</td>
 <td>1</td>
 <td>0</td>
@@ -123,7 +108,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.000</td>
 </tr>
 <tr>
-<td>Max Muncy (Los Angeles Dodgers)</td>
+<td>Max Muncy</td>
+<td>Los Angeles Dodgers</td>
+<td>Tanner Bibee</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -133,7 +120,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.000</td>
 </tr>
 <tr>
-<td>Michael Conforto (Los Angeles Dodgers)</td>
+<td>Michael Conforto</td>
+<td>Los Angeles Dodgers</td>
+<td>Tanner Bibee</td>
 <td>2</td>
 <td>2</td>
 <td>0</td>
@@ -142,39 +131,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.000</td>
 <td>3.000</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Away Pitcher: Andre Pallante St. Louis Cardinals</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Cedric Mullins (Baltimore Orioles)</td>
+<td>Cedric Mullins</td>
+<td>Baltimore Orioles</td>
+<td>Andre Pallante</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
@@ -184,7 +144,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>5.000</td>
 </tr>
 <tr>
-<td>Ryan O'Hearn (Baltimore Orioles)</td>
+<td>Ryan O'Hearn</td>
+<td>Baltimore Orioles</td>
+<td>Andre Pallante</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -194,7 +156,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Gunnar Henderson (Baltimore Orioles)</td>
+<td>Gunnar Henderson</td>
+<td>Baltimore Orioles</td>
+<td>Andre Pallante</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
@@ -204,7 +168,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>5.000</td>
 </tr>
 <tr>
-<td>Adley Rutschman (Baltimore Orioles)</td>
+<td>Adley Rutschman</td>
+<td>Baltimore Orioles</td>
+<td>Andre Pallante</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -214,7 +180,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Ryan Mountcastle (Baltimore Orioles)</td>
+<td>Ryan Mountcastle</td>
+<td>Baltimore Orioles</td>
+<td>Andre Pallante</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -224,7 +192,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Ramón Urías (Baltimore Orioles)</td>
+<td>Ramón Urías</td>
+<td>Baltimore Orioles</td>
+<td>Andre Pallante</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -233,39 +203,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 <td>.000</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Away Pitcher: Logan Webb San Francisco Giants</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Riley Greene (Detroit Tigers)</td>
+<td>Riley Greene</td>
+<td>Detroit Tigers</td>
+<td>Logan Webb</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -275,7 +216,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Kerry Carpenter (Detroit Tigers)</td>
+<td>Kerry Carpenter</td>
+<td>Detroit Tigers</td>
+<td>Logan Webb</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -285,7 +228,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Javier Báez (Detroit Tigers)</td>
+<td>Javier Báez</td>
+<td>Detroit Tigers</td>
+<td>Logan Webb</td>
 <td>3</td>
 <td>1</td>
 <td>0</td>
@@ -295,7 +240,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.666</td>
 </tr>
 <tr>
-<td>Gleyber Torres (Detroit Tigers)</td>
+<td>Gleyber Torres</td>
+<td>Detroit Tigers</td>
+<td>Logan Webb</td>
 <td>5</td>
 <td>1</td>
 <td>1</td>
@@ -305,7 +252,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.133</td>
 </tr>
 <tr>
-<td>Dillon Dingler (Detroit Tigers)</td>
+<td>Dillon Dingler</td>
+<td>Detroit Tigers</td>
+<td>Logan Webb</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -315,7 +264,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Colt Keith (Detroit Tigers)</td>
+<td>Colt Keith</td>
+<td>Detroit Tigers</td>
+<td>Logan Webb</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -325,7 +276,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Zach McKinstry (Detroit Tigers)</td>
+<td>Zach McKinstry</td>
+<td>Detroit Tigers</td>
+<td>Logan Webb</td>
 <td>7</td>
 <td>0</td>
 <td>0</td>
@@ -334,39 +287,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 <td>.000</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Home Pitcher: Jack Flaherty Detroit Tigers</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Wilmer Flores (San Francisco Giants)</td>
+<td>Wilmer Flores</td>
+<td>San Francisco Giants</td>
+<td>Jack Flaherty</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -376,7 +300,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Matt Chapman (San Francisco Giants)</td>
+<td>Matt Chapman</td>
+<td>San Francisco Giants</td>
+<td>Jack Flaherty</td>
 <td>7</td>
 <td>1</td>
 <td>0</td>
@@ -386,7 +312,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.393</td>
 </tr>
 <tr>
-<td>Willy Adames (San Francisco Giants)</td>
+<td>Willy Adames</td>
+<td>San Francisco Giants</td>
+<td>Jack Flaherty</td>
 <td>12</td>
 <td>3</td>
 <td>2</td>
@@ -396,7 +324,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.058</td>
 </tr>
 <tr>
-<td>Mike Yastrzemski (San Francisco Giants)</td>
+<td>Mike Yastrzemski</td>
+<td>San Francisco Giants</td>
+<td>Jack Flaherty</td>
 <td>5</td>
 <td>1</td>
 <td>0</td>
@@ -406,7 +336,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.533</td>
 </tr>
 <tr>
-<td>Patrick Bailey (San Francisco Giants)</td>
+<td>Patrick Bailey</td>
+<td>San Francisco Giants</td>
+<td>Jack Flaherty</td>
 <td>3</td>
 <td>1</td>
 <td>0</td>
@@ -416,7 +348,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.666</td>
 </tr>
 <tr>
-<td>LaMonte Wade Jr. (San Francisco Giants)</td>
+<td>LaMonte Wade Jr.</td>
+<td>San Francisco Giants</td>
+<td>Jack Flaherty</td>
 <td>3</td>
 <td>1</td>
 <td>0</td>
@@ -425,39 +359,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.333</td>
 <td>1.000</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Away Pitcher: Spencer Strider Atlanta Braves</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Kyle Schwarber (Philadelphia Phillies)</td>
+<td>Kyle Schwarber</td>
+<td>Philadelphia Phillies</td>
+<td>Spencer Strider</td>
 <td>21</td>
 <td>4</td>
 <td>1</td>
@@ -467,7 +372,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.653</td>
 </tr>
 <tr>
-<td>Bryce Harper (Philadelphia Phillies)</td>
+<td>Bryce Harper</td>
+<td>Philadelphia Phillies</td>
+<td>Spencer Strider</td>
 <td>16</td>
 <td>3</td>
 <td>1</td>
@@ -477,7 +384,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.653</td>
 </tr>
 <tr>
-<td>Max Kepler (Philadelphia Phillies)</td>
+<td>Max Kepler</td>
+<td>Philadelphia Phillies</td>
+<td>Spencer Strider</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -487,7 +396,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.333</td>
 </tr>
 <tr>
-<td>J.T. Realmuto (Philadelphia Phillies)</td>
+<td>J.T. Realmuto</td>
+<td>Philadelphia Phillies</td>
+<td>Spencer Strider</td>
 <td>15</td>
 <td>2</td>
 <td>0</td>
@@ -497,7 +408,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.435</td>
 </tr>
 <tr>
-<td>Trea Turner (Philadelphia Phillies)</td>
+<td>Trea Turner</td>
+<td>Philadelphia Phillies</td>
+<td>Spencer Strider</td>
 <td>17</td>
 <td>0</td>
 <td>0</td>
@@ -507,7 +420,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.056</td>
 </tr>
 <tr>
-<td>Alec Bohm (Philadelphia Phillies)</td>
+<td>Alec Bohm</td>
+<td>Philadelphia Phillies</td>
+<td>Spencer Strider</td>
 <td>20</td>
 <td>5</td>
 <td>1</td>
@@ -517,7 +432,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.650</td>
 </tr>
 <tr>
-<td>Nick Castellanos (Philadelphia Phillies)</td>
+<td>Nick Castellanos</td>
+<td>Philadelphia Phillies</td>
+<td>Spencer Strider</td>
 <td>19</td>
 <td>3</td>
 <td>0</td>
@@ -527,7 +444,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.316</td>
 </tr>
 <tr>
-<td>Bryson Stott (Philadelphia Phillies)</td>
+<td>Bryson Stott</td>
+<td>Philadelphia Phillies</td>
+<td>Spencer Strider</td>
 <td>21</td>
 <td>3</td>
 <td>0</td>
@@ -537,7 +456,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.333</td>
 </tr>
 <tr>
-<td>Brandon Marsh (Philadelphia Phillies)</td>
+<td>Brandon Marsh</td>
+<td>Philadelphia Phillies</td>
+<td>Spencer Strider</td>
 <td>13</td>
 <td>5</td>
 <td>2</td>
@@ -547,7 +468,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.352</td>
 </tr>
 <tr>
-<td>Johan Rojas (Philadelphia Phillies)</td>
+<td>Johan Rojas</td>
+<td>Philadelphia Phillies</td>
+<td>Spencer Strider</td>
 <td>6</td>
 <td>1</td>
 <td>0</td>
@@ -557,7 +480,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.453</td>
 </tr>
 <tr>
-<td>Edmundo Sosa (Philadelphia Phillies)</td>
+<td>Edmundo Sosa</td>
+<td>Philadelphia Phillies</td>
+<td>Spencer Strider</td>
 <td>4</td>
 <td>0</td>
 <td>0</td>
@@ -566,39 +491,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 <td>.000</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Home Pitcher: Ranger Suárez Philadelphia Phillies</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Matt Olson (Atlanta Braves)</td>
+<td>Matt Olson</td>
+<td>Atlanta Braves</td>
+<td>Ranger Suárez</td>
 <td>19</td>
 <td>4</td>
 <td>0</td>
@@ -608,7 +504,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.664</td>
 </tr>
 <tr>
-<td>Marcell Ozuna (Atlanta Braves)</td>
+<td>Marcell Ozuna</td>
+<td>Atlanta Braves</td>
+<td>Ranger Suárez</td>
 <td>20</td>
 <td>6</td>
 <td>1</td>
@@ -618,7 +516,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.883</td>
 </tr>
 <tr>
-<td>Sean Murphy (Atlanta Braves)</td>
+<td>Sean Murphy</td>
+<td>Atlanta Braves</td>
+<td>Ranger Suárez</td>
 <td>5</td>
 <td>1</td>
 <td>1</td>
@@ -628,7 +528,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.000</td>
 </tr>
 <tr>
-<td>Austin Riley (Atlanta Braves)</td>
+<td>Austin Riley</td>
+<td>Atlanta Braves</td>
+<td>Ranger Suárez</td>
 <td>20</td>
 <td>7</td>
 <td>1</td>
@@ -638,7 +540,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.085</td>
 </tr>
 <tr>
-<td>Ozzie Albies (Atlanta Braves)</td>
+<td>Ozzie Albies</td>
+<td>Atlanta Braves</td>
+<td>Ranger Suárez</td>
 <td>20</td>
 <td>6</td>
 <td>3</td>
@@ -648,7 +552,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.050</td>
 </tr>
 <tr>
-<td>Michael Harris II (Atlanta Braves)</td>
+<td>Michael Harris II</td>
+<td>Atlanta Braves</td>
+<td>Ranger Suárez</td>
 <td>15</td>
 <td>2</td>
 <td>0</td>
@@ -658,7 +564,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.266</td>
 </tr>
 <tr>
-<td>Ronald Acuña Jr. (Atlanta Braves)</td>
+<td>Ronald Acuña Jr.</td>
+<td>Atlanta Braves</td>
+<td>Ranger Suárez</td>
 <td>14</td>
 <td>3</td>
 <td>0</td>
@@ -668,7 +576,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.599</td>
 </tr>
 <tr>
-<td>Jarred Kelenic (Atlanta Braves)</td>
+<td>Jarred Kelenic</td>
+<td>Atlanta Braves</td>
+<td>Ranger Suárez</td>
 <td>5</td>
 <td>2</td>
 <td>0</td>
@@ -678,7 +588,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.000</td>
 </tr>
 <tr>
-<td>Eli White (Atlanta Braves)</td>
+<td>Eli White</td>
+<td>Atlanta Braves</td>
+<td>Ranger Suárez</td>
 <td>4</td>
 <td>1</td>
 <td>0</td>
@@ -687,39 +599,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.250</td>
 <td>.500</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Away Pitcher: Joe Ryan Minnesota Twins</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Brandon Lowe (Tampa Bay Rays)</td>
+<td>Brandon Lowe</td>
+<td>Tampa Bay Rays</td>
+<td>Joe Ryan</td>
 <td>5</td>
 <td>1</td>
 <td>0</td>
@@ -729,7 +612,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.733</td>
 </tr>
 <tr>
-<td>Jonathan Aranda (Tampa Bay Rays)</td>
+<td>Jonathan Aranda</td>
+<td>Tampa Bay Rays</td>
+<td>Joe Ryan</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -739,7 +624,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Yandy Díaz (Tampa Bay Rays)</td>
+<td>Yandy Díaz</td>
+<td>Tampa Bay Rays</td>
+<td>Joe Ryan</td>
 <td>5</td>
 <td>1</td>
 <td>0</td>
@@ -749,7 +636,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.533</td>
 </tr>
 <tr>
-<td>Danny Jansen (Tampa Bay Rays)</td>
+<td>Danny Jansen</td>
+<td>Tampa Bay Rays</td>
+<td>Joe Ryan</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -759,7 +648,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Christopher Morel (Tampa Bay Rays)</td>
+<td>Christopher Morel</td>
+<td>Tampa Bay Rays</td>
+<td>Joe Ryan</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -769,7 +660,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Josh Lowe (Tampa Bay Rays)</td>
+<td>Josh Lowe</td>
+<td>Tampa Bay Rays</td>
+<td>Joe Ryan</td>
 <td>5</td>
 <td>1</td>
 <td>0</td>
@@ -779,7 +672,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.400</td>
 </tr>
 <tr>
-<td>Taylor Walls (Tampa Bay Rays)</td>
+<td>Taylor Walls</td>
+<td>Tampa Bay Rays</td>
+<td>Joe Ryan</td>
 <td>4</td>
 <td>0</td>
 <td>0</td>
@@ -788,39 +683,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 <td>.000</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Home Pitcher: Taj Bradley Tampa Bay Rays</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Byron Buxton (Minnesota Twins)</td>
+<td>Byron Buxton</td>
+<td>Minnesota Twins</td>
+<td>Taj Bradley</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -830,7 +696,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Trevor Larnach (Minnesota Twins)</td>
+<td>Trevor Larnach</td>
+<td>Minnesota Twins</td>
+<td>Taj Bradley</td>
 <td>6</td>
 <td>1</td>
 <td>0</td>
@@ -840,7 +708,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.500</td>
 </tr>
 <tr>
-<td>Kody Clemens (Minnesota Twins)</td>
+<td>Kody Clemens</td>
+<td>Minnesota Twins</td>
+<td>Taj Bradley</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -850,7 +720,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Carlos Correa (Minnesota Twins)</td>
+<td>Carlos Correa</td>
+<td>Minnesota Twins</td>
+<td>Taj Bradley</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -860,7 +732,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Ty France (Minnesota Twins)</td>
+<td>Ty France</td>
+<td>Minnesota Twins</td>
+<td>Taj Bradley</td>
 <td>7</td>
 <td>1</td>
 <td>0</td>
@@ -870,7 +744,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.429</td>
 </tr>
 <tr>
-<td>Ryan Jeffers (Minnesota Twins)</td>
+<td>Ryan Jeffers</td>
+<td>Minnesota Twins</td>
+<td>Taj Bradley</td>
 <td>5</td>
 <td>2</td>
 <td>0</td>
@@ -880,7 +756,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.000</td>
 </tr>
 <tr>
-<td>Willi Castro (Minnesota Twins)</td>
+<td>Willi Castro</td>
+<td>Minnesota Twins</td>
+<td>Taj Bradley</td>
 <td>8</td>
 <td>1</td>
 <td>0</td>
@@ -890,7 +768,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.250</td>
 </tr>
 <tr>
-<td>Edouard Julien (Minnesota Twins)</td>
+<td>Edouard Julien</td>
+<td>Minnesota Twins</td>
+<td>Taj Bradley</td>
 <td>5</td>
 <td>1</td>
 <td>1</td>
@@ -899,39 +779,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.333</td>
 <td>1.133</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Away Pitcher: Jonathan Cannon Chicago White Sox</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Pete Alonso (New York Mets)</td>
+<td>Pete Alonso</td>
+<td>New York Mets</td>
+<td>Jonathan Cannon</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -941,7 +792,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.333</td>
 </tr>
 <tr>
-<td>Francisco Lindor (New York Mets)</td>
+<td>Francisco Lindor</td>
+<td>New York Mets</td>
+<td>Jonathan Cannon</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -951,7 +804,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.333</td>
 </tr>
 <tr>
-<td>Brandon Nimmo (New York Mets)</td>
+<td>Brandon Nimmo</td>
+<td>New York Mets</td>
+<td>Jonathan Cannon</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -961,7 +816,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Juan Soto (New York Mets)</td>
+<td>Juan Soto</td>
+<td>New York Mets</td>
+<td>Jonathan Cannon</td>
 <td>3</td>
 <td>2</td>
 <td>2</td>
@@ -971,7 +828,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>3.334</td>
 </tr>
 <tr>
-<td>Mark Vientos (New York Mets)</td>
+<td>Mark Vientos</td>
+<td>New York Mets</td>
+<td>Jonathan Cannon</td>
 <td>2</td>
 <td>1</td>
 <td>0</td>
@@ -981,7 +840,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.167</td>
 </tr>
 <tr>
-<td>Jeff McNeil (New York Mets)</td>
+<td>Jeff McNeil</td>
+<td>New York Mets</td>
+<td>Jonathan Cannon</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -991,7 +852,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.500</td>
 </tr>
 <tr>
-<td>Francisco Alvarez (New York Mets)</td>
+<td>Francisco Alvarez</td>
+<td>New York Mets</td>
+<td>Jonathan Cannon</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -1001,7 +864,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Jesse Winker (New York Mets)</td>
+<td>Jesse Winker</td>
+<td>New York Mets</td>
+<td>Jonathan Cannon</td>
 <td>3</td>
 <td>2</td>
 <td>0</td>
@@ -1010,39 +875,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.667</td>
 <td>1.667</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Home Pitcher: Tylor Megill New York Mets</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Miguel Vargas (Chicago White Sox)</td>
+<td>Miguel Vargas</td>
+<td>Chicago White Sox</td>
+<td>Tylor Megill</td>
 <td>4</td>
 <td>0</td>
 <td>0</td>
@@ -1052,7 +888,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.200</td>
 </tr>
 <tr>
-<td>Andrew Benintendi (Chicago White Sox)</td>
+<td>Andrew Benintendi</td>
+<td>Chicago White Sox</td>
+<td>Tylor Megill</td>
 <td>3</td>
 <td>2</td>
 <td>0</td>
@@ -1062,7 +900,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.667</td>
 </tr>
 <tr>
-<td>Luis Robert Jr. (Chicago White Sox)</td>
+<td>Luis Robert Jr.</td>
+<td>Chicago White Sox</td>
+<td>Tylor Megill</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -1072,7 +912,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Andrew Vaughn (Chicago White Sox)</td>
+<td>Andrew Vaughn</td>
+<td>Chicago White Sox</td>
+<td>Tylor Megill</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -1082,7 +924,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Joshua Palacios (Chicago White Sox)</td>
+<td>Joshua Palacios</td>
+<td>Chicago White Sox</td>
+<td>Tylor Megill</td>
 <td>3</td>
 <td>1</td>
 <td>0</td>
@@ -1092,7 +936,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.666</td>
 </tr>
 <tr>
-<td>Nick Maton (Chicago White Sox)</td>
+<td>Nick Maton</td>
+<td>Chicago White Sox</td>
+<td>Tylor Megill</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1101,39 +947,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 <td>.000</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Away Pitcher: Brady Singer Cincinnati Reds</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Cavan Biggio (Kansas City Royals)</td>
+<td>Cavan Biggio</td>
+<td>Kansas City Royals</td>
+<td>Brady Singer</td>
 <td>7</td>
 <td>3</td>
 <td>0</td>
@@ -1143,7 +960,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.071</td>
 </tr>
 <tr>
-<td>Jonathan India (Kansas City Royals)</td>
+<td>Jonathan India</td>
+<td>Kansas City Royals</td>
+<td>Brady Singer</td>
 <td>5</td>
 <td>2</td>
 <td>0</td>
@@ -1153,7 +972,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.900</td>
 </tr>
 <tr>
-<td>Luke Maile (Kansas City Royals)</td>
+<td>Luke Maile</td>
+<td>Kansas City Royals</td>
+<td>Brady Singer</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -1162,39 +983,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 <td>.000</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Home Pitcher: Daniel Lynch IV Kansas City Royals</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Elly De La Cruz (Cincinnati Reds)</td>
+<td>Elly De La Cruz</td>
+<td>Cincinnati Reds</td>
+<td>Daniel Lynch IV</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -1204,7 +996,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Austin Hays (Cincinnati Reds)</td>
+<td>Austin Hays</td>
+<td>Cincinnati Reds</td>
+<td>Daniel Lynch IV</td>
 <td>7</td>
 <td>3</td>
 <td>1</td>
@@ -1214,7 +1008,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.643</td>
 </tr>
 <tr>
-<td>Matt McLain (Cincinnati Reds)</td>
+<td>Matt McLain</td>
+<td>Cincinnati Reds</td>
+<td>Daniel Lynch IV</td>
 <td>4</td>
 <td>2</td>
 <td>1</td>
@@ -1224,7 +1020,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.750</td>
 </tr>
 <tr>
-<td>Spencer Steer (Cincinnati Reds)</td>
+<td>Spencer Steer</td>
+<td>Cincinnati Reds</td>
+<td>Daniel Lynch IV</td>
 <td>3</td>
 <td>1</td>
 <td>1</td>
@@ -1234,7 +1032,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.666</td>
 </tr>
 <tr>
-<td>Jose Trevino (Cincinnati Reds)</td>
+<td>Jose Trevino</td>
+<td>Cincinnati Reds</td>
+<td>Daniel Lynch IV</td>
 <td>4</td>
 <td>2</td>
 <td>1</td>
@@ -1243,39 +1043,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.500</td>
 <td>1.750</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Away Pitcher: Germán Márquez Colorado Rockies</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Kyle Tucker (Chicago Cubs)</td>
+<td>Kyle Tucker</td>
+<td>Chicago Cubs</td>
+<td>Germán Márquez</td>
 <td>5</td>
 <td>2</td>
 <td>0</td>
@@ -1285,7 +1056,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.300</td>
 </tr>
 <tr>
-<td>Dansby Swanson (Chicago Cubs)</td>
+<td>Dansby Swanson</td>
+<td>Chicago Cubs</td>
+<td>Germán Márquez</td>
 <td>7</td>
 <td>4</td>
 <td>1</td>
@@ -1295,7 +1068,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>2.000</td>
 </tr>
 <tr>
-<td>Carson Kelly (Chicago Cubs)</td>
+<td>Carson Kelly</td>
+<td>Chicago Cubs</td>
+<td>Germán Márquez</td>
 <td>8</td>
 <td>0</td>
 <td>0</td>
@@ -1305,7 +1080,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.273</td>
 </tr>
 <tr>
-<td>Ian Happ (Chicago Cubs)</td>
+<td>Ian Happ</td>
+<td>Chicago Cubs</td>
+<td>Germán Márquez</td>
 <td>10</td>
 <td>4</td>
 <td>0</td>
@@ -1315,7 +1092,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.855</td>
 </tr>
 <tr>
-<td>Justin Turner (Chicago Cubs)</td>
+<td>Justin Turner</td>
+<td>Chicago Cubs</td>
+<td>Germán Márquez</td>
 <td>29</td>
 <td>6</td>
 <td>1</td>
@@ -1324,39 +1103,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.233</td>
 <td>.543</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Away Pitcher: Bowden Francis Toronto Blue Jays</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Wyatt Langford (Texas Rangers)</td>
+<td>Wyatt Langford</td>
+<td>Texas Rangers</td>
+<td>Bowden Francis</td>
 <td>2</td>
 <td>1</td>
 <td>0</td>
@@ -1366,7 +1116,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.167</td>
 </tr>
 <tr>
-<td>Adolis García (Texas Rangers)</td>
+<td>Adolis García</td>
+<td>Texas Rangers</td>
+<td>Bowden Francis</td>
 <td>4</td>
 <td>1</td>
 <td>1</td>
@@ -1376,7 +1128,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.250</td>
 </tr>
 <tr>
-<td>Josh Jung (Texas Rangers)</td>
+<td>Josh Jung</td>
+<td>Texas Rangers</td>
+<td>Bowden Francis</td>
 <td>4</td>
 <td>0</td>
 <td>0</td>
@@ -1386,7 +1140,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.200</td>
 </tr>
 <tr>
-<td>Jonah Heim (Texas Rangers)</td>
+<td>Jonah Heim</td>
+<td>Texas Rangers</td>
+<td>Bowden Francis</td>
 <td>7</td>
 <td>0</td>
 <td>0</td>
@@ -1396,7 +1152,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Corey Seager (Texas Rangers)</td>
+<td>Corey Seager</td>
+<td>Texas Rangers</td>
+<td>Bowden Francis</td>
 <td>2</td>
 <td>1</td>
 <td>0</td>
@@ -1406,7 +1164,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.000</td>
 </tr>
 <tr>
-<td>Josh Smith (Texas Rangers)</td>
+<td>Josh Smith</td>
+<td>Texas Rangers</td>
+<td>Bowden Francis</td>
 <td>5</td>
 <td>2</td>
 <td>0</td>
@@ -1416,7 +1176,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.800</td>
 </tr>
 <tr>
-<td>Marcus Semien (Texas Rangers)</td>
+<td>Marcus Semien</td>
+<td>Texas Rangers</td>
+<td>Bowden Francis</td>
 <td>5</td>
 <td>1</td>
 <td>0</td>
@@ -1426,7 +1188,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.733</td>
 </tr>
 <tr>
-<td>Joc Pederson (Texas Rangers)</td>
+<td>Joc Pederson</td>
+<td>Texas Rangers</td>
+<td>Bowden Francis</td>
 <td>3</td>
 <td>1</td>
 <td>0</td>
@@ -1436,7 +1200,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.666</td>
 </tr>
 <tr>
-<td>Evan Carter (Texas Rangers)</td>
+<td>Evan Carter</td>
+<td>Texas Rangers</td>
+<td>Bowden Francis</td>
 <td>3</td>
 <td>1</td>
 <td>0</td>
@@ -1446,7 +1212,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.666</td>
 </tr>
 <tr>
-<td>Kyle Higashioka (Texas Rangers)</td>
+<td>Kyle Higashioka</td>
+<td>Texas Rangers</td>
+<td>Bowden Francis</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1456,7 +1224,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Leody Taveras (Texas Rangers)</td>
+<td>Leody Taveras</td>
+<td>Texas Rangers</td>
+<td>Bowden Francis</td>
 <td>6</td>
 <td>2</td>
 <td>0</td>
@@ -1465,39 +1235,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.286</td>
 <td>.619</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Home Pitcher: Nathan Eovaldi Texas Rangers</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Vladimir Guerrero Jr. (Toronto Blue Jays)</td>
+<td>Vladimir Guerrero Jr.</td>
+<td>Toronto Blue Jays</td>
+<td>Nathan Eovaldi</td>
 <td>23</td>
 <td>10</td>
 <td>1</td>
@@ -1507,7 +1248,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.132</td>
 </tr>
 <tr>
-<td>Anthony Santander (Toronto Blue Jays)</td>
+<td>Anthony Santander</td>
+<td>Toronto Blue Jays</td>
+<td>Nathan Eovaldi</td>
 <td>24</td>
 <td>6</td>
 <td>1</td>
@@ -1517,7 +1260,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.708</td>
 </tr>
 <tr>
-<td>George Springer (Toronto Blue Jays)</td>
+<td>George Springer</td>
+<td>Toronto Blue Jays</td>
+<td>Nathan Eovaldi</td>
 <td>22</td>
 <td>5</td>
 <td>1</td>
@@ -1527,7 +1272,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.716</td>
 </tr>
 <tr>
-<td>Bo Bichette (Toronto Blue Jays)</td>
+<td>Bo Bichette</td>
+<td>Toronto Blue Jays</td>
+<td>Nathan Eovaldi</td>
 <td>25</td>
 <td>8</td>
 <td>1</td>
@@ -1537,7 +1284,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.800</td>
 </tr>
 <tr>
-<td>Nathan Lukes (Toronto Blue Jays)</td>
+<td>Nathan Lukes</td>
+<td>Toronto Blue Jays</td>
+<td>Nathan Eovaldi</td>
 <td>2</td>
 <td>1</td>
 <td>0</td>
@@ -1547,7 +1296,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.167</td>
 </tr>
 <tr>
-<td>Andrés Giménez (Toronto Blue Jays)</td>
+<td>Andrés Giménez</td>
+<td>Toronto Blue Jays</td>
+<td>Nathan Eovaldi</td>
 <td>10</td>
 <td>4</td>
 <td>0</td>
@@ -1557,7 +1308,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.900</td>
 </tr>
 <tr>
-<td>Alejandro Kirk (Toronto Blue Jays)</td>
+<td>Alejandro Kirk</td>
+<td>Toronto Blue Jays</td>
+<td>Nathan Eovaldi</td>
 <td>10</td>
 <td>6</td>
 <td>0</td>
@@ -1567,7 +1320,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.492</td>
 </tr>
 <tr>
-<td>Ernie Clement (Toronto Blue Jays)</td>
+<td>Ernie Clement</td>
+<td>Toronto Blue Jays</td>
+<td>Nathan Eovaldi</td>
 <td>3</td>
 <td>1</td>
 <td>0</td>
@@ -1577,7 +1332,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.666</td>
 </tr>
 <tr>
-<td>Myles Straw (Toronto Blue Jays)</td>
+<td>Myles Straw</td>
+<td>Toronto Blue Jays</td>
+<td>Nathan Eovaldi</td>
 <td>11</td>
 <td>3</td>
 <td>0</td>
@@ -1586,39 +1343,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.333</td>
 <td>.788</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Away Pitcher: JP Sears Athletics</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Jose Altuve (Houston Astros)</td>
+<td>Jose Altuve</td>
+<td>Houston Astros</td>
+<td>JP Sears</td>
 <td>19</td>
 <td>6</td>
 <td>0</td>
@@ -1628,7 +1356,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.855</td>
 </tr>
 <tr>
-<td>Jeremy Peña (Houston Astros)</td>
+<td>Jeremy Peña</td>
+<td>Houston Astros</td>
+<td>JP Sears</td>
 <td>20</td>
 <td>5</td>
 <td>0</td>
@@ -1638,7 +1368,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.586</td>
 </tr>
 <tr>
-<td>Christian Walker (Houston Astros)</td>
+<td>Christian Walker</td>
+<td>Houston Astros</td>
+<td>JP Sears</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -1648,7 +1380,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Yainer Diaz (Houston Astros)</td>
+<td>Yainer Diaz</td>
+<td>Houston Astros</td>
+<td>JP Sears</td>
 <td>9</td>
 <td>3</td>
 <td>0</td>
@@ -1658,7 +1392,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.744</td>
 </tr>
 <tr>
-<td>Yordan Alvarez (Houston Astros)</td>
+<td>Yordan Alvarez</td>
+<td>Houston Astros</td>
+<td>JP Sears</td>
 <td>17</td>
 <td>3</td>
 <td>0</td>
@@ -1668,7 +1404,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.387</td>
 </tr>
 <tr>
-<td>Victor Caratini (Houston Astros)</td>
+<td>Victor Caratini</td>
+<td>Houston Astros</td>
+<td>JP Sears</td>
 <td>2</td>
 <td>2</td>
 <td>0</td>
@@ -1678,7 +1416,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>2.000</td>
 </tr>
 <tr>
-<td>Jake Meyers (Houston Astros)</td>
+<td>Jake Meyers</td>
+<td>Houston Astros</td>
+<td>JP Sears</td>
 <td>9</td>
 <td>0</td>
 <td>0</td>
@@ -1688,7 +1428,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.100</td>
 </tr>
 <tr>
-<td>Mauricio Dubón (Houston Astros)</td>
+<td>Mauricio Dubón</td>
+<td>Houston Astros</td>
+<td>JP Sears</td>
 <td>13</td>
 <td>2</td>
 <td>0</td>
@@ -1697,39 +1439,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.154</td>
 <td>.308</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Home Pitcher: Hunter Brown Houston Astros</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Brent Rooker (Athletics)</td>
+<td>Brent Rooker</td>
+<td>Athletics</td>
+<td>Hunter Brown</td>
 <td>14</td>
 <td>5</td>
 <td>0</td>
@@ -1739,7 +1452,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.714</td>
 </tr>
 <tr>
-<td>Tyler Soderstrom (Athletics)</td>
+<td>Tyler Soderstrom</td>
+<td>Athletics</td>
+<td>Hunter Brown</td>
 <td>2</td>
 <td>1</td>
 <td>0</td>
@@ -1749,7 +1464,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.167</td>
 </tr>
 <tr>
-<td>Shea Langeliers (Athletics)</td>
+<td>Shea Langeliers</td>
+<td>Athletics</td>
+<td>Hunter Brown</td>
 <td>5</td>
 <td>0</td>
 <td>0</td>
@@ -1759,7 +1476,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Lawrence Butler (Athletics)</td>
+<td>Lawrence Butler</td>
+<td>Athletics</td>
+<td>Hunter Brown</td>
 <td>8</td>
 <td>2</td>
 <td>0</td>
@@ -1769,7 +1488,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.625</td>
 </tr>
 <tr>
-<td>JJ Bleday (Athletics)</td>
+<td>JJ Bleday</td>
+<td>Athletics</td>
+<td>Hunter Brown</td>
 <td>11</td>
 <td>3</td>
 <td>1</td>
@@ -1779,7 +1500,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.818</td>
 </tr>
 <tr>
-<td>Luis Urías (Athletics)</td>
+<td>Luis Urías</td>
+<td>Athletics</td>
+<td>Hunter Brown</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1789,7 +1512,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.500</td>
 </tr>
 <tr>
-<td>Jacob Wilson (Athletics)</td>
+<td>Jacob Wilson</td>
+<td>Athletics</td>
+<td>Hunter Brown</td>
 <td>3</td>
 <td>1</td>
 <td>0</td>
@@ -1799,7 +1524,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.666</td>
 </tr>
 <tr>
-<td>Miguel Andujar (Athletics)</td>
+<td>Miguel Andujar</td>
+<td>Athletics</td>
+<td>Hunter Brown</td>
 <td>3</td>
 <td>2</td>
 <td>0</td>
@@ -1809,7 +1536,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.667</td>
 </tr>
 <tr>
-<td>Seth Brown (Athletics)</td>
+<td>Seth Brown</td>
+<td>Athletics</td>
+<td>Hunter Brown</td>
 <td>11</td>
 <td>3</td>
 <td>1</td>
@@ -1819,7 +1548,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.974</td>
 </tr>
 <tr>
-<td>Max Schuemann (Athletics)</td>
+<td>Max Schuemann</td>
+<td>Athletics</td>
+<td>Hunter Brown</td>
 <td>5</td>
 <td>3</td>
 <td>0</td>
@@ -1828,39 +1559,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.600</td>
 <td>1.400</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Away Pitcher: Carlos Rodón New York Yankees</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Taylor Ward (Los Angeles Angels)</td>
+<td>Taylor Ward</td>
+<td>Los Angeles Angels</td>
+<td>Carlos Rodón</td>
 <td>8</td>
 <td>3</td>
 <td>1</td>
@@ -1870,7 +1572,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.194</td>
 </tr>
 <tr>
-<td>Logan O'Hoppe (Los Angeles Angels)</td>
+<td>Logan O'Hoppe</td>
+<td>Los Angeles Angels</td>
+<td>Carlos Rodón</td>
 <td>2</td>
 <td>1</td>
 <td>1</td>
@@ -1880,7 +1584,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>2.500</td>
 </tr>
 <tr>
-<td>Zach Neto (Los Angeles Angels)</td>
+<td>Zach Neto</td>
+<td>Los Angeles Angels</td>
+<td>Carlos Rodón</td>
 <td>5</td>
 <td>1</td>
 <td>0</td>
@@ -1890,7 +1596,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.400</td>
 </tr>
 <tr>
-<td>Mike Trout (Los Angeles Angels)</td>
+<td>Mike Trout</td>
+<td>Los Angeles Angels</td>
+<td>Carlos Rodón</td>
 <td>8</td>
 <td>0</td>
 <td>0</td>
@@ -1900,7 +1608,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.385</td>
 </tr>
 <tr>
-<td>Jorge Soler (Los Angeles Angels)</td>
+<td>Jorge Soler</td>
+<td>Los Angeles Angels</td>
+<td>Carlos Rodón</td>
 <td>15</td>
 <td>3</td>
 <td>0</td>
@@ -1910,7 +1620,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.494</td>
 </tr>
 <tr>
-<td>Jo Adell (Los Angeles Angels)</td>
+<td>Jo Adell</td>
+<td>Los Angeles Angels</td>
+<td>Carlos Rodón</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -1920,7 +1632,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Kyren Paris (Los Angeles Angels)</td>
+<td>Kyren Paris</td>
+<td>Los Angeles Angels</td>
+<td>Carlos Rodón</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -1930,7 +1644,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Nolan Schanuel (Los Angeles Angels)</td>
+<td>Nolan Schanuel</td>
+<td>Los Angeles Angels</td>
+<td>Carlos Rodón</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -1939,39 +1655,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 <td>.000</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Home Pitcher: Tyler Anderson Los Angeles Angels</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Aaron Judge (New York Yankees)</td>
+<td>Aaron Judge</td>
+<td>New York Yankees</td>
+<td>Tyler Anderson</td>
 <td>6</td>
 <td>0</td>
 <td>0</td>
@@ -1981,7 +1668,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.333</td>
 </tr>
 <tr>
-<td>Trent Grisham (New York Yankees)</td>
+<td>Trent Grisham</td>
+<td>New York Yankees</td>
+<td>Tyler Anderson</td>
 <td>9</td>
 <td>2</td>
 <td>0</td>
@@ -1991,7 +1680,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.777</td>
 </tr>
 <tr>
-<td>Cody Bellinger (New York Yankees)</td>
+<td>Cody Bellinger</td>
+<td>New York Yankees</td>
+<td>Tyler Anderson</td>
 <td>22</td>
 <td>4</td>
 <td>2</td>
@@ -2001,7 +1692,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.705</td>
 </tr>
 <tr>
-<td>Austin Wells (New York Yankees)</td>
+<td>Austin Wells</td>
+<td>New York Yankees</td>
+<td>Tyler Anderson</td>
 <td>2</td>
 <td>1</td>
 <td>0</td>
@@ -2011,7 +1704,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.000</td>
 </tr>
 <tr>
-<td>Jazz Chisholm Jr. (New York Yankees)</td>
+<td>Jazz Chisholm Jr.</td>
+<td>New York Yankees</td>
+<td>Tyler Anderson</td>
 <td>7</td>
 <td>2</td>
 <td>1</td>
@@ -2021,7 +1716,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.089</td>
 </tr>
 <tr>
-<td>Anthony Volpe (New York Yankees)</td>
+<td>Anthony Volpe</td>
+<td>New York Yankees</td>
+<td>Tyler Anderson</td>
 <td>5</td>
 <td>1</td>
 <td>0</td>
@@ -2031,7 +1728,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.400</td>
 </tr>
 <tr>
-<td>Paul Goldschmidt (New York Yankees)</td>
+<td>Paul Goldschmidt</td>
+<td>New York Yankees</td>
+<td>Tyler Anderson</td>
 <td>15</td>
 <td>5</td>
 <td>0</td>
@@ -2040,39 +1739,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.545</td>
 <td>.945</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Home Pitcher: Corbin Burnes Arizona Diamondbacks</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Oneil Cruz (Pittsburgh Pirates)</td>
+<td>Oneil Cruz</td>
+<td>Pittsburgh Pirates</td>
+<td>Corbin Burnes</td>
 <td>7</td>
 <td>2</td>
 <td>2</td>
@@ -2082,7 +1752,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.518</td>
 </tr>
 <tr>
-<td>Bryan Reynolds (Pittsburgh Pirates)</td>
+<td>Bryan Reynolds</td>
+<td>Pittsburgh Pirates</td>
+<td>Corbin Burnes</td>
 <td>26</td>
 <td>6</td>
 <td>0</td>
@@ -2092,7 +1764,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.641</td>
 </tr>
 <tr>
-<td>Andrew McCutchen (Pittsburgh Pirates)</td>
+<td>Andrew McCutchen</td>
+<td>Pittsburgh Pirates</td>
+<td>Corbin Burnes</td>
 <td>11</td>
 <td>2</td>
 <td>0</td>
@@ -2102,7 +1776,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.614</td>
 </tr>
 <tr>
-<td>Adam Frazier (Pittsburgh Pirates)</td>
+<td>Adam Frazier</td>
+<td>Pittsburgh Pirates</td>
+<td>Corbin Burnes</td>
 <td>21</td>
 <td>5</td>
 <td>0</td>
@@ -2112,7 +1788,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.476</td>
 </tr>
 <tr>
-<td>Jared Triolo (Pittsburgh Pirates)</td>
+<td>Jared Triolo</td>
+<td>Pittsburgh Pirates</td>
+<td>Corbin Burnes</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -2122,7 +1800,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.333</td>
 </tr>
 <tr>
-<td>Enmanuel Valdez (Pittsburgh Pirates)</td>
+<td>Enmanuel Valdez</td>
+<td>Pittsburgh Pirates</td>
+<td>Corbin Burnes</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -2132,7 +1812,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Joey Bart (Pittsburgh Pirates)</td>
+<td>Joey Bart</td>
+<td>Pittsburgh Pirates</td>
+<td>Corbin Burnes</td>
 <td>7</td>
 <td>1</td>
 <td>0</td>
@@ -2142,7 +1824,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.536</td>
 </tr>
 <tr>
-<td>Henry Davis (Pittsburgh Pirates)</td>
+<td>Henry Davis</td>
+<td>Pittsburgh Pirates</td>
+<td>Corbin Burnes</td>
 <td>6</td>
 <td>0</td>
 <td>0</td>
@@ -2152,7 +1836,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Ke'Bryan Hayes (Pittsburgh Pirates)</td>
+<td>Ke'Bryan Hayes</td>
+<td>Pittsburgh Pirates</td>
+<td>Corbin Burnes</td>
 <td>16</td>
 <td>1</td>
 <td>1</td>
@@ -2162,7 +1848,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.417</td>
 </tr>
 <tr>
-<td>Spencer Horwitz (Pittsburgh Pirates)</td>
+<td>Spencer Horwitz</td>
+<td>Pittsburgh Pirates</td>
+<td>Corbin Burnes</td>
 <td>3</td>
 <td>1</td>
 <td>0</td>
@@ -2172,7 +1860,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.666</td>
 </tr>
 <tr>
-<td>Isiah Kiner-Falefa (Pittsburgh Pirates)</td>
+<td>Isiah Kiner-Falefa</td>
+<td>Pittsburgh Pirates</td>
+<td>Corbin Burnes</td>
 <td>7</td>
 <td>0</td>
 <td>0</td>
@@ -2181,39 +1871,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 <td>.000</td>
 </tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Away Pitcher: Max Meyer Miami Marlins</h3>
-<table border='1'>
 <tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Manny Machado (San Diego Padres)</td>
+<td>Manny Machado</td>
+<td>San Diego Padres</td>
+<td>Max Meyer</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -2223,7 +1884,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Jake Cronenworth (San Diego Padres)</td>
+<td>Jake Cronenworth</td>
+<td>San Diego Padres</td>
+<td>Max Meyer</td>
 <td>3</td>
 <td>1</td>
 <td>0</td>
@@ -2233,7 +1896,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.666</td>
 </tr>
 <tr>
-<td>Jackson Merrill (San Diego Padres)</td>
+<td>Jackson Merrill</td>
+<td>San Diego Padres</td>
+<td>Max Meyer</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -2243,7 +1908,21 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Luis Arraez (San Diego Padres)</td>
+<td>Luis Arraez</td>
+<td>San Diego Padres</td>
+<td>Max Meyer</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>.667</td>
+<td>0</td>
+<td>.667</td>
+<td>1.667</td>
+</tr>
+<tr>
+<td>Xander Bogaerts</td>
+<td>San Diego Padres</td>
+<td>Max Meyer</td>
 <td>3</td>
 <td>2</td>
 <td>0</td>
@@ -2253,48 +1932,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1.667</td>
 </tr>
 <tr>
-<td>Xander Bogaerts (San Diego Padres)</td>
-<td>3</td>
-<td>2</td>
-<td>0</td>
-<td>.667</td>
-<td>0</td>
-<td>.667</td>
-<td>1.667</td>
-</tr>
-</table>
-<br>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
-        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-        const table = th.closest('table');
-        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-            .forEach(tr => table.appendChild(tr) );
-    })));
-});
-</script>
-<h3>Home Pitcher: Stephen Kolek San Diego Padres</h3>
-<table border='1'>
-<tr>
-<th>Batter</th>
-<th>AB</th>
-<th>H</th>
-<th>HR</th>
-<th>AVG</th>
-<th>RBI</th>
-<th>OBP</th>
-<th>OPS</th>
-</tr>
-<tr>
-<td>Connor Norby (Miami Marlins)</td>
+<td>Connor Norby</td>
+<td>Miami Marlins</td>
+<td>Stephen Kolek</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -2304,7 +1944,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Jesús Sánchez (Miami Marlins)</td>
+<td>Jesús Sánchez</td>
+<td>Miami Marlins</td>
+<td>Stephen Kolek</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -2314,7 +1956,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>.000</td>
 </tr>
 <tr>
-<td>Derek Hill (Miami Marlins)</td>
+<td>Derek Hill</td>
+<td>Miami Marlins</td>
+<td>Stephen Kolek</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
