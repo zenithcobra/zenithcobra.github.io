@@ -34,6 +34,8 @@ entries_without_toronto = [x for x in yschedule if not ("summary" in x and "Toro
 # Combine the two lists, bringing entries with "Toronto" to the top
 sorted_list = entries_without_toronto
 
+homers = []
+
 # get the toronto game
 toronto_content = []
 toronto_game = entries_with_toronto[0]
@@ -57,7 +59,7 @@ if "Toronto" in toronto_game.get('summary'):
     # scoring_plays = statsapi.game_scoring_plays(x.get("game_id"))
     # new_scoring_plays = ""
     # Get scoring plays as a string
-
+    s_plays = statsapi.game_scoring_plays(toronto_game.get("game_id"))
     scoring_plays = statsapi.game_scoring_plays(toronto_game.get("game_id"))
     # Convert the scoring plays string into a list of lines
     scoring_plays_list = scoring_plays.split("\n")
@@ -66,11 +68,12 @@ if "Toronto" in toronto_game.get('summary'):
     # Process each kept line to only include the part before the first ")"
     processed_plays = [line.split(")")[0] + ")" for line in filtered_plays if ")" in line]
     # Join the processed lines back into a string if needed
+    homers.append(processed_plays)
     new_scoring_plays = "\n".join(processed_plays)
     highlights = statsapi.game_highlights(toronto_game.get("game_id"))
 
     toronto_game.update({"time_scheduled": readable_format})
-    toronto_game.update({"scoring_plays": new_scoring_plays})
+    toronto_game.update({"scoring_plays": s_plays})
     toronto_content.append(
         f"{toronto_game.get('time_scheduled')}\n"
         # f"Status: {x.get('')}\n"
@@ -83,7 +86,7 @@ if "Toronto" in toronto_game.get('summary'):
     )
 
 yesterdays_content = []
-homers = []
+
 for x in sorted_list:
     
     # Example UTC datetime string
@@ -139,7 +142,9 @@ for x in sorted_list:
 new_homers = []
 for x in homers:
     for y in x:
+        new_homers.append('\n')
         new_homers.append(y)
+
 
 # Write content to the new Todays_Report.txt file
 with open(report_file_path, "w") as file:
