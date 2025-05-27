@@ -123,11 +123,11 @@ for x in sorted_list:
     processed_plays = [line.split(")")[0] + ")" for line in filtered_plays if ")" in line]
 
     # Join the processed lines back into a string if needed
-    new_scoring_plays = "\n".join(processed_plays)
+    # new_scoring_plays = "\n".join(processed_plays)
 
     x.update({"time_scheduled": readable_format})
     # x.update({"scoring_plays": new_scoring_plays})
-    homers.append(new_scoring_plays)
+    homers.append(processed_plays)
     yesterdays_content.append(
         f"GAME:\n"
         f"{x.get('time_scheduled')}\n"
@@ -136,7 +136,10 @@ for x in sorted_list:
         f"{x.get('home_name'):<22} {x.get('home_score')}\n\n"
         # f"{x.get('scoring_plays')}\n\n"
     )
-
+new_homers = []
+for x in homers:
+    for y in x:
+        new_homers.append(y)
 
 # Write content to the new Todays_Report.txt file
 with open(report_file_path, "w") as file:
@@ -145,7 +148,7 @@ with open(report_file_path, "w") as file:
     for content in yesterdays_content:
         file.write(content)
     file.write("<h3>Yesterdays Homers</h3>\n")
-    for contents in homers:
+    for contents in new_homers:
         file.write(contents)
 
 
