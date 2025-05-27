@@ -58,6 +58,39 @@ file_path = "text_output/match_overviews-BATTERS.txt"
 with open(file_path, "r", encoding="utf-8") as file:
     html_content = file.read()
 
+# -----------
+# # Parse the HTML content using BeautifulSoup
+# soup = BeautifulSoup(html_content, "html.parser")
+
+
+# # Find the table in the HTML
+# table = soup.find("table")
+
+# if table:
+#     # Add a new header cell for "DH"
+#     header_row = table.find("tr")
+#     if header_row:
+#         dh_header = soup.new_tag("th")
+#         dh_header.string = "DH"
+#         header_row.append(dh_header)
+
+#     # Add a new cell to each row for the "DH" column
+#     rows = table.find_all("tr")[1:]  # Skip the header row
+#     for row in rows:
+#         player_name = row.find("td").text.strip()  # Assuming the player's name is in the first column
+#         dh_cell = soup.new_tag("td")
+#         if player_name in all_names:
+#             dh_cell.string = "DH"
+#         row.append(dh_cell)
+
+# # Save the modified HTML back to the file
+# with open(file_path, "w", encoding="utf-8") as file:
+#     file.write(str(soup))
+
+# print(f"Updated table saved to {file_path}")
+
+# ---------------
+
 # Parse the HTML content using BeautifulSoup
 soup = BeautifulSoup(html_content, "html.parser")
 
