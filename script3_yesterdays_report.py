@@ -125,12 +125,12 @@ for x in sorted_list:
     # x.update({"scoring_plays": new_scoring_plays})
     homers.append(new_scoring_plays)
     yesterdays_content.append(
+        f"GAME:\n"
         f"{x.get('time_scheduled')}\n"
         # f"Status: {x.get('')}\n"
         f"{x.get('away_name'):<22} {x.get('away_score')}    @\n"
         f"{x.get('home_name'):<22} {x.get('home_score')}\n\n"
-        f"{x.get('scoring_plays')}\n\n"
-        f"NEXT GAME:\n"
+        # f"{x.get('scoring_plays')}\n\n"
     )
 
 
