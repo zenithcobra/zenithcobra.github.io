@@ -26,6 +26,7 @@ jobs:
         run: |
           python script4_todays_schedule.py
           python script12_add_dh_to_batters.py
+          python script13_add_dh_to_batters_to_table.py
           python script10_make_index.py
 
       - name: Commit and push changes

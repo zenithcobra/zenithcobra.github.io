@@ -2,15 +2,7 @@
 <th>NAME</th>
 <th>TEAM</th>
 <th>HRs</th>
-<th>DH</th></tr><tr>
-<td>(DH) Marcell Ozuna</td>
-<td>Atlanta Braves</td>
-<td>9</td>
-<td></td></tr><tr>
-<td>(DH) Rafael Devers</td>
-<td>Boston Red Sox</td>
-<td>12</td>
-<td></td></tr></table>
+</tr></table>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
