@@ -39,7 +39,7 @@ toronto_content = []
 toronto_game = entries_with_toronto[0]
 if "Toronto" in toronto_game.get('summary'):
     # Example UTC datetime string
-    utc_datetime_str = x.get("game_datetime")
+    utc_datetime_str = toronto_game.get("game_datetime")
     # Parse the UTC datetime string
     utc_datetime = datetime.strptime(utc_datetime_str, '%Y-%m-%dT%H:%M:%SZ')
     # Define the UTC and Eastern Time zones
@@ -58,7 +58,7 @@ if "Toronto" in toronto_game.get('summary'):
     # new_scoring_plays = ""
     # Get scoring plays as a string
 
-    scoring_plays = statsapi.game_scoring_plays(x.get("game_id"))
+    scoring_plays = statsapi.game_scoring_plays(toronto_game.get("game_id"))
     # Convert the scoring plays string into a list of lines
     scoring_plays_list = scoring_plays.split("\n")
     # Filter the lines to only include those that contain "homers"
@@ -67,14 +67,18 @@ if "Toronto" in toronto_game.get('summary'):
     processed_plays = [line.split(")")[0] + ")" for line in filtered_plays if ")" in line]
     # Join the processed lines back into a string if needed
     new_scoring_plays = "\n".join(processed_plays)
-    x.update({"time_scheduled": readable_format})
-    x.update({"scoring_plays": new_scoring_plays})
+    highlights = statsapi.game_highlights(toronto_game.get("game_id"))
+
+    toronto_game.update({"time_scheduled": readable_format})
+    toronto_game.update({"scoring_plays": new_scoring_plays})
     toronto_content.append(
-        f"{x.get('time_scheduled')}\n"
+        f"{toronto_game.get('time_scheduled')}\n"
         # f"Status: {x.get('')}\n"
-        f"{x.get('away_name'):<22} {x.get('away_score')}    @\n"
-        f"{x.get('home_name'):<22} {x.get('home_score')}\n\n"
-        f"{x.get('scoring_plays')}\n\n"
+        f"{toronto_game.get('away_name'):<22} {toronto_game.get('away_score')}    @\n"
+        f"{toronto_game.get('home_name'):<22} {toronto_game.get('home_score')}\n\n"
+        f"{toronto_game.get('scoring_plays')}\n\n"
+        f"HIGHLIGHTS\n\n"
+        f"{highlights}\n\n"
         f"NEXT GAME:\n"
     )
 
@@ -136,8 +140,13 @@ for x in sorted_list:
 
 # Write content to the new Todays_Report.txt file
 with open(report_file_path, "w") as file:
+    for tcontent in toronto_content:
+        file.write(tcontent)
     for content in yesterdays_content:
         file.write(content)
+    file.write("<h3>Yesterdays Homers</h3>\n")
+    for contents in homers:
+        file.write(contents)
 
 
 print(f"New report saved to {report_file_path}")
