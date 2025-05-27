@@ -32,9 +32,54 @@ entries_with_toronto = [x for x in yschedule if "summary" in x and "Toronto" in 
 entries_without_toronto = [x for x in yschedule if not ("summary" in x and "Toronto" in x["summary"])]
 
 # Combine the two lists, bringing entries with "Toronto" to the top
-sorted_list = entries_with_toronto + entries_without_toronto
+sorted_list = entries_without_toronto
+
+# get the toronto game
+toronto_content = []
+toronto_game = entries_with_toronto[0]
+if "Toronto" in toronto_game.get('summary'):
+    # Example UTC datetime string
+    utc_datetime_str = x.get("game_datetime")
+    # Parse the UTC datetime string
+    utc_datetime = datetime.strptime(utc_datetime_str, '%Y-%m-%dT%H:%M:%SZ')
+    # Define the UTC and Eastern Time zones
+    utc_zone = pytz.utc
+    eastern_zone = pytz.timezone('US/Eastern')
+    # Localize the datetime to UTC
+    utc_datetime = utc_zone.localize(utc_datetime)
+    # Convert to Eastern Time
+    eastern_datetime = utc_datetime.astimezone(eastern_zone)
+    # Format the datetime in a readable format
+    readable_format = eastern_datetime.strftime('%Y-%m-%d %I:%M %p %Z')
+    # print(readable_format)
+    # print(x)
+    # print(x)
+    # scoring_plays = statsapi.game_scoring_plays(x.get("game_id"))
+    # new_scoring_plays = ""
+    # Get scoring plays as a string
+
+    scoring_plays = statsapi.game_scoring_plays(x.get("game_id"))
+    # Convert the scoring plays string into a list of lines
+    scoring_plays_list = scoring_plays.split("\n")
+    # Filter the lines to only include those that contain "homers"
+    filtered_plays = [line for line in scoring_plays_list if "homers" in line]
+    # Process each kept line to only include the part before the first ")"
+    processed_plays = [line.split(")")[0] + ")" for line in filtered_plays if ")" in line]
+    # Join the processed lines back into a string if needed
+    new_scoring_plays = "\n".join(processed_plays)
+    x.update({"time_scheduled": readable_format})
+    x.update({"scoring_plays": new_scoring_plays})
+    toronto_content.append(
+        f"{x.get('time_scheduled')}\n"
+        # f"Status: {x.get('')}\n"
+        f"{x.get('away_name'):<22} {x.get('away_score')}    @\n"
+        f"{x.get('home_name'):<22} {x.get('home_score')}\n\n"
+        f"{x.get('scoring_plays')}\n\n"
+        f"NEXT GAME:\n"
+    )
 
 yesterdays_content = []
+homers = []
 for x in sorted_list:
     
     # Example UTC datetime string
@@ -77,7 +122,8 @@ for x in sorted_list:
     new_scoring_plays = "\n".join(processed_plays)
 
     x.update({"time_scheduled": readable_format})
-    x.update({"scoring_plays": new_scoring_plays})
+    # x.update({"scoring_plays": new_scoring_plays})
+    homers.append(new_scoring_plays)
     yesterdays_content.append(
         f"{x.get('time_scheduled')}\n"
         # f"Status: {x.get('')}\n"
