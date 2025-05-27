@@ -82,7 +82,6 @@ if "Toronto" in toronto_game.get('summary'):
         f"{toronto_game.get('scoring_plays')}\n\n"
         f"HIGHLIGHTS\n\n"
         f"{highlights}\n\n"
-        f"NEXT GAME:\n"
     )
 
 yesterdays_content = []
@@ -152,7 +151,7 @@ with open(report_file_path, "w") as file:
         file.write(tcontent)
     for content in yesterdays_content:
         file.write(content)
-    file.write("<h3>Yesterdays Homers</h3>\n")
+    file.write("<h3>Yesterdays Homers</h3>")
     for contents in new_homers:
         file.write(contents)
 
