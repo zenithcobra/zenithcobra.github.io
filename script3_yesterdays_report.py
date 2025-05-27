@@ -72,6 +72,19 @@ if "Toronto" in toronto_game.get('summary'):
     new_scoring_plays = "\n".join(processed_plays)
     highlights = statsapi.game_highlights(toronto_game.get("game_id"))
 
+    import re
+
+    # Example highlights string (replace this with your actual highlights string)
+    highlights = statsapi.game_highlights(toronto_game.get("game_id"))
+
+    # Regular expression to find URLs
+    url_pattern = r'(https?://[^\s]+)'
+
+    # Replace URLs with clickable HTML links
+    highlights_with_links = re.sub(url_pattern, r'<a href="\1" target="_blank">\1</a>', highlights)
+
+
+
     toronto_game.update({"time_scheduled": readable_format})
     toronto_game.update({"scoring_plays": s_plays})
     toronto_content.append(
@@ -81,7 +94,7 @@ if "Toronto" in toronto_game.get('summary'):
         f"{toronto_game.get('home_name'):<22} {toronto_game.get('home_score')}\n\n"
         f"{toronto_game.get('scoring_plays')}\n\n"
         f"HIGHLIGHTS\n\n"
-        f"{highlights}\n\n"
+        f"{highlights_with_links}\n\n"
     )
 
 yesterdays_content = []
