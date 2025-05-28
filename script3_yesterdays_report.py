@@ -157,6 +157,16 @@ for x in homers:
         new_homers.append('\n')
         new_homers.append(y)
 
+# go through homers and get all the text before the first "(" character
+new_homers = [homer.split("homers")[0].strip() for homer in new_homers if "(" in homer]
+
+
+# save homers to text_output/homers_list.csv headers being 'name'
+homers_file_path = "text_output/homers_list.csv"
+with open(homers_file_path, "w") as file:
+    file.write("name,\n")
+    for homer in new_homers:
+        file.write(f"{homer},\n")
 
 # Write content to the new Todays_Report.txt file
 with open(report_file_path, "w") as file:
