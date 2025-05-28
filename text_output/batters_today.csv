@@ -1,5 +1,5 @@
 type,name,team,HR
-batter,Shohei Ohtani,Los Angeles Dodgers,19
+batter,Shohei Ohtani,Los Angeles Dodgers,20
 batter,Teoscar Hernández,Los Angeles Dodgers,10
 batter,Freddie Freeman,Los Angeles Dodgers,9
 batter,Andy Pages,Los Angeles Dodgers,9
@@ -7,42 +7,19 @@ batter,Mookie Betts,Los Angeles Dodgers,8
 batter,Tommy Edman,Los Angeles Dodgers,8
 batter,Enrique Hernández,Los Angeles Dodgers,7
 batter,Will Smith,Los Angeles Dodgers,5
-batter,Max Muncy,Los Angeles Dodgers,3
-batter,Michael Conforto,Los Angeles Dodgers,2
-batter,James Outman,Los Angeles Dodgers,2
+batter,Max Muncy,Los Angeles Dodgers,4
+batter,Michael Conforto,Los Angeles Dodgers,3
 batter,Kyle Manzardo,Cleveland Guardians,10
 batter,José Ramírez,Cleveland Guardians,9
 batter,Bo Naylor,Cleveland Guardians,7
+batter,Daniel Schneemann,Cleveland Guardians,7
 batter,Carlos Santana,Cleveland Guardians,6
-batter,Daniel Schneemann,Cleveland Guardians,6
 batter,Gabriel Arias,Cleveland Guardians,4
 batter,Steven Kwan,Cleveland Guardians,4
 batter,Austin Hedges,Cleveland Guardians,3
 batter,Nolan Jones,Cleveland Guardians,2
 batter,Angel Martínez,Cleveland Guardians,2
 batter,Jhonkensy Noel,Cleveland Guardians,2
-batter,Lars Nootbaar,St. Louis Cardinals,7
-batter,Willson Contreras,St. Louis Cardinals,6
-batter,Masyn Winn,St. Louis Cardinals,6
-batter,Nolan Arenado,St. Louis Cardinals,5
-batter,Iván Herrera,St. Louis Cardinals,5
-batter,Alec Burleson,St. Louis Cardinals,4
-batter,Pedro Pagés,St. Louis Cardinals,4
-batter,Brendan Donovan,St. Louis Cardinals,3
-batter,Jordan Walker,St. Louis Cardinals,3
-batter,Victor Scott II,St. Louis Cardinals,2
-batter,Cedric Mullins,Baltimore Orioles,10
-batter,Ryan O'Hearn,Baltimore Orioles,8
-batter,Gunnar Henderson,Baltimore Orioles,7
-batter,Jackson Holliday,Baltimore Orioles,6
-batter,Ramón Laureano,Baltimore Orioles,6
-batter,Adley Rutschman,Baltimore Orioles,5
-batter,Heston Kjerstad,Baltimore Orioles,4
-batter,Jordan Westburg,Baltimore Orioles,4
-batter,Dylan Carlson,Baltimore Orioles,2
-batter,Ryan Mountcastle,Baltimore Orioles,2
-batter,Tyler O'Neill,Baltimore Orioles,2
-batter,Ramón Urías,Baltimore Orioles,2
 batter,Wilmer Flores,San Francisco Giants,10
 batter,Matt Chapman,San Francisco Giants,9
 batter,Heliot Ramos,San Francisco Giants,9
@@ -65,6 +42,163 @@ batter,Colt Keith,Detroit Tigers,4
 batter,Trey Sweeney,Detroit Tigers,4
 batter,Zach McKinstry,Detroit Tigers,3
 batter,Andy Ibáñez,Detroit Tigers,2
+batter,Byron Buxton,Minnesota Twins,10
+batter,Trevor Larnach,Minnesota Twins,7
+batter,Harrison Bader,Minnesota Twins,5
+batter,Kody Clemens,Minnesota Twins,5
+batter,Carlos Correa,Minnesota Twins,4
+batter,Ty France,Minnesota Twins,4
+batter,Brooks Lee,Minnesota Twins,4
+batter,Ryan Jeffers,Minnesota Twins,3
+batter,Willi Castro,Minnesota Twins,2
+batter,Edouard Julien,Minnesota Twins,2
+batter,Brandon Lowe,Tampa Bay Rays,10
+batter,Junior Caminero,Tampa Bay Rays,9
+batter,Jonathan Aranda,Tampa Bay Rays,7
+batter,Yandy Díaz,Tampa Bay Rays,7
+batter,Danny Jansen,Tampa Bay Rays,4
+batter,Kameron Misner,Tampa Bay Rays,4
+batter,Curtis Mead,Tampa Bay Rays,3
+batter,Christopher Morel,Tampa Bay Rays,3
+batter,Josh Lowe,Tampa Bay Rays,2
+batter,José Caballero,Tampa Bay Rays,1
+batter,Taylor Walls,Tampa Bay Rays,1
+batter,Miguel Vargas,Chicago White Sox,8
+batter,Andrew Benintendi,Chicago White Sox,5
+batter,Luis Robert Jr.,Chicago White Sox,5
+batter,Andrew Vaughn,Chicago White Sox,5
+batter,Lenyn Sosa,Chicago White Sox,4
+batter,Brooks Baldwin,Chicago White Sox,3
+batter,Tim Elko,Chicago White Sox,3
+batter,Joshua Palacios,Chicago White Sox,3
+batter,Nick Maton,Chicago White Sox,2
+batter,Austin Slater,Chicago White Sox,2
+batter,Michael A. Taylor,Chicago White Sox,2
+batter,Pete Alonso,New York Mets,11
+batter,Francisco Lindor,New York Mets,10
+batter,Brandon Nimmo,New York Mets,8
+batter,Juan Soto,New York Mets,8
+batter,Brett Baty,New York Mets,6
+batter,Mark Vientos,New York Mets,5
+batter,Starling Marte,New York Mets,2
+batter,Jeff McNeil,New York Mets,2
+batter,Francisco Alvarez,New York Mets,1
+batter,Tyrone Taylor,New York Mets,1
+batter,Luis Torrens,New York Mets,1
+batter,Jesse Winker,New York Mets,1
+batter,Jared Young,New York Mets,1
+batter,Wilyer Abreu,Boston Red Sox,12
+batter,Rafael Devers,Boston Red Sox,12
+batter,Alex Bregman,Boston Red Sox,11
+batter,Trevor Story,Boston Red Sox,6
+batter,Kristian Campbell,Boston Red Sox,5
+batter,Carlos Narváez,Boston Red Sox,5
+batter,Jarren Duran,Boston Red Sox,4
+batter,Rob Refsnyder,Boston Red Sox,4
+batter,Triston Casas,Boston Red Sox,3
+batter,Abraham Toro,Boston Red Sox,3
+batter,Christian Yelich,Milwaukee Brewers,10
+batter,Jackson Chourio,Milwaukee Brewers,8
+batter,Rhys Hoskins,Milwaukee Brewers,7
+batter,William Contreras,Milwaukee Brewers,5
+batter,Brice Turang,Milwaukee Brewers,4
+batter,Jake Bauers,Milwaukee Brewers,3
+batter,Sal Frelick,Milwaukee Brewers,3
+batter,Eric Haase,Milwaukee Brewers,2
+batter,Joey Ortiz,Milwaukee Brewers,2
+batter,Vinny Capra,Milwaukee Brewers,1
+batter,Isaac Collins,Milwaukee Brewers,1
+batter,Caleb Durbin,Milwaukee Brewers,1
+batter,Brent Rooker,Athletics,12
+batter,Tyler Soderstrom,Athletics,10
+batter,Shea Langeliers,Athletics,9
+batter,Lawrence Butler,Athletics,8
+batter,JJ Bleday,Athletics,6
+batter,Luis Urías,Athletics,6
+batter,Jacob Wilson,Athletics,6
+batter,Nick Kurtz,Athletics,5
+batter,Miguel Andujar,Athletics,3
+batter,Seth Brown,Athletics,1
+batter,Max Muncy,Athletics,1
+batter,Max Schuemann,Athletics,1
+batter,Isaac Paredes,Houston Astros,11
+batter,Jose Altuve,Houston Astros,8
+batter,Jeremy Peña,Houston Astros,7
+batter,Christian Walker,Houston Astros,7
+batter,Yainer Diaz,Houston Astros,5
+batter,Yordan Alvarez,Houston Astros,3
+batter,Victor Caratini,Houston Astros,3
+batter,Jake Meyers,Houston Astros,3
+batter,Cam Smith,Houston Astros,3
+batter,Zach Dezenzo,Houston Astros,1
+batter,Mauricio Dubón,Houston Astros,1
+batter,Brendan Rodgers,Houston Astros,1
+batter,Oneil Cruz,Pittsburgh Pirates,11
+batter,Bryan Reynolds,Pittsburgh Pirates,7
+batter,Alexander Canario,Pittsburgh Pirates,3
+batter,Andrew McCutchen,Pittsburgh Pirates,3
+batter,Henry Davis,Pittsburgh Pirates,2
+batter,Adam Frazier,Pittsburgh Pirates,2
+batter,Matt Gorski,Pittsburgh Pirates,2
+batter,Jared Triolo,Pittsburgh Pirates,2
+batter,Enmanuel Valdez,Pittsburgh Pirates,2
+batter,Joey Bart,Pittsburgh Pirates,1
+batter,Nick Gonzales,Pittsburgh Pirates,1
+batter,Ke'Bryan Hayes,Pittsburgh Pirates,1
+batter,Spencer Horwitz,Pittsburgh Pirates,1
+batter,Isiah Kiner-Falefa,Pittsburgh Pirates,1
+batter,Corbin Carroll,Arizona Diamondbacks,16
+batter,Eugenio Suárez,Arizona Diamondbacks,15
+batter,Lourdes Gurriel Jr.,Arizona Diamondbacks,8
+batter,Ketel Marte,Arizona Diamondbacks,8
+batter,Josh Naylor,Arizona Diamondbacks,6
+batter,Geraldo Perdomo,Arizona Diamondbacks,6
+batter,Tim Tawa,Arizona Diamondbacks,5
+batter,Gabriel Moreno,Arizona Diamondbacks,4
+batter,Pavin Smith,Arizona Diamondbacks,4
+batter,Randal Grichuk,Arizona Diamondbacks,2
+batter,Kyle Stowers,Miami Marlins,10
+batter,Matt Mervis,Miami Marlins,7
+batter,Agustín Ramírez,Miami Marlins,6
+batter,Liam Hicks,Miami Marlins,4
+batter,Eric Wagaman,Miami Marlins,4
+batter,Otto Lopez,Miami Marlins,3
+batter,Dane Myers,Miami Marlins,3
+batter,Connor Norby,Miami Marlins,3
+batter,Jesús Sánchez,Miami Marlins,3
+batter,Derek Hill,Miami Marlins,2
+batter,Fernando Tatis Jr.,San Diego Padres,13
+batter,Gavin Sheets,San Diego Padres,10
+batter,Manny Machado,San Diego Padres,6
+batter,Jackson Merrill,San Diego Padres,5
+batter,Jake Cronenworth,San Diego Padres,4
+batter,Luis Arraez,San Diego Padres,3
+batter,Xander Bogaerts,San Diego Padres,3
+batter,Elias Díaz,San Diego Padres,3
+batter,Jason Heyward,San Diego Padres,2
+batter,Martín Maldonado,San Diego Padres,2
+batter,Lars Nootbaar,St. Louis Cardinals,8
+batter,Nolan Arenado,St. Louis Cardinals,6
+batter,Willson Contreras,St. Louis Cardinals,6
+batter,Masyn Winn,St. Louis Cardinals,6
+batter,Iván Herrera,St. Louis Cardinals,5
+batter,Alec Burleson,St. Louis Cardinals,4
+batter,Pedro Pagés,St. Louis Cardinals,4
+batter,Brendan Donovan,St. Louis Cardinals,3
+batter,Jordan Walker,St. Louis Cardinals,3
+batter,Victor Scott II,St. Louis Cardinals,2
+batter,Cedric Mullins,Baltimore Orioles,10
+batter,Ryan O'Hearn,Baltimore Orioles,9
+batter,Gunnar Henderson,Baltimore Orioles,7
+batter,Jackson Holliday,Baltimore Orioles,6
+batter,Ramón Laureano,Baltimore Orioles,6
+batter,Adley Rutschman,Baltimore Orioles,5
+batter,Heston Kjerstad,Baltimore Orioles,4
+batter,Jordan Westburg,Baltimore Orioles,4
+batter,Dylan Carlson,Baltimore Orioles,2
+batter,Ryan Mountcastle,Baltimore Orioles,2
+batter,Tyler O'Neill,Baltimore Orioles,2
+batter,Ramón Urías,Baltimore Orioles,2
 batter,Matt Olson,Atlanta Braves,12
 batter,Marcell Ozuna,Atlanta Braves,9
 batter,Sean Murphy,Atlanta Braves,8
@@ -87,51 +221,7 @@ batter,Brandon Marsh,Philadelphia Phillies,1
 batter,Johan Rojas,Philadelphia Phillies,1
 batter,Edmundo Sosa,Philadelphia Phillies,1
 batter,Weston Wilson,Philadelphia Phillies,1
-batter,Byron Buxton,Minnesota Twins,10
-batter,Trevor Larnach,Minnesota Twins,7
-batter,Harrison Bader,Minnesota Twins,5
-batter,Kody Clemens,Minnesota Twins,4
-batter,Carlos Correa,Minnesota Twins,4
-batter,Ty France,Minnesota Twins,4
-batter,Brooks Lee,Minnesota Twins,4
-batter,Ryan Jeffers,Minnesota Twins,3
-batter,Willi Castro,Minnesota Twins,2
-batter,Edouard Julien,Minnesota Twins,2
-batter,Brandon Lowe,Tampa Bay Rays,10
-batter,Junior Caminero,Tampa Bay Rays,9
-batter,Jonathan Aranda,Tampa Bay Rays,7
-batter,Yandy Díaz,Tampa Bay Rays,7
-batter,Danny Jansen,Tampa Bay Rays,4
-batter,Kameron Misner,Tampa Bay Rays,4
-batter,Curtis Mead,Tampa Bay Rays,3
-batter,Christopher Morel,Tampa Bay Rays,3
-batter,Josh Lowe,Tampa Bay Rays,2
-batter,José Caballero,Tampa Bay Rays,1
-batter,Taylor Walls,Tampa Bay Rays,1
-batter,Miguel Vargas,Chicago White Sox,7
-batter,Andrew Benintendi,Chicago White Sox,5
-batter,Luis Robert Jr.,Chicago White Sox,5
-batter,Andrew Vaughn,Chicago White Sox,5
-batter,Lenyn Sosa,Chicago White Sox,4
-batter,Brooks Baldwin,Chicago White Sox,3
-batter,Tim Elko,Chicago White Sox,3
-batter,Joshua Palacios,Chicago White Sox,3
-batter,Nick Maton,Chicago White Sox,2
-batter,Austin Slater,Chicago White Sox,2
-batter,Michael A. Taylor,Chicago White Sox,2
-batter,Pete Alonso,New York Mets,10
-batter,Francisco Lindor,New York Mets,10
-batter,Brandon Nimmo,New York Mets,8
-batter,Juan Soto,New York Mets,8
-batter,Brett Baty,New York Mets,6
-batter,Mark Vientos,New York Mets,5
-batter,Starling Marte,New York Mets,2
-batter,Jeff McNeil,New York Mets,2
-batter,Francisco Alvarez,New York Mets,1
-batter,Tyrone Taylor,New York Mets,1
-batter,Luis Torrens,New York Mets,1
-batter,Jesse Winker,New York Mets,1
-batter,Elly De La Cruz,Cincinnati Reds,9
+batter,Elly De La Cruz,Cincinnati Reds,11
 batter,Austin Hays,Cincinnati Reds,6
 batter,Matt McLain,Cincinnati Reds,6
 batter,Will Benson,Cincinnati Reds,5
@@ -139,6 +229,7 @@ batter,Spencer Steer,Cincinnati Reds,4
 batter,Jake Fraley,Cincinnati Reds,3
 batter,TJ Friedl,Cincinnati Reds,3
 batter,Noelvi Marte,Cincinnati Reds,3
+batter,Tyler Stephenson,Cincinnati Reds,3
 batter,Jose Trevino,Cincinnati Reds,3
 batter,Austin Wynns,Cincinnati Reds,3
 batter,Vinnie Pasquantino,Kansas City Royals,8
@@ -153,34 +244,12 @@ batter,Jonathan India,Kansas City Royals,1
 batter,Luke Maile,Kansas City Royals,1
 batter,MJ Melendez,Kansas City Royals,1
 batter,Drew Waters,Kansas City Royals,1
-batter,Wilyer Abreu,Boston Red Sox,12
-batter,Rafael Devers,Boston Red Sox,12
-batter,Alex Bregman,Boston Red Sox,11
-batter,Trevor Story,Boston Red Sox,6
-batter,Kristian Campbell,Boston Red Sox,5
-batter,Carlos Narváez,Boston Red Sox,5
-batter,Jarren Duran,Boston Red Sox,4
-batter,Rob Refsnyder,Boston Red Sox,4
-batter,Triston Casas,Boston Red Sox,3
-batter,Abraham Toro,Boston Red Sox,3
-batter,Christian Yelich,Milwaukee Brewers,9
-batter,Jackson Chourio,Milwaukee Brewers,8
-batter,Rhys Hoskins,Milwaukee Brewers,7
-batter,William Contreras,Milwaukee Brewers,5
-batter,Brice Turang,Milwaukee Brewers,4
-batter,Jake Bauers,Milwaukee Brewers,3
-batter,Sal Frelick,Milwaukee Brewers,3
-batter,Eric Haase,Milwaukee Brewers,2
-batter,Joey Ortiz,Milwaukee Brewers,2
-batter,Vinny Capra,Milwaukee Brewers,1
-batter,Isaac Collins,Milwaukee Brewers,1
-batter,Caleb Durbin,Milwaukee Brewers,1
 batter,Jordan Beck,Colorado Rockies,8
 batter,Hunter Goodman,Colorado Rockies,7
 batter,Ryan McMahon,Colorado Rockies,6
 batter,Michael Toglia,Colorado Rockies,6
+batter,Brenton Doyle,Colorado Rockies,5
 batter,Mickey Moniak,Colorado Rockies,5
-batter,Brenton Doyle,Colorado Rockies,4
 batter,Kyle Farmer,Colorado Rockies,2
 batter,Ezequiel Tovar,Colorado Rockies,2
 batter,Adael Amador,Colorado Rockies,1
@@ -226,40 +295,16 @@ batter,Sam Haggerty,Texas Rangers,1
 batter,Dustin Harris,Texas Rangers,1
 batter,Kyle Higashioka,Texas Rangers,1
 batter,Leody Taveras,Texas Rangers,1
-batter,Brent Rooker,Athletics,12
-batter,Tyler Soderstrom,Athletics,10
-batter,Shea Langeliers,Athletics,9
-batter,Lawrence Butler,Athletics,7
-batter,JJ Bleday,Athletics,6
-batter,Luis Urías,Athletics,6
-batter,Jacob Wilson,Athletics,6
-batter,Nick Kurtz,Athletics,5
-batter,Miguel Andujar,Athletics,3
-batter,Seth Brown,Athletics,1
-batter,Max Muncy,Athletics,1
-batter,Max Schuemann,Athletics,1
-batter,Isaac Paredes,Houston Astros,11
-batter,Jose Altuve,Houston Astros,6
-batter,Jeremy Peña,Houston Astros,6
-batter,Christian Walker,Houston Astros,6
-batter,Yainer Diaz,Houston Astros,5
-batter,Yordan Alvarez,Houston Astros,3
-batter,Victor Caratini,Houston Astros,3
-batter,Jake Meyers,Houston Astros,3
-batter,Cam Smith,Houston Astros,3
-batter,Zach Dezenzo,Houston Astros,1
-batter,Mauricio Dubón,Houston Astros,1
-batter,Brendan Rodgers,Houston Astros,1
 batter,Aaron Judge,New York Yankees,18
 batter,Trent Grisham,New York Yankees,12
-batter,Ben Rice,New York Yankees,10
+batter,Ben Rice,New York Yankees,11
 batter,Cody Bellinger,New York Yankees,8
 batter,Austin Wells,New York Yankees,8
 batter,Jazz Chisholm Jr.,New York Yankees,7
 batter,Jasson Domínguez,New York Yankees,6
 batter,Anthony Volpe,New York Yankees,6
 batter,Paul Goldschmidt,New York Yankees,5
-batter,Oswald Peraza,New York Yankees,2
+batter,Oswald Peraza,New York Yankees,3
 batter,Taylor Ward,Los Angeles Angels,15
 batter,Logan O'Hoppe,Los Angeles Angels,14
 batter,Zach Neto,Los Angeles Angels,9
@@ -267,34 +312,10 @@ batter,Mike Trout,Los Angeles Angels,9
 batter,Jorge Soler,Los Angeles Angels,7
 batter,Jo Adell,Los Angeles Angels,6
 batter,Kyren Paris,Los Angeles Angels,6
-batter,Yoán Moncada,Los Angeles Angels,4
+batter,Yoán Moncada,Los Angeles Angels,5
 batter,Matthew Lugo,Los Angeles Angels,3
 batter,Nolan Schanuel,Los Angeles Angels,3
-batter,Oneil Cruz,Pittsburgh Pirates,11
-batter,Bryan Reynolds,Pittsburgh Pirates,6
-batter,Alexander Canario,Pittsburgh Pirates,3
-batter,Andrew McCutchen,Pittsburgh Pirates,3
-batter,Adam Frazier,Pittsburgh Pirates,2
-batter,Matt Gorski,Pittsburgh Pirates,2
-batter,Jared Triolo,Pittsburgh Pirates,2
-batter,Enmanuel Valdez,Pittsburgh Pirates,2
-batter,Joey Bart,Pittsburgh Pirates,1
-batter,Henry Davis,Pittsburgh Pirates,1
-batter,Nick Gonzales,Pittsburgh Pirates,1
-batter,Ke'Bryan Hayes,Pittsburgh Pirates,1
-batter,Spencer Horwitz,Pittsburgh Pirates,1
-batter,Isiah Kiner-Falefa,Pittsburgh Pirates,1
-batter,Corbin Carroll,Arizona Diamondbacks,15
-batter,Eugenio Suárez,Arizona Diamondbacks,15
-batter,Lourdes Gurriel Jr.,Arizona Diamondbacks,8
-batter,Ketel Marte,Arizona Diamondbacks,8
-batter,Josh Naylor,Arizona Diamondbacks,6
-batter,Geraldo Perdomo,Arizona Diamondbacks,6
-batter,Tim Tawa,Arizona Diamondbacks,5
-batter,Gabriel Moreno,Arizona Diamondbacks,4
-batter,Pavin Smith,Arizona Diamondbacks,4
-batter,Randal Grichuk,Arizona Diamondbacks,2
-batter,James Wood,Washington Nationals,13
+batter,James Wood,Washington Nationals,14
 batter,CJ Abrams,Washington Nationals,8
 batter,Nathaniel Lowe,Washington Nationals,8
 batter,Dylan Crews,Washington Nationals,7
@@ -303,9 +324,9 @@ batter,Luis García Jr.,Washington Nationals,4
 batter,Riley Adams,Washington Nationals,2
 batter,Amed Rosario,Washington Nationals,2
 batter,Keibert Ruiz,Washington Nationals,2
-batter,Cal Raleigh,Seattle Mariners,17
+batter,Cal Raleigh,Seattle Mariners,19
 batter,Jorge Polanco,Seattle Mariners,10
-batter,Julio Rodríguez,Seattle Mariners,9
+batter,Julio Rodríguez,Seattle Mariners,10
 batter,Dylan Moore,Seattle Mariners,8
 batter,Rowdy Tellez,Seattle Mariners,8
 batter,Randy Arozarena,Seattle Mariners,6
@@ -316,23 +337,3 @@ batter,Ryan Bliss,Seattle Mariners,1
 batter,Mitch Garver,Seattle Mariners,1
 batter,Miles Mastrobuoni,Seattle Mariners,1
 batter,Ben Williamson,Seattle Mariners,1
-batter,Kyle Stowers,Miami Marlins,10
-batter,Matt Mervis,Miami Marlins,7
-batter,Agustín Ramírez,Miami Marlins,6
-batter,Liam Hicks,Miami Marlins,4
-batter,Eric Wagaman,Miami Marlins,4
-batter,Otto Lopez,Miami Marlins,3
-batter,Dane Myers,Miami Marlins,3
-batter,Connor Norby,Miami Marlins,3
-batter,Jesús Sánchez,Miami Marlins,3
-batter,Derek Hill,Miami Marlins,2
-batter,Fernando Tatis Jr.,San Diego Padres,12
-batter,Gavin Sheets,San Diego Padres,10
-batter,Manny Machado,San Diego Padres,6
-batter,Jake Cronenworth,San Diego Padres,4
-batter,Jackson Merrill,San Diego Padres,4
-batter,Luis Arraez,San Diego Padres,3
-batter,Xander Bogaerts,San Diego Padres,3
-batter,Elias Díaz,San Diego Padres,3
-batter,Jason Heyward,San Diego Padres,2
-batter,Martín Maldonado,San Diego Padres,2
