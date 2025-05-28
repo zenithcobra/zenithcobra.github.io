@@ -29,21 +29,22 @@ def get_matches_today_data():
         # away_id
         game_data.update({'away_id': x.get('away_id')})
 
-        away_team_leaders_hr = []
+        away_team_batters = []
+        
         # add top away team guys here
         away_leaders = statsapi.team_leader_data(x.get('away_id'), 'homeRuns', season=2025, leaderGameTypes="R", limit=10)
         for z in away_leaders:
-            away_team_leaders_hr.append({'name': z[1],'homeRuns': z[2]})
+            away_team_batters.append({'name': z[1],'homeRuns': z[2]})
 
-        game_data.update({'away_team_leaders_hr': away_team_leaders_hr})
+        game_data.update({'away_team_batters': away_team_batters})
 
-        home_team_leaders_hr = []
+        home_team_batters = []
         # add top away team guys here
         home_leaders = statsapi.team_leader_data(x.get('home_id'), 'homeRuns', season=2025, leaderGameTypes="R", limit=10)
         for z in home_leaders:
-            home_team_leaders_hr.append({'name': z[1],'homeRuns': z[2]})
+            home_team_batters.append({'name': z[1],'homeRuns': z[2]})
 
-        game_data.update({'home_team_leaders_hr': home_team_leaders_hr})
+        game_data.update({'home_team_batters': home_team_batters})
 
         # home_id
         game_data.update({'home_id': x.get('home_id')})
