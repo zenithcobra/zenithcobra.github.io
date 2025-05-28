@@ -1,0 +1,129 @@
+<table border="1"><tr>
+<th>NAME</th>
+<th>TEAM</th>
+<th>HRs</th>
+</tr><tr>
+<td>(DH) Kyle Manzardo</td>
+<td>Cleveland Guardians</td>
+<td>10</td>
+</tr><tr>
+<td>(DH) Willson Contreras</td>
+<td>St. Louis Cardinals</td>
+<td>6</td>
+</tr><tr>
+<td>(DH) Ryan O'Hearn</td>
+<td>Baltimore Orioles</td>
+<td>8</td>
+</tr><tr>
+<td>(DH) Wilmer Flores</td>
+<td>San Francisco Giants</td>
+<td>10</td>
+</tr><tr>
+<td>(DH) Colt Keith</td>
+<td>Detroit Tigers</td>
+<td>4</td>
+</tr><tr>
+<td>(DH) Marcell Ozuna</td>
+<td>Atlanta Braves</td>
+<td>9</td>
+</tr><tr>
+<td>(DH) Kyle Schwarber</td>
+<td>Philadelphia Phillies</td>
+<td>18</td>
+</tr><tr>
+<td>(DH) Trevor Larnach</td>
+<td>Minnesota Twins</td>
+<td>7</td>
+</tr><tr>
+<td>(DH) Yandy Díaz</td>
+<td>Tampa Bay Rays</td>
+<td>7</td>
+</tr><tr>
+<td>(DH) Andrew Benintendi</td>
+<td>Chicago White Sox</td>
+<td>5</td>
+</tr><tr>
+<td>(DH) Jonathan India</td>
+<td>Kansas City Royals</td>
+<td>1</td>
+</tr><tr>
+<td>(DH) Rafael Devers</td>
+<td>Boston Red Sox</td>
+<td>12</td>
+</tr><tr>
+<td>(DH) Christian Yelich</td>
+<td>Milwaukee Brewers</td>
+<td>9</td>
+</tr><tr>
+<td>(DH) Nick Martini</td>
+<td>Colorado Rockies</td>
+<td>1</td>
+</tr><tr>
+<td>(DH) Seiya Suzuki</td>
+<td>Chicago Cubs</td>
+<td>14</td>
+</tr><tr>
+<td>(DH) Bo Bichette</td>
+<td>Toronto Blue Jays</td>
+<td>4</td>
+</tr><tr>
+<td>(DH) Jonah Heim</td>
+<td>Texas Rangers</td>
+<td>6</td>
+</tr><tr>
+<td>(DH) Brent Rooker</td>
+<td>Athletics</td>
+<td>12</td>
+</tr><tr>
+<td>(DH) Jose Altuve</td>
+<td>Houston Astros</td>
+<td>6</td>
+</tr><tr>
+<td>(DH) Ben Rice</td>
+<td>New York Yankees</td>
+<td>10</td>
+</tr><tr>
+<td>(DH) Taylor Ward</td>
+<td>Los Angeles Angels</td>
+<td>15</td>
+</tr><tr>
+<td>(DH) Oneil Cruz</td>
+<td>Pittsburgh Pirates</td>
+<td>11</td>
+</tr><tr>
+<td>(DH) Pavin Smith</td>
+<td>Arizona Diamondbacks</td>
+<td>4</td>
+</tr><tr>
+<td>(DH) Josh Bell</td>
+<td>Washington Nationals</td>
+<td>6</td>
+</tr><tr>
+<td>(DH) Mitch Garver</td>
+<td>Seattle Mariners</td>
+<td>1</td>
+</tr><tr>
+<td>(DH) Liam Hicks</td>
+<td>Miami Marlins</td>
+<td>4</td>
+</tr><tr>
+<td>(DH) Gavin Sheets</td>
+<td>San Diego Padres</td>
+<td>10</td>
+</tr></table>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
