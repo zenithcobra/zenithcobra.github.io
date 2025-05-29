@@ -176,7 +176,8 @@ with open(report_file_path, "w") as file:
         file.write(content)
     file.write("<h3>Yesterdays Homers</h3>")
     for contents in new_homers:
-        file.write(contents)
+        file.write(f"{contents}\n")
+
 
 
 print(f"New report saved to {report_file_path}")
