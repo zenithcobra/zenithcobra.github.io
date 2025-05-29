@@ -265,8 +265,8 @@ Rank Team                   W   L   GB  (E#) WC Rank WC GB (E#)
 <tr>
 <td>Cristopher Sánchez</td>
 <td>Philadelphia Phillies</td>
-<td>3.62</td>
-<td>8.40</td>
+<td>3.61</td>
+<td>8.41</td>
 </tr>
 <tr>
 <td>Chris Sale</td>
@@ -338,578 +338,1264 @@ document.addEventListener('DOMContentLoaded', function() {
 </pre>
         <h2 id="match-overviews-batters">Batter Match Overviews</h2>
         <pre><h1>Batters Overview</h1>
-<table border="1">
+<table border='1'>
 <tr>
 <th>NAME</th>
 <th>TEAM</th>
 <th>HRs</th>
+<th>HITS</th>
+<th>RBI</th>
+<th>HRpg</th>
+<th>Hpg</th>
+<th>RBIpg</th>
+<th>HR24</th>
 </tr>
 <tr>
 <td>Matt Olson</td>
 <td>Atlanta Braves</td>
 <td>12</td>
+<td>46.0</td>
+<td>29.0</td>
+<td>0.222</td>
+<td>0.852</td>
+<td>0.537</td>
+<td>12.24</td>
 </tr>
 <tr>
-<td>(DH) Marcell Ozuna</td>
+<td>Marcell Ozuna</td>
 <td>Atlanta Braves</td>
 <td>9</td>
+<td>48.0</td>
+<td>24.0</td>
+<td>0.176</td>
+<td>0.941</td>
+<td>0.471</td>
+<td>9.24</td>
 </tr>
 <tr>
 <td>Sean Murphy</td>
 <td>Atlanta Braves</td>
 <td>8</td>
+<td>24.0</td>
+<td>18.0</td>
+<td>0.235</td>
+<td>0.706</td>
+<td>0.529</td>
+<td>8.24</td>
 </tr>
 <tr>
 <td>Austin Riley</td>
 <td>Atlanta Braves</td>
 <td>8</td>
+<td>59.0</td>
+<td>28.0</td>
+<td>0.148</td>
+<td>1.093</td>
+<td>0.519</td>
+<td>8.24</td>
 </tr>
 <tr>
 <td>Ozzie Albies</td>
 <td>Atlanta Braves</td>
 <td>5</td>
+<td>51.0</td>
+<td>19.0</td>
+<td>0.093</td>
+<td>0.944</td>
+<td>0.352</td>
+<td>5.24</td>
 </tr>
 <tr>
 <td>Drake Baldwin</td>
 <td>Atlanta Braves</td>
 <td>5</td>
+<td>33.0</td>
+<td>15.0</td>
+<td>0.152</td>
+<td>1.0</td>
+<td>0.455</td>
+<td>5.24</td>
 </tr>
 <tr>
 <td>Michael Harris II</td>
 <td>Atlanta Braves</td>
 <td>3</td>
+<td>45.0</td>
+<td>31.0</td>
+<td>0.056</td>
+<td>0.833</td>
+<td>0.574</td>
+<td>3.24</td>
 </tr>
 <tr>
 <td>Ronald Acuña Jr.</td>
 <td>Atlanta Braves</td>
 <td>2</td>
+<td>5.0</td>
+<td>3.0</td>
+<td>0.5</td>
+<td>1.25</td>
+<td>0.75</td>
+<td>2.24</td>
 </tr>
 <tr>
 <td>Jarred Kelenic</td>
 <td>Atlanta Braves</td>
 <td>2</td>
+<td>10.0</td>
+<td>2.0</td>
+<td>0.087</td>
+<td>0.435</td>
+<td>0.087</td>
+<td>2.24</td>
 </tr>
 <tr>
 <td>Eli White</td>
 <td>Atlanta Braves</td>
 <td>2</td>
+<td>32.0</td>
+<td>13.0</td>
+<td>0.045</td>
+<td>0.727</td>
+<td>0.295</td>
+<td>2.24</td>
 </tr>
 <tr>
-<td>(DH) Kyle Schwarber</td>
+<td>Kyle Schwarber</td>
 <td>Philadelphia Phillies</td>
 <td>18</td>
+<td>49.0</td>
+<td>40.0</td>
+<td>0.327</td>
+<td>0.891</td>
+<td>0.727</td>
+<td>18.24</td>
 </tr>
 <tr>
 <td>Bryce Harper</td>
 <td>Philadelphia Phillies</td>
 <td>8</td>
+<td>54.0</td>
+<td>33.0</td>
+<td>0.148</td>
+<td>1.0</td>
+<td>0.611</td>
+<td>8.24</td>
 </tr>
 <tr>
 <td>Max Kepler</td>
 <td>Philadelphia Phillies</td>
 <td>6</td>
+<td>38.0</td>
+<td>19.0</td>
+<td>0.12</td>
+<td>0.76</td>
+<td>0.38</td>
+<td>6.24</td>
 </tr>
 <tr>
 <td>J.T. Realmuto</td>
 <td>Philadelphia Phillies</td>
 <td>5</td>
+<td>39.0</td>
+<td>20.0</td>
+<td>0.111</td>
+<td>0.867</td>
+<td>0.444</td>
+<td>5.24</td>
 </tr>
 <tr>
 <td>Trea Turner</td>
 <td>Philadelphia Phillies</td>
 <td>5</td>
+<td>65.0</td>
+<td>23.0</td>
+<td>0.094</td>
+<td>1.226</td>
+<td>0.434</td>
+<td>5.24</td>
 </tr>
 <tr>
 <td>Alec Bohm</td>
 <td>Philadelphia Phillies</td>
 <td>4</td>
+<td>54.0</td>
+<td>20.0</td>
+<td>0.077</td>
+<td>1.038</td>
+<td>0.385</td>
+<td>4.24</td>
 </tr>
 <tr>
 <td>Nick Castellanos</td>
 <td>Philadelphia Phillies</td>
 <td>4</td>
+<td>57.0</td>
+<td>29.0</td>
+<td>0.073</td>
+<td>1.036</td>
+<td>0.527</td>
+<td>4.24</td>
 </tr>
 <tr>
 <td>Bryson Stott</td>
 <td>Philadelphia Phillies</td>
 <td>4</td>
+<td>47.0</td>
+<td>24.0</td>
+<td>0.082</td>
+<td>0.959</td>
+<td>0.49</td>
+<td>4.24</td>
 </tr>
 <tr>
 <td>Brandon Marsh</td>
 <td>Philadelphia Phillies</td>
 <td>1</td>
+<td>20.0</td>
+<td>10.0</td>
+<td>0.027</td>
+<td>0.541</td>
+<td>0.27</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Johan Rojas</td>
 <td>Philadelphia Phillies</td>
 <td>1</td>
+<td>23.0</td>
+<td>12.0</td>
+<td>0.026</td>
+<td>0.59</td>
+<td>0.308</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Edmundo Sosa</td>
 <td>Philadelphia Phillies</td>
 <td>1</td>
+<td>23.0</td>
+<td>12.0</td>
+<td>0.037</td>
+<td>0.852</td>
+<td>0.444</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Weston Wilson</td>
 <td>Philadelphia Phillies</td>
 <td>1</td>
+<td>5.0</td>
+<td>3.0</td>
+<td>0.077</td>
+<td>0.385</td>
+<td>0.231</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Matt Olson</td>
 <td>Atlanta Braves</td>
 <td>12</td>
+<td>46.0</td>
+<td>29.0</td>
+<td>0.222</td>
+<td>0.852</td>
+<td>0.537</td>
+<td>12.24</td>
 </tr>
 <tr>
-<td>(DH) Marcell Ozuna</td>
+<td>Marcell Ozuna</td>
 <td>Atlanta Braves</td>
 <td>9</td>
+<td>48.0</td>
+<td>24.0</td>
+<td>0.176</td>
+<td>0.941</td>
+<td>0.471</td>
+<td>9.24</td>
 </tr>
 <tr>
 <td>Sean Murphy</td>
 <td>Atlanta Braves</td>
 <td>8</td>
+<td>24.0</td>
+<td>18.0</td>
+<td>0.235</td>
+<td>0.706</td>
+<td>0.529</td>
+<td>8.24</td>
 </tr>
 <tr>
 <td>Austin Riley</td>
 <td>Atlanta Braves</td>
 <td>8</td>
+<td>59.0</td>
+<td>28.0</td>
+<td>0.148</td>
+<td>1.093</td>
+<td>0.519</td>
+<td>8.24</td>
 </tr>
 <tr>
 <td>Ozzie Albies</td>
 <td>Atlanta Braves</td>
 <td>5</td>
+<td>51.0</td>
+<td>19.0</td>
+<td>0.093</td>
+<td>0.944</td>
+<td>0.352</td>
+<td>5.24</td>
 </tr>
 <tr>
 <td>Drake Baldwin</td>
 <td>Atlanta Braves</td>
 <td>5</td>
+<td>33.0</td>
+<td>15.0</td>
+<td>0.152</td>
+<td>1.0</td>
+<td>0.455</td>
+<td>5.24</td>
 </tr>
 <tr>
 <td>Michael Harris II</td>
 <td>Atlanta Braves</td>
 <td>3</td>
+<td>45.0</td>
+<td>31.0</td>
+<td>0.056</td>
+<td>0.833</td>
+<td>0.574</td>
+<td>3.24</td>
 </tr>
 <tr>
 <td>Ronald Acuña Jr.</td>
 <td>Atlanta Braves</td>
 <td>2</td>
+<td>5.0</td>
+<td>3.0</td>
+<td>0.5</td>
+<td>1.25</td>
+<td>0.75</td>
+<td>2.24</td>
 </tr>
 <tr>
 <td>Jarred Kelenic</td>
 <td>Atlanta Braves</td>
 <td>2</td>
+<td>10.0</td>
+<td>2.0</td>
+<td>0.087</td>
+<td>0.435</td>
+<td>0.087</td>
+<td>2.24</td>
 </tr>
 <tr>
 <td>Eli White</td>
 <td>Atlanta Braves</td>
 <td>2</td>
+<td>32.0</td>
+<td>13.0</td>
+<td>0.045</td>
+<td>0.727</td>
+<td>0.295</td>
+<td>2.24</td>
 </tr>
 <tr>
-<td>(DH) Kyle Schwarber</td>
+<td>Kyle Schwarber</td>
 <td>Philadelphia Phillies</td>
 <td>18</td>
+<td>49.0</td>
+<td>40.0</td>
+<td>0.327</td>
+<td>0.891</td>
+<td>0.727</td>
+<td>18.24</td>
 </tr>
 <tr>
 <td>Bryce Harper</td>
 <td>Philadelphia Phillies</td>
 <td>8</td>
+<td>54.0</td>
+<td>33.0</td>
+<td>0.148</td>
+<td>1.0</td>
+<td>0.611</td>
+<td>8.24</td>
 </tr>
 <tr>
 <td>Max Kepler</td>
 <td>Philadelphia Phillies</td>
 <td>6</td>
+<td>38.0</td>
+<td>19.0</td>
+<td>0.12</td>
+<td>0.76</td>
+<td>0.38</td>
+<td>6.24</td>
 </tr>
 <tr>
 <td>J.T. Realmuto</td>
 <td>Philadelphia Phillies</td>
 <td>5</td>
+<td>39.0</td>
+<td>20.0</td>
+<td>0.111</td>
+<td>0.867</td>
+<td>0.444</td>
+<td>5.24</td>
 </tr>
 <tr>
 <td>Trea Turner</td>
 <td>Philadelphia Phillies</td>
 <td>5</td>
+<td>65.0</td>
+<td>23.0</td>
+<td>0.094</td>
+<td>1.226</td>
+<td>0.434</td>
+<td>5.24</td>
 </tr>
 <tr>
 <td>Alec Bohm</td>
 <td>Philadelphia Phillies</td>
 <td>4</td>
+<td>54.0</td>
+<td>20.0</td>
+<td>0.077</td>
+<td>1.038</td>
+<td>0.385</td>
+<td>4.24</td>
 </tr>
 <tr>
 <td>Nick Castellanos</td>
 <td>Philadelphia Phillies</td>
 <td>4</td>
+<td>57.0</td>
+<td>29.0</td>
+<td>0.073</td>
+<td>1.036</td>
+<td>0.527</td>
+<td>4.24</td>
 </tr>
 <tr>
 <td>Bryson Stott</td>
 <td>Philadelphia Phillies</td>
 <td>4</td>
+<td>47.0</td>
+<td>24.0</td>
+<td>0.082</td>
+<td>0.959</td>
+<td>0.49</td>
+<td>4.24</td>
 </tr>
 <tr>
 <td>Brandon Marsh</td>
 <td>Philadelphia Phillies</td>
 <td>1</td>
+<td>20.0</td>
+<td>10.0</td>
+<td>0.027</td>
+<td>0.541</td>
+<td>0.27</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Johan Rojas</td>
 <td>Philadelphia Phillies</td>
 <td>1</td>
+<td>23.0</td>
+<td>12.0</td>
+<td>0.026</td>
+<td>0.59</td>
+<td>0.308</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Edmundo Sosa</td>
 <td>Philadelphia Phillies</td>
 <td>1</td>
+<td>23.0</td>
+<td>12.0</td>
+<td>0.037</td>
+<td>0.852</td>
+<td>0.444</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Weston Wilson</td>
 <td>Philadelphia Phillies</td>
 <td>1</td>
+<td>5.0</td>
+<td>3.0</td>
+<td>0.077</td>
+<td>0.385</td>
+<td>0.231</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Brent Rooker</td>
 <td>Athletics</td>
 <td>12</td>
+<td>57.0</td>
+<td>27.0</td>
+<td>0.214</td>
+<td>1.018</td>
+<td>0.482</td>
+<td>12.24</td>
 </tr>
 <tr>
 <td>Tyler Soderstrom</td>
 <td>Athletics</td>
 <td>10</td>
+<td>56.0</td>
+<td>31.0</td>
+<td>0.179</td>
+<td>1.0</td>
+<td>0.554</td>
+<td>10.24</td>
 </tr>
 <tr>
 <td>Shea Langeliers</td>
 <td>Athletics</td>
 <td>9</td>
+<td>43.0</td>
+<td>25.0</td>
+<td>0.184</td>
+<td>0.878</td>
+<td>0.51</td>
+<td>9.24</td>
 </tr>
 <tr>
 <td>Lawrence Butler</td>
 <td>Athletics</td>
 <td>8</td>
+<td>52.0</td>
+<td>23.0</td>
+<td>0.154</td>
+<td>1.0</td>
+<td>0.442</td>
+<td>8.24</td>
 </tr>
 <tr>
 <td>Jacob Wilson</td>
 <td>Athletics</td>
 <td>7</td>
+<td>73.0</td>
+<td>30.0</td>
+<td>0.132</td>
+<td>1.377</td>
+<td>0.566</td>
+<td>7.24</td>
 </tr>
 <tr>
 <td>JJ Bleday</td>
 <td>Athletics</td>
 <td>6</td>
+<td>34.0</td>
+<td>18.0</td>
+<td>0.128</td>
+<td>0.723</td>
+<td>0.383</td>
+<td>6.24</td>
 </tr>
 <tr>
 <td>Luis Urías</td>
 <td>Athletics</td>
 <td>6</td>
+<td>32.0</td>
+<td>11.0</td>
+<td>0.14</td>
+<td>0.744</td>
+<td>0.256</td>
+<td>6.24</td>
 </tr>
 <tr>
 <td>Nick Kurtz</td>
 <td>Athletics</td>
 <td>5</td>
+<td>23.0</td>
+<td>15.0</td>
+<td>0.179</td>
+<td>0.821</td>
+<td>0.536</td>
+<td>5.24</td>
 </tr>
 <tr>
 <td>Miguel Andujar</td>
 <td>Athletics</td>
 <td>3</td>
+<td>49.0</td>
+<td>20.0</td>
+<td>0.071</td>
+<td>1.167</td>
+<td>0.476</td>
+<td>3.24</td>
 </tr>
 <tr>
 <td>Seth Brown</td>
 <td>Athletics</td>
 <td>1</td>
+<td>11.0</td>
+<td>3.0</td>
+<td>0.03</td>
+<td>0.333</td>
+<td>0.091</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Max Muncy</td>
 <td>Athletics</td>
 <td>1</td>
+<td>35.0</td>
+<td>24.0</td>
+<td>0.077</td>
+<td>0.673</td>
+<td>0.462</td>
+<td>4.24</td>
 </tr>
 <tr>
 <td>Max Schuemann</td>
 <td>Athletics</td>
 <td>1</td>
+<td>13.0</td>
+<td>1.0</td>
+<td>0.027</td>
+<td>0.351</td>
+<td>0.027</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Daulton Varsho</td>
 <td>Toronto Blue Jays</td>
 <td>8</td>
+<td>17.0</td>
+<td>20.0</td>
+<td>0.364</td>
+<td>0.773</td>
+<td>0.909</td>
+<td>8.24</td>
 </tr>
 <tr>
 <td>Vladimir Guerrero Jr.</td>
 <td>Toronto Blue Jays</td>
 <td>7</td>
+<td>57.0</td>
+<td>23.0</td>
+<td>0.127</td>
+<td>1.036</td>
+<td>0.418</td>
+<td>7.24</td>
 </tr>
 <tr>
 <td>Anthony Santander</td>
 <td>Toronto Blue Jays</td>
 <td>6</td>
+<td>33.0</td>
+<td>18.0</td>
+<td>0.122</td>
+<td>0.673</td>
+<td>0.367</td>
+<td>6.24</td>
 </tr>
 <tr>
 <td>Bo Bichette</td>
 <td>Toronto Blue Jays</td>
 <td>5</td>
+<td>63.0</td>
+<td>27.0</td>
+<td>0.091</td>
+<td>1.145</td>
+<td>0.491</td>
+<td>5.24</td>
 </tr>
 <tr>
 <td>George Springer</td>
 <td>Toronto Blue Jays</td>
 <td>5</td>
+<td>39.0</td>
+<td>18.0</td>
+<td>0.098</td>
+<td>0.765</td>
+<td>0.353</td>
+<td>5.24</td>
 </tr>
 <tr>
 <td>Nathan Lukes</td>
 <td>Toronto Blue Jays</td>
 <td>4</td>
+<td>25.0</td>
+<td>16.0</td>
+<td>0.103</td>
+<td>0.641</td>
+<td>0.41</td>
+<td>4.24</td>
 </tr>
 <tr>
 <td>Andrés Giménez</td>
 <td>Toronto Blue Jays</td>
 <td>3</td>
+<td>25.0</td>
+<td>10.0</td>
+<td>0.083</td>
+<td>0.694</td>
+<td>0.278</td>
+<td>3.24</td>
 </tr>
 <tr>
 <td>Alejandro Kirk</td>
 <td>Toronto Blue Jays</td>
 <td>3</td>
+<td>44.0</td>
+<td>19.0</td>
+<td>0.068</td>
+<td>1.0</td>
+<td>0.432</td>
+<td>3.24</td>
 </tr>
 <tr>
 <td>Addison Barger</td>
 <td>Toronto Blue Jays</td>
 <td>2</td>
+<td>27.0</td>
+<td>11.0</td>
+<td>0.059</td>
+<td>0.794</td>
+<td>0.324</td>
+<td>2.24</td>
 </tr>
 <tr>
 <td>Ernie Clement</td>
 <td>Toronto Blue Jays</td>
 <td>1</td>
+<td>38.0</td>
+<td>11.0</td>
+<td>0.019</td>
+<td>0.717</td>
+<td>0.208</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Tyler Heineman</td>
 <td>Toronto Blue Jays</td>
 <td>1</td>
+<td>19.0</td>
+<td>6.0</td>
+<td>0.053</td>
+<td>1.0</td>
+<td>0.316</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Alan Roden</td>
 <td>Toronto Blue Jays</td>
 <td>1</td>
+<td>13.0</td>
+<td>5.0</td>
+<td>0.036</td>
+<td>0.464</td>
+<td>0.179</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Myles Straw</td>
 <td>Toronto Blue Jays</td>
 <td>1</td>
+<td>24.0</td>
+<td>8.0</td>
+<td>0.023</td>
+<td>0.545</td>
+<td>0.182</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Brandon Lowe</td>
 <td>Tampa Bay Rays</td>
 <td>11</td>
+<td>48.0</td>
+<td>30.0</td>
+<td>0.216</td>
+<td>0.941</td>
+<td>0.588</td>
+<td>11.24</td>
 </tr>
 <tr>
 <td>Junior Caminero</td>
 <td>Tampa Bay Rays</td>
 <td>10</td>
+<td>49.0</td>
+<td>26.0</td>
+<td>0.196</td>
+<td>0.961</td>
+<td>0.51</td>
+<td>10.24</td>
 </tr>
 <tr>
 <td>Jonathan Aranda</td>
 <td>Tampa Bay Rays</td>
 <td>7</td>
+<td>52.0</td>
+<td>30.0</td>
+<td>0.14</td>
+<td>1.04</td>
+<td>0.6</td>
+<td>7.24</td>
 </tr>
 <tr>
 <td>Yandy Díaz</td>
 <td>Tampa Bay Rays</td>
 <td>7</td>
+<td>48.0</td>
+<td>29.0</td>
+<td>0.137</td>
+<td>0.941</td>
+<td>0.569</td>
+<td>7.24</td>
 </tr>
 <tr>
 <td>Danny Jansen</td>
 <td>Tampa Bay Rays</td>
 <td>4</td>
+<td>22.0</td>
+<td>12.0</td>
+<td>0.105</td>
+<td>0.579</td>
+<td>0.316</td>
+<td>4.24</td>
 </tr>
 <tr>
 <td>Kameron Misner</td>
 <td>Tampa Bay Rays</td>
 <td>4</td>
+<td>34.0</td>
+<td>15.0</td>
+<td>0.08</td>
+<td>0.68</td>
+<td>0.3</td>
+<td>4.24</td>
 </tr>
 <tr>
 <td>Curtis Mead</td>
 <td>Tampa Bay Rays</td>
 <td>3</td>
+<td>17.0</td>
+<td>7.0</td>
+<td>0.094</td>
+<td>0.531</td>
+<td>0.219</td>
+<td>3.24</td>
 </tr>
 <tr>
 <td>Christopher Morel</td>
 <td>Tampa Bay Rays</td>
 <td>3</td>
+<td>25.0</td>
+<td>11.0</td>
+<td>0.07</td>
+<td>0.581</td>
+<td>0.256</td>
+<td>3.24</td>
 </tr>
 <tr>
 <td>Josh Lowe</td>
 <td>Tampa Bay Rays</td>
 <td>2</td>
+<td>14.0</td>
+<td>3.0</td>
+<td>0.154</td>
+<td>1.077</td>
+<td>0.231</td>
+<td>2.24</td>
 </tr>
 <tr>
 <td>José Caballero</td>
 <td>Tampa Bay Rays</td>
 <td>1</td>
+<td>30.0</td>
+<td>16.0</td>
+<td>0.023</td>
+<td>0.682</td>
+<td>0.364</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Taylor Walls</td>
 <td>Tampa Bay Rays</td>
 <td>1</td>
+<td>23.0</td>
+<td>10.0</td>
+<td>0.021</td>
+<td>0.479</td>
+<td>0.208</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Isaac Paredes</td>
 <td>Houston Astros</td>
 <td>11</td>
+<td>54.0</td>
+<td>32.0</td>
+<td>0.204</td>
+<td>1.0</td>
+<td>0.593</td>
+<td>11.24</td>
 </tr>
 <tr>
 <td>Jose Altuve</td>
 <td>Houston Astros</td>
 <td>8</td>
+<td>56.0</td>
+<td>21.0</td>
+<td>0.151</td>
+<td>1.057</td>
+<td>0.396</td>
+<td>8.24</td>
 </tr>
 <tr>
 <td>Jeremy Peña</td>
 <td>Houston Astros</td>
 <td>7</td>
+<td>62.0</td>
+<td>27.0</td>
+<td>0.127</td>
+<td>1.127</td>
+<td>0.491</td>
+<td>7.24</td>
 </tr>
 <tr>
 <td>Christian Walker</td>
 <td>Houston Astros</td>
 <td>7</td>
+<td>43.0</td>
+<td>25.0</td>
+<td>0.13</td>
+<td>0.796</td>
+<td>0.463</td>
+<td>7.24</td>
 </tr>
 <tr>
 <td>Yainer Diaz</td>
 <td>Houston Astros</td>
 <td>5</td>
+<td>41.0</td>
+<td>22.0</td>
+<td>0.104</td>
+<td>0.854</td>
+<td>0.458</td>
+<td>5.24</td>
 </tr>
 <tr>
 <td>Yordan Alvarez</td>
 <td>Houston Astros</td>
 <td>3</td>
+<td>21.0</td>
+<td>18.0</td>
+<td>0.103</td>
+<td>0.724</td>
+<td>0.621</td>
+<td>3.24</td>
 </tr>
 <tr>
 <td>Victor Caratini</td>
 <td>Houston Astros</td>
 <td>3</td>
+<td>28.0</td>
+<td>9.0</td>
+<td>0.088</td>
+<td>0.824</td>
+<td>0.265</td>
+<td>3.24</td>
 </tr>
 <tr>
 <td>Jake Meyers</td>
 <td>Houston Astros</td>
 <td>3</td>
+<td>49.0</td>
+<td>16.0</td>
+<td>0.056</td>
+<td>0.907</td>
+<td>0.296</td>
+<td>3.24</td>
 </tr>
 <tr>
 <td>Cam Smith</td>
 <td>Houston Astros</td>
 <td>3</td>
+<td>37.0</td>
+<td>17.0</td>
+<td>0.071</td>
+<td>0.881</td>
+<td>0.405</td>
+<td>3.24</td>
 </tr>
 <tr>
 <td>Zach Dezenzo</td>
 <td>Houston Astros</td>
 <td>2</td>
+<td>22.0</td>
+<td>10.0</td>
+<td>0.065</td>
+<td>0.71</td>
+<td>0.323</td>
+<td>2.24</td>
 </tr>
 <tr>
 <td>James Wood</td>
 <td>Washington Nationals</td>
 <td>15</td>
+<td>60.0</td>
+<td>40.0</td>
+<td>0.273</td>
+<td>1.091</td>
+<td>0.727</td>
+<td>15.24</td>
 </tr>
 <tr>
 <td>CJ Abrams</td>
 <td>Washington Nationals</td>
 <td>8</td>
+<td>47.0</td>
+<td>19.0</td>
+<td>0.19</td>
+<td>1.119</td>
+<td>0.452</td>
+<td>8.24</td>
 </tr>
 <tr>
 <td>Nathaniel Lowe</td>
 <td>Washington Nationals</td>
 <td>8</td>
+<td>46.0</td>
+<td>34.0</td>
+<td>0.145</td>
+<td>0.836</td>
+<td>0.618</td>
+<td>8.24</td>
 </tr>
 <tr>
 <td>Josh Bell</td>
 <td>Washington Nationals</td>
 <td>7</td>
+<td>26.0</td>
+<td>16.0</td>
+<td>0.152</td>
+<td>0.565</td>
+<td>0.348</td>
+<td>7.24</td>
 </tr>
 <tr>
 <td>Dylan Crews</td>
 <td>Washington Nationals</td>
 <td>7</td>
+<td>31.0</td>
+<td>15.0</td>
+<td>0.156</td>
+<td>0.689</td>
+<td>0.333</td>
+<td>7.24</td>
 </tr>
 <tr>
 <td>Luis García Jr.</td>
 <td>Washington Nationals</td>
 <td>5</td>
+<td>39.0</td>
+<td>20.0</td>
+<td>0.104</td>
+<td>0.812</td>
+<td>0.417</td>
+<td>5.24</td>
 </tr>
 <tr>
 <td>Riley Adams</td>
 <td>Washington Nationals</td>
 <td>2</td>
+<td>5.0</td>
+<td>6.0</td>
+<td>0.167</td>
+<td>0.417</td>
+<td>0.5</td>
+<td>2.24</td>
 </tr>
 <tr>
 <td>Amed Rosario</td>
 <td>Washington Nationals</td>
 <td>2</td>
+<td>27.0</td>
+<td>12.0</td>
+<td>0.071</td>
+<td>0.964</td>
+<td>0.429</td>
+<td>2.24</td>
 </tr>
 <tr>
 <td>Keibert Ruiz</td>
 <td>Washington Nationals</td>
 <td>2</td>
+<td>49.0</td>
+<td>20.0</td>
+<td>0.041</td>
+<td>1.0</td>
+<td>0.408</td>
+<td>2.24</td>
 </tr>
 <tr>
 <td>Robert Hassell III</td>
 <td>Washington Nationals</td>
 <td>1</td>
+<td>5.0</td>
+<td>3.0</td>
+<td>0.167</td>
+<td>0.833</td>
+<td>0.5</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Cal Raleigh</td>
 <td>Seattle Mariners</td>
 <td>19</td>
+<td>51.0</td>
+<td>37.0</td>
+<td>0.352</td>
+<td>0.944</td>
+<td>0.685</td>
+<td>19.24</td>
 </tr>
 <tr>
 <td>Jorge Polanco</td>
 <td>Seattle Mariners</td>
 <td>10</td>
+<td>37.0</td>
+<td>30.0</td>
+<td>0.238</td>
+<td>0.881</td>
+<td>0.714</td>
+<td>10.24</td>
 </tr>
 <tr>
 <td>Julio Rodríguez</td>
 <td>Seattle Mariners</td>
 <td>10</td>
+<td>52.0</td>
+<td>32.0</td>
+<td>0.189</td>
+<td>0.981</td>
+<td>0.604</td>
+<td>10.24</td>
 </tr>
 <tr>
 <td>Dylan Moore</td>
 <td>Seattle Mariners</td>
 <td>8</td>
+<td>34.0</td>
+<td>16.0</td>
+<td>0.19</td>
+<td>0.81</td>
+<td>0.381</td>
+<td>8.24</td>
 </tr>
 <tr>
 <td>Rowdy Tellez</td>
 <td>Seattle Mariners</td>
 <td>8</td>
+<td>25.0</td>
+<td>23.0</td>
+<td>0.178</td>
+<td>0.556</td>
+<td>0.511</td>
+<td>8.24</td>
 </tr>
 <tr>
 <td>Randy Arozarena</td>
 <td>Seattle Mariners</td>
 <td>6</td>
+<td>42.0</td>
+<td>22.0</td>
+<td>0.115</td>
+<td>0.808</td>
+<td>0.423</td>
+<td>6.24</td>
 </tr>
 <tr>
 <td>J.P. Crawford</td>
 <td>Seattle Mariners</td>
 <td>4</td>
+<td>46.0</td>
+<td>20.0</td>
+<td>0.077</td>
+<td>0.885</td>
+<td>0.385</td>
+<td>4.24</td>
 </tr>
 <tr>
 <td>Luke Raley</td>
 <td>Seattle Mariners</td>
 <td>2</td>
+<td>14.0</td>
+<td>8.0</td>
+<td>0.083</td>
+<td>0.583</td>
+<td>0.333</td>
+<td>2.24</td>
 </tr>
 <tr>
 <td>Leody Taveras</td>
 <td>Seattle Mariners</td>
 <td>2</td>
+<td>31.0</td>
+<td>15.0</td>
+<td>0.061</td>
+<td>0.633</td>
+<td>0.306</td>
+<td>12.0</td>
 </tr>
 <tr>
 <td>Ryan Bliss</td>
 <td>Seattle Mariners</td>
 <td>1</td>
+<td>7.0</td>
+<td>3.0</td>
+<td>0.091</td>
+<td>0.636</td>
+<td>0.273</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Mitch Garver</td>
 <td>Seattle Mariners</td>
 <td>1</td>
+<td>19.0</td>
+<td>10.0</td>
+<td>0.028</td>
+<td>0.528</td>
+<td>0.278</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Miles Mastrobuoni</td>
 <td>Seattle Mariners</td>
 <td>1</td>
+<td>21.0</td>
+<td>8.0</td>
+<td>0.024</td>
+<td>0.512</td>
+<td>0.195</td>
+<td>1.24</td>
 </tr>
 <tr>
 <td>Ben Williamson</td>
 <td>Seattle Mariners</td>
 <td>1</td>
+<td>32.0</td>
+<td>12.0</td>
+<td>0.028</td>
+<td>0.889</td>
+<td>0.333</td>
+<td>1.24</td>
 </tr>
 </table>
+
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
@@ -928,27 +1614,19 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </pre>
         <h2 id="dh-batters">DH Batters</h2>
-        <pre><table border="1"><tr>
-<th>NAME</th>
-<th>TEAM</th>
-<th>HRs</th>
-</tr><tr>
-<td>(DH) Marcell Ozuna</td>
-<td>Atlanta Braves</td>
-<td>9</td>
-</tr><tr>
-<td>(DH) Kyle Schwarber</td>
-<td>Philadelphia Phillies</td>
-<td>18</td>
-</tr><tr>
-<td>(DH) Marcell Ozuna</td>
-<td>Atlanta Braves</td>
-<td>9</td>
-</tr><tr>
-<td>(DH) Kyle Schwarber</td>
-<td>Philadelphia Phillies</td>
-<td>18</td>
-</tr></table>
+        <pre><table border='1'>
+<tr>
+<th>Batter</th>
+</tr>
+<tr>
+<td>Kyle Schwarber</td>
+</tr>
+<tr>
+<td>Marcell Ozuna</td>
+</tr>
+</table>
+<br>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;

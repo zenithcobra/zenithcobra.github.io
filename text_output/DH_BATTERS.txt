@@ -1,24 +1,16 @@
-<table border="1"><tr>
-<th>NAME</th>
-<th>TEAM</th>
-<th>HRs</th>
-</tr><tr>
-<td>(DH) Marcell Ozuna</td>
-<td>Atlanta Braves</td>
-<td>9</td>
-</tr><tr>
-<td>(DH) Kyle Schwarber</td>
-<td>Philadelphia Phillies</td>
-<td>18</td>
-</tr><tr>
-<td>(DH) Marcell Ozuna</td>
-<td>Atlanta Braves</td>
-<td>9</td>
-</tr><tr>
-<td>(DH) Kyle Schwarber</td>
-<td>Philadelphia Phillies</td>
-<td>18</td>
-</tr></table>
+<table border='1'>
+<tr>
+<th>Batter</th>
+</tr>
+<tr>
+<td>Kyle Schwarber</td>
+</tr>
+<tr>
+<td>Marcell Ozuna</td>
+</tr>
+</table>
+<br>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
