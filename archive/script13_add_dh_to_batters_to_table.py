@@ -76,3 +76,30 @@ with open(output_file_path, "w", encoding="utf-8") as file:
 
 print(f"Filtered table saved to {output_file_path}")
 # --------------
+
+
+from bs4 import BeautifulSoup
+
+# File path for the HTML table
+file_path = "text_output/match_overviews-BATTERS.txt"
+
+# Read the HTML file
+with open(file_path, "r", encoding="utf-8") as file:
+    html_content = file.read()
+
+# Parse the HTML content using BeautifulSoup
+soup = BeautifulSoup(html_content, "html.parser")
+
+# Find all table cells (assuming names are in <td> tags)
+table_cells = soup.find_all("td")
+
+# Modify names in the table if they appear in the all_names list
+for cell in table_cells:
+    if cell.text.strip() in all_names:  # Check if the name is in the all_names list
+        cell.string = f"(DH) {cell.text.strip()}"  # Append "(DH)" to the name
+
+# Save the modified HTML back to the file
+with open(file_path, "w", encoding="utf-8") as file:
+    file.write(str(soup))
+
+print(f"Updated table saved to {file_path}")

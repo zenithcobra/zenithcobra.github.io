@@ -15,20 +15,32 @@ def get_matches_today_data():
     schedule = statsapi.schedule(start_date=mlb_date, end_date=mlb_date)
 
     # iterate through each game of the schedule
+    # building game_data dictionary
     for x in schedule:
 
         # initialize game data dictionary
         game_data = {}
+        game_id = x.get('game_id')
+        away_name = x.get('away_name')
+        home_name = x.get('home_name')
+        away_id = x.get('away_id')
+        home_id = x.get('home_id')
+        home_probable_pitcher = x.get('home_probable_pitcher')
+        away_probable_pitcher = x.get('away_probable_pitcher')
         
+        # game_id
+        game_data.update({'game_id': game_id})
+
         # away_name
-        game_data.update({'away_name': x.get('away_name')}) 
+        game_data.update({'away_name': away_name}) 
         
         # home_name
-        game_data.update({'home_name': x.get('home_name')})
+        game_data.update({'home_name': home_name})
         
         # away_id
-        game_data.update({'away_id': x.get('away_id')})
+        game_data.update({'away_id': away_id})
 
+        # get scheduled batters for game
         away_team_batters = []
         
         # add top away team guys here
@@ -47,11 +59,11 @@ def get_matches_today_data():
         game_data.update({'home_team_batters': home_team_batters})
 
         # home_id
-        game_data.update({'home_id': x.get('home_id')})
+        game_data.update({'home_id': home_id})
         # home_probable_pitcher
-        game_data.update({'home_probable_pitcher': x.get('home_probable_pitcher')})
+        game_data.update({'home_probable_pitcher': home_probable_pitcher})
         # away_probable_pitcher
-        game_data.update({'away_probable_pitcher': x.get('away_probable_pitcher')})
+        game_data.update({'away_probable_pitcher': away_probable_pitcher})
 
         matches_today.append(game_data)
 
