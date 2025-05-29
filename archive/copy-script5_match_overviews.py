@@ -128,38 +128,23 @@ os.makedirs("text_output", exist_ok=True)
 # File path for the CSV file
 csv_file_path = "text_output/batters_today.csv"
 
-# # Save the batters list to a CSV file
-# with open(csv_file_path, mode="w", newline="", encoding="utf-8") as file:
-#     # Define the CSV field names (keys from the batter dictionaries)
-#     fieldnames = ["type", "name", "team", "HR"]
-    
-#     # Create a CSV writer object
-#     writer = csv.DictWriter(file, fieldnames=fieldnames)
-    
-#     # Write the header row
-#     writer.writeheader()
-    
-#     # Write the rows for each batter
-#     writer.writerows(batters)
-
-# print(f"Batters saved to {csv_file_path}")
-
 # Save the batters list to a CSV file
 with open(csv_file_path, mode="w", newline="", encoding="utf-8") as file:
     # Define the CSV field names (keys from the batter dictionaries)
     fieldnames = ["type", "name", "team", "HR"]
     
     # Create a CSV writer object
-    writer = csv.writer(file)
+    writer = csv.DictWriter(file, fieldnames=fieldnames)
     
     # Write the header row
-    writer.writerow(fieldnames[1:])  # Exclude "type" from the header
+    writer.writeheader()
     
-    # Write the rows for each batter as lists
-    for batter in batters:
-        writer.writerow([batter["name"], batter["team"], batter["HR"]])
+    # Write the rows for each batter
+    writer.writerows(batters)
 
 print(f"Batters saved to {csv_file_path}")
+
+
 
 # for x in pitchers:
 #     print(x)
@@ -220,96 +205,6 @@ if os.path.exists(backup_file_path):
 # for x in batters:
 #     print(x)
 
-# -----------------------------
-# open batters list to a csv file
-import os
-import csv
-import statsapi
-
-# Ensure the "text_output" folder exists
-os.makedirs("text_output", exist_ok=True)
-
-# File path for the CSV file
-csv_file_path = "text_output/batters_today.csv"
-
-
-# Initialize an empty list to store the batters
-list_of_batters = []
-
-# Read the CSV file
-with open(csv_file_path, mode="r", newline="", encoding="utf-8") as file:
-    reader = csv.reader(file)
-    
-    # Skip the header row
-    next(reader)
-    
-    # Append each row to the list
-    for row in reader:
-        list_of_batters.append(row)
-
-# for x in list_of_batters:
-#     print(x)
-
-holder_of_stats = []
-for z in list_of_batters:
-    new_list_with_stats = []
-    new_list_with_stats.append(z[0])  # name
-    new_list_with_stats.append(z[1])  # team
-    new_list_with_stats.append(f"{z[2]}")  # hrs
-
-    # Get player ID for the current name
-    # players = statsapi.get('sports_players', {'season': 2025, 'gameType': 'W'})['people']
-    # player = next((x for x in players if x['fullName'] == z[0]), None)  # Use None as fallback if no match is found
-    beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z[0]), 'hitting', 'season') 
-
-    if beans:  # Only proceed if a matching player is found
-        # print(beans)    
-        for a in beans.get('stats'):
-            games_played = float(int(a.get('stats').get('gamesPlayed')))
-            hits = float(int(a.get('stats').get('hits')))
-            new_list_with_stats.append(f"{hits}")
-            hrs = float(int(a.get('stats').get('homeRuns')))
-            rbi = float(int(a.get('stats').get('rbi')))
-            new_list_with_stats.append(f"{rbi}")
-            hrs_per_game = round((hrs / games_played), 3)
-            new_list_with_stats.append(f"{hrs_per_game}")
-            hits_per_game = round((hits / games_played), 3)
-            new_list_with_stats.append(f"{hits_per_game}")
-            rbis_per_game = round((rbi / games_played), 3)
-            new_list_with_stats.append(f"{rbis_per_game}")
-
-#         # Fetch stats for 2024
-        beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z[0]), 'hitting', 'season') 
-
-        if beans2:  # Only proceed if a matching player is found for 2024
-            # print(beans2)
-            for b in beans2.get('stats'):
-                bhrs = float(int(b.get('stats').get('homeRuns')))
-                bbhrs = bhrs + 0.24
-                new_list_with_stats.append(f"{bbhrs}")
-        else:
-            news_list_with_stats.append('n/a')  # If no stats found for 2024, append 0
-        holder_of_stats.append(new_list_with_stats)
-    else:
-        print(f"Player '{z[0]}' not found in the sports_players list.")
-
-# for x in holder_of_stats:
-#     print(x)
-
-# Write the new list with stats to a CSV file
-output_file_path = "text_output/updated_batters_with_stats.csv"
-with open(output_file_path, mode="w", newline="", encoding="utf-8") as file:
-    writer = csv.writer(file)
-    # Write the header
-    writer.writerow(["Name", "Team", "Hrs", "Hits", "RBI", "HRpg","Hpg", "RBIpg", "HR24"])
-    
-    # Write the data
-    for i in holder_of_stats:
-        writer.writerow(i)
-print(f"Updated batters with stats written to {output_file_path}")
-# -----------------------------
-
-
 
 # Generate an HTML table from the pitchers list
 # html_output2 = "<html>\n<head>\n<title>Pitchers Overview</title>\n</head>\n<body>\n"
@@ -321,26 +216,14 @@ html_output2 += "<tr>\n"
 html_output2 += "<th>NAME</th>\n"
 html_output2 += "<th>TEAM</th>\n"
 html_output2 += "<th>HRs</th>\n"
-html_output2 += "<th>HITS</th>\n"
-html_output2 += "<th>RBI</th>\n"
-html_output2 += "<th>HRpg</th>\n"
-html_output2 += "<th>Hpg</th>\n"
-html_output2 += "<th>RBIpg</th>\n"
-html_output2 += "<th>HR24</th>\n"
 html_output2 += "</tr>\n"
 
 # Add table rows
-for batter in holder_of_stats:
+for batter in batters:
     html_output2 += "<tr>\n"
-    html_output2 += f"<td>{batter[0]}</td>\n"
-    html_output2 += f"<td>{batter[1]}</td>\n"
-    html_output2 += f"<td>{batter[2]}</td>\n"
-    html_output2 += f"<td>{batter[3]}</td>\n"
-    html_output2 += f"<td>{batter[4]}</td>\n"
-    html_output2 += f"<td>{batter[5]}</td>\n"
-    html_output2 += f"<td>{batter[6]}</td>\n"
-    html_output2 += f"<td>{batter[7]}</td>\n"
-    html_output2 += f"<td>{batter[8]}</td>\n"
+    html_output2 += f"<td>{batter.get('name', 'N/A')}</td>\n"
+    html_output2 += f"<td>{batter.get('team', 'N/A')}</td>\n"
+    html_output2 += f"<td>{batter.get('HR', 'N/A')}</td>\n"
     html_output2 += "</tr>\n"
 
 # Close the table and HTML tags
