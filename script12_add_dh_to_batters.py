@@ -3,6 +3,7 @@ from datetime import datetime, timedelta
 
 # Get today's date
 mlb_date = datetime.now().strftime("%m/%d/%Y")
+print(mlb_date)
 schedule = statsapi.schedule(start_date=mlb_date, end_date=mlb_date)
 
 # yesterday = (datetime.now() - timedelta(days=9)).strftime("%Y-%m-%d")
@@ -48,33 +49,71 @@ all_names = []
 for x in list_of_names:
     for y in x:
         all_names.append(y)
+    # print(x)
 
 # for x in all_names:
 #     print(x)
+# remove duplicates from the list
+all_names = list(set(all_names))
+# Print the unique names
+print("Unique DH Batter Names:")
+for name in all_names:
+    print(name)
 
+# save all names to a csv file called "text_output/FOUND_DH_BATTERS.csv"
+import csv
+with open("text_output/FOUND_DH_BATTERS.csv", "w", newline="", encoding="utf-8") as csvfile:
+    writer = csv.writer(csvfile)
+    for name in all_names:
+        writer.writerow([name])
 
-from bs4 import BeautifulSoup
+# JavaScript for making tables sortable
+sortable_script = """
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
 
-# File path for the HTML table
-file_path = "text_output/match_overviews-BATTERS.txt"
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
 
-# Read the HTML file
-with open(file_path, "r", encoding="utf-8") as file:
-    html_content = file.read()
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
+"""
+dh_file_path = "text_output/DH_BATTERS.txt"
+# Open the new BVP.html file in write mode
+with open(dh_file_path, "w") as file:
+    # Write the opening HTML tags
+    # file.write("<h1>Batter vs Pitcher Stats</h1>\n")
 
-# Parse the HTML content using BeautifulSoup
-soup = BeautifulSoup(html_content, "html.parser")
+    # Write the heading for the pitcher
+    # file.write(f"<h3>{pitcher_heading}</h3>\n")
 
-# Find all table cells (assuming names are in <td> tags)
-table_cells = soup.find_all("td")
+    # Start the table
+    file.write("<table border='1'>\n")
+    file.write("<tr>\n")
+    file.write("<th>Batter</th>\n")
+    file.write("</tr>\n")
 
-# Modify names in the table if they appear in the all_names list
-for cell in table_cells:
-    if cell.text.strip() in all_names:  # Check if the name is in the all_names list
-        cell.string = f"(DH) {cell.text.strip()}"  # Append "(DH)" to the name
+    # Write data for each pitcher
+    for batter in all_names:
+        file.write("<tr>\n")
+        file.write(f"<td>{batter}</td>\n")
+        file.write("</tr>\n")
 
-# Save the modified HTML back to the file
-with open(file_path, "w", encoding="utf-8") as file:
-    file.write(str(soup))
+    # Close the table
+    file.write("</table>\n")
+    file.write("<br>\n")  # Add a line break for better readability
+    file.write(sortable_script)
 
-print(f"Updated table saved to {file_path}")
+    # Write the closing HTML tags
+    # file.write("</body>\n</html>\n")
+
+print(f"New BVP file saved to {dh_file_path}")
+
