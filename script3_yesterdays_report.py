@@ -72,6 +72,7 @@ if "Toronto" in toronto_game.get('summary'):
     new_scoring_plays = "\n".join(processed_plays)
     highlights = statsapi.game_highlights(toronto_game.get("game_id"))
 
+    # process links in the highlights
     import re
 
     # Example highlights string (replace this with your actual highlights string)
@@ -161,12 +162,40 @@ for x in homers:
 new_homers = [homer.split("homers")[0].strip() for homer in new_homers if "(" in homer]
 
 
+# search homers for team name and hr stats
+stat_homers = []
+for z in new_homers:
+    # print(z)
+    # beans = ''
+    beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
+    new_list_with_stats = []
+    if beans:  # Only proceed if a matching player is found
+        name = z
+        new_list_with_stats.append(name)
+        team_name = beans.get('current_team')    
+        new_list_with_stats.append(team_name)
+        for a in beans.get('stats'):
+            games_played = float(int(a.get('stats').get('gamesPlayed')))
+            # hits = float(int(a.get('stats').get('hits')))
+            # new_list_with_stats.append(f"{hits}")
+            hrs = float(int(a.get('stats').get('homeRuns')))
+            new_list_with_stats.append(f"{int(hrs)}")
+            # rbi = float(int(a.get('stats').get('rbi')))
+            # new_list_with_stats.append(f"{rbi}")
+            hrs_per_game = round((hrs / games_played), 3)
+            new_list_with_stats.append(f"{hrs_per_game}")
+            # hits_per_game = round((hits / games_played), 3)
+            # new_list_with_stats.append(f"{hits_per_game}")
+            # rbis_per_game = round((rbi / games_played), 3)
+            # new_list_with_stats.append(f"{rbis_per_game}")
+    stat_homers.append(new_list_with_stats)
+
 # save homers to text_output/homers_list.csv headers being 'name'
 homers_file_path = "text_output/homers_list.csv"
 with open(homers_file_path, "w") as file:
-    file.write("name,\n")
-    for homer in new_homers:
-        file.write(f"{homer},\n")
+    file.write("name,team,hrs,hrpg\n")
+    for homer in stat_homers:
+        file.write(f"{homer[0]},{homer[1]},{homer[2]},{homer[3]},\n")
 
 # Write content to the new Todays_Report.txt file
 with open(report_file_path, "w") as file:
@@ -175,8 +204,24 @@ with open(report_file_path, "w") as file:
     for content in yesterdays_content:
         file.write(content)
     file.write("<h3>Yesterdays Homers</h3>")
-    for contents in new_homers:
-        file.write(f"{contents}\n")
+    file.write("<table border='1'>\n")
+    file.write("<tr>\n")
+    file.write("<th>Batter</th>\n")
+    file.write("<th>Team</th>\n")
+    file.write("<th>HR</th>\n")
+    file.write("<th>HRpg</th>\n")
+    file.write("</tr>\n")
+    for contents in stat_homers:
+        # file.write(f"{contents}\n")
+        # Start the table
+        file.write("<tr>\n")
+        file.write(f"<td>{content[0]}</td>\n")
+        file.write(f"<td>{content[1]}</td>\n")
+        file.write(f"<td>{content[2]}</td>\n")
+        file.write(f"<td>{content[3]}</td>\n")
+        file.write("</tr>\n")
+    file.write("</table>\n")
+    file.write("<br>\n")
 
 
 
