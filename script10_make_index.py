@@ -409,6 +409,28 @@ window.onload = loadCheckboxStates;
 soup.body.append(script)
 
 
+# # Write the modified HTML to a new file
+# with open("docs/index.html", "w", encoding="utf-8") as file:
+#     file.write(str(soup))
+import os
+from datetime import datetime
+
+# File path for the HTML file
+file_path = "docs/index.html"
+
+# Check if the file exists
+if os.path.exists(file_path):
+    # Get the current date and time
+    current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    
+    # Create a new name for the existing file
+    renamed_file_path = f"docs/index_{current_time}.html"
+    
+    # Rename the existing file
+    os.rename(file_path, renamed_file_path)
+    print(f"Existing file renamed to {renamed_file_path}")
+
 # Write the modified HTML to a new file
-with open("docs/index.html", "w", encoding="utf-8") as file:
+with open(file_path, "w", encoding="utf-8") as file:
     file.write(str(soup))
+    print(f"New file saved to {file_path}")
