@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 import os
 from datetime import datetime
 import pytz
+from fractions import Fraction
 
 # Ensure the "text_output" folder exists
 os.makedirs("text_output", exist_ok=True)
@@ -240,7 +241,8 @@ for z in new_homers:
             new_list_with_stats.append(f"{int(hrs)}")
             # rbi = float(int(a.get('stats').get('rbi')))
             # new_list_with_stats.append(f"{rbi}")
-            hrs_per_game = round((hrs / games_played), 3)
+            hrs_per_game = str(Fraction(round((hrs / games_played), 2)).limit_denominator(20))
+            #str(Fraction(round(float(x[18])/float(x[6]),2)).limit_denominator(5))
             new_list_with_stats.append(f"{hrs_per_game}")
             # hits_per_game = round((hits / games_played), 3)
             # new_list_with_stats.append(f"{hits_per_game}")

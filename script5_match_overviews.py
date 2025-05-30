@@ -3,6 +3,7 @@ import statsapi
 import os
 from datetime import datetime, timedelta
 import json
+from fractions import Fraction
 
 # Path to the JSON file
 file_path = "text_output/todays_matches.json"
@@ -267,15 +268,18 @@ for z in list_of_batters:
         for a in beans.get('stats'):
             games_played = float(int(a.get('stats').get('gamesPlayed')))
             hits = float(int(a.get('stats').get('hits')))
-            new_list_with_stats.append(f"{hits}")
+            new_list_with_stats.append(f"{int(hits)}")
             hrs = float(int(a.get('stats').get('homeRuns')))
             rbi = float(int(a.get('stats').get('rbi')))
-            new_list_with_stats.append(f"{rbi}")
-            hrs_per_game = round((hrs / games_played), 3)
+            new_list_with_stats.append(f"{int(rbi)}")
+            # hrs_per_game = round((hrs / games_played), 3)
+            hrs_per_game = str(Fraction(round((hrs / games_played), 2)).limit_denominator(20))
             new_list_with_stats.append(f"{hrs_per_game}")
-            hits_per_game = round((hits / games_played), 3)
+            # hits_per_game = round((hits / games_played), 3)
+            hits_per_game = str(Fraction(round((hits / games_played), 2)).limit_denominator(20))
             new_list_with_stats.append(f"{hits_per_game}")
-            rbis_per_game = round((rbi / games_played), 3)
+            # rbis_per_game = round((rbi / games_played), 3)
+            rbis_per_game = str(Fraction(round((rbi / games_played), 2)).limit_denominator(20))
             new_list_with_stats.append(f"{rbis_per_game}")
 
 #         # Fetch stats for 2024
@@ -284,9 +288,10 @@ for z in list_of_batters:
         if beans2:  # Only proceed if a matching player is found for 2024
             # print(beans2)
             for b in beans2.get('stats'):
-                bhrs = float(int(b.get('stats').get('homeRuns')))
-                bbhrs = bhrs + 0.24
-                new_list_with_stats.append(f"{bbhrs}")
+                # bhrs = float(int(b.get('stats').get('homeRuns')))
+                bhrs = int(b.get('stats').get('homeRuns'))
+                # bbhrs = bhrs + 0.24
+                new_list_with_stats.append(f"{bhrs}")
         else:
             news_list_with_stats.append('n/a')  # If no stats found for 2024, append 0
         holder_of_stats.append(new_list_with_stats)
