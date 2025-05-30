@@ -1,5 +1,6 @@
 import statsapi
 from datetime import datetime, timedelta
+from fractions import Fraction
 
 # Get today's date
 mlb_date = datetime.now().strftime("%m/%d/%Y")
@@ -60,6 +61,35 @@ print("Unique DH Batter Names:")
 for name in all_names:
     print(name)
 
+# search homers for team name and hr stats
+stat_homers = []
+for z in all_names:
+    # print(z)
+    # beans = ''
+    beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
+    new_list_with_stats = []
+    if beans:  # Only proceed if a matching player is found
+        name = z
+        new_list_with_stats.append(name)
+        team_name = beans.get('current_team')    
+        new_list_with_stats.append(team_name)
+        for a in beans.get('stats'):
+            games_played = float(int(a.get('stats').get('gamesPlayed')))
+            # hits = float(int(a.get('stats').get('hits')))
+            # new_list_with_stats.append(f"{hits}")
+            hrs = float(int(a.get('stats').get('homeRuns')))
+            new_list_with_stats.append(f"{int(hrs)}")
+            # rbi = float(int(a.get('stats').get('rbi')))
+            # new_list_with_stats.append(f"{rbi}")
+            hrs_per_game = str(Fraction(round((hrs / games_played), 2)).limit_denominator(20))
+            #str(Fraction(round(float(x[18])/float(x[6]),2)).limit_denominator(5))
+            new_list_with_stats.append(f"{hrs_per_game}")
+            # hits_per_game = round((hits / games_played), 3)
+            # new_list_with_stats.append(f"{hits_per_game}")
+            # rbis_per_game = round((rbi / games_played), 3)
+            # new_list_with_stats.append(f"{rbis_per_game}")
+    stat_homers.append(new_list_with_stats)
+
 # save all names to a csv file called "text_output/FOUND_DH_BATTERS.csv"
 import csv
 with open("text_output/FOUND_DH_BATTERS.csv", "w", newline="", encoding="utf-8") as csvfile:
@@ -99,14 +129,25 @@ with open(dh_file_path, "w") as file:
     file.write("<table border='1'>\n")
     file.write("<tr>\n")
     file.write("<th>Batter</th>\n")
+    file.write("<th>Team</th>\n")
+    file.write("<th>HR</th>\n")
+    file.write("<th>HRpg</th>\n")
     file.write("</tr>\n")
 
-    # Write data for each pitcher
-    for batter in all_names:
+    # # Write data for each pitcher
+    # for batter in all_names:
+    #     file.write("<tr>\n")
+    #     file.write(f"<td>{batter}</td>\n")
+    #     file.write("</tr>\n")
+    for contents in stat_homers:
+        # file.write(f"{contents}\n")
+        # Start the table
         file.write("<tr>\n")
-        file.write(f"<td>{batter}</td>\n")
+        file.write(f"<td>{contents[0]}</td>\n")
+        file.write(f"<td>{contents[1]}</td>\n")
+        file.write(f"<td>{contents[2]}</td>\n")
+        file.write(f"<td>{contents[3]}</td>\n")
         file.write("</tr>\n")
-
     # Close the table
     file.write("</table>\n")
     file.write("<br>\n")  # Add a line break for better readability
