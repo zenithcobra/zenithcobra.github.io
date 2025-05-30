@@ -272,15 +272,18 @@ for z in list_of_batters:
             hrs = float(int(a.get('stats').get('homeRuns')))
             rbi = float(int(a.get('stats').get('rbi')))
             new_list_with_stats.append(f"{int(rbi)}")
-            # hrs_per_game = round((hrs / games_played), 3)
-            hrs_per_game = str(Fraction(round((hrs / games_played), 2)).limit_denominator(20))
+            hrs_per_game = round((hrs / games_played), 3)
             new_list_with_stats.append(f"{hrs_per_game}")
-            # hits_per_game = round((hits / games_played), 3)
-            hits_per_game = str(Fraction(round((hits / games_played), 2)).limit_denominator(20))
+            fhrs_per_game = str(Fraction(round((hrs / games_played), 2)).limit_denominator(20))
+            new_list_with_stats.append(f"{fhrs_per_game}")
+            hits_per_game = round((hits / games_played), 3)
             new_list_with_stats.append(f"{hits_per_game}")
-            # rbis_per_game = round((rbi / games_played), 3)
-            rbis_per_game = str(Fraction(round((rbi / games_played), 2)).limit_denominator(20))
+            fhits_per_game = str(Fraction(round((hits / games_played), 2)).limit_denominator(20))
+            new_list_with_stats.append(f"{fhits_per_game}")
+            rbis_per_game = round((rbi / games_played), 3)
             new_list_with_stats.append(f"{rbis_per_game}")
+            frbis_per_game = str(Fraction(round((rbi / games_played), 2)).limit_denominator(20))
+            new_list_with_stats.append(f"{frbis_per_game}")
 
 #         # Fetch stats for 2024
         beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z[0]), 'hitting', 'season') 
@@ -306,7 +309,7 @@ output_file_path = "text_output/updated_batters_with_stats.csv"
 with open(output_file_path, mode="w", newline="", encoding="utf-8") as file:
     writer = csv.writer(file)
     # Write the header
-    writer.writerow(["Name", "Team", "Hrs", "Hits", "RBI", "HRpg","Hpg", "RBIpg", "HR24"])
+    writer.writerow(["Name", "Team", "Hrs", "Hits", "RBI", "HRpg", "fHRpg","Hpg", "fHpg", "RBIpg", "fRBIpg", "HR24"])
     
     # Write the data
     for i in holder_of_stats:
@@ -329,8 +332,11 @@ html_output2 += "<th>HRs</th>\n"
 html_output2 += "<th>HITS</th>\n"
 html_output2 += "<th>RBI</th>\n"
 html_output2 += "<th>HRpg</th>\n"
+html_output2 += "<th>fHRpg</th>\n"
 html_output2 += "<th>Hpg</th>\n"
+html_output2 += "<th>fHpg</th>\n"
 html_output2 += "<th>RBIpg</th>\n"
+html_output2 += "<th>fRBIpg</th>\n"
 html_output2 += "<th>HR24</th>\n"
 html_output2 += "</tr>\n"
 
@@ -346,6 +352,9 @@ for batter in holder_of_stats:
     html_output2 += f"<td>{batter[6]}</td>\n"
     html_output2 += f"<td>{batter[7]}</td>\n"
     html_output2 += f"<td>{batter[8]}</td>\n"
+    html_output2 += f"<td>{batter[9]}</td>\n"
+    html_output2 += f"<td>{batter[10]}</td>\n"
+    html_output2 += f"<td>{batter[11]}</td>\n"
     html_output2 += "</tr>\n"
 
 # Close the table and HTML tags
