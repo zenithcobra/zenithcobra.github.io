@@ -160,7 +160,7 @@ for x in sorted_list:
                 # Regular expression to find URLs
                 url_pattern = r'(https?://[^\s]+)'
                 # Replace URLs with clickable HTML links
-                processed_condensed_game_link = re.sub(url_pattern, r'<a href="\1" target="_blank">Condensed Game link</a>', condensed_game_link)
+                processed_condensed_game_link = re.sub(url_pattern, r'<a href="\1" target="_blank">Condensed Game</a>', condensed_game_link)
                 # print(processed_condensed_game_link)
                 break  # Exit the loop once the link is found
 
@@ -178,20 +178,33 @@ for x in sorted_list:
                 # Regular expression to find URLs
                 url_pattern = r'(https?://[^\s]+)'
                 # Replace URLs with clickable HTML links
-                processed_video_highlights_game_link = re.sub(url_pattern, r'<a href="\1" target="_blank">Highlights Video Game link</a>', video_highlights_game_link)
+                processed_video_highlights_game_link = re.sub(url_pattern, r'<a href="\1" target="_blank">Highlights Video</a>', video_highlights_game_link)
                 # print(processed_video_highlights_game_link)
                 break  # Exit the loop once the link is found
 
+    # if processed_video_highlights_game_link == None:
+    #     processed_video_highlights_game_link = ''
+    # if processed_condensed_game_link == None:
+    #     processed_condensed_game_link = ''
 
     homers.append(processed_plays)
+    # yesterdays_content.append(
+    #     f"GAME:\n"
+    #     f"{x.get('time_scheduled')}\n"
+    #     # f"Status: {x.get('')}\n"
+    #     f"{x.get('away_name'):<22} {x.get('away_score')}    @\n"
+    #     f"{x.get('home_name'):<22} {x.get('home_score')}\n\n"
+    #     f"{processed_condensed_game_link}\n"
+    #     f"{processed_video_highlights_game_link}\n\n"
+    # )
     yesterdays_content.append(
         f"GAME:\n"
         f"{x.get('time_scheduled')}\n"
         # f"Status: {x.get('')}\n"
         f"{x.get('away_name'):<22} {x.get('away_score')}    @\n"
         f"{x.get('home_name'):<22} {x.get('home_score')}\n\n"
-        f"{processed_condensed_game_link}\n"
-        f"{processed_video_highlights_game_link}\n\n"
+        f"{processed_condensed_game_link + '\n' if processed_condensed_game_link else ''}"
+        f"{processed_video_highlights_game_link + '\n\n' if processed_video_highlights_game_link else ''}"
     )
 
 
