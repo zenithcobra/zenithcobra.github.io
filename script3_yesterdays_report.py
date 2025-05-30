@@ -143,6 +143,46 @@ for x in sorted_list:
 
     x.update({"time_scheduled": readable_format})
     # x.update({"scoring_plays": new_scoring_plays})
+
+    # get specific Highlights and process for only links
+    highlights = statsapi.game_highlights(x.get("game_id"))
+    highlights_list = highlights.split("\n")
+    # Initialize a variable to store the link
+    condensed_game_link = None
+    processed_condensed_game_link = None
+    # Iterate through the highlights list
+    for i, line in enumerate(highlights_list):
+        if 'Condensed' in line:
+            # Check if the link is two lines ahead
+            if i + 2 < len(highlights_list):  # Ensure the index is within bounds
+                condensed_game_link = highlights_list[i + 2]
+                # print(condensed_game_link)
+                # Regular expression to find URLs
+                url_pattern = r'(https?://[^\s]+)'
+                # Replace URLs with clickable HTML links
+                processed_condensed_game_link = re.sub(url_pattern, r'<a href="\1" target="_blank">Condensed Game link</a>', condensed_game_link)
+                # print(processed_condensed_game_link)
+                break  # Exit the loop once the link is found
+
+
+    # Initialize a variable to store the link
+    video_highlights_game_link = None
+    processed_video_highlights_game_link = None
+    # Iterate through the highlights list
+    for i, line in enumerate(highlights_list):
+        if 'Highlights' in line:
+            # Check if the link is two lines ahead
+            if i + 2 < len(highlights_list):  # Ensure the index is within bounds
+                video_highlights_game_link = highlights_list[i + 2]
+                # print('high')
+                # Regular expression to find URLs
+                url_pattern = r'(https?://[^\s]+)'
+                # Replace URLs with clickable HTML links
+                processed_video_highlights_game_link = re.sub(url_pattern, r'<a href="\1" target="_blank">Highlights Video Game link</a>', video_highlights_game_link)
+                # print(processed_video_highlights_game_link)
+                break  # Exit the loop once the link is found
+
+
     homers.append(processed_plays)
     yesterdays_content.append(
         f"GAME:\n"
@@ -150,8 +190,13 @@ for x in sorted_list:
         # f"Status: {x.get('')}\n"
         f"{x.get('away_name'):<22} {x.get('away_score')}    @\n"
         f"{x.get('home_name'):<22} {x.get('home_score')}\n\n"
-        # f"{x.get('scoring_plays')}\n\n"
+        f"{processed_condensed_game_link}\n"
+        f"{processed_video_highlights_game_link}\n\n"
     )
+
+
+
+
 new_homers = []
 for x in homers:
     for y in x:
