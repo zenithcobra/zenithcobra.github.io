@@ -32,19 +32,21 @@ for team in teams_playing_today:
 # get the proper formatted date
 mlb_date = datetime.now().strftime("%m/%d/%Y")
 
-new_team_list = []
-for a in team_ids:
-    # how to get the last 10 games for a team
-    sched = statsapi.schedule(start_date='01/01/2025',end_date=mlb_date,team=a)
-    newlist = sorted(sched, key = lambda k: k["game_date"], reverse=True)
-    team_dict = {'a':newlist[0:10]}
-    # for game in newlist[0:10]:
-    #     beans = statsapi.get("game", {"gamePk": game.get('game_id')})
-    #     # print(f"{a} -> {beans.get('gamePk')}")
-    new_team_list.append(team_dict)
+# new_team_list = []
+# for a in team_ids:
+#     # how to get the last 10 games for a team
+#     sched = statsapi.schedule(start_date='01/01/2025',end_date=mlb_date,team=a)
+#     newlist = sorted(sched, key = lambda k: k["game_date"], reverse=True)
+#     game_data_list = []
+#     for game in newlist[0:10]:
+#         beans = statsapi.get("game", {"gamePk": game.get('game_id')})
+#         game_data_list.append(beans)
+#         # print(f"{a} -> {beans.get('gamePk')}")
+#     team_dict = {'a':game_data_list}
+#     new_team_list.append(team_dict)
 
-# save the new team list to a JSON file
-output_json_path = "text_output/teams_last_10_games.json"
-with open(output_json_path, "w", encoding="utf-8") as output_file:
-    json.dump(new_team_list, output_file, indent=4)
-print(f"Teams' last 10 games saved to {output_json_path}")
+# # save the new team list to a JSON file
+# output_json_path = "text_output/teams_last_10_games.json"
+# with open(output_json_path, "w", encoding="utf-8") as output_file:
+#     json.dump(new_team_list, output_file, indent=4)
+# print(f"Teams' last 10 games saved to {output_json_path}")
