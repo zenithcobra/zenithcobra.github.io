@@ -508,6 +508,38 @@ window.onload = loadCheckboxStates;
 """
 soup.body.append(script)
 
+# Add JavaScript to handle row highlighting
+highlight_script = soup.new_tag("script")
+highlight_script.string = """
+document.addEventListener('DOMContentLoaded', function() {
+    let currentlyHighlightedRow = null;
+
+    document.querySelectorAll('table').forEach(table => {
+        table.addEventListener('click', function(event) {
+            const cell = event.target.closest('td, th'); // Check if the clicked element is a cell
+            if (cell) {
+                const row = cell.closest('tr'); // Get the row of the clicked cell
+                if (currentlyHighlightedRow) {
+                    currentlyHighlightedRow.classList.remove('highlight'); // Remove highlight from the previous row
+                }
+                row.classList.add('highlight'); // Highlight the new row
+                currentlyHighlightedRow = row; // Update the currently highlighted row
+            }
+        });
+    });
+});
+
+// Add CSS for the highlight class
+const style = document.createElement('style');
+style.innerHTML = `
+    .highlight {
+        background-color: yellow; /* Highlight color */
+    }
+`;
+document.head.appendChild(style);
+"""
+soup.body.append(highlight_script)
+
 # # Write the modified HTML to a new file
 # with open("docs/index.html", "w", encoding="utf-8") as file:
 #     file.write(str(soup))
