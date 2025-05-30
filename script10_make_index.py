@@ -228,34 +228,213 @@ with open("docs/index2.html", "r", encoding="utf-8") as file:
 # Find all tables in the HTML
 tables = soup.find_all("table")
 
-# Add a checkbox column and unique IDs to each table
-for table_index, table in enumerate(tables):
-    # Add a unique ID to the table
-    table['id'] = f"table_{table_index}"
+# # Add a checkbox column and unique IDs to each table
+# for table_index, table in enumerate(tables):
+#     # Add a unique ID to the table
+#     table['id'] = f"table_{table_index}"
 
-    # Add a header for the checkbox column
-    header_row = table.find("tr")
-    if header_row:
-        checkbox_header = soup.new_tag("th")
-        checkbox_header.string = "Select"
-        header_row.insert(0, checkbox_header)
+#     # Add a header for the checkbox column
+#     header_row = table.find("tr")
+#     if header_row:
+#         checkbox_header = soup.new_tag("th")
+#         checkbox_header.string = "Select"
+#         header_row.insert(0, checkbox_header)
 
-    # Add a checkbox to each row
-    rows = table.find_all("tr")[1:]  # Skip the header row
-    for row_index, row in enumerate(rows):
-        checkbox_cell = soup.new_tag("td")
-        checkbox = soup.new_tag("input", type="checkbox", onclick="handleCheckboxClick(this)")
-        checkbox_cell.append(checkbox)
-        row.insert(0, checkbox_cell)
+#     # Add a checkbox to each row
+#     rows = table.find_all("tr")[1:]  # Skip the header row
+#     for row_index, row in enumerate(rows):
+#         checkbox_cell = soup.new_tag("td")
+#         checkbox = soup.new_tag("input", type="checkbox", onclick="handleCheckboxClick(this)")
+#         checkbox_cell.append(checkbox)
+#         row.insert(0, checkbox_cell)
 
+# # # Add a "Checked" section at the bottom of the page
+# # checked_section = soup.new_tag("div", id="checked-section")
+# # checked_heading = soup.new_tag("h2")
+# # checked_heading.string = "Checked"
+# # checked_section.append(checked_heading)
+# # checked_table = soup.new_tag("table", id="checked-table", border="1")
+# # checked_section.append(checked_table)
+# # soup.body.append(checked_section)
 # # Add a "Checked" section at the bottom of the page
 # checked_section = soup.new_tag("div", id="checked-section")
 # checked_heading = soup.new_tag("h2")
 # checked_heading.string = "Checked"
 # checked_section.append(checked_heading)
+
+# # Create a <pre> tag to wrap the table
+# pre_tag = soup.new_tag("pre")
 # checked_table = soup.new_tag("table", id="checked-table", border="1")
-# checked_section.append(checked_table)
+# pre_tag.append(checked_table)  # Add the table inside the <pre> tag
+# checked_section.append(pre_tag)  # Add the <pre> tag to the section
+
 # soup.body.append(checked_section)
+# para_tag = soup.new_tag("pre")
+# para_tag.string = "\n\n\n\n\n\n\n\n"
+# soup.body.append(para_tag)
+# # Locate the "Streaks" section in the HTML
+# # streaks_section = soup.find("h2", id="streaks")
+
+# # # Add a "Checked" section after the "Streaks" section
+# # checked_section = soup.new_tag("div", id="checked-section")
+# # checked_heading = soup.new_tag("h2")
+# # checked_heading.string = "Checked"
+# # checked_section.append(checked_heading)
+
+# # # Create a <pre> tag to wrap the table
+# # pre_tag = soup.new_tag("pre")
+# # checked_table = soup.new_tag("table", id="checked-table", border="1")
+# # pre_tag.append(checked_table)  # Add the table inside the <pre> tag
+# # checked_section.append(pre_tag)  # Add the <pre> tag to the section
+
+# # # Insert the "Checked" section after the "Streaks" section
+# # if streaks_section:
+# #     streaks_section.insert_after(checked_section)
+# # else:
+# #     # If "Streaks" section is not found, append "Checked" section to the body
+# #     soup.body.append(checked_section)
+# # # Add JavaScript to handle copying rows to the "Checked" section
+# # script = soup.new_tag("script")
+# # script.string = """
+# # function handleCheckboxClick(checkbox) {
+# #     const row = checkbox.closest('tr');
+# #     const checkedTable = document.getElementById('checked-table');
+
+# #     if (checkbox.checked) {
+# #         // Clone the row and add it to the "Checked" table
+# #         const clonedRow = row.cloneNode(true);
+# #         clonedRow.querySelector('input[type="checkbox"]').remove(); // Remove the checkbox from the cloned row
+# #         checkedTable.appendChild(clonedRow);
+# #     } else {
+# #         // Remove the row from the "Checked" table if it exists
+# #         const rows = checkedTable.querySelectorAll('tr');
+# #         rows.forEach(checkedRow => {
+# #             if (checkedRow.isEqualNode(row.cloneNode(true))) {
+# #                 checkedRow.remove();
+# #             }
+# #         });
+# #     }
+# # }
+
+# # function loadCheckboxStates() {
+# #     const cookies = document.cookie.split('; ');
+# #     cookies.forEach(cookie => {
+# #         const [key, value] = cookie.split('=');
+# #         if (key.includes('_row_')) {
+# #             const [tableId, _, rowIndex] = key.split('_');
+# #             const table = document.getElementById(tableId);
+# #             if (table) {
+# #                 const row = table.querySelectorAll('tr')[rowIndex];
+# #                 if (row) {
+# #                     const checkbox = row.querySelector('input[type="checkbox"]');
+# #                     if (checkbox) {
+# #                         checkbox.checked = value === '1';
+# #                         if (checkbox.checked) {
+# #                             const checkedTable = document.getElementById('checked-table');
+# #                             const clonedRow = row.cloneNode(true);
+# #                             clonedRow.querySelector('input[type="checkbox"]').remove();
+# #                             checkedTable.appendChild(clonedRow);
+# #                         }
+# #                     }
+# #                 }
+# #             }
+# #         }
+# #     });
+# # }
+
+# # window.onload = loadCheckboxStates;
+# # """
+# # soup.body.append(script)
+
+# # Add JavaScript to handle saving checkbox states in localStorage
+# script = soup.new_tag("script")
+# script.string = """
+# function handleCheckboxClick(checkbox) {
+#     const row = checkbox.closest('tr');
+#     const table = checkbox.closest('table');
+#     const tableId = table.id;
+#     const rowIndex = Array.from(table.querySelectorAll('tr')).indexOf(row);
+#     const checkedTable = document.getElementById('checked-table');
+
+#     if (checkbox.checked) {
+#         // Save the checkbox state in localStorage
+#         localStorage.setItem(`${tableId}_row_${rowIndex}`, '1');
+
+#         // Clone the row and add it to the "Checked" table
+#         const clonedRow = row.cloneNode(true);
+#         clonedRow.querySelector('input[type="checkbox"]').remove(); // Remove the checkbox from the cloned row
+#         checkedTable.appendChild(clonedRow);
+#     } else {
+#         // Remove the checkbox state from localStorage
+#         localStorage.removeItem(`${tableId}_row_${rowIndex}`);
+
+#         // Remove the row from the "Checked" table if it exists
+#         const rows = checkedTable.querySelectorAll('tr');
+#         rows.forEach(checkedRow => {
+#             if (checkedRow.isEqualNode(row.cloneNode(true))) {
+#                 checkedRow.remove();
+#             }
+#         });
+#     }
+# }
+
+# function loadCheckboxStates() {
+#     // Iterate through all keys in localStorage
+#     for (let i = 0; i < localStorage.length; i++) {
+#         const key = localStorage.key(i);
+#         if (key.includes('_row_')) {
+#             const [tableId, _, rowIndex] = key.split('_');
+#             const table = document.getElementById(tableId);
+#             if (table) {
+#                 const row = table.querySelectorAll('tr')[rowIndex];
+#                 if (row) {
+#                     const checkbox = row.querySelector('input[type="checkbox"]');
+#                     if (checkbox) {
+#                         checkbox.checked = localStorage.getItem(key) === '1';
+#                         if (checkbox.checked) {
+#                             const checkedTable = document.getElementById('checked-table');
+#                             const clonedRow = row.cloneNode(true);
+#                             clonedRow.querySelector('input[type="checkbox"]').remove();
+#                             checkedTable.appendChild(clonedRow);
+#                         }
+#                     }
+#                 }
+#             }
+#         }
+#     }
+# }
+
+# window.onload = loadCheckboxStates;
+# """
+# soup.body.append(script)
+
+# Find all tables in the HTML
+tables = soup.find_all("table")
+
+# Add three checkbox columns and unique IDs to each table
+for table_index, table in enumerate(tables):
+    # Add a unique ID to the table
+    table['id'] = f"table_{table_index}"
+
+    # Add headers for the checkbox columns
+    header_row = table.find("tr")
+    h_r_names = ['HRS','H','RBI']
+    if header_row:
+        for i in range(3):  # Add three checkbox headers
+            checkbox_header = soup.new_tag("th")
+            checkbox_header.string = f"{h_r_names[i]}"
+            header_row.insert(0, checkbox_header)
+
+    # Add three checkboxes to each row
+    rows = table.find_all("tr")[1:]  # Skip the header row
+    for row_index, row in enumerate(rows):
+        for i in range(3):  # Add three checkboxes per row
+            checkbox_cell = soup.new_tag("td")
+            checkbox = soup.new_tag("input", type="checkbox", onclick="handleCheckboxClick(this)")
+            checkbox['data-checkbox-index'] = i  # Add a data attribute to identify the checkbox
+            checkbox_cell.append(checkbox)
+            row.insert(0, checkbox_cell)
+
 # Add a "Checked" section at the bottom of the page
 checked_section = soup.new_tag("div", id="checked-section")
 checked_heading = soup.new_tag("h2")
@@ -269,84 +448,8 @@ pre_tag.append(checked_table)  # Add the table inside the <pre> tag
 checked_section.append(pre_tag)  # Add the <pre> tag to the section
 
 soup.body.append(checked_section)
-para_tag = soup.new_tag("pre")
-para_tag.string = "\n\n\n\n\n\n\n\n"
-soup.body.append(para_tag)
-# Locate the "Streaks" section in the HTML
-# streaks_section = soup.find("h2", id="streaks")
 
-# # Add a "Checked" section after the "Streaks" section
-# checked_section = soup.new_tag("div", id="checked-section")
-# checked_heading = soup.new_tag("h2")
-# checked_heading.string = "Checked"
-# checked_section.append(checked_heading)
-
-# # Create a <pre> tag to wrap the table
-# pre_tag = soup.new_tag("pre")
-# checked_table = soup.new_tag("table", id="checked-table", border="1")
-# pre_tag.append(checked_table)  # Add the table inside the <pre> tag
-# checked_section.append(pre_tag)  # Add the <pre> tag to the section
-
-# # Insert the "Checked" section after the "Streaks" section
-# if streaks_section:
-#     streaks_section.insert_after(checked_section)
-# else:
-#     # If "Streaks" section is not found, append "Checked" section to the body
-#     soup.body.append(checked_section)
-# # Add JavaScript to handle copying rows to the "Checked" section
-# script = soup.new_tag("script")
-# script.string = """
-# function handleCheckboxClick(checkbox) {
-#     const row = checkbox.closest('tr');
-#     const checkedTable = document.getElementById('checked-table');
-
-#     if (checkbox.checked) {
-#         // Clone the row and add it to the "Checked" table
-#         const clonedRow = row.cloneNode(true);
-#         clonedRow.querySelector('input[type="checkbox"]').remove(); // Remove the checkbox from the cloned row
-#         checkedTable.appendChild(clonedRow);
-#     } else {
-#         // Remove the row from the "Checked" table if it exists
-#         const rows = checkedTable.querySelectorAll('tr');
-#         rows.forEach(checkedRow => {
-#             if (checkedRow.isEqualNode(row.cloneNode(true))) {
-#                 checkedRow.remove();
-#             }
-#         });
-#     }
-# }
-
-# function loadCheckboxStates() {
-#     const cookies = document.cookie.split('; ');
-#     cookies.forEach(cookie => {
-#         const [key, value] = cookie.split('=');
-#         if (key.includes('_row_')) {
-#             const [tableId, _, rowIndex] = key.split('_');
-#             const table = document.getElementById(tableId);
-#             if (table) {
-#                 const row = table.querySelectorAll('tr')[rowIndex];
-#                 if (row) {
-#                     const checkbox = row.querySelector('input[type="checkbox"]');
-#                     if (checkbox) {
-#                         checkbox.checked = value === '1';
-#                         if (checkbox.checked) {
-#                             const checkedTable = document.getElementById('checked-table');
-#                             const clonedRow = row.cloneNode(true);
-#                             clonedRow.querySelector('input[type="checkbox"]').remove();
-#                             checkedTable.appendChild(clonedRow);
-#                         }
-#                     }
-#                 }
-#             }
-#         }
-#     });
-# }
-
-# window.onload = loadCheckboxStates;
-# """
-# soup.body.append(script)
-
-# Add JavaScript to handle saving checkbox states in localStorage
+# Add JavaScript to handle saving checkbox states and copying rows
 script = soup.new_tag("script")
 script.string = """
 function handleCheckboxClick(checkbox) {
@@ -354,19 +457,22 @@ function handleCheckboxClick(checkbox) {
     const table = checkbox.closest('table');
     const tableId = table.id;
     const rowIndex = Array.from(table.querySelectorAll('tr')).indexOf(row);
+    const checkboxIndex = checkbox.getAttribute('data-checkbox-index');
     const checkedTable = document.getElementById('checked-table');
 
+    // Save the checkbox state in localStorage
+    const checkboxKey = `${tableId}_row_${rowIndex}_checkbox_${checkboxIndex}`;
     if (checkbox.checked) {
-        // Save the checkbox state in localStorage
-        localStorage.setItem(`${tableId}_row_${rowIndex}`, '1');
+        localStorage.setItem(checkboxKey, '1');
 
         // Clone the row and add it to the "Checked" table
         const clonedRow = row.cloneNode(true);
-        clonedRow.querySelector('input[type="checkbox"]').remove(); // Remove the checkbox from the cloned row
+        clonedRow.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+            cb.disabled = true; // Disable checkboxes in the cloned row
+        });
         checkedTable.appendChild(clonedRow);
     } else {
-        // Remove the checkbox state from localStorage
-        localStorage.removeItem(`${tableId}_row_${rowIndex}`);
+        localStorage.removeItem(checkboxKey);
 
         // Remove the row from the "Checked" table if it exists
         const rows = checkedTable.querySelectorAll('tr');
@@ -382,21 +488,15 @@ function loadCheckboxStates() {
     // Iterate through all keys in localStorage
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
-        if (key.includes('_row_')) {
-            const [tableId, _, rowIndex] = key.split('_');
+        if (key.includes('_checkbox_')) {
+            const [tableId, _, rowIndex, checkboxIndex] = key.split('_');
             const table = document.getElementById(tableId);
             if (table) {
                 const row = table.querySelectorAll('tr')[rowIndex];
                 if (row) {
-                    const checkbox = row.querySelector('input[type="checkbox"]');
+                    const checkbox = row.querySelector(`input[data-checkbox-index="${checkboxIndex}"]`);
                     if (checkbox) {
                         checkbox.checked = localStorage.getItem(key) === '1';
-                        if (checkbox.checked) {
-                            const checkedTable = document.getElementById('checked-table');
-                            const clonedRow = row.cloneNode(true);
-                            clonedRow.querySelector('input[type="checkbox"]').remove();
-                            checkedTable.appendChild(clonedRow);
-                        }
                     }
                 }
             }
@@ -407,7 +507,6 @@ function loadCheckboxStates() {
 window.onload = loadCheckboxStates;
 """
 soup.body.append(script)
-
 
 # # Write the modified HTML to a new file
 # with open("docs/index.html", "w", encoding="utf-8") as file:
