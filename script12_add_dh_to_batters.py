@@ -81,9 +81,11 @@ for z in all_names:
             new_list_with_stats.append(f"{int(hrs)}")
             # rbi = float(int(a.get('stats').get('rbi')))
             # new_list_with_stats.append(f"{rbi}")
-            hrs_per_game = str(Fraction(round((hrs / games_played), 2)).limit_denominator(20))
-            #str(Fraction(round(float(x[18])/float(x[6]),2)).limit_denominator(5))
+            hrs_per_game = round((hrs / games_played), 2)
             new_list_with_stats.append(f"{hrs_per_game}")
+            hrs_per_game2 = str(Fraction(round((hrs / games_played), 2)).limit_denominator(20))
+            #str(Fraction(round(float(x[18])/float(x[6]),2)).limit_denominator(5))
+            new_list_with_stats.append(f"{hrs_per_game2}")
             # hits_per_game = round((hits / games_played), 3)
             # new_list_with_stats.append(f"{hits_per_game}")
             # rbis_per_game = round((rbi / games_played), 3)
@@ -132,6 +134,7 @@ with open(dh_file_path, "w") as file:
     file.write("<th>Team</th>\n")
     file.write("<th>HR</th>\n")
     file.write("<th>HRpg</th>\n")
+    file.write("<th>fHRpg</th>\n")
     file.write("</tr>\n")
 
     # # Write data for each pitcher
@@ -147,6 +150,7 @@ with open(dh_file_path, "w") as file:
         file.write(f"<td>{contents[1]}</td>\n")
         file.write(f"<td>{contents[2]}</td>\n")
         file.write(f"<td>{contents[3]}</td>\n")
+        file.write(f"<td>{contents[4]}</td>\n")
         file.write("</tr>\n")
     # Close the table
     file.write("</table>\n")

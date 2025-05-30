@@ -241,9 +241,11 @@ for z in new_homers:
             new_list_with_stats.append(f"{int(hrs)}")
             # rbi = float(int(a.get('stats').get('rbi')))
             # new_list_with_stats.append(f"{rbi}")
-            hrs_per_game = str(Fraction(round((hrs / games_played), 2)).limit_denominator(20))
-            #str(Fraction(round(float(x[18])/float(x[6]),2)).limit_denominator(5))
+            hrs_per_game = round((hrs / games_played), 2)
             new_list_with_stats.append(f"{hrs_per_game}")
+            hrs_per_game2 = str(Fraction(round((hrs / games_played), 2)).limit_denominator(20))
+            #str(Fraction(round(float(x[18])/float(x[6]),2)).limit_denominator(5))
+            new_list_with_stats.append(f"{hrs_per_game2}")
             # hits_per_game = round((hits / games_played), 3)
             # new_list_with_stats.append(f"{hits_per_game}")
             # rbis_per_game = round((rbi / games_played), 3)
@@ -253,9 +255,9 @@ for z in new_homers:
 # save homers to text_output/homers_list.csv headers being 'name'
 homers_file_path = "text_output/homers_list.csv"
 with open(homers_file_path, "w") as file:
-    file.write("name,team,hrs,hrpg\n")
+    file.write("name,team,hrs,hrpg,fhrpg\n")
     for homer in stat_homers:
-        file.write(f"{homer[0]},{homer[1]},{homer[2]},{homer[3]},\n")
+        file.write(f"{homer[0]},{homer[1]},{homer[2]},{homer[3]},{homer[4]},\n")
 
 # Write content to the new Todays_Report.txt file
 with open(report_file_path, "w") as file:
@@ -270,6 +272,7 @@ with open(report_file_path, "w") as file:
     file.write("<th>Team</th>\n")
     file.write("<th>HR</th>\n")
     file.write("<th>HRpg</th>\n")
+    file.write("<th>fHRpg</th>\n")
     file.write("</tr>\n")
     for contents in stat_homers:
         # file.write(f"{contents}\n")
@@ -279,6 +282,7 @@ with open(report_file_path, "w") as file:
         file.write(f"<td>{contents[1]}</td>\n")
         file.write(f"<td>{contents[2]}</td>\n")
         file.write(f"<td>{contents[3]}</td>\n")
+        file.write(f"<td>{contents[4]}</td>\n")
         file.write("</tr>\n")
     file.write("</table>\n")
     file.write("<br>\n")
