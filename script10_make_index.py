@@ -13,7 +13,7 @@ today_schedule_path = "text_output/todays_schedule.txt"
 match_overview_pitchers_path = "text_output/match_overviews-PITCHERS.txt"
 match_overview_batters_path = "text_output/match_overviews-BATTERS.txt"
 dh_batters_path = "text_output/DH_BATTERS.txt"
-bvp_path = "text_output/BVP.txt"
+bvp_path = "text_output/BVP2.txt"
 streaks_path = "text_output/streaks.txt"
 
 output_html_path = "docs/index2.html"
