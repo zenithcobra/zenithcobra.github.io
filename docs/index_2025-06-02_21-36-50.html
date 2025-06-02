@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MLB Report</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MLB Report</title>
 <style>
         body {
             margin: 0;
@@ -36,38 +37,78 @@
             padding: 20px;
         }
     </style>
-</head>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed; /* Ensures the navbar stays fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Makes the navbar span the full width of the page */
+    background-color: #333; /* Sets the background color */
+    z-index: 1000; /* Ensures the navbar stays above other content */
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 10px; /* Adjust padding for better spacing */
+    font-size: 12px; /* Adjust font size */
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    padding-top: 50px; /* Adds padding to prevent content from overlapping the navbar */
+}
+</style><style>
+table tr:first-child {
+    position: sticky;
+    top: 40px; /* Adjust this value to match the height of your navbar */
+    background-color: #fff; /* Optional: Set background color for better visibility */
+    z-index: 999; /* Ensure it stays below the navbar but above other content */
+}
+</style></head>
 <body>
-    <div class="navbar">
-        <a href="#useful-links">Links</a>
-        <a href="#parlay-banned-list">Banned</a>
-        <a href="#yesterdays-report">History</a>
-        <a href="#standings">Standings</a>
-        <a href="#todays-schedule">Schedule</a>
-        <a href="#match-overviews-pitchers">Pitchers</a>
-        <a href="#match-overviews-batters">Batters</a>
-        <a href="#dh-batters">DH's</a>
-        <a href="#bvp-stats">BvP</a>
-        <a href="#streaks">Streaks</a>
-        <a href="#checked-section">Checked</a>
-    </div>
-    <div class="content">
-        <h1 id="useful-links">Useful Links</h1>
-        <ul>
-        <li><a href='https://www.fantasyalarm.com/mlb/lineups'>BVP checker</a></li>
-        <li><a href='https://www.baseball-reference.com'>baseball-reference</a></li>
-        <li><a href='https://baseballsavant.mlb.com'>baseball-savant</a></li>
-        <li><a href='https://www.fangraphs.com'>fangraphs</a></li>
-        <li><a href='https://www.statmuse.com/mlb'>Stat muse</a></li>
-        <li><a href='https://www.baseballmusings.com/cgi-bin/CurStreak.py'>Baseball Musings</a></li>
-        <li><a href='https://www.teamrankings.com'>Team Rankings</a></li>
-        </ul>
-        <h2>MLB Report 2025-06-02</h2>
-        <h2 id="parlay-banned-list">Parlay Banned List</h2>
-        <pre>- Corbin Burns
+<div class="navbar">
+<a href="#useful-links">Links</a>
+<a href="#parlay-banned-list">Banned</a>
+<a href="#yesterdays-report">History</a>
+<a href="#standings">Standings</a>
+<a href="#todays-schedule">Schedule</a>
+<a href="#match-overviews-pitchers">Pitchers</a>
+<a href="#match-overviews-batters">Batters</a>
+<a href="#dh-batters">DH's</a>
+<a href="#bvp-stats">BvP</a>
+<a href="#streaks">Streaks</a>
+<a href="#checked-section">Checked</a>
+</div>
+<div class="content">
+<h1 id="useful-links">Useful Links</h1>
+<ul>
+<li><a href="https://www.fantasyalarm.com/mlb/lineups">BVP checker</a></li>
+<li><a href="https://www.baseball-reference.com">baseball-reference</a></li>
+<li><a href="https://baseballsavant.mlb.com">baseball-savant</a></li>
+<li><a href="https://www.fangraphs.com">fangraphs</a></li>
+<li><a href="https://www.statmuse.com/mlb">Stat muse</a></li>
+<li><a href="https://www.baseballmusings.com/cgi-bin/CurStreak.py">Baseball Musings</a></li>
+<li><a href="https://www.teamrankings.com">Team Rankings</a></li>
+</ul>
+<h2>MLB Report 2025-06-02</h2>
+<h2 id="parlay-banned-list">Parlay Banned List</h2>
+<pre>- Corbin Burns
 - Luis Castillo</pre>
-        <h2 id="yesterdays-report">Yesterdays History</h2>
-        <pre>2025-06-01 01:37 PM EDT
+<h2 id="yesterdays-report">Yesterdays History</h2>
+<pre>2025-06-01 01:37 PM EDT
 Athletics              4    @
 Toronto Blue Jays      8
 
@@ -251,8 +292,8 @@ Los Angeles Dodgers    3
 <a href="https://mlb-cuts-diamond.mlb.com/FORGE/2025/2025-06/01/1340e554-fd677738-890a926b-csvm-diamondgcp-asset_1280x720_59_4000K.mp4" target="_blank">Condensed Game</a>
 <a href="https://mlb-cuts-diamond.mlb.com/FORGE/2025/2025-06/01/340c4f07-c6250cc5-d7c6040e-csvm-diamondgcp-asset_1280x720_59_4000K.mp4" target="_blank">Highlights Video</a>
 
-<h3>Yesterdays Homers</h3><table border='1'>
-<tr>
+<h3>Yesterdays Homers</h3><table border="1" id="table_0">
+<tr><th>RBI</th><th>H</th><th>HRS</th>
 <th>Batter</th>
 <th>Team</th>
 <th>HR</th>
@@ -262,7 +303,7 @@ Los Angeles Dodgers    3
 <th>HR24pg</th>
 <th>fHR24pg</th>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Addison Barger</td>
 <td>Toronto Blue Jays</td>
 <td>5</td>
@@ -272,7 +313,7 @@ Los Angeles Dodgers    3
 <td>0.1</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Josh Smith</td>
 <td>Texas Rangers</td>
 <td>5</td>
@@ -282,7 +323,7 @@ Los Angeles Dodgers    3
 <td>0.09</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Marcell Ozuna</td>
 <td>Atlanta Braves</td>
 <td>10</td>
@@ -292,7 +333,7 @@ Los Angeles Dodgers    3
 <td>0.24</td>
 <td>1/4</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Mike Tauchman</td>
 <td>Chicago White Sox</td>
 <td>2</td>
@@ -302,7 +343,7 @@ Los Angeles Dodgers    3
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>José Ramírez</td>
 <td>Cleveland Guardians</td>
 <td>11</td>
@@ -312,7 +353,7 @@ Los Angeles Dodgers    3
 <td>0.25</td>
 <td>1/4</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Orlando Arcia</td>
 <td>Colorado Rockies</td>
 <td>1</td>
@@ -322,7 +363,7 @@ Los Angeles Dodgers    3
 <td>0.5</td>
 <td>1/2</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Pete Alonso</td>
 <td>New York Mets</td>
 <td>12</td>
@@ -332,7 +373,7 @@ Los Angeles Dodgers    3
 <td>0.21</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Tyler Freeman</td>
 <td>Colorado Rockies</td>
 <td>1</td>
@@ -342,7 +383,7 @@ Los Angeles Dodgers    3
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Francisco Lindor</td>
 <td>New York Mets</td>
 <td>13</td>
@@ -352,7 +393,7 @@ Los Angeles Dodgers    3
 <td>0.22</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Juan Soto</td>
 <td>New York Mets</td>
 <td>10</td>
@@ -362,7 +403,7 @@ Los Angeles Dodgers    3
 <td>0.26</td>
 <td>1/4</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Luis Matos</td>
 <td>San Francisco Giants</td>
 <td>4</td>
@@ -372,7 +413,7 @@ Los Angeles Dodgers    3
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Michael Busch</td>
 <td>Chicago Cubs</td>
 <td>8</td>
@@ -382,7 +423,7 @@ Los Angeles Dodgers    3
 <td>0.14</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Eugenio Suárez</td>
 <td>Arizona Diamondbacks</td>
 <td>16</td>
@@ -392,7 +433,7 @@ Los Angeles Dodgers    3
 <td>0.19</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Cal Raleigh</td>
 <td>Seattle Mariners</td>
 <td>23</td>
@@ -402,7 +443,7 @@ Los Angeles Dodgers    3
 <td>0.22</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Manny Machado</td>
 <td>San Diego Padres</td>
 <td>7</td>
@@ -412,7 +453,7 @@ Los Angeles Dodgers    3
 <td>0.19</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Andrew McCutchen</td>
 <td>Pittsburgh Pirates</td>
 <td>5</td>
@@ -422,7 +463,7 @@ Los Angeles Dodgers    3
 <td>0.17</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Adam Frazier</td>
 <td>Pittsburgh Pirates</td>
 <td>3</td>
@@ -432,7 +473,7 @@ Los Angeles Dodgers    3
 <td>0.04</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Tommy Edman</td>
 <td>Los Angeles Dodgers</td>
 <td>9</td>
@@ -442,7 +483,7 @@ Los Angeles Dodgers    3
 <td>0.16</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Ben Rice</td>
 <td>New York Yankees</td>
 <td>12</td>
@@ -452,7 +493,7 @@ Los Angeles Dodgers    3
 <td>0.14</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Andy Pages</td>
 <td>Los Angeles Dodgers</td>
 <td>11</td>
@@ -462,7 +503,7 @@ Los Angeles Dodgers    3
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Max Muncy</td>
 <td>Los Angeles Dodgers</td>
 <td>7</td>
@@ -473,10 +514,10 @@ Los Angeles Dodgers    3
 <td>1/5</td>
 </tr>
 </table>
-<br>
+<br/>
 </pre>
-        <h2 id="standings">Standings</h2>
-        <pre>MLB Standings:
+<h2 id="standings">Standings</h2>
+<pre>MLB Standings:
 American League East
 Rank Team                   W   L   GB  (E#) WC Rank WC GB (E#)
  1   New York Yankees      36  22   -    -      -      -    -  
@@ -526,103 +567,103 @@ Rank Team                   W   L   GB  (E#) WC Rank WC GB (E#)
  5   Colorado Rockies       9  50  27.0  77    12    24.0   80 
 
 </pre>
-        <h2 id="todays-schedule">Today's Schedule</h2>
-        <pre>Today's Schedule:
+<h2 id="todays-schedule">Today's Schedule</h2>
+<pre>Today's Schedule:
 2025-06-02 06:40 PM EDT - Colorado Rockies @ Miami Marlins (Pre
-2025-06-02 07:10 PM EDT - Los Angeles Angels @ Boston Red Sox (Pre
-2025-06-02 07:10 PM EDT - Milwaukee Brewers @ Cincinnati Reds (Pre
-2025-06-02 07:40 PM EDT - Detroit Tigers @ Chicago White Sox (Pre
+2025-06-02 07:10 PM EDT - Los Angeles Angels @ Boston Red Sox (Scheduled)
+2025-06-02 07:10 PM EDT - Milwaukee Brewers @ Cincinnati Reds (Scheduled)
+2025-06-02 07:40 PM EDT - Detroit Tigers @ Chicago White Sox (Scheduled)
 2025-06-02 09:45 PM EDT - San Diego Padres @ San Francisco Giants (Scheduled)
 2025-06-02 10:05 PM EDT - Minnesota Twins @ Athletics (Scheduled)
 2025-06-02 10:10 PM EDT - New York Mets @ Los Angeles Dodgers (Scheduled)</pre>
-        <h2 id="match-overviews-pitchers">Pitcher Match Overviews</h2>
-        <pre><h1>Pitchers Overview</h1>
-<table border='1'>
-<tr>
+<h2 id="match-overviews-pitchers">Pitcher Match Overviews</h2>
+<pre><h1>Pitchers Overview</h1>
+<table border="1" id="table_1">
+<tr><th>RBI</th><th>H</th><th>HRS</th>
 <th>NAME</th>
 <th>TEAM</th>
 <th>ERA</th>
 <th>SO9</th>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Germán Márquez</td>
 <td>Colorado Rockies</td>
 <td>4.55</td>
 <td>8.54</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Max Meyer</td>
 <td>Miami Marlins</td>
 <td>5.21</td>
 <td>8.44</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Tyler Anderson</td>
 <td>Los Angeles Angels</td>
 <td>4.22</td>
 <td>7.50</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Richard Fitts</td>
 <td>Boston Red Sox</td>
 <td>2.21</td>
 <td>5.31</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Aaron Civale</td>
 <td>Milwaukee Brewers</td>
 <td>4.07</td>
 <td>8.13</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Brady Singer</td>
 <td>Cincinnati Reds</td>
 <td>4.31</td>
 <td>8.40</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jack Flaherty</td>
 <td>Detroit Tigers</td>
 <td>3.65</td>
 <td>10.27</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jonathan Cannon</td>
 <td>Chicago White Sox</td>
 <td>4.38</td>
 <td>6.66</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Stephen Kolek</td>
 <td>San Diego Padres</td>
 <td>4.77</td>
 <td>7.33</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Logan Webb</td>
 <td>San Francisco Giants</td>
 <td>3.37</td>
 <td>8.28</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Joe Ryan</td>
 <td>Minnesota Twins</td>
 <td>3.76</td>
 <td>10.07</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Luis Severino</td>
 <td>Athletics</td>
 <td>3.82</td>
 <td>9.20</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Paul Blackburn</td>
 <td>New York Mets</td>
 <td>N/A</td>
 <td>N/A</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Dustin May</td>
 <td>Los Angeles Dodgers</td>
 <td>3.35</td>
@@ -648,10 +689,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 </pre>
-        <h2 id="match-overviews-batters">Batter Match Overviews</h2>
-        <pre><h1>Batters Overview</h1>
-<table border='1'>
-<tr>
+<h2 id="match-overviews-batters">Batter Match Overviews</h2>
+<pre><h1>Batters Overview</h1>
+<table border="1" id="table_2">
+<tr><th>RBI</th><th>H</th><th>HRS</th>
 <th>NAME</th>
 <th>TEAM</th>
 <th>HRs</th>
@@ -667,7 +708,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <th>HR24pg</th>
 <th>fHR24pg</th>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jordan Beck</td>
 <td>Colorado Rockies</td>
 <td>8</td>
@@ -683,7 +724,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.05</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Hunter Goodman</td>
 <td>Colorado Rockies</td>
 <td>7</td>
@@ -699,7 +740,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.19</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Ryan McMahon</td>
 <td>Colorado Rockies</td>
 <td>6</td>
@@ -715,7 +756,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.13</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Michael Toglia</td>
 <td>Colorado Rockies</td>
 <td>6</td>
@@ -731,7 +772,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.22</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Brenton Doyle</td>
 <td>Colorado Rockies</td>
 <td>5</td>
@@ -747,7 +788,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Mickey Moniak</td>
 <td>Colorado Rockies</td>
 <td>5</td>
@@ -763,7 +804,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Ezequiel Tovar</td>
 <td>Colorado Rockies</td>
 <td>3</td>
@@ -779,7 +820,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.17</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Kyle Farmer</td>
 <td>Colorado Rockies</td>
 <td>2</td>
@@ -795,7 +836,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.05</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Adael Amador</td>
 <td>Colorado Rockies</td>
 <td>1</td>
@@ -811,7 +852,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Orlando Arcia</td>
 <td>Colorado Rockies</td>
 <td>1</td>
@@ -827,7 +868,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1</td>
 <td>0.5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Sean Bouchard</td>
 <td>Colorado Rockies</td>
 <td>1</td>
@@ -843,7 +884,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.03</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Tyler Freeman</td>
 <td>Colorado Rockies</td>
 <td>1</td>
@@ -859,7 +900,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Braxton Fulford</td>
 <td>Colorado Rockies</td>
 <td>1</td>
@@ -875,7 +916,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Sam Hilliard</td>
 <td>Colorado Rockies</td>
 <td>1</td>
@@ -891,7 +932,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.17</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Nick Martini</td>
 <td>Colorado Rockies</td>
 <td>1</td>
@@ -907,7 +948,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.1</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Zac Veen</td>
 <td>Colorado Rockies</td>
 <td>1</td>
@@ -923,7 +964,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Kyle Stowers</td>
 <td>Miami Marlins</td>
 <td>10</td>
@@ -939,7 +980,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.04</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Matt Mervis</td>
 <td>Miami Marlins</td>
 <td>7</td>
@@ -955,7 +996,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Agustín Ramírez</td>
 <td>Miami Marlins</td>
 <td>7</td>
@@ -971,7 +1012,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Liam Hicks</td>
 <td>Miami Marlins</td>
 <td>4</td>
@@ -987,7 +1028,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Otto Lopez</td>
 <td>Miami Marlins</td>
 <td>4</td>
@@ -1003,7 +1044,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.05</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jesús Sánchez</td>
 <td>Miami Marlins</td>
 <td>4</td>
@@ -1019,7 +1060,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.12</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Eric Wagaman</td>
 <td>Miami Marlins</td>
 <td>4</td>
@@ -1035,7 +1076,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Dane Myers</td>
 <td>Miami Marlins</td>
 <td>3</td>
@@ -1051,7 +1092,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.07</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Connor Norby</td>
 <td>Miami Marlins</td>
 <td>3</td>
@@ -1067,7 +1108,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.2</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Derek Hill</td>
 <td>Miami Marlins</td>
 <td>2</td>
@@ -1083,7 +1124,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.13</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Taylor Ward</td>
 <td>Los Angeles Angels</td>
 <td>16</td>
@@ -1099,7 +1140,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.16</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Logan O'Hoppe</td>
 <td>Los Angeles Angels</td>
 <td>14</td>
@@ -1115,7 +1156,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Zach Neto</td>
 <td>Los Angeles Angels</td>
 <td>9</td>
@@ -1131,7 +1172,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Mike Trout</td>
 <td>Los Angeles Angels</td>
 <td>9</td>
@@ -1147,7 +1188,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.34</td>
 <td>1/3</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jorge Soler</td>
 <td>Los Angeles Angels</td>
 <td>8</td>
@@ -1163,7 +1204,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jo Adell</td>
 <td>Los Angeles Angels</td>
 <td>7</td>
@@ -1179,7 +1220,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Yoán Moncada</td>
 <td>Los Angeles Angels</td>
 <td>6</td>
@@ -1195,7 +1236,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Kyren Paris</td>
 <td>Los Angeles Angels</td>
 <td>6</td>
@@ -1211,7 +1252,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.05</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Matthew Lugo</td>
 <td>Los Angeles Angels</td>
 <td>3</td>
@@ -1227,7 +1268,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Nolan Schanuel</td>
 <td>Los Angeles Angels</td>
 <td>3</td>
@@ -1243,7 +1284,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.09</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Wilyer Abreu</td>
 <td>Boston Red Sox</td>
 <td>13</td>
@@ -1259,7 +1300,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Rafael Devers</td>
 <td>Boston Red Sox</td>
 <td>12</td>
@@ -1275,7 +1316,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.2</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Alex Bregman</td>
 <td>Boston Red Sox</td>
 <td>11</td>
@@ -1291,7 +1332,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.18</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Trevor Story</td>
 <td>Boston Red Sox</td>
 <td>7</td>
@@ -1307,7 +1348,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.08</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Kristian Campbell</td>
 <td>Boston Red Sox</td>
 <td>5</td>
@@ -1323,7 +1364,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Carlos Narváez</td>
 <td>Boston Red Sox</td>
 <td>5</td>
@@ -1339,7 +1380,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jarren Duran</td>
 <td>Boston Red Sox</td>
 <td>4</td>
@@ -1355,7 +1396,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.13</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Rob Refsnyder</td>
 <td>Boston Red Sox</td>
 <td>4</td>
@@ -1371,7 +1412,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.12</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Triston Casas</td>
 <td>Boston Red Sox</td>
 <td>3</td>
@@ -1387,7 +1428,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.21</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Ceddanne Rafaela</td>
 <td>Boston Red Sox</td>
 <td>3</td>
@@ -1403,7 +1444,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.1</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Abraham Toro</td>
 <td>Boston Red Sox</td>
 <td>3</td>
@@ -1419,7 +1460,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Christian Yelich</td>
 <td>Milwaukee Brewers</td>
 <td>12</td>
@@ -1435,7 +1476,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jackson Chourio</td>
 <td>Milwaukee Brewers</td>
 <td>9</td>
@@ -1451,7 +1492,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.14</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Rhys Hoskins</td>
 <td>Milwaukee Brewers</td>
 <td>9</td>
@@ -1467,7 +1508,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.2</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>William Contreras</td>
 <td>Milwaukee Brewers</td>
 <td>5</td>
@@ -1483,7 +1524,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jake Bauers</td>
 <td>Milwaukee Brewers</td>
 <td>4</td>
@@ -1499,7 +1540,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.1</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Brice Turang</td>
 <td>Milwaukee Brewers</td>
 <td>4</td>
@@ -1515,7 +1556,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.05</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Sal Frelick</td>
 <td>Milwaukee Brewers</td>
 <td>3</td>
@@ -1531,7 +1572,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.01</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Eric Haase</td>
 <td>Milwaukee Brewers</td>
 <td>2</td>
@@ -1547,7 +1588,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.17</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Joey Ortiz</td>
 <td>Milwaukee Brewers</td>
 <td>2</td>
@@ -1563,7 +1604,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.08</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Vinny Capra</td>
 <td>Milwaukee Brewers</td>
 <td>1</td>
@@ -1579,7 +1620,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>0.0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Isaac Collins</td>
 <td>Milwaukee Brewers</td>
 <td>1</td>
@@ -1595,7 +1636,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Caleb Durbin</td>
 <td>Milwaukee Brewers</td>
 <td>1</td>
@@ -1611,7 +1652,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Elly De La Cruz</td>
 <td>Cincinnati Reds</td>
 <td>12</td>
@@ -1627,7 +1668,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.16</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Austin Hays</td>
 <td>Cincinnati Reds</td>
 <td>6</td>
@@ -1643,7 +1684,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Matt McLain</td>
 <td>Cincinnati Reds</td>
 <td>6</td>
@@ -1659,7 +1700,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Will Benson</td>
 <td>Cincinnati Reds</td>
 <td>5</td>
@@ -1675,7 +1716,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jake Fraley</td>
 <td>Cincinnati Reds</td>
 <td>4</td>
@@ -1691,7 +1732,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.04</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>TJ Friedl</td>
 <td>Cincinnati Reds</td>
 <td>4</td>
@@ -1707,7 +1748,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Spencer Steer</td>
 <td>Cincinnati Reds</td>
 <td>4</td>
@@ -1723,7 +1764,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.13</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Tyler Stephenson</td>
 <td>Cincinnati Reds</td>
 <td>4</td>
@@ -1739,7 +1780,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.14</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Noelvi Marte</td>
 <td>Cincinnati Reds</td>
 <td>3</td>
@@ -1755,7 +1796,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jose Trevino</td>
 <td>Cincinnati Reds</td>
 <td>3</td>
@@ -1771,7 +1812,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Austin Wynns</td>
 <td>Cincinnati Reds</td>
 <td>3</td>
@@ -1787,7 +1828,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Spencer Torkelson</td>
 <td>Detroit Tigers</td>
 <td>14</td>
@@ -1803,7 +1844,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Riley Greene</td>
 <td>Detroit Tigers</td>
 <td>13</td>
@@ -1819,7 +1860,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.18</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Kerry Carpenter</td>
 <td>Detroit Tigers</td>
 <td>10</td>
@@ -1835,7 +1876,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.21</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Javier Báez</td>
 <td>Detroit Tigers</td>
 <td>6</td>
@@ -1851,7 +1892,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.07</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Dillon Dingler</td>
 <td>Detroit Tigers</td>
 <td>5</td>
@@ -1867,7 +1908,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.04</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Gleyber Torres</td>
 <td>Detroit Tigers</td>
 <td>5</td>
@@ -1883,7 +1924,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.1</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Colt Keith</td>
 <td>Detroit Tigers</td>
 <td>4</td>
@@ -1899,7 +1940,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.09</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Trey Sweeney</td>
 <td>Detroit Tigers</td>
 <td>4</td>
@@ -1915,7 +1956,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Zach McKinstry</td>
 <td>Detroit Tigers</td>
 <td>3</td>
@@ -1931,7 +1972,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.03</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Andy Ibáñez</td>
 <td>Detroit Tigers</td>
 <td>2</td>
@@ -1947,7 +1988,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.05</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Miguel Vargas</td>
 <td>Chicago White Sox</td>
 <td>8</td>
@@ -1963,7 +2004,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.07</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Andrew Benintendi</td>
 <td>Chicago White Sox</td>
 <td>6</td>
@@ -1979,7 +2020,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Luis Robert Jr.</td>
 <td>Chicago White Sox</td>
 <td>5</td>
@@ -1995,7 +2036,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.14</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Andrew Vaughn</td>
 <td>Chicago White Sox</td>
 <td>5</td>
@@ -2011,7 +2052,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.13</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Lenyn Sosa</td>
 <td>Chicago White Sox</td>
 <td>4</td>
@@ -2027,7 +2068,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.08</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Brooks Baldwin</td>
 <td>Chicago White Sox</td>
 <td>3</td>
@@ -2043,7 +2084,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Tim Elko</td>
 <td>Chicago White Sox</td>
 <td>3</td>
@@ -2059,7 +2100,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Joshua Palacios</td>
 <td>Chicago White Sox</td>
 <td>3</td>
@@ -2075,7 +2116,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.09</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Nick Maton</td>
 <td>Chicago White Sox</td>
 <td>2</td>
@@ -2091,7 +2132,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Austin Slater</td>
 <td>Chicago White Sox</td>
 <td>2</td>
@@ -2107,7 +2148,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.02</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Mike Tauchman</td>
 <td>Chicago White Sox</td>
 <td>2</td>
@@ -2123,7 +2164,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Michael A. Taylor</td>
 <td>Chicago White Sox</td>
 <td>2</td>
@@ -2139,7 +2180,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.04</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Fernando Tatis Jr.</td>
 <td>San Diego Padres</td>
 <td>13</td>
@@ -2155,7 +2196,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.21</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Gavin Sheets</td>
 <td>San Diego Padres</td>
 <td>11</td>
@@ -2171,7 +2212,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.07</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Manny Machado</td>
 <td>San Diego Padres</td>
 <td>7</td>
@@ -2187,7 +2228,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.19</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jackson Merrill</td>
 <td>San Diego Padres</td>
 <td>5</td>
@@ -2203,7 +2244,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jake Cronenworth</td>
 <td>San Diego Padres</td>
 <td>4</td>
@@ -2219,7 +2260,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Luis Arraez</td>
 <td>San Diego Padres</td>
 <td>3</td>
@@ -2235,7 +2276,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.03</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Xander Bogaerts</td>
 <td>San Diego Padres</td>
 <td>3</td>
@@ -2251,7 +2292,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.1</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Elias Díaz</td>
 <td>San Diego Padres</td>
 <td>3</td>
@@ -2267,7 +2308,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jason Heyward</td>
 <td>San Diego Padres</td>
 <td>2</td>
@@ -2283,7 +2324,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Martín Maldonado</td>
 <td>San Diego Padres</td>
 <td>2</td>
@@ -2299,7 +2340,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.08</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Matt Chapman</td>
 <td>San Francisco Giants</td>
 <td>10</td>
@@ -2315,7 +2356,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.18</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Wilmer Flores</td>
 <td>San Francisco Giants</td>
 <td>10</td>
@@ -2331,7 +2372,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Heliot Ramos</td>
 <td>San Francisco Giants</td>
 <td>10</td>
@@ -2347,7 +2388,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.18</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jung Hoo Lee</td>
 <td>San Francisco Giants</td>
 <td>6</td>
@@ -2363,7 +2404,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.05</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Willy Adames</td>
 <td>San Francisco Giants</td>
 <td>5</td>
@@ -2379,7 +2420,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.2</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Mike Yastrzemski</td>
 <td>San Francisco Giants</td>
 <td>5</td>
@@ -2395,7 +2436,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.13</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Luis Matos</td>
 <td>San Francisco Giants</td>
 <td>4</td>
@@ -2411,7 +2452,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Tyler Fitzgerald</td>
 <td>San Francisco Giants</td>
 <td>2</td>
@@ -2427,7 +2468,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.16</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Sam Huff</td>
 <td>San Francisco Giants</td>
 <td>2</td>
@@ -2443,7 +2484,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Patrick Bailey</td>
 <td>San Francisco Giants</td>
 <td>1</td>
@@ -2459,7 +2500,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.07</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Christian Koss</td>
 <td>San Francisco Giants</td>
 <td>1</td>
@@ -2475,7 +2516,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>LaMonte Wade Jr.</td>
 <td>San Francisco Giants</td>
 <td>1</td>
@@ -2491,7 +2532,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.07</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Byron Buxton</td>
 <td>Minnesota Twins</td>
 <td>10</td>
@@ -2507,7 +2548,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.18</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Trevor Larnach</td>
 <td>Minnesota Twins</td>
 <td>8</td>
@@ -2523,7 +2564,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.13</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Harrison Bader</td>
 <td>Minnesota Twins</td>
 <td>5</td>
@@ -2539,7 +2580,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.08</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Kody Clemens</td>
 <td>Minnesota Twins</td>
 <td>5</td>
@@ -2555,7 +2596,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>12</td>
 <td>0.2</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Carlos Correa</td>
 <td>Minnesota Twins</td>
 <td>5</td>
@@ -2571,7 +2612,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.16</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Willi Castro</td>
 <td>Minnesota Twins</td>
 <td>4</td>
@@ -2587,7 +2628,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.08</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Ty France</td>
 <td>Minnesota Twins</td>
 <td>4</td>
@@ -2603,7 +2644,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.09</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Brooks Lee</td>
 <td>Minnesota Twins</td>
 <td>4</td>
@@ -2619,7 +2660,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Ryan Jeffers</td>
 <td>Minnesota Twins</td>
 <td>3</td>
@@ -2635,7 +2676,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.17</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Edouard Julien</td>
 <td>Minnesota Twins</td>
 <td>2</td>
@@ -2651,7 +2692,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.09</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Matt Wallner</td>
 <td>Minnesota Twins</td>
 <td>2</td>
@@ -2667,7 +2708,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.17</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Brent Rooker</td>
 <td>Athletics</td>
 <td>13</td>
@@ -2683,7 +2724,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.27</td>
 <td>2/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Tyler Soderstrom</td>
 <td>Athletics</td>
 <td>12</td>
@@ -2699,7 +2740,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Shea Langeliers</td>
 <td>Athletics</td>
 <td>10</td>
@@ -2715,7 +2756,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.21</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Lawrence Butler</td>
 <td>Athletics</td>
 <td>8</td>
@@ -2731,7 +2772,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.18</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jacob Wilson</td>
 <td>Athletics</td>
 <td>7</td>
@@ -2747,7 +2788,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>JJ Bleday</td>
 <td>Athletics</td>
 <td>6</td>
@@ -2763,7 +2804,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.13</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Luis Urías</td>
 <td>Athletics</td>
 <td>6</td>
@@ -2779,7 +2820,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.1</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Nick Kurtz</td>
 <td>Athletics</td>
 <td>5</td>
@@ -2795,7 +2836,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Miguel Andujar</td>
 <td>Athletics</td>
 <td>3</td>
@@ -2811,7 +2852,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.05</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Seth Brown</td>
 <td>Athletics</td>
 <td>1</td>
@@ -2827,7 +2868,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Denzel Clarke</td>
 <td>Athletics</td>
 <td>1</td>
@@ -2843,7 +2884,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Max Muncy</td>
 <td>Athletics</td>
 <td>1</td>
@@ -2859,7 +2900,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.21</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Max Schuemann</td>
 <td>Athletics</td>
 <td>1</td>
@@ -2875,7 +2916,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.05</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Francisco Lindor</td>
 <td>New York Mets</td>
 <td>13</td>
@@ -2891,7 +2932,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.22</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Pete Alonso</td>
 <td>New York Mets</td>
 <td>12</td>
@@ -2907,7 +2948,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.21</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Juan Soto</td>
 <td>New York Mets</td>
 <td>10</td>
@@ -2923,7 +2964,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.26</td>
 <td>1/4</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Brandon Nimmo</td>
 <td>New York Mets</td>
 <td>9</td>
@@ -2939,7 +2980,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Brett Baty</td>
 <td>New York Mets</td>
 <td>6</td>
@@ -2955,7 +2996,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.08</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Mark Vientos</td>
 <td>New York Mets</td>
 <td>6</td>
@@ -2971,7 +3012,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.24</td>
 <td>1/4</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Starling Marte</td>
 <td>New York Mets</td>
 <td>3</td>
@@ -2987,7 +3028,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.07</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jeff McNeil</td>
 <td>New York Mets</td>
 <td>3</td>
@@ -3003,7 +3044,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.09</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Francisco Alvarez</td>
 <td>New York Mets</td>
 <td>1</td>
@@ -3019,7 +3060,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Tyrone Taylor</td>
 <td>New York Mets</td>
 <td>1</td>
@@ -3035,7 +3076,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.05</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Luis Torrens</td>
 <td>New York Mets</td>
 <td>1</td>
@@ -3051,7 +3092,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jesse Winker</td>
 <td>New York Mets</td>
 <td>1</td>
@@ -3067,7 +3108,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.1</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jared Young</td>
 <td>New York Mets</td>
 <td>1</td>
@@ -3083,7 +3124,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Shohei Ohtani</td>
 <td>Los Angeles Dodgers</td>
 <td>22</td>
@@ -3099,7 +3140,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.34</td>
 <td>1/3</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Andy Pages</td>
 <td>Los Angeles Dodgers</td>
 <td>11</td>
@@ -3115,7 +3156,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Teoscar Hernández</td>
 <td>Los Angeles Dodgers</td>
 <td>10</td>
@@ -3131,7 +3172,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.21</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Tommy Edman</td>
 <td>Los Angeles Dodgers</td>
 <td>9</td>
@@ -3147,7 +3188,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.16</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Freddie Freeman</td>
 <td>Los Angeles Dodgers</td>
 <td>9</td>
@@ -3163,7 +3204,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Mookie Betts</td>
 <td>Los Angeles Dodgers</td>
 <td>8</td>
@@ -3179,7 +3220,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.16</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Enrique Hernández</td>
 <td>Los Angeles Dodgers</td>
 <td>7</td>
@@ -3195,7 +3236,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.1</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Max Muncy</td>
 <td>Los Angeles Dodgers</td>
 <td>7</td>
@@ -3211,7 +3252,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.21</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Will Smith</td>
 <td>Los Angeles Dodgers</td>
 <td>5</td>
@@ -3227,7 +3268,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.16</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Michael Conforto</td>
 <td>Los Angeles Dodgers</td>
 <td>3</td>
@@ -3263,9 +3304,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 </pre>
-        <h2 id="dh-batters">DH Batters</h2>
-        <pre><table border='1'>
-<tr>
+<h2 id="dh-batters">DH Batters</h2>
+<pre><table border="1" id="table_3">
+<tr><th>RBI</th><th>H</th><th>HRS</th>
 <th>Batter</th>
 <th>Team</th>
 <th>HR</th>
@@ -3273,23 +3314,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <th>fHRpg</th>
 <th>HR24</th>
 </tr>
-<tr>
-<td>Mike Trout</td>
-<td>Los Angeles Angels</td>
-<td>9</td>
-<td>0.28</td>
-<td>2/7</td>
-<td>10</td>
-</tr>
-<tr>
-<td>Rafael Devers</td>
-<td>Boston Red Sox</td>
-<td>12</td>
-<td>0.2</td>
-<td>1/5</td>
-<td>28</td>
-</tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Ryan McMahon</td>
 <td>Colorado Rockies</td>
 <td>6</td>
@@ -3297,47 +3322,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1/7</td>
 <td>20</td>
 </tr>
-<tr>
-<td>Tyler Stephenson</td>
-<td>Cincinnati Reds</td>
-<td>4</td>
-<td>0.17</td>
-<td>1/6</td>
-<td>19</td>
-</tr>
-<tr>
-<td>Luis Campusano</td>
-<td>San Diego Padres</td>
-<td>0</td>
-<td>0.0</td>
-<td>0</td>
-<td>8</td>
-</tr>
-<tr>
-<td>Liam Hicks</td>
-<td>Miami Marlins</td>
-<td>4</td>
-<td>0.11</td>
-<td>1/7</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Christian Yelich</td>
-<td>Milwaukee Brewers</td>
-<td>12</td>
-<td>0.21</td>
-<td>1/5</td>
-<td>11</td>
-</tr>
-<tr>
-<td>Mike Tauchman</td>
-<td>Chicago White Sox</td>
-<td>2</td>
-<td>0.17</td>
-<td>1/6</td>
-<td>7</td>
-</tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Kerry Carpenter</td>
 <td>Detroit Tigers</td>
 <td>10</td>
@@ -3345,8 +3330,64 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1/6</td>
 <td>18</td>
 </tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
+<td>Tyler Stephenson</td>
+<td>Cincinnati Reds</td>
+<td>4</td>
+<td>0.17</td>
+<td>1/6</td>
+<td>19</td>
+</tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
+<td>Luis Campusano</td>
+<td>San Diego Padres</td>
+<td>0</td>
+<td>0.0</td>
+<td>0</td>
+<td>8</td>
+</tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
+<td>Liam Hicks</td>
+<td>Miami Marlins</td>
+<td>4</td>
+<td>0.11</td>
+<td>1/7</td>
+<td>0</td>
+</tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
+<td>Mike Tauchman</td>
+<td>Chicago White Sox</td>
+<td>2</td>
+<td>0.17</td>
+<td>1/6</td>
+<td>7</td>
+</tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
+<td>Mike Trout</td>
+<td>Los Angeles Angels</td>
+<td>9</td>
+<td>0.28</td>
+<td>2/7</td>
+<td>10</td>
+</tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
+<td>Christian Yelich</td>
+<td>Milwaukee Brewers</td>
+<td>12</td>
+<td>0.21</td>
+<td>1/5</td>
+<td>11</td>
+</tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
+<td>Rafael Devers</td>
+<td>Boston Red Sox</td>
+<td>12</td>
+<td>0.2</td>
+<td>1/5</td>
+<td>28</td>
+</tr>
 </table>
-<br>
+<br/>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -3365,9 +3406,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 </pre>
-        <h2 id="bvp-stats">Batter vs Pitcher Stats</h2>
-        <pre><table border='1'>
-<tr>
+<h2 id="bvp-stats">Batter vs Pitcher Stats</h2>
+<pre><table border="1" id="table_4">
+<tr><th>RBI</th><th>H</th><th>HRS</th>
 <th>Batter</th>
 <th>Team</th>
 <th>Pitcher</th>
@@ -3394,7 +3435,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <th>HR24pg</th>
 <th>fHR24pg</th>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jesús Sánchez</td>
 <td>Miami Marlins</td>
 <td>Germán Márquez</td>
@@ -3421,7 +3462,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.12</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Ryan McMahon</td>
 <td>Colorado Rockies</td>
 <td>Max Meyer</td>
@@ -3448,7 +3489,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.13</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Michael Toglia</td>
 <td>Colorado Rockies</td>
 <td>Max Meyer</td>
@@ -3475,7 +3516,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.22</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Brenton Doyle</td>
 <td>Colorado Rockies</td>
 <td>Max Meyer</td>
@@ -3502,7 +3543,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Mickey Moniak</td>
 <td>Colorado Rockies</td>
 <td>Max Meyer</td>
@@ -3529,7 +3570,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Ezequiel Tovar</td>
 <td>Colorado Rockies</td>
 <td>Max Meyer</td>
@@ -3556,7 +3597,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.17</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Orlando Arcia</td>
 <td>Colorado Rockies</td>
 <td>Max Meyer</td>
@@ -3583,7 +3624,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.5</td>
 <td>1/2</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Rafael Devers</td>
 <td>Boston Red Sox</td>
 <td>Tyler Anderson</td>
@@ -3610,7 +3651,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.2</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Alex Bregman</td>
 <td>Boston Red Sox</td>
 <td>Tyler Anderson</td>
@@ -3637,7 +3678,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.18</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Trevor Story</td>
 <td>Boston Red Sox</td>
 <td>Tyler Anderson</td>
@@ -3664,7 +3705,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.08</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jarren Duran</td>
 <td>Boston Red Sox</td>
 <td>Tyler Anderson</td>
@@ -3691,7 +3732,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.13</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Rob Refsnyder</td>
 <td>Boston Red Sox</td>
 <td>Tyler Anderson</td>
@@ -3718,7 +3759,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.12</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Triston Casas</td>
 <td>Boston Red Sox</td>
 <td>Tyler Anderson</td>
@@ -3745,7 +3786,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.21</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Ceddanne Rafaela</td>
 <td>Boston Red Sox</td>
 <td>Tyler Anderson</td>
@@ -3772,7 +3813,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.1</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Abraham Toro</td>
 <td>Boston Red Sox</td>
 <td>Tyler Anderson</td>
@@ -3799,7 +3840,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Elly De La Cruz</td>
 <td>Cincinnati Reds</td>
 <td>Aaron Civale</td>
@@ -3826,7 +3867,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.16</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Austin Hays</td>
 <td>Cincinnati Reds</td>
 <td>Aaron Civale</td>
@@ -3853,7 +3894,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jake Fraley</td>
 <td>Cincinnati Reds</td>
 <td>Aaron Civale</td>
@@ -3880,7 +3921,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.04</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>TJ Friedl</td>
 <td>Cincinnati Reds</td>
 <td>Aaron Civale</td>
@@ -3907,7 +3948,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Spencer Steer</td>
 <td>Cincinnati Reds</td>
 <td>Aaron Civale</td>
@@ -3934,7 +3975,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.13</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Tyler Stephenson</td>
 <td>Cincinnati Reds</td>
 <td>Aaron Civale</td>
@@ -3961,7 +4002,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.14</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Noelvi Marte</td>
 <td>Cincinnati Reds</td>
 <td>Aaron Civale</td>
@@ -3988,7 +4029,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jose Trevino</td>
 <td>Cincinnati Reds</td>
 <td>Aaron Civale</td>
@@ -4015,7 +4056,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Christian Yelich</td>
 <td>Milwaukee Brewers</td>
 <td>Brady Singer</td>
@@ -4042,7 +4083,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jackson Chourio</td>
 <td>Milwaukee Brewers</td>
 <td>Brady Singer</td>
@@ -4069,7 +4110,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.14</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Rhys Hoskins</td>
 <td>Milwaukee Brewers</td>
 <td>Brady Singer</td>
@@ -4096,7 +4137,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.2</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>William Contreras</td>
 <td>Milwaukee Brewers</td>
 <td>Brady Singer</td>
@@ -4123,7 +4164,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jake Bauers</td>
 <td>Milwaukee Brewers</td>
 <td>Brady Singer</td>
@@ -4150,7 +4191,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.1</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Brice Turang</td>
 <td>Milwaukee Brewers</td>
 <td>Brady Singer</td>
@@ -4177,7 +4218,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.05</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Sal Frelick</td>
 <td>Milwaukee Brewers</td>
 <td>Brady Singer</td>
@@ -4204,7 +4245,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.01</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Eric Haase</td>
 <td>Milwaukee Brewers</td>
 <td>Brady Singer</td>
@@ -4231,7 +4272,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.17</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Joey Ortiz</td>
 <td>Milwaukee Brewers</td>
 <td>Brady Singer</td>
@@ -4258,7 +4299,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.08</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Miguel Vargas</td>
 <td>Chicago White Sox</td>
 <td>Jack Flaherty</td>
@@ -4285,7 +4326,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.07</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Andrew Benintendi</td>
 <td>Chicago White Sox</td>
 <td>Jack Flaherty</td>
@@ -4312,7 +4353,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Luis Robert Jr.</td>
 <td>Chicago White Sox</td>
 <td>Jack Flaherty</td>
@@ -4339,7 +4380,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.14</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Andrew Vaughn</td>
 <td>Chicago White Sox</td>
 <td>Jack Flaherty</td>
@@ -4366,7 +4407,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.13</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Lenyn Sosa</td>
 <td>Chicago White Sox</td>
 <td>Jack Flaherty</td>
@@ -4393,7 +4434,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.08</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Brooks Baldwin</td>
 <td>Chicago White Sox</td>
 <td>Jack Flaherty</td>
@@ -4420,7 +4461,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Joshua Palacios</td>
 <td>Chicago White Sox</td>
 <td>Jack Flaherty</td>
@@ -4447,7 +4488,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.09</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Nick Maton</td>
 <td>Chicago White Sox</td>
 <td>Jack Flaherty</td>
@@ -4474,7 +4515,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.0</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Austin Slater</td>
 <td>Chicago White Sox</td>
 <td>Jack Flaherty</td>
@@ -4501,7 +4542,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.02</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Mike Tauchman</td>
 <td>Chicago White Sox</td>
 <td>Jack Flaherty</td>
@@ -4528,7 +4569,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Michael A. Taylor</td>
 <td>Chicago White Sox</td>
 <td>Jack Flaherty</td>
@@ -4555,7 +4596,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.04</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Spencer Torkelson</td>
 <td>Detroit Tigers</td>
 <td>Jonathan Cannon</td>
@@ -4582,7 +4623,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Riley Greene</td>
 <td>Detroit Tigers</td>
 <td>Jonathan Cannon</td>
@@ -4609,7 +4650,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.18</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Kerry Carpenter</td>
 <td>Detroit Tigers</td>
 <td>Jonathan Cannon</td>
@@ -4636,7 +4677,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.21</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Javier Báez</td>
 <td>Detroit Tigers</td>
 <td>Jonathan Cannon</td>
@@ -4663,7 +4704,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.07</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Dillon Dingler</td>
 <td>Detroit Tigers</td>
 <td>Jonathan Cannon</td>
@@ -4690,7 +4731,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.04</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Gleyber Torres</td>
 <td>Detroit Tigers</td>
 <td>Jonathan Cannon</td>
@@ -4717,7 +4758,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.1</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Colt Keith</td>
 <td>Detroit Tigers</td>
 <td>Jonathan Cannon</td>
@@ -4744,7 +4785,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.09</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Trey Sweeney</td>
 <td>Detroit Tigers</td>
 <td>Jonathan Cannon</td>
@@ -4771,7 +4812,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Zach McKinstry</td>
 <td>Detroit Tigers</td>
 <td>Jonathan Cannon</td>
@@ -4798,7 +4839,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.03</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Matt Chapman</td>
 <td>San Francisco Giants</td>
 <td>Stephen Kolek</td>
@@ -4825,7 +4866,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.18</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Wilmer Flores</td>
 <td>San Francisco Giants</td>
 <td>Stephen Kolek</td>
@@ -4852,7 +4893,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jung Hoo Lee</td>
 <td>San Francisco Giants</td>
 <td>Stephen Kolek</td>
@@ -4879,7 +4920,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.05</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Willy Adames</td>
 <td>San Francisco Giants</td>
 <td>Stephen Kolek</td>
@@ -4906,7 +4947,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.2</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>LaMonte Wade Jr.</td>
 <td>San Francisco Giants</td>
 <td>Stephen Kolek</td>
@@ -4933,7 +4974,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.07</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Fernando Tatis Jr.</td>
 <td>San Diego Padres</td>
 <td>Logan Webb</td>
@@ -4960,7 +5001,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.21</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Gavin Sheets</td>
 <td>San Diego Padres</td>
 <td>Logan Webb</td>
@@ -4987,7 +5028,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.07</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Manny Machado</td>
 <td>San Diego Padres</td>
 <td>Logan Webb</td>
@@ -5014,7 +5055,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.19</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jackson Merrill</td>
 <td>San Diego Padres</td>
 <td>Logan Webb</td>
@@ -5041,7 +5082,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jake Cronenworth</td>
 <td>San Diego Padres</td>
 <td>Logan Webb</td>
@@ -5068,7 +5109,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Luis Arraez</td>
 <td>San Diego Padres</td>
 <td>Logan Webb</td>
@@ -5095,7 +5136,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.03</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Xander Bogaerts</td>
 <td>San Diego Padres</td>
 <td>Logan Webb</td>
@@ -5122,7 +5163,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.1</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Elias Díaz</td>
 <td>San Diego Padres</td>
 <td>Logan Webb</td>
@@ -5149,7 +5190,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Jason Heyward</td>
 <td>San Diego Padres</td>
 <td>Logan Webb</td>
@@ -5176,7 +5217,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Martín Maldonado</td>
 <td>San Diego Padres</td>
 <td>Logan Webb</td>
@@ -5203,7 +5244,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.08</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Brent Rooker</td>
 <td>Athletics</td>
 <td>Joe Ryan</td>
@@ -5230,7 +5271,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.27</td>
 <td>2/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Tyler Soderstrom</td>
 <td>Athletics</td>
 <td>Joe Ryan</td>
@@ -5257,7 +5298,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.15</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Shea Langeliers</td>
 <td>Athletics</td>
 <td>Joe Ryan</td>
@@ -5284,7 +5325,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.21</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>JJ Bleday</td>
 <td>Athletics</td>
 <td>Joe Ryan</td>
@@ -5311,7 +5352,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.13</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Luis Urías</td>
 <td>Athletics</td>
 <td>Joe Ryan</td>
@@ -5338,7 +5379,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.1</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Miguel Andujar</td>
 <td>Athletics</td>
 <td>Joe Ryan</td>
@@ -5365,7 +5406,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.05</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Seth Brown</td>
 <td>Athletics</td>
 <td>Joe Ryan</td>
@@ -5392,7 +5433,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.11</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Max Muncy</td>
 <td>Athletics</td>
 <td>Joe Ryan</td>
@@ -5419,7 +5460,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.21</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Byron Buxton</td>
 <td>Minnesota Twins</td>
 <td>Luis Severino</td>
@@ -5446,7 +5487,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.18</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Trevor Larnach</td>
 <td>Minnesota Twins</td>
 <td>Luis Severino</td>
@@ -5473,7 +5514,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.13</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Kody Clemens</td>
 <td>Minnesota Twins</td>
 <td>Luis Severino</td>
@@ -5500,7 +5541,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.2</td>
 <td>1/5</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Carlos Correa</td>
 <td>Minnesota Twins</td>
 <td>Luis Severino</td>
@@ -5527,7 +5568,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.16</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Willi Castro</td>
 <td>Minnesota Twins</td>
 <td>Luis Severino</td>
@@ -5554,7 +5595,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.08</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Ty France</td>
 <td>Minnesota Twins</td>
 <td>Luis Severino</td>
@@ -5581,7 +5622,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.09</td>
 <td>1/7</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Brooks Lee</td>
 <td>Minnesota Twins</td>
 <td>Luis Severino</td>
@@ -5608,7 +5649,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.06</td>
 <td>0</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Ryan Jeffers</td>
 <td>Minnesota Twins</td>
 <td>Luis Severino</td>
@@ -5635,7 +5676,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>0.17</td>
 <td>1/6</td>
 </tr>
-<tr>
+<tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
 <td>Matt Wallner</td>
 <td>Minnesota Twins</td>
 <td>Luis Severino</td>
@@ -5663,7 +5704,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <td>1/6</td>
 </tr>
 </table>
-<br>
+<br/>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -5682,9 +5723,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 </pre>
-        <h2 id="streaks">Streaks</h2>
-        <pre><table border='1'>
-  <tr>
+<h2 id="streaks">Streaks</h2>
+<pre><table border="1" id="table_5">
+  <tr><th>RBI</th><th>H</th><th>HRS</th>
     <th>Player</th>
     <th>team</th>
     <th>Games</th>
@@ -5700,7 +5741,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <th>Slug%</th>
     <th>Last Game Date</th>
   </tr>
-  <tr>
+  <tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
     <td>Christian Yelich</td>
     <td>Milwaukee Brewers</td>
     <td>8</td>
@@ -5716,7 +5757,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>.917</td>
     <td>2025-06-01</td>
   </tr>
-  <tr>
+  <tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
     <td>Colt Keith</td>
     <td>Detroit Tigers</td>
     <td>8</td>
@@ -5732,7 +5773,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>.500</td>
     <td>2025-06-01</td>
   </tr>
-  <tr>
+  <tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
     <td>Pete Alonso</td>
     <td>New York Mets</td>
     <td>8</td>
@@ -5748,7 +5789,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>.645</td>
     <td>2025-06-01</td>
   </tr>
-  <tr>
+  <tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
     <td>Jesus Sanchez</td>
     <td>Miami Marlins</td>
     <td>7</td>
@@ -5764,7 +5805,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>.680</td>
     <td>2025-06-01</td>
   </tr>
-  <tr>
+  <tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
     <td>Andy Pages</td>
     <td>Los Angeles Dodgers</td>
     <td>6</td>
@@ -5780,7 +5821,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>.667</td>
     <td>2025-06-01</td>
   </tr>
-  <tr>
+  <tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
     <td>Luke Keaschall</td>
     <td>Minnesota Twins</td>
     <td>6</td>
@@ -5796,7 +5837,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>.526</td>
     <td>2025-04-25</td>
   </tr>
-  <tr>
+  <tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
     <td>Mike Tauchman</td>
     <td>Chicago White Sox</td>
     <td>5</td>
@@ -5812,7 +5853,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>.950</td>
     <td>2025-06-01</td>
   </tr>
-  <tr>
+  <tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
     <td>Trevor Larnach</td>
     <td>Minnesota Twins</td>
     <td>5</td>
@@ -5828,7 +5869,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>.583</td>
     <td>2025-06-01</td>
   </tr>
-  <tr>
+  <tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
     <td>Heliot Ramos</td>
     <td>San Francisco Giants</td>
     <td>5</td>
@@ -5844,7 +5885,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>.667</td>
     <td>2025-06-01</td>
   </tr>
-  <tr>
+  <tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
     <td>Brent Rooker</td>
     <td>Athletics</td>
     <td>5</td>
@@ -5860,7 +5901,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>.750</td>
     <td>2025-06-01</td>
   </tr>
-  <tr>
+  <tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
     <td>Ceddanne Rafaela</td>
     <td>Boston Red Sox</td>
     <td>5</td>
@@ -5876,7 +5917,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>.600</td>
     <td>2025-06-01</td>
   </tr>
-  <tr>
+  <tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
     <td>Tomas Nido</td>
     <td>Detroit Tigers</td>
     <td>5</td>
@@ -5892,7 +5933,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>.368</td>
     <td>2025-05-19</td>
   </tr>
-  <tr>
+  <tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
     <td>Mike Trout</td>
     <td>Los Angeles Angels</td>
     <td>5</td>
@@ -5908,7 +5949,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <td>.500</td>
     <td>2025-06-01</td>
   </tr>
-  <tr>
+  <tr><td><input data-checkbox-index="2" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="1" onclick="handleCheckboxClick(this)" type="checkbox"/></td><td><input data-checkbox-index="0" onclick="handleCheckboxClick(this)" type="checkbox"/></td>
     <td>Matt Wallner</td>
     <td>Minnesota Twins</td>
     <td>5</td>
@@ -5942,7 +5983,98 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 </pre>
+</div>
+<div id="checked-section"><h2>Checked</h2><pre><table border="1" id="checked-table"></table></pre></div><script>
+function handleCheckboxClick(checkbox) {
+    const row = checkbox.closest('tr');
+    const table = checkbox.closest('table');
+    const tableId = table.id;
+    const rowIndex = Array.from(table.querySelectorAll('tr')).indexOf(row);
+    const checkboxIndex = checkbox.getAttribute('data-checkbox-index');
+    const checkedTable = document.getElementById('checked-table');
 
-    </div>
-</body>
+    // Save the checkbox state in localStorage
+    const checkboxKey = `${tableId}_row_${rowIndex}_checkbox_${checkboxIndex}`;
+    if (checkbox.checked) {
+        localStorage.setItem(checkboxKey, '1');
+
+        // Clone the row and add it to the "Checked" table
+        const clonedRow = row.cloneNode(true);
+        clonedRow.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+            cb.disabled = true; // Disable checkboxes in the cloned row
+        });
+        checkedTable.appendChild(clonedRow);
+    } else {
+        localStorage.removeItem(checkboxKey);
+
+        // Remove the row from the "Checked" table if it exists
+        const rows = checkedTable.querySelectorAll('tr');
+        rows.forEach(checkedRow => {
+            if (checkedRow.isEqualNode(row.cloneNode(true))) {
+                checkedRow.remove();
+            }
+        });
+    }
+}
+
+function loadCheckboxStates() {
+    // Iterate through all keys in localStorage
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key.includes('_checkbox_')) {
+            const [tableId, _, rowIndex, checkboxIndex] = key.split('_');
+            const table = document.getElementById(tableId);
+            if (table) {
+                const row = table.querySelectorAll('tr')[rowIndex];
+                if (row) {
+                    const checkbox = row.querySelector(`input[data-checkbox-index="${checkboxIndex}"]`);
+                    if (checkbox) {
+                        checkbox.checked = localStorage.getItem(key) === '1';
+                    }
+                }
+            }
+        }
+    }
+}
+
+window.onload = loadCheckboxStates;
+</script><script>
+document.addEventListener('DOMContentLoaded', function() {
+    let currentlyHighlightedRow = null;
+
+    document.querySelectorAll('table').forEach(table => {
+        table.addEventListener('click', function(event) {
+            const cell = event.target.closest('td, th'); // Check if the clicked element is a cell
+            if (cell) {
+                const row = cell.closest('tr'); // Get the row of the clicked cell
+                if (currentlyHighlightedRow) {
+                    currentlyHighlightedRow.classList.remove('highlight'); // Remove highlight from the previous row
+                }
+                row.classList.add('highlight'); // Highlight the new row
+                currentlyHighlightedRow = row; // Update the currently highlighted row
+            }
+        });
+    });
+});
+
+// Add CSS for the highlight class
+const style = document.createElement('style');
+style.innerHTML = `
+    .highlight {
+        background-color: yellow; /* Highlight color */
+    }
+`;
+document.head.appendChild(style);
+</script><script>
+document.addEventListener('DOMContentLoaded', function() {
+    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+    document.querySelectorAll('table').forEach(table => {
+        const headerRow = table.querySelector('tr:first-child');
+        if (headerRow) {
+            headerRow.style.top = `${navbarHeight}px`; // Set the sticky header below the navbar
+        }
+    });
+});
+</script></body>
 </html>
