@@ -286,7 +286,15 @@ for z in list_of_batters:
             new_list_with_stats.append(f"{frbis_per_game}")
 
 #         # Fetch stats for 2024
-        beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z[0]), 'hitting', 'season') 
+        try:
+            beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2024,'gameType':'W'})['people'] if x['fullName']==z[0]), 'hitting', 'season') 
+        except StopIteration:
+            print(f"No player found with the name '{z[0]}'.")
+            beans2 = None  # Set beans to None or handle it appropriately
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            beans2 = None  # Set beans to None or handle it appropriately
+
 
         if beans2:  # Only proceed if a matching player is found for 2024
             # print(beans2)
@@ -296,7 +304,7 @@ for z in list_of_batters:
                 # bbhrs = bhrs + 0.24
                 new_list_with_stats.append(f"{bhrs}")
         else:
-            news_list_with_stats.append('n/a')  # If no stats found for 2024, append 0
+            new_list_with_stats.append('n/a')  # If no stats found for 2024, append 0
         holder_of_stats.append(new_list_with_stats)
     else:
         print(f"Player '{z[0]}' not found in the sports_players list.")

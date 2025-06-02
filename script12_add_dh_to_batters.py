@@ -66,7 +66,23 @@ stat_homers = []
 for z in all_names:
     # print(z)
     # beans = ''
-    beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
+    try:
+        beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
+    except StopIteration:
+        print(f"No player found with the name '{z}'.")
+        beans = None  # Set beans to None or handle it appropriately
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        beans = None  # Set beans to None or handle it appropriately
+    try:
+        beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2023,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
+    except StopIteration:
+        print(f"No player found with the name '{z}'.")
+        beans2 = None  # Set beans to None or handle it appropriately
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        beans2 = None  # Set beans to None or handle it appropriately
+
     new_list_with_stats = []
     if beans:  # Only proceed if a matching player is found
         name = z
@@ -90,6 +106,11 @@ for z in all_names:
             # new_list_with_stats.append(f"{hits_per_game}")
             # rbis_per_game = round((rbi / games_played), 3)
             # new_list_with_stats.append(f"{rbis_per_game}")
+    if beans2:
+        for b in beans2.get('stats'):
+            hrs2 = float(int(b.get('stats').get('homeRuns')))
+            print(hrs2)
+            new_list_with_stats.append(f"{int(hrs2)}")            
     stat_homers.append(new_list_with_stats)
 
 # save all names to a csv file called "text_output/FOUND_DH_BATTERS.csv"
@@ -135,6 +156,7 @@ with open(dh_file_path, "w") as file:
     file.write("<th>HR</th>\n")
     file.write("<th>HRpg</th>\n")
     file.write("<th>fHRpg</th>\n")
+    file.write("<th>HR24</th>\n")
     file.write("</tr>\n")
 
     # # Write data for each pitcher
@@ -151,6 +173,7 @@ with open(dh_file_path, "w") as file:
         file.write(f"<td>{contents[2]}</td>\n")
         file.write(f"<td>{contents[3]}</td>\n")
         file.write(f"<td>{contents[4]}</td>\n")
+        file.write(f"<td>{contents[5]}</td>\n")
         file.write("</tr>\n")
     # Close the table
     file.write("</table>\n")
