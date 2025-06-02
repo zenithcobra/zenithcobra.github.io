@@ -609,35 +609,7 @@ table tr:first-child {
 """
 soup.head.append(sticky_headers_style)
 
-# ----------------------
-copy_table_script = soup.new_tag("script")
-copy_table_script.string = """
-document.addEventListener('DOMContentLoaded', function() {
-    const checkedHeading = document.getElementById('checked-section').querySelector('h2');
 
-    checkedHeading.addEventListener('click', function() {
-        const checkedTable = document.getElementById('checked-table');
-        if (checkedTable) {
-            let tableText = '';
-            checkedTable.querySelectorAll('tr').forEach(row => {
-                const rowText = Array.from(row.querySelectorAll('td, th'))
-                    .map(cell => cell.innerText.trim())
-                    .join('\t'); // Use tab as a separator
-                tableText += rowText + '\n'; // Add a newline after each row
-            });
-
-            // Copy the table text to the clipboard
-            navigator.clipboard.writeText(tableText).then(() => {
-                alert('Table copied to clipboard!');
-            }).catch(err => {
-                console.error('Failed to copy table:', err);
-            });
-        }
-    });
-});
-"""
-soup.body.append(copy_table_script)
-# -------------------------
 
 
 

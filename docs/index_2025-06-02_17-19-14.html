@@ -6020,5 +6020,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+</script><script>
+document.addEventListener('DOMContentLoaded', function() {
+    const checkedHeading = document.getElementById('checked-section').querySelector('h2');
+
+    checkedHeading.addEventListener('click', function() {
+        const checkedTable = document.getElementById('checked-table');
+        if (checkedTable) {
+            let tableText = '';
+            checkedTable.querySelectorAll('tr').forEach(row => {
+                const rowText = Array.from(row.querySelectorAll('td, th'))
+                    .map(cell => cell.innerText.trim())
+                    .join('	'); // Use tab as a separator
+                tableText += rowText + '
+'; // Add a newline after each row
+            });
+
+            // Copy the table text to the clipboard
+            navigator.clipboard.writeText(tableText).then(() => {
+                alert('Table copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy table:', err);
+            });
+        }
+    });
+});
 </script></body>
 </html>
