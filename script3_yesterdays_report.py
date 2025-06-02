@@ -5,6 +5,8 @@ import os
 from datetime import datetime
 import pytz
 from fractions import Fraction
+import mlbstatsapi
+
 
 # Ensure the "text_output" folder exists
 os.makedirs("text_output", exist_ok=True)
@@ -227,7 +229,19 @@ for z in new_homers:
     print(z)
     # beans = ''
     name = z
-    beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==name), 'hitting', 'season') 
+
+    try:
+        beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players', {'season': '2025', 'gameType': 'W'})['people'] if x['fullName'] == name),'hitting','season')
+    except StopIteration:
+        print(f"No player found with the name '{name}'.")
+        beans = None  # Set beans to None or handle it appropriately
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        beans = None  # Set beans to None or handle it appropriately
+    # beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':'2025','gameType':'W'})['people'] if x['fullName']==name), 'hitting', 'season') 
+    # beans_id = player = statsapi.lookup_player(name)
+    # print(beans_id[0].get('id'))
+    
     new_list_with_stats = []
     if beans:  # Only proceed if a matching player is found
         name = z
@@ -252,6 +266,13 @@ for z in new_homers:
             # rbis_per_game = round((rbi / games_played), 3)
             # new_list_with_stats.append(f"{rbis_per_game}")
     stat_homers.append(new_list_with_stats)
+
+# Filter out empty entries
+stat_homers = [x for x in stat_homers if x]  # Keeps only non-empty entries
+
+# Iterate through the filtered list
+for x in stat_homers:
+    print(x)
 
 # save homers to text_output/homers_list.csv headers being 'name'
 homers_file_path = "text_output/homers_list.csv"
