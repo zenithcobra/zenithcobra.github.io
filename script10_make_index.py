@@ -543,6 +543,45 @@ document.head.appendChild(style);
 """
 soup.body.append(highlight_script)
 
+# --------------------------------
+sticky_style = soup.new_tag("style")
+sticky_style.string = """
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed; /* Ensures the navbar stays fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Makes the navbar span the full width of the page */
+    background-color: #333; /* Sets the background color */
+    z-index: 1000; /* Ensures the navbar stays above other content */
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 10px; /* Adjust padding for better spacing */
+    font-size: 12px; /* Adjust font size */
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    padding-top: 50px; /* Adds padding to prevent content from overlapping the navbar */
+}
+"""
+soup.head.append(sticky_style)
+# ------------------------
+
 
 sticky_headers_script = soup.new_tag("script")
 sticky_headers_script.string = """
