@@ -1,7 +1,10 @@
 # %%
 ## WRITE EVERYTHING TO INDEX.html
 import os
+from datetime import datetime
 
+date = datetime.now().strftime("%Y-%m-%d")
+ 
 # Ensure the "docs" folder exists
 os.makedirs("docs", exist_ok=True)
 
@@ -112,7 +115,7 @@ html_content = f"""
         <li><a href='https://www.baseballmusings.com/cgi-bin/CurStreak.py'>Baseball Musings</a></li>
         <li><a href='https://www.teamrankings.com'>Team Rankings</a></li>
         </ul>
-        <h2>MLB Report</h2>
+        <h2>MLB Report {date}</h2>
         <h2 id="parlay-banned-list">Parlay Banned List</h2>
         <pre>{parlay_banned_list_content}</pre>
         <h2 id="yesterdays-report">Yesterdays History</h2>
@@ -575,8 +578,7 @@ soup.head.append(sticky_headers_style)
 # with open("docs/index.html", "w", encoding="utf-8") as file:
 #     file.write(str(soup))
 import os
-from datetime import datetime
-
+   
 # File path for the HTML file
 file_path = "docs/index.html"
 
