@@ -75,7 +75,7 @@ for z in all_names:
         print(f"An error occurred: {e}")
         beans = None  # Set beans to None or handle it appropriately
     try:
-        beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2023,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
+        beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2024,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
     except StopIteration:
         print(f"No player found with the name '{z}'.")
         beans2 = None  # Set beans to None or handle it appropriately
@@ -107,7 +107,10 @@ for z in all_names:
             # rbis_per_game = round((rbi / games_played), 3)
             # new_list_with_stats.append(f"{rbis_per_game}")
     if beans2:
-        for b in beans2.get('stats'):
+        beans2_id = beans2.get('id')
+        beans3 = statsapi.player_stat_data(beans2_id, group="hitting", type="season", sportId=1, season=2024)
+    
+        for b in beans3.get('stats'):
             hrs2 = float(int(b.get('stats').get('homeRuns')))
             print(hrs2)
             new_list_with_stats.append(f"{int(hrs2)}")            

@@ -82,8 +82,28 @@ for q in players_bvp:
 
 for w in players_bvp:
     name = w[0]
+    player_id = w[10]
     # ------------------
-    beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==name), 'hitting', 'season') 
+    # ------------------
+    try:
+        beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==name), 'hitting', 'season') 
+    except StopIteration:
+        print(f"No player found with the name '{z}'.")
+        beans = None  # Set beans to None or handle it appropriately
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        beans = None  # Set beans to None or handle it appropriately
+    try:
+        beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2024,'gameType':'W'})['people'] if x['fullName']==name), 'hitting', 'season') 
+    except StopIteration:
+        print(f"No player found with the name '{z}'.")
+        beans2 = None  # Set beans to None or handle it appropriately
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        beans2 = None  # Set beans to None or handle it appropriately
+    # ------------------
+    # ------------------
+    # beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==name), 'hitting', 'season') 
 
     if beans:  # Only proceed if a matching player is found
         # print(beans)    
@@ -120,7 +140,17 @@ for w in players_bvp:
         #         w.append(f"{bhrs}")
         # else:
         #     w.append('n/a')  # If no stats found for 2024, append 0
+    if beans2:
+        beans2_id = beans2.get('id')
+        beans3 = statsapi.player_stat_data(beans2_id, group="hitting", type="season", sportId=1, season=2024)
+    
+        for b in beans3.get('stats'):
+            hrs2 = float(int(b.get('stats').get('homeRuns')))
+            # print(hrs2)
+            w.append(f"{int(hrs2)}") 
+
     else:
+        w.append('n/a')  # If no stats found for 2024, append 0
         print(f"Player '{name}' not found in the sports_players list.")
     # ------------------
 
@@ -193,7 +223,7 @@ with open(bvp_file_path, "w") as file:
     file.write("<th>RBI25</th>\n")
     file.write("<th>RBIpg25</th>\n")
     file.write("<th>fRBIpg25</th>\n")
-    # file.write("<th>HR24</th>\n")
+    file.write("<th>HR24</th>\n")
     file.write("</tr>\n")
 
     # Write data for each pitcher
@@ -221,7 +251,7 @@ with open(bvp_file_path, "w") as file:
         file.write(f"<td>{b[21]}</td>\n")
         file.write(f"<td>{b[22]}</td>\n")
         file.write(f"<td>{b[23]}</td>\n")
-        # file.write(f"<td>{b[24]}</td>\n")
+        file.write(f"<td>{b[24]}</td>\n")
         file.write("</tr>\n")
 
     # Close the table

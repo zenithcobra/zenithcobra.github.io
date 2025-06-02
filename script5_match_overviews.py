@@ -261,7 +261,25 @@ for z in list_of_batters:
     # Get player ID for the current name
     # players = statsapi.get('sports_players', {'season': 2025, 'gameType': 'W'})['people']
     # player = next((x for x in players if x['fullName'] == z[0]), None)  # Use None as fallback if no match is found
-    beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z[0]), 'hitting', 'season') 
+    # beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z[0]), 'hitting', 'season') 
+
+    try:
+        beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z[0]), 'hitting', 'season') 
+    except StopIteration:
+        print(f"No player found with the name '{z}'.")
+        beans = None  # Set beans to None or handle it appropriately
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        beans = None  # Set beans to None or handle it appropriately
+    try:
+        beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2024,'gameType':'W'})['people'] if x['fullName']==z[0]), 'hitting', 'season') 
+    except StopIteration:
+        print(f"No player found with the name '{z}'.")
+        beans2 = None  # Set beans to None or handle it appropriately
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        beans2 = None  # Set beans to None or handle it appropriately
+
 
     if beans:  # Only proceed if a matching player is found
         # print(beans)    
@@ -285,32 +303,25 @@ for z in list_of_batters:
             frbis_per_game = str(Fraction(round((rbi / games_played), 2)).limit_denominator(20))
             new_list_with_stats.append(f"{frbis_per_game}")
 
-#         # Fetch stats for 2024
-        try:
-            beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2024,'gameType':'W'})['people'] if x['fullName']==z[0]), 'hitting', 'season') 
-        except StopIteration:
-            print(f"No player found with the name '{z[0]}'.")
-            beans2 = None  # Set beans to None or handle it appropriately
-        except Exception as e:
-            print(f"An error occurred: {e}")
-            beans2 = None  # Set beans to None or handle it appropriately
 
 
-        if beans2:  # Only proceed if a matching player is found for 2024
-            # print(beans2)
-            for b in beans2.get('stats'):
-                # bhrs = float(int(b.get('stats').get('homeRuns')))
-                bhrs = int(b.get('stats').get('homeRuns'))
-                # bbhrs = bhrs + 0.24
-                new_list_with_stats.append(f"{bhrs}")
-        else:
-            new_list_with_stats.append('n/a')  # If no stats found for 2024, append 0
-        holder_of_stats.append(new_list_with_stats)
+    if beans2:
+        beans2_id = beans2.get('id')
+        beans3 = statsapi.player_stat_data(beans2_id, group="hitting", type="season", sportId=1, season=2024)
+    
+        for b in beans3.get('stats'):
+            hrs2 = float(int(b.get('stats').get('homeRuns')))
+            print(hrs2)
+            new_list_with_stats.append(f"{int(hrs2)}")  
+        
     else:
         print(f"Player '{z[0]}' not found in the sports_players list.")
+        new_list_with_stats.append("0")  # Append "0" if player not found
+        
+    holder_of_stats.append(new_list_with_stats)
 
-# for x in holder_of_stats:
-#     print(x)
+for x in holder_of_stats:
+    print(x[11])
 
 # Write the new list with stats to a CSV file
 output_file_path = "text_output/updated_batters_with_stats.csv"
