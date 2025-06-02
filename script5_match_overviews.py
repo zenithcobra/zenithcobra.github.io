@@ -292,15 +292,15 @@ for z in list_of_batters:
             new_list_with_stats.append(f"{int(rbi)}")
             hrs_per_game = round((hrs / games_played), 3)
             new_list_with_stats.append(f"{hrs_per_game}")
-            fhrs_per_game = str(Fraction(round((hrs / games_played), 2)).limit_denominator(20))
+            fhrs_per_game = str(Fraction(round((hrs / games_played), 2)).limit_denominator(7))
             new_list_with_stats.append(f"{fhrs_per_game}")
             hits_per_game = round((hits / games_played), 3)
             new_list_with_stats.append(f"{hits_per_game}")
-            fhits_per_game = str(Fraction(round((hits / games_played), 2)).limit_denominator(20))
+            fhits_per_game = str(Fraction(round((hits / games_played), 2)).limit_denominator(7))
             new_list_with_stats.append(f"{fhits_per_game}")
             rbis_per_game = round((rbi / games_played), 3)
             new_list_with_stats.append(f"{rbis_per_game}")
-            frbis_per_game = str(Fraction(round((rbi / games_played), 2)).limit_denominator(20))
+            frbis_per_game = str(Fraction(round((rbi / games_played), 2)).limit_denominator(7))
             new_list_with_stats.append(f"{frbis_per_game}")
 
 

@@ -99,7 +99,7 @@ for z in all_names:
             # new_list_with_stats.append(f"{rbi}")
             hrs_per_game = round((hrs / games_played), 2)
             new_list_with_stats.append(f"{hrs_per_game}")
-            hrs_per_game2 = str(Fraction(round((hrs / games_played), 2)).limit_denominator(20))
+            hrs_per_game2 = str(Fraction(round((hrs / games_played), 2)).limit_denominator(7))
             #str(Fraction(round(float(x[18])/float(x[6]),2)).limit_denominator(5))
             new_list_with_stats.append(f"{hrs_per_game2}")
             # hits_per_game = round((hits / games_played), 3)
