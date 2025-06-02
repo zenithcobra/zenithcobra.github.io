@@ -112,8 +112,14 @@ for z in all_names:
     
         for b in beans3.get('stats'):
             hrs2 = float(int(b.get('stats').get('homeRuns')))
-            print(hrs2)
-            new_list_with_stats.append(f"{int(hrs2)}")            
+            # print(hrs2)
+            games_played2 = float(int(b.get('stats').get('gamesPlayed')))
+            hrs_per_game4 = round((hrs2 / games_played2), 2)
+            hrs_per_game3 = str(Fraction(round((hrs2 / games_played2), 2)).limit_denominator(7))
+           
+            new_list_with_stats.append(f"{int(hrs2)}")          
+            new_list_with_stats.append(f"{hrs_per_game4}")  
+            new_list_with_stats.append(f"{hrs_per_game3}")    
     stat_homers.append(new_list_with_stats)
 
 # save all names to a csv file called "text_output/FOUND_DH_BATTERS.csv"

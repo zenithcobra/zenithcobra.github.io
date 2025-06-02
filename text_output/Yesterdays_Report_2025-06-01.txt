@@ -61,11 +61,11 @@ Vladimir Guerrero Jr.'s two-run double in the 8th extends the Blue Jays' lead to
 <a href="https://mlb-cuts-diamond.mlb.com/FORGE/2025/2025-06/01/c79f804c-73ee491e-0f0c0f64-csvm-diamondgcp-asset_1280x720_59_4000K.mp4" target="_blank">video link</a>
 
 Condensed Game: ATH@TOR - 6/1/25 (00:12:06)
-Condensed Game: Adison Barger and the Blue Jays take on Luis Urías and the A's on June 1, 2025
+Condensed Game: Luis Urías and the A's take on Adison Barger and the Blue Jays on June 1, 2025
 <a href="https://mlb-cuts-diamond.mlb.com/FORGE/2025/2025-06/01/2e987681-fa77a4bb-cf7855c2-csvm-diamondgcp-asset_1280x720_59_4000K.mp4" target="_blank">video link</a>
 
 A's vs. Blue Jays Highlights (00:02:58)
-Adison Barger and the Blue Jays take on Luis Urías and the A's on June 1, 2025
+Luis Urías and the A's take on Adison Barger and the Blue Jays on June 1, 2025
 <a href="https://mlb-cuts-diamond.mlb.com/FORGE/2025/2025-06/01/b618550a-d3e23f8f-b8479538-csvm-diamondgcp-asset_1280x720_59_4000K.mp4" target="_blank">video link</a>
 
 
@@ -189,34 +189,49 @@ Los Angeles Dodgers    3
 <th>HR</th>
 <th>HRpg</th>
 <th>fHRpg</th>
+<th>HR24</th>
+<th>HR24pg</th>
+<th>fHR24pg</th>
 </tr>
 <tr>
 <td>Addison Barger</td>
 <td>Toronto Blue Jays</td>
 <td>5</td>
 <td>0.13</td>
-<td>2/15</td>
+<td>1/5</td>
+<td>7</td>
+<td>0.1</td>
+<td>1/7</td>
 </tr>
 <tr>
 <td>Josh Smith</td>
 <td>Texas Rangers</td>
 <td>5</td>
 <td>0.1</td>
-<td>1/10</td>
+<td>1/5</td>
+<td>13</td>
+<td>0.09</td>
+<td>1/7</td>
 </tr>
 <tr>
 <td>Marcell Ozuna</td>
 <td>Atlanta Braves</td>
 <td>10</td>
 <td>0.18</td>
-<td>2/11</td>
+<td>1/5</td>
+<td>39</td>
+<td>0.24</td>
+<td>1/4</td>
 </tr>
 <tr>
 <td>Mike Tauchman</td>
 <td>Chicago White Sox</td>
 <td>2</td>
 <td>0.17</td>
-<td>1/6</td>
+<td>1/5</td>
+<td>7</td>
+<td>0.06</td>
+<td>0</td>
 </tr>
 <tr>
 <td>José Ramírez</td>
@@ -224,13 +239,19 @@ Los Angeles Dodgers    3
 <td>11</td>
 <td>0.2</td>
 <td>1/5</td>
+<td>39</td>
+<td>0.25</td>
+<td>1/4</td>
 </tr>
 <tr>
 <td>Orlando Arcia</td>
 <td>Colorado Rockies</td>
 <td>1</td>
 <td>0.06</td>
-<td>1/17</td>
+<td>0</td>
+<td>1</td>
+<td>0.5</td>
+<td>1/2</td>
 </tr>
 <tr>
 <td>Pete Alonso</td>
@@ -238,48 +259,69 @@ Los Angeles Dodgers    3
 <td>12</td>
 <td>0.2</td>
 <td>1/5</td>
+<td>34</td>
+<td>0.21</td>
+<td>1/5</td>
 </tr>
 <tr>
 <td>Tyler Freeman</td>
 <td>Colorado Rockies</td>
 <td>1</td>
 <td>0.05</td>
-<td>1/20</td>
+<td>0</td>
+<td>7</td>
+<td>0.06</td>
+<td>0</td>
 </tr>
 <tr>
 <td>Francisco Lindor</td>
 <td>New York Mets</td>
 <td>13</td>
 <td>0.22</td>
-<td>2/9</td>
+<td>1/5</td>
+<td>33</td>
+<td>0.22</td>
+<td>1/5</td>
 </tr>
 <tr>
 <td>Juan Soto</td>
 <td>New York Mets</td>
 <td>10</td>
 <td>0.17</td>
-<td>1/6</td>
+<td>1/5</td>
+<td>41</td>
+<td>0.26</td>
+<td>1/4</td>
 </tr>
 <tr>
 <td>Luis Matos</td>
 <td>San Francisco Giants</td>
 <td>4</td>
 <td>0.17</td>
-<td>1/6</td>
+<td>1/5</td>
+<td>5</td>
+<td>0.11</td>
+<td>1/7</td>
 </tr>
 <tr>
 <td>Michael Busch</td>
 <td>Chicago Cubs</td>
 <td>8</td>
 <td>0.15</td>
-<td>3/20</td>
+<td>1/5</td>
+<td>21</td>
+<td>0.14</td>
+<td>1/7</td>
 </tr>
 <tr>
 <td>Eugenio Suárez</td>
 <td>Arizona Diamondbacks</td>
 <td>16</td>
 <td>0.27</td>
-<td>3/11</td>
+<td>1/4</td>
+<td>30</td>
+<td>0.19</td>
+<td>1/5</td>
 </tr>
 <tr>
 <td>Cal Raleigh</td>
@@ -287,41 +329,59 @@ Los Angeles Dodgers    3
 <td>23</td>
 <td>0.4</td>
 <td>2/5</td>
+<td>34</td>
+<td>0.22</td>
+<td>1/5</td>
 </tr>
 <tr>
 <td>Manny Machado</td>
 <td>San Diego Padres</td>
 <td>7</td>
 <td>0.12</td>
-<td>2/17</td>
+<td>1/5</td>
+<td>29</td>
+<td>0.19</td>
+<td>1/5</td>
 </tr>
 <tr>
 <td>Andrew McCutchen</td>
 <td>Pittsburgh Pirates</td>
 <td>5</td>
 <td>0.1</td>
-<td>1/10</td>
+<td>1/5</td>
+<td>20</td>
+<td>0.17</td>
+<td>1/6</td>
 </tr>
 <tr>
 <td>Adam Frazier</td>
 <td>Pittsburgh Pirates</td>
 <td>3</td>
 <td>0.05</td>
-<td>1/20</td>
+<td>0</td>
+<td>4</td>
+<td>0.04</td>
+<td>0</td>
 </tr>
 <tr>
 <td>Tommy Edman</td>
 <td>Los Angeles Dodgers</td>
 <td>9</td>
 <td>0.21</td>
-<td>4/19</td>
+<td>1/5</td>
+<td>6</td>
+<td>0.16</td>
+<td>1/6</td>
 </tr>
 <tr>
 <td>Ben Rice</td>
 <td>New York Yankees</td>
 <td>12</td>
 <td>0.24</td>
-<td>4/17</td>
+<td>1/4</td>
+<td>7</td>
+<td>0.14</td>
+<td>1/7</td>
 </tr>
 <tr>
 <td>Andy Pages</td>
@@ -329,13 +389,19 @@ Los Angeles Dodgers    3
 <td>11</td>
 <td>0.2</td>
 <td>1/5</td>
+<td>13</td>
+<td>0.11</td>
+<td>1/7</td>
 </tr>
 <tr>
 <td>Max Muncy</td>
 <td>Los Angeles Dodgers</td>
 <td>7</td>
 <td>0.13</td>
-<td>2/15</td>
+<td>1/5</td>
+<td>15</td>
+<td>0.21</td>
+<td>1/5</td>
 </tr>
 </table>
 <br>

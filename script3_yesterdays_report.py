@@ -268,7 +268,7 @@ for z in new_homers:
             # new_list_with_stats.append(f"{rbi}")
             hrs_per_game = round((hrs / games_played), 2)
             new_list_with_stats.append(f"{hrs_per_game}")
-            hrs_per_game2 = str(Fraction(round((hrs / games_played), 2)).limit_denominator(20))
+            hrs_per_game2 = str(Fraction(round((hrs / games_played), 2)).limit_denominator(5))
             #str(Fraction(round(float(x[18])/float(x[6]),2)).limit_denominator(5))
             new_list_with_stats.append(f"{hrs_per_game2}")
             # hits_per_game = round((hits / games_played), 3)
@@ -282,8 +282,17 @@ for z in new_homers:
     
         for b in beans3.get('stats'):
             hrs2 = float(int(b.get('stats').get('homeRuns')))
-            print(hrs2)
+            games_played2 = float(int(b.get('stats').get('gamesPlayed')))
+            hrs_per_game4 = round((hrs2 / games_played2), 2)
+            hrs_per_game3 = str(Fraction(round((hrs2 / games_played2), 2)).limit_denominator(7))
+            
+            # print(hrs2)
             new_list_with_stats.append(f"{int(hrs2)}")  
+            new_list_with_stats.append(f"{hrs_per_game4}")  
+            new_list_with_stats.append(f"{hrs_per_game3}")  
+    # else:
+    #     # If no stats are found, append empty strings or placeholders
+    #     new_list_with_stats.extend(["", "", ""])
     
     stat_homers.append(new_list_with_stats)
 
@@ -301,7 +310,7 @@ homers_file_path = "text_output/homers_list.csv"
 with open(homers_file_path, "w") as file:
     file.write("name,team,hrs,hrpg,fhrpg\n")
     for homer in stat_homers:
-        file.write(f"{homer[0]},{homer[1]},{homer[2]},{homer[3]},{homer[4]},\n")
+        file.write(f"{homer[0]},{homer[1]},{homer[2]},{homer[3]},{homer[4]},{homer[5]},{homer[6]},{homer[7]},\n")
 
 # Write content to the new Todays_Report.txt file
 with open(report_file_path, "w") as file:
@@ -318,6 +327,8 @@ with open(report_file_path, "w") as file:
     file.write("<th>HRpg</th>\n")
     file.write("<th>fHRpg</th>\n")
     file.write("<th>HR24</th>\n")
+    file.write("<th>HR24pg</th>\n")
+    file.write("<th>fHR24pg</th>\n")
     file.write("</tr>\n")
     for contents in stat_homers:
         # file.write(f"{contents}\n")
@@ -329,6 +340,8 @@ with open(report_file_path, "w") as file:
         file.write(f"<td>{contents[3]}</td>\n")
         file.write(f"<td>{contents[4]}</td>\n")
         file.write(f"<td>{contents[5]}</td>\n")
+        file.write(f"<td>{contents[6]}</td>\n")
+        file.write(f"<td>{contents[7]}</td>\n")
         file.write("</tr>\n")
     file.write("</table>\n")
     file.write("<br>\n")

@@ -147,9 +147,17 @@ for w in players_bvp:
         for b in beans3.get('stats'):
             hrs2 = float(int(b.get('stats').get('homeRuns')))
             # print(hrs2)
+            games_played2 = float(int(b.get('stats').get('gamesPlayed')))
+            hrs_per_game4 = round((hrs2 / games_played2), 2)
+            hrs_per_game3 = str(Fraction(round((hrs2 / games_played2), 2)).limit_denominator(7))
+            
             w.append(f"{int(hrs2)}") 
+            w.append(f"{hrs_per_game4}")  
+            w.append(f"{hrs_per_game3}")  
 
     else:
+        w.append('n/a')  # If no stats found for 2024, append 0
+        w.append('n/a')  # If no stats found for 2024, append 0
         w.append('n/a')  # If no stats found for 2024, append 0
         print(f"Player '{name}' not found in the sports_players list.")
     # ------------------
@@ -224,6 +232,8 @@ with open(bvp_file_path, "w") as file:
     file.write("<th>RBIpg25</th>\n")
     file.write("<th>fRBIpg25</th>\n")
     file.write("<th>HR24</th>\n")
+    file.write("<th>HR24pg</th>\n")
+    file.write("<th>fHR24pg</th>\n")
     file.write("</tr>\n")
 
     # Write data for each pitcher
@@ -252,6 +262,8 @@ with open(bvp_file_path, "w") as file:
         file.write(f"<td>{b[22]}</td>\n")
         file.write(f"<td>{b[23]}</td>\n")
         file.write(f"<td>{b[24]}</td>\n")
+        file.write(f"<td>{b[25]}</td>\n")
+        file.write(f"<td>{b[26]}</td>\n")
         file.write("</tr>\n")
 
     # Close the table

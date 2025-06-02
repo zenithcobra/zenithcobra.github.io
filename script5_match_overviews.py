@@ -311,11 +311,20 @@ for z in list_of_batters:
     
         for b in beans3.get('stats'):
             hrs2 = float(int(b.get('stats').get('homeRuns')))
-            print(hrs2)
+            games_played2 = float(int(b.get('stats').get('gamesPlayed')))
+            hrs_per_game4 = round((hrs2 / games_played2), 2)
+            hrs_per_game3 = str(Fraction(round((hrs2 / games_played2), 2)).limit_denominator(7))
+            
             new_list_with_stats.append(f"{int(hrs2)}")  
+            new_list_with_stats.append(f"{hrs_per_game4}")  
+            new_list_with_stats.append(f"{hrs_per_game3}")  
+            # print(hrs2)
+            # new_list_with_stats.append(f"{int(hrs2)}")  
         
     else:
         print(f"Player '{z[0]}' not found in the sports_players list.")
+        new_list_with_stats.append("0")  # Append "0" if player not found
+        new_list_with_stats.append("0")  # Append "0" if player not found
         new_list_with_stats.append("0")  # Append "0" if player not found
         
     holder_of_stats.append(new_list_with_stats)
@@ -328,7 +337,7 @@ output_file_path = "text_output/updated_batters_with_stats.csv"
 with open(output_file_path, mode="w", newline="", encoding="utf-8") as file:
     writer = csv.writer(file)
     # Write the header
-    writer.writerow(["Name", "Team", "Hrs", "Hits", "RBI", "HRpg", "fHRpg","Hpg", "fHpg", "RBIpg", "fRBIpg", "HR24"])
+    writer.writerow(["Name", "Team", "Hrs", "Hits", "RBI", "HRpg", "fHRpg","Hpg", "fHpg", "RBIpg", "fRBIpg", "HR24","HR24pg","fHR24pg"])
     
     # Write the data
     for i in holder_of_stats:
@@ -357,6 +366,8 @@ html_output2 += "<th>fHpg</th>\n"
 html_output2 += "<th>RBIpg</th>\n"
 html_output2 += "<th>fRBIpg</th>\n"
 html_output2 += "<th>HR24</th>\n"
+html_output2 += "<th>HR24pg</th>\n"
+html_output2 += "<th>fHR24pg</th>\n"
 html_output2 += "</tr>\n"
 
 # Add table rows
@@ -374,6 +385,8 @@ for batter in holder_of_stats:
     html_output2 += f"<td>{batter[9]}</td>\n"
     html_output2 += f"<td>{batter[10]}</td>\n"
     html_output2 += f"<td>{batter[11]}</td>\n"
+    html_output2 += f"<td>{batter[12]}</td>\n"
+    html_output2 += f"<td>{batter[13]}</td>\n"
     html_output2 += "</tr>\n"
 
 # Close the table and HTML tags
