@@ -224,9 +224,10 @@ new_homers = [homer.split("homers")[0].strip() for homer in new_homers if "(" in
 # search homers for team name and hr stats
 stat_homers = []
 for z in new_homers:
-    # print(z)
+    print(z)
     # beans = ''
-    beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
+    name = z
+    beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==name), 'hitting', 'season') 
     new_list_with_stats = []
     if beans:  # Only proceed if a matching player is found
         name = z
