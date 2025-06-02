@@ -40,9 +40,9 @@
 <style>
 table tr:first-child {
     position: sticky;
-    top: 40px; /* Adjust this value to match the height of your navbar */
+    top: 0;
     background-color: #fff; /* Optional: Set background color for better visibility */
-    z-index: 999; /* Ensure it stays below the navbar but above other content */
+    z-index: 1000; /* Ensure it stays above other content */
 }
 </style></head>
 <body>
@@ -5978,12 +5978,15 @@ style.innerHTML = `
 document.head.appendChild(style);
 </script><script>
 document.addEventListener('DOMContentLoaded', function() {
-    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+    const tables = document.querySelectorAll('table');
 
-    document.querySelectorAll('table').forEach(table => {
-        const headerRow = table.querySelector('tr:first-child');
+    tables.forEach(table => {
+        const headerRow = table.querySelector('tr');
         if (headerRow) {
-            headerRow.style.top = `${navbarHeight}px`; // Set the sticky header below the navbar
+            headerRow.style.position = 'sticky';
+            headerRow.style.top = '0';
+            headerRow.style.backgroundColor = '#fff'; // Optional: Set background color for better visibility
+            headerRow.style.zIndex = '1000'; // Ensure it stays above other content
         }
     });
 });

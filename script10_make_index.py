@@ -540,6 +540,34 @@ document.head.appendChild(style);
 """
 soup.body.append(highlight_script)
 
+
+sticky_headers_script = soup.new_tag("script")
+sticky_headers_script.string = """
+document.addEventListener('DOMContentLoaded', function() {
+    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+    document.querySelectorAll('table').forEach(table => {
+        const headerRow = table.querySelector('tr:first-child');
+        if (headerRow) {
+            headerRow.style.top = `${navbarHeight}px`; // Set the sticky header below the navbar
+        }
+    });
+});
+"""
+soup.body.append(sticky_headers_script)
+
+sticky_headers_style = soup.new_tag("style")
+sticky_headers_style.string = """
+table tr:first-child {
+    position: sticky;
+    top: 40px; /* Adjust this value to match the height of your navbar */
+    background-color: #fff; /* Optional: Set background color for better visibility */
+    z-index: 999; /* Ensure it stays below the navbar but above other content */
+}
+"""
+soup.head.append(sticky_headers_style)
+
+
 # # Write the modified HTML to a new file
 # with open("docs/index.html", "w", encoding="utf-8") as file:
 #     file.write(str(soup))
