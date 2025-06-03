@@ -101,12 +101,12 @@ html_content = f"""
         <a href="#yesterdays-report">History</a>
         <a href="#standings">Standings</a>
         <a href="#todays-schedule">Schedule</a>
+        <a href="#records">Teams</a>
         <a href="#match-overviews-pitchers">Pitchers</a>
         <a href="#match-overviews-batters">Batters</a>
         <a href="#dh-batters">DH's</a>
         <a href="#bvp-stats">BvP</a>
         <a href="#streaks">Streaks</a>
-        <a href="#Records">Teams</a>
         <a href="#checked-section">Checked</a>
     </div>
     <div class="content">
@@ -129,6 +129,8 @@ html_content = f"""
         <pre>{standings_content}</pre>
         <h2 id="todays-schedule">Today's Schedule</h2>
         <pre>{today_schedule_content}</pre>
+        <h2 id="records">Team Records</h2>
+        <pre>{records_content}</pre>
         <h2 id="match-overviews-pitchers">Pitcher Match Overviews</h2>
         <pre>{match_overview_pitchers_content}</pre>
         <h2 id="match-overviews-batters">Batter Match Overviews</h2>
@@ -137,8 +139,6 @@ html_content = f"""
         <pre>{dh_batters_content}</pre>
         <h2 id="bvp-stats">Batter vs Pitcher Stats</h2>
         <pre>{bvp_content}</pre>
-        <h2 id="records">Team Records</h2>
-        <pre>{records_content}</pre>
         <h2 id="streaks">Streaks</h2>
         <pre>{streaks_content}</pre>
 
