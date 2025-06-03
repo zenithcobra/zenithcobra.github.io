@@ -17,6 +17,7 @@ match_overview_pitchers_path = "text_output/match_overviews-PITCHERS.txt"
 match_overview_batters_path = "text_output/match_overviews-BATTERS.txt"
 dh_batters_path = "text_output/DH_BATTERS.txt"
 bvp_path = "text_output/BVP2.txt"
+records_path = "text_output/teams_record.txt"
 streaks_path = "text_output/streaks.txt"
 
 output_html_path = "docs/index2.html"
@@ -45,6 +46,9 @@ with open(dh_batters_path, "r") as dh_batters_file:
 
 with open(bvp_path, "r") as bvp_file:
     bvp_content = bvp_file.read()
+
+with open(records_path, "r") as records_file:
+    records_content = records_file.read()
 
 with open(streaks_path, "r") as streaks_file:
     streaks_content = streaks_file.read()
@@ -102,6 +106,7 @@ html_content = f"""
         <a href="#dh-batters">DH's</a>
         <a href="#bvp-stats">BvP</a>
         <a href="#streaks">Streaks</a>
+        <a href="#Records">Teams</a>
         <a href="#checked-section">Checked</a>
     </div>
     <div class="content">
@@ -132,6 +137,8 @@ html_content = f"""
         <pre>{dh_batters_content}</pre>
         <h2 id="bvp-stats">Batter vs Pitcher Stats</h2>
         <pre>{bvp_content}</pre>
+        <h2 id="records">Team Records</h2>
+        <pre>{records_content}</pre>
         <h2 id="streaks">Streaks</h2>
         <pre>{streaks_content}</pre>
 
