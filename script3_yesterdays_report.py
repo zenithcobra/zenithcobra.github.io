@@ -6,6 +6,7 @@ from datetime import datetime
 import pytz
 from fractions import Fraction
 import mlbstatsapi
+import re
 
 
 # Ensure the "text_output" folder exists
@@ -31,6 +32,11 @@ yschedule = statsapi.schedule(start_date=yesterday_date, end_date=yesterday_date
 # Separate entries with "Toronto" in the "summary" key
 entries_with_toronto = [x for x in yschedule if "summary" in x and "Toronto" in x["summary"]]
 
+# check if entries_with_toronto is empty
+if not entries_with_toronto:
+    # If no entries with "Toronto", set it to an empty list
+    entries_with_toronto = []
+
 # Separate entries without "Toronto" in the "summary" key
 entries_without_toronto = [x for x in yschedule if not ("summary" in x and "Toronto" in x["summary"])]
 
@@ -41,65 +47,67 @@ homers = []
 
 # get the toronto game
 toronto_content = []
-toronto_game = entries_with_toronto[0]
-if "Toronto" in toronto_game.get('summary'):
-    # Example UTC datetime string
-    utc_datetime_str = toronto_game.get("game_datetime")
-    # Parse the UTC datetime string
-    utc_datetime = datetime.strptime(utc_datetime_str, '%Y-%m-%dT%H:%M:%SZ')
-    # Define the UTC and Eastern Time zones
-    utc_zone = pytz.utc
-    eastern_zone = pytz.timezone('US/Eastern')
-    # Localize the datetime to UTC
-    utc_datetime = utc_zone.localize(utc_datetime)
-    # Convert to Eastern Time
-    eastern_datetime = utc_datetime.astimezone(eastern_zone)
-    # Format the datetime in a readable format
-    readable_format = eastern_datetime.strftime('%Y-%m-%d %I:%M %p %Z')
-    # print(readable_format)
-    # print(x)
-    # print(x)
-    # scoring_plays = statsapi.game_scoring_plays(x.get("game_id"))
-    # new_scoring_plays = ""
-    # Get scoring plays as a string
-    s_plays = statsapi.game_scoring_plays(toronto_game.get("game_id"))
-    scoring_plays = statsapi.game_scoring_plays(toronto_game.get("game_id"))
-    # Convert the scoring plays string into a list of lines
-    scoring_plays_list = scoring_plays.split("\n")
-    # Filter the lines to only include those that contain "homers"
-    filtered_plays = [line for line in scoring_plays_list if "homers" in line]
-    # Process each kept line to only include the part before the first ")"
-    processed_plays = [line.split(")")[0] + ")" for line in filtered_plays if ")" in line]
-    # Join the processed lines back into a string if needed
-    homers.append(processed_plays)
-    new_scoring_plays = "\n".join(processed_plays)
-    highlights = statsapi.game_highlights(toronto_game.get("game_id"))
 
-    # process links in the highlights
-    import re
+if entries_with_toronto:
+    toronto_game = entries_with_toronto[0]
+    if "Toronto" in toronto_game.get('summary'):
+        # Example UTC datetime string
+        utc_datetime_str = toronto_game.get("game_datetime")
+        # Parse the UTC datetime string
+        utc_datetime = datetime.strptime(utc_datetime_str, '%Y-%m-%dT%H:%M:%SZ')
+        # Define the UTC and Eastern Time zones
+        utc_zone = pytz.utc
+        eastern_zone = pytz.timezone('US/Eastern')
+        # Localize the datetime to UTC
+        utc_datetime = utc_zone.localize(utc_datetime)
+        # Convert to Eastern Time
+        eastern_datetime = utc_datetime.astimezone(eastern_zone)
+        # Format the datetime in a readable format
+        readable_format = eastern_datetime.strftime('%Y-%m-%d %I:%M %p %Z')
+        # print(readable_format)
+        # print(x)
+        # print(x)
+        # scoring_plays = statsapi.game_scoring_plays(x.get("game_id"))
+        # new_scoring_plays = ""
+        # Get scoring plays as a string
+        s_plays = statsapi.game_scoring_plays(toronto_game.get("game_id"))
+        scoring_plays = statsapi.game_scoring_plays(toronto_game.get("game_id"))
+        # Convert the scoring plays string into a list of lines
+        scoring_plays_list = scoring_plays.split("\n")
+        # Filter the lines to only include those that contain "homers"
+        filtered_plays = [line for line in scoring_plays_list if "homers" in line]
+        # Process each kept line to only include the part before the first ")"
+        processed_plays = [line.split(")")[0] + ")" for line in filtered_plays if ")" in line]
+        # Join the processed lines back into a string if needed
+        homers.append(processed_plays)
+        new_scoring_plays = "\n".join(processed_plays)
+        highlights = statsapi.game_highlights(toronto_game.get("game_id"))
 
-    # Example highlights string (replace this with your actual highlights string)
-    highlights = statsapi.game_highlights(toronto_game.get("game_id"))
+        # process links in the highlights
+        import re
 
-    # Regular expression to find URLs
-    url_pattern = r'(https?://[^\s]+)'
+        # Example highlights string (replace this with your actual highlights string)
+        highlights = statsapi.game_highlights(toronto_game.get("game_id"))
 
-    # Replace URLs with clickable HTML links
-    highlights_with_links = re.sub(url_pattern, r'<a href="\1" target="_blank">video link</a>', highlights)
+        # Regular expression to find URLs
+        url_pattern = r'(https?://[^\s]+)'
+
+        # Replace URLs with clickable HTML links
+        highlights_with_links = re.sub(url_pattern, r'<a href="\1" target="_blank">video link</a>', highlights)
 
 
 
-    toronto_game.update({"time_scheduled": readable_format})
-    toronto_game.update({"scoring_plays": s_plays})
-    toronto_content.append(
-        f"{toronto_game.get('time_scheduled')}\n"
-        # f"Status: {x.get('')}\n"
-        f"{toronto_game.get('away_name'):<22} {toronto_game.get('away_score')}    @\n"
-        f"{toronto_game.get('home_name'):<22} {toronto_game.get('home_score')}\n\n"
-        f"{toronto_game.get('scoring_plays')}\n\n"
-        f"HIGHLIGHTS\n\n"
-        f"{highlights_with_links}\n\n"
-    )
+        toronto_game.update({"time_scheduled": readable_format})
+        toronto_game.update({"scoring_plays": s_plays})
+        toronto_content.append(
+            f"{toronto_game.get('time_scheduled')}\n"
+            # f"Status: {x.get('')}\n"
+            f"{toronto_game.get('away_name'):<22} {toronto_game.get('away_score')}    @\n"
+            f"{toronto_game.get('home_name'):<22} {toronto_game.get('home_score')}\n\n"
+            f"{toronto_game.get('scoring_plays')}\n\n"
+            f"HIGHLIGHTS\n\n"
+            f"{highlights_with_links}\n\n"
+        )
 
 yesterdays_content = []
 
