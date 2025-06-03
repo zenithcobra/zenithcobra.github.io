@@ -2,7 +2,7 @@ import os
 import json
 from bs4 import BeautifulSoup
 import statsapi
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # File paths
 json_file_path = "text_output/teams_playing_today.json"
@@ -30,7 +30,9 @@ for team in teams_playing_today:
 # print(team_ids)
 
 # get the proper formatted date
-mlb_date = datetime.now().strftime("%m/%d/%Y")
+# mlb_date = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+mlb_date = (datetime.now() - timedelta(days=1)).strftime("%m/%d/%Y")
+# mlb_date = datetime.now().strftime("%m/%d/%Y")
 
 # new_team_list = []
 team_dict = {}
