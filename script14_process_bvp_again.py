@@ -219,13 +219,13 @@ with open(bvp_file_path, "w") as file:
     file.write("<th>RBI</th>\n") #7
     file.write("<th>OBP</th>\n") #8
     file.write("<th>OPS</th>\n") #9
+    file.write("<th>PAST HRS</th>\n") #12
     file.write("<th>HR25</th>\n") #15
     file.write("<th>HRpg25</th>\n") #16
     file.write("<th>fHRpg25</th>\n") #17
     file.write("<th>HR24</th>\n") #24
     file.write("<th>HR24pg</th>\n") #25
     file.write("<th>fHR24pg</th>\n") #26
-    file.write("<th>PAST HRS</th>\n") #12
     file.write("<th>PAST HITS</th>\n") #13
     file.write("<th>PAST RBIS</th>\n") #14
     file.write("<th>H25</th>\n") #18
@@ -249,13 +249,13 @@ with open(bvp_file_path, "w") as file:
         file.write(f"<td>{b[7]}</td>\n")
         file.write(f"<td>{b[8]}</td>\n")
         file.write(f"<td>{b[9]}</td>\n")
+        file.write(f"<td>{b[12]}</td>\n")
         file.write(f"<td>{b[15]}</td>\n")
         file.write(f"<td>{b[16]}</td>\n")
         file.write(f"<td>{b[17]}</td>\n")
         file.write(f"<td>{b[24]}</td>\n")
         file.write(f"<td>{b[25]}</td>\n")
         file.write(f"<td>{b[26]}</td>\n")
-        file.write(f"<td>{b[12]}</td>\n")
         file.write(f"<td>{b[13]}</td>\n")
         file.write(f"<td>{b[14]}</td>\n")
         file.write(f"<td>{b[18]}</td>\n")
