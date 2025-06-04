@@ -1,9 +1,13 @@
-# %%
+import statsapi
+import mlbstatsapi
+from datetime import datetime
+
+
+
+
 # GET ALL THE MATCHES TODAY LOTS OF API
 def get_matches_today_data():
-    import statsapi
-    import mlbstatsapi
-    from datetime import datetime
+    
 
     # Get today's schedule
     matches_today = []

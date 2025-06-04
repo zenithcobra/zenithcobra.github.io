@@ -207,33 +207,33 @@ with open(bvp_file_path, "w") as file:
     # file.write(f"<h3>{pitcher_heading}</h3>\n")
 
     # Start the table
-    file.write("<table border='1'>\n")
-    file.write("<tr>\n")
-    file.write("<th>Batter</th>\n")
-    file.write("<th>Team</th>\n")
-    file.write("<th>Pitcher</th>\n")
-    file.write("<th>AB</th>\n")
-    file.write("<th>H</th>\n")
-    file.write("<th>HR</th>\n")
-    file.write("<th>AVG</th>\n")
-    file.write("<th>RBI</th>\n")
-    file.write("<th>OBP</th>\n")
-    file.write("<th>OPS</th>\n")
-    file.write("<th>PAST HRS</th>\n")
-    file.write("<th>PAST HITS</th>\n")
-    file.write("<th>PAST RBIS</th>\n")
-    file.write("<th>HR25</th>\n")
-    file.write("<th>HRpg25</th>\n")
-    file.write("<th>fHRpg25</th>\n")
-    file.write("<th>H25</th>\n")
-    file.write("<th>Hpg25</th>\n")
-    file.write("<th>fHpg25</th>\n")
-    file.write("<th>RBI25</th>\n")
-    file.write("<th>RBIpg25</th>\n")
-    file.write("<th>fRBIpg25</th>\n")
-    file.write("<th>HR24</th>\n")
-    file.write("<th>HR24pg</th>\n")
-    file.write("<th>fHR24pg</th>\n")
+    file.write("<table border='1'>\n") 
+    file.write("<tr>\n") 
+    file.write("<th>Batter</th>\n") #0
+    file.write("<th>Team</th>\n") #1
+    file.write("<th>Pitcher</th>\n") #2
+    file.write("<th>AB</th>\n") #3
+    file.write("<th>H</th>\n") #4
+    file.write("<th>HR</th>\n") #5
+    file.write("<th>AVG</th>\n") #6
+    file.write("<th>RBI</th>\n") #7
+    file.write("<th>OBP</th>\n") #8
+    file.write("<th>OPS</th>\n") #9
+    file.write("<th>HR25</th>\n") #15
+    file.write("<th>HRpg25</th>\n") #16
+    file.write("<th>fHRpg25</th>\n") #17
+    file.write("<th>HR24</th>\n") #24
+    file.write("<th>HR24pg</th>\n") #25
+    file.write("<th>fHR24pg</th>\n") #26
+    file.write("<th>PAST HRS</th>\n") #12
+    file.write("<th>PAST HITS</th>\n") #13
+    file.write("<th>PAST RBIS</th>\n") #14
+    file.write("<th>H25</th>\n") #18
+    file.write("<th>Hpg25</th>\n") #19
+    file.write("<th>fHpg25</th>\n") #20
+    file.write("<th>RBI25</th>\n") #21
+    file.write("<th>RBIpg25</th>\n") #22
+    file.write("<th>fRBIpg25</th>\n") #23
     file.write("</tr>\n")
 
     # Write data for each pitcher
@@ -249,21 +249,21 @@ with open(bvp_file_path, "w") as file:
         file.write(f"<td>{b[7]}</td>\n")
         file.write(f"<td>{b[8]}</td>\n")
         file.write(f"<td>{b[9]}</td>\n")
-        file.write(f"<td>{b[12]}</td>\n")
-        file.write(f"<td>{b[13]}</td>\n")
-        file.write(f"<td>{b[14]}</td>\n")
         file.write(f"<td>{b[15]}</td>\n")
         file.write(f"<td>{b[16]}</td>\n")
         file.write(f"<td>{b[17]}</td>\n")
+        file.write(f"<td>{b[24]}</td>\n")
+        file.write(f"<td>{b[25]}</td>\n")
+        file.write(f"<td>{b[26]}</td>\n")
+        file.write(f"<td>{b[12]}</td>\n")
+        file.write(f"<td>{b[13]}</td>\n")
+        file.write(f"<td>{b[14]}</td>\n")
         file.write(f"<td>{b[18]}</td>\n")
         file.write(f"<td>{b[19]}</td>\n")
         file.write(f"<td>{b[20]}</td>\n")
         file.write(f"<td>{b[21]}</td>\n")
         file.write(f"<td>{b[22]}</td>\n")
         file.write(f"<td>{b[23]}</td>\n")
-        file.write(f"<td>{b[24]}</td>\n")
-        file.write(f"<td>{b[25]}</td>\n")
-        file.write(f"<td>{b[26]}</td>\n")
         file.write("</tr>\n")
 
     # Close the table
