@@ -77,7 +77,7 @@ for z in all_names:
     try:
         beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2024,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
     except StopIteration:
-        print(f"No player found with the name '{z}'.")
+        print(f"No player found with the name beans2'{z}'.")
         beans2 = None  # Set beans to None or handle it appropriately
     except Exception as e:
         print(f"An error occurred: {e}")
@@ -120,6 +120,12 @@ for z in all_names:
             new_list_with_stats.append(f"{int(hrs2)}")          
             new_list_with_stats.append(f"{hrs_per_game4}")  
             new_list_with_stats.append(f"{hrs_per_game3}")    
+    else:
+        new_list_with_stats.append(0)
+        new_list_with_stats.append(0)
+        new_list_with_stats.append(0)
+    
+    
     stat_homers.append(new_list_with_stats)
 
 # save all names to a csv file called "text_output/FOUND_DH_BATTERS.csv"

@@ -1,7 +1,10 @@
 # %%
 ## WRITE EVERYTHING TO INDEX.html
 import os
+from datetime import datetime
 
+date = datetime.now().strftime("%Y-%m-%d")
+ 
 # Ensure the "docs" folder exists
 os.makedirs("docs", exist_ok=True)
 
@@ -14,6 +17,7 @@ match_overview_pitchers_path = "text_output/match_overviews-PITCHERS.txt"
 match_overview_batters_path = "text_output/match_overviews-BATTERS.txt"
 dh_batters_path = "text_output/DH_BATTERS.txt"
 bvp_path = "text_output/BVP2.txt"
+records_path = "text_output/teams_record.txt"
 streaks_path = "text_output/streaks.txt"
 
 output_html_path = "docs/index2.html"
@@ -42,6 +46,9 @@ with open(dh_batters_path, "r") as dh_batters_file:
 
 with open(bvp_path, "r") as bvp_file:
     bvp_content = bvp_file.read()
+
+with open(records_path, "r") as records_file:
+    records_content = records_file.read()
 
 with open(streaks_path, "r") as streaks_file:
     streaks_content = streaks_file.read()
@@ -94,6 +101,7 @@ html_content = f"""
         <a href="#yesterdays-report">History</a>
         <a href="#standings">Standings</a>
         <a href="#todays-schedule">Schedule</a>
+        <a href="#records">Teams</a>
         <a href="#match-overviews-pitchers">Pitchers</a>
         <a href="#match-overviews-batters">Batters</a>
         <a href="#dh-batters">DH's</a>
@@ -112,7 +120,7 @@ html_content = f"""
         <li><a href='https://www.baseballmusings.com/cgi-bin/CurStreak.py'>Baseball Musings</a></li>
         <li><a href='https://www.teamrankings.com'>Team Rankings</a></li>
         </ul>
-        <h2>MLB Report</h2>
+        <h2>MLB Report {date}</h2>
         <h2 id="parlay-banned-list">Parlay Banned List</h2>
         <pre>{parlay_banned_list_content}</pre>
         <h2 id="yesterdays-report">Yesterdays History</h2>
@@ -121,6 +129,8 @@ html_content = f"""
         <pre>{standings_content}</pre>
         <h2 id="todays-schedule">Today's Schedule</h2>
         <pre>{today_schedule_content}</pre>
+        <h2 id="records">Team Records</h2>
+        <pre>{records_content}</pre>
         <h2 id="match-overviews-pitchers">Pitcher Match Overviews</h2>
         <pre>{match_overview_pitchers_content}</pre>
         <h2 id="match-overviews-batters">Batter Match Overviews</h2>
@@ -540,6 +550,45 @@ document.head.appendChild(style);
 """
 soup.body.append(highlight_script)
 
+# --------------------------------
+sticky_style = soup.new_tag("style")
+sticky_style.string = """
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed; /* Ensures the navbar stays fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Makes the navbar span the full width of the page */
+    background-color: #333; /* Sets the background color */
+    z-index: 1000; /* Ensures the navbar stays above other content */
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 10px; /* Adjust padding for better spacing */
+    font-size: 12px; /* Adjust font size */
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    padding-top: 50px; /* Adds padding to prevent content from overlapping the navbar */
+}
+"""
+soup.head.append(sticky_style)
+# ------------------------
+
 
 sticky_headers_script = soup.new_tag("script")
 sticky_headers_script.string = """
@@ -568,12 +617,14 @@ table tr:first-child {
 soup.head.append(sticky_headers_style)
 
 
+
+
+
 # # Write the modified HTML to a new file
 # with open("docs/index.html", "w", encoding="utf-8") as file:
 #     file.write(str(soup))
 import os
-from datetime import datetime
-
+   
 # File path for the HTML file
 file_path = "docs/index.html"
 

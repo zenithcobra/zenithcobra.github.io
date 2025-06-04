@@ -96,7 +96,7 @@ for w in players_bvp:
     try:
         beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2024,'gameType':'W'})['people'] if x['fullName']==name), 'hitting', 'season') 
     except StopIteration:
-        print(f"No player found with the name '{z}'.")
+        print(f"No player found with the name '{name}'.")
         beans2 = None  # Set beans to None or handle it appropriately
     except Exception as e:
         print(f"An error occurred: {e}")
@@ -277,3 +277,6 @@ with open(bvp_file_path, "w") as file:
 print(f"New BVP file saved to {bvp_file_path}")
 if os.path.exists(backup_file_path):
     print(f"Existing BVP file renamed to {backup_file_path}")
+
+
+
