@@ -51,7 +51,7 @@ teams_with_ids_list = [list(x) for x in teams_with_ids_list]
 
 
 
-print(team_name,' -> ',team_record)
+# print(team_name,' -> ',team_record)
 
 list_of_lists = []
 for a in teams_with_ids_list:

@@ -283,7 +283,11 @@ for z in new_homers:
             # new_list_with_stats.append(f"{hits_per_game}")
             # rbis_per_game = round((rbi / games_played), 3)
             # new_list_with_stats.append(f"{rbis_per_game}")
-    
+    else:
+        # If no stats are found, append empty strings or placeholders
+        new_list_with_stats.extend(["", "", "", "", ""])
+
+
     if beans2:
         beans2_id = beans2.get('id')
         beans3 = statsapi.player_stat_data(beans2_id, group="hitting", type="season", sportId=1, season=2024)
@@ -298,9 +302,9 @@ for z in new_homers:
             new_list_with_stats.append(f"{int(hrs2)}")  
             new_list_with_stats.append(f"{hrs_per_game4}")  
             new_list_with_stats.append(f"{hrs_per_game3}")  
-    # else:
-    #     # If no stats are found, append empty strings or placeholders
-    #     new_list_with_stats.extend(["", "", ""])
+    else:
+        # If no stats are found, append empty strings or placeholders
+        new_list_with_stats.extend(["", "", ""])
     
     stat_homers.append(new_list_with_stats)
 
@@ -313,12 +317,12 @@ stat_homers = [x for x in stat_homers if x]  # Keeps only non-empty entries
 for x in stat_homers:
     print(x)
 
-# save homers to text_output/homers_list.csv headers being 'name'
-homers_file_path = "text_output/homers_list.csv"
-with open(homers_file_path, "w") as file:
-    file.write("name,team,hrs,hrpg,fhrpg\n")
-    for homer in stat_homers:
-        file.write(f"{homer[0]},{homer[1]},{homer[2]},{homer[3]},{homer[4]},{homer[5]},{homer[6]},{homer[7]},\n")
+# # save homers to text_output/homers_list.csv headers being 'name'
+# homers_file_path = "text_output/homers_list.csv"
+# with open(homers_file_path, "w") as file:
+#     file.write("name,team,hrs,hrpg,fhrpg\n")
+#     for homer in stat_homers:
+#         file.write(f"{homer[0]},{homer[1]},{homer[2]},{homer[3]},{homer[4]},{homer[5]},{homer[6]},{homer[7]},\n")
 
 # Write content to the new Todays_Report.txt file
 with open(report_file_path, "w") as file:
