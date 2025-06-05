@@ -25,8 +25,8 @@ jobs:
       - name: Run the Python script
         run: |
           python script4_todays_schedule.py
-          python script12_add_dh_to_batters.py
-          python script10_make_index.py
+          python script10_add_dh_to_batters.py
+          python script14_make_index.py
 
       - name: Commit and push changes
         run: |
