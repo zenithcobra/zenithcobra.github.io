@@ -2,8 +2,50 @@ import statsapi
 import mlbstatsapi
 from datetime import datetime
 
+# Roster Method
+def get_roster_names(team_id):
+    """
+    This method gets a list of just names of the players in the roster.
 
+    Args:
+        team_id (int): The ID of the team whose roster is to be fetched.
 
+    Returns:
+        list: A list of player names in the roster.
+    """
+    roster_string = statsapi.roster(team_id)
+    roster_list_unprocessed = roster_string.split('\n')
+    roster_list = []
+    
+    for x in roster_list_unprocessed:
+        roster_line = ''
+        for y in x.split(' ')[4:]:  # Skip the first 4 elements to get the name
+            roster_line = roster_line + y + ' '
+        roster_list.append(roster_line.lstrip())  # Remove leading whitespace
+    
+    return roster_list
+
+# HR leaders
+def get_homerun_leaders_by_team(team_id, season=2025, leaderGameTypes="R", limit=10):
+    """
+    Returns a list of home run leaders for a given team ID.
+
+    Args:
+        team_id (int): The ID of the team to fetch home run leaders for.
+        season (int): The MLB season year (default is 2025).
+        leaderGameTypes (str): The type of games to consider (default is "R" for regular season).
+        limit (int): The maximum number of leaders to fetch (default is 10).
+
+    Returns:
+        list: A list of dictionaries containing player names and their home run counts.
+    """
+    homerun_leaders_by_team = []
+    home_leaders_data = statsapi.team_leader_data(team_id, 'homeRuns', season=season, leaderGameTypes=leaderGameTypes, limit=limit)
+    
+    for z in home_leaders_data:
+        homerun_leaders_by_team.append({'name': z[1], 'homeRuns': z[2]})
+    
+    return homerun_leaders_by_team
 
 # GET ALL THE MATCHES TODAY LOTS OF API
 def get_matches_today_data():
@@ -19,42 +61,32 @@ def get_matches_today_data():
     schedule = statsapi.schedule(start_date=mlb_date, end_date=mlb_date)
 
     # iterate through each game of the schedule
+
+    game_schedule_list = []
     for x in schedule:
+        date = mlb_date
+        away_name = x.get('away_name')
+        away_id = x.get('away_id')
+        away_leaders = statsapi.team_leader_data(away_id, 'homeRuns', season=2025, leaderGameTypes="R", limit=10)
+        away_probable_pitcher = x.get('away_probable_pitcher')
+        away_team_roster = get_roster_names(away_id)
+        away_team_hr_leaders
 
-        # initialize game data dictionary
-        game_data = {}
-        
-        # away_name
-        game_data.update({'away_name': x.get('away_name')}) 
-        
-        # home_name
-        game_data.update({'home_name': x.get('home_name')})
-        
+        home_name = x.get('home_name')
+
         # away_id
-        game_data.update({'away_id': x.get('away_id')})
 
-        away_team_leaders_hr = []
-        # add top away team guys here
-        away_leaders = statsapi.team_leader_data(x.get('away_id'), 'homeRuns', season=2025, leaderGameTypes="R", limit=10)
-        for z in away_leaders:
-            away_team_leaders_hr.append({'name': z[1],'homeRuns': z[2]})
 
         game_data.update({'away_team_leaders_hr': away_team_leaders_hr})
 
         home_team_leaders_hr = []
         # add top away team guys here
-        home_leaders = statsapi.team_leader_data(x.get('home_id'), 'homeRuns', season=2025, leaderGameTypes="R", limit=10)
-        for z in home_leaders:
-            home_team_leaders_hr.append({'name': z[1],'homeRuns': z[2]})
-
-        game_data.update({'home_team_leaders_hr': home_team_leaders_hr})
+       
 
         # home_id
         game_data.update({'home_id': x.get('home_id')})
         # home_probable_pitcher
         game_data.update({'home_probable_pitcher': x.get('home_probable_pitcher')})
-        # away_probable_pitcher
-        game_data.update({'away_probable_pitcher': x.get('away_probable_pitcher')})
 
         matches_today.append(game_data)
 
