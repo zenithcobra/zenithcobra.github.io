@@ -1,0 +1,95 @@
+mlb = mlbstatsapi.Mlb()
+
+for x in pitchers_today:
+
+    if x.get('home_or_away') == 'away':
+        away_probable_pitcher = x.get('pitcher')
+        
+        # Check if away_probable_pitcher is valid
+        if not away_probable_pitcher:
+            print(f"Warning: Missing away_probable_pitcher for game: {x}")
+            continue  # Skip this game if no pitcher is available
+
+        pitcher_ids = mlb.get_people_id(away_probable_pitcher)
+        
+        # Check if pitcher_ids is not empty
+        if not pitcher_ids:
+            print(f"Warning: No pitcher ID found for {away_probable_pitcher}")
+            continue  # Skip this game if no pitcher ID is found
+
+        pitcher_id = pitcher_ids[0]  # Safely access the first element
+
+        BvP = []
+        for y in x.get('home_team_leaders_hr', []):  # Default to an empty list if key is missing
+            batter_id = mlb.get_people_id(y.get('name'))[0]
+
+            stats = ['vsPlayer']
+            group = ['hitting']
+            params = {'opposingPlayerId': pitcher_id, 'season': 2025}
+
+            try:
+                stats = mlb.get_player_stats(batter_id, stats=stats, groups=group, **params)
+                vs_player_total = stats['hitting']['vsplayertotal']
+                for split in vs_player_total.splits:
+                    p_id = mlb.get_person(pitcher_id)
+                    b_id = mlb.get_person(batter_id)
+                    
+                    bvp_matchup = f"pitcher: {p_id.__dict__.get('fullname')} vs batter: {b_id.__dict__.get('fullname')}"
+                    dict2 = {'bvp_stats': split.stat.__dict__} #dict of stats from the bvp stats
+                    dict2.update({'bvp_matchup': bvp_matchup})
+                    dict2.update({'pitcher': p_id.__dict__.get('fullname')})
+                    dict2.update({'batter': b_id.__dict__.get('fullname')})
+                    BvP.append(dict2)
+
+            except KeyError as e:
+                print(f"KeyError: {e}. Skipping this player. Stats: {stats}")
+            except Exception as e:
+                print(f"Unexpected error: {e}. Skipping this player.")
+        
+    if x.get('home_or_away') == 'home':
+        home_probable_pitcher = x.get('home_probable_pitcher')
+        
+        # Check if home_probable_pitcher is valid
+        if not home_probable_pitcher:
+            print(f"Warning: Missing home_probable_pitcher for game: {x}")
+            continue  # Skip this game if no pitcher is available
+
+        pitcher_ids = mlb.get_people_id(home_probable_pitcher)
+        
+        # Check if pitcher_ids is not empty
+        if not pitcher_ids:
+            print(f"Warning: No pitcher ID found for {home_probable_pitcher}")
+            continue  # Skip this game if no pitcher ID is found
+
+        pitcher_id = pitcher_ids[0]  # Safely access the first element
+
+        for y in x.get('away_team_leaders_hr', []):  # Default to an empty list if key is missing
+            batter_id = mlb.get_people_id(y.get('name'))[0]
+
+            stats = ['vsPlayer']
+            group = ['hitting']
+            params = {'opposingPlayerId': pitcher_id, 'season': 2025}
+
+            try:
+                stats = mlb.get_player_stats(batter_id, stats=stats, groups=group, **params)
+                vs_player_total = stats['hitting']['vsplayertotal']
+                for split in vs_player_total.splits:
+                    p_id = mlb.get_person(pitcher_id)
+                    b_id = mlb.get_person(batter_id)
+                    
+                    bvp_matchup = f"pitcher: {p_id.__dict__.get('fullname')} vs batter: {b_id.__dict__.get('fullname')}"
+                    dict2 = {'bvp_stats': split.stat.__dict__}
+                    dict2.update({'bvp_matchup': bvp_matchup})
+                    dict2.update({'pitcher': p_id.__dict__.get('fullname')})
+                    dict2.update({'batter': b_id.__dict__.get('fullname')})
+                    BvP.append(dict2)
+
+            except KeyError as e:
+                print(f"KeyError: {e}. Skipping this player. Stats: {stats}")
+            except Exception as e:
+                print(f"Unexpected error: {e}. Skipping this player.")
+        
+    # Add the BvP stats to the matches_today dictionary
+    x.update({'BvP_stats': BvP})
+
+return matches_today
