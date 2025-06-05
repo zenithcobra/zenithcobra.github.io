@@ -314,8 +314,21 @@ for z in new_homers:
 stat_homers = [x for x in stat_homers if x]  # Keeps only non-empty entries
 
 # Iterate through the filtered list
+# Filter out entries where x[0] is an empty string
+stat_homers = [x for x in stat_homers if x[0] != '']
+
+# Print the filtered list
 for x in stat_homers:
     print(x)
+
+# Filter out empty entries
+stat_homers = [x for x in stat_homers if x]  # Keeps only non-empty entries
+
+# Print the list of homers
+for x in stat_homers:
+    print(x)
+
+
 
 # # save homers to text_output/homers_list.csv headers being 'name'
 # homers_file_path = "text_output/homers_list.csv"
