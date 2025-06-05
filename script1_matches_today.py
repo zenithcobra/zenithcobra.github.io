@@ -1,15 +1,41 @@
 import statsapi
 import mlbstatsapi
-from datetime import datetime
+from datetime import datetime, timedelta
+
+
+# get date
+def get_date():
+    """
+    Gets the current date in the format required by 'statsapi'.
+    Returns:
+        str: The current date formatted as 'MM/DD/YYYY'.
+    """
+    return datetime.now().strftime("%m/%d/%Y")
+
+
+# get yesterdays date
+def get_yesterday(date_str):
+    """
+    Gets the date previous to the one supplied.
+    Args:
+        date_str (str): A date string formatted as 'MM/DD/YYYY'.
+    Returns:
+        str: The previous date formatted as 'MM/DD/YYYY'.
+    """
+    # Convert the input date string to a datetime object
+    date = datetime.strptime(date_str, "%m/%d/%Y")
+    # Subtract one day
+    yesterday = date - timedelta(days=1)
+    # Return the formatted date
+    return yesterday.strftime("%m/%d/%Y")
+
 
 # Roster Method
 def get_roster_names(team_id):
     """
     This method gets a list of just names of the players in the roster.
-
     Args:
         team_id (int): The ID of the team whose roster is to be fetched.
-
     Returns:
         list: A list of player names in the roster.
     """
@@ -25,17 +51,16 @@ def get_roster_names(team_id):
     
     return roster_list
 
+
 # HR leaders
 def get_homerun_leaders_by_team(team_id, season=2025, leaderGameTypes="R", limit=10):
     """
     Returns a list of home run leaders for a given team ID.
-
     Args:
         team_id (int): The ID of the team to fetch home run leaders for.
         season (int): The MLB season year (default is 2025).
         leaderGameTypes (str): The type of games to consider (default is "R" for regular season).
         limit (int): The maximum number of leaders to fetch (default is 10).
-
     Returns:
         list: A list of dictionaries containing player names and their home run counts.
     """
@@ -47,52 +72,78 @@ def get_homerun_leaders_by_team(team_id, season=2025, leaderGameTypes="R", limit
     
     return homerun_leaders_by_team
 
-# GET ALL THE MATCHES TODAY LOTS OF API
-def get_matches_today_data():
-    
+def get_schedule_by_date(date):
+    """
+    Gets the statsapi schedule based on the date provided and returns the schedule.
+    Args:
+        date (str): The date formatted as 'MM/DD/YYYY'.
+    Returns:
+        list: A list of dictionaries representing the schedule for the given date.
+    """
+    # Get the schedule as a dictionary for the provided date
+    schedule = statsapi.schedule(start_date=date, end_date=date)
+    return schedule
 
-    # Get today's schedule
-    matches_today = []
 
-    # get the proper formatted date
-    mlb_date = datetime.now().strftime("%m/%d/%Y")
+# process the schedule
+def process_the_schedule(schedule):
+    """
+    Processes the given schedule and returns a list of dictionaries 
+    containing detailed information about each game.
 
-    # get the schedule as a dictionary for today
-    schedule = statsapi.schedule(start_date=mlb_date, end_date=mlb_date)
+    Args:
+        schedule (list): A list of dictionaries representing the game schedule.
 
-    # iterate through each game of the schedule
-
-    game_schedule_list = []
+    Returns:
+        list: A list of dictionaries containing game details, including team rosters, 
+              home run leaders, and probable pitchers.
+    """
+    game_schedule_list_of_data = []
     for x in schedule:
-        date = mlb_date
+        # Date
+        date = get_date
+
+        # Away team data
         away_name = x.get('away_name')
         away_id = x.get('away_id')
-        away_leaders = statsapi.team_leader_data(away_id, 'homeRuns', season=2025, leaderGameTypes="R", limit=10)
         away_probable_pitcher = x.get('away_probable_pitcher')
         away_team_roster = get_roster_names(away_id)
-        away_team_hr_leaders
+        away_team_hr_leaders = get_homerun_leaders_by_team(away_id)
 
+        # Home team data
         home_name = x.get('home_name')
+        home_id = x.get('home_id')
+        home_probable_pitcher = x.get('home_probable_pitcher')
+        home_team_roster = get_roster_names(home_id)
+        home_team_hr_leaders = get_homerun_leaders_by_team(home_id)
 
-        # away_id
+        # Dictionary for the game
+        game_in_schedule = {
+            "date": date,
+            "away_name": away_name,
+            "away_id": away_id,
+            "away_probable_pitcher": away_probable_pitcher,
+            "away_team_roster": away_team_roster,
+            "away_team_leaders_hr": away_team_hr_leaders,
+            "home_name": home_name,
+            "home_id": home_id,
+            "home_probable_pitcher": home_probable_pitcher,
+            "home_team_roster": home_team_roster,
+            "home_team_leaders_hr": home_team_hr_leaders
+        }
 
+        game_schedule_list_of_data.append(game_in_schedule)
 
-        game_data.update({'away_team_leaders_hr': away_team_leaders_hr})
+    return game_schedule_list_of_data
 
-        home_team_leaders_hr = []
-        # add top away team guys here
-       
-
-        # home_id
-        game_data.update({'home_id': x.get('home_id')})
-        # home_probable_pitcher
-        game_data.update({'home_probable_pitcher': x.get('home_probable_pitcher')})
-
-        matches_today.append(game_data)
+# GET ALL THE MATCHES TODAY LOTS OF API
+def get_matches_today_data():
+    mlb_date = get_date()    # get the proper formatted date
+    schedule = get_schedule_by_date(mlb_date)    # get the schedule as a dictionary for today
+    processed_schedule = process_the_schedule(schedule)    # Process the schedule
 
 
     mlb = mlbstatsapi.Mlb()
-
     for x in matches_today:
   
         away_probable_pitcher = x.get('away_probable_pitcher')
@@ -127,7 +178,7 @@ def get_matches_today_data():
                     b_id = mlb.get_person(batter_id)
                     
                     bvp_matchup = f"pitcher: {p_id.__dict__.get('fullname')} vs batter: {b_id.__dict__.get('fullname')}"
-                    dict2 = {'bvp_stats': split.stat.__dict__}
+                    dict2 = {'bvp_stats': split.stat.__dict__} #dict of stats from the bvp stats
                     dict2.update({'bvp_matchup': bvp_matchup})
                     dict2.update({'pitcher': p_id.__dict__.get('fullname')})
                     dict2.update({'batter': b_id.__dict__.get('fullname')})
