@@ -404,11 +404,21 @@ def _get_batter_vs_pitcher_stats(processed_schedule):
                 print(f"Warning: No team found for ID {x.get('home_id')}")
                 continue
             
-            # Example usage
-            bvp_stats = get_bvp_stats(batter_id, pitcher_id)
+            # get bvp stats
+            batter_vs_pitcher_stats = get_bvp_stats(batter_id, pitcher_id)
 
-            # ------------------
-            batter_stats = 
+            """
+            batter
+            team
+            vs_pitcher
+            AB
+            H
+            HR
+            AVG
+            RBI
+            OBP
+            OPS
+            """
 
 
 
