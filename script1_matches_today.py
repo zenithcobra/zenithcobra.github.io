@@ -302,6 +302,51 @@ def get_team_from_id(team_id):
     return None
 
 
+def get_bvp_stats(batter_id, pitcher_id):
+    """
+    Retrieves batter vs pitcher (BvP) stats for the given batter and pitcher IDs.
+
+    Args:
+        batter_id (int): The ID of the batter.
+        pitcher_id (int): The ID of the pitcher.
+
+    Returns:
+        list: A list of dictionaries containing BvP stats, matchup details, and player names.
+    """
+    mlb = mlbstatsapi.Mlb()
+    BvP = []  # Initialize an empty list to store BvP stats
+
+    # variables for the api call
+    stats = ['vsPlayer']
+    group = ['hitting']
+    params = {'opposingPlayerId': pitcher_id, 'season': 2025}
+
+    try:
+        # Fetch player stats
+        stats = mlb.get_player_stats(batter_id, stats=stats, groups=group, **params)
+        vs_player_total = stats['hitting']['vsplayertotal']
+
+        # Process splits in the stats
+        for split in vs_player_total.splits:
+            p_id = mlb.get_person(pitcher_id)
+            b_id = mlb.get_person(batter_id)
+
+            # Create a dictionary for the BvP stats
+            dict2 = {'stats': split.stat.__dict__}  # Dict of stats from the BvP stats
+            dict2.update({'pitcher': p_id.__dict__.get('fullname')})
+            dict2.update({'batter': b_id.__dict__.get('fullname')})
+            BvP.append(dict2)
+
+    except KeyError as e:
+        print(f"KeyError: {e}. Skipping this player. Stats: {stats}")
+        return None
+    except Exception as e:
+        print(f"Unexpected error: {e}. Skipping this player.")
+        return None
+
+    return BvP[0]
+
+
 
 # batter vs pitcher data list
 def _get_batter_vs_pitcher_stats(processed_schedule):
@@ -315,6 +360,7 @@ def _get_batter_vs_pitcher_stats(processed_schedule):
         list: A list of dictionaries in the format:
               [{"batter_name": batter_name, "batter_id": batter_id, "opposing_pitcher": pitcher_name}]
     """
+    mlb = mlbstatsapi.Mlb()
     returned_list = []
 
     for x in processed_schedule:
@@ -326,60 +372,47 @@ def _get_batter_vs_pitcher_stats(processed_schedule):
             continue
 
         # get then Validate pitcher_ids
-        pitcher_id = get_id_for_player(away_probable_pitcher)
-        if pitcher_id is None:  # Check if pitcher_ids is None
+        away_pitcher_id = get_id_for_player(away_probable_pitcher)
+        if away_pitcher_id is None:  # Check if pitcher_ids is None
             print(f"Could not find ID for {away_probable_pitcher}")
             continue  # Skip to the next iteration of the loop
         
         # get pitcher name and validate
-        pitcher_name = get_player_name(pitcher_ids)
-        if not pitcher_name:
-            print(f"Warning: No player name found for ID {pitcher_ids}")
+        away_pitcher_name = get_player_name(away_pitcher_id)
+        if not away_pitcher_name:
+            print(f"Warning: No player name found for ID {away_pitcher_id}")
             continue
 
         # Process home team batters
         for y in x.get('home_team_roster', []):  # Default to an empty list if key is missing
             
             # get and validate batter id
-            batter_id = mlb.get_id_for_player(y)
-            if batter_id is None:  # Check if batter_id is None
+            home_batter_id = mlb.get_id_for_player(y)
+            if home_batter_id is None:  # Check if batter_id is None
                 print(f"Could not find ID for batter {y}")
                 continue  # Skip to the next iteration of the loop
 
             # get batter name and validate
-            batter_name = get_player_name(batter_id)
-            if not batter_name:
-                print(f"Warning: No player name found for ID {batter_id}")
+            home_batter_name = get_player_name(home_batter_id)
+            if not home_batter_name:
+                print(f"Warning: No player name found for ID {home_batter_id}")
                 continue
 
-            batter_team = get_team_from_id(x.get('home_id'))
-            if not batter_team:
+            home_batter_team = get_team_from_id(x.get('home_id'))
+            if not home_batter_team:
                 print(f"Warning: No team found for ID {x.get('home_id')}")
                 continue
             
+            # --------------------  
+
+            # Example usage
+            batter_id = 12345  # Replace with a valid batter ID
+            pitcher_id = 67890  # Replace with a valid pitcher ID
+            bvp_stats = get_bvp_stats(batter_id, pitcher_id)
+            print(bvp_stats)
+
+            # ------------------
             batter_stats = 
-            stats = ['vsPlayer']
-            group = ['hitting']
-            params = {'opposingPlayerId': pitcher_id, 'season': 2025}
-
-            try:
-                stats = mlb.get_player_stats(batter_id, stats=stats, groups=group, **params)
-                vs_player_total = stats['hitting']['vsplayertotal']
-                for split in vs_player_total.splits:
-                    p_id = mlb.get_person(pitcher_id)
-                    b_id = mlb.get_person(batter_id)
-                    
-                    bvp_matchup = f"pitcher: {p_id.__dict__.get('fullname')} vs batter: {b_id.__dict__.get('fullname')}"
-                    dict2 = {'bvp_stats': split.stat.__dict__} #dict of stats from the bvp stats
-                    dict2.update({'bvp_matchup': bvp_matchup})
-                    dict2.update({'pitcher': p_id.__dict__.get('fullname')})
-                    dict2.update({'batter': b_id.__dict__.get('fullname')})
-                    BvP.append(dict2)
-
-            except KeyError as e:
-                print(f"KeyError: {e}. Skipping this player. Stats: {stats}")
-            except Exception as e:
-                print(f"Unexpected error: {e}. Skipping this player.")
 
 
 

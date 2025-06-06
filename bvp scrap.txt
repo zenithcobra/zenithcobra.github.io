@@ -1,3 +1,44 @@
+            
+            
+            
+
+            stats = ['vsPlayer']
+            group = ['hitting']
+            params = {'opposingPlayerId': pitcher_id, 'season': 2025}
+
+            try:
+
+                stats = mlb.get_player_stats(batter_id, stats=stats, groups=group, **params)
+                vs_player_total = stats['hitting']['vsplayertotal']
+            
+
+                for split in vs_player_total.splits:
+                    p_id = mlb.get_person(pitcher_id)
+                    b_id = mlb.get_person(batter_id)
+                    
+
+                    bvp_matchup = f"pitcher: {p_id.__dict__.get('fullname')} vs batter: {b_id.__dict__.get('fullname')}"
+                    
+                    
+                    dict2 = {'bvp_stats': split.stat.__dict__} #dict of stats from the bvp stats
+                    dict2.update({'bvp_matchup': bvp_matchup})
+                    dict2.update({'pitcher': p_id.__dict__.get('fullname')})
+                    dict2.update({'batter': b_id.__dict__.get('fullname')})
+                    BvP.append(dict2)
+
+            except KeyError as e:
+                print(f"KeyError: {e}. Skipping this player. Stats: {stats}")
+            except Exception as e:
+                print(f"Unexpected error: {e}. Skipping this player.")
+
+
+
+
+
+
+
+
+# --------------------------
 mlb = mlbstatsapi.Mlb()
 
 for x in pitchers_today:
