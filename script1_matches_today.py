@@ -398,18 +398,14 @@ def _get_batter_vs_pitcher_stats(processed_schedule):
                 print(f"Warning: No player name found for ID {home_batter_id}")
                 continue
 
+            # get home batter name
             home_batter_team = get_team_from_id(x.get('home_id'))
             if not home_batter_team:
                 print(f"Warning: No team found for ID {x.get('home_id')}")
                 continue
             
-            # --------------------  
-
             # Example usage
-            batter_id = 12345  # Replace with a valid batter ID
-            pitcher_id = 67890  # Replace with a valid pitcher ID
             bvp_stats = get_bvp_stats(batter_id, pitcher_id)
-            print(bvp_stats)
 
             # ------------------
             batter_stats = 
