@@ -73,6 +73,7 @@ def get_homerun_leaders_by_team(team_id, season=2025, leaderGameTypes="R", limit
     
     return homerun_leaders_by_team
 
+
 def get_schedule_by_date(date):
     """
     Gets the statsapi schedule based on the date provided and returns the schedule.
@@ -106,6 +107,7 @@ def get_schedule_by_date(date):
         venue_id
         venue_name
     """
+    print(date)
     # Get the schedule as a dictionary for the provided date
     schedule = statsapi.schedule(start_date=date, end_date=date)
     return schedule
@@ -232,6 +234,7 @@ def get_id_for_player(player_name):
     # Safely access the first element
     return player_id[0]
 
+
 def get_pitcher_name(player_id):
     """
     Returns the full name of a pitcher based on their ID.
@@ -347,9 +350,8 @@ def get_bvp_stats(batter_id, pitcher_id):
     return BvP[0]
 
 
-
 # batter vs pitcher data list
-def _get_batter_vs_pitcher_stats(processed_schedule):
+def get_batter_vs_pitcher_stats(processed_schedule):
     """
     Produces a list of dictionaries containing batter vs pitcher stats.
 
@@ -361,13 +363,14 @@ def _get_batter_vs_pitcher_stats(processed_schedule):
               [{"batter_name": batter_name, "batter_id": batter_id, "opposing_pitcher": pitcher_name}]
     """
     mlb = mlbstatsapi.Mlb()
+
     returned_list = []
 
     for x in processed_schedule:
 
         # get away pitcher and validate
         away_probable_pitcher = x.get('away_probable_pitcher')
-        if not away_probable_pitcher:
+        if away_probable_pitcher is None:
             print(f"Warning: Missing away_probable_pitcher for game: {x}")
             continue
 
@@ -379,169 +382,204 @@ def _get_batter_vs_pitcher_stats(processed_schedule):
         
         # get pitcher name and validate
         away_pitcher_name = get_player_name(away_pitcher_id)
-        if not away_pitcher_name:
+        if away_pitcher_name is None:
             print(f"Warning: No player name found for ID {away_pitcher_id}")
             continue
 
+        # get away team_id
+        away_pitcher_team_id = x.get('away_id')
+
+        # get away pitcher name
+        away_pitcher_team = get_team_from_id(away_pitcher_team_id)
+        if away_pitcher_team is None:
+            print(f"Warning: No team found for ID {away_pitcher_team_id}")
+            continue
+        
         # Process home team batters
         for y in x.get('home_team_roster', []):  # Default to an empty list if key is missing
             
             # get and validate batter id
-            home_batter_id = mlb.get_id_for_player(y)
+            home_batter_id = get_id_for_player(y)
             if home_batter_id is None:  # Check if batter_id is None
                 print(f"Could not find ID for batter {y}")
                 continue  # Skip to the next iteration of the loop
 
             # get batter name and validate
             home_batter_name = get_player_name(home_batter_id)
-            if not home_batter_name:
+            if home_batter_name is None:
                 print(f"Warning: No player name found for ID {home_batter_id}")
                 continue
 
+            #batter team id
+            home_batter_team_id = x.get('home_id')
+
             # get home batter name
-            home_batter_team = get_team_from_id(x.get('home_id'))
-            if not home_batter_team:
-                print(f"Warning: No team found for ID {x.get('home_id')}")
+            home_batter_team = get_team_from_id(home_batter_team_id)
+            if home_batter_team is None:
+                print(f"Warning: No team found for ID {home_batter_team_id}")
                 continue
             
             # get bvp stats
-            batter_vs_pitcher_stats = get_bvp_stats(batter_id, pitcher_id)
+            batter_vs_pitcher_stats = get_bvp_stats(home_batter_id, away_pitcher_id)
 
-            """
-            batter
-            team
-            vs_pitcher
-            AB
-            H
-            HR
-            AVG
-            RBI
-            OBP
-            OPS
-            """
-
-
-
-
-
-
-
-            # get batter Vs Pitcher stats
-            batter_vs_pitcher = [
-                batter_name,
-                batter_id,
-                pitcher_name
-
-                "stats"
-
+            bvp_dict = {
+                "batter": home_batter_name,
+                "batter_id": home_batter_id,
+                "team": home_batter_team,
+                "pitcher": away_pitcher_name,
+                "pitcher_id": away_pitcher_id,
+                "pitcher_team": away_pitcher_team,
+                "pitcher_team_id": away_pitcher_team_id,
+                "AB": batter_vs_pitcher_stats.get('atbats'),
+                "H": batter_vs_pitcher_stats.get('hits'),
+                "HR": batter_vs_pitcher_stats.get('homeruns'),
+                "AVG": batter_vs_pitcher_stats.get('avg'),
+                "RBI": batter_vs_pitcher_stats.get('rbi'),
+                "OBP": batter_vs_pitcher_stats.get('obp'),
+                "OPS": batter_vs_pitcher_stats.get('ops')
             }
-            returned_list.append(batter_vs_pitcher)
 
+            returned_list.append(bvp_dict)
 
-        home_probable_pitcher = x.get('pitcher')
-        
-        # Validate home_probable_pitcher
-        if not home_probable_pitcher:
-            print(f"Warning: Missing home_probable_pitcher for game: {x}")
+        # get home pitcher and validate
+        home_probable_pitcher = x.get('home_probable_pitcher')
+        if home_probable_pitcher is None:
+            print(f"Warning: Missing away_probable_pitcher for game: {x}")
             continue
 
-        pitcher_ids = mlb.get_people_id(home_probable_pitcher)
+        # get then Validate pitcher_ids
+        home_pitcher_id = get_id_for_player(home_probable_pitcher)
+        if home_pitcher_id is None:  # Check if pitcher_ids is None
+            print(f"Could not find ID for {home_probable_pitcher}")
+            continue  # Skip to the next iteration of the loop
         
-        # Validate pitcher_ids
-        if not pitcher_ids:
-            print(f"Warning: No pitcher ID found for {home_probable_pitcher}")
+        # get pitcher name and validate
+        home_pitcher_name = get_player_name(home_pitcher_id)
+        if home_pitcher_name is None:
+            print(f"Warning: No player name found for ID home_pitcher name{home_pitcher_id}")
             continue
 
-        pitcher_id = pitcher_ids[0]  # Safely access the first element
-        pitcher_name = mlb.get_person(pitcher_id).__dict__.get('fullname')
+        # get away team_id
+        home_pitcher_team_id = x.get('home_id')
 
-        # Process away team batters
-        for y in x.get('away_team_leaders_hr', []):  # Default to an empty list if key is missing
-            batter_id = mlb.get_people_id(y.get('name'))[0]
-            batter_name = mlb.get_person(batter_id).__dict__.get('fullname')
+        # get away pitcher name
+        home_pitcher_team = get_team_from_id(home_pitcher_team_id)
+        if home_pitcher_team is None:
+            print(f"Warning: No team found for ID home pitcher team id {home_pitcher_team_id}")
+            continue
+        
+        # Process home team batters
+        for z in x.get('away_team_roster', []):  # Default to an empty list if key is missing
             
+            # get and validate batter id
+            away_batter_id = get_id_for_player(z)
+            if away_batter_id is None:  # Check if batter_id is None
+                print(f"Could not find ID foraway  batter id {z}")
+                continue  # Skip to the next iteration of the loop
 
-            batter_vs_pitcher = {
-                "batter_name": batter_name,
-                "batter_id": batter_id,
-                "opposing_pitcher": pitcher_name
+            # get batter name and validate
+            away_batter_name = get_player_name(away_batter_id)
+            if away_batter_name is None:
+                print(f"Warning: No player name found for ID away batter name{away_batter_id}")
+                continue
+
+            #batter team id
+            away_batter_team_id = x.get('away_id')
+
+            # get home batter name
+            away_batter_team = get_team_from_id(away_batter_team_id)
+            if away_batter_team is None:
+                print(f"Warning: No team found for ID away batter team id {away_batter_team_id}")
+                continue
+            
+            # get bvp stats
+            batter_vs_pitcher_stats = get_bvp_stats(away_batter_id, home_pitcher_id)
+
+            bvp_dict = {
+                "batter": home_batter_name,
+                "batter_id": home_batter_id,
+                "team": home_batter_team,
+                "pitcher": away_pitcher_name,
+                "pitcher_id": away_pitcher_id,
+                "pitcher_team": away_pitcher_team,
+                "pitcher_team_id": away_pitcher_team_id,
+                "AB": batter_vs_pitcher_stats.get('atbats'),
+                "H": batter_vs_pitcher_stats.get('hits'),
+                "HR": batter_vs_pitcher_stats.get('homeruns'),
+                "AVG": batter_vs_pitcher_stats.get('avg'),
+                "RBI": batter_vs_pitcher_stats.get('rbi'),
+                "OBP": batter_vs_pitcher_stats.get('obp'),
+                "OPS": batter_vs_pitcher_stats.get('ops')
             }
-            returned_list.append(batter_vs_pitcher)
+
+            returned_list.append(bvp_dict)
 
     return returned_list
 
-# Example usage
-pitchers_today = [
-    {
-        "home_or_away": "away",
-        "pitcher": "Shohei Ohtani",
-        "home_team_leaders_hr": [{"name": "Aaron Judge"}, {"name": "Giancarlo Stanton"}]
-    },
-    {
-        "home_or_away": "home",
-        "pitcher": "Gerrit Cole",
-        "away_team_leaders_hr": [{"name": "Mike Trout"}, {"name": "Anthony Rendon"}]
-    }
-]
+date = get_date()
+print(date)
+schedule = get_schedule_by_date(date)
+processed_schedule = process_the_schedule(schedule)
+pitcher_today = extract_probable_pitchers_from_processed_schedule(processed_schedule)
+batter_vs_pitcher_stats = get_batter_vs_pitcher_stats(processed_schedule)
 
-batter_vs_pitcher_stats = _get_batter_vs_pitcher_stats(pitchers_today)
 print(batter_vs_pitcher_stats)
 
 
 
 
-# ------------------------------
-# ------------------------------
-# ------------------------------
+# # ------------------------------
+# # ------------------------------
+# # ------------------------------
 
-mlb_date = get_date()    # get the proper formatted date
-schedule = get_schedule_by_date(mlb_date)    # get the schedule as a dictionary for today
-processed_schedule = process_the_schedule(schedule)    # Process the schedule
-pitchers_today = extract_probable_pitchers_from_processed_schedule(processed_schedule)
-
-
+# mlb_date = get_date()    # get the proper formatted date
+# schedule = get_schedule_by_date(mlb_date)    # get the schedule as a dictionary for today
+# processed_schedule = process_the_schedule(schedule)    # Process the schedule
+# pitchers_today = extract_probable_pitchers_from_processed_schedule(processed_schedule)
 
 
 
 
 
 
-# import sys
+
+
+# # import sys
+# # import os
+
+# # sys.stdout = open(os.devnull, 'w')
+
+# # Call your function
+# todays_matches = get_matches_today_data()
+
+# # # Restore output
+# # sys.stdout = sys.__stdout__
+
+# # print(todays_matches)
+
 # import os
+# import json
+# from datetime import datetime, timedelta
 
-# sys.stdout = open(os.devnull, 'w')
+# # Directory to save the JSON file
+# output_dir = "text_output"
+# os.makedirs(output_dir, exist_ok=True)  # Ensure the directory exists
 
-# Call your function
-todays_matches = get_matches_today_data()
+# # File name for today's matches
+# today_date = datetime.now().strftime("%Y-%m-%d")
+# file_path = os.path.join(output_dir, f"todays_matches.json")
 
-# # Restore output
-# sys.stdout = sys.__stdout__
+# # Check if the file already exists
+# if os.path.exists(file_path):
+#     # Rename the existing file by appending yesterday's date
+#     yesterday_date = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+#     new_file_path = os.path.join(output_dir, f"todays_matches_{yesterday_date}.json")
+#     os.rename(file_path, new_file_path)
 
-# print(todays_matches)
+# # Save today's matches to the JSON file
+# with open(file_path, "w") as json_file:
+#     json.dump(todays_matches, json_file, indent=4)
 
-import os
-import json
-from datetime import datetime, timedelta
-
-# Directory to save the JSON file
-output_dir = "text_output"
-os.makedirs(output_dir, exist_ok=True)  # Ensure the directory exists
-
-# File name for today's matches
-today_date = datetime.now().strftime("%Y-%m-%d")
-file_path = os.path.join(output_dir, f"todays_matches.json")
-
-# Check if the file already exists
-if os.path.exists(file_path):
-    # Rename the existing file by appending yesterday's date
-    yesterday_date = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
-    new_file_path = os.path.join(output_dir, f"todays_matches_{yesterday_date}.json")
-    os.rename(file_path, new_file_path)
-
-# Save today's matches to the JSON file
-with open(file_path, "w") as json_file:
-    json.dump(todays_matches, json_file, indent=4)
-
-print(f"Today's matches saved to {file_path}")
+# print(f"Today's matches saved to {file_path}")
 
 
