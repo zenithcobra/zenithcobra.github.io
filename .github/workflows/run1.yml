@@ -24,20 +24,7 @@ jobs:
 
       - name: Run the Python script
         run: |
-          python script1_matches_today.py
-          python script2_get_streaks.py
-          python script3_yesterdays_report.py
-          python script6_get_standings.py
-          python script4_todays_schedule.py
-          python script5_match_overviews.py
-          python script7_teams_today_list.py
-          python script8_process_bvp.py
-          python script9_process_streaks.py
-          python script10_add_dh_to_batters.py
-          python script11_get_team_history.py
-          python script12_process_bvp_again.py
-          python script13_team_records.py
-          python script14_make_index.py
+          python mlb_all.py
 
       - name: Commit and push changes
         run: |
