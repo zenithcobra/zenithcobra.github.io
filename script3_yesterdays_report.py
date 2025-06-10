@@ -1,380 +1,380 @@
-# %%
-import statsapi
-from datetime import datetime, timedelta
-import os
-from datetime import datetime
-import pytz
-from fractions import Fraction
-import mlbstatsapi
-import re
+# # %%
+# import statsapi
+# from datetime import datetime, timedelta
+# import os
+# from datetime import datetime
+# import pytz
+# from fractions import Fraction
+# import mlbstatsapi
+# import re
 
 
-# Ensure the "text_output" folder exists
-os.makedirs("text_output", exist_ok=True)
+# # Ensure the "text_output" folder exists
+# os.makedirs("text_output", exist_ok=True)
 
-# Get yesterday's date
-yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+# # Get yesterday's date
+# yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
 
-# File paths
-file_name = "Yesterdays_Report.txt"
-report_file_path = f"text_output/{file_name}"
-backup_file_path = f"text_output/Yesterdays_Report_{yesterday}.txt"
+# # File paths
+# file_name = "Yesterdays_Report.txt"
+# report_file_path = f"text_output/{file_name}"
+# backup_file_path = f"text_output/Yesterdays_Report_{yesterday}.txt"
 
-# Check if Todays_Report.txt exists and rename it
-if os.path.exists(report_file_path):
-    os.rename(report_file_path, backup_file_path)
+# # Check if Todays_Report.txt exists and rename it
+# if os.path.exists(report_file_path):
+#     os.rename(report_file_path, backup_file_path)
 
-# Get yesterday's schedule
-oneday = timedelta(days=1)
-yesterday_date = datetime.now().date() - oneday
-yschedule = statsapi.schedule(start_date=yesterday_date, end_date=yesterday_date)
+# # Get yesterday's schedule
+# oneday = timedelta(days=1)
+# yesterday_date = datetime.now().date() - oneday
+# yschedule = statsapi.schedule(start_date=yesterday_date, end_date=yesterday_date)
 
-# Separate entries with "Toronto" in the "summary" key
-entries_with_toronto = [x for x in yschedule if "summary" in x and "Toronto" in x["summary"]]
+# # Separate entries with "Toronto" in the "summary" key
+# entries_with_toronto = [x for x in yschedule if "summary" in x and "Toronto" in x["summary"]]
 
-# check if entries_with_toronto is empty
-if not entries_with_toronto:
-    # If no entries with "Toronto", set it to an empty list
-    entries_with_toronto = []
+# # check if entries_with_toronto is empty
+# if not entries_with_toronto:
+#     # If no entries with "Toronto", set it to an empty list
+#     entries_with_toronto = []
 
-# Separate entries without "Toronto" in the "summary" key
-entries_without_toronto = [x for x in yschedule if not ("summary" in x and "Toronto" in x["summary"])]
+# # Separate entries without "Toronto" in the "summary" key
+# entries_without_toronto = [x for x in yschedule if not ("summary" in x and "Toronto" in x["summary"])]
 
-# Combine the two lists, bringing entries with "Toronto" to the top
-sorted_list = entries_without_toronto
+# # Combine the two lists, bringing entries with "Toronto" to the top
+# sorted_list = entries_without_toronto
 
-homers = []
+# homers = []
 
-# get the toronto game
-toronto_content = []
+# # get the toronto game
+# toronto_content = []
 
-if entries_with_toronto:
-    toronto_game = entries_with_toronto[0]
-    if "Toronto" in toronto_game.get('summary'):
-        # Example UTC datetime string
-        utc_datetime_str = toronto_game.get("game_datetime")
-        # Parse the UTC datetime string
-        utc_datetime = datetime.strptime(utc_datetime_str, '%Y-%m-%dT%H:%M:%SZ')
-        # Define the UTC and Eastern Time zones
-        utc_zone = pytz.utc
-        eastern_zone = pytz.timezone('US/Eastern')
-        # Localize the datetime to UTC
-        utc_datetime = utc_zone.localize(utc_datetime)
-        # Convert to Eastern Time
-        eastern_datetime = utc_datetime.astimezone(eastern_zone)
-        # Format the datetime in a readable format
-        readable_format = eastern_datetime.strftime('%Y-%m-%d %I:%M %p %Z')
-        # print(readable_format)
-        # print(x)
-        # print(x)
-        # scoring_plays = statsapi.game_scoring_plays(x.get("game_id"))
-        # new_scoring_plays = ""
-        # Get scoring plays as a string
-        s_plays = statsapi.game_scoring_plays(toronto_game.get("game_id"))
-        scoring_plays = statsapi.game_scoring_plays(toronto_game.get("game_id"))
-        # Convert the scoring plays string into a list of lines
-        scoring_plays_list = scoring_plays.split("\n")
-        # Filter the lines to only include those that contain "homers"
-        filtered_plays = [line for line in scoring_plays_list if "homers" in line]
-        # Process each kept line to only include the part before the first ")"
-        processed_plays = [line.split(")")[0] + ")" for line in filtered_plays if ")" in line]
-        # Join the processed lines back into a string if needed
-        homers.append(processed_plays)
-        new_scoring_plays = "\n".join(processed_plays)
-        highlights = statsapi.game_highlights(toronto_game.get("game_id"))
+# if entries_with_toronto:
+#     toronto_game = entries_with_toronto[0]
+#     if "Toronto" in toronto_game.get('summary'):
+#         # Example UTC datetime string
+#         utc_datetime_str = toronto_game.get("game_datetime")
+#         # Parse the UTC datetime string
+#         utc_datetime = datetime.strptime(utc_datetime_str, '%Y-%m-%dT%H:%M:%SZ')
+#         # Define the UTC and Eastern Time zones
+#         utc_zone = pytz.utc
+#         eastern_zone = pytz.timezone('US/Eastern')
+#         # Localize the datetime to UTC
+#         utc_datetime = utc_zone.localize(utc_datetime)
+#         # Convert to Eastern Time
+#         eastern_datetime = utc_datetime.astimezone(eastern_zone)
+#         # Format the datetime in a readable format
+#         readable_format = eastern_datetime.strftime('%Y-%m-%d %I:%M %p %Z')
+#         # print(readable_format)
+#         # print(x)
+#         # print(x)
+#         # scoring_plays = statsapi.game_scoring_plays(x.get("game_id"))
+#         # new_scoring_plays = ""
+#         # Get scoring plays as a string
+#         s_plays = statsapi.game_scoring_plays(toronto_game.get("game_id"))
+#         scoring_plays = statsapi.game_scoring_plays(toronto_game.get("game_id"))
+#         # Convert the scoring plays string into a list of lines
+#         scoring_plays_list = scoring_plays.split("\n")
+#         # Filter the lines to only include those that contain "homers"
+#         filtered_plays = [line for line in scoring_plays_list if "homers" in line]
+#         # Process each kept line to only include the part before the first ")"
+#         processed_plays = [line.split(")")[0] + ")" for line in filtered_plays if ")" in line]
+#         # Join the processed lines back into a string if needed
+#         homers.append(processed_plays)
+#         new_scoring_plays = "\n".join(processed_plays)
+#         highlights = statsapi.game_highlights(toronto_game.get("game_id"))
 
-        # process links in the highlights
-        import re
+#         # process links in the highlights
+#         import re
 
-        # Example highlights string (replace this with your actual highlights string)
-        highlights = statsapi.game_highlights(toronto_game.get("game_id"))
+#         # Example highlights string (replace this with your actual highlights string)
+#         highlights = statsapi.game_highlights(toronto_game.get("game_id"))
 
-        # Regular expression to find URLs
-        url_pattern = r'(https?://[^\s]+)'
+#         # Regular expression to find URLs
+#         url_pattern = r'(https?://[^\s]+)'
 
-        # Replace URLs with clickable HTML links
-        highlights_with_links = re.sub(url_pattern, r'<a href="\1" target="_blank">video link</a>', highlights)
+#         # Replace URLs with clickable HTML links
+#         highlights_with_links = re.sub(url_pattern, r'<a href="\1" target="_blank">video link</a>', highlights)
 
 
 
-        toronto_game.update({"time_scheduled": readable_format})
-        toronto_game.update({"scoring_plays": s_plays})
-        toronto_content.append(
-            f"{toronto_game.get('time_scheduled')}\n"
-            # f"Status: {x.get('')}\n"
-            f"{toronto_game.get('away_name'):<22} {toronto_game.get('away_score')}    @\n"
-            f"{toronto_game.get('home_name'):<22} {toronto_game.get('home_score')}\n\n"
-            f"{toronto_game.get('scoring_plays')}\n\n"
-            f"HIGHLIGHTS\n\n"
-            f"{highlights_with_links}\n\n"
-        )
+#         toronto_game.update({"time_scheduled": readable_format})
+#         toronto_game.update({"scoring_plays": s_plays})
+#         toronto_content.append(
+#             f"{toronto_game.get('time_scheduled')}\n"
+#             # f"Status: {x.get('')}\n"
+#             f"{toronto_game.get('away_name'):<22} {toronto_game.get('away_score')}    @\n"
+#             f"{toronto_game.get('home_name'):<22} {toronto_game.get('home_score')}\n\n"
+#             f"{toronto_game.get('scoring_plays')}\n\n"
+#             f"HIGHLIGHTS\n\n"
+#             f"{highlights_with_links}\n\n"
+#         )
 
-yesterdays_content = []
+# yesterdays_content = []
 
-for x in sorted_list:
+# for x in sorted_list:
     
-    # Example UTC datetime string
-    utc_datetime_str = x.get("game_datetime")
+#     # Example UTC datetime string
+#     utc_datetime_str = x.get("game_datetime")
 
-    # Parse the UTC datetime string
-    utc_datetime = datetime.strptime(utc_datetime_str, '%Y-%m-%dT%H:%M:%SZ')
+#     # Parse the UTC datetime string
+#     utc_datetime = datetime.strptime(utc_datetime_str, '%Y-%m-%dT%H:%M:%SZ')
 
-    # Define the UTC and Eastern Time zones
-    utc_zone = pytz.utc
-    eastern_zone = pytz.timezone('US/Eastern')
+#     # Define the UTC and Eastern Time zones
+#     utc_zone = pytz.utc
+#     eastern_zone = pytz.timezone('US/Eastern')
 
-    # Localize the datetime to UTC
-    utc_datetime = utc_zone.localize(utc_datetime)
+#     # Localize the datetime to UTC
+#     utc_datetime = utc_zone.localize(utc_datetime)
 
-    # Convert to Eastern Time
-    eastern_datetime = utc_datetime.astimezone(eastern_zone)
+#     # Convert to Eastern Time
+#     eastern_datetime = utc_datetime.astimezone(eastern_zone)
 
-    # Format the datetime in a readable format
-    readable_format = eastern_datetime.strftime('%Y-%m-%d %I:%M %p %Z')
+#     # Format the datetime in a readable format
+#     readable_format = eastern_datetime.strftime('%Y-%m-%d %I:%M %p %Z')
 
-    # print(readable_format)
-    # print(x)
-    # print(x)
-    # scoring_plays = statsapi.game_scoring_plays(x.get("game_id"))
-    # new_scoring_plays = ""
-    # Get scoring plays as a string
-    scoring_plays = statsapi.game_scoring_plays(x.get("game_id"))
+#     # print(readable_format)
+#     # print(x)
+#     # print(x)
+#     # scoring_plays = statsapi.game_scoring_plays(x.get("game_id"))
+#     # new_scoring_plays = ""
+#     # Get scoring plays as a string
+#     scoring_plays = statsapi.game_scoring_plays(x.get("game_id"))
 
-    # Convert the scoring plays string into a list of lines
-    scoring_plays_list = scoring_plays.split("\n")
+#     # Convert the scoring plays string into a list of lines
+#     scoring_plays_list = scoring_plays.split("\n")
 
-    # Filter the lines to only include those that contain "homers"
-    filtered_plays = [line for line in scoring_plays_list if "homers" in line]
+#     # Filter the lines to only include those that contain "homers"
+#     filtered_plays = [line for line in scoring_plays_list if "homers" in line]
 
-    # Process each kept line to only include the part before the first ")"
-    processed_plays = [line.split(")")[0] + ")" for line in filtered_plays if ")" in line]
+#     # Process each kept line to only include the part before the first ")"
+#     processed_plays = [line.split(")")[0] + ")" for line in filtered_plays if ")" in line]
 
-    # Join the processed lines back into a string if needed
-    # new_scoring_plays = "\n".join(processed_plays)
+#     # Join the processed lines back into a string if needed
+#     # new_scoring_plays = "\n".join(processed_plays)
 
-    x.update({"time_scheduled": readable_format})
-    # x.update({"scoring_plays": new_scoring_plays})
+#     x.update({"time_scheduled": readable_format})
+#     # x.update({"scoring_plays": new_scoring_plays})
 
-    # get specific Highlights and process for only links
-    highlights = statsapi.game_highlights(x.get("game_id"))
-    highlights_list = highlights.split("\n")
-    # Initialize a variable to store the link
-    condensed_game_link = None
-    processed_condensed_game_link = None
-    # Iterate through the highlights list
-    for i, line in enumerate(highlights_list):
-        if 'Condensed' in line:
-            # Check if the link is two lines ahead
-            if i + 2 < len(highlights_list):  # Ensure the index is within bounds
-                condensed_game_link = highlights_list[i + 2]
-                # print(condensed_game_link)
-                # Regular expression to find URLs
-                url_pattern = r'(https?://[^\s]+)'
-                # Replace URLs with clickable HTML links
-                processed_condensed_game_link = re.sub(url_pattern, r'<a href="\1" target="_blank">Condensed Game</a>', condensed_game_link)
-                # print(processed_condensed_game_link)
-                break  # Exit the loop once the link is found
-
-
-    # Initialize a variable to store the link
-    video_highlights_game_link = None
-    processed_video_highlights_game_link = None
-    # Iterate through the highlights list
-    for i, line in enumerate(highlights_list):
-        if 'Highlights' in line:
-            # Check if the link is two lines ahead
-            if i + 2 < len(highlights_list):  # Ensure the index is within bounds
-                video_highlights_game_link = highlights_list[i + 2]
-                # print('high')
-                # Regular expression to find URLs
-                url_pattern = r'(https?://[^\s]+)'
-                # Replace URLs with clickable HTML links
-                processed_video_highlights_game_link = re.sub(url_pattern, r'<a href="\1" target="_blank">Highlights Video</a>', video_highlights_game_link)
-                # print(processed_video_highlights_game_link)
-                break  # Exit the loop once the link is found
-
-    # if processed_video_highlights_game_link == None:
-    #     processed_video_highlights_game_link = ''
-    # if processed_condensed_game_link == None:
-    #     processed_condensed_game_link = ''
-
-    homers.append(processed_plays)
-    # yesterdays_content.append(
-    #     f"GAME:\n"
-    #     f"{x.get('time_scheduled')}\n"
-    #     # f"Status: {x.get('')}\n"
-    #     f"{x.get('away_name'):<22} {x.get('away_score')}    @\n"
-    #     f"{x.get('home_name'):<22} {x.get('home_score')}\n\n"
-    #     f"{processed_condensed_game_link}\n"
-    #     f"{processed_video_highlights_game_link}\n\n"
-    # )
-    yesterdays_content.append(
-        f"GAME:\n"
-        f"{x.get('time_scheduled')}\n"
-        # f"Status: {x.get('')}\n"
-        f"{x.get('away_name'):<22} {x.get('away_score')}    @\n"
-        f"{x.get('home_name'):<22} {x.get('home_score')}\n\n"
-        f"{processed_condensed_game_link + '\n' if processed_condensed_game_link else ''}"
-        f"{processed_video_highlights_game_link + '\n\n' if processed_video_highlights_game_link else ''}"
-    )
+#     # get specific Highlights and process for only links
+#     highlights = statsapi.game_highlights(x.get("game_id"))
+#     highlights_list = highlights.split("\n")
+#     # Initialize a variable to store the link
+#     condensed_game_link = None
+#     processed_condensed_game_link = None
+#     # Iterate through the highlights list
+#     for i, line in enumerate(highlights_list):
+#         if 'Condensed' in line:
+#             # Check if the link is two lines ahead
+#             if i + 2 < len(highlights_list):  # Ensure the index is within bounds
+#                 condensed_game_link = highlights_list[i + 2]
+#                 # print(condensed_game_link)
+#                 # Regular expression to find URLs
+#                 url_pattern = r'(https?://[^\s]+)'
+#                 # Replace URLs with clickable HTML links
+#                 processed_condensed_game_link = re.sub(url_pattern, r'<a href="\1" target="_blank">Condensed Game</a>', condensed_game_link)
+#                 # print(processed_condensed_game_link)
+#                 break  # Exit the loop once the link is found
 
 
+#     # Initialize a variable to store the link
+#     video_highlights_game_link = None
+#     processed_video_highlights_game_link = None
+#     # Iterate through the highlights list
+#     for i, line in enumerate(highlights_list):
+#         if 'Highlights' in line:
+#             # Check if the link is two lines ahead
+#             if i + 2 < len(highlights_list):  # Ensure the index is within bounds
+#                 video_highlights_game_link = highlights_list[i + 2]
+#                 # print('high')
+#                 # Regular expression to find URLs
+#                 url_pattern = r'(https?://[^\s]+)'
+#                 # Replace URLs with clickable HTML links
+#                 processed_video_highlights_game_link = re.sub(url_pattern, r'<a href="\1" target="_blank">Highlights Video</a>', video_highlights_game_link)
+#                 # print(processed_video_highlights_game_link)
+#                 break  # Exit the loop once the link is found
+
+#     # if processed_video_highlights_game_link == None:
+#     #     processed_video_highlights_game_link = ''
+#     # if processed_condensed_game_link == None:
+#     #     processed_condensed_game_link = ''
+
+#     homers.append(processed_plays)
+#     # yesterdays_content.append(
+#     #     f"GAME:\n"
+#     #     f"{x.get('time_scheduled')}\n"
+#     #     # f"Status: {x.get('')}\n"
+#     #     f"{x.get('away_name'):<22} {x.get('away_score')}    @\n"
+#     #     f"{x.get('home_name'):<22} {x.get('home_score')}\n\n"
+#     #     f"{processed_condensed_game_link}\n"
+#     #     f"{processed_video_highlights_game_link}\n\n"
+#     # )
+#     yesterdays_content.append(
+#         f"GAME:\n"
+#         f"{x.get('time_scheduled')}\n"
+#         # f"Status: {x.get('')}\n"
+#         f"{x.get('away_name'):<22} {x.get('away_score')}    @\n"
+#         f"{x.get('home_name'):<22} {x.get('home_score')}\n\n"
+#         f"{processed_condensed_game_link + '\n' if processed_condensed_game_link else ''}"
+#         f"{processed_video_highlights_game_link + '\n\n' if processed_video_highlights_game_link else ''}"
+#     )
 
 
-new_homers = []
-for x in homers:
-    for y in x:
-        new_homers.append('\n')
-        new_homers.append(y)
-
-# go through homers and get all the text before the first "(" character
-new_homers = [homer.split("homers")[0].strip() for homer in new_homers if "(" in homer]
 
 
-# search homers for team name and hr stats
-stat_homers = []
-for z in new_homers:
-    print(z)
-    # beans = ''
-    name = z
+# new_homers = []
+# for x in homers:
+#     for y in x:
+#         new_homers.append('\n')
+#         new_homers.append(y)
 
-    try:
-        beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players', {'season': '2025', 'gameType': 'W'})['people'] if x['fullName'] == name),'hitting','season')
-    except StopIteration:
-        print(f"No player found with the name '{name}'.")
-        beans = None  # Set beans to None or handle it appropriately
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        beans = None  # Set beans to None or handle it appropriately
-    # beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':'2025','gameType':'W'})['people'] if x['fullName']==name), 'hitting', 'season') 
-    # beans_id = player = statsapi.lookup_player(name)
-    # print(beans_id[0].get('id'))
+# # go through homers and get all the text before the first "(" character
+# new_homers = [homer.split("homers")[0].strip() for homer in new_homers if "(" in homer]
+
+
+# # search homers for team name and hr stats
+# stat_homers = []
+# for z in new_homers:
+#     print(z)
+#     # beans = ''
+#     name = z
+
+#     try:
+#         beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players', {'season': '2025', 'gameType': 'W'})['people'] if x['fullName'] == name),'hitting','season')
+#     except StopIteration:
+#         print(f"No player found with the name '{name}'.")
+#         beans = None  # Set beans to None or handle it appropriately
+#     except Exception as e:
+#         print(f"An error occurred: {e}")
+#         beans = None  # Set beans to None or handle it appropriately
+#     # beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':'2025','gameType':'W'})['people'] if x['fullName']==name), 'hitting', 'season') 
+#     # beans_id = player = statsapi.lookup_player(name)
+#     # print(beans_id[0].get('id'))
     
-    try:
-        beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2024,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
-    except StopIteration:
-        print(f"No player found with the name '{z}'.")
-        beans2 = None  # Set beans to None or handle it appropriately
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        beans2 = None  # Set beans to None or handle it appropriately
+#     try:
+#         beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2024,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
+#     except StopIteration:
+#         print(f"No player found with the name '{z}'.")
+#         beans2 = None  # Set beans to None or handle it appropriately
+#     except Exception as e:
+#         print(f"An error occurred: {e}")
+#         beans2 = None  # Set beans to None or handle it appropriately
 
 
-    new_list_with_stats = []
-    if beans:  # Only proceed if a matching player is found
-        name = z
-        new_list_with_stats.append(name)
-        team_name = beans.get('current_team')    
-        new_list_with_stats.append(team_name)
-        for a in beans.get('stats'):
-            games_played = float(int(a.get('stats').get('gamesPlayed')))
-            # hits = float(int(a.get('stats').get('hits')))
-            # new_list_with_stats.append(f"{hits}")
-            hrs = float(int(a.get('stats').get('homeRuns')))
-            new_list_with_stats.append(f"{int(hrs)}")
-            # rbi = float(int(a.get('stats').get('rbi')))
-            # new_list_with_stats.append(f"{rbi}")
-            hrs_per_game = round((hrs / games_played), 2)
-            new_list_with_stats.append(f"{hrs_per_game}")
-            hrs_per_game2 = str(Fraction(round((hrs / games_played), 2)).limit_denominator(7))
-            #str(Fraction(round(float(x[18])/float(x[6]),2)).limit_denominator(5))
-            new_list_with_stats.append(f"{hrs_per_game2}")
-            # hits_per_game = round((hits / games_played), 3)
-            # new_list_with_stats.append(f"{hits_per_game}")
-            # rbis_per_game = round((rbi / games_played), 3)
-            # new_list_with_stats.append(f"{rbis_per_game}")
-    else:
-        # If no stats are found, append empty strings or placeholders
-        new_list_with_stats.extend(["", "", "", "", ""])
+#     new_list_with_stats = []
+#     if beans:  # Only proceed if a matching player is found
+#         name = z
+#         new_list_with_stats.append(name)
+#         team_name = beans.get('current_team')    
+#         new_list_with_stats.append(team_name)
+#         for a in beans.get('stats'):
+#             games_played = float(int(a.get('stats').get('gamesPlayed')))
+#             # hits = float(int(a.get('stats').get('hits')))
+#             # new_list_with_stats.append(f"{hits}")
+#             hrs = float(int(a.get('stats').get('homeRuns')))
+#             new_list_with_stats.append(f"{int(hrs)}")
+#             # rbi = float(int(a.get('stats').get('rbi')))
+#             # new_list_with_stats.append(f"{rbi}")
+#             hrs_per_game = round((hrs / games_played), 2)
+#             new_list_with_stats.append(f"{hrs_per_game}")
+#             hrs_per_game2 = str(Fraction(round((hrs / games_played), 2)).limit_denominator(7))
+#             #str(Fraction(round(float(x[18])/float(x[6]),2)).limit_denominator(5))
+#             new_list_with_stats.append(f"{hrs_per_game2}")
+#             # hits_per_game = round((hits / games_played), 3)
+#             # new_list_with_stats.append(f"{hits_per_game}")
+#             # rbis_per_game = round((rbi / games_played), 3)
+#             # new_list_with_stats.append(f"{rbis_per_game}")
+#     else:
+#         # If no stats are found, append empty strings or placeholders
+#         new_list_with_stats.extend(["", "", "", "", ""])
 
 
-    if beans2:
-        beans2_id = beans2.get('id')
-        beans3 = statsapi.player_stat_data(beans2_id, group="hitting", type="season", sportId=1, season=2024)
+#     if beans2:
+#         beans2_id = beans2.get('id')
+#         beans3 = statsapi.player_stat_data(beans2_id, group="hitting", type="season", sportId=1, season=2024)
     
-        for b in beans3.get('stats'):
-            hrs2 = float(int(b.get('stats').get('homeRuns')))
-            games_played2 = float(int(b.get('stats').get('gamesPlayed')))
-            hrs_per_game4 = round((hrs2 / games_played2), 2)
-            hrs_per_game3 = str(Fraction(round((hrs2 / games_played2), 2)).limit_denominator(7))
+#         for b in beans3.get('stats'):
+#             hrs2 = float(int(b.get('stats').get('homeRuns')))
+#             games_played2 = float(int(b.get('stats').get('gamesPlayed')))
+#             hrs_per_game4 = round((hrs2 / games_played2), 2)
+#             hrs_per_game3 = str(Fraction(round((hrs2 / games_played2), 2)).limit_denominator(7))
             
-            # print(hrs2)
-            new_list_with_stats.append(f"{int(hrs2)}")  
-            new_list_with_stats.append(f"{hrs_per_game4}")  
-            new_list_with_stats.append(f"{hrs_per_game3}")  
-    else:
-        # If no stats are found, append empty strings or placeholders
-        new_list_with_stats.extend(["", "", ""])
+#             # print(hrs2)
+#             new_list_with_stats.append(f"{int(hrs2)}")  
+#             new_list_with_stats.append(f"{hrs_per_game4}")  
+#             new_list_with_stats.append(f"{hrs_per_game3}")  
+#     else:
+#         # If no stats are found, append empty strings or placeholders
+#         new_list_with_stats.extend(["", "", ""])
     
-    stat_homers.append(new_list_with_stats)
+#     stat_homers.append(new_list_with_stats)
 
 
 
-# Filter out empty entries
-stat_homers = [x for x in stat_homers if x]  # Keeps only non-empty entries
+# # Filter out empty entries
+# stat_homers = [x for x in stat_homers if x]  # Keeps only non-empty entries
 
-# Iterate through the filtered list
-# Filter out entries where x[0] is an empty string
-stat_homers = [x for x in stat_homers if x[0] != '']
+# # Iterate through the filtered list
+# # Filter out entries where x[0] is an empty string
+# stat_homers = [x for x in stat_homers if x[0] != '']
 
-# Print the filtered list
-for x in stat_homers:
-    print(x)
+# # Print the filtered list
+# for x in stat_homers:
+#     print(x)
 
-# Filter out empty entries
-stat_homers = [x for x in stat_homers if x]  # Keeps only non-empty entries
+# # Filter out empty entries
+# stat_homers = [x for x in stat_homers if x]  # Keeps only non-empty entries
 
-# Print the list of homers
-for x in stat_homers:
-    print(x)
-
-
-
-# # save homers to text_output/homers_list.csv headers being 'name'
-# homers_file_path = "text_output/homers_list.csv"
-# with open(homers_file_path, "w") as file:
-#     file.write("name,team,hrs,hrpg,fhrpg\n")
-#     for homer in stat_homers:
-#         file.write(f"{homer[0]},{homer[1]},{homer[2]},{homer[3]},{homer[4]},{homer[5]},{homer[6]},{homer[7]},\n")
-
-# Write content to the new Todays_Report.txt file
-with open(report_file_path, "w") as file:
-    for tcontent in toronto_content:
-        file.write(tcontent)
-    for content in yesterdays_content:
-        file.write(content)
-    file.write("<h3>Yesterdays Homers</h3>")
-    file.write("<table border='1'>\n")
-    file.write("<tr>\n")
-    file.write("<th>Batter</th>\n")
-    file.write("<th>Team</th>\n")
-    file.write("<th>HR</th>\n")
-    file.write("<th>HRpg</th>\n")
-    file.write("<th>fHRpg</th>\n")
-    file.write("<th>HR24</th>\n")
-    file.write("<th>HR24pg</th>\n")
-    file.write("<th>fHR24pg</th>\n")
-    file.write("</tr>\n")
-    for contents in stat_homers:
-        # file.write(f"{contents}\n")
-        # Start the table
-        file.write("<tr>\n")
-        file.write(f"<td>{contents[0]}</td>\n")
-        file.write(f"<td>{contents[1]}</td>\n")
-        file.write(f"<td>{contents[2]}</td>\n")
-        file.write(f"<td>{contents[3]}</td>\n")
-        file.write(f"<td>{contents[4]}</td>\n")
-        file.write(f"<td>{contents[5]}</td>\n")
-        file.write(f"<td>{contents[6]}</td>\n")
-        file.write(f"<td>{contents[7]}</td>\n")
-        file.write("</tr>\n")
-    file.write("</table>\n")
-    file.write("<br>\n")
+# # Print the list of homers
+# for x in stat_homers:
+#     print(x)
 
 
 
-print(f"New report saved to {report_file_path}")
-if os.path.exists(backup_file_path):
-    print(f"Existing report renamed to {backup_file_path}")
+# # # save homers to text_output/homers_list.csv headers being 'name'
+# # homers_file_path = "text_output/homers_list.csv"
+# # with open(homers_file_path, "w") as file:
+# #     file.write("name,team,hrs,hrpg,fhrpg\n")
+# #     for homer in stat_homers:
+# #         file.write(f"{homer[0]},{homer[1]},{homer[2]},{homer[3]},{homer[4]},{homer[5]},{homer[6]},{homer[7]},\n")
+
+# # Write content to the new Todays_Report.txt file
+# with open(report_file_path, "w") as file:
+#     for tcontent in toronto_content:
+#         file.write(tcontent)
+#     for content in yesterdays_content:
+#         file.write(content)
+#     file.write("<h3>Yesterdays Homers</h3>")
+#     file.write("<table border='1'>\n")
+#     file.write("<tr>\n")
+#     file.write("<th>Batter</th>\n")
+#     file.write("<th>Team</th>\n")
+#     file.write("<th>HR</th>\n")
+#     file.write("<th>HRpg</th>\n")
+#     file.write("<th>fHRpg</th>\n")
+#     file.write("<th>HR24</th>\n")
+#     file.write("<th>HR24pg</th>\n")
+#     file.write("<th>fHR24pg</th>\n")
+#     file.write("</tr>\n")
+#     for contents in stat_homers:
+#         # file.write(f"{contents}\n")
+#         # Start the table
+#         file.write("<tr>\n")
+#         file.write(f"<td>{contents[0]}</td>\n")
+#         file.write(f"<td>{contents[1]}</td>\n")
+#         file.write(f"<td>{contents[2]}</td>\n")
+#         file.write(f"<td>{contents[3]}</td>\n")
+#         file.write(f"<td>{contents[4]}</td>\n")
+#         file.write(f"<td>{contents[5]}</td>\n")
+#         file.write(f"<td>{contents[6]}</td>\n")
+#         file.write(f"<td>{contents[7]}</td>\n")
+#         file.write("</tr>\n")
+#     file.write("</table>\n")
+#     file.write("<br>\n")
+
+
+
+# print(f"New report saved to {report_file_path}")
+# if os.path.exists(backup_file_path):
+#     print(f"Existing report renamed to {backup_file_path}")
 
 
