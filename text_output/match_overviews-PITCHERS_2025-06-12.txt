@@ -1,0 +1,123 @@
+<h1>Pitchers Overview</h1>
+<table border='1'>
+<tr>
+<th>NAME</th>
+<th>TEAM</th>
+<th>ERA</th>
+<th>SO9</th>
+</tr>
+<tr>
+<td>Michael Soroka</td>
+<td>Washington Nationals</td>
+<td>3.85</td>
+<td>7.89</td>
+</tr>
+<tr>
+<td>Kodai Senga</td>
+<td>New York Mets</td>
+<td>2.57</td>
+<td>10.26</td>
+</tr>
+<tr>
+<td>Patrick Corbin</td>
+<td>Texas Rangers</td>
+<td>4.48</td>
+<td>8.17</td>
+</tr>
+<tr>
+<td>Bailey Ober</td>
+<td>Minnesota Twins</td>
+<td>3.85</td>
+<td>8.94</td>
+</tr>
+<tr>
+<td>Hayden Birdsong</td>
+<td>San Francisco Giants</td>
+<td>3.94</td>
+<td>10.47</td>
+</tr>
+<tr>
+<td>Antonio Senzatela</td>
+<td>Colorado Rockies</td>
+<td>5.05</td>
+<td>5.86</td>
+</tr>
+<tr>
+<td>Tarik Skubal</td>
+<td>Detroit Tigers</td>
+<td>3.22</td>
+<td>10.35</td>
+</tr>
+<tr>
+<td>Keegan Akin</td>
+<td>Baltimore Orioles</td>
+<td>4.55</td>
+<td>9.44</td>
+</tr>
+<tr>
+<td>Will Warren</td>
+<td>New York Yankees</td>
+<td>6.75</td>
+<td>11.70</td>
+</tr>
+<tr>
+<td>Seth Lugo</td>
+<td>Kansas City Royals</td>
+<td>3.38</td>
+<td>8.67</td>
+</tr>
+<tr>
+<td>Sonny Gray</td>
+<td>St. Louis Cardinals</td>
+<td>3.50</td>
+<td>8.96</td>
+</tr>
+<tr>
+<td>Jacob Misiorowski</td>
+<td>Milwaukee Brewers</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Andrew Heaney</td>
+<td>Pittsburgh Pirates</td>
+<td>4.37</td>
+<td>9.29</td>
+</tr>
+<tr>
+<td>Jameson Taillon</td>
+<td>Chicago Cubs</td>
+<td>3.87</td>
+<td>7.85</td>
+</tr>
+<tr>
+<td>Davis Martin</td>
+<td>Chicago White Sox</td>
+<td>4.21</td>
+<td>6.85</td>
+</tr>
+<tr>
+<td>Framber Valdez</td>
+<td>Houston Astros</td>
+<td>3.28</td>
+<td>8.78</td>
+</tr>
+</table>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
