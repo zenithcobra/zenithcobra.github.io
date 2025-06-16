@@ -1481,7 +1481,7 @@ def process_batters(batters, teams_histories):
         hr_record = ''
         hits_record = ''
         rbi_record = ''
-        for game in last_games_list[:20]:
+        for game in last_games_list:
             boxscore = statsapi.boxscore_data(game, timecode=None)
             for x in boxscore.get('awayBatters'):
                 if player_id == x.get('personId'):
@@ -1498,8 +1498,31 @@ def process_batters(batters, teams_histories):
     return filtered_batters
 
 def get_streaks_for_bvp(batter_vs_pitcher_stats, batters_with_streaks):
-    updated_list = []
-    return updated_list
+    for x in batter_vs_pitcher_stats:
+        batter_id = x.get('batter_id')
+        for y in batters_with_streaks:
+            player_id = y.get('player_id')
+            if batter_id == player_id:
+                x.update({
+                    "team_id": y.get("team_id"),
+                    "all_games_played": y.get("games_played"),
+                    "all_H": y.get("H"),
+                    "all_HR": y.get("HR"),
+                    "all_RBI": y.get("RBI"),
+                    "all_HRpg": y.get("HRpg"),
+                    "all_fHRpg": y.get("fHRpg"),
+                    "all_Hpg": y.get("Hpg"),
+                    "all_fHpg": y.get("fHpg"),
+                    "all_RBIpg": y.get("RBIpg"),
+                    "all_fRBIpg": y.get("fRBIpg"),
+                    "all_HR24": y.get("HR24"),
+                    "all_HR24pg": y.get("HR24pg"),
+                    "all_fHR24pg": y.get("fHR24pg"),
+                    "all_HR_record": y.get("HR_record"),
+                    "all_H_record": y.get("H_record"),
+                    "all_RBI_record": y.get("RBI_record")
+                })
+    return batter_vs_pitcher_stats
 
 date = get_date()
 schedule = get_schedule_by_date(date)
@@ -1509,35 +1532,38 @@ processed_schedule = process_the_schedule(schedule)
 # save_list_to_text(yesterdays_report,'yesterdays_report')
 # y_homers = get_yesterdays_homers()
 # # print(y_homers)
-# save_to_json(y_homers,'yesterdays_homers')
-# teams_today = get_teams_playing_today_from_processed_schedule(processed_schedule)
-# save_to_json(teams_today, 'teams_playing_today')
+# save_to_json(y_homers,'ace_yesterdays_homers')
+teams_today = get_teams_playing_today_from_processed_schedule(processed_schedule)
+# save_to_json(teams_today, 'ace_teams_playing_today')
 # pitchers_today = process_pitchers_from_processed_schedule(processed_schedule)
 # print(pitchers_today)
 # save_to_json(pitchers_today,'pitchers')
-# batter_vs_pitcher_stats = process_batter_vs_pitcher_stats(processed_schedule)
-# save_to_json(batter_vs_pitcher_stats,'batter_vs_pitcher')
+batter_vs_pitcher_stats = process_batter_vs_pitcher_stats(processed_schedule)
+save_to_json(batter_vs_pitcher_stats,'ace_batter_vs_pitcher')
 # streaks_data = get_streaks_data() # TODO fix this
 # save_to_json(streaks_data, 'hitting_streaks')
 # print(streaks_data)
 # schedule_text = get_schedule_text()
-# save_to_text(schedule_text, 'schedule_text')
+# save_to_text(schedule_text, 'ace_schedule_text')
 rooster = process_players_from_roster_into_list(processed_schedule)
 # print(rooster)
 batters = add_stats_to_batters(rooster)
 # print(processed_batters)
 # save_to_json(processed_batters, "batters")
 # processed_pitchers = add_stats_to_pitchers(pitchers_today)
+# save_to_json(processed_pitchers,"ace_pitchers_with_stats")
 # print(processed_pitchers)
 # standings = get_standings()
-# save_to_text(standings, "standings")
-teams_today = get_teams_playing_today_from_processed_schedule(processed_schedule)
+# save_to_text(standings, "ace_standings")
+# teams_today = get_teams_playing_today_from_processed_schedule(processed_schedule)
 team_history = get_team_history(teams_today)
 # save_to_json(team_history, "team_histories")
 # team_wins = get_team_records(team_history)
-# save_to_json(team_wins,"team_wins")
+# save_to_json(team_wins,"ace_team_wins")
 batters_with_streaks = process_batters(batters,team_history)
-save_to_json(batters_with_streaks,"batters_with_streaks")
+# save_to_json(batters_with_streaks,"ace_batters_with_streaks")
+bvp_with_streaks = get_streaks_for_bvp(batter_vs_pitcher_stats,batters_with_streaks)
+save_to_json(bvp_with_streaks,"ace_bvp_with_streaks")
 
 # TODO
 # - go through bvp and add stats for the year to each player
