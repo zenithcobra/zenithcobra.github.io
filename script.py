@@ -1,57 +1,16 @@
 from bs4 import BeautifulSoup
-from bs4 import BeautifulSoup
-from bs4 import BeautifulSoup
-from bs4 import BeautifulSoup
-from datetime import datetime
 from datetime import datetime, timedelta
-from datetime import datetime, timedelta
-from datetime import datetime, timedelta
-from datetime import datetime, timedelta
-from datetime import datetime, timedelta
-from datetime import datetime, timedelta
-from datetime import datetime, timedelta
-from datetime import datetime, timedelta
-from datetime import datetime, timedelta
-from fractions import Fraction
-from fractions import Fraction
-from fractions import Fraction
 from fractions import Fraction
 import csv
 import json
-import json
-import json
-import json
-import json
-import json
-import mlbstatsapi
 import mlbstatsapi
 import os
-import os
-import os
-import os
-import os
-import os
-import os
-import os
-import os
-import pytz
 import pytz
 import re
 import requests
 import statsapi
-import statsapi
-import statsapi
-import statsapi
-import statsapi
-import statsapi
-import statsapi
-import statsapi
 
 
-# [markdown]
-# # Get Methods
-
-#
 def get_date():
     """
     Gets the current date in the format required by 'statsapi'.
@@ -60,7 +19,6 @@ def get_date():
     """
     return datetime.now().strftime("%m/%d/%Y")
 
-#
 def get_yesterday(date_str):
     """
     Gets the date previous to the one supplied.
@@ -76,7 +34,6 @@ def get_yesterday(date_str):
     # Return the formatted date
     return yesterday.strftime("%m/%d/%Y")
 
-#
 def get_roster_names(team_id):
     """
     This method gets a list of just names of the players in the roster.
@@ -115,7 +72,6 @@ def get_roster_names(team_id):
     # return roster_list2
     return roster_list
 
-#
 def get_homerun_leaders_by_team(team_id, season=2025, leaderGameTypes="R", limit=10):
     """
     Returns a list of home run leaders for a given team ID.
@@ -135,7 +91,6 @@ def get_homerun_leaders_by_team(team_id, season=2025, leaderGameTypes="R", limit
     
     return homerun_leaders_by_team
 
-#
 def get_schedule_by_date(date):
     """
     Gets the statsapi schedule based on the date provided and returns the schedule.
@@ -174,7 +129,6 @@ def get_schedule_by_date(date):
     schedule = statsapi.schedule(start_date=date, end_date=date)
     return schedule
 
-#
 def get_id_for_player(player_name):
     """
     Returns a player's ID based on their name.
@@ -196,7 +150,6 @@ def get_id_for_player(player_name):
     # Safely access the first element
     return player_id[0]
 
-#
 def get_player_name(player_id):
     """
     Returns the full name of a player based on their ID.
@@ -216,7 +169,6 @@ def get_player_name(player_id):
     
     return player_name
 
-#
 def get_streaks_data():
     """
     TODO do this yourself
@@ -224,7 +176,6 @@ def get_streaks_data():
     
     return None
 
-#
 def get_team_from_id(team_id):
     """
     Returns the team name based on the team ID.
@@ -254,7 +205,6 @@ def get_team_from_id(team_id):
     print(f"Warning: No team found for ID {team_id} marked as 'present'.")
     return None
 
-#
 def get_bvp_stats(batter_id, pitcher_id):
     """
     Retrieves batter vs pitcher (BvP) stats for the given batter and pitcher IDs.
@@ -299,7 +249,6 @@ def get_bvp_stats(batter_id, pitcher_id):
 
     return BvP[0]
 
-#
 def get_schedule_text():
     # GET TODAYS SCHEDULE
 
@@ -354,8 +303,6 @@ def get_schedule_text():
     )
     return full_content
 
-
-#
 def get_yesterdays_report():
     
     # Ensure the "text_output" folder exists
@@ -566,7 +513,6 @@ def get_yesterdays_report():
 
     return content
 
-#
 def get_yesterdays_homers():
     
     # Ensure the "text_output" folder exists
@@ -802,9 +748,6 @@ def get_yesterdays_homers():
 
     return stat_homers
 
-
-
-#
 def get_standings():
     # GET TODAYS STANDINGS
     
@@ -829,9 +772,6 @@ def get_standings():
 
     return full_content
 
-
-
-#
 def get_team_records(teams_history):
     list_of_lists = []
     for a in teams_history:
@@ -850,10 +790,6 @@ def get_team_records(teams_history):
 
     return teams_history
 
-# [markdown]
-# # Process Methods
-
-#
 def process_pitchers_from_processed_schedule(processed_schedule):
     """
     Extracts probable pitchers from the processed schedule and returns a list of dictionaries.
@@ -897,8 +833,6 @@ def process_pitchers_from_processed_schedule(processed_schedule):
 
     return pitchers_today
 
-#
-# process the schedule
 def process_the_schedule(schedule):
     """
     Processes the given schedule and returns a list of dictionaries 
@@ -953,7 +887,6 @@ def process_the_schedule(schedule):
 
     return game_schedule_list_of_data
 
-#
 def get_teams_playing_today_from_processed_schedule(processed_schedule):
     """
     Produces a list of dictionaries containing team names and ids for teams playing today
@@ -971,8 +904,6 @@ def get_teams_playing_today_from_processed_schedule(processed_schedule):
     
     return teams_playing_today
 
-#
-# batter vs pitcher data list
 def process_batter_vs_pitcher_stats(processed_schedule):
     """
     Produces a list of dictionaries containing batter vs pitcher stats.
@@ -1168,11 +1099,6 @@ def process_batter_vs_pitcher_stats(processed_schedule):
 
     return returned_list
 
-
-#
-
-
-#
 def process_players_from_roster_into_list(processed_schedule):
     list_of_players = []
     
@@ -1203,55 +1129,6 @@ def process_players_from_roster_into_list(processed_schedule):
 
     return list_of_players
 
-#
-# def get_player_stats_2025(type_of_stat, player_id):
-#     """
-#     Fetches player stats for the given player ID.
-
-#     Args:
-#         player_id (int): The ID of the player.
-
-#     Returns:
-#         dict: A dictionary containing player stats, or None if an error occurs.
-#     """
-#     try:
-#         stats = statsapi.player_stat_data(player_id, group=type_of_stat, type="season", sportId=1, season=2025)
-#     except StopIteration:
-#         print(f"Error: Could not find player ID {player_id}.")
-#         stats = None
-#     except Exception as e:
-#         print(f"An error occurred while fetching player stats: {e}")
-#         stats = None
-
-#     print(stats_dict)
-#     stats_dict = stats.get("stats")[0].get('stats')
-    
-#     return stats_dict
-
-# def get_player_stats_2024(type_of_stat, player_id):
-#     """
-#     Fetches player stats for the given player ID.
-
-#     Args:
-#         player_id (int): The ID of the player.
-
-#     Returns:
-#         dict: A dictionary containing player stats, or None if an error occurs.
-#     """
-#     try:
-#         stats = statsapi.player_stat_data(player_id, group=type_of_stat, type="season", sportId=1, season=2024)
-#     except StopIteration:
-#         print(f"Error: Could not find player ID {player_id}.")
-#         stats = None
-#     except Exception as e:
-#         print(f"An error occurred while fetching player stats: {e}")
-#         stats = None
-
-#     stats_dict = stats.get("stats")[0].get('stats')
-    
-#     return stats_dict
-
-#
 def get_team_history(teams_playing_today):
     
     date = get_date()
@@ -1286,7 +1163,6 @@ def get_team_history(teams_playing_today):
     # for x in new_team_list:
     #     print(x)
 
-#
 def get_player_stats_2025(type_of_stat, player_id):
     """
     Fetches player stats for the given player ID and type of stat.
@@ -1317,7 +1193,6 @@ def get_player_stats_2025(type_of_stat, player_id):
         return None
 
     return stats_dict
-
 
 def get_player_stats_2024(type_of_stat, player_id):
     """
@@ -1350,10 +1225,6 @@ def get_player_stats_2024(type_of_stat, player_id):
 
     return stats_dict
 
-# [markdown]
-# # ADD METHODS
-
-#
 def add_stats_to_batters(list_of_players):
     """
     pass this method the roster list maybe
@@ -1425,7 +1296,6 @@ def add_stats_to_batters(list_of_players):
 
     return list_of_players
 
-#
 def add_stats_to_pitchers(list_of_players):
     for x in list_of_players:
         # get name
@@ -1453,7 +1323,6 @@ def add_stats_to_pitchers(list_of_players):
         
     return list_of_players
 
-#
 def process_batters(batters, teams_histories):
     """
     Processes a list of batters by filtering out those without stats and updating their 
@@ -1506,11 +1375,6 @@ def process_batters(batters, teams_histories):
 
     return filtered_batters
 
-
-# [markdown]
-# # Save and Open Methods
-
-#
 def save_to_json(list_of_dicts, supplied_filename):
     """
     Saves today's matches to a JSON file in the 'data' folder. If the file already exists, 
@@ -1550,7 +1414,6 @@ def save_to_json(list_of_dicts, supplied_filename):
 
     print(f"Today's data saved to {file_path}")
 
-#
 def save_list_to_text(list_of_lines, supplied_filename):
     """
     Saves today's matches to a text file in the 'data' folder. If the file already exists, 
@@ -1593,7 +1456,6 @@ def save_list_to_text(list_of_lines, supplied_filename):
 
     print(f"Today's data saved to {file_path}")
 
-#
 def save_to_text(content, supplied_filename):
     """
     Saves today's matches to a text file in the 'data' folder. If the file already exists, 
@@ -1635,17 +1497,6 @@ def save_to_text(content, supplied_filename):
 
     print(f"Today's data saved to {file_path}")
 
-#
-# TODO
-"""
-- go through bvp and add stats for the year to each player
-- add the team history stuff to a method
-- gadd stats to batters should also get the last game stats from team histories
-- get league leader data for pitchers and batters 
-
-"""
-
-
 
 date = get_date()
 schedule = get_schedule_by_date(date)
@@ -1684,6 +1535,12 @@ team_history = get_team_history(teams_today)
 # save_to_json(team_wins,"team_wins")
 batters_with_streaks = process_batters(batters,team_history)
 save_to_json(batters_with_streaks,"batters_with_streaks")
+
+# TODO
+# - go through bvp and add stats for the year to each player
+# - add the team history stuff to a method
+# - gadd stats to batters should also get the last game stats from team histories
+# - get league leader data for pitchers and batters 
 # okay so next steps should be process all the batters in batters file or pass it to a new method and get the hitting hrs and rbi streaks add them to that file
 # then the process bvp again could search through those names because that is where it is coming from the the roster but keep the batter vs pitcher file seperate
 # then when you add DH to batters you can grab the stats from the batters file
