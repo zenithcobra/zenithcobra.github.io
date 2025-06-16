@@ -1524,6 +1524,11 @@ def get_streaks_for_bvp(batter_vs_pitcher_stats, batters_with_streaks):
                 })
     return batter_vs_pitcher_stats
 
+def old_batter_vs_pitchers_get():
+    
+
+
+
 date = get_date()
 schedule = get_schedule_by_date(date)
 processed_schedule = process_the_schedule(schedule)
