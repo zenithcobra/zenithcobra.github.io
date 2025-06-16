@@ -1562,7 +1562,7 @@ def old_batter_vs_pitchers_get():
 
             away_team_leaders_hr = []
             # add top away team guys here
-            away_leaders = statsapi.team_leader_data(x.get('away_id'), 'homeRuns', season=2025, leaderGameTypes="R", limit=10)
+            away_leaders = statsapi.team_leader_data(x.get('away_id'), 'homeRuns', season=2025, leaderGameTypes="R", limit=20)
             for z in away_leaders:
                 away_team_leaders_hr.append({'name': z[1],'homeRuns': z[2]})
 
@@ -1570,7 +1570,7 @@ def old_batter_vs_pitchers_get():
 
             home_team_leaders_hr = []
             # add top away team guys here
-            home_leaders = statsapi.team_leader_data(x.get('home_id'), 'homeRuns', season=2025, leaderGameTypes="R", limit=10)
+            home_leaders = statsapi.team_leader_data(x.get('home_id'), 'homeRuns', season=2025, leaderGameTypes="R", limit=20)
             for z in home_leaders:
                 home_team_leaders_hr.append({'name': z[1],'homeRuns': z[2]})
 
@@ -1623,9 +1623,12 @@ def old_batter_vs_pitchers_get():
                         
                         bvp_matchup = f"pitcher: {p_id.__dict__.get('fullname')} vs batter: {b_id.__dict__.get('fullname')}"
                         dict2 = {'bvp_stats': split.stat.__dict__}
-                        dict2.update({'bvp_matchup': bvp_matchup})
+                        # dict2.update({'bvp_matchup': bvp_matchup})
                         dict2.update({'pitcher': p_id.__dict__.get('fullname')})
                         dict2.update({'batter': b_id.__dict__.get('fullname')})
+                        dict2.update({'batter_id': batter_id})
+                        dict2.update({'batter_team': x.get('home_name')})
+                        dict2.update({'batter_team_id': x.get('home_id')})
                         BvP.append(dict2)
 
                 except KeyError as e:
@@ -1666,9 +1669,12 @@ def old_batter_vs_pitchers_get():
                         
                         bvp_matchup = f"pitcher: {p_id.__dict__.get('fullname')} vs batter: {b_id.__dict__.get('fullname')}"
                         dict2 = {'bvp_stats': split.stat.__dict__}
-                        dict2.update({'bvp_matchup': bvp_matchup})
+                        # dict2.update({'bvp_matchup': bvp_matchup})
                         dict2.update({'pitcher': p_id.__dict__.get('fullname')})
                         dict2.update({'batter': b_id.__dict__.get('fullname')})
+                        dict2.update({'batter_id': batter_id})
+                        dict2.update({'batter_team': x.get('away_name')})
+                        dict2.update({'batter_team_id': x.get('away_id')})
                         BvP.append(dict2)
 
                 except KeyError as e:
@@ -1679,7 +1685,22 @@ def old_batter_vs_pitchers_get():
             # Add the BvP stats to the matches_today dictionary
             x.update({'BvP_stats': BvP})
 
-        return matches_today
+        super_beans = []
+        for x in matches_today:
+            bvp = x.get('BvP_stats')
+            # print(type(bvp))
+            if bvp is not None:
+                for y in bvp:
+                    super_beans.append(y)
+                
+            # super_beans.append(bvp)
+
+        # beans_beans = []
+        # for x in super_beans:
+        #     for y in x:
+        #         beans_beans.append(y)
+        # return beans_beans
+        return super_beans
 
     return get_matches_today_data()
 
