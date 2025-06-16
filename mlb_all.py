@@ -214,9 +214,9 @@ file_name = "hitting-streak.csv"
 file_path = f"text_output/{file_name}"
 backup_file_path = f"text_output/hitting-streak_{yesterday}.csv"
 
-# Check if the file already exists and rename it
-if os.path.exists(file_path):
-    os.rename(file_path, backup_file_path)
+# # Check if the file already exists and rename it
+# if os.path.exists(file_path):
+#     os.rename(file_path, backup_file_path)
 
 # URL of the webpage
 url = "https://www.baseballmusings.com/cgi-bin/CurStreak.py"
