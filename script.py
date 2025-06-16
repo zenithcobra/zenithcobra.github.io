@@ -1525,50 +1525,213 @@ def get_streaks_for_bvp(batter_vs_pitcher_stats, batters_with_streaks):
     return batter_vs_pitcher_stats
 
 def old_batter_vs_pitchers_get():
+    import statsapi
+    import mlbstatsapi
+    from datetime import datetime
+
+
+
+
+    # GET ALL THE MATCHES TODAY LOTS OF API
+    def get_matches_today_data():
+        
+
+        # Get today's schedule
+        matches_today = []
+
+        # get the proper formatted date
+        mlb_date = datetime.now().strftime("%m/%d/%Y")
+
+        # get the schedule as a dictionary for today
+        schedule = statsapi.schedule(start_date=mlb_date, end_date=mlb_date)
+
+        # iterate through each game of the schedule
+        for x in schedule:
+
+            # initialize game data dictionary
+            game_data = {}
+            
+            # away_name
+            game_data.update({'away_name': x.get('away_name')}) 
+            
+            # home_name
+            game_data.update({'home_name': x.get('home_name')})
+            
+            # away_id
+            game_data.update({'away_id': x.get('away_id')})
+
+            away_team_leaders_hr = []
+            # add top away team guys here
+            away_leaders = statsapi.team_leader_data(x.get('away_id'), 'homeRuns', season=2025, leaderGameTypes="R", limit=10)
+            for z in away_leaders:
+                away_team_leaders_hr.append({'name': z[1],'homeRuns': z[2]})
+
+            game_data.update({'away_team_leaders_hr': away_team_leaders_hr})
+
+            home_team_leaders_hr = []
+            # add top away team guys here
+            home_leaders = statsapi.team_leader_data(x.get('home_id'), 'homeRuns', season=2025, leaderGameTypes="R", limit=10)
+            for z in home_leaders:
+                home_team_leaders_hr.append({'name': z[1],'homeRuns': z[2]})
+
+            game_data.update({'home_team_leaders_hr': home_team_leaders_hr})
+
+            # home_id
+            game_data.update({'home_id': x.get('home_id')})
+            # home_probable_pitcher
+            game_data.update({'home_probable_pitcher': x.get('home_probable_pitcher')})
+            # away_probable_pitcher
+            game_data.update({'away_probable_pitcher': x.get('away_probable_pitcher')})
+
+            matches_today.append(game_data)
+
+
+        mlb = mlbstatsapi.Mlb()
+
+        for x in matches_today:
     
+            away_probable_pitcher = x.get('away_probable_pitcher')
+            
+            # Check if away_probable_pitcher is valid
+            if not away_probable_pitcher:
+                print(f"Warning: Missing away_probable_pitcher for game: {x}")
+                continue  # Skip this game if no pitcher is available
+
+            pitcher_ids = mlb.get_people_id(away_probable_pitcher)
+            
+            # Check if pitcher_ids is not empty
+            if not pitcher_ids:
+                print(f"Warning: No pitcher ID found for {away_probable_pitcher}")
+                continue  # Skip this game if no pitcher ID is found
+
+            pitcher_id = pitcher_ids[0]  # Safely access the first element
+
+            BvP = []
+            for y in x.get('home_team_leaders_hr', []):  # Default to an empty list if key is missing
+                batter_id = mlb.get_people_id(y.get('name'))[0]
+
+                stats = ['vsPlayer']
+                group = ['hitting']
+                params = {'opposingPlayerId': pitcher_id, 'season': 2025}
+
+                try:
+                    stats = mlb.get_player_stats(batter_id, stats=stats, groups=group, **params)
+                    vs_player_total = stats['hitting']['vsplayertotal']
+                    for split in vs_player_total.splits:
+                        p_id = mlb.get_person(pitcher_id)
+                        b_id = mlb.get_person(batter_id)
+                        
+                        bvp_matchup = f"pitcher: {p_id.__dict__.get('fullname')} vs batter: {b_id.__dict__.get('fullname')}"
+                        dict2 = {'bvp_stats': split.stat.__dict__}
+                        dict2.update({'bvp_matchup': bvp_matchup})
+                        dict2.update({'pitcher': p_id.__dict__.get('fullname')})
+                        dict2.update({'batter': b_id.__dict__.get('fullname')})
+                        BvP.append(dict2)
+
+                except KeyError as e:
+                    print(f"KeyError: {e}. Skipping this player. Stats: {stats}")
+                except Exception as e:
+                    print(f"Unexpected error: {e}. Skipping this player.")
+            
+            
+            home_probable_pitcher = x.get('home_probable_pitcher')
+            
+            # Check if home_probable_pitcher is valid
+            if not home_probable_pitcher:
+                print(f"Warning: Missing home_probable_pitcher for game: {x}")
+                continue  # Skip this game if no pitcher is available
+
+            pitcher_ids = mlb.get_people_id(home_probable_pitcher)
+            
+            # Check if pitcher_ids is not empty
+            if not pitcher_ids:
+                print(f"Warning: No pitcher ID found for {home_probable_pitcher}")
+                continue  # Skip this game if no pitcher ID is found
+
+            pitcher_id = pitcher_ids[0]  # Safely access the first element
+
+            for y in x.get('away_team_leaders_hr', []):  # Default to an empty list if key is missing
+                batter_id = mlb.get_people_id(y.get('name'))[0]
+
+                stats = ['vsPlayer']
+                group = ['hitting']
+                params = {'opposingPlayerId': pitcher_id, 'season': 2025}
+
+                try:
+                    stats = mlb.get_player_stats(batter_id, stats=stats, groups=group, **params)
+                    vs_player_total = stats['hitting']['vsplayertotal']
+                    for split in vs_player_total.splits:
+                        p_id = mlb.get_person(pitcher_id)
+                        b_id = mlb.get_person(batter_id)
+                        
+                        bvp_matchup = f"pitcher: {p_id.__dict__.get('fullname')} vs batter: {b_id.__dict__.get('fullname')}"
+                        dict2 = {'bvp_stats': split.stat.__dict__}
+                        dict2.update({'bvp_matchup': bvp_matchup})
+                        dict2.update({'pitcher': p_id.__dict__.get('fullname')})
+                        dict2.update({'batter': b_id.__dict__.get('fullname')})
+                        BvP.append(dict2)
+
+                except KeyError as e:
+                    print(f"KeyError: {e}. Skipping this player. Stats: {stats}")
+                except Exception as e:
+                    print(f"Unexpected error: {e}. Skipping this player.")
+            
+            # Add the BvP stats to the matches_today dictionary
+            x.update({'BvP_stats': BvP})
+
+        return matches_today
+
+    return get_matches_today_data()
 
 
 
-date = get_date()
-schedule = get_schedule_by_date(date)
-processed_schedule = process_the_schedule(schedule)
-# yesterdays_report = get_yesterdays_report()
-# print(yesterdays_report)
-# save_list_to_text(yesterdays_report,'yesterdays_report')
-# y_homers = get_yesterdays_homers()
-# # print(y_homers)
-# save_to_json(y_homers,'ace_yesterdays_homers')
-teams_today = get_teams_playing_today_from_processed_schedule(processed_schedule)
-# save_to_json(teams_today, 'ace_teams_playing_today')
-# pitchers_today = process_pitchers_from_processed_schedule(processed_schedule)
-# print(pitchers_today)
-# save_to_json(pitchers_today,'pitchers')
-batter_vs_pitcher_stats = process_batter_vs_pitcher_stats(processed_schedule)
-save_to_json(batter_vs_pitcher_stats,'ace_batter_vs_pitcher')
-# streaks_data = get_streaks_data() # TODO fix this
-# save_to_json(streaks_data, 'hitting_streaks')
-# print(streaks_data)
-# schedule_text = get_schedule_text()
-# save_to_text(schedule_text, 'ace_schedule_text')
-rooster = process_players_from_roster_into_list(processed_schedule)
-# print(rooster)
-batters = add_stats_to_batters(rooster)
-# print(processed_batters)
-# save_to_json(processed_batters, "batters")
-# processed_pitchers = add_stats_to_pitchers(pitchers_today)
-# save_to_json(processed_pitchers,"ace_pitchers_with_stats")
-# print(processed_pitchers)
-# standings = get_standings()
-# save_to_text(standings, "ace_standings")
+# Call your function
+todays_matches = old_batter_vs_pitchers_get()
+save_to_json(todays_matches, 'beans_deluxe')
+
+
+
+
+# date = get_date()
+# schedule = get_schedule_by_date(date)
+# processed_schedule = process_the_schedule(schedule)
+# # yesterdays_report = get_yesterdays_report()
+# # print(yesterdays_report)
+# # save_list_to_text(yesterdays_report,'yesterdays_report')
+# # y_homers = get_yesterdays_homers()
+# # # print(y_homers)
+# # save_to_json(y_homers,'ace_yesterdays_homers')
 # teams_today = get_teams_playing_today_from_processed_schedule(processed_schedule)
-team_history = get_team_history(teams_today)
-# save_to_json(team_history, "team_histories")
-# team_wins = get_team_records(team_history)
-# save_to_json(team_wins,"ace_team_wins")
-batters_with_streaks = process_batters(batters,team_history)
-# save_to_json(batters_with_streaks,"ace_batters_with_streaks")
-bvp_with_streaks = get_streaks_for_bvp(batter_vs_pitcher_stats,batters_with_streaks)
-save_to_json(bvp_with_streaks,"ace_bvp_with_streaks")
+# # save_to_json(teams_today, 'ace_teams_playing_today')
+# # pitchers_today = process_pitchers_from_processed_schedule(processed_schedule)
+# # print(pitchers_today)
+# # save_to_json(pitchers_today,'pitchers')
+# batter_vs_pitcher_stats = process_batter_vs_pitcher_stats(processed_schedule)
+# save_to_json(batter_vs_pitcher_stats,'ace_batter_vs_pitcher')
+# # streaks_data = get_streaks_data() # TODO fix this
+# # save_to_json(streaks_data, 'hitting_streaks')
+# # print(streaks_data)
+# # schedule_text = get_schedule_text()
+# # save_to_text(schedule_text, 'ace_schedule_text')
+# rooster = process_players_from_roster_into_list(processed_schedule)
+# # print(rooster)
+# batters = add_stats_to_batters(rooster)
+# # print(processed_batters)
+# # save_to_json(processed_batters, "batters")
+# # processed_pitchers = add_stats_to_pitchers(pitchers_today)
+# # save_to_json(processed_pitchers,"ace_pitchers_with_stats")
+# # print(processed_pitchers)
+# # standings = get_standings()
+# # save_to_text(standings, "ace_standings")
+# # teams_today = get_teams_playing_today_from_processed_schedule(processed_schedule)
+# team_history = get_team_history(teams_today)
+# # save_to_json(team_history, "team_histories")
+# # team_wins = get_team_records(team_history)
+# # save_to_json(team_wins,"ace_team_wins")
+# batters_with_streaks = process_batters(batters,team_history)
+# # save_to_json(batters_with_streaks,"ace_batters_with_streaks")
+# bvp_with_streaks = get_streaks_for_bvp(batter_vs_pitcher_stats,batters_with_streaks)
+# save_to_json(bvp_with_streaks,"ace_bvp_with_streaks")
 
 # TODO
 # - go through bvp and add stats for the year to each player
