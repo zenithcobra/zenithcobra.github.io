@@ -870,7 +870,7 @@ def get_yesterdays_homers():
 
     return stat_homers
 
-def get_standings():
+def get_standings_text():
     # GET TODAYS STANDINGS
     
     # Get today's date for api call
@@ -1760,54 +1760,74 @@ def league_leaders_hrs():
     #         print(f"{key} -> {value}")
     return hrs_list
 
+# Get Dates
+date = get_date()
 
-# date = get_date()
-# schedule = get_schedule_by_date(date)
-# processed_schedule = process_the_schedule(schedule)
-# # yesterdays_report = get_yesterdays_report()
-# # print(yesterdays_report)
-# # save_list_to_text(yesterdays_report,'yesterdays_report')
-# # y_homers = get_yesterdays_homers()
-# # # print(y_homers)
-# # save_to_json(y_homers,'ace_yesterdays_homers')
-# teams_today = get_teams_playing_today_from_processed_schedule(processed_schedule)
-# # save_to_json(teams_today, 'ace_teams_playing_today')
-# # pitchers_today = process_pitchers_from_processed_schedule(processed_schedule)
-# # print(pitchers_today)
-# # save_to_json(pitchers_today,'pitchers')
-# batter_vs_pitcher_stats = process_batter_vs_pitcher_stats(processed_schedule)
-# save_to_json(batter_vs_pitcher_stats,'ace_batter_vs_pitcher')
+# Get Schedule and process
+schedule = get_schedule_by_date(date)
+processed_schedule = process_the_schedule(schedule)
+
+# Get Yesterdays Report
+yesterdays_report = get_yesterdays_report()
+
+# Get Homers Yesterday
+y_homers = get_yesterdays_homers()
+
+# Get Teams today
+teams_today = get_teams_playing_today_from_processed_schedule(processed_schedule)
+
+# Get Pitchers today
+pitchers_today = process_pitchers_from_processed_schedule(processed_schedule)
+processed_pitchers = add_stats_to_pitchers(pitchers_today)
+
+# Get Batter vs Pitcher stats
+batter_vs_pitcher_stats = process_batter_vs_pitcher_stats(processed_schedule)
+
+# Get Streak Data
 # # streaks_data = get_streaks_data() # TODO fix this
-# # save_to_json(streaks_data, 'hitting_streaks')
-# # print(streaks_data)
-# # schedule_text = get_schedule_text()
-# # save_to_text(schedule_text, 'ace_schedule_text')
-# rooster = process_players_from_roster_into_list(processed_schedule)
-# # print(rooster)
-# batters = add_stats_to_batters(rooster)
-# # print(processed_batters)
-# # save_to_json(processed_batters, "batters")
-# # processed_pitchers = add_stats_to_pitchers(pitchers_today)
-# # save_to_json(processed_pitchers,"ace_pitchers_with_stats")
-# # print(processed_pitchers)
-# # standings = get_standings()
-# # save_to_text(standings, "ace_standings")
-# # teams_today = get_teams_playing_today_from_processed_schedule(processed_schedule)
-# team_history = get_team_history(teams_today)
-# # save_to_json(team_history, "team_histories")
-# # team_wins = get_team_records(team_history)
-# # save_to_json(team_wins,"ace_team_wins")
-# batters_with_streaks = process_batters(batters,team_history)
-# # save_to_json(batters_with_streaks,"ace_batters_with_streaks")
-# bvp_with_streaks = get_streaks_for_bvp(batter_vs_pitcher_stats,batters_with_streaks)
-# save_to_json(bvp_with_streaks,"ace_bvp_with_streaks")
-# Call your function
-# todays_matches = old_batter_vs_pitchers_get()
-# save_to_json(todays_matches, 'beans_deluxe')
-# eras_leaders = league_leaders_era()
-# so9_leaders = league_leaders_strikeouts_per_9_innings()
-# hr_leaders = league_leaders_hrs()
 
+# Get Upcoming Schedule as Text
+schedule_text = get_schedule_text()
+standings_text = get_standings_text()
+
+# Get the Roster then prosses the batters out from roster
+rooster = process_players_from_roster_into_list(processed_schedule)
+batters = add_stats_to_batters(rooster)
+
+# Get Team History
+team_history = get_team_history(teams_today)
+team_wins = get_team_records(team_history)
+
+# Add streaks to batters
+batters_with_streaks = process_batters(batters,team_history)
+
+# Add streaks to bvp
+bvp_with_streaks = get_streaks_for_bvp(batter_vs_pitcher_stats,batters_with_streaks)
+
+# get Bvp
+batter_vs_pitcher = old_batter_vs_pitchers_get()
+
+# Get League Leaders
+eras_leaders = league_leaders_era()
+so9_leaders = league_leaders_strikeouts_per_9_innings()
+hr_leaders = league_leaders_hrs()
+
+# Save File
+save_list_to_text(yesterdays_report,'yesterdays_report')
+save_to_json(y_homers,'ace_yesterdays_homers')
+save_to_json(teams_today, 'ace_teams_playing_today')
+save_to_json(pitchers_today,'pitchers')
+save_to_json(batter_vs_pitcher_stats,'ace_batter_vs_pitcher')
+save_to_json(batter_vs_pitcher, 'ace_bvp')
+# save_to_json(streaks_data, 'hitting_streaks')
+save_to_text(schedule_text, 'ace_schedule_text')
+save_to_json(processed_batters, "batters")
+save_to_json(processed_pitchers,"ace_pitchers_with_stats")
+save_to_text(standings_text, "ace_standings")
+save_to_json(team_history, "team_histories")
+save_to_json(team_wins,"ace_team_wins")
+save_to_json(batters_with_streaks,"ace_batters_with_streaks")
+save_to_json(bvp_with_streaks,"ace_bvp_with_streaks")
 
 # TODO
 # then when you add DH to batters you can grab the stats from the batters file
