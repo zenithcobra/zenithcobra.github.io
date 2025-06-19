@@ -1761,15 +1761,6 @@ def league_leaders_hrs():
     return hrs_list
 
 
-
-
-# yellow = 
-league_leaders_era()
-league_leaders_strikeouts_per_9_innings()
-league_leaders_hrs()
-
-# print(yellow)
-
 # date = get_date()
 # schedule = get_schedule_by_date(date)
 # processed_schedule = process_the_schedule(schedule)
@@ -1813,12 +1804,11 @@ league_leaders_hrs()
 # Call your function
 # todays_matches = old_batter_vs_pitchers_get()
 # save_to_json(todays_matches, 'beans_deluxe')
+# eras_leaders = league_leaders_era()
+# so9_leaders = league_leaders_strikeouts_per_9_innings()
+# hr_leaders = league_leaders_hrs()
+
 
 # TODO
-# - get league leader data for pitchers and batters 
-# okay so next steps should be process all the batters in batters file or pass it to a new method and get the hitting hrs and rbi streaks add them to that file
-# then the process bvp again could search through those names because that is where it is coming from the the roster but keep the batter vs pitcher file seperate
 # then when you add DH to batters you can grab the stats from the batters file
-
-# get team records
-# add streaks to bvp
+# make index
