@@ -1704,14 +1704,71 @@ def old_batter_vs_pitchers_get():
 
     return get_matches_today_data()
 
+def league_leaders_era():
+    eras = statsapi.league_leader_data('earnedRunAverage',statGroup='pitching',limit=25,statType='season') 
+
+    # Convert to a list of dictionaries with "place" baked into each dictionary
+    eras_list = [
+        {
+            "place": entry[0],
+            "player_name": entry[1],
+            "team": entry[2],
+            "ERA": entry[3]
+        }
+        for entry in eras
+    ]
+    
+    # Print the resulting list of dictionaries
+    # for x in eras_list:
+    #     for key,value in x.items():
+    #         print(f"{key} -> {value}")
+    return eras_list
+
+def league_leaders_strikeouts_per_9_innings():
+    so9 =  statsapi.league_leader_data('strikeoutsPer9Inn',statGroup='pitching',limit=25,season=2025) 
+    # Convert to a list of dictionaries with "place" baked into each dictionary
+    so9_list = [
+        {
+            "place": entry[0],
+            "player_name": entry[1],
+            "team": entry[2],
+            "SO9": entry[3]
+        }
+        for entry in so9
+    ]
+    
+    # Print the resulting list of dictionaries
+    # for x in so9_list:
+    #     for key,value in x.items():
+    #         print(f"{key} -> {value}")
+    return so9_list
+
+def league_leaders_hrs():
+    hrs = statsapi.league_leader_data('homeRuns',statGroup='hitting',limit=25,sportId=1,statType='season') 
+    # Convert to dictionary
+    hrs_list = [
+        {
+            "place": entry[0],
+            "player_name": entry[1],
+            "team": entry[2],
+            "HR": entry[3]
+        }
+        for entry in hrs
+    ]
+    # for x in hrs_list:
+    #     for key,value in x.items():
+    #         print(f"{key} -> {value}")
+    return hrs_list
 
 
-# Call your function
-todays_matches = old_batter_vs_pitchers_get()
-save_to_json(todays_matches, 'beans_deluxe')
 
 
+# yellow = 
+league_leaders_era()
+league_leaders_strikeouts_per_9_innings()
+league_leaders_hrs()
 
+# print(yellow)
 
 # date = get_date()
 # schedule = get_schedule_by_date(date)
@@ -1753,12 +1810,15 @@ save_to_json(todays_matches, 'beans_deluxe')
 # # save_to_json(batters_with_streaks,"ace_batters_with_streaks")
 # bvp_with_streaks = get_streaks_for_bvp(batter_vs_pitcher_stats,batters_with_streaks)
 # save_to_json(bvp_with_streaks,"ace_bvp_with_streaks")
+# Call your function
+# todays_matches = old_batter_vs_pitchers_get()
+# save_to_json(todays_matches, 'beans_deluxe')
 
 # TODO
-# - go through bvp and add stats for the year to each player
-# - add the team history stuff to a method
-# - gadd stats to batters should also get the last game stats from team histories
 # - get league leader data for pitchers and batters 
 # okay so next steps should be process all the batters in batters file or pass it to a new method and get the hitting hrs and rbi streaks add them to that file
 # then the process bvp again could search through those names because that is where it is coming from the the roster but keep the batter vs pitcher file seperate
 # then when you add DH to batters you can grab the stats from the batters file
+
+# get team records
+# add streaks to bvp
