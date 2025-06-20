@@ -1760,6 +1760,124 @@ def league_leaders_hrs():
     #         print(f"{key} -> {value}")
     return hrs_list
 
+def find_dh_batters_add_stats_streaks(schedule, batters_with_streaks):
+    
+    games = []
+    for x in schedule:
+        json_string = statsapi.get("game", {"gamePk": x.get('game_id')})
+        games.append(json_string)
+
+    # Fetch the JSON string
+    # json_string = statsapi.get("game", {"gamePk": 777807})
+    # json_string = games[1]  # Assuming we want the first game in the schedule
+    list_of_names = []
+    for x in games:
+        beans = []
+        json_string = x
+        livedata = json_string.get('liveData').get('boxscore').get('teams')
+        # away
+        for player_id, player_data in livedata.get('away').get('players').items():
+            full_name = player_data.get('person', {}).get('fullName', 'Unknown')
+            abbreviation = player_data.get('position', {}).get('abbreviation', 'N/A')  # Default to 'N/A' if not found
+            if abbreviation == 'DH':
+                beans.append(full_name)
+        # home
+        for player_id, player_data in livedata.get('home').get('players').items():
+            full_name = player_data.get('person', {}).get('fullName', 'Unknown')
+            abbreviation = player_data.get('position', {}).get('abbreviation', 'N/A')  # Default to 'N/A' if not found
+            if abbreviation == 'DH':
+                beans.append(full_name)
+        list_of_names.append(beans)
+
+    # i think this take is out of a list of lists and just adds it to 1 list
+    all_names = []
+    for x in list_of_names:
+        for y in x:
+            all_names.append(y)
+
+    # remove duplicates from the list
+    all_names = list(set(all_names))
+
+    # Print the unique names
+    print("Unique DH Batter Names:")
+    for name in all_names:
+        print(name)
+    
+    # search DH's for team name and hr stats
+    stat_homers = []
+    for z in all_names:
+    
+        player_name = z
+        for xx in batters_with_streaks:
+            if z == xx.get('player_name'):
+                # add all the stats
+                player_dict = xx
+
+        if player_dict:
+            try:
+                beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
+            except StopIteration:
+                print(f"No player found with the name '{z}'.")
+                beans = None  # Set beans to None or handle it appropriately
+            except Exception as e:
+                print(f"An error occurred: {e}")
+                beans = None  # Set beans to None or handle it appropriately
+            try:
+                beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2024,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
+            except StopIteration:
+                print(f"No player found with the name beans2'{z}'.")
+                beans2 = None  # Set beans to None or handle it appropriately
+            except Exception as e:
+                print(f"An error occurred: {e}")
+                beans2 = None  # Set beans to None or handle it appropriately
+
+            new_list_with_stats = []
+            if beans:  # Only proceed if a matching player is found
+                name = z
+                new_list_with_stats.append(name)
+                team_name = beans.get('current_team')    
+                new_list_with_stats.append(team_name)
+                for a in beans.get('stats'):
+                    games_played = float(int(a.get('stats').get('gamesPlayed')))
+                    # hits = float(int(a.get('stats').get('hits')))
+                    # new_list_with_stats.append(f"{hits}")
+                    hrs = float(int(a.get('stats').get('homeRuns')))
+                    new_list_with_stats.append(f"{int(hrs)}")
+                    # rbi = float(int(a.get('stats').get('rbi')))
+                    # new_list_with_stats.append(f"{rbi}")
+                    hrs_per_game = round((hrs / games_played), 2)
+                    new_list_with_stats.append(f"{hrs_per_game}")
+                    hrs_per_game2 = str(Fraction(round((hrs / games_played), 2)).limit_denominator(7))
+                    #str(Fraction(round(float(x[18])/float(x[6]),2)).limit_denominator(5))
+                    new_list_with_stats.append(f"{hrs_per_game2}")
+                    # hits_per_game = round((hits / games_played), 3)
+                    # new_list_with_stats.append(f"{hits_per_game}")
+                    # rbis_per_game = round((rbi / games_played), 3)
+                    # new_list_with_stats.append(f"{rbis_per_game}")
+            if beans2:
+                beans2_id = beans2.get('id')
+                beans3 = statsapi.player_stat_data(beans2_id, group="hitting", type="season", sportId=1, season=2024)
+            
+                for b in beans3.get('stats'):
+                    hrs2 = float(int(b.get('stats').get('homeRuns')))
+                    # print(hrs2)
+                    games_played2 = float(int(b.get('stats').get('gamesPlayed')))
+                    hrs_per_game4 = round((hrs2 / games_played2), 2)
+                    hrs_per_game3 = str(Fraction(round((hrs2 / games_played2), 2)).limit_denominator(7))
+                
+                    new_list_with_stats.append(f"{int(hrs2)}")          
+                    new_list_with_stats.append(f"{hrs_per_game4}")  
+                    new_list_with_stats.append(f"{hrs_per_game3}")    
+            else:
+                new_list_with_stats.append(0)
+                new_list_with_stats.append(0)
+                new_list_with_stats.append(0)
+            
+            
+            stat_homers.append(new_list_with_stats)
+
+    return stat_homers
+
 # Get Dates
 date = get_date()
 
