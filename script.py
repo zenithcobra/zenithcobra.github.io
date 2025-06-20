@@ -1806,75 +1806,69 @@ def find_dh_batters_add_stats_streaks(schedule, batters_with_streaks):
     # search DH's for team name and hr stats
     stat_homers = []
     for z in all_names:
-    
         player_name = z
+        player_dict = None
+        
+        # Check if the player is already in batters_with_streaks
         for xx in batters_with_streaks:
             if z == xx.get('player_name'):
-                # add all the stats
                 player_dict = xx
+                break  # Exit the loop once the player is found
 
-        if player_dict:
-            try:
-                beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
-            except StopIteration:
-                print(f"No player found with the name '{z}'.")
-                beans = None  # Set beans to None or handle it appropriately
-            except Exception as e:
-                print(f"An error occurred: {e}")
-                beans = None  # Set beans to None or handle it appropriately
-            try:
-                beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2024,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
-            except StopIteration:
-                print(f"No player found with the name beans2'{z}'.")
-                beans2 = None  # Set beans to None or handle it appropriately
-            except Exception as e:
-                print(f"An error occurred: {e}")
-                beans2 = None  # Set beans to None or handle it appropriately
+        if not player_dict:
+            # If player_dict is not found, initialize it as an empty dictionary
+            player_dict = {"player_name": z}
+        
+        try:
+            beans = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
+        except StopIteration:
+            print(f"No player found with the name '{z}'.")
+            beans = None  # Set beans to None or handle it appropriately
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            beans = None  # Set beans to None or handle it appropriately
+        
+        try:
+            beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2024,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
+        except StopIteration:
+            print(f"No player found with the name beans2'{z}'.")
+            beans2 = None  # Set beans to None or handle it appropriately
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            beans2 = None  # Set beans to None or handle it appropriately
 
-            new_list_with_stats = []
-            if beans:  # Only proceed if a matching player is found
-                name = z
-                new_list_with_stats.append(name)
-                team_name = beans.get('current_team')    
-                new_list_with_stats.append(team_name)
-                for a in beans.get('stats'):
-                    games_played = float(int(a.get('stats').get('gamesPlayed')))
-                    # hits = float(int(a.get('stats').get('hits')))
-                    # new_list_with_stats.append(f"{hits}")
-                    hrs = float(int(a.get('stats').get('homeRuns')))
-                    new_list_with_stats.append(f"{int(hrs)}")
-                    # rbi = float(int(a.get('stats').get('rbi')))
-                    # new_list_with_stats.append(f"{rbi}")
-                    hrs_per_game = round((hrs / games_played), 2)
-                    new_list_with_stats.append(f"{hrs_per_game}")
-                    hrs_per_game2 = str(Fraction(round((hrs / games_played), 2)).limit_denominator(7))
-                    #str(Fraction(round(float(x[18])/float(x[6]),2)).limit_denominator(5))
-                    new_list_with_stats.append(f"{hrs_per_game2}")
-                    # hits_per_game = round((hits / games_played), 3)
-                    # new_list_with_stats.append(f"{hits_per_game}")
-                    # rbis_per_game = round((rbi / games_played), 3)
-                    # new_list_with_stats.append(f"{rbis_per_game}")
-            if beans2:
-                beans2_id = beans2.get('id')
-                beans3 = statsapi.player_stat_data(beans2_id, group="hitting", type="season", sportId=1, season=2024)
-            
-                for b in beans3.get('stats'):
-                    hrs2 = float(int(b.get('stats').get('homeRuns')))
-                    # print(hrs2)
-                    games_played2 = float(int(b.get('stats').get('gamesPlayed')))
-                    hrs_per_game4 = round((hrs2 / games_played2), 2)
-                    hrs_per_game3 = str(Fraction(round((hrs2 / games_played2), 2)).limit_denominator(7))
-                
-                    new_list_with_stats.append(f"{int(hrs2)}")          
-                    new_list_with_stats.append(f"{hrs_per_game4}")  
-                    new_list_with_stats.append(f"{hrs_per_game3}")    
-            else:
-                new_list_with_stats.append(0)
-                new_list_with_stats.append(0)
-                new_list_with_stats.append(0)
-            
-            
-            stat_homers.append(new_list_with_stats)
+        # Populate the dictionary with stats
+        if beans:  # Only proceed if a matching player is found
+            player_dict.setdefault("team", beans.get('current_team', "Unknown"))
+            for a in beans.get('stats'):
+                games_played = float(a.get('stats').get('gamesPlayed', 0))
+                hrs = float(a.get('stats').get('homeRuns', 0))
+                player_dict.setdefault("games_played", games_played)
+                player_dict.setdefault("HR", hrs)
+                player_dict.setdefault("HRpg", round((hrs / games_played), 2) if games_played > 0 else 0)
+                player_dict.setdefault("fHRpg", str(Fraction(player_dict["HRpg"]).limit_denominator(7)))
+
+        if beans2:
+            beans2_id = beans2.get('id')
+            beans3 = statsapi.player_stat_data(beans2_id, group="hitting", type="season", sportId=1, season=2024)
+        
+            for b in beans3.get('stats'):
+                hrs2 = float(b.get('stats').get('homeRuns', 0))
+                games_played2 = float(b.get('stats').get('gamesPlayed', 0))
+                player_dict.setdefault("HR24", hrs2)
+                player_dict.setdefault("HR24pg", round((hrs2 / games_played2), 2) if games_played2 > 0 else 0)
+                player_dict.setdefault("fHR24pg", str(Fraction(player_dict["HR24pg"]).limit_denominator(7)))
+        else:
+            player_dict.setdefault("HR24", 0)
+            player_dict.setdefault("HR24pg", 0)
+            player_dict.setdefault("fHR24pg", "0")
+
+        player_dict.setdefault("HR_record", "-")
+        player_dict.setdefault("H_record", "-")
+        player_dict.setdefault("RBI_record", "-")
+
+        # Append the dictionary to the list
+        stat_homers.append(player_dict)
 
     return stat_homers
 
@@ -1899,39 +1893,52 @@ pitchers_today = process_pitchers_from_processed_schedule(processed_schedule)
 processed_pitchers = add_stats_to_pitchers(pitchers_today)
 
 # Get Batter vs Pitcher stats
-batter_vs_pitcher_stats = process_batter_vs_pitcher_stats(processed_schedule)
+# batter_vs_pitcher_stats = process_batter_vs_pitcher_stats(processed_schedule)
 
 # Get Streak Data
 # # streaks_data = get_streaks_data() # TODO fix this
 
 # Get Upcoming Schedule as Text
+print('standings')
 schedule_text = get_schedule_text()
 standings_text = get_standings_text()
 
 # Get the Roster then prosses the batters out from roster
+print('batters')
 rooster = process_players_from_roster_into_list(processed_schedule)
 batters = add_stats_to_batters(rooster)
 
 # Get Team History
+print('team_history')
 team_history = get_team_history(teams_today)
 team_wins = get_team_records(team_history)
 
 # Add streaks to batters
+print('streaks')
 batters_with_streaks = process_batters(batters,team_history)
 
 # Add streaks to bvp
-bvp_with_streaks = get_streaks_for_bvp(batter_vs_pitcher_stats,batters_with_streaks)
+print('bvp streaks')
 
 # get Bvp
+print('bvp + streaks')
 batter_vs_pitcher = old_batter_vs_pitchers_get()
+bvp_with_streaks = get_streaks_for_bvp(batter_vs_pitcher,batters_with_streaks)
 
 # Get League Leaders
+print('league leaders')
 eras_leaders = league_leaders_era()
 so9_leaders = league_leaders_strikeouts_per_9_innings()
 hr_leaders = league_leaders_hrs()
 
+# find dh batters
+print('dh batters')
+dh_batters = find_dh_batters_add_stats_streaks(schedule, batters_with_streaks)
+
 # Save File
+print('save files')
 save_list_to_text(yesterdays_report,'yesterdays_report')
+save_to_json(schedule,'ace_schedule')
 save_to_json(y_homers,'ace_yesterdays_homers')
 save_to_json(teams_today, 'ace_teams_playing_today')
 save_to_json(pitchers_today,'pitchers')
@@ -1939,14 +1946,17 @@ save_to_json(batter_vs_pitcher_stats,'ace_batter_vs_pitcher')
 save_to_json(batter_vs_pitcher, 'ace_bvp')
 # save_to_json(streaks_data, 'hitting_streaks')
 save_to_text(schedule_text, 'ace_schedule_text')
-save_to_json(processed_batters, "batters")
+save_to_json(batters_with_streaks, "ace_batters")
 save_to_json(processed_pitchers,"ace_pitchers_with_stats")
 save_to_text(standings_text, "ace_standings")
-save_to_json(team_history, "team_histories")
+save_to_json(team_history, "ace_team_histories")
 save_to_json(team_wins,"ace_team_wins")
 save_to_json(batters_with_streaks,"ace_batters_with_streaks")
 save_to_json(bvp_with_streaks,"ace_bvp_with_streaks")
+save_to_json(dh_batters, 'ace_dh_batters')
+save_to_json(eras_leaders, 'ace_eras')
+save_to_json(so9_leaders, 'ace_so9')
+save_to_json(hr_leaders, 'ace_hr')
 
 # TODO
-# then when you add DH to batters you can grab the stats from the batters file
 # make index
