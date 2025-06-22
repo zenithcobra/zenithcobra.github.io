@@ -67,6 +67,6 @@ def generate_html_from_json_files(directory, output_file):
     print(f"HTML file generated: {output_file}")
 
 # Example usage
-directory_path = "path/to/json/files"  # Replace with the path to your JSON files
+directory_path = "data/"  # Replace with the path to your JSON files
 output_html_file = "output.html"       # Replace with the desired output file name
 generate_html_from_json_files(directory_path, output_html_file)

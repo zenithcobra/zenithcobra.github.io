@@ -1445,6 +1445,7 @@ def add_stats_to_pitchers(list_of_players):
         
     return list_of_players
 
+# BATTERS FROM ROSTER
 def process_batters(batters, teams_histories):
     """
     Processes a list of batters by filtering out those without stats and updating their 
@@ -1875,55 +1876,55 @@ def find_dh_batters_add_stats_streaks(schedule, batters_with_streaks):
 # Get Dates
 date = get_date()
 
-# Get Schedule and process
-schedule = get_schedule_by_date(date)
-processed_schedule = process_the_schedule(schedule)
-
 # Get Yesterdays Report
 yesterdays_report = get_yesterdays_report()
 
 # Get Homers Yesterday
 y_homers = get_yesterdays_homers()
 
-# Get Teams today
-teams_today = get_teams_playing_today_from_processed_schedule(processed_schedule)
-
-# Get Pitchers today
-pitchers_today = process_pitchers_from_processed_schedule(processed_schedule)
-processed_pitchers = add_stats_to_pitchers(pitchers_today)
-
-# Get Batter vs Pitcher stats
-# batter_vs_pitcher_stats = process_batter_vs_pitcher_stats(processed_schedule)
-
-# Get Streak Data
-# # streaks_data = get_streaks_data() # TODO fix this
+# Get Schedule and process
+schedule = get_schedule_by_date(date)
+processed_schedule = process_the_schedule(schedule)
+schedule_text = get_schedule_text()
+save_to_json(schedule,'ace_schedule')
+save_to_text(schedule_text, 'ace_schedule_text')
 
 # Get Upcoming Schedule as Text
 print('standings')
-schedule_text = get_schedule_text()
 standings_text = get_standings_text()
 
-# Get the Roster then prosses the batters out from roster
-print('batters')
-rooster = process_players_from_roster_into_list(processed_schedule)
-batters = add_stats_to_batters(rooster)
+# TEAMS PLAYING TODAY
+# Get Teams today
+teams_today = get_teams_playing_today_from_processed_schedule(processed_schedule)
 
+# TEAM GAME HISTORY
 # Get Team History
 print('team_history')
 team_history = get_team_history(teams_today)
 team_wins = get_team_records(team_history)
 
+# PITCHERS
+# Get Pitchers today
+pitchers_today = process_pitchers_from_processed_schedule(processed_schedule)
+processed_pitchers = add_stats_to_pitchers(pitchers_today)
+
+# BATTERS
+# Get the Roster then prosses the batters out from roster
 # Add streaks to batters
+print('batters')
+rooster = process_players_from_roster_into_list(processed_schedule)
+batters = add_stats_to_batters(rooster)
 print('streaks')
 batters_with_streaks = process_batters(batters,team_history)
-
-# Add streaks to bvp
-print('bvp streaks')
-
 # get Bvp
 print('bvp + streaks')
 batter_vs_pitcher = old_batter_vs_pitchers_get()
 bvp_with_streaks = get_streaks_for_bvp(batter_vs_pitcher,batters_with_streaks)
+# find dh batters
+print('dh batters')
+dh_batters = find_dh_batters_add_stats_streaks(schedule, batters_with_streaks)
+# Get Streak Data
+# # streaks_data = get_streaks_data() # TODO fix this
 
 # Get League Leaders
 print('league leaders')
@@ -1931,25 +1932,19 @@ eras_leaders = league_leaders_era()
 so9_leaders = league_leaders_strikeouts_per_9_innings()
 hr_leaders = league_leaders_hrs()
 
-# find dh batters
-print('dh batters')
-dh_batters = find_dh_batters_add_stats_streaks(schedule, batters_with_streaks)
-
 # Save File
 print('save files')
 save_list_to_text(yesterdays_report,'yesterdays_report')
-save_to_json(schedule,'ace_schedule')
 save_to_json(y_homers,'ace_yesterdays_homers')
 save_to_json(teams_today, 'ace_teams_playing_today')
 save_to_json(pitchers_today,'pitchers')
 # save_to_json(batter_vs_pitcher_stats,'ace_batter_vs_pitcher')
 # save_to_json(batter_vs_pitcher, 'ace_bvp')
 # save_to_json(streaks_data, 'hitting_streaks')
-save_to_text(schedule_text, 'ace_schedule_text')
-save_to_json(batters_with_streaks, "ace_batters")
+# save_to_json(batters_with_streaks, "ace_batters")
 save_to_json(processed_pitchers,"ace_pitchers_with_stats")
 save_to_text(standings_text, "ace_standings")
-save_to_json(team_history, "ace_team_histories")
+# save_to_json(team_history, "ace_team_histories")
 save_to_json(team_wins,"ace_team_wins")
 save_to_json(batters_with_streaks,"ace_batters_with_streaks")
 save_to_json(bvp_with_streaks,"ace_bvp_with_streaks")
