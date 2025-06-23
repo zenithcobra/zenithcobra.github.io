@@ -9,7 +9,47 @@ import pytz
 import re
 import requests
 import statsapi
+import requests
+from bs4 import BeautifulSoup
+import json
 
+
+def read_json_file(file_path):
+    """
+    Reads a JSON file containing a list of dictionaries and returns the data.
+
+    Args:
+        file_path (str): The path to the JSON file to be read.
+
+    Returns:
+        list: A list of dictionaries if the file is successfully read and contains valid JSON data.
+        None: If the file does not exist, is not valid JSON, or does not contain a list of dictionaries.
+
+    Raises:
+        FileNotFoundError: If the specified file does not exist.
+        json.JSONDecodeError: If the file contains invalid JSON.
+        ValueError: If the JSON data is not a list of dictionaries.
+
+    Example:
+        >>> data = read_json_file("data.json")
+        >>> if data:
+        ...     for item in data:
+        ...         print(item)
+    """
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            data = json.load(file)
+            if isinstance(data, list) and all(isinstance(item, dict) for item in data):
+                return data
+            else:
+                raise ValueError("The JSON file does not contain a list of dictionaries.")
+    except FileNotFoundError:
+        print(f"Error: The file '{file_path}' was not found.")
+    except json.JSONDecodeError as e:
+        print(f"Error: Failed to decode JSON. {e}")
+    except ValueError as e:
+        print(f"Error: {e}")
+    return None
 
 def save_to_json(list_of_dicts, supplied_filename):
     """
@@ -635,7 +675,7 @@ def get_yesterdays_report():
 
     return content
 
-def get_yesterdays_homers():
+def get_yesterdays_homers(batters_with_streaks):
     
     # Ensure the "text_output" folder exists
     os.makedirs("text_output", exist_ok=True)
@@ -806,6 +846,8 @@ def get_yesterdays_homers():
             new_list_with_stats.update({'name':name})
             team_name = beans.get('current_team')    
             new_list_with_stats.update({'team': team_name})
+            player_id = beans.get('id')  
+            new_list_with_stats.update({'player_id': player_id})
             for a in beans.get('stats'):
                 games_played = float(int(a.get('stats').get('gamesPlayed')))
                 # hits = float(int(a.get('stats').get('hits')))
@@ -867,6 +909,14 @@ def get_yesterdays_homers():
     # Print the list of homers
     # for x in stat_homers:
     #     print(x)
+
+    for x in stat_homers:
+        player_id = x.get('player_id')
+        for y in batters_with_streaks:
+            batter_id = y.get('player_id')
+            if batter_id == player_id:
+                hr_streak = y.get("HR_record")
+                x.update({'HR_record':hr_streak})
 
     return stat_homers
 
@@ -1873,16 +1923,56 @@ def find_dh_batters_add_stats_streaks(schedule, batters_with_streaks):
 
     return stat_homers
 
-# Get Dates
+def scrape_ballparks_table_to_json(url, output_file):
+    """
+    Scrapes the table data from the specified URL and saves it to a JSON file.
+
+    Args:
+        url (str): The URL of the webpage containing the table.
+        output_file (str): The path to the JSON file where the data will be saved.
+
+    Returns:
+        None
+
+    Raises:
+        requests.RequestException: If there is an issue with the HTTP request.
+        Exception: If the table data cannot be found or processed.
+
+    Example:
+        >>> scrape_ballparks_table_to_json("https://www.onlyhomers.com/ballparks", "ballparks.json")
+    """
+    try:
+        # Fetch the webpage content
+        response = requests.get(url)
+        response.raise_for_status()  # Raise an exception for HTTP errors
+
+        # Parse the HTML content
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        # Find the table in the webpage
+        table = soup.find('table')
+        if not table:
+            raise Exception("No table found on the webpage.")
+
+        # Extract table headers
+        headers = [header.text.strip() for header in table.find_all('th')]
+
+        # Extract table rows
+        rows = []
+        for row in table.find_all('tr')[1:]:  # Skip the header row
+            cells = row.find_all('td')
+            row_data = {headers[i]: cells[i].text.strip() for i in range(len(cells))}
+            rows.append(row_data)
+        return rows
+
+# # Get Dates
 date = get_date()
 
-# Get Yesterdays Report
+# # Get Yesterdays Report
 yesterdays_report = get_yesterdays_report()
+save_list_to_text(yesterdays_report,'yesterdays_report')
 
-# Get Homers Yesterday
-y_homers = get_yesterdays_homers()
-
-# Get Schedule and process
+# # Get Schedule and process
 schedule = get_schedule_by_date(date)
 processed_schedule = process_the_schedule(schedule)
 schedule_text = get_schedule_text()
@@ -1899,59 +1989,63 @@ teams_today = get_teams_playing_today_from_processed_schedule(processed_schedule
 
 # TEAM GAME HISTORY
 # Get Team History
-print('team_history')
+# print('team_history')
 team_history = get_team_history(teams_today)
 team_wins = get_team_records(team_history)
+save_to_json(team_wins, 'ace_team_history')
+ballparks = scrape_ballparks_table_to_json()
+save_to_json(ballparks, 'ace_ballparks')
 
-# PITCHERS
-# Get Pitchers today
-pitchers_today = process_pitchers_from_processed_schedule(processed_schedule)
-processed_pitchers = add_stats_to_pitchers(pitchers_today)
+# # PITCHERS
+# # Get Pitchers today
+# pitchers_today = process_pitchers_from_processed_schedule(processed_schedule)
+# processed_pitchers = add_stats_to_pitchers(pitchers_today)
 
-# BATTERS
-# Get the Roster then prosses the batters out from roster
-# Add streaks to batters
-print('batters')
-rooster = process_players_from_roster_into_list(processed_schedule)
-batters = add_stats_to_batters(rooster)
-print('streaks')
-batters_with_streaks = process_batters(batters,team_history)
-# get Bvp
-print('bvp + streaks')
-batter_vs_pitcher = old_batter_vs_pitchers_get()
-bvp_with_streaks = get_streaks_for_bvp(batter_vs_pitcher,batters_with_streaks)
-# find dh batters
-print('dh batters')
-dh_batters = find_dh_batters_add_stats_streaks(schedule, batters_with_streaks)
-# Get Streak Data
-# # streaks_data = get_streaks_data() # TODO fix this
+# # BATTERS
+# # Get the Roster then prosses the batters out from roster
+# # Add streaks to batters
+# print('batters')
+# rooster = process_players_from_roster_into_list(processed_schedule)
+# batters = add_stats_to_batters(rooster)
+# print('streaks')
+# batters_with_streaks = process_batters(batters,team_history)
+# # get Bvp
+# print('bvp + streaks')
+# batter_vs_pitcher = old_batter_vs_pitchers_get()
+# bvp_with_streaks = get_streaks_for_bvp(batter_vs_pitcher,batters_with_streaks)
+# # find dh batters
+# print('dh batters')
+# dh_batters = find_dh_batters_add_stats_streaks(schedule, batters_with_streaks)
+# # Get Streak Data
+# # # streaks_data = get_streaks_data() # TODO fix this
+# # Get Homers Yesterday
+# y_homers = get_yesterdays_homers()
 
-# Get League Leaders
-print('league leaders')
-eras_leaders = league_leaders_era()
-so9_leaders = league_leaders_strikeouts_per_9_innings()
-hr_leaders = league_leaders_hrs()
+# # Get League Leaders
+# print('league leaders')
+# eras_leaders = league_leaders_era()
+# so9_leaders = league_leaders_strikeouts_per_9_innings()
+# hr_leaders = league_leaders_hrs()
 
-# Save File
-print('save files')
-save_list_to_text(yesterdays_report,'yesterdays_report')
-save_to_json(y_homers,'ace_yesterdays_homers')
-save_to_json(teams_today, 'ace_teams_playing_today')
-save_to_json(pitchers_today,'pitchers')
-# save_to_json(batter_vs_pitcher_stats,'ace_batter_vs_pitcher')
-# save_to_json(batter_vs_pitcher, 'ace_bvp')
-# save_to_json(streaks_data, 'hitting_streaks')
-# save_to_json(batters_with_streaks, "ace_batters")
-save_to_json(processed_pitchers,"ace_pitchers_with_stats")
-save_to_text(standings_text, "ace_standings")
-# save_to_json(team_history, "ace_team_histories")
-save_to_json(team_wins,"ace_team_wins")
-save_to_json(batters_with_streaks,"ace_batters_with_streaks")
-save_to_json(bvp_with_streaks,"ace_bvp_with_streaks")
-save_to_json(dh_batters, 'ace_dh_batters')
-save_to_json(eras_leaders, 'ace_eras')
-save_to_json(so9_leaders, 'ace_so9')
-save_to_json(hr_leaders, 'ace_hr')
+# # Save File
+# print('save files')
+# save_to_json(y_homers,'ace_yesterdays_homers')
+# save_to_json(teams_today, 'ace_teams_playing_today')
+# save_to_json(pitchers_today,'pitchers')
+# # save_to_json(batter_vs_pitcher_stats,'ace_batter_vs_pitcher')
+# # save_to_json(batter_vs_pitcher, 'ace_bvp')
+# # save_to_json(streaks_data, 'hitting_streaks')
+# # save_to_json(batters_with_streaks, "ace_batters")
+# save_to_json(processed_pitchers,"ace_pitchers_with_stats")
+# save_to_text(standings_text, "ace_standings")
+# # save_to_json(team_history, "ace_team_histories")
+# save_to_json(team_wins,"ace_team_wins")
+# save_to_json(batters_with_streaks,"ace_batters_with_streaks")
+# save_to_json(bvp_with_streaks,"ace_bvp_with_streaks")
+# save_to_json(dh_batters, 'ace_dh_batters')
+# save_to_json(eras_leaders, 'ace_eras')
+# save_to_json(so9_leaders, 'ace_so9')
+# save_to_json(hr_leaders, 'ace_hr')
 
 # TODO
 # make index
