@@ -2614,6 +2614,8 @@ def make_index():
         print(f"New file saved to {file_path}")
 
 
+# RUNNING THE SCRIPT 
+
 print('script getting date')
 # DATES
 date = get_date()
@@ -2677,9 +2679,6 @@ print('script getting league leaders')
 eras_leaders = league_leaders_era()
 so9_leaders = league_leaders_strikeouts_per_9_innings()
 hr_leaders = league_leaders_hrs()
-save_to_json(eras_leaders, 'ace_eras')
-save_to_json(so9_leaders, 'ace_so9')
-save_to_json(hr_leaders, 'ace_hr')
-
-# TODO
-# make index
+save_to_json(eras_leaders, 'ERA_leader_data')
+save_to_json(so9_leaders, 'SO9_leader_data')
+save_to_json(hr_leaders, 'HR_leader_data')
