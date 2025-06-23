@@ -910,7 +910,13 @@ def get_yesterdays_homers(batters_with_streaks):
     # for x in stat_homers:
     #     print(x)
 
-    for x in stat_homers:
+    # Filter out entries where all values are empty strings
+    filtered_stat_homers = [
+        x for x in stat_homers
+        if not all(value == "" for value in x.values())
+    ]
+
+    for x in filtered_stat_homers:
         player_id = x.get('player_id')
         for y in batters_with_streaks:
             batter_id = y.get('player_id')
@@ -918,7 +924,7 @@ def get_yesterdays_homers(batters_with_streaks):
                 hr_streak = y.get("HR_record")
                 x.update({'HR_record':hr_streak})
 
-    return stat_homers
+    return filtered_stat_homers
 
 def get_standings_text():
     # GET TODAYS STANDINGS
