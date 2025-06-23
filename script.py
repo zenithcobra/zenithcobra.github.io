@@ -2015,6 +2015,7 @@ teams_today = get_teams_playing_today_from_processed_schedule(processed_schedule
 team_history = get_team_history(teams_today)
 team_wins = get_team_records(team_history)
 ballparks = scrape_ballparks_table_to_json()
+save_to_json(teams_today, 'teams_playing_today_data')
 save_to_json(team_wins, 'team_data')
 save_to_json(ballparks, 'ballpark_data')
 
