@@ -285,39 +285,38 @@ Rank Team                   W   L   GB  (E#) WC Rank WC GB (E#)
 2025-06-24 09:40 PM EDT - Washington Nationals @ San Diego Padres (Scheduled)
 2025-06-24 09:45 PM EDT - Miami Marlins @ San Francisco Giants (Scheduled)</pre>
 <h2 id="teams">Filter Teams</h2>
-<pre><h2>Pitcher Data</h2>
-<table border="1">
+<pre><table border="1">
 <tr><th>filter</th><th>Team</th></tr>
-<tr><td><input type="checkbox"/></td><td>Texas Rangers</td></tr>
-<tr><td><input type="checkbox"/></td><td>Baltimore Orioles</td></tr>
-<tr><td><input type="checkbox"/></td><td>Athletics</td></tr>
-<tr><td><input type="checkbox"/></td><td>Detroit Tigers</td></tr>
-<tr><td><input type="checkbox"/></td><td>Toronto Blue Jays</td></tr>
-<tr><td><input type="checkbox"/></td><td>Cleveland Guardians</td></tr>
-<tr><td><input type="checkbox"/></td><td>Atlanta Braves</td></tr>
-<tr><td><input type="checkbox"/></td><td>New York Mets</td></tr>
-<tr><td><input type="checkbox"/></td><td>New York Yankees</td></tr>
-<tr><td><input type="checkbox"/></td><td>Cincinnati Reds</td></tr>
-<tr><td><input type="checkbox"/></td><td>Tampa Bay Rays</td></tr>
-<tr><td><input type="checkbox"/></td><td>Kansas City Royals</td></tr>
-<tr><td><input type="checkbox"/></td><td>Seattle Mariners</td></tr>
-<tr><td><input type="checkbox"/></td><td>Minnesota Twins</td></tr>
-<tr><td><input type="checkbox"/></td><td>Arizona Diamondbacks</td></tr>
-<tr><td><input type="checkbox"/></td><td>Chicago White Sox</td></tr>
-<tr><td><input type="checkbox"/></td><td>Pittsburgh Pirates</td></tr>
-<tr><td><input type="checkbox"/></td><td>Milwaukee Brewers</td></tr>
-<tr><td><input type="checkbox"/></td><td>Chicago Cubs</td></tr>
-<tr><td><input type="checkbox"/></td><td>St. Louis Cardinals</td></tr>
-<tr><td><input type="checkbox"/></td><td>Philadelphia Phillies</td></tr>
-<tr><td><input type="checkbox"/></td><td>Houston Astros</td></tr>
-<tr><td><input type="checkbox"/></td><td>Los Angeles Dodgers</td></tr>
-<tr><td><input type="checkbox"/></td><td>Colorado Rockies</td></tr>
-<tr><td><input type="checkbox"/></td><td>Boston Red Sox</td></tr>
-<tr><td><input type="checkbox"/></td><td>Los Angeles Angels</td></tr>
-<tr><td><input type="checkbox"/></td><td>Washington Nationals</td></tr>
-<tr><td><input type="checkbox"/></td><td>San Diego Padres</td></tr>
-<tr><td><input type="checkbox"/></td><td>Miami Marlins</td></tr>
-<tr><td><input type="checkbox"/></td><td>San Francisco Giants</td></tr>
+<tr><td><input type="radio"/></td><td>Texas Rangers</td></tr>
+<tr><td><input type="radio"/></td><td>Baltimore Orioles</td></tr>
+<tr><td><input type="radio"/></td><td>Athletics</td></tr>
+<tr><td><input type="radio"/></td><td>Detroit Tigers</td></tr>
+<tr><td><input type="radio"/></td><td>Toronto Blue Jays</td></tr>
+<tr><td><input type="radio"/></td><td>Cleveland Guardians</td></tr>
+<tr><td><input type="radio"/></td><td>Atlanta Braves</td></tr>
+<tr><td><input type="radio"/></td><td>New York Mets</td></tr>
+<tr><td><input type="radio"/></td><td>New York Yankees</td></tr>
+<tr><td><input type="radio"/></td><td>Cincinnati Reds</td></tr>
+<tr><td><input type="radio"/></td><td>Tampa Bay Rays</td></tr>
+<tr><td><input type="radio"/></td><td>Kansas City Royals</td></tr>
+<tr><td><input type="radio"/></td><td>Seattle Mariners</td></tr>
+<tr><td><input type="radio"/></td><td>Minnesota Twins</td></tr>
+<tr><td><input type="radio"/></td><td>Arizona Diamondbacks</td></tr>
+<tr><td><input type="radio"/></td><td>Chicago White Sox</td></tr>
+<tr><td><input type="radio"/></td><td>Pittsburgh Pirates</td></tr>
+<tr><td><input type="radio"/></td><td>Milwaukee Brewers</td></tr>
+<tr><td><input type="radio"/></td><td>Chicago Cubs</td></tr>
+<tr><td><input type="radio"/></td><td>St. Louis Cardinals</td></tr>
+<tr><td><input type="radio"/></td><td>Philadelphia Phillies</td></tr>
+<tr><td><input type="radio"/></td><td>Houston Astros</td></tr>
+<tr><td><input type="radio"/></td><td>Los Angeles Dodgers</td></tr>
+<tr><td><input type="radio"/></td><td>Colorado Rockies</td></tr>
+<tr><td><input type="radio"/></td><td>Boston Red Sox</td></tr>
+<tr><td><input type="radio"/></td><td>Los Angeles Angels</td></tr>
+<tr><td><input type="radio"/></td><td>Washington Nationals</td></tr>
+<tr><td><input type="radio"/></td><td>San Diego Padres</td></tr>
+<tr><td><input type="radio"/></td><td>Miami Marlins</td></tr>
+<tr><td><input type="radio"/></td><td>San Francisco Giants</td></tr>
 </table>
 </pre>
 <h2 id="records">Team Records</h2>
@@ -1020,72 +1019,39 @@ Rank Team                   W   L   GB  (E#) WC Rank WC GB (E#)
 </pre>
 </div>
 <div id="checked-section"><h2>Checked</h2><pre><table border="1" id="checked-table"></table></pre></div><script>
-    function handleCheckboxClick(checkbox) {
-        const row = checkbox.closest('tr');
-        const table = checkbox.closest('table');
-        const tableId = table.id;
-        const rowIndex = Array.from(table.querySelectorAll('tr')).indexOf(row);
-        const checkboxIndex = checkbox.getAttribute('data-checkbox-index');
-        const checkedTable = document.getElementById('checked-table');
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to handle checkbox clicks
+        function handleCheckboxClick(checkbox) {
+            const row = checkbox.closest('tr');
+            const checkedTable = document.getElementById('checked-table');
 
-        // Save the checkbox state in localStorage
-        const checkboxKey = `${tableId}_row_${rowIndex}_checkbox_${checkboxIndex}`;
-        if (checkbox.checked) {
-            localStorage.setItem(checkboxKey, '1');
-
-            // Clone the row and add it to the "Checked" table
-            const clonedRow = row.cloneNode(true);
-            clonedRow.querySelectorAll('input[type="checkbox"]').forEach(cb => {
-                cb.disabled = true; // Disable checkboxes in the cloned row
-            });
-            checkedTable.appendChild(clonedRow);
-        } else {
-            localStorage.removeItem(checkboxKey);
-
-            // Remove the row from the "Checked" table if it exists
-            const rows = Array.from(checkedTable.querySelectorAll('tr'));
-            rows.forEach(checkedRow => {
-                // Compare the original row and the cloned row
-                const originalRowContent = Array.from(row.cells).map(cell => cell.innerText).join('');
-                const checkedRowContent = Array.from(checkedRow.cells).map(cell => cell.innerText).join('');
-                if (originalRowContent === checkedRowContent) {
-                    checkedRow.remove();
-                }
-            });
-        }
-    }
-
-    function loadCheckboxStates() {
-        // Iterate through all keys in localStorage
-        for (let i = 0; i < localStorage.length; i++) {
-            const key = localStorage.key(i);
-            if (key.includes('_checkbox_')) {
-                const [tableId, _, rowIndex, checkboxIndex] = key.split('_');
-                const table = document.getElementById(tableId);
-                if (table) {
-                    const row = table.querySelectorAll('tr')[rowIndex];
-                    if (row) {
-                        const checkbox = row.querySelector(`input[data-checkbox-index="${checkboxIndex}"]`);
-                        if (checkbox) {
-                            checkbox.checked = localStorage.getItem(key) === '1';
-
-                            // If the checkbox is checked, add the row to the "Checked" table
-                            if (checkbox.checked) {
-                                const checkedTable = document.getElementById('checked-table');
-                                const clonedRow = row.cloneNode(true);
-                                clonedRow.querySelectorAll('input[type="checkbox"]').forEach(cb => {
-                                    cb.disabled = true; // Disable checkboxes in the cloned row
-                                });
-                                checkedTable.appendChild(clonedRow);
-                            }
-                        }
+            if (checkbox.checked) {
+                // Clone the row and add it to the "Checked" table
+                const clonedRow = row.cloneNode(true);
+                clonedRow.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    cb.disabled = true; // Disable checkboxes in the cloned row
+                });
+                checkedTable.appendChild(clonedRow);
+            } else {
+                // Remove the row from the "Checked" table if it exists
+                const rows = Array.from(checkedTable.querySelectorAll('tr'));
+                rows.forEach(checkedRow => {
+                    const originalRowContent = Array.from(row.cells).map(cell => cell.innerText).join('');
+                    const checkedRowContent = Array.from(checkedRow.cells).map(cell => cell.innerText).join('');
+                    if (originalRowContent === checkedRowContent) {
+                        checkedRow.remove();
                     }
-                }
+                });
             }
         }
-    }
 
-    window.onload = loadCheckboxStates;
+        // Attach the event listener to all checkboxes
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('click', function() {
+                handleCheckboxClick(this);
+            });
+        });
+    });
     </script><script>
     document.addEventListener('DOMContentLoaded', function() {
         let currentlyHighlightedRow = null;

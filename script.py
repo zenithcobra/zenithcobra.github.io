@@ -2476,7 +2476,7 @@ def generate_team_list_html_table(team_list):
     for row in team_list:
         html += "<tr>"
         # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
-        html += f"<td><input type='checkbox'></td>"
+        html += f"<td><input type='radio'></td>"
         html += f"<td>{row.get("team_name", '')}</td>"
         html += "</tr>\n"
 
