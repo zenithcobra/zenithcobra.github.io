@@ -1341,6 +1341,37 @@ def get_team_history(teams_playing_today):
     # for x in new_team_list:
     #     print(x)
 
+def get_player_position_2025(type_of_stat, player_id):
+    """
+    Fetches player stats for the given player ID and type of stat.
+
+    Args:
+        type_of_stat (str): The type of stat to fetch (e.g., "hitting", "pitching").
+        player_id (int): The ID of the player.
+
+    Returns:
+        dict: A dictionary containing player stats, or None if an error occurs or data is unavailable.
+    """
+    try:
+        stats = statsapi.player_stat_data(player_id, group=type_of_stat, type="season", sportId=1, season=2025)
+        # print(stats)
+    except Exception as e:
+        print(f"An error occurred while fetching player stats: {e}")
+        return None
+
+    # Check if stats is valid and contains the expected structure
+    if stats is None or "stats" not in stats or not stats["stats"]:
+        print(f"No stats available for player ID {player_id}")
+        return None
+
+    try:
+        stats_dict = stats['position']
+    except (IndexError, KeyError) as e:
+        print(f"Error accessing stats data for player ID {player_id}: {e}")
+        return None
+
+    return stats_dict
+
 def get_player_stats_2025(type_of_stat, player_id):
     """
     Fetches player stats for the given player ID and type of stat.
@@ -1423,6 +1454,14 @@ def add_stats_to_batters(list_of_players):
         # get pitchers stats by ids
         # Get the stats for the away probable pitcher
         stats = get_player_stats_2025('hitting',player_id)
+        position = get_player_position_2025('hitting',player_id)
+
+        if position is None:
+            print(f"process position - could not get position for batter id {player_id}")
+            continue
+        else:
+            x.update({"position":position})
+
         if stats is None:
             print(f"process batters - could not get stats for batter id {player_id}")
             continue
@@ -1502,7 +1541,6 @@ def add_stats_to_pitchers(list_of_players):
         
     return list_of_players
 
-# BATTERS FROM ROSTER
 def process_batters(batters, teams_histories):
     """
     Processes a list of batters by filtering out those without stats and updating their 
@@ -1980,6 +2018,797 @@ def scrape_ballparks_table_to_json():
         return None
     
 
+def read_json_file(file_path):
+    """
+    Reads a JSON file containing a list of dictionaries and returns the data.
+
+    Args:
+        file_path (str): The path to the JSON file to be read.
+
+    Returns:
+        list: A list of dictionaries if the file is successfully read and contains valid JSON data.
+        None: If the file does not exist, is not valid JSON, or does not contain a list of dictionaries.
+
+    Raises:
+        FileNotFoundError: If the specified file does not exist.
+        json.JSONDecodeError: If the file contains invalid JSON.
+        ValueError: If the JSON data is not a list of dictionaries.
+
+    Example:
+        >>> data = read_json_file("data.json")
+        >>> if data:
+        ...     for item in data:
+        ...         print(item)
+    """
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            data = json.load(file)
+            if isinstance(data, list) and all(isinstance(item, dict) for item in data):
+                return data
+            else:
+                raise ValueError("The JSON file does not contain a list of dictionaries.")
+    except FileNotFoundError:
+        print(f"Error: The file '{file_path}' was not found.")
+    except json.JSONDecodeError as e:
+        print(f"Error: Failed to decode JSON. {e}")
+    except ValueError as e:
+        print(f"Error: {e}")
+    return None
+
+def generate_pitcher_html_table(pitcher_data):
+    """
+    Converts pitcher data (list of dictionaries) into an HTML table.
+
+    Args:
+        pitcher_data (list): A list of dictionaries containing pitcher data.
+
+    Returns:
+        str: An HTML string representing the pitcher table.
+    """
+    if not pitcher_data:
+        return "<h2>Pitcher Data</h2><p>No data available</p>"
+
+    # Extract headers from the keys of the first dictionary
+    # headers = pitcher_data[0].keys()
+    headers = [
+        "RBI",
+        "H",
+        "HR",
+        "Name",
+        "Team",
+        "ERA",
+        "SO9",
+        "SP",
+        "Hp9",
+        "HRp9"
+    ]
+
+    # Start the HTML table
+    html = "<table border='1'>\n<tr>"
+    html += "".join(f"<th>{header}</th>" for header in headers)
+    html += "</tr>\n"
+
+    # Add rows for each dictionary
+    for row in pitcher_data:
+        html += "<tr>"
+        # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td>{row.get("pitcher", '')}</td>"
+        html += f"<td>{row.get("pitchers_team", '')}</td>"
+        html += f"<td>{row.get("ERA", '')}</td>"
+        html += f"<td>{row.get("SO9", '')}</td>"
+        html += f"<td>{row.get('stats',{"stats":{}}).get("strikePercentage", '')}</td>"
+        html += f"<td>{row.get('stats',{"stats":{}}).get("hitsPer9Inn", '')}</td>"
+        html += f"<td>{row.get('stats',{"stats":{}}).get("homeRunsPer9", '')}</td>"
+        html += "</tr>\n"
+
+    html += "</table>\n"
+    return html
+
+def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
+    """
+    Converts batter data (list of dictionaries) into an HTML table.
+
+    Args:
+        batter_data (list): A list of dictionaries containing batter data.
+
+    Returns:
+        str: An HTML string representing the batter table.
+    """
+    if not batter_data:
+        return "<h2>Batter Data</h2><p>No data available</p>"
+    if not ball_park_data:
+        return "<h2>Team Data</h2><p>No data available</p>"
+    if not schedule_data:
+        return "<h2>Team Data</h2><p>No data available</p>"
+
+    for a in ball_park_data:
+        stadium = a.get('Stadium')
+        if stadium == 'Guaranteed Rate Field':
+            a.update({'Stadium': 'Rate Field'})
+        elif stadium == 'Minute Maid Park':
+            a.update({'Stadium': 'Daikin Park'})
+
+    for x in batter_data:
+        team_id = x.get('team_id')
+        for y in schedule_data:
+            away_id = y.get('away_id')
+            home_id = y.get('home_id')
+            if team_id == away_id:
+                venue = y.get('venue_name')
+                for z in ball_park_data:
+                    venue_name = z.get('Stadium')
+                    venue_hr = z.get('HR')
+                    if venue == venue_name:
+                        x.update({"venue":f"{venue} <b>({venue_hr})</b>"})
+            elif team_id == home_id:
+                venue = y.get('venue_name')
+                for z in ball_park_data:
+                    venue_name = z.get('Stadium')
+                    venue_hr = z.get('HR')
+                    if venue == venue_name:
+                        x.update({"venue":f"{venue} <b>({venue_hr})</b>"})
+
+
+    # Extract headers from the keys of the first dictionary
+    # headers = batter_data[0].keys()
+    headers = [
+        "RBI",
+        "H",
+        "HR",
+        "Name",
+        "Team",
+        "Pos",
+        "Venue",
+        "GP",
+        "HR",
+        "HRpg",
+        "fHRpg",
+        "HR24",
+        "HR24pg",
+        "fHR24pg",
+        "HR_record",
+        "H",
+        "Hpg",
+        "fHpg",
+        "H_record",
+        "RBIpg",
+        "fRBIpg",
+        "RBI",
+        "RBI_record"
+    ]
+
+    # Start the HTML table
+    html = "<table border='1'>\n<tr>"
+    html += "".join(f"<th>{header}</th>" for header in headers)
+    html += "</tr>\n"
+
+    # Add rows for each dictionary
+    for row in batter_data:
+        html += "<tr>"
+        # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td>{row.get("player_name", '')}</td>"
+        html += f"<td>{row.get("team", '')}</td>"
+        html += f"<td>{row.get("position", '')}</td>"
+        html += f"<td>{row.get("venue", '')}</td>"
+        html += f"<td>{row.get("games_played", '')}</td>"
+        html += f"<td>{row.get("HR", '')}</td>"
+        html += f"<td>{row.get("HRpg", '')}</td>"
+        html += f"<td>{row.get("fHRpg", '')}</td>"
+        html += f"<td>{row.get("HR24", '')}</td>"
+        html += f"<td>{row.get("HR24pg", '')}</td>"
+        html += f"<td>{row.get("fHR24pg", '')}</td>"
+        html += f"<td>{row.get("HR_record", '')}</td>"
+        html += f"<td>{row.get("H", '')}</td>"
+        html += f"<td>{row.get("Hpg", '')}</td>"
+        html += f"<td>{row.get("fHpg", '')}</td>"
+        html += f"<td>{row.get("H_record", '')}</td>"
+        html += f"<td>{row.get("RBIpg", '')}</td>"
+        html += f"<td>{row.get("fRBIpg", '')}</td>"
+        html += f"<td>{row.get("RBI", '')}</td>"
+        html += f"<td>{row.get("RBI_record", '')}</td>"
+        html += "</tr>\n"
+
+    html += "</table>\n"
+    return html
+
+def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
+    """
+    Converts batter-vs-pitcher (BvP) data into an HTML table.
+
+    Args:
+        bvp_data (list): A list of dictionaries containing BvP data.
+
+    Returns:
+        str: An HTML string representing the BvP table.
+    """
+    if not bvp_data:
+        return "<h2>BvP Data</h2><p>No data available</p>"
+    if not ball_park_data:
+        return "<h2>Team Data</h2><p>No data available</p>"
+    if not schedule_data:
+        return "<h2>Team Data</h2><p>No data available</p>"
+
+    for a in ball_park_data:
+        stadium = a.get('Stadium')
+        if stadium == 'Guaranteed Rate Field':
+            a.update({'Stadium': 'Rate Field'})
+        elif stadium == 'Minute Maid Park':
+            a.update({'Stadium': 'Daikin Park'})
+
+    for x in bvp_data:
+        team_id = x.get('batter_team_id')
+        for y in schedule_data:
+            away_id = y.get('away_id')
+            home_id = y.get('home_id')
+            if team_id == away_id:
+                venue = y.get('venue_name')
+                for z in ball_park_data:
+                    venue_name = z.get('Stadium')
+                    venue_hr = z.get('HR')
+                    if venue == venue_name:
+                        x.update({"venue":f"{venue} <b>({venue_hr})</b>"})
+            elif team_id == home_id:
+                venue = y.get('venue_name')
+                for z in ball_park_data:
+                    venue_name = z.get('Stadium')
+                    venue_hr = z.get('HR')
+                    if venue == venue_name:
+                        x.update({"venue":f"{venue} <b>({venue_hr})</b>"})
+
+
+    # Extract headers from the keys of the first dictionary
+    # headers = bvp_data[0].keys()
+    headers = [
+        "RBI",
+        "H",
+        "HRS",
+        "Batter",
+        "Team",
+        "Venue",
+        "Pitcher",
+        "AB",
+        "H",
+        "HR",
+        "AVG",
+        "RBI",
+        "OBP",
+        "OPS",
+        "HR25",
+        "HRpg25",
+        "fHRpg25",
+        "HR24",
+        "HR24pg",
+        "fHR24pg",
+        "HR Record",
+        "H25",
+        "Hpg25",
+        "fHpg25",
+        "Hits Record",
+        "RBI25",
+        "RBIpg25",
+        "fRBIpg25",
+        "RBIs Record",
+    ]
+
+    # Start the HTML table
+    html = "<table border='1'>\n<tr>"
+    html += "".join(f"<th>{header}</th>" for header in headers)
+    html += "</tr>\n"
+
+    # Add rows for each dictionary
+    for row in bvp_data:
+        html += "<tr>"
+        # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td>{row.get("batter", '')}</td>"
+        html += f"<td>{row.get("batter_team", '')}</td>"
+        html += f"<td>{row.get("venue", '')}</td>"
+        html += f"<td>{row.get("pitcher", '')}</td>"
+        html += f"<td>{row.get('bvp_stats').get("atbats", '')}</td>"
+        html += f"<td>{row.get('bvp_stats').get("hits", '')}</td>"
+        html += f"<td>{row.get('bvp_stats').get("homeruns", '')}</td>"
+        html += f"<td>{row.get('bvp_stats').get("avg", '')}</td>"
+        html += f"<td>{row.get('bvp_stats').get("rbi", '')}</td>"
+        html += f"<td>{row.get('bvp_stats').get("obp", '')}</td>"
+        html += f"<td>{row.get('bvp_stats').get("ops", '')}</td>"
+        html += f"<td>{row.get("all_HR", '')}</td>"
+        html += f"<td>{row.get("all_HRpg", '')}</td>"
+        html += f"<td>{row.get("all_fHRpg", '')}</td>"
+        html += f"<td>{row.get("all_HR24", '')}</td>"
+        html += f"<td>{row.get("all_HR24pg", '')}</td>"
+        html += f"<td>{row.get("all_fHR24pg", '')}</td>"
+        html += f"<td>{row.get("all_HR_record", '')}</td>"
+        html += f"<td>{row.get("all_H", '')}</td>"
+        html += f"<td>{row.get("all_Hpg", '')}</td>"
+        html += f"<td>{row.get("all_fHpg", '')}</td>"
+        html += f"<td>{row.get("all_H_record", '')}</td>"
+        html += f"<td>{row.get("all_RBI", '')}</td>"
+        html += f"<td>{row.get("all_RBIpg", '')}</td>"
+        html += f"<td>{row.get("all_fRBIpg", '')}</td>"
+        html += f"<td>{row.get("all_RBI_record", '')}</td>"
+        html += "</tr>\n"
+
+    html += "</table>\n"
+    return html
+
+def generate_dh_batter_html_table(dh_batter_data, schedule_data, ball_park_data):
+    """
+    Converts designated hitter (DH) batter data into an HTML table.
+
+    Args:
+        dh_batter_data (list): A list of dictionaries containing DH batter data.
+
+    Returns:
+        str: An HTML string representing the DH batter table.
+    """
+    if not dh_batter_data:
+        return "<h2>DH Batter Data</h2><p>No data available</p>"
+    if not ball_park_data:
+        return "<h2>Team Data</h2><p>No data available</p>"
+    if not schedule_data:
+        return "<h2>Team Data</h2><p>No data available</p>"
+
+    for a in ball_park_data:
+        stadium = a.get('Stadium')
+        if stadium == 'Guaranteed Rate Field':
+            a.update({'Stadium': 'Rate Field'})
+        elif stadium == 'Minute Maid Park':
+            a.update({'Stadium': 'Daikin Park'})
+
+    for x in dh_batter_data:
+        team_id = x.get('team_id')
+        for y in schedule_data:
+            away_id = y.get('away_id')
+            home_id = y.get('home_id')
+            if team_id == away_id:
+                venue = y.get('venue_name')
+                for z in ball_park_data:
+                    venue_name = z.get('Stadium')
+                    venue_hr = z.get('HR')
+                    if venue == venue_name:
+                        x.update({"venue":f"{venue} <b>({venue_hr})</b>"})
+            elif team_id == home_id:
+                venue = y.get('venue_name')
+                for z in ball_park_data:
+                    venue_name = z.get('Stadium')
+                    venue_hr = z.get('HR')
+                    if venue == venue_name:
+                        x.update({"venue":f"{venue} <b>({venue_hr})</b>"})
+
+
+    # Extract headers from the keys of the first dictionary
+    # headers = dh_batter_data[0].keys()
+    headers = [
+        "RBI",
+        "H",
+        "HR",
+        "Name",
+        "Team",
+        "venue",
+        "GP",
+        "HR",
+        "HRpg",
+        "fHRpg",
+        "HR24",
+        "HR24pg",
+        "fHR24pg",
+        "HR_record",
+        "H",
+        "Hpg",
+        "fHpg",
+        "H_record",
+        "RBI",
+        "RBIpg",
+        "fRBIpg",
+        "RBI_record"
+    ]
+
+    # Start the HTML table
+    html = "<table border='1'>\n<tr>"
+    html += "".join(f"<th>{header}</th>" for header in headers)
+    html += "</tr>\n"
+
+    # Add rows for each dictionary
+    for row in dh_batter_data:
+        html += "<tr>"
+        # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td>{row.get("player_name", '')}</td>"
+        html += f"<td>{row.get("team", '')}</td>"
+        html += f"<td>{row.get("venue", '')}</td>"
+        html += f"<td>{row.get("games_played", '')}</td>"
+        html += f"<td>{row.get("HR", '')}</td>"
+        html += f"<td>{row.get("HRpg", '')}</td>"
+        html += f"<td>{row.get("fHRpg", '')}</td>"
+        html += f"<td>{row.get("HR24", '')}</td>"
+        html += f"<td>{row.get("HR24pg", '')}</td>"
+        html += f"<td>{row.get("fHR24pg", '')}</td>"
+        html += f"<td>{row.get("HR_record", '')}</td>"
+        html += f"<td>{row.get("H", '')}</td>"
+        html += f"<td>{row.get("Hpg", '')}</td>"
+        html += f"<td>{row.get("fHpg", '')}</td>"
+        html += f"<td>{row.get("H_record", '')}</td>"
+        html += f"<td>{row.get("RBI", '')}</td>"
+        html += f"<td>{row.get("RBIpg", '')}</td>"
+        html += f"<td>{row.get("fRBIpg", '')}</td>"
+        html += f"<td>{row.get("RBI_record", '')}</td>"
+        html += "</tr>\n"
+
+    html += "</table>\n"
+    return html
+
+def generate_team_list_html_table(team_list):
+    """
+    Converts team list data (list of dictionaries) into an HTML table.
+
+    Args:
+        team_list (list): A list of dictionaries containing team data.
+
+    Returns:
+        str: An HTML string representing the teams list table.
+    """
+    if not team_list:
+        return "<h2>Team List Data</h2><p>No data available</p>"
+
+    # Extract headers from the keys of the first dictionary
+    # headers = pitcher_data[0].keys()
+    headers = [
+        "filter",
+        "Team"
+    ]
+
+    # Start the HTML table
+    html = "<h2>Pitcher Data</h2>\n<table border='1'>\n<tr>"
+    html += "".join(f"<th>{header}</th>" for header in headers)
+    html += "</tr>\n"
+
+    # Add rows for each dictionary
+    for row in team_list:
+        html += "<tr>"
+        # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td>{row.get("team_name", '')}</td>"
+        html += "</tr>\n"
+
+    html += "</table>\n"
+    return html
+
+
+def generate_team_html_table(team_data, ball_park_data, schedule_data):
+    """
+    Converts team data into an HTML table.
+
+    Args:
+        team_data (list): A list of dictionaries containing team data.
+
+    Returns:
+        str: An HTML string representing the team table.
+    """
+    if not team_data:
+        return "<h2>Team Data</h2><p>No data available</p>"
+    if not ball_park_data:
+        return "<h2>Team Data</h2><p>No data available</p>"
+    if not schedule_data:
+        return "<h2>Team Data</h2><p>No data available</p>"
+
+    for a in ball_park_data:
+        stadium = a.get('Stadium')
+        if stadium == 'Guaranteed Rate Field':
+            a.update({'Stadium': 'Rate Field'})
+        elif stadium == 'Minute Maid Park':
+            a.update({'Stadium': 'Daikin Park'})
+            
+    new_holder_of_dicts = []
+    for x in team_data:
+        dict1 = {}
+        team_id = x.get('team_id')
+        team_name = x.get('team_name')
+        team_record = x.get('team_record')
+        dict1.update({
+            "team_id": team_id,
+            "team_record": team_record
+        })
+        for y in schedule_data:
+            away_id = y.get('away_id')
+            home_id = y.get('home_id')
+            if team_id == away_id:
+                vs_team = y.get('home_name')
+                # print(vs_team)
+                dict1.update({"team_name":f"{team_name}"})
+                dict1.update({"vs_team": f"{vs_team} (<b>home</b>)"})
+                venue = y.get('venue_name')
+                for z in ball_park_data:
+                    venue_name = z.get('Stadium')
+                    venue_hr = z.get('HR')
+                    if venue == venue_name:
+                        dict1.update({"venue":f"{venue} <b>({venue_hr})</b>"})
+            elif team_id == home_id:
+                vs_team = y.get('away_name')
+                # print(vs_team)
+                dict1.update({"team_name":f"{team_name}"})
+                dict1.update({"vs_team": f"{vs_team} (<b>away</b>)"})
+                venue = y.get('venue_name')
+                for z in ball_park_data:
+                    venue_name = z.get('Stadium')
+                    venue_hr = z.get('HR')
+                    if venue == venue_name:
+                        dict1.update({"venue":f"{venue} <b>({venue_hr})</b>"})
+        new_holder_of_dicts.append(dict1)
+
+    # Extract headers from the keys of the first dictionary
+    # headers = team_data[0].keys()
+    headers = [
+        "Win",
+        "Loss",
+        "Team",
+        "vs_Team",
+        "Venue",
+        "Team Record"
+    ]
+
+    # Start the HTML table
+    html = "<table border='1'>\n<tr>"
+    html += "".join(f"<th>{header}</th>" for header in headers)
+    html += "</tr>\n"
+
+    # Add rows for each dictionary
+    for row in new_holder_of_dicts:
+        html += "<tr>"
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td>{row.get("team_name", '')}</td>"
+        html += f"<td>{row.get("vs_team", '')}</td>"
+        html += f"<td>{row.get("venue", '')}</td>"
+        html += f"<td>{row.get("team_record", '')}</td>"
+        html += "</tr>\n"
+
+    html += "</table>\n"
+    return html
+
+def generate_yesterday_home_run_html_table(yesterday_home_run_data):
+    """
+    Converts yesterdays home run data into an HTML table.
+
+    Args:
+        yesterday_home_run_data (list): A list of dictionaries containing yesterdays home run data.
+
+    Returns:
+        str: An HTML string representing the yesterdays home run table.
+    """
+    if not yesterday_home_run_data:
+        return "<h2>Yesterdays Home Run Data</h2><p>No data available</p>"
+
+    # Extract headers from the keys of the first dictionary
+    # headers = ballpark_data[0].keys()
+    headers = [
+        "RBI",
+        "H",
+        "HR",
+        "Batter",
+        "Team",
+        "HR",
+        "HRpg",
+        "fHRpg",
+        "HR24",
+        "HR24pg",
+        "fHR24pg",
+        "HR_record only shows if they are playing today"
+    ]
+
+    # Start the HTML table
+    html = "<table border='1'>\n<tr>"
+    # Table Headers
+    html += "".join(f"<th>{header}</th>" for header in headers)
+    html += "</tr>\n"
+
+    # Add rows for each dictionary
+    for row in yesterday_home_run_data:
+        html += "<tr>"
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td><input type='checkbox'></td>"
+        html += f"<td>{row.get("name", '')}</td>"
+        html += f"<td>{row.get("team", '')}</td>"
+        html += f"<td>{row.get("HR", '')}</td>"
+        html += f"<td>{row.get("HRpg", '')}</td>"
+        html += f"<td>{row.get("fHRpg", '')}</td>"
+        html += f"<td>{row.get("HR24", '')}</td>"
+        html += f"<td>{row.get("HR24pg", '')}</td>"
+        html += f"<td>{row.get("fHR24pg", '')}</td>"
+        html += f"<td>{row.get("HR_record", '')}</td>"
+        html += "</tr>\n"
+
+    html += "</table>\n"
+    return html
+
+
+def make_index():
+    # get date for later
+    date = datetime.now().strftime("%Y-%m-%d")
+    
+    # Ensure the "docs" folder exists
+    os.makedirs("docs", exist_ok=True)
+
+    # FILE PATHS
+    ## output
+    output_html_path = "docs/index.html"
+
+    ## text
+    parlay_banned_list_path = "data/parlay_banned_list.txt" 
+    yesterdays_report_path = "data/yesterdays_report_text.txt"
+    standings_path = "data/standings_text.txt"
+    todays_schedule_path = "data/schedule_text.txt"
+
+    ## Read the contents of the text files
+    with open(parlay_banned_list_path, "r") as parlay_banned_file:
+        parlay_banned_list_content = parlay_banned_file.read()
+
+    with open(yesterdays_report_path, "r") as yesterdays_report_file:
+        yesterdays_report_content = yesterdays_report_file.read()
+
+    with open(standings_path, "r") as standings_file:
+        standings_content = standings_file.read()
+
+    with open(todays_schedule_path, "r") as todays_schedule_file:
+        todays_schedule_content = todays_schedule_file.read()
+
+    ## data
+    yesterday_home_run_data_path = "data/yesterday_home_run_data.json"
+    yesterday_home_run_data = read_json_file(yesterday_home_run_data_path)
+    yesterday_home_run_table = generate_yesterday_home_run_html_table(yesterday_home_run_data)
+    # save_to_text(yesterday_home_run_table, "yesterdays_homers_table.html")
+    
+    team_list_path = 'data/teams_playing_today_data.json'
+    team_list = read_json_file(team_list_path)
+    team_list_table = generate_team_list_html_table(team_list)
+    # save_to_text(team_list_table, 'team_list_table.html')
+
+    team_data_path = "data/team_data.json"
+    team_data = read_json_file(team_data_path)
+    ballpark_data_path = "data/ballpark_data.json"
+    ballpark_data = read_json_file(ballpark_data_path)
+    schedule_data_path = 'data/schedule_data.json'
+    schedule_data = read_json_file(schedule_data_path)
+    team_data_table = generate_team_html_table(team_data, ballpark_data, schedule_data)
+    # save_to_text(team_data_table,'team_data_table.html')
+    
+    pitcher_data_path = "data/pitcher_data.json"
+    pitcher_data = read_json_file(pitcher_data_path)
+    pitcher_table = generate_pitcher_html_table(pitcher_data)
+    # save_to_text(pitcher_table,"pitcher_table.html")
+    
+    batter_data_path = "data/batter_data.json"
+    batter_data = read_json_file(batter_data_path)
+    batter_table = generate_batter_html_table(batter_data,schedule_data,ballpark_data)
+    # save_to_text(batter_table, 'batter_table.html')
+    
+    bvp_data_path = "data/batter_vs_pitcher_data.json"
+    bvp_data = read_json_file(bvp_data_path)
+    bvp_table = generate_bvp_html_table(bvp_data, schedule_data, ballpark_data)
+    # save_to_text(bvp_table, "bvp_table.html")
+    
+    dh_batter_data_path = "data/dh_batter_data.json"
+    dh_batter_data = read_json_file(dh_batter_data_path)
+    dh_batter_table = generate_dh_batter_html_table(dh_batter_data, schedule_data, ballpark_data)
+    # save_to_text(dh_batter_table, "dh_batter_table.html")
+
+    
+    # HTML PART
+    # Create the HTML content with a sticky navbar
+    html_content = f"""
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MLB Report</title>
+    <style>
+            body {{
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }}
+            .navbar {{
+                position: sticky;
+                top: 0;
+                background-color: #333;
+                overflow: hidden;
+                # overflow-x: auto;
+                z-index: 1000;
+                white-space: nowrap; /* Prevent wrapping */
+            }}
+            .navbar a {{
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 8px 10px; /* Reduced padding */
+                font-size: 12px; /* Smaller font size */
+                text-decoration: none;
+            }}
+            .navbar a:hover {{
+                background-color: #ddd;
+                color: black;
+            }}
+            .content {{
+                padding: 20px;
+            }}
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#useful-links">Links</a>
+            <a href="#parlay-banned-list">Banned</a>
+            <a href="#yesterdays-report">History</a>
+            <a href="#standings">Standings</a>
+            <a href="#todays-schedule">Schedule</a>
+            <a href="#teams">Select Teams</a>
+            <a href="#records">Teams</a>
+            <a href="#match-overviews-pitchers">Pitchers</a>
+            <a href="#match-overviews-batters">Roster</a>
+            <a href="#dh-batters">DH's</a>
+            <a href="#bvp-stats">BvP</a>
+            <a href="#checked-section">Checked</a>
+        </div>
+        <div class="content">
+            <h1 id="useful-links">Useful Links</h1>
+            <ul>
+            <li><a href='https://www.fantasyalarm.com/mlb/lineups'>BVP checker</a></li>
+            <li><a href='https://www.baseball-reference.com'>baseball-reference</a></li>
+            <li><a href='https://baseballsavant.mlb.com'>baseball-savant</a></li>
+            <li><a href='https://www.fangraphs.com'>fangraphs</a></li>
+            <li><a href='https://www.statmuse.com/mlb'>Stat muse</a></li>
+            <li><a href='https://www.baseballmusings.com/cgi-bin/CurStreak.py'>Baseball Musings</a></li>
+            <li><a href='https://www.teamrankings.com'>Team Rankings</a></li>
+            <li><a href='https://www.onlyhomers.com/ballparks'>Only Homers</a></li>
+            </ul>
+            <h2>MLB Report {date}</h2>
+            <h2 id="parlay-banned-list">Parlay Banned List</h2>
+            <pre>{parlay_banned_list_content}</pre>
+            <h2 id="yesterdays-report">Yesterdays History</h2>
+            <pre>{yesterdays_report_content}</pre>
+            <h2 id="yesterdays-homers">Yesterdays Home Runs</h2>
+            <pre>{yesterday_home_run_table}</pre>
+            <h2 id="standings">Standings</h2>
+            <pre>{standings_content}</pre>
+            <h2 id="todays-schedule">Today's Schedule</h2>
+            <pre>{todays_schedule_content}</pre>
+            <h2 id="teams">Filter Teams</h2>
+            <pre>{team_list_table}</pre>
+            <h2 id="records">Team Records</h2>
+            <pre>{team_data_table}</pre>
+            <h2 id="match-overviews-pitchers">Pitcher Match Overviews</h2>
+            <pre>{pitcher_table}</pre>
+            <h2 id="match-overviews-batters">Roster Overviews</h2>
+            <pre>{batter_table}</pre>
+            <h2 id="dh-batters">DH Batters</h2>
+            <pre>{dh_batter_table}</pre>
+            <h2 id="bvp-stats">Batter vs Pitcher Stats</h2>
+            <pre>{bvp_table}</pre>
+            
+
+        </div>
+    </body>
+    </html>
+    """
+
+    # # Write the HTML content to the output file
+    # with open(output_html_path, "w") as output_file:
+    #     output_file.write(html_content)
+
+    # print(f"HTML file saved to {output_html_path}")
+
+    return html_content
+
 
 # RUNNING THE SCRIPT 
 
@@ -2050,3 +2879,8 @@ hr_leaders = league_leaders_hrs()
 save_to_json(eras_leaders, 'ERA_leader_data')
 save_to_json(so9_leaders, 'SO9_leader_data')
 save_to_json(hr_leaders, 'HR_leader_data')
+
+
+print('make index')
+index_html = make_index()
+save_to_text(index_html, 'raw_index.html')
