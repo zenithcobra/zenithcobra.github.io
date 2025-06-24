@@ -466,7 +466,7 @@ def get_schedule_text():
     return full_content
 
 def get_yesterdays_report():
-    
+    import re
     # Ensure the "text_output" folder exists
     os.makedirs("text_output", exist_ok=True)
 
