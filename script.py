@@ -2049,7 +2049,6 @@ def scrape_ballparks_table_to_json():
     except Exception as e:
         print(f"Error processing the table data: {e}")
         return None
-    
 
 def read_json_file(file_path):
     """
@@ -2501,7 +2500,7 @@ def generate_team_list_html_table(team_list):
     ]
 
     # Start the HTML table
-    html = "<h2>Pitcher Data</h2>\n<table border='1'>\n<tr>"
+    html = "<table border='1'>\n<tr>"
     html += "".join(f"<th>{header}</th>" for header in headers)
     html += "</tr>\n"
 
@@ -2515,7 +2514,6 @@ def generate_team_list_html_table(team_list):
 
     html += "</table>\n"
     return html
-
 
 def generate_team_html_table(team_data, ball_park_data, schedule_data):
     """
@@ -2665,6 +2663,39 @@ def generate_yesterday_home_run_html_table(yesterday_home_run_data):
     return html
 
 
+def generate_leaders_table(leader_data1, leader_data2, leader_data3):
+    """
+    Generates three HTML tables for league leaders based on the keys in each dict in the list of dicts.
+
+    Args:
+        leader_data1 (list): List of dicts for the first leader category.
+        leader_data2 (list): List of dicts for the second leader category.
+        leader_data3 (list): List of dicts for the third leader category.
+
+    Returns:
+        str: HTML string containing three tables.
+    """
+    def make_table(data, title):
+        if not data or not isinstance(data, list) or not data[0]:
+            return f"<h3>{title}</h3><p>No data available</p>"
+        headers = data[0].keys()
+        html = f"<h3>{title}</h3><table border='1'><tr>"
+        html += "".join(f"<th>{h}</th>" for h in headers)
+        html += "</tr>\n"
+        for row in data:
+            html += "<tr>"
+            html += "".join(f"<td>{row.get(h, '')}</td>" for h in headers)
+            html += "</tr>\n"
+        html += "</table>\n"
+        return html
+
+    html = ""
+    html += make_table(leader_data1, "ERA")
+    html += make_table(leader_data2, "SO9")
+    html += make_table(leader_data3, "HR")
+    return html
+
+
 def make_index():
     # get date for later
     date = datetime.now().strftime("%Y-%m-%d")
@@ -2735,7 +2766,14 @@ def make_index():
     dh_batter_table = generate_dh_batter_html_table(dh_batter_data, schedule_data, ballpark_data)
     # save_to_text(dh_batter_table, "dh_batter_table.html")
 
-    
+    leader_data_path1 = "data/ERA_leader_data.json"
+    leader_data_path2 = "data/SO9_leader_data.json"
+    leader_data_path3 = "data/HR_leader_data.json"
+    leader_data1 = read_json_file(leader_data_path1)
+    leader_data2 = read_json_file(leader_data_path2)
+    leader_data3 = read_json_file(leader_data_path3)
+    leaders_table = generate_leaders_table(leader_data1,leader_data2,leader_data3)
+
     # HTML PART
     # Create the HTML content with a sticky navbar
     html_content = f"""
@@ -2786,6 +2824,7 @@ def make_index():
             <a href="#todays-schedule">Schedule</a>
             <a href="#teams">Select Teams</a>
             <a href="#records">Teams</a>
+            <a href="#leaders">Leaders</a>
             <a href="#match-overviews-pitchers">Pitchers</a>
             <a href="#match-overviews-batters">Roster</a>
             <a href="#dh-batters">DH's</a>
@@ -2819,6 +2858,8 @@ def make_index():
             <pre>{team_list_table}</pre>
             <h2 id="records">Team Records</h2>
             <pre>{team_data_table}</pre>
+            <h2 id="leaders">League Leaders</h2>
+            <pre>{leaders_table}</pre>
             <h2 id="match-overviews-pitchers">Pitcher Match Overviews</h2>
             <pre>{pitcher_table}</pre>
             <h2 id="match-overviews-batters">Roster Overviews</h2>
@@ -2841,6 +2882,186 @@ def make_index():
     # print(f"HTML file saved to {output_html_path}")
 
     return html_content
+
+def process_html(html_as_string):
+    from bs4 import BeautifulSoup
+
+    soup = BeautifulSoup(html_as_string, "html.parser")
+
+    # Find all tables in the HTML
+    tables = soup.find_all("table")
+
+    # Add a "Checked" section at the bottom of the page
+    checked_section = soup.new_tag("div", id="checked-section")
+    checked_heading = soup.new_tag("h2")
+    checked_heading.string = "Checked"
+    checked_section.append(checked_heading)
+
+    # Create a <pre> tag to wrap the table
+    pre_tag = soup.new_tag("pre")
+    checked_table = soup.new_tag("table", id="checked-table", border="1")
+    pre_tag.append(checked_table)  # Add the table inside the <pre> tag
+    checked_section.append(pre_tag)  # Add the <pre> tag to the section
+
+    soup.body.append(checked_section)
+
+    # Add JavaScript to handle saving checkbox states and copying rows
+    script = soup.new_tag("script")
+    script.string = """
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to handle checkbox clicks
+        function handleCheckboxClick(checkbox) {
+            const row = checkbox.closest('tr');
+            const checkedTable = document.getElementById('checked-table');
+
+            if (checkbox.checked) {
+                // Clone the row and add it to the "Checked" table
+                const clonedRow = row.cloneNode(true);
+                clonedRow.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    cb.disabled = true; // Disable checkboxes in the cloned row
+                });
+                checkedTable.appendChild(clonedRow);
+            } else {
+                // Remove the row from the "Checked" table if it exists
+                const rows = Array.from(checkedTable.querySelectorAll('tr'));
+                rows.forEach(checkedRow => {
+                    const originalRowContent = Array.from(row.cells).map(cell => cell.innerText).join('');
+                    const checkedRowContent = Array.from(checkedRow.cells).map(cell => cell.innerText).join('');
+                    if (originalRowContent === checkedRowContent) {
+                        checkedRow.remove();
+                    }
+                });
+            }
+        }
+
+        // Attach the event listener to all checkboxes
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('click', function() {
+                handleCheckboxClick(this);
+            });
+        });
+    });
+    """
+    soup.body.append(script)
+
+    # Add JavaScript to handle row highlighting
+    highlight_script = soup.new_tag("script")
+    highlight_script.string = """
+    document.addEventListener('DOMContentLoaded', function() {
+        let currentlyHighlightedRow = null;
+
+        document.querySelectorAll('table').forEach(table => {
+            table.addEventListener('click', function(event) {
+                const cell = event.target.closest('td, th'); // Check if the clicked element is a cell
+                if (cell) {
+                    const row = cell.closest('tr'); // Get the row of the clicked cell
+                    if (currentlyHighlightedRow) {
+                        currentlyHighlightedRow.classList.remove('highlight'); // Remove highlight from the previous row
+                    }
+                    row.classList.add('highlight'); // Highlight the new row
+                    currentlyHighlightedRow = row; // Update the currently highlighted row
+                }
+            });
+        });
+    });
+
+    // Add CSS for the highlight class
+    const style = document.createElement('style');
+    style.innerHTML = `
+        .highlight {
+            background-color: yellow; /* Highlight color */
+        }
+    `;
+    document.head.appendChild(style);
+    """
+    soup.body.append(highlight_script)
+
+    # Add the sortable script to the HTML
+    sortable_script = """
+    document.addEventListener('DOMContentLoaded', function() {
+        const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+        const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+            v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+        )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+        document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+            const table = th.closest('table');
+            Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+                .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+                .forEach(tr => table.appendChild(tr) );
+        })));
+    });
+    """
+    sortable_script_tag = soup.new_tag("script")
+    sortable_script_tag.string = sortable_script
+    soup.body.append(sortable_script_tag)
+
+    # --------------------------------
+    sticky_style = soup.new_tag("style")
+    sticky_style.string = """
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+        position: fixed; /* Ensures the navbar stays fixed at the top */
+        top: 0;
+        left: 0;
+        width: 100%; /* Makes the navbar span the full width of the page */
+        background-color: #333; /* Sets the background color */
+        z-index: 1000; /* Ensures the navbar stays above other content */
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 8px 10px; /* Adjust padding for better spacing */
+        font-size: 12px; /* Adjust font size */
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .content {
+        padding-top: 50px; /* Adds padding to prevent content from overlapping the navbar */
+    }
+    """
+    soup.head.append(sticky_style)
+
+    sticky_headers_script = soup.new_tag("script")
+    sticky_headers_script.string = """
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+        document.querySelectorAll('table').forEach(table => {
+            const headerRow = table.querySelector('tr:first-child');
+            if (headerRow) {
+                headerRow.style.top = `${navbarHeight}px`; // Set the sticky header below the navbar
+            }
+        });
+    });
+    """
+    soup.body.append(sticky_headers_script)
+
+    sticky_headers_style = soup.new_tag("style")
+    sticky_headers_style.string = """
+    table tr:first-child {
+        position: sticky;
+        top: 40px; /* Adjust this value to match the height of your navbar */
+        background-color: #fff; /* Optional: Set background color for better visibility */
+        z-index: 999; /* Ensure it stays below the navbar but above other content */
+    }
+    """
+    soup.head.append(sticky_headers_style)
+
+    return str(soup)
 
 
 # RUNNING THE SCRIPT 
@@ -2917,3 +3138,7 @@ save_to_json(hr_leaders, 'HR_leader_data')
 print('make index')
 index_html = make_index()
 save_to_text(index_html, 'raw_index.html')
+
+# index_html = make_index()
+processed_html = process_html(index_html)
+print(processed_html)
