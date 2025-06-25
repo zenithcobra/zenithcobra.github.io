@@ -4,7 +4,7 @@
         "game_datetime": "2025-06-25T18:10:00Z",
         "game_date": "2025-06-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Chicago White Sox",
         "away_id": 109,
@@ -15,22 +15,22 @@
         "away_probable_pitcher": "Zac Gallen",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
-        "series_status": "AZ leads 1-0",
-        "summary": "2025-06-25 - Arizona Diamondbacks @ Chicago White Sox (Scheduled)"
+        "series_status": "AZ leads 2-0",
+        "summary": "2025-06-25 - Arizona Diamondbacks @ Chicago White Sox (Pre-Game)"
     },
     {
         "game_id": 777361,
         "game_datetime": "2025-06-25T18:10:00Z",
         "game_date": "2025-06-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Milwaukee Brewers",
         "away_id": 134,
@@ -41,17 +41,17 @@
         "away_probable_pitcher": "Paul Skenes",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
-        "series_status": "PIT leads 1-0",
-        "summary": "2025-06-25 - Pittsburgh Pirates @ Milwaukee Brewers (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2025-06-25 - Pittsburgh Pirates @ Milwaukee Brewers (Pre-Game)"
     },
     {
         "game_id": 777362,
@@ -76,7 +76,7 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": "LAA leads 1-0",
+        "series_status": "LAA leads 2-0",
         "summary": "2025-06-25 - Boston Red Sox @ Los Angeles Angels (Scheduled)"
     },
     {
@@ -102,7 +102,7 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": "WSH leads 1-0",
+        "series_status": "Series tied 1-1",
         "summary": "2025-06-25 - Washington Nationals @ San Diego Padres (Scheduled)"
     },
     {
@@ -154,7 +154,7 @@
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "DET leads 1-0",
         "summary": "2025-06-25 - Athletics @ Detroit Tigers (Scheduled)"
     },
     {
@@ -180,7 +180,7 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "TOR leads 1-0",
         "summary": "2025-06-25 - Toronto Blue Jays @ Cleveland Guardians (Scheduled)"
     },
     {
@@ -364,7 +364,7 @@
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "LAD leads 1-0",
         "summary": "2025-06-25 - Los Angeles Dodgers @ Colorado Rockies (Scheduled)"
     },
     {
