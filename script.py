@@ -2554,9 +2554,11 @@ def generate_team_html_table(team_data, ball_park_data, schedule_data):
             home_id = y.get('home_id')
             if team_id == away_id:
                 vs_team = y.get('home_name')
+                series_info = y.get("series_status")
                 # print(vs_team)
                 dict1.update({"team_name":f"{team_name}"})
                 dict1.update({"vs_team": f"{vs_team} (<b>home</b>)"})
+                dict1.update({"series_info":series_info})
                 venue = y.get('venue_name')
                 for z in ball_park_data:
                     venue_name = z.get('Stadium')
@@ -2565,9 +2567,11 @@ def generate_team_html_table(team_data, ball_park_data, schedule_data):
                         dict1.update({"venue":f"{venue} <b>({venue_hr})</b>"})
             elif team_id == home_id:
                 vs_team = y.get('away_name')
+                series_info = y.get("series_status")
                 # print(vs_team)
                 dict1.update({"team_name":f"{team_name}"})
                 dict1.update({"vs_team": f"{vs_team} (<b>away</b>)"})
+                dict1.update({"series_info":series_info})
                 venue = y.get('venue_name')
                 for z in ball_park_data:
                     venue_name = z.get('Stadium')
@@ -2583,6 +2587,7 @@ def generate_team_html_table(team_data, ball_park_data, schedule_data):
         "Loss",
         "Team",
         "vs_Team",
+        "Series"
         "Venue",
         "Team Record"
     ]
@@ -2599,6 +2604,7 @@ def generate_team_html_table(team_data, ball_park_data, schedule_data):
         html += f"<td><input type='checkbox'></td>"
         html += f"<td>{row.get("team_name", '')}</td>"
         html += f"<td>{row.get("vs_team", '')}</td>"
+        html += f"<td>{row.get("series_info", '')}</td>"
         html += f"<td>{row.get("venue", '')}</td>"
         html += f"<td>{row.get("team_record", '')}</td>"
         html += "</tr>\n"
@@ -2694,7 +2700,6 @@ def generate_leaders_table(leader_data1, leader_data2, leader_data3):
     html += make_table(leader_data2, "SO9")
     html += make_table(leader_data3, "HR")
     return html
-
 
 def make_index():
     # get date for later
@@ -3137,8 +3142,9 @@ save_to_json(hr_leaders, 'HR_leader_data')
 
 print('make index')
 index_html = make_index()
-save_to_text(index_html, 'raw_index.html')
+# save_to_text(index_html, 'raw_index.html')
 
 # index_html = make_index()
 processed_html = process_html(index_html)
-print(processed_html)
+# print(processed_html)
+save_to_text(processed_html,'raw_index_p.html')
