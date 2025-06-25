@@ -830,14 +830,7 @@ def get_yesterdays_homers(batters_with_streaks):
         # beans_id = player = statsapi.lookup_player(name)
         # print(beans_id[0].get('id'))
         
-        try:
-            beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2024,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
-        except StopIteration:
-            print(f"No player found with the name '{z}'.")
-            beans2 = None  # Set beans to None or handle it appropriately
-        except Exception as e:
-            print(f"An error occurred: {e}")
-            beans2 = None  # Set beans to None or handle it appropriately
+        
 
 
         new_list_with_stats = {}
@@ -869,7 +862,16 @@ def get_yesterdays_homers(batters_with_streaks):
             # If no stats are found, append empty strings or placeholders
             new_list_with_stats.update({"name":"", "team":"", "HR":"", "HRpg":'', "fHRpg":""})
 
-
+        try:
+            # beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', season=2024) 
+            beans2 = statsapi.player_stat_data(player_id, group="hitting", type="season", sportId=1, season=2024) 
+        except StopIteration:
+            print(f"No player found with the name '{z}'.")
+            beans2 = None  # Set beans to None or handle it appropriately
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            beans2 = None  # Set beans to None or handle it appropriately
+        
         if beans2:
             beans2_id = beans2.get('id')
             beans3 = statsapi.player_stat_data(beans2_id, group="hitting", type="season", sportId=1, season=2024)
@@ -1489,27 +1491,54 @@ def add_stats_to_batters(list_of_players):
                 "RBIpg": rbis_per_game,
                 "fRBIpg": frbis_per_game
             })
-            # Get the stats for the away probable pitcher
-            stats2 = get_player_stats_2024('hitting',player_id)
-            if stats2 is None:
-                print(f"2025 process batters could not get stats for batter id {player_id}")
-                x.update({
-                    "HR24": '',
-                    "HR24pg": '',
-                    "fHR24pg": '' 
-                })
-                continue
+            # # Get the stats for the away probable pitcher
+            # stats2 = get_player_stats_2024('hitting',player_id)
+            # if stats2 is None:
+            #     print(f"2024 process batters could not get stats for batter id {player_id}")
+            #     x.update({
+            #         "HR24": '',
+            #         "HR24pg": '',
+            #         "fHR24pg": '' 
+            #     })
+            #     continue
+            # else:
+            #     # print('stats')
+            #     hrs2 = float(int(stats.get('homeRuns')))
+            #     games_played2 = float(int(stats.get('gamesPlayed')))
+            #     hrs_per_game4 = round((hrs2 / games_played2), 2)
+            #     hrs_per_game3 = str(Fraction(round((hrs2 / games_played2), 2)).limit_denominator(7))
+            #     x.update({
+            #         "HR24": hrs2,
+            #         "HR24pg": hrs_per_game4,
+            #         "fHR24pg": hrs_per_game3 
+            #     })
+            try:
+                # beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', season=2024) 
+                beans2 = statsapi.player_stat_data(player_id, group="hitting", type="season", sportId=1, season=2024) 
+            except StopIteration:
+                print(f"No player found with the name '{z}'.")
+                beans2 = None  # Set beans to None or handle it appropriately
+            except Exception as e:
+                print(f"An error occurred: {e}")
+                beans2 = None  # Set beans to None or handle it appropriately
+            
+            if beans2:
+                # beans2_id = beans2.get('id')
+                # beans3 = statsapi.player_stat_data(beans2_id, group="hitting", type="season", sportId=1, season=2024)
+            
+                for b in beans2.get('stats'):
+                    hrs2 = float(int(b.get('stats').get('homeRuns')))
+                    games_played2 = float(int(b.get('stats').get('gamesPlayed')))
+                    hrs_per_game4 = round((hrs2 / games_played2), 2)
+                    hrs_per_game3 = str(Fraction(round((hrs2 / games_played2), 2)).limit_denominator(7))
+                    
+                    # print(hrs2)
+                    x.update({"HR24":int(hrs2)})  
+                    x.update({"HR24pg":hrs_per_game4})  
+                    x.update({"fHR24pg":hrs_per_game3})  
             else:
-                # print('stats')
-                hrs2 = float(int(stats.get('homeRuns')))
-                games_played2 = float(int(stats.get('gamesPlayed')))
-                hrs_per_game4 = round((hrs2 / games_played2), 2)
-                hrs_per_game3 = str(Fraction(round((hrs2 / games_played2), 2)).limit_denominator(7))
-                x.update({
-                    "HR24": hrs2,
-                    "HR24pg": hrs_per_game4,
-                    "fHR24pg": hrs_per_game3 
-                })
+                # If no stats are found, append empty strings or placeholders
+                x.update({"HR24":"", "HR24pg":"", "fHR24pg":""})
 
     return list_of_players
 
@@ -1924,15 +1953,7 @@ def find_dh_batters_add_stats_streaks(schedule, batters_with_streaks):
             print(f"An error occurred: {e}")
             beans = None  # Set beans to None or handle it appropriately
         
-        try:
-            beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2024,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', 'season') 
-        except StopIteration:
-            print(f"No player found with the name beans2'{z}'.")
-            beans2 = None  # Set beans to None or handle it appropriately
-        except Exception as e:
-            print(f"An error occurred: {e}")
-            beans2 = None  # Set beans to None or handle it appropriately
-
+ 
         # Populate the dictionary with stats
         if beans:  # Only proceed if a matching player is found
             player_dict.setdefault("team", beans.get('current_team', "Unknown"))
@@ -1944,11 +1965,23 @@ def find_dh_batters_add_stats_streaks(schedule, batters_with_streaks):
                 player_dict.setdefault("HRpg", round((hrs / games_played), 2) if games_played > 0 else 0)
                 player_dict.setdefault("fHRpg", str(Fraction(player_dict["HRpg"]).limit_denominator(7)))
 
+        try:
+            # beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', season=2024) 
+            player_id = beans.get('id')
+            beans2 = statsapi.player_stat_data(player_id, group="hitting", type="season", sportId=1, season=2024) 
+        except StopIteration:
+            print(f"No player found with the name beans2'{z}'.")
+            beans2 = None  # Set beans to None or handle it appropriately
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            beans2 = None  # Set beans to None or handle it appropriately
+
+
         if beans2:
-            beans2_id = beans2.get('id')
-            beans3 = statsapi.player_stat_data(beans2_id, group="hitting", type="season", sportId=1, season=2024)
+            # beans2_id = beans2.get('id')
+            # beans3 = statsapi.player_stat_data(beans2_id, group="hitting", type="season", sportId=1, season=2024)
         
-            for b in beans3.get('stats'):
+            for b in beans2.get('stats'):
                 hrs2 = float(b.get('stats').get('homeRuns', 0))
                 games_played2 = float(b.get('stats').get('gamesPlayed', 0))
                 player_dict.setdefault("HR24", hrs2)
