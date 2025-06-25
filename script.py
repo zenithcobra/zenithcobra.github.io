@@ -173,6 +173,47 @@ def save_to_text(content, supplied_filename):
 
     print(f"Today's data saved to {file_path}")
 
+def save_to_html(content, supplied_filename):
+    """
+    Saves today's matches to a text file in the 'data' folder. If the file already exists, 
+    it archives the existing file with yesterday's date in the 'data/archived_data' folder.
+
+    Args:
+        string of text: The data to save to the txt file.
+        supplied_filename (str): The base name of the file to save (e.g., 'todays_matches').
+
+    Returns:
+        None
+    """
+    # Directories
+    data_dir = "docs"
+    archived_dir = os.path.join(data_dir, "archived_data")
+    os.makedirs(data_dir, exist_ok=True)  # Ensure the 'data' directory exists
+    os.makedirs(archived_dir, exist_ok=True)  # Ensure the 'archived_data' directory exists
+
+    # File paths
+    today_date = datetime.now().strftime("%Y-%m-%d")
+    yesterday_date = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+    file_path = os.path.join(data_dir, f"{supplied_filename}.html")
+    archived_file_path = os.path.join(archived_dir, f"{supplied_filename}_{yesterday_date}.html")
+
+    # Check if the file already exists in the 'data' folder
+    if os.path.exists(file_path):
+        # Archive the existing file with yesterday's date
+        if not os.path.exists(archived_file_path):
+            os.rename(file_path, archived_file_path)
+            print(f"Archived existing file to {archived_file_path}")
+        else:
+            print(f"Archived file already exists: {archived_file_path}")
+
+    # Save today's matches to the JSON file in the 'data' folder
+    # with open(file_path, "w") as json_file:
+    #     json.dump(list_of_dicts, json_file, indent=4)
+    with open(file_path, "w") as file:
+        file.write(content)
+
+    print(f"Today's data saved to {file_path}")
+
 def get_date():
     """
     Gets the current date in the format required by 'statsapi'.
@@ -1320,7 +1361,7 @@ def get_team_history(teams_playing_today):
         # how to get the last 15 games for a team
         team_id = a.get("team_id")
         team_name = a.get("team_name")
-        sched = statsapi.schedule(start_date='01/01/2025',end_date=mlb_date,team=team_id)
+        sched = statsapi.schedule(start_date='03/27/2025',end_date=mlb_date,team=team_id)
         newlist = sorted(sched, key = lambda k: k["game_date"], reverse=True)
         game_data_list = []
         for game in newlist:
@@ -2668,7 +2709,6 @@ def generate_yesterday_home_run_html_table(yesterday_home_run_data):
     html += "</table>\n"
     return html
 
-
 def generate_leaders_table(leader_data1, leader_data2, leader_data3):
     """
     Generates three HTML tables for league leaders based on the keys in each dict in the list of dicts.
@@ -3142,9 +3182,9 @@ save_to_json(hr_leaders, 'HR_leader_data')
 
 print('make index')
 index_html = make_index()
-# save_to_text(index_html, 'raw_index.html')
+save_to_text(index_html, 'raw_index')
 
 # index_html = make_index()
 processed_html = process_html(index_html)
 # print(processed_html)
-save_to_text(processed_html,'raw_index_p.html')
+save_to_html(processed_html,'index.html')
