@@ -12,6 +12,7 @@ import statsapi
 import requests
 from bs4 import BeautifulSoup
 import json
+import numpy as np
 
 
 def read_json_file(file_path):
@@ -3107,3 +3108,200 @@ def process_html(html_as_string):
     soup.head.append(sticky_headers_style)
 
     return str(soup)
+
+def string_to_binary_list(string):
+    """
+    Converts a string of 'W' and 'L' into a list of 1's and 0's.
+
+    Args:
+        string (str): The input string containing 'W' and 'L' separated by '-'.
+
+    Returns:
+        list: A list of 1's for 'W' and 0's for 'L'.
+    """
+    return [1 if char == 'W' else 0 for char in string.split('-') if char]
+
+def analyze_binary_list(binary_list):
+    """
+    Analyzes a list of 1's and 0's to calculate its length and count the number of 1's and 0's.
+
+    Args:
+        binary_list (list): A list of 1's and 0's.
+
+    Returns:
+        dict: A dictionary containing the length of the list, the count of 1's, and the count of 0's.
+    """
+    length = len(binary_list)
+    count_ones = binary_list.count(1)
+    count_zeros = binary_list.count(0)
+    return {
+        "trials": length,
+        "success": count_ones,
+        "failures": count_zeros
+    }
+
+def find_streaks(binary_list):
+    """
+    Finds all streaks of consecutive 1's in a binary list (ignoring streaks of length 1)
+    and provides their lengths and starting indices.
+
+    Args:
+        binary_list (list): A list of 1's and 0's.
+
+    Returns:
+        list: A list of dictionaries, each containing the streak length and starting index.
+    """
+    streaks = []
+    streak_length = 0
+    start_index = None
+
+    for i, value in enumerate(binary_list):
+        if value == 1:
+            if streak_length == 0:
+                start_index = i  # Start of a new streak
+            streak_length += 1
+        else:
+            if streak_length > 1:  # End of a streak (ignore streaks of length 1)
+                streaks.append({"streak_length": streak_length, "start_index": start_index})
+            streak_length = 0  # Reset streak length
+
+    # Handle the case where the list ends with a streak
+    if streak_length > 1:
+        streaks.append({"streak_length": streak_length, "start_index": start_index})
+
+    return streaks
+
+def find_streaks_with_analysis(binary_list):
+    """
+    Finds all streaks of consecutive 1's and 0's in a binary list (ignoring streaks of length 1)
+    and provides their lengths and starting indices. Also computes the average streak length
+    and average starting index for 1's streaks that occur after a 0 streak.
+
+    Args:
+        binary_list (list): A list of 1's and 0's.
+
+    Returns:
+        dict: A dictionary containing:
+            - "streaks": A list of dictionaries for all streaks (1's and 0's),
+              each containing the streak length, value (1 or 0), and starting index.
+            - "average_streak_length_after_0": The average length of 1's streaks after a 0 streak.
+            - "average_start_index_after_0": The average starting index of 1's streaks after a 0 streak.
+    """
+    streaks = []
+    streak_length = 0
+    start_index = None
+    current_value = None
+
+    # Track 1's streaks that occur after a 0 streak
+    ones_streaks_after_0 = []
+    ones_start_indices_after_0 = []
+    last_streak_was_0 = False
+
+    for i, value in enumerate(binary_list):
+        if value == current_value:
+            streak_length += 1
+        else:
+            if streak_length > 1:  # End of a streak (ignore streaks of length 1)
+                streaks.append({
+                    "streak_value": current_value,
+                    "streak_length": streak_length,
+                    "start_index": start_index
+                })
+                # If the last streak was a 0 and the current streak is 1, track it
+                if current_value == 0 and value == 1:
+                    last_streak_was_0 = True
+                else:
+                    last_streak_was_0 = False
+
+                if last_streak_was_0 and current_value == 1:
+                    ones_streaks_after_0.append(streak_length)
+                    ones_start_indices_after_0.append(start_index)
+
+            # Start a new streak
+            current_value = value
+            streak_length = 1
+            start_index = i
+
+    # Handle the case where the list ends with a streak
+    if streak_length > 1:
+        streaks.append({
+            "streak_value": current_value,
+            "streak_length": streak_length,
+            "start_index": start_index
+        })
+        if last_streak_was_0 and current_value == 1:
+            ones_streaks_after_0.append(streak_length)
+            ones_start_indices_after_0.append(start_index)
+
+    # Compute averages for 1's streaks after 0 streaks
+    average_streak_length_after_0 = (
+        sum(ones_streaks_after_0) / len(ones_streaks_after_0)
+        if ones_streaks_after_0 else 0
+    )
+    average_start_index_after_0 = (
+        sum(ones_start_indices_after_0) / len(ones_start_indices_after_0)
+        if ones_start_indices_after_0 else 0
+    )
+
+    return {
+        "streaks": streaks,
+        "average_streak_length_after_0": average_streak_length_after_0,
+        "average_start_index_after_0": average_start_index_after_0
+    }
+
+def calculate_transition_matrix(binary_list):
+    """
+    Calculates the transition matrix for a binary list.
+
+    Args:
+        binary_list (list): A list of 1's and 0's representing trial outcomes.
+
+    Returns:
+        np.ndarray: A 2x2 transition matrix.
+    """
+    # Initialize counts for transitions
+    transitions = {"0->0": 0, "0->1": 0, "1->0": 0, "1->1": 0}
+
+    # Count transitions
+    for i in range(len(binary_list) - 1):
+        current = binary_list[i]
+        next_ = binary_list[i + 1]
+        if current == 0 and next_ == 0:
+            transitions["0->0"] += 1
+        elif current == 0 and next_ == 1:
+            transitions["0->1"] += 1
+        elif current == 1 and next_ == 0:
+            transitions["1->0"] += 1
+        elif current == 1 and next_ == 1:
+            transitions["1->1"] += 1
+
+    # Calculate probabilities
+    total_0 = transitions["0->0"] + transitions["0->1"]
+    total_1 = transitions["1->0"] + transitions["1->1"]
+
+    P_0_to_0 = transitions["0->0"] / total_0 if total_0 > 0 else 0
+    P_0_to_1 = transitions["0->1"] / total_0 if total_0 > 0 else 0
+    P_1_to_0 = transitions["1->0"] / total_1 if total_1 > 0 else 0
+    P_1_to_1 = transitions["1->1"] / total_1 if total_1 > 0 else 0
+
+    # Create the transition matrix
+    transition_matrix = np.array([
+        [P_0_to_0, P_0_to_1],
+        [P_1_to_0, P_1_to_1]
+    ])
+
+    return transition_matrix
+
+def predict_next_state(current_state, transition_matrix):
+    """
+    Predicts the next state based on the current state and transition matrix.
+
+    Args:
+        current_state (int): The current state (0 or 1).
+        transition_matrix (np.ndarray): The 2x2 transition matrix.
+
+    Returns:
+        int: The predicted next state (0 or 1).
+    """
+    probabilities = transition_matrix[current_state]
+    return np.random.choice([0, 1], p=probabilities)
