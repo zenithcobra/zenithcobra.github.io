@@ -2362,20 +2362,115 @@ def analyze_team_dict(team_dict):
         x.update({"prediction":predict})
     return team_dict
 
-def analyze_yesterdays_homers(homer_dict):
-    for x in homer_dict:
+def analyze_sequence_and_predict(sequence_dict):
+    for x in sequence_dict:
         team_record_string = x.get("HR_record")
-        binary_list = expand_sequence(team_record_string)
-        r_binary_list = list(reversed(binary_list))
-        transition_matrix = calculate_transition_matrix(r_binary_list)
-        current_state = binary_list[-1]  # Use the last value in the list as the current state
-        predicted_state = predict_next_state(current_state, transition_matrix)
-        # if predicted_state == 1:
-        #     predict = 'W'
-        # else:
-        #     predict = 'L'
-        x.update({"prediction":predicted_state})
-    return homer_dict
+        if team_record_string is None:
+            # print('sorry')
+            x.update({"prediction": ''})
+        else:
+            binary_list = expand_sequence(team_record_string)
+            r_binary_list = list(reversed(binary_list))
+            transition_matrix = calculate_transition_matrix(r_binary_list)
+            current_state = binary_list[-1]  # Use the last value in the list as the current state
+            predicted_state = predict_next_state(current_state, transition_matrix)
+            x.update({"prediction":predicted_state})
+    return sequence_dict
+
+def analyze_sequence_and_predict2(sequence_dict):
+    for x in sequence_dict:
+        hr_record_string = x.get("HR_record")
+        print(hr_record_string)
+        h_record_string = x.get("H_record")
+        print(h_record_string)
+        rbi_record_string = x.get("RBI_record")
+        print(rbi_record_string)
+        
+        if hr_record_string is None:
+            # print('sorry')
+            x.update({"prediction": ''})
+        else:
+            binary_list = expand_sequence(hr_record_string)
+            if len(binary_list) > 4:
+                r_binary_list = list(reversed(binary_list))
+                transition_matrix = calculate_transition_matrix(r_binary_list)
+                current_state = binary_list[-1]  # Use the last value in the list as the current state
+                predicted_state = predict_next_state(current_state, transition_matrix)
+                x.update({"hr_prediction": predicted_state})
+            else:
+                x.update({"hr_prediction": ''})
+        
+        if h_record_string is None:
+            # print('sorry')
+            x.update({"prediction": ''})
+        else:
+            binary_list2 = expand_sequence(h_record_string)
+            if len(binary_list2) > 4:
+                r_binary_list2 = list(reversed(binary_list2))
+                transition_matrix2 = calculate_transition_matrix(r_binary_list2)
+                current_state2 = binary_list2[-1]  # Use the last value in the list as the current state
+                predicted_state2 = predict_next_state(current_state2, transition_matrix2)
+                x.update({"h_prediction":predicted_state2})
+            else:
+                x.update({"h_prediction":''})
+
+        if rbi_record_string is None:
+            # print('sorry')
+            x.update({"prediction": ''})
+        else:
+            binary_list3 = expand_sequence(rbi_record_string)
+            if len(binary_list3) > 4:
+                r_binary_list3 = list(reversed(binary_list3))
+                transition_matrix3 = calculate_transition_matrix(r_binary_list3)
+                current_state3 = binary_list3[-1]  # Use the last value in the list as the current state
+                predicted_state3 = predict_next_state(current_state3, transition_matrix3)
+                x.update({"rbi_prediction":predicted_state3})
+            else:
+                x.update({"rbi_prediction":''})
+
+            
+        
+    return sequence_dict
+
+def analyze_sequence_and_predict3(sequence_dict):
+    for x in sequence_dict:
+        hr_record_string = x.get("all_HR_record")
+        h_record_string = x.get("all_H_record")
+        rbi_record_string = x.get("all_RBI_record")
+        if hr_record_string is None:
+            # print('sorry')
+            x.update({"prediction": ''})
+        else:
+            binary_list = expand_sequence(hr_record_string)
+            r_binary_list = list(reversed(binary_list))
+            transition_matrix = calculate_transition_matrix(r_binary_list)
+            current_state = binary_list[-1]  # Use the last value in the list as the current state
+            predicted_state = predict_next_state(current_state, transition_matrix)
+            x.update({"hr_prediction": predicted_state})
+        
+        if h_record_string is None:
+            # print('sorry')
+            x.update({"prediction": ''})
+        else:
+            binary_list2 = expand_sequence(h_record_string)
+            r_binary_list2 = list(reversed(binary_list2))
+            transition_matrix2 = calculate_transition_matrix(r_binary_list2)
+            current_state2 = binary_list2[-1]  # Use the last value in the list as the current state
+            predicted_state2 = predict_next_state(current_state2, transition_matrix2)
+            x.update({"h_prediction":predicted_state2})
+
+        if rbi_record_string is None:
+            # print('sorry')
+            x.update({"prediction": ''})
+        else:
+            binary_list3 = expand_sequence(rbi_record_string)
+            r_binary_list3 = list(reversed(binary_list3))
+            transition_matrix3 = calculate_transition_matrix(r_binary_list3)
+            current_state3 = binary_list3[-1]  # Use the last value in the list as the current state
+            predicted_state3 = predict_next_state(current_state3, transition_matrix3)
+            x.update({"rbi_prediction":predicted_state3})
+        
+    return sequence_dict
 
 def generate_pitcher_html_table(pitcher_data):
     """
@@ -2473,6 +2568,7 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
                     if venue == venue_name:
                         x.update({"venue":f"{venue} <b>({venue_hr})</b>"})
 
+    analyzed_batter_data = analyze_sequence_and_predict2(batter_data)
 
     # Extract headers from the keys of the first dictionary
     # headers = batter_data[0].keys()
@@ -2491,14 +2587,17 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
         "HR24",
         "HR24pg",
         "fHR24pg",
+        "HR math",
         "HR_record",
         "H",
         "Hpg",
         "fHpg",
+        "H math",
         "H_record",
         "RBIpg",
         "fRBIpg",
         "RBI",
+        "RBI math",
         "RBI_record"
     ]
 
@@ -2508,7 +2607,7 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
     html += "</tr>\n"
 
     # Add rows for each dictionary
-    for row in batter_data:
+    for row in analyzed_batter_data:
         html += "<tr>"
         # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
         html += f"<td><input type='checkbox'></td>"
@@ -2525,14 +2624,17 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
         html += f"<td>{row.get("HR24", '')}</td>"
         html += f"<td>{row.get("HR24pg", '')}</td>"
         html += f"<td>{row.get("fHR24pg", '')}</td>"
+        html += f"<td>{row.get("hr_prediction", '')}</td>"
         html += f"<td>{row.get("HR_record", '')}</td>"
         html += f"<td>{row.get("H", '')}</td>"
         html += f"<td>{row.get("Hpg", '')}</td>"
         html += f"<td>{row.get("fHpg", '')}</td>"
+        html += f"<td>{row.get("h_prediction", '')}</td>"
         html += f"<td>{row.get("H_record", '')}</td>"
         html += f"<td>{row.get("RBIpg", '')}</td>"
         html += f"<td>{row.get("fRBIpg", '')}</td>"
         html += f"<td>{row.get("RBI", '')}</td>"
+        html += f"<td>{row.get("rbi_prediction", '')}</td>"
         html += f"<td>{row.get("RBI_record", '')}</td>"
         html += "</tr>\n"
 
@@ -2583,6 +2685,7 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
                     if venue == venue_name:
                         x.update({"venue":f"{venue} <b>({venue_hr})</b>"})
 
+    analyzed_bvp_data = analyze_sequence_and_predict3(bvp_data)
 
     # Extract headers from the keys of the first dictionary
     # headers = bvp_data[0].keys()
@@ -2607,14 +2710,17 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         "HR24",
         "HR24pg",
         "fHR24pg",
+        "HR math",
         "HR Record",
         "H25",
         "Hpg25",
         "fHpg25",
+        "Hits math",
         "Hits Record",
         "RBI25",
         "RBIpg25",
         "fRBIpg25",
+        "RBIs math",
         "RBIs Record",
     ]
 
@@ -2624,7 +2730,7 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
     html += "</tr>\n"
 
     # Add rows for each dictionary
-    for row in bvp_data:
+    for row in analyzed_bvp_data:
         html += "<tr>"
         # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
         html += f"<td><input type='checkbox'></td>"
@@ -2647,14 +2753,17 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         html += f"<td>{row.get("all_HR24", '')}</td>"
         html += f"<td>{row.get("all_HR24pg", '')}</td>"
         html += f"<td>{row.get("all_fHR24pg", '')}</td>"
+        html += f"<td>{row.get("hr_prediction", '')}</td>"
         html += f"<td>{row.get("all_HR_record", '')}</td>"
         html += f"<td>{row.get("all_H", '')}</td>"
         html += f"<td>{row.get("all_Hpg", '')}</td>"
         html += f"<td>{row.get("all_fHpg", '')}</td>"
+        html += f"<td>{row.get("h_prediction", '')}</td>"
         html += f"<td>{row.get("all_H_record", '')}</td>"
         html += f"<td>{row.get("all_RBI", '')}</td>"
         html += f"<td>{row.get("all_RBIpg", '')}</td>"
         html += f"<td>{row.get("all_fRBIpg", '')}</td>"
+        html += f"<td>{row.get("rbi_prediction", '')}</td>"
         html += f"<td>{row.get("all_RBI_record", '')}</td>"
         html += "</tr>\n"
 
@@ -2705,7 +2814,7 @@ def generate_dh_batter_html_table(dh_batter_data, schedule_data, ball_park_data)
                     if venue == venue_name:
                         x.update({"venue":f"{venue} <b>({venue_hr})</b>"})
 
-
+    analyzed_dh_batter_data = analyze_sequence_and_predict2(dh_batter_data)
     # Extract headers from the keys of the first dictionary
     # headers = dh_batter_data[0].keys()
     headers = [
@@ -2722,14 +2831,17 @@ def generate_dh_batter_html_table(dh_batter_data, schedule_data, ball_park_data)
         "HR24",
         "HR24pg",
         "fHR24pg",
+        "HR math",
         "HR_record",
         "H",
         "Hpg",
         "fHpg",
+        "H math",
         "H_record",
         "RBI",
         "RBIpg",
         "fRBIpg",
+        "RBI math",
         "RBI_record"
     ]
 
@@ -2739,7 +2851,7 @@ def generate_dh_batter_html_table(dh_batter_data, schedule_data, ball_park_data)
     html += "</tr>\n"
 
     # Add rows for each dictionary
-    for row in dh_batter_data:
+    for row in analyzed_dh_batter_data:
         html += "<tr>"
         # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
         html += f"<td><input type='checkbox'></td>"
@@ -2755,14 +2867,17 @@ def generate_dh_batter_html_table(dh_batter_data, schedule_data, ball_park_data)
         html += f"<td>{row.get("HR24", '')}</td>"
         html += f"<td>{row.get("HR24pg", '')}</td>"
         html += f"<td>{row.get("fHR24pg", '')}</td>"
+        html += f"<td>{row.get("hr_prediction", '')}</td>"
         html += f"<td>{row.get("HR_record", '')}</td>"
         html += f"<td>{row.get("H", '')}</td>"
         html += f"<td>{row.get("Hpg", '')}</td>"
         html += f"<td>{row.get("fHpg", '')}</td>"
+        html += f"<td>{row.get("h_prediction", '')}</td>"
         html += f"<td>{row.get("H_record", '')}</td>"
         html += f"<td>{row.get("RBI", '')}</td>"
         html += f"<td>{row.get("RBIpg", '')}</td>"
         html += f"<td>{row.get("fRBIpg", '')}</td>"
+        html += f"<td>{row.get("rbi_prediction", '')}</td>"
         html += f"<td>{row.get("RBI_record", '')}</td>"
         html += "</tr>\n"
 
@@ -2920,7 +3035,7 @@ def generate_yesterday_home_run_html_table(yesterday_home_run_data):
         return "<h2>Yesterdays Home Run Data</h2><p>No data available</p>"
 
     # analyze data
-    home_run_data = analyze_yesterdays_homers(yesterday_home_run_data)
+    home_run_data = analyze_sequence_and_predict(yesterday_home_run_data)
 
     # Extract headers from the keys of the first dictionary
     # headers = ballpark_data[0].keys()
@@ -2936,6 +3051,7 @@ def generate_yesterday_home_run_html_table(yesterday_home_run_data):
         "HR24",
         "HR24pg",
         "fHR24pg",
+        "hr math guess",
         "HR_record only shows if they are playing today"
     ]
 
@@ -2959,6 +3075,7 @@ def generate_yesterday_home_run_html_table(yesterday_home_run_data):
         html += f"<td>{row.get("HR24", '')}</td>"
         html += f"<td>{row.get("HR24pg", '')}</td>"
         html += f"<td>{row.get("fHR24pg", '')}</td>"
+        html += f"<td>{row.get("prediction", '')}</td>"
         html += f"<td>{row.get("HR_record", '')}</td>"
         html += "</tr>\n"
 
