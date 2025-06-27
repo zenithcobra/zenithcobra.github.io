@@ -1,0 +1,610 @@
+<table border='1'>
+  <tr>
+    <th>Player</th>
+    <th>team</th>
+    <th>Games</th>
+    <th>At Bats</th>
+    <th>Runs</th>
+    <th>Hits</th>
+    <th>HR</th>
+    <th>RBI</th>
+    <th>BB</th>
+    <th>K</th>
+    <th>BA</th>
+    <th>OBA</th>
+    <th>Slug%</th>
+    <th>Last Game Date</th>
+  </tr>
+  <tr>
+    <td>Yandy Diaz</td>
+    <td>Tampa Bay Rays</td>
+    <td>13</td>
+    <td>56</td>
+    <td>11</td>
+    <td>26</td>
+    <td>4</td>
+    <td>10</td>
+    <td>3</td>
+    <td>6</td>
+    <td>.464</td>
+    <td>.508</td>
+    <td>.768</td>
+    <td>2025-06-22</td>
+  </tr>
+  <tr>
+    <td>Josh Naylor</td>
+    <td>Arizona Diamondbacks</td>
+    <td>12</td>
+    <td>47</td>
+    <td>11</td>
+    <td>19</td>
+    <td>2</td>
+    <td>12</td>
+    <td>5</td>
+    <td>7</td>
+    <td>.404</td>
+    <td>.453</td>
+    <td>.617</td>
+    <td>2025-06-23</td>
+  </tr>
+  <tr>
+    <td>Luis Garcia Jr.</td>
+    <td>Washington Nationals</td>
+    <td>12</td>
+    <td>49</td>
+    <td>8</td>
+    <td>17</td>
+    <td>2</td>
+    <td>9</td>
+    <td>1</td>
+    <td>8</td>
+    <td>.347</td>
+    <td>.360</td>
+    <td>.571</td>
+    <td>2025-06-23</td>
+  </tr>
+  <tr>
+    <td>Brandon Lowe</td>
+    <td>Tampa Bay Rays</td>
+    <td>11</td>
+    <td>44</td>
+    <td>10</td>
+    <td>17</td>
+    <td>2</td>
+    <td>6</td>
+    <td>3</td>
+    <td>6</td>
+    <td>.386</td>
+    <td>.426</td>
+    <td>.568</td>
+    <td>2025-06-22</td>
+  </tr>
+  <tr>
+    <td>Josh Smith</td>
+    <td>Texas Rangers</td>
+    <td>10</td>
+    <td>44</td>
+    <td>12</td>
+    <td>16</td>
+    <td>2</td>
+    <td>5</td>
+    <td>4</td>
+    <td>6</td>
+    <td>.364</td>
+    <td>.417</td>
+    <td>.591</td>
+    <td>2025-06-22</td>
+  </tr>
+  <tr>
+    <td>Jake Meyers</td>
+    <td>Houston Astros</td>
+    <td>10</td>
+    <td>37</td>
+    <td>7</td>
+    <td>16</td>
+    <td>0</td>
+    <td>4</td>
+    <td>4</td>
+    <td>7</td>
+    <td>.432</td>
+    <td>.488</td>
+    <td>.486</td>
+    <td>2025-06-22</td>
+  </tr>
+  <tr>
+    <td>Jake Mangum</td>
+    <td>Tampa Bay Rays</td>
+    <td>10</td>
+    <td>40</td>
+    <td>7</td>
+    <td>15</td>
+    <td>0</td>
+    <td>8</td>
+    <td>3</td>
+    <td>5</td>
+    <td>.375</td>
+    <td>.432</td>
+    <td>.475</td>
+    <td>2025-06-22</td>
+  </tr>
+  <tr>
+    <td>Luis Arraez</td>
+    <td>San Diego Padres</td>
+    <td>10</td>
+    <td>45</td>
+    <td>5</td>
+    <td>14</td>
+    <td>0</td>
+    <td>4</td>
+    <td>0</td>
+    <td>1</td>
+    <td>.311</td>
+    <td>.311</td>
+    <td>.378</td>
+    <td>2025-06-23</td>
+  </tr>
+  <tr>
+    <td>Tyler Freeman</td>
+    <td>Colorado Rockies</td>
+    <td>10</td>
+    <td>32</td>
+    <td>5</td>
+    <td>12</td>
+    <td>0</td>
+    <td>3</td>
+    <td>4</td>
+    <td>2</td>
+    <td>.375</td>
+    <td>.500</td>
+    <td>.406</td>
+    <td>2025-06-22</td>
+  </tr>
+  <tr>
+    <td>Victor Robles</td>
+    <td>Seattle Mariners</td>
+    <td>8</td>
+    <td>37</td>
+    <td>3</td>
+    <td>12</td>
+    <td>0</td>
+    <td>2</td>
+    <td>0</td>
+    <td>6</td>
+    <td>.324</td>
+    <td>.342</td>
+    <td>.405</td>
+    <td>2025-04-06</td>
+  </tr>
+  <tr>
+    <td>Brice Turang</td>
+    <td>Milwaukee Brewers</td>
+    <td>8</td>
+    <td>33</td>
+    <td>6</td>
+    <td>12</td>
+    <td>1</td>
+    <td>5</td>
+    <td>2</td>
+    <td>8</td>
+    <td>.364</td>
+    <td>.389</td>
+    <td>.545</td>
+    <td>2025-06-23</td>
+  </tr>
+  <tr>
+    <td>Jonathan Aranda</td>
+    <td>Tampa Bay Rays</td>
+    <td>8</td>
+    <td>31</td>
+    <td>5</td>
+    <td>12</td>
+    <td>0</td>
+    <td>4</td>
+    <td>3</td>
+    <td>7</td>
+    <td>.387</td>
+    <td>.441</td>
+    <td>.484</td>
+    <td>2025-06-22</td>
+  </tr>
+  <tr>
+    <td>Christian Yelich</td>
+    <td>Milwaukee Brewers</td>
+    <td>7</td>
+    <td>30</td>
+    <td>5</td>
+    <td>16</td>
+    <td>2</td>
+    <td>14</td>
+    <td>2</td>
+    <td>8</td>
+    <td>.533</td>
+    <td>.562</td>
+    <td>.900</td>
+    <td>2025-06-23</td>
+  </tr>
+  <tr>
+    <td>Joey Ortiz</td>
+    <td>Milwaukee Brewers</td>
+    <td>7</td>
+    <td>29</td>
+    <td>4</td>
+    <td>12</td>
+    <td>0</td>
+    <td>4</td>
+    <td>0</td>
+    <td>6</td>
+    <td>.414</td>
+    <td>.414</td>
+    <td>.414</td>
+    <td>2025-06-23</td>
+  </tr>
+  <tr>
+    <td>Bobby Witt Jr.</td>
+    <td>Kansas City Royals</td>
+    <td>7</td>
+    <td>28</td>
+    <td>7</td>
+    <td>11</td>
+    <td>2</td>
+    <td>3</td>
+    <td>2</td>
+    <td>3</td>
+    <td>.393</td>
+    <td>.433</td>
+    <td>.750</td>
+    <td>2025-06-22</td>
+  </tr>
+  <tr>
+    <td>Isaac Collins</td>
+    <td>Milwaukee Brewers</td>
+    <td>7</td>
+    <td>27</td>
+    <td>7</td>
+    <td>10</td>
+    <td>2</td>
+    <td>8</td>
+    <td>3</td>
+    <td>7</td>
+    <td>.370</td>
+    <td>.419</td>
+    <td>.667</td>
+    <td>2025-06-23</td>
+  </tr>
+  <tr>
+    <td>Jackson Merrill</td>
+    <td>San Diego Padres</td>
+    <td>7</td>
+    <td>25</td>
+    <td>4</td>
+    <td>9</td>
+    <td>0</td>
+    <td>3</td>
+    <td>5</td>
+    <td>4</td>
+    <td>.360</td>
+    <td>.452</td>
+    <td>.520</td>
+    <td>2025-06-23</td>
+  </tr>
+  <tr>
+    <td>Matt Chapman</td>
+    <td>San Francisco Giants</td>
+    <td>7</td>
+    <td>26</td>
+    <td>5</td>
+    <td>8</td>
+    <td>2</td>
+    <td>4</td>
+    <td>2</td>
+    <td>7</td>
+    <td>.308</td>
+    <td>.379</td>
+    <td>.654</td>
+    <td>2025-06-08</td>
+  </tr>
+  <tr>
+    <td>Cal Raleigh</td>
+    <td>Seattle Mariners</td>
+    <td>6</td>
+    <td>25</td>
+    <td>12</td>
+    <td>12</td>
+    <td>6</td>
+    <td>14</td>
+    <td>3</td>
+    <td>4</td>
+    <td>.480</td>
+    <td>.536</td>
+    <td>1.280</td>
+    <td>2025-06-23</td>
+  </tr>
+  <tr>
+    <td>Brandon Nimmo</td>
+    <td>New York Mets</td>
+    <td>6</td>
+    <td>21</td>
+    <td>3</td>
+    <td>9</td>
+    <td>2</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>.429</td>
+    <td>.500</td>
+    <td>.810</td>
+    <td>2025-06-23</td>
+  </tr>
+  <tr>
+    <td>Mickey Moniak</td>
+    <td>Colorado Rockies</td>
+    <td>6</td>
+    <td>23</td>
+    <td>6</td>
+    <td>8</td>
+    <td>4</td>
+    <td>9</td>
+    <td>1</td>
+    <td>6</td>
+    <td>.348</td>
+    <td>.375</td>
+    <td>1.000</td>
+    <td>2025-06-22</td>
+  </tr>
+  <tr>
+    <td>Eric Wagaman</td>
+    <td>Miami Marlins</td>
+    <td>6</td>
+    <td>22</td>
+    <td>2</td>
+    <td>8</td>
+    <td>1</td>
+    <td>3</td>
+    <td>1</td>
+    <td>3</td>
+    <td>.364</td>
+    <td>.391</td>
+    <td>.591</td>
+    <td>2025-06-22</td>
+  </tr>
+  <tr>
+    <td>Luke Keaschall</td>
+    <td>Minnesota Twins</td>
+    <td>6</td>
+    <td>19</td>
+    <td>4</td>
+    <td>7</td>
+    <td>0</td>
+    <td>2</td>
+    <td>5</td>
+    <td>2</td>
+    <td>.368</td>
+    <td>.538</td>
+    <td>.526</td>
+    <td>2025-04-25</td>
+  </tr>
+  <tr>
+    <td>Ryan Bliss</td>
+    <td>Seattle Mariners</td>
+    <td>6</td>
+    <td>20</td>
+    <td>1</td>
+    <td>6</td>
+    <td>1</td>
+    <td>3</td>
+    <td>1</td>
+    <td>6</td>
+    <td>.300</td>
+    <td>.333</td>
+    <td>.500</td>
+    <td>2025-04-08</td>
+  </tr>
+  <tr>
+    <td>Jo Adell</td>
+    <td>Los Angeles Angels</td>
+    <td>6</td>
+    <td>23</td>
+    <td>5</td>
+    <td>6</td>
+    <td>3</td>
+    <td>5</td>
+    <td>3</td>
+    <td>6</td>
+    <td>.261</td>
+    <td>.346</td>
+    <td>.696</td>
+    <td>2025-06-23</td>
+  </tr>
+  <tr>
+    <td>CJ Abrams</td>
+    <td>Washington Nationals</td>
+    <td>5</td>
+    <td>23</td>
+    <td>8</td>
+    <td>9</td>
+    <td>2</td>
+    <td>3</td>
+    <td>2</td>
+    <td>2</td>
+    <td>.391</td>
+    <td>.440</td>
+    <td>.696</td>
+    <td>2025-06-23</td>
+  </tr>
+  <tr>
+    <td>Randy Arozarena</td>
+    <td>Seattle Mariners</td>
+    <td>5</td>
+    <td>21</td>
+    <td>6</td>
+    <td>9</td>
+    <td>0</td>
+    <td>3</td>
+    <td>1</td>
+    <td>5</td>
+    <td>.429</td>
+    <td>.478</td>
+    <td>.667</td>
+    <td>2025-06-23</td>
+  </tr>
+  <tr>
+    <td>Jonny Deluca</td>
+    <td>Tampa Bay Rays</td>
+    <td>5</td>
+    <td>18</td>
+    <td>4</td>
+    <td>9</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>3</td>
+    <td>.500</td>
+    <td>.500</td>
+    <td>.611</td>
+    <td>2025-04-06</td>
+  </tr>
+  <tr>
+    <td>Ivan Herrera</td>
+    <td>St. Louis Cardinals</td>
+    <td>5</td>
+    <td>20</td>
+    <td>2</td>
+    <td>8</td>
+    <td>1</td>
+    <td>5</td>
+    <td>1</td>
+    <td>3</td>
+    <td>.400</td>
+    <td>.455</td>
+    <td>.550</td>
+    <td>2025-06-19</td>
+  </tr>
+  <tr>
+    <td>Jose Ramirez</td>
+    <td>Cleveland Guardians</td>
+    <td>5</td>
+    <td>19</td>
+    <td>0</td>
+    <td>7</td>
+    <td>0</td>
+    <td>2</td>
+    <td>2</td>
+    <td>0</td>
+    <td>.368</td>
+    <td>.429</td>
+    <td>.421</td>
+    <td>2025-06-22</td>
+  </tr>
+  <tr>
+    <td>Tomas Nido</td>
+    <td>Detroit Tigers</td>
+    <td>5</td>
+    <td>19</td>
+    <td>3</td>
+    <td>7</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>5</td>
+    <td>.368</td>
+    <td>.368</td>
+    <td>.368</td>
+    <td>2025-05-19</td>
+  </tr>
+  <tr>
+    <td>Jordan Beck</td>
+    <td>Colorado Rockies</td>
+    <td>5</td>
+    <td>21</td>
+    <td>4</td>
+    <td>6</td>
+    <td>2</td>
+    <td>4</td>
+    <td>1</td>
+    <td>6</td>
+    <td>.286</td>
+    <td>.318</td>
+    <td>.667</td>
+    <td>2025-06-22</td>
+  </tr>
+  <tr>
+    <td>Austin Riley</td>
+    <td>Atlanta Braves</td>
+    <td>5</td>
+    <td>21</td>
+    <td>3</td>
+    <td>6</td>
+    <td>1</td>
+    <td>3</td>
+    <td>2</td>
+    <td>4</td>
+    <td>.286</td>
+    <td>.348</td>
+    <td>.524</td>
+    <td>2025-06-23</td>
+  </tr>
+  <tr>
+    <td>Hunter Goodman</td>
+    <td>Colorado Rockies</td>
+    <td>5</td>
+    <td>21</td>
+    <td>3</td>
+    <td>6</td>
+    <td>3</td>
+    <td>8</td>
+    <td>2</td>
+    <td>7</td>
+    <td>.286</td>
+    <td>.348</td>
+    <td>.762</td>
+    <td>2025-06-21</td>
+  </tr>
+  <tr>
+    <td>Lars Nootbaar</td>
+    <td>St. Louis Cardinals</td>
+    <td>5</td>
+    <td>19</td>
+    <td>2</td>
+    <td>6</td>
+    <td>2</td>
+    <td>5</td>
+    <td>3</td>
+    <td>5</td>
+    <td>.316</td>
+    <td>.409</td>
+    <td>.684</td>
+    <td>2025-06-23</td>
+  </tr>
+  <tr>
+    <td>Jose Trevino</td>
+    <td>Cincinnati Reds</td>
+    <td>5</td>
+    <td>14</td>
+    <td>3</td>
+    <td>6</td>
+    <td>0</td>
+    <td>2</td>
+    <td>3</td>
+    <td>1</td>
+    <td>.429</td>
+    <td>.500</td>
+    <td>.643</td>
+    <td>2025-06-23</td>
+  </tr>
+</table>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+    const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+        v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+        const table = th.closest('table');
+        Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+            .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+            .forEach(tr => table.appendChild(tr) );
+    })));
+});
+</script>
