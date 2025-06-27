@@ -2129,6 +2129,18 @@ def read_json_file(file_path):
         print(f"Error: {e}")
     return None
 
+def reverse_list(input_list):
+    """
+    Reverses the given list and returns the reversed list.
+
+    Args:
+        input_list (list): The list to be reversed.
+
+    Returns:
+        list: A new list with the elements in reverse order.
+    """
+    return list(reversed(input_list))
+
 def expand_sequence(sequence):
     """
     Converts a sequence string into a list of 1's and 0's.
@@ -2347,6 +2359,50 @@ def predict_next_state(current_state, transition_matrix):
     probabilities = transition_matrix[current_state]
     return np.random.choice([0, 1], p=probabilities)
 
+def markov_monte_carlo(sequence):
+    """
+    Predicts the next value in a binary sequence using Markov Monte Carlo analysis.
+
+    Args:
+        sequence (list): A binary list (containing only 0s and 1s).
+
+    Returns:
+        tuple: A tuple containing the predicted next value (0 or 1) and the probability of that prediction.
+    """
+    if len(sequence) < 2:
+        raise ValueError("The sequence must contain at least two elements.")
+
+    # Count transitions
+    count_0_to_0 = count_0_to_1 = count_1_to_0 = count_1_to_1 = 0
+    for i in range(len(sequence) - 1):
+        if sequence[i] == 0:
+            if sequence[i + 1] == 0:
+                count_0_to_0 += 1
+            else:
+                count_0_to_1 += 1
+        else:
+            if sequence[i + 1] == 0:
+                count_1_to_0 += 1
+            else:
+                count_1_to_1 += 1
+
+    # Calculate probabilities
+    total_0 = count_0_to_0 + count_0_to_1
+    total_1 = count_1_to_0 + count_1_to_1
+    prob_0_to_1 = count_0_to_1 / total_0 if total_0 > 0 else 0
+    prob_1_to_1 = count_1_to_1 / total_1 if total_1 > 0 else 0
+
+    # Predict the next value based on the last value in the sequence
+    last_value = sequence[-1]
+    if last_value == 0:
+        prediction = 1 if prob_0_to_1 > 0.5 else 0
+        probability = prob_0_to_1 if prediction == 1 else 1 - prob_0_to_1
+    else:
+        prediction = 1 if prob_1_to_1 > 0.5 else 0
+        probability = prob_1_to_1 if prediction == 1 else 1 - prob_1_to_1
+
+    return prediction, probability
+
 def analyze_team_dict(team_dict):
     for x in team_dict:
         team_record_string = x.get("team_record")
@@ -2360,6 +2416,12 @@ def analyze_team_dict(team_dict):
         else:
             predict = 'L'
         x.update({"prediction":predict})
+        predicted_value, probability = markov_monte_carlo(r_binary_list)
+        if predicted_value == 1:
+            predict2 = 'W'
+        else:
+            predict2 = 'L'
+        x.update({"wl_mmp":predict2,"wl_mmpp":probability})
     return team_dict
 
 def analyze_sequence_and_predict(sequence_dict):
@@ -2375,16 +2437,18 @@ def analyze_sequence_and_predict(sequence_dict):
             current_state = binary_list[-1]  # Use the last value in the list as the current state
             predicted_state = predict_next_state(current_state, transition_matrix)
             x.update({"prediction":predicted_state})
+            predicted_value, probability = markov_monte_carlo(r_binary_list)
+            x.update({"hr_mmp":predicted_value,"hr_mmpp":probability})
     return sequence_dict
 
 def analyze_sequence_and_predict2(sequence_dict):
     for x in sequence_dict:
         hr_record_string = x.get("HR_record")
-        print(hr_record_string)
+        # print(hr_record_string)
         h_record_string = x.get("H_record")
-        print(h_record_string)
+        # print(h_record_string)
         rbi_record_string = x.get("RBI_record")
-        print(rbi_record_string)
+        # print(rbi_record_string)
         
         if hr_record_string is None:
             # print('sorry')
@@ -2397,6 +2461,8 @@ def analyze_sequence_and_predict2(sequence_dict):
                 current_state = binary_list[-1]  # Use the last value in the list as the current state
                 predicted_state = predict_next_state(current_state, transition_matrix)
                 x.update({"hr_prediction": predicted_state})
+                predicted_value, probability = markov_monte_carlo(r_binary_list)
+                x.update({"hr_mmp":predicted_value,"hr_mmpp":probability})
             else:
                 x.update({"hr_prediction": ''})
         
@@ -2411,6 +2477,8 @@ def analyze_sequence_and_predict2(sequence_dict):
                 current_state2 = binary_list2[-1]  # Use the last value in the list as the current state
                 predicted_state2 = predict_next_state(current_state2, transition_matrix2)
                 x.update({"h_prediction":predicted_state2})
+                predicted_value2, probability2 = markov_monte_carlo(r_binary_list2)
+                x.update({"h_mmp":predicted_value2,"h_mmpp":probability2})
             else:
                 x.update({"h_prediction":''})
 
@@ -2425,6 +2493,8 @@ def analyze_sequence_and_predict2(sequence_dict):
                 current_state3 = binary_list3[-1]  # Use the last value in the list as the current state
                 predicted_state3 = predict_next_state(current_state3, transition_matrix3)
                 x.update({"rbi_prediction":predicted_state3})
+                predicted_value3, probability3 = markov_monte_carlo(r_binary_list3)
+                x.update({"rbi_mmp":predicted_value3,"rbi_mmpp":probability3})                
             else:
                 x.update({"rbi_prediction":''})
 
@@ -2447,6 +2517,8 @@ def analyze_sequence_and_predict3(sequence_dict):
             current_state = binary_list[-1]  # Use the last value in the list as the current state
             predicted_state = predict_next_state(current_state, transition_matrix)
             x.update({"hr_prediction": predicted_state})
+            predicted_value, probability = markov_monte_carlo(r_binary_list)
+            x.update({"hr_mmp":predicted_value,"hr_mmpp":probability})     
         
         if h_record_string is None:
             # print('sorry')
@@ -2458,6 +2530,8 @@ def analyze_sequence_and_predict3(sequence_dict):
             current_state2 = binary_list2[-1]  # Use the last value in the list as the current state
             predicted_state2 = predict_next_state(current_state2, transition_matrix2)
             x.update({"h_prediction":predicted_state2})
+            predicted_value2, probability2 = markov_monte_carlo(r_binary_list2)
+            x.update({"h_mmp":predicted_value2,"h_mmpp":probability2})     
 
         if rbi_record_string is None:
             # print('sorry')
@@ -2469,6 +2543,8 @@ def analyze_sequence_and_predict3(sequence_dict):
             current_state3 = binary_list3[-1]  # Use the last value in the list as the current state
             predicted_state3 = predict_next_state(current_state3, transition_matrix3)
             x.update({"rbi_prediction":predicted_state3})
+            predicted_value3, probability3 = markov_monte_carlo(r_binary_list3)
+            x.update({"rbi_mmp":predicted_value3,"rbi_mmpp":probability3})                 
         
     return sequence_dict
 
@@ -2587,17 +2663,23 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
         "HR24",
         "HR24pg",
         "fHR24pg",
-        "HR math",
+        "HRmc?",
+        "HRmmc?",
+        "HRmmc%?",
         "HR_record",
         "H",
         "Hpg",
         "fHpg",
-        "H math",
+        "Hmc?",
+        "Hmmc?",
+        "Hmmc%?",
         "H_record",
         "RBIpg",
         "fRBIpg",
         "RBI",
-        "RBI math",
+        "RBImc?",
+        "RBImmc?",
+        "RBImmc%?",
         "RBI_record"
     ]
 
@@ -2617,24 +2699,36 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
         html += f"<td>{row.get("team", '')}</td>"
         html += f"<td>{row.get("position", '')}</td>"
         html += f"<td>{row.get("venue", '')}</td>"
-        html += f"<td>{row.get("games_played", '')}</td>"
-        html += f"<td>{row.get("HR", '')}</td>"
+        html += f"<td>{int(row.get("games_played", ''))}</td>"
+        html += f"<td>{int(row.get("HR", ''))}</td>"
         html += f"<td>{row.get("HRpg", '')}</td>"
         html += f"<td>{row.get("fHRpg", '')}</td>"
         html += f"<td>{row.get("HR24", '')}</td>"
         html += f"<td>{row.get("HR24pg", '')}</td>"
         html += f"<td>{row.get("fHR24pg", '')}</td>"
         html += f"<td>{row.get("hr_prediction", '')}</td>"
+        html += f"<td>{row.get("hr_mmp", '')}</td>"
+        value = row.get("hr_mmpp", '')
+        html += f"<td>{round(float(value), 2) if value else ''}</td>"
+        # html += f"<td>{round(float(row.get("hr_mmpp", '')),2)}</td>"
         html += f"<td>{row.get("HR_record", '')}</td>"
         html += f"<td>{row.get("H", '')}</td>"
         html += f"<td>{row.get("Hpg", '')}</td>"
         html += f"<td>{row.get("fHpg", '')}</td>"
         html += f"<td>{row.get("h_prediction", '')}</td>"
+        html += f"<td>{row.get("h_mmp", '')}</td>"
+        value2 = row.get("h_mmpp", '')
+        html += f"<td>{round(float(value2), 2) if value2 else ''}</td>"
+        # html += f"<td>{round(float(row.get("h_mmpp", '')),2)}</td>"
         html += f"<td>{row.get("H_record", '')}</td>"
         html += f"<td>{row.get("RBIpg", '')}</td>"
         html += f"<td>{row.get("fRBIpg", '')}</td>"
         html += f"<td>{row.get("RBI", '')}</td>"
         html += f"<td>{row.get("rbi_prediction", '')}</td>"
+        html += f"<td>{row.get("rbi_mmp", '')}</td>"
+        value3 = row.get("rbi_mmpp", '')
+        html += f"<td>{round(float(value3), 2) if value3 else ''}</td>"
+        # html += f"<td>{round(float(row.get("rbi_mmpp", '')),2)}</td>"
         html += f"<td>{row.get("RBI_record", '')}</td>"
         html += "</tr>\n"
 
@@ -2710,17 +2804,23 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         "HR24",
         "HR24pg",
         "fHR24pg",
-        "HR math",
+        "HRmc?",
+        "HRmm?",
+        "HRmm%?",
         "HR Record",
         "H25",
         "Hpg25",
         "fHpg25",
-        "Hits math",
+        "Hmc?",
+        "Hmm?",
+        "Hmm%?",
         "Hits Record",
         "RBI25",
         "RBIpg25",
         "fRBIpg25",
-        "RBIs math",
+        "RBIsmc?",
+        "RBIsmm?",
+        "RBIsmm%?",
         "RBIs Record",
     ]
 
@@ -2747,23 +2847,37 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         html += f"<td>{row.get('bvp_stats').get("rbi", '')}</td>"
         html += f"<td>{row.get('bvp_stats').get("obp", '')}</td>"
         html += f"<td>{row.get('bvp_stats').get("ops", '')}</td>"
-        html += f"<td>{row.get("all_HR", '')}</td>"
+        valuehr = row.get("all_HR", '')
+        html += f"<td>{int(valuehr) if str(valuehr).isdigit() else 0}</td>"
+        # html += f"<td>{int(row.get("all_HR", ''))}</td>"
         html += f"<td>{row.get("all_HRpg", '')}</td>"
         html += f"<td>{row.get("all_fHRpg", '')}</td>"
         html += f"<td>{row.get("all_HR24", '')}</td>"
         html += f"<td>{row.get("all_HR24pg", '')}</td>"
         html += f"<td>{row.get("all_fHR24pg", '')}</td>"
         html += f"<td>{row.get("hr_prediction", '')}</td>"
+        html += f"<td>{row.get("hr_mmp", '')}</td>"
+        value = row.get("hr_mmpp", '')
+        html += f"<td>{round(float(value), 2) if value else ''}</td>"        
+        # html += f"<td>{round(float(row.get("hr_mmpp", '')),2)}</td>"
         html += f"<td>{row.get("all_HR_record", '')}</td>"
         html += f"<td>{row.get("all_H", '')}</td>"
         html += f"<td>{row.get("all_Hpg", '')}</td>"
         html += f"<td>{row.get("all_fHpg", '')}</td>"
         html += f"<td>{row.get("h_prediction", '')}</td>"
+        html += f"<td>{row.get("h_mmp", '')}</td>"
+        value2 = row.get("h_mmpp", '')
+        html += f"<td>{round(float(value2), 2) if value2 else ''}</td>"        
+        # html += f"<td>{round(float(row.get("h_mmpp", '')),2)}</td>"
         html += f"<td>{row.get("all_H_record", '')}</td>"
         html += f"<td>{row.get("all_RBI", '')}</td>"
         html += f"<td>{row.get("all_RBIpg", '')}</td>"
         html += f"<td>{row.get("all_fRBIpg", '')}</td>"
         html += f"<td>{row.get("rbi_prediction", '')}</td>"
+        html += f"<td>{row.get("rbi_mmp", '')}</td>"
+        value3 = row.get("rbi_mmpp", '')
+        html += f"<td>{round(float(value3), 2) if value3 else ''}</td>"        
+        # html += f"<td>{round(float(row.get("rbi_mmpp", '')),2)}</td>"
         html += f"<td>{row.get("all_RBI_record", '')}</td>"
         html += "</tr>\n"
 
@@ -2831,17 +2945,23 @@ def generate_dh_batter_html_table(dh_batter_data, schedule_data, ball_park_data)
         "HR24",
         "HR24pg",
         "fHR24pg",
-        "HR math",
-        "HR_record",
+        "HR record",
+        "HRmc?",
+        "HRmmc?",
+        "HRmmc%?",
         "H",
         "Hpg",
         "fHpg",
-        "H math",
-        "H_record",
+        "H record",
+        "Hmc?",
+        "Hmmc?",
+        "Hmmc%?",
         "RBI",
         "RBIpg",
         "fRBIpg",
-        "RBI math",
+        "RBImc?",
+        "RBImmc?"
+        "RBImmc%?"
         "RBI_record"
     ]
 
@@ -2860,24 +2980,36 @@ def generate_dh_batter_html_table(dh_batter_data, schedule_data, ball_park_data)
         html += f"<td>{row.get("player_name", '')}</td>"
         html += f"<td>{row.get("team", '')}</td>"
         html += f"<td>{row.get("venue", '')}</td>"
-        html += f"<td>{row.get("games_played", '')}</td>"
-        html += f"<td>{row.get("HR", '')}</td>"
+        html += f"<td>{int(row.get("games_played", ''))}</td>"
+        html += f"<td>{int(row.get("HR", ''))}</td>"
         html += f"<td>{row.get("HRpg", '')}</td>"
         html += f"<td>{row.get("fHRpg", '')}</td>"
         html += f"<td>{row.get("HR24", '')}</td>"
         html += f"<td>{row.get("HR24pg", '')}</td>"
         html += f"<td>{row.get("fHR24pg", '')}</td>"
         html += f"<td>{row.get("hr_prediction", '')}</td>"
+        html += f"<td>{row.get("hr_mmp", '')}</td>"
+        value = row.get("hr_mmpp", '')
+        html += f"<td>{round(float(value), 2) if value else ''}</td>"
+        # html += f"<td>{round(float(row.get("hr_mmpp", '')),2)}</td>"
         html += f"<td>{row.get("HR_record", '')}</td>"
         html += f"<td>{row.get("H", '')}</td>"
         html += f"<td>{row.get("Hpg", '')}</td>"
         html += f"<td>{row.get("fHpg", '')}</td>"
         html += f"<td>{row.get("h_prediction", '')}</td>"
+        html += f"<td>{row.get("h_mmp", '')}</td>"
+        value2 = row.get("h_mmpp", '')
+        html += f"<td>{round(float(value2), 2) if value2 else ''}</td>"
+        # html += f"<td>{round(float(row.get("h_mmpp", '')),2)}</td>"
         html += f"<td>{row.get("H_record", '')}</td>"
         html += f"<td>{row.get("RBI", '')}</td>"
         html += f"<td>{row.get("RBIpg", '')}</td>"
         html += f"<td>{row.get("fRBIpg", '')}</td>"
         html += f"<td>{row.get("rbi_prediction", '')}</td>"
+        html += f"<td>{row.get("rbi_mmp", '')}</td>"
+        value3 = row.get("rbi_mmpp", '')
+        html += f"<td>{round(float(value3), 2) if value3 else ''}</td>"
+        # html += f"<td>{round(float(row.get("rbi_mmpp", '')),2)}</td>"
         html += f"<td>{row.get("RBI_record", '')}</td>"
         html += "</tr>\n"
 
@@ -2996,7 +3128,9 @@ def generate_team_html_table(team_data, ball_park_data, schedule_data):
         "vs_Team",
         "Series",
         "Venue",
-        "Math Guess",
+        "WLmc?",
+        "WLmmc?",
+        "WLmmc%?",
         "Team Record"
     ]
 
@@ -3015,6 +3149,10 @@ def generate_team_html_table(team_data, ball_park_data, schedule_data):
         html += f"<td>{row.get("series_info", '')}</td>"
         html += f"<td>{row.get("venue", '')}</td>"
         html += f"<td>{row.get("prediction", '')}</td>"
+        html += f"<td>{row.get("wl_mmp", '')}</td>"
+        value1 = row.get("wl_mmpp", '')
+        html += f"<td>{round(float(value1), 2) if value1 else ''}</td>"
+        # html += f"<td>{round(float(row.get("wl_mmpp", '')),2)}</td>"
         html += f"<td>{row.get("team_record", '')}</td>"
         html += "</tr>\n"
 
@@ -3051,7 +3189,9 @@ def generate_yesterday_home_run_html_table(yesterday_home_run_data):
         "HR24",
         "HR24pg",
         "fHR24pg",
-        "hr math guess",
+        "HRmc?",
+        "HRmmc?",
+        "HRmmc%?",
         "HR_record only shows if they are playing today"
     ]
 
@@ -3076,6 +3216,10 @@ def generate_yesterday_home_run_html_table(yesterday_home_run_data):
         html += f"<td>{row.get("HR24pg", '')}</td>"
         html += f"<td>{row.get("fHR24pg", '')}</td>"
         html += f"<td>{row.get("prediction", '')}</td>"
+        html += f"<td>{row.get("hr_mmp", '')}</td>"
+        value2 = row.get("hr_mmpp", '')
+        html += f"<td>{round(float(value2), 2) if value2 else ''}</td>"
+        # html += f"<td>{round(float(row.get("hr_mmpp", '')),2)}</td>"
         html += f"<td>{row.get("HR_record", '')}</td>"
         html += "</tr>\n"
 
@@ -3478,5 +3622,171 @@ def process_html(html_as_string):
     }
     """
     soup.head.append(sticky_headers_style)
+
+    # =================================
+    # =================================
+    # =================================
+    
+    # # Find all tables in the HTML
+    # tables = soup.find_all("table")
+
+    # # Add a "Checked" section at the bottom of the page
+    # checked_section = soup.new_tag("div", id="checked-section")
+    # checked_heading = soup.new_tag("h2")
+    # checked_heading.string = "Checked"
+    # checked_section.append(checked_heading)
+
+    # # Create a <pre> tag to wrap the table
+    # pre_tag = soup.new_tag("pre")
+    # checked_table = soup.new_tag("table", id="checked-table", border="1")
+    # pre_tag.append(checked_table)  # Add the table inside the <pre> tag
+    # checked_section.append(pre_tag)  # Add the <pre> tag to the section
+
+    # soup.body.append(checked_section)
+
+    # # Add JavaScript to handle filtering rows based on radio selection
+    # filter_script = soup.new_tag("script")
+    # filter_script.string = """
+    # document.addEventListener('DOMContentLoaded', function() {
+    #     const radios = document.querySelectorAll('input[type="radio"]');
+    #     const tables = document.querySelectorAll('table');
+
+    #     function filterRows() {
+    #         const selectedRadio = Array.from(radios).find(radio => radio.checked);
+    #         const filterText = selectedRadio ? selectedRadio.closest('tr').querySelector('td:last-child').innerText : null;
+
+    #         tables.forEach(table => {
+    #             const rows = table.querySelectorAll('tr');
+    #             rows.forEach((row, index) => {
+    #                 if (index === 0) {
+    #                     // Always show the header row
+    #                     row.style.display = '';
+    #                 } else {
+    #                     const rowText = row.innerText.toLowerCase();
+    #                     if (!filterText || rowText.includes(filterText.toLowerCase())) {
+    #                         row.style.display = '';
+    #                     } else {
+    #                         row.style.display = 'none';
+    #                     }
+    #                 }
+    #             });
+    #         });
+    #     }
+
+    #     // Attach event listeners to all radio buttons
+    #     radios.forEach(radio => {
+    #         radio.addEventListener('change', filterRows);
+    #     });
+
+    #     // Show all rows by default
+    #     filterRows();
+    # });
+    # """
+    # soup.body.append(filter_script)
+
+    # # Add CSS for better visibility
+    # style_tag = soup.new_tag("style")
+    # style_tag.string = """
+    # table {
+    #     width: 100%;
+    #     border-collapse: collapse;
+    # }
+    # th, td {
+    #     padding: 8px;
+    #     text-align: left;
+    #     border: 1px solid #ddd;
+    # }
+    # tr:nth-child(even) {
+    #     background-color: #f9f9f9;
+    # }
+    # tr:hover {
+    #     background-color: #f1f1f1;
+    # }
+    # """
+    # soup.head.append(style_tag)
+    # =================================
+    # =================================
+    # =================================
+    
+    # # Add buttons for filtering and resetting
+    # button_container = soup.new_tag("div", id="button-container")
+    # filter_button = soup.new_tag("button", id="filter-button")
+    # filter_button.string = "Filter"
+    # reset_button = soup.new_tag("button", id="reset-button")
+    # reset_button.string = "Reset"
+    # button_container.append(filter_button)
+    # button_container.append(reset_button)
+    # soup.body.insert(0, button_container)  # Add buttons at the top of the body
+
+    # Add buttons for filtering and resetting
+    button_container = soup.new_tag("div", id="button-container")
+    filter_button = soup.new_tag("button", id="filter-button")
+    filter_button.string = "Filter"
+    reset_button = soup.new_tag("button", id="reset-button")
+    reset_button.string = "Reset"
+    button_container.append(filter_button)
+    button_container.append(reset_button)
+
+    # Find the "Filter Teams" heading and insert the buttons below it
+    filter_heading = soup.find("h2", string="Filter Teams")
+    if filter_heading:
+        filter_heading.insert_after(button_container)  # Insert the buttons after the heading
+
+
+    # Add JavaScript for filtering and resetting
+    filter_script = soup.new_tag("script")
+    filter_script.string = """
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterButton = document.getElementById('filter-button');
+        const resetButton = document.getElementById('reset-button');
+        const radios = document.querySelectorAll('input[type="radio"]');
+        const tables = document.querySelectorAll('table');
+
+        // Function to filter rows based on selected radio buttons
+        function filterRows() {
+            const selectedRadios = Array.from(radios).filter(radio => radio.checked);
+            const filterTexts = selectedRadios.map(radio => 
+                radio.closest('tr').querySelector('td:last-child').innerText.toLowerCase()
+            );
+
+            tables.forEach(table => {
+                const rows = table.querySelectorAll('tr');
+                rows.forEach((row, index) => {
+                    if (index === 0) {
+                        // Always show the header row
+                        row.style.display = '';
+                    } else {
+                        const rowText = row.innerText.toLowerCase();
+                        if (filterTexts.length === 0 || filterTexts.some(filterText => rowText.includes(filterText))) {
+                            row.style.display = '';
+                        } else {
+                            row.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        }
+
+        // Function to reset all radio buttons and show all rows
+        function resetFilters() {
+            radios.forEach(radio => radio.checked = false);
+            tables.forEach(table => {
+                const rows = table.querySelectorAll('tr');
+                rows.forEach(row => {
+                    row.style.display = '';
+                });
+            });
+        }
+
+        // Attach event listeners to buttons
+        filterButton.addEventListener('click', filterRows);
+        resetButton.addEventListener('click', resetFilters);
+    });
+    """
+    soup.body.append(filter_script)
+
+    # =================================
+    # =================================
+    # =================================
 
     return str(soup)

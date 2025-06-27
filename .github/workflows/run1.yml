@@ -2,7 +2,7 @@ name: Run1 - matches_today yesterdays_report get_standings todays_schedule match
 
 on:
   schedule:
-    - cron: "45 5,12,17,20 * * *"  # Runs at 5:45 AM, 12:45 PM, 5:45 PM, and 8:45 PM UTC
+    - cron: "45 5,12,17,18 * * *"  # Runs at 5:45 AM, 12:45 PM, 5:45 PM, and 6:45 PM UTC
 jobs:
   run-script:
     runs-on: ubuntu-latest
@@ -23,7 +23,7 @@ jobs:
 
       - name: Run the Python script
         run: |
-          python mlb_all.py
+          python run_script.py
 
       - name: Commit and push changes
         run: |
