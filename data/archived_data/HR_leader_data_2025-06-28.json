@@ -7,21 +7,15 @@
     },
     {
         "place": 2,
-        "player_name": "Shohei Ohtani",
-        "team": "Los Angeles Dodgers",
-        "HR": "29"
-    },
-    {
-        "place": 3,
         "player_name": "Aaron Judge",
         "team": "New York Yankees",
         "HR": "28"
     },
     {
-        "place": 4,
-        "player_name": "Kyle Schwarber",
-        "team": "Philadelphia Phillies",
-        "HR": "25"
+        "place": 2,
+        "player_name": "Shohei Ohtani",
+        "team": "Los Angeles Dodgers",
+        "HR": "28"
     },
     {
         "place": 4,
@@ -30,10 +24,10 @@
         "HR": "25"
     },
     {
-        "place": 6,
-        "player_name": "Seiya Suzuki",
-        "team": "Chicago Cubs",
-        "HR": "22"
+        "place": 5,
+        "player_name": "Kyle Schwarber",
+        "team": "Philadelphia Phillies",
+        "HR": "24"
     },
     {
         "place": 6,
@@ -42,8 +36,14 @@
         "HR": "22"
     },
     {
-        "place": 8,
+        "place": 7,
         "player_name": "Pete Crow-Armstrong",
+        "team": "Chicago Cubs",
+        "HR": "21"
+    },
+    {
+        "place": 7,
+        "player_name": "Seiya Suzuki",
         "team": "Chicago Cubs",
         "HR": "21"
     },
@@ -60,105 +60,99 @@
         "HR": "20"
     },
     {
-        "place": 9,
+        "place": 11,
         "player_name": "Juan Soto",
         "team": "New York Mets",
-        "HR": "20"
-    },
-    {
-        "place": 9,
-        "player_name": "Taylor Ward",
-        "team": "Los Angeles Angels",
-        "HR": "20"
-    },
-    {
-        "place": 13,
-        "player_name": "Byron Buxton",
-        "team": "Minnesota Twins",
         "HR": "19"
     },
     {
-        "place": 14,
-        "player_name": "Jo Adell",
+        "place": 11,
+        "player_name": "Taylor Ward",
         "team": "Los Angeles Angels",
-        "HR": "18"
+        "HR": "19"
     },
     {
-        "place": 14,
+        "place": 13,
         "player_name": "Pete Alonso",
         "team": "New York Mets",
         "HR": "18"
     },
     {
-        "place": 14,
+        "place": 13,
         "player_name": "Elly De La Cruz",
         "team": "Cincinnati Reds",
         "HR": "18"
     },
     {
-        "place": 14,
-        "player_name": "Riley Greene",
-        "team": "Detroit Tigers",
-        "HR": "18"
+        "place": 15,
+        "player_name": "Jo Adell",
+        "team": "Los Angeles Angels",
+        "HR": "17"
     },
     {
-        "place": 18,
+        "place": 15,
+        "player_name": "Byron Buxton",
+        "team": "Minnesota Twins",
+        "HR": "17"
+    },
+    {
+        "place": 15,
         "player_name": "Rafael Devers",
         "team": "San Francisco Giants",
         "HR": "17"
     },
     {
-        "place": 18,
-        "player_name": "Brandon Lowe",
-        "team": "Tampa Bay Rays",
+        "place": 15,
+        "player_name": "Riley Greene",
+        "team": "Detroit Tigers",
         "HR": "17"
     },
     {
-        "place": 18,
+        "place": 15,
         "player_name": "Logan O'Hoppe",
         "team": "Los Angeles Angels",
         "HR": "17"
     },
     {
-        "place": 18,
-        "player_name": "Isaac Paredes",
-        "team": "Houston Astros",
-        "HR": "17"
-    },
-    {
-        "place": 18,
-        "player_name": "Brent Rooker",
-        "team": "Athletics",
-        "HR": "17"
-    },
-    {
-        "place": 18,
+        "place": 15,
         "player_name": "Spencer Torkelson",
         "team": "Detroit Tigers",
         "HR": "17"
     },
     {
-        "place": 18,
-        "player_name": "Kyle Tucker",
-        "team": "Chicago Cubs",
-        "HR": "17"
-    },
-    {
-        "place": 25,
+        "place": 21,
         "player_name": "Francisco Lindor",
         "team": "New York Mets",
         "HR": "16"
     },
     {
-        "place": 25,
-        "player_name": "Ketel Marte",
-        "team": "Arizona Diamondbacks",
+        "place": 21,
+        "player_name": "Brandon Lowe",
+        "team": "Tampa Bay Rays",
         "HR": "16"
     },
     {
-        "place": 25,
+        "place": 21,
         "player_name": "Andy Pages",
         "team": "Los Angeles Dodgers",
+        "HR": "16"
+    },
+    {
+        "place": 21,
+        "player_name": "Isaac Paredes",
+        "team": "Houston Astros",
+        "HR": "16"
+    },
+    {
+        "place": 21,
+        "player_name": "Brent Rooker",
+        "team": "Athletics",
+        "HR": "16"
+    },
+    {
+        "place": 21,
+        "player_name": "Kyle Tucker",
+        "team": "Chicago Cubs",
         "HR": "16"
     }
 ]
