@@ -58,7 +58,7 @@
         "game_datetime": "2025-07-01T22:40:00Z",
         "game_date": "2025-07-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "Pittsburgh Pirates",
         "away_id": 138,
@@ -76,8 +76,8 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2025-07-01 - St. Louis Cardinals @ Pittsburgh Pirates (Scheduled)"
+        "series_status": "PIT leads 1-0",
+        "summary": "2025-07-01 - St. Louis Cardinals @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 777293,
@@ -188,7 +188,7 @@
         "game_datetime": "2025-07-01T23:10:00Z",
         "game_date": "2025-07-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "New York Mets",
         "away_id": 158,
@@ -207,7 +207,7 @@
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-07-01 - Milwaukee Brewers @ New York Mets (Scheduled)"
+        "summary": "2025-07-01 - Milwaukee Brewers @ New York Mets (Pre-Game)"
     },
     {
         "game_id": 777298,
@@ -294,7 +294,7 @@
         "game_datetime": "2025-07-02T00:40:00Z",
         "game_date": "2025-07-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Houston Astros",
         "home_name": "Colorado Rockies",
         "away_id": 117,
@@ -313,7 +313,7 @@
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-07-01 - Houston Astros @ Colorado Rockies (Scheduled)"
+        "summary": "2025-07-01 - Houston Astros @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 777281,
