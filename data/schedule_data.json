@@ -4,7 +4,7 @@
         "game_datetime": "2025-07-03T16:10:00Z",
         "game_date": "2025-07-03",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Minnesota Twins",
         "home_name": "Miami Marlins",
         "away_id": 142,
@@ -15,24 +15,29 @@
         "away_probable_pitcher": "David Festa",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 4,
-        "current_inning": 7,
+        "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
-        "series_status": "Series tied 1-1",
-        "summary": "2025-07-03 - Minnesota Twins (0) @ Miami Marlins (4) (Top of the 7th)"
+        "series_status": "MIA wins 2-1",
+        "winning_team": "Miami Marlins",
+        "losing_team": "Minnesota Twins",
+        "winning_pitcher": "Eury P\u00e9rez",
+        "losing_pitcher": "David Festa",
+        "save_pitcher": "Ronny Henriquez",
+        "summary": "2025-07-03 - Minnesota Twins (1) @ Miami Marlins (4) (Final)"
     },
     {
         "game_id": 777264,
         "game_datetime": "2025-07-03T19:10:00Z",
         "game_date": "2025-07-03",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Houston Astros",
         "home_name": "Colorado Rockies",
         "away_id": 117,
@@ -53,7 +58,7 @@
             "MLBN (out-of-market only)"
         ],
         "series_status": "HOU leads 2-0",
-        "summary": "2025-07-03 - Houston Astros @ Colorado Rockies (Pre-Game)"
+        "summary": "2025-07-03 - Houston Astros @ Colorado Rockies (Warmup)"
     },
     {
         "game_id": 777258,
