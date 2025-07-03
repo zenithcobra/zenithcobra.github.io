@@ -4,7 +4,7 @@
         "game_datetime": "2025-07-03T16:10:00Z",
         "game_date": "2025-07-03",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "In Progress",
         "away_name": "Minnesota Twins",
         "home_name": "Miami Marlins",
         "away_id": 142,
@@ -15,24 +15,24 @@
         "away_probable_pitcher": "David Festa",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 4,
+        "current_inning": 7,
+        "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
-        "series_status": null,
-        "summary": "2025-07-03 - Minnesota Twins @ Miami Marlins (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2025-07-03 - Minnesota Twins (0) @ Miami Marlins (4) (Top of the 7th)"
     },
     {
         "game_id": 777264,
         "game_datetime": "2025-07-03T19:10:00Z",
         "game_date": "2025-07-03",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Houston Astros",
         "home_name": "Colorado Rockies",
         "away_id": 117,
@@ -43,17 +43,17 @@
         "away_probable_pitcher": "Brandon Walter",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
-        "series_status": null,
-        "summary": "2025-07-03 - Houston Astros @ Colorado Rockies (Scheduled)"
+        "series_status": "HOU leads 2-0",
+        "summary": "2025-07-03 - Houston Astros @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 777258,
@@ -174,7 +174,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Cade Horton",
-        "away_probable_pitcher": "Luis L. Ortiz",
+        "away_probable_pitcher": "Joey Cantillo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -186,7 +186,7 @@
         "national_broadcasts": [
             "MLBN"
         ],
-        "series_status": null,
+        "series_status": "CHC leads 2-0",
         "summary": "2025-07-03 - Cleveland Guardians @ Chicago Cubs (Scheduled)"
     },
     {
