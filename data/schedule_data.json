@@ -4,7 +4,7 @@
         "game_datetime": "2025-07-04T15:05:00Z",
         "game_date": "2025-07-04",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Boston Red Sox",
         "home_name": "Washington Nationals",
         "away_id": 111,
@@ -16,7 +16,7 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 11,
-        "home_score": 1,
+        "home_score": 2,
         "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 3309,
@@ -24,8 +24,13 @@
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
-        "series_status": null,
-        "summary": "2025-07-04 - Boston Red Sox (11) @ Washington Nationals (1) (Bottom of the 9th)"
+        "series_status": "BOS leads 1-0",
+        "winning_team": "Boston Red Sox",
+        "losing_team": "Washington Nationals",
+        "winning_pitcher": "Lucas Giolito",
+        "losing_pitcher": "Michael Soroka",
+        "save_pitcher": null,
+        "summary": "2025-07-04 - Boston Red Sox (11) @ Washington Nationals (2) (Final)"
     },
     {
         "game_id": 777255,
@@ -43,22 +48,22 @@
         "away_probable_pitcher": "Andrew Abbott",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 3,
-        "current_inning": 3,
+        "away_score": 9,
+        "home_score": 4,
+        "current_inning": 5,
         "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-07-04 - Cincinnati Reds (1) @ Philadelphia Phillies (3) (Top of the 3rd)"
+        "summary": "2025-07-04 - Cincinnati Reds (9) @ Philadelphia Phillies (4) (Top of the 5th)"
     },
     {
         "game_id": 777246,
         "game_datetime": "2025-07-04T18:20:00Z",
         "game_date": "2025-07-04",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "St. Louis Cardinals",
         "home_name": "Chicago Cubs",
         "away_id": 138,
@@ -70,23 +75,23 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "home_score": 4,
+        "current_inning": 2,
+        "inning_state": "End",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [
             "Apple TV+"
         ],
         "series_status": null,
-        "summary": "2025-07-04 - St. Louis Cardinals @ Chicago Cubs (Pre-Game)"
+        "summary": "2025-07-04 - St. Louis Cardinals (0) @ Chicago Cubs (4) (End of the 2nd)"
     },
     {
         "game_id": 777250,
         "game_datetime": "2025-07-04T19:10:00Z",
         "game_date": "2025-07-04",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Yankees",
         "home_name": "New York Mets",
         "away_id": 147,
@@ -107,7 +112,7 @@
             "MLBN (out-of-market only)"
         ],
         "series_status": null,
-        "summary": "2025-07-04 - New York Yankees @ New York Mets (Pre-Game)"
+        "summary": "2025-07-04 - New York Yankees @ New York Mets (Warmup)"
     },
     {
         "game_id": 777236,
@@ -274,7 +279,7 @@
         "game_datetime": "2025-07-04T23:15:00Z",
         "game_date": "2025-07-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Baltimore Orioles",
         "home_name": "Atlanta Braves",
         "away_id": 110,
@@ -295,7 +300,7 @@
             "MLBN (out-of-market only)"
         ],
         "series_status": null,
-        "summary": "2025-07-04 - Baltimore Orioles @ Atlanta Braves (Scheduled)"
+        "summary": "2025-07-04 - Baltimore Orioles @ Atlanta Braves (Pre-Game)"
     },
     {
         "game_id": 777243,
