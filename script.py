@@ -3470,6 +3470,82 @@ def generate_leaders_table(leader_data1, leader_data2, leader_data3):
     html += make_table(leader_data3, "HR")
     return html
 
+def generate_team_analysis_string(team_data):
+    """
+    Generates a detailed analysis of team data as a formatted string.
+
+    This method processes team data, including win/loss records, streak analysis, 
+    and predictions, and returns the results as a single formatted string. 
+    The output includes:
+    - Team and opponent information
+    - Venue details
+    - Win/loss record and binary representation
+    - Streak analysis (e.g., longest streaks, average streak lengths)
+    - Current streak and predicted next outcome
+    - Markov and Monte Carlo predictions
+    - A text-based graph of streak distributions
+
+    Args:
+        team_data (list): A list of dictionaries containing team data. Each dictionary 
+                          should include keys like 'Team', 'vs_Team', 'Venue', 
+                          'Team Record', 'WLmc?', 'WLmmc?', and 'WLmmc%?'.
+
+    Returns:
+        str: A formatted string containing the analysis for all teams.
+    """
+    output = []
+
+    for x in team_data:
+        # Convert to 1's and 0's
+        list1 = string_to_binary_list(x.get('Team Record'))
+
+        # Today's game info
+        output.append(f"{x.get('Team')} vs {x.get('vs_Team')}")
+        output.append(f"{x.get('Venue')}")
+
+        # Print name and record
+        output.append(f"{x.get('Team')} Record\n{x.get('Team Record')}\n{list1}")
+
+        # Count the list
+        list_counts = analyze_binary_list(list1)
+        output.append(f"Games Played: {list_counts.get('trials')}, Wins: {list_counts.get('success')}, Losses: {list_counts.get('failures')}, Win Percentage: {round(list_counts.get('success') / list_counts.get('trials'), 2)}%")
+
+        # Find streaks in data
+        streaks = find_streaks_with_analysis(list1)
+
+        # Analyze all found streaks for specific info
+        streak_data = analyze_streaks(streaks.get('streaks'))
+
+        # Print out found data
+        for key, value in streak_data.items():
+            output.append(f"{key}: {value}")
+
+        # Detect the current streak and predict
+        sequence = reverse_list(list1)
+        stats = {
+            "longest_win_streak": streak_data.get('longest_win_streak'),
+            "average_win_streak_length": streak_data.get('average_win_streak_length'),
+            "longest_lose_streak": streak_data.get('longest_lose_streak'),
+            "average_lose_streak_length": streak_data.get('average_lose_streak_length'),
+        }
+        current_streak, amount = detect_current_streak(sequence)
+        current_streak_s = "W" if current_streak == 1 else "L"
+        output.append(f"Current Streak: ({current_streak_s}, {amount})")
+        predicted_outcome = predict_streak_continuation((current_streak, amount), stats)
+        output.append(f"Predicted Next Outcome: {'W' if predicted_outcome == 1 else 'L'}")
+
+        # Markov / Monte Carlo
+        output.append(f"markov prediction: {x.get('WLmc?')}")
+        output.append(f"markov monte carlo: {x.get('WLmmc?')}")
+        output.append(f"markov monte carlo certainty: {x.get('WLmmc%?')}")
+
+        # Print a graph
+        text_graph = text_streak_distribution(streaks.get('streaks'))
+        output.append(text_graph)
+        output.append("\n" + "-" * 50 + "\n")
+
+    return "\n".join(output)
+
 def make_index():
     # get date for later
     date = datetime.now().strftime("%Y-%m-%d")
@@ -3486,6 +3562,7 @@ def make_index():
     yesterdays_report_path = "data/yesterdays_report_text.txt"
     standings_path = "data/standings_text.txt"
     todays_schedule_path = "data/schedule_text.txt"
+
 
     ## Read the contents of the text files
     with open(parlay_banned_list_path, "r") as parlay_banned_file:
@@ -3518,7 +3595,9 @@ def make_index():
     schedule_data_path = 'data/schedule_data.json'
     schedule_data = read_json_file(schedule_data_path)
     team_data_table = generate_team_html_table(team_data, ballpark_data, schedule_data)
-    save_to_text(team_data_table,'team_data_table')
+    # save_to_text(team_data_table,'team_data_table')
+    team_table_data = parse_html_table(team_data_table)
+    team_analysis_string = generate_team_analysis_string(team_table_data)
     
     pitcher_data_path = "data/pitcher_data.json"
     pitcher_data = read_json_file(pitcher_data_path)
@@ -3598,6 +3677,7 @@ def make_index():
             <a href="#todays-schedule">Schedule</a>
             <a href="#teams">Select Teams</a>
             <a href="#records">Teams</a>
+            <a href="#team-analysis">Analysis</a>
             <a href="#leaders">Leaders</a>
             <a href="#match-overviews-pitchers">Pitchers</a>
             <a href="#match-overviews-batters">Roster</a>
@@ -3632,6 +3712,8 @@ def make_index():
             <pre>{team_list_table}</pre>
             <h2 id="records">Team Records</h2>
             <pre>{team_data_table}</pre>
+            <h2 id="team-analysis">Team Analysis</h2>
+            <pre>{team_analysis_string}</pre>
             <h2 id="leaders">League Leaders</h2>
             <pre>{leaders_table}</pre>
             <h2 id="match-overviews-pitchers">Pitcher Match Overviews</h2>
