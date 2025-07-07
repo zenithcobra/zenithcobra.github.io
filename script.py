@@ -3519,7 +3519,7 @@ def generate_team_analysis_string(team_data):
         text_graph = text_streak_distribution(streaks.get('streaks'))
 
         # NAME
-        output.append(f"{x.get('Team')}")
+        output.append(f"<b>{x.get('Team')}</b>")
         # Today's game info
         output.append(f"{x.get('Team')} vs {x.get('vs_Team')}")
         output.append(f"{x.get('Venue')}")
