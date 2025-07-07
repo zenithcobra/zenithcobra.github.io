@@ -2377,9 +2377,10 @@ def text_streak_distribution(sequence_analysis):
 
     # Generate the text-based graph
     graph_lines = []
-    graph_lines.append("Distribution of Streak Lengths (Text Graph)")
-    graph_lines.append("Streak Length | 1 Streaks (Wins) | 0 Streaks (Losses)")
+    # graph_lines.append("Distribution of Streak Lengths (Text Graph)")
     graph_lines.append("-" * 50)
+    graph_lines.append("Streak Length | 1 Streaks (Wins) | 0 Streaks (Losses)")
+    # graph_lines.append("-" * 50)
 
     for length in range(1, max_length + 1):
         bar_1 = "#" * freq_1.get(length, 0)
@@ -3498,28 +3499,12 @@ def generate_team_analysis_string(team_data):
     for x in team_data:
         # Convert to 1's and 0's
         list1 = string_to_binary_list(x.get('Team Record'))
-
-        # Today's game info
-        output.append(f"{x.get('Team')} vs {x.get('vs_Team')}")
-        output.append(f"{x.get('Venue')}")
-
-        # Print name and record
-        output.append(f"{x.get('Team')} Record\n{x.get('Team Record')}\n{list1}")
-
         # Count the list
         list_counts = analyze_binary_list(list1)
-        output.append(f"Games Played: {list_counts.get('trials')}, Wins: {list_counts.get('success')}, Losses: {list_counts.get('failures')}, Win Percentage: {round(list_counts.get('success') / list_counts.get('trials'), 2)}%")
-
         # Find streaks in data
         streaks = find_streaks_with_analysis(list1)
-
         # Analyze all found streaks for specific info
         streak_data = analyze_streaks(streaks.get('streaks'))
-
-        # Print out found data
-        for key, value in streak_data.items():
-            output.append(f"{key}: {value}")
-
         # Detect the current streak and predict
         sequence = reverse_list(list1)
         stats = {
@@ -3530,19 +3515,30 @@ def generate_team_analysis_string(team_data):
         }
         current_streak, amount = detect_current_streak(sequence)
         current_streak_s = "W" if current_streak == 1 else "L"
-        output.append(f"Current Streak: ({current_streak_s}, {amount})")
         predicted_outcome = predict_streak_continuation((current_streak, amount), stats)
-        output.append(f"Predicted Next Outcome: {'W' if predicted_outcome == 1 else 'L'}")
-
-        # Markov / Monte Carlo
-        output.append(f"markov prediction: {x.get('WLmc?')}")
-        output.append(f"markov monte carlo: {x.get('WLmmc?')}")
-        output.append(f"markov monte carlo certainty: {x.get('WLmmc%?')}")
-
-        # Print a graph
         text_graph = text_streak_distribution(streaks.get('streaks'))
+
+        # NAME
+        output.append(f"{x.get('Team')}")
+        # Today's game info
+        output.append(f"{x.get('Team')} vs {x.get('vs_Team')}")
+        output.append(f"{x.get('Venue')}")
+        # Print name and record
+        output.append(f"Record: {x.get('Team Record')}")
+        output.append(f"Games Played: {list_counts.get('trials')}, Wins: {list_counts.get('success')}, Losses: {list_counts.get('failures')}, Win Percentage: {round(list_counts.get('success') / list_counts.get('trials'), 2)}%")
+        # Print a graph
         output.append(text_graph)
-        output.append("\n" + "-" * 50 + "\n")
+        output.append("-" * 50)
+        # Print out found data
+        for key, value in streak_data.items():
+            # output.append(f"{key}{':':<40}{value:<10}")
+            output.append(f"{key + ':':<40}{value:<10}")
+        output.append(f"{'Current Streak:':<40}{current_streak_s}, {amount}")
+        output.append(f"{'Predicted Next Outcome:':<40}{'W' if predicted_outcome == 1 else 'L':<10}")
+        # Markov / Monte Carlo
+        output.append(f"{'markov prediction:':<40}{x.get('WLmc?'):<10}")
+        output.append(f"{'markov monte carlo:':<40}{x.get('WLmmc?'):<10}")
+        output.append(f"{'markov monte carlo certainty:':<40}{x.get('WLmmc%?'):<10}\n\n")
 
     return "\n".join(output)
 
