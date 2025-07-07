@@ -2847,9 +2847,9 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         html += f"<td>{row.get('bvp_stats').get("rbi", '')}</td>"
         html += f"<td>{row.get('bvp_stats').get("obp", '')}</td>"
         html += f"<td>{row.get('bvp_stats').get("ops", '')}</td>"
-        valuehr = row.get("all_HR", '')
-        html += f"<td>{int(valuehr) if str(valuehr).isdigit() else 0}</td>"
-        # html += f"<td>{int(row.get("all_HR", ''))}</td>"
+        # valuehr = row.get("all_HR", '')
+        # html += f"<td>{int(valuehr) if str(valuehr).isdigit() else 0}</td>"
+        html += f"<td>{row.get("all_HR", '')}</td>"
         html += f"<td>{row.get("all_HRpg", '')}</td>"
         html += f"<td>{row.get("all_fHRpg", '')}</td>"
         html += f"<td>{row.get("all_HR24", '')}</td>"
