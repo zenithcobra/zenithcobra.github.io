@@ -13,7 +13,94 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import numpy as np
+import matplotlib.pyplot as plt
 
+def detect_current_streak(sequence):
+    """
+    Detects the current streak (value and length) in the sequence.
+
+    Args:
+        sequence (list): A list of 1s and 0s representing wins and losses.
+
+    Returns:
+        tuple: A tuple containing the current streak value (1 or 0) and its length.
+    """
+    last_value = sequence[-1]
+    streak_length = 0
+    for value in reversed(sequence):
+        if value == last_value:
+            streak_length += 1
+        else:
+            break
+    return last_value, streak_length
+
+def predict_streak_continuation(current_streak, stats):
+    """
+    Predicts whether the current streak will continue or transition.
+
+    Args:
+        current_streak (tuple): A tuple containing the current streak value (1 or 0) and its length.
+        stats (dict): A dictionary containing streak statistics.
+
+    Returns:
+        int: The predicted next value (1 for win, 0 for loss).
+    """
+    streak_value, streak_length = current_streak
+
+    if streak_value == 1:  # Current streak is a win streak
+        if streak_length >= stats["longest_win_streak"]:
+            return 0  # Predict a transition to a loss
+        elif streak_length < stats["average_win_streak_length"]:
+            return 1  # Predict continuation of the win streak
+    elif streak_value == 0:  # Current streak is a loss streak
+        if streak_length >= stats["longest_lose_streak"]:
+            return 1  # Predict a transition to a win
+        elif streak_length < stats["average_lose_streak_length"]:
+            return 0  # Predict continuation of the loss streak
+
+    # Default to continuation if no clear prediction can be made
+    return streak_value
+
+def parse_html_table(html_content):
+    """
+    Parses an HTML table into a list of dictionaries, excluding checkbox columns.
+
+    Args:
+        html_content (str): The HTML content as a string.
+
+    Returns:
+        list: A list of dictionaries where each dictionary represents a row of the table.
+    """
+    soup = BeautifulSoup(html_content, 'html.parser')
+    table = soup.find('table')  # Find the first table in the HTML
+
+    if not table:
+        raise ValueError("No table found in the provided HTML content.")
+
+    # Identify columns with checkboxes by inspecting the first data row
+    first_data_row = table.find_all('tr')[1]  # Skip the header row
+    checkbox_columns = []
+    for i, td in enumerate(first_data_row.find_all('td')):
+        if td.find('input', {'type': 'checkbox'}):
+            checkbox_columns.append(i)
+
+    # Extract headers, excluding checkbox columns
+    headers = []
+    for i, th in enumerate(table.find('tr').find_all('th')):
+        if i not in checkbox_columns:
+            headers.append(th.text.strip())
+
+    # Extract rows, excluding checkbox columns
+    rows = []
+    for tr in table.find_all('tr')[1:]:  # Skip the header row
+        row_data = []
+        for i, td in enumerate(tr.find_all('td')):
+            if i not in checkbox_columns:
+                row_data.append(td.get_text(strip=True))
+        if len(row_data) == len(headers):  # Ensure row matches header length
+            rows.append(dict(zip(headers, row_data)))
+
+    return rows
 
 def read_json_file(file_path):
     """
@@ -50,6 +137,36 @@ def read_json_file(file_path):
         print(f"Error: Failed to decode JSON. {e}")
     except ValueError as e:
         print(f"Error: {e}")
+    return None
+
+def read_text_file(file_path):
+    """
+    Reads a text file and returns its content as a single string.
+
+    Args:
+        file_path (str): The path to the text file to be read.
+
+    Returns:
+        str: A string containing the content of the text file if the file is successfully read.
+        None: If the file does not exist or is empty.
+
+    Raises:
+        FileNotFoundError: If the specified file does not exist.
+        IOError: If there is an error reading the file.
+
+    Example:
+        >>> content = read_text_file("data.txt")
+        >>> if content:
+        ...     print(content)
+    """
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            content = file.read().strip()
+            return content if content else None
+    except FileNotFoundError:
+        print(f"Error: The file '{file_path}' was not found.")
+    except IOError as e:
+        print(f"Error: Failed to read the file. {e}")
     return None
 
 def save_to_json(list_of_dicts, supplied_filename):
@@ -2224,6 +2341,53 @@ def find_streaks(binary_list):
 
     return streaks
 
+def plot_streak_distribution(sequence_analysis):
+    streak_lengths_1 = [streak['streak_length'] for streak in sequence_analysis if streak['streak_value'] == 1]
+    streak_lengths_0 = [streak['streak_length'] for streak in sequence_analysis if streak['streak_value'] == 0]
+
+    plt.hist(streak_lengths_1, bins=range(1, max(streak_lengths_1) + 2), alpha=0.5, label='1 Streaks')
+    plt.hist(streak_lengths_0, bins=range(1, max(streak_lengths_0) + 2), alpha=0.5, label='0 Streaks')
+    plt.xlabel('Streak Length')
+    plt.ylabel('Frequency')
+    plt.legend()
+    plt.title('Distribution of Streak Lengths')
+    plt.show()
+
+def text_streak_distribution(sequence_analysis):
+    """
+    Generates a text-based graph of streak distributions for embedding in a text file.
+
+    Args:
+        sequence_analysis (list): A list of dictionaries containing streak data.
+
+    Returns:
+        str: A text-based graph as a string.
+    """
+    # Extract streak lengths for wins (1) and losses (0)
+    streak_lengths_1 = [streak['streak_length'] for streak in sequence_analysis if streak['streak_value'] == 1]
+    streak_lengths_0 = [streak['streak_length'] for streak in sequence_analysis if streak['streak_value'] == 0]
+
+    # Calculate frequency distributions
+    max_length_1 = max(streak_lengths_1, default=0)
+    max_length_0 = max(streak_lengths_0, default=0)
+    max_length = max(max_length_1, max_length_0)
+
+    freq_1 = {length: streak_lengths_1.count(length) for length in range(1, max_length + 1)}
+    freq_0 = {length: streak_lengths_0.count(length) for length in range(1, max_length + 1)}
+
+    # Generate the text-based graph
+    graph_lines = []
+    graph_lines.append("Distribution of Streak Lengths (Text Graph)")
+    graph_lines.append("Streak Length | 1 Streaks (Wins) | 0 Streaks (Losses)")
+    graph_lines.append("-" * 50)
+
+    for length in range(1, max_length + 1):
+        bar_1 = "#" * freq_1.get(length, 0)
+        bar_0 = "#" * freq_0.get(length, 0)
+        graph_lines.append(f"{length:13} | {bar_1:18} | {bar_0}")
+
+    return "\n".join(graph_lines)
+
 def find_streaks_with_analysis(binary_list):
     """
     Finds all streaks of consecutive 1's and 0's in a binary list (ignoring streaks of length 1)
@@ -2301,6 +2465,54 @@ def find_streaks_with_analysis(binary_list):
         "average_streak_length_after_0": average_streak_length_after_0,
         "average_start_index_after_0": average_start_index_after_0
     }
+
+def analyze_streaks(data):
+    result = {
+        'number_of_win_streaks': 0,
+        'longest_win_streak': 0,
+        'average_win_streak_length': 0,
+        'occurrences_of_longest_win_streaks': 0,
+        'shortest_win_streak': float('inf'),
+        'occurrences_of_shortest_win_streaks': 0,
+        'number_of_lose_streaks': 0,
+        'longest_lose_streak': 0,
+        'average_lose_streak_length': 0,
+        'occurrences_of_longest_lose_streaks': 0,
+        'shortest_lose_streak': float('inf'),
+        'occurrences_of_shortest_lose_streaks': 0
+    }
+
+    # Separate streaks by value
+    streaks_1 = [streak for streak in data if streak['streak_value'] == 1]
+    streaks_0 = [streak for streak in data if streak['streak_value'] == 0]
+
+    # Analyze streaks for value 1
+    if streaks_1:
+        result['number_of_win_streaks'] = len(streaks_1)
+        lengths_1 = [streak['streak_length'] for streak in streaks_1]
+        result['longest_win_streak'] = max(lengths_1)
+        result['shortest_win_streak'] = min(lengths_1)
+        result['average_win_streak_length'] = round(sum(lengths_1) / len(lengths_1),3)
+        result['occurrences_of_longest_win_streaks'] = lengths_1.count(result['longest_win_streak'])
+        result['occurrences_of_shortest_win_streaks'] = lengths_1.count(result['shortest_win_streak'])
+
+    # Analyze streaks for value 0
+    if streaks_0:
+        result['number_of_lose_streaks'] = len(streaks_0)
+        lengths_0 = [streak['streak_length'] for streak in streaks_0]
+        result['longest_lose_streak'] = max(lengths_0)
+        result['shortest_lose_streak'] = min(lengths_0)
+        result['average_lose_streak_length'] = round(sum(lengths_0) / len(lengths_0),3)
+        result['occurrences_of_longest_lose_streaks'] = lengths_0.count(result['longest_lose_streak'])
+        result['occurrences_of_shortest_lose_streaks'] = lengths_0.count(result['shortest_lose_streak'])
+
+    # Replace 'inf' with 0 if no streaks exist
+    if result['shortest_win_streak'] == float('inf'):
+        result['shortest_win_streak'] = 0
+    if result['shortest_lose_streak'] == float('inf'):
+        result['shortest_lose_streak'] = 0
+
+    return result
 
 def calculate_transition_matrix(binary_list):
     """
@@ -3306,7 +3518,7 @@ def make_index():
     schedule_data_path = 'data/schedule_data.json'
     schedule_data = read_json_file(schedule_data_path)
     team_data_table = generate_team_html_table(team_data, ballpark_data, schedule_data)
-    # save_to_text(team_data_table,'team_data_table.html')
+    save_to_text(team_data_table,'team_data_table')
     
     pitcher_data_path = "data/pitcher_data.json"
     pitcher_data = read_json_file(pitcher_data_path)
