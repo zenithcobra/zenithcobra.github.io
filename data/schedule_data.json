@@ -82,7 +82,7 @@
         "game_datetime": "2025-07-08T23:10:00Z",
         "game_date": "2025-07-08",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Boston Red Sox",
         "away_id": 115,
@@ -100,8 +100,8 @@
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2025-07-08 - Colorado Rockies @ Boston Red Sox (Scheduled)"
+        "series_status": "BOS leads 1-0",
+        "summary": "2025-07-08 - Colorado Rockies @ Boston Red Sox (Pre-Game)"
     },
     {
         "game_id": 777197,
@@ -160,7 +160,7 @@
         "game_datetime": "2025-07-08T23:40:00Z",
         "game_date": "2025-07-08",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Minnesota Twins",
         "away_id": 112,
@@ -179,7 +179,7 @@
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-07-08 - Chicago Cubs @ Minnesota Twins (Scheduled)"
+        "summary": "2025-07-08 - Chicago Cubs @ Minnesota Twins (Pre-Game)"
     },
     {
         "game_id": 777188,
@@ -240,7 +240,7 @@
         "game_datetime": "2025-07-08T23:45:00Z",
         "game_date": "2025-07-08",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Washington Nationals",
         "home_name": "St. Louis Cardinals",
         "away_id": 120,
@@ -259,7 +259,7 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-07-08 - Washington Nationals @ St. Louis Cardinals (Scheduled)"
+        "summary": "2025-07-08 - Washington Nationals @ St. Louis Cardinals (Pre-Game)"
     },
     {
         "game_id": 777192,
