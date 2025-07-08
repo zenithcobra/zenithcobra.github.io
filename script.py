@@ -3504,7 +3504,31 @@ def generate_leaders_table(leader_data1, leader_data2, leader_data3):
     html += make_table(leader_data3, "HR")
     return html
 
-def generate_team_analysis_string(team_data):
+def merge_team_data(team_data_1, team_data_2):
+    """
+    Merges information from the first list of dictionaries into the second list of dictionaries
+    based on matching team names.
+
+    Args:
+        team_data_1 (list): The first list of dictionaries containing additional team information.
+        team_data_2 (list): The second list of dictionaries to be updated with information from the first.
+
+    Returns:
+        list: The updated second list of dictionaries with merged information.
+    """
+    # Create a lookup dictionary for team_data_1 based on team names
+    team_data_1_lookup = {team["Team"]: team for team in team_data_1}
+
+    # Iterate through team_data_2 and merge data if team names match
+    for team in team_data_2:
+        team_name = team.get("team_name")
+        if team_name in team_data_1_lookup:
+            # Merge the matching dictionary from team_data_1 into the current team in team_data_2
+            team.update(team_data_1_lookup[team_name])
+
+    return team_data_2
+
+def generate_team_analysis_string(all_team_data, team_history_data):
     """
     Generates a detailed analysis of team data as a formatted string.
 
@@ -3527,8 +3551,11 @@ def generate_team_analysis_string(team_data):
     Returns:
         str: A formatted string containing the analysis for all teams.
     """
-    output = []
 
+    # merge team data
+    team_data = merge_team_data(all_team_data, team_history_data)
+
+    output = []
     for x in team_data:
         # Convert to 1's and 0's
         list1 = string_to_binary_list(x.get('Team Record'))
@@ -3557,15 +3584,27 @@ def generate_team_analysis_string(team_data):
         output.append(f"{x.get('Team')} vs {x.get('vs_Team')}")
         output.append(f"{x.get('Venue')}")
         # Print name and record
-        output.append(f"Record: {x.get('Team Record')}")
+        output.append(f"Record: {x.get('Team Record')[:45]} ... etc")
         output.append(f"Games Played: {list_counts.get('trials')}, Wins: {list_counts.get('success')}, Losses: {list_counts.get('failures')}, Win Percentage: {round(list_counts.get('success') / list_counts.get('trials'), 2)}%")
         # Print a graph
         output.append(text_graph)
         output.append("-" * 50)
         # Print out found data
-        for key, value in streak_data.items():
-            # output.append(f"{key}{':':<40}{value:<10}")
-            output.append(f"{key + ':':<40}{value:<10}")
+        # for key, value in streak_data.items():
+        #     # output.append(f"{key}{':':<40}{value:<10}")
+        #     output.append(f"{key + ':':<40}{value:<10}")
+        output.append(f"{'number of win streaks':<40}{streak_data.get('number_of_win_streaks'):<10}")
+        # output.append(f"{streak_data.get('longest_win_streak')}")
+        output.append(f"{'average win streak length':<40}{streak_data.get('average_win_streak_length'):<10}")
+        # output.append(f"{streak_data.get('occurrences_of_longest_win_streaks')}")
+        # output.append(f"{streak_data.get('shortest_win_streak')}")
+        # output.append(f"{streak_data.get('occurrences_of_shortest_win_streaks')}")
+        output.append(f"{'number of lose streaks':<40}{streak_data.get('number_of_lose_streaks'):<10}")
+        # output.append(f"{streak_data.get('longest_lose_streak')}")
+        output.append(f"{'average lose streak length':<40}{streak_data.get('average_lose_streak_length'):<10}")
+        # output.append(f"{streak_data.get('occurrences_of_longest_lose_streaks')}")
+        # output.append(f"{streak_data.get('shortest_lose_streak')}")
+        # output.append(f"{streak_data.get('occurrences_of_shortest_lose_streaks')}")
         output.append(f"{'Current Streak:':<40}{current_streak_s}, {amount}")
         output.append(f"{'Predicted Next Outcome:':<40}{'W' if predicted_outcome == 1 else 'L':<10}")
         # Markov / Monte Carlo
@@ -3574,6 +3613,249 @@ def generate_team_analysis_string(team_data):
         output.append(f"{'markov monte carlo certainty:':<40}{x.get('WLmmc%?'):<10}\n\n")
 
     return "\n".join(output)
+
+
+def merge_team_data(team_data_1, team_data_2):
+    """
+    Merges information from the first list of dictionaries into the second list of dictionaries
+    based on matching team names.
+
+    Args:
+        team_data_1 (list): The first list of dictionaries containing additional team information.
+        team_data_2 (list): The second list of dictionaries to be updated with information from the first.
+
+    Returns:
+        list: The updated second list of dictionaries with merged information.
+    """
+    # Create a lookup dictionary for team_data_1 based on team names
+    team_data_1_lookup = {team["Team"]: team for team in team_data_1}
+
+    # Iterate through team_data_2 and merge data if team names match
+    for team in team_data_2:
+        team_name = team.get("team_name")
+        if team_name in team_data_1_lookup:
+            # Merge the matching dictionary from team_data_1 into the current team in team_data_2
+            team.update(team_data_1_lookup[team_name])
+
+    return team_data_2
+
+def generate_team_analysis_dict(all_team_data, team_history_data):
+    """
+    Generates a detailed analysis of team data as a dictionary.
+
+    This method processes team data, including win/loss records, streak analysis, 
+    and predictions, and returns the results as a dictionary. 
+    The output includes:
+    - Team and opponent information
+    - Venue details
+    - Win/loss record and binary representation
+    - Streak analysis (e.g., longest streaks, average streak lengths)
+    - Current streak and predicted next outcome
+    - Markov and Monte Carlo predictions
+    - A text-based graph of streak distributions
+
+    Args:
+        all_team_data (list): A list of dictionaries containing team data.
+        team_history_data (list): A list of dictionaries containing historical team data.
+
+    Returns:
+        dict: A dictionary containing the analysis for all teams.
+    """
+
+    # Merge team data
+    team_data = merge_team_data(all_team_data, team_history_data)
+
+    result = {}
+    for x in team_data:
+        # Convert to 1's and 0's
+        list1 = string_to_binary_list(x.get('Team Record'))
+        # Count the list
+        list_counts = analyze_binary_list(list1)
+        # Find streaks in data
+        streaks = find_streaks_with_analysis(list1)
+        # Analyze all found streaks for specific info
+        streak_data = analyze_streaks(streaks.get('streaks'))
+        # Detect the current streak and predict
+        sequence = reverse_list(list1)
+        stats = {
+            "longest_win_streak": streak_data.get('longest_win_streak'),
+            "average_win_streak_length": streak_data.get('average_win_streak_length'),
+            "longest_lose_streak": streak_data.get('longest_lose_streak'),
+            "average_lose_streak_length": streak_data.get('average_lose_streak_length'),
+        }
+        current_streak, amount = detect_current_streak(sequence)
+        current_streak_s = "W" if current_streak == 1 else "L"
+        predicted_outcome = predict_streak_continuation((current_streak, amount), stats)
+        text_graph = text_streak_distribution(streaks.get('streaks'))
+
+        
+        # Build the dictionary for the current team
+        result[x.get('Team')] = {
+            "team_name": x.get('Team'),
+            "opponent": x.get('vs_Team'),
+            "venue": x.get('Venue'),
+            "record": x.get('Team Record'),
+            "binary_record": list1,
+            "games_played": list_counts.get('trials'),
+            "wins": list_counts.get('success'),
+            "losses": list_counts.get('failures'),
+            "win_percentage": round(list_counts.get('success') / list_counts.get('trials'), 2),
+            "streak_analysis": {
+                "number_of_win_streaks": streak_data.get('number_of_win_streaks'),
+                "longest_win_streak": streak_data.get('longest_win_streak'),
+                "average_win_streak_length": streak_data.get('average_win_streak_length'),
+                "number_of_lose_streaks": streak_data.get('number_of_lose_streaks'),
+                "longest_lose_streak": streak_data.get('longest_lose_streak'),
+                "average_lose_streak_length": streak_data.get('average_lose_streak_length'),
+            },
+            "current_streak": {
+                "streak_type": current_streak_s,
+                "streak_length": amount,
+            },
+            "predicted_outcome": "W" if predicted_outcome == 1 else "L",
+            "markov_predictions": {
+                "markov_prediction": x.get('WLmc?'),
+                "markov_monte_carlo": x.get('WLmmc?'),
+                "markov_monte_carlo_certainty": x.get('WLmmc%?'),
+            },
+            "streak_distribution_graph": text_graph,
+        }
+
+    return result
+
+def combine_dicts_for_data(beans, list_of_matches,team_data):
+    """
+    Combines the team analysis dictionary with match data and team data.
+
+    Args:
+        beans (dict): The team analysis dictionary.
+        list_of_matches (list): A list of dictionaries containing match data.
+        team_data (dict): A dictionary containing additional team information.
+
+    Returns:
+        dict: A combined dictionary containing all relevant data.
+    """
+    for x in beans:
+        team_name = beans[x].get('team_name')
+        vs_team = beans[x].get('opponent')
+        for y in team_data:
+            if team_name == y.get('team_name'):
+                team_record_plus = y.get('team_record_plus')
+                holder = []
+                for z in team_record_plus:
+                    # print(vs_team.split('(', 1)[0].strip())
+                    # print(z.get('vs_team'))
+                    if z.get('vs_team') == vs_team.split('(', 1)[0].strip():
+                        holder.append(z.get('result'))
+                # print(holder)
+                beans[x].update({'vs_record': holder})
+    
+    matches = []
+    for a in list_of_matches:
+        dict1 = {'away': beans.get(a.get('away')), 'home': beans.get(a.get('home'))}
+        matches.append(dict1)
+    return matches
+
+def get_combined_team_data():
+    """
+    Fetches and combines team data, schedule, and match information into a single dataset.
+
+    This method performs the following steps:
+    - Retrieves the current date and schedule.
+    - Builds a list of matches from the schedule.
+    - Reads team data and additional team data from JSON files.
+    - Generates a detailed analysis of team data.
+    - Combines the team analysis with match data.
+
+    Returns:
+        list: A list of dictionaries containing combined data for all matches.
+    """
+    # Get the current date and schedule
+    date = get_date()
+    schedule = get_schedule_by_date(date)
+
+    # Build the list of matches
+    list_of_matches = []
+    for x in schedule:
+        match_dict = {"away": x.get('away_name'), "home": x.get('home_name')}
+        list_of_matches.append(match_dict)
+
+    # Read team data from JSON files
+    team_data = read_json_file('data/team_data.json')
+    other_team_data = read_json_file('data/all_team_data.json')
+
+    # Generate team analysis
+    beans = generate_team_analysis_dict(other_team_data, team_data)
+
+    # Combine the data
+    combined_data = combine_dicts_for_data(beans, list_of_matches, team_data)
+
+    return combined_data
+
+
+def process_match_data(combined_data):
+    """
+    Processes combined match data and outputs a formatted summary for each match.
+
+    Args:
+        combined_data (list): A list of dictionaries containing combined match data, 
+                              with 'away' and 'home' keys for each match.
+
+    Returns:
+        str: A formatted string summarizing the match data.
+    """
+    output = []
+
+    for i, match in enumerate(combined_data, start=1):
+        # Extract away and home team data
+        away = match.get('away', {})
+        home = match.get('home', {})
+
+        # Format the match summary for the away team
+        output.append(f"<input type='checkbox'>")
+        output.append(f"<b>{away.get('team_name', 'N/A')}</b> (W:{away.get('wins', 'N/A')} L:{away.get('losses', 'N/A')} {away.get('win_percentage', 'N/A')}%)")
+        output.append(f"vs {home.get('team_name', 'N/A')} (home) (W:{home.get('wins', 'N/A')} L:{home.get('losses', 'N/A')} {home.get('win_percentage', 'N/A')}%)")
+        output.append(f"@  {away.get('venue', 'N/A')}")
+        output.append(f"Record Against Opp: {', '.join(away.get('vs_record', [])) or 'N/A'}")
+        output.append(f"Record: {away.get('record', 'N/A')[:100]} ... etc")  # Truncate long records for readability
+        # output.append("--------------------------------------------------")
+        output.append(away.get('streak_distribution_graph', 'N/A'))
+        output.append("--------------------------------------------------")
+        output.append(f"number of win streaks                   {away.get('streak_analysis', {}).get('number_of_win_streaks', 'N/A'):<10}")
+        output.append(f"average win streak length               {away.get('streak_analysis', {}).get('average_win_streak_length', 'N/A'):<10}")
+        output.append(f"number of lose streaks                  {away.get('streak_analysis', {}).get('number_of_lose_streaks', 'N/A'):<10}")
+        output.append(f"average lose streak length              {away.get('streak_analysis', {}).get('average_lose_streak_length', 'N/A'):<10}")
+        output.append(f"Current Streak:                         {away.get('current_streak', {}).get('streak_type', 'N/A')}, {away.get('current_streak', {}).get('streak_length', 'N/A')}")
+        output.append(f"Predicted Next Outcome:                 {away.get('predicted_outcome', 'N/A'):<10}")
+        output.append(f"markov prediction:                      {away.get('markov_predictions', {}).get('markov_prediction', 'N/A'):<10}")
+        output.append(f"markov monte carlo:                     {away.get('markov_predictions', {}).get('markov_monte_carlo', 'N/A'):<10}")
+        output.append(f"markov monte carlo certainty:           {away.get('markov_predictions', {}).get('markov_monte_carlo_certainty', 'N/A'):<10}")
+        output.append("")
+
+        # Format the match summary for the home team
+        output.append(f"<input type='checkbox'>")
+        output.append(f"<b>{home.get('team_name', 'N/A')}</b> (W:{home.get('wins', 'N/A')} L:{home.get('losses', 'N/A')} {home.get('win_percentage', 'N/A')}%)")
+        output.append(f"vs {away.get('team_name', 'N/A')} (away) (W:{away.get('wins', 'N/A')} L:{away.get('losses', 'N/A')} {away.get('win_percentage', 'N/A')}%)")
+        output.append(f"@  {home.get('venue', 'N/A')}")
+        output.append(f"Record Against Opp: {', '.join(home.get('vs_record', [])) or 'N/A'}")
+        output.append(f"Record: {home.get('record', 'N/A')[:100]} ... etc")  # Truncate long records for readability
+        # output.append("--------------------------------------------------")
+        output.append(home.get('streak_distribution_graph', 'N/A'))
+        output.append("--------------------------------------------------")
+        output.append(f"number of win streaks                   {home.get('streak_analysis', {}).get('number_of_win_streaks', 'N/A'):<10}")
+        output.append(f"average win streak length               {home.get('streak_analysis', {}).get('average_win_streak_length', 'N/A'):<10}")
+        output.append(f"number of lose streaks                  {home.get('streak_analysis', {}).get('number_of_lose_streaks', 'N/A'):<10}")
+        output.append(f"average lose streak length              {home.get('streak_analysis', {}).get('average_lose_streak_length', 'N/A'):<10}")
+        output.append(f"Current Streak:                         {home.get('current_streak', {}).get('streak_type', 'N/A')}, {home.get('current_streak', {}).get('streak_length', 'N/A')}")
+        output.append(f"Predicted Next Outcome:                 {home.get('predicted_outcome', 'N/A'):<10}")
+        output.append(f"markov prediction:                      {home.get('markov_predictions', {}).get('markov_prediction', 'N/A'):<10}")
+        output.append(f"markov monte carlo:                     {home.get('markov_predictions', {}).get('markov_monte_carlo', 'N/A'):<10}")
+        output.append(f"markov monte carlo certainty:           {home.get('markov_predictions', {}).get('markov_monte_carlo_certainty', 'N/A'):<10}")
+        output.append("")
+
+    return "\n".join(output)
+
+
 
 def make_index():
     # get date for later
@@ -3627,7 +3909,12 @@ def make_index():
     # save_to_text(team_data_table,'team_data_table')
     team_table_data = parse_html_table(team_data_table)
     save_to_json(team_table_data, "all_team_data")
-    team_analysis_string = generate_team_analysis_string(team_table_data)
+    # team_analysis_string = generate_team_analysis_string(team_table_data, team_data)
+    # Call the method to get the combined data
+    combined_data = get_combined_team_data()
+    # Call the method with the combined data
+    team_analysis_string = process_match_data(combined_data)
+
     
     pitcher_data_path = "data/pitcher_data.json"
     pitcher_data = read_json_file(pitcher_data_path)
@@ -3793,7 +4080,7 @@ def process_html(html_as_string):
 
     # Add JavaScript to handle saving checkbox states and copying rows
     script = soup.new_tag("script")
-    script.string = """
+    string = """
     document.addEventListener('DOMContentLoaded', function() {
         // Function to handle checkbox clicks
         function handleCheckboxClick(checkbox) {
@@ -3832,7 +4119,7 @@ def process_html(html_as_string):
 
     # Add JavaScript to handle row highlighting
     highlight_script = soup.new_tag("script")
-    highlight_script.string = """
+    highlight_string = """
     document.addEventListener('DOMContentLoaded', function() {
         let currentlyHighlightedRow = null;
 
@@ -3922,7 +4209,7 @@ def process_html(html_as_string):
     soup.head.append(sticky_style)
 
     sticky_headers_script = soup.new_tag("script")
-    sticky_headers_script.string = """
+    sticky_headers_string = """
     document.addEventListener('DOMContentLoaded', function() {
         const navbarHeight = document.querySelector('.navbar').offsetHeight;
 
@@ -3970,7 +4257,7 @@ def process_html(html_as_string):
 
     # # Add JavaScript to handle filtering rows based on radio selection
     # filter_script = soup.new_tag("script")
-    # filter_script.string = """
+    # filter_string = """
     # document.addEventListener('DOMContentLoaded', function() {
     #     const radios = document.querySelectorAll('input[type="radio"]');
     #     const tables = document.querySelectorAll('table');
@@ -4059,7 +4346,7 @@ def process_html(html_as_string):
 
     # Add JavaScript for filtering and resetting
     filter_script = soup.new_tag("script")
-    filter_script.string = """
+    filter_string = """
     document.addEventListener('DOMContentLoaded', function() {
         const filterButton = document.getElementById('filter-button');
         const resetButton = document.getElementById('reset-button');
