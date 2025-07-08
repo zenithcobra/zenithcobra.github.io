@@ -1119,15 +1119,48 @@ def get_team_records(teams_history):
         team_history = a.get('last_games')
         team_record = ''
         list_of_previous_games = team_history
+        list_of_results = []
         for x in list_of_previous_games:
             schedule1 = statsapi.schedule(game_id=x)
             if schedule1[0].get('winning_team') == team_name:
                 team_record = team_record + 'W-'
+                dict_of_info = {
+                    'game_id': x,
+                    'vs_team': schedule1[0].get('losing_team'),
+                    'game_date': schedule1[0].get('game_date'),
+                    'result': 'W'
+                }
             else:
                 team_record = team_record + 'L-'
-        a.update({'team_record': team_record})
+                dict_of_info = {
+                    'game_id': x,
+                    'vs_team': schedule1[0].get('winning_team'),
+                    'game_date': schedule1[0].get('game_date'),
+                    'result': 'L'
+                }
+            list_of_results.append(dict_of_info)
+            
+        a.update({'team_record': team_record, 'team_record_plus': list_of_results})
 
     return teams_history
+
+# def get_team_records(teams_history):
+#     list_of_lists = []
+#     for a in teams_history:
+#         team_id = a.get('team_id')
+#         team_name = a.get('team_name')
+#         team_history = a.get('last_games')
+#         team_record = ''
+#         list_of_previous_games = team_history
+#         for x in list_of_previous_games:
+#             schedule1 = statsapi.schedule(game_id=x)
+#             if schedule1[0].get('winning_team') == team_name:
+#                 team_record = team_record + 'W-'
+#             else:
+#                 team_record = team_record + 'L-'
+#         a.update({'team_record': team_record})
+
+#     return teams_history
 
 def process_pitchers_from_processed_schedule(processed_schedule):
     """
@@ -3593,6 +3626,7 @@ def make_index():
     team_data_table = generate_team_html_table(team_data, ballpark_data, schedule_data)
     # save_to_text(team_data_table,'team_data_table')
     team_table_data = parse_html_table(team_data_table)
+    save_to_json(team_table_data, "all_team_data")
     team_analysis_string = generate_team_analysis_string(team_table_data)
     
     pitcher_data_path = "data/pitcher_data.json"
