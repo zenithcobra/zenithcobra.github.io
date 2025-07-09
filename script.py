@@ -1112,7 +1112,15 @@ def get_standings_text():
     return full_content
 
 def get_team_records(teams_history):
-    list_of_lists = []
+    """
+    Processes team history to generate a record of wins and losses for each team.
+
+    Args:
+        teams_history (list): A list of dictionaries containing team history data.
+
+    Returns:
+        list: The updated list of team histories with win/loss records and additional game details.
+    """
     for a in teams_history:
         team_id = a.get('team_id')
         team_name = a.get('team_name')
@@ -1120,29 +1128,92 @@ def get_team_records(teams_history):
         team_record = ''
         list_of_previous_games = team_history
         list_of_results = []
+
         for x in list_of_previous_games:
             schedule1 = statsapi.schedule(game_id=x)
-            if schedule1[0].get('winning_team') == team_name:
-                team_record = team_record + 'W-'
+
+            # Ensure the schedule data exists and is valid
+            if not schedule1 or not schedule1[0]:
+                print(f"Warning: No schedule data found for game_id {x}")
+                continue
+
+            game_data = schedule1[0]
+
+            # Determine the winning team
+            winning_team = game_data.get('winning_team')
+            if not winning_team:
+                # Fallback: Determine the winner based on scores
+                away_score = game_data.get('away_score', 0)
+                home_score = game_data.get('home_score', 0)
+                away_team = game_data.get('away_name')
+                home_team = game_data.get('home_name')
+
+                if away_score > home_score:
+                    winning_team = away_team
+                elif home_score > away_score:
+                    winning_team = home_team
+                else:
+                    print(f"Warning: Unable to determine winner for game_id {x}")
+                    continue  # Skip this game if scores are tied or invalid
+
+            # Determine if the current team won or lost
+            if winning_team == team_name:
+                team_record += 'W-'
                 dict_of_info = {
                     'game_id': x,
-                    'vs_team': schedule1[0].get('losing_team'),
-                    'game_date': schedule1[0].get('game_date'),
+                    'vs_team': game_data.get('losing_team', game_data.get('home_name') if game_data.get('away_name') == team_name else game_data.get('away_name')),
+                    'game_date': game_data.get('game_date'),
                     'result': 'W'
                 }
             else:
-                team_record = team_record + 'L-'
+                team_record += 'L-'
                 dict_of_info = {
                     'game_id': x,
-                    'vs_team': schedule1[0].get('winning_team'),
-                    'game_date': schedule1[0].get('game_date'),
+                    'vs_team': winning_team,
+                    'game_date': game_data.get('game_date'),
                     'result': 'L'
                 }
+
             list_of_results.append(dict_of_info)
-            
+
+        # Update the team history with the record and detailed results
         a.update({'team_record': team_record, 'team_record_plus': list_of_results})
 
     return teams_history
+
+
+# def get_team_records(teams_history):
+#     list_of_lists = []
+#     for a in teams_history:
+#         team_id = a.get('team_id')
+#         team_name = a.get('team_name')
+#         team_history = a.get('last_games')
+#         team_record = ''
+#         list_of_previous_games = team_history
+#         list_of_results = []
+#         for x in list_of_previous_games:
+#             schedule1 = statsapi.schedule(game_id=x)
+#             if schedule1[0].get('winning_team') == team_name:
+#                 team_record = team_record + 'W-'
+#                 dict_of_info = {
+#                     'game_id': x,
+#                     'vs_team': schedule1[0].get('losing_team'),
+#                     'game_date': schedule1[0].get('game_date'),
+#                     'result': 'W'
+#                 }
+#             else:
+#                 team_record = team_record + 'L-'
+#                 dict_of_info = {
+#                     'game_id': x,
+#                     'vs_team': schedule1[0].get('winning_team'),
+#                     'game_date': schedule1[0].get('game_date'),
+#                     'result': 'L'
+#                 }
+#             list_of_results.append(dict_of_info)
+            
+#         a.update({'team_record': team_record, 'team_record_plus': list_of_results})
+
+#     return teams_history
 
 # def get_team_records(teams_history):
 #     list_of_lists = []
@@ -3341,7 +3412,7 @@ def generate_team_html_table(team_data, ball_park_data, schedule_data):
                 # print(vs_team)
                 dict1.update({"team_name":f"{team_name}"})
                 dict1.update({"vs_team": f"{vs_team} (<b>home</b>)"})
-                dict1.update({"series_info":series_info})
+                dict1.update({"series_info":y.get("series_status")})
                 venue = y.get('venue_name')
                 for z in ball_park_data:
                     venue_name = z.get('Stadium')
@@ -3354,7 +3425,7 @@ def generate_team_html_table(team_data, ball_park_data, schedule_data):
                 # print(vs_team)
                 dict1.update({"team_name":f"{team_name}"})
                 dict1.update({"vs_team": f"{vs_team} (<b>away</b>)"})
-                dict1.update({"series_info":series_info})
+                dict1.update({"series_info":y.get("series_status")})
                 venue = y.get('venue_name')
                 for z in ball_park_data:
                     venue_name = z.get('Stadium')
