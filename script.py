@@ -2457,7 +2457,40 @@ def plot_streak_distribution(sequence_analysis):
     plt.title('Distribution of Streak Lengths')
     plt.show()
 
+
 def text_streak_distribution(sequence_analysis):
+    """
+    Generates a one-line text-based graph of streak distributions for embedding in an HTML row.
+
+    Args:
+        sequence_analysis (list): A list of dictionaries containing streak data.
+
+    Returns:
+        str: A one-line text-based graph as a string.
+    """
+    # Extract streak lengths for wins (1) and losses (0)
+    streak_lengths_1 = [streak['streak_length'] for streak in sequence_analysis if streak['streak_value'] == 1]
+    streak_lengths_0 = [streak['streak_length'] for streak in sequence_analysis if streak['streak_value'] == 0]
+
+    # Calculate frequency distributions
+    max_length_1 = max(streak_lengths_1, default=0)
+    max_length_0 = max(streak_lengths_0, default=0)
+    max_length = max(max_length_1, max_length_0)
+
+    freq_1 = {length: streak_lengths_1.count(length) for length in range(1, max_length + 1)}
+    freq_0 = {length: streak_lengths_0.count(length) for length in range(1, max_length + 1)}
+
+    # Generate the one-line text-based graph
+    graph_parts = []
+    for length in range(1, max_length + 1):
+        bar_1 = "#" * freq_1.get(length, 0)
+        bar_0 = "*" * freq_0.get(length, 0)
+        graph_parts.append(f"{length}:{bar_1}{bar_0}")
+
+    return " | ".join(graph_parts)
+
+
+def text_streak_distribution1(sequence_analysis):
     """
     Generates a text-based graph of streak distributions for embedding in a text file.
 
@@ -3863,8 +3896,74 @@ def get_combined_team_data():
 
     return combined_data
 
-
 def process_match_data(combined_data):
+    """
+    Generates an HTML table summarizing match data.
+
+    Args:
+        combined_data (list): A list of dictionaries containing combined match data,
+                              with 'away' and 'home' keys for each match.
+
+    Returns:
+        str: An HTML table as a string.
+    """
+    # Define the table headers
+    headers = [
+        "Win", "Loss", "Team", "Record (W,L,%)", "vs Team", "vs Record (W,L,%)",
+        "Venue", "VS Record Against", "Record", "Graph", "Win Streaks",
+        "Average Win Streak", "Lose Streaks", "Average Lose Streak",
+        "Current Streak", "Predicted Outcome", "WLmc?", "WLmmc?", "WLmmc%?"
+    ]
+
+    # Start the HTML table
+    html_output = ["<table border='1'>"]
+    # html_output.append("<thead>")
+    html_output.append("<tr>")
+    for header in headers:
+        html_output.append(f"<th>{header}</th>")
+    html_output.append("</tr>")
+    # html_output.append("</thead>")
+    # html_output.append("<tbody>")
+
+    # Populate the table rows with match data
+    for match in combined_data:
+        for team_type in ["away", "home"]:  # Process both away and home teams
+            team_data = match.get(team_type, {})
+            opponent_data = match.get("home" if team_type == "away" else "away", {})
+
+            # Generate the inline graph for the streak distribution
+            streak_graph = team_data.get('streak_distribution_graph', 'N/A')
+
+            # Add a row for the team
+            html_output.append("<tr>")
+            html_output.append(f"<td><input type='checkbox'></td>")
+            html_output.append(f"<td><input type='checkbox'></td>")
+            html_output.append(f"<td>{team_data.get('team_name', 'N/A')}</td>")
+            html_output.append(f"<td>W:{team_data.get('wins', 'N/A')} L:{team_data.get('losses', 'N/A')} %:{team_data.get('win_percentage', 'N/A')}</td>")
+            html_output.append(f"<td>{opponent_data.get('team_name', 'N/A')}</td>")
+            html_output.append(f"<td>W:{opponent_data.get('wins', 'N/A')} L:{opponent_data.get('losses', 'N/A')} %:{opponent_data.get('win_percentage', 'N/A')}</td>")
+            html_output.append(f"<td>{team_data.get('venue', 'N/A')}</td>")
+            html_output.append(f"<td>{', '.join(team_data.get('vs_record', [])) or 'N/A'}</td>")
+            html_output.append(f"<td>{team_data.get('record', 'N/A')}</td>")
+            html_output.append(f"<td>{streak_graph}</td>")
+            html_output.append(f"<td>{team_data.get('streak_analysis', {}).get('number_of_win_streaks', 'N/A')}</td>")
+            html_output.append(f"<td>{team_data.get('streak_analysis', {}).get('average_win_streak_length', 'N/A')}</td>")
+            html_output.append(f"<td>{team_data.get('streak_analysis', {}).get('number_of_lose_streaks', 'N/A')}</td>")
+            html_output.append(f"<td>{team_data.get('streak_analysis', {}).get('average_lose_streak_length', 'N/A')}</td>")
+            html_output.append(f"<td>{team_data.get('current_streak', {}).get('streak_type', 'N/A')} ({team_data.get('current_streak', {}).get('streak_length', 'N/A')})</td>")
+            html_output.append(f"<td>{team_data.get('predicted_outcome', 'N/A')}</td>")
+            html_output.append(f"<td>{team_data.get('markov_predictions', {}).get('markov_prediction', 'N/A')}</td>")
+            html_output.append(f"<td>{team_data.get('markov_predictions', {}).get('markov_monte_carlo', 'N/A')}</td>")
+            html_output.append(f"<td>{team_data.get('markov_predictions', {}).get('markov_monte_carlo_certainty', 'N/A')}</td>")
+            html_output.append("</tr>")
+
+    # Close the table
+    # html_output.append("</tbody>")
+    html_output.append("</table>")
+
+    return "\n".join(html_output)
+
+def process_match_data1(combined_data):
     """
     Processes combined match data and outputs a formatted summary for each match.
 
@@ -3888,7 +3987,7 @@ def process_match_data(combined_data):
         output.append(f"vs {home.get('team_name', 'N/A')} (home) (W:{home.get('wins', 'N/A')} L:{home.get('losses', 'N/A')} {home.get('win_percentage', 'N/A')}%)")
         output.append(f"@  {away.get('venue', 'N/A')}")
         output.append(f"Record Against Opp: {', '.join(away.get('vs_record', [])) or 'N/A'}")
-        output.append(f"Record: {away.get('record', 'N/A')[:100]} ... etc")  # Truncate long records for readability
+        output.append(f"Record: {away.get('record', 'N/A')}")  # Truncate long records for readability
         # output.append("--------------------------------------------------")
         output.append(away.get('streak_distribution_graph', 'N/A'))
         output.append("--------------------------------------------------")
@@ -4024,37 +4123,108 @@ def make_index():
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MLB Report</title>
-    <style>
-            body {{
-                margin: 0;
-                font-family: Arial, sans-serif;
-            }}
-            .navbar {{
-                position: sticky;
-                top: 0;
-                background-color: #333;
-                overflow: hidden;
-                # overflow-x: auto;
-                z-index: 1000;
-                white-space: nowrap; /* Prevent wrapping */
-            }}
-            .navbar a {{
-                float: left;
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 8px 10px; /* Reduced padding */
-                font-size: 12px; /* Smaller font size */
-                text-decoration: none;
-            }}
-            .navbar a:hover {{
-                background-color: #ddd;
-                color: black;
-            }}
-            .content {{
-                padding: 20px;
-            }}
-        </style>
+<style>
+                body {{
+                    margin: 0;
+                    font-family: Arial, sans-serif;
+                }}
+
+                .navbar {{
+                    position: sticky;
+                    top: 0;
+                    background-color: #333;
+                    overflow: hidden;
+                    z-index: 1000;
+                    white-space: nowrap; /* Prevent wrapping */
+                }}
+
+                .navbar a {{
+                    float: left;
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 8px 10px; /* Reduced padding */
+                    font-size: 12px; /* Smaller font size */
+                    text-decoration: none;
+                }}
+
+                .navbar a:hover {{
+                    background-color: #ddd;
+                    color: black;
+                }}
+
+                .content {{
+                    padding: 20px;
+                }}
+
+                .highlight {{
+                    background-color: yellow; /* Highlight color */
+                }}
+
+                /* Generic table styling */
+                table {{
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 20px 0;
+                    font-size: 14px; /* Slightly larger font for readability */
+                    font-family: 'Courier New', Courier, monospace; /* Data science "nerd" font */
+                    color: #333;
+                }}
+
+                th, td {{
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }}
+
+                th {{
+                    background-color: black; /* Green header for a modern look */
+                    color: white;
+                    font-weight: bold;
+                    text-transform: uppercase; /* Make headers stand out */
+                    font-size: 12px; /* Smaller font for headers */
+                }}
+
+                tr:nth-child(even) {{
+                    background-color: #f9f9f9; /* Light gray for even rows */
+                }}
+
+                tr:nth-child(odd) {{
+                    background-color: #ffffff; /* White for odd rows */
+                }}
+
+                tr:hover {{
+                    background-color: #f1f1f1; /* Highlight row on hover */
+                }}
+
+                td.numeric {{
+                    text-align: right; /* Align numeric data to the right */
+                }}
+
+                /* Add subtle shadow for a modern look */
+                table {{
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                }}
+
+                /* Sticky header for large tables */
+                thead th {{
+                    position: sticky;
+                    top: 0;
+                    background-color: #4CAF50; /* Ensure sticky header matches the header color */
+                    z-index: 2;
+                }}
+
+                /* Add a hover effect for headers */
+                th:hover {{
+                    background-color: #45a049; /* Slightly darker green on hover */
+                }}
+
+                /* Compact table option */
+                .compact th, .compact td {{
+                    padding: 4px; /* Reduce padding for compact tables */
+                    font-size: 12px; /* Smaller font size for compact tables */
+                }}
+            </style>
     </head>
     <body>
         <div class="navbar">
@@ -4065,7 +4235,6 @@ def make_index():
             <a href="#todays-schedule">Schedule</a>
             <a href="#teams">Select Teams</a>
             <a href="#records">Teams</a>
-            <a href="#team-analysis">Analysis</a>
             <a href="#leaders">Leaders</a>
             <a href="#match-overviews-pitchers">Pitchers</a>
             <a href="#match-overviews-batters">Roster</a>
@@ -4099,8 +4268,6 @@ def make_index():
             <h2 id="teams">Filter Teams</h2>
             <pre>{team_list_table}</pre>
             <h2 id="records">Team Records</h2>
-            <pre>{team_data_table}</pre>
-            <h2 id="team-analysis">Team Analysis</h2>
             <pre>{team_analysis_string}</pre>
             <h2 id="leaders">League Leaders</h2>
             <pre>{leaders_table}</pre>
@@ -4115,6 +4282,24 @@ def make_index():
             
 
         </div>
+                <script>
+            document.addEventListener('DOMContentLoaded', function() {{
+                let currentlyHighlightedRow = null;
+
+                // Add click event listener to all table rows
+                document.querySelectorAll('table tr').forEach(row => {{
+                    row.addEventListener('click', function() {{
+                        // Remove highlight from the previously highlighted row
+                        if (currentlyHighlightedRow) {{
+                            currentlyHighlightedRow.classList.remove('highlight');
+                        }}
+                        // Highlight the clicked row
+                        this.classList.add('highlight');
+                        currentlyHighlightedRow = this;
+                    }});
+                }});
+            }});
+        </script>
     </body>
     </html>
     """
@@ -4151,7 +4336,7 @@ def process_html(html_as_string):
 
     # Add JavaScript to handle saving checkbox states and copying rows
     script = soup.new_tag("script")
-    string = """
+    script.string = """
     document.addEventListener('DOMContentLoaded', function() {
         // Function to handle checkbox clicks
         function handleCheckboxClick(checkbox) {
@@ -4190,7 +4375,7 @@ def process_html(html_as_string):
 
     # Add JavaScript to handle row highlighting
     highlight_script = soup.new_tag("script")
-    highlight_string = """
+    script.highlight_string = """
     document.addEventListener('DOMContentLoaded', function() {
         let currentlyHighlightedRow = null;
 
@@ -4280,7 +4465,7 @@ def process_html(html_as_string):
     soup.head.append(sticky_style)
 
     sticky_headers_script = soup.new_tag("script")
-    sticky_headers_string = """
+    sticky_headers_script.string = """
     document.addEventListener('DOMContentLoaded', function() {
         const navbarHeight = document.querySelector('.navbar').offsetHeight;
 
@@ -4417,7 +4602,7 @@ def process_html(html_as_string):
 
     # Add JavaScript for filtering and resetting
     filter_script = soup.new_tag("script")
-    filter_string = """
+    filter_script.string = """
     document.addEventListener('DOMContentLoaded', function() {
         const filterButton = document.getElementById('filter-button');
         const resetButton = document.getElementById('reset-button');
