@@ -2950,6 +2950,93 @@ def generate_pitcher_html_table(pitcher_data):
     html += "</table>\n"
     return html
 
+# def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
+#     """
+#     Converts batter data (list of dictionaries) into three HTML tables.
+
+#     Args:
+#         batter_data (list): A list of dictionaries containing batter data.
+
+#     Returns:
+#         str: An HTML string representing the batter tables.
+#     """
+#     if not batter_data:
+#         return "<h2>Batter Data</h2><p>No data available</p>"
+#     if not ball_park_data:
+#         return "<h2>Team Data</h2><p>No data available</p>"
+#     if not schedule_data:
+#         return "<h2>Team Data</h2><p>No data available</p>"
+
+#     for a in ball_park_data:
+#         stadium = a.get('Stadium')
+#         if stadium == 'Guaranteed Rate Field':
+#             a.update({'Stadium': 'Rate Field'})
+#         elif stadium == 'Minute Maid Park':
+#             a.update({'Stadium': 'Daikin Park'})
+
+#     for x in batter_data:
+#         team_id = x.get('team_id')
+#         for y in schedule_data:
+#             away_id = y.get('away_id')
+#             home_id = y.get('home_id')
+#             if team_id == away_id:
+#                 venue = y.get('venue_name')
+#                 for z in ball_park_data:
+#                     venue_name = z.get('Stadium')
+#                     venue_hr = z.get('HR')
+#                     if venue == venue_name:
+#                         x.update({"venue": f"{venue} <b>({venue_hr})</b>"})
+#             elif team_id == home_id:
+#                 venue = y.get('venue_name')
+#                 for z in ball_park_data:
+#                     venue_name = z.get('Stadium')
+#                     venue_hr = z.get('HR')
+#                     if venue == venue_name:
+#                         x.update({"venue": f"{venue} <b>({venue_hr})</b>"})
+
+#     analyzed_batter_data = analyze_sequence_and_predict2(batter_data)
+
+#     # Define headers for each table
+#     headers1 = [
+#         "RBI", "H", "HR", "Name", "Team", "Pos", "Venue", "GP", "HR", "HRpg",
+#         "fHRpg", "HR24", "HR24pg", "fHR24pg", "HRmc?", "HRmmc?", "HRmmc%?", "HR_record"
+#     ]
+#     headers2 = [
+#         "RBI", "H", "HR", "Name", "Team", "Pos", "Venue", "GP", "H", "Hpg",
+#         "fHpg", "Hmc?", "Hmmc?", "Hmmc%?", "H_record"
+#     ]
+#     headers3 = [
+#         "RBI", "H", "HR", "Name", "Team", "Pos", "Venue", "GP", "RBIpg", "fRBIpg",
+#         "RBI", "RBImc?", "RBImmc?", "RBImmc%?", "RBI_record"
+#     ]
+
+#     # Helper function to generate a table
+#     def generate_table(headers, data):
+#         html = "<table border='1'>\n<tr>"
+#         html += "".join(f"<th>{header}</th>" for header in headers)
+#         html += "</tr>\n"
+#         for row in data:
+#             html += "<tr>"
+#             for header in headers:
+#                 value = row.get(header, '')
+#                 if isinstance(value, float):
+#                     value = round(value, 2)
+#                 html += f"<td>{value}</td>"
+#             html += "</tr>\n"
+#         html += "</table>\n"
+#         return html
+
+#     # Generate the three tables
+#     table1 = generate_table(headers1, analyzed_batter_data)
+#     table2 = generate_table(headers2, analyzed_batter_data)
+#     table3 = generate_table(headers3, analyzed_batter_data)
+
+#     # Combine the tables into a single HTML string
+#     html = f"<h2>Table 1</h2>\n{table1}"
+#     html += f"<h2>Table 2</h2>\n{table2}"
+#     html += f"<h2>Table 3</h2>\n{table3}"
+
+#     return html
 def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
     """
     Converts batter data (list of dictionaries) into an HTML table.
@@ -3017,6 +3104,50 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
         "HRmmc?",
         "HRmmc%?",
         "HR_record",
+    ]
+
+    # Start the HTML table
+    html2 = "<table border='1'>\n<tr>"
+    html2 += "".join(f"<th>{header}</th>" for header in headers)
+    html2 += "</tr>\n"
+
+    # Add rows for each dictionary
+    for row in analyzed_batter_data:
+        html2 += "<tr>"
+        # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
+        html2 += f"<td><input type='checkbox'></td>"
+        html2 += f"<td><input type='checkbox'></td>"
+        html2 += f"<td><input type='checkbox'></td>"
+        html2 += f"<td>{row.get("player_name", '')}</td>"
+        html2 += f"<td>{row.get("team", '')}</td>"
+        html2 += f"<td>{row.get("position", '')}</td>"
+        html2 += f"<td>{row.get("venue", '')}</td>"
+        html2 += f"<td>{int(row.get("games_played", ''))}</td>"
+        html2 += f"<td>{int(row.get("HR", ''))}</td>"
+        html2 += f"<td>{row.get("HRpg", '')}</td>"
+        html2 += f"<td>{row.get("fHRpg", '')}</td>"
+        html2 += f"<td>{row.get("HR24", '')}</td>"
+        html2 += f"<td>{row.get("HR24pg", '')}</td>"
+        html2 += f"<td>{row.get("fHR24pg", '')}</td>"
+        html2 += f"<td>{row.get("hr_prediction", '')}</td>"
+        html2 += f"<td>{row.get("hr_mmp", '')}</td>"
+        valuea = row.get("hr_mmpp", '')
+        html2 += f"<td>{round(float(valuea), 2) if valuea else ''}</td>"
+        # html += f"<td>{round(float(row.get("hr_mmpp", '')),2)}</td>"
+        html2 += f"<td>{row.get("HR_record", '')}</td>"
+        html2 += "</tr>\n"
+
+    html2 += "</table>\n"
+
+    headers2 = [
+        "RBI",
+        "H",
+        "HR",
+        "Name",
+        "Team",
+        "Pos",
+        "Venue",
+        "GP",
         "H",
         "Hpg",
         "fHpg",
@@ -3024,6 +3155,47 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
         "Hmmc?",
         "Hmmc%?",
         "H_record",
+    ]
+
+# Start the HTML table
+    html3 = "<table border='1'>\n<tr>"
+    html3 += "".join(f"<th>{header}</th>" for header in headers2)
+    html3 += "</tr>\n"
+
+    # Add rows for each dictionary
+    for row in analyzed_batter_data:
+        html3 += "<tr>"
+        # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
+        html3 += f"<td><input type='checkbox'></td>"
+        html3 += f"<td><input type='checkbox'></td>"
+        html3 += f"<td><input type='checkbox'></td>"
+        html3 += f"<td>{row.get("player_name", '')}</td>"
+        html3 += f"<td>{row.get("team", '')}</td>"
+        html3 += f"<td>{row.get("position", '')}</td>"
+        html3 += f"<td>{row.get("venue", '')}</td>"
+        html3 += f"<td>{int(row.get("games_played", ''))}</td>"
+        html3 += f"<td>{row.get("H", '')}</td>"
+        html3 += f"<td>{row.get("Hpg", '')}</td>"
+        html3 += f"<td>{row.get("fHpg", '')}</td>"
+        html3 += f"<td>{row.get("h_prediction", '')}</td>"
+        html3 += f"<td>{row.get("h_mmp", '')}</td>"
+        value2b = row.get("h_mmpp", '')
+        html3 += f"<td>{round(float(value2b), 2) if value2b else ''}</td>"
+        # html += f"<td>{round(float(row.get("h_mmpp", '')),2)}</td>"
+        html3 += f"<td>{row.get("H_record", '')}</td>"
+        html3 += "</tr>\n"
+
+    html3 += "</table>\n"
+
+    headers3 = [
+        "RBI",
+        "H",
+        "HR",
+        "Name",
+        "Team",
+        "Pos",
+        "Venue",
+        "GP",
         "RBIpg",
         "fRBIpg",
         "RBI",
@@ -3033,56 +3205,39 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
         "RBI_record"
     ]
 
-    # Start the HTML table
-    html = "<table border='1'>\n<tr>"
-    html += "".join(f"<th>{header}</th>" for header in headers)
-    html += "</tr>\n"
+# Start the HTML table
+    html4 = "<table border='1'>\n<tr>"
+    html4 += "".join(f"<th>{header}</th>" for header in headers3)
+    html4 += "</tr>\n"
 
     # Add rows for each dictionary
     for row in analyzed_batter_data:
-        html += "<tr>"
+        html4 += "<tr>"
         # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
-        html += f"<td><input type='checkbox'></td>"
-        html += f"<td><input type='checkbox'></td>"
-        html += f"<td><input type='checkbox'></td>"
-        html += f"<td>{row.get("player_name", '')}</td>"
-        html += f"<td>{row.get("team", '')}</td>"
-        html += f"<td>{row.get("position", '')}</td>"
-        html += f"<td>{row.get("venue", '')}</td>"
-        html += f"<td>{int(row.get("games_played", ''))}</td>"
-        html += f"<td>{int(row.get("HR", ''))}</td>"
-        html += f"<td>{row.get("HRpg", '')}</td>"
-        html += f"<td>{row.get("fHRpg", '')}</td>"
-        html += f"<td>{row.get("HR24", '')}</td>"
-        html += f"<td>{row.get("HR24pg", '')}</td>"
-        html += f"<td>{row.get("fHR24pg", '')}</td>"
-        html += f"<td>{row.get("hr_prediction", '')}</td>"
-        html += f"<td>{row.get("hr_mmp", '')}</td>"
-        value = row.get("hr_mmpp", '')
-        html += f"<td>{round(float(value), 2) if value else ''}</td>"
-        # html += f"<td>{round(float(row.get("hr_mmpp", '')),2)}</td>"
-        html += f"<td>{row.get("HR_record", '')}</td>"
-        html += f"<td>{row.get("H", '')}</td>"
-        html += f"<td>{row.get("Hpg", '')}</td>"
-        html += f"<td>{row.get("fHpg", '')}</td>"
-        html += f"<td>{row.get("h_prediction", '')}</td>"
-        html += f"<td>{row.get("h_mmp", '')}</td>"
-        value2 = row.get("h_mmpp", '')
-        html += f"<td>{round(float(value2), 2) if value2 else ''}</td>"
-        # html += f"<td>{round(float(row.get("h_mmpp", '')),2)}</td>"
-        html += f"<td>{row.get("H_record", '')}</td>"
-        html += f"<td>{row.get("RBIpg", '')}</td>"
-        html += f"<td>{row.get("fRBIpg", '')}</td>"
-        html += f"<td>{row.get("RBI", '')}</td>"
-        html += f"<td>{row.get("rbi_prediction", '')}</td>"
-        html += f"<td>{row.get("rbi_mmp", '')}</td>"
-        value3 = row.get("rbi_mmpp", '')
-        html += f"<td>{round(float(value3), 2) if value3 else ''}</td>"
+        html4 += f"<td><input type='checkbox'></td>"
+        html4 += f"<td><input type='checkbox'></td>"
+        html4 += f"<td><input type='checkbox'></td>"
+        html4 += f"<td>{row.get("player_name", '')}</td>"
+        html4 += f"<td>{row.get("team", '')}</td>"
+        html4 += f"<td>{row.get("position", '')}</td>"
+        html4 += f"<td>{row.get("venue", '')}</td>"
+        html4 += f"<td>{int(row.get("games_played", ''))}</td>"
+        html4 += f"<td>{row.get("RBIpg", '')}</td>"
+        html4 += f"<td>{row.get("fRBIpg", '')}</td>"
+        html4 += f"<td>{row.get("RBI", '')}</td>"
+        html4 += f"<td>{row.get("rbi_prediction", '')}</td>"
+        html4 += f"<td>{row.get("rbi_mmp", '')}</td>"
+        value3c = row.get("rbi_mmpp", '')
+        html4 += f"<td>{round(float(value3c), 2) if value3c else ''}</td>"
         # html += f"<td>{round(float(row.get("rbi_mmpp", '')),2)}</td>"
-        html += f"<td>{row.get("RBI_record", '')}</td>"
-        html += "</tr>\n"
+        html4 += f"<td>{row.get("RBI_record", '')}</td>"
+        html4 += "</tr>\n"
 
-    html += "</table>\n"
+    html4 += "</table>\n"
+
+    html = f"<h2 id='HR'>Home Run</h2>\n{html2}"
+    html += f"<h2 id='H'>Hits</h2>\n{html3}"
+    html += f"<h2 id='RBI'>Rbis</h2>\n{html4}"
     return html
 
 def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
@@ -3133,7 +3288,7 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
 
     # Extract headers from the keys of the first dictionary
     # headers = bvp_data[0].keys()
-    headers = [
+    headers1 = [
         "RBI",
         "H",
         "HRS",
@@ -3158,6 +3313,64 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         "HRmm?",
         "HRmm%?",
         "HR Record",
+    ]
+
+    # Start the HTML table
+    html1 = "<table border='1'>\n<tr>"
+    html1 += "".join(f"<th>{header}</th>" for header in headers1)
+    html1 += "</tr>\n"
+
+    # Add rows for each dictionary
+    for row in analyzed_bvp_data:
+        html1 += "<tr>"
+        # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
+        html1 += f"<td><input type='checkbox'></td>"
+        html1 += f"<td><input type='checkbox'></td>"
+        html1 += f"<td><input type='checkbox'></td>"
+        html1 += f"<td>{row.get("batter", '')}</td>"
+        html1 += f"<td>{row.get("batter_team", '')}</td>"
+        html1 += f"<td>{row.get("venue", '')}</td>"
+        html1 += f"<td>{row.get("pitcher", '')}</td>"
+        html1 += f"<td>{row.get('bvp_stats').get("atbats", '')}</td>"
+        html1 += f"<td>{row.get('bvp_stats').get("hits", '')}</td>"
+        html1 += f"<td>{row.get('bvp_stats').get("homeruns", '')}</td>"
+        html1 += f"<td>{row.get('bvp_stats').get("avg", '')}</td>"
+        html1 += f"<td>{row.get('bvp_stats').get("rbi", '')}</td>"
+        html1 += f"<td>{row.get('bvp_stats').get("obp", '')}</td>"
+        html1 += f"<td>{row.get('bvp_stats').get("ops", '')}</td>"
+        # valuehr = row.get("all_HR", '')
+        # html += f"<td>{int(valuehr) if str(valuehr).isdigit() else 0}</td>"
+        html1 += f"<td>{row.get("all_HR", '')}</td>"
+        html1 += f"<td>{row.get("all_HRpg", '')}</td>"
+        html1 += f"<td>{row.get("all_fHRpg", '')}</td>"
+        html1 += f"<td>{row.get("all_HR24", '')}</td>"
+        html1 += f"<td>{row.get("all_HR24pg", '')}</td>"
+        html1 += f"<td>{row.get("all_fHR24pg", '')}</td>"
+        html1 += f"<td>{row.get("hr_prediction", '')}</td>"
+        html1 += f"<td>{row.get("hr_mmp", '')}</td>"
+        valuea = row.get("hr_mmpp", '')
+        html1 += f"<td>{round(float(valuea), 2) if valuea else ''}</td>"        
+        # html += f"<td>{round(float(row.get("hr_mmpp", '')),2)}</td>"
+        html1 += f"<td>{row.get("all_HR_record", '')}</td>"
+        html1 += "</tr>\n"
+
+    html1 += "</table>\n"
+
+    headers2 = [
+        "RBI",
+        "H",
+        "HRS",
+        "Batter",
+        "Team",
+        "Venue",
+        "Pitcher",
+        "AB",
+        "H",
+        "HR",
+        "AVG",
+        "RBI",
+        "OBP",
+        "OPS",
         "H25",
         "Hpg25",
         "fHpg25",
@@ -3165,6 +3378,59 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         "Hmm?",
         "Hmm%?",
         "Hits Record",
+    ]
+
+    # Start the HTML table
+    html2 = "<table border='1'>\n<tr>"
+    html2 += "".join(f"<th>{header}</th>" for header in headers2)
+    html2 += "</tr>\n"
+
+    # Add rows for each dictionary
+    for row in analyzed_bvp_data:
+        html2 += "<tr>"
+        # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
+        html2 += f"<td><input type='checkbox'></td>"
+        html2 += f"<td><input type='checkbox'></td>"
+        html2 += f"<td><input type='checkbox'></td>"
+        html2 += f"<td>{row.get("batter", '')}</td>"
+        html2 += f"<td>{row.get("batter_team", '')}</td>"
+        html2 += f"<td>{row.get("venue", '')}</td>"
+        html2 += f"<td>{row.get("pitcher", '')}</td>"
+        html2 += f"<td>{row.get('bvp_stats').get("atbats", '')}</td>"
+        html2 += f"<td>{row.get('bvp_stats').get("hits", '')}</td>"
+        html2 += f"<td>{row.get('bvp_stats').get("homeruns", '')}</td>"
+        html2 += f"<td>{row.get('bvp_stats').get("avg", '')}</td>"
+        html2 += f"<td>{row.get('bvp_stats').get("rbi", '')}</td>"
+        html2 += f"<td>{row.get('bvp_stats').get("obp", '')}</td>"
+        html2 += f"<td>{row.get('bvp_stats').get("ops", '')}</td>"
+        html2 += f"<td>{row.get("all_H", '')}</td>"
+        html2 += f"<td>{row.get("all_Hpg", '')}</td>"
+        html2 += f"<td>{row.get("all_fHpg", '')}</td>"
+        html2 += f"<td>{row.get("h_prediction", '')}</td>"
+        html2 += f"<td>{row.get("h_mmp", '')}</td>"
+        value2b = row.get("h_mmpp", '')
+        html2 += f"<td>{round(float(value2b), 2) if value2b else ''}</td>"        
+        # html += f"<td>{round(float(row.get("h_mmpp", '')),2)}</td>"
+        html2 += f"<td>{row.get("all_H_record", '')}</td>"
+        html2 += "</tr>\n"
+
+    html2 += "</table>\n"
+
+    headers3 = [
+        "RBI",
+        "H",
+        "HRS",
+        "Batter",
+        "Team",
+        "Venue",
+        "Pitcher",
+        "AB",
+        "H",
+        "HR",
+        "AVG",
+        "RBI",
+        "OBP",
+        "OPS",
         "RBI25",
         "RBIpg25",
         "fRBIpg25",
@@ -3175,63 +3441,47 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
     ]
 
     # Start the HTML table
-    html = "<table border='1'>\n<tr>"
-    html += "".join(f"<th>{header}</th>" for header in headers)
-    html += "</tr>\n"
+    html3 = "<table border='1'>\n<tr>"
+    html3 += "".join(f"<th>{header}</th>" for header in headers3)
+    html3 += "</tr>\n"
 
     # Add rows for each dictionary
     for row in analyzed_bvp_data:
-        html += "<tr>"
+        html3 += "<tr>"
         # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
-        html += f"<td><input type='checkbox'></td>"
-        html += f"<td><input type='checkbox'></td>"
-        html += f"<td><input type='checkbox'></td>"
-        html += f"<td>{row.get("batter", '')}</td>"
-        html += f"<td>{row.get("batter_team", '')}</td>"
-        html += f"<td>{row.get("venue", '')}</td>"
-        html += f"<td>{row.get("pitcher", '')}</td>"
-        html += f"<td>{row.get('bvp_stats').get("atbats", '')}</td>"
-        html += f"<td>{row.get('bvp_stats').get("hits", '')}</td>"
-        html += f"<td>{row.get('bvp_stats').get("homeruns", '')}</td>"
-        html += f"<td>{row.get('bvp_stats').get("avg", '')}</td>"
-        html += f"<td>{row.get('bvp_stats').get("rbi", '')}</td>"
-        html += f"<td>{row.get('bvp_stats').get("obp", '')}</td>"
-        html += f"<td>{row.get('bvp_stats').get("ops", '')}</td>"
+        html3 += f"<td><input type='checkbox'></td>"
+        html3 += f"<td><input type='checkbox'></td>"
+        html3 += f"<td><input type='checkbox'></td>"
+        html3 += f"<td>{row.get("batter", '')}</td>"
+        html3 += f"<td>{row.get("batter_team", '')}</td>"
+        html3 += f"<td>{row.get("venue", '')}</td>"
+        html3 += f"<td>{row.get("pitcher", '')}</td>"
+        html3 += f"<td>{row.get('bvp_stats').get("atbats", '')}</td>"
+        html3 += f"<td>{row.get('bvp_stats').get("hits", '')}</td>"
+        html3 += f"<td>{row.get('bvp_stats').get("homeruns", '')}</td>"
+        html3 += f"<td>{row.get('bvp_stats').get("avg", '')}</td>"
+        html3 += f"<td>{row.get('bvp_stats').get("rbi", '')}</td>"
+        html3 += f"<td>{row.get('bvp_stats').get("obp", '')}</td>"
+        html3 += f"<td>{row.get('bvp_stats').get("ops", '')}</td>"
         # valuehr = row.get("all_HR", '')
         # html += f"<td>{int(valuehr) if str(valuehr).isdigit() else 0}</td>"
-        html += f"<td>{row.get("all_HR", '')}</td>"
-        html += f"<td>{row.get("all_HRpg", '')}</td>"
-        html += f"<td>{row.get("all_fHRpg", '')}</td>"
-        html += f"<td>{row.get("all_HR24", '')}</td>"
-        html += f"<td>{row.get("all_HR24pg", '')}</td>"
-        html += f"<td>{row.get("all_fHR24pg", '')}</td>"
-        html += f"<td>{row.get("hr_prediction", '')}</td>"
-        html += f"<td>{row.get("hr_mmp", '')}</td>"
-        value = row.get("hr_mmpp", '')
-        html += f"<td>{round(float(value), 2) if value else ''}</td>"        
-        # html += f"<td>{round(float(row.get("hr_mmpp", '')),2)}</td>"
-        html += f"<td>{row.get("all_HR_record", '')}</td>"
-        html += f"<td>{row.get("all_H", '')}</td>"
-        html += f"<td>{row.get("all_Hpg", '')}</td>"
-        html += f"<td>{row.get("all_fHpg", '')}</td>"
-        html += f"<td>{row.get("h_prediction", '')}</td>"
-        html += f"<td>{row.get("h_mmp", '')}</td>"
-        value2 = row.get("h_mmpp", '')
-        html += f"<td>{round(float(value2), 2) if value2 else ''}</td>"        
-        # html += f"<td>{round(float(row.get("h_mmpp", '')),2)}</td>"
-        html += f"<td>{row.get("all_H_record", '')}</td>"
-        html += f"<td>{row.get("all_RBI", '')}</td>"
-        html += f"<td>{row.get("all_RBIpg", '')}</td>"
-        html += f"<td>{row.get("all_fRBIpg", '')}</td>"
-        html += f"<td>{row.get("rbi_prediction", '')}</td>"
-        html += f"<td>{row.get("rbi_mmp", '')}</td>"
-        value3 = row.get("rbi_mmpp", '')
-        html += f"<td>{round(float(value3), 2) if value3 else ''}</td>"        
+        html3 += f"<td>{row.get("all_RBI", '')}</td>"
+        html3 += f"<td>{row.get("all_RBIpg", '')}</td>"
+        html3 += f"<td>{row.get("all_fRBIpg", '')}</td>"
+        html3 += f"<td>{row.get("rbi_prediction", '')}</td>"
+        html3 += f"<td>{row.get("rbi_mmp", '')}</td>"
+        value3c = row.get("rbi_mmpp", '')
+        html3 += f"<td>{round(float(value3c), 2) if value3c else ''}</td>"        
         # html += f"<td>{round(float(row.get("rbi_mmpp", '')),2)}</td>"
-        html += f"<td>{row.get("all_RBI_record", '')}</td>"
-        html += "</tr>\n"
+        html3 += f"<td>{row.get("all_RBI_record", '')}</td>"
+        html3 += "</tr>\n"
 
-    html += "</table>\n"
+    html3 += "</table>\n"
+
+    html = f"<h2 id='bvp-stats-HR'>BVP Home Run</h2>\n{html1}"
+    html += f"<h2 id='bvp-stats-H'>BVP Hits</h2>\n{html2}"
+    html += f"<h2 id='bvp-stats-RBI'>BVP Rbis</h2>\n{html3}"
+
     return html
 
 def generate_dh_batter_html_table(dh_batter_data, schedule_data, ball_park_data):
@@ -4237,9 +4487,13 @@ def make_index():
             <a href="#records">Teams</a>
             <a href="#leaders">Leaders</a>
             <a href="#match-overviews-pitchers">Pitchers</a>
-            <a href="#match-overviews-batters">Roster</a>
+            <a href="#HR">HR's</a>
+            <a href="#H">H's</a>
+            <a href="#RBI">RBI's</a>
             <a href="#dh-batters">DH's</a>
-            <a href="#bvp-stats">BvP</a>
+            <a href="#bvp-stats-HR">BvP HR</a>
+            <a href="#bvp-stats-H">BvP H</a>
+            <a href="#bvp-stats-RBI">BvP RBI</a>
             <a href="#checked-section">Checked</a>
         </div>
         <div class="content">
