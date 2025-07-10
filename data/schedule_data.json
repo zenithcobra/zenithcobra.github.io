@@ -4,7 +4,7 @@
         "game_datetime": "2025-07-10T16:05:00Z",
         "game_date": "2025-07-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "Baltimore Orioles",
         "away_id": 121,
@@ -15,17 +15,17 @@
         "away_probable_pitcher": "David Peterson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
         "series_status": "NYM leads 1-0",
-        "summary": "2025-07-10 - New York Mets @ Baltimore Orioles (Scheduled)"
+        "summary": "2025-07-10 - New York Mets @ Baltimore Orioles (Pre-Game)"
     },
     {
         "game_id": 777181,
@@ -58,7 +58,7 @@
         "game_datetime": "2025-07-10T17:10:00Z",
         "game_date": "2025-07-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Minnesota Twins",
         "away_id": 112,
@@ -78,8 +78,8 @@
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
-        "series_status": null,
-        "summary": "2025-07-10 - Chicago Cubs @ Minnesota Twins (Scheduled)"
+        "series_status": "MIN leads 2-0",
+        "summary": "2025-07-10 - Chicago Cubs @ Minnesota Twins (Pre-Game)"
     },
     {
         "game_id": 777168,
