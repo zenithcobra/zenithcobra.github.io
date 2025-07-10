@@ -4410,7 +4410,7 @@ def make_index():
                 }}
 
                 .highlight {{
-                    background-color: yellow; /* Highlight color */
+                    background-color: #395969; /* Highlight color */
                 }}
                 th {{
                     background-color: #14B37D; /* Accent color for headers */
