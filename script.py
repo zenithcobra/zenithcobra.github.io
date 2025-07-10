@@ -4378,7 +4378,7 @@ def make_index():
     body {{
         margin: 0;
         font-family: 'Fira Code', monospace; /* Use a coding font for a terminal-like feel */
-        background-color: #1d1f21; /* Dark background */
+        background-color: black; /* Dark background */
         color: #c5c8c6; /* Light gray text */
     }}
 
