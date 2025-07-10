@@ -4374,124 +4374,53 @@ def make_index():
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MLB Report</title>
 <style>
-    /* General body styling */
-    body {{
-        margin: 0;
-        font-family: 'Fira Code', monospace; /* Use a coding font for a terminal-like feel */
-        background-color: black; /* Dark background */
-        color: #c5c8c6; /* Light gray text */
-    }}
+                body {{
+                    margin: 0;
+                    font-family: 'Fira Code', monospace; /* Use a coding font for a terminal-like feel */
+                    color: #F2F27A;
+                    background-color: black; /* Dark background for better contrast */
+                }}
 
-    /* Navbar styling */
-    .navbar {{
-        position: sticky;
-        top: 0;
-        background-color: #282a36; /* Slightly lighter dark for contrast */
-        overflow: hidden;
-        z-index: 1000;
-        white-space: nowrap; /* Prevent wrapping */
-        border-bottom: 2px solid #6272a4; /* Accent color */
-    }}
+                .navbar {{
+                    position: sticky;
+                    top: 0;
+                    background-color: #333;
+                    overflow: hidden;
+                    z-index: 1000;
+                    white-space: nowrap; /* Prevent wrapping */
+                }}
 
-    .navbar a {{
-        float: left;
-        display: block;
-        color: #f8f8f2; /* Light text for links */
-        text-align: center;
-        padding: 8px 10px;
-        font-size: 12px;
-        text-decoration: none;
-        transition: background-color 0.3s, color 0.3s;
-    }}
+                .navbar a {{
+                    float: left;
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 8px 10px; /* Reduced padding */
+                    font-size: 12px; /* Smaller font size */
+                    text-decoration: none;
+                }}
 
-    .navbar a:hover {{
-        background-color: #44475a; /* Hover effect with a darker shade */
-        color: #50fa7b; /* Vibrant green for hover text */
-    }}
+                .navbar a:hover {{
+                    background-color: #ddd;
+                    color: black;
+                }}
 
-    /* Content area styling */
-    .content {{
-        padding: 20px;
-    }}
+                .content {{
+                    padding: 20px;
+                }}
 
-    /* Highlight styling */
-    .highlight {{
-        background-color: #ffb86c; /* Vibrant orange for highlights */
-        color: #282a36; /* Dark text for contrast */
-    }}
-
-    /* Table styling */
-    table {{
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-        font-size: 14px;
-        background-color: #282a36; /* Dark background for tables */
-        color: #f8f8f2; /* Light text */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-    }}
-
-    th, td {{
-        border: 1px solid #44475a; /* Border with a dark accent */
-        padding: 8px;
-        text-align: left;
-    }}
-
-    th {{
-        background-color: #6272a4; /* Accent color for headers */
-        color: #f8f8f2; /* Light text */
-        text-transform: uppercase;
-        font-size: 12px;
-    }}
-
-    tr:nth-child(even) {{
-        background-color: #3b4048; /* Slightly lighter dark for even rows */
-    }}
-
-    tr:nth-child(odd) {{
-        background-color: #282a36; /* Dark for odd rows */
-    }}
-
-    tr:hover {{
-        background-color: #44475a; /* Highlight row on hover */
-    }}
-
-    /* Link styling */
-    a {{
-        color: #8be9fd; /* Vibrant cyan for links */
-        text-decoration: none;
-        transition: color 0.3s;
-    }}
-
-    a:hover {{
-        color: #50fa7b; /* Vibrant green for hover links */
-    }}
-
-    /* Button styling */
-    button {{
-        background-color: #6272a4; /* Accent color */
-        color: #f8f8f2; /* Light text */
-        border: none;
-        padding: 10px 15px;
-        font-size: 14px;
-        cursor: pointer;
-        transition: background-color 0.3s, color 0.3s;
-    }}
-
-    button:hover {{
-        background-color: #50fa7b; /* Vibrant green for hover */
-        color: #282a36; /* Dark text for contrast */
-    }}
-
-    /* Preformatted text styling */
-    pre {{
-        background-color: #282a36; /* Dark background for preformatted text */
-        color: #f8f8f2; /* Light text */
-        padding: 10px;
-        border-radius: 5px;
-        overflow-x: auto;
-    }}
-</style>
+                .highlight {{
+                    background-color: yellow; /* Highlight color */
+                }}
+                th {{
+                    background-color: #14B37D; /* Accent color for headers */
+                    color: #412566;
+                }}
+                a {{
+                    color: #3A75C4; /* Cyan color */
+                    text-decoration: none; /* Removes underline */
+                }}
+            </style>
     </head>
     <body>
         <div class="navbar">
