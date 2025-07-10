@@ -4598,7 +4598,7 @@ def process_html(html_as_string):
     const style = document.createElement('style');
     style.innerHTML = `
         .highlight {
-            background-color: yellow; /* Highlight color */
+            background-color: #324E5C; /* Highlight color */
         }
     `;
     document.head.appendChild(style);
