@@ -4377,10 +4377,12 @@ def make_index():
                 body {{
                     margin: 0;
                     font-family: 'Fira Code', monospace; /* Use a coding font for a terminal-like feel */
-                    color: #F2F27A;
+                    color: #BBBBBB;
                     background-color: black; /* Dark background for better contrast */
                 }}
-
+                h1, h2, h3, h4, h5, h6 {{
+                color: #14B37D;
+                }}
                 .navbar {{
                     position: sticky;
                     top: 0;
@@ -4410,16 +4412,20 @@ def make_index():
                 }}
 
                 .highlight {{
-                    background-color: #395969; /* Highlight color */
+                    background-color: #363B44; /* Highlight color */
                 }}
                 th {{
-                    background-color: #14B37D; /* Accent color for headers */
-                    color: #412566;
+                    background-color: #363B44; /* Accent color for headers */
+                    color: #2A8EEA;
                 }}
                 a {{
                     color: #3A75C4; /* Cyan color */
                     text-decoration: none; /* Removes underline */
                 }}
+                .number-highlight {{
+                    color: #F2F27A; /* Example color for numbers */
+                    font-weight: bold; /* Optional: Make numbers bold */
+                    }}
             </style>
     </head>
     <body>
@@ -4497,6 +4503,42 @@ def make_index():
                         this.classList.add('highlight');
                         currentlyHighlightedRow = this;
                     }});
+                }});
+            }});
+
+                document.addEventListener('DOMContentLoaded', function () {{
+                // Find all text nodes in the document
+                const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+
+                let node;
+                while ((node = walker.nextNode())) {{
+                const parent = node.parentNode;
+
+                // Skip script and style tags
+                if (parent.tagName === 'SCRIPT' || parent.tagName === 'STYLE') continue;
+
+                // Replace numbers with a span wrapping them
+                const replacedHTML = node.nodeValue.replace(/(\d+)/g, '<span class="number-highlight">$1</span>');
+                if (replacedHTML !== node.nodeValue) {{
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = replacedHTML;
+
+                    // Replace the text node with the new HTML
+                    while (tempDiv.firstChild) {{
+                    parent.insertBefore(tempDiv.firstChild, node);
+                    }}
+                    parent.removeChild(node);
+                }}
+                }}
+            }});  
+
+            document.addEventListener('DOMContentLoaded', function () {{
+                // Select all table cells
+                const tableCells = document.querySelectorAll('table td');
+
+                tableCells.forEach(cell => {{
+                // Replace numbers in the cell with a span wrapping them
+                cell.innerHTML = cell.innerHTML.replace(/(\d+)/g, '<span class="number-highlight">$1</span>');
                 }});
             }});
         </script>
@@ -4598,7 +4640,7 @@ def process_html(html_as_string):
     const style = document.createElement('style');
     style.innerHTML = `
         .highlight {
-            background-color: #324E5C; /* Highlight color */
+            background-color: #363B44; /* Highlight color */
         }
     `;
     document.head.appendChild(style);
