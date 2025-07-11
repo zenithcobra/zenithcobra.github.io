@@ -4426,6 +4426,9 @@ def make_index():
                     color: #F2F27A; /* Example color for numbers */
                     font-weight: bold; /* Optional: Make numbers bold */
                     }}
+                .non-number-highlight {{
+                    color: #50fa7b;
+                    }}
             </style>
     </head>
     <body>
@@ -4488,60 +4491,68 @@ def make_index():
             
 
         </div>
-                <script>
-            document.addEventListener('DOMContentLoaded', function() {{
-                let currentlyHighlightedRow = null;
-
-                // Add click event listener to all table rows
-                document.querySelectorAll('table tr').forEach(row => {{
-                    row.addEventListener('click', function() {{
-                        // Remove highlight from the previously highlighted row
-                        if (currentlyHighlightedRow) {{
-                            currentlyHighlightedRow.classList.remove('highlight');
-                        }}
-                        // Highlight the clicked row
-                        this.classList.add('highlight');
-                        currentlyHighlightedRow = this;
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {{
+                    let currentlyHighlightedRow = null;
+            
+                    // Add click event listener to all table rows
+                    document.querySelectorAll('table tr').forEach(row => {{
+                        row.addEventListener('click', function() {{
+                            // Remove highlight from the previously highlighted row
+                            if (currentlyHighlightedRow) {{
+                                currentlyHighlightedRow.classList.remove('highlight');
+                            }}
+                            // Highlight the clicked row
+                            this.classList.add('highlight');
+                            currentlyHighlightedRow = this;
+                        }});
                     }});
                 }});
-            }});
-
+            
                 document.addEventListener('DOMContentLoaded', function () {{
-                // Find all text nodes in the document
-                const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
-
-                let node;
-                while ((node = walker.nextNode())) {{
-                const parent = node.parentNode;
-
-                // Skip script and style tags
-                if (parent.tagName === 'SCRIPT' || parent.tagName === 'STYLE') continue;
-
-                // Replace numbers with a span wrapping them
-                const replacedHTML = node.nodeValue.replace(/(\d+)/g, '<span class="number-highlight">$1</span>');
-                if (replacedHTML !== node.nodeValue) {{
-                    const tempDiv = document.createElement('div');
-                    tempDiv.innerHTML = replacedHTML;
-
-                    // Replace the text node with the new HTML
-                    while (tempDiv.firstChild) {{
-                    parent.insertBefore(tempDiv.firstChild, node);
+                    // Find all text nodes in the document
+                    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+            
+                    let node;
+                    while ((node = walker.nextNode())) {{
+                        const parent = node.parentNode;
+            
+                        // Skip script and style tags
+                        if (parent.tagName === 'SCRIPT' || parent.tagName === 'STYLE') continue;
+            
+                        // Replace numbers with a span wrapping them
+                        const replacedHTML = node.nodeValue.replace(/(\\d+)/g, '<span class="number-highlight">$1</span>');
+                        if (replacedHTML !== node.nodeValue) {{
+                            const tempDiv = document.createElement('div');
+                            tempDiv.innerHTML = replacedHTML;
+            
+                            // Replace the text node with the new HTML
+                            while (tempDiv.firstChild) {{
+                                parent.insertBefore(tempDiv.firstChild, node);
+                            }}
+                            parent.removeChild(node);
+                        }}
                     }}
-                    parent.removeChild(node);
-                }}
-                }}
-            }});  
-
-            document.addEventListener('DOMContentLoaded', function () {{
-                // Select all table cells
+                }});
+            
+                document.addEventListener('DOMContentLoaded', function () {{
                 const tableCells = document.querySelectorAll('table td');
 
                 tableCells.forEach(cell => {{
-                // Replace numbers in the cell with a span wrapping them
-                cell.innerHTML = cell.innerHTML.replace(/(\d+)/g, '<span class="number-highlight">$1</span>');
+                    cell.innerHTML = cell.innerHTML.replace(/([^0-9]+)/g, '<span class="non-number-highlight">$1</span>');
                 }});
-            }});
-        </script>
+                }});
+                
+                document.addEventListener('DOMContentLoaded', function () {{
+                    // Select all table cells
+                    const tableCells = document.querySelectorAll('table td');
+            
+                    tableCells.forEach(cell => {{
+                        // Replace numbers in the cell with a span wrapping them
+                        cell.innerHTML = cell.innerHTML.replace(/(\\d+)/g, '<span class="number-highlight">$1</span>');
+                    }});
+                }});
+            </script>
     </body>
     </html>
     """
