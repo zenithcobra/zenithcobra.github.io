@@ -4,7 +4,7 @@
         "game_datetime": "2025-07-11T19:10:00Z",
         "game_date": "2025-07-11",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Chicago White Sox",
         "away_id": 114,
@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Logan Allen",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-07-11 - Cleveland Guardians @ Chicago White Sox (Scheduled)"
+        "summary": "2025-07-11 - Cleveland Guardians @ Chicago White Sox (Pre-Game)"
     },
     {
         "game_id": 777146,
@@ -108,7 +108,7 @@
         "game_datetime": "2025-07-11T23:10:00Z",
         "game_date": "2025-07-11",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Cincinnati Reds",
         "away_id": 115,
@@ -127,7 +127,7 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-07-11 - Colorado Rockies @ Cincinnati Reds (Scheduled)"
+        "summary": "2025-07-11 - Colorado Rockies @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 777161,
@@ -273,7 +273,7 @@
         "home_id": 158,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "Quinn Priester",
+        "home_probable_pitcher": "DL Hall",
         "away_probable_pitcher": "Mitchell Parker",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
