@@ -3,25 +3,25 @@
         "place": 1,
         "player_name": "Paul Skenes",
         "team": "Pittsburgh Pirates",
-        "ERA": "2.01"
+        "ERA": "1.94"
     },
     {
         "place": 2,
+        "player_name": "Tarik Skubal",
+        "team": "Detroit Tigers",
+        "ERA": "2.02"
+    },
+    {
+        "place": 3,
         "player_name": "Zack Wheeler",
         "team": "Philadelphia Phillies",
         "ERA": "2.17"
     },
     {
-        "place": 3,
+        "place": 4,
         "player_name": "Hunter Brown",
         "team": "Houston Astros",
         "ERA": "2.21"
-    },
-    {
-        "place": 4,
-        "player_name": "Tarik Skubal",
-        "team": "Detroit Tigers",
-        "ERA": "2.23"
     },
     {
         "place": 5,
@@ -61,21 +61,21 @@
     },
     {
         "place": 11,
+        "player_name": "Logan Webb",
+        "team": "San Francisco Giants",
+        "ERA": "2.62"
+    },
+    {
+        "place": 12,
         "player_name": "Robbie Ray",
         "team": "San Francisco Giants",
         "ERA": "2.63"
     },
     {
-        "place": 12,
+        "place": 13,
         "player_name": "Seth Lugo",
         "team": "Kansas City Royals",
         "ERA": "2.67"
-    },
-    {
-        "place": 13,
-        "player_name": "Joe Ryan",
-        "team": "Minnesota Twins",
-        "ERA": "2.72"
     },
     {
         "place": 14,
@@ -91,21 +91,21 @@
     },
     {
         "place": 16,
+        "player_name": "Joe Ryan",
+        "team": "Minnesota Twins",
+        "ERA": "2.76"
+    },
+    {
+        "place": 17,
         "player_name": "Yoshinobu Yamamoto",
         "team": "Los Angeles Dodgers",
         "ERA": "2.77"
     },
     {
-        "place": 17,
+        "place": 18,
         "player_name": "Framber Valdez",
         "team": "Houston Astros",
         "ERA": "2.90"
-    },
-    {
-        "place": 18,
-        "player_name": "Logan Webb",
-        "team": "San Francisco Giants",
-        "ERA": "2.94"
     },
     {
         "place": 19,
@@ -133,20 +133,20 @@
     },
     {
         "place": 23,
-        "player_name": "Carlos Rod\u00f3n",
-        "team": "New York Yankees",
-        "ERA": "3.08"
-    },
-    {
-        "place": 24,
         "player_name": "Spencer Schwellenbach",
         "team": "Atlanta Braves",
         "ERA": "3.09"
     },
     {
-        "place": 25,
+        "place": 24,
         "player_name": "Clay Holmes",
         "team": "New York Mets",
         "ERA": "3.29"
+    },
+    {
+        "place": 25,
+        "player_name": "Carlos Rod\u00f3n",
+        "team": "New York Yankees",
+        "ERA": "3.30"
     }
 ]
