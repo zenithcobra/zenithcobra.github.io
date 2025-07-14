@@ -4535,23 +4535,6 @@ def make_index():
                     }}
                 }});
             
-                document.addEventListener('DOMContentLoaded', function () {{
-                const tableCells = document.querySelectorAll('table td');
-
-                tableCells.forEach(cell => {{
-                    cell.innerHTML = cell.innerHTML.replace(/([^0-9]+)/g, '<span class="non-number-highlight">$1</span>');
-                }});
-                }});
-                
-                document.addEventListener('DOMContentLoaded', function () {{
-                    // Select all table cells
-                    const tableCells = document.querySelectorAll('table td');
-            
-                    tableCells.forEach(cell => {{
-                        // Replace numbers in the cell with a span wrapping them
-                        cell.innerHTML = cell.innerHTML.replace(/(\\d+)/g, '<span class="number-highlight">$1</span>');
-                    }});
-                }});
             </script>
     </body>
     </html>
