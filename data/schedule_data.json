@@ -4,7 +4,7 @@
         "game_datetime": "2025-07-18T18:20:00Z",
         "game_date": "2025-07-18",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Chicago Cubs",
         "away_id": 111,
@@ -15,17 +15,17 @@
         "away_probable_pitcher": "Lucas Giolito",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
         "series_status": null,
-        "summary": "2025-07-18 - Boston Red Sox @ Chicago Cubs (Scheduled)"
+        "summary": "2025-07-18 - Boston Red Sox @ Chicago Cubs (Pre-Game)"
     },
     {
         "game_id": 777107,
