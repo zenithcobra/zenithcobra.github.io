@@ -4172,10 +4172,10 @@ def process_match_data(combined_data):
     """
     # Define the table headers
     headers = [
-        "Win", "Loss", "Team", "Record (W,L,%)", "vs Team", "vs Record (W,L,%)",
-        "Venue", "VS Record Against", "Record", "Graph", "Win Streaks",
+        "Win", "Loss", "Team (W,L,%)", "vs Team (W,L,%)",
+        "Venue", "VS Record Against", "Graph", "Win Streaks",
         "Average Win Streak", "Lose Streaks", "Average Lose Streak",
-        "Current Streak", "Predicted Outcome", "WLmc?", "WLmmc?", "WLmmc%?"
+        "Current Streak", "Predicted Outcome", "WLmc?", "WLmmc?", "WLmmc%?", "Record"
     ]
 
     # Start the HTML table
@@ -4201,13 +4201,10 @@ def process_match_data(combined_data):
             html_output.append("<tr>")
             html_output.append(f"<td><input type='checkbox'></td>")
             html_output.append(f"<td><input type='checkbox'></td>")
-            html_output.append(f"<td>{team_data.get('team_name', 'N/A')}</td>")
-            html_output.append(f"<td>W:{team_data.get('wins', 'N/A')} L:{team_data.get('losses', 'N/A')} %:{team_data.get('win_percentage', 'N/A')}</td>")
-            html_output.append(f"<td>{opponent_data.get('team_name', 'N/A')}</td>")
-            html_output.append(f"<td>W:{opponent_data.get('wins', 'N/A')} L:{opponent_data.get('losses', 'N/A')} %:{opponent_data.get('win_percentage', 'N/A')}</td>")
+            html_output.append(f"<td>{team_data.get('team_name', 'N/A')} <b>({team_data.get('wins', 'N/A')},{team_data.get('losses', 'N/A')},{team_data.get('win_percentage', 'N/A')}%)</b></td>")
+            html_output.append(f"<td>{opponent_data.get('team_name', 'N/A')} <b>({opponent_data.get('wins', 'N/A')},{opponent_data.get('losses', 'N/A')},{opponent_data.get('win_percentage', 'N/A')})</b></td>")
             html_output.append(f"<td>{team_data.get('venue', 'N/A')}</td>")
             html_output.append(f"<td>{', '.join(team_data.get('vs_record', [])) or 'N/A'}</td>")
-            html_output.append(f"<td>{team_data.get('record', 'N/A')}</td>")
             html_output.append(f"<td>{streak_graph}</td>")
             html_output.append(f"<td>{team_data.get('streak_analysis', {}).get('number_of_win_streaks', 'N/A')}</td>")
             html_output.append(f"<td>{team_data.get('streak_analysis', {}).get('average_win_streak_length', 'N/A')}</td>")
@@ -4218,6 +4215,7 @@ def process_match_data(combined_data):
             html_output.append(f"<td>{team_data.get('markov_predictions', {}).get('markov_prediction', 'N/A')}</td>")
             html_output.append(f"<td>{team_data.get('markov_predictions', {}).get('markov_monte_carlo', 'N/A')}</td>")
             html_output.append(f"<td>{team_data.get('markov_predictions', {}).get('markov_monte_carlo_certainty', 'N/A')}</td>")
+            html_output.append(f"<td>{team_data.get('record', 'N/A')}</td>")
             html_output.append("</tr>")
 
     # Close the table
