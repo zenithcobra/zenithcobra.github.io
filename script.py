@@ -75,8 +75,8 @@ def parse_html_table(html_content):
     table = soup.find('table')  # Find the first table in the HTML
 
     if not table:
-        raise ValueError("No table found in the provided HTML content.")
-
+        # raise ValueError("No table found in the provided HTML content.")
+        return {}
     # Identify columns with checkboxes by inspecting the first data row
     first_data_row = table.find_all('tr')[1]  # Skip the header row
     checkbox_columns = []
@@ -624,13 +624,26 @@ def get_schedule_text():
     )
     return full_content
 
-def get_yesterdays_report():
+def get_yesterdays_report(date=None):
+    """
+    Generates yesterday's report based on the provided date or defaults to yesterday's date.
+
+    Args:
+        date (str, optional): The date for which the report is generated, formatted as 'YYYY-MM-DD'.
+                              If not provided, defaults to yesterday's date.
+
+    Returns:
+        list: A list containing the report content.
+    """
     import re
     # Ensure the "text_output" folder exists
     os.makedirs("text_output", exist_ok=True)
 
-    # Get yesterday's date
-    yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+    # Use the provided date or default to yesterday's date
+    if date is None:
+        yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+    else:
+        yesterday = date
 
     # File paths
     file_name = "Yesterdays_Report.txt"
