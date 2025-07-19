@@ -23,7 +23,7 @@ jobs:
 
       - name: Run the Python script
         run: |
-          # python run_script.py
+          python run_script.py
 
       - name: Commit and push changes
         run: |
