@@ -4,7 +4,7 @@
         "game_datetime": "2025-07-24T17:10:00Z",
         "game_date": "2025-07-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "In Progress",
         "away_name": "Baltimore Orioles",
         "home_name": "Cleveland Guardians",
         "away_id": 110,
@@ -15,17 +15,17 @@
         "away_probable_pitcher": "Charlie Morton",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 3,
+        "home_score": 0,
+        "current_inning": 3,
+        "inning_state": "Middle",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
-        "series_status": "CLE leads 1-0",
-        "summary": "2025-07-24 - Baltimore Orioles @ Cleveland Guardians (Scheduled)"
+        "series_status": "CLE leads 3-0",
+        "summary": "2025-07-24 - Baltimore Orioles (3) @ Cleveland Guardians (0) (Middle of the 3rd)"
     },
     {
         "game_id": 777021,
