@@ -15,10 +15,10 @@
         "away_probable_pitcher": "Cal Quantrill",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [
@@ -32,7 +32,7 @@
         "game_datetime": "2025-07-25T22:40:00Z",
         "game_date": "2025-07-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Pittsburgh Pirates",
         "away_id": 109,
@@ -43,22 +43,22 @@
         "away_probable_pitcher": "Ryne Nelson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-07-25 - Arizona Diamondbacks @ Pittsburgh Pirates (Scheduled)"
+        "summary": "2025-07-25 - Arizona Diamondbacks @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 777020,
         "game_datetime": "2025-07-25T23:05:00Z",
         "game_date": "2025-07-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Baltimore Orioles",
         "away_id": 115,
@@ -77,7 +77,7 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-07-25 - Colorado Rockies @ Baltimore Orioles (Scheduled)"
+        "summary": "2025-07-25 - Colorado Rockies @ Baltimore Orioles (Pre-Game)"
     },
     {
         "game_id": 777015,
@@ -112,7 +112,7 @@
         "game_datetime": "2025-07-25T23:10:00Z",
         "game_date": "2025-07-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Boston Red Sox",
         "away_id": 119,
@@ -131,7 +131,7 @@
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-07-25 - Los Angeles Dodgers @ Boston Red Sox (Scheduled)"
+        "summary": "2025-07-25 - Los Angeles Dodgers @ Boston Red Sox (Pre-Game)"
     },
     {
         "game_id": 777013,
