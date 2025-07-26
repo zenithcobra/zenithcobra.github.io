@@ -15,24 +15,24 @@
         "away_probable_pitcher": "Ranger Su\u00e1rez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "End",
+        "away_score": 4,
+        "home_score": 1,
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
         "series_status": "PHI leads 1-0",
-        "summary": "2025-07-26 - Philadelphia Phillies (1) @ New York Yankees (0) (End of the 2nd)"
+        "summary": "2025-07-26 - Philadelphia Phillies (4) @ New York Yankees (1) (Top of the 6th)"
     },
     {
         "game_id": 777010,
         "game_datetime": "2025-07-26T18:40:00Z",
         "game_date": "2025-07-26",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Cleveland Guardians",
         "home_name": "Kansas City Royals",
         "away_id": 114,
@@ -46,12 +46,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-07-26 - Cleveland Guardians @ Kansas City Royals (Pre-Game)"
+        "summary": "2025-07-26 - Cleveland Guardians (0) @ Kansas City Royals (0) (End of the 1st)"
     },
     {
         "game_id": 776990,
@@ -86,7 +86,7 @@
         "game_datetime": "2025-07-26T22:10:00Z",
         "game_date": "2025-07-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "Detroit Tigers",
         "away_id": 141,
@@ -104,8 +104,8 @@
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2025-07-26 - Toronto Blue Jays @ Detroit Tigers (Scheduled)"
+        "series_status": "TOR leads 2-0",
+        "summary": "2025-07-26 - Toronto Blue Jays @ Detroit Tigers (Pre-Game)"
     },
     {
         "game_id": 777002,
@@ -123,10 +123,10 @@
         "away_probable_pitcher": "Merrill Kelly",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
@@ -138,7 +138,7 @@
         "game_datetime": "2025-07-26T22:40:00Z",
         "game_date": "2025-07-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Tampa Bay Rays",
         "home_name": "Cincinnati Reds",
         "away_id": 139,
@@ -156,8 +156,8 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2025-07-26 - Tampa Bay Rays @ Cincinnati Reds (Scheduled)"
+        "series_status": "CIN leads 1-0",
+        "summary": "2025-07-26 - Tampa Bay Rays @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 776999,
@@ -320,7 +320,7 @@
         "game_datetime": "2025-07-26T23:15:00Z",
         "game_date": "2025-07-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Boston Red Sox",
         "away_id": 119,
@@ -340,15 +340,15 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": null,
-        "summary": "2025-07-26 - Los Angeles Dodgers @ Boston Red Sox (Scheduled)"
+        "series_status": "LAD leads 1-0",
+        "summary": "2025-07-26 - Los Angeles Dodgers @ Boston Red Sox (Pre-Game)"
     },
     {
         "game_id": 776992,
         "game_datetime": "2025-07-26T23:15:00Z",
         "game_date": "2025-07-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Diego Padres",
         "home_name": "St. Louis Cardinals",
         "away_id": 135,
@@ -366,8 +366,8 @@
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2025-07-26 - San Diego Padres @ St. Louis Cardinals (Scheduled)"
+        "series_status": "STL leads 2-0",
+        "summary": "2025-07-26 - San Diego Padres @ St. Louis Cardinals (Pre-Game)"
     },
     {
         "game_id": 776985,
