@@ -4,7 +4,7 @@
         "game_datetime": "2025-07-29T16:35:00Z",
         "game_date": "2025-07-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "In Progress",
         "away_name": "Toronto Blue Jays",
         "home_name": "Baltimore Orioles",
         "away_id": 141,
@@ -12,20 +12,20 @@
         "doubleheader": "S",
         "game_num": 1,
         "home_probable_pitcher": "Charlie Morton",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Easton Lucas",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 3,
+        "home_score": 4,
+        "current_inning": 4,
+        "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
         "series_status": "BAL leads 1-0",
-        "summary": "2025-07-29 - Toronto Blue Jays @ Baltimore Orioles (Scheduled)"
+        "summary": "2025-07-29 - Toronto Blue Jays (3) @ Baltimore Orioles (4) (Top of the 4th)"
     },
     {
         "game_id": 776962,
@@ -58,7 +58,7 @@
         "game_datetime": "2025-07-29T22:40:00Z",
         "game_date": "2025-07-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Cleveland Guardians",
         "away_id": 115,
@@ -76,8 +76,8 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2025-07-29 - Colorado Rockies @ Cleveland Guardians (Scheduled)"
+        "series_status": "COL leads 1-0",
+        "summary": "2025-07-29 - Colorado Rockies @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 776953,
