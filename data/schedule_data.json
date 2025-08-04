@@ -30,7 +30,7 @@
         "game_datetime": "2025-08-04T22:40:00Z",
         "game_date": "2025-08-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Detroit Tigers",
         "away_id": 142,
@@ -49,7 +49,7 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-08-04 - Minnesota Twins @ Detroit Tigers (Scheduled)"
+        "summary": "2025-08-04 - Minnesota Twins @ Detroit Tigers (Pre-Game)"
     },
     {
         "game_id": 776875,
@@ -108,7 +108,7 @@
         "game_datetime": "2025-08-04T23:10:00Z",
         "game_date": "2025-08-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Kansas City Royals",
         "home_name": "Boston Red Sox",
         "away_id": 118,
@@ -119,22 +119,22 @@
         "away_probable_pitcher": "Bailey Falter",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-08-04 - Kansas City Royals @ Boston Red Sox (Scheduled)"
+        "summary": "2025-08-04 - Kansas City Royals @ Boston Red Sox (Pre-Game)"
     },
     {
         "game_id": 776876,
         "game_datetime": "2025-08-04T23:10:00Z",
         "game_date": "2025-08-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "New York Mets",
         "away_id": 114,
@@ -153,7 +153,7 @@
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-08-04 - Cleveland Guardians @ New York Mets (Scheduled)"
+        "summary": "2025-08-04 - Cleveland Guardians @ New York Mets (Pre-Game)"
     },
     {
         "game_id": 776882,
@@ -238,7 +238,7 @@
         "game_datetime": "2025-08-05T00:40:00Z",
         "game_date": "2025-08-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "Colorado Rockies",
         "away_id": 141,
@@ -257,7 +257,7 @@
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-08-04 - Toronto Blue Jays @ Colorado Rockies (Scheduled)"
+        "summary": "2025-08-04 - Toronto Blue Jays @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 776867,
