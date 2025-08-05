@@ -2873,42 +2873,52 @@ def analyze_sequence_and_predict3(sequence_dict):
         if hr_record_string is None:
             # print('sorry')
             x.update({"prediction": ''})
+
         else:
             binary_list = expand_sequence(hr_record_string)
             r_binary_list = list(reversed(binary_list))
-            transition_matrix = calculate_transition_matrix(r_binary_list)
-            current_state = binary_list[-1]  # Use the last value in the list as the current state
-            predicted_state = predict_next_state(current_state, transition_matrix)
-            x.update({"hr_prediction": predicted_state})
-            predicted_value, probability = markov_monte_carlo(r_binary_list)
-            x.update({"hr_mmp":predicted_value,"hr_mmpp":probability})     
-        
+            if binary_list:  # Check if the list is not empty
+                transition_matrix = calculate_transition_matrix(r_binary_list)
+                current_state = binary_list[-1]  # Use the last value in the list as the current state
+                predicted_state = predict_next_state(current_state, transition_matrix)
+                x.update({"hr_prediction": predicted_state})
+                predicted_value, probability = markov_monte_carlo(r_binary_list)
+                x.update({"hr_mmp":predicted_value,"hr_mmpp":probability})     
+            else:
+                # Handle the case where the list is empty
+                # current_state = None  # Or any default value you want to use
+                print("Warning: binary_list is empty. Setting current_state to None.")
+                x.update({"hr_prediction": ''})
         if h_record_string is None:
             # print('sorry')
             x.update({"prediction": ''})
         else:
             binary_list2 = expand_sequence(h_record_string)
             r_binary_list2 = list(reversed(binary_list2))
-            transition_matrix2 = calculate_transition_matrix(r_binary_list2)
-            current_state2 = binary_list2[-1]  # Use the last value in the list as the current state
-            predicted_state2 = predict_next_state(current_state2, transition_matrix2)
-            x.update({"h_prediction":predicted_state2})
-            predicted_value2, probability2 = markov_monte_carlo(r_binary_list2)
-            x.update({"h_mmp":predicted_value2,"h_mmpp":probability2})     
-
+            if binary_list2:
+                transition_matrix2 = calculate_transition_matrix(r_binary_list2)
+                current_state2 = binary_list2[-1]  # Use the last value in the list as the current state
+                predicted_state2 = predict_next_state(current_state2, transition_matrix2)
+                x.update({"h_prediction":predicted_state2})
+                predicted_value2, probability2 = markov_monte_carlo(r_binary_list2)
+                x.update({"h_mmp":predicted_value2,"h_mmpp":probability2})
+            else:
+                x.update({"h_prediction": '',"h_mmp":'', "h_mmpp":''})
         if rbi_record_string is None:
             # print('sorry')
             x.update({"prediction": ''})
         else:
             binary_list3 = expand_sequence(rbi_record_string)
             r_binary_list3 = list(reversed(binary_list3))
-            transition_matrix3 = calculate_transition_matrix(r_binary_list3)
-            current_state3 = binary_list3[-1]  # Use the last value in the list as the current state
-            predicted_state3 = predict_next_state(current_state3, transition_matrix3)
-            x.update({"rbi_prediction":predicted_state3})
-            predicted_value3, probability3 = markov_monte_carlo(r_binary_list3)
-            x.update({"rbi_mmp":predicted_value3,"rbi_mmpp":probability3})                 
-        
+            if binary_list3:
+                transition_matrix3 = calculate_transition_matrix(r_binary_list3)
+                current_state3 = binary_list3[-1]  # Use the last value in the list as the current state
+                predicted_state3 = predict_next_state(current_state3, transition_matrix3)
+                x.update({"rbi_prediction":predicted_state3})
+                predicted_value3, probability3 = markov_monte_carlo(r_binary_list3)
+                x.update({"rbi_mmp":predicted_value3,"rbi_mmpp":probability3})                 
+            else:
+                x.update({"rbi_prediction": '', "rbi_mmp":'', "rbi_mmpp":''})
     return sequence_dict
 
 def generate_pitcher_html_table(pitcher_data):

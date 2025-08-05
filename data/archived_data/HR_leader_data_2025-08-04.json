@@ -7,14 +7,14 @@
     },
     {
         "place": 2,
-        "player_name": "Kyle Schwarber",
-        "team": "Philadelphia Phillies",
-        "HR": "40"
-    },
-    {
-        "place": 3,
         "player_name": "Shohei Ohtani",
         "team": "Los Angeles Dodgers",
+        "HR": "38"
+    },
+    {
+        "place": 2,
+        "player_name": "Kyle Schwarber",
+        "team": "Philadelphia Phillies",
         "HR": "38"
     },
     {
@@ -61,12 +61,6 @@
     },
     {
         "place": 11,
-        "player_name": "Pete Alonso",
-        "team": "New York Mets",
-        "HR": "25"
-    },
-    {
-        "place": 11,
         "player_name": "Juan Soto",
         "team": "New York Mets",
         "HR": "25"
@@ -78,7 +72,13 @@
         "HR": "25"
     },
     {
-        "place": 14,
+        "place": 13,
+        "player_name": "Pete Alonso",
+        "team": "New York Mets",
+        "HR": "24"
+    },
+    {
+        "place": 13,
         "player_name": "James Wood",
         "team": "Washington Nationals",
         "HR": "24"
@@ -115,12 +115,6 @@
     },
     {
         "place": 20,
-        "player_name": "Jo Adell",
-        "team": "Los Angeles Angels",
-        "HR": "22"
-    },
-    {
-        "place": 20,
         "player_name": "Randy Arozarena",
         "team": "Seattle Mariners",
         "HR": "22"
@@ -132,31 +126,37 @@
         "HR": "22"
     },
     {
-        "place": 23,
+        "place": 22,
+        "player_name": "Jo Adell",
+        "team": "Los Angeles Angels",
+        "HR": "21"
+    },
+    {
+        "place": 22,
         "player_name": "Michael Busch",
         "team": "Chicago Cubs",
         "HR": "21"
     },
     {
-        "place": 23,
+        "place": 22,
         "player_name": "Hunter Goodman",
         "team": "Colorado Rockies",
         "HR": "21"
     },
     {
-        "place": 23,
+        "place": 22,
         "player_name": "Francisco Lindor",
         "team": "New York Mets",
         "HR": "21"
     },
     {
-        "place": 23,
+        "place": 22,
         "player_name": "Ketel Marte",
         "team": "Arizona Diamondbacks",
         "HR": "21"
     },
     {
-        "place": 23,
+        "place": 22,
         "player_name": "Christian Yelich",
         "team": "Milwaukee Brewers",
         "HR": "21"
