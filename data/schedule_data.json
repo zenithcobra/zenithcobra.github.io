@@ -4,7 +4,7 @@
         "game_datetime": "2025-08-07T16:05:00Z",
         "game_date": "2025-08-07",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Athletics",
         "home_name": "Washington Nationals",
         "away_id": 133,
@@ -15,17 +15,22 @@
         "away_probable_pitcher": "Jacob Lopez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 4,
+        "away_score": 6,
         "home_score": 0,
-        "current_inning": 7,
-        "inning_state": "Top",
+        "current_inning": 9,
+        "inning_state": "Bottom",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
-        "series_status": "Series tied 1-1",
-        "summary": "2025-08-07 - Athletics (4) @ Washington Nationals (0) (Top of the 7th)"
+        "series_status": "ATH wins 2-1",
+        "winning_team": "Athletics",
+        "losing_team": "Washington Nationals",
+        "winning_pitcher": "Jacob Lopez",
+        "losing_pitcher": "Mitchell Parker",
+        "save_pitcher": null,
+        "summary": "2025-08-07 - Athletics (6) @ Washington Nationals (0) (Game Over)"
     },
     {
         "game_id": 776830,
@@ -60,7 +65,7 @@
         "game_datetime": "2025-08-07T22:40:00Z",
         "game_date": "2025-08-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cincinnati Reds",
         "home_name": "Pittsburgh Pirates",
         "away_id": 113,
@@ -81,7 +86,7 @@
             "MLBN (out-of-market only)"
         ],
         "series_status": null,
-        "summary": "2025-08-07 - Cincinnati Reds @ Pittsburgh Pirates (Scheduled)"
+        "summary": "2025-08-07 - Cincinnati Reds @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 776842,
