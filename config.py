@@ -1,5 +1,5 @@
 """
-Configuration settings for MLB analysis application.
+Configuration settings for MLB analysis application
 """
 import os
 from datetime import datetime
