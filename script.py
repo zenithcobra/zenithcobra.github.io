@@ -4489,8 +4489,6 @@ def make_index():
             <pre>{parlay_banned_list_content}</pre>
             <h2 id="yesterdays-report">Yesterdays History</h2>
             <pre>{yesterdays_report_content}</pre>
-            <h2 id="yesterdays-homers">Yesterdays Home Runs</h2>
-            <pre>{yesterday_home_run_table}</pre>
             <h2 id="standings">Standings</h2>
             <pre>{standings_content}</pre>
             <h2 id="todays-schedule">Today's Schedule</h2>
@@ -4499,6 +4497,8 @@ def make_index():
             <pre>{team_list_table}</pre>
             <h2 id="records">Team Records</h2>
             <pre>{team_analysis_string}</pre>
+            <h2 id="yesterdays-homers">Yesterdays Home Runs</h2>
+            <pre>{yesterday_home_run_table}</pre>
             <h2 id="leaders">League Leaders</h2>
             <pre>{leaders_table}</pre>
             <h2 id="match-overviews-pitchers">Pitcher Match Overviews</h2>
