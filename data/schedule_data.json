@@ -4,7 +4,7 @@
         "game_datetime": "2025-08-07T16:05:00Z",
         "game_date": "2025-08-07",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Athletics",
         "home_name": "Washington Nationals",
         "away_id": 133,
@@ -15,24 +15,24 @@
         "away_probable_pitcher": "Jacob Lopez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 4,
+        "home_score": 0,
+        "current_inning": 7,
+        "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2025-08-07 - Athletics @ Washington Nationals (Pre-Game)"
+        "summary": "2025-08-07 - Athletics (4) @ Washington Nationals (0) (Top of the 7th)"
     },
     {
         "game_id": 776830,
         "game_datetime": "2025-08-07T20:10:00Z",
         "game_date": "2025-08-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago White Sox",
         "home_name": "Seattle Mariners",
         "away_id": 145,
@@ -43,17 +43,17 @@
         "away_probable_pitcher": "Shane Smith",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
-        "series_status": null,
-        "summary": "2025-08-07 - Chicago White Sox @ Seattle Mariners (Scheduled)"
+        "series_status": "SEA leads 2-0",
+        "summary": "2025-08-07 - Chicago White Sox @ Seattle Mariners (Pre-Game)"
     },
     {
         "game_id": 776840,
