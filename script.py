@@ -2295,36 +2295,38 @@ def scrape_ballparks_table_to_json():
     Example:
         >>> scrape_ballparks_table_to_json("https://www.onlyhomers.com/ballparks", "ballparks.json")
     """
-    url = "https://www.onlyhomers.com/ballparks"
-    try:
-        # Fetch the webpage content
-        response = requests.get(url)
-        response.raise_for_status()  # Raise an exception for HTTP errors
+    # url = "https://www.onlyhomers.com/ballparks"
+    # try:
+    #     # Fetch the webpage content
+    #     response = requests.get(url)
+    #     response.raise_for_status()  # Raise an exception for HTTP errors
 
-        # Parse the HTML content
-        soup = BeautifulSoup(response.text, 'html.parser')
+    #     # Parse the HTML content
+    #     soup = BeautifulSoup(response.text, 'html.parser')
 
-        # Find the table in the webpage
-        table = soup.find('table')
-        if not table:
-            raise Exception("No table found on the webpage.")
+    #     # Find the table in the webpage
+    #     table = soup.find('table')
+    #     if not table:
+    #         raise Exception("No table found on the webpage.")
 
-        # Extract table headers
-        headers = [header.text.strip() for header in table.find_all('th')]
+    #     # Extract table headers
+    #     headers = [header.text.strip() for header in table.find_all('th')]
 
-        # Extract table rows
-        rows = []
-        for row in table.find_all('tr')[1:]:  # Skip the header row
-            cells = row.find_all('td')
-            row_data = {headers[i]: cells[i].text.strip() for i in range(len(cells))}
-            rows.append(row_data)
-        return rows
-    except requests.RequestException as e:
-        print(f"Error fetching the webpage: {e}")
-        return None
-    except Exception as e:
-        print(f"Error processing the table data: {e}")
-        return None
+    #     # Extract table rows
+    #     rows = []
+    #     for row in table.find_all('tr')[1:]:  # Skip the header row
+    #         cells = row.find_all('td')
+    #         row_data = {headers[i]: cells[i].text.strip() for i in range(len(cells))}
+    #         rows.append(row_data)
+    #     return rows
+    # except requests.RequestException as e:
+    #     print(f"Error fetching the webpage: {e}")
+    #     return None
+    # except Exception as e:
+    #     print(f"Error processing the table data: {e}")
+    #     return None
+    ballpark_data = read_json_file("data/ballpark_data.json")
+    return ballpark_data
 
 def read_json_file(file_path):
     """
