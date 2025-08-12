@@ -37,7 +37,7 @@ SCHEDULE_TEXT_FILE = os.path.join(DATA_DIR, "schedule_text.txt")
 INDEX_HTML_FILE = os.path.join(DOCS_DIR, "index.html")
 
 # Cache settings
-CACHE_EXPIRY_HOURS = 6  # How long to keep cached data
+CACHE_EXPIRY_HOURS = 4  # How long to keep cached data
 CURRENT_SEASON = 2025
 
 # API settings

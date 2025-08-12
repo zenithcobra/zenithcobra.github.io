@@ -102,20 +102,6 @@ def parse_html_table(html_content):
 
     return rows
 
-def read_json_list(file_path):
-    """Read a JSON file and return its content as a list."""
-    try:
-        with open(file_path, 'r', encoding='utf-8') as file:
-            data = json.load(file)
-            if isinstance(data, list):
-                return data
-            else:
-                raise ValueError("The JSON file does not contain a list.")
-    except (FileNotFoundError, json.JSONDecodeError, ValueError) as e:
-        print(f"Error reading JSON file: {e}")
-        return []
-
-
 def read_json_file(file_path):
     """
     Reads a JSON file containing a list of dictionaries and returns the data.
@@ -222,46 +208,6 @@ def save_to_json(list_of_dicts, supplied_filename):
 
     print(f"Today's data saved to {file_path}")
 
-def save_to_json_dictionary(dictionary, supplied_filename):
-    """
-    Saves today's matches to a JSON file in the 'data' folder. If the file already exists, 
-    it archives the existing file with yesterday's date in the 'data/archived_data' folder.
-
-    Args:
-        todays_matches (dict): The data to save to the JSON file.
-        supplied_filename (str): The base name of the file to save (e.g., 'todays_matches').
-
-    Returns:
-        None
-    """
-    # Directories
-    data_dir = "data"
-    archived_dir = os.path.join(data_dir, "archived_data")
-    os.makedirs(data_dir, exist_ok=True)  # Ensure the 'data' directory exists
-    os.makedirs(archived_dir, exist_ok=True)  # Ensure the 'archived_data' directory exists
-
-    # File paths
-    today_date = datetime.now().strftime("%Y-%m-%d")
-    yesterday_date = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
-    file_path = os.path.join(data_dir, f"{supplied_filename}.json")
-    archived_file_path = os.path.join(archived_dir, f"{supplied_filename}_{yesterday_date}.json")
-
-    # Check if the file already exists in the 'data' folder
-    if os.path.exists(file_path):
-        # Archive the existing file with yesterday's date
-        if not os.path.exists(archived_file_path):
-            os.rename(file_path, archived_file_path)
-            print(f"Archived existing file to {archived_file_path}")
-        else:
-            print(f"Archived file already exists: {archived_file_path}")
-
-    # Save today's matches to the JSON file in the 'data' folder
-    with open(file_path, "w") as json_file:
-        json.dump(list_of_dicts, json_file, indent=4)
-
-    print(f"Today's data saved to {file_path}")
-
-    
 def save_list_to_text(list_of_lines, supplied_filename):
     """
     Saves today's matches to a text file in the 'data' folder. If the file already exists, 
