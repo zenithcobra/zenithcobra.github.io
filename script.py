@@ -1191,7 +1191,7 @@ def get_standings_text():
     return full_content
 
 
-def get_team_records_new(teams_history,team_id,team_name):
+def get_team_records_new(teams_history, team_name):
     """
     Processes team history to generate a record of wins and losses for each team.
 
@@ -1201,8 +1201,8 @@ def get_team_records_new(teams_history,team_id,team_name):
     Returns:
         list: The updated list of team histories with win/loss records and additional game details.
     """
-
-
+    team_record = ''
+    list_of_results = []
 
     for x in teams_history:
         schedule1 = statsapi.schedule(game_id=x)
@@ -1249,12 +1249,11 @@ def get_team_records_new(teams_history,team_id,team_name):
                 'result': 'L'
             }
 
-            list_of_results.append(dict_of_info)
+        list_of_results.append(dict_of_info)
 
-        # Update the team history with the record and detailed results
-        a.update({'team_record': team_record, 'team_record_plus': list_of_results})
+       
 
-    return teams_history
+    return list_of_results
 
 
 def get_team_records(teams_history):
