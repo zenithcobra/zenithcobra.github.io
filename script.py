@@ -115,6 +115,18 @@ def read_json_list(file_path):
         print(f"Error reading JSON file: {e}")
         return []
 
+def read_json_dictionary(file_path):
+    """Read a JSON file and return its content as a dictionary."""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            if isinstance(data, dict):
+                return data
+            else:
+                raise ValueError("The JSON file does not contain a dictionary.")
+    except (FileNotFoundError, json.JSONDecodeError, ValueError) as e:
+        print(f"Error reading JSON file: {e}")
+        return {}
 
 def read_json_file(file_path):
     """
@@ -261,7 +273,7 @@ def save_to_json_dictionary(dictionary, supplied_filename):
 
     print(f"Today's data saved to {file_path}")
 
-    
+
 def save_list_to_text(list_of_lines, supplied_filename):
     """
     Saves today's matches to a text file in the 'data' folder. If the file already exists, 
