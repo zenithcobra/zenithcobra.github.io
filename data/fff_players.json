@@ -98,14 +98,86 @@
                     "sacFlies": 0,
                     "past_games_stats": [
                         {
+                            "game_id": 776752,
+                            "venue": "Angel Stadium.",
+                            "date": "Batters faced",
                             "vs_team": 119,
                             "position": "P",
-                            "stats": {}
+                            "batting_stats": {
+                                "runs": 1,
+                                "doubles": 0,
+                                "triples": 0,
+                                "homeRuns": 0,
+                                "strikeOuts": 0,
+                                "baseOnBalls": 0,
+                                "hits": 2,
+                                "atBats": 4,
+                                "stolenBases": 0,
+                                "rbi": 2,
+                                "leftOnBase": 0
+                            },
+                            "pitching_stats": {
+                                "runs": 5,
+                                "doubles": 0,
+                                "triples": 1,
+                                "homeRuns": 1,
+                                "strikeOuts": 4,
+                                "baseOnBalls": 3,
+                                "hits": 6,
+                                "atBats": 16,
+                                "stolenBases": 0,
+                                "numberOfPitches": 86,
+                                "inningsPitched": "3.1",
+                                "wins": 0,
+                                "losses": 0,
+                                "holds": 0,
+                                "blownSaves": 0,
+                                "earnedRuns": 5,
+                                "pitchesThrown": 86,
+                                "strikes": 50,
+                                "rbi": 3
+                            }
                         },
                         {
+                            "game_id": 776763,
+                            "venue": "Angel Stadium.",
+                            "date": "Groundouts-flyouts",
                             "vs_team": 119,
                             "position": "P",
-                            "stats": {}
+                            "batting_stats": {
+                                "runs": 0,
+                                "doubles": 0,
+                                "triples": 0,
+                                "homeRuns": 0,
+                                "strikeOuts": 1,
+                                "baseOnBalls": 1,
+                                "hits": 0,
+                                "atBats": 3,
+                                "stolenBases": 0,
+                                "rbi": 0,
+                                "leftOnBase": 2
+                            },
+                            "pitching_stats": {
+                                "runs": 0,
+                                "doubles": 0,
+                                "triples": 0,
+                                "homeRuns": 0,
+                                "strikeOuts": 1,
+                                "baseOnBalls": 0,
+                                "hits": 1,
+                                "atBats": 4,
+                                "stolenBases": 1,
+                                "numberOfPitches": 14,
+                                "inningsPitched": "1.0",
+                                "wins": 0,
+                                "losses": 0,
+                                "holds": 0,
+                                "blownSaves": 0,
+                                "earnedRuns": 0,
+                                "pitchesThrown": 14,
+                                "strikes": 10,
+                                "rbi": 0
+                            }
                         }
                     ]
                 }
@@ -180,14 +252,86 @@
                     "sacFlies": 5,
                     "past_games_stats": [
                         {
+                            "game_id": 776752,
+                            "venue": "Angel Stadium.",
+                            "date": "Batters faced",
                             "vs_team": 119,
                             "position": "P",
-                            "stats": {}
+                            "batting_stats": {
+                                "runs": 1,
+                                "doubles": 0,
+                                "triples": 0,
+                                "homeRuns": 0,
+                                "strikeOuts": 0,
+                                "baseOnBalls": 0,
+                                "hits": 2,
+                                "atBats": 4,
+                                "stolenBases": 0,
+                                "rbi": 2,
+                                "leftOnBase": 0
+                            },
+                            "pitching_stats": {
+                                "runs": 5,
+                                "doubles": 0,
+                                "triples": 1,
+                                "homeRuns": 1,
+                                "strikeOuts": 4,
+                                "baseOnBalls": 3,
+                                "hits": 6,
+                                "atBats": 16,
+                                "stolenBases": 0,
+                                "numberOfPitches": 86,
+                                "inningsPitched": "3.1",
+                                "wins": 0,
+                                "losses": 0,
+                                "holds": 0,
+                                "blownSaves": 0,
+                                "earnedRuns": 5,
+                                "pitchesThrown": 86,
+                                "strikes": 50,
+                                "rbi": 3
+                            }
                         },
                         {
+                            "game_id": 776763,
+                            "venue": "Angel Stadium.",
+                            "date": "Groundouts-flyouts",
                             "vs_team": 119,
                             "position": "P",
-                            "stats": {}
+                            "batting_stats": {
+                                "runs": 0,
+                                "doubles": 0,
+                                "triples": 0,
+                                "homeRuns": 0,
+                                "strikeOuts": 1,
+                                "baseOnBalls": 1,
+                                "hits": 0,
+                                "atBats": 3,
+                                "stolenBases": 0,
+                                "rbi": 0,
+                                "leftOnBase": 2
+                            },
+                            "pitching_stats": {
+                                "runs": 0,
+                                "doubles": 0,
+                                "triples": 0,
+                                "homeRuns": 0,
+                                "strikeOuts": 1,
+                                "baseOnBalls": 0,
+                                "hits": 1,
+                                "atBats": 4,
+                                "stolenBases": 1,
+                                "numberOfPitches": 14,
+                                "inningsPitched": "1.0",
+                                "wins": 0,
+                                "losses": 0,
+                                "holds": 0,
+                                "blownSaves": 0,
+                                "earnedRuns": 0,
+                                "pitchesThrown": 14,
+                                "strikes": 10,
+                                "rbi": 0
+                            }
                         }
                     ]
                 }

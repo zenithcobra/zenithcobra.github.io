@@ -1190,6 +1190,25 @@ def get_standings_text():
 
     return full_content
 
+def contains_date(string):
+    # Regular expression to match years (e.g., 2025)
+    year_pattern = r'\b(19|20)\d{2}\b'
+    
+    # Regular expression to match months (e.g., January, Jan, 01, etc.)
+    month_pattern = r'\b(January|February|March|April|May|June|July|August|September|October|November|December|' \
+                    r'Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|' \
+                    r'0[1-9]|1[0-2])\b'
+    
+    # Regular expression to match full dates (e.g., 2025-08-15, 15/08/2025, etc.)
+    date_pattern = r'\b\d{4}[-/]\d{1,2}[-/]\d{1,2}\b'
+    
+    # Combine all patterns
+    combined_pattern = f"({year_pattern}|{month_pattern}|{date_pattern})"
+    
+    # Search for any of the patterns in the string
+    if re.search(combined_pattern, string, re.IGNORECASE):
+        return True
+    return False
 
 def get_team_records_new(teams_history, team_name):
     """
@@ -1213,23 +1232,29 @@ def get_team_records_new(teams_history, team_name):
             continue
 
         game_data = schedule1[0]
+        venue = game_data.get('venue_name')
+
 
         # Determine the winning team
-        winning_team = game_data.get('winning_team')
-        if not winning_team:
-            # Fallback: Determine the winner based on scores
-            away_score = game_data.get('away_score', 0)
-            home_score = game_data.get('home_score', 0)
-            away_team = game_data.get('away_name')
-            home_team = game_data.get('home_name')
+        # winning_team = game_data.get('winning_team')
+        # if not winning_team:
+        # Fallback: Determine the winner based on scores
+        away_score = game_data.get('away_score', 0)
+        home_score = game_data.get('home_score', 0)
+        away_team = game_data.get('away_name')
+        home_team = game_data.get('home_name')
 
-            if away_score > home_score:
-                winning_team = away_team
-            elif home_score > away_score:
-                winning_team = home_team
-            else:
-                print(f"Warning: Unable to determine winner for game_id {x}")
-                continue  # Skip this game if scores are tied or invalid
+        if away_score > home_score:
+            winning_team = away_team
+            winning_score = away_score
+            loosing_score = home_score
+        elif home_score > away_score:
+            winning_team = home_team
+            winning_score = home_score
+            loosing_score = away_score
+        else:
+            print(f"Warning: Unable to determine winner for game_id {x}")
+            continue  # Skip this game if scores are tied or invalid
 
         # Determine if the current team won or lost
         if winning_team == team_name:
@@ -1238,7 +1263,10 @@ def get_team_records_new(teams_history, team_name):
                 'game_id': x,
                 'vs_team': game_data.get('losing_team', game_data.get('home_name') if game_data.get('away_name') == team_name else game_data.get('away_name')),
                 'game_date': game_data.get('game_date'),
-                'result': 'W'
+                'result': 'W',
+                'points_for': winning_score, 
+                'points_against': loosing_score,
+                'venue': venue 
             }
         else:
             team_record += 'L-'
@@ -1246,7 +1274,10 @@ def get_team_records_new(teams_history, team_name):
                 'game_id': x,
                 'vs_team': winning_team,
                 'game_date': game_data.get('game_date'),
-                'result': 'L'
+                'result': 'L',
+                'points_for': loosing_score, 
+                'points_against': winning_score,
+                'venue': venue  
             }
 
         list_of_results.append(dict_of_info)
