@@ -1993,6 +1993,23 @@ def add_stats_to_pitchers(list_of_players):
         
     return list_of_players
 
+def get_boxscore(game_id):
+    """
+    Fetches the boxscore for a given game ID.
+
+    Args:
+        game_id (int): The ID of the game to fetch the boxscore for.
+
+    Returns:
+        dict: A dictionary containing the boxscore data for the game.
+    """
+    try:
+        boxscore = statsapi.boxscore_data(game_id, timecode=None)
+        return boxscore
+    except Exception as e:
+        print(f"An error occurred while fetching boxscore data: {e}")
+        return None
+
 def process_batters(batters, teams_histories):
     """
     Processes a list of batters by filtering out those without stats and updating their 
