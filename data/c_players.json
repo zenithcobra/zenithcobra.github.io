@@ -13947,6 +13947,7 @@
                 "player_name": "Jack Flaherty",
                 "player_id": 656427,
                 "player_stats": {
+                    "age": 29,
                     "gamesPlayed": 24,
                     "gamesStarted": 24,
                     "groundOuts": 86,
@@ -13968,6 +13969,7 @@
                     "caughtStealing": 1,
                     "stolenBases": 5,
                     "stolenBasePercentage": ".833",
+                    "caughtStealingPercentage": ".167",
                     "groundIntoDoublePlay": 7,
                     "numberOfPitches": 2193,
                     "era": "4.76",
@@ -19244,6 +19246,7 @@
                 "player_name": "Yoshinobu Yamamoto",
                 "player_id": 808967,
                 "player_stats": {
+                    "age": 26,
                     "gamesPlayed": 23,
                     "gamesStarted": 23,
                     "groundOuts": 134,
@@ -19265,6 +19268,7 @@
                     "caughtStealing": 4,
                     "stolenBases": 6,
                     "stolenBasePercentage": ".600",
+                    "caughtStealingPercentage": ".400",
                     "groundIntoDoublePlay": 7,
                     "numberOfPitches": 2091,
                     "era": "2.84",
@@ -21700,7 +21704,6 @@
             "Juan Soto",
             "Kodai Senga",
             "Luis Torrens",
-            "Luisangel Acu\u00f1a",
             "Mark Vientos",
             "Nolan McLean",
             "Pete Alonso",
@@ -21788,11 +21791,6 @@
                 "team": "121",
                 "name": "Luis Torrens",
                 "id": 620443
-            },
-            {
-                "team": "121",
-                "name": "Luisangel Acu\u00f1a",
-                "id": 682668
             },
             {
                 "team": "121",
@@ -22908,47 +22906,6 @@
                     "groundOutsToAirouts": "1.43",
                     "catchersInterference": 0,
                     "atBatsPerHomeRun": "103.00"
-                }
-            },
-            {
-                "team": "121",
-                "player_name": "Luisangel Acu\u00f1a",
-                "player_id": 682668,
-                "player_stats": {
-                    "age": 23,
-                    "gamesPlayed": 79,
-                    "groundOuts": 52,
-                    "airOuts": 38,
-                    "runs": 26,
-                    "doubles": 7,
-                    "triples": 0,
-                    "homeRuns": 0,
-                    "strikeOuts": 34,
-                    "baseOnBalls": 11,
-                    "intentionalWalks": 0,
-                    "hits": 38,
-                    "hitByPitch": 2,
-                    "avg": ".239",
-                    "atBats": 159,
-                    "obp": ".295",
-                    "slg": ".283",
-                    "ops": ".578",
-                    "caughtStealing": 1,
-                    "stolenBases": 12,
-                    "stolenBasePercentage": ".923",
-                    "caughtStealingPercentage": ".077",
-                    "groundIntoDoublePlay": 6,
-                    "numberOfPitches": 622,
-                    "plateAppearances": 175,
-                    "totalBases": 45,
-                    "rbi": 7,
-                    "leftOnBase": 87,
-                    "sacBunts": 2,
-                    "sacFlies": 1,
-                    "babip": ".302",
-                    "groundOutsToAirouts": "1.37",
-                    "catchersInterference": 0,
-                    "atBatsPerHomeRun": "-.--"
                 }
             },
             {
@@ -28526,7 +28483,6 @@
             "Luis Castillo",
             "Luke Raley",
             "Matt Brash",
-            "Miles Mastrobuoni",
             "Mitch Garver",
             "Randy Arozarena",
             "Tayler Saucedo"
@@ -28646,11 +28602,6 @@
                 "team": "136",
                 "name": "Matt Brash",
                 "id": 666374
-            },
-            {
-                "team": "136",
-                "name": "Miles Mastrobuoni",
-                "id": 670156
             },
             {
                 "team": "136",
@@ -29987,47 +29938,6 @@
                     "groundOutsToAirouts": "1.64",
                     "catchersInterference": 0,
                     "atBatsPerHomeRun": "35.25"
-                }
-            },
-            {
-                "team": "136",
-                "player_name": "Miles Mastrobuoni",
-                "player_id": 670156,
-                "player_stats": {
-                    "age": 29,
-                    "gamesPlayed": 75,
-                    "groundOuts": 54,
-                    "airOuts": 36,
-                    "runs": 20,
-                    "doubles": 3,
-                    "triples": 0,
-                    "homeRuns": 1,
-                    "strikeOuts": 28,
-                    "baseOnBalls": 17,
-                    "intentionalWalks": 0,
-                    "hits": 37,
-                    "hitByPitch": 0,
-                    "avg": ".248",
-                    "atBats": 149,
-                    "obp": ".323",
-                    "slg": ".289",
-                    "ops": ".612",
-                    "caughtStealing": 3,
-                    "stolenBases": 6,
-                    "stolenBasePercentage": ".667",
-                    "caughtStealingPercentage": ".333",
-                    "groundIntoDoublePlay": 2,
-                    "numberOfPitches": 654,
-                    "plateAppearances": 172,
-                    "totalBases": 43,
-                    "rbi": 12,
-                    "leftOnBase": 64,
-                    "sacBunts": 5,
-                    "sacFlies": 1,
-                    "babip": ".298",
-                    "groundOutsToAirouts": "1.50",
-                    "catchersInterference": 0,
-                    "atBatsPerHomeRun": "149.00"
                 }
             },
             {
