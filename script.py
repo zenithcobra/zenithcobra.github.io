@@ -3313,14 +3313,7 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
         "Venue",
         "GP",
         "HR",
-        "HRpg",
-        "fHRpg",
         "HR24",
-        "HR24pg",
-        "fHR24pg",
-        "HRmc?",
-        "HRmmc?",
-        "HRmmc%?",
         "HR_record",
     ]
 
@@ -3342,16 +3335,7 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
         html2 += f"<td>{row.get("venue", '')}</td>"
         html2 += f"<td>{int(row.get("games_played", ''))}</td>"
         html2 += f"<td>{int(row.get("HR", ''))}</td>"
-        html2 += f"<td>{row.get("HRpg", '')}</td>"
-        html2 += f"<td>{row.get("fHRpg", '')}</td>"
         html2 += f"<td>{row.get("HR24", '')}</td>"
-        html2 += f"<td>{row.get("HR24pg", '')}</td>"
-        html2 += f"<td>{row.get("fHR24pg", '')}</td>"
-        html2 += f"<td>{row.get("hr_prediction", '')}</td>"
-        html2 += f"<td>{row.get("hr_mmp", '')}</td>"
-        valuea = row.get("hr_mmpp", '')
-        html2 += f"<td>{round(float(valuea), 2) if valuea else ''}</td>"
-        # html += f"<td>{round(float(row.get("hr_mmpp", '')),2)}</td>"
         html2 += f"<td>{row.get("HR_record", '')}</td>"
         html2 += "</tr>\n"
 
@@ -3369,9 +3353,6 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
         "H",
         "Hpg",
         "fHpg",
-        "Hmc?",
-        "Hmmc?",
-        "Hmmc%?",
         "H_record",
     ]
 
@@ -3395,11 +3376,6 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
         html3 += f"<td>{row.get("H", '')}</td>"
         html3 += f"<td>{row.get("Hpg", '')}</td>"
         html3 += f"<td>{row.get("fHpg", '')}</td>"
-        html3 += f"<td>{row.get("h_prediction", '')}</td>"
-        html3 += f"<td>{row.get("h_mmp", '')}</td>"
-        value2b = row.get("h_mmpp", '')
-        html3 += f"<td>{round(float(value2b), 2) if value2b else ''}</td>"
-        # html += f"<td>{round(float(row.get("h_mmpp", '')),2)}</td>"
         html3 += f"<td>{row.get("H_record", '')}</td>"
         html3 += "</tr>\n"
 
@@ -3417,9 +3393,6 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
         "RBIpg",
         "fRBIpg",
         "RBI",
-        "RBImc?",
-        "RBImmc?",
-        "RBImmc%?",
         "RBI_record"
     ]
 
@@ -3443,11 +3416,6 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
         html4 += f"<td>{row.get("RBIpg", '')}</td>"
         html4 += f"<td>{row.get("fRBIpg", '')}</td>"
         html4 += f"<td>{row.get("RBI", '')}</td>"
-        html4 += f"<td>{row.get("rbi_prediction", '')}</td>"
-        html4 += f"<td>{row.get("rbi_mmp", '')}</td>"
-        value3c = row.get("rbi_mmpp", '')
-        html4 += f"<td>{round(float(value3c), 2) if value3c else ''}</td>"
-        # html += f"<td>{round(float(row.get("rbi_mmpp", '')),2)}</td>"
         html4 += f"<td>{row.get("RBI_record", '')}</td>"
         html4 += "</tr>\n"
 
@@ -3527,9 +3495,6 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         "HR24",
         "HR24pg",
         "fHR24pg",
-        "HRmc?",
-        "HRmm?",
-        "HRmm%?",
         "HR Record",
     ]
 
@@ -3564,11 +3529,6 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         html1 += f"<td>{row.get("all_HR24", '')}</td>"
         html1 += f"<td>{row.get("all_HR24pg", '')}</td>"
         html1 += f"<td>{row.get("all_fHR24pg", '')}</td>"
-        html1 += f"<td>{row.get("hr_prediction", '')}</td>"
-        html1 += f"<td>{row.get("hr_mmp", '')}</td>"
-        valuea = row.get("hr_mmpp", '')
-        html1 += f"<td>{round(float(valuea), 2) if valuea else ''}</td>"        
-        # html += f"<td>{round(float(row.get("hr_mmpp", '')),2)}</td>"
         html1 += f"<td>{row.get("all_HR_record", '')}</td>"
         html1 += "</tr>\n"
 
@@ -4378,9 +4338,9 @@ def process_match_data(combined_data):
     # Define the table headers
     headers = [
         "Win", "Loss", "Team (W,L,%)", "vs Team (W,L,%)",
-        "Venue", "VS Record Against", "Current Streak", "Win Streaks",
-        "Average Win Streak", "Lose Streaks", "Average Lose Streak",
-         "Predicted Outcome", "WLmc?", "WLmmc?", "WLmmc%?", "Graph", "Record"
+        "Venue", "VS Record Against", "Current Streak",
+        "Average Win Streak", "Average Lose Streak",
+        "Record"
     ]
 
     # Start the HTML table
@@ -4411,15 +4371,8 @@ def process_match_data(combined_data):
             html_output.append(f"<td>{team_data.get('venue', 'N/A')}</td>")
             html_output.append(f"<td>{', '.join(team_data.get('vs_record', [])) or 'N/A'}</td>")
             html_output.append(f"<td>{team_data.get('current_streak', {}).get('streak_type', 'N/A')} ({team_data.get('current_streak', {}).get('streak_length', 'N/A')})</td>")
-            html_output.append(f"<td>{team_data.get('streak_analysis', {}).get('number_of_win_streaks', 'N/A')}</td>")
             html_output.append(f"<td>{team_data.get('streak_analysis', {}).get('average_win_streak_length', 'N/A')}</td>")
-            html_output.append(f"<td>{team_data.get('streak_analysis', {}).get('number_of_lose_streaks', 'N/A')}</td>")
             html_output.append(f"<td>{team_data.get('streak_analysis', {}).get('average_lose_streak_length', 'N/A')}</td>")
-            html_output.append(f"<td>{team_data.get('predicted_outcome', 'N/A')}</td>")
-            html_output.append(f"<td>{team_data.get('markov_predictions', {}).get('markov_prediction', 'N/A')}</td>")
-            html_output.append(f"<td>{team_data.get('markov_predictions', {}).get('markov_monte_carlo', 'N/A')}</td>")
-            html_output.append(f"<td>{team_data.get('markov_predictions', {}).get('markov_monte_carlo_certainty', 'N/A')}</td>")
-            html_output.append(f"<td>{streak_graph}</td>")
             html_output.append(f"<td>{team_data.get('record', 'N/A')}</td>")
             html_output.append("</tr>")
 
