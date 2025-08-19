@@ -4,7 +4,7 @@
         "game_datetime": "2025-08-19T18:20:00Z",
         "game_date": "2025-08-19",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "Chicago Cubs",
         "away_id": 158,
@@ -15,17 +15,17 @@
         "away_probable_pitcher": "Chad Patrick",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
         "series_status": "MIL leads 1-0",
-        "summary": "2025-08-19 - Milwaukee Brewers @ Chicago Cubs (Scheduled)"
+        "summary": "2025-08-19 - Milwaukee Brewers @ Chicago Cubs (Pre-Game)"
     },
     {
         "game_id": 776676,
