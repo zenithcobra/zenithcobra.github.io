@@ -169,16 +169,15 @@
             "Andrew Saalfrank",
             "Blaze Alexander",
             "Brandon Pfaadt",
-            "Connor Kaiser",
             "Corbin Carroll",
             "Eduardo Rodriguez",
             "Geraldo Perdomo",
+            "Ildemaro Vargas",
             "Jake McCarthy",
             "Jake Woodford",
             "Jalen Beeks",
             "James McCann",
             "John Curtiss",
-            "Jorge Barrosa",
             "Jose Herrera",
             "Juan Burgos",
             "Juan Morillo",
@@ -186,6 +185,7 @@
             "Kyle Backhus",
             "Lourdes Gurriel Jr.",
             "Nabil Crismatt",
+            "Pavin Smith",
             "Ryne Nelson",
             "Tyler Locklear",
             "Zac Gallen"
@@ -223,11 +223,6 @@
             },
             {
                 "team": "109",
-                "name": "Connor Kaiser",
-                "id": 663731
-            },
-            {
-                "team": "109",
                 "name": "Corbin Carroll",
                 "id": 682998
             },
@@ -240,6 +235,11 @@
                 "team": "109",
                 "name": "Geraldo Perdomo",
                 "id": 672695
+            },
+            {
+                "team": "109",
+                "name": "Ildemaro Vargas",
+                "id": 545121
             },
             {
                 "team": "109",
@@ -265,11 +265,6 @@
                 "team": "109",
                 "name": "John Curtiss",
                 "id": 595928
-            },
-            {
-                "team": "109",
-                "name": "Jorge Barrosa",
-                "id": 678489
             },
             {
                 "team": "109",
@@ -305,6 +300,11 @@
                 "team": "109",
                 "name": "Nabil Crismatt",
                 "id": 622503
+            },
+            {
+                "team": "109",
+                "name": "Pavin Smith",
+                "id": 656976
             },
             {
                 "team": "109",
@@ -489,7 +489,6 @@
         "roster": [
             "Abraham Toro",
             "Alex Bregman",
-            "Ali S\u00e1nchez",
             "Aroldis Chapman",
             "Brayan Bello",
             "Carlos Narv\u00e1ez",
@@ -506,7 +505,8 @@
             "Justin Wilson",
             "Lucas Giolito",
             "Masataka Yoshida",
-            "Rob Refsnyder",
+            "Nate Eaton",
+            "Nathaniel Lowe",
             "Roman Anthony",
             "Romy Gonzalez",
             "Steven Matz",
@@ -524,11 +524,6 @@
                 "team": "111",
                 "name": "Alex Bregman",
                 "id": 608324
-            },
-            {
-                "team": "111",
-                "name": "Ali S\u00e1nchez",
-                "id": 645305
             },
             {
                 "team": "111",
@@ -612,8 +607,13 @@
             },
             {
                 "team": "111",
-                "name": "Rob Refsnyder",
-                "id": 608701
+                "name": "Nate Eaton",
+                "id": 681987
+            },
+            {
+                "team": "111",
+                "name": "Nathaniel Lowe",
+                "id": 663993
             },
             {
                 "team": "111",
@@ -660,7 +660,6 @@
             "Dansby Swanson",
             "Drew Pomeranz",
             "Ian Happ",
-            "Javier Assad",
             "Justin Turner",
             "Kyle Tucker",
             "Matt Shaw",
@@ -674,6 +673,7 @@
             "Seiya Suzuki",
             "Shota Imanaga",
             "Taylor Rogers",
+            "Tom Cosgrove",
             "Willi Castro"
         ],
         "list_of_players": [
@@ -731,11 +731,6 @@
                 "team": "112",
                 "name": "Ian Happ",
                 "id": 664023
-            },
-            {
-                "team": "112",
-                "name": "Javier Assad",
-                "id": 665871
             },
             {
                 "team": "112",
@@ -801,6 +796,11 @@
                 "team": "112",
                 "name": "Taylor Rogers",
                 "id": 573124
+            },
+            {
+                "team": "112",
+                "name": "Tom Cosgrove",
+                "id": 676680
             },
             {
                 "team": "112",
@@ -1297,8 +1297,8 @@
     },
     "116": {
         "roster": [
+            "Alex Lange",
             "Andy Ib\u00e1\u00f1ez",
-            "Bailey Horn",
             "Brenan Hanifee",
             "Casey Mize",
             "Charlie Morton",
@@ -1327,13 +1327,13 @@
         "list_of_players": [
             {
                 "team": "116",
-                "name": "Andy Ib\u00e1\u00f1ez",
-                "id": 628451
+                "name": "Alex Lange",
+                "id": 656638
             },
             {
                 "team": "116",
-                "name": "Bailey Horn",
-                "id": 690544
+                "name": "Andy Ib\u00e1\u00f1ez",
+                "id": 628451
             },
             {
                 "team": "116",
@@ -1474,7 +1474,6 @@
             "Jason Alexander",
             "Jeremy Pe\u00f1a",
             "Jes\u00fas S\u00e1nchez",
-            "Jordan Weems",
             "Jose Altuve",
             "Kaleb Ort",
             "Mauricio Dub\u00f3n",
@@ -1482,6 +1481,7 @@
             "Shawn Dubin",
             "Spencer Arrighetti",
             "Steven Okert",
+            "Tayler Scott",
             "Taylor Trammell",
             "Victor Caratini",
             "Yainer Diaz"
@@ -1564,11 +1564,6 @@
             },
             {
                 "team": "117",
-                "name": "Jordan Weems",
-                "id": 607179
-            },
-            {
-                "team": "117",
                 "name": "Jose Altuve",
                 "id": 514888
             },
@@ -1601,6 +1596,11 @@
                 "team": "117",
                 "name": "Steven Okert",
                 "id": 595345
+            },
+            {
+                "team": "117",
+                "name": "Tayler Scott",
+                "id": 605463
             },
             {
                 "team": "117",
@@ -2924,7 +2924,6 @@
             "Jung Hoo Lee",
             "Justin Verlander",
             "Kai-Wei Teng",
-            "Keaton Winn",
             "Landen Roupp",
             "Logan Webb",
             "Matt Gage",
@@ -2932,6 +2931,7 @@
             "Rafael Devers",
             "Randy Rodr\u00edguez",
             "Robbie Ray",
+            "Ryan Walker",
             "Spencer Bivens",
             "Tristan Beck",
             "Tyler Fitzgerald",
@@ -3006,11 +3006,6 @@
             },
             {
                 "team": "137",
-                "name": "Keaton Winn",
-                "id": 676775
-            },
-            {
-                "team": "137",
                 "name": "Landen Roupp",
                 "id": 694738
             },
@@ -3046,6 +3041,11 @@
             },
             {
                 "team": "137",
+                "name": "Ryan Walker",
+                "id": 676254
+            },
+            {
+                "team": "137",
                 "name": "Spencer Bivens",
                 "id": 702352
             },
@@ -3077,12 +3077,12 @@
             "Andre Granillo",
             "Andre Pallante",
             "Anthony Veneziano",
-            "Brendan Donovan",
             "Garrett Hampson",
             "Iv\u00e1n Herrera",
             "JoJo Romero",
             "Jordan Walker",
             "Jorge Alcala",
+            "Jos\u00e9 Ferm\u00edn",
             "Kyle Leahy",
             "Lars Nootbaar",
             "Masyn Winn",
@@ -3123,11 +3123,6 @@
             },
             {
                 "team": "138",
-                "name": "Brendan Donovan",
-                "id": 680977
-            },
-            {
-                "team": "138",
                 "name": "Garrett Hampson",
                 "id": 641658
             },
@@ -3150,6 +3145,11 @@
                 "team": "138",
                 "name": "Jorge Alcala",
                 "id": 660896
+            },
+            {
+                "team": "138",
+                "name": "Jos\u00e9 Ferm\u00edn",
+                "id": 665877
             },
             {
                 "team": "138",
@@ -3397,6 +3397,7 @@
     },
     "140": {
         "roster": [
+            "Alejandro Osuna",
             "Caleb Boushley",
             "Cody Freeman",
             "Cole Winn",
@@ -3407,7 +3408,6 @@
             "Hoby Milner",
             "Jack Leiter",
             "Jacob deGrom",
-            "Jake Burger",
             "Joc Pederson",
             "Jonah Heim",
             "Josh Jung",
@@ -3425,6 +3425,11 @@
             "Wyatt Langford"
         ],
         "list_of_players": [
+            {
+                "team": "140",
+                "name": "Alejandro Osuna",
+                "id": 696030
+            },
             {
                 "team": "140",
                 "name": "Caleb Boushley",
@@ -3474,11 +3479,6 @@
                 "team": "140",
                 "name": "Jacob deGrom",
                 "id": 594798
-            },
-            {
-                "team": "140",
-                "name": "Jake Burger",
-                "id": 669394
             },
             {
                 "team": "140",
@@ -3900,8 +3900,8 @@
             "Kyle Schwarber",
             "Matt Strahm",
             "Max Kepler",
-            "Max Lazar",
             "Nick Castellanos",
+            "Nolan Hoffman",
             "Orion Kerkering",
             "Rafael March\u00e1n",
             "Ranger Su\u00e1rez",
@@ -3998,13 +3998,13 @@
             },
             {
                 "team": "143",
-                "name": "Max Lazar",
-                "id": 676661
+                "name": "Nick Castellanos",
+                "id": 592206
             },
             {
                 "team": "143",
-                "name": "Nick Castellanos",
-                "id": 592206
+                "name": "Nolan Hoffman",
+                "id": 676510
             },
             {
                 "team": "143",
@@ -4048,12 +4048,12 @@
             "Aaron Bummer",
             "Austin Cox",
             "Bryce Elder",
-            "Daysbel Hern\u00e1ndez",
+            "Connor Seabold",
+            "Dane Dunning",
             "Drake Baldwin",
             "Dylan Lee",
             "Eli White",
             "Erick Fedde",
-            "Hunter Stratton",
             "Hurston Waldrep",
             "Joey Wentz",
             "Jurickson Profar",
@@ -4090,8 +4090,13 @@
             },
             {
                 "team": "144",
-                "name": "Daysbel Hern\u00e1ndez",
-                "id": 678226
+                "name": "Connor Seabold",
+                "id": 657756
+            },
+            {
+                "team": "144",
+                "name": "Dane Dunning",
+                "id": 641540
             },
             {
                 "team": "144",
@@ -4112,11 +4117,6 @@
                 "team": "144",
                 "name": "Erick Fedde",
                 "id": 607200
-            },
-            {
-                "team": "144",
-                "name": "Hunter Stratton",
-                "id": 676702
             },
             {
                 "team": "144",
@@ -4227,7 +4227,7 @@
             "Miguel Vargas",
             "Mike Tauchman",
             "Mike Vasil",
-            "Sean Burke",
+            "Owen White",
             "Shane Smith",
             "Steven Wilson",
             "Tyler Alexander",
@@ -4337,8 +4337,8 @@
             },
             {
                 "team": "145",
-                "name": "Sean Burke",
-                "id": 680732
+                "name": "Owen White",
+                "id": 669391
             },
             {
                 "team": "145",
@@ -4378,7 +4378,6 @@
             "Edward Cabrera",
             "Eric Wagaman",
             "Eury P\u00e9rez",
-            "Graham Pauley",
             "Heriberto Hern\u00e1ndez",
             "Jakob Marsee",
             "Janson Junk",
@@ -4387,6 +4386,7 @@
             "Josh Simpson",
             "Lake Bachar",
             "Liam Hicks",
+            "Maximo Acosta",
             "Otto Lopez",
             "Ronny Henriquez",
             "Sandy Alcantara",
@@ -4444,11 +4444,6 @@
             },
             {
                 "team": "146",
-                "name": "Graham Pauley",
-                "id": 688363
-            },
-            {
-                "team": "146",
                 "name": "Heriberto Hern\u00e1ndez",
                 "id": 681715
             },
@@ -4486,6 +4481,11 @@
                 "team": "146",
                 "name": "Liam Hicks",
                 "id": 689414
+            },
+            {
+                "team": "146",
+                "name": "Maximo Acosta",
+                "id": 691185
             },
             {
                 "team": "146",
@@ -4543,7 +4543,6 @@
             "David Bednar",
             "Devin Williams",
             "Giancarlo Stanton",
-            "J.C. Escarra",
             "Jasson Dom\u00ednguez",
             "Jazz Chisholm Jr.",
             "Jos\u00e9 Caballero",
@@ -4618,11 +4617,6 @@
                 "team": "147",
                 "name": "Giancarlo Stanton",
                 "id": 519317
-            },
-            {
-                "team": "147",
-                "name": "J.C. Escarra",
-                "id": 641555
             },
             {
                 "team": "147",
@@ -4703,10 +4697,12 @@
             "Brandon Woodruff",
             "Brice Turang",
             "Caleb Durbin",
+            "Chad Patrick",
             "Christian Yelich",
             "Danny Jansen",
             "Freddy Peralta",
             "Grant Anderson",
+            "Isaac Collins",
             "Jacob Misiorowski",
             "Jared Koenig",
             "Joey Ortiz",
@@ -4717,7 +4713,6 @@
             "Shelby Miller",
             "Tobias Myers",
             "Trevor Megill",
-            "Tyler Black",
             "William Contreras"
         ],
         "list_of_players": [
@@ -4773,6 +4768,11 @@
             },
             {
                 "team": "158",
+                "name": "Chad Patrick",
+                "id": 694477
+            },
+            {
+                "team": "158",
                 "name": "Christian Yelich",
                 "id": 592885
             },
@@ -4790,6 +4790,11 @@
                 "team": "158",
                 "name": "Grant Anderson",
                 "id": 681982
+            },
+            {
+                "team": "158",
+                "name": "Isaac Collins",
+                "id": 686555
             },
             {
                 "team": "158",
@@ -4840,11 +4845,6 @@
                 "team": "158",
                 "name": "Trevor Megill",
                 "id": 656730
-            },
-            {
-                "team": "158",
-                "name": "Tyler Black",
-                "id": 672012
             },
             {
                 "team": "158",
