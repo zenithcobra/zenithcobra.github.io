@@ -690,6 +690,39 @@ def get_schedule_text():
     )
     return full_content
 
+def process_schedule_text(raw_text: str) -> str:
+    """
+    Takes raw schedule text (first line is a header like "Today's Schedule"),
+    removes the first line, parses each game line, and aligns spacing around '@'.
+    Returns a single aligned multiline string.
+    """
+    lines = [ln.rstrip() for ln in raw_text.strip().splitlines() if ln.strip()]
+    if not lines:
+        return ""
+    # Drop the header (first line)
+    game_lines = lines[1:]
+
+    line_re = re.compile(
+        r'^(?P<dt>\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}\s+[AP]M\s+\w+)\s+-\s+'
+        r'(?P<away>.+?)\s+@\s+(?P<home>.+?)\s+\((?P<status>[^)]+)\)$'
+    )
+
+    rows = []
+    for line in game_lines:
+        m = line_re.match(line)
+        if m:
+            rows.append(m.groupdict())
+
+    if not rows:
+        return ""
+
+    max_away = max(len(r['away']) for r in rows)
+    max_home = max(len(r['home']) for r in rows)
+    fmt = f"{{dt}} - {{away:<{max_away}}} @ {{home:<{max_home}}} ({{status}})"
+    aligned = [fmt.format(**r) for r in rows]
+    return "\n".join(aligned)
+
+
 def get_yesterdays_report(date=None):
     """
     Generates yesterday's report based on the provided date or defaults to yesterday's date.

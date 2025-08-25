@@ -21,7 +21,8 @@ print('script getting schedule')
 # SCHEDULE INFO
 schedule = script.get_schedule_by_date(date)
 processed_schedule = script.process_the_schedule(schedule)
-schedule_text = script.get_schedule_text()
+raw_schedule_text = script.get_schedule_text()
+schedule_text = script.process_schedule_text(raw_schedule_text)
 script.save_to_json(schedule,'schedule_data')
 script.save_to_text(schedule_text, 'schedule_text')
 
