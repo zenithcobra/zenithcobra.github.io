@@ -65,6 +65,21 @@ script.save_to_json(batter_vs_pitcher_with_streaks,'batter_vs_pitcher_data')
 script.save_to_json(todays_dh_batters, 'dh_batter_data')
 script.save_to_json(yesterdays_home_runs,'yesterday_home_run_data')
 
+# analysis of home runs
+bvp_data = script.read_json_list('data/batter_vs_pitcher_data.json')
+
+for a in bvp_data:
+    hr = a.get('all_HR_record', '')
+    hr_analysis_dict = script.analyze_score_sequence(hr)
+    a.update({'all_HR_analysis': hr_analysis_dict})
+    h = a.get('all_H_record', '')
+    h_analysis_dict = script.analyze_score_sequence(h)
+    a.update({'all_H_analysis': h_analysis_dict})
+    rbi = a.get('all_RBI_record', '')
+    rbi_analysis_dict = script.analyze_score_sequence(rbi)
+    a.update({'all_RBI_analysis': rbi_analysis_dict})
+
+script.save_to_json(bvp_data, "batter_vs_pitcher_data")
 
 print('script getting league leaders')
 # LEAGUE LEADERS

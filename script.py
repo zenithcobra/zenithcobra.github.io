@@ -3529,6 +3529,13 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         "HR24pg",
         "fHR24pg",
         "HR Record",
+        "prob_0",
+        "prob_1",
+        "prob_>1",
+        "avg_zero_gap",
+        "cv_zero_gap",
+        "avg_inter_scoring_distance",
+        "cv_inter_scoring_distance"
     ]
 
     # Start the HTML table
@@ -3563,6 +3570,13 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         html1 += f"<td>{row.get("all_HR24pg", '')}</td>"
         html1 += f"<td>{row.get("all_fHR24pg", '')}</td>"
         html1 += f"<td>{row.get("all_HR_record", '')}</td>"
+        html1 += f"<td>{row.get("all_HR_analysis", {}).get("prob_0")}</td>"
+        html1 += f"<td>{row.get("all_HR_analysis", {}).get("prob_1")}</td>"
+        html1 += f"<td>{row.get("all_HR_analysis", {}).get("prob_>1")}</td>"
+        html1 += f"<td>{row.get("all_HR_analysis", {}).get("avg_zero_gap")}</td>"
+        html1 += f"<td>{row.get("all_HR_analysis", {}).get("cv_zero_gap")}</td>"
+        html1 += f"<td>{row.get("all_HR_analysis", {}).get("avg_inter_scoring_distance")}</td>"
+        html1 += f"<td>{row.get("all_HR_analysis", {}).get("cv_inter_scoring_distance")}</td>"
         html1 += "</tr>\n"
 
     html1 += "</table>\n"
@@ -4092,6 +4106,135 @@ def merge_team_data(team_data_1, team_data_2):
             team.update(team_data_1_lookup[team_name])
 
     return team_data_2
+
+
+import math
+from collections import Counter
+from typing import Dict, Any, List
+
+def analyze_score_sequence(seq: str, latest_first: bool = True) -> Dict[str, Any]:
+    """
+    Analyze a hyphen-separated sequence of integer scores.
+    seq example: "0-1-0-0-2-0-1-"
+    latest_first=True means first element is most recent; will reverse for chronological analysis.
+    Returns a dictionary of metrics.
+    """
+    # Clean + parse
+    parts = [p for p in seq.strip("-").split("-") if p != ""]
+    scores: List[int] = [int(p) for p in parts]
+    if latest_first:
+        scores = list(reversed(scores))  # chronological (oldest -> newest)
+
+    n = len(scores)
+    if n == 0:
+        return {"error": "empty sequence"}
+
+    # Basic counts
+    ctr = Counter(scores)
+    total = n
+    zeros = ctr.get(0, 0)
+    ones = ctr.get(1, 0)
+    gt1 = sum(v for k, v in ctr.items() if k > 1)
+
+    # Probabilities
+    p0 = zeros / total
+    p1 = ones / total
+    pgt1 = gt1 / total
+    mean_score = sum(scores) / total
+    var_score = sum((x - mean_score) ** 2 for x in scores) / total
+    std_score = math.sqrt(var_score)
+
+    # Run-lengths of zeros (gaps between non-zero scores)
+    zero_gaps = []
+    current_gap = 0
+    for s in scores:
+        if s == 0:
+            current_gap += 1
+        else:
+            zero_gaps.append(current_gap)
+            current_gap = 0
+    # If sequence ends with zeros, record trailing gap
+    zero_gaps.append(current_gap)
+    zero_gaps = [g for g in zero_gaps if g is not None]  # keep zeros (they are meaningful)
+    avg_zero_gap = sum(zero_gaps) / len(zero_gaps) if zero_gaps else 0
+    cv_zero_gap = ( ( (sum((g - avg_zero_gap)**2 for g in zero_gaps)/len(zero_gaps)) ** 0.5 ) / avg_zero_gap
+                   ) if avg_zero_gap > 0 and len(zero_gaps) > 1 else 0
+
+    # Inter-arrival distances of any scoring event (score > 0)
+    inter = []
+    last_idx = None
+    for idx, s in enumerate(scores):
+        if s > 0:
+            if last_idx is not None:
+                inter.append(idx - last_idx)
+            last_idx = idx
+    avg_inter_scoring = sum(inter) / len(inter) if inter else None
+    cv_inter_scoring = ( ( (sum((d - avg_inter_scoring)**2 for d in inter)/len(inter)) ** 0.5 ) / avg_inter_scoring
+                        ) if inter and avg_inter_scoring and avg_inter_scoring > 0 and len(inter) > 1 else None
+
+    # Entropy of score distribution
+    entropy = -sum((c/total) * math.log2(c/total) for c in ctr.values())
+
+    # Autocorrelation (lag 1..L)
+    def autocorr(data: List[int], lag: int) -> float:
+        if lag >= len(data):
+            return 0.0
+        mu = mean_score
+        num = sum((data[i]-mu)*(data[i-lag]-mu) for i in range(lag, len(data)))
+        den = sum((x-mu)**2 for x in data)
+        return num / den if den else 0.0
+
+    max_lag = min(20, n//4)
+    autocorrs = {lag: autocorr(scores, lag) for lag in range(1, max_lag+1)}
+    # Simple periodicity guess: strongest positive autocorr (excluding very small)
+    lag_sorted = sorted(autocorrs.items(), key=lambda kv: kv[1], reverse=True)
+    dominant_lag, dominant_corr = (lag_sorted[0] if lag_sorted else (None, None))
+    periodic_like = dominant_corr is not None and dominant_corr > 0.25
+
+    # Score >1 density spacing (inter-arrival for score>1)
+    inter_gt1 = []
+    last_idx = None
+    for idx, s in enumerate(scores):
+        if s > 1:
+            if last_idx is not None:
+                inter_gt1.append(idx - last_idx)
+            last_idx = idx
+    avg_inter_gt1 = sum(inter_gt1)/len(inter_gt1) if inter_gt1 else None
+
+    # Pattern deviation: compare observed distribution of inter-arrival vs geometric expectation (score event probability)
+    p_event = 1 - p0
+    if p_event > 0 and inter:
+        # Expected mean geometric gap (including zero-length): (1-p)/p
+        expected_mean_gap = (1 - p_event) / p_event
+        observed_mean_gap = avg_inter_scoring - 1 if avg_inter_scoring else None
+        gap_mean_deviation = (observed_mean_gap - expected_mean_gap) if (observed_mean_gap is not None) else None
+    else:
+        gap_mean_deviation = None
+
+    return {
+        "total_games": total,
+        "mean_score": mean_score,
+        "std_score": std_score,
+        "prob_0": p0,
+        "prob_1": p1,
+        "prob_>1": pgt1,
+        "count_0": zeros,
+        "count_1": ones,
+        "count_>1": gt1,
+        "entropy_bits": entropy,
+        "avg_zero_gap": avg_zero_gap,
+        "cv_zero_gap": cv_zero_gap,
+        "avg_inter_scoring_distance": avg_inter_scoring,
+        "cv_inter_scoring_distance": cv_inter_scoring,
+        "avg_inter_>1_distance": avg_inter_gt1,
+        "autocorrelations": autocorrs,
+        "dominant_lag": dominant_lag,
+        "dominant_lag_corr": dominant_corr,
+        "periodic_like": periodic_like,
+        "gap_mean_deviation_vs_geometric": gap_mean_deviation,
+        "raw_zero_gaps_sample": zero_gaps[:10],
+        "raw_inter_scoring_sample": inter[:10]
+    }
 
 def generate_team_analysis_string(all_team_data, team_history_data):
     """
