@@ -2,17 +2,12 @@
     {
         "Stadium": "Dodger Stadium",
         "Location": "Los Angeles",
-        "HR": "215"
+        "HR": "212"
     },
     {
         "Stadium": "Oriole Park at Camden Yards",
         "Location": "Baltimore",
-        "HR": "198"
-    },
-    {
-        "Stadium": "Sutter Health Park",
-        "Location": "Sacramento",
-        "HR": "187"
+        "HR": "195"
     },
     {
         "Stadium": "Angel Stadium",
@@ -20,9 +15,9 @@
         "HR": "186"
     },
     {
-        "Stadium": "Yankee Stadium",
-        "Location": "Bronx",
-        "HR": "185"
+        "Stadium": "Sutter Health Park",
+        "Location": "Sacramento",
+        "HR": "183"
     },
     {
         "Stadium": "George M. Steinbrenner Field",
@@ -30,9 +25,14 @@
         "HR": "183"
     },
     {
+        "Stadium": "Yankee Stadium",
+        "Location": "Bronx",
+        "HR": "181"
+    },
+    {
         "Stadium": "Rogers Centre",
         "Location": "Toronto",
-        "HR": "182"
+        "HR": "178"
     },
     {
         "Stadium": "Comerica Park",
@@ -52,7 +52,7 @@
     {
         "Stadium": "T-Mobile Park",
         "Location": "Seattle",
-        "HR": "162"
+        "HR": "156"
     },
     {
         "Stadium": "Chase Field",
@@ -77,12 +77,7 @@
     {
         "Stadium": "Citi Field",
         "Location": "New York",
-        "HR": "150"
-    },
-    {
-        "Stadium": "Guaranteed Rate Field",
-        "Location": "Chicago",
-        "HR": "145"
+        "HR": "149"
     },
     {
         "Stadium": "Great American Ball Park",
@@ -90,14 +85,19 @@
         "HR": "143"
     },
     {
-        "Stadium": "American Family Field",
-        "Location": "Milwaukee",
-        "HR": "140"
+        "Stadium": "Guaranteed Rate Field",
+        "Location": "Chicago",
+        "HR": "143"
     },
     {
         "Stadium": "Nationals Park",
         "Location": "Washington",
         "HR": "140"
+    },
+    {
+        "Stadium": "American Family Field",
+        "Location": "Milwaukee",
+        "HR": "137"
     },
     {
         "Stadium": "Target Field",
@@ -107,7 +107,7 @@
     {
         "Stadium": "Progressive Field",
         "Location": "Cleveland",
-        "HR": "132"
+        "HR": "129"
     },
     {
         "Stadium": "Fenway Park",
@@ -115,29 +115,29 @@
         "HR": "128"
     },
     {
-        "Stadium": "Marlins Park",
-        "Location": "Miami",
-        "HR": "124"
-    },
-    {
-        "Stadium": "Busch Stadium",
-        "Location": "St. Louis",
-        "HR": "123"
-    },
-    {
         "Stadium": "Petco Park",
         "Location": "San Diego",
         "HR": "122"
     },
     {
-        "Stadium": "Globe Life Field",
-        "Location": "Arlington",
-        "HR": "117"
+        "Stadium": "Marlins Park",
+        "Location": "Miami",
+        "HR": "122"
+    },
+    {
+        "Stadium": "Busch Stadium",
+        "Location": "St. Louis",
+        "HR": "120"
     },
     {
         "Stadium": "Kauffman Stadium",
         "Location": "Kansas City",
         "HR": "117"
+    },
+    {
+        "Stadium": "Globe Life Field",
+        "Location": "Arlington",
+        "HR": "115"
     },
     {
         "Stadium": "Oracle Park",
