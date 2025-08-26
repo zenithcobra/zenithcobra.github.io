@@ -108,7 +108,7 @@
         "game_datetime": "2025-08-26T23:07:00Z",
         "game_date": "2025-08-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Toronto Blue Jays",
         "away_id": 142,
@@ -126,8 +126,8 @@
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2025-08-26 - Minnesota Twins @ Toronto Blue Jays (Scheduled)"
+        "series_status": "TOR leads 1-0",
+        "summary": "2025-08-26 - Minnesota Twins @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 776585,
@@ -266,7 +266,7 @@
         "game_datetime": "2025-08-27T00:10:00Z",
         "game_date": "2025-08-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Houston Astros",
         "away_id": 115,
@@ -285,7 +285,7 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-08-26 - Colorado Rockies @ Houston Astros (Scheduled)"
+        "summary": "2025-08-26 - Colorado Rockies @ Houston Astros (Pre-Game)"
     },
     {
         "game_id": 776577,
