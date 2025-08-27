@@ -4703,15 +4703,150 @@ def parse_teams_table(html: str) -> Dict[str, Dict[str, Dict[str, Any]]]:
         }
     return data
 
+# def format_matchup_block(game: Dict[str, str],
+#                          stats_a: Dict[str, Any],
+#                          stats_b: Dict[str, Any],
+#                          width_team: int,
+#                          width_recseq: int) -> str:
+#     """
+#     Builds a text block with:
+#       - 6-space indent for header / team lines
+#       - Labeled stat lines (cs/aws/als/pgh) left, aligned so values start under headers
+#     """
+#     away = game['away']
+#     home = game['home']
+#     status = game['status']
+#     dt = game['dt']
+#     venue = stats_a.get('venue') or stats_b.get('venue') or ''
+
+#     away_rec = f"{stats_a.get('team_record','')}"
+#     home_rec = f"{stats_b.get('team_record','')}"
+
+#     away_seq = stats_a.get('record_sequence', '')[:28]
+#     home_seq = stats_b.get('record_sequence', '')[:28]
+
+#     # Values for labeled lines
+#     cs_away = stats_a.get('current_streak', '')
+#     cs_home = stats_b.get('current_streak', '')
+#     aws_away = stats_a.get('avg_win_streak', '')
+#     aws_home = stats_b.get('avg_win_streak', '')
+#     als_away = stats_a.get('avg_lose_streak', '')
+#     als_home = stats_b.get('avg_lose_streak', '')
+#     pgh_away = stats_a.get('vs_record_against', '')
+#     pgh_home = stats_b.get('vs_record_against', '')
+
+#     indent = "      "  # 6 spaces
+#     label_field_width = len(indent)  # so data columns align with indented lines
+
+#     def pad(s, w):
+#         return f"{s:<{w}}"
+
+#     def unlabeled_line(left, right):
+#         return f"{indent}{pad(left, width_team)}    {pad(right, width_team)}"
+    
+#     def unlabeled_line2(left, right):
+#         return f"{indent}{pad(left, width_team)}     {pad(right, width_team)}"
+
+
+#     # For lines with '@' we customize
+#     line_status = f"{indent}({status})"
+#     line_dt = f"{indent}{dt}     @   {venue}"
+#     checkbox = "<input type='checkbox'>"
+#     line_names = f"{indent}{pad(away + ' ', width_team)} @   {pad(home + ' ', width_team)}"
+#     line_records = unlabeled_line2(away_rec, home_rec)
+#     line_seq = unlabeled_line(away_seq, home_seq)
+
+#     # Labeled stat lines: label + space, then pad to label_field_width
+#     def stat_line(label, left_val, right_val):
+#         prefix = (label + ":").ljust(label_field_width)
+#         return f"{prefix}{pad(left_val, width_team)}     {pad(right_val, width_team)}"
+
+#     line_cs = stat_line("cs", cs_away, cs_home)
+#     line_aws = stat_line("aws", aws_away, aws_home)
+#     line_als = stat_line("als", als_away, als_home)
+#     line_pgh = stat_line("pgh", pgh_away, pgh_home)
+
+#     return "\n".join([
+#         line_status,
+#         line_dt,
+#         line_names,
+#         line_records,
+#         line_seq,
+#         line_cs,
+#         line_aws,
+#         line_als,
+#         line_pgh,
+#         ""
+#     ])
+
+# def build_schedule_view(schedule_text: str,
+#                         teams_table_html: str,
+#                         max_record_seq_chars: int = 70) -> str:
+#     games = parse_schedule_text(schedule_text)
+#     stats_map = parse_teams_table(teams_table_html)
+
+#     # Determine width for team column (same for away & home column)
+#     all_team_names = [g['away'] for g in games] + [g['home'] for g in games]
+#     width_team = max(len(name) for name in all_team_names) + 6  # padding
+#     width_recseq = max_record_seq_chars
+
+#     blocks = []
+#     for g in games:
+#         away = g['away']
+#         home = g['home']
+#         # Retrieve stats both perspectives
+#         stats_a = stats_map.get(away, {}).get(home, {})
+#         stats_b = stats_map.get(home, {}).get(away, {})
+#         block = format_matchup_block(g, stats_a, stats_b, width_team, width_recseq)
+#         blocks.append(block)
+#     return "\n".join(blocks)
+
+# # Example usage (adjust paths)
+# def format_schedule():
+#     schedule_path = "data/schedule_text.txt"
+#     table_path = "data/teams_table.html.txt"
+#     with open(schedule_path, "r", encoding="utf-8") as f:
+#         sched = f.read()
+#     with open(table_path, "r", encoding="utf-8") as f:
+#         table_html = f.read()
+#     view = build_schedule_view(sched, table_html)
+#     return view
+def _normalize_team_name(name: str) -> str:
+    """
+    Light normalization to help match pitcher team names to schedule/team table names.
+    Adjust mapping as needed.
+    """
+    name = name.strip()
+    # Map shortened / alternate forms
+    aliases = {
+        "Athletics": "Oakland Athletics",
+        "D-backs": "Arizona Diamondbacks",
+    }
+    return aliases.get(name, name)
+
+def build_pitcher_map(pitcher_data: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
+    """
+    Returns { normalized_team_name : pitcher_entry }.
+    If multiple pitchers per team appear, the first is kept (customize if needed).
+    """
+    m = {}
+    for p in pitcher_data:
+        team = p.get("pitchers_team")
+        if not team:
+            continue
+        key = _normalize_team_name(team)
+        # Keep first (assumed probable starter); replace logic if you prefer latest.
+        m.setdefault(key, p)
+    return m
+
 def format_matchup_block(game: Dict[str, str],
                          stats_a: Dict[str, Any],
                          stats_b: Dict[str, Any],
                          width_team: int,
-                         width_recseq: int) -> str:
+                         width_recseq: int,
+                         pitcher_map: Dict[str, Dict[str, Any]]) -> str:
     """
-    Builds a text block with:
-      - 6-space indent for header / team lines
-      - Labeled stat lines (cs/aws/als/pgh) left, aligned so values start under headers
+    Extended: adds pitcher lines (pp / era / s09) if found.
     """
     away = game['away']
     home = game['home']
@@ -4725,7 +4860,7 @@ def format_matchup_block(game: Dict[str, str],
     away_seq = stats_a.get('record_sequence', '')[:28]
     home_seq = stats_b.get('record_sequence', '')[:28]
 
-    # Values for labeled lines
+    # Team stats
     cs_away = stats_a.get('current_streak', '')
     cs_home = stats_b.get('current_streak', '')
     aws_away = stats_a.get('avg_win_streak', '')
@@ -4735,82 +4870,96 @@ def format_matchup_block(game: Dict[str, str],
     pgh_away = stats_a.get('vs_record_against', '')
     pgh_home = stats_b.get('vs_record_against', '')
 
-    indent = "      "  # 6 spaces
-    label_field_width = len(indent)  # so data columns align with indented lines
+    # Pitchers (lookups with normalization + fallback blank)
+    away_pitcher_entry = pitcher_map.get(_normalize_team_name(away), {})
+    home_pitcher_entry = pitcher_map.get(_normalize_team_name(home), {})
+
+    away_pitcher = away_pitcher_entry.get("pitcher", "")
+    home_pitcher = home_pitcher_entry.get("pitcher", "")
+    away_era = away_pitcher_entry.get("ERA", "")
+    home_era = home_pitcher_entry.get("ERA", "")
+    away_so9 = away_pitcher_entry.get("SO9", "")
+    home_so9 = home_pitcher_entry.get("SO9", "")
+
+    indent = "      "
+    label_field_width = len(indent)
 
     def pad(s, w):
         return f"{s:<{w}}"
 
-    def unlabeled_line(left, right):
-        return f"{indent}{pad(left, width_team)}    {pad(right, width_team)}"
-    
-    def unlabeled_line2(left, right):
-        return f"{indent}{pad(left, width_team)}     {pad(right, width_team)}"
+    def unlabeled_line(left, right, gap="    "):
+        return f"{indent}{pad(left, width_team)}{gap}{pad(right, width_team)}"
 
-
-    # For lines with '@' we customize
-    line_status = f"{indent}({status})"
-    line_dt = f"{indent}{dt}     @   {venue}"
-    checkbox = "<input type='checkbox'>"
-    line_names = f"{indent}{pad(away + ' ', width_team)} @   {pad(home + ' ', width_team)}"
-    line_records = unlabeled_line2(away_rec, home_rec)
-    line_seq = unlabeled_line(away_seq, home_seq)
-
-    # Labeled stat lines: label + space, then pad to label_field_width
     def stat_line(label, left_val, right_val):
         prefix = (label + ":").ljust(label_field_width)
         return f"{prefix}{pad(left_val, width_team)}     {pad(right_val, width_team)}"
 
-    line_cs = stat_line("cs", cs_away, cs_home)
-    line_aws = stat_line("aws", aws_away, aws_home)
-    line_als = stat_line("als", als_away, als_home)
-    line_pgh = stat_line("pgh", pgh_away, pgh_home)
+    # Core lines
+    line_status = f"{indent}({status})"
+    line_dt = f"{indent}{dt}     @   {venue}"
+    line_names = f"{indent}{pad(away, width_team)} @   {pad(home, width_team)}"
+    line_records = unlabeled_line(away_rec, home_rec, gap="     ")
+    line_seq = unlabeled_line(away_seq, home_seq)
 
-    return "\n".join([
+    lines = [
         line_status,
         line_dt,
         line_names,
         line_records,
         line_seq,
-        line_cs,
-        line_aws,
-        line_als,
-        line_pgh,
-        ""
-    ])
+        stat_line("cs", cs_away, cs_home),
+        stat_line("aws", aws_away, aws_home),
+        stat_line("als", als_away, als_home),
+        stat_line("pgh", pgh_away, pgh_home),
+    ]
+
+    # Only add pitcher lines if at least one side has data
+    if away_pitcher or home_pitcher:
+        lines.append(stat_line("pp", away_pitcher, home_pitcher))
+        lines.append(stat_line("era", away_era, home_era))
+        lines.append(stat_line("s09", away_so9, home_so9))
+
+    lines.append("")  # blank separator
+    return "\n".join(lines)
 
 def build_schedule_view(schedule_text: str,
                         teams_table_html: str,
+                        pitcher_data: List[Dict[str, Any]] = None,
                         max_record_seq_chars: int = 70) -> str:
     games = parse_schedule_text(schedule_text)
     stats_map = parse_teams_table(teams_table_html)
+    pitcher_map = build_pitcher_map(pitcher_data or [])
 
-    # Determine width for team column (same for away & home column)
     all_team_names = [g['away'] for g in games] + [g['home'] for g in games]
-    width_team = max(len(name) for name in all_team_names) + 6  # padding
+    if not all_team_names:
+        return ""
+    width_team = max(len(name) for name in all_team_names) + 6
     width_recseq = max_record_seq_chars
 
     blocks = []
     for g in games:
         away = g['away']
         home = g['home']
-        # Retrieve stats both perspectives
         stats_a = stats_map.get(away, {}).get(home, {})
         stats_b = stats_map.get(home, {}).get(away, {})
-        block = format_matchup_block(g, stats_a, stats_b, width_team, width_recseq)
+        block = format_matchup_block(g, stats_a, stats_b, width_team, width_recseq, pitcher_map)
         blocks.append(block)
     return "\n".join(blocks)
 
-# Example usage (adjust paths)
-def format_schedule():
-    schedule_path = "data/schedule_text.txt"
-    table_path = "data/teams_table.html.txt"
+def format_schedule(schedule_path="data/schedule_text.txt",
+                                  teams_table_path="data/teams_table.html.txt",
+                                  pitcher_path="data/pitcher_data.json") -> str:
     with open(schedule_path, "r", encoding="utf-8") as f:
         sched = f.read()
-    with open(table_path, "r", encoding="utf-8") as f:
+    with open(teams_table_path, "r", encoding="utf-8") as f:
         table_html = f.read()
-    view = build_schedule_view(sched, table_html)
-    return view
+    try:
+        import json
+        with open(pitcher_path, "r", encoding="utf-8") as f:
+            p_data = json.load(f)
+    except Exception:
+        p_data = []
+    return build_schedule_view(sched, table_html, p_data)
 
 
 def make_index():
