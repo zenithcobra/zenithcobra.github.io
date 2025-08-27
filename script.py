@@ -4751,7 +4751,8 @@ def format_matchup_block(game: Dict[str, str],
     # For lines with '@' we customize
     line_status = f"{indent}({status})"
     line_dt = f"{indent}{dt}     @   {venue}"
-    line_names = f"{indent}{pad(away + ' []', width_team)} @   {pad(home + ' []', width_team)}"
+    checkbox = "<input type='checkbox'>"
+    line_names = f"{indent}{pad(away + ' ', width_team)} @   {pad(home + ' ', width_team)}"
     line_records = unlabeled_line2(away_rec, home_rec)
     line_seq = unlabeled_line(away_seq, home_seq)
 
