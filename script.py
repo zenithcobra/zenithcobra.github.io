@@ -4744,32 +4744,40 @@ def build_pitcher_map(pitcher_data: List[Dict[str, Any]]) -> Dict[str, Dict[str,
 
 def build_batter_map(batter_data):
     """
-    Returns: { team_name : [ { 'player_name': ..., 'position': ... }, ... ] }
-    Filters out malformed entries (many in your file only have RBI_record).
+    Returns: { team_name : [ { 'player_name': ..., 'position': ..., 'hr_seq': ... }, ... ] }
+    Adds a trimmed HR sequence (first 10 tokens of HR_record) under key 'hr_seq'.
     """
     team_map = {}
     for entry in batter_data or []:
         if not isinstance(entry, dict):
             continue
         name = entry.get("player_name")
-        hrz = int(entry.get("HR"))
-        if int(hrz) < 10:
-            hrz = ' ' + str(hrz)
-        pos2 = entry.get("position")
-        if len(pos2.strip()) == 1:
-            pos2 = '_' + pos2
-        pos = str(pos2) + '  ' + str(hrz)
+        hr_full = (entry.get("HR_record") or "").strip()
+        # Build trimmed hr sequence: first 10 dash-separated tokens
+        tokens = [t for t in hr_full.split('-') if t != '']
+        trimmed_hr = '-'.join(tokens[:10])
+        if trimmed_hr:  # ensure something present
+            trimmed_hr = trimmed_hr  # keep as is (no trailing dash)
+        hr_val = entry.get("HR")
+        try:
+            hr_int = int(hr_val) if hr_val is not None else 0
+        except Exception:
+            hr_int = 0
+        hr_display = f"{hr_int:>2}"  # right pad to 2 width (space + digit) for <10
+        pos_raw = entry.get("position") or ""
+        # If single char position, prepend underscore for alignment like your sample
+        if len(pos_raw.strip()) == 1:
+            pos_raw = '_' + pos_raw.strip()
+        pos_combined = f"{pos_raw} {hr_display}"
         team = entry.get("team")
-        if not (name and pos and team):
+        if not (name and pos_combined and team):
             continue
-        # Normalize spacing
         team_norm = re.sub(r'\s+', ' ', team).strip()
-        pos_norm = pos.strip()
         team_map.setdefault(team_norm, []).append({
             "player_name": name.strip(),
-            "position": pos_norm
+            "position": pos_combined.strip(),
+            "hr_seq": trimmed_hr
         })
-    # Sort rosters
     for t, roster in team_map.items():
         roster.sort(key=_position_sort_key)
     return team_map
@@ -4877,16 +4885,12 @@ def format_matchup_block(game: Dict[str, str],
     home_roster = batter_map.get(_normalize_team_name(home), []) or batter_map.get(home, [])
 
     if away_roster or home_roster:
-        # Determine padding for name so positions align reasonably inside the width
-        # Reserve at least 3 chars for a position (like "C") + spaces.
-        # We'll aim for: Name padded to (width_team - 4), then 1 space + position.
         name_field = max(
             [len(p["player_name"]) for p in away_roster] +
             [len(p["player_name"]) for p in home_roster] +
-            [10]  # minimum
+            [10]
         )
-        # But cap so we don't overflow the column
-        max_name_allowed = max(8, width_team - 5)  # leave room for space + pos
+        max_name_allowed = max(8, width_team - 5)
         name_field = min(name_field, max_name_allowed)
 
         def fmt_player(entry):
@@ -4894,16 +4898,30 @@ def format_matchup_block(game: Dict[str, str],
                 return ""
             return f'{entry["player_name"]:<{name_field}} {entry["position"]}'
 
+        def fmt_hr_seq(entry):
+            if not entry:
+                return ""
+            return entry.get("hr_seq", "")
+        gap = "     "  # keep same gap as stat_line
+
         max_rows = max(len(away_roster), len(home_roster))
         for i in range(max_rows):
             left_entry = away_roster[i] if i < len(away_roster) else None
             right_entry = home_roster[i] if i < len(home_roster) else None
+
+            # Player line
             left_txt = fmt_player(left_entry)
             right_txt = fmt_player(right_entry)
-            # Pad each side to the team column width
             left_padded = f"{left_txt:<{width_team}}"
             right_padded = f"{right_txt:<{width_team}}"
-            lines.append(f"{indent}{left_padded}     {right_padded}")    
+            lines.append(f"{indent}{left_padded}{gap}{right_padded}")
+
+            # HR sequence line (under each player)
+            left_hr = f"     {fmt_hr_seq(left_entry):<{width_team}}"
+            right_hr = f"{fmt_hr_seq(right_entry):<{width_team}}"
+            # Only add if at least one side has content
+            if left_entry or right_entry:
+                lines.append(f"{indent}{left_hr}{gap}{right_hr}")
 
     lines.append("")  # separator
     return "\n".join(lines)
