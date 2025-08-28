@@ -3372,20 +3372,63 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
         html2 += f"<td>{int(row.get("games_played", ''))}</td>"
         html2 += f"<td>{int(row.get("HR", 0))}</td>"
         html2 += f"<td>{int(row.get("HR24", 0))}</td>"
-        html2 += f"<td>{row.get("HR_record", '')}</td>"
+        html2 += f"<td>{row.get("HR_record", '')[:42]}</td>"
         html2 += f"<td>{int(row.get("games_played", ''))}</td>"
         html2 += f"<td>{int(row.get("H", 0))}</td>"
         html2 += f"<td>{row.get("Hpg", '')}</td>"
-        html2 += f"<td>{row.get("H_record", '')}</td>"
+        html2 += f"<td>{row.get("H_record", '')[:42]}</td>"
         html2 += f"<td>{int(row.get("games_played", ''))}</td>"
         html2 += f"<td>{int(row.get("RBI", 0))}</td>"
         html2 += f"<td>{row.get("RBIpg", '')}</td>"
-        html2 += f"<td>{row.get("RBI_record", '')}</td>"
+        html2 += f"<td>{row.get("RBI_record", '')[:42]}</td>"
         html2 += "</tr>\n"
     html2 += "</table>\n"
 
     html = f"<h2 id='HR'>Player Stats</h2>\n{html2}"
     return html2
+
+def get_pitcher_name_era(pitcher_name: str,
+                         pitcher_file: str = "data/pitcher_data.json") -> str:
+    """
+    Return "PitcherName ERA" for the first matching pitcher in pitcher_data.json.
+
+    Matching:
+      - Case-insensitive exact match on the 'pitcher' field first.
+      - If no exact match, tries case-insensitive startswith.
+      - If still none, returns "".
+
+    Args:
+        pitcher_name: Name to look up.
+        pitcher_file: Path to pitcher JSON file.
+
+    Returns:
+        str like "Garrett Crochet 2.38" or "" if not found.
+    """
+    if not pitcher_name:
+        return ""
+    try:
+        with open(pitcher_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return ""
+
+    if not isinstance(data, list):
+        return ""
+
+    name_lc = pitcher_name.strip().lower()
+
+    # 1. Exact (case-insensitive)
+    for entry in data:
+        if isinstance(entry, dict) and entry.get("pitcher","").strip().lower() == name_lc:
+            return f"{entry.get('pitcher','').strip()} {entry.get('ERA','').strip()}"
+
+    # 2. Startswith fallback
+    for entry in data:
+        p = entry.get("pitcher","")
+        if isinstance(entry, dict) and p.lower().startswith(name_lc):
+            return f"{p.strip()} {entry.get('ERA','').strip()}"
+
+    return ""
 
 def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
     """
@@ -3482,7 +3525,7 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         html1 += f"<td><input type='checkbox'></td>"
         html1 += f"<td>{row.get("batter", '')}</td>"
         html1 += f"<td>{row.get("batter_team", '')}</td>"
-        html1 += f"<td>{row.get("pitcher", '')}</td>"
+        html1 += f"<td>{get_pitcher_name_era(row.get("pitcher", ''))}</td>"
         html1 += f"<td>{extract_first_int(row.get("venue", ''))}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("atbats", '')}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("hits", '')}</td>"
@@ -3495,19 +3538,19 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         html1 += f"<td>{row.get("all_HR24", '')}</td>"
         html1 += f"<td>{round(float(row.get("all_HR_analysis", {}).get("avg_zero_gap", 0)),3)}</td>"
         html1 += f"<td>{round(float(row.get("all_HR_analysis", {}).get("cv_zero_gap", 0)),3)}</td>"
-        html1 += f"<td>{row.get("all_HR_record", '')}</td>"
+        html1 += f"<td>{row.get("all_HR_record", '')[:42]}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("atbats", '')}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("hits", '')}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("avg", '')}</td>"
         html1 += f"<td>{int(row.get("all_H", 0))}</td>"
         html1 += f"<td>{row.get("all_Hpg", '')}</td>"
-        html1 += f"<td>{row.get("all_H_record", '')}</td>"
+        html1 += f"<td>{row.get("all_H_record", '')[:42]}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("atbats", '')}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("avg", '')}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("rbi", '')}</td>"
         html1 += f"<td>{int(row.get("all_RBI", 0))}</td>"
         html1 += f"<td>{row.get("all_RBIpg", '')}</td>"
-        html1 += f"<td>{row.get("all_RBI_record", '')}</td>"
+        html1 += f"<td>{row.get("all_RBI_record", '')[:42]}</td>"
         html1 += "</tr>\n"
     html1 += "</table>\n"
 
@@ -3882,9 +3925,9 @@ def generate_leaders_table(leader_data1, leader_data2, leader_data3):
         return html
 
     html = ""
+    html += make_table(leader_data3, "HR")
     html += make_table(leader_data1, "ERA")
     html += make_table(leader_data2, "SO9")
-    html += make_table(leader_data3, "HR")
     return html
 
 def merge_team_data(team_data_1, team_data_2):
