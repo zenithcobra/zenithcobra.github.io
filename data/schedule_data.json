@@ -17,20 +17,20 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BOS leads 3-0",
-        "summary": "2025-08-28 - Boston Red Sox (1) @ Baltimore Orioles (0) (Top of the 2nd)"
+        "summary": "2025-08-28 - Boston Red Sox (1) @ Baltimore Orioles (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 776555,
         "game_datetime": "2025-08-28T18:10:00Z",
         "game_date": "2025-08-28",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Colorado Rockies",
         "home_name": "Houston Astros",
         "away_id": 115,
@@ -51,7 +51,7 @@
             "MLBN (out-of-market only)"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2025-08-28 - Colorado Rockies @ Houston Astros (Pre-Game)"
+        "summary": "2025-08-28 - Colorado Rockies @ Houston Astros (Warmup)"
     },
     {
         "game_id": 776553,
