@@ -3342,12 +3342,18 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
         "HR",
         "Name",
         "Team",
-        "Pos",
-        "Venue",
         "GP",
         "HR",
         "HR24",
         "HR_record",
+        "GP",
+        "H",
+        "Hpg",
+        "H_record",
+        "GP",
+        "RBI",
+        "RBIpg",
+        "RBI_record"
     ]
 
     # Start the HTML table
@@ -3358,106 +3364,28 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
     # Add rows for each dictionary
     for row in analyzed_batter_data:
         html2 += "<tr>"
-        # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
         html2 += f"<td><input type='checkbox'></td>"
         html2 += f"<td><input type='checkbox'></td>"
         html2 += f"<td><input type='checkbox'></td>"
         html2 += f"<td>{row.get("player_name", '')}</td>"
         html2 += f"<td>{row.get("team", '')}</td>"
-        html2 += f"<td>{row.get("position", '')}</td>"
-        html2 += f"<td>{row.get("venue", '')}</td>"
         html2 += f"<td>{int(row.get("games_played", ''))}</td>"
-        html2 += f"<td>{int(row.get("HR", ''))}</td>"
-        html2 += f"<td>{row.get("HR24", '')}</td>"
+        html2 += f"<td>{int(row.get("HR", 0))}</td>"
+        html2 += f"<td>{int(row.get("HR24", 0))}</td>"
         html2 += f"<td>{row.get("HR_record", '')}</td>"
+        html2 += f"<td>{int(row.get("games_played", ''))}</td>"
+        html2 += f"<td>{int(row.get("H", 0))}</td>"
+        html2 += f"<td>{row.get("Hpg", '')}</td>"
+        html2 += f"<td>{row.get("H_record", '')}</td>"
+        html2 += f"<td>{int(row.get("games_played", ''))}</td>"
+        html2 += f"<td>{int(row.get("RBI", 0))}</td>"
+        html2 += f"<td>{row.get("RBIpg", '')}</td>"
+        html2 += f"<td>{row.get("RBI_record", '')}</td>"
         html2 += "</tr>\n"
-
     html2 += "</table>\n"
 
-    headers2 = [
-        "RBI",
-        "H",
-        "HR",
-        "Name",
-        "Team",
-        "Pos",
-        "Venue",
-        "GP",
-        "H",
-        "Hpg",
-        "fHpg",
-        "H_record",
-    ]
-
-# Start the HTML table
-    html3 = "<table border='1'>\n<tr>"
-    html3 += "".join(f"<th>{header}</th>" for header in headers2)
-    html3 += "</tr>\n"
-
-    # Add rows for each dictionary
-    for row in analyzed_batter_data:
-        html3 += "<tr>"
-        # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
-        html3 += f"<td><input type='checkbox'></td>"
-        html3 += f"<td><input type='checkbox'></td>"
-        html3 += f"<td><input type='checkbox'></td>"
-        html3 += f"<td>{row.get("player_name", '')}</td>"
-        html3 += f"<td>{row.get("team", '')}</td>"
-        html3 += f"<td>{row.get("position", '')}</td>"
-        html3 += f"<td>{row.get("venue", '')}</td>"
-        html3 += f"<td>{int(row.get("games_played", ''))}</td>"
-        html3 += f"<td>{row.get("H", '')}</td>"
-        html3 += f"<td>{row.get("Hpg", '')}</td>"
-        html3 += f"<td>{row.get("fHpg", '')}</td>"
-        html3 += f"<td>{row.get("H_record", '')}</td>"
-        html3 += "</tr>\n"
-
-    html3 += "</table>\n"
-
-    headers3 = [
-        "RBI",
-        "H",
-        "HR",
-        "Name",
-        "Team",
-        "Pos",
-        "Venue",
-        "GP",
-        "RBIpg",
-        "fRBIpg",
-        "RBI",
-        "RBI_record"
-    ]
-
-# Start the HTML table
-    html4 = "<table border='1'>\n<tr>"
-    html4 += "".join(f"<th>{header}</th>" for header in headers3)
-    html4 += "</tr>\n"
-
-    # Add rows for each dictionary
-    for row in analyzed_batter_data:
-        html4 += "<tr>"
-        # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
-        html4 += f"<td><input type='checkbox'></td>"
-        html4 += f"<td><input type='checkbox'></td>"
-        html4 += f"<td><input type='checkbox'></td>"
-        html4 += f"<td>{row.get("player_name", '')}</td>"
-        html4 += f"<td>{row.get("team", '')}</td>"
-        html4 += f"<td>{row.get("position", '')}</td>"
-        html4 += f"<td>{row.get("venue", '')}</td>"
-        html4 += f"<td>{int(row.get("games_played", ''))}</td>"
-        html4 += f"<td>{row.get("RBIpg", '')}</td>"
-        html4 += f"<td>{row.get("fRBIpg", '')}</td>"
-        html4 += f"<td>{row.get("RBI", '')}</td>"
-        html4 += f"<td>{row.get("RBI_record", '')}</td>"
-        html4 += "</tr>\n"
-
-    html4 += "</table>\n"
-
-    html = f"<h2 id='HR'>Home Run</h2>\n{html2}"
-    html += f"<h2 id='H'>Hits</h2>\n{html3}"
-    html += f"<h2 id='RBI'>Rbis</h2>\n{html4}"
-    return html
+    html = f"<h2 id='HR'>Player Stats</h2>\n{html2}"
+    return html2
 
 def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
     """
@@ -3523,19 +3451,22 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         "OBP",
         "OPS",
         "HR25",
-        "HRpg25",
-        "fHRpg25",
         "HR24",
-        "HR24pg",
-        "fHR24pg",
         "HR Record",
-        "prob_0",
-        "prob_1",
-        "prob_>1",
         "avg_zero_gap",
         "cv_zero_gap",
-        "avg_inter_scoring_distance",
-        "cv_inter_scoring_distance"
+        "AB",
+        "H",
+        "AVG",
+        "H25",
+        "Hpg25",
+        "Hits Record",
+        "AB",
+        "AVG",
+        "RBI",
+        "RBI25",
+        "RBIpg25",
+        "RBIs Record",
     ]
 
     # Start the HTML table
@@ -3546,7 +3477,6 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
     # Add rows for each dictionary
     for row in analyzed_bvp_data:
         html1 += "<tr>"
-        # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
         html1 += f"<td><input type='checkbox'></td>"
         html1 += f"<td><input type='checkbox'></td>"
         html1 += f"<td><input type='checkbox'></td>"
@@ -3561,153 +3491,27 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         html1 += f"<td>{row.get('bvp_stats').get("rbi", '')}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("obp", '')}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("ops", '')}</td>"
-        # valuehr = row.get("all_HR", '')
-        # html += f"<td>{int(valuehr) if str(valuehr).isdigit() else 0}</td>"
-        html1 += f"<td>{row.get("all_HR", '')}</td>"
-        html1 += f"<td>{row.get("all_HRpg", '')}</td>"
-        html1 += f"<td>{row.get("all_fHRpg", '')}</td>"
+        html1 += f"<td>{int(row.get("all_HR", 0))}</td>"
         html1 += f"<td>{row.get("all_HR24", '')}</td>"
-        html1 += f"<td>{row.get("all_HR24pg", '')}</td>"
-        html1 += f"<td>{row.get("all_fHR24pg", '')}</td>"
         html1 += f"<td>{row.get("all_HR_record", '')}</td>"
-        html1 += f"<td>{row.get("all_HR_analysis", {}).get("prob_0", '0')}</td>"
-        html1 += f"<td>{row.get("all_HR_analysis", {}).get("prob_1", '0')}</td>"
-        html1 += f"<td>{row.get("all_HR_analysis", {}).get("prob_>1", '0')}</td>"
         html1 += f"<td>{row.get("all_HR_analysis", {}).get("avg_zero_gap", '0')}</td>"
         html1 += f"<td>{row.get("all_HR_analysis", {}).get("cv_zero_gap", '0')}</td>"
-        html1 += f"<td>{row.get("all_HR_analysis", {}).get("avg_inter_scoring_distance", '0')}</td>"
-        html1 += f"<td>{row.get("all_HR_analysis", {}).get("cv_inter_scoring_distance", '0')}</td>"
+        html1 += f"<td>{row.get('bvp_stats').get("atbats", '')}</td>"
+        html1 += f"<td>{row.get('bvp_stats').get("hits", '')}</td>"
+        html1 += f"<td>{row.get('bvp_stats').get("avg", '')}</td>"
+        html1 += f"<td>{int(row.get("all_H", 0))}</td>"
+        html1 += f"<td>{row.get("all_Hpg", '')}</td>"
+        html1 += f"<td>{row.get("all_H_record", '')}</td>"
+        html1 += f"<td>{row.get('bvp_stats').get("atbats", '')}</td>"
+        html1 += f"<td>{row.get('bvp_stats').get("avg", '')}</td>"
+        html1 += f"<td>{row.get('bvp_stats').get("rbi", '')}</td>"
+        html1 += f"<td>{int(row.get("all_RBI", 0))}</td>"
+        html1 += f"<td>{row.get("all_RBIpg", '')}</td>"
+        html1 += f"<td>{row.get("all_RBI_record", '')}</td>"
         html1 += "</tr>\n"
-
     html1 += "</table>\n"
 
-    headers2 = [
-        "RBI",
-        "H",
-        "HRS",
-        "Batter",
-        "Team",
-        "Venue",
-        "Pitcher",
-        "AB",
-        "H",
-        "HR",
-        "AVG",
-        "RBI",
-        "OBP",
-        "OPS",
-        "H25",
-        "Hpg25",
-        "fHpg25",
-        "Hmc?",
-        "Hmm?",
-        "Hmm%?",
-        "Hits Record",
-    ]
-
-    # Start the HTML table
-    html2 = "<table border='1'>\n<tr>"
-    html2 += "".join(f"<th>{header}</th>" for header in headers2)
-    html2 += "</tr>\n"
-
-    # Add rows for each dictionary
-    for row in analyzed_bvp_data:
-        html2 += "<tr>"
-        # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
-        html2 += f"<td><input type='checkbox'></td>"
-        html2 += f"<td><input type='checkbox'></td>"
-        html2 += f"<td><input type='checkbox'></td>"
-        html2 += f"<td>{row.get("batter", '')}</td>"
-        html2 += f"<td>{row.get("batter_team", '')}</td>"
-        html2 += f"<td>{row.get("venue", '')}</td>"
-        html2 += f"<td>{row.get("pitcher", '')}</td>"
-        html2 += f"<td>{row.get('bvp_stats').get("atbats", '')}</td>"
-        html2 += f"<td>{row.get('bvp_stats').get("hits", '')}</td>"
-        html2 += f"<td>{row.get('bvp_stats').get("homeruns", '')}</td>"
-        html2 += f"<td>{row.get('bvp_stats').get("avg", '')}</td>"
-        html2 += f"<td>{row.get('bvp_stats').get("rbi", '')}</td>"
-        html2 += f"<td>{row.get('bvp_stats').get("obp", '')}</td>"
-        html2 += f"<td>{row.get('bvp_stats').get("ops", '')}</td>"
-        html2 += f"<td>{row.get("all_H", '')}</td>"
-        html2 += f"<td>{row.get("all_Hpg", '')}</td>"
-        html2 += f"<td>{row.get("all_fHpg", '')}</td>"
-        html2 += f"<td>{row.get("h_prediction", '')}</td>"
-        html2 += f"<td>{row.get("h_mmp", '')}</td>"
-        value2b = row.get("h_mmpp", '')
-        html2 += f"<td>{round(float(value2b), 2) if value2b else ''}</td>"        
-        # html += f"<td>{round(float(row.get("h_mmpp", '')),2)}</td>"
-        html2 += f"<td>{row.get("all_H_record", '')}</td>"
-        html2 += "</tr>\n"
-
-    html2 += "</table>\n"
-
-    headers3 = [
-        "RBI",
-        "H",
-        "HRS",
-        "Batter",
-        "Team",
-        "Venue",
-        "Pitcher",
-        "AB",
-        "H",
-        "HR",
-        "AVG",
-        "RBI",
-        "OBP",
-        "OPS",
-        "RBI25",
-        "RBIpg25",
-        "fRBIpg25",
-        "RBIsmc?",
-        "RBIsmm?",
-        "RBIsmm%?",
-        "RBIs Record",
-    ]
-
-    # Start the HTML table
-    html3 = "<table border='1'>\n<tr>"
-    html3 += "".join(f"<th>{header}</th>" for header in headers3)
-    html3 += "</tr>\n"
-
-    # Add rows for each dictionary
-    for row in analyzed_bvp_data:
-        html3 += "<tr>"
-        # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
-        html3 += f"<td><input type='checkbox'></td>"
-        html3 += f"<td><input type='checkbox'></td>"
-        html3 += f"<td><input type='checkbox'></td>"
-        html3 += f"<td>{row.get("batter", '')}</td>"
-        html3 += f"<td>{row.get("batter_team", '')}</td>"
-        html3 += f"<td>{row.get("venue", '')}</td>"
-        html3 += f"<td>{row.get("pitcher", '')}</td>"
-        html3 += f"<td>{row.get('bvp_stats').get("atbats", '')}</td>"
-        html3 += f"<td>{row.get('bvp_stats').get("hits", '')}</td>"
-        html3 += f"<td>{row.get('bvp_stats').get("homeruns", '')}</td>"
-        html3 += f"<td>{row.get('bvp_stats').get("avg", '')}</td>"
-        html3 += f"<td>{row.get('bvp_stats').get("rbi", '')}</td>"
-        html3 += f"<td>{row.get('bvp_stats').get("obp", '')}</td>"
-        html3 += f"<td>{row.get('bvp_stats').get("ops", '')}</td>"
-        # valuehr = row.get("all_HR", '')
-        # html += f"<td>{int(valuehr) if str(valuehr).isdigit() else 0}</td>"
-        html3 += f"<td>{row.get("all_RBI", '')}</td>"
-        html3 += f"<td>{row.get("all_RBIpg", '')}</td>"
-        html3 += f"<td>{row.get("all_fRBIpg", '')}</td>"
-        html3 += f"<td>{row.get("rbi_prediction", '')}</td>"
-        html3 += f"<td>{row.get("rbi_mmp", '')}</td>"
-        value3c = row.get("rbi_mmpp", '')
-        html3 += f"<td>{round(float(value3c), 2) if value3c else ''}</td>"        
-        # html += f"<td>{round(float(row.get("rbi_mmpp", '')),2)}</td>"
-        html3 += f"<td>{row.get("all_RBI_record", '')}</td>"
-        html3 += "</tr>\n"
-
-    html3 += "</table>\n"
-
-    html = f"<h2 id='bvp-stats-HR'>BVP Home Run</h2>\n{html1}"
-    html += f"<h2 id='bvp-stats-H'>BVP Hits</h2>\n{html2}"
-    html += f"<h2 id='bvp-stats-RBI'>BVP Rbis</h2>\n{html3}"
-
-    return html
+    return html1
 
 def generate_dh_batter_html_table(dh_batter_data, schedule_data, ball_park_data):
     """
@@ -5375,13 +5179,9 @@ def make_index():
             <a href="#records">Teams</a>
             <a href="#leaders">Leaders</a>
             <a href="#match-overviews-pitchers">Pitchers</a>
-            <a href="#HR">HR's</a>
-            <a href="#H">H's</a>
-            <a href="#RBI">RBI's</a>
+            <a href="#match-overviews-batters">Players</a>
             <a href="#dh-batters">DH's</a>
-            <a href="#bvp-stats-HR">BvP HR</a>
-            <a href="#bvp-stats-H">BvP H</a>
-            <a href="#bvp-stats-RBI">BvP RBI</a>
+            <a href="#bvp-stats">BvP</a>
             <a href="#checked-section">Checked</a>
         </div>
         <div class="content">
@@ -5413,13 +5213,13 @@ def make_index():
             <pre>{yesterday_home_run_table}</pre>
             <h2 id="leaders">League Leaders</h2>
             <pre>{leaders_table}</pre>
-            <h2 id="match-overviews-pitchers">Pitcher Match Overviews</h2>
+            <h2 id="match-overviews-pitchers">Probable Pitchers</h2>
             <pre>{pitcher_table}</pre>
-            <h2 id="match-overviews-batters">Roster Overviews</h2>
+            <h2 id="match-overviews-batters">Players</h2>
             <pre>{batter_table}</pre>
             <h2 id="dh-batters">DH Batters</h2>
             <pre>{dh_batter_table}</pre>
-            <h2 id="bvp-stats">Batter vs Pitcher Stats</h2>
+            <h2 id="bvp-stats">BVP</h2>
             <pre>{bvp_table}</pre>
             
 
