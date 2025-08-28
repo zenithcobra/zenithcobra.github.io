@@ -3483,7 +3483,7 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         html1 += f"<td>{row.get("batter", '')}</td>"
         html1 += f"<td>{row.get("batter_team", '')}</td>"
         html1 += f"<td>{row.get("pitcher", '')}</td>"
-        html1 += f"<td>{abbreviate_venue(row.get("venue", ''))}</td>"
+        html1 += f"<td>{extract_first_int(row.get("venue", ''))}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("atbats", '')}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("hits", '')}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("homeruns", '')}</td>"
@@ -5007,6 +5007,26 @@ def schedule_text_to_html(raw: str) -> str:
     return styled
 
 # ...rest of file unchanged...
+
+def extract_first_int(s: str):
+    """
+    Return the first integer found in the string, else None.
+    Example: 'American Family Field (146)' -> 146
+    """
+    import re
+    m = re.search(r'\d+', s or '')
+    return int(m.group()) if m else None
+
+
+def extract_all_ints(s: str):
+    """
+    Return list of all integers (as ints) in the string.
+    Example: 'Park 146 Row 12 Seat 7' -> [146, 12, 7]
+    """
+    import re
+    return [int(x) for x in re.findall(r'\d+', s or '')]
+
+
 
 def abbreviate_venue(venue: str) -> str:
     """
