@@ -4755,14 +4755,16 @@ def build_batter_map(batter_data):
         hr_full = (entry.get("HR_record") or "").strip()
         # Build trimmed hr sequence: first 10 dash-separated tokens
         tokens = [t for t in hr_full.split('-') if t != '']
-        trimmed_hr = '-'.join(tokens[:10])
+        trimmed_hr = '-'.join(tokens[:12])
         if trimmed_hr:  # ensure something present
             trimmed_hr = trimmed_hr  # keep as is (no trailing dash)
         hr_val = entry.get("HR")
+        hr24_val = entry.get("HR24",0)
         try:
             hr_int = int(hr_val) if hr_val is not None else 0
         except Exception:
             hr_int = 0
+        hr_int = str(hr_int) + " " + str(hr24_val)
         hr_display = f"{hr_int:>2}"  # right pad to 2 width (space + digit) for <10
         pos_raw = entry.get("position") or ""
         # If single char position, prepend underscore for alignment like your sample
@@ -4849,14 +4851,14 @@ def format_matchup_block(game: Dict[str, str],
 
     def stat_line(label, left_val, right_val):
         prefix = (label + ":").ljust(label_field_width)
-        return f"{prefix}{pad(str(left_val), width_team)}     {pad(str(right_val), width_team)}"
+        return f"{prefix}{pad(str(left_val), width_team)}       {pad(str(right_val), width_team)}"
 
     # Core lines
     line_status = f"{indent}({status})"
-    line_dt = f"{indent}{dt}     @   {venue}"
-    line_names = f"{indent}{pad(away, width_team)} @   {pad(home, width_team)}"
-    line_records = unlabeled_line(away_rec, home_rec, gap="     ")
-    line_seq = unlabeled_line(away_seq, home_seq)
+    line_dt = f"{indent}{dt}     @     {venue}"
+    line_names = f"{indent}{pad(away, width_team)} @     {pad(home, width_team)}"
+    line_records = unlabeled_line(away_rec, home_rec, gap="       ")
+    line_seq = unlabeled_line(away_seq, home_seq, gap="      ")
 
     lines = [
         line_status,
@@ -4896,7 +4898,7 @@ def format_matchup_block(game: Dict[str, str],
         def fmt_player(entry):
             if not entry:
                 return ""
-            return f'{entry["player_name"]:<{name_field}} {entry["position"]}'
+            return f'{entry["player_name"]:<{name_field}}  {entry["position"]}'
 
         def fmt_hr_seq(entry):
             if not entry:
@@ -4913,15 +4915,15 @@ def format_matchup_block(game: Dict[str, str],
             left_txt = fmt_player(left_entry)
             right_txt = fmt_player(right_entry)
             left_padded = f"{left_txt:<{width_team}}"
-            right_padded = f"{right_txt:<{width_team}}"
+            right_padded = f"  {right_txt:<{width_team}}"
             lines.append(f"{indent}{left_padded}{gap}{right_padded}")
 
             # HR sequence line (under each player)
-            left_hr = f"     {fmt_hr_seq(left_entry):<{width_team}}"
+            left_hr = f"{fmt_hr_seq(left_entry):<{width_team}}"
             right_hr = f"{fmt_hr_seq(right_entry):<{width_team}}"
             # Only add if at least one side has content
             if left_entry or right_entry:
-                lines.append(f"{indent}{left_hr}{gap}{right_hr}")
+                lines.append(f"{indent}{left_hr}{gap}  {right_hr}")
 
     lines.append("")  # separator
     return "\n".join(lines)
@@ -4973,6 +4975,79 @@ def format_schedule(schedule_path="data/schedule_text.txt",
         b_data = []
     return build_schedule_view(sched, table_html, p_data, b_data)
 
+import re
+from html import escape
+
+def schedule_text_to_html(raw: str) -> str:
+    """
+    Convert the plain text schedule_view.txt.txt content into simple HTML
+    with:
+      - Monospace preserved formatting (wrapped in <pre class="schedule-view">)
+      - Player names bolded ( <b>Name</b> ) when they appear in roster lines
+        directly before a position code (RF, 1B, _C, SS, LF, CF, DH, etc.).
+      - Stat / recent-result sequences like 0-1-0-0-0-0-0-0-0-0 (5+ tokens)
+        italicized + grey via a span: <span class="seq"><i>...</i></span>
+
+    Heuristics:
+      - A "player name" here is 1–4 capitalized words (allowing accents,
+        apostrophes, periods) immediately followed (after 2+ spaces) by a
+        position code of 1–3 chars (letters, digits, or leading underscore).
+      - Sequence detection: any pattern of at least 5 numeric tokens separated
+        by hyphens: d(-d){4,} with optional trailing hyphen.
+
+    You can embed the returned HTML into a page; includes a minimal <style>
+    block for convenience. Adjust CSS as desired.
+    """
+    if not raw:
+        return "<div>(no data)</div>"
+
+    # Regex for player names (lookahead ensures a position code follows)
+    name_pattern = re.compile(
+        r'(?P<name>'
+        r'[A-Z][A-Za-zÀ-ÖØ-öø-ÿ\'\.]+'
+        r'(?: [A-Z][A-Za-zÀ-ÖØ-öø-ÿ\'\.]+){0,3}'
+        r')'
+        r'(?=\s{2,}(?:_[A-Z]|[A-Z0-9]{1,2})\b)'
+    )
+
+    # Regex for stat / recent-result sequences (≥5 tokens)
+    seq_pattern = re.compile(r'\b\d(?:-\d){4,}\b-?')
+
+    html_lines = []
+    for line in raw.splitlines():
+        # Preserve original indentation; operate on the raw line (not escaped yet)
+        original_line = line
+
+        # Escape first (so inserted tags are only ours)
+        esc = escape(original_line)
+
+        # Bold player names
+        def repl_name(m: re.Match) -> str:
+            nm = m.group('name')
+            return f"<b>{nm}</b>"
+
+        esc = name_pattern.sub(repl_name, esc)
+
+        # Italicize sequences
+        def repl_seq(m: re.Match) -> str:
+            seq = m.group(0)
+            return f'<span class="seq"><i>{seq}</i></span>'
+
+        esc = seq_pattern.sub(repl_seq, esc)
+
+        html_lines.append(esc)
+
+    styled = (
+        "<style>\n"
+        ".schedule-view { font-family: monospace; white-space: pre; line-height:1.1; }\n"
+        ".schedule-view .seq { color:#777; font-style:italic; }\n"
+        # ".schedule-view b { color:#000; }\n"
+        "</style>\n"
+        "<pre class=\"schedule-view\">"
+        + "\n".join(html_lines) +
+        "</pre>"
+    )
+    return styled
 
 def make_index():
     # get date for later
@@ -5035,6 +5110,9 @@ def make_index():
 
     new_schedule_view = format_schedule()
     save_to_text(new_schedule_view, "schedule_view.txt")
+    styled_schedule = schedule_text_to_html(new_schedule_view)
+    save_to_text(styled_schedule, "styled_schedule_view.html")
+    new_schedule_view = styled_schedule
 
     pitcher_data_path = "data/pitcher_data.json"
     pitcher_data = read_json_file(pitcher_data_path)
