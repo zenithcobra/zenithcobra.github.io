@@ -4851,14 +4851,14 @@ def format_matchup_block(game: Dict[str, str],
 
     def stat_line(label, left_val, right_val):
         prefix = (label + ":").ljust(label_field_width)
-        return f"{prefix}{pad(str(left_val), width_team)}       {pad(str(right_val), width_team)}"
+        return f"{prefix}{pad(str(left_val), width_team)}         {pad(str(right_val), width_team)}"
 
     # Core lines
     line_status = f"{indent}({status})"
-    line_dt = f"{indent}{dt}     @     {venue}"
-    line_names = f"{indent}{pad(away, width_team)} @     {pad(home, width_team)}"
-    line_records = unlabeled_line(away_rec, home_rec, gap="       ")
-    line_seq = unlabeled_line(away_seq, home_seq, gap="      ")
+    line_dt = f"{indent}{dt}     @       {venue}"
+    line_names = f"{indent}{pad(away, width_team)} @       {pad(home, width_team)}"
+    line_records = unlabeled_line(away_rec, home_rec, gap="         ")
+    line_seq = unlabeled_line(away_seq, home_seq, gap="        ")
 
     lines = [
         line_status,
@@ -4892,19 +4892,20 @@ def format_matchup_block(game: Dict[str, str],
             [len(p["player_name"]) for p in home_roster] +
             [10]
         )
-        max_name_allowed = max(8, width_team - 5)
+        max_name_allowed = max(16, width_team + 5)
         name_field = min(name_field, max_name_allowed)
 
         def fmt_player(entry):
             if not entry:
                 return ""
-            return f'{entry["player_name"]:<{name_field}}  {entry["position"]}'
+            name1 = entry["player_name"] + '  '
+            return f'{name1:<{name_field}}{entry["position"]}'
 
         def fmt_hr_seq(entry):
             if not entry:
                 return ""
             return entry.get("hr_seq", "")
-        gap = "     "  # keep same gap as stat_line
+        gap = "       "  # keep same gap as stat_line
 
         max_rows = max(len(away_roster), len(home_roster))
         for i in range(max_rows):
@@ -4975,65 +4976,216 @@ def format_schedule(schedule_path="data/schedule_text.txt",
         b_data = []
     return build_schedule_view(sched, table_html, p_data, b_data)
 
+# import re
+# from html import escape
+
+# def schedule_text_to_html(raw: str) -> str:
+#     """
+#     Convert the plain text schedule_view.txt.txt content into simple HTML
+#     with:
+#       - Monospace preserved formatting (wrapped in <pre class="schedule-view">)
+#       - Player names bolded ( <b>Name</b> ) when they appear in roster lines
+#         directly before a position code (RF, 1B, _C, SS, LF, CF, DH, etc.).
+#       - Stat / recent-result sequences like 0-1-0-0-0-0-0-0-0-0 (5+ tokens)
+#         italicized + grey via a span: <span class="seq"><i>...</i></span>
+
+#     Heuristics:
+#       - A "player name" here is 1–4 capitalized words (allowing accents,
+#         apostrophes, periods) immediately followed (after 2+ spaces) by a
+#         position code of 1–3 chars (letters, digits, or leading underscore).
+#       - Sequence detection: any pattern of at least 5 numeric tokens separated
+#         by hyphens: d(-d){4,} with optional trailing hyphen.
+
+#     You can embed the returned HTML into a page; includes a minimal <style>
+#     block for convenience. Adjust CSS as desired.
+#     """
+#     if not raw:
+#         return "<div>(no data)</div>"
+
+#     # Regex for player names (lookahead ensures a position code follows)
+#     name_pattern = re.compile(
+#         r'(?P<name>'
+#         r'[A-Z][A-Za-zÀ-ÖØ-öø-ÿ\'\.]+'
+#         r'(?: [A-Z][A-Za-zÀ-ÖØ-öø-ÿ\'\.]+){0,3}'
+#         r')'
+#         r'(?=\s{2,}(?:_[A-Z]|[A-Z0-9]{1,2})\b)'
+#     )
+
+#     # Regex for stat / recent-result sequences (≥5 tokens)
+#     seq_pattern = re.compile(r'\b\d(?:-\d){4,}\b-?')
+
+#     html_lines = []
+#     for line in raw.splitlines():
+#         # Preserve original indentation; operate on the raw line (not escaped yet)
+#         original_line = line
+
+#         # Escape first (so inserted tags are only ours)
+#         esc = escape(original_line)
+
+#         # Bold player names
+#         def repl_name(m: re.Match) -> str:
+#             nm = m.group('name')
+#             return f"<b>{nm}</b>"
+
+#         esc = name_pattern.sub(repl_name, esc)
+
+#         # Italicize sequences
+#         def repl_seq(m: re.Match) -> str:
+#             seq = m.group(0)
+#             return f'<span class="seq"><i>{seq}</i></span>'
+
+#         esc = seq_pattern.sub(repl_seq, esc)
+
+#         html_lines.append(esc)
+
+#     styled = (
+#         "<style>\n"
+#         ".schedule-view { font-family: monospace; white-space: pre; line-height:1.1; }\n"
+#         ".schedule-view .seq { color:#777; font-style:italic; }\n"
+#         ".schedule-view b { color:#FFF200; }\n"
+#         "</style>\n"
+#         "<pre class=\"schedule-view\">"
+#         + "\n".join(html_lines) +
+#         "</pre>"
+#     )
+#     return styled
+
+# ```python
+# // filepath: [script.py](http://_vscodecontentref_/0)
+# ...existing imports above...
 import re
 from html import escape
 
 def schedule_text_to_html(raw: str) -> str:
     """
-    Convert the plain text schedule_view.txt.txt content into simple HTML
-    with:
-      - Monospace preserved formatting (wrapped in <pre class="schedule-view">)
-      - Player names bolded ( <b>Name</b> ) when they appear in roster lines
-        directly before a position code (RF, 1B, _C, SS, LF, CF, DH, etc.).
-      - Stat / recent-result sequences like 0-1-0-0-0-0-0-0-0-0 (5+ tokens)
-        italicized + grey via a span: <span class="seq"><i>...</i></span>
+    Enhanced HTML styling for the plain-text schedule view.
 
-    Heuristics:
-      - A "player name" here is 1–4 capitalized words (allowing accents,
-        apostrophes, periods) immediately followed (after 2+ spaces) by a
-        position code of 1–3 chars (letters, digits, or leading underscore).
-      - Sequence detection: any pattern of at least 5 numeric tokens separated
-        by hyphens: d(-d){4,} with optional trailing hyphen.
-
-    You can embed the returned HTML into a page; includes a minimal <style>
-    block for convenience. Adjust CSS as desired.
+    Adds:
+      - Italic status line ( (Scheduled) )
+      - Bold game time and park capacity number
+      - Bold team names on the matchup line
+      - Italic full W/L record-sequence line
+      - Italic pgh (previous games head‑to‑head) sequences
+      - Bold pitcher names (pp line)
+      - Bold ERA numbers (era line)
+      - Italic numeric values on s09 / hr9 / h9 / w / l lines
+      - Existing: bold player names; italic grey recent stat sequences (0-1-0...)
     """
     if not raw:
         return "<div>(no data)</div>"
 
-    # Regex for player names (lookahead ensures a position code follows)
+    # Player name (already on roster lines) before a position block
     name_pattern = re.compile(
         r'(?P<name>'
         r'[A-Z][A-Za-zÀ-ÖØ-öø-ÿ\'\.]+'
         r'(?: [A-Z][A-Za-zÀ-ÖØ-öø-ÿ\'\.]+){0,3}'
-        r')'
-        r'(?=\s{2,}(?:_[A-Z]|[A-Z0-9]{1,2})\b)'
+        r')(?=\s{2,}(?:_[A-Z]|[A-Z0-9]{1,2})\b)'
     )
+    # Numeric dash sequences (already handled)
+    num_seq_pattern = re.compile(r'\b\d(?:-\d){4,}\b-?')
+    # W/L dash sequences (team record sequences)
+    wl_seq_pattern = re.compile(r'\bWL{3,}\b-?')
 
-    # Regex for stat / recent-result sequences (≥5 tokens)
-    seq_pattern = re.compile(r'\b\d(?:-\d){4,}\b-?')
+    # Date line: capture date, time, venue, capacity
+    date_line_pattern = re.compile(
+        r'^(\s*\d{4}-\d{2}-\d{2})\s+'
+        r'(\d{2}:\d{2} [AP]M [A-Z]+)(\s+@\s+.+?\()(\d+)(\))\s*$'
+    )
+    # Matchup (team names) line: Team A @ Team B
+    team_line_pattern = re.compile(
+        r'^(\s*)([A-Za-z0-9 .\'\-&]+?)(\s+@+\s+)([A-Za-z0-9 .\'\-&]+?)(\s*)$'
+    )
+    # Pitcher line
+    pp_line_pattern = re.compile(r'^\s*pp:\s*(.*)$', re.IGNORECASE)
+    # ERA line
+    era_line_pattern = re.compile(r'^\s*era:\s*(.*)$', re.IGNORECASE)
+    # Lines where numeric columns should be italic
+    italic_num_labels = {'s09:', 'hr9:', 'h9:', 'w:', 'l:'}
+
+    def bold_numbers(segment: str) -> str:
+        return re.sub(r'(?<![\w>])(\d+(?:\.\d+)?)(?![\w<])', r'<b>\1</b>', segment)
+
+    def italic_numbers(segment: str) -> str:
+        return re.sub(r'(?<![\w>])(\d+(?:\.\d+)?)(?![\w<])', r'<i>\1</i>', segment)
 
     html_lines = []
     for line in raw.splitlines():
-        # Preserve original indentation; operate on the raw line (not escaped yet)
-        original_line = line
+        original = line
+        esc = escape(original)
 
-        # Escape first (so inserted tags are only ours)
-        esc = escape(original_line)
+        # 1. Status line => italic whole line if it is only "(Something)"
+        if original.strip().startswith("(") and original.strip().endswith(")") and original.strip().count("(") == 1:
+            esc = f"<i>{esc}</i>"
+            html_lines.append(esc)
+            continue
 
-        # Bold player names
-        def repl_name(m: re.Match) -> str:
-            nm = m.group('name')
-            return f"<b>{nm}</b>"
+        # 2. Date line (time bold, capacity bold)
+        m_date = date_line_pattern.match(original)
+        if m_date:
+            g1, g2, g3, g4_num, g5 = m_date.groups()
+            esc = (
+                f"{escape(g1)} <b>{escape(g2)}</b>"
+                f"{escape(g3)}<b>{escape(g4_num)}</b>{escape(g5)}"
+            )
+            html_lines.append(esc)
+            continue
 
-        esc = name_pattern.sub(repl_name, esc)
+        # 3. Team names line
+        m_team = team_line_pattern.match(original)
+        if m_team and '@' in original:
+            indent, left_team, mid, right_team, tail = m_team.groups()
+            esc = f"{escape(indent)}<b>{escape(left_team.rstrip())}</b>{escape(mid)}<b>{escape(right_team.rstrip())}</b>{escape(tail)}"
+            html_lines.append(esc)
+            continue
 
-        # Italicize sequences
-        def repl_seq(m: re.Match) -> str:
-            seq = m.group(0)
-            return f'<span class="seq"><i>{seq}</i></span>'
+        # 4. Record sequence line (two WL sequences) => italic WL sequences
+        if wl_seq_pattern.search(original) and original.strip().startswith(('W','L')):
+            def wl_wrap(m):
+                return f"<i>{m.group(0)}</i>"
+            esc = wl_seq_pattern.sub(wl_wrap, esc)
+            html_lines.append(esc)
+            continue
 
-        esc = seq_pattern.sub(repl_seq, esc)
+        # 5. pgh line: italic WL sequences after the label
+        if original.lstrip().lower().startswith("pgh:"):
+            def wl_wrap(m):
+                return f"<i>{m.group(0)}</i>"
+            esc = wl_seq_pattern.sub(wl_wrap, esc)
+            html_lines.append(esc)
+            continue
+
+        # 6. Pitcher line: bold each pitcher name token cluster (non-numeric text columns)
+        if pp_line_pattern.match(original):
+            # After label, bold contiguous non-space spans that contain letters
+            parts = esc.split(':', 1)
+            if len(parts) == 2:
+                label, rest = parts
+                rest = re.sub(r'([A-Za-zÀ-ÖØ-öø-ÿ\'\.][A-Za-zÀ-ÖØ-öø-ÿ\'\. ]+)',
+                              lambda m: f"<b>{m.group(1).rstrip()}</b>", rest)
+                esc = f"{label}:{rest}"
+            html_lines.append(esc)
+            continue
+
+        # 7. ERA line: bold numbers only (two columns)
+        if era_line_pattern.match(original):
+            esc = bold_numbers(esc)
+            html_lines.append(esc)
+            continue
+
+        # 8. Italic numeric columns for certain labels
+        stripped = original.lstrip()
+        prefix = stripped[:stripped.find(':')+1] if ':' in stripped else ''
+        if prefix.lower() in italic_num_labels:
+            esc = italic_numbers(esc)
+            html_lines.append(esc)
+            continue
+
+        # (Existing roster styling) ---------------------------------
+
+        # Bold player names on roster lines
+        esc = name_pattern.sub(lambda m: f"<b>{m.group('name')}</b>", esc)
+        # Italic numeric dash sequences
+        esc = num_seq_pattern.sub(lambda m: f'<span class="seq"><i>{m.group(0)}</i></span>', esc)
 
         html_lines.append(esc)
 
@@ -5041,13 +5193,16 @@ def schedule_text_to_html(raw: str) -> str:
         "<style>\n"
         ".schedule-view { font-family: monospace; white-space: pre; line-height:1.1; }\n"
         ".schedule-view .seq { color:#777; font-style:italic; }\n"
-        # ".schedule-view b { color:#000; }\n"
+        ".schedule-view b { color:#FFF200; }\n"
+        ".schedule-view i { color:#B0B0B0; }\n"
         "</style>\n"
         "<pre class=\"schedule-view\">"
         + "\n".join(html_lines) +
         "</pre>"
     )
     return styled
+
+# ...rest of file unchanged...
 
 def make_index():
     # get date for later
