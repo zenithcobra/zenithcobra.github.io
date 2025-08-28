@@ -3441,8 +3441,8 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         "HRS",
         "Batter",
         "Team",
-        "Venue",
         "Pitcher",
+        "Venue",
         "AB",
         "H",
         "HR",
@@ -3452,9 +3452,9 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         "OPS",
         "HR25",
         "HR24",
+        "a0g",
+        "a0g%",
         "HR Record",
-        "avg_zero_gap",
-        "cv_zero_gap",
         "AB",
         "H",
         "AVG",
@@ -3482,8 +3482,8 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         html1 += f"<td><input type='checkbox'></td>"
         html1 += f"<td>{row.get("batter", '')}</td>"
         html1 += f"<td>{row.get("batter_team", '')}</td>"
-        html1 += f"<td>{row.get("venue", '')}</td>"
         html1 += f"<td>{row.get("pitcher", '')}</td>"
+        html1 += f"<td>{abbreviate_venue(row.get("venue", ''))}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("atbats", '')}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("hits", '')}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("homeruns", '')}</td>"
@@ -3493,9 +3493,9 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
         html1 += f"<td>{row.get('bvp_stats').get("ops", '')}</td>"
         html1 += f"<td>{int(row.get("all_HR", 0))}</td>"
         html1 += f"<td>{row.get("all_HR24", '')}</td>"
+        html1 += f"<td>{round(float(row.get("all_HR_analysis", {}).get("avg_zero_gap", 0)),3)}</td>"
+        html1 += f"<td>{round(float(row.get("all_HR_analysis", {}).get("cv_zero_gap", 0)),3)}</td>"
         html1 += f"<td>{row.get("all_HR_record", '')}</td>"
-        html1 += f"<td>{row.get("all_HR_analysis", {}).get("avg_zero_gap", '0')}</td>"
-        html1 += f"<td>{row.get("all_HR_analysis", {}).get("cv_zero_gap", '0')}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("atbats", '')}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("hits", '')}</td>"
         html1 += f"<td>{row.get('bvp_stats').get("avg", '')}</td>"
@@ -5007,6 +5007,82 @@ def schedule_text_to_html(raw: str) -> str:
     return styled
 
 # ...rest of file unchanged...
+
+def abbreviate_venue(venue: str) -> str:
+    """
+    Abbreviate a ballpark / venue string.
+
+    Rules:
+      - Preserve trailing capacity in parentheses: "(123)"
+      - Split name from capacity.
+      - If the word 'at' appears (case-insensitive) and is not first/last token:
+            Left side letters + '@' + Right side letters
+        (each side = first letter of each word, all caps)
+      - Otherwise: first letter of every word (all caps)
+      - Words keep only alphanumerics when taking the initial (so "Daikin"->D, "O'Hara"->O)
+
+    Examples:
+        'American Family Field (146)' -> 'AFF (146)'
+        'Oriole Park at Camden Yards (202)' -> 'OP@CY (202)'
+        'Busch Stadium (125)' -> 'BS (125)'
+        'Rate Field (149)' -> 'RF (149)'
+
+    Returns original string if it cannot parse.
+    """
+    import re
+
+    if not venue or not venue.strip():
+        return venue
+
+    venue = venue.strip()
+
+    # Extract capacity "(###)" if present
+    m = re.search(r'\s*\((\d+)\)\s*$', venue)
+    capacity = None
+    if m:
+        capacity = m.group(1)
+        name_part = venue[:m.start()].strip()
+    else:
+        name_part = venue
+
+    if not name_part:
+        return venue  # nothing to abbreviate
+
+    tokens = name_part.split()
+    if not tokens:
+        return venue
+
+    # Locate 'at'
+    at_index = None
+    for i, tok in enumerate(tokens):
+        if tok.lower() == 'at':
+            at_index = i
+            break
+
+    def initials(words):
+        chars = []
+        for w in words:
+            # Keep only alphanumerics for initial choice
+            m = re.search(r'[A-Za-z0-9]', w)
+            if m:
+                chars.append(m.group(0).upper())
+        return ''.join(chars)
+
+    if at_index is not None and 0 < at_index < len(tokens) - 1:
+        left = tokens[:at_index]
+        right = tokens[at_index + 1:]
+        left_abbr = initials(left)
+        right_abbr = initials(right)
+        abbr = f"{left_abbr}@{right_abbr}" if left_abbr and right_abbr else initials(tokens)
+    else:
+        abbr = initials(tokens)
+
+    if not abbr:
+        return venue  # fallback
+
+    return f"{abbr} ({capacity})" if capacity else abbr
+
+
 
 def make_index():
     # get date for later
