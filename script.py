@@ -4360,7 +4360,7 @@ def process_match_data(combined_data):
     """
     # Define the table headers
     headers = [
-        "Win", "Loss", "Team (W,L,%)", "vs Team (W,L,%)",
+        "Win", "Loss", "Teams",
         "Venue", "VS Record Against", "Current Streak",
         "Average Win Streak", "Average Lose Streak",
         "Record"
@@ -4389,8 +4389,7 @@ def process_match_data(combined_data):
             html_output.append("<tr>")
             html_output.append(f"<td><input type='checkbox'></td>")
             html_output.append(f"<td><input type='checkbox'></td>")
-            html_output.append(f"<td>{team_data.get('team_name', 'N/A')} <b>({team_data.get('wins', 'N/A')},{team_data.get('losses', 'N/A')},{team_data.get('win_percentage', 'N/A')}%)</b></td>")
-            html_output.append(f"<td>{opponent_data.get('team_name', 'N/A')} <b>({opponent_data.get('wins', 'N/A')},{opponent_data.get('losses', 'N/A')},{opponent_data.get('win_percentage', 'N/A')})</b></td>")
+            html_output.append(f"<td>{team_data.get('team_name', 'N/A')} <b>({team_data.get('wins', 'N/A')},{team_data.get('losses', 'N/A')},{team_data.get('win_percentage', 'N/A')}%)</b> vs {opponent_data.get('team_name', 'N/A')} <b>({opponent_data.get('wins', 'N/A')},{opponent_data.get('losses', 'N/A')},{opponent_data.get('win_percentage', 'N/A')})</b></td>")
             html_output.append(f"<td><b>{extract_first_int(team_data.get('venue', 'N/A'))}</b></td>")
             html_output.append(f"<td>{', '.join(team_data.get('vs_record', [])) or 'N/A'}</td>")
             html_output.append(f"<td>{team_data.get('current_streak', {}).get('streak_type', 'N/A')} ({team_data.get('current_streak', {}).get('streak_length', 'N/A')})</td>")

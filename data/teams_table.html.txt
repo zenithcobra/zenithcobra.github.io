@@ -2,8 +2,7 @@
 <tr>
 <th>Win</th>
 <th>Loss</th>
-<th>Team (W,L,%)</th>
-<th>vs Team (W,L,%)</th>
+<th>Teams</th>
 <th>Venue</th>
 <th>VS Record Against</th>
 <th>Current Streak</th>
@@ -14,8 +13,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Washington Nationals <b>(56,80,0.41%)</b></td>
-<td>Chicago Cubs <b>(79,57,0.58)</b></td>
+<td>Washington Nationals <b>(56,80,0.41%)</b> vs Chicago Cubs <b>(79,57,0.58)</b></td>
 <td><b>157</b></td>
 <td>L, W, L</td>
 <td>W (3)</td>
@@ -26,8 +24,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Chicago Cubs <b>(79,57,0.58%)</b></td>
-<td>Washington Nationals <b>(56,80,0.41)</b></td>
+<td>Chicago Cubs <b>(79,57,0.58%)</b> vs Washington Nationals <b>(56,80,0.41)</b></td>
 <td><b>157</b></td>
 <td>W, L, W</td>
 <td>L (1)</td>
@@ -38,8 +35,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>New York Mets <b>(75,62,0.55%)</b></td>
-<td>Cincinnati Reds <b>(71,71,0.5)</b></td>
+<td>New York Mets <b>(75,62,0.55%)</b> vs Cincinnati Reds <b>(71,71,0.5)</b></td>
 <td><b>167</b></td>
 <td>W, L, L</td>
 <td>L (1)</td>
@@ -50,8 +46,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Cincinnati Reds <b>(71,71,0.5%)</b></td>
-<td>New York Mets <b>(75,62,0.55)</b></td>
+<td>Cincinnati Reds <b>(71,71,0.5%)</b> vs New York Mets <b>(75,62,0.55)</b></td>
 <td><b>167</b></td>
 <td>L, W, W</td>
 <td>L (2)</td>
@@ -62,8 +57,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Chicago White Sox <b>(53,86,0.38%)</b></td>
-<td>Detroit Tigers <b>(78,59,0.57)</b></td>
+<td>Chicago White Sox <b>(53,86,0.38%)</b> vs Detroit Tigers <b>(78,59,0.57)</b></td>
 <td><b>186</b></td>
 <td>L, W, L, W, L, W, L, L, L, L</td>
 <td>W (5)</td>
@@ -74,8 +68,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Detroit Tigers <b>(78,59,0.57%)</b></td>
-<td>Chicago White Sox <b>(53,86,0.38)</b></td>
+<td>Detroit Tigers <b>(78,59,0.57%)</b> vs Chicago White Sox <b>(53,86,0.38)</b></td>
 <td><b>186</b></td>
 <td>W, L, W, L, W, L, W, W, W, W</td>
 <td>W (1)</td>
@@ -86,8 +79,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Milwaukee Brewers <b>(84,54,0.61%)</b></td>
-<td>Pittsburgh Pirates <b>(63,77,0.45)</b></td>
+<td>Milwaukee Brewers <b>(84,54,0.61%)</b> vs Pittsburgh Pirates <b>(63,77,0.45)</b></td>
 <td><b>102</b></td>
 <td>W, W, W, W, W, L, W, L, L, W</td>
 <td>L (1)</td>
@@ -98,8 +90,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Pittsburgh Pirates <b>(63,77,0.45%)</b></td>
-<td>Milwaukee Brewers <b>(84,54,0.61)</b></td>
+<td>Pittsburgh Pirates <b>(63,77,0.45%)</b> vs Milwaukee Brewers <b>(84,54,0.61)</b></td>
 <td><b>102</b></td>
 <td>L, L, L, L, L, W, L, W, W, L</td>
 <td>W (3)</td>
@@ -110,8 +101,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Los Angeles Dodgers <b>(76,62,0.55%)</b></td>
-<td>Baltimore Orioles <b>(62,72,0.46)</b></td>
+<td>Los Angeles Dodgers <b>(76,62,0.55%)</b> vs Baltimore Orioles <b>(62,72,0.46)</b></td>
 <td><b>205</b></td>
 <td>N/A</td>
 <td>L (3)</td>
@@ -122,8 +112,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Baltimore Orioles <b>(62,72,0.46%)</b></td>
-<td>Los Angeles Dodgers <b>(76,62,0.55)</b></td>
+<td>Baltimore Orioles <b>(62,72,0.46%)</b> vs Los Angeles Dodgers <b>(76,62,0.55)</b></td>
 <td><b>205</b></td>
 <td>N/A</td>
 <td>W (3)</td>
@@ -134,8 +123,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Toronto Blue Jays <b>(81,57,0.59%)</b></td>
-<td>New York Yankees <b>(77,62,0.55)</b></td>
+<td>Toronto Blue Jays <b>(81,57,0.59%)</b> vs New York Yankees <b>(77,62,0.55)</b></td>
 <td><b>193</b></td>
 <td>W, L, W, W, W, W, W, L, W</td>
 <td>W (2)</td>
@@ -146,8 +134,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>New York Yankees <b>(77,62,0.55%)</b></td>
-<td>Toronto Blue Jays <b>(81,57,0.59)</b></td>
+<td>New York Yankees <b>(77,62,0.55%)</b> vs Toronto Blue Jays <b>(81,57,0.59)</b></td>
 <td><b>193</b></td>
 <td>L, W, L, L, L, L, L, W, L</td>
 <td>W (1)</td>
@@ -158,8 +145,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Philadelphia Phillies <b>(79,58,0.58%)</b></td>
-<td>Miami Marlins <b>(65,74,0.47)</b></td>
+<td>Philadelphia Phillies <b>(79,58,0.58%)</b> vs Miami Marlins <b>(65,74,0.47)</b></td>
 <td><b>None</b></td>
 <td>W, W, L, W, L, W, W</td>
 <td>W (1)</td>
@@ -170,8 +156,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Miami Marlins <b>(65,74,0.47%)</b></td>
-<td>Philadelphia Phillies <b>(79,58,0.58)</b></td>
+<td>Miami Marlins <b>(65,74,0.47%)</b> vs Philadelphia Phillies <b>(79,58,0.58)</b></td>
 <td><b>None</b></td>
 <td>L, L, W, L, W, L, L</td>
 <td>L (3)</td>
@@ -182,8 +167,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Seattle Mariners <b>(73,67,0.52%)</b></td>
-<td>Atlanta Braves <b>(63,76,0.45)</b></td>
+<td>Seattle Mariners <b>(73,67,0.52%)</b> vs Atlanta Braves <b>(63,76,0.45)</b></td>
 <td><b>154</b></td>
 <td>N/A</td>
 <td>L (3)</td>
@@ -194,8 +178,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Atlanta Braves <b>(63,76,0.45%)</b></td>
-<td>Seattle Mariners <b>(73,67,0.52)</b></td>
+<td>Atlanta Braves <b>(63,76,0.45%)</b> vs Seattle Mariners <b>(73,67,0.52)</b></td>
 <td><b>154</b></td>
 <td>N/A</td>
 <td>W (1)</td>
@@ -206,8 +189,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Cleveland Guardians <b>(66,70,0.49%)</b></td>
-<td>Tampa Bay Rays <b>(71,69,0.51)</b></td>
+<td>Cleveland Guardians <b>(66,70,0.49%)</b> vs Tampa Bay Rays <b>(71,69,0.51)</b></td>
 <td><b>193</b></td>
 <td>L, W, W, L</td>
 <td>L (1)</td>
@@ -218,8 +200,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Tampa Bay Rays <b>(71,69,0.51%)</b></td>
-<td>Cleveland Guardians <b>(66,70,0.49)</b></td>
+<td>Tampa Bay Rays <b>(71,69,0.51%)</b> vs Cleveland Guardians <b>(66,70,0.49)</b></td>
 <td><b>193</b></td>
 <td>W, L, L, W</td>
 <td>W (7)</td>
@@ -230,8 +211,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Minnesota Twins <b>(62,78,0.44%)</b></td>
-<td>Kansas City Royals <b>(69,68,0.5)</b></td>
+<td>Minnesota Twins <b>(62,78,0.44%)</b> vs Kansas City Royals <b>(69,68,0.5)</b></td>
 <td><b>129</b></td>
 <td>W, L, W, L, W, W, L, W, L, L</td>
 <td>L (4)</td>
@@ -242,8 +222,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Kansas City Royals <b>(69,68,0.5%)</b></td>
-<td>Minnesota Twins <b>(62,78,0.44)</b></td>
+<td>Kansas City Royals <b>(69,68,0.5%)</b> vs Minnesota Twins <b>(62,78,0.44)</b></td>
 <td><b>129</b></td>
 <td>L, W, L, W, L, L, W, L, W, W</td>
 <td>W (1)</td>
@@ -254,8 +233,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Houston Astros <b>(77,64,0.55%)</b></td>
-<td>Texas Rangers <b>(72,69,0.51)</b></td>
+<td>Houston Astros <b>(77,64,0.55%)</b> vs Texas Rangers <b>(72,69,0.51)</b></td>
 <td><b>127</b></td>
 <td>L, W, L, W, L, W, L</td>
 <td>L (1)</td>
@@ -266,8 +244,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Texas Rangers <b>(72,69,0.51%)</b></td>
-<td>Houston Astros <b>(77,64,0.55)</b></td>
+<td>Texas Rangers <b>(72,69,0.51%)</b> vs Houston Astros <b>(77,64,0.55)</b></td>
 <td><b>127</b></td>
 <td>W, L, W, L, W, L, W</td>
 <td>L (2)</td>
@@ -278,8 +255,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>San Francisco Giants <b>(71,69,0.51%)</b></td>
-<td>St. Louis Cardinals <b>(65,70,0.48)</b></td>
+<td>San Francisco Giants <b>(71,69,0.51%)</b> vs St. Louis Cardinals <b>(65,70,0.48)</b></td>
 <td><b>134</b></td>
 <td>N/A</td>
 <td>W (4)</td>
@@ -290,8 +266,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>St. Louis Cardinals <b>(65,70,0.48%)</b></td>
-<td>San Francisco Giants <b>(71,69,0.51)</b></td>
+<td>St. Louis Cardinals <b>(65,70,0.48%)</b> vs San Francisco Giants <b>(71,69,0.51)</b></td>
 <td><b>134</b></td>
 <td>N/A</td>
 <td>W (2)</td>
@@ -302,8 +277,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>San Diego Padres <b>(76,63,0.55%)</b></td>
-<td>Colorado Rockies <b>(38,99,0.28)</b></td>
+<td>San Diego Padres <b>(76,63,0.55%)</b> vs Colorado Rockies <b>(38,99,0.28)</b></td>
 <td><b>192</b></td>
 <td>L, W, W, W, W, W</td>
 <td>L (4)</td>
@@ -314,8 +288,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Colorado Rockies <b>(38,99,0.28%)</b></td>
-<td>San Diego Padres <b>(76,63,0.55)</b></td>
+<td>Colorado Rockies <b>(38,99,0.28%)</b> vs San Diego Padres <b>(76,63,0.55)</b></td>
 <td><b>192</b></td>
 <td>W, L, L, L, L, L</td>
 <td>L (3)</td>
@@ -326,8 +299,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Athletics <b>(64,77,0.45%)</b></td>
-<td>Los Angeles Angels <b>(66,74,0.47)</b></td>
+<td>Athletics <b>(64,77,0.45%)</b> vs Los Angeles Angels <b>(66,74,0.47)</b></td>
 <td><b>186</b></td>
 <td>L, W, W, L, L, L, L, L, L, L</td>
 <td>L (2)</td>
@@ -338,8 +310,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Los Angeles Angels <b>(66,74,0.47%)</b></td>
-<td>Athletics <b>(64,77,0.45)</b></td>
+<td>Los Angeles Angels <b>(66,74,0.47%)</b> vs Athletics <b>(64,77,0.45)</b></td>
 <td><b>186</b></td>
 <td>W, L, L, W, W, W, W, W, W, W</td>
 <td>L (1)</td>
@@ -350,8 +321,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Boston Red Sox <b>(76,62,0.55%)</b></td>
-<td>Arizona Diamondbacks <b>(70,72,0.49)</b></td>
+<td>Boston Red Sox <b>(76,62,0.55%)</b> vs Arizona Diamondbacks <b>(70,72,0.49)</b></td>
 <td><b>161</b></td>
 <td>N/A</td>
 <td>L (1)</td>
@@ -362,8 +332,7 @@
 <tr>
 <td><input type='checkbox'></td>
 <td><input type='checkbox'></td>
-<td>Arizona Diamondbacks <b>(70,72,0.49%)</b></td>
-<td>Boston Red Sox <b>(76,62,0.55)</b></td>
+<td>Arizona Diamondbacks <b>(70,72,0.49%)</b> vs Boston Red Sox <b>(76,62,0.55)</b></td>
 <td><b>161</b></td>
 <td>N/A</td>
 <td>W (2)</td>
