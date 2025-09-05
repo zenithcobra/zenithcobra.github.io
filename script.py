@@ -3513,7 +3513,7 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
     ]
 
     # Start the HTML table
-    html1 = "<table border='1'>\n<tr>"
+    html1 = "<table border='1' class='freeze-first-4'>\n<tr>"
     html1 += "".join(f"<th>{header}</th>" for header in headers1)
     html1 += "</tr>\n"
 
@@ -5251,6 +5251,18 @@ def make_index():
         <title>MLB Report</title>
         <style>
             :root {{
+                --bg: #ffffff;
+                --fg: #000000;
+            }}
+            body.light {{
+                --bg: #ffffff;
+                --fg: #000000;
+            }}
+            body.dark {{
+                --bg: #000000;
+                --fg: #ffffff;
+            }}
+            :root {{
                 --bg:#000;
                 --fg:#BBBBBB;
                 --accent:#14B37D;
@@ -5301,6 +5313,7 @@ def make_index():
             .number-highlight {{ color:var(--number); font-weight:bold; }}
             .non-number-highlight {{ color:var(--accent); }}
             .mode-indicator {{ font-weight:bold; }}
+        
         </style>
     </head>
     <body>
@@ -5360,7 +5373,7 @@ def make_index():
             
 
         </div>
-            <script>
+               <script>
 
            // Persist + toggle light/dark
             (function() {{
@@ -5427,6 +5440,8 @@ def make_index():
                     }}
                 }});
             
+            
+
             </script>
     </body>
     </html>
@@ -5780,8 +5795,197 @@ def process_html(html_as_string):
     """
     soup.body.append(filter_script)
 
+    # # Add CSS for sticky columns
+    sticky_columns_style = soup.new_tag("style")
+    sticky_columns_style.string = """
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    /* Sticky columns */
+    .sticky-col {
+        position: sticky;
+        background: #fff; /* Optional: Set background color for better visibility */
+        z-index: 2; /* Ensure sticky columns stay above other content */
+    }
+
+    .sticky-col.c1 {
+        left: 0;
+    }
+
+    .sticky-col.c2 {
+        left: var(--c1);
+    }
+
+    .sticky-col.c3 {
+        left: calc(var(--c1) + var(--c2));
+    }
+
+    .sticky-col.c4 {
+        left: calc(var(--c1) + var(--c2) + var(--c3));
+    }
+    """
+    soup.head.append(sticky_columns_style)
+
+    # Add JavaScript for calculating column widths and applying sticky behavior
+    sticky_columns_script = soup.new_tag("script")
+    sticky_columns_script.string = """
+    document.addEventListener('DOMContentLoaded', function() {
+        function initStickyColumns(table) {
+            const rows = table.rows;
+            Array.from(rows).forEach(row => {
+                for (let i = 0; i < 4; i++) {
+                    if (row.cells[i]) {
+                        row.cells[i].classList.add(`sticky-col`, `c${i + 1}`);
+                    }
+                }
+            });
+        }
+
+        function measureColumnWidths(table) {
+            const firstRow = table.rows[0];
+            if (!firstRow) return;
+
+            const c1 = firstRow.querySelector('.c1');
+            const c2 = firstRow.querySelector('.c2');
+            const c3 = firstRow.querySelector('.c3');
+            if (!(c1 && c2 && c3)) return;
+
+            const w1 = c1.getBoundingClientRect().width;
+            const w2 = c2.getBoundingClientRect().width;
+            const w3 = c3.getBoundingClientRect().width;
+
+            document.documentElement.style.setProperty('--c1', `${w1}px`);
+            document.documentElement.style.setProperty('--c2', `${w2}px`);
+            document.documentElement.style.setProperty('--c3', `${w3}px`);
+        }
+
+        function applyStickyColumns() {
+            const tables = document.querySelectorAll('table');
+            tables.forEach(table => {
+                initStickyColumns(table);
+                measureColumnWidths(table);
+            });
+        }
+
+        applyStickyColumns();
+
+        // Re-measure column widths on window resize
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                applyStickyColumns();
+            }, 150);
+        });
+    });
+    """
+    soup.body.append(sticky_columns_script)
     # =================================
     # =================================
+
+    # Add CSS for sticky columns
+    sticky_columns_style = soup.new_tag("style")
+    sticky_columns_style.string = """
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    /* Sticky columns */
+    .sticky-col {
+        position: sticky;
+        background: var(--bg); /* Use light/dark mode background */
+        color: var(--fg); /* Use light/dark mode text color */
+        z-index: 2; /* Ensure sticky columns stay above other content */
+    }
+
+    .sticky-col.c1 {
+        left: 0;
+    }
+
+    .sticky-col.c2 {
+        left: var(--c1);
+    }
+
+    .sticky-col.c3 {
+        left: calc(var(--c1) + var(--c2));
+    }
+
+    .sticky-col.c4 {
+        left: calc(var(--c1) + var(--c2) + var(--c3));
+    }
+    """
+    soup.head.append(sticky_columns_style)
+
+    # Add JavaScript for calculating column widths and applying sticky behavior
+    sticky_columns_script = soup.new_tag("script")
+    sticky_columns_script.string = """
+    document.addEventListener('DOMContentLoaded', function() {
+        function initStickyColumns(table) {
+            const rows = table.rows;
+            Array.from(rows).forEach(row => {
+                for (let i = 0; i < 4; i++) {
+                    if (row.cells[i]) {
+                        row.cells[i].classList.add(`sticky-col`, `c${i + 1}`);
+                    }
+                }
+            });
+        }
+
+        function measureColumnWidths(table) {
+            const firstRow = table.rows[0];
+            if (!firstRow) return;
+
+            const c1 = firstRow.querySelector('.c1');
+            const c2 = firstRow.querySelector('.c2');
+            const c3 = firstRow.querySelector('.c3');
+            if (!(c1 && c2 && c3)) return;
+
+            const w1 = c1.getBoundingClientRect().width;
+            const w2 = c2.getBoundingClientRect().width;
+            const w3 = c3.getBoundingClientRect().width;
+
+            document.documentElement.style.setProperty('--c1', `${w1}px`);
+            document.documentElement.style.setProperty('--c2`, `${w2}px`);
+            document.documentElement.style.setProperty('--c3`, `${w3}px`);
+        }
+
+        function applyStickyColumns() {
+            const tables = document.querySelectorAll('table');
+            tables.forEach(table => {
+                initStickyColumns(table);
+                measureColumnWidths(table);
+            });
+        }
+
+        applyStickyColumns();
+
+        // Re-measure column widths on window resize
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                applyStickyColumns();
+            }, 150);
+        });
+    });
+    """
+    soup.body.append(sticky_columns_script)
+
     # =================================
 
     return str(soup)
