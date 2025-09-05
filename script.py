@@ -5249,63 +5249,59 @@ def make_index():
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MLB Report</title>
-<style>
-                body {{
-                    margin: 0;
-                    font-family: 'Fira Code', monospace; /* Use a coding font for a terminal-like feel */
-                    color: #BBBBBB;
-                    background-color: black; /* Dark background for better contrast */
-                }}
-                h1, h2, h3, h4, h5, h6 {{
-                color: #14B37D;
-                }}
-                .navbar {{
-                    position: sticky;
-                    top: 0;
-                    background-color: #333;
-                    overflow: hidden;
-                    z-index: 1000;
-                    white-space: nowrap; /* Prevent wrapping */
-                }}
-
-                .navbar a {{
-                    float: left;
-                    display: block;
-                    color: white;
-                    text-align: center;
-                    padding: 8px 10px; /* Reduced padding */
-                    font-size: 12px; /* Smaller font size */
-                    text-decoration: none;
-                }}
-
-                .navbar a:hover {{
-                    background-color: #ddd;
-                    color: black;
-                }}
-
-                .content {{
-                    padding: 20px;
-                }}
-
-                .highlight {{
-                    background-color: #363B44; /* Highlight color */
-                }}
-                th {{
-                    background-color: #363B44; /* Accent color for headers */
-                    color: #2A8EEA;
-                }}
-                a {{
-                    color: #3A75C4; /* Cyan color */
-                    text-decoration: none; /* Removes underline */
-                }}
-                .number-highlight {{
-                    color: #F2F27A; /* Example color for numbers */
-                    font-weight: bold; /* Optional: Make numbers bold */
-                    }}
-                .non-number-highlight {{
-                    color: #50fa7b;
-                    }}
-            </style>
+        <style>
+            :root {{
+                --bg:#000;
+                --fg:#BBBBBB;
+                --accent:#14B37D;
+                --link:#3A75C4;
+                --header-bg:#333;
+                --table-header-bg:#363B44;
+                --number:#F2F27A;
+                --highlight:#363B44;
+            }}
+            body.light {{
+                --bg:#FFFFFF;
+                --fg:#222222;
+                --accent:#0E7A56;
+                --link:#0B57D0;
+                --header-bg:#E0E0E0;
+                --table-header-bg:#F2F2F2;
+                --number:#8B6508;
+                --highlight:#E6EEF7;
+            }}
+            body {{
+                margin:0;
+                font-family:'Fira Code', monospace;
+                background:var(--bg);
+                color:var(--fg);
+            }}
+            h1,h2,h3,h4,h5,h6 {{ color:var(--accent); }}
+            a {{ color:var(--link); text-decoration:none; }}
+            .navbar {{
+                position:sticky; top:0;
+                background:var(--header-bg);
+                overflow:hidden;
+                z-index:1000;
+                white-space:nowrap;
+            }}
+            .navbar a {{
+                float:left; display:block;
+                color:var(--fg);
+                padding:8px 10px;
+                font-size:12px;
+            }}
+            .navbar a:hover {{ background:var(--table-header-bg); color:var(--accent); }}
+            .content {{ padding:20px; }}
+            .highlight {{ background:var(--highlight); }}
+            th {{
+                background:var(--table-header-bg);
+                color:#2A8EEA;
+            }}
+            .number-highlight {{ color:var(--number); font-weight:bold; }}
+            .non-number-highlight {{ color:var(--accent); }}
+            .mode-indicator {{ font-weight:bold; }}
+        </style>
     </head>
     <body>
         <div class="navbar">
@@ -5322,6 +5318,7 @@ def make_index():
             <a href="#dh-batters">DH's</a>
             <a href="#bvp-stats">BvP</a>
             <a href="#checked-section">Checked</a>
+            <a href="#" id="mode-toggle" class="mode-indicator">Light</a>
         </div>
         <div class="content">
             <h1 id="useful-links">Useful Links</h1>
@@ -5364,6 +5361,29 @@ def make_index():
 
         </div>
             <script>
+
+           // Persist + toggle light/dark
+            (function() {{
+                const key = 'colorMode';
+                const btn = document.getElementById('mode-toggle');
+                function apply(mode) {{
+                    if(mode === 'light') {{
+                        document.body.classList.add('light');
+                        btn.textContent = 'Dark';
+                    }} else {{
+                        document.body.classList.remove('light');
+                        btn.textContent = 'Light';
+                    }}
+                }}
+                apply(localStorage.getItem(key));
+                btn.addEventListener('click', e => {{
+                    e.preventDefault();
+                    const toLight = !document.body.classList.contains('light');
+                    apply(toLight ? 'light' : 'dark');
+                    localStorage.setItem(key, toLight ? 'light' : 'dark');
+                }});
+            }})();
+
                 document.addEventListener('DOMContentLoaded', function() {{
                     let currentlyHighlightedRow = null;
             
