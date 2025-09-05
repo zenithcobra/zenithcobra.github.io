@@ -4,7 +4,7 @@
         "game_datetime": "2025-09-05T18:20:00Z",
         "game_date": "2025-09-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Washington Nationals",
         "home_name": "Chicago Cubs",
         "away_id": 120,
@@ -15,17 +15,17 @@
         "away_probable_pitcher": "Jake Irvin",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [
             "Apple TV+"
         ],
         "series_status": null,
-        "summary": "2025-09-05 - Washington Nationals @ Chicago Cubs (Scheduled)"
+        "summary": "2025-09-05 - Washington Nationals @ Chicago Cubs (Pre-Game)"
     },
     {
         "game_id": 776450,
@@ -252,7 +252,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Michael Wacha",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Pablo L\u00f3pez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
