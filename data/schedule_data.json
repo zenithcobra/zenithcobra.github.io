@@ -4,7 +4,7 @@
         "game_datetime": "2025-09-12T18:20:00Z",
         "game_date": "2025-09-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "In Progress",
         "away_name": "Tampa Bay Rays",
         "home_name": "Chicago Cubs",
         "away_id": 139,
@@ -15,17 +15,17 @@
         "away_probable_pitcher": "Shane Baz",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 3,
+        "home_score": 0,
+        "current_inning": 2,
+        "inning_state": "Middle",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
         "series_status": null,
-        "summary": "2025-09-12 - Tampa Bay Rays @ Chicago Cubs (Scheduled)"
+        "summary": "2025-09-12 - Tampa Bay Rays (3) @ Chicago Cubs (0) (Middle of the 2nd)"
     },
     {
         "game_id": 776351,
@@ -190,7 +190,7 @@
         "game_datetime": "2025-09-12T23:10:00Z",
         "game_date": "2025-09-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Yankees",
         "home_name": "Boston Red Sox",
         "away_id": 147,
@@ -211,7 +211,7 @@
             "Apple TV+"
         ],
         "series_status": null,
-        "summary": "2025-09-12 - New York Yankees @ Boston Red Sox (Scheduled)"
+        "summary": "2025-09-12 - New York Yankees @ Boston Red Sox (Pre-Game)"
     },
     {
         "game_id": 776360,
@@ -226,7 +226,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Hurston Waldrep",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Jayden Murray",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -303,7 +303,7 @@
         "home_id": 135,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
+        "home_probable_pitcher": "JP Sears",
         "away_probable_pitcher": "Tanner Gordon",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
@@ -314,7 +314,7 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "SD leads 1-0",
         "summary": "2025-09-12 - Colorado Rockies @ San Diego Padres (Scheduled)"
     },
     {
