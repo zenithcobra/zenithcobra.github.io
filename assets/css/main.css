@@ -46,10 +46,10 @@ blockquote, q {
 		content: none;
 	}
 
-table {
+/* table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
+} */
 
 body {
 	-webkit-text-size-adjust: none;
@@ -1798,6 +1798,30 @@ input, select, textarea {
 
 	}
 
+/* Inline-content table styles (scoped) */
+	#inline-content table {
+		border-collapse: collapse;
+		width: 100%;
+		margin: 1em 0;
+	}
+	
+	#inline-content th,
+	#inline-content td {
+		border: 1px solid #c9c9c9;
+		padding: 0.5em 0.75em;
+		text-align: left;
+	}
+	
+	#inline-content thead th {
+		border-bottom-width: 2px;
+		background: #fafafa;
+	}
+	
+	#inline-content tbody tr:nth-child(odd) {
+		background: rgba(144, 144, 144, 0.05);
+	}
+
+
 /* Icon */
 
 	.icon {
@@ -2371,7 +2395,7 @@ input, select, textarea {
 			}
 
 /* Table */
-
+/* 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
@@ -2435,7 +2459,7 @@ input, select, textarea {
 
 			table.alt tfoot {
 				border-top: 0;
-			}
+			} */
 
 /* Button */
 
