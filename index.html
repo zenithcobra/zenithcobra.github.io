@@ -400,6 +400,221 @@
     });
   }
 });
-</script>		
+</script>
+<script>
+	(() => {
+	  function ensureStyles() {
+		if (document.getElementById('inline-table-enhancer-styles')) return;
+		const css = `
+	#inline-content .enhanced-table { border-collapse: collapse; width: max-content; table-layout: fixed; }
+	#inline-content .enhanced-table th, #inline-content .enhanced-table td {
+	  border: 1px solid #c9c9c9; padding: 0.5em 0.75em; text-align: left;
+	  white-space: normal; overflow-wrap: anywhere; word-break: break-word;
+	}
+	/* Sticky header below modal bar */
+	#inline-content .enhanced-table thead th {
+	  position: sticky; top: var(--stick-top, 0px); z-index: 2;
+	  background: #fff; box-shadow: 0 2px 0 rgba(0,0,0,0.05);
+	}
+	/* Freeze first two columns */
+	#inline-content .enhanced-table td:nth-child(1),
+	#inline-content .enhanced-table th:nth-child(1) {
+	  position: sticky; left: 0; z-index: 1; background: #fff; background-clip: padding-box;
+	}
+	#inline-content .enhanced-table td:nth-child(2),
+	#inline-content .enhanced-table th:nth-child(2) {
+	  position: sticky; left: var(--c1w, 0px); z-index: 1; background: #fff; background-clip: padding-box;
+	}
+	/* Header cells above frozen body cells */
+	#inline-content .enhanced-table thead th:nth-child(1),
+	#inline-content .enhanced-table thead th:nth-child(2) { z-index: 3; }
+	/* Sort UI */
+	#inline-content .enhanced-table thead th.sortable { cursor: pointer; user-select: none; }
+	#inline-content .enhanced-table thead th.sort-asc::after { content: " ▲"; }
+	#inline-content .enhanced-table thead th.sort-desc::after { content: " ▼"; }
+	/* Zebra */
+	#inline-content .enhanced-table tbody tr:nth-child(odd) { background: rgba(144,144,144,0.05); }
+	/* Row selection highlight (also covers sticky first two columns) */
+	#inline-content .enhanced-table tbody tr.row-selected > td { background: #fff8c5; }
+	#inline-content .enhanced-table tbody tr.row-selected > td:nth-child(1),
+	#inline-content .enhanced-table tbody tr.row-selected > td:nth-child(2) { background: #fff8c5; }
+	`;
+		const style = document.createElement('style');
+		style.id = 'inline-table-enhancer-styles';
+		style.textContent = css;
+		document.head.appendChild(style);
+	  }
+	
+	  function parseCellValue(text) {
+		if (!text) return { n: NaN, s: "" };
+		let t = text.trim();
+		if (/^[.]\d/.test(t)) t = "0" + t;                 // ".333" -> "0.333"
+		const num = t.replace(/[^\d.+-]/g, "");            // strip non-numeric
+		const n = num.length ? Number(num) : NaN;
+		return { n, s: t.toLowerCase() };
+	  }
+	
+	  function inferNumeric(rows, colIndex) {
+		let checks = 0, nums = 0;
+		for (const tr of rows) {
+		  const cell = tr.children[colIndex];
+		  if (!cell) continue;
+		  checks++;
+		  const { n } = parseCellValue(cell.textContent || "");
+		  if (!Number.isNaN(n)) nums++;
+		  if (checks >= 12) break;
+		}
+		return nums >= Math.max(3, Math.ceil(checks * 0.5));
+	  }
+	
+	  function ensureThead(table) {
+		if (table.tHead) return;
+		const firstRow = table.querySelector('tr');
+		if (!firstRow) return;
+		const thead = table.createTHead();
+		thead.appendChild(firstRow);
+	  }
+	
+	  function makeSortable(table) {
+		ensureThead(table);
+		const thead = table.tHead;
+		const tbody = table.tBodies[0];
+		if (!thead || !tbody || !thead.rows.length) return;
+	
+		const headers = Array.from(thead.rows[0].cells);
+		headers.forEach((th, i) => {
+		  // Skip checkbox-only columns
+		  const firstCell = tbody.rows[0]?.cells[i];
+		  const hasOnlyInputs = firstCell && firstCell.querySelector('input,select,button');
+		  if (hasOnlyInputs) return;
+	
+		  th.classList.add('sortable');
+		  th.addEventListener('click', () => {
+			const rows = Array.from(tbody.rows);
+			const numeric = inferNumeric(rows, i);
+			const currentDir = th.classList.contains('sort-asc') ? 'asc'
+							 : th.classList.contains('sort-desc') ? 'desc' : null;
+			const nextDir = currentDir === 'asc' ? 'desc' : 'asc';
+	
+			headers.forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+			th.classList.add(nextDir === 'asc' ? 'sort-asc' : 'sort-desc');
+	
+			const withIndex = rows.map((tr, idx) => ({ tr, idx }));
+			withIndex.sort((a, b) => {
+			  const A = a.tr.children[i]?.textContent ?? "";
+			  const B = b.tr.children[i]?.textContent ?? "";
+			  if (numeric) {
+				const { n: na } = parseCellValue(A);
+				const { n: nb } = parseCellValue(B);
+				const aNaN = Number.isNaN(na), bNaN = Number.isNaN(nb);
+				if (aNaN && bNaN) return a.idx - b.idx;
+				if (aNaN) return 1;
+				if (bNaN) return -1;
+				return nextDir === 'asc' ? na - nb : nb - na;
+			  } else {
+				const sa = A.toLowerCase(), sb = B.toLowerCase();
+				if (sa === sb) return a.idx - b.idx;
+				return nextDir === 'asc' ? (sa < sb ? -1 : 1) : (sa > sb ? -1 : 1);
+			  }
+			});
+	
+			const frag = document.createDocumentFragment();
+			withIndex.forEach(({ tr }) => frag.appendChild(tr));
+			tbody.appendChild(frag);
+		  });
+		});
+	  }
+	
+	  function setFrozenOffsets(table) {
+		// Measure first column width to position second sticky column
+		const firstRow = table.querySelector('tr');
+		const c1 = firstRow?.children[0];
+		if (!c1) return;
+		const w1 = c1.getBoundingClientRect().width;
+		table.style.setProperty('--c1w', w1 + 'px');
+	  }
+	
+	  function observeResize(table) {
+		if (!('ResizeObserver' in window)) {
+		  window.addEventListener('resize', () => setFrozenOffsets(table));
+		  return;
+		}
+		const ro = new ResizeObserver(() => setFrozenOffsets(table));
+		ro.observe(table);
+	  }
+	
+	  function enhanceTable(table) {
+		if (!table || table.classList.contains('enhanced-table')) {
+		  if (table) setFrozenOffsets(table);
+		  return;
+		}
+		table.classList.add('enhanced-table');
+		makeSortable(table);
+		setFrozenOffsets(table);
+		observeResize(table);
+	  }
+	
+	  function updateStickTop() {
+		const overlay = document.getElementById('modal-overlay');
+		const bar = overlay?.querySelector('.modal-bar');
+		const body = overlay?.querySelector('.modal-body') || document.body;
+		const h = bar ? bar.offsetHeight : 0;
+		body.style.setProperty('--stick-top', h + 'px');
+	  }
+	
+	  function enhanceExistingAndObserve() {
+		ensureStyles();
+		updateStickTop();
+
+		const container = document.getElementById('inline-content');
+		if (!container) return;
+
+		// Enhance already-present tables
+		container.querySelectorAll('table').forEach(enhanceTable);
+
+		// Row highlight: toggle yellow on row click (ignore header and controls)
+		container.addEventListener('click', (e) => {
+			if (e.target.closest('a,button,label,select,textarea')) return; // ignore interactive controls
+			const cell = e.target.closest('td,th');
+			if (!cell) return;
+			if (cell.parentElement.parentElement.tagName === 'THEAD') return; // don't toggle header row
+			const tr = cell.parentElement;
+			tr.classList.toggle('row-selected');
+		});
+
+		// Watch for injected tables
+		const mo = new MutationObserver((mutations) => {
+		  for (const m of mutations) {
+			m.addedNodes.forEach(node => {
+			  if (node.nodeType !== 1) return;
+			  if (node.tagName === 'TABLE') enhanceTable(node);
+			  else node.querySelectorAll?.('table').forEach(enhanceTable);
+			});
+		  }
+		  // Recompute offsets after content changes
+		  container.querySelectorAll('table.enhanced-table').forEach(setFrozenOffsets);
+		});
+		mo.observe(container, { childList: true, subtree: true });
+	
+		// Recompute offsets when zoom/font-size changes on the container
+		const zoomObserver = new MutationObserver(() => {
+		  updateStickTop();
+		  container.querySelectorAll('table.enhanced-table').forEach(setFrozenOffsets);
+		});
+		zoomObserver.observe(container, { attributes: true, attributeFilter: ['style', 'class'] });
+	
+		// Update stick top on resize
+		window.addEventListener('resize', updateStickTop);
+	  }
+	
+	  if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', enhanceExistingAndObserve, { once: true });
+	  } else {
+		enhanceExistingAndObserve();
+	  }
+	})();
+
+
+	</script>
 	</body>
 </html>

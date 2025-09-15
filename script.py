@@ -3479,8 +3479,6 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
     # Extract headers from the keys of the first dictionary
     # headers = bvp_data[0].keys()
     headers1 = [
-        "RBI",
-        "H",
         "HRS",
         "Batter",
         "Team",
@@ -3520,8 +3518,6 @@ def generate_bvp_html_table(bvp_data, schedule_data, ball_park_data):
     # Add rows for each dictionary
     for row in analyzed_bvp_data:
         html1 += "<tr>"
-        html1 += f"<td><input type='checkbox'></td>"
-        html1 += f"<td><input type='checkbox'></td>"
         html1 += f"<td><input type='checkbox'></td>"
         html1 += f"<td>{row.get("batter", '')}</td>"
         html1 += f"<td>{row.get("batter_team", '')}</td>"
