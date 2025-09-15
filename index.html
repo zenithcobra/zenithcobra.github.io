@@ -187,13 +187,27 @@
 							</section>
 							<!-- <pre><div id="inline-content" style="display:none; margin-top:2rem;"></div></pre> -->
 						<!-- Modal overlay -->
-						<div id="modal-overlay" class="modal-overlay" hidden>
+						<!-- <div id="modal-overlay" class="modal-overlay" hidden>
 							<div class="modal" role="dialog" aria-modal="true">
 							<!-- <button class="modal-close" aria-label="Close">&times;</button> -->
-							<pre><div id="inline-content"></div></pre>
+							<!--<pre><div id="inline-content"></div></pre>
 							</div>
-						</div>
-					
+						</div> -->
+						<div id="modal-overlay" class="modal-overlay" hidden>
+							<div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+							  <div class="modal-bar">
+								<div class="modal-title" id="modal-title">Content</div>
+								<div class="modal-actions">
+								  <button type="button" class="zoom-out" aria-label="Zoom out">−</button>
+								  <button type="button" class="zoom-in" aria-label="Zoom in">+</button>
+								  <button type="button" class="modal-close" aria-label="Close">×</button>
+								</div>
+							  </div>
+							  <div class="modal-body">
+								<div id="inline-content" class="inline-content"></div>
+							  </div>
+							</div>
+						  </div>
 						</div>
 					</div>
 
@@ -212,7 +226,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
+			<!-- <script>
 				document.addEventListener('DOMContentLoaded', () => {
 				  const container = document.getElementById('inline-content');
 				  document.querySelectorAll('a[data-load]').forEach(el => {
@@ -282,6 +296,93 @@
 						}
 					  });
 					});
-					</script>
+					</script> -->
+					<script>
+						// Modal + loader with zoom
+						document.addEventListener('DOMContentLoaded', () => {
+						  const overlay = document.getElementById('modal-overlay');
+						  const container = document.getElementById('inline-content');
+						  const closeBtn = overlay.querySelector('.modal-close');
+						  const zoomInBtn = overlay.querySelector('.zoom-in');
+						  const zoomOutBtn = overlay.querySelector('.zoom-out');
+						
+						  let zoomPx = 16; // base text size inside modal
+						  const Z_MIN = 10, Z_MAX = 28, Z_STEP = 2;
+						
+						  function applyZoom() {
+							container.style.fontSize = zoomPx + 'px';
+						  }
+						
+						  function openModal() {
+							overlay.hidden = false;
+							overlay.classList.add('is-open');
+							document.body.classList.add('modal-open');
+							applyZoom();
+						  }
+						
+						  function closeModal() {
+							overlay.classList.remove('is-open');
+							document.body.classList.remove('modal-open');
+							container.innerHTML = '';
+							container.classList.remove('as-pre');
+							overlay.hidden = true;
+						  }
+						
+						  // Load file into modal. If it looks like HTML, inject as HTML.
+						  // Otherwise, render as pre-formatted text (preserve whitespace).
+						  async function loadIntoModal(url) {
+							openModal();
+							container.classList.remove('as-pre');
+							container.innerHTML = '<p>Loading…</p>';
+							try {
+							  const res = await fetch(url, { cache: 'no-store' });
+							  if (!res.ok) throw new Error(res.status + ' ' + res.statusText);
+							  const txt = await res.text();
+							  if (/<\s*(table|thead|tbody|tr|td|th|div|span|p|ul|ol)\b/i.test(txt)) {
+								container.innerHTML = txt;
+							  } else {
+								container.classList.add('as-pre');
+								container.textContent = txt;
+							  }
+							} catch (err) {
+							  console.error(err);
+							  container.classList.remove('as-pre');
+							  container.innerHTML = '<p>Failed to load content.</p>';
+							}
+						  }
+						
+						  // Bind tiles
+						  document.querySelectorAll('a[data-load]').forEach(el => {
+							el.addEventListener('click', (e) => {
+							  e.preventDefault();
+							  const url = el.getAttribute('data-load');
+							  loadIntoModal(url);
+							});
+						  });
+						
+						  // Close on backdrop click
+						  overlay.addEventListener('click', (e) => {
+							if (e.target === overlay) closeModal();
+						  });
+						
+						  // Close button and Esc
+						  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+						  document.addEventListener('keydown', (e) => {
+							if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
+							  closeModal();
+							}
+						  });
+						
+						  // Zoom controls
+						  if (zoomInBtn) zoomInBtn.addEventListener('click', () => {
+							zoomPx = Math.min(Z_MAX, zoomPx + Z_STEP);
+							applyZoom();
+						  });
+						  if (zoomOutBtn) zoomOutBtn.addEventListener('click', () => {
+							zoomPx = Math.max(Z_MIN, zoomPx - Z_STEP);
+							applyZoom();
+						  });
+						});
+						</script>			
 	</body>
 </html>
