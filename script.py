@@ -5182,7 +5182,7 @@ def make_index():
     yesterday_home_run_data_path = "data/yesterday_home_run_data.json"
     yesterday_home_run_data = read_json_file(yesterday_home_run_data_path)
     yesterday_home_run_table = generate_yesterday_home_run_html_table(yesterday_home_run_data)
-    # save_to_text(yesterday_home_run_table, "yesterdays_homers_table.html")
+    save_to_text(yesterday_home_run_table, "yesterdays_homers_table.html")
     
     team_list_path = 'data/teams_playing_today_data.json'
     team_list = read_json_file(team_list_path)
@@ -5215,22 +5215,22 @@ def make_index():
     pitcher_data_path = "data/pitcher_data.json"
     pitcher_data = read_json_file(pitcher_data_path)
     pitcher_table = generate_pitcher_html_table(pitcher_data)
-    # save_to_text(pitcher_table,"pitcher_table.html")
+    save_to_text(pitcher_table,"pitcher_table.html")
     
     batter_data_path = "data/batter_data.json"
     batter_data = read_json_file(batter_data_path)
     batter_table = generate_batter_html_table(batter_data,schedule_data,ballpark_data)
-    # save_to_text(batter_table, 'batter_table.html')
+    save_to_text(batter_table, 'batter_table.html')
     
     bvp_data_path = "data/batter_vs_pitcher_data.json"
     bvp_data = read_json_file(bvp_data_path)
     bvp_table = generate_bvp_html_table(bvp_data, schedule_data, ballpark_data)
-    # save_to_text(bvp_table, "bvp_table.html")
+    save_to_text(bvp_table, "bvp_table.html")
     
     dh_batter_data_path = "data/dh_batter_data.json"
     dh_batter_data = read_json_file(dh_batter_data_path)
     dh_batter_table = generate_dh_batter_html_table(dh_batter_data, schedule_data, ballpark_data)
-    # save_to_text(dh_batter_table, "dh_batter_table.html")
+    save_to_text(dh_batter_table, "dh_batter_table.html")
 
     leader_data_path1 = "data/ERA_leader_data.json"
     leader_data_path2 = "data/SO9_leader_data.json"
@@ -5239,6 +5239,7 @@ def make_index():
     leader_data2 = read_json_file(leader_data_path2)
     leader_data3 = read_json_file(leader_data_path3)
     leaders_table = generate_leaders_table(leader_data1,leader_data2,leader_data3)
+    save_to_text(leaders_table, "leaders_table.html")
 
     # HTML PART
     # Create the HTML content with a sticky navbar

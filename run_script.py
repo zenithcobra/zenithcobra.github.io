@@ -93,9 +93,9 @@ script.save_to_json(hr_leaders, 'HR_leader_data')
 
 print('make index')
 index_html = script.make_index()
-script.save_to_text(index_html, 'raw_index')
+# script.save_to_text(index_html, 'raw_index')
 
 # index_html = make_index()
-processed_html = script.process_html(index_html)
+# processed_html = script.process_html(index_html)
 # print(processed_html)
-script.save_to_html(processed_html,'index')
+# script.save_to_html(processed_html,'index')

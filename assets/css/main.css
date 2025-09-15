@@ -1821,7 +1821,76 @@ input, select, textarea {
 		background: rgba(144, 144, 144, 0.05);
 	}
 
-
+/* Modal overlay */
+	.modal-overlay {
+		position: fixed;
+		inset: 0;
+		background: rgba(0,0,0,0.6);
+		display: none;
+		align-items: center;
+		justify-content: center;
+		padding: 2rem;
+		z-index: 10005;
+	}
+	.modal-overlay.is-open { display: flex; }
+	.modal {
+		background: #fff;
+		width: min(95vw, 1200px);
+		max-height: 90vh;
+		overflow: auto;
+		border-radius: 8px;
+		box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+		padding: 1.5rem;
+	}
+	.modal-close {
+		position: sticky;
+		top: 0;
+		margin-left: auto;
+		border: 0;
+		background: transparent;
+		font-size: 2rem;
+		line-height: 1;
+		cursor: pointer;
+		color: #999;
+	}
+	.modal-close:hover { color: #333; }
+	body.modal-open { overflow: hidden; }
+	
+	/* Inline-content table styles (scoped) */
+	#inline-content table {
+		border-collapse: collapse;
+		width: 100%;
+		margin: 1em 0;
+	}
+	#inline-content th,
+	#inline-content td {
+		border: 1px solid #c9c9c9;
+		padding: 0.5em 0.75em;
+		text-align: left;
+	}
+	#inline-content thead th {
+		border-bottom-width: 2px;
+		background: #fafafa;
+	}
+	#inline-content tbody tr:nth-child(odd) {
+		background: rgba(144, 144, 144, 0.05);
+	}
+/* Show native checkboxes/radios inside inline content */
+	#inline-content input[type="checkbox"],
+	#inline-content input[type="radio"] {
+	-webkit-appearance: auto;
+	-moz-appearance: auto;
+	appearance: auto;
+	opacity: 1;
+	display: inline-block;
+	float: none;
+	margin: 0;
+	width: auto;
+	height: auto;
+	z-index: auto;
+	position: static;
+	accent-color: #f2849e; /* optional */
+	}
 /* Icon */
 
 	.icon {

@@ -55,12 +55,7 @@
 									<span class="image">
 										<img src="images/pic01.jpg" alt="" />
 									</span>
-									<!-- <a href="generic.html">
-										<h2>Yesterdays Scores</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div> -->
-									<a href="#" data-load="data/teams_table.html.txt">
+									<a href="#" data-load="data/yesterdays_report_text.txt">
 										<h2>Yesterdays Scores</h2>
 										<div class="content">
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
@@ -71,30 +66,30 @@
 									<span class="image">
 										<img src="images/pic02.jpg" alt="" />
 									</span>
-									<a href="generic.html">
-										<h2>Lorem</h2>
+									<a href="#" data-load="data/teams_table.html.txt">
+										<h2>Team Match ups</h2>
 										<div class="content">
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
+										</div>	
 									</a>
 								</article>
 								<article class="style3">
 									<span class="image">
 										<img src="images/pic03.jpg" alt="" />
 									</span>
-									<a href="generic.html">
-										<h2>Feugiat</h2>
+									<a href="#" data-load="data/standings_text.txt">
+										<h2>Standings</h2>
 										<div class="content">
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
+										</div>	
 									</a>
 								</article>
 								<article class="style4">
 									<span class="image">
 										<img src="images/pic04.jpg" alt="" />
 									</span>
-									<a href="generic.html">
-										<h2>Tempus</h2>
+									<a href="#" data-load="data/schedule_text.txt">
+										<h2>Schedule</h2>
 										<div class="content">
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
@@ -104,8 +99,8 @@
 									<span class="image">
 										<img src="images/pic05.jpg" alt="" />
 									</span>
-									<a href="generic.html">
-										<h2>Aliquam</h2>
+									<a href="#" data-load="data/yesterdays_homers_table.html.txt">
+										<h2>Yesterdays HR's</h2>
 										<div class="content">
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
@@ -115,8 +110,8 @@
 									<span class="image">
 										<img src="images/pic06.jpg" alt="" />
 									</span>
-									<a href="generic.html">
-										<h2>Veroeros</h2>
+									<a href="#" data-load="data/leaders_table.html.txt">
+										<h2>League Leaders</h2>
 										<div class="content">
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
@@ -126,8 +121,8 @@
 									<span class="image">
 										<img src="images/pic07.jpg" alt="" />
 									</span>
-									<a href="generic.html">
-										<h2>Ipsum</h2>
+									<a href="#" data-load="data/pitcher_table.html.txt">
+										<h2>Probable Pitchers</h2>
 										<div class="content">
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
@@ -137,8 +132,8 @@
 									<span class="image">
 										<img src="images/pic08.jpg" alt="" />
 									</span>
-									<a href="generic.html">
-										<h2>Dolor</h2>
+									<a href="#" data-load="data/batter_table.html.txt">
+										<h2>Batters</h2>
 										<div class="content">
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
@@ -148,8 +143,8 @@
 									<span class="image">
 										<img src="images/pic09.jpg" alt="" />
 									</span>
-									<a href="generic.html">
-										<h2>Nullam</h2>
+									<a href="#" data-load="data/bvp_table.html.txt">
+										<h2>BVP</h2>
 										<div class="content">
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
@@ -159,8 +154,8 @@
 									<span class="image">
 										<img src="images/pic10.jpg" alt="" />
 									</span>
-									<a href="generic.html">
-										<h2>Ultricies</h2>
+									<a href="#" data-load="dh_batter_table.html.txt">
+										<h2>DH Batters</h2>
 										<div class="content">
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
@@ -190,8 +185,16 @@
 								</article>
 
 							</section>
+							<!-- <pre><div id="inline-content" style="display:none; margin-top:2rem;"></div></pre> -->
+						<!-- Modal overlay -->
+						<div id="modal-overlay" class="modal-overlay" hidden>
+							<div class="modal" role="dialog" aria-modal="true">
+							<!-- <button class="modal-close" aria-label="Close">&times;</button> -->
+							<pre><div id="inline-content"></div></pre>
+							</div>
 						</div>
-						<pre><div id="inline-content" style="display:none; margin-top:2rem;"></div></pre>
+					
+						</div>
 					</div>
 
 				<!-- Footer -->
@@ -232,5 +235,53 @@
 				  });
 				});
 				</script>
+				<script>
+					document.addEventListener('DOMContentLoaded', () => {
+					  const overlay = document.getElementById('modal-overlay');
+					  const container = document.getElementById('inline-content');
+					  const closeBtn = overlay.querySelector('.modal-close');
+					
+					  function openModal() {
+						overlay.hidden = false;
+						overlay.classList.add('is-open');
+						document.body.classList.add('modal-open');
+					  }
+					  function closeModal() {
+						overlay.classList.remove('is-open');
+						document.body.classList.remove('modal-open');
+						container.innerHTML = '';
+						overlay.hidden = true;
+					  }
+					
+					  document.querySelectorAll('a[data-load]').forEach(el => {
+						el.addEventListener('click', async (e) => {
+						  e.preventDefault();
+						  const url = el.getAttribute('data-load');
+						  openModal();
+						  container.innerHTML = '<p>Loading…</p>';
+						  try {
+							const res = await fetch(url, { cache: 'no-store' });
+							if (!res.ok) throw new Error(res.statusText);
+							container.innerHTML = await res.text();
+						  } catch (err) {
+							console.error(err);
+							container.innerHTML = '<p>Failed to load content.</p>';
+						  }
+						});
+					  });
+					
+					  // Close on backdrop click
+					  overlay.addEventListener('click', (e) => {
+						if (e.target === overlay) closeModal();
+					  });
+					  // Close button and Esc
+					  closeBtn.addEventListener('click', closeModal);
+					  document.addEventListener('keydown', (e) => {
+						if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
+						  closeModal();
+						}
+					  });
+					});
+					</script>
 	</body>
 </html>
