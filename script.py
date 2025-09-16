@@ -3165,9 +3165,7 @@ def generate_pitcher_html_table(pitcher_data):
     # Extract headers from the keys of the first dictionary
     # headers = pitcher_data[0].keys()
     headers = [
-        "RBI",
-        "H",
-        "HR",
+        "K's",
         "Name",
         "Team",
         "ERA",
@@ -3186,8 +3184,6 @@ def generate_pitcher_html_table(pitcher_data):
     for row in pitcher_data:
         html += "<tr>"
         # html += "".join(f"<td>{row.get(header, '')}</td>" for header in headers)
-        html += f"<td><input type='checkbox'></td>"
-        html += f"<td><input type='checkbox'></td>"
         html += f"<td><input type='checkbox'></td>"
         html += f"<td>{row.get("pitcher", '')}</td>"
         html += f"<td>{row.get("pitchers_team", '')}</td>"
@@ -3337,8 +3333,6 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
     # Extract headers from the keys of the first dictionary
     # headers = batter_data[0].keys()
     headers = [
-        "RBI",
-        "H",
         "HR",
         "Name",
         "Team",
@@ -3364,8 +3358,6 @@ def generate_batter_html_table(batter_data, schedule_data, ball_park_data):
     # Add rows for each dictionary
     for row in analyzed_batter_data:
         html2 += "<tr>"
-        html2 += f"<td><input type='checkbox'></td>"
-        html2 += f"<td><input type='checkbox'></td>"
         html2 += f"<td><input type='checkbox'></td>"
         html2 += f"<td>{row.get("player_name", '')}</td>"
         html2 += f"<td>{row.get("team", '')}</td>"
@@ -3846,8 +3838,6 @@ def generate_yesterday_home_run_html_table(yesterday_home_run_data):
     # Extract headers from the keys of the first dictionary
     # headers = ballpark_data[0].keys()
     headers = [
-        "RBI",
-        "H",
         "HR",
         "Batter",
         "Team",
@@ -3872,8 +3862,6 @@ def generate_yesterday_home_run_html_table(yesterday_home_run_data):
     # Add rows for each dictionary
     for row in home_run_data:
         html += "<tr>"
-        html += f"<td><input type='checkbox'></td>"
-        html += f"<td><input type='checkbox'></td>"
         html += f"<td><input type='checkbox'></td>"
         html += f"<td>{row.get("name", '')}</td>"
         html += f"<td>{row.get("team", '')}</td>"
@@ -4356,7 +4344,7 @@ def process_match_data(combined_data):
     """
     # Define the table headers
     headers = [
-        "Win", "Loss","o", "Teams",
+        "Win", "Teams",
         "Venue", "VS Record Against", "Current Streak",
         "Average Win Streak", "Average Lose Streak",
         "Record"
@@ -4383,8 +4371,6 @@ def process_match_data(combined_data):
 
             # Add a row for the team
             html_output.append("<tr>")
-            html_output.append(f"<td><input type='checkbox'></td>")
-            html_output.append(f"<td><input type='checkbox'></td>")
             html_output.append(f"<td><input type='checkbox'></td>")
             html_output.append(f"<td>{team_data.get('team_name', 'N/A')} <b>({team_data.get('wins', 'N/A')},{team_data.get('losses', 'N/A')},{team_data.get('win_percentage', 'N/A')}%)</b> vs {opponent_data.get('team_name', 'N/A')} <b>({opponent_data.get('wins', 'N/A')},{opponent_data.get('losses', 'N/A')},{opponent_data.get('win_percentage', 'N/A')})</b></td>")
             html_output.append(f"<td><b>{extract_first_int(team_data.get('venue', 'N/A'))}</b></td>")
