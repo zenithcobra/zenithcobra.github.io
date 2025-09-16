@@ -39,6 +39,7 @@ $(document).ready(function () {
     let n = 2; // Initial N value
     let userScore = [0, 0, 0, 0]; // Visual correct, audio correct, visual mistakes, audio mistakes
     let blockRunning = false;
+    let hits = [0, 0]; // Tracks user hits for visual and audio
 
     // Prepare a block of N-Back data
     function prepareBlock(n) {
@@ -74,19 +75,6 @@ $(document).ready(function () {
         return block;
     }
 
-    // Evaluate the block for correctness
-    function evaluateBlock(block) {
-        let visualTargets = 0;
-        let audioTargets = 0;
-
-        for (let i = n; i < block.length; i++) {
-            if (block[i][0] === block[i - n][0]) visualTargets++;
-            if (block[i][1] === block[i - n][1]) audioTargets++;
-        }
-
-        return [visualTargets, audioTargets];
-    }
-
     // Play a square on the grid
     function playSquare(squareIndex) {
         const squareIds = ['uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve'];
@@ -111,7 +99,6 @@ $(document).ready(function () {
         const block = prepareBlock(n);
         const blockLength = block.length;
         let blockCounter = 0;
-        let hits = [0, 0]; // Tracks user hits for visual and audio
 
         function playNext() {
             if (blockCounter < blockLength) {
@@ -120,12 +107,6 @@ $(document).ready(function () {
                 // Play visual and audio cues
                 if (visual) playSquare(visual);
                 if (audio) playLetter(audio);
-
-                // Listen for user input
-                $(document).off('keydown').on('keydown', (event) => {
-                    if (event.key === 'a') hits[0] = 1; // Visual match
-                    if (event.key === 'l') hits[1] = 1; // Audio match
-                });
 
                 // Evaluate user input after the cue
                 setTimeout(() => {
@@ -182,5 +163,14 @@ $(document).ready(function () {
             playBlock();
             setTimeout(() => (blockRunning = false), 20000); // Prevent multiple blocks from running simultaneously
         }
+    });
+
+    // Handle button clicks for visual and audio matches
+    $('#visual-match').click(function () {
+        hits[0] = 1; // Simulate pressing 'a' for visual match
+    });
+
+    $('#audio-match').click(function () {
+        hits[1] = 1; // Simulate pressing 'l' for audio match
     });
 });
