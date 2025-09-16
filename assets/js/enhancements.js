@@ -17,7 +17,7 @@
       zoomOutBtnSel: '.zoom-out',
       launcherSel: 'a[data-load]',
 
-      defaultZoomPx: 8,
+      defaultZoomPx: 9,
       minZoomPx: 4,
       maxZoomPx: 36,
       zoomStepPx: 2,
