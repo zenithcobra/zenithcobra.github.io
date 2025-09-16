@@ -4,8 +4,9 @@
   const THEME_KEY = 'theme'; // Key for localStorage
   const DARK_MODE_CLASS = 'dark-mode'; // Class to apply for dark mode
   const LIGHT_MODE_CLASS = 'light-mode'; // Class to apply for light mode
-  const LIGHT_BG_IMAGE = 'images/9.jpg'; // Background image for light mode
-  const DARK_BG_IMAGE = 'images/9i.jpg'; // Background image for dark mode
+  const LOGO_SELECTOR = '.logo img'; // Selector for the logo image
+  const LIGHT_LOGO_SRC = 'images/logo.svg'; // Path to the light mode logo
+  const DARK_LOGO_SRC = 'images/logo-dark.svg'; // Path to the dark mode logo
 
   // Apply the saved theme on page load
   function applySavedTheme() {
@@ -13,11 +14,11 @@
     if (savedTheme === 'dark') {
       document.body.classList.add(DARK_MODE_CLASS);
       document.body.classList.remove(LIGHT_MODE_CLASS);
-      updateBackgroundImage(DARK_BG_IMAGE);
+      updateLogo(DARK_LOGO_SRC);
     } else {
       document.body.classList.add(LIGHT_MODE_CLASS);
       document.body.classList.remove(DARK_MODE_CLASS);
-      updateBackgroundImage(LIGHT_BG_IMAGE);
+      updateLogo(LIGHT_LOGO_SRC);
     }
   }
 
@@ -27,24 +28,27 @@
       document.body.classList.remove(DARK_MODE_CLASS);
       document.body.classList.add(LIGHT_MODE_CLASS);
       localStorage.setItem(THEME_KEY, 'light');
-      updateBackgroundImage(LIGHT_BG_IMAGE);
+      updateLogo(LIGHT_LOGO_SRC);
     } else {
       document.body.classList.remove(LIGHT_MODE_CLASS);
       document.body.classList.add(DARK_MODE_CLASS);
       localStorage.setItem(THEME_KEY, 'dark');
-      updateBackgroundImage(DARK_BG_IMAGE);
+      updateLogo(DARK_LOGO_SRC);
     }
   }
 
-  // Update the background image
-  function updateBackgroundImage(imagePath) {
-    document.body.style.backgroundImage = `url('${imagePath}')`;
+  // Update the logo based on the theme
+  function updateLogo(src) {
+    const logo = document.querySelector(LOGO_SELECTOR);
+    if (logo) {
+      logo.src = src;
+    }
   }
 
   // Initialize the theme toggle functionality
   function initThemeToggle() {
-    // Select all elements with the class "theme-toggle"
-    const themeToggleButtons = document.querySelectorAll('.theme-toggle');
+    // Select all elements with the id or class for toggling
+    const themeToggleButtons = document.querySelectorAll('#theme-toggle, .theme-toggle');
     themeToggleButtons.forEach((button) => {
       button.addEventListener('click', (e) => {
         e.preventDefault(); // Prevent default link behavior

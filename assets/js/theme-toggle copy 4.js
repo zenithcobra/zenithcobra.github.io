@@ -43,15 +43,13 @@
 
   // Initialize the theme toggle functionality
   function initThemeToggle() {
-    // Select all elements with the class "theme-toggle"
-    const themeToggleButtons = document.querySelectorAll('.theme-toggle');
-    themeToggleButtons.forEach((button) => {
-      button.addEventListener('click', (e) => {
+    const themeToggleButton = document.getElementById('theme-toggle');
+    if (themeToggleButton) {
+      themeToggleButton.addEventListener('click', (e) => {
         e.preventDefault(); // Prevent default link behavior
         toggleTheme();
       });
-    });
-
+    }
     applySavedTheme();
   }
 
