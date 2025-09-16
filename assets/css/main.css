@@ -3524,3 +3524,77 @@ input, select, textarea {
 			}
 
 		}
+/* Default Light Mode */
+	body.light-mode {
+	background-color: #ffffff;
+	color: #000000;
+	}
+
+	/* Dark Mode */
+	body.dark-mode {
+	background-color: #000000;
+	color: #ffffff;
+	}
+
+	/* Adjustments for other elements in dark mode */
+	body.dark-mode a {
+	color: #1e90ff;
+	}
+
+	body.dark-mode table {
+	background-color: #1a1a1a;
+	color: #ffffff;
+	}
+
+	body.dark-mode table th,
+	body.dark-mode table td {
+	border-color: #333333;
+	}
+
+	body.dark-mode .modal .modal-body{
+	background-color: #1a1a1a;
+	color: #ffffff;
+	}
+
+	body.dark-mode .modal-bar {
+	background-color: #333333;
+	border-bottom-color: #444444;
+	}
+
+/* Dark Mode Adjustments for Modal */
+	body.dark-mode .modal {
+	  background-color: #1a1a1a; /* Dark background for modal */
+	  color: #ffffff; /* White text for contrast */
+	}
+	
+	body.dark-mode .modal-bar {
+	  background-color: #333333; /* Darker modal bar background */
+	  border-bottom-color: #444444; /* Border for separation */
+	}
+	
+	body.dark-mode .modal-actions button {
+	  background-color: #444444; /* Dark button background */
+	  color: #ffffff; /* White text for buttons */
+	  border-color: #555555; /* Button border */
+	}
+	
+	body.dark-mode .modal-actions button:hover {
+	  background-color: #555555; /* Slightly lighter on hover */
+	  border-color: #666666;
+	}
+/* Define row highlight color for both modes */
+	:root {
+	  --row-highlight-bg: #fff8c5; /* Light yellow for light mode */
+	  --row-highlight-text: #000000; /* Black text for light mode */
+	}
+	
+	body.dark-mode {
+	  --row-highlight-bg: #0686db; /* Dark gray for dark mode */
+	  --row-highlight-text: #ffffff; /* White text for dark mode */
+	}
+	
+	/* Apply the row highlight color */
+	#inline-content .enhanced-table tbody tr.row-selected > td {
+	  background-color: var(--row-highlight-bg);
+	  color: var(--row-highlight-text);
+	}
