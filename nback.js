@@ -46,15 +46,13 @@ $(document).ready(function () {
 
     $('#zoom-in').click(function () {
         zoomLevel += 0.1; // Increase zoom level
-        $('body').css('transform', `scale(${zoomLevel})`);
-        $('body').css('transform-origin', 'top center');
+        $('body').css('zoom', zoomLevel); // Apply zoom
     });
 
     $('#zoom-out').click(function () {
         if (zoomLevel > 0.5) {
             zoomLevel -= 0.1; // Decrease zoom level
-            $('body').css('transform', `scale(${zoomLevel})`);
-            $('body').css('transform-origin', 'top center');
+            $('body').css('zoom', zoomLevel); // Apply zoom
         }
     });
 
