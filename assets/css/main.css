@@ -3843,3 +3843,20 @@ body.dark-mode #checked-table tbody tr:nth-child(odd) {
 	background-color: rgba(255, 255, 255, 0.05);
 	/* Slightly lighter background for odd rows in dark mode */
 }
+
+#game-area {
+  font-size: 3em;
+  font-weight: bold;
+  color: #333;
+}
+
+body.dark-mode #game-area {
+  color: #fff;
+}
+
+#match-button,
+#close-game-button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+}
