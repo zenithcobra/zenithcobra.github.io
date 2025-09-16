@@ -3584,7 +3584,7 @@ input, select, textarea {
 	}
 /* Define row highlight color for both modes */
 	:root {
-	  --row-highlight-bg: #fff8c5; /* Light yellow for light mode */
+	  --row-highlight-bg: #0686db; /* Light yellow for light mode */
 	  --row-highlight-text: #000000; /* Black text for light mode */
 	}
 	
@@ -3598,3 +3598,11 @@ input, select, textarea {
 	  background-color: var(--row-highlight-bg);
 	  color: var(--row-highlight-text);
 	}
+
+/* Ensure highlight color works on mobile */
+	@media screen and (max-width: 736px) {
+	#inline-content .enhanced-table tbody tr.row-selected > td {
+	  background-color: var(--row-highlight-bg) !important;
+	  color: var(--row-highlight-text) !important;
+	}
+  }
