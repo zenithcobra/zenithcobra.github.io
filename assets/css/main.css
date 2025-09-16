@@ -3584,25 +3584,34 @@ input, select, textarea {
 	}
 /* Define row highlight color for both modes */
 	:root {
-	  --row-highlight-bg: #0686db; /* Light yellow for light mode */
-	  --row-highlight-text: #000000; /* Black text for light mode */
+	--row-highlight-bg-light: #fff8c5; /* Light yellow for light mode */
+	--row-highlight-bg-dark: #3a3a3a; /* Dark gray for dark mode */
+	--row-highlight-text-light: #000000; /* Black text for light mode */
+	--row-highlight-text-dark: #ffffff; /* White text for dark mode */
 	}
-	
+
+/* Light mode highlight */
+	body.light-mode {
+	--row-highlight-bg: var(--row-highlight-bg-light);
+	--row-highlight-text: var(--row-highlight-text-light);
+	}
+
+/* Dark mode highlight */
 	body.dark-mode {
-	  --row-highlight-bg: #0686db; /* Dark gray for dark mode */
-	  --row-highlight-text: #ffffff; /* White text for dark mode */
+	--row-highlight-bg: var(--row-highlight-bg-dark);
+	--row-highlight-text: var(--row-highlight-text-dark);
 	}
-	
-	/* Apply the row highlight color */
+
+/* Apply the row highlight color */
 	#inline-content .enhanced-table tbody tr.row-selected > td {
-	  background-color: var(--row-highlight-bg);
-	  color: var(--row-highlight-text);
+	background-color: var(--row-highlight-bg) !important;
+	color: var(--row-highlight-text) !important;
 	}
 
 /* Ensure highlight color works on mobile */
 	@media screen and (max-width: 736px) {
 	#inline-content .enhanced-table tbody tr.row-selected > td {
-	  background-color: var(--row-highlight-bg) !important;
-	  color: var(--row-highlight-text) !important;
+		background-color: var(--row-highlight-bg) !important;
+		color: var(--row-highlight-text) !important;
 	}
-  }
+	}
