@@ -1,7 +1,8 @@
 /* Sticky table header (clone-based) */
 #inline-content .sticky-head {
   position: sticky;
-  top: var(--modal-stick-top, 0px);
+  /* Move header closer to the bottom of the modal bar via adjustable var */
+  top: calc(var(--modal-stick-top, 0px) + var(--sticky-head-adjust, 0px));
   z-index: 2;
   background: var(--table-head-bg, #e6f0ff);
   box-shadow: 0 2px 0 rgba(0,0,0,0.08);
@@ -22,4 +23,7 @@
   overflow-wrap: anywhere;
   word-break: break-word;
 }
-#inline-content .sticky-head + table { margin-top: 0.25rem; }
+/* Smaller spacer between cloned header and table */
+#inline-content .sticky-head + table {
+  margin-top: var(--sticky-head-gap, 2px);
+}

@@ -24,6 +24,10 @@
       var bar = overlay ? overlay.querySelector('.modal-bar') : null;
       var h = bar ? bar.offsetHeight : 0;
       body.style.setProperty('--modal-stick-top', h + 'px');
+      // Pull the header slightly up under the bar (negative or small positive)
+      body.style.setProperty('--sticky-head-adjust', '-4px'); // tweak: -2px to -6px
+      // Reduce the gap between cloned header and the table
+      body.style.setProperty('--sticky-head-gap', '2px');     // tweak: 0px to 4px
     } catch (e) { /* noop */ }
   }
 
