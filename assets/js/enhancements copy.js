@@ -98,11 +98,9 @@
         const res = await fetch(url, { cache: 'no-store' });
         if (!res.ok) throw new Error(res.status + ' ' + res.statusText);
         const txt = await res.text();
-        if (/<\s*(table|thead|tbody|tr|td|th|div|span|p|ul|ol|a|h[1-6])\b/i.test(txt)) {
-          // Render the content as HTML
+        if (/<\s*(table|thead|tbody|tr|td|th|div|span|p|ul|ol)\b/i.test(txt)) {
           this.dom.container.innerHTML = txt;
         } else {
-          // Render the content as plain text
           this.dom.container.classList.add('as-pre');
           this.dom.container.textContent = txt;
         }
