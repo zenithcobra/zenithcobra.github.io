@@ -3584,7 +3584,7 @@ input, select, textarea {
 	}
 /* Define row highlight color for both modes */
 	:root {
-	--row-highlight-bg-light: #3a5ad1; /* Light yellow for light mode */
+	--row-highlight-bg-light: #6b86ec; /* Light yellow for light mode */
 	--row-highlight-bg-dark: #3a5ad1; /* Dark gray for dark mode */
 	--row-highlight-text-light: #000000; /* Black text for light mode */
 	--row-highlight-text-dark: #ffffff; /* White text for dark mode */
