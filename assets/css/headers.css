@@ -1,0 +1,25 @@
+/* Sticky table header (clone-based) */
+#inline-content .sticky-head {
+  position: sticky;
+  top: var(--modal-stick-top, 0px);
+  z-index: 2;
+  background: var(--table-head-bg, #e6f0ff);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.08);
+}
+#inline-content .sticky-head table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: auto; /* JS sets exact width */
+  background: inherit;
+}
+#inline-content .sticky-head thead th {
+  background: var(--table-head-bg, #e6f0ff);
+  color: var(--table-head-fg, #0b2540);
+  border-bottom: 1px solid var(--table-head-border, #bcd3ff);
+  padding: 0.5em 0.75em;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+#inline-content .sticky-head + table { margin-top: 0.25rem; }
