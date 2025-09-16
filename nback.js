@@ -41,6 +41,23 @@ $(document).ready(function () {
     let blockRunning = false;
     let hits = [0, 0]; // Tracks user hits for visual and audio
 
+    // Zoom functionality
+    let zoomLevel = 1; // Default zoom level
+
+    $('#zoom-in').click(function () {
+        zoomLevel += 0.1; // Increase zoom level
+        $('body').css('transform', `scale(${zoomLevel})`);
+        $('body').css('transform-origin', 'top center');
+    });
+
+    $('#zoom-out').click(function () {
+        if (zoomLevel > 0.5) {
+            zoomLevel -= 0.1; // Decrease zoom level
+            $('body').css('transform', `scale(${zoomLevel})`);
+            $('body').css('transform-origin', 'top center');
+        }
+    });
+
     // Prepare a block of N-Back data
     function prepareBlock(n) {
         const block = [];
