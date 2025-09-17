@@ -6,10 +6,11 @@ import os
 from datetime import datetime
 
 # Directories
-DATA_DIR = "data"
-DOCS_DIR = "docs"
-TEXT_OUTPUT_DIR = "text_output"
-ARCHIVED_DATA_DIR = os.path.join(DATA_DIR, "archived_data")
+DATA_DIR = "data2"
+DOCS_DIR = "docs2"
+TEXT_OUTPUT_DIR = "text_output2"
+ARCHIVED_DATA_DIR = os.path.join(DATA_DIR, "archived_data2")
+ARCHIVED_DOCS_DIR = os.path.join(DOCS_DIR, "archived_data2")
 
 # File paths
 BALLPARK_DATA_FILE = os.path.join(DATA_DIR, "ballpark_data.json")
@@ -51,7 +52,13 @@ DATE_FORMAT_FILE = "%Y-%m-%d"
 
 def ensure_directories():
     """Ensure all required directories exist."""
-    directories = [DATA_DIR, DOCS_DIR, TEXT_OUTPUT_DIR, ARCHIVED_DATA_DIR]
+    directories = [
+        DATA_DIR,
+        DOCS_DIR,
+        TEXT_OUTPUT_DIR,
+        ARCHIVED_DATA_DIR,
+        ARCHIVED_DOCS_DIR,
+    ]
     for directory in directories:
         os.makedirs(directory, exist_ok=True)
 
@@ -64,3 +71,19 @@ def get_current_date():
 def get_current_date_file():
     """Get current date in file format."""
     return datetime.now().strftime(DATE_FORMAT_FILE)
+
+
+def get_yesterday(date_str):
+    """
+    Gets the date previous to the one supplied.
+    Args:
+        date_str (str): A date string formatted as 'MM/DD/YYYY'.
+    Returns:
+        str: The previous date formatted as 'MM/DD/YYYY'.
+    """
+    # Convert the input date string to a datetime object
+    date = datetime.strptime(date_str, "%m/%d/%Y")
+    # Subtract one day
+    yesterday = date - timedelta(days=1)
+    # Return the formatted date
+    return yesterday.strftime("%m/%d/%Y")
