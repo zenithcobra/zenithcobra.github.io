@@ -1,0 +1,115 @@
+<style>
+.schedule-view { font-family: monospace; white-space: pre; line-height:1.1; }
+.schedule-view .seq { color:#777; font-style:italic; }
+.schedule-view b { color:#FFF200; }
+.schedule-view i { color:#B0B0B0; }
+</style>
+<pre class="schedule-view"><i>      (Final)</i>
+      2025-09-16 01:05 PM EDT     @       
+      Atlanta Braves (6)             @       Washington Nationals (3)      
+                                                                           
+                                                                          
+cs:                                                                        
+aws:                                                                       
+als:                                                                       
+pgh:                                                                       
+
+<i>      (Scheduled)</i>
+      2025-09-16 08:40 PM EDT     @       
+      <b>Miami Marlins</b>                  @       <b>Colorado Rockies</b>              
+                                                                           
+                                                                          
+cs:                                                                        
+aws:                                                                       
+als:                                                                       
+pgh:                                                                       
+pp:   <b>Eury Pérez                             Kyle Freeland</b>
+era:  <b>4.67</b>                                   <b>4.97</b>                          
+s09:  <i>8.78</i>                                   <i>6.95</i>                          
+hr9:  <i>1.22</i>                                   <i>1.30</i>                          
+h9:   <i>6.89</i>                                   <i>10.99</i>                         
+w:    <i>6</i>                                      <i>4</i>                             
+l:    <i>5</i>                                      <i>15</i>                            
+      <b>Agustín Ramírez</b>    _C 20 0             <b>Angel Chivilli</b>     _P 0 0     
+      <span class="seq"><i>0-0-1-0-0-0-0-0-0-0-0-0</i></span>                0                             
+      <b>Brian Navarreto</b>    _C 1 0              <b>Blaine Crim</b>        1B 1 0     
+      0-0-1                                  0-0-1                         
+      <b>Connor Norby</b>       3B 6 7              <b>Braxton Fulford</b>    _C 1 0     
+      <span class="seq"><i>0-0-0-0-0-0-0-1-0-0-0-0</i></span>                <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-0</i></span>       
+      <b>Dane Myers</b>         CF 6 3              <b>Brenton Doyle</b>      CF 14 23   
+      <span class="seq"><i>0-0-0-0-0-0-0-1-0-0-0-0</i></span>                <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-0</i></span>       
+      <b>Eric Wagaman</b>       1B 9 2              <b>Drew Romo</b>          _C 0 0     
+      <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-0</i></span>                0-0-0                         
+      <b>Graham Pauley</b>      3B 4 2              <b>Ezequiel Tovar</b>     SS 8 26    
+      <span class="seq"><i>0-0-0-1-0-0-0-0-1-1-0-0</i></span>                <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-0</i></span>       
+      <b>Heriberto Hernández</b>  LF 8 0            <b>Hunter Goodman</b>     _C 30 13   
+      <span class="seq"><i>0-0-1-0-0-0-0-0-0-0-0-0</i></span>                <span class="seq"><i>0-0-0-0-0-1-0-1-1-0-1-0</i></span>       
+      <b>Jakob Marsee</b>       CF 5 0              <b>Jordan Beck</b>        LF 15 3    
+      <span class="seq"><i>0-0-0-0-0-0-1-0-0-0-0-0</i></span>                <span class="seq"><i>0-0-0-0-0-0-0-0-1-0-0-0</i></span>       
+      <b>Javier Sanoja</b>      2B 5 0              <b>Juan Mejia</b>         _P 0 0     
+      <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-0</i></span>                0-0                           
+      <b>Joey Wiemer</b>        LF 3 0              <b>Kyle Farmer</b>        2B 8 5     
+      <span class="seq"><i>0-0-1-0-0-1-0-0-0-1-0-0</i></span>                <span class="seq"><i>0-1-0-0-0-0-0-1-0-0-0-0</i></span>       
+      <b>Liam Hicks</b>         _C 5 0              <b>Kyle Karros</b>        3B 1 0     
+      <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-1</i></span>                <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-0</i></span>       
+      <b>Otto Lopez</b>         2B 14 6             <b>Mickey Moniak</b>      RF 21 14   
+      <span class="seq"><i>0-0-0-0-0-0-2-0-0-0-0-0</i></span>                <span class="seq"><i>2-0-0-0-0-0-0-0-1-0-0-0</i></span>       
+      <b>Troy Johnston</b>      OF 3 0              <b>Orlando Arcia</b>      SS 3 17    
+      <span class="seq"><i>0-2-0-0-0-0-0-0-0-0-0-0</i></span>                <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-0</i></span>       
+      <b>Xavier Edwards</b>     SS 3 1              <b>Ryan Ritter</b>        SS 1 0     
+      <span class="seq"><i>0-0-0-1-0-0-0-0-0-0-0-0</i></span>                <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-0</i></span>       
+                                             <b>Tyler Freeman</b>      RF 2 7     
+                                             <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-0</i></span>       
+                                             <b>Victor Vodnik</b>      _P 0 0     
+                                             0                             
+                                             <b>Yanquiel Fernández</b>  RF 3 0    
+                                             <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-1-1</i></span>       
+
+<i>      (Scheduled)</i>
+      2025-09-16 10:10 PM EDT     @       
+      <b>Philadelphia Phillies</b>          @       <b>Los Angeles Dodgers</b>           
+                                                                           
+                                                                          
+cs:                                                                        
+aws:                                                                       
+als:                                                                       
+pgh:                                                                       
+pp:   <b>Cristopher Sánchez                     Shohei Ohtani</b>
+era:  <b>2.57</b>                                   <b>3.75</b>                          
+s09:  <i>9.48</i>                                   <i>12.25</i>                         
+hr9:  <i>0.49</i>                                   <i>0.75</i>                          
+h9:   <i>7.85</i>                                   <i>8.75</i>                          
+w:    <i>13</i>                                     <i>1</i>                             
+l:    <i>5</i>                                      <i>1</i>                             
+      <b>Brandon Marsh</b>    CF 10 16              <b>Alex Call</b>        RF 4 3       
+      <span class="seq"><i>0-0-1-0-0-0-0-0-1-0-0-1</i></span>                <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-0</i></span>       
+      <b>Bryce Harper</b>     1B 27 30              <b>Andy Pages</b>       CF 25 13     
+      <span class="seq"><i>1-0-0-1-0-1-0-0-0-1-0-0</i></span>                <span class="seq"><i>1-0-0-0-0-0-0-0-0-0-1-0</i></span>       
+      <b>Bryson Stott</b>     2B 12 11              <b>Anthony Banda</b>    _P 0 0       
+      <span class="seq"><i>0-1-0-1-0-0-0-0-0-1-0-0</i></span>                0                             
+      <b>Donovan Walton</b>   2B 0 1                <b>Ben Rortvedt</b>     _C 0 3       
+      0-0                                    <span class="seq"><i>0-0-0-0-0-0-0-0-0-0</i></span>           
+      <b>Edmundo Sosa</b>     2B 7 7                <b>Chuckie Robinson</b>  _C 0 0      
+      <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-0</i></span>                0                             
+      <b>Garrett Stubbs</b>   _C 0 1                <b>Enrique Hernández</b>  1B 8 12    
+      0-0                                    <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-0</i></span>       
+      <b>Harrison Bader</b>   LF 16 12              <b>Freddie Freeman</b>  1B 20 22     
+      <span class="seq"><i>0-0-0-0-0-0-1-0-0-0-1-0</i></span>                <span class="seq"><i>0-0-0-0-0-1-0-0-0-1-0-0</i></span>       
+      <b>J.T. Realmuto</b>    _C 12 14              <b>Hyeseong Kim</b>     2B 2 0       
+      <span class="seq"><i>0-1-0-0-0-0-0-0-0-0-0-0</i></span>                <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-0</i></span>       
+      <b>Jhoan Duran</b>      _P 0 0                <b>Max Muncy</b>        3B 18 15     
+                                             <span class="seq"><i>1-0-0-0-0-0-1-0-1-0-0-2</i></span>       
+      <b>Kyle Schwarber</b>   LF 53 38              <b>Michael Conforto</b>  LF 11 20    
+      <span class="seq"><i>1-1-1-0-0-0-1-0-0-0-0-0</i></span>                <span class="seq"><i>0-0-0-1-0-0-0-0-0-0-0-0</i></span>       
+      <b>Max Kepler</b>       LF 16 8               <b>Miguel Rojas</b>     2B 6 6       
+      <span class="seq"><i>0-0-0-1-0-0-0-1-0-0-0-1</i></span>                <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-0</i></span>       
+      <b>Nick Castellanos</b>  RF 16 23             <b>Mookie Betts</b>     SS 19 19     
+      <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-0</i></span>                <span class="seq"><i>1-0-0-0-1-1-0-1-0-0-1-0</i></span>       
+      <b>Otto Kemp</b>        1B 6 0                Shohei Ohtani    TWP 49 54    
+      <span class="seq"><i>0-0-0-0-1-0-1-0-0-0-0-0</i></span>                <span class="seq"><i>0-0-1-0-0-0-0-2-0-0-0-0</i></span>       
+      <b>Rafael Marchán</b>   _C 1 3                <b>Tanner Scott</b>     _P 0 0       
+      <span class="seq"><i>0-0-0-0-0-0-0-0-0-0-0-0</i></span>                0                             
+      <b>Weston Wilson</b>    LF 5 3                <b>Teoscar Hernández</b>  RF 24 33   
+      <span class="seq"><i>1-0-0-0-0-0-0-1-1-0-0-0</i></span>                <span class="seq"><i>0-0-0-0-1-2-0-0-0-0-0-0</i></span>       
+                                             <b>Tommy Edman</b>      2B 12 6      
+                                             <span class="seq"><i>0-0-0-0-0-1-0-0-0-0-0-0</i></span>       </pre>
