@@ -5,7 +5,7 @@
   const DARK_MODE_CLASS = 'dark-mode'; // Class to apply for dark mode
   const LIGHT_MODE_CLASS = 'light-mode'; // Class to apply for light mode
   const LIGHT_BG_IMAGE = 'images/9.jpg'; // Background image for light mode
-  const DARK_BG_IMAGE = 'images/9i.jpg'; // Background image for dark mode
+  const DARK_BG_IMAGE = 'images/9gimp.jpg'; // Background image for dark mode
 
   // Apply the saved theme on page load
   function applySavedTheme() {
