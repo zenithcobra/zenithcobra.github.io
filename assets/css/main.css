@@ -3713,7 +3713,7 @@ body.dark-mode .modal .modal-body {
 }
 
 body.dark-mode .modal-bar {
-	background-color: #333333;
+	background-color: #000000;
 	border-bottom-color: #444444;
 }
 
@@ -3726,7 +3726,7 @@ body.dark-mode .modal {
 }
 
 body.dark-mode .modal-bar {
-	background-color: #333333;
+	background-color: #000000;
 	/* Darker modal bar background */
 	border-bottom-color: #444444;
 	/* Border for separation */

@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dual N-Back Training</title>
 	<style>
 		html {}
 
@@ -133,6 +136,84 @@
 			background-color: #6B6B6B;
 			display: none;
 		}
+
+		/* Base touch-friendly buttons (desktop too, modestly) */
+		.pure-button,
+		.input-button,
+		#zoom-controls .zoom-button {
+			font-size: 1rem;
+			padding: 0.6rem 1rem;
+		}
+
+		/* Make the input buttons behave like a full-width strip */
+		#input-buttons {
+			display: flex;
+			gap: 12px;
+			align-items: stretch;
+			justify-content: center;
+			margin: 10px auto;
+			max-width: 900px;
+			/* keeps things tidy on large screens */
+			padding: 0 10px;
+		}
+
+		#input-buttons .input-button {
+			flex: 1 1 0;
+		}
+
+		/* Mobile: make everything BIG and easy to tap */
+		@media (max-width: 768px) {
+
+			/* Stretch the two main input buttons across the screen */
+			#input-buttons {
+				position: sticky;
+				/* stays visible while scrolling the page */
+				top: 0;
+				z-index: 950;
+				background: #fff;
+				/* ensures contrast over content */
+				padding: 8px 10px;
+			}
+
+			#input-buttons .input-button {
+				font-size: clamp(1.5rem, 8vw, 3rem);
+				/* big text on phones */
+				padding: 1.1rem 1.25rem;
+				min-height: 64px;
+			}
+
+			/* Bottom action buttons: full-width, big */
+			.btn .pure-button,
+			.btn a.pure-button {
+				display: block;
+				width: 100%;
+				font-size: clamp(1.5rem, 8vw, 3rem);
+				padding: 1.1rem 1.25rem;
+				min-height: 64px;
+				margin: 8px auto;
+				max-width: 900px;
+			}
+
+			/* Zoom controls: larger tap targets */
+			#zoom-controls {
+				top: 8px;
+				right: 8px;
+			}
+
+			#zoom-controls .zoom-button {
+				font-size: 2rem;
+				width: 56px;
+				height: 56px;
+				line-height: 56px;
+				padding: 0;
+			}
+
+			/* Optional: keep grid from overflowing the screen */
+			table {
+				width: 100%;
+				max-width: 700px;
+			}
+		}
 	</style>
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
 	<meta charset="UTF-8">
@@ -218,9 +299,9 @@
 	<div class="btn"><button id="info" class="pure-button">Instructions</button></div>
 	<div class="btn"><a href="http://www.pnas.org/content/105/19/6829.full.pdf+html" id="study" class="pure-button">Read
 			the Study</a></div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
-<script src="nback.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+	<script src="nback.js"></script>
 
 </body>
 
