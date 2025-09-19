@@ -4,7 +4,7 @@
         "game_datetime": "2025-09-19T22:40:00Z",
         "game_date": "2025-09-19",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Cincinnati Reds",
         "away_id": 112,
@@ -24,8 +24,8 @@
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
-        "series_status": null,
-        "summary": "2025-09-19 - Chicago Cubs @ Cincinnati Reds (Scheduled)"
+        "series_status": "CIN leads 1-0",
+        "summary": "2025-09-19 - Chicago Cubs @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 776266,
@@ -58,7 +58,7 @@
         "game_datetime": "2025-09-19T22:40:00Z",
         "game_date": "2025-09-19",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Atlanta Braves",
         "home_name": "Detroit Tigers",
         "away_id": 144,
@@ -77,14 +77,14 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-09-19 - Atlanta Braves @ Detroit Tigers (Scheduled)"
+        "summary": "2025-09-19 - Atlanta Braves @ Detroit Tigers (Pre-Game)"
     },
     {
         "game_id": 776273,
         "game_datetime": "2025-09-19T23:05:00Z",
         "game_date": "2025-09-19",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Yankees",
         "home_name": "Baltimore Orioles",
         "away_id": 147,
@@ -102,8 +102,8 @@
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2025-09-19 - New York Yankees @ Baltimore Orioles (Scheduled)"
+        "series_status": "NYY leads 1-0",
+        "summary": "2025-09-19 - New York Yankees @ Baltimore Orioles (Pre-Game)"
     },
     {
         "game_id": 776259,
@@ -294,7 +294,7 @@
         "game_datetime": "2025-09-20T00:10:00Z",
         "game_date": "2025-09-19",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Minnesota Twins",
         "away_id": 114,
@@ -313,7 +313,7 @@
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2025-09-19 - Cleveland Guardians @ Minnesota Twins (Scheduled)"
+        "summary": "2025-09-19 - Cleveland Guardians @ Minnesota Twins (Pre-Game)"
     },
     {
         "game_id": 776265,
