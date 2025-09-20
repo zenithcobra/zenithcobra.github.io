@@ -4,7 +4,7 @@
         "game_datetime": "2025-09-20T17:10:00Z",
         "game_date": "2025-09-20",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "In Progress",
         "away_name": "Atlanta Braves",
         "home_name": "Detroit Tigers",
         "away_id": 144,
@@ -15,24 +15,24 @@
         "away_probable_pitcher": "Joey Wentz",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 1,
+        "home_score": 1,
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
-        "series_status": null,
-        "summary": "2025-09-20 - Atlanta Braves @ Detroit Tigers (Scheduled)"
+        "series_status": "ATL leads 1-0",
+        "summary": "2025-09-20 - Atlanta Braves (1) @ Detroit Tigers (1) (Top of the 3rd)"
     },
     {
         "game_id": 777839,
         "game_datetime": "2025-09-20T18:10:00Z",
         "game_date": "2025-09-20",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Minnesota Twins",
         "away_id": 114,
@@ -43,15 +43,15 @@
         "away_probable_pitcher": "Slade Cecconi",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2025-09-20 - Cleveland Guardians @ Minnesota Twins (Scheduled)"
+        "series_status": "CLE leads 1-0",
+        "summary": "2025-09-20 - Cleveland Guardians @ Minnesota Twins (Pre-Game)"
     },
     {
         "game_id": 776243,
@@ -84,7 +84,7 @@
         "game_datetime": "2025-09-20T20:10:00Z",
         "game_date": "2025-09-20",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Washington Nationals",
         "home_name": "New York Mets",
         "away_id": 120,
@@ -104,8 +104,8 @@
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
-        "series_status": null,
-        "summary": "2025-09-20 - Washington Nationals @ New York Mets (Scheduled)"
+        "series_status": "NYM leads 1-0",
+        "summary": "2025-09-20 - Washington Nationals @ New York Mets (Pre-Game)"
     },
     {
         "game_id": 776254,
