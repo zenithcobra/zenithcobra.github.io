@@ -1,5 +1,2165 @@
 [
     {
+        "team_id": 144,
+        "team_name": "Atlanta Braves",
+        "last_games": [
+            776258,
+            776268,
+            776286,
+            777825,
+            776307,
+            776315,
+            776329,
+            776346,
+            776360,
+            776381,
+            776402,
+            776412,
+            776428,
+            776447,
+            776460,
+            776473,
+            776487,
+            776506,
+            776522,
+            776532,
+            776552,
+            776560,
+            776565,
+            776581,
+            776600,
+            776624,
+            776626,
+            776645,
+            776669,
+            776687,
+            776696,
+            776706,
+            776720,
+            776738,
+            776748,
+            776756,
+            776772,
+            776803,
+            778431,
+            776819,
+            776834,
+            776842,
+            776853,
+            776869,
+            776882,
+            776907,
+            776907,
+            776921,
+            776928,
+            776936,
+            776955,
+            776971,
+            776981,
+            776993,
+            777009,
+            777041,
+            777058,
+            777069,
+            777083,
+            777097,
+            777114,
+            777118,
+            777133,
+            777147,
+            777156,
+            777176,
+            777189,
+            777222,
+            777237,
+            777252,
+            777261,
+            777279,
+            777298,
+            777316,
+            777333,
+            777342,
+            777352,
+            777369,
+            777387,
+            777389,
+            777402,
+            777424,
+            777439,
+            777455,
+            777470,
+            777489,
+            777504,
+            777523,
+            777535,
+            777554,
+            777568,
+            777575,
+            777587,
+            777598,
+            777619,
+            777640,
+            777654,
+            777672,
+            777692,
+            777706,
+            777719,
+            777735,
+            777723,
+            777735,
+            777748,
+            777783,
+            777803,
+            777813,
+            777820,
+            777825,
+            777841,
+            777876,
+            777893,
+            777908,
+            777909,
+            777929,
+            777942,
+            777959,
+            777967,
+            777985,
+            777998,
+            778003,
+            778023,
+            778034,
+            778049,
+            778060,
+            778076,
+            778092,
+            778102,
+            778120,
+            778137,
+            778147,
+            778162,
+            778177,
+            778214,
+            778229,
+            778233,
+            778249,
+            778267,
+            778284,
+            778297,
+            778311,
+            778322,
+            778340,
+            778353,
+            778367,
+            778384,
+            778393,
+            778406,
+            778431,
+            778451,
+            778464,
+            778472,
+            778487,
+            778500,
+            778514,
+            778520,
+            778542,
+            778545
+        ],
+        "team_record": "W-W-W-W-W-W-L-L-L-L-W-L-L-W-W-L-L-W-L-L-L-W-W-L-W-L-L-W-W-L-W-W-W-W-W-L-W-W-L-W-L-L-L-W-W-L-W-L-L-W-L-L-L-L-L-W-L-L-W-L-W-W-L-W-L-L-L-L-L-W-L-L-W-L-L-L-W-W-L-W-L-W-W-W-L-W-W-W-L-W-L-L-L-L-L-L-L-W-L-W-L-L-W-L-L-L-W-L-W-W-L-W-W-L-W-L-W-L-W-W-W-L-L-L-W-W-L-W-W-W-L-W-W-W-W-L-L-W-L-W-L-W-L-W-L-W-L-L-L-L-L-L-L-",
+        "team_record_plus": [
+            {
+                "game_id": 776258,
+                "vs_team": "Detroit Tigers",
+                "game_date": "2025-09-20",
+                "result": "W"
+            },
+            {
+                "game_id": 776268,
+                "vs_team": "Detroit Tigers",
+                "game_date": "2025-09-19",
+                "result": "W"
+            },
+            {
+                "game_id": 776286,
+                "vs_team": "Washington Nationals",
+                "game_date": "2025-09-17",
+                "result": "W"
+            },
+            {
+                "game_id": 776307,
+                "vs_team": "Washington Nationals",
+                "game_date": "2025-09-16",
+                "result": "W"
+            },
+            {
+                "game_id": 776315,
+                "vs_team": "Washington Nationals",
+                "game_date": "2025-09-15",
+                "result": "W"
+            },
+            {
+                "game_id": 776329,
+                "vs_team": "Houston Astros",
+                "game_date": "2025-09-14",
+                "result": "W"
+            },
+            {
+                "game_id": 776346,
+                "vs_team": "Houston Astros",
+                "game_date": "2025-09-13",
+                "result": "L"
+            },
+            {
+                "game_id": 776360,
+                "vs_team": "Houston Astros",
+                "game_date": "2025-09-12",
+                "result": "L"
+            },
+            {
+                "game_id": 776381,
+                "vs_team": "Chicago Cubs",
+                "game_date": "2025-09-10",
+                "result": "L"
+            },
+            {
+                "game_id": 776402,
+                "vs_team": "Chicago Cubs",
+                "game_date": "2025-09-09",
+                "result": "L"
+            },
+            {
+                "game_id": 776412,
+                "vs_team": "Chicago Cubs",
+                "game_date": "2025-09-08",
+                "result": "W"
+            },
+            {
+                "game_id": 776428,
+                "vs_team": "Seattle Mariners",
+                "game_date": "2025-09-07",
+                "result": "L"
+            },
+            {
+                "game_id": 776447,
+                "vs_team": "Seattle Mariners",
+                "game_date": "2025-09-06",
+                "result": "L"
+            },
+            {
+                "game_id": 776460,
+                "vs_team": "Seattle Mariners",
+                "game_date": "2025-09-05",
+                "result": "W"
+            },
+            {
+                "game_id": 776473,
+                "vs_team": "Chicago Cubs",
+                "game_date": "2025-09-03",
+                "result": "W"
+            },
+            {
+                "game_id": 776487,
+                "vs_team": "Chicago Cubs",
+                "game_date": "2025-09-02",
+                "result": "L"
+            },
+            {
+                "game_id": 776506,
+                "vs_team": "Chicago Cubs",
+                "game_date": "2025-09-01",
+                "result": "L"
+            },
+            {
+                "game_id": 776522,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2025-08-31",
+                "result": "W"
+            },
+            {
+                "game_id": 776532,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2025-08-30",
+                "result": "L"
+            },
+            {
+                "game_id": 776552,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2025-08-29",
+                "result": "L"
+            },
+            {
+                "game_id": 776560,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2025-08-28",
+                "result": "L"
+            },
+            {
+                "game_id": 776565,
+                "vs_team": "Miami Marlins",
+                "game_date": "2025-08-27",
+                "result": "W"
+            },
+            {
+                "game_id": 776581,
+                "vs_team": "Miami Marlins",
+                "game_date": "2025-08-26",
+                "result": "W"
+            },
+            {
+                "game_id": 776600,
+                "vs_team": "Miami Marlins",
+                "game_date": "2025-08-25",
+                "result": "L"
+            },
+            {
+                "game_id": 776624,
+                "vs_team": "New York Mets",
+                "game_date": "2025-08-24",
+                "result": "W"
+            },
+            {
+                "game_id": 776626,
+                "vs_team": "New York Mets",
+                "game_date": "2025-08-23",
+                "result": "L"
+            },
+            {
+                "game_id": 776645,
+                "vs_team": "New York Mets",
+                "game_date": "2025-08-22",
+                "result": "L"
+            },
+            {
+                "game_id": 776669,
+                "vs_team": "Chicago White Sox",
+                "game_date": "2025-08-20",
+                "result": "W"
+            },
+            {
+                "game_id": 776687,
+                "vs_team": "Chicago White Sox",
+                "game_date": "2025-08-19",
+                "result": "W"
+            },
+            {
+                "game_id": 776696,
+                "vs_team": "Chicago White Sox",
+                "game_date": "2025-08-18",
+                "result": "L"
+            },
+            {
+                "game_id": 776706,
+                "vs_team": "Cleveland Guardians",
+                "game_date": "2025-08-17",
+                "result": "W"
+            },
+            {
+                "game_id": 776720,
+                "vs_team": "Cleveland Guardians",
+                "game_date": "2025-08-16",
+                "result": "W"
+            },
+            {
+                "game_id": 776738,
+                "vs_team": "Cleveland Guardians",
+                "game_date": "2025-08-15",
+                "result": "W"
+            },
+            {
+                "game_id": 776748,
+                "vs_team": "New York Mets",
+                "game_date": "2025-08-14",
+                "result": "W"
+            },
+            {
+                "game_id": 776756,
+                "vs_team": "New York Mets",
+                "game_date": "2025-08-13",
+                "result": "W"
+            },
+            {
+                "game_id": 776772,
+                "vs_team": "New York Mets",
+                "game_date": "2025-08-12",
+                "result": "L"
+            },
+            {
+                "game_id": 776803,
+                "vs_team": "Miami Marlins",
+                "game_date": "2025-08-10",
+                "result": "W"
+            },
+            {
+                "game_id": 776819,
+                "vs_team": "Miami Marlins",
+                "game_date": "2025-08-09",
+                "result": "W"
+            },
+            {
+                "game_id": 776834,
+                "vs_team": "Miami Marlins",
+                "game_date": "2025-08-08",
+                "result": "L"
+            },
+            {
+                "game_id": 776842,
+                "vs_team": "Miami Marlins",
+                "game_date": "2025-08-07",
+                "result": "W"
+            },
+            {
+                "game_id": 776853,
+                "vs_team": "Milwaukee Brewers",
+                "game_date": "2025-08-06",
+                "result": "L"
+            },
+            {
+                "game_id": 776869,
+                "vs_team": "Milwaukee Brewers",
+                "game_date": "2025-08-05",
+                "result": "L"
+            },
+            {
+                "game_id": 776882,
+                "vs_team": "Milwaukee Brewers",
+                "game_date": "2025-08-04",
+                "result": "L"
+            },
+            {
+                "game_id": 776907,
+                "vs_team": "Cincinnati Reds",
+                "game_date": "2025-08-02",
+                "result": "W"
+            },
+            {
+                "game_id": 776907,
+                "vs_team": "Cincinnati Reds",
+                "game_date": "2025-08-02",
+                "result": "W"
+            },
+            {
+                "game_id": 776921,
+                "vs_team": "Cincinnati Reds",
+                "game_date": "2025-08-01",
+                "result": "L"
+            },
+            {
+                "game_id": 776928,
+                "vs_team": "Cincinnati Reds",
+                "game_date": "2025-07-31",
+                "result": "W"
+            },
+            {
+                "game_id": 776936,
+                "vs_team": "Kansas City Royals",
+                "game_date": "2025-07-30",
+                "result": "L"
+            },
+            {
+                "game_id": 776955,
+                "vs_team": "Kansas City Royals",
+                "game_date": "2025-07-29",
+                "result": "L"
+            },
+            {
+                "game_id": 776971,
+                "vs_team": "Kansas City Royals",
+                "game_date": "2025-07-28",
+                "result": "W"
+            },
+            {
+                "game_id": 776981,
+                "vs_team": "Texas Rangers",
+                "game_date": "2025-07-27",
+                "result": "L"
+            },
+            {
+                "game_id": 776993,
+                "vs_team": "Texas Rangers",
+                "game_date": "2025-07-26",
+                "result": "L"
+            },
+            {
+                "game_id": 777009,
+                "vs_team": "Texas Rangers",
+                "game_date": "2025-07-25",
+                "result": "L"
+            },
+            {
+                "game_id": 777041,
+                "vs_team": "San Francisco Giants",
+                "game_date": "2025-07-23",
+                "result": "L"
+            },
+            {
+                "game_id": 777058,
+                "vs_team": "San Francisco Giants",
+                "game_date": "2025-07-22",
+                "result": "L"
+            },
+            {
+                "game_id": 777069,
+                "vs_team": "San Francisco Giants",
+                "game_date": "2025-07-21",
+                "result": "W"
+            },
+            {
+                "game_id": 777083,
+                "vs_team": "New York Yankees",
+                "game_date": "2025-07-20",
+                "result": "L"
+            },
+            {
+                "game_id": 777097,
+                "vs_team": "New York Yankees",
+                "game_date": "2025-07-19",
+                "result": "L"
+            },
+            {
+                "game_id": 777114,
+                "vs_team": "New York Yankees",
+                "game_date": "2025-07-18",
+                "result": "W"
+            },
+            {
+                "game_id": 777118,
+                "vs_team": "St. Louis Cardinals",
+                "game_date": "2025-07-13",
+                "result": "L"
+            },
+            {
+                "game_id": 777133,
+                "vs_team": "St. Louis Cardinals",
+                "game_date": "2025-07-12",
+                "result": "W"
+            },
+            {
+                "game_id": 777147,
+                "vs_team": "St. Louis Cardinals",
+                "game_date": "2025-07-11",
+                "result": "W"
+            },
+            {
+                "game_id": 777156,
+                "vs_team": "Athletics",
+                "game_date": "2025-07-10",
+                "result": "L"
+            },
+            {
+                "game_id": 777176,
+                "vs_team": "Athletics",
+                "game_date": "2025-07-09",
+                "result": "W"
+            },
+            {
+                "game_id": 777189,
+                "vs_team": "Athletics",
+                "game_date": "2025-07-08",
+                "result": "L"
+            },
+            {
+                "game_id": 777222,
+                "vs_team": "Baltimore Orioles",
+                "game_date": "2025-07-06",
+                "result": "L"
+            },
+            {
+                "game_id": 777237,
+                "vs_team": "Baltimore Orioles",
+                "game_date": "2025-07-05",
+                "result": "L"
+            },
+            {
+                "game_id": 777252,
+                "vs_team": "Baltimore Orioles",
+                "game_date": "2025-07-04",
+                "result": "L"
+            },
+            {
+                "game_id": 777261,
+                "vs_team": "Los Angeles Angels",
+                "game_date": "2025-07-03",
+                "result": "L"
+            },
+            {
+                "game_id": 777279,
+                "vs_team": "Los Angeles Angels",
+                "game_date": "2025-07-02",
+                "result": "W"
+            },
+            {
+                "game_id": 777298,
+                "vs_team": "Los Angeles Angels",
+                "game_date": "2025-07-01",
+                "result": "L"
+            },
+            {
+                "game_id": 777316,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2025-06-29",
+                "result": "L"
+            },
+            {
+                "game_id": 777333,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2025-06-28",
+                "result": "W"
+            },
+            {
+                "game_id": 777342,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2025-06-27",
+                "result": "L"
+            },
+            {
+                "game_id": 777352,
+                "vs_team": "New York Mets",
+                "game_date": "2025-06-26",
+                "result": "L"
+            },
+            {
+                "game_id": 777369,
+                "vs_team": "New York Mets",
+                "game_date": "2025-06-25",
+                "result": "L"
+            },
+            {
+                "game_id": 777387,
+                "vs_team": "New York Mets",
+                "game_date": "2025-06-24",
+                "result": "W"
+            },
+            {
+                "game_id": 777389,
+                "vs_team": "New York Mets",
+                "game_date": "2025-06-23",
+                "result": "W"
+            },
+            {
+                "game_id": 777402,
+                "vs_team": "Miami Marlins",
+                "game_date": "2025-06-22",
+                "result": "L"
+            },
+            {
+                "game_id": 777424,
+                "vs_team": "Miami Marlins",
+                "game_date": "2025-06-21",
+                "result": "W"
+            },
+            {
+                "game_id": 777439,
+                "vs_team": "Miami Marlins",
+                "game_date": "2025-06-20",
+                "result": "L"
+            },
+            {
+                "game_id": 777455,
+                "vs_team": "New York Mets",
+                "game_date": "2025-06-19",
+                "result": "W"
+            },
+            {
+                "game_id": 777470,
+                "vs_team": "New York Mets",
+                "game_date": "2025-06-18",
+                "result": "W"
+            },
+            {
+                "game_id": 777489,
+                "vs_team": "New York Mets",
+                "game_date": "2025-06-17",
+                "result": "W"
+            },
+            {
+                "game_id": 777504,
+                "vs_team": "Colorado Rockies",
+                "game_date": "2025-06-15",
+                "result": "L"
+            },
+            {
+                "game_id": 777523,
+                "vs_team": "Colorado Rockies",
+                "game_date": "2025-06-14",
+                "result": "W"
+            },
+            {
+                "game_id": 777535,
+                "vs_team": "Colorado Rockies",
+                "game_date": "2025-06-13",
+                "result": "W"
+            },
+            {
+                "game_id": 777554,
+                "vs_team": "Milwaukee Brewers",
+                "game_date": "2025-06-11",
+                "result": "W"
+            },
+            {
+                "game_id": 777568,
+                "vs_team": "Milwaukee Brewers",
+                "game_date": "2025-06-10",
+                "result": "L"
+            },
+            {
+                "game_id": 777575,
+                "vs_team": "Milwaukee Brewers",
+                "game_date": "2025-06-09",
+                "result": "W"
+            },
+            {
+                "game_id": 777587,
+                "vs_team": "San Francisco Giants",
+                "game_date": "2025-06-08",
+                "result": "L"
+            },
+            {
+                "game_id": 777598,
+                "vs_team": "San Francisco Giants",
+                "game_date": "2025-06-07",
+                "result": "L"
+            },
+            {
+                "game_id": 777619,
+                "vs_team": "San Francisco Giants",
+                "game_date": "2025-06-06",
+                "result": "L"
+            },
+            {
+                "game_id": 777640,
+                "vs_team": "Arizona Diamondbacks",
+                "game_date": "2025-06-05",
+                "result": "L"
+            },
+            {
+                "game_id": 777654,
+                "vs_team": "Arizona Diamondbacks",
+                "game_date": "2025-06-04",
+                "result": "L"
+            },
+            {
+                "game_id": 777672,
+                "vs_team": "Arizona Diamondbacks",
+                "game_date": "2025-06-03",
+                "result": "L"
+            },
+            {
+                "game_id": 777692,
+                "vs_team": "Boston Red Sox",
+                "game_date": "2025-06-01",
+                "result": "L"
+            },
+            {
+                "game_id": 777706,
+                "vs_team": "Boston Red Sox",
+                "game_date": "2025-05-31",
+                "result": "W"
+            },
+            {
+                "game_id": 777719,
+                "vs_team": "Boston Red Sox",
+                "game_date": "2025-05-30",
+                "result": "L"
+            },
+            {
+                "game_id": 777723,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2025-05-29",
+                "result": "W"
+            },
+            {
+                "game_id": 777748,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2025-05-27",
+                "result": "L"
+            },
+            {
+                "game_id": 777783,
+                "vs_team": "San Diego Padres",
+                "game_date": "2025-05-25",
+                "result": "L"
+            },
+            {
+                "game_id": 777803,
+                "vs_team": "San Diego Padres",
+                "game_date": "2025-05-24",
+                "result": "W"
+            },
+            {
+                "game_id": 777813,
+                "vs_team": "San Diego Padres",
+                "game_date": "2025-05-23",
+                "result": "L"
+            },
+            {
+                "game_id": 777820,
+                "vs_team": "Washington Nationals",
+                "game_date": "2025-05-22",
+                "result": "L"
+            },
+            {
+                "game_id": 777841,
+                "vs_team": "Washington Nationals",
+                "game_date": "2025-05-20",
+                "result": "L"
+            },
+            {
+                "game_id": 777876,
+                "vs_team": "Boston Red Sox",
+                "game_date": "2025-05-18",
+                "result": "W"
+            },
+            {
+                "game_id": 777893,
+                "vs_team": "Boston Red Sox",
+                "game_date": "2025-05-17",
+                "result": "L"
+            },
+            {
+                "game_id": 777908,
+                "vs_team": "Boston Red Sox",
+                "game_date": "2025-05-16",
+                "result": "W"
+            },
+            {
+                "game_id": 777909,
+                "vs_team": "Washington Nationals",
+                "game_date": "2025-05-15",
+                "result": "W"
+            },
+            {
+                "game_id": 777929,
+                "vs_team": "Washington Nationals",
+                "game_date": "2025-05-14",
+                "result": "L"
+            },
+            {
+                "game_id": 777942,
+                "vs_team": "Washington Nationals",
+                "game_date": "2025-05-13",
+                "result": "W"
+            },
+            {
+                "game_id": 777959,
+                "vs_team": "Washington Nationals",
+                "game_date": "2025-05-12",
+                "result": "W"
+            },
+            {
+                "game_id": 777967,
+                "vs_team": "Pittsburgh Pirates",
+                "game_date": "2025-05-11",
+                "result": "L"
+            },
+            {
+                "game_id": 777985,
+                "vs_team": "Pittsburgh Pirates",
+                "game_date": "2025-05-10",
+                "result": "W"
+            },
+            {
+                "game_id": 777998,
+                "vs_team": "Pittsburgh Pirates",
+                "game_date": "2025-05-09",
+                "result": "L"
+            },
+            {
+                "game_id": 778003,
+                "vs_team": "Cincinnati Reds",
+                "game_date": "2025-05-08",
+                "result": "W"
+            },
+            {
+                "game_id": 778023,
+                "vs_team": "Cincinnati Reds",
+                "game_date": "2025-05-07",
+                "result": "L"
+            },
+            {
+                "game_id": 778034,
+                "vs_team": "Cincinnati Reds",
+                "game_date": "2025-05-06",
+                "result": "W"
+            },
+            {
+                "game_id": 778049,
+                "vs_team": "Cincinnati Reds",
+                "game_date": "2025-05-05",
+                "result": "W"
+            },
+            {
+                "game_id": 778060,
+                "vs_team": "Los Angeles Dodgers",
+                "game_date": "2025-05-04",
+                "result": "W"
+            },
+            {
+                "game_id": 778076,
+                "vs_team": "Los Angeles Dodgers",
+                "game_date": "2025-05-03",
+                "result": "L"
+            },
+            {
+                "game_id": 778092,
+                "vs_team": "Los Angeles Dodgers",
+                "game_date": "2025-05-02",
+                "result": "L"
+            },
+            {
+                "game_id": 778102,
+                "vs_team": "Colorado Rockies",
+                "game_date": "2025-04-30",
+                "result": "L"
+            },
+            {
+                "game_id": 778120,
+                "vs_team": "Colorado Rockies",
+                "game_date": "2025-04-29",
+                "result": "W"
+            },
+            {
+                "game_id": 778137,
+                "vs_team": "Colorado Rockies",
+                "game_date": "2025-04-28",
+                "result": "W"
+            },
+            {
+                "game_id": 778147,
+                "vs_team": "Arizona Diamondbacks",
+                "game_date": "2025-04-27",
+                "result": "L"
+            },
+            {
+                "game_id": 778162,
+                "vs_team": "Arizona Diamondbacks",
+                "game_date": "2025-04-26",
+                "result": "W"
+            },
+            {
+                "game_id": 778177,
+                "vs_team": "Arizona Diamondbacks",
+                "game_date": "2025-04-25",
+                "result": "W"
+            },
+            {
+                "game_id": 778214,
+                "vs_team": "St. Louis Cardinals",
+                "game_date": "2025-04-23",
+                "result": "W"
+            },
+            {
+                "game_id": 778229,
+                "vs_team": "St. Louis Cardinals",
+                "game_date": "2025-04-22",
+                "result": "L"
+            },
+            {
+                "game_id": 778233,
+                "vs_team": "St. Louis Cardinals",
+                "game_date": "2025-04-21",
+                "result": "W"
+            },
+            {
+                "game_id": 778249,
+                "vs_team": "Minnesota Twins",
+                "game_date": "2025-04-20",
+                "result": "W"
+            },
+            {
+                "game_id": 778267,
+                "vs_team": "Minnesota Twins",
+                "game_date": "2025-04-19",
+                "result": "W"
+            },
+            {
+                "game_id": 778284,
+                "vs_team": "Minnesota Twins",
+                "game_date": "2025-04-18",
+                "result": "W"
+            },
+            {
+                "game_id": 778297,
+                "vs_team": "Toronto Blue Jays",
+                "game_date": "2025-04-16",
+                "result": "L"
+            },
+            {
+                "game_id": 778311,
+                "vs_team": "Toronto Blue Jays",
+                "game_date": "2025-04-15",
+                "result": "L"
+            },
+            {
+                "game_id": 778322,
+                "vs_team": "Toronto Blue Jays",
+                "game_date": "2025-04-14",
+                "result": "W"
+            },
+            {
+                "game_id": 778340,
+                "vs_team": "Tampa Bay Rays",
+                "game_date": "2025-04-13",
+                "result": "L"
+            },
+            {
+                "game_id": 778353,
+                "vs_team": "Tampa Bay Rays",
+                "game_date": "2025-04-12",
+                "result": "W"
+            },
+            {
+                "game_id": 778367,
+                "vs_team": "Tampa Bay Rays",
+                "game_date": "2025-04-11",
+                "result": "L"
+            },
+            {
+                "game_id": 778384,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2025-04-10",
+                "result": "W"
+            },
+            {
+                "game_id": 778393,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2025-04-09",
+                "result": "L"
+            },
+            {
+                "game_id": 778406,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2025-04-08",
+                "result": "W"
+            },
+            {
+                "game_id": 778451,
+                "vs_team": "Miami Marlins",
+                "game_date": "2025-04-05",
+                "result": "L"
+            },
+            {
+                "game_id": 778464,
+                "vs_team": "Miami Marlins",
+                "game_date": "2025-04-04",
+                "result": "W"
+            },
+            {
+                "game_id": 778472,
+                "vs_team": "Los Angeles Dodgers",
+                "game_date": "2025-04-02",
+                "result": "L"
+            },
+            {
+                "game_id": 778487,
+                "vs_team": "Los Angeles Dodgers",
+                "game_date": "2025-04-01",
+                "result": "L"
+            },
+            {
+                "game_id": 778500,
+                "vs_team": "Los Angeles Dodgers",
+                "game_date": "2025-03-31",
+                "result": "L"
+            },
+            {
+                "game_id": 778514,
+                "vs_team": "San Diego Padres",
+                "game_date": "2025-03-30",
+                "result": "L"
+            },
+            {
+                "game_id": 778520,
+                "vs_team": "San Diego Padres",
+                "game_date": "2025-03-29",
+                "result": "L"
+            },
+            {
+                "game_id": 778542,
+                "vs_team": "San Diego Padres",
+                "game_date": "2025-03-28",
+                "result": "L"
+            },
+            {
+                "game_id": 778545,
+                "vs_team": "San Diego Padres",
+                "game_date": "2025-03-27",
+                "result": "L"
+            }
+        ]
+    },
+    {
+        "team_id": 116,
+        "team_name": "Detroit Tigers",
+        "last_games": [
+            776258,
+            776268,
+            776275,
+            776296,
+            776303,
+            776332,
+            776347,
+            776366,
+            776368,
+            776383,
+            776398,
+            776425,
+            776435,
+            776452,
+            776478,
+            776490,
+            776501,
+            776512,
+            776528,
+            776540,
+            776559,
+            776573,
+            776590,
+            776615,
+            776625,
+            776649,
+            776673,
+            776685,
+            776692,
+            776700,
+            776716,
+            776732,
+            776744,
+            776754,
+            776773,
+            776781,
+            776806,
+            776813,
+            776832,
+            776859,
+            776861,
+            776874,
+            776890,
+            776912,
+            776913,
+            776940,
+            776953,
+            776973,
+            776987,
+            777003,
+            777016,
+            777021,
+            777029,
+            777044,
+            777060,
+            777073,
+            777088,
+            777098,
+            777121,
+            777145,
+            777161,
+            777182,
+            777195,
+            777211,
+            777226,
+            777240,
+            777249,
+            777258,
+            777284,
+            777265,
+            777284,
+            777314,
+            777324,
+            777334,
+            777351,
+            777371,
+            777386,
+            777409,
+            777420,
+            777431,
+            777451,
+            777464,
+            777464,
+            777475,
+            777505,
+            777517,
+            777538,
+            777540,
+            777562,
+            777573,
+            777594,
+            777609,
+            777626,
+            777634,
+            777639,
+            777661,
+            777674,
+            777677,
+            777694,
+            777711,
+            777738,
+            777755,
+            777770,
+            777780,
+            777796,
+            777807,
+            777821,
+            777827,
+            777840,
+            777862,
+            777871,
+            777886,
+            777906,
+            777927,
+            777940,
+            777951,
+            777969,
+            777987,
+            777996,
+            778004,
+            778029,
+            778013,
+            778029,
+            778050,
+            778067,
+            778085,
+            778101,
+            778110,
+            778124,
+            778142,
+            778155,
+            778168,
+            778180,
+            778180,
+            778209,
+            778221,
+            778228,
+            778246,
+            778265,
+            778277,
+            778286,
+            778295,
+            778310,
+            778323,
+            778335,
+            778348,
+            778363,
+            778387,
+            778403,
+            778424,
+            778433,
+            778445,
+            778458,
+            778469,
+            778486,
+            778496,
+            778533,
+            778544,
+            778546
+        ],
+        "team_record": "L-L-L-L-L-W-L-L-L-W-W-L-W-L-W-L-L-W-L-W-L-L-L-L-W-W-W-W-W-L-W-W-W-W-L-W-W-L-W-L-L-W-L-W-L-W-W-W-W-L-L-L-L-L-L-W-L-L-L-L-L-L-W-W-W-W-W-L-L-W-W-L-W-L-W-W-L-L-W-W-L-L-W-W-L-W-W-L-W-L-W-L-W-W-L-W-W-W-W-W-L-L-L-W-W-L-W-L-W-W-W-W-L-L-W-W-W-W-L-W-W-W-L-L-W-W-W-L-W-L-W-W-W-L-L-W-L-W-W-L-W-W-W-W-W-L-W-W-L-L-L-",
+        "team_record_plus": [
+            {
+                "game_id": 776258,
+                "vs_team": "Atlanta Braves",
+                "game_date": "2025-09-20",
+                "result": "L"
+            },
+            {
+                "game_id": 776268,
+                "vs_team": "Atlanta Braves",
+                "game_date": "2025-09-19",
+                "result": "L"
+            },
+            {
+                "game_id": 776275,
+                "vs_team": "Cleveland Guardians",
+                "game_date": "2025-09-18",
+                "result": "L"
+            },
+            {
+                "game_id": 776296,
+                "vs_team": "Cleveland Guardians",
+                "game_date": "2025-09-17",
+                "result": "L"
+            },
+            {
+                "game_id": 776303,
+                "vs_team": "Cleveland Guardians",
+                "game_date": "2025-09-16",
+                "result": "L"
+            },
+            {
+                "game_id": 776332,
+                "vs_team": "Miami Marlins",
+                "game_date": "2025-09-14",
+                "result": "W"
+            },
+            {
+                "game_id": 776347,
+                "vs_team": "Miami Marlins",
+                "game_date": "2025-09-13",
+                "result": "L"
+            },
+            {
+                "game_id": 776366,
+                "vs_team": "Miami Marlins",
+                "game_date": "2025-09-12",
+                "result": "L"
+            },
+            {
+                "game_id": 776368,
+                "vs_team": "New York Yankees",
+                "game_date": "2025-09-11",
+                "result": "L"
+            },
+            {
+                "game_id": 776383,
+                "vs_team": "New York Yankees",
+                "game_date": "2025-09-10",
+                "result": "W"
+            },
+            {
+                "game_id": 776398,
+                "vs_team": "New York Yankees",
+                "game_date": "2025-09-09",
+                "result": "W"
+            },
+            {
+                "game_id": 776425,
+                "vs_team": "Chicago White Sox",
+                "game_date": "2025-09-07",
+                "result": "L"
+            },
+            {
+                "game_id": 776435,
+                "vs_team": "Chicago White Sox",
+                "game_date": "2025-09-06",
+                "result": "W"
+            },
+            {
+                "game_id": 776452,
+                "vs_team": "Chicago White Sox",
+                "game_date": "2025-09-05",
+                "result": "L"
+            },
+            {
+                "game_id": 776478,
+                "vs_team": "New York Mets",
+                "game_date": "2025-09-03",
+                "result": "W"
+            },
+            {
+                "game_id": 776490,
+                "vs_team": "New York Mets",
+                "game_date": "2025-09-02",
+                "result": "L"
+            },
+            {
+                "game_id": 776501,
+                "vs_team": "New York Mets",
+                "game_date": "2025-09-01",
+                "result": "L"
+            },
+            {
+                "game_id": 776512,
+                "vs_team": "Kansas City Royals",
+                "game_date": "2025-08-31",
+                "result": "W"
+            },
+            {
+                "game_id": 776528,
+                "vs_team": "Kansas City Royals",
+                "game_date": "2025-08-30",
+                "result": "L"
+            },
+            {
+                "game_id": 776540,
+                "vs_team": "Kansas City Royals",
+                "game_date": "2025-08-29",
+                "result": "W"
+            },
+            {
+                "game_id": 776559,
+                "vs_team": "Athletics",
+                "game_date": "2025-08-27",
+                "result": "L"
+            },
+            {
+                "game_id": 776573,
+                "vs_team": "Athletics",
+                "game_date": "2025-08-26",
+                "result": "L"
+            },
+            {
+                "game_id": 776590,
+                "vs_team": "Athletics",
+                "game_date": "2025-08-25",
+                "result": "L"
+            },
+            {
+                "game_id": 776615,
+                "vs_team": "Kansas City Royals",
+                "game_date": "2025-08-24",
+                "result": "L"
+            },
+            {
+                "game_id": 776625,
+                "vs_team": "Kansas City Royals",
+                "game_date": "2025-08-23",
+                "result": "W"
+            },
+            {
+                "game_id": 776649,
+                "vs_team": "Kansas City Royals",
+                "game_date": "2025-08-22",
+                "result": "W"
+            },
+            {
+                "game_id": 776673,
+                "vs_team": "Houston Astros",
+                "game_date": "2025-08-20",
+                "result": "W"
+            },
+            {
+                "game_id": 776685,
+                "vs_team": "Houston Astros",
+                "game_date": "2025-08-19",
+                "result": "W"
+            },
+            {
+                "game_id": 776692,
+                "vs_team": "Houston Astros",
+                "game_date": "2025-08-18",
+                "result": "W"
+            },
+            {
+                "game_id": 776700,
+                "vs_team": "Minnesota Twins",
+                "game_date": "2025-08-17",
+                "result": "L"
+            },
+            {
+                "game_id": 776716,
+                "vs_team": "Minnesota Twins",
+                "game_date": "2025-08-16",
+                "result": "W"
+            },
+            {
+                "game_id": 776732,
+                "vs_team": "Minnesota Twins",
+                "game_date": "2025-08-15",
+                "result": "W"
+            },
+            {
+                "game_id": 776744,
+                "vs_team": "Minnesota Twins",
+                "game_date": "2025-08-14",
+                "result": "W"
+            },
+            {
+                "game_id": 776754,
+                "vs_team": "Chicago White Sox",
+                "game_date": "2025-08-13",
+                "result": "W"
+            },
+            {
+                "game_id": 776773,
+                "vs_team": "Chicago White Sox",
+                "game_date": "2025-08-12",
+                "result": "L"
+            },
+            {
+                "game_id": 776781,
+                "vs_team": "Chicago White Sox",
+                "game_date": "2025-08-11",
+                "result": "W"
+            },
+            {
+                "game_id": 776806,
+                "vs_team": "Los Angeles Angels",
+                "game_date": "2025-08-10",
+                "result": "W"
+            },
+            {
+                "game_id": 776813,
+                "vs_team": "Los Angeles Angels",
+                "game_date": "2025-08-09",
+                "result": "L"
+            },
+            {
+                "game_id": 776832,
+                "vs_team": "Los Angeles Angels",
+                "game_date": "2025-08-08",
+                "result": "W"
+            },
+            {
+                "game_id": 776859,
+                "vs_team": "Minnesota Twins",
+                "game_date": "2025-08-06",
+                "result": "L"
+            },
+            {
+                "game_id": 776861,
+                "vs_team": "Minnesota Twins",
+                "game_date": "2025-08-05",
+                "result": "L"
+            },
+            {
+                "game_id": 776874,
+                "vs_team": "Minnesota Twins",
+                "game_date": "2025-08-04",
+                "result": "W"
+            },
+            {
+                "game_id": 776890,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2025-08-03",
+                "result": "L"
+            },
+            {
+                "game_id": 776912,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2025-08-02",
+                "result": "W"
+            },
+            {
+                "game_id": 776913,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2025-08-01",
+                "result": "L"
+            },
+            {
+                "game_id": 776940,
+                "vs_team": "Arizona Diamondbacks",
+                "game_date": "2025-07-30",
+                "result": "W"
+            },
+            {
+                "game_id": 776953,
+                "vs_team": "Arizona Diamondbacks",
+                "game_date": "2025-07-29",
+                "result": "W"
+            },
+            {
+                "game_id": 776973,
+                "vs_team": "Arizona Diamondbacks",
+                "game_date": "2025-07-28",
+                "result": "W"
+            },
+            {
+                "game_id": 776987,
+                "vs_team": "Toronto Blue Jays",
+                "game_date": "2025-07-27",
+                "result": "W"
+            },
+            {
+                "game_id": 777003,
+                "vs_team": "Toronto Blue Jays",
+                "game_date": "2025-07-26",
+                "result": "L"
+            },
+            {
+                "game_id": 777016,
+                "vs_team": "Toronto Blue Jays",
+                "game_date": "2025-07-25",
+                "result": "L"
+            },
+            {
+                "game_id": 777021,
+                "vs_team": "Toronto Blue Jays",
+                "game_date": "2025-07-24",
+                "result": "L"
+            },
+            {
+                "game_id": 777029,
+                "vs_team": "Pittsburgh Pirates",
+                "game_date": "2025-07-23",
+                "result": "L"
+            },
+            {
+                "game_id": 777044,
+                "vs_team": "Pittsburgh Pirates",
+                "game_date": "2025-07-22",
+                "result": "L"
+            },
+            {
+                "game_id": 777060,
+                "vs_team": "Pittsburgh Pirates",
+                "game_date": "2025-07-21",
+                "result": "L"
+            },
+            {
+                "game_id": 777073,
+                "vs_team": "Texas Rangers",
+                "game_date": "2025-07-20",
+                "result": "W"
+            },
+            {
+                "game_id": 777088,
+                "vs_team": "Texas Rangers",
+                "game_date": "2025-07-19",
+                "result": "L"
+            },
+            {
+                "game_id": 777098,
+                "vs_team": "Texas Rangers",
+                "game_date": "2025-07-18",
+                "result": "L"
+            },
+            {
+                "game_id": 777121,
+                "vs_team": "Seattle Mariners",
+                "game_date": "2025-07-13",
+                "result": "L"
+            },
+            {
+                "game_id": 777145,
+                "vs_team": "Seattle Mariners",
+                "game_date": "2025-07-12",
+                "result": "L"
+            },
+            {
+                "game_id": 777161,
+                "vs_team": "Seattle Mariners",
+                "game_date": "2025-07-11",
+                "result": "L"
+            },
+            {
+                "game_id": 777182,
+                "vs_team": "Tampa Bay Rays",
+                "game_date": "2025-07-09",
+                "result": "L"
+            },
+            {
+                "game_id": 777195,
+                "vs_team": "Tampa Bay Rays",
+                "game_date": "2025-07-08",
+                "result": "W"
+            },
+            {
+                "game_id": 777211,
+                "vs_team": "Tampa Bay Rays",
+                "game_date": "2025-07-07",
+                "result": "W"
+            },
+            {
+                "game_id": 777226,
+                "vs_team": "Cleveland Guardians",
+                "game_date": "2025-07-06",
+                "result": "W"
+            },
+            {
+                "game_id": 777240,
+                "vs_team": "Cleveland Guardians",
+                "game_date": "2025-07-05",
+                "result": "W"
+            },
+            {
+                "game_id": 777249,
+                "vs_team": "Cleveland Guardians",
+                "game_date": "2025-07-04",
+                "result": "W"
+            },
+            {
+                "game_id": 777258,
+                "vs_team": "Washington Nationals",
+                "game_date": "2025-07-03",
+                "result": "L"
+            },
+            {
+                "game_id": 777265,
+                "vs_team": "Washington Nationals",
+                "game_date": "2025-07-02",
+                "result": "L"
+            },
+            {
+                "game_id": 777314,
+                "vs_team": "Minnesota Twins",
+                "game_date": "2025-06-29",
+                "result": "W"
+            },
+            {
+                "game_id": 777324,
+                "vs_team": "Minnesota Twins",
+                "game_date": "2025-06-28",
+                "result": "W"
+            },
+            {
+                "game_id": 777334,
+                "vs_team": "Minnesota Twins",
+                "game_date": "2025-06-27",
+                "result": "L"
+            },
+            {
+                "game_id": 777351,
+                "vs_team": "Athletics",
+                "game_date": "2025-06-26",
+                "result": "W"
+            },
+            {
+                "game_id": 777371,
+                "vs_team": "Athletics",
+                "game_date": "2025-06-25",
+                "result": "L"
+            },
+            {
+                "game_id": 777386,
+                "vs_team": "Athletics",
+                "game_date": "2025-06-24",
+                "result": "W"
+            },
+            {
+                "game_id": 777409,
+                "vs_team": "Tampa Bay Rays",
+                "game_date": "2025-06-22",
+                "result": "W"
+            },
+            {
+                "game_id": 777420,
+                "vs_team": "Tampa Bay Rays",
+                "game_date": "2025-06-21",
+                "result": "L"
+            },
+            {
+                "game_id": 777431,
+                "vs_team": "Tampa Bay Rays",
+                "game_date": "2025-06-20",
+                "result": "L"
+            },
+            {
+                "game_id": 777451,
+                "vs_team": "Pittsburgh Pirates",
+                "game_date": "2025-06-19",
+                "result": "W"
+            },
+            {
+                "game_id": 777475,
+                "vs_team": "Pittsburgh Pirates",
+                "game_date": "2025-06-17",
+                "result": "W"
+            },
+            {
+                "game_id": 777505,
+                "vs_team": "Cincinnati Reds",
+                "game_date": "2025-06-15",
+                "result": "L"
+            },
+            {
+                "game_id": 777517,
+                "vs_team": "Cincinnati Reds",
+                "game_date": "2025-06-14",
+                "result": "L"
+            },
+            {
+                "game_id": 777538,
+                "vs_team": "Cincinnati Reds",
+                "game_date": "2025-06-13",
+                "result": "W"
+            },
+            {
+                "game_id": 777540,
+                "vs_team": "Baltimore Orioles",
+                "game_date": "2025-06-12",
+                "result": "W"
+            },
+            {
+                "game_id": 777562,
+                "vs_team": "Baltimore Orioles",
+                "game_date": "2025-06-11",
+                "result": "L"
+            },
+            {
+                "game_id": 777573,
+                "vs_team": "Baltimore Orioles",
+                "game_date": "2025-06-10",
+                "result": "W"
+            },
+            {
+                "game_id": 777594,
+                "vs_team": "Chicago Cubs",
+                "game_date": "2025-06-08",
+                "result": "W"
+            },
+            {
+                "game_id": 777609,
+                "vs_team": "Chicago Cubs",
+                "game_date": "2025-06-07",
+                "result": "L"
+            },
+            {
+                "game_id": 777626,
+                "vs_team": "Chicago Cubs",
+                "game_date": "2025-06-06",
+                "result": "W"
+            },
+            {
+                "game_id": 777634,
+                "vs_team": "Chicago White Sox",
+                "game_date": "2025-06-05",
+                "result": "L"
+            },
+            {
+                "game_id": 777639,
+                "vs_team": "Chicago White Sox",
+                "game_date": "2025-06-04",
+                "result": "W"
+            },
+            {
+                "game_id": 777661,
+                "vs_team": "Chicago White Sox",
+                "game_date": "2025-06-03",
+                "result": "L"
+            },
+            {
+                "game_id": 777674,
+                "vs_team": "Chicago White Sox",
+                "game_date": "2025-06-02",
+                "result": "W"
+            },
+            {
+                "game_id": 777677,
+                "vs_team": "Kansas City Royals",
+                "game_date": "2025-06-01",
+                "result": "W"
+            },
+            {
+                "game_id": 777694,
+                "vs_team": "Kansas City Royals",
+                "game_date": "2025-05-31",
+                "result": "L"
+            },
+            {
+                "game_id": 777711,
+                "vs_team": "Kansas City Royals",
+                "game_date": "2025-05-30",
+                "result": "W"
+            },
+            {
+                "game_id": 777738,
+                "vs_team": "San Francisco Giants",
+                "game_date": "2025-05-28",
+                "result": "W"
+            },
+            {
+                "game_id": 777755,
+                "vs_team": "San Francisco Giants",
+                "game_date": "2025-05-27",
+                "result": "W"
+            },
+            {
+                "game_id": 777770,
+                "vs_team": "San Francisco Giants",
+                "game_date": "2025-05-26",
+                "result": "W"
+            },
+            {
+                "game_id": 777780,
+                "vs_team": "Cleveland Guardians",
+                "game_date": "2025-05-25",
+                "result": "W"
+            },
+            {
+                "game_id": 777796,
+                "vs_team": "Cleveland Guardians",
+                "game_date": "2025-05-24",
+                "result": "L"
+            },
+            {
+                "game_id": 777807,
+                "vs_team": "Cleveland Guardians",
+                "game_date": "2025-05-23",
+                "result": "L"
+            },
+            {
+                "game_id": 777821,
+                "vs_team": "Cleveland Guardians",
+                "game_date": "2025-05-22",
+                "result": "L"
+            },
+            {
+                "game_id": 777827,
+                "vs_team": "St. Louis Cardinals",
+                "game_date": "2025-05-21",
+                "result": "W"
+            },
+            {
+                "game_id": 777840,
+                "vs_team": "St. Louis Cardinals",
+                "game_date": "2025-05-20",
+                "result": "W"
+            },
+            {
+                "game_id": 777862,
+                "vs_team": "St. Louis Cardinals",
+                "game_date": "2025-05-19",
+                "result": "L"
+            },
+            {
+                "game_id": 777871,
+                "vs_team": "Toronto Blue Jays",
+                "game_date": "2025-05-18",
+                "result": "W"
+            },
+            {
+                "game_id": 777886,
+                "vs_team": "Toronto Blue Jays",
+                "game_date": "2025-05-17",
+                "result": "L"
+            },
+            {
+                "game_id": 777906,
+                "vs_team": "Toronto Blue Jays",
+                "game_date": "2025-05-16",
+                "result": "W"
+            },
+            {
+                "game_id": 777927,
+                "vs_team": "Boston Red Sox",
+                "game_date": "2025-05-14",
+                "result": "W"
+            },
+            {
+                "game_id": 777940,
+                "vs_team": "Boston Red Sox",
+                "game_date": "2025-05-13",
+                "result": "W"
+            },
+            {
+                "game_id": 777951,
+                "vs_team": "Boston Red Sox",
+                "game_date": "2025-05-12",
+                "result": "W"
+            },
+            {
+                "game_id": 777969,
+                "vs_team": "Texas Rangers",
+                "game_date": "2025-05-11",
+                "result": "L"
+            },
+            {
+                "game_id": 777987,
+                "vs_team": "Texas Rangers",
+                "game_date": "2025-05-10",
+                "result": "L"
+            },
+            {
+                "game_id": 777996,
+                "vs_team": "Texas Rangers",
+                "game_date": "2025-05-09",
+                "result": "W"
+            },
+            {
+                "game_id": 778004,
+                "vs_team": "Colorado Rockies",
+                "game_date": "2025-05-08",
+                "result": "W"
+            },
+            {
+                "game_id": 778013,
+                "vs_team": "Colorado Rockies",
+                "game_date": "2025-05-07",
+                "result": "W"
+            },
+            {
+                "game_id": 778050,
+                "vs_team": "Los Angeles Angels",
+                "game_date": "2025-05-04",
+                "result": "W"
+            },
+            {
+                "game_id": 778067,
+                "vs_team": "Los Angeles Angels",
+                "game_date": "2025-05-03",
+                "result": "L"
+            },
+            {
+                "game_id": 778085,
+                "vs_team": "Los Angeles Angels",
+                "game_date": "2025-05-02",
+                "result": "W"
+            },
+            {
+                "game_id": 778101,
+                "vs_team": "Los Angeles Angels",
+                "game_date": "2025-05-01",
+                "result": "W"
+            },
+            {
+                "game_id": 778110,
+                "vs_team": "Houston Astros",
+                "game_date": "2025-04-30",
+                "result": "W"
+            },
+            {
+                "game_id": 778124,
+                "vs_team": "Houston Astros",
+                "game_date": "2025-04-29",
+                "result": "L"
+            },
+            {
+                "game_id": 778142,
+                "vs_team": "Houston Astros",
+                "game_date": "2025-04-28",
+                "result": "L"
+            },
+            {
+                "game_id": 778155,
+                "vs_team": "Baltimore Orioles",
+                "game_date": "2025-04-27",
+                "result": "W"
+            },
+            {
+                "game_id": 778168,
+                "vs_team": "Baltimore Orioles",
+                "game_date": "2025-04-26",
+                "result": "W"
+            },
+            {
+                "game_id": 778209,
+                "vs_team": "San Diego Padres",
+                "game_date": "2025-04-23",
+                "result": "W"
+            },
+            {
+                "game_id": 778221,
+                "vs_team": "San Diego Padres",
+                "game_date": "2025-04-22",
+                "result": "L"
+            },
+            {
+                "game_id": 778228,
+                "vs_team": "San Diego Padres",
+                "game_date": "2025-04-21",
+                "result": "W"
+            },
+            {
+                "game_id": 778246,
+                "vs_team": "Kansas City Royals",
+                "game_date": "2025-04-20",
+                "result": "L"
+            },
+            {
+                "game_id": 778265,
+                "vs_team": "Kansas City Royals",
+                "game_date": "2025-04-19",
+                "result": "W"
+            },
+            {
+                "game_id": 778277,
+                "vs_team": "Kansas City Royals",
+                "game_date": "2025-04-18",
+                "result": "W"
+            },
+            {
+                "game_id": 778286,
+                "vs_team": "Kansas City Royals",
+                "game_date": "2025-04-17",
+                "result": "W"
+            },
+            {
+                "game_id": 778295,
+                "vs_team": "Milwaukee Brewers",
+                "game_date": "2025-04-16",
+                "result": "L"
+            },
+            {
+                "game_id": 778310,
+                "vs_team": "Milwaukee Brewers",
+                "game_date": "2025-04-15",
+                "result": "L"
+            },
+            {
+                "game_id": 778323,
+                "vs_team": "Milwaukee Brewers",
+                "game_date": "2025-04-14",
+                "result": "W"
+            },
+            {
+                "game_id": 778335,
+                "vs_team": "Minnesota Twins",
+                "game_date": "2025-04-13",
+                "result": "L"
+            },
+            {
+                "game_id": 778348,
+                "vs_team": "Minnesota Twins",
+                "game_date": "2025-04-12",
+                "result": "W"
+            },
+            {
+                "game_id": 778363,
+                "vs_team": "Minnesota Twins",
+                "game_date": "2025-04-11",
+                "result": "W"
+            },
+            {
+                "game_id": 778387,
+                "vs_team": "New York Yankees",
+                "game_date": "2025-04-09",
+                "result": "L"
+            },
+            {
+                "game_id": 778403,
+                "vs_team": "New York Yankees",
+                "game_date": "2025-04-08",
+                "result": "W"
+            },
+            {
+                "game_id": 778424,
+                "vs_team": "New York Yankees",
+                "game_date": "2025-04-07",
+                "result": "W"
+            },
+            {
+                "game_id": 778433,
+                "vs_team": "Chicago White Sox",
+                "game_date": "2025-04-06",
+                "result": "W"
+            },
+            {
+                "game_id": 778445,
+                "vs_team": "Chicago White Sox",
+                "game_date": "2025-04-05",
+                "result": "W"
+            },
+            {
+                "game_id": 778458,
+                "vs_team": "Chicago White Sox",
+                "game_date": "2025-04-04",
+                "result": "W"
+            },
+            {
+                "game_id": 778469,
+                "vs_team": "Seattle Mariners",
+                "game_date": "2025-04-02",
+                "result": "L"
+            },
+            {
+                "game_id": 778486,
+                "vs_team": "Seattle Mariners",
+                "game_date": "2025-04-01",
+                "result": "W"
+            },
+            {
+                "game_id": 778496,
+                "vs_team": "Seattle Mariners",
+                "game_date": "2025-03-31",
+                "result": "W"
+            },
+            {
+                "game_id": 778533,
+                "vs_team": "Los Angeles Dodgers",
+                "game_date": "2025-03-29",
+                "result": "L"
+            },
+            {
+                "game_id": 778544,
+                "vs_team": "Los Angeles Dodgers",
+                "game_date": "2025-03-28",
+                "result": "L"
+            },
+            {
+                "game_id": 778546,
+                "vs_team": "Los Angeles Dodgers",
+                "game_date": "2025-03-27",
+                "result": "L"
+            }
+        ]
+    },
+    {
         "team_id": 133,
         "team_name": "Athletics",
         "last_games": [
@@ -8663,2166 +10823,6 @@
             {
                 "game_id": 778559,
                 "vs_team": "Houston Astros",
-                "game_date": "2025-03-27",
-                "result": "L"
-            }
-        ]
-    },
-    {
-        "team_id": 144,
-        "team_name": "Atlanta Braves",
-        "last_games": [
-            776258,
-            776268,
-            776286,
-            777825,
-            776307,
-            776315,
-            776329,
-            776346,
-            776360,
-            776381,
-            776402,
-            776412,
-            776428,
-            776447,
-            776460,
-            776473,
-            776487,
-            776506,
-            776522,
-            776532,
-            776552,
-            776560,
-            776565,
-            776581,
-            776600,
-            776624,
-            776626,
-            776645,
-            776669,
-            776687,
-            776696,
-            776706,
-            776720,
-            776738,
-            776748,
-            776756,
-            776772,
-            776803,
-            778431,
-            776819,
-            776834,
-            776842,
-            776853,
-            776869,
-            776882,
-            776907,
-            776907,
-            776921,
-            776928,
-            776936,
-            776955,
-            776971,
-            776981,
-            776993,
-            777009,
-            777041,
-            777058,
-            777069,
-            777083,
-            777097,
-            777114,
-            777118,
-            777133,
-            777147,
-            777156,
-            777176,
-            777189,
-            777222,
-            777237,
-            777252,
-            777261,
-            777279,
-            777298,
-            777316,
-            777333,
-            777342,
-            777352,
-            777369,
-            777387,
-            777389,
-            777402,
-            777424,
-            777439,
-            777455,
-            777470,
-            777489,
-            777504,
-            777523,
-            777535,
-            777554,
-            777568,
-            777575,
-            777587,
-            777598,
-            777619,
-            777640,
-            777654,
-            777672,
-            777692,
-            777706,
-            777719,
-            777735,
-            777723,
-            777735,
-            777748,
-            777783,
-            777803,
-            777813,
-            777820,
-            777825,
-            777841,
-            777876,
-            777893,
-            777908,
-            777909,
-            777929,
-            777942,
-            777959,
-            777967,
-            777985,
-            777998,
-            778003,
-            778023,
-            778034,
-            778049,
-            778060,
-            778076,
-            778092,
-            778102,
-            778120,
-            778137,
-            778147,
-            778162,
-            778177,
-            778214,
-            778229,
-            778233,
-            778249,
-            778267,
-            778284,
-            778297,
-            778311,
-            778322,
-            778340,
-            778353,
-            778367,
-            778384,
-            778393,
-            778406,
-            778431,
-            778451,
-            778464,
-            778472,
-            778487,
-            778500,
-            778514,
-            778520,
-            778542,
-            778545
-        ],
-        "team_record": "W-W-W-W-W-W-L-L-L-L-W-L-L-W-W-L-L-W-L-L-L-W-W-L-W-L-L-W-W-L-W-W-W-W-W-L-W-W-L-W-L-L-L-W-W-L-W-L-L-W-L-L-L-L-L-W-L-L-W-L-W-W-L-W-L-L-L-L-L-W-L-L-W-L-L-L-W-W-L-W-L-W-W-W-L-W-W-W-L-W-L-L-L-L-L-L-L-W-L-W-L-L-W-L-L-L-W-L-W-W-L-W-W-L-W-L-W-L-W-W-W-L-L-L-W-W-L-W-W-W-L-W-W-W-W-L-L-W-L-W-L-W-L-W-L-W-L-L-L-L-L-L-L-",
-        "team_record_plus": [
-            {
-                "game_id": 776258,
-                "vs_team": "Detroit Tigers",
-                "game_date": "2025-09-20",
-                "result": "W"
-            },
-            {
-                "game_id": 776268,
-                "vs_team": "Detroit Tigers",
-                "game_date": "2025-09-19",
-                "result": "W"
-            },
-            {
-                "game_id": 776286,
-                "vs_team": "Washington Nationals",
-                "game_date": "2025-09-17",
-                "result": "W"
-            },
-            {
-                "game_id": 776307,
-                "vs_team": "Washington Nationals",
-                "game_date": "2025-09-16",
-                "result": "W"
-            },
-            {
-                "game_id": 776315,
-                "vs_team": "Washington Nationals",
-                "game_date": "2025-09-15",
-                "result": "W"
-            },
-            {
-                "game_id": 776329,
-                "vs_team": "Houston Astros",
-                "game_date": "2025-09-14",
-                "result": "W"
-            },
-            {
-                "game_id": 776346,
-                "vs_team": "Houston Astros",
-                "game_date": "2025-09-13",
-                "result": "L"
-            },
-            {
-                "game_id": 776360,
-                "vs_team": "Houston Astros",
-                "game_date": "2025-09-12",
-                "result": "L"
-            },
-            {
-                "game_id": 776381,
-                "vs_team": "Chicago Cubs",
-                "game_date": "2025-09-10",
-                "result": "L"
-            },
-            {
-                "game_id": 776402,
-                "vs_team": "Chicago Cubs",
-                "game_date": "2025-09-09",
-                "result": "L"
-            },
-            {
-                "game_id": 776412,
-                "vs_team": "Chicago Cubs",
-                "game_date": "2025-09-08",
-                "result": "W"
-            },
-            {
-                "game_id": 776428,
-                "vs_team": "Seattle Mariners",
-                "game_date": "2025-09-07",
-                "result": "L"
-            },
-            {
-                "game_id": 776447,
-                "vs_team": "Seattle Mariners",
-                "game_date": "2025-09-06",
-                "result": "L"
-            },
-            {
-                "game_id": 776460,
-                "vs_team": "Seattle Mariners",
-                "game_date": "2025-09-05",
-                "result": "W"
-            },
-            {
-                "game_id": 776473,
-                "vs_team": "Chicago Cubs",
-                "game_date": "2025-09-03",
-                "result": "W"
-            },
-            {
-                "game_id": 776487,
-                "vs_team": "Chicago Cubs",
-                "game_date": "2025-09-02",
-                "result": "L"
-            },
-            {
-                "game_id": 776506,
-                "vs_team": "Chicago Cubs",
-                "game_date": "2025-09-01",
-                "result": "L"
-            },
-            {
-                "game_id": 776522,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2025-08-31",
-                "result": "W"
-            },
-            {
-                "game_id": 776532,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2025-08-30",
-                "result": "L"
-            },
-            {
-                "game_id": 776552,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2025-08-29",
-                "result": "L"
-            },
-            {
-                "game_id": 776560,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2025-08-28",
-                "result": "L"
-            },
-            {
-                "game_id": 776565,
-                "vs_team": "Miami Marlins",
-                "game_date": "2025-08-27",
-                "result": "W"
-            },
-            {
-                "game_id": 776581,
-                "vs_team": "Miami Marlins",
-                "game_date": "2025-08-26",
-                "result": "W"
-            },
-            {
-                "game_id": 776600,
-                "vs_team": "Miami Marlins",
-                "game_date": "2025-08-25",
-                "result": "L"
-            },
-            {
-                "game_id": 776624,
-                "vs_team": "New York Mets",
-                "game_date": "2025-08-24",
-                "result": "W"
-            },
-            {
-                "game_id": 776626,
-                "vs_team": "New York Mets",
-                "game_date": "2025-08-23",
-                "result": "L"
-            },
-            {
-                "game_id": 776645,
-                "vs_team": "New York Mets",
-                "game_date": "2025-08-22",
-                "result": "L"
-            },
-            {
-                "game_id": 776669,
-                "vs_team": "Chicago White Sox",
-                "game_date": "2025-08-20",
-                "result": "W"
-            },
-            {
-                "game_id": 776687,
-                "vs_team": "Chicago White Sox",
-                "game_date": "2025-08-19",
-                "result": "W"
-            },
-            {
-                "game_id": 776696,
-                "vs_team": "Chicago White Sox",
-                "game_date": "2025-08-18",
-                "result": "L"
-            },
-            {
-                "game_id": 776706,
-                "vs_team": "Cleveland Guardians",
-                "game_date": "2025-08-17",
-                "result": "W"
-            },
-            {
-                "game_id": 776720,
-                "vs_team": "Cleveland Guardians",
-                "game_date": "2025-08-16",
-                "result": "W"
-            },
-            {
-                "game_id": 776738,
-                "vs_team": "Cleveland Guardians",
-                "game_date": "2025-08-15",
-                "result": "W"
-            },
-            {
-                "game_id": 776748,
-                "vs_team": "New York Mets",
-                "game_date": "2025-08-14",
-                "result": "W"
-            },
-            {
-                "game_id": 776756,
-                "vs_team": "New York Mets",
-                "game_date": "2025-08-13",
-                "result": "W"
-            },
-            {
-                "game_id": 776772,
-                "vs_team": "New York Mets",
-                "game_date": "2025-08-12",
-                "result": "L"
-            },
-            {
-                "game_id": 776803,
-                "vs_team": "Miami Marlins",
-                "game_date": "2025-08-10",
-                "result": "W"
-            },
-            {
-                "game_id": 776819,
-                "vs_team": "Miami Marlins",
-                "game_date": "2025-08-09",
-                "result": "W"
-            },
-            {
-                "game_id": 776834,
-                "vs_team": "Miami Marlins",
-                "game_date": "2025-08-08",
-                "result": "L"
-            },
-            {
-                "game_id": 776842,
-                "vs_team": "Miami Marlins",
-                "game_date": "2025-08-07",
-                "result": "W"
-            },
-            {
-                "game_id": 776853,
-                "vs_team": "Milwaukee Brewers",
-                "game_date": "2025-08-06",
-                "result": "L"
-            },
-            {
-                "game_id": 776869,
-                "vs_team": "Milwaukee Brewers",
-                "game_date": "2025-08-05",
-                "result": "L"
-            },
-            {
-                "game_id": 776882,
-                "vs_team": "Milwaukee Brewers",
-                "game_date": "2025-08-04",
-                "result": "L"
-            },
-            {
-                "game_id": 776907,
-                "vs_team": "Cincinnati Reds",
-                "game_date": "2025-08-02",
-                "result": "W"
-            },
-            {
-                "game_id": 776907,
-                "vs_team": "Cincinnati Reds",
-                "game_date": "2025-08-02",
-                "result": "W"
-            },
-            {
-                "game_id": 776921,
-                "vs_team": "Cincinnati Reds",
-                "game_date": "2025-08-01",
-                "result": "L"
-            },
-            {
-                "game_id": 776928,
-                "vs_team": "Cincinnati Reds",
-                "game_date": "2025-07-31",
-                "result": "W"
-            },
-            {
-                "game_id": 776936,
-                "vs_team": "Kansas City Royals",
-                "game_date": "2025-07-30",
-                "result": "L"
-            },
-            {
-                "game_id": 776955,
-                "vs_team": "Kansas City Royals",
-                "game_date": "2025-07-29",
-                "result": "L"
-            },
-            {
-                "game_id": 776971,
-                "vs_team": "Kansas City Royals",
-                "game_date": "2025-07-28",
-                "result": "W"
-            },
-            {
-                "game_id": 776981,
-                "vs_team": "Texas Rangers",
-                "game_date": "2025-07-27",
-                "result": "L"
-            },
-            {
-                "game_id": 776993,
-                "vs_team": "Texas Rangers",
-                "game_date": "2025-07-26",
-                "result": "L"
-            },
-            {
-                "game_id": 777009,
-                "vs_team": "Texas Rangers",
-                "game_date": "2025-07-25",
-                "result": "L"
-            },
-            {
-                "game_id": 777041,
-                "vs_team": "San Francisco Giants",
-                "game_date": "2025-07-23",
-                "result": "L"
-            },
-            {
-                "game_id": 777058,
-                "vs_team": "San Francisco Giants",
-                "game_date": "2025-07-22",
-                "result": "L"
-            },
-            {
-                "game_id": 777069,
-                "vs_team": "San Francisco Giants",
-                "game_date": "2025-07-21",
-                "result": "W"
-            },
-            {
-                "game_id": 777083,
-                "vs_team": "New York Yankees",
-                "game_date": "2025-07-20",
-                "result": "L"
-            },
-            {
-                "game_id": 777097,
-                "vs_team": "New York Yankees",
-                "game_date": "2025-07-19",
-                "result": "L"
-            },
-            {
-                "game_id": 777114,
-                "vs_team": "New York Yankees",
-                "game_date": "2025-07-18",
-                "result": "W"
-            },
-            {
-                "game_id": 777118,
-                "vs_team": "St. Louis Cardinals",
-                "game_date": "2025-07-13",
-                "result": "L"
-            },
-            {
-                "game_id": 777133,
-                "vs_team": "St. Louis Cardinals",
-                "game_date": "2025-07-12",
-                "result": "W"
-            },
-            {
-                "game_id": 777147,
-                "vs_team": "St. Louis Cardinals",
-                "game_date": "2025-07-11",
-                "result": "W"
-            },
-            {
-                "game_id": 777156,
-                "vs_team": "Athletics",
-                "game_date": "2025-07-10",
-                "result": "L"
-            },
-            {
-                "game_id": 777176,
-                "vs_team": "Athletics",
-                "game_date": "2025-07-09",
-                "result": "W"
-            },
-            {
-                "game_id": 777189,
-                "vs_team": "Athletics",
-                "game_date": "2025-07-08",
-                "result": "L"
-            },
-            {
-                "game_id": 777222,
-                "vs_team": "Baltimore Orioles",
-                "game_date": "2025-07-06",
-                "result": "L"
-            },
-            {
-                "game_id": 777237,
-                "vs_team": "Baltimore Orioles",
-                "game_date": "2025-07-05",
-                "result": "L"
-            },
-            {
-                "game_id": 777252,
-                "vs_team": "Baltimore Orioles",
-                "game_date": "2025-07-04",
-                "result": "L"
-            },
-            {
-                "game_id": 777261,
-                "vs_team": "Los Angeles Angels",
-                "game_date": "2025-07-03",
-                "result": "L"
-            },
-            {
-                "game_id": 777279,
-                "vs_team": "Los Angeles Angels",
-                "game_date": "2025-07-02",
-                "result": "W"
-            },
-            {
-                "game_id": 777298,
-                "vs_team": "Los Angeles Angels",
-                "game_date": "2025-07-01",
-                "result": "L"
-            },
-            {
-                "game_id": 777316,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2025-06-29",
-                "result": "L"
-            },
-            {
-                "game_id": 777333,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2025-06-28",
-                "result": "W"
-            },
-            {
-                "game_id": 777342,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2025-06-27",
-                "result": "L"
-            },
-            {
-                "game_id": 777352,
-                "vs_team": "New York Mets",
-                "game_date": "2025-06-26",
-                "result": "L"
-            },
-            {
-                "game_id": 777369,
-                "vs_team": "New York Mets",
-                "game_date": "2025-06-25",
-                "result": "L"
-            },
-            {
-                "game_id": 777387,
-                "vs_team": "New York Mets",
-                "game_date": "2025-06-24",
-                "result": "W"
-            },
-            {
-                "game_id": 777389,
-                "vs_team": "New York Mets",
-                "game_date": "2025-06-23",
-                "result": "W"
-            },
-            {
-                "game_id": 777402,
-                "vs_team": "Miami Marlins",
-                "game_date": "2025-06-22",
-                "result": "L"
-            },
-            {
-                "game_id": 777424,
-                "vs_team": "Miami Marlins",
-                "game_date": "2025-06-21",
-                "result": "W"
-            },
-            {
-                "game_id": 777439,
-                "vs_team": "Miami Marlins",
-                "game_date": "2025-06-20",
-                "result": "L"
-            },
-            {
-                "game_id": 777455,
-                "vs_team": "New York Mets",
-                "game_date": "2025-06-19",
-                "result": "W"
-            },
-            {
-                "game_id": 777470,
-                "vs_team": "New York Mets",
-                "game_date": "2025-06-18",
-                "result": "W"
-            },
-            {
-                "game_id": 777489,
-                "vs_team": "New York Mets",
-                "game_date": "2025-06-17",
-                "result": "W"
-            },
-            {
-                "game_id": 777504,
-                "vs_team": "Colorado Rockies",
-                "game_date": "2025-06-15",
-                "result": "L"
-            },
-            {
-                "game_id": 777523,
-                "vs_team": "Colorado Rockies",
-                "game_date": "2025-06-14",
-                "result": "W"
-            },
-            {
-                "game_id": 777535,
-                "vs_team": "Colorado Rockies",
-                "game_date": "2025-06-13",
-                "result": "W"
-            },
-            {
-                "game_id": 777554,
-                "vs_team": "Milwaukee Brewers",
-                "game_date": "2025-06-11",
-                "result": "W"
-            },
-            {
-                "game_id": 777568,
-                "vs_team": "Milwaukee Brewers",
-                "game_date": "2025-06-10",
-                "result": "L"
-            },
-            {
-                "game_id": 777575,
-                "vs_team": "Milwaukee Brewers",
-                "game_date": "2025-06-09",
-                "result": "W"
-            },
-            {
-                "game_id": 777587,
-                "vs_team": "San Francisco Giants",
-                "game_date": "2025-06-08",
-                "result": "L"
-            },
-            {
-                "game_id": 777598,
-                "vs_team": "San Francisco Giants",
-                "game_date": "2025-06-07",
-                "result": "L"
-            },
-            {
-                "game_id": 777619,
-                "vs_team": "San Francisco Giants",
-                "game_date": "2025-06-06",
-                "result": "L"
-            },
-            {
-                "game_id": 777640,
-                "vs_team": "Arizona Diamondbacks",
-                "game_date": "2025-06-05",
-                "result": "L"
-            },
-            {
-                "game_id": 777654,
-                "vs_team": "Arizona Diamondbacks",
-                "game_date": "2025-06-04",
-                "result": "L"
-            },
-            {
-                "game_id": 777672,
-                "vs_team": "Arizona Diamondbacks",
-                "game_date": "2025-06-03",
-                "result": "L"
-            },
-            {
-                "game_id": 777692,
-                "vs_team": "Boston Red Sox",
-                "game_date": "2025-06-01",
-                "result": "L"
-            },
-            {
-                "game_id": 777706,
-                "vs_team": "Boston Red Sox",
-                "game_date": "2025-05-31",
-                "result": "W"
-            },
-            {
-                "game_id": 777719,
-                "vs_team": "Boston Red Sox",
-                "game_date": "2025-05-30",
-                "result": "L"
-            },
-            {
-                "game_id": 777723,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2025-05-29",
-                "result": "W"
-            },
-            {
-                "game_id": 777748,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2025-05-27",
-                "result": "L"
-            },
-            {
-                "game_id": 777783,
-                "vs_team": "San Diego Padres",
-                "game_date": "2025-05-25",
-                "result": "L"
-            },
-            {
-                "game_id": 777803,
-                "vs_team": "San Diego Padres",
-                "game_date": "2025-05-24",
-                "result": "W"
-            },
-            {
-                "game_id": 777813,
-                "vs_team": "San Diego Padres",
-                "game_date": "2025-05-23",
-                "result": "L"
-            },
-            {
-                "game_id": 777820,
-                "vs_team": "Washington Nationals",
-                "game_date": "2025-05-22",
-                "result": "L"
-            },
-            {
-                "game_id": 777841,
-                "vs_team": "Washington Nationals",
-                "game_date": "2025-05-20",
-                "result": "L"
-            },
-            {
-                "game_id": 777876,
-                "vs_team": "Boston Red Sox",
-                "game_date": "2025-05-18",
-                "result": "W"
-            },
-            {
-                "game_id": 777893,
-                "vs_team": "Boston Red Sox",
-                "game_date": "2025-05-17",
-                "result": "L"
-            },
-            {
-                "game_id": 777908,
-                "vs_team": "Boston Red Sox",
-                "game_date": "2025-05-16",
-                "result": "W"
-            },
-            {
-                "game_id": 777909,
-                "vs_team": "Washington Nationals",
-                "game_date": "2025-05-15",
-                "result": "W"
-            },
-            {
-                "game_id": 777929,
-                "vs_team": "Washington Nationals",
-                "game_date": "2025-05-14",
-                "result": "L"
-            },
-            {
-                "game_id": 777942,
-                "vs_team": "Washington Nationals",
-                "game_date": "2025-05-13",
-                "result": "W"
-            },
-            {
-                "game_id": 777959,
-                "vs_team": "Washington Nationals",
-                "game_date": "2025-05-12",
-                "result": "W"
-            },
-            {
-                "game_id": 777967,
-                "vs_team": "Pittsburgh Pirates",
-                "game_date": "2025-05-11",
-                "result": "L"
-            },
-            {
-                "game_id": 777985,
-                "vs_team": "Pittsburgh Pirates",
-                "game_date": "2025-05-10",
-                "result": "W"
-            },
-            {
-                "game_id": 777998,
-                "vs_team": "Pittsburgh Pirates",
-                "game_date": "2025-05-09",
-                "result": "L"
-            },
-            {
-                "game_id": 778003,
-                "vs_team": "Cincinnati Reds",
-                "game_date": "2025-05-08",
-                "result": "W"
-            },
-            {
-                "game_id": 778023,
-                "vs_team": "Cincinnati Reds",
-                "game_date": "2025-05-07",
-                "result": "L"
-            },
-            {
-                "game_id": 778034,
-                "vs_team": "Cincinnati Reds",
-                "game_date": "2025-05-06",
-                "result": "W"
-            },
-            {
-                "game_id": 778049,
-                "vs_team": "Cincinnati Reds",
-                "game_date": "2025-05-05",
-                "result": "W"
-            },
-            {
-                "game_id": 778060,
-                "vs_team": "Los Angeles Dodgers",
-                "game_date": "2025-05-04",
-                "result": "W"
-            },
-            {
-                "game_id": 778076,
-                "vs_team": "Los Angeles Dodgers",
-                "game_date": "2025-05-03",
-                "result": "L"
-            },
-            {
-                "game_id": 778092,
-                "vs_team": "Los Angeles Dodgers",
-                "game_date": "2025-05-02",
-                "result": "L"
-            },
-            {
-                "game_id": 778102,
-                "vs_team": "Colorado Rockies",
-                "game_date": "2025-04-30",
-                "result": "L"
-            },
-            {
-                "game_id": 778120,
-                "vs_team": "Colorado Rockies",
-                "game_date": "2025-04-29",
-                "result": "W"
-            },
-            {
-                "game_id": 778137,
-                "vs_team": "Colorado Rockies",
-                "game_date": "2025-04-28",
-                "result": "W"
-            },
-            {
-                "game_id": 778147,
-                "vs_team": "Arizona Diamondbacks",
-                "game_date": "2025-04-27",
-                "result": "L"
-            },
-            {
-                "game_id": 778162,
-                "vs_team": "Arizona Diamondbacks",
-                "game_date": "2025-04-26",
-                "result": "W"
-            },
-            {
-                "game_id": 778177,
-                "vs_team": "Arizona Diamondbacks",
-                "game_date": "2025-04-25",
-                "result": "W"
-            },
-            {
-                "game_id": 778214,
-                "vs_team": "St. Louis Cardinals",
-                "game_date": "2025-04-23",
-                "result": "W"
-            },
-            {
-                "game_id": 778229,
-                "vs_team": "St. Louis Cardinals",
-                "game_date": "2025-04-22",
-                "result": "L"
-            },
-            {
-                "game_id": 778233,
-                "vs_team": "St. Louis Cardinals",
-                "game_date": "2025-04-21",
-                "result": "W"
-            },
-            {
-                "game_id": 778249,
-                "vs_team": "Minnesota Twins",
-                "game_date": "2025-04-20",
-                "result": "W"
-            },
-            {
-                "game_id": 778267,
-                "vs_team": "Minnesota Twins",
-                "game_date": "2025-04-19",
-                "result": "W"
-            },
-            {
-                "game_id": 778284,
-                "vs_team": "Minnesota Twins",
-                "game_date": "2025-04-18",
-                "result": "W"
-            },
-            {
-                "game_id": 778297,
-                "vs_team": "Toronto Blue Jays",
-                "game_date": "2025-04-16",
-                "result": "L"
-            },
-            {
-                "game_id": 778311,
-                "vs_team": "Toronto Blue Jays",
-                "game_date": "2025-04-15",
-                "result": "L"
-            },
-            {
-                "game_id": 778322,
-                "vs_team": "Toronto Blue Jays",
-                "game_date": "2025-04-14",
-                "result": "W"
-            },
-            {
-                "game_id": 778340,
-                "vs_team": "Tampa Bay Rays",
-                "game_date": "2025-04-13",
-                "result": "L"
-            },
-            {
-                "game_id": 778353,
-                "vs_team": "Tampa Bay Rays",
-                "game_date": "2025-04-12",
-                "result": "W"
-            },
-            {
-                "game_id": 778367,
-                "vs_team": "Tampa Bay Rays",
-                "game_date": "2025-04-11",
-                "result": "L"
-            },
-            {
-                "game_id": 778384,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2025-04-10",
-                "result": "W"
-            },
-            {
-                "game_id": 778393,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2025-04-09",
-                "result": "L"
-            },
-            {
-                "game_id": 778406,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2025-04-08",
-                "result": "W"
-            },
-            {
-                "game_id": 778451,
-                "vs_team": "Miami Marlins",
-                "game_date": "2025-04-05",
-                "result": "L"
-            },
-            {
-                "game_id": 778464,
-                "vs_team": "Miami Marlins",
-                "game_date": "2025-04-04",
-                "result": "W"
-            },
-            {
-                "game_id": 778472,
-                "vs_team": "Los Angeles Dodgers",
-                "game_date": "2025-04-02",
-                "result": "L"
-            },
-            {
-                "game_id": 778487,
-                "vs_team": "Los Angeles Dodgers",
-                "game_date": "2025-04-01",
-                "result": "L"
-            },
-            {
-                "game_id": 778500,
-                "vs_team": "Los Angeles Dodgers",
-                "game_date": "2025-03-31",
-                "result": "L"
-            },
-            {
-                "game_id": 778514,
-                "vs_team": "San Diego Padres",
-                "game_date": "2025-03-30",
-                "result": "L"
-            },
-            {
-                "game_id": 778520,
-                "vs_team": "San Diego Padres",
-                "game_date": "2025-03-29",
-                "result": "L"
-            },
-            {
-                "game_id": 778542,
-                "vs_team": "San Diego Padres",
-                "game_date": "2025-03-28",
-                "result": "L"
-            },
-            {
-                "game_id": 778545,
-                "vs_team": "San Diego Padres",
-                "game_date": "2025-03-27",
-                "result": "L"
-            }
-        ]
-    },
-    {
-        "team_id": 116,
-        "team_name": "Detroit Tigers",
-        "last_games": [
-            776258,
-            776268,
-            776275,
-            776296,
-            776303,
-            776332,
-            776347,
-            776366,
-            776368,
-            776383,
-            776398,
-            776425,
-            776435,
-            776452,
-            776478,
-            776490,
-            776501,
-            776512,
-            776528,
-            776540,
-            776559,
-            776573,
-            776590,
-            776615,
-            776625,
-            776649,
-            776673,
-            776685,
-            776692,
-            776700,
-            776716,
-            776732,
-            776744,
-            776754,
-            776773,
-            776781,
-            776806,
-            776813,
-            776832,
-            776859,
-            776861,
-            776874,
-            776890,
-            776912,
-            776913,
-            776940,
-            776953,
-            776973,
-            776987,
-            777003,
-            777016,
-            777021,
-            777029,
-            777044,
-            777060,
-            777073,
-            777088,
-            777098,
-            777121,
-            777145,
-            777161,
-            777182,
-            777195,
-            777211,
-            777226,
-            777240,
-            777249,
-            777258,
-            777284,
-            777265,
-            777284,
-            777314,
-            777324,
-            777334,
-            777351,
-            777371,
-            777386,
-            777409,
-            777420,
-            777431,
-            777451,
-            777464,
-            777464,
-            777475,
-            777505,
-            777517,
-            777538,
-            777540,
-            777562,
-            777573,
-            777594,
-            777609,
-            777626,
-            777634,
-            777639,
-            777661,
-            777674,
-            777677,
-            777694,
-            777711,
-            777738,
-            777755,
-            777770,
-            777780,
-            777796,
-            777807,
-            777821,
-            777827,
-            777840,
-            777862,
-            777871,
-            777886,
-            777906,
-            777927,
-            777940,
-            777951,
-            777969,
-            777987,
-            777996,
-            778004,
-            778029,
-            778013,
-            778029,
-            778050,
-            778067,
-            778085,
-            778101,
-            778110,
-            778124,
-            778142,
-            778155,
-            778168,
-            778180,
-            778180,
-            778209,
-            778221,
-            778228,
-            778246,
-            778265,
-            778277,
-            778286,
-            778295,
-            778310,
-            778323,
-            778335,
-            778348,
-            778363,
-            778387,
-            778403,
-            778424,
-            778433,
-            778445,
-            778458,
-            778469,
-            778486,
-            778496,
-            778533,
-            778544,
-            778546
-        ],
-        "team_record": "L-L-L-L-L-W-L-L-L-W-W-L-W-L-W-L-L-W-L-W-L-L-L-L-W-W-W-W-W-L-W-W-W-W-L-W-W-L-W-L-L-W-L-W-L-W-W-W-W-L-L-L-L-L-L-W-L-L-L-L-L-L-W-W-W-W-W-L-L-W-W-L-W-L-W-W-L-L-W-W-L-L-W-W-L-W-W-L-W-L-W-L-W-W-L-W-W-W-W-W-L-L-L-W-W-L-W-L-W-W-W-W-L-L-W-W-W-W-L-W-W-W-L-L-W-W-W-L-W-L-W-W-W-L-L-W-L-W-W-L-W-W-W-W-W-L-W-W-L-L-L-",
-        "team_record_plus": [
-            {
-                "game_id": 776258,
-                "vs_team": "Atlanta Braves",
-                "game_date": "2025-09-20",
-                "result": "L"
-            },
-            {
-                "game_id": 776268,
-                "vs_team": "Atlanta Braves",
-                "game_date": "2025-09-19",
-                "result": "L"
-            },
-            {
-                "game_id": 776275,
-                "vs_team": "Cleveland Guardians",
-                "game_date": "2025-09-18",
-                "result": "L"
-            },
-            {
-                "game_id": 776296,
-                "vs_team": "Cleveland Guardians",
-                "game_date": "2025-09-17",
-                "result": "L"
-            },
-            {
-                "game_id": 776303,
-                "vs_team": "Cleveland Guardians",
-                "game_date": "2025-09-16",
-                "result": "L"
-            },
-            {
-                "game_id": 776332,
-                "vs_team": "Miami Marlins",
-                "game_date": "2025-09-14",
-                "result": "W"
-            },
-            {
-                "game_id": 776347,
-                "vs_team": "Miami Marlins",
-                "game_date": "2025-09-13",
-                "result": "L"
-            },
-            {
-                "game_id": 776366,
-                "vs_team": "Miami Marlins",
-                "game_date": "2025-09-12",
-                "result": "L"
-            },
-            {
-                "game_id": 776368,
-                "vs_team": "New York Yankees",
-                "game_date": "2025-09-11",
-                "result": "L"
-            },
-            {
-                "game_id": 776383,
-                "vs_team": "New York Yankees",
-                "game_date": "2025-09-10",
-                "result": "W"
-            },
-            {
-                "game_id": 776398,
-                "vs_team": "New York Yankees",
-                "game_date": "2025-09-09",
-                "result": "W"
-            },
-            {
-                "game_id": 776425,
-                "vs_team": "Chicago White Sox",
-                "game_date": "2025-09-07",
-                "result": "L"
-            },
-            {
-                "game_id": 776435,
-                "vs_team": "Chicago White Sox",
-                "game_date": "2025-09-06",
-                "result": "W"
-            },
-            {
-                "game_id": 776452,
-                "vs_team": "Chicago White Sox",
-                "game_date": "2025-09-05",
-                "result": "L"
-            },
-            {
-                "game_id": 776478,
-                "vs_team": "New York Mets",
-                "game_date": "2025-09-03",
-                "result": "W"
-            },
-            {
-                "game_id": 776490,
-                "vs_team": "New York Mets",
-                "game_date": "2025-09-02",
-                "result": "L"
-            },
-            {
-                "game_id": 776501,
-                "vs_team": "New York Mets",
-                "game_date": "2025-09-01",
-                "result": "L"
-            },
-            {
-                "game_id": 776512,
-                "vs_team": "Kansas City Royals",
-                "game_date": "2025-08-31",
-                "result": "W"
-            },
-            {
-                "game_id": 776528,
-                "vs_team": "Kansas City Royals",
-                "game_date": "2025-08-30",
-                "result": "L"
-            },
-            {
-                "game_id": 776540,
-                "vs_team": "Kansas City Royals",
-                "game_date": "2025-08-29",
-                "result": "W"
-            },
-            {
-                "game_id": 776559,
-                "vs_team": "Athletics",
-                "game_date": "2025-08-27",
-                "result": "L"
-            },
-            {
-                "game_id": 776573,
-                "vs_team": "Athletics",
-                "game_date": "2025-08-26",
-                "result": "L"
-            },
-            {
-                "game_id": 776590,
-                "vs_team": "Athletics",
-                "game_date": "2025-08-25",
-                "result": "L"
-            },
-            {
-                "game_id": 776615,
-                "vs_team": "Kansas City Royals",
-                "game_date": "2025-08-24",
-                "result": "L"
-            },
-            {
-                "game_id": 776625,
-                "vs_team": "Kansas City Royals",
-                "game_date": "2025-08-23",
-                "result": "W"
-            },
-            {
-                "game_id": 776649,
-                "vs_team": "Kansas City Royals",
-                "game_date": "2025-08-22",
-                "result": "W"
-            },
-            {
-                "game_id": 776673,
-                "vs_team": "Houston Astros",
-                "game_date": "2025-08-20",
-                "result": "W"
-            },
-            {
-                "game_id": 776685,
-                "vs_team": "Houston Astros",
-                "game_date": "2025-08-19",
-                "result": "W"
-            },
-            {
-                "game_id": 776692,
-                "vs_team": "Houston Astros",
-                "game_date": "2025-08-18",
-                "result": "W"
-            },
-            {
-                "game_id": 776700,
-                "vs_team": "Minnesota Twins",
-                "game_date": "2025-08-17",
-                "result": "L"
-            },
-            {
-                "game_id": 776716,
-                "vs_team": "Minnesota Twins",
-                "game_date": "2025-08-16",
-                "result": "W"
-            },
-            {
-                "game_id": 776732,
-                "vs_team": "Minnesota Twins",
-                "game_date": "2025-08-15",
-                "result": "W"
-            },
-            {
-                "game_id": 776744,
-                "vs_team": "Minnesota Twins",
-                "game_date": "2025-08-14",
-                "result": "W"
-            },
-            {
-                "game_id": 776754,
-                "vs_team": "Chicago White Sox",
-                "game_date": "2025-08-13",
-                "result": "W"
-            },
-            {
-                "game_id": 776773,
-                "vs_team": "Chicago White Sox",
-                "game_date": "2025-08-12",
-                "result": "L"
-            },
-            {
-                "game_id": 776781,
-                "vs_team": "Chicago White Sox",
-                "game_date": "2025-08-11",
-                "result": "W"
-            },
-            {
-                "game_id": 776806,
-                "vs_team": "Los Angeles Angels",
-                "game_date": "2025-08-10",
-                "result": "W"
-            },
-            {
-                "game_id": 776813,
-                "vs_team": "Los Angeles Angels",
-                "game_date": "2025-08-09",
-                "result": "L"
-            },
-            {
-                "game_id": 776832,
-                "vs_team": "Los Angeles Angels",
-                "game_date": "2025-08-08",
-                "result": "W"
-            },
-            {
-                "game_id": 776859,
-                "vs_team": "Minnesota Twins",
-                "game_date": "2025-08-06",
-                "result": "L"
-            },
-            {
-                "game_id": 776861,
-                "vs_team": "Minnesota Twins",
-                "game_date": "2025-08-05",
-                "result": "L"
-            },
-            {
-                "game_id": 776874,
-                "vs_team": "Minnesota Twins",
-                "game_date": "2025-08-04",
-                "result": "W"
-            },
-            {
-                "game_id": 776890,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2025-08-03",
-                "result": "L"
-            },
-            {
-                "game_id": 776912,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2025-08-02",
-                "result": "W"
-            },
-            {
-                "game_id": 776913,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2025-08-01",
-                "result": "L"
-            },
-            {
-                "game_id": 776940,
-                "vs_team": "Arizona Diamondbacks",
-                "game_date": "2025-07-30",
-                "result": "W"
-            },
-            {
-                "game_id": 776953,
-                "vs_team": "Arizona Diamondbacks",
-                "game_date": "2025-07-29",
-                "result": "W"
-            },
-            {
-                "game_id": 776973,
-                "vs_team": "Arizona Diamondbacks",
-                "game_date": "2025-07-28",
-                "result": "W"
-            },
-            {
-                "game_id": 776987,
-                "vs_team": "Toronto Blue Jays",
-                "game_date": "2025-07-27",
-                "result": "W"
-            },
-            {
-                "game_id": 777003,
-                "vs_team": "Toronto Blue Jays",
-                "game_date": "2025-07-26",
-                "result": "L"
-            },
-            {
-                "game_id": 777016,
-                "vs_team": "Toronto Blue Jays",
-                "game_date": "2025-07-25",
-                "result": "L"
-            },
-            {
-                "game_id": 777021,
-                "vs_team": "Toronto Blue Jays",
-                "game_date": "2025-07-24",
-                "result": "L"
-            },
-            {
-                "game_id": 777029,
-                "vs_team": "Pittsburgh Pirates",
-                "game_date": "2025-07-23",
-                "result": "L"
-            },
-            {
-                "game_id": 777044,
-                "vs_team": "Pittsburgh Pirates",
-                "game_date": "2025-07-22",
-                "result": "L"
-            },
-            {
-                "game_id": 777060,
-                "vs_team": "Pittsburgh Pirates",
-                "game_date": "2025-07-21",
-                "result": "L"
-            },
-            {
-                "game_id": 777073,
-                "vs_team": "Texas Rangers",
-                "game_date": "2025-07-20",
-                "result": "W"
-            },
-            {
-                "game_id": 777088,
-                "vs_team": "Texas Rangers",
-                "game_date": "2025-07-19",
-                "result": "L"
-            },
-            {
-                "game_id": 777098,
-                "vs_team": "Texas Rangers",
-                "game_date": "2025-07-18",
-                "result": "L"
-            },
-            {
-                "game_id": 777121,
-                "vs_team": "Seattle Mariners",
-                "game_date": "2025-07-13",
-                "result": "L"
-            },
-            {
-                "game_id": 777145,
-                "vs_team": "Seattle Mariners",
-                "game_date": "2025-07-12",
-                "result": "L"
-            },
-            {
-                "game_id": 777161,
-                "vs_team": "Seattle Mariners",
-                "game_date": "2025-07-11",
-                "result": "L"
-            },
-            {
-                "game_id": 777182,
-                "vs_team": "Tampa Bay Rays",
-                "game_date": "2025-07-09",
-                "result": "L"
-            },
-            {
-                "game_id": 777195,
-                "vs_team": "Tampa Bay Rays",
-                "game_date": "2025-07-08",
-                "result": "W"
-            },
-            {
-                "game_id": 777211,
-                "vs_team": "Tampa Bay Rays",
-                "game_date": "2025-07-07",
-                "result": "W"
-            },
-            {
-                "game_id": 777226,
-                "vs_team": "Cleveland Guardians",
-                "game_date": "2025-07-06",
-                "result": "W"
-            },
-            {
-                "game_id": 777240,
-                "vs_team": "Cleveland Guardians",
-                "game_date": "2025-07-05",
-                "result": "W"
-            },
-            {
-                "game_id": 777249,
-                "vs_team": "Cleveland Guardians",
-                "game_date": "2025-07-04",
-                "result": "W"
-            },
-            {
-                "game_id": 777258,
-                "vs_team": "Washington Nationals",
-                "game_date": "2025-07-03",
-                "result": "L"
-            },
-            {
-                "game_id": 777265,
-                "vs_team": "Washington Nationals",
-                "game_date": "2025-07-02",
-                "result": "L"
-            },
-            {
-                "game_id": 777314,
-                "vs_team": "Minnesota Twins",
-                "game_date": "2025-06-29",
-                "result": "W"
-            },
-            {
-                "game_id": 777324,
-                "vs_team": "Minnesota Twins",
-                "game_date": "2025-06-28",
-                "result": "W"
-            },
-            {
-                "game_id": 777334,
-                "vs_team": "Minnesota Twins",
-                "game_date": "2025-06-27",
-                "result": "L"
-            },
-            {
-                "game_id": 777351,
-                "vs_team": "Athletics",
-                "game_date": "2025-06-26",
-                "result": "W"
-            },
-            {
-                "game_id": 777371,
-                "vs_team": "Athletics",
-                "game_date": "2025-06-25",
-                "result": "L"
-            },
-            {
-                "game_id": 777386,
-                "vs_team": "Athletics",
-                "game_date": "2025-06-24",
-                "result": "W"
-            },
-            {
-                "game_id": 777409,
-                "vs_team": "Tampa Bay Rays",
-                "game_date": "2025-06-22",
-                "result": "W"
-            },
-            {
-                "game_id": 777420,
-                "vs_team": "Tampa Bay Rays",
-                "game_date": "2025-06-21",
-                "result": "L"
-            },
-            {
-                "game_id": 777431,
-                "vs_team": "Tampa Bay Rays",
-                "game_date": "2025-06-20",
-                "result": "L"
-            },
-            {
-                "game_id": 777451,
-                "vs_team": "Pittsburgh Pirates",
-                "game_date": "2025-06-19",
-                "result": "W"
-            },
-            {
-                "game_id": 777475,
-                "vs_team": "Pittsburgh Pirates",
-                "game_date": "2025-06-17",
-                "result": "W"
-            },
-            {
-                "game_id": 777505,
-                "vs_team": "Cincinnati Reds",
-                "game_date": "2025-06-15",
-                "result": "L"
-            },
-            {
-                "game_id": 777517,
-                "vs_team": "Cincinnati Reds",
-                "game_date": "2025-06-14",
-                "result": "L"
-            },
-            {
-                "game_id": 777538,
-                "vs_team": "Cincinnati Reds",
-                "game_date": "2025-06-13",
-                "result": "W"
-            },
-            {
-                "game_id": 777540,
-                "vs_team": "Baltimore Orioles",
-                "game_date": "2025-06-12",
-                "result": "W"
-            },
-            {
-                "game_id": 777562,
-                "vs_team": "Baltimore Orioles",
-                "game_date": "2025-06-11",
-                "result": "L"
-            },
-            {
-                "game_id": 777573,
-                "vs_team": "Baltimore Orioles",
-                "game_date": "2025-06-10",
-                "result": "W"
-            },
-            {
-                "game_id": 777594,
-                "vs_team": "Chicago Cubs",
-                "game_date": "2025-06-08",
-                "result": "W"
-            },
-            {
-                "game_id": 777609,
-                "vs_team": "Chicago Cubs",
-                "game_date": "2025-06-07",
-                "result": "L"
-            },
-            {
-                "game_id": 777626,
-                "vs_team": "Chicago Cubs",
-                "game_date": "2025-06-06",
-                "result": "W"
-            },
-            {
-                "game_id": 777634,
-                "vs_team": "Chicago White Sox",
-                "game_date": "2025-06-05",
-                "result": "L"
-            },
-            {
-                "game_id": 777639,
-                "vs_team": "Chicago White Sox",
-                "game_date": "2025-06-04",
-                "result": "W"
-            },
-            {
-                "game_id": 777661,
-                "vs_team": "Chicago White Sox",
-                "game_date": "2025-06-03",
-                "result": "L"
-            },
-            {
-                "game_id": 777674,
-                "vs_team": "Chicago White Sox",
-                "game_date": "2025-06-02",
-                "result": "W"
-            },
-            {
-                "game_id": 777677,
-                "vs_team": "Kansas City Royals",
-                "game_date": "2025-06-01",
-                "result": "W"
-            },
-            {
-                "game_id": 777694,
-                "vs_team": "Kansas City Royals",
-                "game_date": "2025-05-31",
-                "result": "L"
-            },
-            {
-                "game_id": 777711,
-                "vs_team": "Kansas City Royals",
-                "game_date": "2025-05-30",
-                "result": "W"
-            },
-            {
-                "game_id": 777738,
-                "vs_team": "San Francisco Giants",
-                "game_date": "2025-05-28",
-                "result": "W"
-            },
-            {
-                "game_id": 777755,
-                "vs_team": "San Francisco Giants",
-                "game_date": "2025-05-27",
-                "result": "W"
-            },
-            {
-                "game_id": 777770,
-                "vs_team": "San Francisco Giants",
-                "game_date": "2025-05-26",
-                "result": "W"
-            },
-            {
-                "game_id": 777780,
-                "vs_team": "Cleveland Guardians",
-                "game_date": "2025-05-25",
-                "result": "W"
-            },
-            {
-                "game_id": 777796,
-                "vs_team": "Cleveland Guardians",
-                "game_date": "2025-05-24",
-                "result": "L"
-            },
-            {
-                "game_id": 777807,
-                "vs_team": "Cleveland Guardians",
-                "game_date": "2025-05-23",
-                "result": "L"
-            },
-            {
-                "game_id": 777821,
-                "vs_team": "Cleveland Guardians",
-                "game_date": "2025-05-22",
-                "result": "L"
-            },
-            {
-                "game_id": 777827,
-                "vs_team": "St. Louis Cardinals",
-                "game_date": "2025-05-21",
-                "result": "W"
-            },
-            {
-                "game_id": 777840,
-                "vs_team": "St. Louis Cardinals",
-                "game_date": "2025-05-20",
-                "result": "W"
-            },
-            {
-                "game_id": 777862,
-                "vs_team": "St. Louis Cardinals",
-                "game_date": "2025-05-19",
-                "result": "L"
-            },
-            {
-                "game_id": 777871,
-                "vs_team": "Toronto Blue Jays",
-                "game_date": "2025-05-18",
-                "result": "W"
-            },
-            {
-                "game_id": 777886,
-                "vs_team": "Toronto Blue Jays",
-                "game_date": "2025-05-17",
-                "result": "L"
-            },
-            {
-                "game_id": 777906,
-                "vs_team": "Toronto Blue Jays",
-                "game_date": "2025-05-16",
-                "result": "W"
-            },
-            {
-                "game_id": 777927,
-                "vs_team": "Boston Red Sox",
-                "game_date": "2025-05-14",
-                "result": "W"
-            },
-            {
-                "game_id": 777940,
-                "vs_team": "Boston Red Sox",
-                "game_date": "2025-05-13",
-                "result": "W"
-            },
-            {
-                "game_id": 777951,
-                "vs_team": "Boston Red Sox",
-                "game_date": "2025-05-12",
-                "result": "W"
-            },
-            {
-                "game_id": 777969,
-                "vs_team": "Texas Rangers",
-                "game_date": "2025-05-11",
-                "result": "L"
-            },
-            {
-                "game_id": 777987,
-                "vs_team": "Texas Rangers",
-                "game_date": "2025-05-10",
-                "result": "L"
-            },
-            {
-                "game_id": 777996,
-                "vs_team": "Texas Rangers",
-                "game_date": "2025-05-09",
-                "result": "W"
-            },
-            {
-                "game_id": 778004,
-                "vs_team": "Colorado Rockies",
-                "game_date": "2025-05-08",
-                "result": "W"
-            },
-            {
-                "game_id": 778013,
-                "vs_team": "Colorado Rockies",
-                "game_date": "2025-05-07",
-                "result": "W"
-            },
-            {
-                "game_id": 778050,
-                "vs_team": "Los Angeles Angels",
-                "game_date": "2025-05-04",
-                "result": "W"
-            },
-            {
-                "game_id": 778067,
-                "vs_team": "Los Angeles Angels",
-                "game_date": "2025-05-03",
-                "result": "L"
-            },
-            {
-                "game_id": 778085,
-                "vs_team": "Los Angeles Angels",
-                "game_date": "2025-05-02",
-                "result": "W"
-            },
-            {
-                "game_id": 778101,
-                "vs_team": "Los Angeles Angels",
-                "game_date": "2025-05-01",
-                "result": "W"
-            },
-            {
-                "game_id": 778110,
-                "vs_team": "Houston Astros",
-                "game_date": "2025-04-30",
-                "result": "W"
-            },
-            {
-                "game_id": 778124,
-                "vs_team": "Houston Astros",
-                "game_date": "2025-04-29",
-                "result": "L"
-            },
-            {
-                "game_id": 778142,
-                "vs_team": "Houston Astros",
-                "game_date": "2025-04-28",
-                "result": "L"
-            },
-            {
-                "game_id": 778155,
-                "vs_team": "Baltimore Orioles",
-                "game_date": "2025-04-27",
-                "result": "W"
-            },
-            {
-                "game_id": 778168,
-                "vs_team": "Baltimore Orioles",
-                "game_date": "2025-04-26",
-                "result": "W"
-            },
-            {
-                "game_id": 778209,
-                "vs_team": "San Diego Padres",
-                "game_date": "2025-04-23",
-                "result": "W"
-            },
-            {
-                "game_id": 778221,
-                "vs_team": "San Diego Padres",
-                "game_date": "2025-04-22",
-                "result": "L"
-            },
-            {
-                "game_id": 778228,
-                "vs_team": "San Diego Padres",
-                "game_date": "2025-04-21",
-                "result": "W"
-            },
-            {
-                "game_id": 778246,
-                "vs_team": "Kansas City Royals",
-                "game_date": "2025-04-20",
-                "result": "L"
-            },
-            {
-                "game_id": 778265,
-                "vs_team": "Kansas City Royals",
-                "game_date": "2025-04-19",
-                "result": "W"
-            },
-            {
-                "game_id": 778277,
-                "vs_team": "Kansas City Royals",
-                "game_date": "2025-04-18",
-                "result": "W"
-            },
-            {
-                "game_id": 778286,
-                "vs_team": "Kansas City Royals",
-                "game_date": "2025-04-17",
-                "result": "W"
-            },
-            {
-                "game_id": 778295,
-                "vs_team": "Milwaukee Brewers",
-                "game_date": "2025-04-16",
-                "result": "L"
-            },
-            {
-                "game_id": 778310,
-                "vs_team": "Milwaukee Brewers",
-                "game_date": "2025-04-15",
-                "result": "L"
-            },
-            {
-                "game_id": 778323,
-                "vs_team": "Milwaukee Brewers",
-                "game_date": "2025-04-14",
-                "result": "W"
-            },
-            {
-                "game_id": 778335,
-                "vs_team": "Minnesota Twins",
-                "game_date": "2025-04-13",
-                "result": "L"
-            },
-            {
-                "game_id": 778348,
-                "vs_team": "Minnesota Twins",
-                "game_date": "2025-04-12",
-                "result": "W"
-            },
-            {
-                "game_id": 778363,
-                "vs_team": "Minnesota Twins",
-                "game_date": "2025-04-11",
-                "result": "W"
-            },
-            {
-                "game_id": 778387,
-                "vs_team": "New York Yankees",
-                "game_date": "2025-04-09",
-                "result": "L"
-            },
-            {
-                "game_id": 778403,
-                "vs_team": "New York Yankees",
-                "game_date": "2025-04-08",
-                "result": "W"
-            },
-            {
-                "game_id": 778424,
-                "vs_team": "New York Yankees",
-                "game_date": "2025-04-07",
-                "result": "W"
-            },
-            {
-                "game_id": 778433,
-                "vs_team": "Chicago White Sox",
-                "game_date": "2025-04-06",
-                "result": "W"
-            },
-            {
-                "game_id": 778445,
-                "vs_team": "Chicago White Sox",
-                "game_date": "2025-04-05",
-                "result": "W"
-            },
-            {
-                "game_id": 778458,
-                "vs_team": "Chicago White Sox",
-                "game_date": "2025-04-04",
-                "result": "W"
-            },
-            {
-                "game_id": 778469,
-                "vs_team": "Seattle Mariners",
-                "game_date": "2025-04-02",
-                "result": "L"
-            },
-            {
-                "game_id": 778486,
-                "vs_team": "Seattle Mariners",
-                "game_date": "2025-04-01",
-                "result": "W"
-            },
-            {
-                "game_id": 778496,
-                "vs_team": "Seattle Mariners",
-                "game_date": "2025-03-31",
-                "result": "W"
-            },
-            {
-                "game_id": 778533,
-                "vs_team": "Los Angeles Dodgers",
-                "game_date": "2025-03-29",
-                "result": "L"
-            },
-            {
-                "game_id": 778544,
-                "vs_team": "Los Angeles Dodgers",
-                "game_date": "2025-03-28",
-                "result": "L"
-            },
-            {
-                "game_id": 778546,
-                "vs_team": "Los Angeles Dodgers",
                 "game_date": "2025-03-27",
                 "result": "L"
             }

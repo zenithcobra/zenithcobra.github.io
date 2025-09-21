@@ -1,5 +1,25 @@
 [
     {
+        "Team": "Atlanta Braves",
+        "vs_Team": "Detroit Tigers (home)",
+        "Series": "ATL leads 2-0",
+        "Venue": "Comerica Park(207)",
+        "WLmc?": "L",
+        "WLmmc?": "L",
+        "WLmmc%?": "0.57",
+        "Team Record": "W-W-W-W-W-W-L-L-L-L-W-L-L-W-W-L-L-W-L-L-L-W-W-L-W-L-L-W-W-L-W-W-W-W-W-L-W-W-L-W-L-L-L-W-W-L-W-L-L-W-L-L-L-L-L-W-L-L-W-L-W-W-L-W-L-L-L-L-L-W-L-L-W-L-L-L-W-W-L-W-L-W-W-W-L-W-W-W-L-W-L-L-L-L-L-L-L-W-L-W-L-L-W-L-L-L-W-L-W-W-L-W-W-L-W-L-W-L-W-W-W-L-L-L-W-W-L-W-W-W-L-W-W-W-W-L-L-W-L-W-L-W-L-W-L-W-L-L-L-L-L-L-L-"
+    },
+    {
+        "Team": "Detroit Tigers",
+        "vs_Team": "Atlanta Braves (away)",
+        "Series": "ATL leads 2-0",
+        "Venue": "Comerica Park(207)",
+        "WLmc?": "L",
+        "WLmmc?": "W",
+        "WLmmc%?": "0.54",
+        "Team Record": "L-L-L-L-L-W-L-L-L-W-W-L-W-L-W-L-L-W-L-W-L-L-L-L-W-W-W-W-W-L-W-W-W-W-L-W-W-L-W-L-L-W-L-W-L-W-W-W-W-L-L-L-L-L-L-W-L-L-L-L-L-L-W-W-W-W-W-L-L-W-W-L-W-L-W-W-L-L-W-W-L-L-W-W-L-W-W-L-W-L-W-L-W-W-L-W-W-W-W-W-L-L-L-W-W-L-W-L-W-W-W-W-L-L-W-W-W-W-L-W-W-W-L-L-W-W-W-L-W-L-W-W-W-L-L-W-L-W-W-L-W-W-W-W-W-L-W-W-L-L-L-"
+    },
+    {
         "Team": "Athletics",
         "vs_Team": "Pittsburgh Pirates (home)",
         "Series": "Series tied 1-1",
@@ -14,7 +34,7 @@
         "vs_Team": "Athletics (away)",
         "Series": "Series tied 1-1",
         "Venue": "PNC Park(114)",
-        "WLmc?": "W",
+        "WLmc?": "L",
         "WLmmc?": "L",
         "WLmmc%?": "0.53",
         "Team Record": "W-L-L-L-L-L-W-L-L-L-L-L-L-L-W-W-W-L-W-W-L-W-W-L-W-W-W-W-L-W-L-L-W-L-L-L-L-L-W-W-L-L-W-W-L-L-W-W-W-W-W-L-W-W-W-L-L-L-W-L-L-L-L-L-L-L-L-W-W-W-W-W-W-L-L-W-W-L-L-L-L-L-L-W-L-W-L-W-W-W-W-L-W-L-L-W-L-W-W-L-L-W-W-L-W-W-L-L-L-L-W-L-L-W-L-W-L-L-L-L-L-L-L-W-L-L-L-W-L-W-W-L-L-L-W-W-L-W-L-L-L-W-L-W-W-L-L-W-L-L-L-L-W-L-"
@@ -22,9 +42,9 @@
     {
         "Team": "New York Yankees",
         "vs_Team": "Baltimore Orioles (home)",
-        "Series": "None",
+        "Series": "NYY leads 2-1",
         "Venue": "Oriole Park at Camden Yards(219)",
-        "WLmc?": "L",
+        "WLmc?": "W",
         "WLmmc?": "W",
         "WLmmc%?": "0.56",
         "Team Record": "W-L-W-W-W-L-L-W-W-W-L-L-W-W-L-W-L-W-L-W-W-W-W-W-W-W-L-L-L-W-W-W-W-W-L-W-W-L-W-L-W-L-L-L-L-L-W-W-W-L-W-L-L-L-W-L-W-W-L-L-L-W-W-W-W-W-L-L-L-L-L-L-W-L-W-W-L-L-W-W-L-W-L-L-L-L-L-L-W-W-W-L-L-W-W-L-W-W-L-L-W-W-W-W-W-L-W-W-W-W-L-W-W-L-W-W-L-W-W-W-L-L-L-W-L-W-L-W-L-W-L-L-W-L-W-W-W-W-W-L-W-L-W-L-L-L-W-W-W-L-L-W-W-W-"
@@ -32,9 +52,9 @@
     {
         "Team": "Baltimore Orioles",
         "vs_Team": "New York Yankees (away)",
-        "Series": "None",
+        "Series": "NYY leads 2-1",
         "Venue": "Oriole Park at Camden Yards(219)",
-        "WLmc?": "L",
+        "WLmc?": "W",
         "WLmmc?": "L",
         "WLmmc%?": "0.52",
         "Team Record": "L-W-L-W-W-W-L-L-L-W-W-W-L-W-W-W-W-W-L-W-L-L-L-L-L-W-L-L-L-W-W-W-L-W-W-W-L-L-L-W-W-L-L-L-W-L-L-W-W-W-W-L-W-L-L-L-W-L-L-L-L-W-W-L-W-W-W-L-L-W-W-L-W-L-L-W-L-L-W-W-L-W-L-W-W-W-L-W-L-L-W-L-W-W-W-W-W-W-L-L-W-W-W-W-L-L-L-L-L-L-L-W-L-W-L-L-L-L-L-W-W-L-W-L-L-W-L-L-L-W-L-W-W-L-L-W-L-L-W-L-W-L-L-L-W-L-W-L-W-"
@@ -42,7 +62,7 @@
     {
         "Team": "Chicago Cubs",
         "vs_Team": "Cincinnati Reds (home)",
-        "Series": "None",
+        "Series": "CIN leads 3-0",
         "Venue": "Great American Ball Park(186)",
         "WLmc?": "W",
         "WLmmc?": "W",
@@ -52,7 +72,7 @@
     {
         "Team": "Cincinnati Reds",
         "vs_Team": "Chicago Cubs (away)",
-        "Series": "None",
+        "Series": "CIN leads 3-0",
         "Venue": "Great American Ball Park(186)",
         "WLmc?": "W",
         "WLmmc?": "W",
@@ -62,7 +82,7 @@
     {
         "Team": "Washington Nationals",
         "vs_Team": "New York Mets (home)",
-        "Series": "NYM leads 1-0",
+        "Series": "Series tied 1-1",
         "Venue": "Citi Field(189)",
         "WLmc?": "L",
         "WLmmc?": "L",
@@ -72,7 +92,7 @@
     {
         "Team": "New York Mets",
         "vs_Team": "Washington Nationals (away)",
-        "Series": "NYM leads 1-0",
+        "Series": "Series tied 1-1",
         "Venue": "Citi Field(189)",
         "WLmc?": "W",
         "WLmmc?": "L",
@@ -80,29 +100,9 @@
         "Team Record": "L-W-W-L-W-W-L-L-L-L-L-L-L-L-W-L-W-W-L-L-W-L-W-W-W-L-W-W-L-L-W-W-W-L-L-L-W-L-L-L-L-L-L-L-W-L-L-L-L-W-W-W-W-W-W-W-L-L-L-W-W-L-W-L-W-W-W-W-L-L-L-W-W-L-L-L-W-L-L-L-L-L-L-L-W-W-W-W-W-W-L-W-L-W-W-W-W-L-W-W-W-W-L-W-L-L-L-W-L-L-W-W-W-L-W-W-L-W-L-W-L-L-W-W-L-W-L-W-W-W-W-W-W-W-L-L-W-W-L-W-L-W-W-W-W-W-W-L-W-L-W-L-"
     },
     {
-        "Team": "Atlanta Braves",
-        "vs_Team": "Detroit Tigers (home)",
-        "Series": "None",
-        "Venue": "Comerica Park(207)",
-        "WLmc?": "L",
-        "WLmmc?": "L",
-        "WLmmc%?": "0.57",
-        "Team Record": "W-W-W-W-W-W-L-L-L-L-W-L-L-W-W-L-L-W-L-L-L-W-W-L-W-L-L-W-W-L-W-W-W-W-W-L-W-W-L-W-L-L-L-W-W-L-W-L-L-W-L-L-L-L-L-W-L-L-W-L-W-W-L-W-L-L-L-L-L-W-L-L-W-L-L-L-W-W-L-W-L-W-W-W-L-W-W-W-L-W-L-L-L-L-L-L-L-W-L-W-L-L-W-L-L-L-W-L-W-W-L-W-W-L-W-L-W-L-W-W-W-L-L-L-W-W-L-W-W-W-L-W-W-W-W-L-L-W-L-W-L-W-L-W-L-W-L-L-L-L-L-L-L-"
-    },
-    {
-        "Team": "Detroit Tigers",
-        "vs_Team": "Atlanta Braves (away)",
-        "Series": "None",
-        "Venue": "Comerica Park(207)",
-        "WLmc?": "W",
-        "WLmmc?": "W",
-        "WLmmc%?": "0.54",
-        "Team Record": "L-L-L-L-L-W-L-L-L-W-W-L-W-L-W-L-L-W-L-W-L-L-L-L-W-W-W-W-W-L-W-W-W-W-L-W-W-L-W-L-L-W-L-W-L-W-W-W-W-L-L-L-L-L-L-W-L-L-L-L-L-L-W-W-W-W-W-L-L-W-W-L-W-L-W-W-L-L-W-W-L-L-W-W-L-W-W-L-W-L-W-L-W-W-L-W-W-W-W-W-L-L-L-W-W-L-W-L-W-W-W-W-L-L-W-W-W-W-L-W-W-W-L-L-W-W-W-L-W-L-W-W-W-L-L-W-L-W-W-L-W-W-W-W-W-L-W-W-L-L-L-"
-    },
-    {
         "Team": "Toronto Blue Jays",
         "vs_Team": "Kansas City Royals (home)",
-        "Series": "None",
+        "Series": "KC leads 2-0",
         "Venue": "Kauffman Stadium(151)",
         "WLmc?": "W",
         "WLmmc?": "W",
@@ -112,9 +112,9 @@
     {
         "Team": "Kansas City Royals",
         "vs_Team": "Toronto Blue Jays (away)",
-        "Series": "None",
+        "Series": "KC leads 2-0",
         "Venue": "Kauffman Stadium(151)",
-        "WLmc?": "L",
+        "WLmc?": "W",
         "WLmmc?": "L",
         "WLmmc%?": "0.53",
         "Team Record": "W-W-L-W-L-W-L-L-L-W-L-L-L-W-W-W-L-L-L-W-L-W-W-L-W-L-L-W-L-W-W-W-W-W-L-W-W-L-W-L-W-L-L-W-L-W-W-W-L-W-L-W-L-W-W-L-L-W-L-L-W-W-W-W-L-W-W-L-W-L-L-W-L-L-L-L-L-L-W-W-W-W-L-L-L-L-L-L-W-L-L-W-W-L-W-L-W-L-L-W-L-L-W-L-W-W-L-L-L-L-W-L-L-W-W-W-W-W-W-W-L-W-W-W-L-W-W-W-W-W-L-L-L-L-L-L-W-L-L-W-L-W-W-W-L-W-L-L-W-L-W-L-"
@@ -122,9 +122,9 @@
     {
         "Team": "Cleveland Guardians",
         "vs_Team": "Minnesota Twins (home)",
-        "Series": "None",
+        "Series": "CLE leads 3-0",
         "Venue": "Target Field(174)",
-        "WLmc?": "W",
+        "WLmc?": "L",
         "WLmmc?": "W",
         "WLmmc%?": "0.59",
         "Team Record": "W-W-W-W-W-W-W-W-W-L-W-W-W-W-W-L-W-L-L-L-W-W-W-W-L-L-L-L-L-L-W-L-L-L-W-L-W-L-W-W-W-W-W-L-W-W-W-W-L-L-W-L-W-W-W-W-L-W-W-W-L-W-W-W-L-L-L-L-L-L-L-L-L-L-W-L-W-W-L-L-W-W-L-L-L-W-L-L-W-L-L-L-W-L-W-W-L-W-L-L-L-W-W-W-L-W-L-L-L-L-L-W-W-L-L-W-W-L-W-W-L-W-W-W-L-L-L-L-W-W-W-W-W-L-L-W-L-W-W-W-W-W-L-L-W-L-L-L-W-L-W-"
@@ -132,7 +132,7 @@
     {
         "Team": "Minnesota Twins",
         "vs_Team": "Cleveland Guardians (away)",
-        "Series": "None",
+        "Series": "CLE leads 3-0",
         "Venue": "Target Field(174)",
         "WLmc?": "W",
         "WLmmc?": "L",
@@ -142,7 +142,7 @@
     {
         "Team": "San Diego Padres",
         "vs_Team": "Chicago White Sox (home)",
-        "Series": "None",
+        "Series": "Series tied 1-1",
         "Venue": "Rate Field(178)",
         "WLmc?": "W",
         "WLmmc?": "W",
@@ -152,9 +152,9 @@
     {
         "Team": "Chicago White Sox",
         "vs_Team": "San Diego Padres (away)",
-        "Series": "None",
+        "Series": "Series tied 1-1",
         "Venue": "Rate Field(178)",
-        "WLmc?": "L",
+        "WLmc?": "W",
         "WLmmc?": "L",
         "WLmmc%?": "0.65",
         "Team Record": "L-W-L-L-L-L-L-L-W-W-L-W-L-W-W-W-W-W-W-L-L-L-L-L-W-W-W-L-L-L-W-L-L-L-L-W-L-W-L-L-L-L-L-L-W-W-W-L-W-L-L-W-W-L-W-W-W-W-L-L-W-W-L-L-L-W-W-L-L-L-W-W-L-W-L-L-W-L-W-L-L-L-L-L-L-L-W-L-W-W-W-L-W-L-L-L-L-W-L-L-L-W-W-L-W-L-L-L-L-L-W-W-W-L-W-L-L-L-L-W-L-W-W-L-L-L-W-L-W-L-L-L-W-L-L-L-L-L-L-W-W-L-L-L-L-L-L-L-L-W-L-L-W-"
@@ -162,7 +162,7 @@
     {
         "Team": "Milwaukee Brewers",
         "vs_Team": "St. Louis Cardinals (home)",
-        "Series": "None",
+        "Series": "Series tied 1-1",
         "Venue": "Busch Stadium(142)",
         "WLmc?": "W",
         "WLmmc?": "W",
@@ -172,9 +172,9 @@
     {
         "Team": "St. Louis Cardinals",
         "vs_Team": "Milwaukee Brewers (away)",
-        "Series": "None",
+        "Series": "Series tied 1-1",
         "Venue": "Busch Stadium(142)",
-        "WLmc?": "L",
+        "WLmc?": "W",
         "WLmmc?": "L",
         "WLmmc%?": "0.5",
         "Team Record": "L-W-L-W-L-W-L-L-L-L-L-W-W-L-W-W-L-L-W-W-W-L-L-W-L-L-W-L-W-W-L-L-L-L-L-W-W-L-W-W-L-W-L-W-L-L-L-W-L-L-W-W-L-L-W-L-L-L-W-L-L-W-L-W-L-W-L-L-L-L-W-W-W-L-L-W-W-L-W-W-W-W-L-W-L-L-L-L-L-L-W-W-L-L-L-W-L-W-W-L-W-W-W-L-L-W-L-W-W-L-W-W-W-W-W-W-W-W-L-L-W-L-L-W-W-L-W-L-L-L-L-L-W-L-W-W-L-W-L-W-L-L-L-W-L-L-W-W-W-"
@@ -194,7 +194,7 @@
         "vs_Team": "Miami Marlins (away)",
         "Series": "MIA leads 2-0",
         "Venue": "Globe Life Field(144)",
-        "WLmc?": "W",
+        "WLmc?": "L",
         "WLmmc?": "L",
         "WLmmc%?": "0.52",
         "Team Record": "L-L-L-L-L-L-W-W-W-W-W-W-L-W-L-L-W-W-W-W-W-W-L-W-W-W-L-W-L-L-W-L-L-L-L-W-L-L-L-L-W-W-L-W-L-L-W-L-L-W-W-W-W-W-W-L-W-W-W-L-W-W-L-W-L-L-W-L-W-W-L-L-W-L-W-W-L-L-W-W-L-L-L-W-W-W-W-L-W-W-W-L-L-L-L-W-L-W-L-W-L-W-L-L-L-L-L-L-W-L-W-W-W-W-W-W-L-L-L-W-W-L-L-L-L-W-L-L-L-W-L-L-W-L-W-L-W-W-W-L-L-L-W-L-L-W-W-W-W-W-L-W-W-W-L-"
@@ -222,9 +222,9 @@
     {
         "Team": "San Francisco Giants",
         "vs_Team": "Los Angeles Dodgers (home)",
-        "Series": "LAD leads 2-0",
+        "Series": "LAD leads 3-0",
         "Venue": "Dodger Stadium(254)",
-        "WLmc?": "W",
+        "WLmc?": "L",
         "WLmmc?": "L",
         "WLmmc%?": "0.55",
         "Team Record": "L-L-L-W-L-L-L-L-W-L-W-W-L-L-W-W-W-W-W-L-W-W-W-W-W-W-L-L-L-L-W-W-L-L-L-L-L-L-L-W-W-W-L-W-L-W-L-L-L-L-L-L-W-W-L-L-L-L-L-L-W-L-W-W-W-W-L-W-W-L-L-L-L-W-L-L-L-W-W-L-W-L-L-L-L-W-L-W-W-W-W-W-W-W-L-L-W-L-W-L-L-L-W-L-W-L-W-L-W-W-W-L-W-L-L-L-L-W-W-L-W-W-W-L-L-L-W-W-L-W-W-L-W-L-W-L-L-W-L-W-W-L-W-W-L-L-W-W-W-W-W-W-W-L-W-"
@@ -232,7 +232,7 @@
     {
         "Team": "Los Angeles Dodgers",
         "vs_Team": "San Francisco Giants (away)",
-        "Series": "LAD leads 2-0",
+        "Series": "LAD leads 3-0",
         "Venue": "Dodger Stadium(254)",
         "WLmc?": "W",
         "WLmmc?": "W",
@@ -242,7 +242,7 @@
     {
         "Team": "Philadelphia Phillies",
         "vs_Team": "Arizona Diamondbacks (home)",
-        "Series": "None",
+        "Series": "Series tied 1-1",
         "Venue": "Chase Field(172)",
         "WLmc?": "W",
         "WLmmc?": "W",
@@ -252,9 +252,9 @@
     {
         "Team": "Arizona Diamondbacks",
         "vs_Team": "Philadelphia Phillies (away)",
-        "Series": "None",
+        "Series": "Series tied 1-1",
         "Venue": "Chase Field(172)",
-        "WLmc?": "W",
+        "WLmc?": "L",
         "WLmmc?": "W",
         "WLmmc%?": "0.56",
         "Team Record": "W-L-L-W-W-W-W-L-W-L-L-L-W-W-W-W-L-L-W-W-W-W-L-L-L-W-W-W-W-L-L-L-L-W-W-W-L-W-W-W-L-L-W-W-W-L-L-L-L-L-L-W-L-L-L-W-W-W-W-L-L-L-W-L-W-L-W-L-L-L-W-W-L-L-L-L-W-W-L-W-W-W-L-L-L-W-W-W-W-W-L-L-L-L-W-W-W-W-L-L-L-L-W-L-L-L-L-L-W-W-L-W-W-L-W-L-W-L-W-L-W-L-W-L-L-W-W-L-W-L-L-L-L-W-W-L-L-W-W-W-W-W-L-W-W-L-L-L-W-L-W-W-W-L-W-L-"
@@ -264,7 +264,7 @@
         "vs_Team": "Houston Astros (home)",
         "Series": "None",
         "Venue": "Daikin Park(192)",
-        "WLmc?": "L",
+        "WLmc?": "W",
         "WLmmc?": "W",
         "WLmmc%?": "0.55",
         "Team Record": "W-W-W-L-W-W-W-W-W-W-W-W-W-W-L-L-L-L-W-L-L-W-L-W-W-L-W-L-L-L-L-L-W-L-L-W-W-W-W-W-W-W-W-L-W-W-L-L-W-L-W-L-W-L-W-L-L-W-W-W-W-W-L-L-L-W-W-W-L-W-L-W-W-L-W-L-L-W-W-W-L-W-L-W-L-W-W-W-L-L-L-W-L-L-L-L-L-W-W-L-L-L-W-L-L-W-L-W-L-W-W-W-W-L-W-L-L-L-L-W-W-L-L-W-W-W-W-W-W-L-W-W-L-W-W-L-W-W-L-W-W-W-W-L-W-L-L-L-W-L-L-W-L-L-W-"
