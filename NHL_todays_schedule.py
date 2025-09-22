@@ -15,7 +15,7 @@ def format_schedule(schedule):
     formatted_lines = []
     for row in schedule:
         date, time, away, home = row
-        formatted_line = f"{date} {time} EDT - {away:<20} @ {home:<20} (Scheduled)"
+        formatted_line = f"{date} {time:<8} EDT - {away:<20} @ {home:<20}"
         formatted_lines.append(formatted_line)
     return formatted_lines
 
@@ -44,4 +44,3 @@ def process_schedule():
 
     # Save the formatted schedule to the text file
     file_operations.save_text(formatted_schedule, 'NHL_todays_schedule')
-

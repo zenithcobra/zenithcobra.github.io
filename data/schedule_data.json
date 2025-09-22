@@ -4,7 +4,7 @@
         "game_datetime": "2025-09-22T23:15:00Z",
         "game_date": "2025-09-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Washington Nationals",
         "home_name": "Atlanta Braves",
         "away_id": 120,
@@ -15,17 +15,17 @@
         "away_probable_pitcher": "MacKenzie Gore",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [
             "MLBN (out-of-market only)"
         ],
         "series_status": null,
-        "summary": "2025-09-22 - Washington Nationals @ Atlanta Braves (Scheduled)"
+        "summary": "2025-09-22 - Washington Nationals @ Atlanta Braves (Pre-Game)"
     },
     {
         "game_id": 776222,
