@@ -6,11 +6,11 @@ import os
 from datetime import datetime
 
 # Directories
-DATA_DIR = "data2"
-DOCS_DIR = "docs2"
-TEXT_OUTPUT_DIR = "text_output2"
-ARCHIVED_DATA_DIR = os.path.join(DATA_DIR, "archived_data2")
-ARCHIVED_DOCS_DIR = os.path.join(DOCS_DIR, "archived_data2")
+DATA_DIR = "NHL_data"
+# DOCS_DIR = "docs"
+# TEXT_OUTPUT_DIR = "text_output2"
+ARCHIVED_DATA_DIR = os.path.join(DATA_DIR, "archived_nhl_data")
+# ARCHIVED_DOCS_DIR = os.path.join(DOCS_DIR, "archived_data2")
 
 # File paths
 BALLPARK_DATA_FILE = os.path.join(DATA_DIR, "ballpark_data.json")
@@ -36,7 +36,7 @@ STANDINGS_TEXT_FILE = os.path.join(DATA_DIR, "standings_text.txt")
 SCHEDULE_TEXT_FILE = os.path.join(DATA_DIR, "schedule_text.txt")
 
 # Output files
-INDEX_HTML_FILE = os.path.join(DOCS_DIR, "index.html")
+# INDEX_HTML_FILE = os.path.join(DOCS_DIR, "index.html")
 
 # Cache settings
 CACHE_EXPIRY_HOURS = 4  # How long to keep cached data
@@ -54,10 +54,10 @@ def ensure_directories():
     """Ensure all required directories exist."""
     directories = [
         DATA_DIR,
-        DOCS_DIR,
-        TEXT_OUTPUT_DIR,
+        # DOCS_DIR,
+        # TEXT_OUTPUT_DIR,
         ARCHIVED_DATA_DIR,
-        ARCHIVED_DOCS_DIR,
+        # ARCHIVED_DOCS_DIR,
     ]
     for directory in directories:
         os.makedirs(directory, exist_ok=True)

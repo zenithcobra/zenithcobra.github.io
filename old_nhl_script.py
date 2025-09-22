@@ -10,7 +10,7 @@ from os.path import isfile, join
 from datetime import datetime
 from dateutil.parser import parse
 from fractions import Fraction
-import stats_helper
+import old_nhl_script
 import statsapi
 
 
@@ -140,7 +140,7 @@ def teams_today_list(date_time_str):
 
 def mlb_teams_today():
     mlb_games_today = []
-    mlb_date = stats_helper.get_current_date_mlb()
+    mlb_date = old_nhl_script.get_current_date_mlb()
     sched = statsapi.schedule(start_date=mlb_date,end_date=mlb_date)
     for x in sched:
         mlb_games_today.append(x.get('away_name'))
@@ -151,7 +151,7 @@ def mlb_teams_today():
 
 def mlb_teams_today_data():
     mlb_games_today = []
-    mlb_date = stats_helper.get_current_date_mlb()
+    mlb_date = old_nhl_script.get_current_date_mlb()
     sched = statsapi.schedule(start_date=mlb_date,end_date=mlb_date)
     for x in sched:
         mlb_games_today.append(x)
@@ -159,7 +159,7 @@ def mlb_teams_today_data():
 
 def get_mlb_teams_today():
     mlb_games_today = []
-    mlb_date = stats_helper.get_current_date_mlb()
+    mlb_date = old_nhl_script.get_current_date_mlb()
     sched = statsapi.schedule(start_date=mlb_date,end_date=mlb_date)
     for x in sched:
         mlb_games_today.append(x.get('away_name'))

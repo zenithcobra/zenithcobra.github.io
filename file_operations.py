@@ -15,8 +15,16 @@ import json
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+from pathlib import Path
+from typing import Optional, Tuple, Union, List, Dict
 
 import config
+
+
+def read_csv(csv_file_path):
+    """read csv to list"""
+    with open(csv_file_path, mode='r') as file:
+        return list(csv.reader(file))
 
 
 def _archive_if_exists(
