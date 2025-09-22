@@ -226,6 +226,58 @@ def get_nhl_team_roster(team) -> Dict[str, Any]:
     return cache.get_or_fetch(cache_key, fetch_standings)
 
 
+def get_nhl_week_schedule_now() -> Dict[str, Any]:
+    """
+    Fetch NHL standings (current) via requests and cache the JSON response.
+
+    Uses:
+    - requests.get with allow_redirects to match `curl -L -X GET`
+    - cache.get_or_fetch to reuse a fresh cached file
+
+    Tune freshness via config.CACHE_EXPIRY_HOURS (in your CacheManager).
+    """
+    cache_key = "nhl_week_schedule"
+
+    def fetch_schedule() -> Dict[str, Any]:
+        url = "https://api-web.nhle.com/v1/schedule/now"
+        resp = requests.get(
+            url,
+            timeout=30,
+            allow_redirects=True,
+            headers={"Accept": "application/json"},
+        )
+        resp.raise_for_status()
+        return resp.json()
+
+    return cache.get_or_fetch(cache_key, fetch_schedule)
+
+def get_nhl_calendar_schedule_now() -> Dict[str, Any]:
+    """
+    Fetch NHL standings (current) via requests and cache the JSON response.
+
+    Uses:
+    - requests.get with allow_redirects to match `curl -L -X GET`
+    - cache.get_or_fetch to reuse a fresh cached file
+
+    Tune freshness via config.CACHE_EXPIRY_HOURS (in your CacheManager).
+    """
+    cache_key = "nhl_calendar_schedule"
+
+    def fetch_schedule() -> Dict[str, Any]:
+        url = "https://api-web.nhle.com/v1/schedule/now"
+        resp = requests.get(
+            url,
+            timeout=30,
+            allow_redirects=True,
+            headers={"Accept": "application/json"},
+        )
+        resp.raise_for_status()
+        return resp.json()
+
+    return cache.get_or_fetch(cache_key, fetch_schedule)
+
+
+
 def get_nhl_team_by_season_type() -> Dict[str, Any]:
     """
     Fetch NHL standings (current) via requests and cache the JSON response.
@@ -278,32 +330,6 @@ def get_nhl_standings_now() -> Dict[str, Any]:
         return resp.json()
 
     return cache.get_or_fetch(cache_key, fetch_standings)
-
-
-def get_nhl_schedule_now() -> Dict[str, Any]:
-    """
-    Fetch NHL standings (current) via requests and cache the JSON response.
-
-    Uses:
-    - requests.get with allow_redirects to match `curl -L -X GET`
-    - cache.get_or_fetch to reuse a fresh cached file
-
-    Tune freshness via config.CACHE_EXPIRY_HOURS (in your CacheManager).
-    """
-    cache_key = "nhl_schedule_now"
-
-    def fetch_schedule() -> Dict[str, Any]:
-        url = "https://api-web.nhle.com/v1/schedule/now"
-        resp = requests.get(
-            url,
-            timeout=30,
-            allow_redirects=True,
-            headers={"Accept": "application/json"},
-        )
-        resp.raise_for_status()
-        return resp.json()
-
-    return cache.get_or_fetch(cache_key, fetch_schedule)
 
 
 def get_nhl_api_leading_skaters() -> Dict[str, Any]:

@@ -25,6 +25,49 @@ from bs4 import BeautifulSoup
 import json
 import numpy as np
 import matplotlib.pyplot as plt
+import file_operations
+import csv
+import json
+from pathlib import Path
+import sys
+from typing import Any, Dict, Iterable
+
+
+
+
+def _get(d: Dict[str, Any], keys: Iterable[str], default: Any = "") -> Any:
+    cur: Any = d
+    for k in keys:
+        if not isinstance(cur, dict) or k not in cur:
+            return default
+        cur = cur[k]
+    return cur
+
+
+def export_schedule_to_csv(data, csv_path1) -> None:
+    HEADERS = ["date", "easternUTCOffset", "gameType", "awayTeamAbbrev", "homeTeamAbbrev"]
+    
+    csv_path = Path(csv_path1)
+    rows = []
+    for week in data.get("gameWeek", []):
+        date = week.get("date", "")
+        for game in week.get("games", []):
+            row = {
+                "date": date,
+                "timeUTC": game.get("startTimeUTC", ""),
+                "gameType": game.get("gameType", ""),
+                "awayTeamAbbrev": _get(game, ("awayTeam", "abbrev")),
+                "homeTeamAbbrev": _get(game, ("homeTeam", "abbrev")),
+            }
+            rows.append(row)
+
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
+    with csv_path.open("w", encoding="utf-8", newline="") as fh:
+        writer = csv.DictWriter(fh, fieldnames=HEADERS)
+        writer.writeheader()
+        writer.writerows(rows)
+
+    print(f"Wrote {len(rows)} rows -> {csv_path}")
 
 
 def _extract_highlight_link(

@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 from pathlib import Path
 from typing import Optional, Tuple, Union, List, Dict
-
+import csv
 import config
 
 
@@ -26,6 +26,42 @@ def read_csv(csv_file_path):
     with open(csv_file_path, mode='r') as file:
         return list(csv.reader(file))
 
+def read_json_file(file_path):
+    """
+    Reads a JSON file containing a list of dictionaries and returns the data.
+
+    Args:
+        file_path (str): The path to the JSON file to be read.
+
+    Returns:
+        list: A list of dictionaries if the file is successfully read and contains valid JSON data.
+        None: If the file does not exist, is not valid JSON, or does not contain a list of dictionaries.
+
+    Raises:
+        FileNotFoundError: If the specified file does not exist.
+        json.JSONDecodeError: If the file contains invalid JSON.
+        ValueError: If the JSON data is not a list of dictionaries.
+
+    Example:
+        >>> data = read_json_file("data.json")
+        >>> if data:
+        ...     for item in data:
+        ...         print(item)
+    """
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            data = json.load(file)
+            if isinstance(data, list) and all(isinstance(item, dict) for item in data):
+                return data
+            else:
+                raise ValueError("The JSON file does not contain a list of dictionaries.")
+    except FileNotFoundError:
+        print(f"Error: The file '{file_path}' was not found.")
+    except json.JSONDecodeError as e:
+        print(f"Error: Failed to decode JSON. {e}")
+    except ValueError as e:
+        print(f"Error: {e}")
+    return None
 
 def _archive_if_exists(
     target_path: Path, archived_dir: Path, base_name: str, ext: str
@@ -110,3 +146,9 @@ def save_to_text(content, supplied_filename):
 def save_to_html(content, supplied_filename):
     """Backward-compatible wrappers (delete old duplicate implementations)"""
     return save_html(content, supplied_filename)
+
+def save_to_csv(csv_lines, headers, file_path):
+    with open(file_path, mode='w', encoding='utf-8', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(headers)  # Write the headers
+        writer.writerows(csv_lines)  # Write the data
