@@ -226,7 +226,7 @@ def process_yesterdays_scores_to_report():
 
         # Process each game
         for i, game in enumerate(data, start=1):
-            report_lines.append(f"\nMATCH {i}:  <a href='{game['condensed_game']}'>Video</a>")
+            report_lines.append(f"\nMATCH {i}:  <a target='_blank' rel='noopener noreferrer' href='{game['condensed_game']}'>Video</a>")
             report_lines.append(f"<b>{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}</b>")
             report_lines.append("GOALS:")
 
@@ -257,33 +257,6 @@ def process_yesterdays_scores_to_report():
         file.write(report)
     print('report generated')
 
-
-
-# def process_raw_skaters_html_table():
-#     """
-#     Reads the NHL skaters CSV file and generates an HTML table.
-
-#     The HTML table is saved to the file path specified in `table_path`.
-
-#     File Paths:
-#     - Input: 'NHL_data/nhl_skaters_2024_2025_regular_latest.csv'
-#     - Output: 'NHL_data/skaters_table.html'
-#     """
-#     # File paths
-#     csv_path = "NHL_data/nhl_skaters_2024_2025_regular_latest.csv"
-#     table_path = "NHL_data/skaters_table.html"
-
-#     # Read the CSV file into a DataFrame
-#     df = pd.read_csv(csv_path)
-
-#     # Generate the HTML table
-#     html_table = df.to_html(index=False, classes="table table-striped", border=0)
-
-#     # Save the HTML table to the specified file
-#     with open(table_path, "w", encoding="utf-8") as file:
-#         file.write(html_table)
-
-#     print(f"HTML table saved to {table_path}")
 
 def process_raw_skaters_html_table():
     """
