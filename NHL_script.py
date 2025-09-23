@@ -1,6 +1,8 @@
 from datetime import datetime
 from pathlib import Path
 import file_operations
+import NHL_data_fetcher
+import config
 from cache_manager import CacheManager
 
 
@@ -94,3 +96,162 @@ def process_schedule():
 
     # Save the formatted schedule to the text file
     file_operations.save_text(formatted_schedule, "NHL_todays_schedule")
+
+def process_yesterdays_scores_to_report():
+    nhl = NHL_data_fetcher.get_nhl_yesterdays_scores()
+
+    import json
+    from pathlib import Path
+
+    # File paths
+    # input_file = 'NHL_data/nhl_yesterdays_scores.json'
+    output_dir = 'NHL_data/daily_scores'
+
+    # Function to process the JSON data
+    def process_scores(input_file, output_dir):
+        data = input_file
+
+        # Extract the date for the output file name
+        # yesterdays_date = data.get("currentDate", "unknown_date")
+        yesterdays_date = config.get_yesterday_NHL()
+
+        # Prepare the output file path
+        output_file = Path(output_dir) / f"NHL_scores_{yesterdays_date}.json"
+
+        # Ensure the output directory exists
+        Path(output_dir).mkdir(parents=True, exist_ok=True)
+
+        # Extract and format the games data
+        formatted_games = []
+        for game in data.get("games", []):
+            home_team = game["homeTeam"]["name"]["default"]
+            away_team = game["awayTeam"]["name"]["default"]
+            home_score = game["homeTeam"]["score"]
+            away_score = game["awayTeam"]["score"]
+            winner = home_team if home_score > away_score else away_team
+            condensed_game = game.get("condensedGame", "")
+            condensed_game = "https://www.nhl.com"+condensed_game
+
+            # Extract goals data
+            goals = []
+            for goal in game.get("goals", []):
+                goal_data = {
+                    "player_id":goal['playerId'],
+                    "name": f"{goal['firstName']['default']} {goal['lastName']['default']}",
+                    "team": goal['teamAbbrev'],
+                    "goals_to_date": goal.get("goalsToDate",None),
+                    "assists": [
+                        {
+                            "name": assist["name"]["default"],
+                            "assists_to_date": assist["assistsToDate"],
+                            "player_id": assist["playerId"]
+                        }
+                        for assist in goal.get("assists", [])
+                    ]
+                }
+                goals.append(goal_data)
+
+            # Add the formatted game data
+            formatted_games.append({
+                "date": yesterdays_date,
+                "home_team": home_team,
+                "away_team": away_team,
+                "home_score": home_score,
+                "away_score": away_score,
+                "winner": winner,
+                "condensed_game": condensed_game,
+                "goals": goals
+            })
+
+        # Save the formatted data to the output file
+        with open(output_file, 'w', encoding='utf-8') as file:
+            json.dump(formatted_games, file, indent=4)
+
+        print(f"Processed scores saved to {output_file}")
+
+        return formatted_games
+
+        
+    def generate_hockey_reference_link(name):
+        """
+        Generates a Hockey Reference player link based on the player's name.
+
+        Args:
+            name (str): The player's full name in the format "FirstName LastName".
+
+        Returns:
+            str: The Hockey Reference player link.
+        """
+        # Split the name into first and last names
+        try:
+            first_name, last_name = name.split(" ")
+        except ValueError:
+            return "Invalid name format. Expected 'FirstName LastName'."
+
+        # Extract the first letter of the last name
+        last_name_initial = last_name[0].lower()
+
+        # Extract the first two letters of the first name
+        first_name_initials = first_name[:2].lower()
+
+        # Format the link
+        link = f"https://www.hockey-reference.com/players/{last_name_initial}/{last_name[:5].lower()}{first_name_initials}01.html"
+
+        return link
+
+    def make_report(data):
+        """
+        Processes a JSON string of NHL scores and generates a text report.
+
+        Args:
+            json_string (str): JSON string containing NHL scores data.
+
+        Returns:
+            str: A formatted text report of the games and their details.
+        """
+        # import json
+
+        # # Parse the JSON string
+        # data = json.loads(json_string)
+
+        # Initialize the report
+        report_lines = []
+
+        # Extract the date from the first game (assuming all games are from the same date)
+        if data:
+            report_lines.append(f"DATE: {data[0]['date']}")
+        else:
+            return "No games available to report."
+
+        # Process each game
+        for i, game in enumerate(data, start=1):
+            report_lines.append(f"\nMATCH {i}:  <a href='{game['condensed_game']}'>Video</a>")
+            report_lines.append(f"<b>{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}</b>")
+            report_lines.append("GOALS:")
+
+            # Process each goal
+            for goal in game.get("goals", []):
+                player_link = generate_hockey_reference_link(goal['name'])
+                report_lines.append(f"- Name: <a target='_blank' rel='noopener noreferrer' href='{player_link}'>{goal['name']}</a>")
+                report_lines.append(f"  Team: {goal['team']}")
+                report_lines.append(f"  Goals to date: {goal.get('goals_to_date', 'N/A')}")
+                report_lines.append("  Assists to Goal:")
+                for assist in goal.get("assists", []):
+                    report_lines.append(f"    - Name: {assist['name']}, Assists to date: {assist.get('assists_to_date', 'N/A')}")
+
+        # Join the report lines into a single string
+        return "\n".join(report_lines)
+
+    # Run the function
+    yesterdays_scores = process_scores(nhl, output_dir)
+
+    # Generate the report
+    report = make_report(yesterdays_scores)
+
+    # Print the report
+    # print(report)
+
+    # Optionally, save the report to a text file
+    with open("NHL_data/NHL_yesterdays_scores.txt", "w") as file:
+        file.write(report)
+    print('report generated')

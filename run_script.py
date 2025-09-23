@@ -102,3 +102,4 @@ index_html = script.make_index()
 # script.save_to_html(processed_html,'index')
 
 NHL_script.process_schedule()
+NHL_script.process_yesterdays_scores_to_report()
