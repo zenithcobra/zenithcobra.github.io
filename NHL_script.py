@@ -33,7 +33,7 @@ def format_schedule(schedule):
         # Wrap "Toronto Maple Leafs" with the styled <b> tag
         formatted_line = formatted_line.replace(
             "Toronto Maple Leafs", 
-            '<b style="color: #082760;">Toronto Maple Leafs</b>'
+            '<b style="color: #5A62FF;">Toronto Maple Leafs</b>'
         )
         
         formatted_lines.append(formatted_line)
