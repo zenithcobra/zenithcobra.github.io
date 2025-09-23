@@ -8,17 +8,37 @@ import pandas as pd
 
 
 # Function to format the schedule into the desired text format
+# def format_schedule(schedule):
+#     """
+#     Takes the schedule and makes a array of lines formatted for a txt file.
+#     """
+#     formatted_lines = []
+#     for row in schedule:
+#         date, time, away, home = row
+#         formatted_line = f"{date} {time:<8} EDT - {away:<22} @ {home:<25}"
+#         formatted_lines.append(formatted_line)
+    
+    
+#     return formatted_lines
 def format_schedule(schedule):
     """
-    Takes the schedule and makes a array of lines formatted for a txt file.
+    Takes the schedule and makes an array of lines formatted for a txt file.
+    If "Toronto Maple Leafs" exists in a line, it wraps it in a styled <b> tag.
     """
     formatted_lines = []
     for row in schedule:
         date, time, away, home = row
         formatted_line = f"{date} {time:<8} EDT - {away:<22} @ {home:<25}"
+        
+        # Wrap "Toronto Maple Leafs" with the styled <b> tag
+        formatted_line = formatted_line.replace(
+            "Toronto Maple Leafs", 
+            '<b style="color: #082760;">Toronto Maple Leafs</b>'
+        )
+        
         formatted_lines.append(formatted_line)
+    
     return formatted_lines
-
 
 # Main function to handle the schedule processing
 def process_schedule():
