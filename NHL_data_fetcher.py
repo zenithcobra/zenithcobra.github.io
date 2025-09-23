@@ -142,7 +142,7 @@ def get_nhl_skaters_2024_2025_csv() -> str:
     os.makedirs(config.DATA_DIR, exist_ok=True)
     os.makedirs(os.path.join(config.DATA_DIR, daily_dir), exist_ok=True)
 
-    expiry_hours = getattr(config, "CACHE_EXPIRY_HOURS", 12)
+    expiry_hours = getattr(config, "CACHE_EXPIRY_HOURS", 4)
 
     latest_path = os.path.join(config.DATA_DIR, f"{latest_key}.csv")
 
@@ -251,6 +251,7 @@ def get_nhl_week_schedule_now() -> Dict[str, Any]:
 
     return cache.get_or_fetch(cache_key, fetch_schedule)
 
+
 def get_nhl_calendar_schedule_now() -> Dict[str, Any]:
     """
     Fetch NHL standings (current) via requests and cache the JSON response.
@@ -276,6 +277,32 @@ def get_nhl_calendar_schedule_now() -> Dict[str, Any]:
 
     return cache.get_or_fetch(cache_key, fetch_schedule)
 
+
+def get_nhl_yesterdays_scores() -> Dict[str, Any]:
+    """
+    Fetch NHL standings (current) via requests and cache the JSON response.
+
+    Uses:
+    - requests.get with allow_redirects to match `curl -L -X GET`
+    - cache.get_or_fetch to reuse a fresh cached file
+
+    Tune freshness via config.CACHE_EXPIRY_HOURS (in your CacheManager).
+    """
+    yesterdays_date = config.get_yesterday_NHL()
+    cache_key = f"nhl_yesterdays_scores"
+
+    def fetch_schedule() -> Dict[str, Any]:
+        url = f"https://api-web.nhle.com/v1/score/{yesterdays_date}"
+        resp = requests.get(
+            url,
+            timeout=30,
+            allow_redirects=True,
+            headers={"Accept": "application/json"},
+        )
+        resp.raise_for_status()
+        return resp.json()
+
+    return cache.get_or_fetch(cache_key, fetch_schedule)
 
 
 def get_nhl_team_by_season_type() -> Dict[str, Any]:

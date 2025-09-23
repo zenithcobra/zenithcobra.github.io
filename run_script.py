@@ -1,6 +1,6 @@
 import importlib
 import script
-import NHL_todays_schedule
+import NHL_script
 
 # Reload the script after making changes
 importlib.reload(script)
@@ -101,4 +101,4 @@ index_html = script.make_index()
 # print(processed_html)
 # script.save_to_html(processed_html,'index')
 
-NHL_todays_schedule.process_schedule()
+NHL_script.process_schedule()

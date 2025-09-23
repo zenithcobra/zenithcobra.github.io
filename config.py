@@ -3,13 +3,15 @@ Configuration settings for MLB analysis application
 """
 
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # Directories
 DATA_DIR = "NHL_data"
 # DOCS_DIR = "docs"
 # TEXT_OUTPUT_DIR = "text_output2"
 ARCHIVED_DATA_DIR = os.path.join(DATA_DIR, "archived_nhl_data")
+DAILY_SKATERS_DIR = os.path.join(DATA_DIR, "daily_skaters")
+DAILY_SCORES_DIR = os.path.join(DATA_DIR, "daily_scores")
 # ARCHIVED_DOCS_DIR = os.path.join(DOCS_DIR, "archived_data2")
 
 # File paths
@@ -58,6 +60,8 @@ def ensure_directories():
         # TEXT_OUTPUT_DIR,
         ARCHIVED_DATA_DIR,
         # ARCHIVED_DOCS_DIR,
+        DAILY_SKATERS_DIR,
+        DAILY_SCORES_DIR
     ]
     for directory in directories:
         os.makedirs(directory, exist_ok=True)
@@ -87,3 +91,20 @@ def get_yesterday(date_str):
     yesterday = date - timedelta(days=1)
     # Return the formatted date
     return yesterday.strftime("%m/%d/%Y")
+
+
+def get_yesterday_NHL():
+    """
+    Gets the date previous to the one supplied.
+    Args:
+        date_str (str): A date string formatted as 'MM/DD/YYYY'.
+    Returns:
+        str: The previous date formatted as 'MM/DD/YYYY'.
+    """
+    date_str = get_current_date()
+    # Convert the input date string to a datetime object
+    date = datetime.strptime(date_str, "%m/%d/%Y")
+    # Subtract one day
+    yesterday = date - timedelta(days=1)
+    # Return the formatted date
+    return yesterday.strftime("%Y-%m-%d")
