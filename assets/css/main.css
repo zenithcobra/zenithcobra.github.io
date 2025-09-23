@@ -3892,3 +3892,23 @@ body.dark-mode #game-area {
 #header nav ul li a[href="#menu"]:hover:after {
 	opacity: 0 !important;
 }
+
+/* Light mode link color */
+body.light-mode a {
+	color: #3F48CC;
+}
+
+body.light-mode a:hover {
+	color: #2E38A3;
+	/* Slightly darker blue for hover effect */
+}
+
+/* Dark mode link color */
+body.dark-mode a {
+	color: #3F48CC;
+}
+
+body.dark-mode a:hover {
+	color: #2E38A3;
+	/* Slightly darker blue for hover effect */
+}
