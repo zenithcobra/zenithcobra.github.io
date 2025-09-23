@@ -22,7 +22,7 @@ def format_schedule(schedule):
 # Main function to handle the schedule processing
 def process_schedule():
     # Check if the cache is valid for today
-    if cache.is_cache_valid(output_file, expiry_hours=24):
+    if cache.is_cache_valid(output_file, expiry_hours=4):
         print(f"Today's schedule is already cached: {output_file}")
         return
 
