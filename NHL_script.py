@@ -15,7 +15,7 @@ def format_schedule(schedule):
     formatted_lines = []
     for row in schedule:
         date, time, away, home = row
-        formatted_line = f"{date} {time:<8} EDT - {away:<25} @ {home:<25}"
+        formatted_line = f"{date} {time:<8} EDT - {away:<22} @ {home:<25}"
         formatted_lines.append(formatted_line)
     return formatted_lines
 
