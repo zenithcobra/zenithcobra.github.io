@@ -244,21 +244,41 @@ def process_yesterdays_scores_to_report():
         else:
             return "No games available to report."
 
+        # # Process each game
+        # for i, game in enumerate(data, start=1):
+        #     report_lines.append(f"\nMATCH {i}:  <a target='_blank' rel='noopener noreferrer' href='{game['condensed_game']}'>Video</a>")
+        #     report_lines.append(f"<b>{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}</b>")
+        #     report_lines.append("GOALS:")
+
+        #     # Process each goal
+        #     for goal in game.get("goals", []):
+        #         player_link = generate_hockey_reference_link(goal['name'])
+        #         report_lines.append(f"- Name: <a target='_blank' rel='noopener noreferrer' href='{player_link}'>{goal['name']}</a>")
+        #         report_lines.append(f"  Team: {goal['team']}")
+        #         report_lines.append(f"  Goals to date: {goal.get('goals_to_date', 'N/A')}")
+        #         report_lines.append("  Assists to Goal:")
+        #         for assist in goal.get("assists", []):
+        #             report_lines.append(f"    - Name: {assist['name']}, Assists to date: {assist.get('assists_to_date', 'N/A')}")
         # Process each game
         for i, game in enumerate(data, start=1):
-            report_lines.append(f"\nMATCH {i}:  <a target='_blank' rel='noopener noreferrer' href='{game['condensed_game']}'>Video</a>")
-            report_lines.append(f"<b>{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}</b>")
-            report_lines.append("GOALS:")
+            # Add match header with video link
+            report_lines.append(f"\nMATCH {i}:              Video")
+            report_lines.append(f"{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}\n")
+            report_lines.append("  GOALS:\n")
 
             # Process each goal
             for goal in game.get("goals", []):
-                player_link = generate_hockey_reference_link(goal['name'])
-                report_lines.append(f"- Name: <a target='_blank' rel='noopener noreferrer' href='{player_link}'>{goal['name']}</a>")
-                report_lines.append(f"  Team: {goal['team']}")
-                report_lines.append(f"  Goals to date: {goal.get('goals_to_date', 'N/A')}")
-                report_lines.append("  Assists to Goal:")
+                # Add goal scorer details
+                report_lines.append(f"  {goal['team']} {goal['name']}   G2D: {goal.get('goals_to_date', 'N/A')}")
+                report_lines.append("      Assists")
+
+                # Add assist details
                 for assist in goal.get("assists", []):
-                    report_lines.append(f"    - Name: {assist['name']}, Assists to date: {assist.get('assists_to_date', 'N/A')}")
+                    report_lines.append(f"    - {assist['name']}  A2D: {assist.get('assists_to_date', 'N/A')}")
+
+            # Add a blank line after each game's goals
+            report_lines.append("")
+
 
         # Join the report lines into a single string
         return "\n".join(report_lines)
