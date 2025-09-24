@@ -260,24 +260,26 @@ def process_yesterdays_scores_to_report():
         #         for assist in goal.get("assists", []):
         #             report_lines.append(f"    - Name: {assist['name']}, Assists to date: {assist.get('assists_to_date', 'N/A')}")
         # Process each game
+        # Process each game
         for i, game in enumerate(data, start=1):
             # Add match header with video link
-            report_lines.append(f"\nMATCH {i}:              Video")
+            report_lines.append(f"MATCH {i}:              Video")
             report_lines.append(f"{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}\n")
             report_lines.append("  GOALS:\n")
 
             # Process each goal
             for goal in game.get("goals", []):
                 # Add goal scorer details
-                report_lines.append(f"  {goal['team']} {goal['name']}   G2D: {goal.get('goals_to_date', 'N/A')}")
-                report_lines.append("      Assists")
+                report_lines.append(f"  {goal['team'].ljust(3)} {goal['name'].ljust(20)} G2D: {str(goal.get('goals_to_date', 'N/A')).ljust(2)}")
+                report_lines.append("  Assists")
 
                 # Add assist details
                 for assist in goal.get("assists", []):
-                    report_lines.append(f"    - {assist['name']}  A2D: {assist.get('assists_to_date', 'N/A')}")
+                    report_lines.append(f"    {assist['name'].ljust(20)} A2D: {assist.get('assists_to_date', 'N/A')}")
 
-            # Add a blank line after each game's goals
-            report_lines.append("")
+                # Add a blank line after each goal
+                report_lines.append("")
+
 
 
         # Join the report lines into a single string
