@@ -1,103 +1,143 @@
 [
     {
+        "Team": "Washington Nationals",
+        "vs_Team": "Atlanta Braves (home)",
+        "Series": "None",
+        "Venue": "Truist Park(185)",
+        "WLmc?": "L",
+        "WLmmc?": "L",
+        "WLmmc%?": "0.62",
+        "Team Record": "L-L-W-W-L-L-L-L-W-L-W-L-L-W-W-W-W-L-W-W-W-L-L-L-L-L-L-L-L-W-W-W-L-L-W-L-W-W-L-L-W-W-L-L-W-L-L-L-L-L-L-W-W-W-L-L-W-W-L-W-L-L-L-L-L-W-L-L-L-L-W-W-W-L-W-L-L-W-L-W-L-W-L-L-L-L-L-L-L-L-L-L-L-W-L-W-L-L-W-W-W-W-L-L-W-L-W-W-W-W-W-L-W-L-L-L-L-L-L-W-W-W-L-W-L-L-L-W-L-W-L-W-W-W-W-L-L-W-L-L-L-W-L-W-W-W-W-L-L-L-L-W-L-L-"
+    },
+    {
+        "Team": "Atlanta Braves",
+        "vs_Team": "Washington Nationals (away)",
+        "Series": "None",
+        "Venue": "Truist Park(185)",
+        "WLmc?": "W",
+        "WLmmc?": "L",
+        "WLmmc%?": "0.55",
+        "Team Record": "W-W-W-W-W-W-W-W-W-L-L-L-L-W-L-L-W-W-L-L-W-L-L-L-W-W-L-W-L-L-W-W-L-W-W-W-W-W-L-W-W-L-W-L-L-L-W-W-L-W-L-L-W-L-L-L-L-L-W-L-L-W-L-W-W-L-W-L-L-L-L-L-W-L-L-W-L-L-L-W-W-L-W-L-W-W-W-L-W-W-W-L-W-L-L-L-L-L-L-L-W-L-W-L-L-W-L-L-L-W-L-W-W-L-W-W-L-W-L-W-L-W-W-W-L-L-L-W-W-L-W-W-W-L-W-W-W-W-L-L-W-L-W-L-W-L-W-L-W-L-L-L-L-L-L-L-"
+    },
+    {
+        "Team": "Milwaukee Brewers",
+        "vs_Team": "San Diego Padres (home)",
+        "Series": "SD leads 2-0",
+        "Venue": "Petco Park(152)",
+        "WLmc?": "L",
+        "WLmmc?": "W",
+        "WLmmc%?": "0.54",
+        "Team Record": "L-L-L-W-L-W-W-W-L-W-W-L-L-L-W-W-W-L-W-L-L-W-W-L-L-W-W-L-L-W-W-L-L-L-W-W-W-W-W-W-W-W-W-W-W-W-W-W-L-W-W-W-L-L-W-L-W-W-W-W-W-W-W-W-W-W-W-L-W-L-L-L-W-W-W-W-L-W-W-W-W-L-W-L-W-W-L-W-L-L-W-L-W-L-W-W-W-W-W-W-W-W-L-L-W-L-W-W-W-L-L-W-L-L-W-L-L-L-W-W-W-L-L-L-W-W-W-L-L-L-L-W-L-W-L-W-W-W-L-L-L-W-L-W-W-W-L-W-W-W-W-L-L-L-L-"
+    },
+    {
+        "Team": "San Diego Padres",
+        "vs_Team": "Milwaukee Brewers (away)",
+        "Series": "SD leads 2-0",
+        "Venue": "Petco Park(152)",
+        "WLmc?": "L",
+        "WLmmc?": "W",
+        "WLmmc%?": "0.56",
+        "Team Record": "W-W-W-W-L-L-W-L-W-W-L-W-L-L-W-W-W-L-L-L-L-L-W-L-L-W-L-L-W-W-W-W-W-L-L-L-L-W-W-W-W-W-L-W-W-L-W-L-W-W-W-W-W-W-L-L-L-L-W-W-L-W-L-W-W-W-L-W-L-W-L-W-W-L-L-W-L-W-W-L-W-W-L-W-L-L-L-W-L-L-L-W-L-W-L-W-L-L-W-W-W-L-W-L-W-W-W-L-W-L-L-L-L-L-L-W-W-L-L-W-W-L-L-W-W-W-W-W-W-L-L-L-L-W-L-W-L-L-W-L-W-W-W-W-W-L-W-W-L-L-W-W-W-W-W-W-W-"
+    },
+    {
         "Team": "Tampa Bay Rays",
         "vs_Team": "Baltimore Orioles (home)",
         "Series": "None",
-        "Venue": "Oriole Park at Camden Yards(222)",
-        "WLmc?": "W",
-        "WLmmc?": "W",
-        "WLmmc%?": "0.51",
-        "Team Record": "W-L-L-W-W-L-L-L-W-L-L-L-W-L-L-L-W-W-W-W-W-W-W-L-L-W-W-W-L-L-L-L-W-W-W-L-W-L-L-L-W-W-L-L-W-L-L-L-L-W-L-L-L-L-W-L-L-W-W-L-L-L-L-W-L-L-W-L-L-W-L-L-L-W-L-W-W-W-L-W-W-L-W-L-W-W-W-W-L-L-W-W-L-W-W-W-W-L-W-L-W-W-L-W-W-W-W-W-W-L-L-W-L-W-L-W-L-W-W-L-L-L-W-W-L-L-L-L-W-W-W-W-W-L-L-W-L-L-L-L-W-W-L-W-L-W-L-L-L-L-L-W-W-W-L-W-"
+        "Venue": "Oriole Park at Camden Yards(223)",
+        "WLmc?": "L",
+        "WLmmc?": "L",
+        "WLmmc%?": "0.54",
+        "Team Record": "L-W-L-L-W-W-L-L-L-W-L-L-L-W-L-L-L-W-W-W-W-W-W-W-L-L-W-W-W-L-L-L-L-W-W-W-L-W-L-L-L-W-W-L-L-W-L-L-L-L-W-L-L-L-L-W-L-L-W-W-L-L-L-L-W-L-L-W-L-L-W-L-L-L-W-L-W-W-W-L-W-W-L-W-L-W-W-W-W-L-L-W-W-L-W-W-W-W-L-W-L-W-W-L-W-W-W-W-W-W-L-L-W-L-W-L-W-L-W-W-L-L-L-W-W-L-L-L-L-W-W-W-W-W-L-L-W-L-L-L-L-W-W-L-W-L-W-L-L-L-L-L-W-W-W-L-W-"
     },
     {
         "Team": "Baltimore Orioles",
         "vs_Team": "Tampa Bay Rays (away)",
         "Series": "None",
-        "Venue": "Oriole Park at Camden Yards(222)",
+        "Venue": "Oriole Park at Camden Yards(223)",
         "WLmc?": "W",
         "WLmmc?": "L",
-        "WLmmc%?": "0.53",
-        "Team Record": "L-L-W-L-W-W-W-L-L-L-W-W-W-L-W-W-W-W-W-L-W-L-L-L-L-L-W-L-L-L-W-W-W-L-W-W-W-L-L-L-W-W-L-L-L-W-L-L-W-W-W-W-L-W-L-L-L-W-L-L-L-L-W-W-L-W-W-W-L-L-W-W-L-W-L-L-W-L-L-W-W-L-W-L-W-W-W-L-W-L-L-W-L-W-W-W-W-W-W-L-L-W-W-W-W-L-L-L-L-L-L-L-W-L-W-L-L-L-L-L-W-W-L-W-L-L-W-L-L-L-W-L-W-W-L-L-W-L-L-W-L-W-L-L-L-W-L-W-L-W-"
+        "WLmmc%?": "0.54",
+        "Team Record": "W-L-L-W-L-W-W-W-L-L-L-W-W-W-L-W-W-W-W-W-L-W-L-L-L-L-L-W-L-L-L-W-W-W-L-W-W-W-L-L-L-W-W-L-L-L-W-L-L-W-W-W-W-L-W-L-L-L-W-L-L-L-L-W-W-L-W-W-W-L-L-W-W-L-W-L-L-W-L-L-W-W-L-W-L-W-W-W-L-W-L-L-W-L-W-W-W-W-W-W-L-L-W-W-W-W-L-L-L-L-L-L-L-W-L-W-L-L-L-L-L-W-W-L-W-L-L-W-L-L-L-W-L-W-W-L-L-W-L-L-W-L-W-L-L-L-W-L-W-L-W-"
     },
     {
         "Team": "Detroit Tigers",
         "vs_Team": "Cleveland Guardians (home)",
         "Series": "None",
-        "Venue": "Progressive Field(152)",
-        "WLmc?": "W",
+        "Venue": "Progressive Field(153)",
+        "WLmc?": "L",
         "WLmmc?": "W",
-        "WLmmc%?": "0.54",
-        "Team Record": "L-L-L-L-L-L-W-L-L-L-W-W-L-W-L-W-L-L-W-L-W-L-L-L-L-W-W-W-W-W-L-W-W-W-W-L-W-W-L-W-L-L-W-L-W-L-W-W-W-W-L-L-L-L-L-L-W-L-L-L-L-L-L-W-W-W-W-W-L-L-W-W-L-W-L-W-W-L-L-W-W-L-L-W-W-L-W-W-L-W-L-W-L-W-W-L-W-W-W-W-W-L-L-L-W-W-L-W-L-W-W-W-W-L-L-W-W-W-W-L-W-W-W-L-L-W-W-W-L-W-L-W-W-W-L-L-W-L-W-W-L-W-W-W-W-W-L-W-W-L-L-L-"
+        "WLmmc%?": "0.53",
+        "Team Record": "L-L-L-L-L-L-L-W-L-L-L-W-W-L-W-L-W-L-L-W-L-W-L-L-L-L-W-W-W-W-W-L-W-W-W-W-L-W-W-L-W-L-L-W-L-W-L-W-W-W-W-L-L-L-L-L-L-W-L-L-L-L-L-L-W-W-W-W-W-L-L-W-W-L-W-L-W-W-L-L-W-W-L-L-W-W-L-W-W-L-W-L-W-L-W-W-L-W-W-W-W-W-L-L-L-W-W-L-W-L-W-W-W-W-L-L-W-W-W-W-L-W-W-W-L-L-W-W-W-L-W-L-W-W-W-L-L-W-L-W-W-L-W-W-W-W-W-L-W-W-L-L-L-"
     },
     {
         "Team": "Cleveland Guardians",
         "vs_Team": "Detroit Tigers (away)",
         "Series": "None",
-        "Venue": "Progressive Field(152)",
-        "WLmc?": "W",
-        "WLmmc?": "L",
-        "WLmmc%?": "0.55",
-        "Team Record": "L-W-W-W-W-W-W-W-W-W-L-W-W-W-W-W-L-W-L-L-L-W-W-W-W-L-L-L-L-L-L-W-L-L-L-W-L-W-L-W-W-W-W-W-L-W-W-W-W-L-L-W-L-W-W-W-W-L-W-W-W-L-W-W-W-L-L-L-L-L-L-L-L-L-L-W-L-W-W-L-L-W-W-L-L-L-W-L-L-W-L-L-L-W-L-W-W-L-W-L-L-L-W-W-W-L-W-L-L-L-L-L-W-W-L-L-W-W-L-W-W-L-W-W-W-L-L-L-L-W-W-W-W-W-L-L-W-L-W-W-W-W-W-L-L-W-L-L-L-W-L-W-"
+        "Venue": "Progressive Field(153)",
+        "WLmc?": "L",
+        "WLmmc?": "W",
+        "WLmmc%?": "0.59",
+        "Team Record": "W-L-W-W-W-W-W-W-W-W-W-L-W-W-W-W-W-L-W-L-L-L-W-W-W-W-L-L-L-L-L-L-W-L-L-L-W-L-W-L-W-W-W-W-W-L-W-W-W-W-L-L-W-L-W-W-W-W-L-W-W-W-L-W-W-W-L-L-L-L-L-L-L-L-L-L-W-L-W-W-L-L-W-W-L-L-L-W-L-L-W-L-L-L-W-L-W-W-L-W-L-L-L-W-W-W-L-W-L-L-L-L-L-W-W-L-L-W-W-L-W-W-L-W-W-W-L-L-L-L-W-W-W-W-W-L-L-W-L-W-W-W-W-W-L-L-W-L-L-L-W-L-W-"
     },
     {
         "Team": "Pittsburgh Pirates",
         "vs_Team": "Cincinnati Reds (home)",
         "Series": "None",
-        "Venue": "Great American Ball Park(186)",
-        "WLmc?": "L",
+        "Venue": "Great American Ball Park(188)",
+        "WLmc?": "W",
         "WLmmc?": "L",
         "WLmmc%?": "0.52",
-        "Team Record": "W-W-L-L-L-L-L-W-L-L-L-L-L-L-L-W-W-W-L-W-W-L-W-W-L-W-W-W-W-L-W-L-L-W-L-L-L-L-L-W-W-L-L-W-W-L-L-W-W-W-W-W-L-W-W-W-L-L-L-W-L-L-L-L-L-L-L-L-W-W-W-W-W-W-L-L-W-W-L-L-L-L-L-L-W-L-W-L-W-W-W-W-L-W-L-L-W-L-W-W-L-L-W-W-L-W-W-L-L-L-L-W-L-L-W-L-W-L-L-L-L-L-L-L-W-L-L-L-W-L-W-W-L-L-L-W-W-L-W-L-L-L-W-L-W-W-L-L-W-L-L-L-L-W-L-"
+        "Team Record": "W-W-W-L-L-L-L-L-W-L-L-L-L-L-L-L-W-W-W-L-W-W-L-W-W-L-W-W-W-W-L-W-L-L-W-L-L-L-L-L-W-W-L-L-W-W-L-L-W-W-W-W-W-L-W-W-W-L-L-L-W-L-L-L-L-L-L-L-L-W-W-W-W-W-W-L-L-W-W-L-L-L-L-L-L-W-L-W-L-W-W-W-W-L-W-L-L-W-L-W-W-L-L-W-W-L-W-W-L-L-L-L-W-L-L-W-L-W-L-L-L-L-L-L-L-W-L-L-L-W-L-W-W-L-L-L-W-W-L-W-L-L-L-W-L-W-W-L-L-W-L-L-L-L-W-L-"
     },
     {
         "Team": "Cincinnati Reds",
         "vs_Team": "Pittsburgh Pirates (away)",
         "Series": "None",
-        "Venue": "Great American Ball Park(186)",
-        "WLmc?": "W",
-        "WLmmc?": "W",
-        "WLmmc%?": "0.54",
-        "Team Record": "W-W-W-W-W-L-W-L-L-L-W-W-L-W-W-L-L-L-W-W-L-L-L-L-L-W-L-L-L-W-W-W-L-L-W-W-L-W-W-L-L-L-W-W-L-L-W-L-W-L-L-W-W-W-W-L-L-L-W-W-W-W-L-W-W-L-L-L-L-W-L-W-L-L-W-L-W-L-W-W-W-L-L-L-W-W-W-W-L-L-W-W-W-W-W-W-L-W-L-L-L-W-L-W-W-L-W-L-L-L-W-W-W-W-W-L-L-L-W-L-L-W-L-L-L-L-W-W-L-W-W-W-W-W-L-L-W-L-W-L-L-W-W-W-W-L-W-W-L-W-L-L-L-L-W-L-W-L-"
+        "Venue": "Great American Ball Park(188)",
+        "WLmc?": "L",
+        "WLmmc?": "L",
+        "WLmmc%?": "0.51",
+        "Team Record": "L-W-W-W-W-W-L-W-L-L-L-W-W-L-W-W-L-L-L-W-W-L-L-L-L-L-W-L-L-L-W-W-W-L-L-W-W-L-W-W-L-L-L-W-W-L-L-W-L-W-L-L-W-W-W-W-L-L-L-W-W-W-W-L-W-W-L-L-L-L-W-L-W-L-L-W-L-W-L-W-W-W-L-L-L-W-W-W-W-L-L-W-W-W-W-W-W-L-W-L-L-L-W-L-W-W-L-W-L-L-L-W-W-W-W-W-L-L-L-W-L-L-W-L-L-L-L-W-W-L-W-W-W-W-W-L-L-W-L-W-L-L-W-W-W-W-L-W-W-L-W-L-L-L-L-W-L-W-L-"
     },
     {
         "Team": "Miami Marlins",
         "vs_Team": "Philadelphia Phillies (home)",
         "Series": "None",
-        "Venue": "Citizens Bank Park(199)",
-        "WLmc?": "W",
+        "Venue": "Citizens Bank Park(203)",
+        "WLmc?": "L",
         "WLmmc?": "L",
-        "WLmmc%?": "0.51",
-        "Team Record": "W-W-W-W-W-W-L-W-W-W-W-L-L-W-L-L-L-L-L-W-W-L-W-L-L-W-W-L-L-W-L-L-W-L-L-L-W-L-L-L-W-L-W-L-L-W-W-W-W-W-L-L-W-W-W-W-L-L-W-W-W-W-L-L-L-W-W-L-W-L-W-L-W-W-W-W-W-W-W-W-L-W-L-L-W-L-W-W-W-L-W-L-L-W-L-L-L-L-L-W-L-W-L-L-W-W-L-L-L-W-W-L-W-W-L-L-L-W-L-L-W-L-L-W-L-L-L-L-L-L-W-L-W-W-W-L-L-L-L-L-W-W-L-W-L-L-W-L-L-W-L-W-W-L-W-"
+        "WLmmc%?": "0.5",
+        "Team Record": "W-W-W-W-W-W-W-L-W-W-W-W-L-L-W-L-L-L-L-L-W-W-L-W-L-L-W-W-L-L-W-L-L-W-L-L-L-W-L-L-L-W-L-W-L-L-W-W-W-W-W-L-L-W-W-W-W-L-L-W-W-W-W-L-L-L-W-W-L-W-L-W-L-W-W-W-W-W-W-W-W-L-W-L-L-W-L-W-W-W-L-W-L-L-W-L-L-L-L-L-W-L-W-L-L-W-W-L-L-L-W-W-L-W-W-L-L-L-W-L-L-W-L-L-W-L-L-L-L-L-L-W-L-W-W-W-L-L-L-L-L-W-W-L-W-L-L-W-L-L-W-L-W-W-L-W-"
     },
     {
         "Team": "Philadelphia Phillies",
         "vs_Team": "Miami Marlins (away)",
         "Series": "None",
-        "Venue": "Citizens Bank Park(199)",
-        "WLmc?": "W",
+        "Venue": "Citizens Bank Park(203)",
+        "WLmc?": "L",
         "WLmmc?": "W",
-        "WLmmc%?": "0.61",
-        "Team Record": "L-L-W-L-W-W-L-W-W-W-W-W-W-L-W-W-W-L-W-L-W-W-W-L-L-L-W-W-L-W-W-W-W-L-W-L-L-L-W-W-W-W-L-W-W-W-L-W-L-W-L-L-W-W-L-W-W-L-W-L-W-L-L-W-L-L-W-W-L-L-W-W-L-W-L-L-L-W-L-W-W-W-L-W-W-W-W-W-L-W-L-L-L-L-L-W-L-L-L-L-W-L-W-W-W-W-W-W-W-W-W-W-L-W-W-L-W-W-W-L-W-W-L-W-W-W-W-L-L-L-L-L-W-W-W-L-W-L-L-W-L-L-W-L-W-L-W-W-W-W-L-W-W-"
+        "WLmmc%?": "0.6",
+        "Team Record": "L-L-L-W-L-W-W-L-W-W-W-W-W-W-L-W-W-W-L-W-L-W-W-W-L-L-L-W-W-L-W-W-W-W-L-W-L-L-L-W-W-W-W-L-W-W-W-L-W-L-W-L-L-W-W-L-W-W-L-W-L-W-L-L-W-L-L-W-W-L-L-W-W-L-W-L-L-L-W-L-W-W-W-L-W-W-W-W-W-L-W-L-L-L-L-L-W-L-L-L-L-W-L-W-W-W-W-W-W-W-W-W-W-L-W-W-L-W-W-W-L-W-W-L-W-W-W-W-L-L-L-L-L-W-W-W-L-W-L-L-W-L-L-W-L-W-L-W-W-W-W-L-W-W-"
     },
     {
         "Team": "Chicago White Sox",
         "vs_Team": "New York Yankees (home)",
-        "Series": "None",
-        "Venue": "Yankee Stadium(207)",
-        "WLmc?": "L",
+        "Series": "NYY leads 1-0",
+        "Venue": "Yankee Stadium(208)",
+        "WLmc?": "W",
         "WLmmc?": "L",
-        "WLmmc%?": "0.65",
-        "Team Record": "L-L-W-L-L-L-L-L-L-W-W-L-W-L-W-W-W-W-W-W-L-L-L-L-L-W-W-W-L-L-L-W-L-L-L-L-W-L-W-L-L-L-L-L-L-W-W-W-L-W-L-L-W-W-L-W-W-W-W-L-L-W-W-L-L-L-W-W-L-L-L-W-W-L-W-L-L-W-L-W-L-L-L-L-L-L-L-W-L-W-W-W-L-W-L-L-L-L-W-L-L-L-W-W-L-W-L-L-L-L-L-W-W-W-L-W-L-L-L-L-W-L-W-W-L-L-L-W-L-W-L-L-L-W-L-L-L-L-L-L-W-W-L-L-L-L-L-L-L-L-W-L-L-W-"
+        "WLmmc%?": "0.66",
+        "Team Record": "L-L-L-W-L-L-L-L-L-L-W-W-L-W-L-W-W-W-W-W-W-L-L-L-L-L-W-W-W-L-L-L-W-L-L-L-L-W-L-W-L-L-L-L-L-L-W-W-W-L-W-L-L-W-W-L-W-W-W-W-L-L-W-W-L-L-L-W-W-L-L-L-W-W-L-W-L-L-W-L-W-L-L-L-L-L-L-L-W-L-W-W-W-L-W-L-L-L-L-W-L-L-L-W-W-L-W-L-L-L-L-L-W-W-W-L-W-L-L-L-L-W-L-W-W-L-L-L-W-L-W-L-L-L-W-L-L-L-L-L-L-W-W-L-L-L-L-L-L-L-L-W-L-L-W-"
     },
     {
         "Team": "New York Yankees",
         "vs_Team": "Chicago White Sox (away)",
-        "Series": "None",
-        "Venue": "Yankee Stadium(207)",
-        "WLmc?": "W",
+        "Series": "NYY leads 1-0",
+        "Venue": "Yankee Stadium(208)",
+        "WLmc?": "L",
         "WLmmc?": "W",
         "WLmmc%?": "0.57",
-        "Team Record": "W-W-L-W-W-W-L-L-W-W-W-L-L-W-W-L-W-L-W-L-W-W-W-W-W-W-W-L-L-L-W-W-W-W-W-L-W-W-L-W-L-W-L-L-L-L-L-W-W-W-L-W-L-L-L-W-L-W-W-L-L-L-W-W-W-W-W-L-L-L-L-L-L-W-L-W-W-L-L-W-W-L-W-L-L-L-L-L-L-W-W-W-L-L-W-W-L-W-W-L-L-W-W-W-W-W-L-W-W-W-W-L-W-W-L-W-W-L-W-W-W-L-L-L-W-L-W-L-W-L-W-L-L-W-L-W-W-W-W-W-L-W-L-W-L-L-L-W-W-W-L-L-W-W-W-"
+        "Team Record": "W-W-W-L-W-W-W-L-L-W-W-W-L-L-W-W-L-W-L-W-L-W-W-W-W-W-W-W-L-L-L-W-W-W-W-W-L-W-W-L-W-L-W-L-L-L-L-L-W-W-W-L-W-L-L-L-W-L-W-W-L-L-L-W-W-W-W-W-L-L-L-L-L-L-W-L-W-W-L-L-W-W-L-W-L-L-L-L-L-L-W-W-W-L-L-W-W-L-W-W-L-L-W-W-W-W-W-L-W-W-W-W-L-W-W-L-W-W-L-W-W-W-L-L-L-W-L-W-L-W-L-W-L-L-W-L-W-W-W-W-W-L-W-L-W-L-L-L-W-W-W-L-L-W-W-W-"
     },
     {
         "Team": "Boston Red Sox",
@@ -105,9 +145,9 @@
         "Series": "None",
         "Venue": "Rogers Centre(210)",
         "WLmc?": "L",
-        "WLmmc?": "L",
-        "WLmmc%?": "0.51",
-        "Team Record": "L-W-W-L-W-L-W-L-L-L-W-W-W-L-L-L-W-W-W-L-L-W-W-W-W-L-W-W-W-L-L-L-W-W-L-W-L-L-L-W-L-W-W-W-W-W-W-W-L-W-W-L-W-L-L-W-L-L-W-W-W-W-W-W-W-W-W-W-W-L-W-W-L-W-L-L-L-L-L-L-W-W-L-W-W-W-W-W-W-L-W-W-L-W-L-L-W-L-W-L-L-L-L-L-L-W-W-L-W-L-L-L-L-W-W-L-W-W-L-L-L-W-L-L-W-W-W-L-L-W-W-L-W-W-W-W-L-W-L-L-W-L-L-L-W-W-W-W-L-L-L-L-W-"
+        "WLmmc?": "W",
+        "WLmmc%?": "0.58",
+        "Team Record": "W-L-W-W-L-W-L-W-L-L-L-W-W-W-L-L-L-W-W-W-L-L-W-W-W-W-L-W-W-W-L-L-L-W-W-L-W-L-L-L-W-L-W-W-W-W-W-W-W-L-W-W-L-W-L-L-W-L-L-W-W-W-W-W-W-W-W-W-W-W-L-W-W-L-W-L-L-L-L-L-L-W-W-L-W-W-W-W-W-W-L-W-W-L-W-L-L-W-L-W-L-L-L-L-L-L-W-W-L-W-L-L-L-L-W-W-L-W-W-L-L-L-W-L-L-W-W-W-L-L-W-W-L-W-W-W-W-L-W-L-L-W-L-L-L-W-W-W-W-L-L-L-L-W-"
     },
     {
         "Team": "Toronto Blue Jays",
@@ -116,187 +156,147 @@
         "Venue": "Rogers Centre(210)",
         "WLmc?": "L",
         "WLmmc?": "W",
-        "WLmmc%?": "0.6",
-        "Team Record": "W-L-L-L-L-W-W-W-W-W-W-L-W-L-L-W-W-W-L-W-L-L-W-L-W-L-W-W-L-W-L-L-W-W-W-L-W-W-L-L-W-W-W-L-W-L-W-L-L-L-W-W-W-W-L-W-W-W-W-L-L-W-L-W-W-W-W-W-W-W-W-W-W-L-W-W-L-W-L-W-L-L-W-W-L-L-L-W-W-W-L-W-W-W-W-L-W-W-W-W-W-L-W-L-L-L-W-W-W-L-W-L-L-W-L-W-W-W-W-L-L-L-L-W-W-W-L-L-W-L-L-L-L-L-W-W-W-L-W-L-L-W-W-W-L-L-L-W-W-W-W-L-W-L-"
-    },
-    {
-        "Team": "Washington Nationals",
-        "vs_Team": "Atlanta Braves (home)",
-        "Series": "None",
-        "Venue": "Truist Park(181)",
-        "WLmc?": "L",
-        "WLmmc?": "L",
-        "WLmmc%?": "0.61",
-        "Team Record": "L-W-W-L-L-L-L-W-L-W-L-L-W-W-W-W-L-W-W-W-L-L-L-L-L-L-L-L-W-W-W-L-L-W-L-W-W-L-L-W-W-L-L-W-L-L-L-L-L-L-W-W-W-L-L-W-W-L-W-L-L-L-L-L-W-L-L-L-L-W-W-W-L-W-L-L-W-L-W-L-W-L-L-L-L-L-L-L-L-L-L-L-W-L-W-L-L-W-W-W-W-L-L-W-L-W-W-W-W-W-L-W-L-L-L-L-L-L-W-W-W-L-W-L-L-L-W-L-W-L-W-W-W-W-L-L-W-L-L-L-W-L-W-W-W-W-L-L-L-L-W-L-L-"
-    },
-    {
-        "Team": "Atlanta Braves",
-        "vs_Team": "Washington Nationals (away)",
-        "Series": "None",
-        "Venue": "Truist Park(181)",
-        "WLmc?": "W",
-        "WLmmc?": "L",
-        "WLmmc%?": "0.56",
-        "Team Record": "W-W-W-W-W-W-W-W-L-L-L-L-W-L-L-W-W-L-L-W-L-L-L-W-W-L-W-L-L-W-W-L-W-W-W-W-W-L-W-W-L-W-L-L-L-W-W-L-W-L-L-W-L-L-L-L-L-W-L-L-W-L-W-W-L-W-L-L-L-L-L-W-L-L-W-L-L-L-W-W-L-W-L-W-W-W-L-W-W-W-L-W-L-L-L-L-L-L-L-W-L-W-L-L-W-L-L-L-W-L-W-W-L-W-W-L-W-L-W-L-W-W-W-L-L-L-W-W-L-W-W-W-L-W-W-W-W-L-L-W-L-W-L-W-L-W-L-W-L-L-L-L-L-L-L-"
+        "WLmmc%?": "0.58",
+        "Team Record": "L-W-L-L-L-L-W-W-W-W-W-W-L-W-L-L-W-W-W-L-W-L-L-W-L-W-L-W-W-L-W-L-L-W-W-W-L-W-W-L-L-W-W-W-L-W-L-W-L-L-L-W-W-W-W-L-W-W-W-W-L-L-W-L-W-W-W-W-W-W-W-W-W-W-L-W-W-L-W-L-W-L-L-W-W-L-L-L-W-W-W-L-W-W-W-W-L-W-W-W-W-W-L-W-L-L-L-W-W-W-L-W-L-L-W-L-W-W-W-W-L-L-L-L-W-W-W-L-L-W-L-L-L-L-L-W-W-W-L-W-L-L-W-W-W-L-L-L-W-W-W-W-L-W-L-"
     },
     {
         "Team": "New York Mets",
         "vs_Team": "Chicago Cubs (home)",
         "Series": "None",
-        "Venue": "Wrigley Field(176)",
-        "WLmc?": "W",
-        "WLmmc?": "L",
-        "WLmmc%?": "0.53",
-        "Team Record": "L-L-W-W-L-W-W-L-L-L-L-L-L-L-L-W-L-W-W-L-L-W-L-W-W-W-L-W-W-L-L-W-W-W-L-L-L-W-L-L-L-L-L-L-L-W-L-L-L-L-W-W-W-W-W-W-W-L-L-L-W-W-L-W-L-W-W-W-W-L-L-L-W-W-L-L-L-W-L-L-L-L-L-L-L-W-W-W-W-W-W-L-W-L-W-W-W-W-L-W-W-W-W-L-W-L-L-L-W-L-L-W-W-W-L-W-W-L-W-L-W-L-L-W-W-L-W-L-W-W-W-W-W-W-W-L-L-W-W-L-W-L-W-W-W-W-W-W-L-W-L-W-L-"
+        "Venue": "Wrigley Field(179)",
+        "WLmc?": "L",
+        "WLmmc?": "W",
+        "WLmmc%?": "0.57",
+        "Team Record": "W-L-L-W-W-L-W-W-L-L-L-L-L-L-L-L-W-L-W-W-L-L-W-L-W-W-W-L-W-W-L-L-W-W-W-L-L-L-W-L-L-L-L-L-L-L-W-L-L-L-L-W-W-W-W-W-W-W-L-L-L-W-W-L-W-L-W-W-W-W-L-L-L-W-W-L-L-L-W-L-L-L-L-L-L-L-W-W-W-W-W-W-L-W-L-W-W-W-W-L-W-W-W-W-L-W-L-L-L-W-L-L-W-W-W-L-W-W-L-W-L-W-L-L-W-W-L-W-L-W-W-W-W-W-W-W-L-L-W-W-L-W-L-W-W-W-W-W-W-L-W-L-W-L-"
     },
     {
         "Team": "Chicago Cubs",
         "vs_Team": "New York Mets (away)",
         "Series": "None",
-        "Venue": "Wrigley Field(176)",
+        "Venue": "Wrigley Field(179)",
         "WLmc?": "L",
         "WLmmc?": "W",
-        "WLmmc%?": "0.66",
-        "Team Record": "L-L-L-L-W-W-W-W-L-W-W-W-L-L-L-W-L-W-W-L-W-W-L-L-L-W-W-W-L-W-W-W-W-L-L-W-L-L-W-L-W-L-L-W-L-W-W-L-L-W-W-L-L-W-L-L-W-W-W-W-L-W-L-L-W-L-W-W-W-W-L-W-L-W-W-L-L-L-W-L-L-W-W-W-L-W-L-W-L-L-W-L-W-L-W-W-W-L-W-W-W-W-L-W-W-W-L-W-W-W-L-W-W-L-W-L-L-L-W-L-W-W-W-L-W-L-L-W-W-W-L-W-W-L-W-L-W-W-L-L-W-W-L-W-W-W-W-W-L-W-L-W-"
+        "WLmmc%?": "0.65",
+        "Team Record": "L-L-L-L-L-W-W-W-W-L-W-W-W-L-L-L-W-L-W-W-L-W-W-L-L-L-W-W-W-L-W-W-W-W-L-L-W-L-L-W-L-W-L-L-W-L-W-W-L-L-W-W-L-L-W-L-L-W-W-W-W-L-W-L-L-W-L-W-W-W-W-L-W-L-W-W-L-L-L-W-L-L-W-W-W-L-W-L-W-L-L-W-L-W-L-W-W-W-L-W-W-W-W-L-W-W-W-L-W-W-W-L-W-W-L-W-L-L-L-W-L-W-W-W-L-W-L-L-W-W-W-L-W-W-L-W-L-W-W-L-L-W-W-L-W-W-W-W-W-L-W-L-W-"
     },
     {
         "Team": "Minnesota Twins",
         "vs_Team": "Texas Rangers (home)",
         "Series": "None",
-        "Venue": "Globe Life Field(145)",
-        "WLmc?": "L",
+        "Venue": "Globe Life Field(146)",
+        "WLmc?": "W",
         "WLmmc?": "L",
-        "WLmmc%?": "0.56",
-        "Team Record": "W-L-L-L-L-W-L-L-W-L-L-W-W-L-L-L-L-L-L-W-L-W-L-W-L-L-L-W-L-L-L-W-L-L-L-W-L-L-W-L-W-W-W-L-W-L-L-L-L-W-L-L-W-L-W-L-W-L-L-L-W-W-L-W-W-L-W-W-L-W-L-L-L-W-W-W-L-L-L-L-L-W-L-L-L-L-L-L-W-L-W-L-L-L-W-W-W-L-L-W-L-W-L-L-W-W-W-L-W-L-W-W-W-W-W-W-W-W-W-W-W-W-L-L-L-L-W-W-W-W-L-W-W-L-L-L-W-W-L-W-L-L-L-W-L-L-L-W-L-W-W-L-L-L-L-"
+        "WLmmc%?": "0.55",
+        "Team Record": "W-W-L-L-L-L-W-L-L-W-L-L-W-W-L-L-L-L-L-L-W-L-W-L-W-L-L-L-W-L-L-L-W-L-L-L-W-L-L-W-L-W-W-W-L-W-L-L-L-L-W-L-L-W-L-W-L-W-L-L-L-W-W-L-W-W-L-W-W-L-W-L-L-L-W-W-W-L-L-L-L-L-W-L-L-L-L-L-L-W-L-W-L-L-L-W-W-W-L-L-W-L-W-L-L-W-W-W-L-W-L-W-W-W-W-W-W-W-W-W-W-W-W-L-L-L-L-W-W-W-W-L-W-W-L-L-L-W-W-L-W-L-L-L-W-L-L-L-W-L-W-W-L-L-L-L-"
     },
     {
         "Team": "Texas Rangers",
         "vs_Team": "Minnesota Twins (away)",
         "Series": "None",
-        "Venue": "Globe Life Field(145)",
-        "WLmc?": "W",
+        "Venue": "Globe Life Field(146)",
+        "WLmc?": "L",
         "WLmmc?": "L",
         "WLmmc%?": "0.53",
-        "Team Record": "L-L-L-L-L-L-L-W-W-W-W-W-W-L-W-L-L-W-W-W-W-W-W-L-W-W-W-L-W-L-L-W-L-L-L-L-W-L-L-L-L-W-W-L-W-L-L-W-L-L-W-W-W-W-W-W-L-W-W-W-L-W-W-L-W-L-L-W-L-W-W-L-L-W-L-W-W-L-L-W-W-L-L-L-W-W-W-W-L-W-W-W-L-L-L-L-W-L-W-L-W-L-W-L-L-L-L-L-L-W-L-W-W-W-W-W-W-L-L-L-W-W-L-L-L-L-W-L-L-L-W-L-L-W-L-W-L-W-W-W-L-L-L-W-L-L-W-W-W-W-W-L-W-W-W-L-"
+        "Team Record": "L-L-L-L-L-L-L-L-W-W-W-W-W-W-L-W-L-L-W-W-W-W-W-W-L-W-W-W-L-W-L-L-W-L-L-L-L-W-L-L-L-L-W-W-L-W-L-L-W-L-L-W-W-W-W-W-W-L-W-W-W-L-W-W-L-W-L-L-W-L-W-W-L-L-W-L-W-W-L-L-W-W-L-L-L-W-W-W-W-L-W-W-W-L-L-L-L-W-L-W-L-W-L-W-L-L-L-L-L-L-W-L-W-W-W-W-W-W-L-L-L-W-W-L-L-L-L-W-L-L-L-W-L-L-W-L-W-L-W-W-W-L-L-L-W-L-L-W-W-W-W-W-L-W-W-W-L-"
     },
     {
         "Team": "Kansas City Royals",
         "vs_Team": "Los Angeles Angels (home)",
         "Series": "None",
-        "Venue": "Angel Stadium(206)",
-        "WLmc?": "W",
-        "WLmmc?": "W",
+        "Venue": "Angel Stadium(208)",
+        "WLmc?": "L",
+        "WLmmc?": "L",
         "WLmmc%?": "0.54",
-        "Team Record": "L-W-W-L-W-L-W-L-L-L-W-L-L-L-W-W-W-L-L-L-W-L-W-W-L-W-L-L-W-L-W-W-W-W-W-L-W-W-L-W-L-W-L-L-W-L-W-W-W-L-W-L-W-L-W-W-L-L-W-L-L-W-W-W-W-L-W-W-L-W-L-L-W-L-L-L-L-L-L-W-W-W-W-L-L-L-L-L-L-W-L-L-W-W-L-W-L-W-L-L-W-L-L-W-L-W-W-L-L-L-L-W-L-L-W-W-W-W-W-W-W-L-W-W-W-L-W-W-W-W-W-L-L-L-L-L-L-W-L-L-W-L-W-W-W-L-W-L-L-W-L-W-L-"
+        "Team Record": "W-L-W-W-L-W-L-W-L-L-L-W-L-L-L-W-W-W-L-L-L-W-L-W-W-L-W-L-L-W-L-W-W-W-W-W-L-W-W-L-W-L-W-L-L-W-L-W-W-W-L-W-L-W-L-W-W-L-L-W-L-L-W-W-W-W-L-W-W-L-W-L-L-W-L-L-L-L-L-L-W-W-W-W-L-L-L-L-L-L-W-L-L-W-W-L-W-L-W-L-L-W-L-L-W-L-W-W-L-L-L-L-W-L-L-W-W-W-W-W-W-W-L-W-W-W-L-W-W-W-W-W-L-L-L-L-L-L-W-L-L-W-L-W-W-W-L-W-L-L-W-L-W-L-"
     },
     {
         "Team": "Los Angeles Angels",
         "vs_Team": "Kansas City Royals (away)",
         "Series": "None",
-        "Venue": "Angel Stadium(206)",
+        "Venue": "Angel Stadium(208)",
         "WLmc?": "L",
         "WLmmc?": "L",
         "WLmmc%?": "0.53",
-        "Team Record": "L-W-L-L-L-L-L-L-L-L-W-W-L-W-L-L-L-W-W-L-W-W-L-L-L-W-L-L-L-W-L-L-W-L-L-W-W-W-L-W-L-L-L-W-W-L-L-L-W-W-W-L-W-L-L-L-L-W-L-W-L-W-W-L-W-L-W-L-L-L-W-L-W-L-W-L-W-W-W-L-W-L-L-W-W-W-L-L-L-W-W-W-L-W-W-L-W-W-L-L-W-L-L-L-L-L-W-W-W-W-W-W-W-W-L-L-W-L-W-L-L-W-W-L-W-L-L-L-L-L-L-L-W-L-L-W-L-W-L-L-L-L-W-L-W-L-W-W-W-L-L-W-W-W-W-L-"
+        "Team Record": "L-L-W-L-L-L-L-L-L-L-L-W-W-L-W-L-L-L-W-W-L-W-W-L-L-L-W-L-L-L-W-L-L-W-L-L-W-W-W-L-W-L-L-L-W-W-L-L-L-W-W-W-L-W-L-L-L-L-W-L-W-L-W-W-L-W-L-W-L-L-L-W-L-W-L-W-L-W-W-W-L-W-L-L-W-W-W-L-L-L-W-W-W-L-W-W-L-W-W-L-L-W-L-L-L-L-L-W-W-W-W-W-W-W-W-L-L-W-L-W-L-L-W-W-L-W-L-L-L-L-L-L-L-W-L-L-W-L-W-L-L-L-L-W-L-W-L-W-W-W-L-L-W-W-W-W-L-"
     },
     {
         "Team": "Los Angeles Dodgers",
         "vs_Team": "Arizona Diamondbacks (home)",
         "Series": "None",
-        "Venue": "Chase Field(175)",
+        "Venue": "Chase Field(178)",
         "WLmc?": "L",
         "WLmmc?": "W",
-        "WLmmc%?": "0.55",
-        "Team Record": "L-W-W-W-W-L-L-W-W-L-W-W-W-W-L-L-L-L-L-W-L-L-W-W-W-W-L-L-W-L-W-L-W-W-W-L-L-L-L-W-W-L-W-L-W-L-W-L-W-W-L-L-W-W-L-W-L-L-L-W-W-L-L-L-L-L-L-L-W-W-W-W-L-W-W-W-W-W-L-W-L-W-W-W-W-W-L-W-L-W-W-L-L-W-L-W-L-L-W-W-L-W-W-L-L-W-W-W-L-L-L-L-W-W-L-W-L-W-L-W-L-W-L-W-W-W-W-W-W-W-L-L-L-W-L-W-W-W-W-L-L-W-W-L-L-L-W-L-W-W-W-W-W-W-"
+        "WLmmc%?": "0.54",
+        "Team Record": "L-L-W-W-W-W-L-L-W-W-L-W-W-W-W-L-L-L-L-L-W-L-L-W-W-W-W-L-L-W-L-W-L-W-W-W-L-L-L-L-W-W-L-W-L-W-L-W-L-W-W-L-L-W-W-L-W-L-L-L-W-W-L-L-L-L-L-L-L-W-W-W-W-L-W-W-W-W-W-L-W-L-W-W-W-W-W-L-W-L-W-W-L-L-W-L-W-L-L-W-W-L-W-W-L-L-W-W-W-L-L-L-L-W-W-L-W-L-W-L-W-L-W-L-W-W-W-W-W-W-W-L-L-L-W-L-W-W-W-W-L-L-W-W-L-L-L-W-L-W-W-W-W-W-W-"
     },
     {
         "Team": "Arizona Diamondbacks",
         "vs_Team": "Los Angeles Dodgers (away)",
         "Series": "None",
-        "Venue": "Chase Field(175)",
+        "Venue": "Chase Field(178)",
         "WLmc?": "W",
         "WLmmc?": "W",
-        "WLmmc%?": "0.56",
-        "Team Record": "W-W-L-L-W-W-W-W-L-W-L-L-L-W-W-W-W-L-L-W-W-W-W-L-L-L-W-W-W-W-L-L-L-L-W-W-W-L-W-W-W-L-L-W-W-W-L-L-L-L-L-L-W-L-L-L-W-W-W-W-L-L-L-W-L-W-L-W-L-L-L-W-W-L-L-L-L-W-W-L-W-W-W-L-L-L-W-W-W-W-W-L-L-L-L-W-W-W-W-L-L-L-L-W-L-L-L-L-L-W-W-L-W-W-L-W-L-W-L-W-L-W-L-W-L-L-W-W-L-W-L-L-L-L-W-W-L-L-W-W-W-W-W-L-W-W-L-L-L-W-L-W-W-W-L-W-L-"
+        "WLmmc%?": "0.57",
+        "Team Record": "W-W-W-L-L-W-W-W-W-L-W-L-L-L-W-W-W-W-L-L-W-W-W-W-L-L-L-W-W-W-W-L-L-L-L-W-W-W-L-W-W-W-L-L-W-W-W-L-L-L-L-L-L-W-L-L-L-W-W-W-W-L-L-L-W-L-W-L-W-L-L-L-W-W-L-L-L-L-W-W-L-W-W-W-L-L-L-W-W-W-W-W-L-L-L-L-W-W-W-W-L-L-L-L-W-L-L-L-L-L-W-W-L-W-W-L-W-L-W-L-W-L-W-L-W-L-L-W-W-L-W-L-L-L-L-W-W-L-L-W-W-W-W-W-L-W-W-L-L-L-W-L-W-W-W-L-W-L-"
     },
     {
         "Team": "Colorado Rockies",
         "vs_Team": "Seattle Mariners (home)",
         "Series": "None",
-        "Venue": "T-Mobile Park(180)",
+        "Venue": "T-Mobile Park(181)",
         "WLmc?": "W",
         "WLmmc?": "L",
-        "WLmmc%?": "0.66",
-        "Team Record": "W-L-W-L-L-L-L-L-W-L-L-L-L-L-L-W-L-L-L-W-L-L-L-L-W-L-L-L-L-W-L-W-W-W-W-L-W-W-L-L-L-L-L-L-L-L-W-W-L-L-W-L-L-W-W-W-L-L-W-W-L-L-W-L-L-L-W-L-L-W-L-L-W-L-L-L-L-L-W-L-L-L-W-W-W-W-L-L-W-L-L-L-L-L-W-W-W-L-L-L-L-L-L-L-L-W-L-L-L-L-L-W-L-L-L-L-W-L-L-L-L-L-L-L-W-W-L-L-L-L-L-L-L-L-L-L-L-L-L-L-L-W-L-L-W-L-L-L-L-L-L-W-L-"
+        "WLmmc%?": "0.75",
+        "Team Record": "L-W-L-W-L-L-L-L-L-W-L-L-L-L-L-L-W-L-L-L-W-L-L-L-L-W-L-L-L-L-W-L-W-W-W-W-L-W-W-L-L-L-L-L-L-L-L-W-W-L-L-W-L-L-W-W-W-L-L-W-W-L-L-W-L-L-L-W-L-L-W-L-L-W-L-L-L-L-L-W-L-L-L-W-W-W-W-L-L-W-L-L-L-L-L-W-W-W-L-L-L-L-L-L-L-L-W-L-L-L-L-L-W-L-L-L-L-W-L-L-L-L-L-L-L-W-W-L-L-L-L-L-L-L-L-L-L-L-L-L-L-L-W-L-L-W-L-L-L-L-L-L-W-L-"
     },
     {
         "Team": "Seattle Mariners",
         "vs_Team": "Colorado Rockies (away)",
         "Series": "None",
-        "Venue": "T-Mobile Park(180)",
+        "Venue": "T-Mobile Park(181)",
         "WLmc?": "L",
         "WLmmc?": "W",
         "WLmmc%?": "0.56",
-        "Team Record": "W-W-W-W-L-W-W-W-W-W-W-W-W-W-W-L-L-L-L-W-L-L-W-L-W-W-L-W-L-L-L-L-L-W-L-L-W-W-W-W-W-W-W-W-L-W-W-L-L-W-L-W-L-W-L-W-L-L-W-W-W-W-W-L-L-L-W-W-W-L-W-L-W-W-L-W-L-L-W-W-W-L-W-L-W-L-W-W-W-L-L-L-W-L-L-L-L-L-W-W-L-L-L-W-L-L-W-L-W-L-W-W-W-W-L-W-L-L-L-L-W-W-L-L-W-W-W-W-W-W-L-W-W-L-W-W-L-W-W-L-W-W-W-W-L-W-L-L-L-W-L-L-W-L-L-W-"
-    },
-    {
-        "Team": "Milwaukee Brewers",
-        "vs_Team": "San Diego Padres (home)",
-        "Series": "SD leads 1-0",
-        "Venue": "Petco Park(149)",
-        "WLmc?": "W",
-        "WLmmc?": "W",
-        "WLmmc%?": "0.55",
-        "Team Record": "L-L-W-L-W-W-W-L-W-W-L-L-L-W-W-W-L-W-L-L-W-W-L-L-W-W-L-L-W-W-L-L-L-W-W-W-W-W-W-W-W-W-W-W-W-W-W-L-W-W-W-L-L-W-L-W-W-W-W-W-W-W-W-W-W-W-L-W-L-L-L-W-W-W-W-L-W-W-W-W-L-W-L-W-W-L-W-L-L-W-L-W-L-W-W-W-W-W-W-W-W-L-L-W-L-W-W-W-L-L-W-L-L-W-L-L-L-W-W-W-L-L-L-W-W-W-L-L-L-L-W-L-W-L-W-W-W-L-L-L-W-L-W-W-W-L-W-W-W-W-L-L-L-L-"
-    },
-    {
-        "Team": "San Diego Padres",
-        "vs_Team": "Milwaukee Brewers (away)",
-        "Series": "SD leads 1-0",
-        "Venue": "Petco Park(149)",
-        "WLmc?": "L",
-        "WLmmc?": "W",
-        "WLmmc%?": "0.55",
-        "Team Record": "W-W-W-L-L-W-L-W-W-L-W-L-L-W-W-W-L-L-L-L-L-W-L-L-W-L-L-W-W-W-W-W-L-L-L-L-W-W-W-W-W-L-W-W-L-W-L-W-W-W-W-W-W-L-L-L-L-W-W-L-W-L-W-W-W-L-W-L-W-L-W-W-L-L-W-L-W-W-L-W-W-L-W-L-L-L-W-L-L-L-W-L-W-L-W-L-L-W-W-W-L-W-L-W-W-W-L-W-L-L-L-L-L-L-W-W-L-L-W-W-L-L-W-W-W-W-W-W-L-L-L-L-W-L-W-L-L-W-L-W-W-W-W-W-L-W-W-L-L-W-W-W-W-W-W-W-"
+        "Team Record": "W-W-W-W-W-L-W-W-W-W-W-W-W-W-W-W-L-L-L-L-W-L-L-W-L-W-W-L-W-L-L-L-L-L-W-L-L-W-W-W-W-W-W-W-W-L-W-W-L-L-W-L-W-L-W-L-W-L-L-W-W-W-W-W-L-L-L-W-W-W-L-W-L-W-W-L-W-L-L-W-W-W-L-W-L-W-L-W-W-W-L-L-L-W-L-L-L-L-L-W-W-L-L-L-W-L-L-W-L-W-L-W-W-W-W-L-W-L-L-L-L-W-W-L-L-W-W-W-W-W-W-L-W-W-L-W-W-L-W-W-L-W-W-W-W-L-W-L-L-L-W-L-L-W-L-L-W-"
     },
     {
         "Team": "St. Louis Cardinals",
         "vs_Team": "San Francisco Giants (home)",
-        "Series": "None",
-        "Venue": "Oracle Park(135)",
+        "Series": "STL leads 2-0",
+        "Venue": "Oracle Park(138)",
         "WLmc?": "L",
         "WLmmc?": "L",
         "WLmmc%?": "0.56",
-        "Team Record": "W-W-L-W-L-W-L-W-L-L-L-L-L-W-W-L-W-W-L-L-W-W-W-L-L-W-L-L-W-L-W-W-L-L-L-L-L-W-W-L-W-W-L-W-L-W-L-L-L-W-L-L-W-W-L-L-W-L-L-L-W-L-L-W-L-W-L-W-L-L-L-L-W-W-W-L-L-W-W-L-W-W-W-W-L-W-L-L-L-L-L-L-W-W-L-L-L-W-L-W-W-L-W-W-W-L-L-W-L-W-W-L-W-W-W-W-W-W-W-W-L-L-W-L-L-W-W-L-W-L-L-L-L-L-W-L-W-W-L-W-L-W-L-L-L-W-L-L-W-W-W-"
+        "Team Record": "W-W-W-L-W-L-W-L-W-L-L-L-L-L-W-W-L-W-W-L-L-W-W-W-L-L-W-L-L-W-L-W-W-L-L-L-L-L-W-W-L-W-W-L-W-L-W-L-L-L-W-L-L-W-W-L-L-W-L-L-L-W-L-L-W-L-W-L-W-L-L-L-L-W-W-W-L-L-W-W-L-W-W-W-W-L-W-L-L-L-L-L-L-W-W-L-L-L-W-L-W-W-L-W-W-W-L-L-W-L-W-W-L-W-W-W-W-W-W-W-W-L-L-W-L-L-W-W-L-W-L-L-L-L-L-W-L-W-W-L-W-L-W-L-L-L-W-L-L-W-W-W-"
     },
     {
         "Team": "San Francisco Giants",
         "vs_Team": "St. Louis Cardinals (away)",
-        "Series": "None",
-        "Venue": "Oracle Park(135)",
+        "Series": "STL leads 2-0",
+        "Venue": "Oracle Park(138)",
         "WLmc?": "L",
         "WLmmc?": "L",
-        "WLmmc%?": "0.54",
-        "Team Record": "L-W-L-L-L-W-L-L-L-L-W-L-W-W-L-L-W-W-W-W-W-L-W-W-W-W-W-W-L-L-L-L-W-W-L-L-L-L-L-L-L-W-W-W-L-W-L-W-L-L-L-L-L-L-W-W-L-L-L-L-L-L-W-L-W-W-W-W-L-W-W-L-L-L-L-W-L-L-L-W-W-L-W-L-L-L-L-W-L-W-W-W-W-W-W-W-L-L-W-L-W-L-L-L-W-L-W-L-W-L-W-W-W-L-W-L-L-L-L-W-W-L-W-W-W-L-L-L-W-W-L-W-W-L-W-L-W-L-L-W-L-W-W-L-W-W-L-L-W-W-W-W-W-W-W-L-W-"
+        "WLmmc%?": "0.55",
+        "Team Record": "L-L-W-L-L-L-W-L-L-L-L-W-L-W-W-L-L-W-W-W-W-W-L-W-W-W-W-W-W-L-L-L-L-W-W-L-L-L-L-L-L-L-W-W-W-L-W-L-W-L-L-L-L-L-L-W-W-L-L-L-L-L-L-W-L-W-W-W-W-L-W-W-L-L-L-L-W-L-L-L-W-W-L-W-L-L-L-L-W-L-W-W-W-W-W-W-W-L-L-W-L-W-L-L-L-W-L-W-L-W-L-W-W-W-L-W-L-L-L-L-W-W-L-W-W-W-L-L-L-W-W-L-W-W-L-W-L-W-L-L-W-L-W-W-L-W-W-L-L-W-W-W-W-W-W-W-L-W-"
     },
     {
         "Team": "Houston Astros",
         "vs_Team": "Athletics (home)",
-        "Series": "None",
+        "Series": "ATH leads 1-0",
         "Venue": "Sutter Health Park(220)",
         "WLmc?": "L",
         "WLmmc?": "W",
-        "WLmmc%?": "0.61",
-        "Team Record": "L-L-L-W-W-W-L-W-W-L-W-L-L-W-L-L-W-L-W-L-L-W-W-W-L-L-W-W-W-L-L-L-L-W-L-W-L-W-W-L-W-L-W-W-L-L-L-W-W-L-L-L-L-L-W-W-W-W-L-L-L-W-L-L-L-L-W-W-W-L-W-W-W-L-W-W-W-W-W-L-W-L-W-W-L-W-W-W-W-W-L-L-W-W-W-L-W-W-L-W-L-W-W-W-W-L-W-L-L-W-W-L-W-L-W-W-L-W-L-W-W-L-L-L-W-L-L-W-W-W-L-L-W-W-W-L-W-W-L-W-L-W-L-W-L-W-L-W-L-W-L-L-L-W-L-W-"
+        "WLmmc%?": "0.6",
+        "Team Record": "L-L-L-L-W-W-W-L-W-W-L-W-L-L-W-L-L-W-L-W-L-L-W-W-W-L-L-W-W-W-L-L-L-L-W-L-W-L-W-W-L-W-L-W-W-L-L-L-W-W-L-L-L-L-L-W-W-W-W-L-L-L-W-L-L-L-L-W-W-W-L-W-W-W-L-W-W-W-W-W-L-W-L-W-W-L-W-W-W-W-W-L-L-W-W-W-L-W-W-L-W-L-W-W-W-W-L-W-L-L-W-W-L-W-L-W-W-L-W-L-W-W-L-L-L-W-L-L-W-W-W-L-L-W-W-W-L-W-W-L-W-L-W-L-W-L-W-L-W-L-W-L-L-L-W-L-W-"
     },
     {
         "Team": "Athletics",
         "vs_Team": "Houston Astros (away)",
-        "Series": "None",
+        "Series": "ATH leads 1-0",
         "Venue": "Sutter Health Park(220)",
         "WLmc?": "L",
         "WLmmc?": "L",
-        "WLmmc%?": "0.52",
-        "Team Record": "L-L-W-W-L-W-W-W-W-W-L-L-L-W-W-L-L-W-L-L-L-W-W-W-L-W-L-W-W-W-L-W-W-L-W-L-W-W-L-W-L-W-L-L-W-W-W-L-W-W-W-W-L-L-L-L-W-L-W-W-L-W-L-W-L-L-W-L-W-W-L-W-L-L-W-L-L-L-W-W-L-L-W-W-W-W-L-L-L-W-L-W-W-L-L-L-L-L-L-L-L-L-W-L-L-L-L-L-L-L-L-L-L-L-W-L-W-L-L-L-W-W-L-W-W-W-L-W-W-L-W-W-W-L-L-W-L-W-W-W-L-W-L-L-W-L-L-W-W-L-L-L-L-W-W-L-"
+        "WLmmc%?": "0.53",
+        "Team Record": "W-L-L-W-W-L-W-W-W-W-W-L-L-L-W-W-L-L-W-L-L-L-W-W-W-L-W-L-W-W-W-L-W-W-L-W-L-W-W-L-W-L-W-L-L-W-W-W-L-W-W-W-W-L-L-L-L-W-L-W-W-L-W-L-W-L-L-W-L-W-W-L-W-L-L-W-L-L-L-W-W-L-L-W-W-W-W-L-L-L-W-L-W-W-L-L-L-L-L-L-L-L-L-W-L-L-L-L-L-L-L-L-L-L-L-W-L-W-L-L-L-W-W-L-W-W-W-L-W-W-L-W-W-W-L-L-W-L-W-W-W-L-W-L-L-W-L-L-W-W-L-L-L-L-W-W-L-"
     }
 ]
