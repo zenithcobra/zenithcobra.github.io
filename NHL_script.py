@@ -312,7 +312,7 @@ def process_yesterdays_scores_to_report():
 
             # Start the table
             report_lines.append("<table border='1' style='border-collapse: collapse; width: 100%;'>")
-            report_lines.append("<tr><th>Team</th><th>Name</th><th>G2D</th><th>Assist1</th><th>Assist2</th></tr>")
+            report_lines.append("<tr><th>Team</th><th>Name</th><th>Assist1</th><th>Assist2</th></tr>")
 
             # Process each goal
             for goal in game.get("goals", []):
@@ -325,8 +325,7 @@ def process_yesterdays_scores_to_report():
                 report_lines.append(
                     f"<tr>"
                     f"<td>{goal['team']}</td>"
-                    f"<td><a target='_blank' rel='noopener noreferrer' href='{generate_hockey_reference_link(goal['name'])}'>{goal['name']}</a></td>"
-                    f"<td>{goal.get('goals_to_date', 'N/A')}</td>"
+                    f"<td><a target='_blank' rel='noopener noreferrer' href='{generate_hockey_reference_link(goal['name'])}'>{goal['name']}</a> ({goal.get('goals_to_date', 'N/A')})</td>"
                     f"<td>{assist1}</td>"
                     f"<td>{assist2}</td>"
                     f"</tr>"
