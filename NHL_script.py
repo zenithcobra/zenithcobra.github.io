@@ -220,29 +220,29 @@ def process_yesterdays_scores_to_report():
 
         return link
 
-    def make_report(data):
-        """
-        Processes a JSON string of NHL scores and generates a text report.
+    # def make_report(data):
+    #     """
+    #     Processes a JSON string of NHL scores and generates a text report.
 
-        Args:
-            json_string (str): JSON string containing NHL scores data.
+    #     Args:
+    #         json_string (str): JSON string containing NHL scores data.
 
-        Returns:
-            str: A formatted text report of the games and their details.
-        """
-        # import json
+    #     Returns:
+    #         str: A formatted text report of the games and their details.
+    #     """
+    #     # import json
 
-        # # Parse the JSON string
-        # data = json.loads(json_string)
+    #     # # Parse the JSON string
+    #     # data = json.loads(json_string)
 
-        # Initialize the report
-        report_lines = []
+    #     # Initialize the report
+    #     report_lines = []
 
-        # Extract the date from the first game (assuming all games are from the same date)
-        if data:
-            report_lines.append(f"DATE: {data[0]['date']}")
-        else:
-            return "No games available to report."
+    #     # Extract the date from the first game (assuming all games are from the same date)
+    #     if data:
+    #         report_lines.append(f"DATE: {data[0]['date']}")
+    #     else:
+    #         return "No games available to report."
 
         # # Process each game
         # for i, game in enumerate(data, start=1):
@@ -261,28 +261,82 @@ def process_yesterdays_scores_to_report():
         #             report_lines.append(f"    - Name: {assist['name']}, Assists to date: {assist.get('assists_to_date', 'N/A')}")
         # Process each game
         # Process each game
+        # for i, game in enumerate(data, start=1):
+        #     # Add match header with video link
+        #     report_lines.append(f"MATCH {i}:              Video")
+        #     report_lines.append(f"{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}\n")
+        #     report_lines.append("  GOALS:\n")
+
+        #     # Process each goal
+        #     for goal in game.get("goals", []):
+        #         # Add goal scorer details
+        #         report_lines.append(f"  {goal['team'].ljust(3)} {goal['name'].ljust(20)} G2D: {str(goal.get('goals_to_date', 'N/A')).ljust(2)}")
+        #         report_lines.append("  Assists")
+
+        #         # Add assist details
+        #         for assist in goal.get("assists", []):
+        #             report_lines.append(f"    {assist['name'].ljust(20)} A2D: {assist.get('assists_to_date', 'N/A')}")
+
+        #         # Add a blank line after each goal
+        #         report_lines.append("")
+
+
+
+        # # Join the report lines into a single string
+        # return "\n".join(report_lines)
+
+    def make_report(data):
+        """
+        Processes a JSON string of NHL scores and generates an HTML report.
+
+        Args:
+            data (list): List of games containing NHL scores data.
+
+        Returns:
+            str: A formatted HTML report of the games and their details.
+        """
+        # Initialize the report
+        report_lines = []
+
+        # Extract the date from the first game (assuming all games are from the same date)
+        if data:
+            report_lines.append(f"<h2>DATE: {data[0]['date']}</h2>")
+        else:
+            return "<p>No games available to report.</p>"
+
+        # Process each game
         for i, game in enumerate(data, start=1):
             # Add match header with video link
-            report_lines.append(f"MATCH {i}:              Video")
-            report_lines.append(f"{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}\n")
-            report_lines.append("  GOALS:\n")
+            report_lines.append(f"<h2>MATCH {i}: <a target='_blank' rel='noopener noreferrer' href='{game['condensed_game']}'>Video</a></h2>")
+            report_lines.append(f"<h2>{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}</h2>")
+
+            # Start the table
+            report_lines.append("<table border='1' style='border-collapse: collapse; width: 100%;'>")
+            report_lines.append("<tr><th>Team</th><th>Name</th><th>G2D</th><th>Assist1</th><th>Assist2</th></tr>")
 
             # Process each goal
             for goal in game.get("goals", []):
-                # Add goal scorer details
-                report_lines.append(f"  {goal['team'].ljust(3)} {goal['name'].ljust(20)} G2D: {str(goal.get('goals_to_date', 'N/A')).ljust(2)}")
-                report_lines.append("  Assists")
+                # Extract assists
+                assists = goal.get("assists", [])
+                assist1 = f"{assists[0]['name']} ({assists[0].get('assists_to_date', 'N/A')})" if len(assists) > 0 else ""
+                assist2 = f"{assists[1]['name']} ({assists[1].get('assists_to_date', 'N/A')})" if len(assists) > 1 else ""
 
-                # Add assist details
-                for assist in goal.get("assists", []):
-                    report_lines.append(f"    {assist['name'].ljust(20)} A2D: {assist.get('assists_to_date', 'N/A')}")
+                # Add a row for the goal
+                report_lines.append(
+                    f"<tr>"
+                    f"<td>{goal['team']}</td>"
+                    f"<td><a target='_blank' rel='noopener noreferrer' href='{generate_hockey_reference_link(goal['name'])}'>{goal['name']}</a></td>"
+                    f"<td>{goal.get('goals_to_date', 'N/A')}</td>"
+                    f"<td>{assist1}</td>"
+                    f"<td>{assist2}</td>"
+                    f"</tr>"
+                )
 
-                # Add a blank line after each goal
-                report_lines.append("")
+            # End the table
+            report_lines.append("</table>")
+            report_lines.append("<br>")  # Add spacing between matches
 
-
-
-        # Join the report lines into a single string
+        # Join the report lines into a single HTML string
         return "\n".join(report_lines)
 
     # Run the function
