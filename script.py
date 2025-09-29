@@ -5972,3 +5972,36 @@ def process_html(html_as_string):
     # =================================
 
     return str(soup)
+
+
+def update_picture():
+    """
+    Downloads an image from the specified URL if it exists.
+    If the image does not exist, the script does nothing.
+
+    The image is saved to the 'images' folder with the name 'mlb_image.jpg'.
+    """
+    # URL of the image
+    image_url = "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w1536/v1759097244/mlb/bldlnproiaocpzyzlj6g.jpg"
+    
+    # Directory and file name for saving the image
+    output_dir = "data"
+    output_file = os.path.join(output_dir, "mlb-playoffs.jpg")
+
+    # Ensure the output directory exists
+    os.makedirs(output_dir, exist_ok=True)
+
+    try:
+        # Send a HEAD request to check if the image exists
+        response = requests.head(image_url)
+        if response.status_code == 200:
+            # If the image exists, download it
+            print(f"Image found. Downloading from {image_url}...")
+            image_data = requests.get(image_url).content
+            with open(output_file, "wb") as file:
+                file.write(image_data)
+            print(f"Image saved to {output_file}")
+        else:
+            print(f"Image not found at {image_url}. No action taken.")
+    except requests.RequestException as e:
+        print(f"An error occurred while checking/downloading the image: {e}")

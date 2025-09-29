@@ -3912,3 +3912,10 @@ body.dark-mode a:hover {
 	color: #2E38A3;
 	/* Slightly darker blue for hover effect */
 }
+
+#inline-content img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+  }
