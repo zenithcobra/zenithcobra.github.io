@@ -5,6 +5,7 @@ import NHL_data_fetcher
 import config
 from cache_manager import CacheManager
 import pandas as pd
+import shutil
 
 
 # Function to format the schedule into the desired text format
@@ -117,6 +118,81 @@ def process_schedule():
 
     # Save the formatted schedule to the text file
     file_operations.save_text(formatted_schedule, "NHL_todays_schedule")
+
+def process_full_schedule():
+    """
+    Processes the NHL schedule and saves a separate text file for each day in the schedule.
+
+    This function reads the NHL schedule from a CSV file, formats the schedule for each unique date,
+    and saves it to a text file in the `NHL_data/schedule` folder. Each file is named
+    `NHL_schedule_[date].txt`, where `[date]` is the date of the games.
+
+    File Paths:
+    - Input: `NHL_data/nhl_schedule.csv` (CSV file containing the full NHL schedule).
+    - Output: `NHL_data/schedule/NHL_schedule_[date].txt` (Text files for each day's games).
+
+    Notes:
+    - The function assumes the CSV file has the following columns:
+      `Date, Time, Away Team, Home Team`.
+    - The date format in the CSV must be `YYYY-MM-DD`.
+    """
+    # File paths
+    csv_path = "NHL_data/nhl_schedule.csv"
+    output_dir = Path("schedule")
+
+    # Ensure the output directory exists
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    # Read the schedule CSV
+    nhl_schedule = file_operations.read_csv(csv_path)
+
+    # Group games by date
+    games_by_date = {}
+    for row in nhl_schedule[1:]:  # Skip the header row
+        date = row[0]
+        if date not in games_by_date:
+            games_by_date[date] = []
+        games_by_date[date].append(row)
+
+    # Process each date
+    for date, games in games_by_date.items():
+        # Format the schedule for the date
+        formatted_schedule = format_schedule(games)
+
+        # Save the formatted schedule to a text file
+        output_file = output_dir / f"NHL_schedule_{date}"
+        file_operations.save_text(formatted_schedule, output_file)
+
+    print(f"Schedules saved to {output_dir}")
+
+def make_todays_schedule():
+    """
+    Finds today's schedule file in the 'NHL_data/schedule' folder and copies it to
+    'NHL_data/NHL_todays_schedule.txt', overwriting the existing file if it exists.
+
+    The schedule file is expected to be named in the format 'NHL_schedule_[date].txt',
+    where [date] is today's date in 'YYYY-MM-DD' format.
+    """
+    # Define paths
+    schedule_dir = Path("NHL_data/schedule")
+    todays_schedule_path = Path("NHL_data/NHL_todays_schedule.txt")
+
+    # Get today's date in 'YYYY-MM-DD' format
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    # Construct the expected schedule file name
+    todays_schedule_file = schedule_dir / f"NHL_schedule_{today}.txt"
+
+    # Check if the schedule file for today exists
+    if not todays_schedule_file.exists():
+        print(f"Schedule file for today ({todays_schedule_file}) not found.")
+        return
+
+    # Copy the file to overwrite 'NHL_todays_schedule.txt'
+    shutil.copy(todays_schedule_file, todays_schedule_path)
+    print(f"Today's schedule copied to {todays_schedule_path}")
+
+
 
 def process_yesterdays_scores_to_report():
     nhl = NHL_data_fetcher.get_nhl_yesterdays_scores()

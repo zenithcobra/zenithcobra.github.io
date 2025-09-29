@@ -49,39 +49,8 @@
 		<div id="main">
 			<div class="inner">
 				<section class="tiles">
-					<article class="style1">
-						<span class="image">
-							<img src="images/pic01.jpg" alt="" />
-						</span>
-						<a href="#" data-load="data/yesterdays_report_text.txt">
-							<h2>MLB Yesterdays Scores</h2>
-							<div class="content">
-								<!-- <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p> -->
-							</div>
-						</a>
-					</article>
-					<article class="style1">
-						<span class="image">
-							<img src="images/pic01.jpg" alt="" />
-						</span>
-						<a href="#" data-load="NHL_data/NHL_yesterdays_scores.txt">
-							<h2>NHL Yesterdays Scores</h2>
-							<div class="content">
-								<!-- <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p> -->
-							</div>
-						</a>
-					</article>
-					<article class="style4">
-						<span class="image">
-							<img src="images/pic04.jpg" alt="" />
-						</span>
-						<a href="#" data-load="data/schedule_text.txt">
-							<h2>MLB Schedule</h2>
-							<div class="content">
-								<!-- <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p> -->
-							</div>
-						</a>
-					</article>
+
+					<!-- NHL SCHEDULE -->
 					<article class="style1">
 						<span class="image">
 							<img src="images/pic01.jpg" alt="" />
@@ -93,6 +62,44 @@
 							</div>
 						</a>
 					</article>
+
+					<!-- NHL YESTERDAYS SCORES -->
+					<article class="style1">
+						<span class="image">
+							<img src="images/pic01.jpg" alt="" />
+						</span>
+						<a href="#" data-load="NHL_data/NHL_yesterdays_scores.txt">
+							<h2>NHL Yesterdays Scores</h2>
+							<div class="content">
+								<!-- <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p> -->
+							</div>
+						</a>
+					</article>
+
+					<article class="style1">
+						<span class="image">
+							<img src="images/pic01.jpg" alt="" />
+						</span>
+						<a href="#" data-load="data/yesterdays_report_text.txt">
+							<h2>MLB Yesterdays Scores</h2>
+							<div class="content">
+								<!-- <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p> -->
+							</div>
+						</a>
+					</article>
+
+					<article class="style4">
+						<span class="image">
+							<img src="images/pic04.jpg" alt="" />
+						</span>
+						<a href="#" data-load="data/schedule_text.txt">
+							<h2>MLB Schedule</h2>
+							<div class="content">
+								<!-- <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p> -->
+							</div>
+						</a>
+					</article>
+
 					<article class="style2">
 						<span class="image">
 							<img src="images/pic02.jpg" alt="" />
@@ -209,6 +216,8 @@
 						<div class="modal-bar">
 							<div class="modal-title" id="modal-title"> </div>
 							<div class="modal-actions">
+								<button type="button" class="prev-schedule" aria-label="Previous Day">←</button>
+								<button type="button" class="next-schedule" aria-label="Next Day">→</button>
 								<button type="button" class="export-table" aria-label="Export Table">Export</button> <!-- New Export Button -->
 								<button class="theme-toggle" class="button">🌙</button>
 								<button type="button" class="zoom-out" aria-label="Zoom out">−</button>
@@ -237,5 +246,6 @@
 	<script src="assets/js/checkbox-handler.js" defer></script>
 	<script src="assets/js/n-back-game.js" defer></script>
 	<script src="assets/js/enhancements_two.js" defer></script>
+	<script src="assets/js/schedule.js" defer></script>
 </body>
 </html>
