@@ -1,0 +1,453 @@
+[
+    {
+        "date": "2025-09-30",
+        "home_team": "Senators",
+        "away_team": "Devils",
+        "home_score": 2,
+        "away_score": 0,
+        "winner": "Senators",
+        "condensed_game": "https://www.nhl.com",
+        "goals": [
+            {
+                "player_id": 8483676,
+                "name": "Stephen Halliday",
+                "team": "OTT",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "T. St\u00fctzle",
+                        "assists_to_date": 1,
+                        "player_id": 8482116
+                    },
+                    {
+                        "name": "D. Cozens",
+                        "assists_to_date": 1,
+                        "player_id": 8481528
+                    }
+                ]
+            },
+            {
+                "player_id": 8480245,
+                "name": "Olle Lycksell",
+                "team": "OTT",
+                "goals_to_date": 1,
+                "assists": []
+            }
+        ]
+    },
+    {
+        "date": "2025-09-30",
+        "home_team": "Devils",
+        "away_team": "Capitals",
+        "home_score": 2,
+        "away_score": 3,
+        "winner": "Capitals",
+        "condensed_game": "https://www.nhl.com/video/wsh-at-njd-condensed-game-6380229593112",
+        "goals": [
+            {
+                "player_id": 8481578,
+                "name": "Graeme Clarke",
+                "team": "WSH",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "P. Thomas",
+                        "assists_to_date": 1,
+                        "player_id": 8484404
+                    },
+                    {
+                        "name": "I. Protas",
+                        "assists_to_date": 1,
+                        "player_id": 8484999
+                    }
+                ]
+            },
+            {
+                "player_id": 8484186,
+                "name": "Ryan Leonard",
+                "team": "WSH",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "T. van Riemsdyk",
+                        "assists_to_date": 1,
+                        "player_id": 8477845
+                    }
+                ]
+            },
+            {
+                "player_id": 8480002,
+                "name": "Nico Hischier",
+                "team": "NJD",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "J. Hughes",
+                        "assists_to_date": 1,
+                        "player_id": 8481559
+                    },
+                    {
+                        "name": "J. Bratt",
+                        "assists_to_date": 1,
+                        "player_id": 8479407
+                    }
+                ]
+            },
+            {
+                "player_id": 8482941,
+                "name": "Shane Lachance",
+                "team": "NJD",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "J. Hughes",
+                        "assists_to_date": 2,
+                        "player_id": 8481559
+                    },
+                    {
+                        "name": "S. Nemec",
+                        "assists_to_date": 1,
+                        "player_id": 8483495
+                    }
+                ]
+            },
+            {
+                "player_id": 8484159,
+                "name": "Andrew Cristall",
+                "team": "WSH",
+                "goals_to_date": null,
+                "assists": []
+            }
+        ]
+    },
+    {
+        "date": "2025-09-30",
+        "home_team": "Wild",
+        "away_team": "Blackhawks",
+        "home_score": 1,
+        "away_score": 4,
+        "winner": "Blackhawks",
+        "condensed_game": "https://www.nhl.com/video/chi-at-min-condensed-game-6380231354112",
+        "goals": [
+            {
+                "player_id": 8483493,
+                "name": "Frank Nazar",
+                "team": "CHI",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "T. Teravainen",
+                        "assists_to_date": 1,
+                        "player_id": 8476882
+                    },
+                    {
+                        "name": "T. Bertuzzi",
+                        "assists_to_date": 1,
+                        "player_id": 8477479
+                    }
+                ]
+            },
+            {
+                "player_id": 8483493,
+                "name": "Frank Nazar",
+                "team": "CHI",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "T. Bertuzzi",
+                        "assists_to_date": 2,
+                        "player_id": 8477479
+                    },
+                    {
+                        "name": "S. Rinzel",
+                        "assists_to_date": 1,
+                        "player_id": 8483506
+                    }
+                ]
+            },
+            {
+                "player_id": 8483452,
+                "name": "Hunter Haight",
+                "team": "MIN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "T. Pitlick",
+                        "assists_to_date": 1,
+                        "player_id": 8475752
+                    },
+                    {
+                        "name": "C. Lambos",
+                        "assists_to_date": 1,
+                        "player_id": 8482781
+                    }
+                ]
+            },
+            {
+                "player_id": 8477987,
+                "name": "Ryan Donato",
+                "team": "CHI",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "C. Bedard",
+                        "assists_to_date": 1,
+                        "player_id": 8484144
+                    },
+                    {
+                        "name": "W. Kaiser",
+                        "assists_to_date": 1,
+                        "player_id": 8482176
+                    }
+                ]
+            },
+            {
+                "player_id": 8483493,
+                "name": "Frank Nazar",
+                "team": "CHI",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "T. Teravainen",
+                        "assists_to_date": 2,
+                        "player_id": 8476882
+                    },
+                    {
+                        "name": "W. Kaiser",
+                        "assists_to_date": 2,
+                        "player_id": 8482176
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-09-30",
+        "home_team": "Hurricanes",
+        "away_team": "Predators",
+        "home_score": 4,
+        "away_score": 2,
+        "winner": "Hurricanes",
+        "condensed_game": "https://www.nhl.com/video/nsh-at-car-condensed-game-6380233253112",
+        "goals": [
+            {
+                "player_id": 8477901,
+                "name": "Daniel Carr",
+                "team": "NSH",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "D. Gambrell",
+                        "assists_to_date": 1,
+                        "player_id": 8479580
+                    },
+                    {
+                        "name": "C. O'Hara",
+                        "assists_to_date": 1,
+                        "player_id": 8483696
+                    }
+                ]
+            },
+            {
+                "player_id": 8484392,
+                "name": "Felix Unger Sorum",
+                "team": "CAR",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "E. Robinson",
+                        "assists_to_date": 1,
+                        "player_id": 8480762
+                    },
+                    {
+                        "name": "S. Brind'Amour",
+                        "assists_to_date": 1,
+                        "player_id": 8480291
+                    }
+                ]
+            },
+            {
+                "player_id": 8484203,
+                "name": "Bradly Nadeau",
+                "team": "CAR",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "J. Blake",
+                        "assists_to_date": 1,
+                        "player_id": 8482809
+                    },
+                    {
+                        "name": "T. Jost",
+                        "assists_to_date": 1,
+                        "player_id": 8479370
+                    }
+                ]
+            },
+            {
+                "player_id": 8484203,
+                "name": "Bradly Nadeau",
+                "team": "CAR",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "L. Stankoven",
+                        "assists_to_date": 1,
+                        "player_id": 8482702
+                    },
+                    {
+                        "name": "J. Blake",
+                        "assists_to_date": 2,
+                        "player_id": 8482809
+                    }
+                ]
+            },
+            {
+                "player_id": 8483513,
+                "name": "Reid Schaefer",
+                "team": "NSH",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "Z. L'Heureux",
+                        "assists_to_date": 1,
+                        "player_id": 8482742
+                    },
+                    {
+                        "name": "O. Wiesblatt",
+                        "assists_to_date": 1,
+                        "player_id": 8482103
+                    }
+                ]
+            },
+            {
+                "player_id": 8484428,
+                "name": "Charles Alexis Legault",
+                "team": "CAR",
+                "goals_to_date": 1,
+                "assists": []
+            }
+        ]
+    },
+    {
+        "date": "2025-09-30",
+        "home_team": "Oilers",
+        "away_team": "Canucks",
+        "home_score": 4,
+        "away_score": 3,
+        "winner": "Oilers",
+        "condensed_game": "https://www.nhl.com/video/van-at-edm-condensed-game-6380234163112",
+        "goals": [
+            {
+                "player_id": 8478402,
+                "name": "Connor McDavid",
+                "team": "EDM",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "L. Draisaitl",
+                        "assists_to_date": 1,
+                        "player_id": 8477934
+                    },
+                    {
+                        "name": "T. Frederic",
+                        "assists_to_date": 1,
+                        "player_id": 8479365
+                    }
+                ]
+            },
+            {
+                "player_id": 8479365,
+                "name": "Trent Frederic",
+                "team": "EDM",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "C. McDavid",
+                        "assists_to_date": 1,
+                        "player_id": 8478402
+                    },
+                    {
+                        "name": "L. Draisaitl",
+                        "assists_to_date": 2,
+                        "player_id": 8477934
+                    }
+                ]
+            },
+            {
+                "player_id": 8477934,
+                "name": "Leon Draisaitl",
+                "team": "EDM",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "E. Bouchard",
+                        "assists_to_date": 1,
+                        "player_id": 8480803
+                    },
+                    {
+                        "name": "R. Nugent-Hopkins",
+                        "assists_to_date": 1,
+                        "player_id": 8476454
+                    }
+                ]
+            },
+            {
+                "player_id": 8482691,
+                "name": "Aatu Raty",
+                "team": "VAN",
+                "goals_to_date": 1,
+                "assists": []
+            },
+            {
+                "player_id": 8485385,
+                "name": "Braeden Cootes",
+                "team": "VAN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "F. Hronek",
+                        "assists_to_date": 1,
+                        "player_id": 8479425
+                    },
+                    {
+                        "name": "D. Forbort",
+                        "assists_to_date": 1,
+                        "player_id": 8475762
+                    }
+                ]
+            },
+            {
+                "player_id": 8477934,
+                "name": "Leon Draisaitl",
+                "team": "EDM",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "C. McDavid",
+                        "assists_to_date": 2,
+                        "player_id": 8478402
+                    }
+                ]
+            },
+            {
+                "player_id": 8483476,
+                "name": "Jonathan Lekkerim\u00e4ki",
+                "team": "VAN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "F. Chytil",
+                        "assists_to_date": 1,
+                        "player_id": 8480078
+                    },
+                    {
+                        "name": "F. Hronek",
+                        "assists_to_date": 2,
+                        "player_id": 8479425
+                    }
+                ]
+            }
+        ]
+    }
+]
