@@ -530,3 +530,99 @@ def process_raw_skaters_2024_2025_html_table():
         file.write(html_table)
 
     print(f"Filtered HTML table saved to {table_path}")
+
+def process_raw_goalies_2024_2025_html_table():
+    """
+    Reads the NHL skaters CSV file and generates an HTML table.
+
+    The HTML table only includes rows where the 'situation' column equals 'all'.
+    The table is saved to the file path specified in `table_path`.
+
+    File Paths:
+    - Input: 'NHL_data/nhl_skaters_2024_2025_regular_latest.csv'
+    - Output: 'NHL_data/skaters_table.html'
+    """
+    # File paths
+    csv_path = "NHL_data/static_data/goalies.csv"
+    table_path = "NHL_data/goalies_table_2024_2025.html"
+
+    # Read the CSV file into a DataFrame
+    df = pd.read_csv(csv_path)
+
+    # Filter rows where 'situation' equals 'all'
+    filtered_df = df[df["situation"] == "all"]
+
+    # Generate the HTML table
+    html_table = filtered_df.to_html(
+        index=False, classes="table table-striped", border=0
+    )
+
+    # Save the HTML table to the specified file
+    with open(table_path, "w", encoding="utf-8") as file:
+        file.write(html_table)
+
+    print(f"Filtered HTML table saved to {table_path}")
+
+def process_raw_lines_2024_2025_html_table():
+    """
+    Reads the NHL skaters CSV file and generates an HTML table.
+
+    The HTML table only includes rows where the 'situation' column equals 'all'.
+    The table is saved to the file path specified in `table_path`.
+
+    File Paths:
+    - Input: 'NHL_data/nhl_skaters_2024_2025_regular_latest.csv'
+    - Output: 'NHL_data/skaters_table.html'
+    """
+    # File paths
+    csv_path = "NHL_data/static_data/lines.csv"
+    table_path = "NHL_data/lines_table_2024_2025.html"
+
+    # Read the CSV file into a DataFrame
+    df = pd.read_csv(csv_path)
+
+    # # Filter rows where 'situation' equals 'all'
+    # filtered_df = df[df["situation"] == "all"]
+
+    # Generate the HTML table
+    html_table = df.to_html(
+        index=False, classes="table table-striped", border=0
+    )
+
+    # Save the HTML table to the specified file
+    with open(table_path, "w", encoding="utf-8") as file:
+        file.write(html_table)
+
+    print(f"Filtered HTML table saved to {table_path}")
+
+def process_raw_teams_2024_2025_html_table():
+    """
+    Reads the NHL skaters CSV file and generates an HTML table.
+
+    The HTML table only includes rows where the 'situation' column equals 'all'.
+    The table is saved to the file path specified in `table_path`.
+
+    File Paths:
+    - Input: 'NHL_data/nhl_skaters_2024_2025_regular_latest.csv'
+    - Output: 'NHL_data/skaters_table.html'
+    """
+    # File paths
+    csv_path = "NHL_data/static_data/teams.csv"
+    table_path = "NHL_data/teams_table_2024_2025.html"
+
+    # Read the CSV file into a DataFrame
+    df = pd.read_csv(csv_path)
+
+    # Filter rows where 'situation' equals 'all'
+    filtered_df = df[df["situation"] == "all"]
+
+    # Generate the HTML table
+    html_table = filtered_df.to_html(
+        index=False, classes="table table-striped", border=0
+    )
+
+    # Save the HTML table to the specified file
+    with open(table_path, "w", encoding="utf-8") as file:
+        file.write(html_table)
+
+    print(f"Filtered HTML table saved to {table_path}")
