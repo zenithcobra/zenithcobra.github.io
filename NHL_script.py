@@ -185,7 +185,7 @@ def make_todays_schedule():
 
 
 def process_yesterdays_scores_to_report():
-        """
+    """
     Processes and generates a report for yesterday's NHL scores.
 
     This function fetches yesterday's NHL game data, processes it to extract relevant details 

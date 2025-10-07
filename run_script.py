@@ -10,7 +10,6 @@ print('script getting date')
 # DATES
 date = script.get_date()
 
-
 print('script getting schedule')
 # SCHEDULE INFO
 script.update_picture()
