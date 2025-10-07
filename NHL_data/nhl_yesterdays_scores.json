@@ -1,13 +1,8 @@
 {
     "prevDate": "2025-10-04",
-    "currentDate": "2025-10-05",
+    "currentDate": "2025-10-06",
     "nextDate": "2025-10-07",
     "gameWeek": [
-        {
-            "date": "2025-10-02",
-            "dayAbbrev": "THU",
-            "numberOfGames": 7
-        },
         {
             "date": "2025-10-03",
             "dayAbbrev": "FRI",
@@ -37,6 +32,11 @@
             "date": "2025-10-08",
             "dayAbbrev": "WED",
             "numberOfGames": 4
+        },
+        {
+            "date": "2025-10-09",
+            "dayAbbrev": "THU",
+            "numberOfGames": 14
         }
     ],
     "oddsPartners": [

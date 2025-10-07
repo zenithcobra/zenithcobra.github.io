@@ -6,6 +6,8 @@ import config
 from cache_manager import CacheManager
 import pandas as pd
 import shutil
+import json
+from pathlib import Path
 
 
 def format_schedule(schedule):
@@ -183,10 +185,75 @@ def make_todays_schedule():
 
 
 def process_yesterdays_scores_to_report():
-    nhl = NHL_data_fetcher.get_nhl_yesterdays_scores()
+        """
+    Processes and generates a report for yesterday's NHL scores.
 
-    import json
-    from pathlib import Path
+    This function fetches yesterday's NHL game data, processes it to extract relevant details 
+    (e.g., teams, scores, goals, assists), and saves the data in both JSON and HTML formats. 
+    The JSON file contains structured data for further use, while the HTML report provides 
+    a human-readable summary of the games.
+
+    Workflow:
+    1. Fetches yesterday's NHL scores using the `NHL_data_fetcher.get_nhl_yesterdays_scores` function.
+    2. Processes the JSON data to extract game details, including:
+       - Home and away teams
+       - Scores for each team
+       - Winning team
+       - Condensed game video link
+       - Goals and assists for each game
+    3. Saves the processed data to a JSON file in the `NHL_data/daily_scores` directory.
+    4. Generates an HTML report summarizing the games and saves it to `NHL_data/NHL_yesterdays_scores.txt`.
+
+    File Paths:
+    - JSON Output: `NHL_data/daily_scores/NHL_scores_[yesterdays_date].json`
+    - HTML Report: `NHL_data/NHL_yesterdays_scores.txt`
+
+    Dependencies:
+    - `NHL_data_fetcher.get_nhl_yesterdays_scores`: Fetches the raw game data.
+    - `config.get_yesterday_NHL`: Provides yesterday's date in the required format.
+    - `json`: Used to save the processed data in JSON format.
+
+    Example JSON Output:
+    [
+        {
+            "date": "2025-10-06",
+            "home_team": "Boston Bruins",
+            "away_team": "New York Rangers",
+            "home_score": 4,
+            "away_score": 3,
+            "winner": "Boston Bruins",
+            "condensed_game": "https://www.nhl.com/condensed_game_link",
+            "goals": [
+                {
+                    "player_id": 12345,
+                    "name": "John Doe",
+                    "team": "BOS",
+                    "goals_to_date": 5,
+                    "assists": [
+                        {
+                            "name": "Jane Smith",
+                            "assists_to_date": 10,
+                            "player_id": 67890
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+
+    Example HTML Report:
+    <h2>DATE: 2025-10-06</h2>
+    <h2>MATCH 1: <a href="https://www.nhl.com/condensed_game_link">Video</a></h2>
+    <h2>Boston Bruins 4 vs New York Rangers 3</h2>
+    <table>
+        <tr><th>Team</th><th>Name</th><th>Assist1</th><th>Assist2</th></tr>
+        <tr><td>BOS</td><td>John Doe (5)</td><td>Jane Smith (10)</td><td></td></tr>
+    </table>
+
+    Returns:
+        None
+    """
+    nhl = NHL_data_fetcher.get_nhl_yesterdays_scores()
 
     # File paths
     # input_file = 'NHL_data/nhl_yesterdays_scores.json'

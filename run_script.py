@@ -17,4 +17,4 @@ script.update_picture()
 
 NHL_script.process_schedule()
 NHL_script.process_yesterdays_scores_to_report()
-NHL_script.process_raw_skaters_html_table()
+# NHL_script.process_raw_skaters_html_table()
