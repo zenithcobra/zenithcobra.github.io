@@ -499,7 +499,7 @@ def process_yesterdays_scores_to_report():
     print("report generated")
 
 
-def process_raw_skaters_html_table():
+def process_raw_skaters_2024_2025_html_table():
     """
     Reads the NHL skaters CSV file and generates an HTML table.
 
@@ -511,8 +511,8 @@ def process_raw_skaters_html_table():
     - Output: 'NHL_data/skaters_table.html'
     """
     # File paths
-    csv_path = "NHL_data/nhl_skaters_2024_2025_regular_latest.csv"
-    table_path = "NHL_data/skaters_table.html"
+    csv_path = "NHL_data/static_data/nhl_skaters_2024_2025.csv"
+    table_path = "NHL_data/skaters_table_2024_2025.html"
 
     # Read the CSV file into a DataFrame
     df = pd.read_csv(csv_path)

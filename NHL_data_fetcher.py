@@ -117,7 +117,7 @@ def get_nhl_skaters_2024_2025_json() -> List[Dict[str, Any]]:
         return old_rows if old_rows is not None else new_rows
 
 
-def get_nhl_skaters_2024_2025_csv() -> str:
+def get_nhl_skaters() -> str:
     """
     Download MoneyPuck skaters CSV for the given season/phase and cache as CSV only.
 
@@ -134,6 +134,87 @@ def get_nhl_skaters_2024_2025_csv() -> str:
     url = "https://moneypuck.com/moneypuck/playerData/seasonSummary/2024/regular/skaters.csv"
     latest_key = (
         "nhl_skaters_2024_2025_regular_latest"  # file: DATA_DIR/<latest_key>.csv
+    )
+    dated_key_prefix = "nhl_skaters_2024_2025_regular_"  # file: DATA_DIR/daily_skaters/<prefix><YYYYMMDD>.csv
+    daily_dir = "daily_skaters"
+
+    # Ensure directories exist
+    os.makedirs(config.DATA_DIR, exist_ok=True)
+    os.makedirs(os.path.join(config.DATA_DIR, daily_dir), exist_ok=True)
+
+    expiry_hours = getattr(config, "CACHE_EXPIRY_HOURS", 4)
+
+    latest_path = os.path.join(config.DATA_DIR, f"{latest_key}.csv")
+
+    # 1) If latest exists and is still fresh, return cached CSV
+    if os.path.exists(latest_path):
+        try:
+            mtime = datetime.fromtimestamp(os.path.getmtime(latest_path))
+            if mtime > datetime.now() - timedelta(hours=expiry_hours):
+                with open(latest_path, "r", encoding="utf-8") as fh:
+                    return fh.read()
+        except Exception:
+            pass  # Treat as cache miss
+
+    # 2) Cache expired/missing -> fetch fresh CSV
+    resp = requests.get(
+        url, timeout=30, allow_redirects=True, headers={"Accept": "text/csv"}
+    )
+    resp.raise_for_status()
+    new_csv = (
+        resp.text
+    )  # Server sends UTF-8; if not, requests will try to detect encoding.
+
+    # 3) Compare to previous latest (if exists), ignoring expiry
+    old_csv = None
+    if os.path.exists(latest_path):
+        try:
+            with open(latest_path, "r", encoding="utf-8") as fh:
+                old_csv = fh.read()
+        except Exception:
+            old_csv = None
+
+    def text_hash(s: str) -> str:
+        return hashlib.sha256(s.encode("utf-8")).hexdigest()
+
+    changed = True if old_csv is None else (text_hash(new_csv) != text_hash(old_csv))
+
+    # 4) If changed -> save dated snapshot + update latest. If same -> do nothing.
+    if changed:
+        today = datetime.now().strftime("%Y%m%d")
+        dated_filename = f"{dated_key_prefix}{today}.csv"
+        dated_path = os.path.join(config.DATA_DIR, daily_dir, dated_filename)
+
+        # Write dated snapshot (keeps history)
+        with open(dated_path, "w", encoding="utf-8", newline="") as fh:
+            fh.write(new_csv)
+
+        # Update rolling 'latest'
+        with open(latest_path, "w", encoding="utf-8", newline="") as fh:
+            fh.write(new_csv)
+
+        return new_csv
+    else:
+        # Return the existing cached CSV
+        return old_csv if old_csv is not None else new_csv
+
+def get_nhl_skaters_2024_2025_csv() -> str:
+    """
+    Download MoneyPuck skaters CSV for the given season/phase and cache as CSV only.
+
+    Caching logic:
+      - If DATA_DIR/<latest_key>.csv is fresh (mtime within CACHE_EXPIRY_HOURS), return its contents.
+      - Otherwise fetch the CSV. If content differs from the previous 'latest':
+          * Save a dated snapshot to DATA_DIR/daily_skaters/<dated_key>.csv (YYYYMMDD)
+          * Update DATA_DIR/<latest_key>.csv
+        If content is identical, keep existing files unchanged.
+
+    Returns:
+      CSV text (string).
+    """
+    url = "https://moneypuck.com/moneypuck/playerData/seasonSummary/2024/regular/skaters.csv"
+    latest_key = (
+        "static_data/nhl_skaters_2024_2025"  # file: DATA_DIR/<latest_key>.csv
     )
     dated_key_prefix = "nhl_skaters_2024_2025_regular_"  # file: DATA_DIR/daily_skaters/<prefix><YYYYMMDD>.csv
     daily_dir = "daily_skaters"
