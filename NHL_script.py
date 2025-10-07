@@ -8,19 +8,6 @@ import pandas as pd
 import shutil
 
 
-# Function to format the schedule into the desired text format
-# def format_schedule(schedule):
-#     """
-#     Takes the schedule and makes a array of lines formatted for a txt file.
-#     """
-#     formatted_lines = []
-#     for row in schedule:
-#         date, time, away, home = row
-#         formatted_line = f"{date} {time:<8} EDT - {away:<22} @ {home:<25}"
-#         formatted_lines.append(formatted_line)
-    
-    
-#     return formatted_lines
 def format_schedule(schedule):
     """
     Takes the schedule and makes an array of lines formatted for a txt file.
@@ -30,16 +17,16 @@ def format_schedule(schedule):
     for row in schedule:
         date, time, away, home = row
         formatted_line = f"{date} {time:<8} EDT - {away:<22} @ {home:<25}"
-        
+
         # Wrap "Toronto Maple Leafs" with the styled <b> tag
         formatted_line = formatted_line.replace(
-            "Toronto Maple Leafs", 
-            '<b style="color: #5A62FF;">Toronto Maple Leafs</b>'
+            "Toronto Maple Leafs", '<b style="color: #5A62FF;">Toronto Maple Leafs</b>'
         )
-        
+
         formatted_lines.append(formatted_line)
-    
+
     return formatted_lines
+
 
 # Main function to handle the schedule processing
 def process_schedule():
@@ -119,6 +106,7 @@ def process_schedule():
     # Save the formatted schedule to the text file
     file_operations.save_text(formatted_schedule, "NHL_todays_schedule")
 
+
 def process_full_schedule():
     """
     Processes the NHL schedule and saves a separate text file for each day in the schedule.
@@ -165,6 +153,7 @@ def process_full_schedule():
 
     print(f"Schedules saved to {output_dir}")
 
+
 def make_todays_schedule():
     """
     Finds today's schedule file in the 'NHL_data/schedule' folder and copies it to
@@ -193,7 +182,6 @@ def make_todays_schedule():
     print(f"Today's schedule copied to {todays_schedule_path}")
 
 
-
 def process_yesterdays_scores_to_report():
     nhl = NHL_data_fetcher.get_nhl_yesterdays_scores()
 
@@ -202,7 +190,7 @@ def process_yesterdays_scores_to_report():
 
     # File paths
     # input_file = 'NHL_data/nhl_yesterdays_scores.json'
-    output_dir = 'NHL_data/daily_scores'
+    output_dir = "NHL_data/daily_scores"
 
     # Function to process the JSON data
     def process_scores(input_file, output_dir):
@@ -227,48 +215,49 @@ def process_yesterdays_scores_to_report():
             away_score = game["awayTeam"]["score"]
             winner = home_team if home_score > away_score else away_team
             condensed_game = game.get("condensedGame", "")
-            condensed_game = "https://www.nhl.com"+condensed_game
+            condensed_game = "https://www.nhl.com" + condensed_game
 
             # Extract goals data
             goals = []
             for goal in game.get("goals", []):
                 goal_data = {
-                    "player_id":goal['playerId'],
+                    "player_id": goal["playerId"],
                     "name": f"{goal['firstName']['default']} {goal['lastName']['default']}",
-                    "team": goal['teamAbbrev'],
-                    "goals_to_date": goal.get("goalsToDate",None),
+                    "team": goal["teamAbbrev"],
+                    "goals_to_date": goal.get("goalsToDate", None),
                     "assists": [
                         {
                             "name": assist["name"]["default"],
                             "assists_to_date": assist["assistsToDate"],
-                            "player_id": assist["playerId"]
+                            "player_id": assist["playerId"],
                         }
                         for assist in goal.get("assists", [])
-                    ]
+                    ],
                 }
                 goals.append(goal_data)
 
             # Add the formatted game data
-            formatted_games.append({
-                "date": yesterdays_date,
-                "home_team": home_team,
-                "away_team": away_team,
-                "home_score": home_score,
-                "away_score": away_score,
-                "winner": winner,
-                "condensed_game": condensed_game,
-                "goals": goals
-            })
+            formatted_games.append(
+                {
+                    "date": yesterdays_date,
+                    "home_team": home_team,
+                    "away_team": away_team,
+                    "home_score": home_score,
+                    "away_score": away_score,
+                    "winner": winner,
+                    "condensed_game": condensed_game,
+                    "goals": goals,
+                }
+            )
 
         # Save the formatted data to the output file
-        with open(output_file, 'w', encoding='utf-8') as file:
+        with open(output_file, "w", encoding="utf-8") as file:
             json.dump(formatted_games, file, indent=4)
 
         print(f"Processed scores saved to {output_file}")
 
         return formatted_games
 
-        
     def generate_hockey_reference_link(name):
         """
         Generates a Hockey Reference player link based on the player's name.
@@ -320,46 +309,44 @@ def process_yesterdays_scores_to_report():
     #     else:
     #         return "No games available to report."
 
-        # # Process each game
-        # for i, game in enumerate(data, start=1):
-        #     report_lines.append(f"\nMATCH {i}:  <a target='_blank' rel='noopener noreferrer' href='{game['condensed_game']}'>Video</a>")
-        #     report_lines.append(f"<b>{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}</b>")
-        #     report_lines.append("GOALS:")
+    # # Process each game
+    # for i, game in enumerate(data, start=1):
+    #     report_lines.append(f"\nMATCH {i}:  <a target='_blank' rel='noopener noreferrer' href='{game['condensed_game']}'>Video</a>")
+    #     report_lines.append(f"<b>{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}</b>")
+    #     report_lines.append("GOALS:")
 
-        #     # Process each goal
-        #     for goal in game.get("goals", []):
-        #         player_link = generate_hockey_reference_link(goal['name'])
-        #         report_lines.append(f"- Name: <a target='_blank' rel='noopener noreferrer' href='{player_link}'>{goal['name']}</a>")
-        #         report_lines.append(f"  Team: {goal['team']}")
-        #         report_lines.append(f"  Goals to date: {goal.get('goals_to_date', 'N/A')}")
-        #         report_lines.append("  Assists to Goal:")
-        #         for assist in goal.get("assists", []):
-        #             report_lines.append(f"    - Name: {assist['name']}, Assists to date: {assist.get('assists_to_date', 'N/A')}")
-        # Process each game
-        # Process each game
-        # for i, game in enumerate(data, start=1):
-        #     # Add match header with video link
-        #     report_lines.append(f"MATCH {i}:              Video")
-        #     report_lines.append(f"{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}\n")
-        #     report_lines.append("  GOALS:\n")
+    #     # Process each goal
+    #     for goal in game.get("goals", []):
+    #         player_link = generate_hockey_reference_link(goal['name'])
+    #         report_lines.append(f"- Name: <a target='_blank' rel='noopener noreferrer' href='{player_link}'>{goal['name']}</a>")
+    #         report_lines.append(f"  Team: {goal['team']}")
+    #         report_lines.append(f"  Goals to date: {goal.get('goals_to_date', 'N/A')}")
+    #         report_lines.append("  Assists to Goal:")
+    #         for assist in goal.get("assists", []):
+    #             report_lines.append(f"    - Name: {assist['name']}, Assists to date: {assist.get('assists_to_date', 'N/A')}")
+    # Process each game
+    # Process each game
+    # for i, game in enumerate(data, start=1):
+    #     # Add match header with video link
+    #     report_lines.append(f"MATCH {i}:              Video")
+    #     report_lines.append(f"{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}\n")
+    #     report_lines.append("  GOALS:\n")
 
-        #     # Process each goal
-        #     for goal in game.get("goals", []):
-        #         # Add goal scorer details
-        #         report_lines.append(f"  {goal['team'].ljust(3)} {goal['name'].ljust(20)} G2D: {str(goal.get('goals_to_date', 'N/A')).ljust(2)}")
-        #         report_lines.append("  Assists")
+    #     # Process each goal
+    #     for goal in game.get("goals", []):
+    #         # Add goal scorer details
+    #         report_lines.append(f"  {goal['team'].ljust(3)} {goal['name'].ljust(20)} G2D: {str(goal.get('goals_to_date', 'N/A')).ljust(2)}")
+    #         report_lines.append("  Assists")
 
-        #         # Add assist details
-        #         for assist in goal.get("assists", []):
-        #             report_lines.append(f"    {assist['name'].ljust(20)} A2D: {assist.get('assists_to_date', 'N/A')}")
+    #         # Add assist details
+    #         for assist in goal.get("assists", []):
+    #             report_lines.append(f"    {assist['name'].ljust(20)} A2D: {assist.get('assists_to_date', 'N/A')}")
 
-        #         # Add a blank line after each goal
-        #         report_lines.append("")
+    #         # Add a blank line after each goal
+    #         report_lines.append("")
 
-
-
-        # # Join the report lines into a single string
-        # return "\n".join(report_lines)
+    # # Join the report lines into a single string
+    # return "\n".join(report_lines)
 
     def make_report(data):
         """
@@ -383,19 +370,35 @@ def process_yesterdays_scores_to_report():
         # Process each game
         for i, game in enumerate(data, start=1):
             # Add match header with video link
-            report_lines.append(f"<h2>MATCH {i}: <a target='_blank' rel='noopener noreferrer' href='{game['condensed_game']}'>Video</a></h2>")
-            report_lines.append(f"<h2>{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}</h2>")
+            report_lines.append(
+                f"<h2>MATCH {i}: <a target='_blank' rel='noopener noreferrer' href='{game['condensed_game']}'>Video</a></h2>"
+            )
+            report_lines.append(
+                f"<h2>{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}</h2>"
+            )
 
             # Start the table
-            report_lines.append("<table border='1' style='border-collapse: collapse; width: 100%;'>")
-            report_lines.append("<tr><th>Team</th><th>Name</th><th>Assist1</th><th>Assist2</th></tr>")
+            report_lines.append(
+                "<table border='1' style='border-collapse: collapse; width: 100%;'>"
+            )
+            report_lines.append(
+                "<tr><th>Team</th><th>Name</th><th>Assist1</th><th>Assist2</th></tr>"
+            )
 
             # Process each goal
             for goal in game.get("goals", []):
                 # Extract assists
                 assists = goal.get("assists", [])
-                assist1 = f"{assists[0]['name']} ({assists[0].get('assists_to_date', 'N/A')})" if len(assists) > 0 else ""
-                assist2 = f"{assists[1]['name']} ({assists[1].get('assists_to_date', 'N/A')})" if len(assists) > 1 else ""
+                assist1 = (
+                    f"{assists[0]['name']} ({assists[0].get('assists_to_date', 'N/A')})"
+                    if len(assists) > 0
+                    else ""
+                )
+                assist2 = (
+                    f"{assists[1]['name']} ({assists[1].get('assists_to_date', 'N/A')})"
+                    if len(assists) > 1
+                    else ""
+                )
 
                 # Add a row for the goal
                 report_lines.append(
@@ -426,7 +429,7 @@ def process_yesterdays_scores_to_report():
     # Optionally, save the report to a text file
     with open("NHL_data/NHL_yesterdays_scores.txt", "w") as file:
         file.write(report)
-    print('report generated')
+    print("report generated")
 
 
 def process_raw_skaters_html_table():
@@ -448,10 +451,12 @@ def process_raw_skaters_html_table():
     df = pd.read_csv(csv_path)
 
     # Filter rows where 'situation' equals 'all'
-    filtered_df = df[df['situation'] == 'all']
+    filtered_df = df[df["situation"] == "all"]
 
     # Generate the HTML table
-    html_table = filtered_df.to_html(index=False, classes="table table-striped", border=0)
+    html_table = filtered_df.to_html(
+        index=False, classes="table table-striped", border=0
+    )
 
     # Save the HTML table to the specified file
     with open(table_path, "w", encoding="utf-8") as file:
