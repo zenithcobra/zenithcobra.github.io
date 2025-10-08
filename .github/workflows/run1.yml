@@ -2,7 +2,7 @@ name: Run1 - matches_today yesterdays_report get_standings todays_schedule match
 
 on:
   schedule:
-    - cron: "45 10,19 * * *"  # Runs at 10:45 UTC (6:45 AM EDT) and 7:45 UTC (3:45 PM EDT)
+    - cron: "10 11 * * *"  # Runs at 11:10 UTC (7:10 AM EDT)
 jobs:
   run-script:
     runs-on: ubuntu-latest
