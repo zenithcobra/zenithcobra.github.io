@@ -8,6 +8,20 @@ import pandas as pd
 import shutil
 import json
 from pathlib import Path
+import csv
+import pathlib
+import requests
+import pandas as pd
+import os
+from os import listdir
+from os.path import isfile, join
+from datetime import datetime
+from dateutil.parser import parse
+from fractions import Fraction
+import pandas as pd
+import re  # Import the regular expressions module
+import pandas as pd
+import os
 
 
 def format_schedule(schedule):
@@ -352,69 +366,6 @@ def process_yesterdays_scores_to_report():
 
         return link
 
-    # def make_report(data):
-    #     """
-    #     Processes a JSON string of NHL scores and generates a text report.
-
-    #     Args:
-    #         json_string (str): JSON string containing NHL scores data.
-
-    #     Returns:
-    #         str: A formatted text report of the games and their details.
-    #     """
-    #     # import json
-
-    #     # # Parse the JSON string
-    #     # data = json.loads(json_string)
-
-    #     # Initialize the report
-    #     report_lines = []
-
-    #     # Extract the date from the first game (assuming all games are from the same date)
-    #     if data:
-    #         report_lines.append(f"DATE: {data[0]['date']}")
-    #     else:
-    #         return "No games available to report."
-
-    # # Process each game
-    # for i, game in enumerate(data, start=1):
-    #     report_lines.append(f"\nMATCH {i}:  <a target='_blank' rel='noopener noreferrer' href='{game['condensed_game']}'>Video</a>")
-    #     report_lines.append(f"<b>{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}</b>")
-    #     report_lines.append("GOALS:")
-
-    #     # Process each goal
-    #     for goal in game.get("goals", []):
-    #         player_link = generate_hockey_reference_link(goal['name'])
-    #         report_lines.append(f"- Name: <a target='_blank' rel='noopener noreferrer' href='{player_link}'>{goal['name']}</a>")
-    #         report_lines.append(f"  Team: {goal['team']}")
-    #         report_lines.append(f"  Goals to date: {goal.get('goals_to_date', 'N/A')}")
-    #         report_lines.append("  Assists to Goal:")
-    #         for assist in goal.get("assists", []):
-    #             report_lines.append(f"    - Name: {assist['name']}, Assists to date: {assist.get('assists_to_date', 'N/A')}")
-    # Process each game
-    # Process each game
-    # for i, game in enumerate(data, start=1):
-    #     # Add match header with video link
-    #     report_lines.append(f"MATCH {i}:              Video")
-    #     report_lines.append(f"{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}\n")
-    #     report_lines.append("  GOALS:\n")
-
-    #     # Process each goal
-    #     for goal in game.get("goals", []):
-    #         # Add goal scorer details
-    #         report_lines.append(f"  {goal['team'].ljust(3)} {goal['name'].ljust(20)} G2D: {str(goal.get('goals_to_date', 'N/A')).ljust(2)}")
-    #         report_lines.append("  Assists")
-
-    #         # Add assist details
-    #         for assist in goal.get("assists", []):
-    #             report_lines.append(f"    {assist['name'].ljust(20)} A2D: {assist.get('assists_to_date', 'N/A')}")
-
-    #         # Add a blank line after each goal
-    #         report_lines.append("")
-
-    # # Join the report lines into a single string
-    # return "\n".join(report_lines)
-
     def make_report(data):
         """
         Processes a JSON string of NHL scores and generates an HTML report.
@@ -499,7 +450,7 @@ def process_yesterdays_scores_to_report():
     print("report generated")
 
 
-def process_raw_skaters_2024_2025_html_table():
+def process_todays_skaters():
     """
     Reads the NHL skaters CSV file and generates an HTML table.
 
@@ -530,3 +481,112 @@ def process_raw_skaters_2024_2025_html_table():
         file.write(html_table)
 
     print(f"Filtered HTML table saved to {table_path}")
+
+
+def teams_today():
+    """
+    Explanation:
+    Load Team Names:
+
+    The script reads nhl_team_names.csv into a pandas DataFrame.
+    It creates a dictionary mapping full team names (e.g., "Calgary Flames") to their abbreviations (e.g., "CGY").
+    Read Schedule File:
+
+    The script opens NHL_todays_schedule.txt and reads each line.
+    It extracts the team names by splitting the lines based on the @ symbol.
+    Map Team Names to Abbreviations:
+
+    For each team name extracted from the schedule, the script looks up its abbreviation using the dictionary created earlier.
+    Output:
+
+    The script prints a list of abbreviations for the teams playing today.
+    """
+    # File paths
+    schedule_file = "NHL_data/NHL_todays_schedule.txt"
+    team_names_file = "NHL_data/static_data/nhl_team_names.csv"
+
+    # Load the team names CSV into a DataFrame
+    team_names = pd.read_csv(team_names_file)
+
+    # Create a dictionary mapping full team names to abbreviations
+    team_name_to_abbrev = dict(zip(team_names["NAME"], team_names["ABBREV"]))
+
+    # Read the schedule file
+    with open(schedule_file, "r") as file:
+        schedule_lines = file.readlines()
+
+    # Extract team names from the schedule
+    teams_playing_today = []
+    for line in schedule_lines:
+        # Remove HTML tags using a regular expression
+        line = re.sub(r"<[^>]*>", "", line)  # Removes anything between < and >
+
+        # Split the line to isolate team names
+        if "@" in line:
+            parts = line.split("@")
+            home_team = parts[1].strip()
+            away_team = parts[0].split("-")[-1].strip()
+            teams_playing_today.extend([home_team, away_team])
+
+    # Map team names to abbreviations
+    team_abbreviations = [
+        team_name_to_abbrev[team]
+        for team in teams_playing_today
+        if team in team_name_to_abbrev
+    ]
+
+    # Print the list of abbreviations
+    return team_abbreviations
+
+
+def process_nhl_data(team_list, static_file_path, latest_file_path, output_file_path):
+    """
+    Processes NHL data by filtering, combining, and transforming data from two CSV files.
+
+    Args:
+        team_list (list): List of team abbreviations to filter by (e.g., ['EDM', 'CGY', 'TOR']).
+        static_file_path (str): Path to the static 2024 CSV file.
+        latest_file_path (str): Path to the latest 2025 CSV file.
+        output_file_path (str): Path to save the combined output CSV file.
+
+    Returns:
+        None
+    """
+    # Step 1: Load the CSV files
+    static_df = pd.read_csv(static_file_path)
+    latest_df = pd.read_csv(latest_file_path)
+
+    # Step 2: Filter rows by team and 'all' situation
+    static_filtered = static_df[(static_df['team'].isin(team_list)) & (static_df['situation'] == 'all')]
+    latest_filtered = latest_df[(latest_df['team'].isin(team_list)) & (latest_df['situation'] == 'all')]
+
+    # Step 3: Combine the data
+    # Convert static data to a format where numeric columns are lists
+    combined_data = static_filtered.copy()
+    numeric_columns = combined_data.select_dtypes(include=['number']).columns
+
+    # Turn static numeric values into lists
+    for col in numeric_columns:
+        combined_data[col] = combined_data[col].apply(lambda x: [x])
+
+    # Iterate through the latest data and update or append to the combined data
+    for _, latest_row in latest_filtered.iterrows():
+        player_name = latest_row['name']
+        team = latest_row['team']
+
+        # Check if the player already exists in the combined data
+        existing_player = combined_data[(combined_data['name'] == player_name) & (combined_data['team'] == team)]
+
+        if not existing_player.empty:
+            # Update the existing player's numeric columns by appending the latest values
+            for col in numeric_columns:
+                combined_data.loc[existing_player.index, col].iloc[0].append(latest_row[col])
+        else:
+            # Add the new player to the combined data
+            new_row = latest_row.copy()
+            for col in numeric_columns:
+                new_row[col] = [new_row[col]]  # Turn the numeric value into a list
+            combined_data = pd.concat([combined_data, pd.DataFrame([new_row])], ignore_index=True)
+
+    # Step 4: Save the combined data to a new CSV file
+    combined_data.to_csv(output_file_path, index=False)
