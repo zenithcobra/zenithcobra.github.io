@@ -26,3 +26,9 @@ NHL_data_fetcher.get_nhl_skaters()
 NHL_data_fetcher.get_nhl_goalies()
 NHL_data_fetcher.get_nhl_lines()
 NHL_data_fetcher.get_nhl_teams()
+
+# PRocess
+NHL_script.process_nhl_data_from_folder()\
+
+# HTML
+NHL_script.process_todays_skaters()

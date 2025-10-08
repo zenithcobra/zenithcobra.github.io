@@ -458,23 +458,18 @@ def process_todays_skaters():
     The table is saved to the file path specified in `table_path`.
 
     File Paths:
-    - Input: 'NHL_data/nhl_skaters_2024_2025_regular_latest.csv'
-    - Output: 'NHL_data/skaters_table.html'
+    - Input:     csv_path = "NHL_data/combined_nhl_skaters.csv"
+    - Output:    table_path = "NHL_data/skaters_html_table.html"
     """
     # File paths
-    csv_path = "NHL_data/static_data/nhl_skaters_2024_2025.csv"
-    table_path = "NHL_data/skaters_table_2024_2025.html"
+    csv_path = "NHL_data/combined_nhl_skaters.csv"
+    table_path = "NHL_data/skaters_html_table.html"
 
     # Read the CSV file into a DataFrame
     df = pd.read_csv(csv_path)
 
-    # Filter rows where 'situation' equals 'all'
-    filtered_df = df[df["situation"] == "all"]
-
     # Generate the HTML table
-    html_table = filtered_df.to_html(
-        index=False, classes="table table-striped", border=0
-    )
+    html_table = df.to_html(index=False, classes="table table-striped", border=0)
 
     # Save the HTML table to the specified file
     with open(table_path, "w", encoding="utf-8") as file:
@@ -539,7 +534,9 @@ def teams_today():
     return team_abbreviations
 
 
-def process_nhl_data(team_list, static_file_path, latest_file_path, output_file_path):
+def process_nhl_data_old(
+    team_list, static_file_path, latest_file_path, output_file_path
+):
     """
     Processes NHL data by filtering, combining, and transforming data from two CSV files.
 
@@ -557,13 +554,17 @@ def process_nhl_data(team_list, static_file_path, latest_file_path, output_file_
     latest_df = pd.read_csv(latest_file_path)
 
     # Step 2: Filter rows by team and 'all' situation
-    static_filtered = static_df[(static_df['team'].isin(team_list)) & (static_df['situation'] == 'all')]
-    latest_filtered = latest_df[(latest_df['team'].isin(team_list)) & (latest_df['situation'] == 'all')]
+    static_filtered = static_df[
+        (static_df["team"].isin(team_list)) & (static_df["situation"] == "all")
+    ]
+    latest_filtered = latest_df[
+        (latest_df["team"].isin(team_list)) & (latest_df["situation"] == "all")
+    ]
 
     # Step 3: Combine the data
     # Convert static data to a format where numeric columns are lists
     combined_data = static_filtered.copy()
-    numeric_columns = combined_data.select_dtypes(include=['number']).columns
+    numeric_columns = combined_data.select_dtypes(include=["number"]).columns
 
     # Turn static numeric values into lists
     for col in numeric_columns:
@@ -571,22 +572,110 @@ def process_nhl_data(team_list, static_file_path, latest_file_path, output_file_
 
     # Iterate through the latest data and update or append to the combined data
     for _, latest_row in latest_filtered.iterrows():
-        player_name = latest_row['name']
-        team = latest_row['team']
+        player_name = latest_row["name"]
+        team = latest_row["team"]
 
         # Check if the player already exists in the combined data
-        existing_player = combined_data[(combined_data['name'] == player_name) & (combined_data['team'] == team)]
+        existing_player = combined_data[
+            (combined_data["name"] == player_name) & (combined_data["team"] == team)
+        ]
 
         if not existing_player.empty:
             # Update the existing player's numeric columns by appending the latest values
             for col in numeric_columns:
-                combined_data.loc[existing_player.index, col].iloc[0].append(latest_row[col])
+                combined_data.loc[existing_player.index, col].iloc[0].append(
+                    latest_row[col]
+                )
         else:
             # Add the new player to the combined data
             new_row = latest_row.copy()
             for col in numeric_columns:
                 new_row[col] = [new_row[col]]  # Turn the numeric value into a list
-            combined_data = pd.concat([combined_data, pd.DataFrame([new_row])], ignore_index=True)
+            combined_data = pd.concat(
+                [combined_data, pd.DataFrame([new_row])], ignore_index=True
+            )
 
     # Step 4: Save the combined data to a new CSV file
+    combined_data.to_csv(output_file_path, index=False)
+
+
+def process_nhl_data_from_folder():
+    """
+    Processes NHL data by filtering, combining, and transforming data from multiple CSV files in a folder.
+
+    Args:
+        team_list (list): List of team abbreviations to filter by (e.g., ['EDM', 'CGY', 'TOR']).
+        static_file_path (str): Path to the static 2024 CSV file.
+        daily_folder_path (str): Path to the folder containing daily skater files.
+        output_file_path (str): Path to save the combined output CSV file.
+
+    Returns:
+        None
+    """
+    team_list = teams_today()
+    static_file_path = "NHL_data/static_data/nhl_skaters_2024_2025.csv"
+    daily_folder_path = "NHL_data/daily_skaters"
+    output_file_path = "NHL_data/combined_nhl_skaters.csv"
+    # Step 1: Load the static CSV file
+    static_df = pd.read_csv(static_file_path)
+
+    # Step 2: Filter rows by team and 'all' situation in the static file
+    static_filtered = static_df[
+        (static_df["team"].isin(team_list)) & (static_df["situation"] == "all")
+    ]
+
+    # Convert static data to a format where numeric columns are lists
+    combined_data = static_filtered.copy()
+    numeric_columns = combined_data.select_dtypes(include=["number"]).columns
+
+    # Turn static numeric values into lists
+    for col in numeric_columns:
+        combined_data[col] = combined_data[col].apply(lambda x: [x])
+
+    # Step 3: Get all daily skater files and sort them by date
+    daily_files = [
+        f
+        for f in os.listdir(daily_folder_path)
+        if f.startswith("nhl_skaters_2025_") and f.endswith(".csv")
+    ]
+    daily_files.sort(
+        key=lambda x: datetime.strptime(x.split("_")[-1].split(".")[0], "%Y%m%d")
+    )
+
+    # Step 4: Process each daily file sequentially
+    for daily_file in daily_files:
+        daily_file_path = os.path.join(daily_folder_path, daily_file)
+        daily_df = pd.read_csv(daily_file_path)
+
+        # Filter rows by team and 'all' situation
+        daily_filtered = daily_df[
+            (daily_df["team"].isin(team_list)) & (daily_df["situation"] == "all")
+        ]
+
+        # Iterate through the daily data and update or append to the combined data
+        for _, daily_row in daily_filtered.iterrows():
+            player_name = daily_row["name"]
+            team = daily_row["team"]
+
+            # Check if the player already exists in the combined data
+            existing_player = combined_data[
+                (combined_data["name"] == player_name) & (combined_data["team"] == team)
+            ]
+
+            if not existing_player.empty:
+                # Update the existing player's numeric columns by appending the daily values
+                for col in numeric_columns:
+                    combined_data.loc[existing_player.index, col].iloc[0].append(
+                        daily_row[col]
+                    )
+            else:
+                # Add the new player to the combined data
+                new_row = daily_row.copy()
+                for col in numeric_columns:
+                    new_row[col] = [new_row[col]]  # Turn the numeric value into a list
+                combined_data = pd.concat(
+                    [combined_data, pd.DataFrame([new_row])], ignore_index=True
+                )
+
+    # Step 5: Save the combined data to a new CSV file
     combined_data.to_csv(output_file_path, index=False)

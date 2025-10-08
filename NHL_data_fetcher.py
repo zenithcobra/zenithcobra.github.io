@@ -181,7 +181,9 @@ def get_nhl_skaters() -> str:
 
     # 4) If changed -> save dated snapshot + update latest. If same -> do nothing.
     if changed:
-        today = datetime.now().strftime("%Y%m%d")
+        # today = datetime.now().strftime("%Y%m%d")
+        yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
+        today = yesterday
         dated_filename = f"{dated_key_prefix}{today}.csv"
         dated_path = os.path.join(config.DATA_DIR, daily_dir, dated_filename)
 
@@ -263,7 +265,8 @@ def get_nhl_goalies() -> str:
 
     # 4) If changed -> save dated snapshot + update latest. If same -> do nothing.
     if changed:
-        today = datetime.now().strftime("%Y%m%d")
+        yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
+        today = yesterday
         dated_filename = f"{dated_key_prefix}{today}.csv"
         dated_path = os.path.join(config.DATA_DIR, daily_dir, dated_filename)
 
@@ -345,7 +348,8 @@ def get_nhl_lines() -> str:
 
     # 4) If changed -> save dated snapshot + update latest. If same -> do nothing.
     if changed:
-        today = datetime.now().strftime("%Y%m%d")
+        yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
+        today = yesterday
         dated_filename = f"{dated_key_prefix}{today}.csv"
         dated_path = os.path.join(config.DATA_DIR, daily_dir, dated_filename)
 
@@ -427,7 +431,8 @@ def get_nhl_teams() -> str:
 
     # 4) If changed -> save dated snapshot + update latest. If same -> do nothing.
     if changed:
-        today = datetime.now().strftime("%Y%m%d")
+        yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
+        today = yesterday
         dated_filename = f"{dated_key_prefix}{today}.csv"
         dated_path = os.path.join(config.DATA_DIR, daily_dir, dated_filename)
 
