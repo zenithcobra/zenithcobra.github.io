@@ -17,8 +17,8 @@ script.update_picture()
 
 NHL_script.make_todays_schedule()
 NHL_script.process_yesterdays_scores_to_report()
-NHL_data_fetcher.get_nhl_skaters_2024_2025_csv()
-NHL_script.process_raw_skaters_2024_2025_html_table()
-NHL_script.process_raw_goalies_2024_2025_html_table()
-NHL_script.process_raw_lines_2024_2025_html_table()
-NHL_script.process_raw_teams_2024_2025_html_table()
+
+NHL_data_fetcher.get_nhl_skaters()
+NHL_data_fetcher.get_nhl_goalies()
+NHL_data_fetcher.get_nhl_lines()
+NHL_data_fetcher.get_nhl_teams()
