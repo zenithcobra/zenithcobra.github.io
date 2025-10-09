@@ -26,6 +26,10 @@ import statsapi
 from bs4 import BeautifulSoup
 import hashlib
 
+import os
+from datetime import datetime, timedelta
+import requests
+
 import config
 from cache_manager import cache
 
@@ -117,7 +121,7 @@ def get_nhl_skaters_2024_2025_json() -> List[Dict[str, Any]]:
         return old_rows if old_rows is not None else new_rows
 
 
-def get_nhl_skaters() -> str:
+def get_nhl_skaters_older() -> str:
     """
     Download MoneyPuck skaters CSV for the given season/phase and cache as CSV only.
 

@@ -478,61 +478,6 @@ def process_todays_skaters():
     print(f"Filtered HTML table saved to {table_path}")
 
 
-def teams_today():
-    """
-    Explanation:
-    Load Team Names:
-
-    The script reads nhl_team_names.csv into a pandas DataFrame.
-    It creates a dictionary mapping full team names (e.g., "Calgary Flames") to their abbreviations (e.g., "CGY").
-    Read Schedule File:
-
-    The script opens NHL_todays_schedule.txt and reads each line.
-    It extracts the team names by splitting the lines based on the @ symbol.
-    Map Team Names to Abbreviations:
-
-    For each team name extracted from the schedule, the script looks up its abbreviation using the dictionary created earlier.
-    Output:
-
-    The script prints a list of abbreviations for the teams playing today.
-    """
-    # File paths
-    schedule_file = "NHL_data/NHL_todays_schedule.txt"
-    team_names_file = "NHL_data/static_data/nhl_team_names.csv"
-
-    # Load the team names CSV into a DataFrame
-    team_names = pd.read_csv(team_names_file)
-
-    # Create a dictionary mapping full team names to abbreviations
-    team_name_to_abbrev = dict(zip(team_names["NAME"], team_names["ABBREV"]))
-
-    # Read the schedule file
-    with open(schedule_file, "r") as file:
-        schedule_lines = file.readlines()
-
-    # Extract team names from the schedule
-    teams_playing_today = []
-    for line in schedule_lines:
-        # Remove HTML tags using a regular expression
-        line = re.sub(r"<[^>]*>", "", line)  # Removes anything between < and >
-
-        # Split the line to isolate team names
-        if "@" in line:
-            parts = line.split("@")
-            home_team = parts[1].strip()
-            away_team = parts[0].split("-")[-1].strip()
-            teams_playing_today.extend([home_team, away_team])
-
-    # Map team names to abbreviations
-    team_abbreviations = [
-        team_name_to_abbrev[team]
-        for team in teams_playing_today
-        if team in team_name_to_abbrev
-    ]
-
-    # Print the list of abbreviations
-    return team_abbreviations
-
 
 def process_nhl_data_old(
     team_list, static_file_path, latest_file_path, output_file_path
@@ -679,3 +624,5 @@ def process_nhl_data_from_folder():
 
     # Step 5: Save the combined data to a new CSV file
     combined_data.to_csv(output_file_path, index=False)
+
+    
