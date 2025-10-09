@@ -1,0 +1,248 @@
+[
+    {
+        "date": "2025-10-08",
+        "home_team": "Panthers",
+        "away_team": "Blackhawks",
+        "home_score": 3,
+        "away_score": 2,
+        "winner": "Panthers",
+        "condensed_game": "https://www.nhl.com/video/chi-at-fla-condensed-game-6382229224112",
+        "goals": [
+            {
+                "player_id": 8483493,
+                "name": "Frank Nazar",
+                "team": "CHI",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "T. Bertuzzi",
+                        "assists_to_date": 1,
+                        "player_id": 8477479
+                    },
+                    {
+                        "name": "T. Teravainen",
+                        "assists_to_date": 1,
+                        "player_id": 8476882
+                    }
+                ]
+            },
+            {
+                "player_id": 8478421,
+                "name": "A.J. Greer",
+                "team": "FLA",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "J. Gadjovich",
+                        "assists_to_date": 1,
+                        "player_id": 8479981
+                    },
+                    {
+                        "name": "G. Forsling",
+                        "assists_to_date": 1,
+                        "player_id": 8478055
+                    }
+                ]
+            },
+            {
+                "player_id": 8477409,
+                "name": "Carter Verhaeghe",
+                "team": "FLA",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Samoskevich",
+                        "assists_to_date": 1,
+                        "player_id": 8482713
+                    }
+                ]
+            },
+            {
+                "player_id": 8476882,
+                "name": "Teuvo Teravainen",
+                "team": "CHI",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "F. Nazar",
+                        "assists_to_date": 1,
+                        "player_id": 8483493
+                    },
+                    {
+                        "name": "T. Bertuzzi",
+                        "assists_to_date": 2,
+                        "player_id": 8477479
+                    }
+                ]
+            },
+            {
+                "player_id": 8480003,
+                "name": "Jesper Boqvist",
+                "team": "FLA",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Samoskevich",
+                        "assists_to_date": 2,
+                        "player_id": 8482713
+                    },
+                    {
+                        "name": "E. Rodrigues",
+                        "assists_to_date": 1,
+                        "player_id": 8478542
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-10-08",
+        "home_team": "Rangers",
+        "away_team": "Penguins",
+        "home_score": 0,
+        "away_score": 3,
+        "winner": "Penguins",
+        "condensed_game": "https://www.nhl.com/video/pit-at-nyr-condensed-game-6382237336112",
+        "goals": [
+            {
+                "player_id": 8479638,
+                "name": "Justin Brazeau",
+                "team": "PIT",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "E. Malkin",
+                        "assists_to_date": 1,
+                        "player_id": 8471215
+                    }
+                ]
+            },
+            {
+                "player_id": 8479638,
+                "name": "Justin Brazeau",
+                "team": "PIT",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "E. Malkin",
+                        "assists_to_date": 2,
+                        "player_id": 8471215
+                    },
+                    {
+                        "name": "A. Mantha",
+                        "assists_to_date": 1,
+                        "player_id": 8477511
+                    }
+                ]
+            },
+            {
+                "player_id": 8481481,
+                "name": "Blake Lizotte",
+                "team": "PIT",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "R. Shea",
+                        "assists_to_date": 1,
+                        "player_id": 8478854
+                    },
+                    {
+                        "name": "C. Dewar",
+                        "assists_to_date": 1,
+                        "player_id": 8480980
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-10-08",
+        "home_team": "Kings",
+        "away_team": "Avalanche",
+        "home_score": 1,
+        "away_score": 4,
+        "winner": "Avalanche",
+        "condensed_game": "https://www.nhl.com/video/col-at-lak-condensed-game-6382249450112",
+        "goals": [
+            {
+                "player_id": 8480039,
+                "name": "Martin Necas",
+                "team": "COL",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "N. MacKinnon",
+                        "assists_to_date": 1,
+                        "player_id": 8477492
+                    },
+                    {
+                        "name": "A. Lehkonen",
+                        "assists_to_date": 1,
+                        "player_id": 8477476
+                    }
+                ]
+            },
+            {
+                "player_id": 8484258,
+                "name": "Sam Malinski",
+                "team": "COL",
+                "goals_to_date": 1,
+                "assists": []
+            },
+            {
+                "player_id": 8477476,
+                "name": "Artturi Lehkonen",
+                "team": "COL",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "C. Makar",
+                        "assists_to_date": 1,
+                        "player_id": 8480069
+                    },
+                    {
+                        "name": "N. MacKinnon",
+                        "assists_to_date": 2,
+                        "player_id": 8477492
+                    }
+                ]
+            },
+            {
+                "player_id": 8480039,
+                "name": "Martin Necas",
+                "team": "COL",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "C. Makar",
+                        "assists_to_date": 2,
+                        "player_id": 8480069
+                    },
+                    {
+                        "name": "B. Nelson",
+                        "assists_to_date": 1,
+                        "player_id": 8475754
+                    }
+                ]
+            },
+            {
+                "player_id": 8477942,
+                "name": "Kevin Fiala",
+                "team": "LAK",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "A. Kempe",
+                        "assists_to_date": 1,
+                        "player_id": 8477960
+                    },
+                    {
+                        "name": "A. Kopitar",
+                        "assists_to_date": 1,
+                        "player_id": 8471685
+                    }
+                ]
+            }
+        ]
+    }
+]
