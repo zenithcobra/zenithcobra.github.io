@@ -13,6 +13,85 @@ import requests
 import pandas as pd
 
 
+def update_rosters():
+    # List of team abbreviations
+    teams = [
+        "ANA", "BOS", "BUF", "CAR", "CBJ", "CGY", "CHI", "COL", "DAL", "DET",
+        "EDM", "FLA", "LAK", "MIN", "MTL", "NJD", "NSH", "NYI", "NYR", "OTT",
+        "PHI", "PIT", "SEA", "SJS", "STL", "TBL", "TOR", "UTA", "VAN", "VGK",
+        "WPG", "WSH"
+    ]
+    # Fetch and save rosters for all teams
+    for team in teams:
+        get_nhl_team_roster_and_save_csv(team)
+
+def get_nhl_team_roster_and_save_csv(team):
+    """
+    Fetch NHL team roster and save it as a CSV file.
+
+    Args:
+        team (str): Team abbreviation (e.g., "ANA", "BOS").
+
+    Saves:
+        CSV file in NHL_data/rosters/<team>.csv containing the roster data.
+    """
+    # Define the URL and file path
+    url = f"https://api-web.nhle.com/v1/roster/{team}/current"
+    folder_path = "NHL_data/rosters"
+    file_path = os.path.join(folder_path, f"{team}.csv")
+
+    # Ensure the folder exists
+    os.makedirs(folder_path, exist_ok=True)
+
+    try:
+        # Fetch the roster data
+        resp = requests.get(
+            url,
+            timeout=30,
+            allow_redirects=True,
+            headers={"Accept": "application/json"},
+        )
+        resp.raise_for_status()
+        roster_data = resp.json()
+
+        # Combine players from all categories (forwards, defensemen, goalies)
+        players = []
+        for category in ["forwards", "defensemen", "goalies"]:
+            category_players = roster_data.get(category, [])
+            for player in category_players:
+                players.append({
+                    "Player Name": f"{player.get('firstName', {}).get('default', 'Unknown')} {player.get('lastName', {}).get('default', 'Unknown')}",
+                    "Position": player.get("positionCode", "Unknown"),
+                    "Jersey Number": player.get("sweaterNumber", "Unknown"),
+                    "Height (in)": player.get("heightInInches", "Unknown"),
+                    "Weight (lbs)": player.get("weightInPounds", "Unknown"),
+                    "Birth Date": player.get("birthDate", "Unknown"),
+                    "Birth City": player.get("birthCity", {}).get("default", "Unknown"),
+                    "Birth Country": player.get("birthCountry", "Unknown"),
+                    "Team": team,
+                    "player_id": player.get("id","unknown")
+                })
+
+        # Check if there are players to save
+        if not players:
+            print(f"No roster data found for team {team}.")
+            return
+
+        # Convert the player data to a DataFrame
+        df = pd.DataFrame(players)
+
+        # Save the DataFrame as a CSV file
+        df.to_csv(file_path, index=False)
+        print(f"Roster for team {team} saved to {file_path}.")
+    except requests.RequestException as e:
+        print(f"Failed to fetch roster for team {team}: {e}")
+
+def get_roster(team_name):   
+    csv_file_path = f"NHL_data/rosters/{team_name}.csv"
+    with open(csv_file_path, mode='r') as file:
+        return list(csv.reader(file))
+    
+
 def get_nhl_skaters():
     # Calculate yesterday's date in YYYYMMDD format
     yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
