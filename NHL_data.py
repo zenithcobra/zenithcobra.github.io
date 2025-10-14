@@ -11,6 +11,33 @@ import pytz
 import re
 import requests
 import pandas as pd
+import os
+import csv
+
+
+
+def get_sorted_skater_paths(directory):
+    """
+    Reads the directory and returns a list of file paths sorted descendingly
+    based on the numeric portion of the filenames.
+
+    Args:
+        directory (str): Path to the directory containing skater files.
+
+    Returns:
+        list: List of file paths sorted descendingly.
+    """
+    # Get all files in the directory
+    files = [
+        os.path.join(directory, f)
+        for f in os.listdir(directory)
+        if f.startswith("nhl_skaters_2025_") and f.endswith(".csv")
+    ]
+
+    # Sort files descendingly based on the numeric portion of the filenames
+    files.sort(key=lambda x: int(x.split("_")[-1].split(".")[0]), reverse=True)
+
+    return files
 
 
 def update_rosters():
