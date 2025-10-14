@@ -311,7 +311,7 @@ def process_nhl_data_and_generate_html():
     # File paths
     static_file_path = "NHL_data/static_data/nhl_skaters_2024_2025.csv"
     daily_folder_path = "NHL_data/daily_skaters"
-    output_file_path = "NHL_data/combined_nhl_skaters.csv"
+    output_file_path = "NHL_data/combined_skaters_2025-10-14.csv"
     table_path = "NHL_data/skaters_html_table.html"
 
     # Get the list of teams playing today
