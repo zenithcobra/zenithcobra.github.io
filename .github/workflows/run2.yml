@@ -1,9 +1,8 @@
-name: Run2 - todays_schedule make_index
+name: Run1 - matches_today yesterdays_report get_standings todays_schedule match_overviews teams_today_list process_bvp make_index
 
 on:
   schedule:
-    - cron: "*/30 12-23 * * *"  # Runs every 30 minutes from 2 PM to 11 PM UTC#
-
+    - cron: "10 10 * * *"  # Runs at 10:10 UTC (6:10 AM EDT)
 jobs:
   run-script:
     runs-on: ubuntu-latest
@@ -24,9 +23,7 @@ jobs:
 
       - name: Run the Python script
         run: |
-          python script4_todays_schedule.py
-          python script10_add_dh_to_batters.py
-          python script14_make_index.py
+          python run_script2.py
 
       - name: Commit and push changes
         run: |
