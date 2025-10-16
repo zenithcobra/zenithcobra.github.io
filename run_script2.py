@@ -21,12 +21,3 @@ NHL_script.make_todays_schedule()
 
 # NHL YESTERDAYS SCORES FROM NHL_API
 NHL_script.process_yesterdays_scores_to_report()
-
-# # NHL DATA SCRAPE FROM MONEYPUCK
-# NHL_data.get_nhl_skaters()
-# NHL_data.get_nhl_goalies()
-# NHL_data.get_nhl_lines()
-# NHL_data.get_nhl_teams()
-
-# Process Data
-# NHL_data.process_nhl_data_and_generate_html()

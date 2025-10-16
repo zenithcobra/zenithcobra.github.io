@@ -1,8 +1,6 @@
 from bs4 import BeautifulSoup
-from cache_manager import cache
 from datetime import datetime, timedelta
 from typing import Any, Dict, List, Optional
-import config
 import csv
 import hashlib
 import json
