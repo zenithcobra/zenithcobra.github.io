@@ -267,7 +267,17 @@ def process_yesterdays_scores_to_report():
     Returns:
         None
     """
-    nhl = NHL_data_fetcher.get_nhl_yesterdays_scores()
+    # Get yesterday's date in the required format
+    yesterdays_date = config.get_yesterday_NHL()
+    url = f"https://api-web.nhle.com/v1/score/{yesterdays_date}"
+    resp = requests.get(
+            url,
+            timeout=30,
+            allow_redirects=True,
+            headers={"Accept": "application/json"},
+        )
+    resp.raise_for_status()
+    resp.json()
 
     # File paths
     # input_file = 'NHL_data/nhl_yesterdays_scores.json'
@@ -436,7 +446,7 @@ def process_yesterdays_scores_to_report():
         return "\n".join(report_lines)
 
     # Run the function
-    yesterdays_scores = process_scores(nhl, output_dir)
+    yesterdays_scores = process_scores(resp, output_dir)
 
     # Generate the report
     report = make_report(yesterdays_scores)
