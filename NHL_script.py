@@ -32,6 +32,317 @@ import requests
 import pandas as pd
 import os
 import csv
+from datetime import datetime, timedelta
+import json
+import csv
+import requests
+from pathlib import Path  # Import Path
+import importlib
+import NHL_script
+importlib.reload(NHL_script)
+import NHL_script
+importlib.reload(NHL_script)
+import file_operations
+importlib.reload(file_operations)
+from collections import defaultdict
+import csv
+from datetime import datetime
+
+
+def combine_skaters_playing_today():
+
+    teams_list = teams_today()
+    # NHL_script.update_rosters()
+
+    # ids for players on the teams playing today
+    roster_ids = []
+    for x in teams_list:
+        roster = get_roster(x)
+        for x in roster[1:]:
+            roster_ids.append(x[9])
+
+    # get a list of skater paths
+
+    # Example usage
+    directory = "NHL_data/daily_skaters"
+    file_paths = get_sorted_skater_paths(directory)
+    list11 = []
+    for x in file_paths:
+        csv_file_path = x
+        file1 = file_operations.read_csv(csv_file_path)
+        list11.append(file1)
+        
+    list_of_data = []
+    for z in roster_ids:
+        for x in list11:
+            for y in x:
+                if z == y[0] and y[5] == 'all':
+                    list_of_data.append(y)
+
+    # Combine rows by ID
+    combined_data = defaultdict(lambda: defaultdict(set))  # Use sets to ensure unique values
+
+    for row in list_of_data:
+        player_id = row[0]
+        for i, value in enumerate(row):
+            if i > 6:  # Convert numeric values to floats and store in sets
+                combined_data[player_id][i].add(float(value))
+            else:  # Store non-numeric values in sets
+                combined_data[player_id][i].add(value)
+
+    # Convert sets to sorted lists for the final output
+    final_data = []
+    for player_id, columns in combined_data.items():
+        combined_row = []
+        for i in range(len(list_of_data[0])):
+            if i in columns:
+                if i > 6:  # Sort numeric values in descending order
+                    combined_row.append(sorted(columns[i], reverse=True))
+                else:  # Sort non-numeric values (if needed)
+                    combined_row.append(sorted(columns[i], reverse=True))
+            else:
+                combined_row.append([])
+        final_data.append(combined_row)
+
+
+    # Define the headers
+    headers = [
+        "playerId", "season", "name", "team", "position", "situation", "games_played", "icetime", "shifts", "gameScore",
+        "onIce_xGoalsPercentage", "offIce_xGoalsPercentage", "onIce_corsiPercentage", "offIce_corsiPercentage",
+        "onIce_fenwickPercentage", "offIce_fenwickPercentage", "iceTimeRank", "I_F_xOnGoal", "I_F_xGoals", "I_F_xRebounds",
+        "I_F_xFreeze", "I_F_xPlayStopped", "I_F_xPlayContinuedInZone", "I_F_xPlayContinuedOutsideZone",
+        "I_F_flurryAdjustedxGoals", "I_F_scoreVenueAdjustedxGoals", "I_F_flurryScoreVenueAdjustedxGoals",
+        "I_F_primaryAssists", "I_F_secondaryAssists", "I_F_shotsOnGoal", "I_F_missedShots", "I_F_blockedShotAttempts",
+        "I_F_shotAttempts", "I_F_points", "I_F_goals", "I_F_rebounds", "I_F_reboundGoals", "I_F_freeze", "I_F_playStopped",
+        "I_F_playContinuedInZone", "I_F_playContinuedOutsideZone", "I_F_savedShotsOnGoal", "I_F_savedUnblockedShotAttempts",
+        "penalties", "I_F_penalityMinutes", "I_F_faceOffsWon", "I_F_hits", "I_F_takeaways", "I_F_giveaways",
+        "I_F_lowDangerShots", "I_F_mediumDangerShots", "I_F_highDangerShots", "I_F_lowDangerxGoals",
+        "I_F_mediumDangerxGoals", "I_F_highDangerxGoals", "I_F_lowDangerGoals", "I_F_mediumDangerGoals",
+        "I_F_highDangerGoals", "I_F_scoreAdjustedShotsAttempts", "I_F_unblockedShotAttempts",
+        "I_F_scoreAdjustedUnblockedShotAttempts", "I_F_dZoneGiveaways", "I_F_xGoalsFromxReboundsOfShots",
+        "I_F_xGoalsFromActualReboundsOfShots", "I_F_reboundxGoals", "I_F_xGoals_with_earned_rebounds",
+        "I_F_xGoals_with_earned_rebounds_scoreAdjusted", "I_F_xGoals_with_earned_rebounds_scoreFlurryAdjusted",
+        "I_F_shifts", "I_F_oZoneShiftStarts", "I_F_dZoneShiftStarts", "I_F_neutralZoneShiftStarts", "I_F_flyShiftStarts",
+        "I_F_oZoneShiftEnds", "I_F_dZoneShiftEnds", "I_F_neutralZoneShiftEnds", "I_F_flyShiftEnds", "faceoffsWon",
+        "faceoffsLost", "timeOnBench", "penalityMinutes", "penalityMinutesDrawn", "penaltiesDrawn", "shotsBlockedByPlayer",
+        "OnIce_F_xOnGoal", "OnIce_F_xGoals", "OnIce_F_flurryAdjustedxGoals", "OnIce_F_scoreVenueAdjustedxGoals",
+        "OnIce_F_flurryScoreVenueAdjustedxGoals", "OnIce_F_shotsOnGoal", "OnIce_F_missedShots",
+        "OnIce_F_blockedShotAttempts", "OnIce_F_shotAttempts", "OnIce_F_goals", "OnIce_F_rebounds",
+        "OnIce_F_reboundGoals", "OnIce_F_lowDangerShots", "OnIce_F_mediumDangerShots", "OnIce_F_highDangerShots",
+        "OnIce_F_lowDangerxGoals", "OnIce_F_mediumDangerxGoals", "OnIce_F_highDangerxGoals", "OnIce_F_lowDangerGoals",
+        "OnIce_F_mediumDangerGoals", "OnIce_F_highDangerGoals", "OnIce_F_scoreAdjustedShotsAttempts",
+        "OnIce_F_unblockedShotAttempts", "OnIce_F_scoreAdjustedUnblockedShotAttempts", "OnIce_F_xGoalsFromxReboundsOfShots",
+        "OnIce_F_xGoalsFromActualReboundsOfShots", "OnIce_F_reboundxGoals", "OnIce_F_xGoals_with_earned_rebounds",
+        "OnIce_F_xGoals_with_earned_rebounds_scoreAdjusted", "OnIce_F_xGoals_with_earned_rebounds_scoreFlurryAdjusted",
+        "OnIce_A_xOnGoal", "OnIce_A_xGoals", "OnIce_A_flurryAdjustedxGoals", "OnIce_A_scoreVenueAdjustedxGoals",
+        "OnIce_A_flurryScoreVenueAdjustedxGoals", "OnIce_A_shotsOnGoal", "OnIce_A_missedShots",
+        "OnIce_A_blockedShotAttempts", "OnIce_A_shotAttempts", "OnIce_A_goals", "OnIce_A_rebounds",
+        "OnIce_A_reboundGoals", "OnIce_A_lowDangerShots", "OnIce_A_mediumDangerShots", "OnIce_A_highDangerShots",
+        "OnIce_A_lowDangerxGoals", "OnIce_A_mediumDangerxGoals", "OnIce_A_highDangerxGoals", "OnIce_A_lowDangerGoals",
+        "OnIce_A_mediumDangerGoals", "OnIce_A_highDangerGoals", "OnIce_A_scoreAdjustedShotsAttempts",
+        "OnIce_A_unblockedShotAttempts", "OnIce_A_scoreAdjustedUnblockedShotAttempts", "OnIce_A_xGoalsFromxReboundsOfShots",
+        "OnIce_A_xGoalsFromActualReboundsOfShots", "OnIce_A_reboundxGoals", "OnIce_A_xGoals_with_earned_rebounds",
+        "OnIce_A_xGoals_with_earned_rebounds_scoreAdjusted", "OnIce_A_xGoals_with_earned_rebounds_scoreFlurryAdjusted",
+        "OffIce_F_xGoals", "OffIce_A_xGoals", "OffIce_F_shotAttempts", "OffIce_A_shotAttempts", "xGoalsForAfterShifts",
+        "xGoalsAgainstAfterShifts", "corsiForAfterShifts", "corsiAgainstAfterShifts", "fenwickForAfterShifts",
+        "fenwickAgainstAfterShifts"
+    ]
+
+    # Get today's date
+    todays_date = datetime.now().strftime('%Y-%m-%d')
+
+    # Define the output file path
+    output_file = f'NHL_data/combined_skaters/combined_skaters_{todays_date}.csv'
+
+    # Write the data to the CSV file
+    with open(output_file, mode='w', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        
+        # Write the headers
+        writer.writerow(headers)
+        
+        # Write the rows
+        writer.writerows(final_data)
+
+    print(f"Data has been saved to {output_file}")
+
+
+def generate_hockey_reference_link(name):
+    """
+    Generates a Hockey Reference player link based on the player's name.
+
+    Args:
+        name (str): The player's full name in the format "FirstName LastName".
+
+    Returns:
+        str: The Hockey Reference player link.
+    """
+    # Split the name into first and last names
+    try:
+        first_name, last_name = name.split(" ")
+    except ValueError:
+        return "Invalid name format. Expected 'FirstName LastName'."
+
+    # Extract the first letter of the last name
+    last_name_initial = last_name[0].lower()
+
+    # Extract the first two letters of the first name
+    first_name_initials = first_name[:2].lower()
+
+    # Format the link
+    link = f"https://www.hockey-reference.com/players/{last_name_initial}/{last_name[:5].lower()}{first_name_initials}01.html"
+
+    return link
+
+def process_yesterdays_scores_to_report():
+    """
+    Fetches yesterday's NHL scores from the NHL API, processes the data,
+    """
+    # Get yesterday's date in the required format
+    yesterdays_date = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+    url = f"https://api-web.nhle.com/v1/score/{yesterdays_date}"
+    print(url)
+    resp = requests.get(
+            url,
+            timeout=30,
+            allow_redirects=True,
+            headers={"Accept": "application/json"},
+        )
+    resp.raise_for_status()
+    resp.json()
+
+    # File paths
+    output_dir = Path("NHL_data/daily_scores")  # Convert to Path object
+
+    data = resp.json()
+
+    # Prepare the output file path
+    output_file = f"NHL_data/daily_scores/NHL_scores_{yesterdays_date}.json"
+
+    # Ensure the output directory exists
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    # Extract and format the games data
+    formatted_games = []
+    for game in data.get("games", []):
+        home_team = game["homeTeam"]["name"]["default"]
+        away_team = game["awayTeam"]["name"]["default"]
+        home_score = game["homeTeam"]["score"]
+        away_score = game["awayTeam"]["score"]
+        winner = home_team if home_score > away_score else away_team
+        condensed_game = game.get("condensedGame", "")
+        condensed_game = "https://www.nhl.com" + condensed_game
+
+        # Extract goals data
+        goals = []
+        for goal in game.get("goals", []):
+            goal_data = {
+                "player_id": goal["playerId"],
+                "name": f"{goal['firstName']['default']} {goal['lastName']['default']}",
+                "team": goal["teamAbbrev"],
+                "goals_to_date": goal.get("goalsToDate", None),
+                "assists": [
+                    {
+                        "name": assist["name"]["default"],
+                        "assists_to_date": assist["assistsToDate"],
+                        "player_id": assist["playerId"],
+                    }
+                    for assist in goal.get("assists", [])
+                ],
+            }
+            goals.append(goal_data)
+
+        # Add the formatted game data
+        formatted_games.append(
+            {
+                "date": yesterdays_date,
+                "home_team": home_team,
+                "away_team": away_team,
+                "home_score": home_score,
+                "away_score": away_score,
+                "winner": winner,
+                "condensed_game": condensed_game,
+                "goals": goals,
+            }
+        )
+
+    # Save the formatted data to the output file
+    with open(output_file, "w", encoding="utf-8") as file:
+        json.dump(formatted_games, file, indent=4)
+
+    print(f"Processed scores saved to {output_file}")
+
+    # Run the function
+    yesterdays_scores = formatted_games
+
+    # Generate the report
+    data = yesterdays_scores
+
+    # Initialize the report
+    report_lines = []
+
+    # Extract the date from the first game (assuming all games are from the same date)
+    if data:
+        report_lines.append(f"<h2>DATE: {data[0]['date']}</h2>")
+    else:
+        return "<p>No games available to report.</p>"
+
+    # Process each game
+    for i, game in enumerate(data, start=1):
+        # Add match header with video link
+        report_lines.append(
+            f"<h2>MATCH {i}: <a target='_blank' rel='noopener noreferrer' href='{game['condensed_game']}'>Video</a></h2>"
+        )
+        report_lines.append(
+            f"<h2>{game['home_team']} {game['home_score']} vs {game['away_team']} {game['away_score']}</h2>"
+        )
+
+        # Start the table
+        report_lines.append(
+            "<table border='1' style='border-collapse: collapse; width: 100%;'>"
+        )
+        report_lines.append(
+            "<tr><th>Team</th><th>Name</th><th>Assist1</th><th>Assist2</th></tr>"
+        )
+
+        # Process each goal
+        for goal in game.get("goals", []):
+            # Extract assists
+            assists = goal.get("assists", [])
+            assist1 = (
+                f"{assists[0]['name']} ({assists[0].get('assists_to_date', 'N/A')})"
+                if len(assists) > 0
+                else ""
+            )
+            assist2 = (
+                f"{assists[1]['name']} ({assists[1].get('assists_to_date', 'N/A')})"
+                if len(assists) > 1
+                else ""
+            )
+
+            # Add a row for the goal
+            report_lines.append(
+                f"<tr>"
+                f"<td>{goal['team']}</td>"
+                f"<td><a target='_blank' rel='noopener noreferrer' href='{generate_hockey_reference_link(goal['name'])}'>{goal['name']}</a> ({goal.get('goals_to_date', 'N/A')})</td>"
+                f"<td>{assist1}</td>"
+                f"<td>{assist2}</td>"
+                f"</tr>"
+            )
+
+        # End the table
+        report_lines.append("</table>")
+        report_lines.append("<br>")  # Add spacing between matches
+
+    # Join the report lines into a single HTML string
+    report = "\n".join(report_lines)
+    # Print the report
+    # print(report)
+
+    # Optionally, save the report to a text file
+    with open("NHL_data/NHL_yesterdays_scores.txt", "w") as file:
+        file.write(report)
+    print("report generated")
 
 
 def get_sorted_skater_paths(directory):
