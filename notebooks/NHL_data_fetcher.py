@@ -11,7 +11,7 @@ import pytz
 import statsapi
 from bs4 import BeautifulSoup
 
-import config
+import notebooks.config as config
 from cache_manager import cache
 import csv
 import json
@@ -30,7 +30,7 @@ import os
 from datetime import datetime, timedelta
 import requests
 
-import config
+import notebooks.config as config
 from cache_manager import cache
 
 

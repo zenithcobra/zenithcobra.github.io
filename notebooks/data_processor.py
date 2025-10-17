@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from fractions import Fraction
 from typing import Any, Dict, List, Optional, Tuple
 
-import config
+import notebooks.config as config
 from cache_manager import cache
 
 from bs4 import BeautifulSoup

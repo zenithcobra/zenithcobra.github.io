@@ -21,7 +21,7 @@ import os
 from datetime import datetime, timedelta
 from typing import Any, Dict, List, Optional, Callable
 
-import config
+import notebooks.config as config
 
 
 class CacheManager:

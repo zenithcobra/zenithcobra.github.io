@@ -16,7 +16,7 @@ import pytz
 import statsapi
 from bs4 import BeautifulSoup
 
-import config
+import notebooks.config as config
 from cache_manager import cache
 import csv
 import json
@@ -31,7 +31,7 @@ import statsapi
 from bs4 import BeautifulSoup
 import hashlib
 
-import config
+import notebooks.config as config
 from cache_manager import cache
 
 

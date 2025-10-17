@@ -5,7 +5,7 @@ This replaces the monolithic script.py with a modular, cacheable approach.
 import os
 from typing import Dict, List, Any
 
-import config
+import notebooks.config as config
 from cache_manager import cache
 from MLB_data_fetcher import (
     get_date, get_schedule_by_date, get_schedule_text, get_standings_text,

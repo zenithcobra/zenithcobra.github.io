@@ -8,7 +8,7 @@ from typing import Any, Dict, List, Optional
 
 from bs4 import BeautifulSoup
 
-import config
+import notebooks.config as config
 from cache_manager import cache
 
 

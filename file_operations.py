@@ -18,7 +18,7 @@ from pathlib import Path
 from pathlib import Path
 from typing import Optional, Tuple, Union, List, Dict
 import csv
-import config
+import notebooks.config as config
 
 
 def read_csv(csv_file_path):
