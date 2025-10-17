@@ -20,4 +20,4 @@ script.update_picture()
 NHL_script.make_todays_schedule()
 
 # NHL YESTERDAYS SCORES FROM NHL_API
-NHL_script.process_yesterdays_scores_to_report()
+# NHL_script.process_yesterdays_scores_to_report()
