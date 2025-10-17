@@ -13,7 +13,6 @@ import os
 import csv
 
 
-
 def get_sorted_skater_paths(directory):
     """
     Reads the directory and returns a list of file paths sorted descendingly
@@ -49,6 +48,7 @@ def update_rosters():
     # Fetch and save rosters for all teams
     for team in teams:
         get_nhl_team_roster_and_save_csv(team)
+
 
 def get_nhl_team_roster_and_save_csv(team):
     """
@@ -110,6 +110,7 @@ def get_nhl_team_roster_and_save_csv(team):
         print(f"Roster for team {team} saved to {file_path}.")
     except requests.RequestException as e:
         print(f"Failed to fetch roster for team {team}: {e}")
+
 
 def get_roster(team_name):   
     csv_file_path = f"NHL_data/rosters/{team_name}.csv"
