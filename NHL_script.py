@@ -1214,7 +1214,9 @@ def process_and_filter(data_string, indices_to_remove):
     # Step 3: Convert the filtered array back to a colon-separated string
     result_string = "-" + "-".join(map(str, filtered_array))
 
-    return result_string
+    new_string = result_string[1:]
+
+    return new_string
 
 
 def process_skaters_duplicates(skater_data):
