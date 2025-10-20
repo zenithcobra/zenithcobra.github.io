@@ -1,154 +1,154 @@
-playerId.append()
-season.append()
-name.append()
-team.append()
-position.append()
-situation.append()
-games_played.append()
-icetime.append()
-shifts.append()
-gameScore.append()
-onIce_xGoalsPercentage.append()
-offIce_xGoalsPercentage.append()
-onIce_corsiPercentage.append()
-offIce_corsiPercentage.append()
-onIce_fenwickPercentage.append()
-offIce_fenwickPercentage.append()
-iceTimeRank.append()
-I_F_xOnGoal.append()
-I_F_xGoals.append()
-I_F_xRebounds.append()
-I_F_xFreeze.append()
-I_F_xPlayStopped.append()
-I_F_xPlayContinuedInZone.append()
-I_F_xPlayContinuedOutsideZone.append()
-I_F_flurryAdjustedxGoals.append()
-I_F_scoreVenueAdjustedxGoals.append()
-I_F_flurryScoreVenueAdjustedxGoals.append()
-I_F_primaryAssists.append()
-I_F_secondaryAssists.append()
-I_F_shotsOnGoal.append()
-I_F_missedShots.append()
-I_F_blockedShotAttempts.append()
-I_F_shotAttempts.append()
-I_F_points.append()
-I_F_goals.append()
-I_F_rebounds.append()
-I_F_reboundGoals.append()
-I_F_freeze.append()
-I_F_playStopped.append()
-I_F_playContinuedInZone.append()
-I_F_playContinuedOutsideZone.append()
-I_F_savedShotsOnGoal.append()
-I_F_savedUnblockedShotAttempts.append()
-penalties.append()
-I_F_penalityMinutes.append()
-I_F_faceOffsWon.append()
-I_F_hits.append()
-I_F_takeaways.append()
-I_F_giveaways.append()
-I_F_lowDangerShots.append()
-I_F_mediumDangerShots.append()
-I_F_highDangerShots.append()
-I_F_lowDangerxGoals.append()
-I_F_mediumDangerxGoals.append()
-I_F_highDangerxGoals.append()
-I_F_lowDangerGoals.append()
-I_F_mediumDangerGoals.append()
-I_F_highDangerGoals.append()
-I_F_scoreAdjustedShotsAttempts.append()
-I_F_unblockedShotAttempts.append()
-I_F_scoreAdjustedUnblockedShotAttempts.append()
-I_F_dZoneGiveaways.append()
-I_F_xGoalsFromxReboundsOfShots.append()
-I_F_xGoalsFromActualReboundsOfShots.append()
-I_F_reboundxGoals.append()
-I_F_xGoals_with_earned_rebounds.append()
-I_F_xGoals_with_earned_rebounds_scoreAdjusted.append()
-I_F_xGoals_with_earned_rebounds_scoreFlurryAdjusted.append()
-I_F_shifts.append()
-I_F_oZoneShiftStarts.append()
-I_F_dZoneShiftStarts.append()
-I_F_neutralZoneShiftStarts.append()
-I_F_flyShiftStarts.append()
-I_F_oZoneShiftEnds.append()
-I_F_dZoneShiftEnds.append()
-I_F_neutralZoneShiftEnds.append()
-I_F_flyShiftEnds.append()
-faceoffsWon.append()
-faceoffsLost.append()
-timeOnBench.append()
-penalityMinutes.append()
-penalityMinutesDrawn.append()
-penaltiesDrawn.append()
-shotsBlockedByPlayer.append()
-OnIce_F_xOnGoal.append()
-OnIce_F_xGoals.append()
-OnIce_F_flurryAdjustedxGoals.append()
-OnIce_F_scoreVenueAdjustedxGoals.append()
-OnIce_F_flurryScoreVenueAdjustedxGoals.append()
-OnIce_F_shotsOnGoal.append()
-OnIce_F_missedShots.append()
-OnIce_F_blockedShotAttempts.append()
-OnIce_F_shotAttempts.append()
-OnIce_F_goals.append()
-OnIce_F_rebounds.append()
-OnIce_F_reboundGoals.append()
-OnIce_F_lowDangerShots.append()
-OnIce_F_mediumDangerShots.append()
-OnIce_F_highDangerShots.append()
-OnIce_F_lowDangerxGoals.append()
-OnIce_F_mediumDangerxGoals.append()
-OnIce_F_highDangerxGoals.append()
-OnIce_F_lowDangerGoals.append()
-OnIce_F_mediumDangerGoals.append()
-OnIce_F_highDangerGoals.append()
-OnIce_F_scoreAdjustedShotsAttempts.append()
-OnIce_F_unblockedShotAttempts.append()
-OnIce_F_scoreAdjustedUnblockedShotAttempts.append()
-OnIce_F_xGoalsFromxReboundsOfShots.append()
-OnIce_F_xGoalsFromActualReboundsOfShots.append()
-OnIce_F_reboundxGoals.append()
-OnIce_F_xGoals_with_earned_rebounds.append()
-OnIce_F_xGoals_with_earned_rebounds_scoreAdjusted.append()
-OnIce_F_xGoals_with_earned_rebounds_scoreFlurryAdjusted.append()
-OnIce_A_xOnGoal.append()
-OnIce_A_xGoals.append()
-OnIce_A_flurryAdjustedxGoals.append()
-OnIce_A_scoreVenueAdjustedxGoals.append()
-OnIce_A_flurryScoreVenueAdjustedxGoals.append()
-OnIce_A_shotsOnGoal.append()
-OnIce_A_missedShots.append()
-OnIce_A_blockedShotAttempts.append()
-OnIce_A_shotAttempts.append()
-OnIce_A_goals.append()
-OnIce_A_rebounds.append()
-OnIce_A_reboundGoals.append()
-OnIce_A_lowDangerShots.append()
-OnIce_A_mediumDangerShots.append()
-OnIce_A_highDangerShots.append()
-OnIce_A_lowDangerxGoals.append()
-OnIce_A_mediumDangerxGoals.append()
-OnIce_A_highDangerxGoals.append()
-OnIce_A_lowDangerGoals.append()
-OnIce_A_mediumDangerGoals.append()
-OnIce_A_highDangerGoals.append()
-OnIce_A_scoreAdjustedShotsAttempts.append()
-OnIce_A_unblockedShotAttempts.append()
-OnIce_A_scoreAdjustedUnblockedShotAttempts.append()
-OnIce_A_xGoalsFromxReboundsOfShots.append()
-OnIce_A_xGoalsFromActualReboundsOfShots.append()
-OnIce_A_reboundxGoals.append()
-OnIce_A_xGoals_with_earned_rebounds.append()
-OnIce_A_xGoals_with_earned_rebounds_scoreAdjusted.append()
-OnIce_A_xGoals_with_earned_rebounds_scoreFlurryAdjusted.append()
-OffIce_F_xGoals.append()
-OffIce_A_xGoals.append()
-OffIce_F_shotAttempts.append()
-OffIce_A_shotAttempts.append()
-xGoalsForAfterShifts.append()
-xGoalsAgainstAfterShifts.append()
-corsiForAfterShifts.append()
-corsiAgainstAfterShifts.append()
-fenwickForAfterShifts.append()
-fenwickAgainstAfterShifts.append()
+playerId = x[0]
+season = x[1]
+name = x[2]
+team = x[3]
+position = x[4]
+situation = x[5]
+games_played = x[6]
+icetime = x[7]
+shifts = x[8]
+gameScore = x[9]
+onIce_xGoalsPercentage = x[10]
+offIce_xGoalsPercentage = x[11]
+onIce_corsiPercentage = x[12]
+offIce_corsiPercentage = x[13]
+onIce_fenwickPercentage = x[14]
+offIce_fenwickPercentage = x[15]
+iceTimeRank = x[16]
+I_F_xOnGoal = x[17]
+I_F_xGoals = x[18]
+I_F_xRebounds = x[19]
+I_F_xFreeze = x[20]
+I_F_xPlayStopped = x[21]
+I_F_xPlayContinuedInZone = x[22]
+I_F_xPlayContinuedOutsideZone = x[23]
+I_F_flurryAdjustedxGoals = x[24]
+I_F_scoreVenueAdjustedxGoals = x[25]
+I_F_flurryScoreVenueAdjustedxGoals = x[26]
+I_F_primaryAssists = x[27]
+I_F_secondaryAssists = x[28]
+I_F_shotsOnGoal = x[29]
+I_F_missedShots = x[30]
+I_F_blockedShotAttempts = x[31]
+I_F_shotAttempts = x[32]
+I_F_points = x[33]
+I_F_goals = x[34]
+I_F_rebounds = x[36]
+I_F_reboundGoals = x[37]
+I_F_freeze = x[38]
+I_F_playStopped = x[39]
+I_F_playContinuedInZone = x[40]
+I_F_playContinuedOutsideZone = x[41]
+I_F_savedShotsOnGoal = x[42]
+I_F_savedUnblockedShotAttempts = x[43]
+penalties = x[44]
+I_F_penalityMinutes = x[45]
+I_F_faceOffsWon = x[46]
+I_F_hits = x[47]
+I_F_takeaways = x[48]
+I_F_giveaways = x[49]
+I_F_lowDangerShots = x[50]
+I_F_mediumDangerShots = x[51]
+I_F_highDangerShots = x[52]
+I_F_lowDangerxGoals = x[53]
+I_F_mediumDangerxGoals = x[54]
+I_F_highDangerxGoals = x[55]
+I_F_lowDangerGoals = x[56]
+I_F_mediumDangerGoals = x[57]
+I_F_highDangerGoals = x[58]
+I_F_scoreAdjustedShotsAttempts = x[59]
+I_F_unblockedShotAttempts = x[60]
+I_F_scoreAdjustedUnblockedShotAttempts = x[61]
+I_F_dZoneGiveaways = x[62]
+I_F_xGoalsFromxReboundsOfShots = x[63]
+I_F_xGoalsFromActualReboundsOfShots = x[64]
+I_F_reboundxGoals = x[65]
+I_F_xGoals_with_earned_rebounds = x[66]
+I_F_xGoals_with_earned_rebounds_scoreAdjusted = x[67]
+I_F_xGoals_with_earned_rebounds_scoreFlurryAdjusted = x[68]
+I_F_shifts = x[69]
+I_F_oZoneShiftStarts = x[70]
+I_F_dZoneShiftStarts = x[71]
+I_F_neutralZoneShiftStarts = x[72]
+I_F_flyShiftStarts = x[73]
+I_F_oZoneShiftEnds = x[74]
+I_F_dZoneShiftEnds = x[75]
+I_F_neutralZoneShiftEnds = x[76]
+I_F_flyShiftEnds = x[77]
+faceoffsWon = x[78]
+faceoffsLost = x[79]
+timeOnBench = x[80]
+penalityMinutes = x[81]
+penalityMinutesDrawn = x[82]
+penaltiesDrawn = x[83]
+shotsBlockedByPlayer = x[84]
+OnIce_F_xOnGoal = x[85]
+OnIce_F_xGoals = x[86]
+OnIce_F_flurryAdjustedxGoals = x[87]
+OnIce_F_scoreVenueAdjustedxGoals = x[88]
+OnIce_F_flurryScoreVenueAdjustedxGoals = x[89]
+OnIce_F_shotsOnGoal = x[90]
+OnIce_F_missedShots = x[91]
+OnIce_F_blockedShotAttempts = x[92]
+OnIce_F_shotAttempts = x[93]
+OnIce_F_goals = x[94]
+OnIce_F_rebounds = x[95]
+OnIce_F_reboundGoals = x[96]
+OnIce_F_lowDangerShots = x[97]
+OnIce_F_mediumDangerShots = x[98]
+OnIce_F_highDangerShots = x[99]
+OnIce_F_lowDangerxGoals = x[100]
+OnIce_F_mediumDangerxGoals = x[101]
+OnIce_F_highDangerxGoals = x[102]
+OnIce_F_lowDangerGoals = x[103]
+OnIce_F_mediumDangerGoals = x[104]
+OnIce_F_highDangerGoals = x[105]
+OnIce_F_scoreAdjustedShotsAttempts = x[106]
+OnIce_F_unblockedShotAttempts = x[107]
+OnIce_F_scoreAdjustedUnblockedShotAttempts = x[108]
+OnIce_F_xGoalsFromxReboundsOfShots = x[109]
+OnIce_F_xGoalsFromActualReboundsOfShots = x[110]
+OnIce_F_reboundxGoals = x[111]
+OnIce_F_xGoals_with_earned_rebounds = x[112]
+OnIce_F_xGoals_with_earned_rebounds_scoreAdjusted = x[113]
+OnIce_F_xGoals_with_earned_rebounds_scoreFlurryAdjusted = x[114]
+OnIce_A_xOnGoal = x[115]
+OnIce_A_xGoals = x[116]
+OnIce_A_flurryAdjustedxGoals = x[117]
+OnIce_A_scoreVenueAdjustedxGoals = x[118]
+OnIce_A_flurryScoreVenueAdjustedxGoals = x[119]
+OnIce_A_shotsOnGoal = x[120]
+OnIce_A_missedShots = x[121]
+OnIce_A_blockedShotAttempts = x[122]
+OnIce_A_shotAttempts = x[123]
+OnIce_A_goals = x[124]
+OnIce_A_rebounds = x[125]
+OnIce_A_reboundGoals = x[126]
+OnIce_A_lowDangerShots = x[127]
+OnIce_A_mediumDangerShots = x[128]
+OnIce_A_highDangerShots = x[129]
+OnIce_A_lowDangerxGoals = x[130]
+OnIce_A_mediumDangerxGoals = x[131]
+OnIce_A_highDangerxGoals = x[132]
+OnIce_A_lowDangerGoals = x[133]
+OnIce_A_mediumDangerGoals = x[134]
+OnIce_A_highDangerGoals = x[135]
+OnIce_A_scoreAdjustedShotsAttempts = x[136]
+OnIce_A_unblockedShotAttempts = x[137]
+OnIce_A_scoreAdjustedUnblockedShotAttempts = x[138]
+OnIce_A_xGoalsFromxReboundsOfShots = x[139]
+OnIce_A_xGoalsFromActualReboundsOfShots = x[140]
+OnIce_A_reboundxGoals = x[141]
+OnIce_A_xGoals_with_earned_rebounds = x[142]
+OnIce_A_xGoals_with_earned_rebounds_scoreAdjusted = x[143]
+OnIce_A_xGoals_with_earned_rebounds_scoreFlurryAdjusted = x[144]
+OffIce_F_xGoals = x[145]
+OffIce_A_xGoals = x[146]
+OffIce_F_shotAttempts = x[147]
+OffIce_A_shotAttempts = x[148]
+xGoalsForAfterShifts = x[149]
+xGoalsAgainstAfterShifts = x[150]
+corsiForAfterShifts = x[151]
+corsiAgainstAfterShifts = x[152]
+fenwickForAfterShifts = x[153]
+fenwickAgainstAfterShifts = x[154]
