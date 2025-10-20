@@ -1,2697 +1,1500 @@
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
+      <th>playerId</th>
+      <th>season</th>
       <th>name</th>
       <th>team</th>
-      <th>GP</th>
-      <th>SOG</th>
-      <th>SOG_per_game</th>
-      <th>SOG_list</th>
-      <th>SOG_diff</th>
-      <th>SOG_variance</th>
-      <th>G</th>
-      <th>G_diff</th>
-      <th>G_var</th>
+      <th>past_games</th>
+      <th>past_sog</th>
+      <th>past_a_sog</th>
+      <th>past_e_shot</th>
+      <th>past_goals</th>
+      <th>past_a_goals</th>
+      <th>past_e_goals</th>
+      <th>past_on_ice_goal</th>
+      <th>past_a_on_ice_goal</th>
+      <th>past_assists1</th>
+      <th>past_assists2</th>
+      <th>past_rebound_goals</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Mikael Backlund</td>
-      <td>CGY</td>
-      <td>6</td>
-      <td>8.0</td>
-      <td>1.33</td>
-      <td>8-6-5-2-1-</td>
-      <td>[-2.0, -1.0, -3.0, -1.0]</td>
-      <td>0.69</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Blake Coleman</td>
-      <td>CGY</td>
-      <td>6</td>
-      <td>15.0</td>
-      <td>2.50</td>
-      <td>15-13-11-8-5-2-</td>
-      <td>[-2.0, -2.0, -3.0, -3.0, -3.0]</td>
-      <td>0.24</td>
-      <td>2-1-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Matt Coronato</td>
-      <td>CGY</td>
-      <td>6</td>
-      <td>12.0</td>
-      <td>2.00</td>
-      <td>12-10-7-6-2-1-</td>
-      <td>[-2.0, -3.0, -1.0, -4.0, -1.0]</td>
-      <td>1.36</td>
-      <td>2-0-</td>
-      <td>[-2.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Joel Farabee</td>
-      <td>CGY</td>
-      <td>6</td>
-      <td>10.0</td>
-      <td>1.67</td>
-      <td>10-8-4-3-1-</td>
-      <td>[-2.0, -4.0, -1.0, -2.0]</td>
-      <td>1.19</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Morgan Frost</td>
-      <td>CGY</td>
-      <td>6</td>
-      <td>7.0</td>
-      <td>1.17</td>
-      <td>7-6-4-2-</td>
-      <td>[-1.0, -2.0, -2.0]</td>
-      <td>0.22</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Matvei Gridin</td>
-      <td>CGY</td>
-      <td>4</td>
-      <td>9.0</td>
-      <td>2.25</td>
-      <td>9-8-7-5-</td>
-      <td>[-1.0, -1.0, -2.0]</td>
-      <td>0.22</td>
-      <td>1-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Samuel Honzek</td>
-      <td>CGY</td>
-      <td>4</td>
-      <td>9.0</td>
-      <td>2.25</td>
-      <td>9-6-4-</td>
-      <td>[-3.0, -2.0]</td>
-      <td>0.25</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Jonathan Huberdeau</td>
-      <td>CGY</td>
-      <td>1</td>
-      <td>3.0</td>
-      <td>3.00</td>
-      <td>3-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>1-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Nazem Kadri</td>
-      <td>CGY</td>
-      <td>6</td>
-      <td>14.0</td>
-      <td>2.33</td>
-      <td>14-11-10-6-3-2-</td>
-      <td>[-3.0, -1.0, -4.0, -3.0, -1.0]</td>
-      <td>1.44</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Justin Kirkland</td>
-      <td>CGY</td>
-      <td>3</td>
-      <td>0.0</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Adam Klapka</td>
-      <td>CGY</td>
-      <td>6</td>
-      <td>3.0</td>
-      <td>0.50</td>
-      <td>3-1-0-</td>
-      <td>[-2.0, -1.0]</td>
-      <td>0.25</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Ryan Lomberg</td>
-      <td>CGY</td>
-      <td>6</td>
-      <td>4.0</td>
-      <td>0.67</td>
-      <td>4-2-1-0-</td>
-      <td>[-2.0, -1.0, -1.0]</td>
-      <td>0.22</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Yegor Sharangovich</td>
-      <td>CGY</td>
-      <td>6</td>
-      <td>9.0</td>
-      <td>1.50</td>
-      <td>9-8-4-1-0-</td>
-      <td>[-1.0, -4.0, -3.0, -1.0]</td>
-      <td>1.69</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Connor Zary</td>
-      <td>CGY</td>
-      <td>6</td>
-      <td>10.0</td>
-      <td>1.67</td>
-      <td>10-9-8-6-4-3-</td>
-      <td>[-1.0, -1.0, -2.0, -2.0, -1.0]</td>
-      <td>0.24</td>
-      <td>1-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Rasmus Andersson</td>
-      <td>CGY</td>
-      <td>6</td>
-      <td>10.0</td>
-      <td>1.67</td>
-      <td>10-8-4-2-</td>
-      <td>[-2.0, -4.0, -2.0]</td>
-      <td>0.89</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Kevin Bahl</td>
-      <td>CGY</td>
-      <td>6</td>
-      <td>3.0</td>
-      <td>0.50</td>
-      <td>3-2-1-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Jake Bean</td>
-      <td>CGY</td>
-      <td>3</td>
-      <td>2.0</td>
-      <td>0.67</td>
-      <td>2-0-</td>
-      <td>[-2.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Joel Hanley</td>
-      <td>CGY</td>
-      <td>6</td>
-      <td>1.0</td>
-      <td>0.17</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Daniil Miromanov</td>
-      <td>CGY</td>
-      <td>1</td>
-      <td>0.0</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Brayden Pachal</td>
-      <td>CGY</td>
-      <td>4</td>
-      <td>3.0</td>
-      <td>0.75</td>
-      <td>3-2-1-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Zayne Parekh</td>
-      <td>CGY</td>
-      <td>4</td>
-      <td>8.0</td>
-      <td>2.00</td>
-      <td>8-5-3-2-</td>
-      <td>[-3.0, -2.0, -1.0]</td>
-      <td>0.67</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>MacKenzie Weegar</td>
-      <td>CGY</td>
-      <td>6</td>
-      <td>5.0</td>
-      <td>0.83</td>
-      <td>5-4-2-1-</td>
-      <td>[-1.0, -2.0, -1.0]</td>
-      <td>0.22</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Morgan Barron</td>
-      <td>WPG</td>
-      <td>5</td>
-      <td>5.0</td>
-      <td>1.00</td>
-      <td>5-4-2-1-</td>
-      <td>[-1.0, -2.0, -1.0]</td>
-      <td>0.22</td>
-      <td>3-2-1-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Nikita Chibrikov</td>
-      <td>WPG</td>
-      <td>3</td>
-      <td>1.0</td>
-      <td>0.33</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Kyle Connor</td>
-      <td>WPG</td>
-      <td>5</td>
-      <td>15.0</td>
-      <td>3.00</td>
-      <td>15-11-10-6-</td>
-      <td>[-4.0, -1.0, -4.0]</td>
-      <td>2.00</td>
-      <td>3-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Parker Ford</td>
-      <td>WPG</td>
-      <td>2</td>
-      <td>2.0</td>
-      <td>1.00</td>
-      <td>2-1-</td>
-      <td>[-1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Alex Iafallo</td>
-      <td>WPG</td>
-      <td>5</td>
-      <td>7.0</td>
-      <td>1.40</td>
-      <td>7-5-3-1-</td>
-      <td>[-2.0, -2.0, -2.0]</td>
-      <td>0.00</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Cole Koepke</td>
-      <td>WPG</td>
-      <td>5</td>
-      <td>3.0</td>
-      <td>0.60</td>
-      <td>3-1-</td>
-      <td>[-2.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Vladislav Namestnikov</td>
-      <td>WPG</td>
-      <td>5</td>
-      <td>4.0</td>
-      <td>0.80</td>
-      <td>4-2-0-</td>
-      <td>[-2.0, -2.0]</td>
-      <td>0.00</td>
-      <td>2-1-0-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Nino Niederreiter</td>
-      <td>WPG</td>
-      <td>5</td>
-      <td>12.0</td>
-      <td>2.40</td>
-      <td>12-10-8-5-4-</td>
-      <td>[-2.0, -2.0, -3.0, -1.0]</td>
-      <td>0.50</td>
-      <td>2-1-0-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Gustav Nyquist</td>
-      <td>WPG</td>
-      <td>5</td>
-      <td>6.0</td>
-      <td>1.20</td>
-      <td>6-5-3-2-</td>
-      <td>[-1.0, -2.0, -1.0]</td>
-      <td>0.22</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Tanner Pearson</td>
-      <td>WPG</td>
-      <td>5</td>
-      <td>6.0</td>
-      <td>1.20</td>
-      <td>6-5-3-2-</td>
-      <td>[-1.0, -2.0, -1.0]</td>
-      <td>0.22</td>
-      <td>2-1-0-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Mark Scheifele</td>
-      <td>WPG</td>
-      <td>5</td>
-      <td>14.0</td>
-      <td>2.80</td>
-      <td>14-11-8-4-1-</td>
-      <td>[-3.0, -3.0, -4.0, -3.0]</td>
-      <td>0.19</td>
-      <td>6-5-3-2-0-</td>
-      <td>[-1.0, -2.0, -1.0, -2.0]</td>
-      <td>0.250000</td>
-    </tr>
-    <tr>
-      <td>Jonathan Toews</td>
-      <td>WPG</td>
-      <td>5</td>
-      <td>4.0</td>
-      <td>0.80</td>
-      <td>4-3-2-1-</td>
-      <td>[-1.0, -1.0, -1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Gabriel Vilardi</td>
-      <td>WPG</td>
-      <td>5</td>
-      <td>10.0</td>
-      <td>2.00</td>
-      <td>10-9-6-1-</td>
-      <td>[-1.0, -3.0, -5.0]</td>
-      <td>2.67</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Dylan DeMelo</td>
-      <td>WPG</td>
-      <td>5</td>
-      <td>4.0</td>
-      <td>0.80</td>
-      <td>4-3-0-</td>
-      <td>[-1.0, -3.0]</td>
-      <td>1.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Haydn Fleury</td>
-      <td>WPG</td>
-      <td>4</td>
-      <td>2.0</td>
-      <td>0.50</td>
-      <td>2-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Colin Miller</td>
-      <td>WPG</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1.00</td>
-      <td>1-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Josh Morrissey</td>
-      <td>WPG</td>
-      <td>5</td>
-      <td>4.0</td>
-      <td>0.80</td>
-      <td>4-3-2-0-</td>
-      <td>[-1.0, -1.0, -2.0]</td>
-      <td>0.22</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Neal Pionk</td>
-      <td>WPG</td>
-      <td>5</td>
-      <td>9.0</td>
-      <td>1.80</td>
-      <td>9-7-4-2-</td>
-      <td>[-2.0, -3.0, -2.0]</td>
-      <td>0.22</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Luke Schenn</td>
-      <td>WPG</td>
-      <td>5</td>
-      <td>4.0</td>
-      <td>0.80</td>
-      <td>4-2-1-</td>
-      <td>[-2.0, -1.0]</td>
-      <td>0.25</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Logan Stanley</td>
-      <td>WPG</td>
-      <td>5</td>
-      <td>4.0</td>
-      <td>0.80</td>
-      <td>4-2-1-0-</td>
-      <td>[-2.0, -1.0, -1.0]</td>
-      <td>0.22</td>
-      <td>2-1-0-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Josh Anderson</td>
-      <td>MTL</td>
-      <td>6</td>
-      <td>6.0</td>
-      <td>1.00</td>
-      <td>6-4-3-2-1-</td>
-      <td>[-2.0, -1.0, -1.0, -1.0]</td>
-      <td>0.19</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Zack Bolduc</td>
-      <td>MTL</td>
-      <td>6</td>
-      <td>15.0</td>
-      <td>2.50</td>
-      <td>15-13-11-10-7-3-</td>
-      <td>[-2.0, -2.0, -1.0, -3.0, -4.0]</td>
-      <td>1.04</td>
-      <td>3-2-1-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Cole Caufield</td>
-      <td>MTL</td>
-      <td>6</td>
-      <td>17.0</td>
-      <td>2.83</td>
-      <td>17-16-12-10-7-4-</td>
-      <td>[-1.0, -4.0, -2.0, -3.0, -3.0]</td>
-      <td>1.04</td>
-      <td>5-3-1-0-</td>
-      <td>[-2.0, -2.0, -1.0]</td>
-      <td>0.222222</td>
-    </tr>
-    <tr>
-      <td>Kirby Dach</td>
-      <td>MTL</td>
-      <td>5</td>
-      <td>6.0</td>
-      <td>1.20</td>
-      <td>6-4-2-</td>
-      <td>[-2.0, -2.0]</td>
-      <td>0.00</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Ivan Demidov</td>
-      <td>MTL</td>
-      <td>6</td>
-      <td>6.0</td>
-      <td>1.00</td>
-      <td>6-5-2-1-0-</td>
-      <td>[-1.0, -3.0, -1.0, -1.0]</td>
-      <td>0.75</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Jake Evans</td>
-      <td>MTL</td>
-      <td>6</td>
-      <td>2.0</td>
-      <td>0.33</td>
-      <td>2-1-</td>
-      <td>[-1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Brendan Gallagher</td>
-      <td>MTL</td>
-      <td>6</td>
-      <td>8.0</td>
-      <td>1.33</td>
-      <td>8-7-4-1-</td>
-      <td>[-1.0, -3.0, -3.0]</td>
-      <td>0.89</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Oliver Kapanen</td>
-      <td>MTL</td>
-      <td>6</td>
-      <td>8.0</td>
-      <td>1.33</td>
-      <td>8-7-4-3-2-</td>
-      <td>[-1.0, -3.0, -1.0, -1.0]</td>
-      <td>0.75</td>
-      <td>3-2-1-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Patrik Laine</td>
-      <td>MTL</td>
-      <td>5</td>
-      <td>6.0</td>
-      <td>1.20</td>
-      <td>6-4-1-</td>
-      <td>[-2.0, -3.0]</td>
-      <td>0.25</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Alex Newhook</td>
-      <td>MTL</td>
-      <td>6</td>
-      <td>7.0</td>
-      <td>1.17</td>
-      <td>7-4-3-2-1-</td>
-      <td>[-3.0, -1.0, -1.0, -1.0]</td>
-      <td>0.75</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Juraj Slafkovsk</td>
-      <td>MTL</td>
-      <td>6</td>
-      <td>13.0</td>
-      <td>2.17</td>
-      <td>13-12-11-10-8-6-</td>
-      <td>[-1.0, -1.0, -1.0, -2.0, -2.0]</td>
-      <td>0.24</td>
-      <td>2-1-0-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Nick Suzuki</td>
-      <td>MTL</td>
-      <td>6</td>
-      <td>12.0</td>
-      <td>2.00</td>
-      <td>12-10-6-5-3-2-</td>
-      <td>[-2.0, -4.0, -1.0, -2.0, -1.0]</td>
-      <td>1.20</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Joe Veleno</td>
-      <td>MTL</td>
-      <td>1</td>
-      <td>2.0</td>
-      <td>2.00</td>
-      <td>2-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Alexandre Carrier</td>
-      <td>MTL</td>
-      <td>6</td>
-      <td>4.0</td>
-      <td>0.67</td>
-      <td>4-3-1-0-</td>
-      <td>[-1.0, -2.0, -1.0]</td>
-      <td>0.22</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Noah Dobson</td>
-      <td>MTL</td>
-      <td>6</td>
-      <td>11.0</td>
-      <td>1.83</td>
-      <td>11-8-6-5-2-1-</td>
-      <td>[-3.0, -2.0, -1.0, -3.0, -1.0]</td>
-      <td>0.80</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Kaiden Guhle</td>
-      <td>MTL</td>
-      <td>5</td>
-      <td>7.0</td>
-      <td>1.40</td>
-      <td>7-4-0-</td>
-      <td>[-3.0, -4.0]</td>
-      <td>0.25</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Lane Hutson</td>
-      <td>MTL</td>
-      <td>6</td>
-      <td>8.0</td>
-      <td>1.33</td>
-      <td>8-6-5-4-3-</td>
-      <td>[-2.0, -1.0, -1.0, -1.0]</td>
-      <td>0.19</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Mike Matheson</td>
-      <td>MTL</td>
-      <td>6</td>
-      <td>8.0</td>
-      <td>1.33</td>
-      <td>8-7-5-4-1-</td>
-      <td>[-1.0, -2.0, -1.0, -3.0]</td>
-      <td>0.69</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Jayden Struble</td>
-      <td>MTL</td>
-      <td>2</td>
-      <td>0.0</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Arber Xhekaj</td>
-      <td>MTL</td>
-      <td>5</td>
-      <td>5.0</td>
-      <td>1.00</td>
-      <td>5-3-2-</td>
-      <td>[-2.0, -1.0]</td>
-      <td>0.25</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Zach Benson</td>
-      <td>BUF</td>
-      <td>2</td>
-      <td>4.0</td>
-      <td>2.00</td>
-      <td>4-2-</td>
-      <td>[-2.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Justin Danforth</td>
-      <td>BUF</td>
-      <td>4</td>
-      <td>2.0</td>
-      <td>0.50</td>
-      <td>2-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Josh Doan</td>
-      <td>BUF</td>
-      <td>5</td>
-      <td>18.0</td>
-      <td>3.60</td>
-      <td>18-12-9-8-5-2-</td>
-      <td>[-6.0, -3.0, -1.0, -3.0, -3.0]</td>
-      <td>2.56</td>
-      <td>2-0-</td>
-      <td>[-2.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Mason Geertsen</td>
-      <td>BUF</td>
-      <td>3</td>
-      <td>0.0</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Tyson Kozak</td>
-      <td>BUF</td>
-      <td>4</td>
-      <td>2.0</td>
-      <td>0.50</td>
-      <td>2-1-0-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Peyton Krebs</td>
-      <td>BUF</td>
-      <td>5</td>
-      <td>6.0</td>
-      <td>1.20</td>
-      <td>6-4-3-0-</td>
-      <td>[-2.0, -1.0, -3.0]</td>
-      <td>0.67</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Jiri Kulich</td>
-      <td>BUF</td>
-      <td>5</td>
-      <td>11.0</td>
-      <td>2.20</td>
-      <td>11-8-7-3-2-</td>
-      <td>[-3.0, -1.0, -4.0, -1.0]</td>
-      <td>1.69</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Beck Malenstyn</td>
-      <td>BUF</td>
-      <td>5</td>
-      <td>3.0</td>
-      <td>0.60</td>
-      <td>3-1-</td>
-      <td>[-2.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Ryan McLeod</td>
-      <td>BUF</td>
-      <td>5</td>
-      <td>7.0</td>
-      <td>1.40</td>
-      <td>7-2-</td>
-      <td>[-5.0]</td>
-      <td>0.00</td>
-      <td>2-0-</td>
-      <td>[-2.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Josh Norris</td>
-      <td>BUF</td>
-      <td>1</td>
-      <td>4.0</td>
-      <td>4.00</td>
-      <td>4-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Jack Quinn</td>
-      <td>BUF</td>
-      <td>5</td>
-      <td>7.0</td>
-      <td>1.40</td>
-      <td>7-5-2-1-</td>
-      <td>[-2.0, -3.0, -1.0]</td>
-      <td>0.67</td>
-      <td>2-0-</td>
-      <td>[-2.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Tage Thompson</td>
-      <td>BUF</td>
-      <td>5</td>
-      <td>19.0</td>
-      <td>3.80</td>
-      <td>19-18-17-13-5-</td>
-      <td>[-1.0, -1.0, -4.0, -8.0]</td>
-      <td>8.25</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Alex Tuch</td>
-      <td>BUF</td>
-      <td>5</td>
-      <td>15.0</td>
-      <td>3.00</td>
-      <td>15-13-10-9-7-6-</td>
-      <td>[-2.0, -3.0, -1.0, -2.0, -1.0]</td>
-      <td>0.56</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Jason Zucker</td>
-      <td>BUF</td>
-      <td>5</td>
-      <td>13.0</td>
-      <td>2.60</td>
-      <td>13-12-9-8-5-</td>
-      <td>[-1.0, -3.0, -1.0, -3.0]</td>
-      <td>1.00</td>
-      <td>3-1-0-</td>
-      <td>[-2.0, -1.0]</td>
-      <td>0.250000</td>
-    </tr>
-    <tr>
-      <td>Jacob Bryson</td>
-      <td>BUF</td>
-      <td>5</td>
-      <td>1.0</td>
-      <td>0.20</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Bowen Byram</td>
-      <td>BUF</td>
-      <td>5</td>
-      <td>3.0</td>
-      <td>0.60</td>
-      <td>3-2-1-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Rasmus Dahlin</td>
-      <td>BUF</td>
-      <td>5</td>
-      <td>15.0</td>
-      <td>3.00</td>
-      <td>15-11-8-4-</td>
-      <td>[-4.0, -3.0, -4.0]</td>
-      <td>0.22</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Ryan Johnson</td>
-      <td>BUF</td>
-      <td>3</td>
-      <td>0.0</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Owen Power</td>
-      <td>BUF</td>
-      <td>4</td>
-      <td>7.0</td>
-      <td>1.75</td>
-      <td>7-5-2-</td>
-      <td>[-2.0, -3.0]</td>
-      <td>0.25</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Mattias Samuelsson</td>
-      <td>BUF</td>
-      <td>3</td>
-      <td>2.0</td>
-      <td>0.67</td>
-      <td>2-1-</td>
-      <td>[-1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Conor Timmins</td>
-      <td>BUF</td>
-      <td>5</td>
-      <td>6.0</td>
-      <td>1.20</td>
-      <td>6-3-2-1-</td>
-      <td>[-3.0, -1.0, -1.0]</td>
-      <td>0.89</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Jonny Brodzinski</td>
-      <td>NYR</td>
-      <td>2</td>
-      <td>0.0</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Sam Carrick</td>
-      <td>NYR</td>
-      <td>7</td>
-      <td>14.0</td>
-      <td>2.00</td>
-      <td>14-12-10-7-5-1-</td>
-      <td>[-2.0, -2.0, -3.0, -2.0, -4.0]</td>
-      <td>0.64</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Will Cuylle</td>
-      <td>NYR</td>
-      <td>7</td>
-      <td>18.0</td>
-      <td>2.57</td>
-      <td>18-17-12-10-6-3-1-</td>
-      <td>[-1.0, -5.0, -2.0, -4.0, -3.0, -2.0]</td>
-      <td>1.81</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Adam Edstrom</td>
-      <td>NYR</td>
-      <td>7</td>
-      <td>6.0</td>
-      <td>0.86</td>
-      <td>6-4-2-0-</td>
-      <td>[-2.0, -2.0, -2.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Noah Laba</td>
-      <td>NYR</td>
-      <td>7</td>
-      <td>5.0</td>
-      <td>0.71</td>
-      <td>5-4-3-2-0-</td>
-      <td>[-1.0, -1.0, -1.0, -2.0]</td>
-      <td>0.19</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Alexis Lafrenire</td>
-      <td>NYR</td>
-      <td>7</td>
-      <td>21.0</td>
-      <td>3.00</td>
-      <td>21-19-16-12-11-6-</td>
-      <td>[-2.0, -3.0, -4.0, -1.0, -5.0]</td>
-      <td>2.00</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>J.T. Miller</td>
-      <td>NYR</td>
-      <td>7</td>
-      <td>14.0</td>
-      <td>2.00</td>
-      <td>14-10-8-6-3-1-0-</td>
-      <td>[-4.0, -2.0, -2.0, -3.0, -2.0, -1.0]</td>
-      <td>0.89</td>
-      <td>2-1-0-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Artemi Panarin</td>
-      <td>NYR</td>
-      <td>7</td>
-      <td>16.0</td>
-      <td>2.29</td>
-      <td>16-13-11-6-5-4-2-</td>
-      <td>[-3.0, -2.0, -5.0, -1.0, -1.0, -2.0]</td>
-      <td>1.89</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Juuso Parssinen</td>
-      <td>NYR</td>
-      <td>3</td>
-      <td>2.0</td>
-      <td>0.67</td>
-      <td>2-0-</td>
-      <td>[-2.0]</td>
-      <td>0.00</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Taylor Raddysh</td>
-      <td>NYR</td>
-      <td>7</td>
-      <td>7.0</td>
-      <td>1.00</td>
-      <td>7-6-4-2-</td>
-      <td>[-1.0, -2.0, -2.0]</td>
-      <td>0.22</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Matt Rempe</td>
-      <td>NYR</td>
-      <td>7</td>
-      <td>7.0</td>
-      <td>1.00</td>
-      <td>7-6-3-1-0-</td>
-      <td>[-1.0, -3.0, -2.0, -1.0]</td>
-      <td>0.69</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Conor Sheary</td>
-      <td>NYR</td>
-      <td>7</td>
-      <td>10.0</td>
-      <td>1.43</td>
-      <td>10-8-6-3-2-1-</td>
-      <td>[-2.0, -2.0, -3.0, -1.0, -1.0]</td>
-      <td>0.56</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Vincent Trocheck</td>
-      <td>NYR</td>
-      <td>2</td>
-      <td>1.0</td>
-      <td>0.50</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Mika Zibanejad</td>
-      <td>NYR</td>
-      <td>7</td>
-      <td>27.0</td>
-      <td>3.86</td>
-      <td>27-24-22-19-12-8-7-</td>
-      <td>[-3.0, -2.0, -3.0, -7.0, -4.0, -1.0]</td>
-      <td>3.56</td>
-      <td>2-1-0-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Will Borgen</td>
-      <td>NYR</td>
-      <td>7</td>
-      <td>5.0</td>
-      <td>0.71</td>
-      <td>5-4-3-2-1-</td>
-      <td>[-1.0, -1.0, -1.0, -1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Adam Fox</td>
-      <td>NYR</td>
-      <td>7</td>
-      <td>19.0</td>
-      <td>2.71</td>
-      <td>19-17-15-11-9-5-1-</td>
-      <td>[-2.0, -2.0, -4.0, -2.0, -4.0, -4.0]</td>
-      <td>1.00</td>
-      <td>3-1-0-</td>
-      <td>[-2.0, -1.0]</td>
-      <td>0.250000</td>
-    </tr>
-    <tr>
-      <td>Vladislav Gavrikov</td>
-      <td>NYR</td>
-      <td>7</td>
-      <td>8.0</td>
-      <td>1.14</td>
-      <td>8-6-5-3-2-0-</td>
-      <td>[-2.0, -1.0, -2.0, -1.0, -2.0]</td>
-      <td>0.24</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Matthew Robertson</td>
-      <td>NYR</td>
-      <td>4</td>
-      <td>3.0</td>
-      <td>0.75</td>
-      <td>3-1-</td>
-      <td>[-2.0]</td>
-      <td>0.00</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Braden Schneider</td>
-      <td>NYR</td>
-      <td>7</td>
-      <td>11.0</td>
-      <td>1.57</td>
-      <td>11-10-8-6-5-4-1-</td>
-      <td>[-1.0, -2.0, -2.0, -1.0, -1.0, -3.0]</td>
-      <td>0.56</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Carson Soucy</td>
-      <td>NYR</td>
-      <td>3</td>
-      <td>3.0</td>
-      <td>1.00</td>
-      <td>3-1-</td>
-      <td>[-2.0]</td>
-      <td>0.00</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Urho Vaakanainen</td>
-      <td>NYR</td>
-      <td>7</td>
-      <td>7.0</td>
-      <td>1.00</td>
-      <td>7-6-4-2-1-</td>
-      <td>[-1.0, -2.0, -2.0, -1.0]</td>
-      <td>0.25</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Matt Boldy</td>
-      <td>MIN</td>
-      <td>6</td>
-      <td>23.0</td>
-      <td>3.83</td>
-      <td>23-21-19-9-6-1-</td>
-      <td>[-2.0, -2.0, -10.0, -3.0, -5.0]</td>
-      <td>9.04</td>
-      <td>4-3-2-1-</td>
-      <td>[-1.0, -1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Joel Eriksson Ek</td>
-      <td>MIN</td>
-      <td>6</td>
-      <td>17.0</td>
-      <td>2.83</td>
-      <td>17-16-13-10-5-3-</td>
-      <td>[-1.0, -3.0, -3.0, -5.0, -2.0]</td>
-      <td>1.76</td>
-      <td>1-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Marcus Foligno</td>
-      <td>MIN</td>
-      <td>6</td>
-      <td>5.0</td>
-      <td>0.83</td>
-      <td>5-4-2-</td>
-      <td>[-1.0, -2.0]</td>
-      <td>0.25</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Hunter Haight</td>
-      <td>MIN</td>
-      <td>2</td>
-      <td>0.0</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Ryan Hartman</td>
-      <td>MIN</td>
-      <td>6</td>
-      <td>20.0</td>
-      <td>3.33</td>
-      <td>20-19-18-13-11-4-</td>
-      <td>[-1.0, -1.0, -5.0, -2.0, -7.0]</td>
-      <td>5.76</td>
-      <td>2-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Vinnie Hinostroza</td>
-      <td>MIN</td>
-      <td>6</td>
-      <td>6.0</td>
-      <td>1.00</td>
-      <td>6-4-3-0-</td>
-      <td>[-2.0, -1.0, -3.0]</td>
-      <td>0.67</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Marcus Johansson</td>
-      <td>MIN</td>
-      <td>6</td>
-      <td>5.0</td>
-      <td>0.83</td>
-      <td>5-4-3-2-</td>
-      <td>[-1.0, -1.0, -1.0]</td>
-      <td>0.00</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Kirill Kaprizov</td>
-      <td>MIN</td>
-      <td>6</td>
-      <td>22.0</td>
-      <td>3.67</td>
-      <td>22-20-19-13-11-0-</td>
-      <td>[-2.0, -1.0, -6.0, -2.0, -11.0]</td>
-      <td>13.84</td>
-      <td>4-3-2-0-</td>
-      <td>[-1.0, -1.0, -2.0]</td>
-      <td>0.222222</td>
-    </tr>
-    <tr>
-      <td>Liam Ohgren</td>
-      <td>MIN</td>
-      <td>5</td>
-      <td>4.0</td>
-      <td>0.80</td>
-      <td>4-3-1-0-</td>
-      <td>[-1.0, -2.0, -1.0]</td>
-      <td>0.22</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Marco Rossi</td>
-      <td>MIN</td>
-      <td>6</td>
-      <td>8.0</td>
-      <td>1.33</td>
-      <td>8-7-6-5-2-</td>
-      <td>[-1.0, -1.0, -1.0, -3.0]</td>
-      <td>0.75</td>
-      <td>1-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Vladimir Tarasenko</td>
-      <td>MIN</td>
-      <td>6</td>
-      <td>10.0</td>
-      <td>1.67</td>
-      <td>10-9-8-7-6-1-</td>
-      <td>[-1.0, -1.0, -1.0, -1.0, -5.0]</td>
-      <td>2.56</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Yakov Trenin</td>
-      <td>MIN</td>
-      <td>6</td>
-      <td>8.0</td>
-      <td>1.33</td>
-      <td>8-6-5-3-1-</td>
-      <td>[-2.0, -1.0, -2.0, -2.0]</td>
-      <td>0.19</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Danila Yurov</td>
-      <td>MIN</td>
-      <td>4</td>
-      <td>2.0</td>
-      <td>0.50</td>
-      <td>2-1-</td>
-      <td>[-1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Zach Bogosian</td>
-      <td>MIN</td>
-      <td>5</td>
-      <td>5.0</td>
-      <td>1.00</td>
-      <td>5-2-0-</td>
-      <td>[-3.0, -2.0]</td>
-      <td>0.25</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Jonas Brodin</td>
-      <td>MIN</td>
-      <td>5</td>
-      <td>3.0</td>
-      <td>0.60</td>
-      <td>3-2-1-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Zeev Buium</td>
-      <td>MIN</td>
-      <td>6</td>
-      <td>12.0</td>
-      <td>2.00</td>
-      <td>12-11-10-8-5-1-</td>
-      <td>[-1.0, -1.0, -2.0, -3.0, -4.0]</td>
-      <td>1.36</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Brock Faber</td>
-      <td>MIN</td>
-      <td>6</td>
-      <td>9.0</td>
-      <td>1.50</td>
-      <td>9-8-5-2-</td>
-      <td>[-1.0, -3.0, -3.0]</td>
-      <td>0.89</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>David Jiricek</td>
-      <td>MIN</td>
-      <td>2</td>
-      <td>2.0</td>
-      <td>1.00</td>
-      <td>2-1-</td>
-      <td>[-1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Jake Middleton</td>
-      <td>MIN</td>
-      <td>6</td>
-      <td>2.0</td>
-      <td>0.33</td>
-      <td>2-1-</td>
-      <td>[-1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Jared Spurgeon</td>
-      <td>MIN</td>
-      <td>6</td>
-      <td>7.0</td>
-      <td>1.17</td>
-      <td>7-6-5-4-2-0-</td>
-      <td>[-1.0, -1.0, -1.0, -2.0, -2.0]</td>
-      <td>0.24</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Rodrigo Abols</td>
-      <td>PHI</td>
-      <td>2</td>
-      <td>1.0</td>
-      <td>0.50</td>
-      <td>1-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Bobby Brink</td>
-      <td>PHI</td>
-      <td>5</td>
-      <td>7.0</td>
-      <td>1.40</td>
-      <td>7-6-4-0-</td>
-      <td>[-1.0, -2.0, -4.0]</td>
-      <td>1.56</td>
-      <td>2-1-0-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Noah Cates</td>
-      <td>PHI</td>
-      <td>5</td>
-      <td>11.0</td>
-      <td>2.20</td>
-      <td>11-8-7-6-3-</td>
-      <td>[-3.0, -1.0, -1.0, -3.0]</td>
-      <td>1.00</td>
-      <td>2-1-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Sean Couturier</td>
-      <td>PHI</td>
-      <td>5</td>
-      <td>7.0</td>
-      <td>1.40</td>
-      <td>7-6-2-1-</td>
-      <td>[-1.0, -4.0, -1.0]</td>
-      <td>2.00</td>
-      <td>2-0-</td>
-      <td>[-2.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Nicolas Deslauriers</td>
-      <td>PHI</td>
-      <td>2</td>
-      <td>1.0</td>
-      <td>0.50</td>
-      <td>1-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Christian Dvorak</td>
-      <td>PHI</td>
-      <td>5</td>
-      <td>10.0</td>
-      <td>2.00</td>
-      <td>10-8-5-2-1-</td>
-      <td>[-2.0, -3.0, -3.0, -1.0]</td>
-      <td>0.69</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Tyson Foerster</td>
-      <td>PHI</td>
-      <td>5</td>
-      <td>11.0</td>
-      <td>2.20</td>
-      <td>11-9-6-5-2-</td>
-      <td>[-2.0, -3.0, -1.0, -3.0]</td>
-      <td>0.69</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Nikita Grebenkin</td>
-      <td>PHI</td>
-      <td>3</td>
-      <td>1.0</td>
-      <td>0.33</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Garnet Hathaway</td>
-      <td>PHI</td>
-      <td>5</td>
-      <td>2.0</td>
-      <td>0.40</td>
-      <td>2-1-</td>
-      <td>[-1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Travis Konecny</td>
-      <td>PHI</td>
-      <td>5</td>
-      <td>7.0</td>
-      <td>1.40</td>
-      <td>7-5-2-0-</td>
-      <td>[-2.0, -3.0, -2.0]</td>
-      <td>0.22</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Jett Luchanko</td>
-      <td>PHI</td>
-      <td>3</td>
-      <td>0.0</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Matvei Michkov</td>
-      <td>PHI</td>
-      <td>5</td>
-      <td>7.0</td>
-      <td>1.40</td>
-      <td>7-5-3-2-</td>
-      <td>[-2.0, -2.0, -1.0]</td>
-      <td>0.22</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Owen Tippett</td>
-      <td>PHI</td>
-      <td>5</td>
-      <td>14.0</td>
-      <td>2.80</td>
-      <td>14-9-7-3-1-</td>
-      <td>[-5.0, -2.0, -4.0, -2.0]</td>
-      <td>1.69</td>
-      <td>3-2-1-0-</td>
-      <td>[-1.0, -1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Trevor Zegras</td>
-      <td>PHI</td>
-      <td>5</td>
-      <td>6.0</td>
-      <td>1.20</td>
-      <td>6-5-3-0-</td>
-      <td>[-1.0, -2.0, -3.0]</td>
-      <td>0.67</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Emil Andrae</td>
-      <td>PHI</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1.00</td>
-      <td>1-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Jamie Drysdale</td>
-      <td>PHI</td>
-      <td>5</td>
-      <td>2.0</td>
-      <td>0.40</td>
-      <td>2-1-0-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Adam Ginning</td>
-      <td>PHI</td>
-      <td>4</td>
-      <td>2.0</td>
-      <td>0.50</td>
-      <td>2-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Noah Juulsen</td>
-      <td>PHI</td>
-      <td>5</td>
-      <td>1.0</td>
-      <td>0.20</td>
-      <td>1-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Travis Sanheim</td>
-      <td>PHI</td>
-      <td>5</td>
-      <td>6.0</td>
-      <td>1.20</td>
-      <td>6-4-3-1-</td>
-      <td>[-2.0, -1.0, -2.0]</td>
-      <td>0.22</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Nick Seeler</td>
-      <td>PHI</td>
-      <td>5</td>
-      <td>5.0</td>
-      <td>1.00</td>
-      <td>5-4-2-</td>
-      <td>[-1.0, -2.0]</td>
-      <td>0.25</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Cam York</td>
-      <td>PHI</td>
-      <td>2</td>
-      <td>0.0</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Egor Zamula</td>
-      <td>PHI</td>
-      <td>3</td>
-      <td>1.0</td>
-      <td>0.33</td>
-      <td>1-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Matty Beniers</td>
-      <td>SEA</td>
-      <td>5</td>
-      <td>11.0</td>
-      <td>2.20</td>
-      <td>11-10-6-4-1-</td>
-      <td>[-1.0, -4.0, -2.0, -3.0]</td>
-      <td>1.25</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Jordan Eberle</td>
-      <td>SEA</td>
-      <td>5</td>
-      <td>13.0</td>
-      <td>2.60</td>
-      <td>13-11-9-6-2-</td>
-      <td>[-2.0, -2.0, -3.0, -4.0]</td>
-      <td>0.69</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Frederick Gaudreau</td>
-      <td>SEA</td>
-      <td>4</td>
-      <td>3.0</td>
-      <td>0.75</td>
-      <td>3-2-</td>
-      <td>[-1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Tye Kartye</td>
-      <td>SEA</td>
-      <td>5</td>
-      <td>1.0</td>
-      <td>0.20</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Mason Marchment</td>
-      <td>SEA</td>
-      <td>5</td>
-      <td>8.0</td>
-      <td>1.60</td>
-      <td>8-6-3-2-</td>
-      <td>[-2.0, -3.0, -1.0]</td>
-      <td>0.67</td>
-      <td>1-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Jared McCann</td>
-      <td>SEA</td>
-      <td>5</td>
-      <td>14.0</td>
-      <td>2.80</td>
-      <td>14-9-6-3-</td>
-      <td>[-5.0, -3.0, -3.0]</td>
-      <td>0.89</td>
-      <td>3-2-1-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Jani Nyman</td>
-      <td>SEA</td>
-      <td>5</td>
-      <td>4.0</td>
-      <td>0.80</td>
-      <td>4-2-1-0-</td>
-      <td>[-2.0, -1.0, -1.0]</td>
-      <td>0.22</td>
-      <td>2-1-0-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Jaden Schwartz</td>
-      <td>SEA</td>
-      <td>5</td>
-      <td>7.0</td>
-      <td>1.40</td>
-      <td>7-4-2-1-0-</td>
-      <td>[-3.0, -2.0, -1.0, -1.0]</td>
-      <td>0.69</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Chandler Stephenson</td>
-      <td>SEA</td>
-      <td>5</td>
-      <td>10.0</td>
-      <td>2.00</td>
-      <td>10-8-4-2-1-</td>
-      <td>[-2.0, -4.0, -2.0, -1.0]</td>
-      <td>1.19</td>
-      <td>2-0-</td>
-      <td>[-2.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Eeli Tolvanen</td>
-      <td>SEA</td>
-      <td>5</td>
-      <td>5.0</td>
-      <td>1.00</td>
-      <td>5-4-3-2-</td>
-      <td>[-1.0, -1.0, -1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Ryan Winterton</td>
-      <td>SEA</td>
-      <td>5</td>
-      <td>3.0</td>
-      <td>0.60</td>
-      <td>3-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Shane Wright</td>
-      <td>SEA</td>
-      <td>5</td>
-      <td>11.0</td>
-      <td>2.20</td>
-      <td>11-6-0-</td>
-      <td>[-5.0, -6.0]</td>
-      <td>0.25</td>
-      <td>2-1-0-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Vince Dunn</td>
-      <td>SEA</td>
-      <td>5</td>
-      <td>12.0</td>
-      <td>2.40</td>
-      <td>12-10-8-6-4-</td>
-      <td>[-2.0, -2.0, -2.0, -2.0]</td>
-      <td>0.00</td>
-      <td>2-1-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Cale Fleury</td>
-      <td>SEA</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>1.00</td>
-      <td>1-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Adam Larsson</td>
-      <td>SEA</td>
-      <td>5</td>
-      <td>7.0</td>
-      <td>1.40</td>
-      <td>7-3-2-1-</td>
-      <td>[-4.0, -1.0, -1.0]</td>
-      <td>2.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Ryan Lindgren</td>
-      <td>SEA</td>
-      <td>5</td>
-      <td>1.0</td>
-      <td>0.20</td>
-      <td>1-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Joshua Mahura</td>
-      <td>SEA</td>
-      <td>5</td>
-      <td>6.0</td>
-      <td>1.20</td>
-      <td>6-4-3-</td>
-      <td>[-2.0, -1.0]</td>
-      <td>0.25</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Brandon Montour</td>
-      <td>SEA</td>
-      <td>4</td>
-      <td>11.0</td>
-      <td>2.75</td>
-      <td>11-10-7-4-</td>
-      <td>[-1.0, -3.0, -3.0]</td>
-      <td>0.89</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Jamie Oleksiak</td>
-      <td>SEA</td>
-      <td>5</td>
-      <td>7.0</td>
-      <td>1.40</td>
-      <td>7-6-5-3-2-</td>
-      <td>[-1.0, -1.0, -2.0, -1.0]</td>
-      <td>0.19</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Ivan Barbashev</td>
-      <td>VGK</td>
-      <td>6</td>
-      <td>6.0</td>
-      <td>1.00</td>
-      <td>6-5-3-2-</td>
-      <td>[-1.0, -2.0, -1.0]</td>
-      <td>0.22</td>
-      <td>2-1-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Pavel Dorofeyev</td>
-      <td>VGK</td>
-      <td>6</td>
-      <td>17.0</td>
-      <td>2.83</td>
-      <td>17-16-13-12-9-5-</td>
-      <td>[-1.0, -3.0, -1.0, -3.0, -4.0]</td>
-      <td>1.44</td>
-      <td>6-5-4-3-</td>
-      <td>[-1.0, -1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Jack Eichel</td>
-      <td>VGK</td>
-      <td>6</td>
-      <td>30.0</td>
-      <td>5.00</td>
-      <td>30-27-18-11-8-5-</td>
-      <td>[-3.0, -9.0, -7.0, -3.0, -3.0]</td>
-      <td>6.40</td>
-      <td>5-4-2-1-</td>
-      <td>[-1.0, -2.0, -1.0]</td>
-      <td>0.222222</td>
-    </tr>
-    <tr>
-      <td>Tomas Hertl</td>
-      <td>VGK</td>
-      <td>6</td>
-      <td>15.0</td>
-      <td>2.50</td>
-      <td>15-12-6-4-2-</td>
-      <td>[-3.0, -6.0, -2.0, -2.0]</td>
-      <td>2.69</td>
-      <td>3-2-1-0-</td>
-      <td>[-1.0, -1.0, -1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Alexander Holtz</td>
-      <td>VGK</td>
-      <td>1</td>
-      <td>2.0</td>
-      <td>2.00</td>
-      <td>2-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Brett Howden</td>
-      <td>VGK</td>
-      <td>3</td>
-      <td>2.0</td>
-      <td>0.67</td>
-      <td>2-0-</td>
-      <td>[-2.0]</td>
-      <td>0.00</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>William Karlsson</td>
-      <td>VGK</td>
-      <td>6</td>
-      <td>16.0</td>
-      <td>2.67</td>
-      <td>16-13-10-9-7-5-</td>
-      <td>[-3.0, -3.0, -1.0, -2.0, -2.0]</td>
-      <td>0.56</td>
-      <td>2-0-</td>
-      <td>[-2.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Keegan Kolesar</td>
-      <td>VGK</td>
-      <td>6</td>
-      <td>4.0</td>
-      <td>0.67</td>
-      <td>4-3-1-0-</td>
-      <td>[-1.0, -2.0, -1.0]</td>
-      <td>0.22</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Mitch Marner</td>
-      <td>VGK</td>
-      <td>6</td>
-      <td>14.0</td>
-      <td>2.33</td>
-      <td>14-11-7-5-3-</td>
-      <td>[-3.0, -4.0, -2.0, -2.0]</td>
-      <td>0.69</td>
-      <td>2-0-</td>
-      <td>[-2.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Cole Reinhardt</td>
-      <td>VGK</td>
-      <td>2</td>
-      <td>1.0</td>
-      <td>0.50</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.00</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Brandon Saad</td>
-      <td>VGK</td>
-      <td>6</td>
-      <td>5.0</td>
-      <td>0.83</td>
-      <td>5-4-1-0-</td>
-      <td>[-1.0, -3.0, -1.0]</td>
-      <td>0.89</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Colton Sissons</td>
-      <td>VGK</td>
-      <td>6</td>
-      <td>3.0</td>
-      <td>0.50</td>
-      <td>3-2-1-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Reilly Smith</td>
-      <td>VGK</td>
-      <td>6</td>
-      <td>7.0</td>
-      <td>1.17</td>
-      <td>7-5-4-1-</td>
-      <td>[-2.0, -1.0, -3.0]</td>
-      <td>0.67</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Mark Stone</td>
-      <td>VGK</td>
-      <td>6</td>
-      <td>19.0</td>
-      <td>3.17</td>
-      <td>19-15-9-5-4-3-</td>
-      <td>[-4.0, -6.0, -4.0, -1.0, -1.0]</td>
-      <td>3.76</td>
-      <td>2-0-</td>
-      <td>[-2.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Noah Hanifin</td>
-      <td>VGK</td>
-      <td>1</td>
-      <td>3.0</td>
-      <td>3.00</td>
-      <td>3-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Ben Hutton</td>
-      <td>VGK</td>
-      <td>5</td>
-      <td>9.0</td>
-      <td>1.80</td>
-      <td>9-8-6-3-1-</td>
-      <td>[-1.0, -2.0, -3.0, -2.0]</td>
-      <td>0.50</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Kaedan Korczak</td>
-      <td>VGK</td>
-      <td>6</td>
-      <td>10.0</td>
-      <td>1.67</td>
-      <td>10-9-7-5-3-1-</td>
-      <td>[-1.0, -2.0, -2.0, -2.0, -2.0]</td>
-      <td>0.16</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Jeremy Lauzon</td>
-      <td>VGK</td>
-      <td>6</td>
-      <td>6.0</td>
-      <td>1.00</td>
-      <td>6-4-2-1-</td>
-      <td>[-2.0, -2.0, -1.0]</td>
-      <td>0.22</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Brayden McNabb</td>
-      <td>VGK</td>
-      <td>6</td>
-      <td>0.0</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Shea Theodore</td>
-      <td>VGK</td>
-      <td>6</td>
-      <td>15.0</td>
-      <td>2.50</td>
-      <td>15-12-10-6-3-</td>
-      <td>[-3.0, -2.0, -4.0, -3.0]</td>
-      <td>0.50</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Zach Whitecloud</td>
-      <td>VGK</td>
-      <td>6</td>
-      <td>4.0</td>
-      <td>0.67</td>
-      <td>4-2-1-0-</td>
-      <td>[-2.0, -1.0, -1.0]</td>
-      <td>0.22</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Sebastian Aho</td>
-      <td>CAR</td>
-      <td>5</td>
-      <td>12.0</td>
-      <td>2.40</td>
-      <td>12-9-7-4-3-</td>
-      <td>[-3.0, -2.0, -3.0, -1.0]</td>
-      <td>0.69</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Jackson Blake</td>
-      <td>CAR</td>
-      <td>5</td>
-      <td>19.0</td>
-      <td>3.80</td>
-      <td>19-17-15-11-5-</td>
-      <td>[-2.0, -2.0, -4.0, -6.0]</td>
-      <td>2.75</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>William Carrier</td>
-      <td>CAR</td>
-      <td>5</td>
-      <td>6.0</td>
-      <td>1.20</td>
-      <td>6-5-1-0-</td>
-      <td>[-1.0, -4.0, -1.0]</td>
-      <td>2.00</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Nikolaj Ehlers</td>
-      <td>CAR</td>
-      <td>5</td>
-      <td>18.0</td>
-      <td>3.60</td>
-      <td>18-13-8-2-</td>
-      <td>[-5.0, -5.0, -6.0]</td>
-      <td>0.22</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Taylor Hall</td>
-      <td>CAR</td>
-      <td>5</td>
-      <td>8.0</td>
-      <td>1.60</td>
-      <td>8-6-4-2-</td>
-      <td>[-2.0, -2.0, -2.0]</td>
-      <td>0.00</td>
-      <td>2-1-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Mark Jankowski</td>
-      <td>CAR</td>
-      <td>2</td>
-      <td>1.0</td>
-      <td>0.50</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Seth Jarvis</td>
-      <td>CAR</td>
-      <td>5</td>
-      <td>22.0</td>
-      <td>4.40</td>
-      <td>22-16-9-8-3-</td>
-      <td>[-6.0, -7.0, -1.0, -5.0]</td>
-      <td>5.19</td>
-      <td>6-5-3-2-</td>
-      <td>[-1.0, -2.0, -1.0]</td>
-      <td>0.222222</td>
-    </tr>
-    <tr>
-      <td>Jesperi Kotkaniemi</td>
-      <td>CAR</td>
-      <td>3</td>
-      <td>3.0</td>
-      <td>1.00</td>
-      <td>3-1-0-</td>
-      <td>[-2.0, -1.0]</td>
-      <td>0.25</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <td>Jordan Martinook</td>
-      <td>CAR</td>
-      <td>5</td>
-      <td>11.0</td>
-      <td>2.20</td>
-      <td>11-9-7-5-3-</td>
-      <td>[-2.0, -2.0, -2.0, -2.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>Eric Robinson</td>
-      <td>CAR</td>
-      <td>5</td>
-      <td>7.0</td>
-      <td>1.40</td>
-      <td>7-6-4-2-</td>
-      <td>[-1.0, -2.0, -2.0]</td>
-      <td>0.22</td>
-      <td>2-1-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
+      <td>8473533</td>
+      <td>2025</td>
       <td>Jordan Staal</td>
       <td>CAR</td>
-      <td>5</td>
-      <td>8.0</td>
-      <td>1.60</td>
-      <td>8-4-3-0-</td>
-      <td>[-4.0, -1.0, -3.0]</td>
-      <td>1.56</td>
-      <td>3-1-0-</td>
-      <td>[-2.0, -1.0]</td>
-      <td>0.250000</td>
+      <td>-5-4-3-2-1</td>
+      <td>-8-4-3-3-0</td>
+      <td>-2-1-1-2-0</td>
+      <td>-6-3-2-2-0</td>
+      <td>-3-1-1-1-0</td>
+      <td>-1-0-0-0-0</td>
+      <td>-1-0-0-0-0</td>
+      <td>-5-3-3-3-2</td>
+      <td>-1-1-1-2-2</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
     </tr>
     <tr>
-      <td>Logan Stankoven</td>
-      <td>CAR</td>
-      <td>5</td>
-      <td>12.0</td>
-      <td>2.40</td>
-      <td>12-10-8-4-2-</td>
-      <td>[-2.0, -2.0, -4.0, -2.0]</td>
-      <td>0.75</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
+      <td>8475172</td>
+      <td>2025</td>
+      <td>Nazem Kadri</td>
+      <td>CGY</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-14-11-10-6-3-2</td>
+      <td>-2-2-2-2-2-2</td>
+      <td>-15-12-11-7-4-2</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-1-1-1-1-0-0</td>
+      <td>-7-6-5-5-3-3</td>
+      <td>-1-1-1-2-2-3</td>
+      <td>-2-1-1-1-1-1</td>
+      <td>-2-2-1-1-0-0</td>
+      <td>-0-0-0-0-0-0</td>
     </tr>
     <tr>
-      <td>Andrei Svechnikov</td>
-      <td>CAR</td>
-      <td>5</td>
-      <td>10.0</td>
-      <td>2.00</td>
-      <td>10-8-6-5-4-</td>
-      <td>[-2.0, -2.0, -1.0, -1.0]</td>
-      <td>0.25</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
+      <td>8480064</td>
+      <td>2025</td>
+      <td>Josh Norris</td>
+      <td>BUF</td>
+      <td>-1</td>
+      <td>-4</td>
+      <td>-4</td>
+      <td>-3</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
     </tr>
     <tr>
-      <td>Jalen Chatfield</td>
-      <td>CAR</td>
-      <td>5</td>
-      <td>3.0</td>
-      <td>0.60</td>
-      <td>3-2-1-</td>
-      <td>[-1.0, -1.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
+      <td>8480813</td>
+      <td>2025</td>
+      <td>Joe Veleno</td>
+      <td>MTL</td>
+      <td>-1</td>
+      <td>-2</td>
+      <td>-2</td>
+      <td>-2</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
     </tr>
     <tr>
-      <td>Shayne Gostisbehere</td>
-      <td>CAR</td>
-      <td>5</td>
-      <td>6.0</td>
-      <td>1.20</td>
-      <td>6-5-2-1-</td>
-      <td>[-1.0, -3.0, -1.0]</td>
-      <td>0.89</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
+      <td>8478407</td>
+      <td>2025</td>
+      <td>Vince Dunn</td>
+      <td>SEA</td>
+      <td>-5-4-3-2-1</td>
+      <td>-12-10-8-6-4</td>
+      <td>-2-2-3-3-4</td>
+      <td>-11-10-9-6-4</td>
+      <td>-2-1-1-1-1</td>
+      <td>-0-0-0-0-1</td>
+      <td>-0-0-0-0-0</td>
+      <td>-7-5-5-4-2</td>
+      <td>-1-1-2-2-2</td>
+      <td>-0-0-0-0-0</td>
+      <td>-3-3-3-2-0</td>
+      <td>-0-0-0-0-0</td>
     </tr>
     <tr>
-      <td>K'Andre Miller</td>
-      <td>CAR</td>
-      <td>5</td>
-      <td>12.0</td>
-      <td>2.40</td>
-      <td>12-9-7-5-4-</td>
-      <td>[-3.0, -2.0, -2.0, -1.0]</td>
-      <td>0.50</td>
-      <td>2-</td>
-      <td>[]</td>
-      <td>NaN</td>
+      <td>8480865</td>
+      <td>2025</td>
+      <td>Noah Dobson</td>
+      <td>MTL</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-11-8-6-5-2-1</td>
+      <td>-2-2-2-2-1-1</td>
+      <td>-10-8-5-4-2-1</td>
+      <td>-1-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-8-5-4-2-2-1</td>
+      <td>-1-1-1-1-1-1</td>
+      <td>-1-1-1-0-0-0</td>
+      <td>-1-1-1-1-1-0</td>
+      <td>-0-0-0-0-0-0</td>
     </tr>
     <tr>
-      <td>Alexander Nikishin</td>
-      <td>CAR</td>
-      <td>5</td>
-      <td>8.0</td>
-      <td>1.60</td>
-      <td>8-6-3-1-</td>
-      <td>[-2.0, -3.0, -2.0]</td>
-      <td>0.22</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
+      <td>8484768</td>
+      <td>2025</td>
+      <td>Zayne Parekh</td>
+      <td>CGY</td>
+      <td>-4-3-2-1</td>
+      <td>-8-5-3-2</td>
+      <td>-2-2-2-2</td>
+      <td>-10-5-4-3</td>
+      <td>-0-0-0-0</td>
+      <td>-0-0-0-0</td>
+      <td>-1-0-0-0</td>
+      <td>-0-0-0-0</td>
+      <td>-0-0-0-0</td>
+      <td>-0-0-0-0</td>
+      <td>-0-0-0-0</td>
+      <td>-0-0-0-0</td>
     </tr>
     <tr>
+      <td>8475913</td>
+      <td>2025</td>
+      <td>Mark Stone</td>
+      <td>VGK</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-19-15-9-5-4-3</td>
+      <td>-3-3-2-2-2-3</td>
+      <td>-19-15-9-5-4-3</td>
+      <td>-2-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-3-2-1-1-1-1</td>
+      <td>-15-10-7-5-4-2</td>
+      <td>-2-2-2-2-2-2</td>
+      <td>-10-8-6-5-4-2</td>
+      <td>-1-1-0-0-0-0</td>
+      <td>-1-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8478864</td>
+      <td>2025</td>
+      <td>Kirill Kaprizov</td>
+      <td>MIN</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-22-20-19-13-11-0</td>
+      <td>-4-4-5-4-6-0</td>
+      <td>-24-20-18-13-11-2</td>
+      <td>-4-4-4-3-2-0</td>
+      <td>-1-1-1-1-1-0</td>
+      <td>-3-3-3-1-1-0</td>
+      <td>-11-11-11-9-7-3</td>
+      <td>-2-2-3-3-4-3</td>
+      <td>-3-3-3-3-3-3</td>
+      <td>-2-2-2-1-1-0</td>
+      <td>-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8477986</td>
+      <td>2025</td>
+      <td>Brandon Montour</td>
+      <td>SEA</td>
+      <td>-4-3-2-1</td>
+      <td>-11-10-7-4</td>
+      <td>-3-3-4-4</td>
+      <td>-11-9-6-3</td>
+      <td>-0-0-0-0</td>
+      <td>-0-0-0-0</td>
+      <td>-0-0-0-0</td>
+      <td>-4-2-1-1</td>
+      <td>-1-1-0-1</td>
+      <td>-3-2-1-1</td>
+      <td>-1-0-0-0</td>
+      <td>-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8483524</td>
+      <td>2025</td>
+      <td>Shane Wright</td>
+      <td>SEA</td>
+      <td>-5-4-3-2-1</td>
+      <td>-11-6-0-0-0</td>
+      <td>-2-2-0-0-0</td>
+      <td>-12-8-3-2-0</td>
+      <td>-2-1-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-2-1-0-0-0</td>
+      <td>-5-3-2-1-1</td>
+      <td>-1-1-1-0-1</td>
+      <td>-1-1-1-0-0</td>
+      <td>-1-0-0-0-0</td>
+      <td>-2-1-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8476422</td>
+      <td>2025</td>
       <td>Mike Reilly</td>
       <td>CAR</td>
-      <td>3</td>
-      <td>8.0</td>
-      <td>2.67</td>
-      <td>8-5-</td>
-      <td>[-3.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
+      <td>-3-2-1</td>
+      <td>-8-8-5</td>
+      <td>-3-4-5</td>
+      <td>-7-6-4</td>
+      <td>-0-0-0</td>
+      <td>-0-0-0</td>
+      <td>-0-0-0</td>
+      <td>-6-4-2</td>
+      <td>-2-2-2</td>
+      <td>-2-1-1</td>
+      <td>-0-0-0</td>
+      <td>-0-0-0</td>
     </tr>
     <tr>
-      <td>Jaccob Slavin</td>
+      <td>8480015</td>
+      <td>2025</td>
+      <td>Owen Tippett</td>
+      <td>PHI</td>
+      <td>-5-4-3-2-1</td>
+      <td>-14-9-7-3-1</td>
+      <td>-3-2-2-2-1</td>
+      <td>-17-11-9-4-1</td>
+      <td>-3-2-1-1-0</td>
+      <td>-1-0-0-0-0</td>
+      <td>-2-2-2-1-0</td>
+      <td>-4-3-1-1-0</td>
+      <td>-1-1-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-1-1-1-1-0</td>
+    </tr>
+    <tr>
+      <td>8482122</td>
+      <td>2025</td>
+      <td>Brock Faber</td>
+      <td>MIN</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-9-8-8-5-5-2</td>
+      <td>-2-2-2-2-2-2</td>
+      <td>-12-9-9-7-6-3</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-2-1-1-1-1-1</td>
+      <td>-0-0-0-0-0-1</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8475799</td>
+      <td>2025</td>
+      <td>Nino Niederreiter</td>
+      <td>WPG</td>
+      <td>-5-4-3-2-1</td>
+      <td>-12-10-8-5-4</td>
+      <td>-2-2-3-2-4</td>
+      <td>-12-10-8-6-5</td>
+      <td>-2-1-1-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-3-2-2-1-1</td>
+      <td>-6-3-2-0-0</td>
+      <td>-1-1-1-0-0</td>
+      <td>-2-2-1-0-0</td>
+      <td>-1-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8478403</td>
+      <td>2025</td>
+      <td>Jack Eichel</td>
+      <td>VGK</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-30-27-18-11-8-5</td>
+      <td>-5-5-4-4-4-5</td>
+      <td>-31-28-19-12-8-4</td>
+      <td>-5-5-4-2-2-1</td>
+      <td>-1-1-1-1-1-1</td>
+      <td>-4-3-2-1-1-1</td>
+      <td>-17-12-9-7-6-4</td>
+      <td>-3-2-2-2-3-4</td>
+      <td>-2-1-1-1-1-1</td>
+      <td>-8-5-4-4-3-2</td>
+      <td>-1-1-1-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8482074</td>
+      <td>2025</td>
+      <td>Connor Zary</td>
+      <td>CGY</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-10-9-8-6-4-3</td>
+      <td>-2-2-2-2-2-3</td>
+      <td>-11-8-7-6-3-3</td>
+      <td>-1-1-1-1-1-1</td>
+      <td>-0-0-0-0-0-1</td>
+      <td>-2-1-1-1-1-1</td>
+      <td>-1-1-1-1-1-1</td>
+      <td>-0-0-0-0-0-1</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8478427</td>
+      <td>2025</td>
+      <td>Sebastian Aho</td>
       <td>CAR</td>
-      <td>2</td>
-      <td>2.0</td>
-      <td>1.00</td>
-      <td>2-0-</td>
-      <td>[-2.0]</td>
-      <td>0.00</td>
-      <td>0-</td>
-      <td>[]</td>
-      <td>NaN</td>
+      <td>-5-4-3-2-1</td>
+      <td>-12-9-7-4-3</td>
+      <td>-2-2-2-2-3</td>
+      <td>-18-15-12-9-5</td>
+      <td>-1-1-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-2-2-1-1-1</td>
+      <td>-8-7-4-3-2</td>
+      <td>-2-2-1-2-2</td>
+      <td>-6-5-4-3-2</td>
+      <td>-0-0-0-0-0</td>
+      <td>-1-1-0-0-0</td>
     </tr>
     <tr>
+      <td>8482809</td>
+      <td>2025</td>
+      <td>Jackson Blake</td>
+      <td>CAR</td>
+      <td>-5-4-3-2-1</td>
+      <td>-19-17-15-11-5</td>
+      <td>-4-4-5-6-5</td>
+      <td>-19-16-14-11-4</td>
+      <td>-1-1-1-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-2-2-2-2-0</td>
+      <td>-5-5-4-2-1</td>
+      <td>-1-1-1-1-1</td>
+      <td>-2-2-1-1-0</td>
+      <td>-1-1-1-1-1</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8483515</td>
+      <td>2025</td>
+      <td>Juraj Slafkovsk</td>
+      <td>MTL</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-13-12-11-10-8-6</td>
+      <td>-2-2-3-3-4-6</td>
+      <td>-13-12-11-10-9-6</td>
+      <td>-2-1-1-1-1-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-2-2-2-2-2-1</td>
+      <td>-8-7-6-5-2-0</td>
+      <td>-1-1-2-2-1-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-1-1-1-1-1-0</td>
+    </tr>
+    <tr>
+      <td>8482100</td>
+      <td>2025</td>
+      <td>Alexander Nikishin</td>
+      <td>CAR</td>
+      <td>-5-4-3-2-1</td>
+      <td>-8-8-6-3-1</td>
+      <td>-2-2-2-2-1</td>
+      <td>-8-8-7-4-2</td>
+      <td>-1-1-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-8-8-7-5-3</td>
+      <td>-2-2-2-2-3</td>
+      <td>-1-1-1-0-0</td>
+      <td>-2-2-2-2-1</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8475765</td>
+      <td>2025</td>
+      <td>Vladimir Tarasenko</td>
+      <td>MIN</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-10-9-8-7-6-1</td>
+      <td>-2-2-2-2-3-1</td>
+      <td>-10-8-7-6-5-1</td>
+      <td>-1-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-1-0-0-0-0-0</td>
+      <td>-9-8-8-6-4-1</td>
+      <td>-2-2-2-2-2-1</td>
+      <td>-1-1-1-1-0-0</td>
+      <td>-3-3-3-2-1-0</td>
+      <td>-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8476460</td>
+      <td>2025</td>
+      <td>Mark Scheifele</td>
+      <td>WPG</td>
+      <td>-5-4-3-2-1</td>
+      <td>-14-11-8-4-1</td>
+      <td>-3-3-3-2-1</td>
+      <td>-15-12-9-6-2</td>
+      <td>-6-5-3-2-0</td>
+      <td>-1-1-1-1-0</td>
+      <td>-4-4-3-1-1</td>
+      <td>-11-10-8-7-4</td>
+      <td>-2-2-3-4-4</td>
+      <td>-3-3-3-3-3</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8474586</td>
+      <td>2025</td>
+      <td>Jordan Eberle</td>
+      <td>SEA</td>
+      <td>-5-4-3-2-1</td>
+      <td>-13-11-9-6-2</td>
+      <td>-3-3-3-3-2</td>
+      <td>-14-13-9-7-3</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-1-1-1-1-0</td>
+      <td>-6-5-4-2-1</td>
+      <td>-1-1-1-1-1</td>
+      <td>-3-2-1-1-0</td>
+      <td>-1-1-1-1-1</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8477940</td>
+      <td>2025</td>
+      <td>Nikolaj Ehlers</td>
+      <td>CAR</td>
+      <td>-5-4-3-2-1</td>
+      <td>-18-13-13-8-2</td>
+      <td>-4-3-4-4-2</td>
+      <td>-18-13-12-6-2</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-1-1-1-0-0</td>
+      <td>-6-6-2-1-1</td>
+      <td>-1-2-1-0-1</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8482125</td>
+      <td>2025</td>
+      <td>Alexander Holtz</td>
+      <td>VGK</td>
+      <td>-1</td>
+      <td>-2</td>
+      <td>-2</td>
+      <td>-2</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+    </tr>
+    <tr>
+      <td>8476468</td>
+      <td>2025</td>
+      <td>J.T. Miller</td>
+      <td>NYR</td>
+      <td>-7-6-5-4-3-2-1</td>
+      <td>-14-10-8-6-3-1-0</td>
+      <td>-2-2-2-2-1-0-0</td>
+      <td>-18-16-12-10-5-3-1</td>
+      <td>-2-1-1-1-1-1-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+      <td>-3-2-2-1-0-0-0</td>
+      <td>-6-4-4-4-4-3-0</td>
+      <td>-1-1-1-1-1-2-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+      <td>-2-2-2-2-2-1-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8477949</td>
+      <td>2025</td>
+      <td>Alex Tuch</td>
+      <td>BUF</td>
+      <td>-5-4-3-2-1</td>
+      <td>-15-13-9-7-6</td>
+      <td>-3-3-3-4-6</td>
+      <td>-16-14-10-6-5</td>
+      <td>-1-1-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-2-1-1-0-0</td>
+      <td>-6-5-2-1-0</td>
+      <td>-1-1-1-0-0</td>
+      <td>-3-2-1-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-1-1-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8480014</td>
+      <td>2025</td>
+      <td>Gabriel Vilardi</td>
+      <td>WPG</td>
+      <td>-5-4-3-2-1</td>
+      <td>-10-9-9-6-1</td>
+      <td>-2-2-3-3-1</td>
+      <td>-13-10-10-7-2</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-1-1-1-1-0</td>
+      <td>-8-7-5-4-2</td>
+      <td>-2-2-2-2-2</td>
+      <td>-1-1-0-0-0</td>
+      <td>-3-3-3-3-1</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8482665</td>
+      <td>2025</td>
+      <td>Matty Beniers</td>
+      <td>SEA</td>
+      <td>-5-4-3-2-1</td>
+      <td>-11-10-6-4-1</td>
+      <td>-2-2-2-2-1</td>
+      <td>-18-17-11-9-3</td>
+      <td>-1-1-1-1-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-2-2-1-1-0</td>
+      <td>-6-6-5-3-1</td>
+      <td>-1-2-2-2-1</td>
+      <td>-2-2-2-2-1</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8482109</td>
+      <td>2025</td>
+      <td>Alexis Lafrenire</td>
+      <td>NYR</td>
+      <td>-7-6-5-4-3-2-1</td>
+      <td>-21-21-19-16-12-11-6</td>
+      <td>-3-4-4-4-4-6-6</td>
+      <td>-20-20-16-13-10-8-5</td>
+      <td>-1-1-1-1-1-1-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+      <td>-2-2-2-2-1-1-0</td>
+      <td>-5-3-3-3-3-2-0</td>
+      <td>-1-0-1-1-1-1-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+      <td>-1-1-1-1-1-1-0</td>
+      <td>-1-1-1-1-1-1-0</td>
+    </tr>
+    <tr>
+      <td>8481527</td>
+      <td>2025</td>
+      <td>Kaedan Korczak</td>
+      <td>VGK</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-10-9-7-5-3-1</td>
+      <td>-2-2-2-2-2-1</td>
+      <td>-9-8-6-5-3-1</td>
+      <td>-1-1-1-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-6-4-4-2-2-2</td>
+      <td>-1-1-1-1-1-2</td>
+      <td>-1-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8482093</td>
+      <td>2025</td>
+      <td>Seth Jarvis</td>
+      <td>CAR</td>
+      <td>-5-4-3-2-1</td>
+      <td>-22-16-9-8-3</td>
+      <td>-4-4-3-4-3</td>
+      <td>-21-15-10-9-4</td>
+      <td>-6-5-3-3-2</td>
+      <td>-1-1-1-2-2</td>
+      <td>-4-3-2-2-1</td>
+      <td>-9-8-4-3-2</td>
+      <td>-2-2-1-2-2</td>
+      <td>-1-1-0-0-0</td>
+      <td>-1-1-1-0-0</td>
+      <td>-1-1-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8484145</td>
+      <td>2025</td>
+      <td>Zach Benson</td>
+      <td>BUF</td>
+      <td>-2-1</td>
+      <td>-4-2</td>
+      <td>-2-2</td>
+      <td>-4-2</td>
+      <td>-0-0</td>
+      <td>-0-0</td>
+      <td>-1-0</td>
+      <td>-7-5</td>
+      <td>-4-5</td>
+      <td>-1-1</td>
+      <td>-4-3</td>
+      <td>-0-0</td>
+    </tr>
+    <tr>
+      <td>8476459</td>
+      <td>2025</td>
+      <td>Mika Zibanejad</td>
+      <td>NYR</td>
+      <td>-7-6-5-4-3-2-1</td>
+      <td>-27-24-22-19-12-8-7</td>
+      <td>-4-4-4-5-4-4-7</td>
+      <td>-27-23-20-16-11-8-8</td>
+      <td>-2-1-1-1-1-0-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+      <td>-3-2-2-2-1-1-1</td>
+      <td>-5-2-2-2-2-0-0</td>
+      <td>-1-0-0-0-1-0-0</td>
+      <td>-1-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8482702</td>
+      <td>2025</td>
+      <td>Logan Stankoven</td>
+      <td>CAR</td>
+      <td>-5-4-3-2-1</td>
+      <td>-12-10-8-4-2</td>
+      <td>-2-2-3-2-2</td>
+      <td>-11-9-7-4-2</td>
+      <td>-1-1-1-1-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-1-1-1-1-0</td>
+      <td>-6-6-5-2-1</td>
+      <td>-1-2-2-1-1</td>
+      <td>-1-1-1-0-0</td>
+      <td>-1-1-1-0-0</td>
+      <td>-1-1-1-1-0</td>
+    </tr>
+    <tr>
+      <td>8484798</td>
+      <td>2025</td>
+      <td>Zeev Buium</td>
+      <td>MIN</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-12-11-10-8-5-1</td>
+      <td>-2-2-2-3-2-1</td>
+      <td>-12-10-10-7-5-1</td>
+      <td>-1-1-1-1-1-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-1-1-1-0-0-0</td>
+      <td>-9-9-9-7-5-1</td>
+      <td>-2-2-2-2-2-1</td>
+      <td>-3-3-3-1-0-0</td>
+      <td>-1-1-1-1-1-0</td>
+      <td>-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8478398</td>
+      <td>2025</td>
+      <td>Kyle Connor</td>
+      <td>WPG</td>
+      <td>-5-4-3-2-1</td>
+      <td>-15-11-11-10-6</td>
+      <td>-3-3-4-5-6</td>
+      <td>-15-10-9-8-5</td>
+      <td>-3-3-3-3-3</td>
+      <td>-1-1-1-2-3</td>
+      <td>-1-1-1-1-0</td>
+      <td>-12-11-8-6-3</td>
+      <td>-2-3-3-3-3</td>
+      <td>-5-4-2-1-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-1-1-1-1-1</td>
+    </tr>
+    <tr>
+      <td>8480018</td>
+      <td>2025</td>
+      <td>Nick Suzuki</td>
+      <td>MTL</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-12-10-6-5-3-2</td>
+      <td>-2-2-2-2-2-2</td>
+      <td>-19-17-10-8-5-4</td>
+      <td>-1-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-2-2-2-1-1-1</td>
+      <td>-11-9-7-5-2-0</td>
+      <td>-2-2-2-2-1-0</td>
+      <td>-3-3-2-2-1-0</td>
+      <td>-4-4-4-3-1-0</td>
+      <td>-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8477447</td>
+      <td>2025</td>
+      <td>Shea Theodore</td>
+      <td>VGK</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-15-12-10-10-6-3</td>
+      <td>-2-2-2-3-3-3</td>
+      <td>-12-11-9-9-6-2</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-1-1-1-1-1-0</td>
+      <td>-4-4-2-2-2-0</td>
+      <td>-1-1-0-1-1-0</td>
+      <td>-1-1-1-1-1-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8483468</td>
+      <td>2025</td>
+      <td>Jiri Kulich</td>
+      <td>BUF</td>
+      <td>-5-4-3-2-1</td>
+      <td>-11-8-7-3-2</td>
+      <td>-2-2-2-2-2</td>
+      <td>-13-9-8-4-2</td>
+      <td>-1-1-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-2-2-1-0-0</td>
+      <td>-1-1-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8481557</td>
+      <td>2025</td>
+      <td>Matt Boldy</td>
+      <td>MIN</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-23-21-19-9-6-1</td>
+      <td>-4-4-5-3-3-1</td>
+      <td>-31-28-24-13-10-3</td>
+      <td>-4-4-4-3-2-1</td>
+      <td>-1-1-1-1-1-1</td>
+      <td>-4-4-4-1-1-0</td>
+      <td>-12-12-11-9-7-3</td>
+      <td>-2-2-3-3-4-3</td>
+      <td>-2-2-1-1-1-0</td>
+      <td>-3-3-3-3-3-2</td>
+      <td>-1-1-1-1-1-0</td>
+    </tr>
+    <tr>
+      <td>8478493</td>
+      <td>2025</td>
+      <td>Joel Eriksson Ek</td>
+      <td>MIN</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-17-16-13-10-5-3</td>
+      <td>-3-3-3-3-2-3</td>
+      <td>-18-15-13-9-5-2</td>
+      <td>-1-1-1-1-1-1</td>
+      <td>-0-0-0-0-0-1</td>
+      <td>-3-3-2-2-1-1</td>
+      <td>-8-8-8-7-5-1</td>
+      <td>-1-2-2-2-2-1</td>
+      <td>-2-2-2-2-2-0</td>
+      <td>-1-1-1-1-0-0</td>
+      <td>-1-1-1-1-1-1</td>
+    </tr>
+    <tr>
+      <td>8477451</td>
+      <td>2025</td>
+      <td>Ryan Hartman</td>
+      <td>MIN</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-20-19-18-13-11-4</td>
+      <td>-3-4-4-4-6-4</td>
+      <td>-18-15-13-10-8-3</td>
+      <td>-2-2-2-2-2-2</td>
+      <td>-0-0-0-1-1-2</td>
+      <td>-1-1-1-1-1-0</td>
+      <td>-3-3-3-3-2-2</td>
+      <td>-0-1-1-1-1-2</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8477955</td>
+      <td>2025</td>
+      <td>Jared McCann</td>
+      <td>SEA</td>
+      <td>-5-4-3-2-1</td>
+      <td>-14-14-9-6-3</td>
+      <td>-3-4-3-3-3</td>
+      <td>-16-16-12-8-5</td>
+      <td>-3-3-3-2-1</td>
+      <td>-1-1-1-1-1</td>
+      <td>-2-2-2-2-1</td>
+      <td>-7-7-6-3-1</td>
+      <td>-1-2-2-2-1</td>
+      <td>-1-1-1-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-1-1-1-1-0</td>
+    </tr>
+    <tr>
+      <td>8482737</td>
+      <td>2025</td>
+      <td>Zack Bolduc</td>
+      <td>MTL</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-15-13-11-10-7-3</td>
+      <td>-2-3-3-3-4-3</td>
+      <td>-13-11-10-9-6-3</td>
+      <td>-3-3-3-3-2-1</td>
+      <td>-0-1-1-1-1-1</td>
+      <td>-2-2-2-2-1-0</td>
+      <td>-7-7-7-6-4-1</td>
+      <td>-1-1-2-2-2-1</td>
+      <td>-1-1-1-1-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-2-2-2-2-1-1</td>
+    </tr>
+    <tr>
+      <td>8484860</td>
+      <td>2025</td>
+      <td>Matvei Gridin</td>
+      <td>CGY</td>
+      <td>-4-3-2-1</td>
+      <td>-9-8-7-5</td>
+      <td>-2-3-4-5</td>
+      <td>-8-7-5-4</td>
+      <td>-1-1-1-1</td>
+      <td>-0-0-0-1</td>
+      <td>-0-0-0-0</td>
+      <td>-4-4-3-3</td>
+      <td>-1-1-2-3</td>
+      <td>-0-0-0-0</td>
+      <td>-0-0-0-0</td>
+      <td>-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8478550</td>
+      <td>2025</td>
+      <td>Artemi Panarin</td>
+      <td>NYR</td>
+      <td>-7-6-5-4-3-2-1</td>
+      <td>-16-13-11-6-5-4-2</td>
+      <td>-2-2-2-2-2-2-2</td>
+      <td>-22-17-14-8-6-5-2</td>
+      <td>-1-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+      <td>-1-1-1-0-0-0-0</td>
+      <td>-8-4-4-4-4-3-0</td>
+      <td>-1-1-1-1-1-2-0</td>
+      <td>-2-1-1-1-1-0-0</td>
+      <td>-3-1-1-1-1-1-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8480839</td>
+      <td>2025</td>
+      <td>Rasmus Dahlin</td>
+      <td>BUF</td>
+      <td>-5-4-3-2-1</td>
+      <td>-15-11-8-4-4</td>
+      <td>-3-3-3-2-4</td>
+      <td>-15-12-10-6-5</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-1-1-0-0-0</td>
+      <td>-8-6-2-1-0</td>
+      <td>-2-2-1-0-0</td>
+      <td>-1-1-0-0-0</td>
+      <td>-3-2-1-0-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8477989</td>
+      <td>2025</td>
+      <td>Christian Dvorak</td>
+      <td>PHI</td>
+      <td>-5-4-3-2-1</td>
+      <td>-10-8-5-2-1</td>
+      <td>-2-2-2-1-1</td>
+      <td>-10-8-5-2-1</td>
+      <td>-1-1-1-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-2-2-2-0-0</td>
+      <td>-3-2-1-0-0</td>
+      <td>-1-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-1-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8479420</td>
+      <td>2025</td>
+      <td>Tage Thompson</td>
+      <td>BUF</td>
+      <td>-5-4-3-2-1</td>
+      <td>-19-17-17-13-5</td>
+      <td>-4-4-6-6-5</td>
+      <td>-23-20-19-14-6</td>
+      <td>-1-1-1-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-2-1-1-1-1</td>
+      <td>-6-5-1-0-0</td>
+      <td>-1-1-0-0-0</td>
+      <td>-2-1-0-0-0</td>
+      <td>-1-1-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8480797</td>
+      <td>2025</td>
+      <td>Joel Farabee</td>
+      <td>CGY</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-10-8-4-3-1-1</td>
+      <td>-2-2-1-1-0-1</td>
+      <td>-13-11-7-5-2-1</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-2-1-1-1-0-0</td>
+      <td>-3-3-2-2-1-0</td>
+      <td>-0-1-0-1-0-0</td>
+      <td>-1-1-1-1-0-0</td>
+      <td>-1-1-1-1-1-0</td>
+      <td>-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8476399</td>
+      <td>2025</td>
+      <td>Blake Coleman</td>
+      <td>CGY</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-15-13-11-8-5-2</td>
+      <td>-2-3-3-3-2-2</td>
+      <td>-16-14-11-8-6-2</td>
+      <td>-2-2-2-1-1-1</td>
+      <td>-0-0-0-0-0-1</td>
+      <td>-3-3-2-2-1-1</td>
+      <td>-3-3-3-1-1-1</td>
+      <td>-0-1-1-0-0-1</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8482073</td>
+      <td>2025</td>
+      <td>Braden Schneider</td>
+      <td>NYR</td>
+      <td>-7-6-5-4-3-2-1</td>
+      <td>-11-10-8-6-5-4-1</td>
+      <td>-2-2-2-2-2-2-1</td>
+      <td>-10-9-8-6-4-3-1</td>
+      <td>-0-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+      <td>-4-4-3-3-3-1-0</td>
+      <td>-1-1-1-1-1-0-0</td>
+      <td>-2-2-1-1-1-1-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8476881</td>
+      <td>2025</td>
+      <td>Tomas Hertl</td>
+      <td>VGK</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-15-12-6-4-4-2</td>
+      <td>-2-2-2-1-2-2</td>
+      <td>-17-15-10-6-4-2</td>
+      <td>-3-2-1-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-3-3-2-1-1-1</td>
+      <td>-14-10-8-6-5-3</td>
+      <td>-2-2-2-2-2-3</td>
+      <td>-2-1-1-0-0-0</td>
+      <td>-1-1-1-1-1-0</td>
+      <td>-1-1-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8482659</td>
+      <td>2025</td>
+      <td>Josh Doan</td>
+      <td>BUF</td>
+      <td>-5-4-3-2-1</td>
+      <td>-18-12-9-5-2</td>
+      <td>-4-3-3-2-2</td>
+      <td>-15-11-8-4-2</td>
+      <td>-2-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-2-1-1-1-0</td>
+      <td>-7-5-1-0-0</td>
+      <td>-1-1-0-0-0</td>
+      <td>-1-1-0-0-0</td>
+      <td>-2-2-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8475722</td>
+      <td>2025</td>
+      <td>Jason Zucker</td>
+      <td>BUF</td>
+      <td>-5-4-3-2-1</td>
+      <td>-13-12-9-8-5</td>
+      <td>-3-3-3-4-5</td>
+      <td>-14-12-9-8-4</td>
+      <td>-3-3-1-1-0</td>
+      <td>-1-1-0-0-0</td>
+      <td>-1-1-1-1-1</td>
+      <td>-5-3-1-1-0</td>
+      <td>-1-1-0-0-0</td>
+      <td>-1-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8478483</td>
+      <td>2025</td>
+      <td>Mitch Marner</td>
+      <td>VGK</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-14-11-11-7-5-3</td>
+      <td>-2-2-3-2-2-3</td>
+      <td>-18-13-12-8-5-3</td>
+      <td>-2-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-2-1-1-1-0-0</td>
+      <td>-18-14-10-8-7-4</td>
+      <td>-3-3-2-3-4-4</td>
+      <td>-4-4-2-1-1-1</td>
+      <td>-2-2-2-1-1-1</td>
+      <td>-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8476921</td>
+      <td>2025</td>
+      <td>Jordan Martinook</td>
+      <td>CAR</td>
+      <td>-5-4-3-2-1</td>
+      <td>-11-9-7-5-3</td>
+      <td>-2-2-2-2-3</td>
+      <td>-10-9-6-5-2</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-2-1-1-1-0</td>
+      <td>-6-4-4-3-2</td>
+      <td>-1-1-1-2-2</td>
+      <td>-1-1-1-1-0</td>
+      <td>-3-2-2-1-1</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8478975</td>
+      <td>2025</td>
+      <td>Mason Marchment</td>
+      <td>SEA</td>
+      <td>-5-4-3-2-1</td>
+      <td>-8-6-3-3-2</td>
+      <td>-2-2-1-2-2</td>
+      <td>-10-9-6-5-3</td>
+      <td>-1-1-1-1-1</td>
+      <td>-0-0-0-0-1</td>
+      <td>-1-1-1-1-0</td>
+      <td>-4-2-1-1-1</td>
+      <td>-1-0-0-0-1</td>
+      <td>-1-0-0-0-0</td>
+      <td>-2-1-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8476456</td>
+      <td>2025</td>
+      <td>Jonathan Huberdeau</td>
+      <td>CGY</td>
+      <td>-1</td>
+      <td>-3</td>
+      <td>-3</td>
+      <td>-3</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>8476905</td>
+      <td>2025</td>
+      <td>Chandler Stephenson</td>
+      <td>SEA</td>
+      <td>-5-4-3-2-1</td>
+      <td>-10-8-4-2-1</td>
+      <td>-2-2-1-1-1</td>
+      <td>-8-6-3-1-1</td>
+      <td>-2-2-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-1-1-0-0-0</td>
+      <td>-6-4-2-2-1</td>
+      <td>-1-1-1-1-1</td>
+      <td>-0-0-0-0-0</td>
+      <td>-2-0-0-0-0</td>
+      <td>-1-1-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8480336</td>
+      <td>2025</td>
       <td>Sean Walker</td>
       <td>CAR</td>
-      <td>5</td>
-      <td>10.0</td>
-      <td>2.00</td>
-      <td>10-4-1-0-</td>
-      <td>[-6.0, -3.0, -1.0]</td>
-      <td>4.22</td>
-      <td>1-0-</td>
-      <td>[-1.0]</td>
-      <td>0.000000</td>
+      <td>-5-4-3-2-1</td>
+      <td>-10-4-4-1-0</td>
+      <td>-2-1-1-0-0</td>
+      <td>-12-7-6-3-1</td>
+      <td>-1-1-1-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-4-3-3-2-2</td>
+      <td>-1-1-1-1-2</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8475842</td>
+      <td>2025</td>
+      <td>Sam Carrick</td>
+      <td>NYR</td>
+      <td>-7-6-5-4-3-2-1</td>
+      <td>-14-12-10-7-5-1-1</td>
+      <td>-2-2-2-2-2-0-1</td>
+      <td>-16-15-13-9-6-1-1</td>
+      <td>-0-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+      <td>-2-2-1-1-1-0-0</td>
+      <td>-4-4-4-4-4-1-0</td>
+      <td>-1-1-1-1-1-0-0</td>
+      <td>-2-2-2-2-2-1-0</td>
+      <td>-1-1-1-1-1-0-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8480817</td>
+      <td>2025</td>
+      <td>K'Andre Miller</td>
+      <td>CAR</td>
+      <td>-5-4-3-2-1</td>
+      <td>-12-9-7-5-4</td>
+      <td>-2-2-2-2-4</td>
+      <td>-13-10-8-6-3</td>
+      <td>-2-2-2-2-2</td>
+      <td>-0-0-1-1-2</td>
+      <td>-1-1-0-0-0</td>
+      <td>-6-4-4-3-2</td>
+      <td>-1-1-1-2-2</td>
+      <td>-1-0-0-0-0</td>
+      <td>-1-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8484180</td>
+      <td>2025</td>
+      <td>Samuel Honzek</td>
+      <td>CGY</td>
+      <td>-4-3-2-1</td>
+      <td>-9-6-4-4</td>
+      <td>-2-2-2-4</td>
+      <td>-9-6-4-4</td>
+      <td>-0-0-0-0</td>
+      <td>-0-0-0-0</td>
+      <td>-1-1-1-1</td>
+      <td>-2-2-2-0</td>
+      <td>-0-1-1-0</td>
+      <td>-0-0-0-0</td>
+      <td>-0-0-0-0</td>
+      <td>-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8480145</td>
+      <td>2025</td>
+      <td>Neal Pionk</td>
+      <td>WPG</td>
+      <td>-5-4-3-2-1</td>
+      <td>-9-7-7-4-2</td>
+      <td>-2-2-2-2-2</td>
+      <td>-8-6-6-4-2</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-9-7-7-3-1</td>
+      <td>-2-2-2-2-1</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8482157</td>
+      <td>2025</td>
+      <td>Will Cuylle</td>
+      <td>NYR</td>
+      <td>-7-6-5-4-3-2-1</td>
+      <td>-18-17-12-10-6-3-1</td>
+      <td>-3-3-2-2-2-2-1</td>
+      <td>-20-18-12-11-7-4-1</td>
+      <td>-1-1-1-1-1-0-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+      <td>-3-2-2-2-1-0-0</td>
+      <td>-4-2-2-2-2-1-0</td>
+      <td>-1-0-0-0-1-0-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8480830</td>
+      <td>2025</td>
+      <td>Andrei Svechnikov</td>
+      <td>CAR</td>
+      <td>-5-4-3-2-1</td>
+      <td>-10-8-6-5-4</td>
+      <td>-2-2-2-2-4</td>
+      <td>-12-10-8-7-3</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-1-1-1-1-0</td>
+      <td>-2-2-2-1-0</td>
+      <td>-0-0-1-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8478396</td>
+      <td>2025</td>
+      <td>Noah Hanifin</td>
+      <td>VGK</td>
+      <td>-1</td>
+      <td>-3</td>
+      <td>-3</td>
+      <td>-3</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>-0</td>
+      <td>-0</td>
+      <td>-0</td>
+    </tr>
+    <tr>
+      <td>8481068</td>
+      <td>2025</td>
+      <td>Yegor Sharangovich</td>
+      <td>CGY</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-9-9-8-4-1-0</td>
+      <td>-2-2-2-1-0-0</td>
+      <td>-11-10-7-4-2-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-1-1-1-1-0-0</td>
+      <td>-1-1-1-1-1-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-1-1-1-1-1-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8482679</td>
+      <td>2025</td>
+      <td>Matt Coronato</td>
+      <td>CGY</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-12-10-7-6-2-1</td>
+      <td>-2-2-2-2-1-1</td>
+      <td>-17-16-12-10-6-4</td>
+      <td>-2-2-2-2-0-0</td>
+      <td>-0-0-0-1-0-0</td>
+      <td>-1-1-1-1-0-0</td>
+      <td>-4-3-3-3-1-1</td>
+      <td>-1-1-1-1-0-1</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-1-1-1-1-1-1</td>
+      <td>-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8479323</td>
+      <td>2025</td>
+      <td>Adam Fox</td>
+      <td>NYR</td>
+      <td>-7-6-5-4-3-2-1</td>
+      <td>-19-17-15-11-9-5-1</td>
+      <td>-3-3-3-3-3-2-1</td>
+      <td>-21-17-16-11-8-5-1</td>
+      <td>-3-3-3-3-3-1-0</td>
+      <td>-0-0-1-1-1-0-0</td>
+      <td>-2-1-1-1-1-0-0</td>
+      <td>-9-6-6-6-6-1-0</td>
+      <td>-1-1-1-2-2-0-0</td>
+      <td>-2-0-0-0-0-0-0</td>
+      <td>-1-1-1-1-1-0-0</td>
+      <td>-1-1-1-1-1-0-0</td>
+    </tr>
+    <tr>
+      <td>8480220</td>
+      <td>2025</td>
+      <td>Noah Cates</td>
+      <td>PHI</td>
+      <td>-5-4-3-2-1</td>
+      <td>-11-8-7-6-3</td>
+      <td>-2-2-2-3-3</td>
+      <td>-16-12-10-9-5</td>
+      <td>-2-1-1-1-1</td>
+      <td>-0-0-0-0-1</td>
+      <td>-3-2-2-2-1</td>
+      <td>-5-4-4-3-1</td>
+      <td>-1-1-1-2-1</td>
+      <td>-2-2-2-1-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-1-1-1-1-1</td>
+    </tr>
+    <tr>
+      <td>8475791</td>
+      <td>2025</td>
+      <td>Taylor Hall</td>
+      <td>CAR</td>
+      <td>-5-4-3-2-1</td>
+      <td>-8-6-4-4-2</td>
+      <td>-2-2-1-2-2</td>
+      <td>-9-7-5-5-3</td>
+      <td>-2-2-2-2-1</td>
+      <td>-0-0-1-1-1</td>
+      <td>-1-1-1-1-1</td>
+      <td>-5-5-5-3-2</td>
+      <td>-1-1-2-2-2</td>
+      <td>-1-1-1-1-1</td>
+      <td>-1-1-1-0-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8482159</td>
+      <td>2025</td>
+      <td>Tyson Foerster</td>
+      <td>PHI</td>
+      <td>-5-4-3-2-1</td>
+      <td>-11-9-6-5-2</td>
+      <td>-2-2-2-2-2</td>
+      <td>-13-12-7-5-2</td>
+      <td>-1-1-1-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-2-1-1-0-0</td>
+      <td>-7-6-6-3-1</td>
+      <td>-1-2-2-2-1</td>
+      <td>-2-1-1-1-1</td>
+      <td>-1-1-1-1-0</td>
+      <td>-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8482671</td>
+      <td>2025</td>
+      <td>Owen Power</td>
+      <td>BUF</td>
+      <td>-4-3-2-1</td>
+      <td>-7-5-5-2</td>
+      <td>-2-2-2-2</td>
+      <td>-8-6-6-3</td>
+      <td>-1-0-0-0</td>
+      <td>-0-0-0-0</td>
+      <td>-0-0-0-0</td>
+      <td>-3-2-0-0</td>
+      <td>-1-1-0-0</td>
+      <td>-0-0-0-0</td>
+      <td>-1-1-0-0</td>
+      <td>-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8481540</td>
+      <td>2025</td>
+      <td>Cole Caufield</td>
+      <td>MTL</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-17-16-12-10-7-4</td>
+      <td>-3-3-3-3-4-4</td>
+      <td>-22-20-15-13-7-5</td>
+      <td>-5-5-3-1-0-0</td>
+      <td>-1-1-1-0-0-0</td>
+      <td>-3-3-3-2-1-1</td>
+      <td>-10-9-7-5-2-0</td>
+      <td>-2-2-2-2-1-0</td>
+      <td>-3-2-2-2-1-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8476448</td>
+      <td>2025</td>
+      <td>William Karlsson</td>
+      <td>VGK</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-16-13-10-9-7-5</td>
+      <td>-3-3-2-3-4-5</td>
+      <td>-15-13-11-10-7-4</td>
+      <td>-2-2-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-1-1-0-0-0-0</td>
+      <td>-3-3-1-0-0-0</td>
+      <td>-0-1-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-1-1-1-0-0-0</td>
+      <td>-1-1-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8478397</td>
+      <td>2025</td>
+      <td>Rasmus Andersson</td>
+      <td>CGY</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-10-10-8-4-2-2</td>
+      <td>-2-2-2-1-1-2</td>
+      <td>-16-16-13-9-5-4</td>
+      <td>-1-1-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-2-2-1-1-0-0</td>
+      <td>-5-5-4-4-3-2</td>
+      <td>-1-1-1-1-2-2</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-1-1-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8481604</td>
+      <td>2025</td>
+      <td>Pavel Dorofeyev</td>
+      <td>VGK</td>
+      <td>-6-5-4-3-2-1</td>
+      <td>-17-16-13-12-9-5</td>
+      <td>-3-3-3-4-4-5</td>
+      <td>-21-20-15-14-9-4</td>
+      <td>-6-6-5-5-4-3</td>
+      <td>-1-1-1-2-2-3</td>
+      <td>-3-3-2-2-2-0</td>
+      <td>-11-8-6-6-5-3</td>
+      <td>-2-2-2-2-2-3</td>
+      <td>-1-1-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+      <td>-0-0-0-0-0-0</td>
+    </tr>
+    <tr>
+      <td>8477018</td>
+      <td>2025</td>
+      <td>Ben Hutton</td>
+      <td>VGK</td>
+      <td>-5-4-3-2-1</td>
+      <td>-9-8-6-3-1</td>
+      <td>-2-2-2-2-1</td>
+      <td>-10-9-8-3-1</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-0-0-0-0-0</td>
+      <td>-6-5-2-1-1</td>
+      <td>-1-1-1-0-1</td>
+      <td>-1-1-0-0-0</td>
+      <td>-1-1-1-1-1</td>
+      <td>-0-0-0-0-0</td>
     </tr>
   </tbody>
 </table>
