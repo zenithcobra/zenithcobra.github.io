@@ -1290,7 +1290,7 @@ def filter_skater_data_for_csv(skater_data):
     """
     filtered_data = []
     relevant_fields = [
-        'playerId', 'season', 'name', 'team', 
+        'playerId', 'season', 'name', 'team', 'I_F_shotsOnGoal',
         'past_games', 'past_sog', 'past_a_sog', 'past_e_shot', 'past_goals', 'past_a_goals',
         'past_e_goals', 'past_on_ice_goal', 'past_a_on_ice_goal', 'past_assists1',
         'past_assists2', 'past_rebound_goals'
