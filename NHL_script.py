@@ -43,7 +43,49 @@ import csv
 from datetime import datetime
 import ast
 import numpy as np
+from bs4 import BeautifulSoup
 
+def add_checkboxes_to_html(file_path):
+    """
+    Adds a checkbox to the first column of every row in an HTML table and overwrites the file.
+
+    Args:
+        file_path (str): The path to the HTML file containing the table.
+
+    Returns:
+        None
+    """
+    # Read the HTML file
+    with open(file_path, 'r', encoding='utf-8') as file:
+        soup = BeautifulSoup(file, 'html.parser')
+
+    # Find the table
+    table = soup.find('table', {'class': 'dataframe'})
+    if not table:
+        raise ValueError("No table with class 'dataframe' found in the HTML file.")
+
+    # Add the "PICK" header to the table
+    thead = table.find('thead')
+    if thead:
+        header_row = thead.find('tr')
+        pick_header = soup.new_tag('th')
+        pick_header.string = 'PICK'
+        header_row.insert(0, pick_header)
+
+    # Add a checkbox to the first column of every row in the table body
+    tbody = table.find('tbody')
+    if tbody:
+        for row in tbody.find_all('tr'):
+            checkbox_cell = soup.new_tag('td')
+            checkbox = soup.new_tag('input', type='checkbox')
+            checkbox_cell.append(checkbox)
+            row.insert(0, checkbox_cell)
+
+    # Overwrite the file with the updated HTML
+    with open(file_path, 'w', encoding='utf-8') as file:
+        file.write(str(soup))
+
+    print(f"Checkboxes added to the table in {file_path}")
 
 # PROCESS STATS
 
@@ -1290,7 +1332,7 @@ def filter_skater_data_for_csv(skater_data):
     """
     filtered_data = []
     relevant_fields = [
-        'playerId', 'season', 'name', 'team', 'I_F_shotsOnGoal',
+        'playerId', 'season', 'name', 'team', 'I_F_shotsOnGoal', "I_F_goals","I_F_xGoals",
         'past_games', 'past_sog', 'past_a_sog', 'past_e_shot', 'past_goals', 'past_a_goals',
         'past_e_goals', 'past_on_ice_goal', 'past_a_on_ice_goal', 'past_assists1',
         'past_assists2', 'past_rebound_goals'
