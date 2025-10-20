@@ -37,22 +37,30 @@ import json
 import csv
 import requests
 from pathlib import Path  # Import Path
-import importlib
-import NHL_script
-importlib.reload(NHL_script)
-import NHL_script
-importlib.reload(NHL_script)
 import file_operations
-importlib.reload(file_operations)
 from collections import defaultdict
 import csv
 from datetime import datetime
 import ast
 import numpy as np
-import importlib
-import NHL_script
-importlib.reload(NHL_script)
 
+
+# PROCESS STATS
+
+# READ CSV TO A LIST OF LINES WHERE EACH LINE IS A DICT
+
+def load_stats_from_csv_to_list_of_dict(csv_file_path):
+    """Read the CSV file and load stats, returning a list of dictionaries."""
+    stats = []
+    with open(csv_file_path, mode='r') as file:
+        stats_csv_file = csv.reader(file)
+        # Read the header
+        headers = next(stats_csv_file)
+        # Load the data and create a list of dictionaries
+        for row in stats_csv_file:
+            # Create a dictionary for each row using headers as keys
+            stats.append({headers[i]: row[i] for i in range(len(headers))})
+    return stats
 
 
 
@@ -1025,3 +1033,301 @@ def process_nhl_data_from_folder():
 
     # Step 5: Save the combined data to a new CSV file
     combined_data.to_csv(output_file_path, index=False)
+
+
+def get_skater_history(int_shots_average):
+
+    STATS_2022_CSV = 'NHL_data/static_data/skaters2022.csv'
+    STATS_2023_CSV = 'NHL_data/static_data/skaters2023.csv'
+    STATS_2024_CSV = 'NHL_data/static_data/skaters2024.csv'
+
+    teams_playing_today = teams_today()
+    
+    # get a list of paths from skaters directory
+    # Example usage
+    directory = "NHL_data/daily_skaters"
+    sorted_csv_file_paths = get_sorted_skater_paths(directory)
+    
+    skaters_from_today = load_stats_from_csv_to_list_of_dict(sorted_csv_file_paths[0])
+    skaters_from_today_filtered_for_all = [player for player in skaters_from_today if player.get('situation') == 'all' and player.get('team') in teams_playing_today]
+    
+    skaters_from_today_filtered_for_all_and_asog = [
+        player for player in skaters_from_today_filtered_for_all
+        if 'I_F_shotsOnGoal' in player and 'games_played' in player and float(player["games_played"]) > 0
+        and (avg_sog := int(round(float(player["I_F_shotsOnGoal"]) / float(player["games_played"]))) > int_shots_average)
+    ]
+    
+    for player in skaters_from_today_filtered_for_all_and_asog:
+        player.update({
+            "past_games": str(int(round(float(player.get('games_played'))))),
+            "past_sog": str(int(round(float(player["I_F_shotsOnGoal"])))),
+            "past_a_sog": str(int(round(float(player["I_F_shotsOnGoal"]) / float(player["games_played"])))),
+            "past_e_shot": str(int(round(float(player["I_F_xOnGoal"])))),
+            "past_goals": str(int(round(float(player["I_F_goals"])))),
+            "past_a_goals": str(int(round(float(player["I_F_goals"]) / float(player["games_played"])))),
+            "past_e_goals": str(int(round(float(player["I_F_xGoals"])))),
+            "past_on_ice_goal": str(int(round(float(player["OnIce_F_goals"])))),
+            "past_a_on_ice_goal": str(int(round(float(player["OnIce_F_goals"]) / float(player["games_played"])))),
+            "past_assists1": str(int(round(float(player["I_F_primaryAssists"])))),
+            "past_assists2": str(int(round(float(player["I_F_secondaryAssists"])))),
+            "past_rebound_goals": str(int(round(float(player["I_F_reboundGoals"]))))
+        })
+
+    for file_path in sorted_csv_file_paths[1:]:
+        additional_data = load_stats_from_csv_to_list_of_dict(file_path)
+        for player in skaters_from_today_filtered_for_all_and_asog:
+            for x in additional_data:
+                if player.get('name') == x.get('name') and x.get('situation') == 'all':
+                    player["past_games"] += ":" + str(int(round(float(x.get('games_played')))))
+                    player["past_sog"] += ":" + str(int(round(float(x["I_F_shotsOnGoal"]))))
+                    player["past_a_sog"] += ":" + str(int(round(float(x["I_F_shotsOnGoal"]) / float(x["games_played"]))))
+                    player["past_e_shot"] += ":" + str(int(round(float(x["I_F_xOnGoal"]))))
+                    player["past_goals"] += ":" + str(int(round(float(x["I_F_goals"]))))
+                    player["past_a_goals"] += ":" + str(int(round(float(x["I_F_goals"]) / float(x["games_played"]))))
+                    player["past_e_goals"] += ":" + str(int(round(float(x["I_F_xGoals"]))))
+                    player["past_on_ice_goal"] += ":" + str(int(round(float(x["OnIce_F_goals"]))))
+                    player["past_a_on_ice_goal"] += ":" + str(int(round(float(x["OnIce_F_goals"]) / float(x["games_played"]))))
+                    player["past_assists1"] += ":" + str(int(round(float(x["I_F_primaryAssists"]))))
+                    player["past_assists2"] += ":" + str(int(round(float(x["I_F_secondaryAssists"]))))
+                    player["past_rebound_goals"] += ":" + str(int(round(float(x["I_F_reboundGoals"]))))
+    
+    stats_2022 = load_stats_from_csv_to_list_of_dict(STATS_2022_CSV)
+    stats_2023 = load_stats_from_csv_to_list_of_dict(STATS_2023_CSV)
+    stats_2024 = load_stats_from_csv_to_list_of_dict(STATS_2024_CSV)
+    for player in skaters_from_today_filtered_for_all_and_asog:
+        for x in stats_2022:
+            if player.get('name') == x.get('name') and x.get('situation') == 'all':
+                stats = {
+                        "SOG_22": str(int(round(float(x["I_F_shotsOnGoal"])))),
+                        "AVG_SOG_22": str(int(round(float(x["I_F_shotsOnGoal"]) / float(x["games_played"])))),
+                        "GOALS_22": str(int(round(float(x["I_F_goals"])))),
+                        "AVG_GOALS_22": str(int(round(float(x["I_F_goals"]) / float(x["games_played"])))),
+                        "ASSISTS1_22": str(int(round(float(x["I_F_primaryAssists"])))),
+                        "ASSISTS2_22": str(int(round(float(x["I_F_secondaryAssists"])))),
+                        "AVG_ASSISTS_22": str(int(round((float(x["I_F_secondaryAssists"]) + float(x["I_F_primaryAssists"])) / float(x["games_played"])))),
+                        "REBOUNDS_22": str(int(round(float(x["I_F_reboundGoals"])))),
+                        "AVG_REBOUNDS_22": str(int(round(float(x["I_F_reboundGoals"]) / float(x["games_played"])))),
+                        "ONICE_GOALS_22": str(int(round(float(x["OnIce_A_xGoals"]))))
+                    }
+                player.update(stats)
+        for x in stats_2023:
+            if player.get('name') == x.get('name') and x.get('situation') == 'all':
+                stats = {
+                        "SOG_23": str(int(round(float(x["I_F_shotsOnGoal"])))),
+                        "AVG_SOG_23": str(int(round(float(x["I_F_shotsOnGoal"]) / float(x["games_played"])))),
+                        "GOALS_23": str(int(round(float(x["I_F_goals"])))),
+                        "AVG_GOALS_23": str(int(round(float(x["I_F_goals"]) / float(x["games_played"])))),
+                        "ASSISTS1_23": str(int(round(float(x["I_F_primaryAssists"])))),
+                        "ASSISTS2_23": str(int(round(float(x["I_F_secondaryAssists"])))),
+                        "AVG_ASSISTS_23": str(int(round((float(x["I_F_secondaryAssists"]) + float(x["I_F_primaryAssists"])) / float(x["games_played"])))),
+                        "REBOUNDS_23": str(int(round(float(x["I_F_reboundGoals"])))),
+                        "AVG_REBOUNDS_23": str(int(round(float(x["I_F_reboundGoals"]) / float(x["games_played"])))),
+                        "ONICE_GOALS_23": str(int(round(float(x["OnIce_A_xGoals"]))))
+                    }
+                player.update(stats)
+        for x in stats_2024:
+            if player.get('name') == x.get('name') and x.get('situation') == 'all':
+                stats = {
+                        "SOG_24": str(int(round(float(x["I_F_shotsOnGoal"])))),
+                        "AVG_SOG_24": str(int(round(float(x["I_F_shotsOnGoal"]) / float(x["games_played"])))),
+                        "GOALS_24": str(int(round(float(x["I_F_goals"])))),
+                        "AVG_GOALS_24": str(int(round(float(x["I_F_goals"]) / float(x["games_played"])))),
+                        "ASSISTS1_24": str(int(round(float(x["I_F_primaryAssists"])))),
+                        "ASSISTS2_24": str(int(round(float(x["I_F_secondaryAssists"])))),
+                        "AVG_ASSISTS_24": str(int(round((float(x["I_F_secondaryAssists"]) + float(x["I_F_primaryAssists"])) / float(x["games_played"])))),
+                        "REBOUNDS_24": str(int(round(float(x["I_F_reboundGoals"])))),
+                        "AVG_REBOUNDS_24": str(int(round(float(x["I_F_reboundGoals"]) / float(x["games_played"])))),
+                        "ONICE_GOALS_24": str(int(round(float(x["OnIce_A_xGoals"]))))
+                    }
+                player.update(stats)
+
+        # List of keys to process
+        keys_to_process = [
+        "past_games", 
+        "past_sog", 
+        "past_a_sog", 
+        "past_e_shot", 
+        "past_goals", 
+        "past_a_goals", 
+        "past_e_goals", 
+        "past_on_ice_goal", 
+        "past_a_on_ice_goal", 
+        "past_assists1", 
+        "past_assists2", 
+        "past_rebound_goals"
+        ]
+    
+        # Process each key
+        for key in keys_to_process:
+            string_to_split = str(player.get(key)).split(":")
+            new_string_to_update = ":" + ":".join(string_to_split[:20])
+            player.update({key: new_string_to_update})
+
+        #print(player.get('name'))
+
+    return skaters_from_today_filtered_for_all_and_asog
+
+def find_duplicate_positions(data_string):
+    """
+    Takes a colon-separated string, converts it into an array, 
+    and returns a list of indices for all duplicate values.
+
+    Args:
+        data_string (str): A colon-separated string (e.g., ':6:6:5:5:4:4:3:3:3:2:2:1').
+
+    Returns:
+        list: A list of indices where duplicate values occur.
+    """
+    # Step 1: Convert the string into an array of integers
+    data_array = [int(x) for x in data_string.split(":") if x]
+
+    # Step 2: Find indices of duplicate values
+    seen = {}
+    duplicate_positions = []
+    for i, value in enumerate(data_array):
+        if value in seen:
+            duplicate_positions.append(i)  # Add the current index if it's a duplicate
+        else:
+            seen[value] = i  # Mark the value as seen
+
+    return duplicate_positions
+
+
+def process_and_filter(data_string, indices_to_remove):
+    """
+    Takes a colon-separated string, converts it into an array, removes values at specified indices,
+    and converts the resulting array back to a colon-separated string.
+
+    Args:
+        data_string (str): A colon-separated string (e.g., ':19:19:15:15:9:9:5:5:5:4:4:3').
+        indices_to_remove (list): A list of indices to remove from the array (e.g., [1, 3, 5, 7, 8, 10]).
+
+    Returns:
+        str: A colon-separated string after removing the specified indices.
+    """
+    # Step 1: Convert the string into an array of integers
+    data_array = [int(x) for x in data_string.split(":") if x]
+
+    # Step 2: Remove values at the specified indices
+    filtered_array = [value for i, value in enumerate(data_array) if i not in indices_to_remove]
+
+    # Step 3: Convert the filtered array back to a colon-separated string
+    result_string = "-" + "-".join(map(str, filtered_array))
+
+    return result_string
+
+
+def process_skaters_duplicates(skater_data):
+    """
+    Processes a list of skater data dictionaries to remove duplicate entries
+    based on their past performance statistics.
+
+    Args:
+        skater_data (list): A list of dictionaries containing skater data.
+
+    Returns:
+        None: The function modifies the input list in place.
+    """
+    for x in skater_data:
+        past_games = x.get('past_games')   # ':6:6:5:5:4:4:3:3:3:2:2:1',
+        clean_up_array = find_duplicate_positions(past_games)
+        new_past_games = process_and_filter(past_games, clean_up_array)
+        x.update({'past_games': new_past_games})
+        
+        past_sog = x.get('past_sog')   # ':19:19:15:15:9:9:5:5:5:4:4:3',
+        new_past_sog = process_and_filter(past_sog, clean_up_array)
+        x.update({'past_sog': new_past_sog})
+        
+        past_a_sog = x.get('past_a_sog')   # ':3:3:3:3:2:2:2:2:2:2:2:3',
+        new_past_a_sog = process_and_filter(past_a_sog, clean_up_array)
+        x.update({'past_a_sog': new_past_a_sog})
+        
+        past_e_shot = x.get('past_e_shot')   # ':19:19:15:15:9:9:5:5:5:4:4:3',
+        new_past_e_shot = process_and_filter(past_e_shot, clean_up_array)
+        x.update({'past_e_shot': new_past_e_shot})
+        
+        past_goals = x.get('past_goals')   # ':2:2:0:0:0:0:0:0:0:0:0:0',
+        new_past_goals = process_and_filter(past_goals, clean_up_array)
+        x.update({'past_goals': new_past_goals})
+        
+        past_a_goals = x.get('past_a_goals')   # ':0:0:0:0:0:0:0:0:0:0:0:0',
+        new_past_a_goals = process_and_filter(past_a_goals, clean_up_array)
+        x.update({'past_a_goals': new_past_a_goals})
+        
+        past_e_goals = x.get('past_e_goals')   # ':3:3:2:2:1:1:1:1:1:1:1:1',
+        new_past_e_goals = process_and_filter(past_e_goals, clean_up_array)
+        x.update({'past_e_goals': new_past_e_goals})
+        
+        past_on_ice_goal = x.get('past_on_ice_goal')   # ':15:15:10:10:7:7:5:5:5:4:4:2',
+        new_past_on_ice_goal = process_and_filter(past_on_ice_goal, clean_up_array)
+        x.update({'past_on_ice_goal': new_past_on_ice_goal})
+        
+        past_a_on_ice_goal = x.get('past_a_on_ice_goal')   # ':2:2:2:2:2:2:2:2:2:2:2:2',
+        new_past_a_on_ice_goal = process_and_filter(past_a_on_ice_goal, clean_up_array)
+        x.update({'past_a_on_ice_goal': new_past_a_on_ice_goal})
+        
+        past_assists1 = x.get('past_assists1')   # ':10:10:8:8:6:6:5:5:5:4:4:2',
+        new_past_assists1 = process_and_filter(past_assists1, clean_up_array)
+        x.update({'past_assists1': new_past_assists1})
+        
+        past_assists2 = x.get('past_assists2')   # ':1:1:1:1:0:0:0:0:0:0:0:0',
+        new_past_assists2 = process_and_filter(past_assists2, clean_up_array)
+        x.update({'past_assists2': new_past_assists2})
+        
+        past_rebound_goals = x.get('past_rebound_goals')   # ':1:1:0:0:0:0:0:0:0:0:0:0',
+        new_past_rebound_goals = process_and_filter(past_rebound_goals, clean_up_array)
+        x.update({'past_rebound_goals': new_past_rebound_goals})
+    return skater_data
+
+def filter_skater_data_for_csv(skater_data):
+    """
+    Filters the skater data to include only relevant fields for CSV output.
+
+    Args:
+        skater_data (list): A list of dictionaries containing skater data.
+    """
+    filtered_data = []
+    relevant_fields = [
+        'playerId', 'season', 'name', 'team', 
+        'past_games', 'past_sog', 'past_a_sog', 'past_e_shot', 'past_goals', 'past_a_goals',
+        'past_e_goals', 'past_on_ice_goal', 'past_a_on_ice_goal', 'past_assists1',
+        'past_assists2', 'past_rebound_goals'
+    ]
+    
+    for skater in skater_data:
+        filtered_skater = {field: skater.get(field, '') for field in relevant_fields}
+        filtered_data.append(filtered_skater)
+    
+    return filtered_data
+
+def save_dicts_to_csv(data, file_path):
+    """
+    Converts a list of dictionaries to a CSV file and saves it to the specified path.
+
+    Args:
+        data (list): A list of dictionaries to be written to the CSV file.
+        file_path (str): The path where the CSV file will be saved.
+
+    Returns:
+        None
+    """
+    if not data:
+        raise ValueError("The data list is empty. Cannot write an empty CSV file.")
+
+    # Extract the headers from the keys of the first dictionary
+    headers = data[0].keys()
+
+    # Write the data to the CSV file
+    with open(file_path, mode='w', newline='', encoding='utf-8') as csv_file:
+        writer = csv.DictWriter(csv_file, fieldnames=headers)
+        writer.writeheader()  # Write the header row
+        writer.writerows(data)  # Write the data rows
+
+    print(f"CSV file has been saved to {file_path}")
+
+def combine_and_save_skaters(int_shots_average, file_path):
+    skater_data = get_skater_history(int_shots_average)
+    filtered_data = filter_skater_data_for_csv(skater_data)
+    processed_data = process_skaters_duplicates(filtered_data)
+    save_dicts_to_csv(processed_data, file_path)
+

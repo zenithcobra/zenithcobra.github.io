@@ -29,3 +29,5 @@ NHL_script.get_nhl_teams()
 
 # Process Data
 # NHL_data.process_nhl_data_and_generate_html()
+NHL_script.combine_and_save_skaters(1, 'NHL_data/SOG_per_game.csv')
+NHL_script.csv_to_html('NHL_data/SOG_per_game.csv')
