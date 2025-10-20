@@ -1,0 +1,398 @@
+[
+    {
+        "date": "2025-10-19",
+        "home_team": "Capitals",
+        "away_team": "Canucks",
+        "home_score": 3,
+        "away_score": 4,
+        "winner": "Canucks",
+        "condensed_game": "https://www.nhl.com/video/van-at-wsh-condensed-game-6383086678112",
+        "goals": [
+            {
+                "player_id": 8480012,
+                "name": "Elias Pettersson",
+                "team": "VAN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "C. Garland",
+                        "assists_to_date": 4,
+                        "player_id": 8478856
+                    }
+                ]
+            },
+            {
+                "player_id": 8474574,
+                "name": "Tyler Myers",
+                "team": "VAN",
+                "goals_to_date": 1,
+                "assists": []
+            },
+            {
+                "player_id": 8480748,
+                "name": "Kiefer Sherwood",
+                "team": "VAN",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "C. Garland",
+                        "assists_to_date": 5,
+                        "player_id": 8478856
+                    },
+                    {
+                        "name": "Q. Hughes",
+                        "assists_to_date": 4,
+                        "player_id": 8480800
+                    }
+                ]
+            },
+            {
+                "player_id": 8476927,
+                "name": "Teddy Blueger",
+                "team": "VAN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "E. Kane",
+                        "assists_to_date": 3,
+                        "player_id": 8475169
+                    },
+                    {
+                        "name": "T. Myers",
+                        "assists_to_date": 2,
+                        "player_id": 8474574
+                    }
+                ]
+            },
+            {
+                "player_id": 8484186,
+                "name": "Ryan Leonard",
+                "team": "WSH",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "T. Wilson",
+                        "assists_to_date": 5,
+                        "player_id": 8476880
+                    },
+                    {
+                        "name": "D. Strome",
+                        "assists_to_date": 5,
+                        "player_id": 8478440
+                    }
+                ]
+            },
+            {
+                "player_id": 8479345,
+                "name": "Jakob Chychrun",
+                "team": "WSH",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "H. Lapierre",
+                        "assists_to_date": 1,
+                        "player_id": 8482148
+                    },
+                    {
+                        "name": "R. Sandin",
+                        "assists_to_date": 2,
+                        "player_id": 8480873
+                    }
+                ]
+            },
+            {
+                "player_id": 8474590,
+                "name": "John Carlson",
+                "team": "WSH",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "D. Strome",
+                        "assists_to_date": 6,
+                        "player_id": 8478440
+                    },
+                    {
+                        "name": "T. Wilson",
+                        "assists_to_date": 6,
+                        "player_id": 8476880
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-10-19",
+        "home_team": "Red Wings",
+        "away_team": "Oilers",
+        "home_score": 4,
+        "away_score": 2,
+        "winner": "Red Wings",
+        "condensed_game": "https://www.nhl.com/video/edm-at-det-condensed-game-6383100377112",
+        "goals": [
+            {
+                "player_id": 8477946,
+                "name": "Dylan Larkin",
+                "team": "DET",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "B. Chiarot",
+                        "assists_to_date": 2,
+                        "player_id": 8475279
+                    },
+                    {
+                        "name": "L. Raymond",
+                        "assists_to_date": 2,
+                        "player_id": 8482078
+                    }
+                ]
+            },
+            {
+                "player_id": 8484471,
+                "name": "Emmitt Finnie",
+                "team": "DET",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "J. Bernard-Docker",
+                        "assists_to_date": 1,
+                        "player_id": 8480879
+                    },
+                    {
+                        "name": "D. Larkin",
+                        "assists_to_date": 5,
+                        "player_id": 8477946
+                    }
+                ]
+            },
+            {
+                "player_id": 8481491,
+                "name": "Noah Philp",
+                "team": "EDM",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "V. Podkolzin",
+                        "assists_to_date": 2,
+                        "player_id": 8481617
+                    },
+                    {
+                        "name": "B. Kulak",
+                        "assists_to_date": 1,
+                        "player_id": 8476967
+                    }
+                ]
+            },
+            {
+                "player_id": 8477946,
+                "name": "Dylan Larkin",
+                "team": "DET",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "E. Finnie",
+                        "assists_to_date": 3,
+                        "player_id": 8484471
+                    },
+                    {
+                        "name": "J. Gibson",
+                        "assists_to_date": 1,
+                        "player_id": 8476434
+                    }
+                ]
+            },
+            {
+                "player_id": 8477934,
+                "name": "Leon Draisaitl",
+                "team": "EDM",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "B. Kulak",
+                        "assists_to_date": 2,
+                        "player_id": 8476967
+                    },
+                    {
+                        "name": "M. Ekholm",
+                        "assists_to_date": 1,
+                        "player_id": 8475218
+                    }
+                ]
+            },
+            {
+                "player_id": 8484471,
+                "name": "Emmitt Finnie",
+                "team": "DET",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "L. Raymond",
+                        "assists_to_date": 3,
+                        "player_id": 8482078
+                    },
+                    {
+                        "name": "D. Larkin",
+                        "assists_to_date": 6,
+                        "player_id": 8477946
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-10-19",
+        "home_team": "Blackhawks",
+        "away_team": "Ducks",
+        "home_score": 2,
+        "away_score": 1,
+        "winner": "Blackhawks",
+        "condensed_game": "https://www.nhl.com/video/ana-at-chi-condensed-game-6383186199112",
+        "goals": [
+            {
+                "player_id": 8483493,
+                "name": "Frank Nazar",
+                "team": "CHI",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "W. Kaiser",
+                        "assists_to_date": 2,
+                        "player_id": 8482176
+                    },
+                    {
+                        "name": "R. Donato",
+                        "assists_to_date": 2,
+                        "player_id": 8477987
+                    }
+                ]
+            },
+            {
+                "player_id": 8482745,
+                "name": "Mason McTavish",
+                "team": "ANA",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "T. Terry",
+                        "assists_to_date": 4,
+                        "player_id": 8478873
+                    },
+                    {
+                        "name": "J. LaCombe",
+                        "assists_to_date": 1,
+                        "player_id": 8481605
+                    }
+                ]
+            },
+            {
+                "player_id": 8477987,
+                "name": "Ryan Donato",
+                "team": "CHI",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "C. Bedard",
+                        "assists_to_date": 5,
+                        "player_id": 8484144
+                    },
+                    {
+                        "name": "S. Rinzel",
+                        "assists_to_date": 2,
+                        "player_id": 8483506
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-10-19",
+        "home_team": "Mammoth",
+        "away_team": "Bruins",
+        "home_score": 3,
+        "away_score": 2,
+        "winner": "Mammoth",
+        "condensed_game": "https://www.nhl.com/video/bos-at-uta-condensed-game-6383184131112",
+        "goals": [
+            {
+                "player_id": 8483431,
+                "name": "Logan Cooley",
+                "team": "UTA",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "N. Schmaltz",
+                        "assists_to_date": 5,
+                        "player_id": 8477951
+                    },
+                    {
+                        "name": "C. Keller",
+                        "assists_to_date": 5,
+                        "player_id": 8479343
+                    }
+                ]
+            },
+            {
+                "player_id": 8477956,
+                "name": "David Pastrnak",
+                "team": "BOS",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "P. Zacha",
+                        "assists_to_date": 5,
+                        "player_id": 8478401
+                    },
+                    {
+                        "name": "C. McAvoy",
+                        "assists_to_date": 4,
+                        "player_id": 8479325
+                    }
+                ]
+            },
+            {
+                "player_id": 8477956,
+                "name": "David Pastrnak",
+                "team": "BOS",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "M. Khusnutdinov",
+                        "assists_to_date": 1,
+                        "player_id": 8482177
+                    }
+                ]
+            },
+            {
+                "player_id": 8479343,
+                "name": "Clayton Keller",
+                "team": "UTA",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "N. Schmaltz",
+                        "assists_to_date": 6,
+                        "player_id": 8477951
+                    },
+                    {
+                        "name": "I. Cole",
+                        "assists_to_date": 2,
+                        "player_id": 8474013
+                    }
+                ]
+            },
+            {
+                "player_id": 8482699,
+                "name": "Dylan Guenther",
+                "team": "UTA",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "J. Peterka",
+                        "assists_to_date": 2,
+                        "player_id": 8482175
+                    }
+                ]
+            }
+        ]
+    }
+]

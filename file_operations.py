@@ -21,6 +21,48 @@ import csv
 import notebooks.config as config
 
 
+def convert_csv_to_json(csv_file_path, json_file_path):
+    """
+    Converts a CSV file to a JSON file.
+    Args:
+        csv_file_path (str): Path to the input CSV file.
+        json_file_path (str): Path to the output JSON file.
+    """
+    # Read the CSV file and convert it to a list of dictionaries
+    data = []
+    with open(csv_file_path, mode='r', encoding='utf-8') as csv_file:
+        csv_reader = csv.DictReader(csv_file)  # Automatically uses the headers as keys
+        for row in csv_reader:
+            # Convert any string representations of lists back to Python lists
+            for key, value in row.items():
+                if value.startswith('[') and value.endswith(']'):
+                    try:
+                        row[key] = json.loads(value)  # Parse the string as a list
+                    except json.JSONDecodeError:
+                        pass  # Leave the value as is if it can't be parsed
+            data.append(row)
+
+    # Write the data to a JSON file
+    with open(json_file_path, mode='w', encoding='utf-8') as json_file:
+        json.dump(data, json_file, indent=4)
+
+    print(f"CSV data has been converted to JSON and saved to {json_file_path}")
+
+
+def read_json_to_list(json_file_path):
+    """
+    Reads a JSON file and returns its contents as a list of dictionaries.
+
+    Args:
+        json_file_path (str): Path to the JSON file.
+
+    Returns:
+        list: List of dictionaries containing the JSON data.
+    """
+    with open(json_file_path, mode='r', encoding='utf-8') as json_file:
+        data = json.load(json_file)
+    return data
+
 def read_csv(csv_file_path):
     """read csv to list"""
     with open(csv_file_path, mode='r') as file:

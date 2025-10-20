@@ -47,7 +47,79 @@ importlib.reload(file_operations)
 from collections import defaultdict
 import csv
 from datetime import datetime
+import ast
+import numpy as np
 
+
+def csv_to_html(csv_file_path):
+    """
+    Reads a CSV file and converts it to an HTML file with the same name but with a .html extension.
+
+    Args:
+        csv_file_path (str): Path to the CSV file.
+
+    Returns:
+        str: Path to the generated HTML file.
+    """
+    # Generate the HTML file path
+    html_file_path = csv_file_path.replace('.csv', '.html')
+
+    # Read the CSV file into a DataFrame
+    df = pd.read_csv(csv_file_path)
+
+    # Convert the DataFrame to an HTML file
+    df.to_html(html_file_path, index=False)
+
+    print(f"HTML file has been created: {html_file_path}")
+    return html_file_path
+
+
+def get_todays_combined_skaters_json():
+    """
+    Returns the file path of today's combined skaters CSV file.
+    ex. 'NHL_data/combined_skaters_2025-10-15.json'
+    """
+    todays_date = datetime.now().strftime('%Y-%m-%d')
+    json_file_path = f'NHL_data/combined_skaters/combined_skaters_{todays_date}.json'
+    json_data = read_json_to_list(json_file_path)
+    return json_data
+
+
+def analyze_sequence(sequence):
+    # Calculate the differential
+    differential = np.diff(sequence)
+    
+    # Normalize the sequence
+    min_val, max_val = min(sequence), max(sequence)
+    if max_val == min_val:
+        # If all values are the same, set normalized values to 0.0
+        normalized = [0.0 for _ in sequence]
+    else:
+        normalized = [(x - min_val) / (max_val - min_val) for x in sequence]
+    
+    # Calculate variance of the differential
+    variance = np.var(differential)
+    
+    return {
+        "original": sequence,
+        "differential": differential.tolist(),
+        "normalized": normalized,
+        "variance_of_differential": variance
+    }
+
+
+def read_json_to_list(json_file_path):
+    """
+    Reads a JSON file and returns its contents as a list of dictionaries.
+
+    Args:
+        json_file_path (str): Path to the JSON file.
+
+    Returns:
+        list: List of dictionaries containing the JSON data.
+    """
+    data = file_operations.read_json_to_list(json_file_path)
+    return data
 
 def combine_skaters_playing_today():
 
@@ -153,6 +225,8 @@ def combine_skaters_playing_today():
 
     # Define the output file path
     output_file = f'NHL_data/combined_skaters/combined_skaters_{todays_date}.csv'
+    json_file_path = f'NHL_data/combined_skaters/combined_skaters_{todays_date}.json'
+    html_file_path = f'NHL_data/combined_skaters/combined_skaters_{todays_date}.html'
 
     # Write the data to the CSV file
     with open(output_file, mode='w', newline='', encoding='utf-8') as file:
@@ -165,6 +239,11 @@ def combine_skaters_playing_today():
         writer.writerows(final_data)
 
     print(f"Data has been saved to {output_file}")
+
+    file_operations.convert_csv_to_json(output_file, json_file_path)
+
+    # Convert to html
+    html_file_path = csv_to_html(output_file)
 
 
 def generate_hockey_reference_link(name):
