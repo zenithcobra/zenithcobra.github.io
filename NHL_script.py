@@ -1323,6 +1323,41 @@ def process_skaters_duplicates(skater_data):
         x.update({'past_rebound_goals': new_past_rebound_goals})
     return skater_data
 
+def add_analysis_to_skaters(skater_data):
+    """
+    Adds analysis fields to each skater's data.
+
+    Args:
+        skater_data (list): A list of dictionaries containing skater data.
+    """
+    for skater in skater_data:
+        sog_list = skater.get('past_sog').split('-')
+        int_sog_list = [int(x) for x in sog_list]
+        analyze_sog_list = analyze_sequence(int_sog_list)
+        analyze_sog_diff = analyze_sog_list.get("differential", [])
+        analyze_sog_var = analyze_sog_list.get("variance_of_differential", 99)
+        skater.update({'sog_diff': '-'.join(map(str, analyze_sog_diff))})
+        skater.update({'sog_var': round(analyze_sog_var, 2)})
+
+        g_list = skater.get('past_goals')
+        int_g_list = [int(x) for x in g_list.split('-')]
+        analyze_g_list = analyze_sequence(int_g_list)
+        analyze_g_diff = analyze_g_list.get("differential", [])
+        analyze_g_var = analyze_g_list.get("variance_of_differential", 99)
+        skater.update({'goals_diff': '-'.join(map(str, analyze_g_diff))})
+        skater.update({'goals_var': round(analyze_g_var, 2)})
+
+        a1_list = skater.get('past_assists1')
+        int_a1_list = [int(x) for x in a1_list.split('-')]
+        analyze_a1_list = analyze_sequence(int_a1_list)
+        analyze_a1_diff = analyze_a1_list.get("differential", [])
+        analyze_a1_var = analyze_a1_list.get("variance_of_differential", 99)
+        skater.update({'assists1_diff': '-'.join(map(str, analyze_a1_diff))})
+        skater.update({'assists1_var': round(analyze_a1_var, 2)})
+
+    return skater_data
+
+
 def filter_skater_data_for_csv(skater_data):
     """
     Filters the skater data to include only relevant fields for CSV output.
@@ -1332,10 +1367,50 @@ def filter_skater_data_for_csv(skater_data):
     """
     filtered_data = []
     relevant_fields = [
-        'playerId', 'season', 'name', 'team', 'I_F_shotsOnGoal', "I_F_goals","I_F_xGoals",
+        'playerId', 'season', 'name', 'team', 'games_played', 'position', 'I_F_shotsOnGoal', "I_F_goals","I_F_xGoals",
         'past_games', 'past_sog', 'past_a_sog', 'past_e_shot', 'past_goals', 'past_a_goals',
         'past_e_goals', 'past_on_ice_goal', 'past_a_on_ice_goal', 'past_assists1',
         'past_assists2', 'past_rebound_goals'
+    ]
+    
+    for skater in skater_data:
+        filtered_skater = {field: skater.get(field, '') for field in relevant_fields}
+        filtered_data.append(filtered_skater)
+    
+    return filtered_data
+
+def filter_skater_data_for_csv_again(skater_data):
+    """
+    Filters the skater data to include only relevant fields for CSV output.
+
+    Args:
+        skater_data (list): A list of dictionaries containing skater data.
+    """
+    filtered_data = []
+    relevant_fields = [
+        'playerId',
+        'season',
+        'name',
+        'team',
+        'position',
+        'games_played', 
+        'I_F_shotsOnGoal',
+        'past_e_shot',
+        'past_sog',
+        'sog_diff',
+        'sog_var',
+        'past_a_sog',
+        "I_F_xGoals",
+        "I_F_goals",
+        'past_e_goals',
+        'past_goals',
+        'goals_diff',
+        'goals_var',
+        'past_a_goals',
+        'past_assists1',
+        'assists1_diff',
+        'assists1_var',
+        'past_assists2'
     ]
     
     for skater in skater_data:
@@ -1373,5 +1448,7 @@ def combine_and_save_skaters(int_shots_average, file_path):
     skater_data = get_skater_history(int_shots_average)
     filtered_data = filter_skater_data_for_csv(skater_data)
     processed_data = process_skaters_duplicates(filtered_data)
-    save_dicts_to_csv(processed_data, file_path)
+    super_processed_data = add_analysis_to_skaters(processed_data)
+    processed_twice_data = filter_skater_data_for_csv_again(super_processed_data)
+    save_dicts_to_csv(processed_twice_data, file_path)
 
