@@ -1336,6 +1336,10 @@ def add_analysis_to_skaters(skater_data):
         analyze_sog_list = analyze_sequence(int_sog_list)
         analyze_sog_diff = analyze_sog_list.get("differential", [])
         analyze_sog_var = analyze_sog_list.get("variance_of_differential", 99)
+        new_list1 = []
+        for x in analyze_sog_diff:
+            new_list1.append(abs(x))
+        analyze_sog_diff = new_list1
         skater.update({'sog_diff': '-'.join(map(str, analyze_sog_diff))})
         skater.update({'sog_var': round(analyze_sog_var, 2)})
 
@@ -1344,6 +1348,12 @@ def add_analysis_to_skaters(skater_data):
         analyze_g_list = analyze_sequence(int_g_list)
         analyze_g_diff = analyze_g_list.get("differential", [])
         analyze_g_var = analyze_g_list.get("variance_of_differential", 99)
+        
+        new_list2 = []
+        for x in analyze_g_diff:
+            new_list2.append(abs(x))
+        analyze_g_diff = new_list2
+        
         skater.update({'goals_diff': '-'.join(map(str, analyze_g_diff))})
         skater.update({'goals_var': round(analyze_g_var, 2)})
 
@@ -1352,6 +1362,10 @@ def add_analysis_to_skaters(skater_data):
         analyze_a1_list = analyze_sequence(int_a1_list)
         analyze_a1_diff = analyze_a1_list.get("differential", [])
         analyze_a1_var = analyze_a1_list.get("variance_of_differential", 99)
+        new_list3 = []
+        for x in analyze_a1_diff:
+            new_list3.append(abs(x))
+        analyze_a1_diff = new_list3
         skater.update({'assists1_diff': '-'.join(map(str, analyze_a1_diff))})
         skater.update({'assists1_var': round(analyze_a1_var, 2)})
 
@@ -1388,8 +1402,6 @@ def filter_skater_data_for_csv_again(skater_data):
     """
     filtered_data = []
     relevant_fields = [
-        'playerId',
-        'season',
         'name',
         'team',
         'position',
