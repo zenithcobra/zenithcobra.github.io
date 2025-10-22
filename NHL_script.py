@@ -45,6 +45,7 @@ import ast
 import numpy as np
 from bs4 import BeautifulSoup
 
+
 def add_checkboxes_to_html(file_path):
     """
     Adds a checkbox to the first column of every row in an HTML table and overwrites the file.
@@ -56,45 +57,47 @@ def add_checkboxes_to_html(file_path):
         None
     """
     # Read the HTML file
-    with open(file_path, 'r', encoding='utf-8') as file:
-        soup = BeautifulSoup(file, 'html.parser')
+    with open(file_path, "r", encoding="utf-8") as file:
+        soup = BeautifulSoup(file, "html.parser")
 
     # Find the table
-    table = soup.find('table', {'class': 'dataframe'})
+    table = soup.find("table", {"class": "dataframe"})
     if not table:
         raise ValueError("No table with class 'dataframe' found in the HTML file.")
 
     # Add the "PICK" header to the table
-    thead = table.find('thead')
+    thead = table.find("thead")
     if thead:
-        header_row = thead.find('tr')
-        pick_header = soup.new_tag('th')
-        pick_header.string = 'PICK'
+        header_row = thead.find("tr")
+        pick_header = soup.new_tag("th")
+        pick_header.string = "PICK"
         header_row.insert(0, pick_header)
 
     # Add a checkbox to the first column of every row in the table body
-    tbody = table.find('tbody')
+    tbody = table.find("tbody")
     if tbody:
-        for row in tbody.find_all('tr'):
-            checkbox_cell = soup.new_tag('td')
-            checkbox = soup.new_tag('input', type='checkbox')
+        for row in tbody.find_all("tr"):
+            checkbox_cell = soup.new_tag("td")
+            checkbox = soup.new_tag("input", type="checkbox")
             checkbox_cell.append(checkbox)
             row.insert(0, checkbox_cell)
 
     # Overwrite the file with the updated HTML
-    with open(file_path, 'w', encoding='utf-8') as file:
+    with open(file_path, "w", encoding="utf-8") as file:
         file.write(str(soup))
 
     print(f"Checkboxes added to the table in {file_path}")
+
 
 # PROCESS STATS
 
 # READ CSV TO A LIST OF LINES WHERE EACH LINE IS A DICT
 
+
 def load_stats_from_csv_to_list_of_dict(csv_file_path):
     """Read the CSV file and load stats, returning a list of dictionaries."""
     stats = []
-    with open(csv_file_path, mode='r') as file:
+    with open(csv_file_path, mode="r") as file:
         stats_csv_file = csv.reader(file)
         # Read the header
         headers = next(stats_csv_file)
@@ -103,8 +106,6 @@ def load_stats_from_csv_to_list_of_dict(csv_file_path):
             # Create a dictionary for each row using headers as keys
             stats.append({headers[i]: row[i] for i in range(len(headers))})
     return stats
-
-
 
 
 def csv_to_html(csv_file_path):
@@ -118,7 +119,7 @@ def csv_to_html(csv_file_path):
         str: Path to the generated HTML file.
     """
     # Generate the HTML file path
-    html_file_path = csv_file_path.replace('.csv', '.html')
+    html_file_path = csv_file_path.replace(".csv", ".html")
 
     # Read the CSV file into a DataFrame
     df = pd.read_csv(csv_file_path)
@@ -135,16 +136,29 @@ def get_todays_combined_skaters_json():
     Returns the file path of today's combined skaters CSV file.
     ex. 'NHL_data/combined_skaters_2025-10-15.json'
     """
-    todays_date = datetime.now().strftime('%Y-%m-%d')
-    json_file_path = f'NHL_data/combined_skaters/combined_skaters_{todays_date}.json'
+    todays_date = datetime.now().strftime("%Y-%m-%d")
+    json_file_path = f"NHL_data/combined_skaters/combined_skaters_{todays_date}.json"
     json_data = read_json_to_list(json_file_path)
     return json_data
 
 
 def analyze_sequence(sequence):
+    """
+    Analyzes a numerical sequence by calculating the differential, normalization, and variance.
+
+    Args:
+        sequence (list): A list of numerical values.
+
+    Returns:
+        dict: A dictionary containing the original sequence, differential, normalized sequence,
+              and variance of the differential.
+    """
     # Calculate the differential
     differential = np.diff(sequence)
-    
+
+    # Replace NaN values in the differential with 0
+    differential = np.where(np.isnan(differential), 0, differential)
+
     # Normalize the sequence
     min_val, max_val = min(sequence), max(sequence)
     if max_val == min_val:
@@ -152,15 +166,19 @@ def analyze_sequence(sequence):
         normalized = [0.0 for _ in sequence]
     else:
         normalized = [(x - min_val) / (max_val - min_val) for x in sequence]
-    
+
     # Calculate variance of the differential
     variance = np.var(differential)
-    
+
+    # Replace NaN variance with a default value (e.g., 99)
+    if np.isnan(variance):
+        variance = 99
+
     return {
         "original": sequence,
         "differential": differential.tolist(),
         "normalized": normalized,
-        "variance_of_differential": variance
+        "variance_of_differential": variance,
     }
 
 
@@ -176,6 +194,7 @@ def read_json_to_list(json_file_path):
     """
     data = file_operations.read_json_to_list(json_file_path)
     return data
+
 
 def combine_skaters_playing_today():
 
@@ -199,16 +218,18 @@ def combine_skaters_playing_today():
         csv_file_path = x
         file1 = file_operations.read_csv(csv_file_path)
         list11.append(file1)
-        
+
     list_of_data = []
     for z in roster_ids:
         for x in list11:
             for y in x:
-                if z == y[0] and y[5] == 'all':
+                if z == y[0] and y[5] == "all":
                     list_of_data.append(y)
 
     # Combine rows by ID
-    combined_data = defaultdict(lambda: defaultdict(set))  # Use sets to ensure unique values
+    combined_data = defaultdict(
+        lambda: defaultdict(set)
+    )  # Use sets to ensure unique values
 
     for row in list_of_data:
         player_id = row[0]
@@ -232,65 +253,179 @@ def combine_skaters_playing_today():
                 combined_row.append([])
         final_data.append(combined_row)
 
-
     # Define the headers
     headers = [
-        "playerId", "season", "name", "team", "position", "situation", "games_played", "icetime", "shifts", "gameScore",
-        "onIce_xGoalsPercentage", "offIce_xGoalsPercentage", "onIce_corsiPercentage", "offIce_corsiPercentage",
-        "onIce_fenwickPercentage", "offIce_fenwickPercentage", "iceTimeRank", "I_F_xOnGoal", "I_F_xGoals", "I_F_xRebounds",
-        "I_F_xFreeze", "I_F_xPlayStopped", "I_F_xPlayContinuedInZone", "I_F_xPlayContinuedOutsideZone",
-        "I_F_flurryAdjustedxGoals", "I_F_scoreVenueAdjustedxGoals", "I_F_flurryScoreVenueAdjustedxGoals",
-        "I_F_primaryAssists", "I_F_secondaryAssists", "I_F_shotsOnGoal", "I_F_missedShots", "I_F_blockedShotAttempts",
-        "I_F_shotAttempts", "I_F_points", "I_F_goals", "I_F_rebounds", "I_F_reboundGoals", "I_F_freeze", "I_F_playStopped",
-        "I_F_playContinuedInZone", "I_F_playContinuedOutsideZone", "I_F_savedShotsOnGoal", "I_F_savedUnblockedShotAttempts",
-        "penalties", "I_F_penalityMinutes", "I_F_faceOffsWon", "I_F_hits", "I_F_takeaways", "I_F_giveaways",
-        "I_F_lowDangerShots", "I_F_mediumDangerShots", "I_F_highDangerShots", "I_F_lowDangerxGoals",
-        "I_F_mediumDangerxGoals", "I_F_highDangerxGoals", "I_F_lowDangerGoals", "I_F_mediumDangerGoals",
-        "I_F_highDangerGoals", "I_F_scoreAdjustedShotsAttempts", "I_F_unblockedShotAttempts",
-        "I_F_scoreAdjustedUnblockedShotAttempts", "I_F_dZoneGiveaways", "I_F_xGoalsFromxReboundsOfShots",
-        "I_F_xGoalsFromActualReboundsOfShots", "I_F_reboundxGoals", "I_F_xGoals_with_earned_rebounds",
-        "I_F_xGoals_with_earned_rebounds_scoreAdjusted", "I_F_xGoals_with_earned_rebounds_scoreFlurryAdjusted",
-        "I_F_shifts", "I_F_oZoneShiftStarts", "I_F_dZoneShiftStarts", "I_F_neutralZoneShiftStarts", "I_F_flyShiftStarts",
-        "I_F_oZoneShiftEnds", "I_F_dZoneShiftEnds", "I_F_neutralZoneShiftEnds", "I_F_flyShiftEnds", "faceoffsWon",
-        "faceoffsLost", "timeOnBench", "penalityMinutes", "penalityMinutesDrawn", "penaltiesDrawn", "shotsBlockedByPlayer",
-        "OnIce_F_xOnGoal", "OnIce_F_xGoals", "OnIce_F_flurryAdjustedxGoals", "OnIce_F_scoreVenueAdjustedxGoals",
-        "OnIce_F_flurryScoreVenueAdjustedxGoals", "OnIce_F_shotsOnGoal", "OnIce_F_missedShots",
-        "OnIce_F_blockedShotAttempts", "OnIce_F_shotAttempts", "OnIce_F_goals", "OnIce_F_rebounds",
-        "OnIce_F_reboundGoals", "OnIce_F_lowDangerShots", "OnIce_F_mediumDangerShots", "OnIce_F_highDangerShots",
-        "OnIce_F_lowDangerxGoals", "OnIce_F_mediumDangerxGoals", "OnIce_F_highDangerxGoals", "OnIce_F_lowDangerGoals",
-        "OnIce_F_mediumDangerGoals", "OnIce_F_highDangerGoals", "OnIce_F_scoreAdjustedShotsAttempts",
-        "OnIce_F_unblockedShotAttempts", "OnIce_F_scoreAdjustedUnblockedShotAttempts", "OnIce_F_xGoalsFromxReboundsOfShots",
-        "OnIce_F_xGoalsFromActualReboundsOfShots", "OnIce_F_reboundxGoals", "OnIce_F_xGoals_with_earned_rebounds",
-        "OnIce_F_xGoals_with_earned_rebounds_scoreAdjusted", "OnIce_F_xGoals_with_earned_rebounds_scoreFlurryAdjusted",
-        "OnIce_A_xOnGoal", "OnIce_A_xGoals", "OnIce_A_flurryAdjustedxGoals", "OnIce_A_scoreVenueAdjustedxGoals",
-        "OnIce_A_flurryScoreVenueAdjustedxGoals", "OnIce_A_shotsOnGoal", "OnIce_A_missedShots",
-        "OnIce_A_blockedShotAttempts", "OnIce_A_shotAttempts", "OnIce_A_goals", "OnIce_A_rebounds",
-        "OnIce_A_reboundGoals", "OnIce_A_lowDangerShots", "OnIce_A_mediumDangerShots", "OnIce_A_highDangerShots",
-        "OnIce_A_lowDangerxGoals", "OnIce_A_mediumDangerxGoals", "OnIce_A_highDangerxGoals", "OnIce_A_lowDangerGoals",
-        "OnIce_A_mediumDangerGoals", "OnIce_A_highDangerGoals", "OnIce_A_scoreAdjustedShotsAttempts",
-        "OnIce_A_unblockedShotAttempts", "OnIce_A_scoreAdjustedUnblockedShotAttempts", "OnIce_A_xGoalsFromxReboundsOfShots",
-        "OnIce_A_xGoalsFromActualReboundsOfShots", "OnIce_A_reboundxGoals", "OnIce_A_xGoals_with_earned_rebounds",
-        "OnIce_A_xGoals_with_earned_rebounds_scoreAdjusted", "OnIce_A_xGoals_with_earned_rebounds_scoreFlurryAdjusted",
-        "OffIce_F_xGoals", "OffIce_A_xGoals", "OffIce_F_shotAttempts", "OffIce_A_shotAttempts", "xGoalsForAfterShifts",
-        "xGoalsAgainstAfterShifts", "corsiForAfterShifts", "corsiAgainstAfterShifts", "fenwickForAfterShifts",
-        "fenwickAgainstAfterShifts"
+        "playerId",
+        "season",
+        "name",
+        "team",
+        "position",
+        "situation",
+        "games_played",
+        "icetime",
+        "shifts",
+        "gameScore",
+        "onIce_xGoalsPercentage",
+        "offIce_xGoalsPercentage",
+        "onIce_corsiPercentage",
+        "offIce_corsiPercentage",
+        "onIce_fenwickPercentage",
+        "offIce_fenwickPercentage",
+        "iceTimeRank",
+        "I_F_xOnGoal",
+        "I_F_xGoals",
+        "I_F_xRebounds",
+        "I_F_xFreeze",
+        "I_F_xPlayStopped",
+        "I_F_xPlayContinuedInZone",
+        "I_F_xPlayContinuedOutsideZone",
+        "I_F_flurryAdjustedxGoals",
+        "I_F_scoreVenueAdjustedxGoals",
+        "I_F_flurryScoreVenueAdjustedxGoals",
+        "I_F_primaryAssists",
+        "I_F_secondaryAssists",
+        "I_F_shotsOnGoal",
+        "I_F_missedShots",
+        "I_F_blockedShotAttempts",
+        "I_F_shotAttempts",
+        "I_F_points",
+        "I_F_goals",
+        "I_F_rebounds",
+        "I_F_reboundGoals",
+        "I_F_freeze",
+        "I_F_playStopped",
+        "I_F_playContinuedInZone",
+        "I_F_playContinuedOutsideZone",
+        "I_F_savedShotsOnGoal",
+        "I_F_savedUnblockedShotAttempts",
+        "penalties",
+        "I_F_penalityMinutes",
+        "I_F_faceOffsWon",
+        "I_F_hits",
+        "I_F_takeaways",
+        "I_F_giveaways",
+        "I_F_lowDangerShots",
+        "I_F_mediumDangerShots",
+        "I_F_highDangerShots",
+        "I_F_lowDangerxGoals",
+        "I_F_mediumDangerxGoals",
+        "I_F_highDangerxGoals",
+        "I_F_lowDangerGoals",
+        "I_F_mediumDangerGoals",
+        "I_F_highDangerGoals",
+        "I_F_scoreAdjustedShotsAttempts",
+        "I_F_unblockedShotAttempts",
+        "I_F_scoreAdjustedUnblockedShotAttempts",
+        "I_F_dZoneGiveaways",
+        "I_F_xGoalsFromxReboundsOfShots",
+        "I_F_xGoalsFromActualReboundsOfShots",
+        "I_F_reboundxGoals",
+        "I_F_xGoals_with_earned_rebounds",
+        "I_F_xGoals_with_earned_rebounds_scoreAdjusted",
+        "I_F_xGoals_with_earned_rebounds_scoreFlurryAdjusted",
+        "I_F_shifts",
+        "I_F_oZoneShiftStarts",
+        "I_F_dZoneShiftStarts",
+        "I_F_neutralZoneShiftStarts",
+        "I_F_flyShiftStarts",
+        "I_F_oZoneShiftEnds",
+        "I_F_dZoneShiftEnds",
+        "I_F_neutralZoneShiftEnds",
+        "I_F_flyShiftEnds",
+        "faceoffsWon",
+        "faceoffsLost",
+        "timeOnBench",
+        "penalityMinutes",
+        "penalityMinutesDrawn",
+        "penaltiesDrawn",
+        "shotsBlockedByPlayer",
+        "OnIce_F_xOnGoal",
+        "OnIce_F_xGoals",
+        "OnIce_F_flurryAdjustedxGoals",
+        "OnIce_F_scoreVenueAdjustedxGoals",
+        "OnIce_F_flurryScoreVenueAdjustedxGoals",
+        "OnIce_F_shotsOnGoal",
+        "OnIce_F_missedShots",
+        "OnIce_F_blockedShotAttempts",
+        "OnIce_F_shotAttempts",
+        "OnIce_F_goals",
+        "OnIce_F_rebounds",
+        "OnIce_F_reboundGoals",
+        "OnIce_F_lowDangerShots",
+        "OnIce_F_mediumDangerShots",
+        "OnIce_F_highDangerShots",
+        "OnIce_F_lowDangerxGoals",
+        "OnIce_F_mediumDangerxGoals",
+        "OnIce_F_highDangerxGoals",
+        "OnIce_F_lowDangerGoals",
+        "OnIce_F_mediumDangerGoals",
+        "OnIce_F_highDangerGoals",
+        "OnIce_F_scoreAdjustedShotsAttempts",
+        "OnIce_F_unblockedShotAttempts",
+        "OnIce_F_scoreAdjustedUnblockedShotAttempts",
+        "OnIce_F_xGoalsFromxReboundsOfShots",
+        "OnIce_F_xGoalsFromActualReboundsOfShots",
+        "OnIce_F_reboundxGoals",
+        "OnIce_F_xGoals_with_earned_rebounds",
+        "OnIce_F_xGoals_with_earned_rebounds_scoreAdjusted",
+        "OnIce_F_xGoals_with_earned_rebounds_scoreFlurryAdjusted",
+        "OnIce_A_xOnGoal",
+        "OnIce_A_xGoals",
+        "OnIce_A_flurryAdjustedxGoals",
+        "OnIce_A_scoreVenueAdjustedxGoals",
+        "OnIce_A_flurryScoreVenueAdjustedxGoals",
+        "OnIce_A_shotsOnGoal",
+        "OnIce_A_missedShots",
+        "OnIce_A_blockedShotAttempts",
+        "OnIce_A_shotAttempts",
+        "OnIce_A_goals",
+        "OnIce_A_rebounds",
+        "OnIce_A_reboundGoals",
+        "OnIce_A_lowDangerShots",
+        "OnIce_A_mediumDangerShots",
+        "OnIce_A_highDangerShots",
+        "OnIce_A_lowDangerxGoals",
+        "OnIce_A_mediumDangerxGoals",
+        "OnIce_A_highDangerxGoals",
+        "OnIce_A_lowDangerGoals",
+        "OnIce_A_mediumDangerGoals",
+        "OnIce_A_highDangerGoals",
+        "OnIce_A_scoreAdjustedShotsAttempts",
+        "OnIce_A_unblockedShotAttempts",
+        "OnIce_A_scoreAdjustedUnblockedShotAttempts",
+        "OnIce_A_xGoalsFromxReboundsOfShots",
+        "OnIce_A_xGoalsFromActualReboundsOfShots",
+        "OnIce_A_reboundxGoals",
+        "OnIce_A_xGoals_with_earned_rebounds",
+        "OnIce_A_xGoals_with_earned_rebounds_scoreAdjusted",
+        "OnIce_A_xGoals_with_earned_rebounds_scoreFlurryAdjusted",
+        "OffIce_F_xGoals",
+        "OffIce_A_xGoals",
+        "OffIce_F_shotAttempts",
+        "OffIce_A_shotAttempts",
+        "xGoalsForAfterShifts",
+        "xGoalsAgainstAfterShifts",
+        "corsiForAfterShifts",
+        "corsiAgainstAfterShifts",
+        "fenwickForAfterShifts",
+        "fenwickAgainstAfterShifts",
     ]
 
     # Get today's date
-    todays_date = datetime.now().strftime('%Y-%m-%d')
+    todays_date = datetime.now().strftime("%Y-%m-%d")
 
     # Define the output file path
-    output_file = f'NHL_data/combined_skaters/combined_skaters_{todays_date}.csv'
-    json_file_path = f'NHL_data/combined_skaters/combined_skaters_{todays_date}.json'
-    html_file_path = f'NHL_data/combined_skaters/combined_skaters_{todays_date}.html'
+    output_file = f"NHL_data/combined_skaters/combined_skaters_{todays_date}.csv"
+    json_file_path = f"NHL_data/combined_skaters/combined_skaters_{todays_date}.json"
+    html_file_path = f"NHL_data/combined_skaters/combined_skaters_{todays_date}.html"
 
     # Write the data to the CSV file
-    with open(output_file, mode='w', newline='', encoding='utf-8') as file:
+    with open(output_file, mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
-        
+
         # Write the headers
         writer.writerow(headers)
-        
+
         # Write the rows
         writer.writerows(final_data)
 
@@ -329,6 +464,7 @@ def generate_hockey_reference_link(name):
 
     return link
 
+
 def process_yesterdays_scores_to_report():
     """
     Fetches yesterday's NHL scores from the NHL API, processes the data,
@@ -338,11 +474,11 @@ def process_yesterdays_scores_to_report():
     url = f"https://api-web.nhle.com/v1/score/{yesterdays_date}"
     print(url)
     resp = requests.get(
-            url,
-            timeout=30,
-            allow_redirects=True,
-            headers={"Accept": "application/json"},
-        )
+        url,
+        timeout=30,
+        allow_redirects=True,
+        headers={"Accept": "application/json"},
+    )
     resp.raise_for_status()
     resp.json()
 
@@ -507,10 +643,38 @@ def get_sorted_skater_paths(directory):
 def update_rosters():
     # List of team abbreviations
     teams = [
-        "ANA", "BOS", "BUF", "CAR", "CBJ", "CGY", "CHI", "COL", "DAL", "DET",
-        "EDM", "FLA", "LAK", "MIN", "MTL", "NJD", "NSH", "NYI", "NYR", "OTT",
-        "PHI", "PIT", "SEA", "SJS", "STL", "TBL", "TOR", "UTA", "VAN", "VGK",
-        "WPG", "WSH"
+        "ANA",
+        "BOS",
+        "BUF",
+        "CAR",
+        "CBJ",
+        "CGY",
+        "CHI",
+        "COL",
+        "DAL",
+        "DET",
+        "EDM",
+        "FLA",
+        "LAK",
+        "MIN",
+        "MTL",
+        "NJD",
+        "NSH",
+        "NYI",
+        "NYR",
+        "OTT",
+        "PHI",
+        "PIT",
+        "SEA",
+        "SJS",
+        "STL",
+        "TBL",
+        "TOR",
+        "UTA",
+        "VAN",
+        "VGK",
+        "WPG",
+        "WSH",
     ]
     # Fetch and save rosters for all teams
     for team in teams:
@@ -551,18 +715,22 @@ def get_nhl_team_roster_and_save_csv(team):
         for category in ["forwards", "defensemen", "goalies"]:
             category_players = roster_data.get(category, [])
             for player in category_players:
-                players.append({
-                    "Player Name": f"{player.get('firstName', {}).get('default', 'Unknown')} {player.get('lastName', {}).get('default', 'Unknown')}",
-                    "Position": player.get("positionCode", "Unknown"),
-                    "Jersey Number": player.get("sweaterNumber", "Unknown"),
-                    "Height (in)": player.get("heightInInches", "Unknown"),
-                    "Weight (lbs)": player.get("weightInPounds", "Unknown"),
-                    "Birth Date": player.get("birthDate", "Unknown"),
-                    "Birth City": player.get("birthCity", {}).get("default", "Unknown"),
-                    "Birth Country": player.get("birthCountry", "Unknown"),
-                    "Team": team,
-                    "player_id": player.get("id","unknown")
-                })
+                players.append(
+                    {
+                        "Player Name": f"{player.get('firstName', {}).get('default', 'Unknown')} {player.get('lastName', {}).get('default', 'Unknown')}",
+                        "Position": player.get("positionCode", "Unknown"),
+                        "Jersey Number": player.get("sweaterNumber", "Unknown"),
+                        "Height (in)": player.get("heightInInches", "Unknown"),
+                        "Weight (lbs)": player.get("weightInPounds", "Unknown"),
+                        "Birth Date": player.get("birthDate", "Unknown"),
+                        "Birth City": player.get("birthCity", {}).get(
+                            "default", "Unknown"
+                        ),
+                        "Birth Country": player.get("birthCountry", "Unknown"),
+                        "Team": team,
+                        "player_id": player.get("id", "unknown"),
+                    }
+                )
 
         # Check if there are players to save
         if not players:
@@ -579,11 +747,11 @@ def get_nhl_team_roster_and_save_csv(team):
         print(f"Failed to fetch roster for team {team}: {e}")
 
 
-def get_roster(team_name):   
+def get_roster(team_name):
     csv_file_path = f"NHL_data/rosters/{team_name}.csv"
-    with open(csv_file_path, mode='r') as file:
+    with open(csv_file_path, mode="r") as file:
         return list(csv.reader(file))
-    
+
 
 def get_nhl_skaters():
     # Calculate yesterday's date in YYYYMMDD format
@@ -1079,139 +1247,275 @@ def process_nhl_data_from_folder():
 
 def get_skater_history(int_shots_average):
 
-    STATS_2022_CSV = 'NHL_data/static_data/skaters2022.csv'
-    STATS_2023_CSV = 'NHL_data/static_data/skaters2023.csv'
-    STATS_2024_CSV = 'NHL_data/static_data/skaters2024.csv'
+    STATS_2022_CSV = "NHL_data/static_data/skaters2022.csv"
+    STATS_2023_CSV = "NHL_data/static_data/skaters2023.csv"
+    STATS_2024_CSV = "NHL_data/static_data/skaters2024.csv"
 
     teams_playing_today = teams_today()
-    
+
     # get a list of paths from skaters directory
     # Example usage
     directory = "NHL_data/daily_skaters"
     sorted_csv_file_paths = get_sorted_skater_paths(directory)
-    
+
     skaters_from_today = load_stats_from_csv_to_list_of_dict(sorted_csv_file_paths[0])
-    skaters_from_today_filtered_for_all = [player for player in skaters_from_today if player.get('situation') == 'all' and player.get('team') in teams_playing_today]
-    
-    skaters_from_today_filtered_for_all_and_asog = [
-        player for player in skaters_from_today_filtered_for_all
-        if 'I_F_shotsOnGoal' in player and 'games_played' in player and float(player["games_played"]) > 0
-        and (avg_sog := int(round(float(player["I_F_shotsOnGoal"]) / float(player["games_played"]))) > int_shots_average)
+    skaters_from_today_filtered_for_all = [
+        player
+        for player in skaters_from_today
+        if player.get("situation") == "all"
+        and player.get("team") in teams_playing_today
     ]
-    
+
+    skaters_from_today_filtered_for_all_and_asog = [
+        player
+        for player in skaters_from_today_filtered_for_all
+        if "I_F_shotsOnGoal" in player
+        and "games_played" in player
+        and float(player["games_played"]) > 0
+        and (
+            avg_sog := int(
+                round(float(player["I_F_shotsOnGoal"]) / float(player["games_played"]))
+            )
+            > int_shots_average
+        )
+    ]
+
     for player in skaters_from_today_filtered_for_all_and_asog:
-        player.update({
-            "past_games": str(int(round(float(player.get('games_played'))))),
-            "past_sog": str(int(round(float(player["I_F_shotsOnGoal"])))),
-            "past_a_sog": str(int(round(float(player["I_F_shotsOnGoal"]) / float(player["games_played"])))),
-            "past_e_shot": str(int(round(float(player["I_F_xOnGoal"])))),
-            "past_goals": str(int(round(float(player["I_F_goals"])))),
-            "past_a_goals": str(int(round(float(player["I_F_goals"]) / float(player["games_played"])))),
-            "past_e_goals": str(int(round(float(player["I_F_xGoals"])))),
-            "past_on_ice_goal": str(int(round(float(player["OnIce_F_goals"])))),
-            "past_a_on_ice_goal": str(int(round(float(player["OnIce_F_goals"]) / float(player["games_played"])))),
-            "past_assists1": str(int(round(float(player["I_F_primaryAssists"])))),
-            "past_assists2": str(int(round(float(player["I_F_secondaryAssists"])))),
-            "past_rebound_goals": str(int(round(float(player["I_F_reboundGoals"]))))
-        })
+        player.update(
+            {
+                "past_games": str(int(round(float(player.get("games_played"))))),
+                "past_sog": str(int(round(float(player["I_F_shotsOnGoal"])))),
+                "past_a_sog": str(
+                    int(
+                        round(
+                            float(player["I_F_shotsOnGoal"])
+                            / float(player["games_played"])
+                        )
+                    )
+                ),
+                "past_e_shot": str(int(round(float(player["I_F_xOnGoal"])))),
+                "past_goals": str(int(round(float(player["I_F_goals"])))),
+                "past_a_goals": str(
+                    int(
+                        round(
+                            float(player["I_F_goals"]) / float(player["games_played"])
+                        )
+                    )
+                ),
+                "past_e_goals": str(int(round(float(player["I_F_xGoals"])))),
+                "past_on_ice_goal": str(int(round(float(player["OnIce_F_goals"])))),
+                "past_a_on_ice_goal": str(
+                    int(
+                        round(
+                            float(player["OnIce_F_goals"])
+                            / float(player["games_played"])
+                        )
+                    )
+                ),
+                "past_assists1": str(int(round(float(player["I_F_primaryAssists"])))),
+                "past_assists2": str(int(round(float(player["I_F_secondaryAssists"])))),
+                "past_rebound_goals": str(
+                    int(round(float(player["I_F_reboundGoals"])))
+                ),
+            }
+        )
 
     for file_path in sorted_csv_file_paths[1:]:
         additional_data = load_stats_from_csv_to_list_of_dict(file_path)
         for player in skaters_from_today_filtered_for_all_and_asog:
             for x in additional_data:
-                if player.get('name') == x.get('name') and x.get('situation') == 'all':
-                    player["past_games"] += ":" + str(int(round(float(x.get('games_played')))))
-                    player["past_sog"] += ":" + str(int(round(float(x["I_F_shotsOnGoal"]))))
-                    player["past_a_sog"] += ":" + str(int(round(float(x["I_F_shotsOnGoal"]) / float(x["games_played"]))))
-                    player["past_e_shot"] += ":" + str(int(round(float(x["I_F_xOnGoal"]))))
+                if player.get("name") == x.get("name") and x.get("situation") == "all":
+                    player["past_games"] += ":" + str(
+                        int(round(float(x.get("games_played"))))
+                    )
+                    player["past_sog"] += ":" + str(
+                        int(round(float(x["I_F_shotsOnGoal"])))
+                    )
+                    player["past_a_sog"] += ":" + str(
+                        int(
+                            round(
+                                float(x["I_F_shotsOnGoal"]) / float(x["games_played"])
+                            )
+                        )
+                    )
+                    player["past_e_shot"] += ":" + str(
+                        int(round(float(x["I_F_xOnGoal"])))
+                    )
                     player["past_goals"] += ":" + str(int(round(float(x["I_F_goals"]))))
-                    player["past_a_goals"] += ":" + str(int(round(float(x["I_F_goals"]) / float(x["games_played"]))))
-                    player["past_e_goals"] += ":" + str(int(round(float(x["I_F_xGoals"]))))
-                    player["past_on_ice_goal"] += ":" + str(int(round(float(x["OnIce_F_goals"]))))
-                    player["past_a_on_ice_goal"] += ":" + str(int(round(float(x["OnIce_F_goals"]) / float(x["games_played"]))))
-                    player["past_assists1"] += ":" + str(int(round(float(x["I_F_primaryAssists"]))))
-                    player["past_assists2"] += ":" + str(int(round(float(x["I_F_secondaryAssists"]))))
-                    player["past_rebound_goals"] += ":" + str(int(round(float(x["I_F_reboundGoals"]))))
-    
+                    player["past_a_goals"] += ":" + str(
+                        int(round(float(x["I_F_goals"]) / float(x["games_played"])))
+                    )
+                    player["past_e_goals"] += ":" + str(
+                        int(round(float(x["I_F_xGoals"])))
+                    )
+                    player["past_on_ice_goal"] += ":" + str(
+                        int(round(float(x["OnIce_F_goals"])))
+                    )
+                    player["past_a_on_ice_goal"] += ":" + str(
+                        int(round(float(x["OnIce_F_goals"]) / float(x["games_played"])))
+                    )
+                    player["past_assists1"] += ":" + str(
+                        int(round(float(x["I_F_primaryAssists"])))
+                    )
+                    player["past_assists2"] += ":" + str(
+                        int(round(float(x["I_F_secondaryAssists"])))
+                    )
+                    player["past_rebound_goals"] += ":" + str(
+                        int(round(float(x["I_F_reboundGoals"])))
+                    )
+
     stats_2022 = load_stats_from_csv_to_list_of_dict(STATS_2022_CSV)
     stats_2023 = load_stats_from_csv_to_list_of_dict(STATS_2023_CSV)
     stats_2024 = load_stats_from_csv_to_list_of_dict(STATS_2024_CSV)
     for player in skaters_from_today_filtered_for_all_and_asog:
         for x in stats_2022:
-            if player.get('name') == x.get('name') and x.get('situation') == 'all':
+            if player.get("name") == x.get("name") and x.get("situation") == "all":
                 stats = {
-                        "SOG_22": str(int(round(float(x["I_F_shotsOnGoal"])))),
-                        "AVG_SOG_22": str(int(round(float(x["I_F_shotsOnGoal"]) / float(x["games_played"])))),
-                        "GOALS_22": str(int(round(float(x["I_F_goals"])))),
-                        "AVG_GOALS_22": str(int(round(float(x["I_F_goals"]) / float(x["games_played"])))),
-                        "ASSISTS1_22": str(int(round(float(x["I_F_primaryAssists"])))),
-                        "ASSISTS2_22": str(int(round(float(x["I_F_secondaryAssists"])))),
-                        "AVG_ASSISTS_22": str(int(round((float(x["I_F_secondaryAssists"]) + float(x["I_F_primaryAssists"])) / float(x["games_played"])))),
-                        "REBOUNDS_22": str(int(round(float(x["I_F_reboundGoals"])))),
-                        "AVG_REBOUNDS_22": str(int(round(float(x["I_F_reboundGoals"]) / float(x["games_played"])))),
-                        "ONICE_GOALS_22": str(int(round(float(x["OnIce_A_xGoals"]))))
-                    }
+                    "SOG_22": str(int(round(float(x["I_F_shotsOnGoal"])))),
+                    "AVG_SOG_22": str(
+                        int(
+                            round(
+                                float(x["I_F_shotsOnGoal"]) / float(x["games_played"])
+                            )
+                        )
+                    ),
+                    "GOALS_22": str(int(round(float(x["I_F_goals"])))),
+                    "AVG_GOALS_22": str(
+                        int(round(float(x["I_F_goals"]) / float(x["games_played"])))
+                    ),
+                    "ASSISTS1_22": str(int(round(float(x["I_F_primaryAssists"])))),
+                    "ASSISTS2_22": str(int(round(float(x["I_F_secondaryAssists"])))),
+                    "AVG_ASSISTS_22": str(
+                        int(
+                            round(
+                                (
+                                    float(x["I_F_secondaryAssists"])
+                                    + float(x["I_F_primaryAssists"])
+                                )
+                                / float(x["games_played"])
+                            )
+                        )
+                    ),
+                    "REBOUNDS_22": str(int(round(float(x["I_F_reboundGoals"])))),
+                    "AVG_REBOUNDS_22": str(
+                        int(
+                            round(
+                                float(x["I_F_reboundGoals"]) / float(x["games_played"])
+                            )
+                        )
+                    ),
+                    "ONICE_GOALS_22": str(int(round(float(x["OnIce_A_xGoals"])))),
+                }
                 player.update(stats)
         for x in stats_2023:
-            if player.get('name') == x.get('name') and x.get('situation') == 'all':
+            if player.get("name") == x.get("name") and x.get("situation") == "all":
                 stats = {
-                        "SOG_23": str(int(round(float(x["I_F_shotsOnGoal"])))),
-                        "AVG_SOG_23": str(int(round(float(x["I_F_shotsOnGoal"]) / float(x["games_played"])))),
-                        "GOALS_23": str(int(round(float(x["I_F_goals"])))),
-                        "AVG_GOALS_23": str(int(round(float(x["I_F_goals"]) / float(x["games_played"])))),
-                        "ASSISTS1_23": str(int(round(float(x["I_F_primaryAssists"])))),
-                        "ASSISTS2_23": str(int(round(float(x["I_F_secondaryAssists"])))),
-                        "AVG_ASSISTS_23": str(int(round((float(x["I_F_secondaryAssists"]) + float(x["I_F_primaryAssists"])) / float(x["games_played"])))),
-                        "REBOUNDS_23": str(int(round(float(x["I_F_reboundGoals"])))),
-                        "AVG_REBOUNDS_23": str(int(round(float(x["I_F_reboundGoals"]) / float(x["games_played"])))),
-                        "ONICE_GOALS_23": str(int(round(float(x["OnIce_A_xGoals"]))))
-                    }
+                    "SOG_23": str(int(round(float(x["I_F_shotsOnGoal"])))),
+                    "AVG_SOG_23": str(
+                        int(
+                            round(
+                                float(x["I_F_shotsOnGoal"]) / float(x["games_played"])
+                            )
+                        )
+                    ),
+                    "GOALS_23": str(int(round(float(x["I_F_goals"])))),
+                    "AVG_GOALS_23": str(
+                        int(round(float(x["I_F_goals"]) / float(x["games_played"])))
+                    ),
+                    "ASSISTS1_23": str(int(round(float(x["I_F_primaryAssists"])))),
+                    "ASSISTS2_23": str(int(round(float(x["I_F_secondaryAssists"])))),
+                    "AVG_ASSISTS_23": str(
+                        int(
+                            round(
+                                (
+                                    float(x["I_F_secondaryAssists"])
+                                    + float(x["I_F_primaryAssists"])
+                                )
+                                / float(x["games_played"])
+                            )
+                        )
+                    ),
+                    "REBOUNDS_23": str(int(round(float(x["I_F_reboundGoals"])))),
+                    "AVG_REBOUNDS_23": str(
+                        int(
+                            round(
+                                float(x["I_F_reboundGoals"]) / float(x["games_played"])
+                            )
+                        )
+                    ),
+                    "ONICE_GOALS_23": str(int(round(float(x["OnIce_A_xGoals"])))),
+                }
                 player.update(stats)
         for x in stats_2024:
-            if player.get('name') == x.get('name') and x.get('situation') == 'all':
+            if player.get("name") == x.get("name") and x.get("situation") == "all":
                 stats = {
-                        "SOG_24": str(int(round(float(x["I_F_shotsOnGoal"])))),
-                        "AVG_SOG_24": str(int(round(float(x["I_F_shotsOnGoal"]) / float(x["games_played"])))),
-                        "GOALS_24": str(int(round(float(x["I_F_goals"])))),
-                        "AVG_GOALS_24": str(int(round(float(x["I_F_goals"]) / float(x["games_played"])))),
-                        "ASSISTS1_24": str(int(round(float(x["I_F_primaryAssists"])))),
-                        "ASSISTS2_24": str(int(round(float(x["I_F_secondaryAssists"])))),
-                        "AVG_ASSISTS_24": str(int(round((float(x["I_F_secondaryAssists"]) + float(x["I_F_primaryAssists"])) / float(x["games_played"])))),
-                        "REBOUNDS_24": str(int(round(float(x["I_F_reboundGoals"])))),
-                        "AVG_REBOUNDS_24": str(int(round(float(x["I_F_reboundGoals"]) / float(x["games_played"])))),
-                        "ONICE_GOALS_24": str(int(round(float(x["OnIce_A_xGoals"]))))
-                    }
+                    "SOG_24": str(int(round(float(x["I_F_shotsOnGoal"])))),
+                    "AVG_SOG_24": str(
+                        int(
+                            round(
+                                float(x["I_F_shotsOnGoal"]) / float(x["games_played"])
+                            )
+                        )
+                    ),
+                    "GOALS_24": str(int(round(float(x["I_F_goals"])))),
+                    "AVG_GOALS_24": str(
+                        int(round(float(x["I_F_goals"]) / float(x["games_played"])))
+                    ),
+                    "ASSISTS1_24": str(int(round(float(x["I_F_primaryAssists"])))),
+                    "ASSISTS2_24": str(int(round(float(x["I_F_secondaryAssists"])))),
+                    "AVG_ASSISTS_24": str(
+                        int(
+                            round(
+                                (
+                                    float(x["I_F_secondaryAssists"])
+                                    + float(x["I_F_primaryAssists"])
+                                )
+                                / float(x["games_played"])
+                            )
+                        )
+                    ),
+                    "REBOUNDS_24": str(int(round(float(x["I_F_reboundGoals"])))),
+                    "AVG_REBOUNDS_24": str(
+                        int(
+                            round(
+                                float(x["I_F_reboundGoals"]) / float(x["games_played"])
+                            )
+                        )
+                    ),
+                    "ONICE_GOALS_24": str(int(round(float(x["OnIce_A_xGoals"])))),
+                }
                 player.update(stats)
 
         # List of keys to process
         keys_to_process = [
-        "past_games", 
-        "past_sog", 
-        "past_a_sog", 
-        "past_e_shot", 
-        "past_goals", 
-        "past_a_goals", 
-        "past_e_goals", 
-        "past_on_ice_goal", 
-        "past_a_on_ice_goal", 
-        "past_assists1", 
-        "past_assists2", 
-        "past_rebound_goals"
+            "past_games",
+            "past_sog",
+            "past_a_sog",
+            "past_e_shot",
+            "past_goals",
+            "past_a_goals",
+            "past_e_goals",
+            "past_on_ice_goal",
+            "past_a_on_ice_goal",
+            "past_assists1",
+            "past_assists2",
+            "past_rebound_goals",
         ]
-    
+
         # Process each key
         for key in keys_to_process:
             string_to_split = str(player.get(key)).split(":")
             new_string_to_update = ":" + ":".join(string_to_split[:20])
             player.update({key: new_string_to_update})
 
-        #print(player.get('name'))
+        # print(player.get('name'))
 
     return skaters_from_today_filtered_for_all_and_asog
 
+
 def find_duplicate_positions(data_string):
     """
-    Takes a colon-separated string, converts it into an array, 
+    Takes a colon-separated string, converts it into an array,
     and returns a list of indices for all duplicate values.
 
     Args:
@@ -1251,7 +1555,9 @@ def process_and_filter(data_string, indices_to_remove):
     data_array = [int(x) for x in data_string.split(":") if x]
 
     # Step 2: Remove values at the specified indices
-    filtered_array = [value for i, value in enumerate(data_array) if i not in indices_to_remove]
+    filtered_array = [
+        value for i, value in enumerate(data_array) if i not in indices_to_remove
+    ]
 
     # Step 3: Convert the filtered array back to a colon-separated string
     result_string = "-" + "-".join(map(str, filtered_array))
@@ -1273,55 +1579,56 @@ def process_skaters_duplicates(skater_data):
         None: The function modifies the input list in place.
     """
     for x in skater_data:
-        past_games = x.get('past_games')   # ':6:6:5:5:4:4:3:3:3:2:2:1',
+        past_games = x.get("past_games")  # ':6:6:5:5:4:4:3:3:3:2:2:1',
         clean_up_array = find_duplicate_positions(past_games)
         new_past_games = process_and_filter(past_games, clean_up_array)
-        x.update({'past_games': new_past_games})
-        
-        past_sog = x.get('past_sog')   # ':19:19:15:15:9:9:5:5:5:4:4:3',
+        x.update({"past_games": new_past_games})
+
+        past_sog = x.get("past_sog")  # ':19:19:15:15:9:9:5:5:5:4:4:3',
         new_past_sog = process_and_filter(past_sog, clean_up_array)
-        x.update({'past_sog': new_past_sog})
-        
-        past_a_sog = x.get('past_a_sog')   # ':3:3:3:3:2:2:2:2:2:2:2:3',
+        x.update({"past_sog": new_past_sog})
+
+        past_a_sog = x.get("past_a_sog")  # ':3:3:3:3:2:2:2:2:2:2:2:3',
         new_past_a_sog = process_and_filter(past_a_sog, clean_up_array)
-        x.update({'past_a_sog': new_past_a_sog})
-        
-        past_e_shot = x.get('past_e_shot')   # ':19:19:15:15:9:9:5:5:5:4:4:3',
+        x.update({"past_a_sog": new_past_a_sog})
+
+        past_e_shot = x.get("past_e_shot")  # ':19:19:15:15:9:9:5:5:5:4:4:3',
         new_past_e_shot = process_and_filter(past_e_shot, clean_up_array)
-        x.update({'past_e_shot': new_past_e_shot})
-        
-        past_goals = x.get('past_goals')   # ':2:2:0:0:0:0:0:0:0:0:0:0',
+        x.update({"past_e_shot": new_past_e_shot})
+
+        past_goals = x.get("past_goals")  # ':2:2:0:0:0:0:0:0:0:0:0:0',
         new_past_goals = process_and_filter(past_goals, clean_up_array)
-        x.update({'past_goals': new_past_goals})
-        
-        past_a_goals = x.get('past_a_goals')   # ':0:0:0:0:0:0:0:0:0:0:0:0',
+        x.update({"past_goals": new_past_goals})
+
+        past_a_goals = x.get("past_a_goals")  # ':0:0:0:0:0:0:0:0:0:0:0:0',
         new_past_a_goals = process_and_filter(past_a_goals, clean_up_array)
-        x.update({'past_a_goals': new_past_a_goals})
-        
-        past_e_goals = x.get('past_e_goals')   # ':3:3:2:2:1:1:1:1:1:1:1:1',
+        x.update({"past_a_goals": new_past_a_goals})
+
+        past_e_goals = x.get("past_e_goals")  # ':3:3:2:2:1:1:1:1:1:1:1:1',
         new_past_e_goals = process_and_filter(past_e_goals, clean_up_array)
-        x.update({'past_e_goals': new_past_e_goals})
-        
-        past_on_ice_goal = x.get('past_on_ice_goal')   # ':15:15:10:10:7:7:5:5:5:4:4:2',
+        x.update({"past_e_goals": new_past_e_goals})
+
+        past_on_ice_goal = x.get("past_on_ice_goal")  # ':15:15:10:10:7:7:5:5:5:4:4:2',
         new_past_on_ice_goal = process_and_filter(past_on_ice_goal, clean_up_array)
-        x.update({'past_on_ice_goal': new_past_on_ice_goal})
-        
-        past_a_on_ice_goal = x.get('past_a_on_ice_goal')   # ':2:2:2:2:2:2:2:2:2:2:2:2',
+        x.update({"past_on_ice_goal": new_past_on_ice_goal})
+
+        past_a_on_ice_goal = x.get("past_a_on_ice_goal")  # ':2:2:2:2:2:2:2:2:2:2:2:2',
         new_past_a_on_ice_goal = process_and_filter(past_a_on_ice_goal, clean_up_array)
-        x.update({'past_a_on_ice_goal': new_past_a_on_ice_goal})
-        
-        past_assists1 = x.get('past_assists1')   # ':10:10:8:8:6:6:5:5:5:4:4:2',
+        x.update({"past_a_on_ice_goal": new_past_a_on_ice_goal})
+
+        past_assists1 = x.get("past_assists1")  # ':10:10:8:8:6:6:5:5:5:4:4:2',
         new_past_assists1 = process_and_filter(past_assists1, clean_up_array)
-        x.update({'past_assists1': new_past_assists1})
-        
-        past_assists2 = x.get('past_assists2')   # ':1:1:1:1:0:0:0:0:0:0:0:0',
+        x.update({"past_assists1": new_past_assists1})
+
+        past_assists2 = x.get("past_assists2")  # ':1:1:1:1:0:0:0:0:0:0:0:0',
         new_past_assists2 = process_and_filter(past_assists2, clean_up_array)
-        x.update({'past_assists2': new_past_assists2})
-        
-        past_rebound_goals = x.get('past_rebound_goals')   # ':1:1:0:0:0:0:0:0:0:0:0:0',
+        x.update({"past_assists2": new_past_assists2})
+
+        past_rebound_goals = x.get("past_rebound_goals")  # ':1:1:0:0:0:0:0:0:0:0:0:0',
         new_past_rebound_goals = process_and_filter(past_rebound_goals, clean_up_array)
-        x.update({'past_rebound_goals': new_past_rebound_goals})
+        x.update({"past_rebound_goals": new_past_rebound_goals})
     return skater_data
+
 
 def add_analysis_to_skaters(skater_data):
     """
@@ -1331,43 +1638,86 @@ def add_analysis_to_skaters(skater_data):
         skater_data (list): A list of dictionaries containing skater data.
     """
     for skater in skater_data:
-        sog_list = skater.get('past_sog').split('-')
-        int_sog_list = [int(x) for x in sog_list]
+        # sog_list = skater.get("past_sog").split("-")
+        # int_sog_list = [int(x) for x in sog_list]
+        # analyze_sog_list = analyze_sequence(int_sog_list)
+        # analyze_sog_diff = analyze_sog_list.get("differential", 0)
+        # analyze_sog_var = analyze_sog_list.get("variance_of_differential", 99)
+        # new_list1 = []
+        # for x in analyze_sog_diff:
+        #     new_list1.append(abs(x))
+        # analyze_sog_diff = new_list1
+        # skater.update({"sog_diff": "-".join(map(str, analyze_sog_diff))})
+        # skater.update({"sog_var": round(analyze_sog_var, 2)})
+        sog_list = skater.get("past_sog", "").split("-")
+        int_sog_list = [int(x) for x in sog_list if x.isdigit()]  # Ensure valid integers
         analyze_sog_list = analyze_sequence(int_sog_list)
-        analyze_sog_diff = analyze_sog_list.get("differential", [])
+        analyze_sog_diff = analyze_sog_list.get("differential", [0])
         analyze_sog_var = analyze_sog_list.get("variance_of_differential", 99)
-        new_list1 = []
-        for x in analyze_sog_diff:
-            new_list1.append(abs(x))
-        analyze_sog_diff = new_list1
-        skater.update({'sog_diff': '-'.join(map(str, analyze_sog_diff))})
-        skater.update({'sog_var': round(analyze_sog_var, 2)})
 
-        g_list = skater.get('past_goals')
-        int_g_list = [int(x) for x in g_list.split('-')]
+        # Ensure analyze_sog_diff is valid
+        if not analyze_sog_diff or all(x == 0 for x in analyze_sog_diff):
+            analyze_sog_diff = [0]  # Default value for empty or invalid differential
+
+        # Convert differential to absolute values
+        analyze_sog_diff = [abs(x) for x in analyze_sog_diff]
+
+        # Update skater data
+        skater.update({"sog_diff": "-".join(map(str, analyze_sog_diff))})
+        skater.update({"sog_var": round(analyze_sog_var, 2)})
+
+
+        # g_list = skater.get("past_goals")
+        # int_g_list = [int(x) for x in g_list.split("-")]
+        # analyze_g_list = analyze_sequence(int_g_list)
+        # analyze_g_diff = analyze_g_list.get("differential", 0)
+        # analyze_g_var = analyze_g_list.get("variance_of_differential", 99)
+
+        # new_list2 = []
+        # for x in analyze_g_diff:
+        #     new_list2.append(abs(x))
+        # analyze_g_diff = new_list2
+        g_list = skater.get("past_goals", "").split("-")
+        int_g_list = [int(x) for x in g_list if x.isdigit()]  # Ensure valid integers
         analyze_g_list = analyze_sequence(int_g_list)
-        analyze_g_diff = analyze_g_list.get("differential", [])
+        analyze_g_diff = analyze_g_list.get("differential", [0])
         analyze_g_var = analyze_g_list.get("variance_of_differential", 99)
-        
-        new_list2 = []
-        for x in analyze_g_diff:
-            new_list2.append(abs(x))
-        analyze_g_diff = new_list2
-        
-        skater.update({'goals_diff': '-'.join(map(str, analyze_g_diff))})
-        skater.update({'goals_var': round(analyze_g_var, 2)})
 
-        a1_list = skater.get('past_assists1')
-        int_a1_list = [int(x) for x in a1_list.split('-')]
+        # Ensure analyze_g_diff is valid
+        if not analyze_g_diff or all(x == 0 for x in analyze_g_diff):
+            analyze_g_diff = [0]  # Default value for empty or invalid differential
+
+        # Convert differential to absolute values
+        analyze_g_diff = [abs(x) for x in analyze_g_diff]
+
+        skater.update({"goals_diff": "-".join(map(str, analyze_g_diff))})
+        skater.update({"goals_var": round(analyze_g_var, 2)})
+
+        # a1_list = skater.get("past_assists1")
+        # int_a1_list = [int(x) for x in a1_list.split("-")]
+        # analyze_a1_list = analyze_sequence(int_a1_list)
+        # analyze_a1_diff = analyze_a1_list.get("differential", 0)
+        # analyze_a1_var = analyze_a1_list.get("variance_of_differential", 99)
+        # new_list3 = []
+        # for x in analyze_a1_diff:
+        #     new_list3.append(abs(x))
+        # analyze_a1_diff = new_list3
+        a1_list = skater.get("past_goals", "").split("-")
+        int_a1_list = [int(x) for x in a1_list if x.isdigit()]  # Ensure valid integers
         analyze_a1_list = analyze_sequence(int_a1_list)
-        analyze_a1_diff = analyze_a1_list.get("differential", [])
+        analyze_a1_diff = analyze_a1_list.get("differential", [0])
         analyze_a1_var = analyze_a1_list.get("variance_of_differential", 99)
-        new_list3 = []
-        for x in analyze_a1_diff:
-            new_list3.append(abs(x))
-        analyze_a1_diff = new_list3
-        skater.update({'assists1_diff': '-'.join(map(str, analyze_a1_diff))})
-        skater.update({'assists1_var': round(analyze_a1_var, 2)})
+
+        # Ensure analyze_a1_diff is valid
+        if not analyze_a1_diff or all(x == 0 for x in analyze_a1_diff):
+            analyze_a1_diff = [0]  # Default value for empty or invalid differential
+
+        # Convert differential to absolute values
+        analyze_a1_diff = [abs(x) for x in analyze_a1_diff]
+
+
+        skater.update({"assists1_diff": "-".join(map(str, analyze_a1_diff))})
+        skater.update({"assists1_var": round(analyze_a1_var, 2)})
 
     return skater_data
 
@@ -1381,17 +1731,35 @@ def filter_skater_data_for_csv(skater_data):
     """
     filtered_data = []
     relevant_fields = [
-        'playerId', 'season', 'name', 'team', 'games_played', 'position', 'I_F_shotsOnGoal', "I_F_goals","I_F_xGoals",
-        'past_games', 'past_sog', 'past_a_sog', 'past_e_shot', 'past_goals', 'past_a_goals',
-        'past_e_goals', 'past_on_ice_goal', 'past_a_on_ice_goal', 'past_assists1',
-        'past_assists2', 'past_rebound_goals'
+        "playerId",
+        "season",
+        "name",
+        "team",
+        "games_played",
+        "position",
+        "I_F_shotsOnGoal",
+        "I_F_goals",
+        "I_F_xGoals",
+        "past_games",
+        "past_sog",
+        "past_a_sog",
+        "past_e_shot",
+        "past_goals",
+        "past_a_goals",
+        "past_e_goals",
+        "past_on_ice_goal",
+        "past_a_on_ice_goal",
+        "past_assists1",
+        "past_assists2",
+        "past_rebound_goals",
     ]
-    
+
     for skater in skater_data:
-        filtered_skater = {field: skater.get(field, '') for field in relevant_fields}
+        filtered_skater = {field: skater.get(field, "") for field in relevant_fields}
         filtered_data.append(filtered_skater)
-    
+
     return filtered_data
+
 
 def filter_skater_data_for_csv_again(skater_data):
     """
@@ -1402,34 +1770,35 @@ def filter_skater_data_for_csv_again(skater_data):
     """
     filtered_data = []
     relevant_fields = [
-        'name',
-        'team',
-        'position',
-        'games_played', 
-        'I_F_shotsOnGoal',
-        'past_e_shot',
-        'past_sog',
-        'sog_diff',
-        'sog_var',
-        'past_a_sog',
+        "name",
+        "team",
+        "position",
+        "games_played",
+        "I_F_shotsOnGoal",
+        "past_e_shot",
+        "past_sog",
+        "sog_diff",
+        "sog_var",
+        "past_a_sog",
         "I_F_xGoals",
         "I_F_goals",
-        'past_e_goals',
-        'past_goals',
-        'goals_diff',
-        'goals_var',
-        'past_a_goals',
-        'past_assists1',
-        'assists1_diff',
-        'assists1_var',
-        'past_assists2'
+        "past_e_goals",
+        "past_goals",
+        "goals_diff",
+        "goals_var",
+        "past_a_goals",
+        "past_assists1",
+        "assists1_diff",
+        "assists1_var",
+        "past_assists2",
     ]
-    
+
     for skater in skater_data:
-        filtered_skater = {field: skater.get(field, '') for field in relevant_fields}
+        filtered_skater = {field: skater.get(field, "") for field in relevant_fields}
         filtered_data.append(filtered_skater)
-    
+
     return filtered_data
+
 
 def save_dicts_to_csv(data, file_path):
     """
@@ -1449,12 +1818,13 @@ def save_dicts_to_csv(data, file_path):
     headers = data[0].keys()
 
     # Write the data to the CSV file
-    with open(file_path, mode='w', newline='', encoding='utf-8') as csv_file:
+    with open(file_path, mode="w", newline="", encoding="utf-8") as csv_file:
         writer = csv.DictWriter(csv_file, fieldnames=headers)
         writer.writeheader()  # Write the header row
         writer.writerows(data)  # Write the data rows
 
     print(f"CSV file has been saved to {file_path}")
+
 
 def combine_and_save_skaters(int_shots_average, file_path):
     skater_data = get_skater_history(int_shots_average)
@@ -1463,4 +1833,3 @@ def combine_and_save_skaters(int_shots_average, file_path):
     super_processed_data = add_analysis_to_skaters(processed_data)
     processed_twice_data = filter_skater_data_for_csv_again(super_processed_data)
     save_dicts_to_csv(processed_twice_data, file_path)
-
