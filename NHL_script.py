@@ -1763,6 +1763,28 @@ def filter_skater_data_for_csv(skater_data):
 
     return filtered_data
 
+def add_strings_by_index(string1, string2):
+    """
+    Adds the values at each index of two strings formatted as sequences of numbers separated by '-'.
+
+    Args:
+        string1 (str): The first string (e.g., '2-2-2-1-1-0-0').
+        string2 (str): The second string (e.g., '1-1-1-1-1-1-1').
+
+    Returns:
+        str: A computed string where each index is the sum of the corresponding indices in the input strings.
+    """
+    # Convert strings to lists of integers
+    list1 = [int(x) for x in string1.split('-')]
+    list2 = [int(x) for x in string2.split('-')]
+
+    # Add values at each index
+    result_list = [x + y for x, y in zip(list1, list2)]
+
+    # Convert the result list back to a string
+    result_string = '-'.join(map(str, result_list))
+
+    return result_string
 
 def filter_skater_data_for_csv_again(skater_data):
     """
@@ -1771,6 +1793,56 @@ def filter_skater_data_for_csv_again(skater_data):
     Args:
         skater_data (list): A list of dictionaries containing skater data.
     """
+    # for x in skater_data:
+    #     g24 = float(int(x.get('GOALS_24', 0)))
+    #     avg24 = g24 / 80.0
+    #     x.update({'avg24': round(avg24, 2)})
+    #     assists1 = x.get('past_assists1', '0')
+    #     assists2 = x.get('past_assists2', '0')
+    #     points = add_strings_by_index(assists1, assists2)
+    #     a1 = int(assists1[0])
+    #     a2 = int(assists2[0])
+    #     p = a1 + a2
+    #     x.update({'points': p})
+    #     x.update({'past_points': points})
+    for x in skater_data:
+        # Ensure GOALS_24 is a valid number
+        goals_24 = x.get('GOALS_24', '0')  # Default to '0' if the key is missing
+        if not goals_24.isdigit():  # Check if the value is not a valid number
+            goals_24 = '0'  # Default to '0' for invalid values
+    
+        g24 = float(int(goals_24))  # Convert to integer and then float
+        avg24 = g24 / 80.0
+        x.update({'avg24': round(avg24, 2)})
+    
+        # Process assists and points
+        assists1 = x.get('past_assists1', '0')
+        assists2 = x.get('past_assists2', '0')
+        points = add_strings_by_index(assists1, assists2)
+        a1 = int(assists1.split('-')[0]) if assists1 else 0  # Handle empty assists1
+        a2 = int(assists2.split('-')[0]) if assists2 else 0  # Handle empty assists2
+        p = a1 + a2
+        x.update({'points': p})
+        x.update({'past_points': points})
+
+        points_list = points.split("-")
+        int_points_list = [int(x) for x in points_list if x.isdigit()]  # Ensure valid integers
+        analyze_points_list = analyze_sequence(int_points_list)
+        analyze_points_diff = analyze_points_list.get("differential", [0])
+        analyze_points_var = analyze_points_list.get("variance_of_differential", 99)
+
+        # Ensure analyze_points_diff is valid
+        if not analyze_points_diff or all(x == 0 for x in analyze_points_diff):
+            analyze_points_diff = [0]  # Default value for empty or invalid differential
+
+        # Convert differential to absolute values
+        analyze_points_diff = [abs(x) for x in analyze_points_diff]
+
+
+        x.update({"points_diff": "-".join(map(str, analyze_points_diff))})
+        x.update({"points_var": round(analyze_points_var, 2)})
+
+
     filtered_data = []
     relevant_fields = [
         "name",
@@ -1784,16 +1856,19 @@ def filter_skater_data_for_csv_again(skater_data):
         "sog_var",
         "past_a_sog",
         "GOALS_24",
-        "I_F_xGoals",
+        'avg24',
         "I_F_goals",
-        "past_e_goals",
         "past_goals",
         "goals_diff",
+        "I_F_xGoals",
+        "past_e_goals",
         "goals_var",
         "past_a_goals",
+        "points",
+        "past_points",
+        "points_diff",
+        "points_var",
         "past_assists1",
-        "assists1_diff",
-        "assists1_var",
         "past_assists2"
     ]
 
