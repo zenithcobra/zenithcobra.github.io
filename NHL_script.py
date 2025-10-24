@@ -1783,6 +1783,7 @@ def filter_skater_data_for_csv_again(skater_data):
         "sog_diff",
         "sog_var",
         "past_a_sog",
+        "GOALS_24",
         "I_F_xGoals",
         "I_F_goals",
         "past_e_goals",
@@ -1793,10 +1794,7 @@ def filter_skater_data_for_csv_again(skater_data):
         "past_assists1",
         "assists1_diff",
         "assists1_var",
-        "past_assists2",
-        "GOALS_22",
-        "GOALS_23",
-        "GOALS_24"
+        "past_assists2"
     ]
 
     for skater in skater_data:
