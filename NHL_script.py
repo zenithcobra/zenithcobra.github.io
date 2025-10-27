@@ -1846,6 +1846,8 @@ def filter_skater_data_for_csv_again(skater_data):
 
         x.update({"points_diff": "-".join(map(str, analyze_points_diff))})
         x.update({"points_var": round(analyze_points_var, 2)})
+        x.update({"avg_p": round(p/float(x.get('games_played',1)), 2)})
+
 
 
     filtered_data = []
@@ -1870,6 +1872,7 @@ def filter_skater_data_for_csv_again(skater_data):
         "goals_var",
         "past_a_goals",
         "points",
+        "avg_p",
         "past_points",
         "points_diff",
         "points_var"
