@@ -1818,10 +1818,15 @@ def filter_skater_data_for_csv_again(skater_data):
         # Process assists and points
         assists1 = x.get('past_assists1', '0')
         assists2 = x.get('past_assists2', '0')
-        points = add_strings_by_index(assists1, assists2)
+        past_goals1 = x.get('past_goals', '0')
+        
+        points1 = add_strings_by_index(assists1, assists2)
+        points = add_strings_by_index(points1, past_goals1)
         a1 = int(assists1.split('-')[0]) if assists1 else 0  # Handle empty assists1
         a2 = int(assists2.split('-')[0]) if assists2 else 0  # Handle empty assists2
-        p = a1 + a2
+        g1 = int(past_goals1.split('-')[0]) if past_goals1 else 0  # Handle empty past_goals1
+        p = a1 + a2 + g1
+
         x.update({'points': p})
         x.update({'past_points': points})
 
@@ -1867,9 +1872,7 @@ def filter_skater_data_for_csv_again(skater_data):
         "points",
         "past_points",
         "points_diff",
-        "points_var",
-        "past_assists1",
-        "past_assists2"
+        "points_var"
     ]
 
     for skater in skater_data:
