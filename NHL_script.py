@@ -1849,6 +1849,29 @@ def filter_skater_data_for_csv_again(skater_data):
         x.update({"avg_p": round(p/float(x.get('games_played',1)), 2)})
 
 
+        goals_25 = x.get("I_F_goals",1)
+        games_played25 = x.get("games_played",1)
+        avg_goals_25 = float(goals_25) / float(games_played25) if float(games_played25) > 0 else 0
+        x.update({'avg25': round(avg_goals_25, 2)})       
+
+        g24 = x.get('GOALS_24', '1')
+        g25 = x.get('I_F_goals', '1')
+
+        # Handle empty or invalid values
+        g24 = float(g24) if g24.strip() else 0.0
+        g25 = float(g25) if g25.strip() else 0.0 
+        
+        g_diff_24_25 = float(g25) - float(g24)
+
+        x.update({'24-25': round(g_diff_24_25, 2)})
+
+        ag24 = float(int(g24)) / 80.0
+        diffof2425 = avg_goals_25 - ag24
+        x.update({'24a-25a': round(diffof2425, 2)})
+
+        sog25 = x.get("I_F_shotsOnGoal",1)
+        avg_sog_25 = float(sog25) / float(games_played25)
+        x.update({'asog': round(avg_sog_25, 2)})
 
     filtered_data = []
     relevant_fields = [
@@ -1856,19 +1879,23 @@ def filter_skater_data_for_csv_again(skater_data):
         "team",
         "position",
         "games_played",
-        "I_F_shotsOnGoal",
         "past_e_shot",
         "past_sog",
         "sog_diff",
+        "I_F_shotsOnGoal",
+        'asog',
         "sog_var",
         "past_a_sog",
+        "I_F_xGoals",
+        "past_e_goals",
+        "past_goals",
+        "goals_diff",
         "GOALS_24",
         'avg24',
         "I_F_goals",
-        "past_goals",
-        "goals_diff",
-        "I_F_xGoals",
-        "past_e_goals",
+        'avg25',
+        '24-25',
+        '24a-25a',
         "goals_var",
         "past_a_goals",
         "points",
