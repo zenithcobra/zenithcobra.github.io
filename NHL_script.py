@@ -1911,6 +1911,38 @@ def filter_skater_data_for_csv_again(skater_data):
 
     return filtered_data
 
+def rename_keys(data, key_mapping):
+    """
+    Renames keys in a list of dictionaries based on a provided mapping.
+
+    Args:
+        data (list): A list of dictionaries.
+        key_mapping (dict): A dictionary mapping old keys to new keys.
+
+    Returns:
+        list: A list of dictionaries with renamed keys.
+    """
+    renamed_data = []
+    for item in data:
+        renamed_item = {key_mapping.get(k, k): v for k, v in item.items()}
+        renamed_data.append(renamed_item)
+    return renamed_data
+
+
+# # Example usage
+# data = [
+#     {"GOALS_24": 5, "I_F_goals": 3, "past_assists1": 2},
+#     {"GOALS_24": 4, "I_F_goals": 2, "past_assists1": 1},
+# ]
+
+# key_mapping = {
+#     "GOALS_24": "Goals_Last_24",
+#     "I_F_goals": "Goals_Current",
+#     "past_assists1": "Assists_Last_24",
+# }
+
+# renamed_data = rename_keys(data, key_mapping)
+# print(renamed_data)
 
 def save_dicts_to_csv(data, file_path):
     """
