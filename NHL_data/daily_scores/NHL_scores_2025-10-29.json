@@ -1,0 +1,170 @@
+[
+    {
+        "date": "2025-10-29",
+        "home_team": "Blue Jackets",
+        "away_team": "Maple Leafs",
+        "home_score": 6,
+        "away_score": 3,
+        "winner": "Blue Jackets",
+        "condensed_game": "https://www.nhl.com/video/tor-at-cbj-condensed-game-6384271230112",
+        "goals": [
+            {
+                "player_id": 8482705,
+                "name": "Cole Sillinger",
+                "team": "CBJ",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "C. Coyle",
+                        "assists_to_date": 4,
+                        "player_id": 8475745
+                    },
+                    {
+                        "name": "M. Olivier",
+                        "assists_to_date": 2,
+                        "player_id": 8479671
+                    }
+                ]
+            },
+            {
+                "player_id": 8478460,
+                "name": "Zach Werenski",
+                "team": "CBJ",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "C. Coyle",
+                        "assists_to_date": 5,
+                        "player_id": 8475745
+                    },
+                    {
+                        "name": "M. Olivier",
+                        "assists_to_date": 3,
+                        "player_id": 8479671
+                    }
+                ]
+            },
+            {
+                "player_id": 8478104,
+                "name": "Sammy Blais",
+                "team": "TOR",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "J. McCabe",
+                        "assists_to_date": 3,
+                        "player_id": 8476931
+                    },
+                    {
+                        "name": "S. Lorentz",
+                        "assists_to_date": 4,
+                        "player_id": 8478904
+                    }
+                ]
+            },
+            {
+                "player_id": 8478500,
+                "name": "Ivan Provorov",
+                "team": "CBJ",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "D. Voronkov",
+                        "assists_to_date": 5,
+                        "player_id": 8481716
+                    },
+                    {
+                        "name": "K. Marchenko",
+                        "assists_to_date": 5,
+                        "player_id": 8480893
+                    }
+                ]
+            },
+            {
+                "player_id": 8482705,
+                "name": "Cole Sillinger",
+                "team": "CBJ",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "C. Coyle",
+                        "assists_to_date": 6,
+                        "player_id": 8475745
+                    },
+                    {
+                        "name": "Z. Werenski",
+                        "assists_to_date": 5,
+                        "player_id": 8478460
+                    }
+                ]
+            },
+            {
+                "player_id": 8479371,
+                "name": "Dante Fabbro",
+                "team": "CBJ",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Olivier",
+                        "assists_to_date": 4,
+                        "player_id": 8479671
+                    },
+                    {
+                        "name": "C. Sillinger",
+                        "assists_to_date": 3,
+                        "player_id": 8482705
+                    }
+                ]
+            },
+            {
+                "player_id": 8479671,
+                "name": "Mathieu Olivier",
+                "team": "CBJ",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "C. Coyle",
+                        "assists_to_date": 7,
+                        "player_id": 8475745
+                    }
+                ]
+            },
+            {
+                "player_id": 8475166,
+                "name": "John Tavares",
+                "team": "TOR",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "M. Knies",
+                        "assists_to_date": 10,
+                        "player_id": 8482720
+                    },
+                    {
+                        "name": "N. Robertson",
+                        "assists_to_date": 2,
+                        "player_id": 8481582
+                    }
+                ]
+            },
+            {
+                "player_id": 8481582,
+                "name": "Nicholas Robertson",
+                "team": "TOR",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "M. Domi",
+                        "assists_to_date": 1,
+                        "player_id": 8477503
+                    },
+                    {
+                        "name": "S. Blais",
+                        "assists_to_date": 1,
+                        "player_id": 8478104
+                    }
+                ]
+            }
+        ]
+    }
+]
