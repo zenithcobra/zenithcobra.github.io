@@ -1969,6 +1969,37 @@ def save_dicts_to_csv(data, file_path):
 
     print(f"CSV file has been saved to {file_path}")
 
+def rename_csv_headers():
+    """
+    Renames the headers of a CSV file and overwrites the file with the updated headers.
+
+    Args:
+        file_path (str): Path to the CSV file.
+        new_headers (list): List of new headers to replace the existing ones.
+
+    Returns:
+        None
+    """
+    file_path = 'NHL_data/SOG_per_game.csv'
+    new_headers = [
+    'name', 'team', 'POS', 'GP', 'past_e_shot', 'past_sog', 'sog_diff', 'SOG', 'aSOG', 'SOGvar',
+    'past_a_sog', 'past_e_goals', 'past_goals', 'goals_diff', 'G24', 'aG24', 'xG', 'G', 'aG25',
+    '24-25', '24a-25a', 'Gvar', 'past_a_goals', 'P', 'avgP', 'past_points', 'points_diff', 'points_var'
+    ]
+    # Read the existing CSV file
+    with open(file_path, 'r', encoding='utf-8') as file:
+        reader = csv.reader(file)
+        rows = list(reader)  # Read all rows
+
+    # Replace the headers with the new headers
+    rows[0] = new_headers
+
+    # Write the updated CSV file
+    with open(file_path, 'w', encoding='utf-8', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(rows)
+
+    print(f"Headers updated successfully in {file_path}")
 
 def combine_and_save_skaters(int_shots_average, file_path):
     skater_data = get_skater_history(int_shots_average)
@@ -1976,4 +2007,5 @@ def combine_and_save_skaters(int_shots_average, file_path):
     processed_data = process_skaters_duplicates(filtered_data)
     super_processed_data = add_analysis_to_skaters(processed_data)
     processed_twice_data = filter_skater_data_for_csv_again(super_processed_data)
+    rename_csv_headers()
     save_dicts_to_csv(processed_twice_data, file_path)
