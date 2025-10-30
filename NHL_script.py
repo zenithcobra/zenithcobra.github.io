@@ -1879,6 +1879,9 @@ def filter_skater_data_for_csv_again(skater_data):
         "team",
         "position",
         "games_played",
+        "I_F_goals",
+        "points",
+        "I_F_shotsOnGoal",
         "past_e_shot",
         "past_sog",
         "sog_diff",
@@ -1982,7 +1985,7 @@ def rename_csv_headers():
     """
     file_path = 'NHL_data/SOG_per_game.csv'
     new_headers = [
-    'name', 'team', 'POS', 'GP', 'past_e_shot', 'past_sog', 'sog_diff', 'SOG', 'aSOG', 'SOGvar',
+    'name', 'team', 'POS', 'GP','G','P','SOG', 'past_e_shot', 'past_sog', 'sog_diff', 'SOG', 'aSOG', 'SOGvar',
     'past_a_sog', 'past_e_goals', 'past_goals', 'goals_diff', 'G24', 'aG24', 'xG', 'G', 'aG25',
     '24-25', '24a-25a', 'Gvar', 'past_a_goals', 'P', 'avgP', 'past_points', 'points_diff', 'points_var'
     ]
