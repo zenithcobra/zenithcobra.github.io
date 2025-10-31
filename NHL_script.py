@@ -1273,9 +1273,9 @@ def get_skater_history(int_shots_average):
         and "games_played" in player
         and float(player["games_played"]) > 0
         and (
-            avg_sog := int(
-                round(float(player["I_F_shotsOnGoal"]) / float(player["games_played"]))
-            )
+            avg_sog := 
+                round(float(player["I_F_shotsOnGoal"]) / float(player["games_played"]), 2)
+            
             > int_shots_average
         )
     ]
@@ -1854,14 +1854,24 @@ def filter_skater_data_for_csv_again(skater_data):
         avg_goals_25 = float(goals_25) / float(games_played25) if float(games_played25) > 0 else 0
         x.update({'avg25': round(avg_goals_25, 2)})       
 
+        g22 = x.get('GOALS_22', '1')
+        avg22 = float(int(g22 if g22.strip() else '1')) / 80.0
+        x.update({'avg22': round(avg22, 2)})
+        g23 = x.get('GOALS_23', '1')
+        avg23 = float(int(g23 if g23.strip() else '1')) / 80.0
+        x.update({'avg23': round(avg23, 2)})
+
         g24 = x.get('GOALS_24', '1')
+        all_avgs = (float(int(g22 if g22.strip() else '1')) + float(int(g23 if g23.strip() else '1')) + float(int(g24 if g24.strip() else '1'))) / 240.0
+        x.update({'avg_all': round(all_avgs, 2)})
+
         g25 = x.get('I_F_goals', '1')
 
         # Handle empty or invalid values
         g24 = float(g24) if g24.strip() else 0.0
         g25 = float(g25) if g25.strip() else 0.0 
         
-        g_diff_24_25 = float(g25) - float(g24)
+        g_diff_24_25 = float(g24) - float(g25)
 
         x.update({'24-25': round(g_diff_24_25, 2)})
 
@@ -1873,15 +1883,19 @@ def filter_skater_data_for_csv_again(skater_data):
         avg_sog_25 = float(sog25) / float(games_played25)
         x.update({'asog': round(avg_sog_25, 2)})
 
+        games_left = 82.0 - float(games_played25)
+        goal_spread = round(g_diff_24_25 / games_left,2)
+        x.update({'goal_spread': goal_spread})
+        pick = ' '
+        x.update({'pick': pick})
+
+
     filtered_data = []
     relevant_fields = [
         "name",
         "team",
         "position",
         "games_played",
-        "I_F_goals",
-        "points",
-        "I_F_shotsOnGoal",
         "past_e_shot",
         "past_sog",
         "sog_diff",
@@ -1889,23 +1903,26 @@ def filter_skater_data_for_csv_again(skater_data):
         'asog',
         "sog_var",
         "past_a_sog",
-        "past_e_goals",
+        "GOALS_22",
+        "GOALS_23",
+        "GOALS_24",
+        "I_F_goals",
+        "I_F_xGoals",
+        'avg24',
+        'avg25',
+        "goal_spread",
+        '24-25',
         "past_goals",
         "goals_diff",
-        "GOALS_24",
-        'avg24',
-        "I_F_xGoals",
-        "I_F_goals",
-        'avg25',
-        '24-25',
-        '24a-25a',
         "goals_var",
+        "past_e_goals",
         "past_a_goals",
         "points",
         "avg_p",
         "past_points",
         "points_diff",
-        "points_var"
+        "points_var",
+        "pick"
     ]
 
     for skater in skater_data:
@@ -1985,9 +2002,37 @@ def rename_csv_headers():
     """
     file_path = 'NHL_data/SOG_per_game.csv'
     new_headers = [
-    'name', 'team', 'POS', 'GP','G','P','SOG', 'past_e_shot', 'past_sog', 'sog_diff', 'SOG', 'aSOG', 'SOGvar',
-    'past_a_sog', 'past_e_goals', 'past_goals', 'goals_diff', 'G24', 'aG24', 'xG', 'G', 'aG25',
-    '24-25', '24a-25a', 'Gvar', 'past_a_goals', 'P', 'avgP', 'past_points', 'points_diff', 'points_var'
+        "name",
+        "team",
+        "position",
+        "GP",
+        "past_e_shot",
+        "past_sog",
+        "sog_diff",
+        "SOG",
+        'asog',
+        "sog_var",
+        "past_a_sog",
+        "G22",
+        "G23",
+        "G24",
+        "G25",
+        "xG25",
+        'aG24',
+        'aG25',
+        "GS",
+        '24-25',
+        "past_goals",
+        "goals_diff",
+        "goals_var",
+        "past_e_goals",
+        "past_a_goals",
+        "P",
+        "aP",
+        "past_points",
+        "points_diff",
+        "points_var",
+        "pick"
     ]
     # Read the existing CSV file
     with open(file_path, 'r', encoding='utf-8') as file:
