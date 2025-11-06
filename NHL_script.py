@@ -295,7 +295,7 @@ def generate_text_report(standings):
             report += f"{division} Division\n"
             report += f"{'Team':<25} {'GP':>3} {'W':>3} {'L':>3} {'OTL':>4} {'Pts':>4} {'GF':>3} {'GA':>3} {'Diff':>4} {'Strk':<5}\n"
             report += "\n".join(teams)
-            report += "\n"
+            report += "\n\n"
 
     return report
 
@@ -320,12 +320,24 @@ def make_nhl_report_today():
         report = generate_text_report(beans["standings"])
         file.write(report + "\n")  # Write standings report to file
 
+        # Schedule
+        # open schedule 'NHL_data/schedule/NHL_schedule_yyy-mm-dd.txt for today schedule 
+        today_date = datetime.now().strftime("%Y-%m-%d")
+        schedule_file = f"NHL_data/schedule/NHL_schedule_{today_date}.txt"
+
+        if os.path.exists(schedule_file):
+            with open(schedule_file, "r", encoding="utf-8") as schedule:
+                file.write("\nSchedule:\n")
+                file.write(schedule.read() + "\n")
+        else:
+            file.write("\nSchedule: No schedule available for today.\n")
+
         # Match results
         file.write("\n")  # Add a blank line
         daily_scores_dir = "NHL_data/daily_scores"
         team_names_csv = "NHL_data/static_data/nhl_team_names2.csv"
-        teams_today = NHL_script.teams_today()
-        team_records = get_team_records(daily_scores_dir, team_names_csv, teams_today)
+        teams_today1 = teams_today()
+        team_records = get_team_records(daily_scores_dir, team_names_csv, teams_today1)
         for record in team_records.values():
             file.write(record + "\n")  # Write team records to file
 
@@ -333,8 +345,8 @@ def make_nhl_report_today():
         file.write("\n")  # Add a blank line
         daily_scores_dir = "NHL_data/daily_scores"
         team_names_csv = "NHL_data/static_data/nhl_team_names.csv"
-        teams_today = NHL_script.teams_today()
-        match_results = get_match_results(daily_scores_dir, team_names_csv, teams_today)
+        teams_today2 = teams_today()
+        match_results = get_match_results(daily_scores_dir, team_names_csv, teams_today2)
         for result in match_results:
             file.write(result + "\n")  # Write match results to file
 
