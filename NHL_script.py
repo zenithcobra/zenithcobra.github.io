@@ -44,6 +44,314 @@ from datetime import datetime
 import ast
 import numpy as np
 from bs4 import BeautifulSoup
+import requests
+import os
+import json
+from datetime import datetime
+
+
+def get_match_results(daily_scores_dir, team_names_csv, teams_today):
+    """
+    Processes daily scores and matches today's teams with their short names from the CSV.
+    Finds results for each match and returns a list of results in the format:
+    OTT vs BOS - W-L-W
+    BOS vs OTT - L-W-L
+
+    Args:
+        daily_scores_dir (str): Path to the directory containing daily scores files.
+        team_names_csv (str): Path to the CSV file containing team abbreviations and names.
+        teams_today (list): List of team abbreviations organized as matches for the night.
+
+    Returns:
+        list: A list of strings with match results.
+    """
+    # Load team name mappings from the CSV
+    team_name_map = {}
+    with open(team_names_csv, 'r', encoding='utf-8') as csv_file:
+        reader = csv.reader(csv_file)
+        next(reader)  # Skip the header
+        for row in reader:
+            abbrev, name, short = row
+            team_name_map[abbrev] = short
+
+    # Swap abbreviations with short names for today's teams
+    teams_today_short = [team_name_map.get(team, team) for team in teams_today]
+
+    # Get all files in the directory
+    files = [f for f in os.listdir(daily_scores_dir) if f.startswith("NHL_scores_") and f.endswith(".json")]
+    files.sort(key=lambda x: datetime.strptime(x.split('_')[2].split('.')[0], "%Y-%m-%d"), reverse=True)
+
+    # Initialize results dictionary for matches
+    match_results = []
+
+    # Process each file
+    for file in files:
+        file_path = os.path.join(daily_scores_dir, file)
+        with open(file_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+
+            # Process each game
+            for game in data:
+                home_team = game.get("home_team")
+                away_team = game.get("away_team")
+                winner = game.get("winner")
+
+                # Check if today's teams are playing each other
+                for i in range(0, len(teams_today), 2):  # Iterate through pairs of teams
+                    team1 = teams_today_short[i]
+                    team2 = teams_today_short[i + 1]
+
+                    if (home_team == team1 and away_team == team2) or (home_team == team2 and away_team == team1):
+                        # Determine result for each team
+                        if home_team == team1:
+                            result1 = "W" if winner == home_team else "L"
+                            result2 = "W" if winner == away_team else "L"
+                        else:
+                            result1 = "W" if winner == away_team else "L"
+                            result2 = "W" if winner == home_team else "L"
+
+                        # Add results to match results
+                        match_results.append(f"{team1} vs {team2} - {result1}-{result2}")
+                        match_results.append(f"{team2} vs {team1} - {result2}-{result1}")
+
+    return match_results
+
+def get_team_records(daily_scores_dir, team_names_csv, teams_today):
+    """
+    Processes daily scores and matches today's teams with their short names from the CSV.
+    Finds results for each team and returns a list of results in the format:
+    CGY - W-L-W-W-L
+
+    Args:
+        daily_scores_dir (str): Path to the directory containing daily scores files.
+        team_names_csv (str): Path to the CSV file containing team abbreviations and names.
+        teams_today (list): List of team abbreviations playing today.
+
+    Returns:
+        dict: A dictionary with team abbreviations as keys and their results as values.
+    """
+    # Load team name mappings from the CSV
+    team_name_map = {}
+    with open(team_names_csv, 'r', encoding='utf-8') as csv_file:
+        reader = csv.reader(csv_file)
+        next(reader)  # Skip the header
+        for row in reader:
+            abbrev, name, short = row
+            team_name_map[abbrev] = short
+
+    # Swap abbreviations with short names for today's teams
+    teams_today_short = [team_name_map.get(team, team) for team in teams_today]
+
+    # Get all files in the directory
+    files = [f for f in os.listdir(daily_scores_dir) if f.startswith("NHL_scores_") and f.endswith(".json")]
+    files.sort(key=lambda x: datetime.strptime(x.split('_')[2].split('.')[0], "%Y-%m-%d"), reverse=True)
+
+    # Initialize results dictionary
+    team_results = {team: [] for team in teams_today}
+
+    # Process each file
+    for file in files:
+        file_path = os.path.join(daily_scores_dir, file)
+        with open(file_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+
+            # Process each game
+            for game in data:
+                home_team = game.get("home_team")
+                away_team = game.get("away_team")
+                winner = game.get("winner")
+
+                # Check if today's teams are playing
+                if home_team in teams_today_short or away_team in teams_today_short:
+                    # Determine result for each team
+                    if home_team in teams_today_short:
+                        abbrev = next((key for key, value in team_name_map.items() if value == home_team), home_team)
+                        result = "W" if winner == home_team else "L"
+                        team_results[abbrev].append(result)
+
+                    if away_team in teams_today_short:
+                        abbrev = next((key for key, value in team_name_map.items() if value == away_team), away_team)
+                        result = "W" if winner == away_team else "L"
+                        team_results[abbrev].append(result)
+
+    # Format results
+    formatted_results = {team: f"{team} - {'-'.join(results)}" for team, results in team_results.items()}
+    return formatted_results
+
+def get_goal_scorers(daily_scores_dir):
+    """
+    Reads all files in the 'daily_scores' directory, processes them from most recent to oldest,
+    and returns a text list of players who scored goals in the format:
+    
+    yyyy-mm-dd
+    ========
+    name - TEAM
+    name - TEAM
+
+    Args:
+        daily_scores_dir (str): Path to the directory containing daily scores files.
+
+    Returns:
+        str: A formatted text list of goal scorers.
+    """
+    # Get all files in the directory
+    files = [f for f in os.listdir(daily_scores_dir) if f.startswith("NHL_scores_") and f.endswith(".json")]
+    
+    # Sort files by date (most recent to oldest)
+    files.sort(key=lambda x: datetime.strptime(x.split('_')[2].split('.')[0], "%Y-%m-%d"), reverse=True)
+
+    report = ""
+
+    # Process each file
+    for file in files:
+        file_date = file.split('_')[2].split('.')[0]  # Extract date from filename
+        report += f"{file_date}\n"
+        report += "=" * len(file_date) + "\n"
+
+        file_path = os.path.join(daily_scores_dir, file)
+        with open(file_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            # Extract goal scorers
+            for event in data:
+                for goal in event.get("goals", []):
+                    scorer = goal.get("name", "Unknown")
+                    team = goal.get("team", {})
+                    g2d = str(goal.get("goals_to_date", {}))
+                    if g2d is None:
+                        g2d = "0"
+                    if g2d == 'None':
+                        g2d = "0"
+                    report += f"{team:<4} {scorer:<23} {g2d}\n"
+
+        report += "\n"
+
+    return report
+
+def get_nhl_standings_now():
+    """
+    Fetch NHL standings (current) via requests and cache the JSON response.
+
+    Uses:
+    - requests.get with allow_redirects to match `curl -L -X GET`
+    - cache.get_or_fetch to reuse a fresh cached file
+
+    Tune freshness via config.CACHE_EXPIRY_HOURS (in your CacheManager).
+    """
+
+    curl = "https://api-web.nhle.com/v1/standings/now"
+    url = "https://api-web.nhle.com/v1/standings/now"
+    # url = "https://api-web.nhle.com/v1/standings-season"
+    resp = requests.get(
+        url,
+        timeout=30,
+        allow_redirects=True,
+        headers={"Accept": "application/json"},
+    )
+    resp.raise_for_status()
+    return resp.json()
+
+def generate_text_report(standings):
+    """
+    Generates a text report from the standings data.
+
+    Args:
+        standings (list): A list of dictionaries containing team standings data.
+
+    Returns:
+        str: A formatted text report.
+    """
+    report = ""
+    divisions = {}
+
+    # Organize teams by division and conference
+    for team in standings:
+        division_name = team.get("divisionName", "Unknown Division")
+        conference_name = team.get("conferenceName", "Unknown Conference")
+        team_name = team.get("teamName", {}).get("default", "Unknown Team")
+        gp = team.get("gamesPlayed", 0)
+        wins = team.get("wins", 0)
+        losses = team.get("losses", 0)
+        ot_losses = team.get("otLosses", 0)
+        points = team.get("points", 0)
+        gf = team.get("goalFor", 0)
+        ga = team.get("goalAgainst", 0)
+        diff = team.get("goalDifferential", 0)
+        l10 = f"{team.get('l10Wins', 0)}-{team.get('l10Losses', 0)}-{team.get('l10OtLosses', 0)}"
+        streak = f"{team.get('streakCode', 'N/A')}{team.get('streakCount', 0)}"
+
+        # Add team data to divisions
+        if conference_name not in divisions:
+            divisions[conference_name] = {}
+        if division_name not in divisions[conference_name]:
+            divisions[conference_name][division_name] = []
+        divisions[conference_name][division_name].append(
+            f"{team_name:<25} {gp:>3} {wins:>3} {losses:>3} {ot_losses:>3} {points:>4} {gf:>4} {ga:>3} {diff:>4} {streak:>4}"
+        )
+
+    # Build the report
+    for conference, conference_divisions in divisions.items():
+        report += f"{conference} Conference\n"
+        for division, teams in conference_divisions.items():
+            report += f"{division} Division\n"
+            report += f"{'Team':<25} {'GP':>3} {'W':>3} {'L':>3} {'OTL':>4} {'Pts':>4} {'GF':>3} {'GA':>3} {'Diff':>4} {'Strk':<5}\n"
+            report += "\n".join(teams)
+            report += "\n"
+
+    return report
+
+
+def make_nhl_report_today():
+    output_file = "NHL_data/nhl_report.txt"
+    daily_reports_dir = "NHL_data/daily_reports"
+    today_date = datetime.now().strftime("%Y-%m-%d")
+    daily_report_file = os.path.join(daily_reports_dir, f"nhl_report_{today_date}.txt")
+
+    # Ensure the daily_reports directory exists
+    os.makedirs(daily_reports_dir, exist_ok=True)
+
+    # Check if the daily report file already exists
+    if os.path.exists(daily_report_file):
+        print(f"Daily report for {today_date} already exists. Skipping creation.")
+        return
+
+    with open(output_file, "w", encoding="utf-8") as file:
+        # Standings
+        beans = get_nhl_standings_now()
+        report = generate_text_report(beans["standings"])
+        file.write(report + "\n")  # Write standings report to file
+
+        # Match results
+        file.write("\n")  # Add a blank line
+        daily_scores_dir = "NHL_data/daily_scores"
+        team_names_csv = "NHL_data/static_data/nhl_team_names2.csv"
+        teams_today = NHL_script.teams_today()
+        team_records = get_team_records(daily_scores_dir, team_names_csv, teams_today)
+        for record in team_records.values():
+            file.write(record + "\n")  # Write team records to file
+
+        # Team matchups
+        file.write("\n")  # Add a blank line
+        daily_scores_dir = "NHL_data/daily_scores"
+        team_names_csv = "NHL_data/static_data/nhl_team_names.csv"
+        teams_today = NHL_script.teams_today()
+        match_results = get_match_results(daily_scores_dir, team_names_csv, teams_today)
+        for result in match_results:
+            file.write(result + "\n")  # Write match results to file
+
+        # Goals
+        file.write("\n")  # Add a blank line
+        daily_scores_dir = "NHL_data/daily_scores"
+        goal_scorers_report = get_goal_scorers(daily_scores_dir)
+        file.write(goal_scorers_report)  # Write goal scorers report to file
+
+    print(f"Report saved to {output_file}")
+
+    # Save a copy to the daily_reports folder
+    with open(daily_report_file, "w", encoding="utf-8") as file:
+        with open(output_file, "r", encoding="utf-8") as original_file:
+            file.write(original_file.read())
+
+    print(f"Daily report saved to {daily_report_file}")
 
 
 def add_checkboxes_to_html(file_path):
