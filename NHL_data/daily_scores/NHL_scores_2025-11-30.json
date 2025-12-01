@@ -1,0 +1,375 @@
+[
+    {
+        "date": "2025-11-30",
+        "home_team": "Islanders",
+        "away_team": "Capitals",
+        "home_score": 1,
+        "away_score": 4,
+        "winner": "Capitals",
+        "condensed_game": "https://www.nhl.com/video/wsh-at-nyi-condensed-game-6385769626112",
+        "goals": [
+            {
+                "player_id": 8476880,
+                "name": "Tom Wilson",
+                "team": "WSH",
+                "goals_to_date": 14,
+                "assists": [
+                    {
+                        "name": "A. Ovechkin",
+                        "assists_to_date": 13,
+                        "player_id": 8471214
+                    },
+                    {
+                        "name": "R. Leonard",
+                        "assists_to_date": 8,
+                        "player_id": 8484186
+                    }
+                ]
+            },
+            {
+                "player_id": 8476880,
+                "name": "Tom Wilson",
+                "team": "WSH",
+                "goals_to_date": 15,
+                "assists": []
+            },
+            {
+                "player_id": 8477500,
+                "name": "Bo Horvat",
+                "team": "NYI",
+                "goals_to_date": 15,
+                "assists": [
+                    {
+                        "name": "R. Pulock",
+                        "assists_to_date": 11,
+                        "player_id": 8477506
+                    },
+                    {
+                        "name": "M. Schaefer",
+                        "assists_to_date": 11,
+                        "player_id": 8485366
+                    }
+                ]
+            },
+            {
+                "player_id": 8481656,
+                "name": "Aliaksei Protas",
+                "team": "WSH",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "M. Roy",
+                        "assists_to_date": 5,
+                        "player_id": 8478911
+                    },
+                    {
+                        "name": "T. Wilson",
+                        "assists_to_date": 14,
+                        "player_id": 8476880
+                    }
+                ]
+            },
+            {
+                "player_id": 8471214,
+                "name": "Alex Ovechkin",
+                "team": "WSH",
+                "goals_to_date": 12,
+                "assists": [
+                    {
+                        "name": "A. Beauvillier",
+                        "assists_to_date": 4,
+                        "player_id": 8478463
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-11-30",
+        "home_team": "Blackhawks",
+        "away_team": "Ducks",
+        "home_score": 5,
+        "away_score": 3,
+        "winner": "Blackhawks",
+        "condensed_game": "https://www.nhl.com/video/ana-at-chi-condensed-game-6385773731112",
+        "goals": [
+            {
+                "player_id": 8483445,
+                "name": "Cutter Gauthier",
+                "team": "ANA",
+                "goals_to_date": 15,
+                "assists": [
+                    {
+                        "name": "T. Terry",
+                        "assists_to_date": 21,
+                        "player_id": 8478873
+                    },
+                    {
+                        "name": "L. Carlsson",
+                        "assists_to_date": 21,
+                        "player_id": 8484153
+                    }
+                ]
+            },
+            {
+                "player_id": 8482803,
+                "name": "Olen Zellweger",
+                "team": "ANA",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "T. Terry",
+                        "assists_to_date": 22,
+                        "player_id": 8478873
+                    },
+                    {
+                        "name": "C. Gauthier",
+                        "assists_to_date": 15,
+                        "player_id": 8483445
+                    }
+                ]
+            },
+            {
+                "player_id": 8475184,
+                "name": "Chris Kreider",
+                "team": "ANA",
+                "goals_to_date": 12,
+                "assists": [
+                    {
+                        "name": "B. Sennecke",
+                        "assists_to_date": 12,
+                        "player_id": 8484762
+                    },
+                    {
+                        "name": "M. McTavish",
+                        "assists_to_date": 13,
+                        "player_id": 8482745
+                    }
+                ]
+            },
+            {
+                "player_id": 8477479,
+                "name": "Tyler Bertuzzi",
+                "team": "CHI",
+                "goals_to_date": 13,
+                "assists": [
+                    {
+                        "name": "F. Nazar",
+                        "assists_to_date": 12,
+                        "player_id": 8483493
+                    },
+                    {
+                        "name": "C. Bedard",
+                        "assists_to_date": 20,
+                        "player_id": 8484144
+                    }
+                ]
+            },
+            {
+                "player_id": 8483450,
+                "name": "Ryan Greene",
+                "team": "CHI",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "C. Bedard",
+                        "assists_to_date": 21,
+                        "player_id": 8484144
+                    },
+                    {
+                        "name": "A. Burakovsky",
+                        "assists_to_date": 10,
+                        "player_id": 8477444
+                    }
+                ]
+            },
+            {
+                "player_id": 8482703,
+                "name": "Colton Dach",
+                "team": "CHI",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "T. Teravainen",
+                        "assists_to_date": 11,
+                        "player_id": 8476882
+                    },
+                    {
+                        "name": "A. Levshunov",
+                        "assists_to_date": 12,
+                        "player_id": 8484783
+                    }
+                ]
+            },
+            {
+                "player_id": 8484144,
+                "name": "Connor Bedard",
+                "team": "CHI",
+                "goals_to_date": 15,
+                "assists": []
+            },
+            {
+                "player_id": 8484144,
+                "name": "Connor Bedard",
+                "team": "CHI",
+                "goals_to_date": 16,
+                "assists": []
+            }
+        ]
+    },
+    {
+        "date": "2025-11-30",
+        "home_team": "Hurricanes",
+        "away_team": "Flames",
+        "home_score": 1,
+        "away_score": 0,
+        "winner": "Hurricanes",
+        "condensed_game": "https://www.nhl.com/video/cgy-at-car-condensed-game-6385776554112",
+        "goals": [
+            {
+                "player_id": 8477940,
+                "name": "Nikolaj Ehlers",
+                "team": "CAR",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "T. Hall",
+                        "assists_to_date": 8,
+                        "player_id": 8475791
+                    },
+                    {
+                        "name": "S. Walker",
+                        "assists_to_date": 5,
+                        "player_id": 8480336
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-11-30",
+        "home_team": "Stars",
+        "away_team": "Senators",
+        "home_score": 6,
+        "away_score": 1,
+        "winner": "Stars",
+        "condensed_game": "https://www.nhl.com/video/ott-at-dal-condensed-game-6385778204112",
+        "goals": [
+            {
+                "player_id": 8482145,
+                "name": "Mavrik Bourque",
+                "team": "DAL",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "I. Lyubushkin",
+                        "assists_to_date": 5,
+                        "player_id": 8480950
+                    },
+                    {
+                        "name": "O. B\u00e4ck",
+                        "assists_to_date": 3,
+                        "player_id": 8480840
+                    }
+                ]
+            },
+            {
+                "player_id": 8482105,
+                "name": "Jake Sanderson",
+                "team": "OTT",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "D. Perron",
+                        "assists_to_date": 9,
+                        "player_id": 8474102
+                    },
+                    {
+                        "name": "N. Cousins",
+                        "assists_to_date": 3,
+                        "player_id": 8476393
+                    }
+                ]
+            },
+            {
+                "player_id": 8480027,
+                "name": "Jason Robertson",
+                "team": "DAL",
+                "goals_to_date": 16,
+                "assists": []
+            },
+            {
+                "player_id": 8482740,
+                "name": "Wyatt Johnston",
+                "team": "DAL",
+                "goals_to_date": 14,
+                "assists": [
+                    {
+                        "name": "M. Rantanen",
+                        "assists_to_date": 21,
+                        "player_id": 8478420
+                    },
+                    {
+                        "name": "J. Robertson",
+                        "assists_to_date": 18,
+                        "player_id": 8480027
+                    }
+                ]
+            },
+            {
+                "player_id": 8482740,
+                "name": "Wyatt Johnston",
+                "team": "DAL",
+                "goals_to_date": 15,
+                "assists": [
+                    {
+                        "name": "M. Rantanen",
+                        "assists_to_date": 22,
+                        "player_id": 8478420
+                    },
+                    {
+                        "name": "R. Hintz",
+                        "assists_to_date": 13,
+                        "player_id": 8478449
+                    }
+                ]
+            },
+            {
+                "player_id": 8473994,
+                "name": "Jamie Benn",
+                "team": "DAL",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "M. Rantanen",
+                        "assists_to_date": 23,
+                        "player_id": 8478420
+                    },
+                    {
+                        "name": "W. Johnston",
+                        "assists_to_date": 14,
+                        "player_id": 8482740
+                    }
+                ]
+            },
+            {
+                "player_id": 8482740,
+                "name": "Wyatt Johnston",
+                "team": "DAL",
+                "goals_to_date": 16,
+                "assists": [
+                    {
+                        "name": "R. Hintz",
+                        "assists_to_date": 14,
+                        "player_id": 8478449
+                    },
+                    {
+                        "name": "J. Robertson",
+                        "assists_to_date": 19,
+                        "player_id": 8480027
+                    }
+                ]
+            }
+        ]
+    }
+]
