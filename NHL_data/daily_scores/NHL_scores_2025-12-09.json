@@ -1,0 +1,1183 @@
+[
+    {
+        "date": "2025-12-09",
+        "home_team": "Canadiens",
+        "away_team": "Lightning",
+        "home_score": 1,
+        "away_score": 6,
+        "winner": "Lightning",
+        "condensed_game": "https://www.nhl.com/video/tbl-at-mtl-condensed-game-6386262842112",
+        "goals": [
+            {
+                "player_id": 8478010,
+                "name": "Brayden Point",
+                "team": "TBL",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "J. Guentzel",
+                        "assists_to_date": 15,
+                        "player_id": 8477404
+                    },
+                    {
+                        "name": "O. Bjorkstrand",
+                        "assists_to_date": 8,
+                        "player_id": 8477416
+                    }
+                ]
+            },
+            {
+                "player_id": 8480995,
+                "name": "Pontus Holmberg",
+                "team": "TBL",
+                "goals_to_date": 2,
+                "assists": []
+            },
+            {
+                "player_id": 8476453,
+                "name": "Nikita Kucherov",
+                "team": "TBL",
+                "goals_to_date": 13,
+                "assists": [
+                    {
+                        "name": "M. Crozier",
+                        "assists_to_date": 4,
+                        "player_id": 8481719
+                    }
+                ]
+            },
+            {
+                "player_id": 8480426,
+                "name": "Charle-Edouard D'Astous",
+                "team": "TBL",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "N. Kucherov",
+                        "assists_to_date": 23,
+                        "player_id": 8476453
+                    }
+                ]
+            },
+            {
+                "player_id": 8482775,
+                "name": "Oliver Kapanen",
+                "team": "MTL",
+                "goals_to_date": 9,
+                "assists": [
+                    {
+                        "name": "N. Suzuki",
+                        "assists_to_date": 25,
+                        "player_id": 8480018
+                    },
+                    {
+                        "name": "I. Demidov",
+                        "assists_to_date": 17,
+                        "player_id": 8484984
+                    }
+                ]
+            },
+            {
+                "player_id": 8478178,
+                "name": "Darren Raddysh",
+                "team": "TBL",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "A. Cirelli",
+                        "assists_to_date": 9,
+                        "player_id": 8478519
+                    }
+                ]
+            },
+            {
+                "player_id": 8478178,
+                "name": "Darren Raddysh",
+                "team": "TBL",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "B. Point",
+                        "assists_to_date": 9,
+                        "player_id": 8478010
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-09",
+        "home_team": "Senators",
+        "away_team": "Devils",
+        "home_score": 3,
+        "away_score": 4,
+        "winner": "Devils",
+        "condensed_game": "https://www.nhl.com/video/njd-at-ott-condensed-game-6386262670112",
+        "goals": [
+            {
+                "player_id": 8480208,
+                "name": "Drake Batherson",
+                "team": "OTT",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "B. Tkachuk",
+                        "assists_to_date": 7,
+                        "player_id": 8480801
+                    },
+                    {
+                        "name": "J. Sanderson",
+                        "assists_to_date": 18,
+                        "player_id": 8482105
+                    }
+                ]
+            },
+            {
+                "player_id": 8483495,
+                "name": "Simon Nemec",
+                "team": "NJD",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "C. Brown",
+                        "assists_to_date": 4,
+                        "player_id": 8477015
+                    },
+                    {
+                        "name": "A. Gritsyuk",
+                        "assists_to_date": 8,
+                        "player_id": 8481721
+                    }
+                ]
+            },
+            {
+                "player_id": 8482116,
+                "name": "Tim St\u00fctzle",
+                "team": "OTT",
+                "goals_to_date": 12,
+                "assists": [
+                    {
+                        "name": "B. Tkachuk",
+                        "assists_to_date": 8,
+                        "player_id": 8480801
+                    },
+                    {
+                        "name": "D. Cozens",
+                        "assists_to_date": 9,
+                        "player_id": 8481528
+                    }
+                ]
+            },
+            {
+                "player_id": 8481721,
+                "name": "Arseny Gritsyuk",
+                "team": "NJD",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "C. Brown",
+                        "assists_to_date": 5,
+                        "player_id": 8477015
+                    },
+                    {
+                        "name": "C. Glass",
+                        "assists_to_date": 1,
+                        "player_id": 8479996
+                    }
+                ]
+            },
+            {
+                "player_id": 8481032,
+                "name": "Paul Cotter",
+                "team": "NJD",
+                "goals_to_date": 3,
+                "assists": []
+            },
+            {
+                "player_id": 8480208,
+                "name": "Drake Batherson",
+                "team": "OTT",
+                "goals_to_date": 12,
+                "assists": [
+                    {
+                        "name": "D. Cozens",
+                        "assists_to_date": 10,
+                        "player_id": 8481528
+                    },
+                    {
+                        "name": "T. St\u00fctzle",
+                        "assists_to_date": 14,
+                        "player_id": 8482116
+                    }
+                ]
+            },
+            {
+                "player_id": 8479996,
+                "name": "Cody Glass",
+                "team": "NJD",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "A. Gritsyuk",
+                        "assists_to_date": 9,
+                        "player_id": 8481721
+                    },
+                    {
+                        "name": "C. Brown",
+                        "assists_to_date": 6,
+                        "player_id": 8477015
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-09",
+        "home_team": "Islanders",
+        "away_team": "Golden Knights",
+        "home_score": 5,
+        "away_score": 4,
+        "winner": "Islanders",
+        "condensed_game": "https://www.nhl.com/video/vgk-at-nyi-condensed-game-6386264158112",
+        "goals": [
+            {
+                "player_id": 8478396,
+                "name": "Noah Hanifin",
+                "team": "VGK",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "J. Eichel",
+                        "assists_to_date": 25,
+                        "player_id": 8478403
+                    },
+                    {
+                        "name": "S. Theodore",
+                        "assists_to_date": 15,
+                        "player_id": 8477447
+                    }
+                ]
+            },
+            {
+                "player_id": 8478483,
+                "name": "Mitch Marner",
+                "team": "VGK",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "K. Korczak",
+                        "assists_to_date": 2,
+                        "player_id": 8481527
+                    },
+                    {
+                        "name": "M. Stone",
+                        "assists_to_date": 17,
+                        "player_id": 8475913
+                    }
+                ]
+            },
+            {
+                "player_id": 8477500,
+                "name": "Bo Horvat",
+                "team": "NYI",
+                "goals_to_date": 18,
+                "assists": [
+                    {
+                        "name": "R. Pulock",
+                        "assists_to_date": 15,
+                        "player_id": 8477506
+                    },
+                    {
+                        "name": "M. Schaefer",
+                        "assists_to_date": 14,
+                        "player_id": 8485366
+                    }
+                ]
+            },
+            {
+                "player_id": 8483553,
+                "name": "Marc Gatcomb",
+                "team": "NYI",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "C. Cizikas",
+                        "assists_to_date": 5,
+                        "player_id": 8475231
+                    },
+                    {
+                        "name": "K. MacLean",
+                        "assists_to_date": 2,
+                        "player_id": 8481237
+                    }
+                ]
+            },
+            {
+                "player_id": 8481601,
+                "name": "Simon Holmstrom",
+                "team": "NYI",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "C. Ritchie",
+                        "assists_to_date": 3,
+                        "player_id": 8484221
+                    },
+                    {
+                        "name": "A. Duclair",
+                        "assists_to_date": 6,
+                        "player_id": 8477407
+                    }
+                ]
+            },
+            {
+                "player_id": 8477964,
+                "name": "Ivan Barbashev",
+                "team": "VGK",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "B. Bowman",
+                        "assists_to_date": 5,
+                        "player_id": 8483890
+                    },
+                    {
+                        "name": "J. Eichel",
+                        "assists_to_date": 26,
+                        "player_id": 8478403
+                    }
+                ]
+            },
+            {
+                "player_id": 8477500,
+                "name": "Bo Horvat",
+                "team": "NYI",
+                "goals_to_date": 19,
+                "assists": [
+                    {
+                        "name": "M. Barzal",
+                        "assists_to_date": 14,
+                        "player_id": 8478445
+                    },
+                    {
+                        "name": "M. Shabanov",
+                        "assists_to_date": 7,
+                        "player_id": 8485702
+                    }
+                ]
+            },
+            {
+                "player_id": 8481604,
+                "name": "Pavel Dorofeyev",
+                "team": "VGK",
+                "goals_to_date": 12,
+                "assists": [
+                    {
+                        "name": "M. Marner",
+                        "assists_to_date": 23,
+                        "player_id": 8478483
+                    },
+                    {
+                        "name": "M. Stone",
+                        "assists_to_date": 18,
+                        "player_id": 8475913
+                    }
+                ]
+            },
+            {
+                "player_id": 8482476,
+                "name": "Emil Heineman",
+                "team": "NYI",
+                "goals_to_date": null,
+                "assists": []
+            }
+        ]
+    },
+    {
+        "date": "2025-12-09",
+        "home_team": "Flyers",
+        "away_team": "Sharks",
+        "home_score": 4,
+        "away_score": 1,
+        "winner": "Flyers",
+        "condensed_game": "https://www.nhl.com/video/sjs-at-phi-condensed-game-6386263636112",
+        "goals": [
+            {
+                "player_id": 8484911,
+                "name": "Collin Graf",
+                "team": "SJS",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "J. Klingberg",
+                        "assists_to_date": 6,
+                        "player_id": 8475906
+                    },
+                    {
+                        "name": "W. Smith",
+                        "assists_to_date": 17,
+                        "player_id": 8484227
+                    }
+                ]
+            },
+            {
+                "player_id": 8477989,
+                "name": "Christian Dvorak",
+                "team": "PHI",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "T. Zegras",
+                        "assists_to_date": 17,
+                        "player_id": 8481533
+                    },
+                    {
+                        "name": "T. Konecny",
+                        "assists_to_date": 17,
+                        "player_id": 8478439
+                    }
+                ]
+            },
+            {
+                "player_id": 8479336,
+                "name": "Carl Grundstrom",
+                "team": "PHI",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "N. Seeler",
+                        "assists_to_date": 4,
+                        "player_id": 8476372
+                    },
+                    {
+                        "name": "T. Sanheim",
+                        "assists_to_date": 10,
+                        "player_id": 8477948
+                    }
+                ]
+            },
+            {
+                "player_id": 8480220,
+                "name": "Noah Cates",
+                "team": "PHI",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "B. Brink",
+                        "assists_to_date": 6,
+                        "player_id": 8481553
+                    },
+                    {
+                        "name": "J. Drysdale",
+                        "assists_to_date": 10,
+                        "player_id": 8482142
+                    }
+                ]
+            },
+            {
+                "player_id": 8478439,
+                "name": "Travis Konecny",
+                "team": "PHI",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "C. Dvorak",
+                        "assists_to_date": 12,
+                        "player_id": 8477989
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-09",
+        "home_team": "Penguins",
+        "away_team": "Ducks",
+        "home_score": 3,
+        "away_score": 4,
+        "winner": "Ducks",
+        "condensed_game": "https://www.nhl.com/video/ana-at-pit-condensed-game-6386262865112",
+        "goals": [
+            {
+                "player_id": 8478569,
+                "name": "Noel Acciari",
+                "team": "PIT",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "C. Dewar",
+                        "assists_to_date": 4,
+                        "player_id": 8480980
+                    }
+                ]
+            },
+            {
+                "player_id": 8481605,
+                "name": "Jackson LaCombe",
+                "team": "ANA",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "B. Sennecke",
+                        "assists_to_date": 16,
+                        "player_id": 8484762
+                    },
+                    {
+                        "name": "C. Gauthier",
+                        "assists_to_date": 18,
+                        "player_id": 8483445
+                    }
+                ]
+            },
+            {
+                "player_id": 8478873,
+                "name": "Troy Terry",
+                "team": "ANA",
+                "goals_to_date": 8,
+                "assists": []
+            },
+            {
+                "player_id": 8478438,
+                "name": "Tommy Novak",
+                "team": "PIT",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "E. Karlsson",
+                        "assists_to_date": 18,
+                        "player_id": 8474578
+                    },
+                    {
+                        "name": "R. Shea",
+                        "assists_to_date": 9,
+                        "player_id": 8478854
+                    }
+                ]
+            },
+            {
+                "player_id": 8477511,
+                "name": "Anthony Mantha",
+                "team": "PIT",
+                "goals_to_date": 9,
+                "assists": [
+                    {
+                        "name": "S. Crosby",
+                        "assists_to_date": 13,
+                        "player_id": 8471675
+                    },
+                    {
+                        "name": "E. Karlsson",
+                        "assists_to_date": 19,
+                        "player_id": 8474578
+                    }
+                ]
+            },
+            {
+                "player_id": 8484762,
+                "name": "Beckett Sennecke",
+                "team": "ANA",
+                "goals_to_date": 10,
+                "assists": []
+            },
+            {
+                "player_id": 8484153,
+                "name": "Leo Carlsson",
+                "team": "ANA",
+                "goals_to_date": null,
+                "assists": []
+            }
+        ]
+    },
+    {
+        "date": "2025-12-09",
+        "home_team": "Hurricanes",
+        "away_team": "Blue Jackets",
+        "home_score": 4,
+        "away_score": 1,
+        "winner": "Hurricanes",
+        "condensed_game": "https://www.nhl.com/video/cbj-at-car-condensed-game-6386262399112",
+        "goals": [
+            {
+                "player_id": 8481716,
+                "name": "Dmitri Voronkov",
+                "team": "CBJ",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "S. Monahan",
+                        "assists_to_date": 12,
+                        "player_id": 8477497
+                    },
+                    {
+                        "name": "K. Marchenko",
+                        "assists_to_date": 15,
+                        "player_id": 8480893
+                    }
+                ]
+            },
+            {
+                "player_id": 8482093,
+                "name": "Seth Jarvis",
+                "team": "CAR",
+                "goals_to_date": 17,
+                "assists": [
+                    {
+                        "name": "A. Svechnikov",
+                        "assists_to_date": 9,
+                        "player_id": 8480830
+                    }
+                ]
+            },
+            {
+                "player_id": 8480762,
+                "name": "Eric Robinson",
+                "team": "CAR",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "T. Hall",
+                        "assists_to_date": 9,
+                        "player_id": 8475791
+                    },
+                    {
+                        "name": "J. Nystrom",
+                        "assists_to_date": 4,
+                        "player_id": 8482911
+                    }
+                ]
+            },
+            {
+                "player_id": 8473533,
+                "name": "Jordan Staal",
+                "team": "CAR",
+                "goals_to_date": 9,
+                "assists": [
+                    {
+                        "name": "A. Svechnikov",
+                        "assists_to_date": 10,
+                        "player_id": 8480830
+                    },
+                    {
+                        "name": "S. Gostisbehere",
+                        "assists_to_date": 19,
+                        "player_id": 8476906
+                    }
+                ]
+            },
+            {
+                "player_id": 8476921,
+                "name": "Jordan Martinook",
+                "team": "CAR",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "K. Miller",
+                        "assists_to_date": 11,
+                        "player_id": 8480817
+                    },
+                    {
+                        "name": "S. Walker",
+                        "assists_to_date": 6,
+                        "player_id": 8480336
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-09",
+        "home_team": "Blues",
+        "away_team": "Bruins",
+        "home_score": 2,
+        "away_score": 5,
+        "winner": "Bruins",
+        "condensed_game": "https://www.nhl.com/video/bos-at-stl-condensed-game-6386263730112",
+        "goals": [
+            {
+                "player_id": 8480023,
+                "name": "Robert Thomas",
+                "team": "STL",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "P. Buchnevich",
+                        "assists_to_date": 10,
+                        "player_id": 8477402
+                    },
+                    {
+                        "name": "J. Faulk",
+                        "assists_to_date": 9,
+                        "player_id": 8475753
+                    }
+                ]
+            },
+            {
+                "player_id": 8483489,
+                "name": "Fraser Minten",
+                "team": "BOS",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "M. Khusnutdinov",
+                        "assists_to_date": 4,
+                        "player_id": 8482177
+                    },
+                    {
+                        "name": "D. Pastrnak",
+                        "assists_to_date": 19,
+                        "player_id": 8477956
+                    }
+                ]
+            },
+            {
+                "player_id": 8480355,
+                "name": "Mark Kastelic",
+                "team": "BOS",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "S. Kuraly",
+                        "assists_to_date": 5,
+                        "player_id": 8476374
+                    },
+                    {
+                        "name": "V. Soderstrom",
+                        "assists_to_date": 1,
+                        "player_id": 8481599
+                    }
+                ]
+            },
+            {
+                "player_id": 8480023,
+                "name": "Robert Thomas",
+                "team": "STL",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "P. Buchnevich",
+                        "assists_to_date": 11,
+                        "player_id": 8477402
+                    }
+                ]
+            },
+            {
+                "player_id": 8480355,
+                "name": "Mark Kastelic",
+                "team": "BOS",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "S. Kuraly",
+                        "assists_to_date": 6,
+                        "player_id": 8476374
+                    },
+                    {
+                        "name": "N. Zadorov",
+                        "assists_to_date": 9,
+                        "player_id": 8477507
+                    }
+                ]
+            },
+            {
+                "player_id": 8483489,
+                "name": "Fraser Minten",
+                "team": "BOS",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "D. Pastrnak",
+                        "assists_to_date": 20,
+                        "player_id": 8477956
+                    }
+                ]
+            },
+            {
+                "player_id": 8478401,
+                "name": "Pavel Zacha",
+                "team": "BOS",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "E. Lindholm",
+                        "assists_to_date": 14,
+                        "player_id": 8477496
+                    },
+                    {
+                        "name": "D. Pastrnak",
+                        "assists_to_date": 21,
+                        "player_id": 8477956
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-09",
+        "home_team": "Jets",
+        "away_team": "Stars",
+        "home_score": 3,
+        "away_score": 4,
+        "winner": "Stars",
+        "condensed_game": "https://www.nhl.com/video/dal-at-wpg-condensed-game-6386265074112",
+        "goals": [
+            {
+                "player_id": 8476902,
+                "name": "Esa Lindell",
+                "team": "DAL",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "W. Johnston",
+                        "assists_to_date": 19,
+                        "player_id": 8482740
+                    },
+                    {
+                        "name": "M. Rantanen",
+                        "assists_to_date": 27,
+                        "player_id": 8478420
+                    }
+                ]
+            },
+            {
+                "player_id": 8478449,
+                "name": "Roope Hintz",
+                "team": "DAL",
+                "goals_to_date": 9,
+                "assists": [
+                    {
+                        "name": "M. Rantanen",
+                        "assists_to_date": 28,
+                        "player_id": 8478420
+                    },
+                    {
+                        "name": "W. Johnston",
+                        "assists_to_date": 20,
+                        "player_id": 8482740
+                    }
+                ]
+            },
+            {
+                "player_id": 8475755,
+                "name": "Alexander Petrovic",
+                "team": "DAL",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "M. Bourque",
+                        "assists_to_date": 6,
+                        "player_id": 8482145
+                    }
+                ]
+            },
+            {
+                "player_id": 8476460,
+                "name": "Mark Scheifele",
+                "team": "WPG",
+                "goals_to_date": 15,
+                "assists": [
+                    {
+                        "name": "K. Connor",
+                        "assists_to_date": 21,
+                        "player_id": 8478398
+                    }
+                ]
+            },
+            {
+                "player_id": 8476460,
+                "name": "Mark Scheifele",
+                "team": "WPG",
+                "goals_to_date": 16,
+                "assists": [
+                    {
+                        "name": "J. Morrissey",
+                        "assists_to_date": 20,
+                        "player_id": 8477504
+                    },
+                    {
+                        "name": "K. Connor",
+                        "assists_to_date": 22,
+                        "player_id": 8478398
+                    }
+                ]
+            },
+            {
+                "player_id": 8480027,
+                "name": "Jason Robertson",
+                "team": "DAL",
+                "goals_to_date": 19,
+                "assists": [
+                    {
+                        "name": "M. Heiskanen",
+                        "assists_to_date": 21,
+                        "player_id": 8480036
+                    },
+                    {
+                        "name": "M. Rantanen",
+                        "assists_to_date": 29,
+                        "player_id": 8478420
+                    }
+                ]
+            },
+            {
+                "player_id": 8479378,
+                "name": "Logan Stanley",
+                "team": "WPG",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "C. Perfetti",
+                        "assists_to_date": 3,
+                        "player_id": 8482149
+                    },
+                    {
+                        "name": "G. Vilardi",
+                        "assists_to_date": 13,
+                        "player_id": 8480014
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-09",
+        "home_team": "Oilers",
+        "away_team": "Sabres",
+        "home_score": 3,
+        "away_score": 4,
+        "winner": "Sabres",
+        "condensed_game": "https://www.nhl.com/video/buf-at-edm-condensed-game-6386267603112",
+        "goals": [
+            {
+                "player_id": 8482659,
+                "name": "Josh Doan",
+                "team": "BUF",
+                "goals_to_date": 9,
+                "assists": [
+                    {
+                        "name": "R. Dahlin",
+                        "assists_to_date": 19,
+                        "player_id": 8480839
+                    },
+                    {
+                        "name": "T. Thompson",
+                        "assists_to_date": 11,
+                        "player_id": 8479420
+                    }
+                ]
+            },
+            {
+                "player_id": 8479420,
+                "name": "Tage Thompson",
+                "team": "BUF",
+                "goals_to_date": 14,
+                "assists": []
+            },
+            {
+                "player_id": 8482659,
+                "name": "Josh Doan",
+                "team": "BUF",
+                "goals_to_date": 10,
+                "assists": [
+                    {
+                        "name": "T. Thompson",
+                        "assists_to_date": 12,
+                        "player_id": 8479420
+                    },
+                    {
+                        "name": "R. Dahlin",
+                        "assists_to_date": 20,
+                        "player_id": 8480839
+                    }
+                ]
+            },
+            {
+                "player_id": 8478402,
+                "name": "Connor McDavid",
+                "team": "EDM",
+                "goals_to_date": 15,
+                "assists": [
+                    {
+                        "name": "M. Ekholm",
+                        "assists_to_date": 13,
+                        "player_id": 8475218
+                    }
+                ]
+            },
+            {
+                "player_id": 8481617,
+                "name": "Vasily Podkolzin",
+                "team": "EDM",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "L. Draisaitl",
+                        "assists_to_date": 21,
+                        "player_id": 8477934
+                    },
+                    {
+                        "name": "T. Emberson",
+                        "assists_to_date": 6,
+                        "player_id": 8480834
+                    }
+                ]
+            },
+            {
+                "player_id": 8478402,
+                "name": "Connor McDavid",
+                "team": "EDM",
+                "goals_to_date": 16,
+                "assists": [
+                    {
+                        "name": "R. Nugent-Hopkins",
+                        "assists_to_date": 16,
+                        "player_id": 8476454
+                    },
+                    {
+                        "name": "E. Bouchard",
+                        "assists_to_date": 23,
+                        "player_id": 8480803
+                    }
+                ]
+            },
+            {
+                "player_id": 8477949,
+                "name": "Alex Tuch",
+                "team": "BUF",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "R. McLeod",
+                        "assists_to_date": 10,
+                        "player_id": 8480802
+                    },
+                    {
+                        "name": "R. Dahlin",
+                        "assists_to_date": 21,
+                        "player_id": 8480839
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-09",
+        "home_team": "Predators",
+        "away_team": "Avalanche",
+        "home_score": 4,
+        "away_score": 3,
+        "winner": "Predators",
+        "condensed_game": "https://www.nhl.com/video/col-at-nsh-condensed-game-6386267148112",
+        "goals": [
+            {
+                "player_id": 8475754,
+                "name": "Brock Nelson",
+                "team": "COL",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "J. Manson",
+                        "assists_to_date": 5,
+                        "player_id": 8476312
+                    },
+                    {
+                        "name": "B. Burns",
+                        "assists_to_date": 11,
+                        "player_id": 8470613
+                    }
+                ]
+            },
+            {
+                "player_id": 8476539,
+                "name": "Jonathan Marchessault",
+                "team": "NSH",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "R. O'Reilly",
+                        "assists_to_date": 13,
+                        "player_id": 8475158
+                    },
+                    {
+                        "name": "F. Forsberg",
+                        "assists_to_date": 10,
+                        "player_id": 8476887
+                    }
+                ]
+            },
+            {
+                "player_id": 8483513,
+                "name": "Reid Schaefer",
+                "team": "NSH",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "F. Svechkov",
+                        "assists_to_date": 4,
+                        "player_id": 8482768
+                    }
+                ]
+            },
+            {
+                "player_id": 8477476,
+                "name": "Artturi Lehkonen",
+                "team": "COL",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "M. Necas",
+                        "assists_to_date": 26,
+                        "player_id": 8480039
+                    },
+                    {
+                        "name": "N. MacKinnon",
+                        "assists_to_date": 26,
+                        "player_id": 8477492
+                    }
+                ]
+            },
+            {
+                "player_id": 8476869,
+                "name": "Brady Skjei",
+                "team": "NSH",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "A. Wilsby",
+                        "assists_to_date": 4,
+                        "player_id": 8482482
+                    },
+                    {
+                        "name": "L. Evangelista",
+                        "assists_to_date": 16,
+                        "player_id": 8482146
+                    }
+                ]
+            },
+            {
+                "player_id": 8480069,
+                "name": "Cale Makar",
+                "team": "COL",
+                "goals_to_date": 10,
+                "assists": [
+                    {
+                        "name": "M. Necas",
+                        "assists_to_date": 27,
+                        "player_id": 8480039
+                    },
+                    {
+                        "name": "N. MacKinnon",
+                        "assists_to_date": 27,
+                        "player_id": 8477492
+                    }
+                ]
+            },
+            {
+                "player_id": 8475158,
+                "name": "Ryan O'Reilly",
+                "team": "NSH",
+                "goals_to_date": null,
+                "assists": []
+            }
+        ]
+    }
+]
