@@ -1,0 +1,396 @@
+[
+    {
+        "date": "2025-12-10",
+        "home_team": "Blackhawks",
+        "away_team": "Rangers",
+        "home_score": 3,
+        "away_score": 0,
+        "winner": "Blackhawks",
+        "condensed_game": "https://www.nhl.com/video/nyr-at-chi-condensed-game-6386305639112",
+        "goals": [
+            {
+                "player_id": 8481806,
+                "name": "Louis Crevier",
+                "team": "CHI",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "M. Grzelcyk",
+                        "assists_to_date": 5,
+                        "player_id": 8476891
+                    },
+                    {
+                        "name": "J. Dickinson",
+                        "assists_to_date": 3,
+                        "player_id": 8477450
+                    }
+                ]
+            },
+            {
+                "player_id": 8484144,
+                "name": "Connor Bedard",
+                "team": "CHI",
+                "goals_to_date": 19,
+                "assists": [
+                    {
+                        "name": "A. Burakovsky",
+                        "assists_to_date": 12,
+                        "player_id": 8477444
+                    }
+                ]
+            },
+            {
+                "player_id": 8477479,
+                "name": "Tyler Bertuzzi",
+                "team": "CHI",
+                "goals_to_date": 16,
+                "assists": [
+                    {
+                        "name": "R. Greene",
+                        "assists_to_date": 6,
+                        "player_id": 8483450
+                    },
+                    {
+                        "name": "C. Bedard",
+                        "assists_to_date": 23,
+                        "player_id": 8484144
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-10",
+        "home_team": "Flames",
+        "away_team": "Red Wings",
+        "home_score": 3,
+        "away_score": 4,
+        "winner": "Red Wings",
+        "condensed_game": "https://www.nhl.com/video/det-at-cgy-condensed-game-6386308441112",
+        "goals": [
+            {
+                "player_id": 8479337,
+                "name": "Alex DeBrincat",
+                "team": "DET",
+                "goals_to_date": 15,
+                "assists": [
+                    {
+                        "name": "P. Kane",
+                        "assists_to_date": 15,
+                        "player_id": 8474141
+                    },
+                    {
+                        "name": "A. Copp",
+                        "assists_to_date": 11,
+                        "player_id": 8477429
+                    }
+                ]
+            },
+            {
+                "player_id": 8484223,
+                "name": "Axel Sandin-Pellikka",
+                "team": "DET",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "A. DeBrincat",
+                        "assists_to_date": 18,
+                        "player_id": 8479337
+                    },
+                    {
+                        "name": "P. Kane",
+                        "assists_to_date": 16,
+                        "player_id": 8474141
+                    }
+                ]
+            },
+            {
+                "player_id": 8479337,
+                "name": "Alex DeBrincat",
+                "team": "DET",
+                "goals_to_date": 16,
+                "assists": [
+                    {
+                        "name": "A. Copp",
+                        "assists_to_date": 12,
+                        "player_id": 8477429
+                    }
+                ]
+            },
+            {
+                "player_id": 8477946,
+                "name": "Dylan Larkin",
+                "team": "DET",
+                "goals_to_date": 17,
+                "assists": [
+                    {
+                        "name": "L. Raymond",
+                        "assists_to_date": 23,
+                        "player_id": 8482078
+                    }
+                ]
+            },
+            {
+                "player_id": 8480797,
+                "name": "Joel Farabee",
+                "team": "CGY",
+                "goals_to_date": 8,
+                "assists": []
+            },
+            {
+                "player_id": 8482679,
+                "name": "Matt Coronato",
+                "team": "CGY",
+                "goals_to_date": 10,
+                "assists": [
+                    {
+                        "name": "N. Kadri",
+                        "assists_to_date": 21,
+                        "player_id": 8475172
+                    }
+                ]
+            },
+            {
+                "player_id": 8477346,
+                "name": "MacKenzie Weegar",
+                "team": "CGY",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "R. Andersson",
+                        "assists_to_date": 15,
+                        "player_id": 8478397
+                    },
+                    {
+                        "name": "N. Kadri",
+                        "assists_to_date": 22,
+                        "player_id": 8475172
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-10",
+        "home_team": "Mammoth",
+        "away_team": "Panthers",
+        "home_score": 3,
+        "away_score": 4,
+        "winner": "Panthers",
+        "condensed_game": "https://www.nhl.com/video/fla-at-uta-condensed-game-6386309830112",
+        "goals": [
+            {
+                "player_id": 8482699,
+                "name": "Dylan Guenther",
+                "team": "UTA",
+                "goals_to_date": 12,
+                "assists": [
+                    {
+                        "name": "J. Marino",
+                        "assists_to_date": 13,
+                        "player_id": 8478507
+                    }
+                ]
+            },
+            {
+                "player_id": 8477409,
+                "name": "Carter Verhaeghe",
+                "team": "FLA",
+                "goals_to_date": 9,
+                "assists": [
+                    {
+                        "name": "A. Ekblad",
+                        "assists_to_date": 7,
+                        "player_id": 8477932
+                    },
+                    {
+                        "name": "S. Bennett",
+                        "assists_to_date": 11,
+                        "player_id": 8477935
+                    }
+                ]
+            },
+            {
+                "player_id": 8477935,
+                "name": "Sam Bennett",
+                "team": "FLA",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "E. Rodrigues",
+                        "assists_to_date": 7,
+                        "player_id": 8478542
+                    },
+                    {
+                        "name": "N. Mikkola",
+                        "assists_to_date": 5,
+                        "player_id": 8478859
+                    }
+                ]
+            },
+            {
+                "player_id": 8477935,
+                "name": "Sam Bennett",
+                "team": "FLA",
+                "goals_to_date": 9,
+                "assists": [
+                    {
+                        "name": "C. Verhaeghe",
+                        "assists_to_date": 14,
+                        "player_id": 8477409
+                    }
+                ]
+            },
+            {
+                "player_id": 8482699,
+                "name": "Dylan Guenther",
+                "team": "UTA",
+                "goals_to_date": 13,
+                "assists": [
+                    {
+                        "name": "L. Crouse",
+                        "assists_to_date": 6,
+                        "player_id": 8478474
+                    },
+                    {
+                        "name": "J. Marino",
+                        "assists_to_date": 14,
+                        "player_id": 8478507
+                    }
+                ]
+            },
+            {
+                "player_id": 8480855,
+                "name": "Jack McBain",
+                "team": "UTA",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "S. Durzi",
+                        "assists_to_date": 3,
+                        "player_id": 8480434
+                    },
+                    {
+                        "name": "I. Cole",
+                        "assists_to_date": 10,
+                        "player_id": 8474013
+                    }
+                ]
+            },
+            {
+                "player_id": 8482113,
+                "name": "Anton Lundell",
+                "team": "FLA",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "E. Luostarinen",
+                        "assists_to_date": 9,
+                        "player_id": 8480185
+                    },
+                    {
+                        "name": "S. Reinhart",
+                        "assists_to_date": 13,
+                        "player_id": 8477933
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-10",
+        "home_team": "Kraken",
+        "away_team": "Kings",
+        "home_score": 3,
+        "away_score": 2,
+        "winner": "Kraken",
+        "condensed_game": "https://www.nhl.com/video/lak-at-sea-condensed-game-6386312142112",
+        "goals": [
+            {
+                "player_id": 8477955,
+                "name": "Jared McCann",
+                "team": "SEA",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "V. Dunn",
+                        "assists_to_date": 11,
+                        "player_id": 8478407
+                    },
+                    {
+                        "name": "C. Stephenson",
+                        "assists_to_date": 10,
+                        "player_id": 8476905
+                    }
+                ]
+            },
+            {
+                "player_id": 8482155,
+                "name": "Alex Laferriere",
+                "team": "LAK",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "J. Armia",
+                        "assists_to_date": 7,
+                        "player_id": 8476469
+                    }
+                ]
+            },
+            {
+                "player_id": 8477942,
+                "name": "Kevin Fiala",
+                "team": "LAK",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "A. Kopitar",
+                        "assists_to_date": 10,
+                        "player_id": 8471685
+                    },
+                    {
+                        "name": "A. Kempe",
+                        "assists_to_date": 17,
+                        "player_id": 8477960
+                    }
+                ]
+            },
+            {
+                "player_id": 8482665,
+                "name": "Matty Beniers",
+                "team": "SEA",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "E. Tolvanen",
+                        "assists_to_date": 10,
+                        "player_id": 8480009
+                    },
+                    {
+                        "name": "V. Dunn",
+                        "assists_to_date": 12,
+                        "player_id": 8478407
+                    }
+                ]
+            },
+            {
+                "player_id": 8478407,
+                "name": "Vince Dunn",
+                "team": "SEA",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "E. Tolvanen",
+                        "assists_to_date": 11,
+                        "player_id": 8480009
+                    },
+                    {
+                        "name": "J. Eberle",
+                        "assists_to_date": 9,
+                        "player_id": 8474586
+                    }
+                ]
+            }
+        ]
+    }
+]
