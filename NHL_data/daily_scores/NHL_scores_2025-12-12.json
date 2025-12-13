@@ -1,0 +1,237 @@
+[
+    {
+        "date": "2025-12-12",
+        "home_team": "Blues",
+        "away_team": "Blackhawks",
+        "home_score": 3,
+        "away_score": 2,
+        "winner": "Blues",
+        "condensed_game": "https://www.nhl.com/video/chi-at-stl-condensed-game-6386421128112",
+        "goals": [
+            {
+                "player_id": 8482733,
+                "name": "Logan Mailloux",
+                "team": "STL",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "R. Thomas",
+                        "assists_to_date": 15,
+                        "player_id": 8480023
+                    },
+                    {
+                        "name": "J. Neighbours",
+                        "assists_to_date": 6,
+                        "player_id": 8482089
+                    }
+                ]
+            },
+            {
+                "player_id": 8479644,
+                "name": "Matt Luff",
+                "team": "STL",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "R. Fabbri",
+                        "assists_to_date": 2,
+                        "player_id": 8477952
+                    },
+                    {
+                        "name": "C. Parayko",
+                        "assists_to_date": 10,
+                        "player_id": 8476892
+                    }
+                ]
+            },
+            {
+                "player_id": 8482176,
+                "name": "Wyatt Kaiser",
+                "team": "CHI",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "A. Burakovsky",
+                        "assists_to_date": 13,
+                        "player_id": 8477444
+                    },
+                    {
+                        "name": "C. Bedard",
+                        "assists_to_date": 24,
+                        "player_id": 8484144
+                    }
+                ]
+            },
+            {
+                "player_id": 8475753,
+                "name": "Justin Faulk",
+                "team": "STL",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "T. Tucker",
+                        "assists_to_date": 4,
+                        "player_id": 8481006
+                    },
+                    {
+                        "name": "R. Thomas",
+                        "assists_to_date": 16,
+                        "player_id": 8480023
+                    }
+                ]
+            },
+            {
+                "player_id": 8477444,
+                "name": "Andre Burakovsky",
+                "team": "CHI",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "C. Bedard",
+                        "assists_to_date": 25,
+                        "player_id": 8484144
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-12",
+        "home_team": "Mammoth",
+        "away_team": "Kraken",
+        "home_score": 5,
+        "away_score": 3,
+        "winner": "Mammoth",
+        "condensed_game": "https://www.nhl.com/video/sea-at-uta-condensed-game-6386423228112",
+        "goals": [
+            {
+                "player_id": 8478975,
+                "name": "Mason Marchment",
+                "team": "SEA",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "F. Gaudreau",
+                        "assists_to_date": 3,
+                        "player_id": 8477919
+                    },
+                    {
+                        "name": "C. Stephenson",
+                        "assists_to_date": 11,
+                        "player_id": 8476905
+                    }
+                ]
+            },
+            {
+                "player_id": 8477951,
+                "name": "Nick Schmaltz",
+                "team": "UTA",
+                "goals_to_date": 12,
+                "assists": []
+            },
+            {
+                "player_id": 8479977,
+                "name": "Kailer Yamamoto",
+                "team": "UTA",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "L. O'Brien",
+                        "assists_to_date": 1,
+                        "player_id": 8477070
+                    },
+                    {
+                        "name": "K. Stenlund",
+                        "assists_to_date": 5,
+                        "player_id": 8478831
+                    }
+                ]
+            },
+            {
+                "player_id": 8478975,
+                "name": "Mason Marchment",
+                "team": "SEA",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "R. Lindgren",
+                        "assists_to_date": 4,
+                        "player_id": 8479324
+                    },
+                    {
+                        "name": "B. Montour",
+                        "assists_to_date": 10,
+                        "player_id": 8477986
+                    }
+                ]
+            },
+            {
+                "player_id": 8482699,
+                "name": "Dylan Guenther",
+                "team": "UTA",
+                "goals_to_date": 14,
+                "assists": [
+                    {
+                        "name": "N. Schmaltz",
+                        "assists_to_date": 16,
+                        "player_id": 8477951
+                    },
+                    {
+                        "name": "M. Sergachev",
+                        "assists_to_date": 17,
+                        "player_id": 8479410
+                    }
+                ]
+            },
+            {
+                "player_id": 8482175,
+                "name": "JJ Peterka",
+                "team": "UTA",
+                "goals_to_date": 13,
+                "assists": [
+                    {
+                        "name": "K. Stenlund",
+                        "assists_to_date": 6,
+                        "player_id": 8478831
+                    }
+                ]
+            },
+            {
+                "player_id": 8478474,
+                "name": "Lawson Crouse",
+                "team": "UTA",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "N. Schmaltz",
+                        "assists_to_date": 17,
+                        "player_id": 8477951
+                    },
+                    {
+                        "name": "K. Stenlund",
+                        "assists_to_date": 7,
+                        "player_id": 8478831
+                    }
+                ]
+            },
+            {
+                "player_id": 8483570,
+                "name": "Ben Meyers",
+                "team": "SEA",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "T. Kartye",
+                        "assists_to_date": 4,
+                        "player_id": 8481789
+                    },
+                    {
+                        "name": "R. Winterton",
+                        "assists_to_date": 3,
+                        "player_id": 8482751
+                    }
+                ]
+            }
+        ]
+    }
+]
