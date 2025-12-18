@@ -1,0 +1,335 @@
+[
+    {
+        "date": "2025-12-17",
+        "home_team": "Panthers",
+        "away_team": "Kings",
+        "home_score": 3,
+        "away_score": 2,
+        "winner": "Panthers",
+        "condensed_game": "https://www.nhl.com/video/lak-at-fla-condensed-game-6386627425112",
+        "goals": [
+            {
+                "player_id": 8476469,
+                "name": "Joel Armia",
+                "team": "LAK",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "B. Clarke",
+                        "assists_to_date": 10,
+                        "player_id": 8482730
+                    },
+                    {
+                        "name": "A. Laferriere",
+                        "assists_to_date": 8,
+                        "player_id": 8482155
+                    }
+                ]
+            },
+            {
+                "player_id": 8482113,
+                "name": "Anton Lundell",
+                "team": "FLA",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "A. Ekblad",
+                        "assists_to_date": 10,
+                        "player_id": 8477932
+                    },
+                    {
+                        "name": "M. Samoskevich",
+                        "assists_to_date": 13,
+                        "player_id": 8482713
+                    }
+                ]
+            },
+            {
+                "player_id": 8477409,
+                "name": "Carter Verhaeghe",
+                "team": "FLA",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "J. Petry",
+                        "assists_to_date": 7,
+                        "player_id": 8473507
+                    },
+                    {
+                        "name": "B. Marchand",
+                        "assists_to_date": 17,
+                        "player_id": 8473419
+                    }
+                ]
+            },
+            {
+                "player_id": 8477935,
+                "name": "Sam Bennett",
+                "team": "FLA",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "B. Marchand",
+                        "assists_to_date": 18,
+                        "player_id": 8473419
+                    }
+                ]
+            },
+            {
+                "player_id": 8477942,
+                "name": "Kevin Fiala",
+                "team": "LAK",
+                "goals_to_date": 12,
+                "assists": []
+            }
+        ]
+    },
+    {
+        "date": "2025-12-17",
+        "home_team": "Red Wings",
+        "away_team": "Mammoth",
+        "home_score": 1,
+        "away_score": 4,
+        "winner": "Mammoth",
+        "condensed_game": "https://www.nhl.com/video/uta-at-det-condensed-game-6386628517112",
+        "goals": [
+            {
+                "player_id": 8479343,
+                "name": "Clayton Keller",
+                "team": "UTA",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "N. Schmaltz",
+                        "assists_to_date": 19,
+                        "player_id": 8477951
+                    },
+                    {
+                        "name": "J. Peterka",
+                        "assists_to_date": 13,
+                        "player_id": 8482175
+                    }
+                ]
+            },
+            {
+                "player_id": 8480855,
+                "name": "Jack McBain",
+                "team": "UTA",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "M. Carcone",
+                        "assists_to_date": 7,
+                        "player_id": 8479619
+                    },
+                    {
+                        "name": "S. Durzi",
+                        "assists_to_date": 5,
+                        "player_id": 8480434
+                    }
+                ]
+            },
+            {
+                "player_id": 8484471,
+                "name": "Emmitt Finnie",
+                "team": "DET",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "J. Leonard",
+                        "assists_to_date": 1,
+                        "player_id": 8481077
+                    }
+                ]
+            },
+            {
+                "player_id": 8482699,
+                "name": "Dylan Guenther",
+                "team": "UTA",
+                "goals_to_date": 16,
+                "assists": []
+            },
+            {
+                "player_id": 8478831,
+                "name": "Kevin Stenlund",
+                "team": "UTA",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "C. Keller",
+                        "assists_to_date": 19,
+                        "player_id": 8479343
+                    },
+                    {
+                        "name": "M. Sergachev",
+                        "assists_to_date": 19,
+                        "player_id": 8479410
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-17",
+        "home_team": "Blues",
+        "away_team": "Jets",
+        "home_score": 1,
+        "away_score": 0,
+        "winner": "Blues",
+        "condensed_game": "https://www.nhl.com/video/wpg-at-stl-condensed-game-6386630347112",
+        "goals": [
+            {
+                "player_id": 8475753,
+                "name": "Justin Faulk",
+                "team": "STL",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "R. Thomas",
+                        "assists_to_date": 17,
+                        "player_id": 8480023
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-17",
+        "home_team": "Predators",
+        "away_team": "Hurricanes",
+        "home_score": 1,
+        "away_score": 4,
+        "winner": "Hurricanes",
+        "condensed_game": "https://www.nhl.com/video/car-at-nsh-condensed-game-6386630650112",
+        "goals": [
+            {
+                "player_id": 8482809,
+                "name": "Jackson Blake",
+                "team": "CAR",
+                "goals_to_date": 9,
+                "assists": [
+                    {
+                        "name": "L. Stankoven",
+                        "assists_to_date": 9,
+                        "player_id": 8482702
+                    },
+                    {
+                        "name": "A. Nikishin",
+                        "assists_to_date": 9,
+                        "player_id": 8482100
+                    }
+                ]
+            },
+            {
+                "player_id": 8478427,
+                "name": "Sebastian Aho",
+                "team": "CAR",
+                "goals_to_date": 10,
+                "assists": [
+                    {
+                        "name": "J. Blake",
+                        "assists_to_date": 12,
+                        "player_id": 8482809
+                    },
+                    {
+                        "name": "A. Svechnikov",
+                        "assists_to_date": 12,
+                        "player_id": 8480830
+                    }
+                ]
+            },
+            {
+                "player_id": 8482093,
+                "name": "Seth Jarvis",
+                "team": "CAR",
+                "goals_to_date": 19,
+                "assists": [
+                    {
+                        "name": "S. Aho",
+                        "assists_to_date": 18,
+                        "player_id": 8478427
+                    },
+                    {
+                        "name": "N. Ehlers",
+                        "assists_to_date": 15,
+                        "player_id": 8477940
+                    }
+                ]
+            },
+            {
+                "player_id": 8476887,
+                "name": "Filip Forsberg",
+                "team": "NSH",
+                "goals_to_date": 15,
+                "assists": [
+                    {
+                        "name": "R. O'Reilly",
+                        "assists_to_date": 17,
+                        "player_id": 8475158
+                    },
+                    {
+                        "name": "S. Stamkos",
+                        "assists_to_date": 5,
+                        "player_id": 8474564
+                    }
+                ]
+            },
+            {
+                "player_id": 8478427,
+                "name": "Sebastian Aho",
+                "team": "CAR",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "A. Svechnikov",
+                        "assists_to_date": 13,
+                        "player_id": 8480830
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-17",
+        "home_team": "Golden Knights",
+        "away_team": "Devils",
+        "home_score": 1,
+        "away_score": 2,
+        "winner": "Devils",
+        "condensed_game": "https://www.nhl.com/video/njd-at-vgk-condensed-game-6386633867112",
+        "goals": [
+            {
+                "player_id": 8477015,
+                "name": "Connor Brown",
+                "team": "NJD",
+                "goals_to_date": 8,
+                "assists": []
+            },
+            {
+                "player_id": 8481604,
+                "name": "Pavel Dorofeyev",
+                "team": "VGK",
+                "goals_to_date": 14,
+                "assists": [
+                    {
+                        "name": "M. Stone",
+                        "assists_to_date": 19,
+                        "player_id": 8475913
+                    },
+                    {
+                        "name": "T. Hertl",
+                        "assists_to_date": 10,
+                        "player_id": 8476881
+                    }
+                ]
+            },
+            {
+                "player_id": 8479407,
+                "name": "Jesper Bratt",
+                "team": "NJD",
+                "goals_to_date": null,
+                "assists": []
+            }
+        ]
+    }
+]
