@@ -1,0 +1,386 @@
+[
+    {
+        "date": "2025-12-22",
+        "home_team": "Lightning",
+        "away_team": "Blues",
+        "home_score": 4,
+        "away_score": 1,
+        "winner": "Lightning",
+        "condensed_game": "https://www.nhl.com/video/stl-at-tbl-condensed-game-6386848910112",
+        "goals": [
+            {
+                "player_id": 8480995,
+                "name": "Pontus Holmberg",
+                "team": "TBL",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "D. Raddysh",
+                        "assists_to_date": 18,
+                        "player_id": 8478178
+                    },
+                    {
+                        "name": "Z. Girgensons",
+                        "assists_to_date": 2,
+                        "player_id": 8476878
+                    }
+                ]
+            },
+            {
+                "player_id": 8478178,
+                "name": "Darren Raddysh",
+                "team": "TBL",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "N. Kucherov",
+                        "assists_to_date": 31,
+                        "player_id": 8476453
+                    },
+                    {
+                        "name": "J. Guentzel",
+                        "assists_to_date": 20,
+                        "player_id": 8477404
+                    }
+                ]
+            },
+            {
+                "player_id": 8475753,
+                "name": "Justin Faulk",
+                "team": "STL",
+                "goals_to_date": 10,
+                "assists": [
+                    {
+                        "name": "T. Tucker",
+                        "assists_to_date": 5,
+                        "player_id": 8481006
+                    },
+                    {
+                        "name": "O. Stenberg",
+                        "assists_to_date": 3,
+                        "player_id": 8484230
+                    }
+                ]
+            },
+            {
+                "player_id": 8478519,
+                "name": "Anthony Cirelli",
+                "team": "TBL",
+                "goals_to_date": 10,
+                "assists": [
+                    {
+                        "name": "D. Raddysh",
+                        "assists_to_date": 19,
+                        "player_id": 8478178
+                    }
+                ]
+            },
+            {
+                "player_id": 8477416,
+                "name": "Oliver Bjorkstrand",
+                "team": "TBL",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "J. Guentzel",
+                        "assists_to_date": 21,
+                        "player_id": 8477404
+                    },
+                    {
+                        "name": "N. Kucherov",
+                        "assists_to_date": 32,
+                        "player_id": 8476453
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-22",
+        "home_team": "Flyers",
+        "away_team": "Canucks",
+        "home_score": 5,
+        "away_score": 2,
+        "winner": "Flyers",
+        "condensed_game": "https://www.nhl.com/video/van-at-phi-condensed-game-6386852497112",
+        "goals": [
+            {
+                "player_id": 8483733,
+                "name": "Nikita Grebenkin",
+                "team": "PHI",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "E. Andrae",
+                        "assists_to_date": 9,
+                        "player_id": 8482126
+                    },
+                    {
+                        "name": "R. Abols",
+                        "assists_to_date": 2,
+                        "player_id": 8479022
+                    }
+                ]
+            },
+            {
+                "player_id": 8479336,
+                "name": "Carl Grundstrom",
+                "team": "PHI",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "N. Grebenkin",
+                        "assists_to_date": 4,
+                        "player_id": 8483733
+                    },
+                    {
+                        "name": "R. Abols",
+                        "assists_to_date": 3,
+                        "player_id": 8479022
+                    }
+                ]
+            },
+            {
+                "player_id": 8477989,
+                "name": "Christian Dvorak",
+                "team": "PHI",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "T. Zegras",
+                        "assists_to_date": 21,
+                        "player_id": 8481533
+                    },
+                    {
+                        "name": "T. Konecny",
+                        "assists_to_date": 21,
+                        "player_id": 8478439
+                    }
+                ]
+            },
+            {
+                "player_id": 8484136,
+                "name": "Max Sasson",
+                "team": "VAN",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "C. Garland",
+                        "assists_to_date": 13,
+                        "player_id": 8478856
+                    },
+                    {
+                        "name": "T. Myers",
+                        "assists_to_date": 7,
+                        "player_id": 8474574
+                    }
+                ]
+            },
+            {
+                "player_id": 8480015,
+                "name": "Owen Tippett",
+                "team": "PHI",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "C. York",
+                        "assists_to_date": 13,
+                        "player_id": 8481546
+                    }
+                ]
+            },
+            {
+                "player_id": 8484387,
+                "name": "Matvei Michkov",
+                "team": "PHI",
+                "goals_to_date": 9,
+                "assists": [
+                    {
+                        "name": "N. Cates",
+                        "assists_to_date": 11,
+                        "player_id": 8480220
+                    }
+                ]
+            },
+            {
+                "player_id": 8482055,
+                "name": "Drew O'Connor",
+                "team": "VAN",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "Z. Buium",
+                        "assists_to_date": 13,
+                        "player_id": 8484798
+                    },
+                    {
+                        "name": "E. Pettersson",
+                        "assists_to_date": 5,
+                        "player_id": 8483678
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-22",
+        "home_team": "Ducks",
+        "away_team": "Kraken",
+        "home_score": 1,
+        "away_score": 3,
+        "winner": "Kraken",
+        "condensed_game": "https://www.nhl.com/video/sea-at-ana-condensed-game-6386857827112",
+        "goals": [
+            {
+                "player_id": 8477919,
+                "name": "Frederick Gaudreau",
+                "team": "SEA",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "S. Wright",
+                        "assists_to_date": 8,
+                        "player_id": 8483524
+                    },
+                    {
+                        "name": "K. Kakko",
+                        "assists_to_date": 4,
+                        "player_id": 8481554
+                    }
+                ]
+            },
+            {
+                "player_id": 8475798,
+                "name": "Mikael Granlund",
+                "team": "ANA",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "J. Trouba",
+                        "assists_to_date": 11,
+                        "player_id": 8476885
+                    },
+                    {
+                        "name": "J. LaCombe",
+                        "assists_to_date": 16,
+                        "player_id": 8481605
+                    }
+                ]
+            },
+            {
+                "player_id": 8474586,
+                "name": "Jordan Eberle",
+                "team": "SEA",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "M. Beniers",
+                        "assists_to_date": 15,
+                        "player_id": 8482665
+                    },
+                    {
+                        "name": "K. Kakko",
+                        "assists_to_date": 5,
+                        "player_id": 8481554
+                    }
+                ]
+            },
+            {
+                "player_id": 8474586,
+                "name": "Jordan Eberle",
+                "team": "SEA",
+                "goals_to_date": 12,
+                "assists": [
+                    {
+                        "name": "E. Tolvanen",
+                        "assists_to_date": 15,
+                        "player_id": 8480009
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2025-12-22",
+        "home_team": "Kings",
+        "away_team": "Blue Jackets",
+        "home_score": 1,
+        "away_score": 3,
+        "winner": "Blue Jackets",
+        "condensed_game": "https://www.nhl.com/video/cbj-at-lak-condensed-game-6386856950112",
+        "goals": [
+            {
+                "player_id": 8478975,
+                "name": "Mason Marchment",
+                "team": "CBJ",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "D. Severson",
+                        "assists_to_date": 9,
+                        "player_id": 8476923
+                    },
+                    {
+                        "name": "D. Voronkov",
+                        "assists_to_date": 11,
+                        "player_id": 8481716
+                    }
+                ]
+            },
+            {
+                "player_id": 8478975,
+                "name": "Mason Marchment",
+                "team": "CBJ",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "D. Severson",
+                        "assists_to_date": 10,
+                        "player_id": 8476923
+                    },
+                    {
+                        "name": "B. Jenner",
+                        "assists_to_date": 10,
+                        "player_id": 8476432
+                    }
+                ]
+            },
+            {
+                "player_id": 8483808,
+                "name": "Andrei Kuzmenko",
+                "team": "LAK",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "M. Anderson",
+                        "assists_to_date": 6,
+                        "player_id": 8479998
+                    },
+                    {
+                        "name": "D. Doughty",
+                        "assists_to_date": 9,
+                        "player_id": 8474563
+                    }
+                ]
+            },
+            {
+                "player_id": 8480893,
+                "name": "Kirill Marchenko",
+                "team": "CBJ",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "D. Mateychuk",
+                        "assists_to_date": 8,
+                        "player_id": 8483485
+                    },
+                    {
+                        "name": "A. Fantilli",
+                        "assists_to_date": 11,
+                        "player_id": 8484166
+                    }
+                ]
+            }
+        ]
+    }
+]
