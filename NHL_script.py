@@ -2406,6 +2406,10 @@ def tweak_data_again(data):
         new_dict['Spick'] = x.get('pick')
         new_data.append(new_dict)
     
+
+    for x in new_data:
+        for key, value in x.items():
+            print(key, value)
     return new_data
 
 
