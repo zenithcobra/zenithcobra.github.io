@@ -2369,11 +2369,62 @@ def rename_csv_headers():
 
     print(f"Headers updated successfully in {file_path}")
 
+def tweak_data_again(data):
+    for x in data:
+        x.update({"past_e_shot": x.get('past_e_shot').split('-')[0]})
+        # print(x.get('past_e_shot'))
+    
+    new_data = []
+    for x in data:
+        new_dict = {}
+        
+        new_dict['name'] = x.get('name')
+        new_dict['team'] = x.get('team')
+        new_dict['position'] = x.get('position')
+        new_dict['games_played'] = x.get('games_played')
+        new_dict['past_e_shot'] = x.get('past_e_shot')
+        new_dict['past_sog'] = x.get('past_sog')
+        new_dict['sog_diff'] = x.get('sog_diff')
+        new_dict['I_F_shotsOnGoal'] = x.get('I_F_shotsOnGoal')
+        new_dict['asog'] = x.get('asog')
+        new_dict['sog_var'] = x.get('sog_var')
+        new_dict['past_a_sog'] = x.get('past_a_sog')
+        new_dict['GOALS_22'] = x.get('GOALS_22')
+        new_dict['GOALS_23'] = x.get('GOALS_23')
+        new_dict['GOALS_24'] = x.get('GOALS_24')
+        new_dict['I_F_goals'] = x.get('I_F_goals')
+        new_dict['I_F_xGoals'] = x.get('I_F_xGoals')
+        new_dict['avg24'] = x.get('avg24')
+        new_dict['avg25'] = x.get('avg25')
+        new_dict['goal_spread'] = x.get('goal_spread')
+        new_dict['24'] = x.get('24')
+        new_dict['past_goals'] = x.get('past_goals')
+        new_dict['goals_diff'] = x.get('goals_diff')
+        new_dict['goals_var'] = x.get('goals_var')
+        new_dict['past_e_goals'] = x.get('past_e_goals')
+        new_dict['past_a_goals'] = x.get('past_a_goals')
+        new_dict['points'] = x.get('points')
+        new_dict['avg_p'] = x.get('avg_p')
+        new_dict['past_points'] = x.get('past_points')
+        new_dict['points_diff'] = x.get('points_diff')
+        new_dict['points_var'] = x.get('points_var')
+        new_dict['pick'] = x.get('pick')
+
+        new_data.append(new_dict)
+
+    # for x in new_data:
+    #     print(x)
+    
+    return data
+
+
+
 def combine_and_save_skaters(int_shots_average, file_path):
     skater_data = get_skater_history(int_shots_average)
     filtered_data = filter_skater_data_for_csv(skater_data)
     processed_data = process_skaters_duplicates(filtered_data)
     super_processed_data = add_analysis_to_skaters(processed_data)
     processed_twice_data = filter_skater_data_for_csv_again(super_processed_data)
-    rename_csv_headers()
-    save_dicts_to_csv(processed_twice_data, file_path)
+    #rename_csv_headers()
+    tweaked_data = tweak_data_again(processed_twice_data)
+    save_dicts_to_csv(tweaked_data, file_path)
