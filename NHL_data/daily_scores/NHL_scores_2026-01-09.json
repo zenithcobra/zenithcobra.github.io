@@ -1,0 +1,344 @@
+[
+    {
+        "date": "2026-01-09",
+        "home_team": "Blackhawks",
+        "away_team": "Capitals",
+        "home_score": 1,
+        "away_score": 5,
+        "winner": "Capitals",
+        "condensed_game": "https://www.nhl.com/video/wsh-at-chi-condensed-game-6387509436112",
+        "goals": [
+            {
+                "player_id": 8478463,
+                "name": "Anthony Beauvillier",
+                "team": "WSH",
+                "goals_to_date": 9,
+                "assists": [
+                    {
+                        "name": "M. Feh\u00e9rv\u00e1ry",
+                        "assists_to_date": 12,
+                        "player_id": 8480796
+                    },
+                    {
+                        "name": "J. Carlson",
+                        "assists_to_date": 24,
+                        "player_id": 8474590
+                    }
+                ]
+            },
+            {
+                "player_id": 8481580,
+                "name": "Connor McMichael",
+                "team": "WSH",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "R. Leonard",
+                        "assists_to_date": 17,
+                        "player_id": 8484186
+                    }
+                ]
+            },
+            {
+                "player_id": 8483573,
+                "name": "Ethen Frank",
+                "team": "WSH",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "J. Carlson",
+                        "assists_to_date": 25,
+                        "player_id": 8474590
+                    },
+                    {
+                        "name": "N. Dowd",
+                        "assists_to_date": 9,
+                        "player_id": 8475343
+                    }
+                ]
+            },
+            {
+                "player_id": 8484197,
+                "name": "Oliver Moore",
+                "team": "CHI",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "M. Grzelcyk",
+                        "assists_to_date": 11,
+                        "player_id": 8476891
+                    },
+                    {
+                        "name": "N. Lardis",
+                        "assists_to_date": 1,
+                        "player_id": 8484185
+                    }
+                ]
+            },
+            {
+                "player_id": 8482088,
+                "name": "Justin Sourdif",
+                "team": "WSH",
+                "goals_to_date": 9,
+                "assists": [
+                    {
+                        "name": "C. McMichael",
+                        "assists_to_date": 21,
+                        "player_id": 8481580
+                    },
+                    {
+                        "name": "R. Leonard",
+                        "assists_to_date": 18,
+                        "player_id": 8484186
+                    }
+                ]
+            },
+            {
+                "player_id": 8471214,
+                "name": "Alex Ovechkin",
+                "team": "WSH",
+                "goals_to_date": 19,
+                "assists": [
+                    {
+                        "name": "M. Feh\u00e9rv\u00e1ry",
+                        "assists_to_date": 13,
+                        "player_id": 8480796
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-01-09",
+        "home_team": "Jets",
+        "away_team": "Kings",
+        "home_score": 5,
+        "away_score": 1,
+        "winner": "Jets",
+        "condensed_game": "https://www.nhl.com/video/lak-at-wpg-condensed-game-6387510012112",
+        "goals": [
+            {
+                "player_id": 8476480,
+                "name": "Vladislav Namestnikov",
+                "team": "WPG",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "L. Stanley",
+                        "assists_to_date": 7,
+                        "player_id": 8479378
+                    },
+                    {
+                        "name": "N. Niederreiter",
+                        "assists_to_date": 10,
+                        "player_id": 8475799
+                    }
+                ]
+            },
+            {
+                "player_id": 8481043,
+                "name": "Cole Koepke",
+                "team": "WPG",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "D. Samberg",
+                        "assists_to_date": 6,
+                        "player_id": 8480049
+                    },
+                    {
+                        "name": "T. Pearson",
+                        "assists_to_date": 3,
+                        "player_id": 8476871
+                    }
+                ]
+            },
+            {
+                "player_id": 8473604,
+                "name": "Jonathan Toews",
+                "team": "WPG",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "C. Miller",
+                        "assists_to_date": 1,
+                        "player_id": 8476525
+                    },
+                    {
+                        "name": "C. Perfetti",
+                        "assists_to_date": 7,
+                        "player_id": 8482149
+                    }
+                ]
+            },
+            {
+                "player_id": 8482124,
+                "name": "Quinton Byfield",
+                "team": "LAK",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "T. Ward",
+                        "assists_to_date": 1,
+                        "player_id": 8483406
+                    },
+                    {
+                        "name": "W. Foegele",
+                        "assists_to_date": 2,
+                        "player_id": 8477998
+                    }
+                ]
+            },
+            {
+                "player_id": 8476460,
+                "name": "Mark Scheifele",
+                "team": "WPG",
+                "goals_to_date": 21,
+                "assists": [
+                    {
+                        "name": "K. Connor",
+                        "assists_to_date": 31,
+                        "player_id": 8478398
+                    },
+                    {
+                        "name": "G. Vilardi",
+                        "assists_to_date": 21,
+                        "player_id": 8480014
+                    }
+                ]
+            },
+            {
+                "player_id": 8476460,
+                "name": "Mark Scheifele",
+                "team": "WPG",
+                "goals_to_date": 22,
+                "assists": [
+                    {
+                        "name": "C. Perfetti",
+                        "assists_to_date": 8,
+                        "player_id": 8482149
+                    },
+                    {
+                        "name": "G. Vilardi",
+                        "assists_to_date": 22,
+                        "player_id": 8480014
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-01-09",
+        "home_team": "Mammoth",
+        "away_team": "Blues",
+        "home_score": 4,
+        "away_score": 2,
+        "winner": "Mammoth",
+        "condensed_game": "https://www.nhl.com/video/stl-at-uta-condensed-game-6387513121112",
+        "goals": [
+            {
+                "player_id": 8477951,
+                "name": "Nick Schmaltz",
+                "team": "UTA",
+                "goals_to_date": 15,
+                "assists": [
+                    {
+                        "name": "C. Keller",
+                        "assists_to_date": 26,
+                        "player_id": 8479343
+                    },
+                    {
+                        "name": "M. Sergachev",
+                        "assists_to_date": 25,
+                        "player_id": 8479410
+                    }
+                ]
+            },
+            {
+                "player_id": 8478474,
+                "name": "Lawson Crouse",
+                "team": "UTA",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "C. Keller",
+                        "assists_to_date": 27,
+                        "player_id": 8479343
+                    },
+                    {
+                        "name": "J. Marino",
+                        "assists_to_date": 17,
+                        "player_id": 8478507
+                    }
+                ]
+            },
+            {
+                "player_id": 8476897,
+                "name": "Oskar Sundqvist",
+                "team": "STL",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "N. Walker",
+                        "assists_to_date": 7,
+                        "player_id": 8477573
+                    }
+                ]
+            },
+            {
+                "player_id": 8480434,
+                "name": "Sean Durzi",
+                "team": "UTA",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "N. Schmaltz",
+                        "assists_to_date": 24,
+                        "player_id": 8477951
+                    },
+                    {
+                        "name": "L. Crouse",
+                        "assists_to_date": 11,
+                        "player_id": 8478474
+                    }
+                ]
+            },
+            {
+                "player_id": 8477402,
+                "name": "Pavel Buchnevich",
+                "team": "STL",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "J. Snuggerud",
+                        "assists_to_date": 8,
+                        "player_id": 8483516
+                    },
+                    {
+                        "name": "R. Thomas",
+                        "assists_to_date": 21,
+                        "player_id": 8480023
+                    }
+                ]
+            },
+            {
+                "player_id": 8477951,
+                "name": "Nick Schmaltz",
+                "team": "UTA",
+                "goals_to_date": 16,
+                "assists": [
+                    {
+                        "name": "J. Peterka",
+                        "assists_to_date": 15,
+                        "player_id": 8482175
+                    },
+                    {
+                        "name": "C. Keller",
+                        "assists_to_date": 28,
+                        "player_id": 8479343
+                    }
+                ]
+            }
+        ]
+    }
+]
