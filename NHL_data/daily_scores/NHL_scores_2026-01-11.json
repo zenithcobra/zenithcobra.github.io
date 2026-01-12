@@ -1,0 +1,523 @@
+[
+    {
+        "date": "2026-01-11",
+        "home_team": "Jets",
+        "away_team": "Devils",
+        "home_score": 4,
+        "away_score": 3,
+        "winner": "Jets",
+        "condensed_game": "https://www.nhl.com/video/njd-at-wpg-condensed-game-6387576672112",
+        "goals": [
+            {
+                "player_id": 8480113,
+                "name": "Alex Iafallo",
+                "team": "WPG",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "N. Niederreiter",
+                        "assists_to_date": 11,
+                        "player_id": 8475799
+                    },
+                    {
+                        "name": "D. Samberg",
+                        "assists_to_date": 7,
+                        "player_id": 8480049
+                    }
+                ]
+            },
+            {
+                "player_id": 8480002,
+                "name": "Nico Hischier",
+                "team": "NJD",
+                "goals_to_date": 13,
+                "assists": [
+                    {
+                        "name": "L. Hughes",
+                        "assists_to_date": 18,
+                        "player_id": 8482684
+                    },
+                    {
+                        "name": "J. Bratt",
+                        "assists_to_date": 25,
+                        "player_id": 8479407
+                    }
+                ]
+            },
+            {
+                "player_id": 8479996,
+                "name": "Cody Glass",
+                "team": "NJD",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "L. Hughes",
+                        "assists_to_date": 19,
+                        "player_id": 8482684
+                    },
+                    {
+                        "name": "J. Hughes",
+                        "assists_to_date": 15,
+                        "player_id": 8481559
+                    }
+                ]
+            },
+            {
+                "player_id": 8473604,
+                "name": "Jonathan Toews",
+                "team": "WPG",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "C. Perfetti",
+                        "assists_to_date": 9,
+                        "player_id": 8482149
+                    }
+                ]
+            },
+            {
+                "player_id": 8479996,
+                "name": "Cody Glass",
+                "team": "NJD",
+                "goals_to_date": 9,
+                "assists": [
+                    {
+                        "name": "J. Hughes",
+                        "assists_to_date": 16,
+                        "player_id": 8481559
+                    },
+                    {
+                        "name": "J. Kovacevic",
+                        "assists_to_date": 1,
+                        "player_id": 8480192
+                    }
+                ]
+            },
+            {
+                "player_id": 8480014,
+                "name": "Gabriel Vilardi",
+                "team": "WPG",
+                "goals_to_date": 18,
+                "assists": [
+                    {
+                        "name": "C. Perfetti",
+                        "assists_to_date": 10,
+                        "player_id": 8482149
+                    },
+                    {
+                        "name": "J. Morrissey",
+                        "assists_to_date": 28,
+                        "player_id": 8477504
+                    }
+                ]
+            },
+            {
+                "player_id": 8476871,
+                "name": "Tanner Pearson",
+                "team": "WPG",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "J. Morrissey",
+                        "assists_to_date": 29,
+                        "player_id": 8477504
+                    },
+                    {
+                        "name": "C. Koepke",
+                        "assists_to_date": 6,
+                        "player_id": 8481043
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-01-11",
+        "home_team": "Bruins",
+        "away_team": "Penguins",
+        "home_score": 1,
+        "away_score": 0,
+        "winner": "Bruins",
+        "condensed_game": "https://www.nhl.com/video/pit-at-bos-condensed-game-6387582921112",
+        "goals": [
+            {
+                "player_id": 8478042,
+                "name": "Viktor Arvidsson",
+                "team": "BOS",
+                "goals_to_date": 9,
+                "assists": [
+                    {
+                        "name": "H. Jokiharju",
+                        "assists_to_date": 9,
+                        "player_id": 8480035
+                    },
+                    {
+                        "name": "C. Mittelstadt",
+                        "assists_to_date": 10,
+                        "player_id": 8479999
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-01-11",
+        "home_team": "Predators",
+        "away_team": "Capitals",
+        "home_score": 3,
+        "away_score": 2,
+        "winner": "Predators",
+        "condensed_game": "https://www.nhl.com/video/wsh-at-nsh-condensed-game-6387586282112",
+        "goals": [
+            {
+                "player_id": 8471214,
+                "name": "Alex Ovechkin",
+                "team": "WSH",
+                "goals_to_date": 20,
+                "assists": [
+                    {
+                        "name": "J. Carlson",
+                        "assists_to_date": 26,
+                        "player_id": 8474590
+                    },
+                    {
+                        "name": "R. Leonard",
+                        "assists_to_date": 19,
+                        "player_id": 8484186
+                    }
+                ]
+            },
+            {
+                "player_id": 8474564,
+                "name": "Steven Stamkos",
+                "team": "NSH",
+                "goals_to_date": 19,
+                "assists": [
+                    {
+                        "name": "F. Forsberg",
+                        "assists_to_date": 16,
+                        "player_id": 8476887
+                    },
+                    {
+                        "name": "R. Josi",
+                        "assists_to_date": 14,
+                        "player_id": 8474600
+                    }
+                ]
+            },
+            {
+                "player_id": 8482062,
+                "name": "Cole Smith",
+                "team": "NSH",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "R. Josi",
+                        "assists_to_date": 15,
+                        "player_id": 8474600
+                    },
+                    {
+                        "name": "R. Schaefer",
+                        "assists_to_date": 2,
+                        "player_id": 8483513
+                    }
+                ]
+            },
+            {
+                "player_id": 8474600,
+                "name": "Roman Josi",
+                "team": "NSH",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "S. Stamkos",
+                        "assists_to_date": 11,
+                        "player_id": 8474564
+                    },
+                    {
+                        "name": "R. O'Reilly",
+                        "assists_to_date": 25,
+                        "player_id": 8475158
+                    }
+                ]
+            },
+            {
+                "player_id": 8483573,
+                "name": "Ethen Frank",
+                "team": "WSH",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "A. Ovechkin",
+                        "assists_to_date": 20,
+                        "player_id": 8471214
+                    },
+                    {
+                        "name": "D. Strome",
+                        "assists_to_date": 24,
+                        "player_id": 8478440
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-01-11",
+        "home_team": "Mammoth",
+        "away_team": "Blue Jackets",
+        "home_score": 2,
+        "away_score": 3,
+        "winner": "Blue Jackets",
+        "condensed_game": "https://www.nhl.com/video/cbj-at-uta-condensed-game-6387587358112",
+        "goals": [
+            {
+                "player_id": 8482451,
+                "name": "Mikael Pyyhtia",
+                "team": "CBJ",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "D. Heinen",
+                        "assists_to_date": 2,
+                        "player_id": 8478046
+                    },
+                    {
+                        "name": "I. Provorov",
+                        "assists_to_date": 13,
+                        "player_id": 8478500
+                    }
+                ]
+            },
+            {
+                "player_id": 8480855,
+                "name": "Jack McBain",
+                "team": "UTA",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "C. Keller",
+                        "assists_to_date": 29,
+                        "player_id": 8479343
+                    },
+                    {
+                        "name": "N. DeSimone",
+                        "assists_to_date": 2,
+                        "player_id": 8480084
+                    }
+                ]
+            },
+            {
+                "player_id": 8479410,
+                "name": "Mikhail Sergachev",
+                "team": "UTA",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "C. Keller",
+                        "assists_to_date": 30,
+                        "player_id": 8479343
+                    },
+                    {
+                        "name": "N. Schmaltz",
+                        "assists_to_date": 25,
+                        "player_id": 8477951
+                    }
+                ]
+            },
+            {
+                "player_id": 8475745,
+                "name": "Charlie Coyle",
+                "team": "CBJ",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "A. Fantilli",
+                        "assists_to_date": 16,
+                        "player_id": 8484166
+                    },
+                    {
+                        "name": "K. Marchenko",
+                        "assists_to_date": 20,
+                        "player_id": 8480893
+                    }
+                ]
+            },
+            {
+                "player_id": 8481716,
+                "name": "Dmitri Voronkov",
+                "team": "CBJ",
+                "goals_to_date": 16,
+                "assists": [
+                    {
+                        "name": "Z. Werenski",
+                        "assists_to_date": 31,
+                        "player_id": 8478460
+                    },
+                    {
+                        "name": "K. Marchenko",
+                        "assists_to_date": 21,
+                        "player_id": 8480893
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-01-11",
+        "home_team": "Sharks",
+        "away_team": "Golden Knights",
+        "home_score": 2,
+        "away_score": 7,
+        "winner": "Golden Knights",
+        "condensed_game": "https://www.nhl.com/video/vgk-at-sjs-condensed-game-6387587326112",
+        "goals": [
+            {
+                "player_id": 8478403,
+                "name": "Jack Eichel",
+                "team": "VGK",
+                "goals_to_date": 15,
+                "assists": [
+                    {
+                        "name": "I. Barbashev",
+                        "assists_to_date": 20,
+                        "player_id": 8477964
+                    },
+                    {
+                        "name": "J. Lauzon",
+                        "assists_to_date": 7,
+                        "player_id": 8478468
+                    }
+                ]
+            },
+            {
+                "player_id": 8484911,
+                "name": "Collin Graf",
+                "team": "SJS",
+                "goals_to_date": 12,
+                "assists": [
+                    {
+                        "name": "J. Skinner",
+                        "assists_to_date": 7,
+                        "player_id": 8475784
+                    }
+                ]
+            },
+            {
+                "player_id": 8481604,
+                "name": "Pavel Dorofeyev",
+                "team": "VGK",
+                "goals_to_date": 17,
+                "assists": [
+                    {
+                        "name": "T. Hertl",
+                        "assists_to_date": 19,
+                        "player_id": 8476881
+                    },
+                    {
+                        "name": "M. Stone",
+                        "assists_to_date": 24,
+                        "player_id": 8475913
+                    }
+                ]
+            },
+            {
+                "player_id": 8478403,
+                "name": "Jack Eichel",
+                "team": "VGK",
+                "goals_to_date": 16,
+                "assists": [
+                    {
+                        "name": "M. Stone",
+                        "assists_to_date": 25,
+                        "player_id": 8475913
+                    }
+                ]
+            },
+            {
+                "player_id": 8476881,
+                "name": "Tomas Hertl",
+                "team": "VGK",
+                "goals_to_date": 17,
+                "assists": [
+                    {
+                        "name": "M. Stone",
+                        "assists_to_date": 26,
+                        "player_id": 8475913
+                    },
+                    {
+                        "name": "P. Dorofeyev",
+                        "assists_to_date": 15,
+                        "player_id": 8481604
+                    }
+                ]
+            },
+            {
+                "player_id": 8480727,
+                "name": "Zach Whitecloud",
+                "team": "VGK",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "T. Hertl",
+                        "assists_to_date": 20,
+                        "player_id": 8476881
+                    },
+                    {
+                        "name": "N. Hanifin",
+                        "assists_to_date": 15,
+                        "player_id": 8478396
+                    }
+                ]
+            },
+            {
+                "player_id": 8477505,
+                "name": "Alexander Wennberg",
+                "team": "SJS",
+                "goals_to_date": 10,
+                "assists": [
+                    {
+                        "name": "T. Liljegren",
+                        "assists_to_date": 8,
+                        "player_id": 8480043
+                    },
+                    {
+                        "name": "T. Toffoli",
+                        "assists_to_date": 19,
+                        "player_id": 8475726
+                    }
+                ]
+            },
+            {
+                "player_id": 8477447,
+                "name": "Shea Theodore",
+                "team": "VGK",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "T. Hertl",
+                        "assists_to_date": 21,
+                        "player_id": 8476881
+                    }
+                ]
+            },
+            {
+                "player_id": 8476881,
+                "name": "Tomas Hertl",
+                "team": "VGK",
+                "goals_to_date": 18,
+                "assists": [
+                    {
+                        "name": "P. Dorofeyev",
+                        "assists_to_date": 16,
+                        "player_id": 8481604
+                    },
+                    {
+                        "name": "N. Hanifin",
+                        "assists_to_date": 16,
+                        "player_id": 8478396
+                    }
+                ]
+            }
+        ]
+    }
+]
