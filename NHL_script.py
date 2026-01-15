@@ -223,6 +223,14 @@ def get_team_records(daily_scores_dir, team_names_csv, teams_today):
     formatted_results = {
         team: f"{team} - {'-'.join(results)}" for team, results in team_results.items()
     }
+
+    new_listy = []
+    for index, item in enumerate(formatted_results):
+        new_listy.append(item)
+        # Check if the current index (plus 1 for 1-based counting) is a multiple of 2
+        # and if it's not the very end of the original list
+        if (index + 1) % 2 == 0 and index + 1 < len(formatted_results):
+            new_listy.append("-----------next match----------")
     return formatted_results
 
 
