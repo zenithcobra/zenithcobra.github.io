@@ -224,13 +224,17 @@ def get_team_records(daily_scores_dir, team_names_csv, teams_today):
         team: f"{team} - {'-'.join(results)}" for team, results in team_results.items()
     }
 
-    new_listy = []
-    for index, item in enumerate(formatted_results):
-        new_listy.append(item)
-        # Check if the current index (plus 1 for 1-based counting) is a multiple of 2
-        # and if it's not the very end of the original list
-        if (index + 1) % 2 == 0 and index + 1 < len(formatted_results):
-            new_listy.append("-----------next match----------")
+    # for record in team_records.values():
+    #     file.write(record + "\n")  # Write team records to file
+
+
+    # new_listy = []
+    # for index, item in enumerate(formatted_results):
+    #     new_listy.append(item)
+    #     # Check if the current index (plus 1 for 1-based counting) is a multiple of 2
+    #     # and if it's not the very end of the original list
+    #     if (index + 1) % 2 == 0 and index + 1 < len(formatted_results):
+    #         new_listy.append("-----------next match----------")
     return formatted_results
 
 
@@ -380,6 +384,9 @@ def make_nhl_report_today():
         return
 
     with open(output_file, "w", encoding="utf-8") as file:
+        # DOWNLOAD LINK
+        file.write('<a href="NHL_data/SOG_per_game.csv" download>Download SOG</a>')
+
         # Standings
         beans = get_nhl_standings_now()
         report = generate_text_report(beans["standings"])
