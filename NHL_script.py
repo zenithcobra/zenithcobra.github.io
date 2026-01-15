@@ -67,7 +67,7 @@ def get_match_results(daily_scores_dir, team_names_csv, teams_today):
     """
     # Load team name mappings from the CSV
     team_name_map = {}
-    with open(team_names_csv, 'r', encoding='utf-8') as csv_file:
+    with open(team_names_csv, "r", encoding="utf-8") as csv_file:
         reader = csv.reader(csv_file)
         next(reader)  # Skip the header
         for row in reader:
@@ -78,8 +78,15 @@ def get_match_results(daily_scores_dir, team_names_csv, teams_today):
     teams_today_short = [team_name_map.get(team, team) for team in teams_today]
 
     # Get all files in the directory
-    files = [f for f in os.listdir(daily_scores_dir) if f.startswith("NHL_scores_") and f.endswith(".json")]
-    files.sort(key=lambda x: datetime.strptime(x.split('_')[2].split('.')[0], "%Y-%m-%d"), reverse=True)
+    files = [
+        f
+        for f in os.listdir(daily_scores_dir)
+        if f.startswith("NHL_scores_") and f.endswith(".json")
+    ]
+    files.sort(
+        key=lambda x: datetime.strptime(x.split("_")[2].split(".")[0], "%Y-%m-%d"),
+        reverse=True,
+    )
 
     # Initialize results dictionary for matches
     match_results = []
@@ -87,7 +94,7 @@ def get_match_results(daily_scores_dir, team_names_csv, teams_today):
     # Process each file
     for file in files:
         file_path = os.path.join(daily_scores_dir, file)
-        with open(file_path, 'r', encoding='utf-8') as f:
+        with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
 
             # Process each game
@@ -97,11 +104,15 @@ def get_match_results(daily_scores_dir, team_names_csv, teams_today):
                 winner = game.get("winner")
 
                 # Check if today's teams are playing each other
-                for i in range(0, len(teams_today), 2):  # Iterate through pairs of teams
+                for i in range(
+                    0, len(teams_today), 2
+                ):  # Iterate through pairs of teams
                     team1 = teams_today_short[i]
                     team2 = teams_today_short[i + 1]
 
-                    if (home_team == team1 and away_team == team2) or (home_team == team2 and away_team == team1):
+                    if (home_team == team1 and away_team == team2) or (
+                        home_team == team2 and away_team == team1
+                    ):
                         # Determine result for each team
                         if home_team == team1:
                             result1 = "W" if winner == home_team else "L"
@@ -111,10 +122,23 @@ def get_match_results(daily_scores_dir, team_names_csv, teams_today):
                             result2 = "W" if winner == home_team else "L"
 
                         # Add results to match results
-                        match_results.append(f"{team1} vs {team2} - {result1}-{result2}")
-                        match_results.append(f"{team2} vs {team1} - {result2}-{result1}")
+                        match_results.append(
+                            f"{team1} vs {team2} - {result1}-{result2}"
+                        )
+                        match_results.append(
+                            f"{team2} vs {team1} - {result2}-{result1}"
+                        )
 
-    return match_results
+    new_listy = []
+    for index, item in enumerate(match_results):
+        new_listy.append(item)
+        # Check if the current index (plus 1 for 1-based counting) is a multiple of 2
+        # and if it's not the very end of the original list
+        if (index + 1) % 2 == 0 and index + 1 < len(match_results):
+            new_listy.append("-----------next match----------")
+
+    return new_listy
+
 
 def get_team_records(daily_scores_dir, team_names_csv, teams_today):
     """
@@ -132,7 +156,7 @@ def get_team_records(daily_scores_dir, team_names_csv, teams_today):
     """
     # Load team name mappings from the CSV
     team_name_map = {}
-    with open(team_names_csv, 'r', encoding='utf-8') as csv_file:
+    with open(team_names_csv, "r", encoding="utf-8") as csv_file:
         reader = csv.reader(csv_file)
         next(reader)  # Skip the header
         for row in reader:
@@ -143,8 +167,15 @@ def get_team_records(daily_scores_dir, team_names_csv, teams_today):
     teams_today_short = [team_name_map.get(team, team) for team in teams_today]
 
     # Get all files in the directory
-    files = [f for f in os.listdir(daily_scores_dir) if f.startswith("NHL_scores_") and f.endswith(".json")]
-    files.sort(key=lambda x: datetime.strptime(x.split('_')[2].split('.')[0], "%Y-%m-%d"), reverse=True)
+    files = [
+        f
+        for f in os.listdir(daily_scores_dir)
+        if f.startswith("NHL_scores_") and f.endswith(".json")
+    ]
+    files.sort(
+        key=lambda x: datetime.strptime(x.split("_")[2].split(".")[0], "%Y-%m-%d"),
+        reverse=True,
+    )
 
     # Initialize results dictionary
     team_results = {team: [] for team in teams_today}
@@ -152,7 +183,7 @@ def get_team_records(daily_scores_dir, team_names_csv, teams_today):
     # Process each file
     for file in files:
         file_path = os.path.join(daily_scores_dir, file)
-        with open(file_path, 'r', encoding='utf-8') as f:
+        with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
 
             # Process each game
@@ -165,24 +196,41 @@ def get_team_records(daily_scores_dir, team_names_csv, teams_today):
                 if home_team in teams_today_short or away_team in teams_today_short:
                     # Determine result for each team
                     if home_team in teams_today_short:
-                        abbrev = next((key for key, value in team_name_map.items() if value == home_team), home_team)
+                        abbrev = next(
+                            (
+                                key
+                                for key, value in team_name_map.items()
+                                if value == home_team
+                            ),
+                            home_team,
+                        )
                         result = "W" if winner == home_team else "L"
                         team_results[abbrev].append(result)
 
                     if away_team in teams_today_short:
-                        abbrev = next((key for key, value in team_name_map.items() if value == away_team), away_team)
+                        abbrev = next(
+                            (
+                                key
+                                for key, value in team_name_map.items()
+                                if value == away_team
+                            ),
+                            away_team,
+                        )
                         result = "W" if winner == away_team else "L"
                         team_results[abbrev].append(result)
 
     # Format results
-    formatted_results = {team: f"{team} - {'-'.join(results)}" for team, results in team_results.items()}
+    formatted_results = {
+        team: f"{team} - {'-'.join(results)}" for team, results in team_results.items()
+    }
     return formatted_results
+
 
 def get_goal_scorers(daily_scores_dir):
     """
     Reads all files in the 'daily_scores' directory, processes them from most recent to oldest,
     and returns a text list of players who scored goals in the format:
-    
+
     yyyy-mm-dd
     ========
     name - TEAM
@@ -195,21 +243,28 @@ def get_goal_scorers(daily_scores_dir):
         str: A formatted text list of goal scorers.
     """
     # Get all files in the directory
-    files = [f for f in os.listdir(daily_scores_dir) if f.startswith("NHL_scores_") and f.endswith(".json")]
-    
+    files = [
+        f
+        for f in os.listdir(daily_scores_dir)
+        if f.startswith("NHL_scores_") and f.endswith(".json")
+    ]
+
     # Sort files by date (most recent to oldest)
-    files.sort(key=lambda x: datetime.strptime(x.split('_')[2].split('.')[0], "%Y-%m-%d"), reverse=True)
+    files.sort(
+        key=lambda x: datetime.strptime(x.split("_")[2].split(".")[0], "%Y-%m-%d"),
+        reverse=True,
+    )
 
     report = ""
 
     # Process each file
     for file in files:
-        file_date = file.split('_')[2].split('.')[0]  # Extract date from filename
+        file_date = file.split("_")[2].split(".")[0]  # Extract date from filename
         report += f"{file_date}\n"
         report += "=" * len(file_date) + "\n"
 
         file_path = os.path.join(daily_scores_dir, file)
-        with open(file_path, 'r', encoding='utf-8') as f:
+        with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
             # Extract goal scorers
             for event in data:
@@ -219,13 +274,14 @@ def get_goal_scorers(daily_scores_dir):
                     g2d = str(goal.get("goals_to_date", {}))
                     if g2d is None:
                         g2d = "0"
-                    if g2d == 'None':
+                    if g2d == "None":
                         g2d = "0"
                     report += f"{team:<4} {scorer:<23} {g2d}\n"
 
         report += "\n"
 
     return report
+
 
 def get_nhl_standings_now():
     """
@@ -249,6 +305,7 @@ def get_nhl_standings_now():
     )
     resp.raise_for_status()
     return resp.json()
+
 
 def generate_text_report(standings):
     """
@@ -321,7 +378,7 @@ def make_nhl_report_today():
         file.write(report + "\n")  # Write standings report to file
 
         # Schedule
-        # open schedule 'NHL_data/schedule/NHL_schedule_yyy-mm-dd.txt for today schedule 
+        # open schedule 'NHL_data/schedule/NHL_schedule_yyy-mm-dd.txt for today schedule
         today_date = datetime.now().strftime("%Y-%m-%d")
         schedule_file = f"NHL_data/schedule/NHL_schedule_{today_date}.txt"
 
@@ -346,7 +403,9 @@ def make_nhl_report_today():
         daily_scores_dir = "NHL_data/daily_scores"
         team_names_csv = "NHL_data/static_data/nhl_team_names.csv"
         teams_today2 = teams_today()
-        match_results = get_match_results(daily_scores_dir, team_names_csv, teams_today2)
+        match_results = get_match_results(
+            daily_scores_dir, team_names_csv, teams_today2
+        )
         for result in match_results:
             file.write(result + "\n")  # Write match results to file
 
@@ -407,11 +466,6 @@ def add_checkboxes_to_html(file_path):
         file.write(str(soup))
 
     print(f"Checkboxes added to the table in {file_path}")
-
-
-# PROCESS STATS
-
-# READ CSV TO A LIST OF LINES WHERE EACH LINE IS A DICT
 
 
 def load_stats_from_csv_to_list_of_dict(csv_file_path):
@@ -1593,9 +1647,9 @@ def get_skater_history(int_shots_average):
         and "games_played" in player
         and float(player["games_played"]) > 0
         and (
-            avg_sog := 
-                round(float(player["I_F_shotsOnGoal"]) / float(player["games_played"]), 2)
-            
+            avg_sog := round(
+                float(player["I_F_shotsOnGoal"]) / float(player["games_played"]), 2
+            )
             > int_shots_average
         )
     ]
@@ -1970,7 +2024,9 @@ def add_analysis_to_skaters(skater_data):
         # skater.update({"sog_diff": "-".join(map(str, analyze_sog_diff))})
         # skater.update({"sog_var": round(analyze_sog_var, 2)})
         sog_list = skater.get("past_sog", "").split("-")
-        int_sog_list = [int(x) for x in sog_list if x.isdigit()]  # Ensure valid integers
+        int_sog_list = [
+            int(x) for x in sog_list if x.isdigit()
+        ]  # Ensure valid integers
         analyze_sog_list = analyze_sequence(int_sog_list)
         analyze_sog_diff = analyze_sog_list.get("differential", [0])
         analyze_sog_var = analyze_sog_list.get("variance_of_differential", 99)
@@ -1985,7 +2041,6 @@ def add_analysis_to_skaters(skater_data):
         # Update skater data
         skater.update({"sog_diff": "-".join(map(str, analyze_sog_diff))})
         skater.update({"sog_var": round(analyze_sog_var, 2)})
-
 
         # g_list = skater.get("past_goals")
         # int_g_list = [int(x) for x in g_list.split("-")]
@@ -2035,7 +2090,6 @@ def add_analysis_to_skaters(skater_data):
         # Convert differential to absolute values
         analyze_a1_diff = [abs(x) for x in analyze_a1_diff]
 
-
         skater.update({"assists1_diff": "-".join(map(str, analyze_a1_diff))})
         skater.update({"assists1_var": round(analyze_a1_var, 2)})
 
@@ -2083,6 +2137,7 @@ def filter_skater_data_for_csv(skater_data):
 
     return filtered_data
 
+
 def add_strings_by_index(string1, string2):
     """
     Adds the values at each index of two strings formatted as sequences of numbers separated by '-'.
@@ -2095,16 +2150,17 @@ def add_strings_by_index(string1, string2):
         str: A computed string where each index is the sum of the corresponding indices in the input strings.
     """
     # Convert strings to lists of integers
-    list1 = [int(x) for x in string1.split('-')]
-    list2 = [int(x) for x in string2.split('-')]
+    list1 = [int(x) for x in string1.split("-")]
+    list2 = [int(x) for x in string2.split("-")]
 
     # Add values at each index
     result_list = [x + y for x, y in zip(list1, list2)]
 
     # Convert the result list back to a string
-    result_string = '-'.join(map(str, result_list))
+    result_string = "-".join(map(str, result_list))
 
     return result_string
+
 
 def filter_skater_data_for_csv_again(skater_data):
     """
@@ -2127,31 +2183,35 @@ def filter_skater_data_for_csv_again(skater_data):
     #     x.update({'past_points': points})
     for x in skater_data:
         # Ensure GOALS_24 is a valid number
-        goals_24 = x.get('GOALS_24', '0')  # Default to '0' if the key is missing
+        goals_24 = x.get("GOALS_24", "0")  # Default to '0' if the key is missing
         if not goals_24.isdigit():  # Check if the value is not a valid number
-            goals_24 = '0'  # Default to '0' for invalid values
-    
+            goals_24 = "0"  # Default to '0' for invalid values
+
         g24 = float(int(goals_24))  # Convert to integer and then float
         avg24 = g24 / 80.0
-        x.update({'avg24': round(avg24, 2)})
-    
+        x.update({"avg24": round(avg24, 2)})
+
         # Process assists and points
-        assists1 = x.get('past_assists1', '0')
-        assists2 = x.get('past_assists2', '0')
-        past_goals1 = x.get('past_goals', '0')
-        
+        assists1 = x.get("past_assists1", "0")
+        assists2 = x.get("past_assists2", "0")
+        past_goals1 = x.get("past_goals", "0")
+
         points1 = add_strings_by_index(assists1, assists2)
         points = add_strings_by_index(points1, past_goals1)
-        a1 = int(assists1.split('-')[0]) if assists1 else 0  # Handle empty assists1
-        a2 = int(assists2.split('-')[0]) if assists2 else 0  # Handle empty assists2
-        g1 = int(past_goals1.split('-')[0]) if past_goals1 else 0  # Handle empty past_goals1
+        a1 = int(assists1.split("-")[0]) if assists1 else 0  # Handle empty assists1
+        a2 = int(assists2.split("-")[0]) if assists2 else 0  # Handle empty assists2
+        g1 = (
+            int(past_goals1.split("-")[0]) if past_goals1 else 0
+        )  # Handle empty past_goals1
         p = a1 + a2 + g1
 
-        x.update({'points': p})
-        x.update({'past_points': points})
+        x.update({"points": p})
+        x.update({"past_points": points})
 
         points_list = points.split("-")
-        int_points_list = [int(x) for x in points_list if x.isdigit()]  # Ensure valid integers
+        int_points_list = [
+            int(x) for x in points_list if x.isdigit()
+        ]  # Ensure valid integers
         analyze_points_list = analyze_sequence(int_points_list)
         analyze_points_diff = analyze_points_list.get("differential", [0])
         analyze_points_var = analyze_points_list.get("variance_of_differential", 99)
@@ -2163,52 +2223,55 @@ def filter_skater_data_for_csv_again(skater_data):
         # Convert differential to absolute values
         analyze_points_diff = [abs(x) for x in analyze_points_diff]
 
-
         x.update({"points_diff": "-".join(map(str, analyze_points_diff))})
         x.update({"points_var": round(analyze_points_var, 2)})
-        x.update({"avg_p": round(p/float(x.get('games_played',1)), 2)})
+        x.update({"avg_p": round(p / float(x.get("games_played", 1)), 2)})
 
+        goals_25 = x.get("I_F_goals", 1)
+        games_played25 = x.get("games_played", 1)
+        avg_goals_25 = (
+            float(goals_25) / float(games_played25) if float(games_played25) > 0 else 0
+        )
+        x.update({"avg25": round(avg_goals_25, 2)})
 
-        goals_25 = x.get("I_F_goals",1)
-        games_played25 = x.get("games_played",1)
-        avg_goals_25 = float(goals_25) / float(games_played25) if float(games_played25) > 0 else 0
-        x.update({'avg25': round(avg_goals_25, 2)})       
+        g22 = x.get("GOALS_22", "1")
+        avg22 = float(int(g22 if g22.strip() else "1")) / 80.0
+        x.update({"avg22": round(avg22, 2)})
+        g23 = x.get("GOALS_23", "1")
+        avg23 = float(int(g23 if g23.strip() else "1")) / 80.0
+        x.update({"avg23": round(avg23, 2)})
 
-        g22 = x.get('GOALS_22', '1')
-        avg22 = float(int(g22 if g22.strip() else '1')) / 80.0
-        x.update({'avg22': round(avg22, 2)})
-        g23 = x.get('GOALS_23', '1')
-        avg23 = float(int(g23 if g23.strip() else '1')) / 80.0
-        x.update({'avg23': round(avg23, 2)})
+        g24 = x.get("GOALS_24", "1")
+        all_avgs = (
+            float(int(g22 if g22.strip() else "1"))
+            + float(int(g23 if g23.strip() else "1"))
+            + float(int(g24 if g24.strip() else "1"))
+        ) / 240.0
+        x.update({"avg_all": round(all_avgs, 2)})
 
-        g24 = x.get('GOALS_24', '1')
-        all_avgs = (float(int(g22 if g22.strip() else '1')) + float(int(g23 if g23.strip() else '1')) + float(int(g24 if g24.strip() else '1'))) / 240.0
-        x.update({'avg_all': round(all_avgs, 2)})
-
-        g25 = x.get('I_F_goals', '1')
+        g25 = x.get("I_F_goals", "1")
 
         # Handle empty or invalid values
         g24 = float(g24) if g24.strip() else 0.0
-        g25 = float(g25) if g25.strip() else 0.0 
-        
+        g25 = float(g25) if g25.strip() else 0.0
+
         g_diff_24_25 = float(g24) - float(g25)
 
-        x.update({'24-25': round(g_diff_24_25, 2)})
+        x.update({"24-25": round(g_diff_24_25, 2)})
 
         ag24 = float(int(g24)) / 80.0
         diffof2425 = avg_goals_25 - ag24
-        x.update({'24a-25a': round(diffof2425, 2)})
+        x.update({"24a-25a": round(diffof2425, 2)})
 
-        sog25 = x.get("I_F_shotsOnGoal",1)
+        sog25 = x.get("I_F_shotsOnGoal", 1)
         avg_sog_25 = float(sog25) / float(games_played25)
-        x.update({'asog': round(avg_sog_25, 2)})
+        x.update({"asog": round(avg_sog_25, 2)})
 
         games_left = 82.0 - float(games_played25)
-        goal_spread = round(g_diff_24_25 / games_left,2)
-        x.update({'goal_spread': goal_spread})
-        pick = ' '
-        x.update({'pick': pick})
-
+        goal_spread = round(g_diff_24_25 / games_left, 2)
+        x.update({"goal_spread": goal_spread})
+        pick = " "
+        x.update({"pick": pick})
 
     filtered_data = []
     relevant_fields = [
@@ -2220,7 +2283,7 @@ def filter_skater_data_for_csv_again(skater_data):
         "past_sog",
         "sog_diff",
         "I_F_shotsOnGoal",
-        'asog',
+        "asog",
         "sog_var",
         "past_a_sog",
         "GOALS_22",
@@ -2228,10 +2291,10 @@ def filter_skater_data_for_csv_again(skater_data):
         "GOALS_24",
         "I_F_goals",
         "I_F_xGoals",
-        'avg24',
-        'avg25',
+        "avg24",
+        "avg25",
         "goal_spread",
-        '24-25',
+        "24-25",
         "past_goals",
         "goals_diff",
         "goals_var",
@@ -2242,7 +2305,7 @@ def filter_skater_data_for_csv_again(skater_data):
         "past_points",
         "points_diff",
         "points_var",
-        "pick"
+        "pick",
     ]
 
     for skater in skater_data:
@@ -2250,6 +2313,7 @@ def filter_skater_data_for_csv_again(skater_data):
         filtered_data.append(filtered_skater)
 
     return filtered_data
+
 
 def rename_keys(data, key_mapping):
     """
@@ -2261,6 +2325,22 @@ def rename_keys(data, key_mapping):
 
     Returns:
         list: A list of dictionaries with renamed keys.
+
+        # # Example usage
+        # data = [
+        #     {"GOALS_24": 5, "I_F_goals": 3, "past_assists1": 2},
+        #     {"GOALS_24": 4, "I_F_goals": 2, "past_assists1": 1},
+        # ]
+
+        # key_mapping = {
+        #     "GOALS_24": "Goals_Last_24",
+        #     "I_F_goals": "Goals_Current",
+        #     "past_assists1": "Assists_Last_24",
+        # }
+
+        # renamed_data = rename_keys(data, key_mapping)
+        # print(renamed_data)
+
     """
     renamed_data = []
     for item in data:
@@ -2268,21 +2348,6 @@ def rename_keys(data, key_mapping):
         renamed_data.append(renamed_item)
     return renamed_data
 
-
-# # Example usage
-# data = [
-#     {"GOALS_24": 5, "I_F_goals": 3, "past_assists1": 2},
-#     {"GOALS_24": 4, "I_F_goals": 2, "past_assists1": 1},
-# ]
-
-# key_mapping = {
-#     "GOALS_24": "Goals_Last_24",
-#     "I_F_goals": "Goals_Current",
-#     "past_assists1": "Assists_Last_24",
-# }
-
-# renamed_data = rename_keys(data, key_mapping)
-# print(renamed_data)
 
 def save_dicts_to_csv(data, file_path):
     """
@@ -2309,6 +2374,7 @@ def save_dicts_to_csv(data, file_path):
 
     print(f"CSV file has been saved to {file_path}")
 
+
 def rename_csv_headers():
     """
     Renames the headers of a CSV file and overwrites the file with the updated headers.
@@ -2320,7 +2386,7 @@ def rename_csv_headers():
     Returns:
         None
     """
-    file_path = 'NHL_data/SOG_per_game.csv'
+    file_path = "NHL_data/SOG_per_game.csv"
     new_headers = [
         "name",
         "team",
@@ -2330,7 +2396,7 @@ def rename_csv_headers():
         "past_sog",
         "sog_diff",
         "SOG",
-        'asog',
+        "asog",
         "sog_var",
         "past_a_sog",
         "G22",
@@ -2338,10 +2404,10 @@ def rename_csv_headers():
         "G24",
         "G25",
         "xG25",
-        'aG24',
-        'aG25',
+        "aG24",
+        "aG25",
         "GS",
-        '24-25',
+        "24-25",
         "past_goals",
         "goals_diff",
         "goals_var",
@@ -2352,10 +2418,10 @@ def rename_csv_headers():
         "past_points",
         "points_diff",
         "points_var",
-        "pick"
+        "pick",
     ]
     # Read the existing CSV file
-    with open(file_path, 'r', encoding='utf-8') as file:
+    with open(file_path, "r", encoding="utf-8") as file:
         reader = csv.reader(file)
         rows = list(reader)  # Read all rows
 
@@ -2363,55 +2429,54 @@ def rename_csv_headers():
     rows[0] = new_headers
 
     # Write the updated CSV file
-    with open(file_path, 'w', encoding='utf-8', newline='') as file:
+    with open(file_path, "w", encoding="utf-8", newline="") as file:
         writer = csv.writer(file)
         writer.writerows(rows)
 
     print(f"Headers updated successfully in {file_path}")
 
+
 def tweak_data_again(data):
     for x in data:
-        x.update({"past_e_shot": x.get('past_e_shot').split('-')[0]})
+        x.update({"past_e_shot": x.get("past_e_shot").split("-")[0]})
         # print(x.get('past_e_shot'))
-    
+
     new_data = []
     for x in data:
         new_dict = {}
-        new_dict['name'] = x.get('name')
-        new_dict['team'] = x.get('team')
-        new_dict['pos'] = x.get('position')
-        new_dict['gp'] = x.get('games_played')
-        new_dict['eG25'] = x.get('I_F_xGoals')
-        new_dict['aG24'] = x.get('avg24')
-        new_dict['aG25'] = x.get('avg25')
-        new_dict['24-25'] = x.get('24-25')
-        new_dict['a24-25'] = x.get('goal_spread')
-        new_dict['G22'] = x.get('GOALS_22')
-        new_dict['G23'] = x.get('GOALS_23')
-        new_dict['G24'] = x.get('GOALS_24')
-        new_dict['G25'] = x.get('I_F_goals')
-        new_dict['pastG'] = x.get('goals_diff')
-        new_dict['Gvar'] = x.get('goals_var')
-        new_dict['aP'] = x.get('avg_p')
-        new_dict['P']  = x.get('points')
-        new_dict['pastP'] = x.get('points_diff')
-        new_dict['Pvar'] = x.get('points_var')
-        new_dict['eSOG'] = x.get('past_e_shot')
-        new_dict['aSOG'] = x.get('asog')
-        new_dict['SOG'] = x.get('I_F_shotsOnGoal')
-        new_dict['pastSOG'] = x.get('sog_diff')
-        new_dict['SOGvar'] = x.get('sog_var')
-        new_dict['Gpick'] = x.get('pick')
-        new_dict['Ppick'] = x.get('pick')
-        new_dict['Spick'] = x.get('pick')
+        new_dict["name"] = x.get("name")
+        new_dict["team"] = x.get("team")
+        new_dict["pos"] = x.get("position")
+        new_dict["gp"] = x.get("games_played")
+        new_dict["eG25"] = x.get("I_F_xGoals")
+        new_dict["aG24"] = x.get("avg24")
+        new_dict["aG25"] = x.get("avg25")
+        new_dict["24-25"] = x.get("24-25")
+        new_dict["a24-25"] = x.get("goal_spread")
+        new_dict["G22"] = x.get("GOALS_22")
+        new_dict["G23"] = x.get("GOALS_23")
+        new_dict["G24"] = x.get("GOALS_24")
+        new_dict["G25"] = x.get("I_F_goals")
+        new_dict["pastG"] = x.get("goals_diff")
+        new_dict["Gvar"] = x.get("goals_var")
+        new_dict["aP"] = x.get("avg_p")
+        new_dict["P"] = x.get("points")
+        new_dict["pastP"] = x.get("points_diff")
+        new_dict["Pvar"] = x.get("points_var")
+        new_dict["eSOG"] = x.get("past_e_shot")
+        new_dict["aSOG"] = x.get("asog")
+        new_dict["SOG"] = x.get("I_F_shotsOnGoal")
+        new_dict["pastSOG"] = x.get("sog_diff")
+        new_dict["SOGvar"] = x.get("sog_var")
+        new_dict["Gpick"] = x.get("pick")
+        new_dict["Ppick"] = x.get("pick")
+        new_dict["Spick"] = x.get("pick")
         new_data.append(new_dict)
-    
 
     for x in new_data:
         for key, value in x.items():
             print(key, value)
     return new_data
-
 
 
 def combine_and_save_skaters(int_shots_average, file_path):
@@ -2420,6 +2485,6 @@ def combine_and_save_skaters(int_shots_average, file_path):
     processed_data = process_skaters_duplicates(filtered_data)
     super_processed_data = add_analysis_to_skaters(processed_data)
     processed_twice_data = filter_skater_data_for_csv_again(super_processed_data)
-    #rename_csv_headers()
+    # rename_csv_headers()
     tweaked_data = tweak_data_again(processed_twice_data)
     save_dicts_to_csv(tweaked_data, file_path)
