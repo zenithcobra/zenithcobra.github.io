@@ -386,7 +386,8 @@ def make_nhl_report_today():
     with open(output_file, "w", encoding="utf-8") as file:
         # DOWNLOAD LINK
         file.write('<a href="NHL_data/SOG_per_game.csv" download>Download SOG</a>')
-
+        file.write('\n')
+        file.write('\n')
         # Standings
         beans = get_nhl_standings_now()
         report = generate_text_report(beans["standings"])
