@@ -135,7 +135,7 @@ def get_match_results(daily_scores_dir, team_names_csv, teams_today):
         # Check if the current index (plus 1 for 1-based counting) is a multiple of 2
         # and if it's not the very end of the original list
         if (index + 1) % 2 == 0 and index + 1 < len(match_results):
-            new_listy.append("-----------")
+            new_listy.append("       ")
 
     return new_listy
 
@@ -421,7 +421,7 @@ def make_nhl_report_today():
             # Check if the current index (plus 1 for 1-based counting) is a multiple of 2
             # and if it's not the very end of the original list
             if (index + 1) % 2 == 0 and index + 1 < len(record_array):
-                new_listy.append("-----------\n")
+                new_listy.append("       \n")
         for record in new_listy:
             file.write(record)  # Write team records to file
         
