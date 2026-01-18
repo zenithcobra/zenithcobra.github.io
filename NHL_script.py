@@ -135,7 +135,7 @@ def get_match_results(daily_scores_dir, team_names_csv, teams_today):
         # Check if the current index (plus 1 for 1-based counting) is a multiple of 2
         # and if it's not the very end of the original list
         if (index + 1) % 2 == 0 and index + 1 < len(match_results):
-            new_listy.append("-----------next match----------")
+            new_listy.append("-----------")
 
     return new_listy
 
@@ -379,9 +379,9 @@ def make_nhl_report_today():
     os.makedirs(daily_reports_dir, exist_ok=True)
 
     # Check if the daily report file already exists
-    if os.path.exists(daily_report_file):
-        print(f"Daily report for {today_date} already exists. Skipping creation.")
-        return
+    # if os.path.exists(daily_report_file):
+    #     print(f"Daily report for {today_date} already exists. Skipping creation.")
+    #     return
 
     with open(output_file, "w", encoding="utf-8") as file:
         # DOWNLOAD LINK
@@ -410,8 +410,20 @@ def make_nhl_report_today():
         team_names_csv = "NHL_data/static_data/nhl_team_names2.csv"
         teams_today1 = teams_today()
         team_records = get_team_records(daily_scores_dir, team_names_csv, teams_today1)
+        record_array = []
         for record in team_records.values():
-            file.write(record + "\n")  # Write team records to file
+            # file.write(record + "\n")  # Write team records to file
+            record_array.append(record + "\n")
+        new_listy = []
+        for index, item in enumerate(record_array):
+            new_listy.append(item)
+            # Check if the current index (plus 1 for 1-based counting) is a multiple of 2
+            # and if it's not the very end of the original list
+            if (index + 1) % 2 == 0 and index + 1 < len(record_array):
+                new_listy.append("-----------\n")
+        for record in new_listy:
+            file.write(record)  # Write team records to file
+        
 
         # Team matchups
         file.write("\n")  # Add a blank line
