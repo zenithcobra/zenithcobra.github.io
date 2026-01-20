@@ -48,7 +48,6 @@ def convert_csv_to_json(csv_file_path, json_file_path):
 
     print(f"CSV data has been converted to JSON and saved to {json_file_path}")
 
-
 def read_json_to_list(json_file_path):
     """
     Reads a JSON file and returns its contents as a list of dictionaries.
@@ -105,9 +104,37 @@ def read_json_file(file_path):
         print(f"Error: {e}")
     return None
 
-def _archive_if_exists(
-    target_path: Path, archived_dir: Path, base_name: str, ext: str
-) -> None:
+def read_text_file(file_path):
+    """
+    Reads a text file and returns its content as a single string.
+
+    Args:
+        file_path (str): The path to the text file to be read.
+
+    Returns:
+        str: A string containing the content of the text file if the file is successfully read.
+        None: If the file does not exist or is empty.
+
+    Raises:
+        FileNotFoundError: If the specified file does not exist.
+        IOError: If there is an error reading the file.
+
+    Example:
+        >>> content = read_text_file("data.txt")
+        >>> if content:
+        ...     print(content)
+    """
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            content = file.read().strip()
+            return content if content else None
+    except FileNotFoundError:
+        print(f"Error: The file '{file_path}' was not found.")
+    except IOError as e:
+        print(f"Error: Failed to read the file. {e}")
+    return None
+
+def _archive_if_exists(target_path: Path, archived_dir: Path, base_name: str, ext: str) -> None:
     """Archive existing file to archived_dir with yesterday's date suffix."""
     if target_path.exists():
         yesterday_date = (datetime.now() - timedelta(days=1)).strftime(
@@ -121,13 +148,11 @@ def _archive_if_exists(
         else:
             print(f"Archived file already exists: {archived_path}")
 
-
 def _write_file(target_path: Path, writer, data) -> None:
     """Create parent dirs and write using provided writer(fh, data)."""
     target_path.parent.mkdir(parents=True, exist_ok=True)
     with target_path.open("w", encoding="utf-8") as fh:
         writer(fh, data)
-
 
 def save_json(data, supplied_filename: str) -> None:
     """Unified JSON saver using config directories and archiving."""
@@ -137,7 +162,6 @@ def save_json(data, supplied_filename: str) -> None:
     )
     _write_file(target_path, lambda fh, d: json.dump(d, fh, indent=4), data)
     print(f"Today's data saved to {target_path}")
-
 
 def save_text(text_or_lines, supplied_filename: str) -> None:
     """Save text or list of lines to data/<name>.txt with archiving."""
@@ -153,7 +177,6 @@ def save_text(text_or_lines, supplied_filename: str) -> None:
     _write_file(target_path, lambda fh, d: fh.write(d), content)
     print(f"Today's data saved to {target_path}")
 
-
 def save_html(html: str, supplied_filename: str) -> None:
     """Save HTML to docs/<name>.html with archiving into docs/archived_data."""
     target_path = Path(config.DOCS_DIR) / f"{supplied_filename}.html"
@@ -163,27 +186,22 @@ def save_html(html: str, supplied_filename: str) -> None:
     _write_file(target_path, lambda fh, d: fh.write(d), html)
     print(f"Today's data saved to {target_path}")
 
-
 def save_to_json(list_of_dicts, supplied_filename):
     """Backward-compatible wrappers (delete old duplicate implementations)"""
     return save_json(list_of_dicts, supplied_filename)
-
 
 def save_to_json_dictionary(dictionary, supplied_filename):
     """Backward-compatible wrappers (delete old duplicate implementations)"""
     # Fixed bug: was dumping undefined list_of_dicts
     return save_json(dictionary, supplied_filename)
 
-
 def save_list_to_text(list_of_lines, supplied_filename):
     """Backward-compatible wrappers (delete old duplicate implementations)"""
     return save_text(list_of_lines, supplied_filename)
 
-
 def save_to_text(content, supplied_filename):
     """Backward-compatible wrappers (delete old duplicate implementations)"""
     return save_text(content, supplied_filename)
-
 
 def save_to_html(content, supplied_filename):
     """Backward-compatible wrappers (delete old duplicate implementations)"""
