@@ -48,7 +48,227 @@ import requests
 import os
 import json
 from datetime import datetime
+import csv
+import requests
+from bs4 import BeautifulSoup
+import requests
 
+import re
+
+def extract_and_clean_all_games_section(input_file_path, output_file_path):
+    """
+    Extracts the 'ALL GAMES' section from the input file, removes HTML tags, and saves it to a new file.
+
+    Args:
+        input_file_path (str): Path to the input file.
+        output_file_path (str): Path to the output file where cleaned content will be saved.
+
+    Returns:
+        None
+    """
+    try:
+        with open(input_file_path, 'r', encoding='utf-8') as file:
+            content = file.read()
+
+        # Extract the 'ALL GAMES' section
+        match = re.search(r"<b>ALL GAMES:</b>.*?</pre>", content, re.DOTALL)
+        if not match:
+            raise ValueError("Could not find the 'ALL GAMES' section in the file.")
+
+        all_games_section = match.group(0)
+
+        # Remove HTML tags
+        cleaned_content = re.sub(r"<[^>]*>", "", all_games_section)
+
+        # Save the cleaned content to the output file
+        with open(output_file_path, 'w', encoding='utf-8') as output_file:
+            output_file.write(cleaned_content.strip())
+
+        print(f"Cleaned 'ALL GAMES' section saved to {output_file_path}")
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+def save_url_to_text_file(url, output_file_path):
+    """
+    Fetches the content of a URL and saves it to a text file.
+
+    Args:
+        url (str): The URL to fetch.
+        output_file_path (str): The path to save the content as a text file.
+
+    Returns:
+        None
+    """
+    try:
+        # Fetch the webpage
+        response = requests.get(url)
+        response.raise_for_status()  # Raise an error for bad status codes
+
+        # Save the content to a text file
+        with open(output_file_path, 'w', encoding='utf-8') as file:
+            file.write(response.text)
+
+        print(f"Content saved to {output_file_path}")
+    except Exception as e:
+        print(f"Error fetching or saving the URL content: {e}")
+def get_all_games_from_url(url):
+    """
+    Fetches the 'ALL GAMES' section from the given URL and parses the game data.
+
+    Args:
+        url (str): The URL of the page to scrape.
+
+    Returns:
+        list: A list of game data, where each game is represented as a string.
+    """
+    try:
+        # Fetch the webpage
+        response = requests.get(url)
+        response.raise_for_status()  # Raise an error for bad status codes
+
+        # Parse the HTML content
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        # Find the "ALL GAMES" section
+        all_games_section = soup.find(string="ALL GAMES:").find_next("pre")
+        if not all_games_section:
+            raise ValueError("Could not find the 'ALL GAMES' section on the page.")
+
+        # Extract the text and split into lines
+        all_games_text = all_games_section.get_text()
+        all_games_lines = all_games_text.splitlines()
+
+        # Remove empty lines and return the data
+        return [line.strip() for line in all_games_lines if line.strip()]
+
+    except Exception as e:
+        print(f"Error fetching or parsing the URL: {e}")
+        return []
+
+
+def generate_matchup_urls(matchups):
+    """
+    Generates URLs for each matchup in both directions.
+
+    Args:
+        matchups (list): A list of matchups, where each matchup is a list of two team abbreviations.
+
+    Returns:
+        list: A list of URLs for each matchup in both directions.
+    """
+    urls = []
+    for team1, team2 in matchups:
+        urls.append(f"https://mcubed.net/nhl/{team1}/{team2}.shtml")
+        urls.append(f"https://mcubed.net/nhl/{team2}/{team1}.shtml")
+    return urls
+
+def replace_team_names_with_other_short(matchups, team_names):
+    """
+    Replaces team names in matchups with their corresponding 'OTHER_SHORT' values.
+
+    Args:
+        matchups (list): A list of matchups, where each matchup is a list of two team names.
+        team_names (list): A list of team data, where each entry contains team details.
+
+    Returns:
+        list: A new list of matchups with team names replaced by 'OTHER_SHORT' values.
+    """
+    # Create a mapping of team names to their 'OTHER_SHORT' values
+    name_to_other_short = {team[1]: team[3] for team in team_names}
+
+    # Replace team names in matchups with their 'OTHER_SHORT' values
+    updated_matchups = []
+    for matchup in matchups:
+        team1, team2 = matchup
+        updated_matchups.append([
+            name_to_other_short.get(team1, team1),  # Replace team1 if found, else keep original
+            name_to_other_short.get(team2, team2)   # Replace team2 if found, else keep original
+        ])
+
+    return updated_matchups
+
+def parse_schedule_to_matchups(schedule_text):
+    """
+    Parses a schedule text into an array of team matchups.
+
+    Args:
+        schedule_text (str): The multiline schedule text.
+
+    Returns:
+        list: A list of matchups, where each matchup is a list of two teams.
+    """
+    lines = schedule_text.splitlines()
+    matchups = []
+
+    for line in lines:
+        # Split the line into parts and extract the teams
+        parts = line.split(" - ")
+        if len(parts) == 2:
+            teams = parts[1].split(" @ ")
+            if len(teams) == 2:
+                matchups.append([teams[0].strip(), teams[1].strip()])
+
+    return matchups
+
+def text_to_csv(array1, output_csv_path):
+    """
+    Converts a multiline text string into a CSV file.
+
+    Args:
+        text (str): The multiline text string to convert.
+        output_csv_path (str): The path to save the CSV file.
+
+    Returns:
+        None
+    """
+    lines = array1
+    if not lines:
+        raise ValueError("The input text is empty.")
+
+    # Extract headers and data
+    headers = lines[0].split()
+    data = []
+
+    for line in lines[1:]:
+        # Split the line into columns based on whitespace
+        # Use rsplit to handle team names with spaces
+        parts = line.rsplit(maxsplit=len(headers) - 1)
+        data.append(parts)
+
+    # Write to CSV
+    with open(output_csv_path, mode='w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(headers)  # Write headers
+        writer.writerows(data)    # Write data rows
+
+    print(f"CSV file saved to {output_csv_path}")
+
+def split_text_into_lines(multiline_text):
+    """
+    Splits a multiline text string into an array of lines.
+
+    Args:
+        multiline_text (str): The multiline text string to split.
+
+    Returns:
+        list: A list of lines from the input text.
+    """
+    return multiline_text.splitlines()
+
+def remove_indices_from_list(input_list, indices_to_remove):
+    """
+    Removes multiple entries from a list at specific index locations.
+
+    Args:
+        input_list (list): The original list.
+        indices_to_remove (list): A list of indices to remove.
+
+    Returns:
+        list: A new list with the specified indices removed.
+    """
+    indices_to_remove = set(indices_to_remove)  # Convert to set for faster lookup
+    return [item for idx, item in enumerate(input_list) if idx not in indices_to_remove]
 
 def get_match_results(daily_scores_dir, team_names_csv, teams_today):
     """
