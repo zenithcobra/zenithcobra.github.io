@@ -57,6 +57,162 @@ import os
 import os
 import os
 import csv
+import csv
+import os
+import os
+
+def parse_txt_to_array(input_file):
+    """
+    Parses a text file into an array of lines with values separated.
+
+    Args:
+        input_file (str): Path to the input text file.
+
+    Returns:
+        list: A list of parsed lines, where each line is an array of values.
+    """
+    parsed_lines = []
+
+    with open(input_file, 'r', encoding='utf-8') as file:
+        lines = file.readlines()
+
+    # Skip the first line (header) and parse the rest
+    for line in lines[1:]:
+        parts = line.strip().split()  # Split the line into parts
+        if len(parts) < 8:
+            continue  # Skip malformed lines
+
+        # Extract fields
+        home_away = parts[0]  # H or A
+        date = parts[1]  # Date
+        team1 = parts[2]  # Team 1 abbreviation
+        team1_score = parts[3]  # Team 1 score
+        dash = parts[4]  # Dash ('-')
+        team2 = parts[5]  # Team 2 abbreviation
+        team2_score = parts[6]  # Team 2 score
+        ot_so = parts[7] if '(' in parts[7] else ' '  # OT/SO if present, otherwise empty
+        win_loss = parts[-1]  # W, L, or T
+
+        # Append the parsed line as an array
+        parsed_lines.append([home_away, date, team1, team1_score, dash, team2, team2_score, ot_so, win_loss])
+
+    return parsed_lines
+
+
+def format_games_to_string(games):
+    """
+    Formats an array of game data into a single string in the desired format.
+
+    Args:
+        games (list): A list of arrays, where each array represents a game.
+
+    Returns:
+        str: A formatted string summarizing the games.
+    """
+    if not games:
+        return ""
+
+    # Extract the team abbreviations from the first game
+    team1 = games[0][2]  # Team 1 abbreviation
+    team2 = games[0][5]  # Team 2 abbreviation
+
+    # Start building the formatted string
+    formatted_string = f"{team1} vs {team2}"
+
+    # Add each game's details
+    game_details = []
+    for game in games:
+        location = game[0]  # H or A
+        team1_score = game[3]  # Team 1 score
+        team2_score = game[6]  # Team 2 score
+        ot_so = game[7].strip()  # OT/SO if present, otherwise empty
+        if ot_so:  # Append OT/SO if it exists
+            game_details.append(f"{location}:{team1_score}-{team2_score}{ot_so.lower()}")
+        else:
+            game_details.append(f"{location}:{team1_score}-{team2_score}")
+
+    # Combine the game details into the final string
+    formatted_string += " " + " | ".join(game_details)
+    return formatted_string
+
+
+def process_all_modified_files(game_data_dir):
+    """
+    Processes all files in the game_data directory that have `_modified.txt` in their name
+    and prints the formatted string for each file.
+
+    Args:
+        game_data_dir (str): Path to the directory containing the game files.
+
+    Returns:
+        None
+    """
+    for filename in os.listdir(game_data_dir):
+        if filename.endswith("_modified.txt"):
+            input_file = os.path.join(game_data_dir, filename)
+            parsed_data = parse_txt_to_array(input_file)
+            formatted_string = format_games_to_string(parsed_data)
+            print(f"File: {filename}")
+            print(formatted_string)
+            print()
+
+def replace_team_names_in_file(input_txt_file, input_csv_file, output_txt_file):
+    """
+    Reads a text file and replaces all team names that match the `NAME` column in the CSV file
+    with the corresponding abbreviation from the `ABBREV` column.
+
+    Args:
+        input_txt_file (str): Path to the input text file.
+        input_csv_file (str): Path to the input CSV file.
+        output_txt_file (str): Path to the output text file where the modified content will be saved.
+
+    Returns:
+        None
+    """
+    # Load the mapping of team names to abbreviations from the CSV file
+    name_to_abbrev = {}
+    with open(input_csv_file, 'r', encoding='utf-8') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            name_to_abbrev[row['NAME']] = row['ABBREV']
+
+    # Read the input text file and replace team names
+    with open(input_txt_file, 'r', encoding='utf-8') as infile:
+        lines = infile.readlines()
+
+    modified_lines = []
+    for line in lines:
+        modified_line = line
+        for name, abbrev in name_to_abbrev.items():
+            if name in modified_line:
+                modified_line = modified_line.replace(name, abbrev)
+        modified_lines.append(modified_line)
+
+    # Write the modified content to the output text file
+    with open(output_txt_file, 'w', encoding='utf-8') as outfile:
+        outfile.writelines(modified_lines)
+
+    print(f"Modified file saved to {output_txt_file}")
+
+
+def process_all_game_files(game_data_dir, input_csv_file):
+    """
+    Processes all files in the game_data directory that match the pattern `nhl_games_cleaned{0+}.txt`
+    and creates a modified file for each.
+
+    Args:
+        game_data_dir (str): Path to the directory containing the game files.
+        input_csv_file (str): Path to the input CSV file.
+
+    Returns:
+        None
+    """
+    for filename in os.listdir(game_data_dir):
+        if filename.startswith("nhl_games_cleaned") and filename.endswith(".txt"):
+            input_txt_file = os.path.join(game_data_dir, filename)
+            output_txt_file = os.path.join(game_data_dir, filename.replace(".txt", "_modified.txt"))
+            replace_team_names_in_file(input_txt_file, input_csv_file, output_txt_file)
+
 
 def parse_nhl_games_to_array(input_file):
     """
