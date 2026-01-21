@@ -52,8 +52,48 @@ import csv
 import requests
 from bs4 import BeautifulSoup
 import requests
-
 import re
+import os
+import os
+import os
+import csv
+
+def parse_nhl_games_to_array(input_file):
+    """
+    Reads an NHL games text file and parses each line into an array of values.
+
+    Args:
+        input_file (str): Path to the input text file.
+
+    Returns:
+        list: A list of parsed lines, where each line is an array of values.
+    """
+    parsed_lines = []
+
+    with open(input_file, 'r', encoding='utf-8') as file:
+        lines = file.readlines()
+
+    # Skip the first line and parse the rest
+    for line in lines[1:]:
+        parts = line.split()
+        if len(parts) < 8:
+            continue  # Skip malformed lines
+
+        # Extract fields
+        home_away = parts[0]  # H or A
+        date = parts[1]  # Date
+        team1 = " ".join(parts[2:parts.index('-') - 1])  # Team 1 name
+        team1_score = parts[parts.index('-') - 1]  # Team 1 score
+        team2 = " ".join(parts[parts.index('-') + 1:parts.index(parts[-2])])  # Team 2 name
+        team2_score = parts[parts.index('-') + 1]  # Team 2 score
+        ot_so = parts[-2] if '(' in parts[-2] else ""  # OT or SO if present
+        win_loss = parts[-1]  # W, L, or T
+
+        # Append the parsed line as an array
+        parsed_lines.append([home_away, date, team1, team1_score, team2, team2_score, ot_so, win_loss])
+
+    return parsed_lines
+
 
 def extract_and_clean_all_games_section(input_file_path, output_file_path):
     """
