@@ -138,8 +138,9 @@ def format_games_to_string(games):
 
 def process_all_modified_files(game_data_dir):
     """
-    Processes all files in the game_data directory that have `_modified.txt` in their name
-    and prints the formatted string for each file.
+    Processes all files in the game_data directory that have `_modified.txt` in their name,
+    generates a formatted string for each file, and writes the results to 'todays_history.txt'.
+    Each line in the output file will only include the first 7 '|'-separated segments.
 
     Args:
         game_data_dir (str): Path to the directory containing the game files.
@@ -147,14 +148,44 @@ def process_all_modified_files(game_data_dir):
     Returns:
         None
     """
-    for filename in os.listdir(game_data_dir):
-        if filename.endswith("_modified.txt"):
-            input_file = os.path.join(game_data_dir, filename)
-            parsed_data = parse_txt_to_array(input_file)
-            formatted_string = format_games_to_string(parsed_data)
-            print(f"File: {filename}")
-            print(formatted_string)
-            print()
+    output_file = os.path.join("todays_history.txt")
+
+    with open(output_file, "w", encoding="utf-8") as outfile:
+        for filename in os.listdir(game_data_dir):
+            if filename.endswith("_modified.txt"):
+                input_file = os.path.join(game_data_dir, filename)
+                parsed_data = parse_txt_to_array(input_file)
+                formatted_string = format_games_to_string(parsed_data)
+
+                # Limit the formatted string to the first 7 '|'-separated segments
+                parts = formatted_string.split(" | ")
+                limited_string = " | ".join(parts[:7])
+
+                # Write the limited string to the output file
+                outfile.write(limited_string + "\n")
+                print(limited_string)
+
+    print(f"History saved to {output_file}")
+
+# def process_all_modified_files(game_data_dir):
+#     """
+#     Processes all files in the game_data directory that have `_modified.txt` in their name
+#     and prints the formatted string for each file.
+
+#     Args:
+#         game_data_dir (str): Path to the directory containing the game files.
+
+#     Returns:
+#         None
+#     """
+#     for filename in os.listdir(game_data_dir):
+#         if filename.endswith("_modified.txt"):
+#             input_file = os.path.join(game_data_dir, filename)
+#             parsed_data = parse_txt_to_array(input_file)
+#             formatted_string = format_games_to_string(parsed_data)
+#             # print(f"File: {filename}")
+#             print(formatted_string)
+#             # print()
 
 def replace_team_names_in_file(input_txt_file, input_csv_file, output_txt_file):
     """
