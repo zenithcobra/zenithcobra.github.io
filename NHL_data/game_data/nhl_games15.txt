@@ -2,9 +2,9 @@
 <script>var ezTcfConsent=window.ezTcfConsent?window.ezTcfConsent:{loaded:false,store_info:false,develop_and_improve_services:false,measure_ad_performance:false,measure_content_performance:false,select_basic_ads:false,create_ad_profile:false,select_personalized_ads:false,create_content_profile:false,select_personalized_content:false,understand_audiences:false,use_limited_data_to_select_content:false,};function getEzConsentData(){return new Promise(function(resolve){document.addEventListener("ezConsentEvent",function(event){var ezTcfConsent=event.detail.ezTcfConsent;resolve(ezTcfConsent);});});}</script>
 <script>if(typeof _setEzCookies!=='function'){function _setEzCookies(ezConsentData){var cookies=window.ezCookieQueue;for(var i=0;i<cookies.length;i++){var cookie=cookies[i];if(ezConsentData&&ezConsentData.loaded&&ezConsentData[cookie.tcfCategory]){document.cookie=cookie.name+"="+cookie.value;}}}}
 window.ezCookieQueue=window.ezCookieQueue||[];if(typeof addEzCookies!=='function'){function addEzCookies(arr){window.ezCookieQueue=[...window.ezCookieQueue,...arr];}}
-addEzCookies([{name:"ezoab_413175",value:"mod112; Path=/; Domain=mcubed.net; Max-Age=7200",tcfCategory:"store_info",isEzoic:"true",},{name:"ezosuibasgeneris-1",value:"1f06691e-3b76-4304-5584-b317495da5a5; Path=/; Domain=mcubed.net; Expires=Sat, 23 Jan 2027 13:48:26 UTC; Secure; SameSite=None",tcfCategory:"understand_audiences",isEzoic:"true",}]);if(window.ezTcfConsent&&window.ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else if(typeof getEzConsentData==="function"){getEzConsentData().then(function(ezTcfConsent){if(ezTcfConsent&&ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else{console.error("cannot get ez consent data");_setEzCookies(window.ezTcfConsent);}});}else{console.error("getEzConsentData is not a function");_setEzCookies(window.ezTcfConsent);}</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window._ezaq = Object.assign({"edge_cache_status":11,"edge_response_time":92,"url":"https://mcubed.net/nhl/win/fla.shtml"}, typeof window._ezaq !== "undefined" ? window._ezaq : {});</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window._ezaq = Object.assign({"ab_test_id":"mod112"}, typeof window._ezaq !== "undefined" ? window._ezaq : {});window.__ez=window.__ez||{};window.__ez.tf={};</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window.ezDisableAds = true;</script><script src="https://cmp.gatekeeperconsent.com/min.js" async></script>
+addEzCookies([{name:"ezoab_413175",value:"mod5-c; Path=/; Domain=mcubed.net; Max-Age=7200",tcfCategory:"store_info",isEzoic:"true",},{name:"ezosuibasgeneris-1",value:"aae52171-3ca8-41a0-7bed-d3dc7a99cc47; Path=/; Domain=mcubed.net; Expires=Sat, 23 Jan 2027 14:35:44 UTC; Secure; SameSite=None",tcfCategory:"understand_audiences",isEzoic:"true",}]);if(window.ezTcfConsent&&window.ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else if(typeof getEzConsentData==="function"){getEzConsentData().then(function(ezTcfConsent){if(ezTcfConsent&&ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else{console.error("cannot get ez consent data");_setEzCookies(window.ezTcfConsent);}});}else{console.error("getEzConsentData is not a function");_setEzCookies(window.ezTcfConsent);}</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window._ezaq = Object.assign({"edge_cache_status":11,"edge_response_time":87,"url":"https://mcubed.net/nhl/van/nj.shtml"}, typeof window._ezaq !== "undefined" ? window._ezaq : {});</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window._ezaq = Object.assign({"ab_test_id":"mod5-c"}, typeof window._ezaq !== "undefined" ? window._ezaq : {});window.__ez=window.__ez||{};window.__ez.tf={};</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window.ezDisableAds = true;</script><script src="https://cmp.gatekeeperconsent.com/min.js" async></script>
 <script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;window.__ezScriptHost="//www.ezojs.com";__ez.queue=__ez.queue||function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:w(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),m())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&m()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&m())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e,i,n,s,a,d,c,u,f){var m=new l(e,i,n,s,a,d,c,f);!0===u?o[e]=m:r[e]=m,t[e]=m,h(m)}function h(e){!0!==u(e)&&0!=s&&e.process()}function u(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(w(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function m(){++e>200||(f("let's go"),p(o),p(r))}function p(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||u(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function w(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),m()}),5e3)}),!1),{addFile:c,addFileOnce:function(e,i,n,o,r,s,a,l,d){t[e]||c(e,i,n,o,r,s,a,l,d)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,h(n)},addFunc:function(e,n,s,l,d,c,u,f,m,p){!0===c&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,u,f,p);!0===m?o[e]=w:r[e]=w,t[e]=w,h(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,h(o)},items:t,processAll:m,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&u(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot=__ez.dot||{};__ez.queue.addFileOnce('/detroitchicago/boise.js', '/detroitchicago/boise.js?gcb=195-2&cb=5', true, [], true, false, true, false);__ez.queue.addFileOnce('/parsonsmaize/abilene.js', '/parsonsmaize/abilene.js?gcb=195-2&cb=e80eca0cdb', true, [], true, false, true, false);__ez.queue.addFileOnce('/parsonsmaize/mulvane.js', '/parsonsmaize/mulvane.js?gcb=195-2&cb=e75e48eec0', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFileOnce('/detroitchicago/birmingham.js', '/detroitchicago/birmingham.js?gcb=195-2&cb=539c47377c', true, ['/parsonsmaize/abilene.js'], true, false, true, false);</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({"ad_cache_level":0,"adpicker_placement_cnt":0,"ai_placeholder_cache_level":0,"ai_placeholder_placement_cnt":-1,"domain":"mcubed.net","domain_id":413175,"ezcache_level":0,"ezcache_skip_code":14,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"response_size":57184,"response_size_orig":51321,"response_time_orig":111,"template_id":5,"url":"https://mcubed.net/nhl/win/fla.shtml","word_count":0,"worst_bad_word_level":0}, typeof window._ezaq !== "undefined" ? window._ezaq : {});__ez.queue.markLoaded('ezaqBaseReady');</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({"ad_cache_level":0,"adpicker_placement_cnt":0,"ai_placeholder_cache_level":0,"ai_placeholder_placement_cnt":-1,"domain":"mcubed.net","domain_id":413175,"ezcache_level":0,"ezcache_skip_code":14,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"response_size":64539,"response_size_orig":58677,"response_time_orig":102,"template_id":5,"url":"https://mcubed.net/nhl/van/nj.shtml","word_count":0,"worst_bad_word_level":0}, typeof window._ezaq !== "undefined" ? window._ezaq : {});__ez.queue.markLoaded('ezaqBaseReady');</script>
 <script type='text/javascript' data-ezscrex='false' data-cfasync='false'>
 window.ezAnalyticsStatic = true;
 
@@ -36,7 +36,7 @@ function getCookiesWithPrefix() {
     return cookiesWithPrefix;
 }
 function productAnalytics() {
-	var d = {"pr":[6],"omd5":"16fa798c00164ed16647fde2e86f1cb8","nar":"risk score"};
+	var d = {"pr":[6],"omd5":"65f17e98e8af993bc9f7c6225c8039f2","nar":"risk score"};
 	d.u = _ezaq.url;
 	d.p = _ezaq.page_view_id;
 	d.v = _ezaq.visit_uuid;
@@ -75,8 +75,8 @@ function productAnalytics() {
 	xhr.send(dataText);
 }
 __ez.queue.addFunc("productAnalytics", "productAnalytics", null, true, ['ezaqBaseReady'], false, false, false, true);
-</script><base href="https://mcubed.net/nhl/win/fla.shtml"/>
-  <title>mcubed.net : NHL : Series records : Winnipeg Jets against Florida Panthers</title>
+</script><base href="https://mcubed.net/nhl/van/nj.shtml"/>
+  <title>mcubed.net : NHL : Series records : Vancouver Canucks against New Jersey Devils</title>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4TGVY1H9RZ"></script><script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -234,7 +234,7 @@ a:active {color: blue}
 	#sddm div a:hover
 	{	background: #000000;
 		color: #FFFFFF}
-</style><link rel='canonical' href='https://mcubed.net/nhl/win/fla.shtml' />
+</style><link rel='canonical' href='https://mcubed.net/nhl/van/nj.shtml' />
 <script type='text/javascript'>
 var ezoTemplate = 'orig_site';
 var ezouid = '1';
@@ -509,7 +509,7 @@ var ezoicSearchable = 1;
 <ul id="sddm">
 <table width="900" border="0" cellpadding="1" cellspacing="1">
   <tbody><tr>
-    <td height="20" bgcolor="#7D7D7D" align="left"><font size="2" face="arial" color="white">&nbsp;&nbsp;NHL : Jets &gt;</font></td>
+    <td height="20" bgcolor="#7D7D7D" align="left"><font size="2" face="arial" color="white">&nbsp;&nbsp;NHL : Canucks &gt;</font></td>
     <td height="20" bgcolor="#7D7D7D" onmouseover="this.style.backgroundColor=&#39;#000000&#39;;" onmouseout="this.style.backgroundColor=&#39;#7D7D7D&#39;;" align="center"><font size="2" face="arial" color="white"><a href="index.shtml" style="color:#FFFFFF;text-decoration:none">Win chart</a></font></td>
     <td height="20" bgcolor="#7D7D7D" onmouseover="this.style.backgroundColor=&#39;#000000&#39;;" onmouseout="this.style.backgroundColor=&#39;#7D7D7D&#39;;" align="center"><font size="2" face="arial" color="white"><a href="series1.shtml" style="color:#FFFFFF;text-decoration:none">Series records</a></font></td>
     <td height="20" bgcolor="#7D7D7D" onmouseover="this.style.backgroundColor=&#39;#000000&#39;;" onmouseout="this.style.backgroundColor=&#39;#7D7D7D&#39;;" align="center"><font size="2" face="arial" color="white"><a href="cup.shtml" style="color:#FFFFFF;text-decoration:none">Stanley Cups</a></font></td>
@@ -538,163 +538,218 @@ var ezoicSearchable = 1;
     </td>
     <td valign="top"><pre>
 
- <b>Series records : Winnipeg Jets(H)  against  Florida Panthers(A)</b>
+ <b>Series records : Vancouver Canucks(H)  against  New Jersey Devils(A)</b>
 
-Streaks:  <span class="hovl">All games:      All time :  Wins   :  6 games - 2006/10/07 .. 2007/03/06</span>
-          <span class="hovl">                            Losses :  4 games - 2007/12/27 .. 2008/03/16</span>
-          <span class="hovl">                Current  :  Losses :  1 game  - 2026/01/22              </span>
+Streaks:  <span class="hovl">All games:      All time :  Wins   :  6 games - 2009/12/02 .. 2014/11/25</span>
+          <span class="hovl">                            Losses : 12 games - 2015/02/20 .. 2022/02/28</span>
+          <span class="hovl">                Current  :  Wins   :  2 games - 2025/03/24 .. 2025/12/14</span>
 
-          <span class="hovl">Home games:     All time :  Wins   : 11 games - 2003/11/16 .. 2007/11/13</span>
-          <span class="hovl">                            Losses :  3 games - 2007/12/27 .. 2008/04/01</span>
-          <span class="hovl">                Current  :  Losses :  1 game  - 2026/01/22              </span>
+          <span class="hovl">Home games:     All time :  Wins   :  7 games - 1989/10/31 .. 1994/01/29</span>
+          <span class="hovl">                            Losses :  5 games - 2015/11/22 .. 2019/11/10</span>
+          <span class="hovl">                Current  :  Losses :  3 games - 2022/11/01 .. 2024/10/30</span>
 
-          <span class="hovl">Away games:     All time :  Wins   :  4 games - 2010/11/03 .. 2011/10/31</span>
-          <span class="hovl">                                      4 games - 2002/11/02 .. 2004/03/27</span>
-          <span class="hovl">                            Losses :  3 games - 2013/12/05 .. 2016/02/20</span>
-          <span class="hovl">                Current  :  Losses :  1 game  - 2024/11/16              </span>
+          <span class="hovl">Away games:     All time :  Wins   :  3 games - 2024/01/06 .. 2025/12/14</span>
+          <span class="hovl">                                      3 games - 2009/12/02 .. 2013/10/24</span>
+          <span class="hovl">                                      3 games - 2002/03/17 .. 2004/02/05</span>
+          <span class="hovl">                                      3 games - 1981/01/06 .. 1981/11/27</span>
+          <span class="hovl">                                      3 games - 1979/03/16 .. 1980/01/04</span>
+          <span class="hovl">                            Losses :  8 games - 2015/02/20 .. 2023/02/06</span>
+          <span class="hovl">                Current  :  Wins   :  3 games - 2024/01/06 .. 2025/12/14</span>
 
                  <b><u>A L L    G A M E S</u>                   <u>H O M E</u>                        <u>A W A Y</u>                    <u>P L A Y O F F S</u></b>
  <b>OVERALL:        W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG</b>
-<span class="hovl">                55-41-5  56.9  3.3  2.8 |       29-17-4  62.0  3.7  2.8 |       26-24-1  52.0  2.9  2.9 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl">               61-47-17  55.6  3.2  2.9 |      32-18-11  61.5  3.4  2.8 |       29-29-6  50.0  3.1  3.1 |         0-0-0   0.0  0.0  0.0</span>
 
                  <b><u>A L L    G A M E S</u>                   <u>H O M E</u>                        <u>A W A Y</u>                    <u>P L A Y O F F S</u></b>
  <b>DECADE:         W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG</b>
-<span class="hovl"> 2020&#39;s:          6-4-0  60.0  3.4  3.4 |         3-2-0  60.0  4.2  3.2 |         3-2-0  60.0  2.6  3.6 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2010&#39;s:        20-15-0  57.1  3.3  2.8 |        11-6-0  64.7  4.0  2.5 |         9-9-0  50.0  2.7  3.1 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2000&#39;s:        29-22-5  56.3  3.2  2.7 |        15-9-4  60.7  3.4  2.8 |       14-13-1  51.8  3.0  2.6 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2020&#39;s:          4-7-0  36.4  2.9  3.9 |         1-4-0  20.0  2.8  4.4 |         3-3-0  50.0  3.0  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2010&#39;s:          6-9-0  40.0  2.1  2.3 |         3-4-0  42.9  1.9  1.7 |         3-5-0  37.5  2.4  2.9 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2000&#39;s:          6-3-0  66.7  2.9  2.2 |         3-1-0  75.0  4.0  2.3 |         3-2-0  60.0  2.0  2.2 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1990&#39;s:         12-9-0  57.1  3.0  3.0 |         8-3-0  72.7  3.3  2.1 |         4-6-0  40.0  2.7  4.1 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1980&#39;s:        18-10-9  60.8  3.8  3.2 |         9-3-6  66.7  4.2  3.5 |         9-7-3  55.3  3.4  2.9 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1970&#39;s:         15-9-8  59.4  3.5  2.7 |         8-3-5  65.6  3.4  2.5 |         7-6-3  53.1  3.6  2.9 |         0-0-0   0.0  0.0  0.0</span>
 
                  <b><u>A L L    G A M E S</u>                   <u>H O M E</u>                        <u>A W A Y</u>                    <u>P L A Y O F F S</u></b>
  <b>YEAR:           W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG</b>
-<span class="hovl"> 2026:            0-1-0   0.0  1.0  2.0 |         0-1-0   0.0  1.0  2.0 |         0-0-0   0.0  0.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2025:            1-1-0  50.0  3.0  4.0 |         1-0-0 100.0  6.0  3.0 |         0-1-0   0.0  0.0  5.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2024:            2-0-0 100.0  4.5  2.0 |         1-0-0 100.0  6.0  4.0 |         1-0-0 100.0  3.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2023:            2-0-0 100.0  5.0  3.0 |         1-0-0 100.0  5.0  2.0 |         1-0-0 100.0  5.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2022:            0-2-0   0.0  2.0  5.5 |         0-1-0   0.0  3.0  5.0 |         0-1-0   0.0  1.0  6.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2026:            1-0-0 100.0  2.0  1.0 |         0-0-0   0.0  0.0  0.0 |         1-0-0 100.0  2.0  1.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2025:            1-1-0  50.0  2.0  4.5 |         0-1-0   0.0  0.0  6.0 |         1-0-0 100.0  4.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2024:            1-1-0  50.0  5.5  5.0 |         0-1-0   0.0  5.0  6.0 |         1-0-0 100.0  6.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2023:            0-2-0   0.0  3.0  5.0 |         0-1-0   0.0  2.0  5.0 |         0-1-0   0.0  4.0  5.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2022:            1-1-0  50.0  4.0  5.0 |         1-0-0 100.0  6.0  3.0 |         0-1-0   0.0  2.0  7.0 |         0-0-0   0.0  0.0  0.0</span>
  .
-<span class="hovl"> 2020:            1-0-0 100.0  4.0  3.0 |         0-0-0   0.0  0.0  0.0 |         1-0-0 100.0  4.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2019:            1-1-0  50.0  3.0  3.0 |         0-1-0   0.0  2.0  4.0 |         1-0-0 100.0  4.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2018:            1-1-0  50.0  5.5  4.0 |         1-0-0 100.0  7.0  2.0 |         0-1-0   0.0  4.0  6.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2017:            2-0-0 100.0  4.0  2.0 |         1-0-0 100.0  4.0  3.0 |         1-0-0 100.0  4.0  1.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2016:            0-2-0   0.0  1.5  3.0 |         0-1-0   0.0  2.0  3.0 |         0-1-0   0.0  1.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2015:            1-1-0  50.0  5.0  3.0 |         1-0-0 100.0  8.0  2.0 |         0-1-0   0.0  2.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2014:            1-1-0  50.0  3.5  3.5 |         1-0-0 100.0  5.0  2.0 |         0-1-0   0.0  2.0  5.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2013:            3-2-0  60.0  3.4  3.2 |         2-0-0 100.0  5.0  2.0 |         1-2-0  33.3  2.3  4.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2012:            3-3-0  50.0  3.7  3.0 |         1-2-0  33.3  4.0  3.0 |         2-1-0  66.7  3.3  3.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2011:            4-2-0  66.7  2.7  2.3 |         1-2-0  33.3  2.0  2.3 |         3-0-0 100.0  3.3  2.3 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2010:            4-2-0  66.7  2.8  2.2 |         3-0-0 100.0  4.0  2.3 |         1-2-0  33.3  1.7  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2009:            2-4-0  33.3  3.2  3.7 |         1-2-0  33.3  3.3  3.3 |         1-2-0  33.3  3.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2008:            3-5-0  37.5  2.5  2.8 |         1-3-0  25.0  2.5  3.3 |         2-2-0  50.0  2.5  2.3 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2007:            6-2-0  75.0  3.5  1.8 |         4-0-0 100.0  3.8  1.0 |         2-2-0  50.0  3.3  2.5 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2006:            5-3-0  62.5  3.4  2.9 |         4-0-0 100.0  4.8  3.0 |         1-3-0  25.0  2.0  2.8 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2020:            0-2-0   0.0  0.5  1.5 |         0-1-0   0.0  1.0  2.0 |         0-1-0   0.0  0.0  1.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2019:            0-2-0   0.0  1.0  3.5 |         0-1-0   0.0  2.0  3.0 |         0-1-0   0.0  0.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2018:            0-2-0   0.0  1.0  2.5 |         0-1-0   0.0  0.0  2.0 |         0-1-0   0.0  2.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2017:            0-2-0   0.0  1.5  2.5 |         0-1-0   0.0  1.0  2.0 |         0-1-0   0.0  2.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2016:            0-2-0   0.0  2.5  3.5 |         0-1-0   0.0  2.0  3.0 |         0-1-0   0.0  3.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2015:            1-1-0  50.0  2.0  2.0 |         1-0-0 100.0  2.0  0.0 |         0-1-0   0.0  2.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2014:            2-0-0 100.0  3.0  2.0 |         1-0-0 100.0  3.0  2.0 |         1-0-0 100.0  3.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
  .
-<span class="hovl"> 2004:            5-1-0  83.3  3.8  2.2 |         2-1-0  66.7  3.3  2.3 |         3-0-0 100.0  4.3  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2003:            2-3-0  40.0  2.8  2.8 |         1-2-0  33.3  3.0  3.3 |         1-1-0  50.0  2.5  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2002:            2-1-2  60.0  4.2  2.8 |         0-0-2  50.0  3.5  3.5 |         2-1-0  66.7  4.7  2.3 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2001:            3-1-1  70.0  3.4  3.2 |         1-1-1  50.0  3.0  4.0 |         2-0-0 100.0  4.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2000:            1-2-2  40.0  1.8  2.8 |         1-0-1  75.0  2.5  2.0 |         0-2-1  16.7  1.3  3.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2012:            1-0-0 100.0  2.0  1.0 |         0-0-0   0.0  0.0  0.0 |         1-0-0 100.0  2.0  1.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2011:            1-0-0 100.0  3.0  0.0 |         1-0-0 100.0  3.0  0.0 |         0-0-0   0.0  0.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2010:            1-0-0 100.0  5.0  2.0 |         0-0-0   0.0  0.0  0.0 |         1-0-0 100.0  5.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2009:            0-1-0   0.0  3.0  5.0 |         0-1-0   0.0  3.0  5.0 |         0-0-0   0.0  0.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2008:            1-0-0 100.0  5.0  0.0 |         1-0-0 100.0  5.0  0.0 |         0-0-0   0.0  0.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
+ .
+<span class="hovl"> 2006:            0-1-0   0.0  0.0  3.0 |         0-0-0   0.0  0.0  0.0 |         0-1-0   0.0  0.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+ .
+<span class="hovl"> 2004:            1-0-0 100.0  4.0  0.0 |         0-0-0   0.0  0.0  0.0 |         1-0-0 100.0  4.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2003:            1-0-0 100.0  3.0  2.0 |         0-0-0   0.0  0.0  0.0 |         1-0-0 100.0  3.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2002:            2-0-0 100.0  3.5  2.0 |         1-0-0 100.0  4.0  2.0 |         1-0-0 100.0  3.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2001:            0-1-0   0.0  0.0  4.0 |         0-0-0   0.0  0.0  0.0 |         0-1-0   0.0  0.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2000:            1-0-0 100.0  4.0  2.0 |         1-0-0 100.0  4.0  2.0 |         0-0-0   0.0  0.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1999:            1-1-0  50.0  2.5  2.5 |         0-1-0   0.0  1.0  2.0 |         1-0-0 100.0  4.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1998:            1-1-0  50.0  2.0  4.5 |         1-0-0 100.0  3.0  1.0 |         0-1-0   0.0  1.0  8.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1997:            1-1-0  50.0  2.0  1.0 |         0-1-0   0.0  1.0  2.0 |         1-0-0 100.0  3.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1996:            1-1-0  50.0  3.0  2.5 |         0-1-0   0.0  2.0  3.0 |         1-0-0 100.0  4.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
+ .
+<span class="hovl"> 1994:            1-1-0  50.0  4.5  5.0 |         1-0-0 100.0  6.0  3.0 |         0-1-0   0.0  3.0  7.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1993:            1-1-0  50.0  4.5  2.5 |         1-0-0 100.0  7.0  2.0 |         0-1-0   0.0  2.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1992:            2-1-0  66.7  3.0  3.0 |         2-0-0 100.0  3.0  2.0 |         0-1-0   0.0  3.0  5.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1991:            1-2-0  33.3  2.0  4.0 |         1-0-0 100.0  2.0  1.0 |         0-2-0   0.0  2.0  5.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1990:            3-0-0 100.0  3.7  2.3 |         2-0-0 100.0  4.0  2.5 |         1-0-0 100.0  3.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1989:            1-1-1  50.0  2.3  1.7 |         0-0-1  50.0  2.0  2.0 |         1-1-0  50.0  2.5  1.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1988:            3-0-0 100.0  5.0  2.0 |         2-0-0 100.0  4.5  1.5 |         1-0-0 100.0  6.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1987:            0-2-1  16.7  2.3  3.0 |         0-1-0   0.0  3.0  4.0 |         0-1-1  25.0  2.0  2.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1986:            1-2-0  33.3  3.7  4.3 |         1-1-0  50.0  5.0  4.5 |         0-1-0   0.0  1.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1985:            3-0-0 100.0  5.3  3.7 |         1-0-0 100.0  7.0  5.0 |         2-0-0 100.0  4.5  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1984:            2-1-0  66.7  3.3  3.3 |         2-0-0 100.0  4.0  3.0 |         0-1-0   0.0  2.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1983:            0-1-2  33.3  3.0  3.7 |         0-0-1  50.0  4.0  4.0 |         0-1-1  25.0  2.5  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1982:            4-2-2  62.5  3.9  3.4 |         2-0-2  75.0  4.5  3.8 |         2-2-0  50.0  3.3  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1981:            2-0-2  75.0  4.8  3.0 |         0-0-2  50.0  3.5  3.5 |         2-0-0 100.0  6.0  2.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1980:            2-1-1  62.5  4.0  3.5 |         1-1-0  50.0  4.0  4.0 |         1-0-1  75.0  4.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1979:            6-1-1  81.3  3.6  1.4 |         3-1-0  75.0  3.5  1.5 |         3-0-1  87.5  3.8  1.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1978:            0-3-3  25.0  2.3  4.0 |         0-1-2  33.3  2.3  3.7 |         0-2-1  16.7  2.3  4.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1977:            2-2-2  50.0  3.5  3.0 |         0-1-2  33.3  3.0  4.0 |         2-1-0  66.7  4.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1976:            4-2-0  66.7  4.2  3.0 |         3-0-0 100.0  4.3  1.7 |         1-2-0  33.3  4.0  4.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1975:            3-1-2  66.7  3.8  2.7 |         2-0-1  83.3  4.0  2.0 |         1-1-1  50.0  3.7  3.3 |         0-0-0   0.0  0.0  0.0</span>
 
 <b>ALL GAMES:</b>   <a href="../history.shtml">playoff round notes</a>
-<span class="hovl"> H 2026/01/22 Winnipeg Jets       1  -  Florida Panthers   2 (SO) <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2024/11/19 Winnipeg Jets       6  -  Florida Panthers   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2024/11/16 Winnipeg Jets       0  -  Florida Panthers   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2023/11/24 Winnipeg Jets       3  -  Florida Panthers   0      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2023/10/14 Winnipeg Jets       6  -  Florida Panthers   4      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2023/03/11 Winnipeg Jets       5  -  Florida Panthers   4 (OT) <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2022/12/06 Winnipeg Jets       5  -  Florida Panthers   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2022/04/15 Winnipeg Jets       1  -  Florida Panthers   6      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2022/01/25 Winnipeg Jets       3  -  Florida Panthers   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2019/11/14 Winnipeg Jets       4  -  Florida Panthers   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2018/11/02 Winnipeg Jets       2  -  Florida Panthers   4      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2018/11/01 Winnipeg Jets       4  -  Florida Panthers   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2018/02/18 Winnipeg Jets       7  -  Florida Panthers   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2017/12/07 Winnipeg Jets       4  -  Florida Panthers   6      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2017/01/04 Winnipeg Jets       4  -  Florida Panthers   1      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2016/12/15 Winnipeg Jets       4  -  Florida Panthers   3 (SO) <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2016/03/01 Winnipeg Jets       2  -  Florida Panthers   3      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2016/02/20 Winnipeg Jets       1  -  Florida Panthers   3      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2015/03/12 Winnipeg Jets       2  -  Florida Panthers   4      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2015/01/13 Winnipeg Jets       8  -  Florida Panthers   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2013/12/20 Winnipeg Jets       5  -  Florida Panthers   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2013/12/05 Winnipeg Jets       2  -  Florida Panthers   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2013/04/11 Winnipeg Jets       7  -  Florida Panthers   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2013/03/08 Winnipeg Jets       3  -  Florida Panthers   2 (OT) <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2013/03/05 Winnipeg Jets       1  -  Florida Panthers   4      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2013/02/05 Winnipeg Jets       3  -  Florida Panthers   2 (OT) <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2013/01/31 Winnipeg Jets       3  -  Florida Panthers   6      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2012/04/03 Winnipeg Jets       5  -  Florida Panthers   4 (OT) <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2012/03/01 Winnipeg Jets       7  -  Florida Panthers   0      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2012/02/03 Winnipeg Jets       1  -  Florida Panthers   2      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2012/01/21 Winnipeg Jets       3  -  Florida Panthers   4 (SO) <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2011/11/10 Winnipeg Jets       2  -  Florida Panthers   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2011/10/31 Winnipeg Jets       4  -  Florida Panthers   3 (SO) <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2011/03/05 Atlanta Thrashers   4  -  Florida Panthers   3 (OT) <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2011/02/25 Atlanta Thrashers   1  -  Florida Panthers   2 (SO) <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2011/01/17 Atlanta Thrashers   3  -  Florida Panthers   2 (SO) <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2011/01/05 Atlanta Thrashers   3  -  Florida Panthers   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2010/11/17 Atlanta Thrashers   1  -  Florida Panthers   2      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2010/11/03 Atlanta Thrashers   4  -  Florida Panthers   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2010/03/02 Atlanta Thrashers   4  -  Florida Panthers   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2010/02/06 Atlanta Thrashers   4  -  Florida Panthers   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2010/01/18 Atlanta Thrashers   0  -  Florida Panthers   1      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2009/12/16 Atlanta Thrashers   3  -  Florida Panthers   4      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2009/12/05 Atlanta Thrashers   2  -  Florida Panthers   1 (SO) <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2009/11/30 Atlanta Thrashers   4  -  Florida Panthers   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2009/04/09 Atlanta Thrashers   2  -  Florida Panthers   3      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2009/04/03 Atlanta Thrashers   3  -  Florida Panthers   1      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2009/03/03 Atlanta Thrashers   3  -  Florida Panthers   4      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2009/01/10 Atlanta Thrashers   4  -  Florida Panthers   8      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2008/11/02 Atlanta Thrashers   5  -  Florida Panthers   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2008/10/11 Atlanta Thrashers   2  -  Florida Panthers   3 (OT) <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2008/04/01 Atlanta Thrashers   2  -  Florida Panthers   3      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2008/03/27 Atlanta Thrashers   3  -  Florida Panthers   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2008/03/16 Atlanta Thrashers   1  -  Florida Panthers   3      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2008/03/08 Atlanta Thrashers   2  -  Florida Panthers   3 (OT) <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2008/01/10 Atlanta Thrashers   2  -  Florida Panthers   3 (SO) <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2007/12/27 Atlanta Thrashers   3  -  Florida Panthers   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2007/11/13 Atlanta Thrashers   3  -  Florida Panthers   2 (OT) <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2007/11/09 Atlanta Thrashers   4  -  Florida Panthers   1      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2007/03/28 Atlanta Thrashers   2  -  Florida Panthers   3 (SO) <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2007/03/10 Atlanta Thrashers   2  -  Florida Panthers   3      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2007/03/06 Atlanta Thrashers   4  -  Florida Panthers   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2006/12/02 Atlanta Thrashers   3  -  Florida Panthers   1      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2006/11/25 Atlanta Thrashers   1  -  Florida Panthers   0      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2006/10/23 Atlanta Thrashers   6  -  Florida Panthers   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2006/10/21 Atlanta Thrashers   4  -  Florida Panthers   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2006/10/07 Atlanta Thrashers   6  -  Florida Panthers   0      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2006/04/18 Atlanta Thrashers   1  -  Florida Panthers   2 (OT) <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2006/04/05 Atlanta Thrashers   5  -  Florida Panthers   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2006/03/06 Atlanta Thrashers   4  -  Florida Panthers   3 (SO) <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2006/02/04 Atlanta Thrashers   6  -  Florida Panthers   4      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2006/02/03 Atlanta Thrashers   2  -  Florida Panthers   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2005/12/17 Atlanta Thrashers   2  -  Florida Panthers   1      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2005/11/26 Atlanta Thrashers   7  -  Florida Panthers   4      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2005/10/05 Atlanta Thrashers   0  -  Florida Panthers   2      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2004/03/27 Atlanta Thrashers   3  -  Florida Panthers   0      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2004/03/19 Atlanta Thrashers   3  -  Florida Panthers   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2003/12/06 Atlanta Thrashers   4  -  Florida Panthers   3 (OT) <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2003/11/21 Atlanta Thrashers   6  -  Florida Panthers   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2003/11/16 Atlanta Thrashers   5  -  Florida Panthers   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2003/10/25 Atlanta Thrashers   2  -  Florida Panthers   3      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2003/03/07 Atlanta Thrashers   1  -  Florida Panthers   2      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2002/11/19 Atlanta Thrashers   4  -  Florida Panthers   3 (OT) <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2002/11/02 Atlanta Thrashers   3  -  Florida Panthers   1      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2002/10/21 Atlanta Thrashers   2  -  Florida Panthers   3      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2002/10/12 Atlanta Thrashers   4  -  Florida Panthers   5 (OT) <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2002/04/10 Atlanta Thrashers   4  -  Florida Panthers   4      T </span>
-<span class="hovl"> A 2002/01/19 Atlanta Thrashers   6  -  Florida Panthers   1      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2001/12/31 Atlanta Thrashers   3  -  Florida Panthers   4      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2001/12/26 Atlanta Thrashers   3  -  Florida Panthers   3      T </span>
-<span class="hovl"> A 2001/12/01 Atlanta Thrashers   5  -  Florida Panthers   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2001/03/03 Atlanta Thrashers   2  -  Florida Panthers   2      T </span>
-<span class="hovl"> A 2001/03/02 Atlanta Thrashers   4  -  Florida Panthers   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2001/02/10 Atlanta Thrashers   3  -  Florida Panthers   7      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2000/12/08 Atlanta Thrashers   4  -  Florida Panthers   3 (OT) <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2000/11/13 Atlanta Thrashers   4  -  Florida Panthers   1      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2000/01/21 Atlanta Thrashers   3  -  Florida Panthers   3      T </span>
-<span class="hovl"> A 1999/12/22 Atlanta Thrashers   3  -  Florida Panthers   3      T </span>
-<span class="hovl"> H 1999/12/03 Atlanta Thrashers   2  -  Florida Panthers   1      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1999/11/27 Atlanta Thrashers   0  -  Florida Panthers   3      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 1999/11/10 Atlanta Thrashers   1  -  Florida Panthers   4      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 2025/12/14 Vancouver Canucks   2  -  New Jersey Devils    1      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 2025/03/24 Vancouver Canucks   4  -  New Jersey Devils    3 (SO) <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 2024/10/30 Vancouver Canucks   0  -  New Jersey Devils    6      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 2024/01/06 Vancouver Canucks   6  -  New Jersey Devils    4      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 2023/12/05 Vancouver Canucks   5  -  New Jersey Devils    6      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 2023/02/06 Vancouver Canucks   4  -  New Jersey Devils    5 (OT) <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 2022/11/01 Vancouver Canucks   2  -  New Jersey Devils    5      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 2022/03/15 Vancouver Canucks   6  -  New Jersey Devils    3      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 2022/02/28 Vancouver Canucks   2  -  New Jersey Devils    7      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 2019/11/10 Vancouver Canucks   1  -  New Jersey Devils    2      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 2019/10/19 Vancouver Canucks   0  -  New Jersey Devils    1      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 2019/03/15 Vancouver Canucks   2  -  New Jersey Devils    3 (SO) <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 2018/12/31 Vancouver Canucks   0  -  New Jersey Devils    4      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 2017/11/24 Vancouver Canucks   2  -  New Jersey Devils    3      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 2017/11/01 Vancouver Canucks   0  -  New Jersey Devils    2      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 2017/01/15 Vancouver Canucks   1  -  New Jersey Devils    2 (OT) <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 2016/12/06 Vancouver Canucks   2  -  New Jersey Devils    3      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 2015/11/22 Vancouver Canucks   2  -  New Jersey Devils    3      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 2015/11/08 Vancouver Canucks   3  -  New Jersey Devils    4 (OT) <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 2015/02/20 Vancouver Canucks   2  -  New Jersey Devils    4      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 2014/11/25 Vancouver Canucks   2  -  New Jersey Devils    0      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 2013/10/24 Vancouver Canucks   3  -  New Jersey Devils    2 (SO) <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 2013/10/08 Vancouver Canucks   3  -  New Jersey Devils    2 (OT) <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 2012/02/24 Vancouver Canucks   2  -  New Jersey Devils    1      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 2010/11/01 Vancouver Canucks   3  -  New Jersey Devils    0      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 2009/12/02 Vancouver Canucks   5  -  New Jersey Devils    2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 2009/01/13 Vancouver Canucks   3  -  New Jersey Devils    5      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 2007/12/18 Vancouver Canucks   5  -  New Jersey Devils    0      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 2006/01/13 Vancouver Canucks   0  -  New Jersey Devils    3      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 2004/02/05 Vancouver Canucks   4  -  New Jersey Devils    0      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 2002/12/04 Vancouver Canucks   3  -  New Jersey Devils    2 (OT) <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 2002/03/17 Vancouver Canucks   3  -  New Jersey Devils    2 (OT) <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 2001/12/29 Vancouver Canucks   4  -  New Jersey Devils    2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 2001/03/23 Vancouver Canucks   0  -  New Jersey Devils    4      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 2000/03/04 Vancouver Canucks   4  -  New Jersey Devils    2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1999/03/15 Vancouver Canucks   1  -  New Jersey Devils    2      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 1999/02/09 Vancouver Canucks   4  -  New Jersey Devils    3      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1998/01/30 Vancouver Canucks   3  -  New Jersey Devils    1      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1997/10/30 Vancouver Canucks   1  -  New Jersey Devils    8      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 1996/12/18 Vancouver Canucks   1  -  New Jersey Devils    2      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 1996/11/14 Vancouver Canucks   3  -  New Jersey Devils    0      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1996/01/30 Vancouver Canucks   2  -  New Jersey Devils    3 (OT) <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 1995/10/25 Vancouver Canucks   4  -  New Jersey Devils    2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1994/02/10 Vancouver Canucks   3  -  New Jersey Devils    7      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 1994/01/29 Vancouver Canucks   6  -  New Jersey Devils    3      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1993/03/09 Vancouver Canucks   7  -  New Jersey Devils    2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1993/01/12 Vancouver Canucks   2  -  New Jersey Devils    3      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 1992/03/12 Vancouver Canucks   2  -  New Jersey Devils    1      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1992/02/13 Vancouver Canucks   3  -  New Jersey Devils    5      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 1991/10/29 Vancouver Canucks   4  -  New Jersey Devils    3      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1991/02/10 Vancouver Canucks   0  -  New Jersey Devils    2      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 1990/12/05 Vancouver Canucks   4  -  New Jersey Devils    9      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 1990/11/01 Vancouver Canucks   2  -  New Jersey Devils    1      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1990/02/04 Vancouver Canucks   4  -  New Jersey Devils    2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1989/10/31 Vancouver Canucks   4  -  New Jersey Devils    3      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1989/10/20 Vancouver Canucks   3  -  New Jersey Devils    2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1989/03/20 Vancouver Canucks   1  -  New Jersey Devils    3      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 1988/11/25 Vancouver Canucks   2  -  New Jersey Devils    2      T </span>
+<span class="hovl"> A 1988/10/19 Vancouver Canucks   4  -  New Jersey Devils    0      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1988/02/05 Vancouver Canucks   5  -  New Jersey Devils    1      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1988/01/07 Vancouver Canucks   6  -  New Jersey Devils    3      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1987/11/27 Vancouver Canucks   4  -  New Jersey Devils    2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1987/01/30 Vancouver Canucks   3  -  New Jersey Devils    4      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 1987/01/10 Vancouver Canucks   2  -  New Jersey Devils    2      T </span>
+<span class="hovl"> A 1986/10/15 Vancouver Canucks   2  -  New Jersey Devils    3      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 1986/01/21 Vancouver Canucks   5  -  New Jersey Devils    3      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1985/12/06 Vancouver Canucks   1  -  New Jersey Devils    4      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 1985/11/22 Vancouver Canucks   5  -  New Jersey Devils    6      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 1985/03/21 Vancouver Canucks   3  -  New Jersey Devils    2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1985/02/19 Vancouver Canucks   7  -  New Jersey Devils    5      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1985/01/03 Vancouver Canucks   6  -  New Jersey Devils    4      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1984/03/02 Vancouver Canucks   2  -  New Jersey Devils    4      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 1984/01/29 Vancouver Canucks   3  -  New Jersey Devils    2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1983/10/21 Vancouver Canucks   5  -  New Jersey Devils    4      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1983/02/06 Vancouver Canucks   4  -  New Jersey Devils    4      T </span>
+<span class="hovl"> A 1983/01/02 Vancouver Canucks   1  -  New Jersey Devils    3      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 1982/11/26 Vancouver Canucks   4  -  New Jersey Devils    4      T </span>
+<span class="hovl"> H 1982/03/31 Vancouver Canucks   4  -  Colorado Rockies     4      T </span>
+<span class="hovl"> H 1982/03/24 Vancouver Canucks   5  -  Colorado Rockies     4      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1982/03/03 Vancouver Canucks   2  -  Colorado Rockies     3      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 1982/02/26 Vancouver Canucks   4  -  Colorado Rockies     3      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1981/12/18 Vancouver Canucks   1  -  Colorado Rockies     3      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 1981/11/27 Vancouver Canucks   6  -  Colorado Rockies     3      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1981/11/22 Vancouver Canucks   5  -  Colorado Rockies     5      T </span>
+<span class="hovl"> H 1981/10/06 Vancouver Canucks   4  -  Colorado Rockies     2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1981/03/25 Vancouver Canucks   4  -  Colorado Rockies     4      T </span>
+<span class="hovl"> A 1981/01/17 Vancouver Canucks   5  -  Colorado Rockies     2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1981/01/13 Vancouver Canucks   3  -  Colorado Rockies     3      T </span>
+<span class="hovl"> A 1981/01/06 Vancouver Canucks   7  -  Colorado Rockies     3      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1980/03/09 Vancouver Canucks   4  -  Colorado Rockies     4      T </span>
+<span class="hovl"> H 1980/01/22 Vancouver Canucks   3  -  Colorado Rockies     5      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 1980/01/04 Vancouver Canucks   4  -  Colorado Rockies     2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1979/12/14 Vancouver Canucks   5  -  Colorado Rockies     3      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1979/04/03 Vancouver Canucks   2  -  Colorado Rockies     1      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1979/03/31 Vancouver Canucks   2  -  Colorado Rockies     0      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1979/03/16 Vancouver Canucks   4  -  Colorado Rockies     1      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1979/03/10 Vancouver Canucks   1  -  Colorado Rockies     3      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 1979/02/22 Vancouver Canucks   3  -  Colorado Rockies     0      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1979/01/27 Vancouver Canucks   2  -  Colorado Rockies     2      T </span>
+<span class="hovl"> A 1978/11/23 Vancouver Canucks   7  -  Colorado Rockies     2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1978/10/11 Vancouver Canucks   8  -  Colorado Rockies     2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1978/03/17 Vancouver Canucks   1  -  Colorado Rockies     3      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 1978/01/14 Vancouver Canucks   3  -  Colorado Rockies     3      T </span>
+<span class="hovl"> H 1977/12/30 Vancouver Canucks   2  -  Colorado Rockies     2      T </span>
+<span class="hovl"> A 1977/11/08 Vancouver Canucks   2  -  Colorado Rockies     6      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 1977/10/29 Vancouver Canucks   2  -  Colorado Rockies     6      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 1977/10/14 Vancouver Canucks   4  -  Colorado Rockies     4      T </span>
+<span class="hovl"> H 1977/04/01 Vancouver Canucks   3  -  Colorado Rockies     6      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 1977/03/20 Vancouver Canucks   4  -  Colorado Rockies     1      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1977/03/13 Vancouver Canucks   6  -  Colorado Rockies     2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1977/03/12 Vancouver Canucks   2  -  Colorado Rockies     2      T </span>
+<span class="hovl"> H 1976/12/11 Vancouver Canucks   4  -  Colorado Rockies     4      T </span>
+<span class="hovl"> A 1976/12/03 Vancouver Canucks   2  -  Colorado Rockies     3      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 1976/04/04 Vancouver Canucks   5  -  Kansas City Scouts   2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1976/03/10 Vancouver Canucks   3  -  Kansas City Scouts   1      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1976/03/06 Vancouver Canucks   5  -  Kansas City Scouts   3      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1975/12/30 Vancouver Canucks   5  -  Kansas City Scouts   2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1975/12/17 Vancouver Canucks   5  -  Kansas City Scouts   6      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 1975/10/11 Vancouver Canucks   2  -  Kansas City Scouts   4      <b><font color="red">L</font></b> </span>
+<span class="hovl"> H 1975/03/11 Vancouver Canucks   3  -  Kansas City Scouts   3      T </span>
+<span class="hovl"> H 1975/02/11 Vancouver Canucks   4  -  Kansas City Scouts   0      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 1974/12/14 Vancouver Canucks   2  -  Kansas City Scouts   2      T </span>
+<span class="hovl"> A 1974/11/26 Vancouver Canucks   3  -  Kansas City Scouts   4      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 1974/11/07 Vancouver Canucks   6  -  Kansas City Scouts   4      <b><font color="green">W</font></b> </span>
+<span class="hovl"> H 1974/10/25 Vancouver Canucks   5  -  Kansas City Scouts   3      <b><font color="green">W</font></b> </span>
     </pre></td>
   </tr>
 </tbody></table>

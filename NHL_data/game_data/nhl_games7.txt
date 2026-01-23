@@ -2,9 +2,9 @@
 <script>var ezTcfConsent=window.ezTcfConsent?window.ezTcfConsent:{loaded:false,store_info:false,develop_and_improve_services:false,measure_ad_performance:false,measure_content_performance:false,select_basic_ads:false,create_ad_profile:false,select_personalized_ads:false,create_content_profile:false,select_personalized_content:false,understand_audiences:false,use_limited_data_to_select_content:false,};function getEzConsentData(){return new Promise(function(resolve){document.addEventListener("ezConsentEvent",function(event){var ezTcfConsent=event.detail.ezTcfConsent;resolve(ezTcfConsent);});});}</script>
 <script>if(typeof _setEzCookies!=='function'){function _setEzCookies(ezConsentData){var cookies=window.ezCookieQueue;for(var i=0;i<cookies.length;i++){var cookie=cookies[i];if(ezConsentData&&ezConsentData.loaded&&ezConsentData[cookie.tcfCategory]){document.cookie=cookie.name+"="+cookie.value;}}}}
 window.ezCookieQueue=window.ezCookieQueue||[];if(typeof addEzCookies!=='function'){function addEzCookies(arr){window.ezCookieQueue=[...window.ezCookieQueue,...arr];}}
-addEzCookies([{name:"ezoab_413175",value:"mod5; Path=/; Domain=mcubed.net; Max-Age=7200",tcfCategory:"store_info",isEzoic:"true",},{name:"ezosuibasgeneris-1",value:"423e3098-28e4-4ebd-54e4-240c7384ac32; Path=/; Domain=mcubed.net; Expires=Sat, 23 Jan 2027 13:48:26 UTC; Secure; SameSite=None",tcfCategory:"understand_audiences",isEzoic:"true",}]);if(window.ezTcfConsent&&window.ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else if(typeof getEzConsentData==="function"){getEzConsentData().then(function(ezTcfConsent){if(ezTcfConsent&&ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else{console.error("cannot get ez consent data");_setEzCookies(window.ezTcfConsent);}});}else{console.error("getEzConsentData is not a function");_setEzCookies(window.ezTcfConsent);}</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window._ezaq = Object.assign({"edge_cache_status":11,"edge_response_time":80,"url":"https://mcubed.net/nhl/edm/pit.shtml"}, typeof window._ezaq !== "undefined" ? window._ezaq : {});</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window._ezaq = Object.assign({"ab_test_id":"mod5"}, typeof window._ezaq !== "undefined" ? window._ezaq : {});window.__ez=window.__ez||{};window.__ez.tf={"NewBanger":"lazyload"};</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window.ezDisableAds = true;</script><script src="https://cmp.gatekeeperconsent.com/min.js" async></script>
+addEzCookies([{name:"ezoab_413175",value:"mod296-c; Path=/; Domain=mcubed.net; Max-Age=7200",tcfCategory:"store_info",isEzoic:"true",},{name:"ezosuibasgeneris-1",value:"ee13c07a-b8d8-412a-432c-5d625c8cd44d; Path=/; Domain=mcubed.net; Expires=Sat, 23 Jan 2027 14:35:43 UTC; Secure; SameSite=None",tcfCategory:"understand_audiences",isEzoic:"true",}]);if(window.ezTcfConsent&&window.ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else if(typeof getEzConsentData==="function"){getEzConsentData().then(function(ezTcfConsent){if(ezTcfConsent&&ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else{console.error("cannot get ez consent data");_setEzCookies(window.ezTcfConsent);}});}else{console.error("getEzConsentData is not a function");_setEzCookies(window.ezTcfConsent);}</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window._ezaq = Object.assign({"edge_cache_status":11,"edge_response_time":103,"url":"https://mcubed.net/nhl/dal/stl.shtml"}, typeof window._ezaq !== "undefined" ? window._ezaq : {});</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window._ezaq = Object.assign({"ab_test_id":"mod296-c"}, typeof window._ezaq !== "undefined" ? window._ezaq : {});window.__ez=window.__ez||{};window.__ez.tf={};</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window.ezDisableAds = true;</script><script src="https://cmp.gatekeeperconsent.com/min.js" async></script>
 <script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;window.__ezScriptHost="//www.ezojs.com";__ez.queue=__ez.queue||function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:w(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),m())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&m()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&m())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e,i,n,s,a,d,c,u,f){var m=new l(e,i,n,s,a,d,c,f);!0===u?o[e]=m:r[e]=m,t[e]=m,h(m)}function h(e){!0!==u(e)&&0!=s&&e.process()}function u(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(w(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function m(){++e>200||(f("let's go"),p(o),p(r))}function p(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||u(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function w(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),m()}),5e3)}),!1),{addFile:c,addFileOnce:function(e,i,n,o,r,s,a,l,d){t[e]||c(e,i,n,o,r,s,a,l,d)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,h(n)},addFunc:function(e,n,s,l,d,c,u,f,m,p){!0===c&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,u,f,p);!0===m?o[e]=w:r[e]=w,t[e]=w,h(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,h(o)},items:t,processAll:m,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&u(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot=__ez.dot||{};__ez.queue.addFileOnce('/detroitchicago/boise.js', '/detroitchicago/boise.js?gcb=195-2&cb=5', true, [], true, false, true, false);__ez.queue.addFileOnce('/parsonsmaize/abilene.js', '/parsonsmaize/abilene.js?gcb=195-2&cb=e80eca0cdb', true, [], true, false, true, false);__ez.queue.addFileOnce('/parsonsmaize/mulvane.js', '/parsonsmaize/mulvane.js?gcb=195-2&cb=e75e48eec0', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFileOnce('/detroitchicago/birmingham.js', '/detroitchicago/birmingham.js?gcb=195-2&cb=539c47377c', true, ['/parsonsmaize/abilene.js'], true, false, true, false);</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({"ad_cache_level":0,"adpicker_placement_cnt":0,"ai_placeholder_cache_level":0,"ai_placeholder_placement_cnt":-1,"domain":"mcubed.net","domain_id":413175,"ezcache_level":0,"ezcache_skip_code":14,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"response_size":59023,"response_size_orig":53160,"response_time_orig":91,"template_id":5,"url":"https://mcubed.net/nhl/edm/pit.shtml","word_count":0,"worst_bad_word_level":0}, typeof window._ezaq !== "undefined" ? window._ezaq : {});__ez.queue.markLoaded('ezaqBaseReady');</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({"ad_cache_level":0,"adpicker_placement_cnt":0,"ai_placeholder_cache_level":0,"ai_placeholder_placement_cnt":-1,"domain":"mcubed.net","domain_id":413175,"ezcache_level":0,"ezcache_skip_code":14,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"response_size":111337,"response_size_orig":105474,"response_time_orig":120,"template_id":5,"url":"https://mcubed.net/nhl/dal/stl.shtml","word_count":0,"worst_bad_word_level":0}, typeof window._ezaq !== "undefined" ? window._ezaq : {});__ez.queue.markLoaded('ezaqBaseReady');</script>
 <script type='text/javascript' data-ezscrex='false' data-cfasync='false'>
 window.ezAnalyticsStatic = true;
 
@@ -36,7 +36,7 @@ function getCookiesWithPrefix() {
     return cookiesWithPrefix;
 }
 function productAnalytics() {
-	var d = {"pr":[6],"omd5":"db22db0d94ac475926952e2b42f5911c","nar":"risk score"};
+	var d = {"pr":[6],"omd5":"17ae79a8341c8fff49e444dc1ad9d3f9","nar":"risk score"};
 	d.u = _ezaq.url;
 	d.p = _ezaq.page_view_id;
 	d.v = _ezaq.visit_uuid;
@@ -75,8 +75,8 @@ function productAnalytics() {
 	xhr.send(dataText);
 }
 __ez.queue.addFunc("productAnalytics", "productAnalytics", null, true, ['ezaqBaseReady'], false, false, false, true);
-</script><base href="https://mcubed.net/nhl/edm/pit.shtml"/>
-  <title>mcubed.net : NHL : Series records : Edmonton Oilers against Pittsburgh Penguins</title>
+</script><base href="https://mcubed.net/nhl/dal/stl.shtml"/>
+  <title>mcubed.net : NHL : Series records : Dallas Stars against St. Louis Blues</title>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4TGVY1H9RZ"></script><script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -234,7 +234,7 @@ a:active {color: blue}
 	#sddm div a:hover
 	{	background: #000000;
 		color: #FFFFFF}
-</style><link rel='canonical' href='https://mcubed.net/nhl/edm/pit.shtml' />
+</style><link rel='canonical' href='https://mcubed.net/nhl/dal/stl.shtml' />
 <script type='text/javascript'>
 var ezoTemplate = 'orig_site';
 var ezouid = '1';
@@ -509,7 +509,7 @@ var ezoicSearchable = 1;
 <ul id="sddm">
 <table width="900" border="0" cellpadding="1" cellspacing="1">
   <tbody><tr>
-    <td height="20" bgcolor="#7D7D7D" align="left"><font size="2" face="arial" color="white">&nbsp;&nbsp;NHL : Oilers &gt;</font></td>
+    <td height="20" bgcolor="#7D7D7D" align="left"><font size="2" face="arial" color="white">&nbsp;&nbsp;NHL : Stars &gt;</font></td>
     <td height="20" bgcolor="#7D7D7D" onmouseover="this.style.backgroundColor=&#39;#000000&#39;;" onmouseout="this.style.backgroundColor=&#39;#7D7D7D&#39;;" align="center"><font size="2" face="arial" color="white"><a href="index.shtml" style="color:#FFFFFF;text-decoration:none">Win chart</a></font></td>
     <td height="20" bgcolor="#7D7D7D" onmouseover="this.style.backgroundColor=&#39;#000000&#39;;" onmouseout="this.style.backgroundColor=&#39;#7D7D7D&#39;;" align="center"><font size="2" face="arial" color="white"><a href="series1.shtml" style="color:#FFFFFF;text-decoration:none">Series records</a></font></td>
     <td height="20" bgcolor="#7D7D7D" onmouseover="this.style.backgroundColor=&#39;#000000&#39;;" onmouseout="this.style.backgroundColor=&#39;#7D7D7D&#39;;" align="center"><font size="2" face="arial" color="white"><a href="cup.shtml" style="color:#FFFFFF;text-decoration:none">Stanley Cups</a></font></td>
@@ -538,174 +538,490 @@ var ezoicSearchable = 1;
     </td>
     <td valign="top"><pre>
 
- <b>Series records : Edmonton Oilers(H)  against  Pittsburgh Penguins(A)</b>
+ <b>Series records : Dallas Stars(H)  against  St. Louis Blues(A)</b>
 
-Streaks:  <span class="hovl">All games:      All time :  Wins   :  7 games - 2021/12/01 .. 2024/10/25</span>
-          <span class="hovl">                            Losses :  6 games - 2016/11/08 .. 2019/02/13</span>
-          <span class="hovl">                Current  :  Losses :  1 game  - 2026/01/22              </span>
+Streaks:  <span class="hovl">All games:      All time :  Wins   :  6 games - 2004/01/23 .. 2006/01/25</span>
+          <span class="hovl">                                      6 games - 1971/04/11 .. 1971/12/15</span>
+          <span class="hovl">                            Losses :  6 games - 1974/12/28 .. 1975/11/05</span>
+          <span class="hovl">                Current  :  Losses :  1 game  - 2025/10/18              </span>
 
-          <span class="hovl">Home games:     All time :  Wins   :  7 games - 1981/03/16 .. 1985/01/26</span>
-          <span class="hovl">                            Losses :  6 games - 2015/02/04 .. 2019/12/20</span>
-          <span class="hovl">                Current  :  Losses :  1 game  - 2026/01/22              </span>
+          <span class="hovl">Home games:     All time :  Wins   :  7 games - 1993/04/10 .. 1995/03/05</span>
+          <span class="hovl">                            Losses :  7 games - 1987/03/23 .. 1988/12/10</span>
+          <span class="hovl">                Current  :  Wins   :  5 games - 2023/04/13 .. 2025/03/02</span>
 
-          <span class="hovl">Away games:     All time :  Wins   :  4 games - 2019/11/02 .. 2024/03/10</span>
-          <span class="hovl">                            Losses :  4 games - 2008/11/06 .. 2015/03/12</span>
-          <span class="hovl">                                      4 games - 1994/01/15 .. 1998/03/18</span>
-          <span class="hovl">                Current  :  Wins   :  1 game  - 2025/12/16              </span>
+          <span class="hovl">Away games:     All time :  Wins   :  4 games - 2014/03/11 .. 2015/02/17</span>
+          <span class="hovl">                            Losses :  7 games - 1991/04/20 .. 1992/10/06</span>
+          <span class="hovl">                Current  :  Losses :  1 game  - 2025/10/18              </span>
 
                  <b><u>A L L    G A M E S</u>                   <u>H O M E</u>                        <u>A W A Y</u>                    <u>P L A Y O F F S</u></b>
  <b>OVERALL:        W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG</b>
-<span class="hovl">                47-39-4  54.4  4.1  3.4 |       28-16-1  63.3  4.3  3.2 |       19-23-3  45.6  3.9  3.6 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl">             164-185-43  47.3  2.9  3.1 |     101-70-22  58.0  3.2  2.8 |     63-115-21  36.9  2.6  3.3 |       41-40-0  50.6  2.8  2.9</span>
 
                  <b><u>A L L    G A M E S</u>                   <u>H O M E</u>                        <u>A W A Y</u>                    <u>P L A Y O F F S</u></b>
  <b>DECADE:         W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG</b>
-<span class="hovl"> 2020&#39;s:          9-3-0  75.0  4.3  2.5 |         4-2-0  66.7  4.2  2.8 |         5-1-0  83.3  4.5  2.2 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2010&#39;s:         3-12-0  20.0  2.2  3.2 |         2-6-0  25.0  2.3  2.9 |         1-6-0  14.3  2.1  3.6 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2000&#39;s:          2-6-1  27.8  2.4  3.1 |         1-3-0  25.0  2.0  2.8 |         1-3-1  30.0  2.8  3.4 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1990&#39;s:        10-11-1  47.7  3.8  3.9 |         8-3-0  72.7  4.1  3.2 |         2-8-1  22.7  3.5  4.5 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1980&#39;s:         23-7-2  75.0  5.6  3.5 |        13-2-1  84.4  6.1  3.5 |        10-5-1  65.6  5.1  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2020&#39;s:        11-10-0  52.4  2.3  2.2 |         6-3-0  66.7  2.2  2.1 |         5-7-0  41.7  2.3  2.3 |         1-0-0 100.0  2.0  1.0</span>
+<span class="hovl"> 2010&#39;s:        26-31-0  45.6  2.5  2.8 |       13-16-0  44.8  2.8  3.0 |       13-15-0  46.4  2.3  2.5 |         6-8-0  42.9  2.2  3.1</span>
+<span class="hovl"> 2000&#39;s:        16-19-4  46.2  2.7  2.7 |        11-6-3  62.5  2.8  2.2 |        5-13-1  28.9  2.5  3.3 |         0-4-0   0.0  1.5  3.3</span>
+<span class="hovl"> 1990&#39;s:        35-37-9  48.8  3.0  3.2 |       25-11-4  67.5  3.5  2.6 |       10-26-5  30.5  2.6  3.7 |        12-4-0  75.0  3.4  2.4</span>
+<span class="hovl"> 1980&#39;s:       37-39-15  48.9  3.6  3.6 |       21-16-8  55.6  3.9  3.4 |       16-23-7  42.4  3.3  3.8 |       10-10-0  50.0  3.2  3.2</span>
+<span class="hovl"> 1970&#39;s:       31-36-11  46.8  2.9  3.0 |       21-13-5  60.3  3.3  2.7 |       10-23-6  33.3  2.5  3.4 |        9-10-0  47.4  2.7  2.8</span>
+<span class="hovl"> 1960&#39;s:         8-13-4  40.0  2.3  2.6 |         4-5-2  45.5  2.2  2.1 |         4-8-2  35.7  2.4  3.0 |         3-4-0  42.9  3.1  2.6</span>
 
                  <b><u>A L L    G A M E S</u>                   <u>H O M E</u>                        <u>A W A Y</u>                    <u>P L A Y O F F S</u></b>
  <b>YEAR:           W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG</b>
-<span class="hovl"> 2026:            1-1-0  50.0  4.0  5.0 |         0-1-0   0.0  2.0  6.0 |         1-0-0 100.0  6.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2025:            1-1-0  50.0  3.5  2.5 |         1-0-0 100.0  4.0  0.0 |         0-1-0   0.0  3.0  5.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2024:            2-0-0 100.0  5.0  0.5 |         1-0-0 100.0  6.0  1.0 |         1-0-0 100.0  4.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2023:            2-0-0 100.0  6.5  2.5 |         1-0-0 100.0  6.0  3.0 |         1-0-0 100.0  7.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2022:            2-0-0 100.0  5.0  1.5 |         1-0-0 100.0  5.0  2.0 |         1-0-0 100.0  5.0  1.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2026:            0-1-0   0.0  1.0  3.0 |         0-0-0   0.0  0.0  0.0 |         0-1-0   0.0  1.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2025:            3-0-0 100.0  3.3  1.3 |         2-0-0 100.0  4.0  2.0 |         1-0-0 100.0  2.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2024:            2-2-0  50.0  2.0  2.0 |         2-0-0 100.0  2.0  1.0 |         0-2-0   0.0  2.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2023:            3-0-0 100.0  3.3  1.0 |         1-0-0 100.0  1.0  0.0 |         2-0-0 100.0  4.5  1.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2022:            1-3-0  25.0  1.8  2.8 |         1-1-0  50.0  2.5  2.5 |         0-2-0   0.0  1.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
  .
-<span class="hovl"> 2020:            1-1-0  50.0  2.0  3.0 |         0-1-0   0.0  2.0  5.0 |         1-0-0 100.0  2.0  1.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2019:            0-2-0   0.0  3.0  4.5 |         0-1-0   0.0  5.0  6.0 |         0-1-0   0.0  1.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2018:            0-2-0   0.0  1.5  2.5 |         0-1-0   0.0  2.0  3.0 |         0-1-0   0.0  1.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2017:            0-2-0   0.0  2.5  3.5 |         0-1-0   0.0  2.0  3.0 |         0-1-0   0.0  3.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2016:            1-1-0  50.0  2.0  2.0 |         0-1-0   0.0  1.0  2.0 |         1-0-0 100.0  3.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2015:            0-2-0   0.0  2.0  4.0 |         0-1-0   0.0  0.0  2.0 |         0-1-0   0.0  4.0  6.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2014:            1-1-0  50.0  3.0  3.0 |         1-0-0 100.0  4.0  3.0 |         0-1-0   0.0  2.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2020:            2-4-0  33.3  2.0  3.0 |         0-2-0   0.0  1.0  4.0 |         2-2-0  50.0  2.5  2.5 |         1-0-0 100.0  2.0  1.0</span>
+<span class="hovl"> 2019:            6-5-0  54.5  2.7  2.3 |         2-3-0  40.0  2.8  3.0 |         4-2-0  66.7  2.7  1.7 |         3-4-0  42.9  2.4  2.6</span>
+<span class="hovl"> 2018:            3-2-0  60.0  2.2  2.4 |         3-0-0 100.0  3.0  1.7 |         0-2-0   0.0  1.0  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2017:            1-3-0  25.0  3.5  3.3 |         1-1-0  50.0  4.0  2.5 |         0-2-0   0.0  3.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2016:            4-8-0  33.3  2.0  3.2 |         2-4-0  33.3  2.3  3.3 |         2-4-0  33.3  1.7  3.0 |         3-4-0  42.9  2.0  3.6</span>
+<span class="hovl"> 2015:            2-3-0  40.0  3.2  3.6 |         0-3-0   0.0  2.7  4.7 |         2-0-0 100.0  4.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2014:            3-2-0  60.0  2.6  2.6 |         1-1-0  50.0  2.5  1.5 |         2-1-0  66.7  2.7  3.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2013:            1-2-0  33.3  2.7  2.3 |         1-1-0  50.0  3.5  2.5 |         0-1-0   0.0  1.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2012:            1-3-0  25.0  2.0  2.8 |         1-1-0  50.0  2.5  2.5 |         0-2-0   0.0  1.5  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2011:            4-0-0 100.0  3.0  1.8 |         2-0-0 100.0  3.0  2.0 |         2-0-0 100.0  3.0  1.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2010:            1-3-0  25.0  2.3  3.3 |         0-2-0   0.0  2.0  5.0 |         1-1-0  50.0  2.5  1.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2009:            1-3-0  25.0  2.3  4.5 |         1-1-0  50.0  3.0  3.5 |         0-2-0   0.0  1.5  5.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2008:            3-1-0  75.0  4.0  2.8 |         2-0-0 100.0  5.5  3.0 |         1-1-0  50.0  2.5  2.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2007:            1-3-0  25.0  2.3  3.0 |         1-1-0  50.0  3.0  2.5 |         0-2-0   0.0  1.5  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2006:            3-1-0  75.0  4.0  2.0 |         2-0-0 100.0  3.5  1.5 |         1-1-0  50.0  4.5  2.5 |         0-0-0   0.0  0.0  0.0</span>
  .
-<span class="hovl"> 2012:            1-0-0 100.0  2.0  1.0 |         1-0-0 100.0  2.0  1.0 |         0-0-0   0.0  0.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2011:            0-1-0   0.0  1.0  5.0 |         0-0-0   0.0  0.0  0.0 |         0-1-0   0.0  1.0  5.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2010:            0-1-0   0.0  2.0  3.0 |         0-1-0   0.0  2.0  3.0 |         0-0-0   0.0  0.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2009:            0-1-0   0.0  4.0  5.0 |         0-0-0   0.0  0.0  0.0 |         0-1-0   0.0  4.0  5.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2008:            0-1-0   0.0  2.0  4.0 |         0-1-0   0.0  2.0  4.0 |         0-0-0   0.0  0.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
- .
-<span class="hovl"> 2006:            1-0-0 100.0  3.0  1.0 |         0-0-0   0.0  0.0  0.0 |         1-0-0 100.0  3.0  1.0 |         0-0-0   0.0  0.0  0.0</span>
- .
-<span class="hovl"> 2004:            1-0-0 100.0  4.0  3.0 |         1-0-0 100.0  4.0  3.0 |         0-0-0   0.0  0.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2003:            0-1-0   0.0  3.0  4.0 |         0-0-0   0.0  0.0  0.0 |         0-1-0   0.0  3.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2002:            0-1-0   0.0  0.0  1.0 |         0-1-0   0.0  0.0  1.0 |         0-0-0   0.0  0.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2001:            0-1-0   0.0  2.0  5.0 |         0-0-0   0.0  0.0  0.0 |         0-1-0   0.0  2.0  5.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2000:            0-1-1  25.0  2.0  2.5 |         0-1-0   0.0  2.0  3.0 |         0-0-1  50.0  2.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1999:            1-0-1  75.0  3.0  1.5 |         1-0-0 100.0  4.0  1.0 |         0-0-1  50.0  2.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1998:            1-1-0  50.0  3.0  3.5 |         1-0-0 100.0  4.0  3.0 |         0-1-0   0.0  2.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1997:            1-1-0  50.0  3.5  3.5 |         1-0-0 100.0  5.0  2.0 |         0-1-0   0.0  2.0  5.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1996:            0-2-0   0.0  4.0  5.0 |         0-1-0   0.0  4.0  5.0 |         0-1-0   0.0  4.0  5.0 |         0-0-0   0.0  0.0  0.0</span>
- .
-<span class="hovl"> 1994:            1-1-0  50.0  4.0  3.5 |         1-0-0 100.0  5.0  3.0 |         0-1-0   0.0  3.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1993:            2-1-0  66.7  3.7  3.7 |         1-1-0  50.0  3.0  3.5 |         1-0-0 100.0  5.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1992:            1-2-0  33.3  4.7  4.7 |         1-0-0 100.0  5.0  3.0 |         0-2-0   0.0  4.5  5.5 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1991:            2-1-0  66.7  5.0  4.7 |         1-0-0 100.0  7.0  5.0 |         1-1-0  50.0  4.0  4.5 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1990:            1-2-0  33.3  2.7  4.0 |         1-1-0  50.0  2.5  3.0 |         0-1-0   0.0  3.0  6.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1989:            2-1-0  66.7  5.0  4.0 |         0-1-0   0.0  4.0  7.0 |         2-0-0 100.0  5.5  2.5 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1988:            3-0-0 100.0  5.7  2.7 |         2-0-0 100.0  5.5  2.0 |         1-0-0 100.0  6.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1987:            2-1-0  66.7  3.3  3.0 |         1-0-0 100.0  4.0  2.0 |         1-1-0  50.0  3.0  3.5 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1986:            2-1-0  66.7  5.7  4.3 |         1-1-0  50.0  4.5  5.0 |         1-0-0 100.0  8.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1985:            1-1-1  50.0  4.0  3.3 |         1-0-0 100.0  6.0  3.0 |         0-1-1  25.0  3.0  3.5 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1984:            3-0-0 100.0  7.7  2.7 |         2-0-0 100.0  7.0  3.0 |         1-0-0 100.0  9.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1983:            2-1-0  66.7  7.0  4.7 |         1-0-0 100.0  7.0  2.0 |         1-1-0  50.0  7.0  6.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1982:            3-0-0 100.0  7.3  2.7 |         2-0-0 100.0  9.0  3.5 |         1-0-0 100.0  4.0  1.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1981:            2-1-1  62.5  5.0  4.5 |         1-0-1  75.0  5.5  5.0 |         1-1-0  50.0  4.5  4.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1980:            3-1-0  75.0  5.5  3.0 |         2-0-0 100.0  6.5  2.5 |         1-1-0  50.0  4.5  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2004:            3-1-0  75.0  2.3  1.3 |         2-0-0 100.0  2.5  0.5 |         1-1-0  50.0  2.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2003:            2-1-1  62.5  3.0  2.5 |         1-0-1  75.0  2.5  1.5 |         1-1-0  50.0  3.5  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2002:            1-2-1  37.5  2.0  2.8 |         1-1-0  50.0  2.0  2.0 |         0-1-1  25.0  2.0  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2001:            0-5-2  14.3  1.9  3.0 |         0-2-2  25.0  1.8  2.5 |         0-3-0   0.0  2.0  3.7 |         0-4-0   0.0  1.5  3.3</span>
+<span class="hovl"> 2000:            2-2-0  50.0  3.0  2.8 |         1-1-0  50.0  2.5  2.5 |         1-1-0  50.0  3.5  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1999:            6-3-1  65.0  3.3  2.6 |         5-0-0 100.0  4.4  2.2 |         1-3-1  30.0  2.2  3.0 |         4-2-0  66.7  2.8  2.0</span>
+<span class="hovl"> 1998:            2-4-0  33.3  2.0  3.5 |         1-2-0  33.3  2.0  4.0 |         1-2-0  33.3  2.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1997:            2-2-1  50.0  3.8  4.0 |         1-0-1  75.0  4.0  3.5 |         1-2-0  33.3  3.7  4.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1996:            2-3-1  41.7  2.2  2.8 |         1-2-0  33.3  2.0  3.3 |         1-1-1  50.0  2.3  2.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1995:            2-3-0  40.0  3.0  4.2 |         1-2-0  33.3  2.7  4.0 |         1-1-0  50.0  3.5  4.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1994:            7-2-1  75.0  3.9  2.7 |         5-0-0 100.0  4.8  2.2 |         2-2-1  50.0  3.0  3.2 |         4-0-0 100.0  4.0  2.5</span>
+<span class="hovl"> 1993:            3-5-1  38.9  2.9  3.8 |         2-1-1  62.5  3.0  2.5 |         1-4-0  20.0  2.8  4.8 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1992:            2-4-2  37.5  2.9  3.6 |         2-0-2  75.0  3.5  2.0 |         0-4-0   0.0  2.3  5.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1991:            5-7-2  42.9  3.1  2.9 |         4-3-0  57.1  4.4  3.0 |         1-4-2  28.6  1.9  2.9 |         4-2-0  66.7  3.7  2.8</span>
+<span class="hovl"> 1990:            4-4-0  50.0  2.8  2.5 |         3-1-0  75.0  2.3  0.8 |         1-3-0  25.0  3.3  4.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1989:            3-7-3  34.6  3.2  4.2 |         3-3-0  50.0  3.8  4.2 |         0-4-3  21.4  2.7  4.1 |         1-4-0  20.0  3.0  4.6</span>
+<span class="hovl"> 1988:            2-5-1  31.3  2.9  4.0 |         0-4-0   0.0  2.3  3.5 |         2-1-1  62.5  3.5  4.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1987:            2-5-1  31.3  3.9  4.8 |         1-2-1  37.5  3.8  4.5 |         1-3-0  25.0  4.0  5.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1986:            6-6-1  50.0  3.8  3.8 |         4-3-0  57.1  3.9  3.7 |         2-3-1  41.7  3.8  3.8 |         2-3-0  40.0  4.0  3.6</span>
+<span class="hovl"> 1985:            4-6-1  40.9  2.9  3.4 |         2-2-1  50.0  3.2  2.8 |         2-4-0  33.3  2.7  3.8 |         3-0-0 100.0  3.0  1.7</span>
+<span class="hovl"> 1984:            9-5-1  63.3  3.9  3.3 |         5-2-1  68.8  4.1  3.0 |         4-3-0  57.1  3.6  3.7 |         4-3-0  57.1  2.7  2.4</span>
+<span class="hovl"> 1983:            3-0-5  68.8  4.1  3.3 |         1-0-3  62.5  3.5  3.3 |         2-0-2  75.0  4.8  3.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1982:            3-3-1  50.0  4.0  3.9 |         2-0-1  83.3  6.3  3.0 |         1-3-0  25.0  2.3  4.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1981:            2-1-1  62.5  3.5  2.3 |         1-0-1  75.0  4.0  2.5 |         1-1-0  50.0  3.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1980:            3-1-0  75.0  4.0  2.0 |         2-0-0 100.0  6.0  2.5 |         1-1-0  50.0  2.0  1.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1979:            2-1-1  62.5  5.0  4.0 |         1-0-1  75.0  6.0  2.0 |         1-1-0  50.0  4.0  6.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1978:            1-4-1  25.0  1.3  3.2 |         1-2-0  33.3  1.3  2.0 |         0-2-1  16.7  1.3  4.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1977:            2-2-2  50.0  2.5  2.8 |         2-1-0  66.7  3.3  3.3 |         0-1-2  33.3  1.7  2.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1976:            2-4-0  33.3  2.7  3.2 |         1-2-0  33.3  2.0  3.0 |         1-2-0  33.3  3.3  3.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1975:            1-5-0  16.7  2.8  4.2 |         1-2-0  33.3  3.3  4.7 |         0-3-0   0.0  2.3  3.7 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1974:            3-1-1  70.0  4.4  2.4 |         1-0-1  75.0  6.0  2.5 |         2-1-0  66.7  3.3  2.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1973:            2-2-2  50.0  2.8  2.8 |         1-1-1  50.0  3.3  3.3 |         1-1-1  50.0  2.3  2.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1972:            7-6-0  53.8  2.8  2.5 |         5-2-0  71.4  3.6  2.1 |         2-4-0  33.3  2.0  3.0 |         3-4-0  42.9  2.7  2.7</span>
+<span class="hovl"> 1971:            7-3-2  66.7  2.8  2.1 |         4-1-1  75.0  2.8  1.7 |         3-2-1  58.3  2.7  2.5 |         4-2-0  66.7  2.7  2.5</span>
+<span class="hovl"> 1970:            4-8-2  35.7  2.9  3.8 |         4-2-1  64.3  3.4  3.1 |         0-6-1   7.1  2.4  4.4 |         2-4-0  33.3  2.7  3.3</span>
+<span class="hovl"> 1969:            2-4-2  37.5  1.4  2.5 |         0-3-1  12.5  0.8  2.3 |         2-1-1  62.5  2.0  2.8 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1968:            6-9-2  41.2  2.7  2.6 |         4-2-1  64.3  3.0  2.0 |         2-7-1  25.0  2.5  3.1 |         3-4-0  42.9  3.1  2.6</span>
 
 <b>ALL GAMES:</b>   <a href="../history.shtml">playoff round notes</a>
-<span class="hovl"> H 2026/01/22 Edmonton Oilers   2  -  Pittsburgh Penguins   6      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2025/12/16 Edmonton Oilers   6  -  Pittsburgh Penguins   4      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2025/01/09 Edmonton Oilers   3  -  Pittsburgh Penguins   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2024/10/25 Edmonton Oilers   4  -  Pittsburgh Penguins   0      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2024/03/10 Edmonton Oilers   4  -  Pittsburgh Penguins   0      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2024/03/03 Edmonton Oilers   6  -  Pittsburgh Penguins   1      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2023/02/23 Edmonton Oilers   7  -  Pittsburgh Penguins   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2022/10/24 Edmonton Oilers   6  -  Pittsburgh Penguins   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2022/04/26 Edmonton Oilers   5  -  Pittsburgh Penguins   1      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2021/12/01 Edmonton Oilers   5  -  Pittsburgh Penguins   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2019/12/20 Edmonton Oilers   2  -  Pittsburgh Penguins   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2019/11/02 Edmonton Oilers   2  -  Pittsburgh Penguins   1 (OT) <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2019/02/13 Edmonton Oilers   1  -  Pittsburgh Penguins   3      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2018/10/23 Edmonton Oilers   5  -  Pittsburgh Penguins   6 (OT) <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2017/11/01 Edmonton Oilers   2  -  Pittsburgh Penguins   3      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2017/10/24 Edmonton Oilers   1  -  Pittsburgh Penguins   2 (OT) <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2017/03/10 Edmonton Oilers   2  -  Pittsburgh Penguins   3 (SO) <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2016/11/08 Edmonton Oilers   3  -  Pittsburgh Penguins   4      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2015/11/28 Edmonton Oilers   3  -  Pittsburgh Penguins   2 (SO) <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2015/11/06 Edmonton Oilers   1  -  Pittsburgh Penguins   2      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2015/03/12 Edmonton Oilers   4  -  Pittsburgh Penguins   6      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2015/02/04 Edmonton Oilers   0  -  Pittsburgh Penguins   2      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2014/01/10 Edmonton Oilers   4  -  Pittsburgh Penguins   3 (OT) <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2013/10/15 Edmonton Oilers   2  -  Pittsburgh Penguins   3      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2011/10/09 Edmonton Oilers   2  -  Pittsburgh Penguins   1 (SO) <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2011/03/13 Edmonton Oilers   1  -  Pittsburgh Penguins   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2010/01/14 Edmonton Oilers   2  -  Pittsburgh Penguins   3      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2008/11/06 Edmonton Oilers   4  -  Pittsburgh Penguins   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2007/12/05 Edmonton Oilers   2  -  Pittsburgh Penguins   4      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2006/01/10 Edmonton Oilers   3  -  Pittsburgh Penguins   1      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2003/12/06 Edmonton Oilers   4  -  Pittsburgh Penguins   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2003/02/18 Edmonton Oilers   3  -  Pittsburgh Penguins   4 (OT) <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2002/01/19 Edmonton Oilers   0  -  Pittsburgh Penguins   1      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2000/11/11 Edmonton Oilers   2  -  Pittsburgh Penguins   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 2000/03/04 Edmonton Oilers   2  -  Pittsburgh Penguins   3      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 2000/02/11 Edmonton Oilers   2  -  Pittsburgh Penguins   2      T </span>
-<span class="hovl"> A 1999/03/05 Edmonton Oilers   2  -  Pittsburgh Penguins   2      T </span>
-<span class="hovl"> H 1998/10/31 Edmonton Oilers   4  -  Pittsburgh Penguins   1      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1998/03/18 Edmonton Oilers   2  -  Pittsburgh Penguins   4      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 1997/10/24 Edmonton Oilers   4  -  Pittsburgh Penguins   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1996/11/06 Edmonton Oilers   2  -  Pittsburgh Penguins   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 1996/10/22 Edmonton Oilers   5  -  Pittsburgh Penguins   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1996/03/21 Edmonton Oilers   4  -  Pittsburgh Penguins   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 1996/03/01 Edmonton Oilers   4  -  Pittsburgh Penguins   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 1994/03/27 Edmonton Oilers   5  -  Pittsburgh Penguins   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1994/01/15 Edmonton Oilers   3  -  Pittsburgh Penguins   4      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 1993/03/21 Edmonton Oilers   4  -  Pittsburgh Penguins   6      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 1993/02/18 Edmonton Oilers   5  -  Pittsburgh Penguins   4      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 1993/01/22 Edmonton Oilers   2  -  Pittsburgh Penguins   1      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1992/03/17 Edmonton Oilers   5  -  Pittsburgh Penguins   6      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 1991/12/03 Edmonton Oilers   5  -  Pittsburgh Penguins   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1991/11/13 Edmonton Oilers   4  -  Pittsburgh Penguins   5 (OT) <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 1991/02/11 Edmonton Oilers   7  -  Pittsburgh Penguins   5      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1991/01/08 Edmonton Oilers   1  -  Pittsburgh Penguins   6      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 1990/11/27 Edmonton Oilers   7  -  Pittsburgh Penguins   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 1990/03/06 Edmonton Oilers   4  -  Pittsburgh Penguins   3 (OT) <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1990/02/02 Edmonton Oilers   3  -  Pittsburgh Penguins   6      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 1989/11/04 Edmonton Oilers   1  -  Pittsburgh Penguins   3      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 1989/03/05 Edmonton Oilers   4  -  Pittsburgh Penguins   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 1989/01/21 Edmonton Oilers   4  -  Pittsburgh Penguins   7      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 1988/11/08 Edmonton Oilers   7  -  Pittsburgh Penguins   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 1988/02/19 Edmonton Oilers   7  -  Pittsburgh Penguins   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1988/01/25 Edmonton Oilers   6  -  Pittsburgh Penguins   4      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 1987/11/20 Edmonton Oilers   4  -  Pittsburgh Penguins   1      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1987/02/24 Edmonton Oilers   2  -  Pittsburgh Penguins   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 1987/01/24 Edmonton Oilers   4  -  Pittsburgh Penguins   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1986/12/05 Edmonton Oilers   4  -  Pittsburgh Penguins   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1986/03/26 Edmonton Oilers   8  -  Pittsburgh Penguins   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 1986/03/07 Edmonton Oilers   5  -  Pittsburgh Penguins   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 1986/01/22 Edmonton Oilers   4  -  Pittsburgh Penguins   7      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 1985/01/26 Edmonton Oilers   6  -  Pittsburgh Penguins   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1985/01/12 Edmonton Oilers   3  -  Pittsburgh Penguins   4      <b><font color="red">L</font></b> </span>
-<span class="hovl"> A 1984/11/06 Edmonton Oilers   3  -  Pittsburgh Penguins   3      T </span>
-<span class="hovl"> A 1984/02/22 Edmonton Oilers   9  -  Pittsburgh Penguins   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 1984/02/19 Edmonton Oilers   7  -  Pittsburgh Penguins   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 1983/11/05 Edmonton Oilers   7  -  Pittsburgh Penguins   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1983/02/19 Edmonton Oilers  10  -  Pittsburgh Penguins   7      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 1983/01/07 Edmonton Oilers   7  -  Pittsburgh Penguins   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1982/11/10 Edmonton Oilers   4  -  Pittsburgh Penguins   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 1982/03/17 Edmonton Oilers  10  -  Pittsburgh Penguins   4      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1982/02/27 Edmonton Oilers   4  -  Pittsburgh Penguins   1      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 1981/10/23 Edmonton Oilers   8  -  Pittsburgh Penguins   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1981/03/29 Edmonton Oilers   5  -  Pittsburgh Penguins   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 1981/03/16 Edmonton Oilers   7  -  Pittsburgh Penguins   6      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1981/03/08 Edmonton Oilers   4  -  Pittsburgh Penguins   6      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 1980/11/03 Edmonton Oilers   4  -  Pittsburgh Penguins   4      T </span>
-<span class="hovl"> H 1980/03/21 Edmonton Oilers   9  -  Pittsburgh Penguins   2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1980/03/08 Edmonton Oilers   4  -  Pittsburgh Penguins   5      <b><font color="red">L</font></b> </span>
-<span class="hovl"> H 1980/01/23 Edmonton Oilers   4  -  Pittsburgh Penguins   3      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 1980/01/19 Edmonton Oilers   5  -  Pittsburgh Penguins   2      <b><font color="green">W</font></b> </span>
+<span class="hovl"> A 2025/10/18 Dallas Stars            1  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2025/03/02 Dallas Stars            6  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2025/01/25 Dallas Stars            2  -  St. Louis Blues   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2024/12/14 Dallas Stars            2  -  St. Louis Blues   1 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2024/04/17 Dallas Stars            2  -  St. Louis Blues   1 (SO) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2023/12/27 Dallas Stars            1  -  St. Louis Blues   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2023/12/16 Dallas Stars            3  -  St. Louis Blues   4 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2023/10/12 Dallas Stars            2  -  St. Louis Blues   1 (SO) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2023/04/13 Dallas Stars            1  -  St. Louis Blues   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2023/04/12 Dallas Stars            5  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2022/11/28 Dallas Stars            4  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2022/01/09 Dallas Stars            1  -  St. Louis Blues   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2021/12/17 Dallas Stars            1  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2021/12/14 Dallas Stars            1  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2021/11/20 Dallas Stars            4  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2020/08/09 Dallas Stars            2  -  St. Louis Blues   1 (SO) <b><font color="green">W</font></b> !! Round Robin Seeding !!    </span>
+<span class="hovl"> A 2020/02/29 Dallas Stars            3  -  St. Louis Blues   4 (SO) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2020/02/21 Dallas Stars            1  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2020/02/08 Dallas Stars            3  -  St. Louis Blues   2 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2019/11/29 Dallas Stars            1  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2019/10/05 Dallas Stars            2  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2019/05/07 Dallas Stars            1  -  St. Louis Blues   2 (OT) <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 2019/05/05 Dallas Stars            1  -  St. Louis Blues   4      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 2019/05/03 Dallas Stars            2  -  St. Louis Blues   1      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 2019/05/01 Dallas Stars            4  -  St. Louis Blues   2      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 2019/04/29 Dallas Stars            3  -  St. Louis Blues   4      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 2019/04/27 Dallas Stars            4  -  St. Louis Blues   2      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 2019/04/25 Dallas Stars            2  -  St. Louis Blues   3      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 2019/03/02 Dallas Stars            4  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2019/02/21 Dallas Stars            5  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2019/01/12 Dallas Stars            1  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2019/01/08 Dallas Stars            3  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2018/03/03 Dallas Stars            3  -  St. Louis Blues   2 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2018/02/16 Dallas Stars            2  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2017/12/29 Dallas Stars            4  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2017/12/07 Dallas Stars            0  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2017/10/07 Dallas Stars            2  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2017/01/07 Dallas Stars            3  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2016/12/20 Dallas Stars            2  -  St. Louis Blues   3 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2016/11/28 Dallas Stars            3  -  St. Louis Blues   4 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2016/11/03 Dallas Stars            6  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2016/05/11 Dallas Stars            1  -  St. Louis Blues   6      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 2016/05/09 Dallas Stars            3  -  St. Louis Blues   2      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 2016/05/07 Dallas Stars            1  -  St. Louis Blues   4      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 2016/05/05 Dallas Stars            3  -  St. Louis Blues   2 (OT) <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 2016/05/03 Dallas Stars            1  -  St. Louis Blues   6      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 2016/05/01 Dallas Stars            3  -  St. Louis Blues   4 (OT) <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 2016/04/29 Dallas Stars            2  -  St. Louis Blues   1      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 2016/03/12 Dallas Stars            4  -  St. Louis Blues   5 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2016/02/16 Dallas Stars            1  -  St. Louis Blues   2 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2015/12/27 Dallas Stars            3  -  St. Louis Blues   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2015/12/26 Dallas Stars            2  -  St. Louis Blues   3 (SO) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2015/12/12 Dallas Stars            0  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2015/04/03 Dallas Stars            5  -  St. Louis Blues   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2015/03/15 Dallas Stars            0  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2015/02/17 Dallas Stars            4  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2014/12/27 Dallas Stars            4  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2014/10/28 Dallas Stars            3  -  St. Louis Blues   4 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2014/04/11 Dallas Stars            3  -  St. Louis Blues   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2014/03/29 Dallas Stars            4  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2014/03/11 Dallas Stars            3  -  St. Louis Blues   2 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2013/12/29 Dallas Stars            2  -  St. Louis Blues   3 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2013/11/23 Dallas Stars            1  -  St. Louis Blues   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2013/04/19 Dallas Stars            1  -  St. Louis Blues   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2013/03/03 Dallas Stars            4  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2013/01/26 Dallas Stars            3  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2012/04/07 Dallas Stars            2  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2012/01/16 Dallas Stars            0  -  St. Louis Blues   1      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2011/12/26 Dallas Stars            3  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2011/10/13 Dallas Stars            3  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2011/01/02 Dallas Stars            4  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2010/11/27 Dallas Stars            2  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2010/11/26 Dallas Stars            3  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2010/10/16 Dallas Stars            3  -  St. Louis Blues   2 (SO) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2010/04/03 Dallas Stars            1  -  St. Louis Blues   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2010/03/04 Dallas Stars            1  -  St. Louis Blues   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2009/11/25 Dallas Stars            3  -  St. Louis Blues   4 (SO) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2009/10/24 Dallas Stars            4  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2009/04/04 Dallas Stars            5  -  St. Louis Blues   4 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2009/03/10 Dallas Stars            2  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2009/02/26 Dallas Stars            1  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2008/10/16 Dallas Stars            1  -  St. Louis Blues   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2008/02/26 Dallas Stars            3  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2008/02/09 Dallas Stars            6  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2008/01/10 Dallas Stars            2  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2007/12/29 Dallas Stars            5  -  St. Louis Blues   4 (SO) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2007/04/02 Dallas Stars            2  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2007/03/08 Dallas Stars            3  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2007/02/03 Dallas Stars            0  -  St. Louis Blues   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2006/11/01 Dallas Stars            4  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2006/02/04 Dallas Stars            3  -  St. Louis Blues   4 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2006/01/25 Dallas Stars            4  -  St. Louis Blues   3 (SO) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2005/12/29 Dallas Stars            3  -  St. Louis Blues   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2005/12/26 Dallas Stars            6  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2004/03/20 Dallas Stars            3  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2004/01/24 Dallas Stars            3  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2004/01/23 Dallas Stars            2  -  St. Louis Blues   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2003/11/22 Dallas Stars            1  -  St. Louis Blues   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2003/03/23 Dallas Stars            3  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2003/02/05 Dallas Stars            2  -  St. Louis Blues   2      T                              </span>
+<span class="hovl"> A 2003/01/25 Dallas Stars            4  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2002/10/19 Dallas Stars            3  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2002/04/03 Dallas Stars            1  -  St. Louis Blues   2 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2002/03/20 Dallas Stars            3  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2002/01/05 Dallas Stars            2  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2001/10/17 Dallas Stars            2  -  St. Louis Blues   2      T                              </span>
+<span class="hovl"> A 2001/05/03 Dallas Stars            1  -  St. Louis Blues   4      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 2001/05/01 Dallas Stars            2  -  St. Louis Blues   3 (OT) <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 2001/04/29 Dallas Stars            1  -  St. Louis Blues   2      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 2001/04/27 Dallas Stars            2  -  St. Louis Blues   4      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 2001/03/25 Dallas Stars            1  -  St. Louis Blues   1      T                              </span>
+<span class="hovl"> H 2001/02/11 Dallas Stars            3  -  St. Louis Blues   3      T                              </span>
+<span class="hovl"> A 2000/10/28 Dallas Stars            3  -  St. Louis Blues   4 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2000/03/12 Dallas Stars            4  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2000/01/28 Dallas Stars            1  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1999/12/11 Dallas Stars            2  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1999/11/09 Dallas Stars            5  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1999/05/17 Dallas Stars            2  -  St. Louis Blues   1 (OT) <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1999/05/15 Dallas Stars            3  -  St. Louis Blues   1      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1999/05/12 Dallas Stars            2  -  St. Louis Blues   3 (OT) <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1999/05/10 Dallas Stars            2  -  St. Louis Blues   3 (OT) <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1999/05/08 Dallas Stars            5  -  St. Louis Blues   4 (OT) <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1999/05/06 Dallas Stars            3  -  St. Louis Blues   0      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1999/04/03 Dallas Stars            2  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1999/03/07 Dallas Stars            4  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1998/12/15 Dallas Stars            7  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1998/11/21 Dallas Stars            3  -  St. Louis Blues   3      T                              </span>
+<span class="hovl"> H 1998/04/12 Dallas Stars            4  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1998/03/07 Dallas Stars            1  -  St. Louis Blues   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1998/01/31 Dallas Stars            3  -  St. Louis Blues   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1998/01/14 Dallas Stars            2  -  St. Louis Blues   1 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1997/11/10 Dallas Stars            1  -  St. Louis Blues   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1997/10/04 Dallas Stars            1  -  St. Louis Blues   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1997/03/23 Dallas Stars            4  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1997/03/05 Dallas Stars            3  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1997/02/06 Dallas Stars            4  -  St. Louis Blues   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1996/12/11 Dallas Stars            5  -  St. Louis Blues   5      T                              </span>
+<span class="hovl"> A 1996/11/03 Dallas Stars            3  -  St. Louis Blues   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1996/03/20 Dallas Stars            2  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1996/02/10 Dallas Stars            3  -  St. Louis Blues   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1996/02/06 Dallas Stars            5  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1995/12/28 Dallas Stars            1  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1995/10/19 Dallas Stars            1  -  St. Louis Blues   1      T                              </span>
+<span class="hovl"> H 1995/10/12 Dallas Stars            1  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1995/04/25 Dallas Stars            4  -  St. Louis Blues   8      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1995/04/09 Dallas Stars            3  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1995/03/27 Dallas Stars            2  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1995/03/05 Dallas Stars            2  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1995/02/04 Dallas Stars            4  -  St. Louis Blues   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1994/04/24 Dallas Stars            2  -  St. Louis Blues   1      <b><font color="green">W</font></b> !! 1st Round !!              </span>
+<span class="hovl"> A 1994/04/22 Dallas Stars            5  -  St. Louis Blues   4 (OT) <b><font color="green">W</font></b> !! 1st Round !!              </span>
+<span class="hovl"> H 1994/04/19 Dallas Stars            4  -  St. Louis Blues   2      <b><font color="green">W</font></b> !! 1st Round !!              </span>
+<span class="hovl"> H 1994/04/17 Dallas Stars            5  -  St. Louis Blues   3      <b><font color="green">W</font></b> !! 1st Round !!              </span>
+<span class="hovl"> H 1994/04/12 Dallas Stars            9  -  St. Louis Blues   5      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1994/04/10 Dallas Stars            2  -  St. Louis Blues   2      T                              </span>
+<span class="hovl"> A 1994/03/25 Dallas Stars            3  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1994/01/09 Dallas Stars            2  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1993/12/04 Dallas Stars            3  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1993/10/16 Dallas Stars            4  -  St. Louis Blues   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1993/04/11 Minnesota North Stars   1  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1993/04/10 Minnesota North Stars   4  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1993/03/14 Minnesota North Stars   1  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1993/03/13 Minnesota North Stars   2  -  St. Louis Blues   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1993/02/27 Minnesota North Stars   2  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1992/12/22 Minnesota North Stars   2  -  St. Louis Blues   2      T                              </span>
+<span class="hovl"> A 1992/10/15 Minnesota North Stars   5  -  St. Louis Blues   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1992/10/08 Minnesota North Stars   5  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1992/10/06 Minnesota North Stars   4  -  St. Louis Blues   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1992/04/16 Minnesota North Stars   3  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1992/04/12 Minnesota North Stars   1  -  St. Louis Blues   1      T                              </span>
+<span class="hovl"> A 1992/03/10 Minnesota North Stars   2  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1992/01/02 Minnesota North Stars   1  -  St. Louis Blues   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1991/12/28 Minnesota North Stars   5  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1991/12/04 Minnesota North Stars   5  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1991/12/03 Minnesota North Stars   3  -  St. Louis Blues   3      T                              </span>
+<span class="hovl"> A 1991/11/16 Minnesota North Stars   3  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1991/04/28 Minnesota North Stars   3  -  St. Louis Blues   2      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1991/04/26 Minnesota North Stars   2  -  St. Louis Blues   4      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1991/04/24 Minnesota North Stars   8  -  St. Louis Blues   4      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1991/04/22 Minnesota North Stars   5  -  St. Louis Blues   1      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1991/04/20 Minnesota North Stars   2  -  St. Louis Blues   5      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1991/04/18 Minnesota North Stars   2  -  St. Louis Blues   1      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1991/03/31 Minnesota North Stars   1  -  St. Louis Blues   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1991/03/25 Minnesota North Stars   4  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1991/03/14 Minnesota North Stars   2  -  St. Louis Blues   2      T                              </span>
+<span class="hovl"> H 1991/01/22 Minnesota North Stars   7  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1990/12/13 Minnesota North Stars   2  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1990/11/17 Minnesota North Stars   2  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1990/10/20 Minnesota North Stars   2  -  St. Louis Blues   2      T                              </span>
+<span class="hovl"> H 1990/10/04 Minnesota North Stars   2  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1990/03/31 Minnesota North Stars   6  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1990/02/13 Minnesota North Stars   1  -  St. Louis Blues   2 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1989/12/31 Minnesota North Stars   2  -  St. Louis Blues   1 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1989/12/30 Minnesota North Stars   2  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1989/11/21 Minnesota North Stars   4  -  St. Louis Blues   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1989/11/18 Minnesota North Stars   3  -  St. Louis Blues   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1989/10/26 Minnesota North Stars   1  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1989/10/12 Minnesota North Stars   3  -  St. Louis Blues   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1989/04/11 Minnesota North Stars   1  -  St. Louis Blues   6      <b><font color="red">L</font></b> !! 1st Round !!              </span>
+<span class="hovl"> H 1989/04/09 Minnesota North Stars   5  -  St. Louis Blues   4      <b><font color="green">W</font></b> !! 1st Round !!              </span>
+<span class="hovl"> H 1989/04/08 Minnesota North Stars   3  -  St. Louis Blues   5      <b><font color="red">L</font></b> !! 1st Round !!              </span>
+<span class="hovl"> A 1989/04/06 Minnesota North Stars   3  -  St. Louis Blues   4 (OT) <b><font color="red">L</font></b> !! 1st Round !!              </span>
+<span class="hovl"> A 1989/04/05 Minnesota North Stars   3  -  St. Louis Blues   4 (OT) <b><font color="red">L</font></b> !! 1st Round !!              </span>
+<span class="hovl"> H 1989/03/12 Minnesota North Stars   5  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1989/03/11 Minnesota North Stars   2  -  St. Louis Blues   2      T                              </span>
+<span class="hovl"> H 1988/12/31 Minnesota North Stars   6  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1988/12/30 Minnesota North Stars   5  -  St. Louis Blues   5      T                              </span>
+<span class="hovl"> H 1988/12/10 Minnesota North Stars   1  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1988/12/06 Minnesota North Stars   0  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1988/11/10 Minnesota North Stars   5  -  St. Louis Blues   5      T                              </span>
+<span class="hovl"> H 1988/10/06 Minnesota North Stars   3  -  St. Louis Blues   8      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1988/03/17 Minnesota North Stars   2  -  St. Louis Blues   2      T                              </span>
+<span class="hovl"> H 1988/02/03 Minnesota North Stars   0  -  St. Louis Blues   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1988/01/28 Minnesota North Stars   1  -  St. Louis Blues   9      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1987/12/10 Minnesota North Stars   4  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1987/11/28 Minnesota North Stars   6  -  St. Louis Blues   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1987/11/25 Minnesota North Stars   3  -  St. Louis Blues   4 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1987/10/29 Minnesota North Stars   2  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1987/10/27 Minnesota North Stars   5  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1987/04/04 Minnesota North Stars   1  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1987/03/23 Minnesota North Stars   5  -  St. Louis Blues   8      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1987/02/19 Minnesota North Stars   2  -  St. Louis Blues   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1987/02/15 Minnesota North Stars   3  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1987/01/12 Minnesota North Stars   4  -  St. Louis Blues   4      T                              </span>
+<span class="hovl"> A 1986/11/19 Minnesota North Stars   5  -  St. Louis Blues   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1986/11/18 Minnesota North Stars   3  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1986/10/22 Minnesota North Stars   8  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1986/04/15 Minnesota North Stars   3  -  St. Louis Blues   6      <b><font color="red">L</font></b> !! 1st Round !!              </span>
+<span class="hovl"> A 1986/04/13 Minnesota North Stars   7  -  St. Louis Blues   4      <b><font color="green">W</font></b> !! 1st Round !!              </span>
+<span class="hovl"> A 1986/04/12 Minnesota North Stars   3  -  St. Louis Blues   4      <b><font color="red">L</font></b> !! 1st Round !!              </span>
+<span class="hovl"> H 1986/04/10 Minnesota North Stars   6  -  St. Louis Blues   2      <b><font color="green">W</font></b> !! 1st Round !!              </span>
+<span class="hovl"> H 1986/04/09 Minnesota North Stars   1  -  St. Louis Blues   2      <b><font color="red">L</font></b> !! 1st Round !!              </span>
+<span class="hovl"> H 1986/03/17 Minnesota North Stars   6  -  St. Louis Blues   5 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1986/03/13 Minnesota North Stars   3  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1986/02/13 Minnesota North Stars   3  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1986/01/16 Minnesota North Stars   4  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1985/11/30 Minnesota North Stars   3  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1985/11/21 Minnesota North Stars   2  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1985/10/23 Minnesota North Stars   4  -  St. Louis Blues   4      T                              </span>
+<span class="hovl"> H 1985/10/22 Minnesota North Stars   5  -  St. Louis Blues   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1985/04/13 Minnesota North Stars   2  -  St. Louis Blues   0      <b><font color="green">W</font></b> !! 1st Round !!              </span>
+<span class="hovl"> A 1985/04/11 Minnesota North Stars   4  -  St. Louis Blues   3      <b><font color="green">W</font></b> !! 1st Round !!              </span>
+<span class="hovl"> A 1985/04/10 Minnesota North Stars   3  -  St. Louis Blues   2      <b><font color="green">W</font></b> !! 1st Round !!              </span>
+<span class="hovl"> H 1985/04/06 Minnesota North Stars   3  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1985/03/23 Minnesota North Stars   2  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1985/03/09 Minnesota North Stars   4  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1985/02/16 Minnesota North Stars   4  -  St. Louis Blues   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1985/02/09 Minnesota North Stars   2  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1985/01/16 Minnesota North Stars   4  -  St. Louis Blues   4      T                              </span>
+<span class="hovl"> H 1985/01/10 Minnesota North Stars   3  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1984/12/19 Minnesota North Stars   1  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1984/04/22 Minnesota North Stars   4  -  St. Louis Blues   3 (OT) <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1984/04/20 Minnesota North Stars   0  -  St. Louis Blues   4      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1984/04/18 Minnesota North Stars   6  -  St. Louis Blues   0      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1984/04/16 Minnesota North Stars   3  -  St. Louis Blues   2      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1984/04/15 Minnesota North Stars   1  -  St. Louis Blues   3      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1984/04/13 Minnesota North Stars   3  -  St. Louis Blues   4 (OT) <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1984/04/12 Minnesota North Stars   2  -  St. Louis Blues   1      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1984/03/26 Minnesota North Stars   4  -  St. Louis Blues   3 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1984/02/29 Minnesota North Stars   5  -  St. Louis Blues   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1984/02/28 Minnesota North Stars   2  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1984/01/27 Minnesota North Stars  10  -  St. Louis Blues   8      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1984/01/14 Minnesota North Stars   4  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1983/12/20 Minnesota North Stars   5  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1983/12/14 Minnesota North Stars   4  -  St. Louis Blues   4      T                              </span>
+<span class="hovl"> H 1983/11/12 Minnesota North Stars   5  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1983/03/19 Minnesota North Stars   3  -  St. Louis Blues   3      T                              </span>
+<span class="hovl"> H 1983/03/02 Minnesota North Stars   4  -  St. Louis Blues   4      T                              </span>
+<span class="hovl"> H 1983/01/27 Minnesota North Stars   3  -  St. Louis Blues   3      T                              </span>
+<span class="hovl"> A 1983/01/25 Minnesota North Stars   4  -  St. Louis Blues   4      T                              </span>
+<span class="hovl"> H 1983/01/05 Minnesota North Stars   3  -  St. Louis Blues   3      T                              </span>
+<span class="hovl"> A 1982/12/02 Minnesota North Stars   6  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1982/10/18 Minnesota North Stars   4  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1982/10/09 Minnesota North Stars   6  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1982/03/13 Minnesota North Stars   3  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1982/03/08 Minnesota North Stars   8  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1982/01/28 Minnesota North Stars   3  -  St. Louis Blues   8      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1982/01/05 Minnesota North Stars   1  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1981/12/26 Minnesota North Stars   6  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1981/12/15 Minnesota North Stars   2  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1981/10/22 Minnesota North Stars   5  -  St. Louis Blues   5      T                              </span>
+<span class="hovl"> A 1981/04/04 Minnesota North Stars   5  -  St. Louis Blues   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1981/03/31 Minnesota North Stars   6  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1980/12/09 Minnesota North Stars   1  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1980/10/29 Minnesota North Stars   2  -  St. Louis Blues   2      T                              </span>
+<span class="hovl"> H 1980/01/16 Minnesota North Stars   7  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1980/01/15 Minnesota North Stars   1  -  St. Louis Blues   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1979/12/15 Minnesota North Stars   3  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1979/10/24 Minnesota North Stars   5  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1979/03/11 Minnesota North Stars   2  -  St. Louis Blues   8      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1979/01/03 Minnesota North Stars   3  -  St. Louis Blues   3      T                              </span>
+<span class="hovl"> A 1978/12/26 Minnesota North Stars   6  -  St. Louis Blues   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1978/11/01 Minnesota North Stars   9  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1978/03/11 Minnesota North Stars   1  -  St. Louis Blues   1      T                              </span>
+<span class="hovl"> H 1978/03/01 Minnesota North Stars   2  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1978/02/28 Minnesota North Stars   1  -  St. Louis Blues   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1978/01/14 Minnesota North Stars   2  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1978/01/08 Minnesota North Stars   1  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1977/12/27 Minnesota North Stars   1  -  St. Louis Blues   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1977/03/28 Minnesota North Stars   5  -  St. Louis Blues   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1977/03/12 Minnesota North Stars   3  -  St. Louis Blues   3      T                              </span>
+<span class="hovl"> H 1977/03/06 Minnesota North Stars   3  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1977/01/01 Minnesota North Stars   1  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1976/12/11 Minnesota North Stars   1  -  St. Louis Blues   1      T                              </span>
+<span class="hovl"> H 1976/11/24 Minnesota North Stars   2  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1976/03/30 Minnesota North Stars   3  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1976/03/27 Minnesota North Stars   3  -  St. Louis Blues   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1976/01/10 Minnesota North Stars   2  -  St. Louis Blues   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1976/01/03 Minnesota North Stars   2  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1975/11/18 Minnesota North Stars   5  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1975/11/05 Minnesota North Stars   1  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1975/04/01 Minnesota North Stars   3  -  St. Louis Blues   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1975/03/29 Minnesota North Stars   1  -  St. Louis Blues   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1975/03/09 Minnesota North Stars   4  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1975/01/18 Minnesota North Stars   4  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1974/12/28 Minnesota North Stars   2  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1974/11/21 Minnesota North Stars   3  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1974/03/10 Minnesota North Stars   8  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1974/02/16 Minnesota North Stars   4  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1974/01/15 Minnesota North Stars   5  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1973/11/22 Minnesota North Stars   1  -  St. Louis Blues   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1973/10/20 Minnesota North Stars   4  -  St. Louis Blues   4      T                              </span>
+<span class="hovl"> A 1973/03/28 Minnesota North Stars   3  -  St. Louis Blues   3      T                              </span>
+<span class="hovl"> H 1973/02/21 Minnesota North Stars   2  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1973/02/14 Minnesota North Stars   5  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1973/02/08 Minnesota North Stars   2  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1972/11/01 Minnesota North Stars   3  -  St. Louis Blues   3      T                              </span>
+<span class="hovl"> A 1972/10/24 Minnesota North Stars   2  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1972/04/16 Minnesota North Stars   1  -  St. Louis Blues   2 (OT) <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1972/04/13 Minnesota North Stars   2  -  St. Louis Blues   4      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1972/04/11 Minnesota North Stars   4  -  St. Louis Blues   3      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1972/04/09 Minnesota North Stars   2  -  St. Louis Blues   3      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1972/04/08 Minnesota North Stars   1  -  St. Louis Blues   2      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1972/04/06 Minnesota North Stars   6  -  St. Louis Blues   5 (OT) <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1972/04/05 Minnesota North Stars   3  -  St. Louis Blues   0      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1972/02/26 Minnesota North Stars   2  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1972/02/10 Minnesota North Stars   3  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1972/01/15 Minnesota North Stars   2  -  St. Louis Blues   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1971/12/15 Minnesota North Stars   4  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1971/11/06 Minnesota North Stars   5  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1971/10/27 Minnesota North Stars   2  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1971/04/15 Minnesota North Stars   5  -  St. Louis Blues   2      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1971/04/13 Minnesota North Stars   4  -  St. Louis Blues   3      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1971/04/11 Minnesota North Stars   2  -  St. Louis Blues   1      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1971/04/10 Minnesota North Stars   0  -  St. Louis Blues   3      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1971/04/08 Minnesota North Stars   2  -  St. Louis Blues   4      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1971/04/07 Minnesota North Stars   3  -  St. Louis Blues   2      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1971/03/10 Minnesota North Stars   4  -  St. Louis Blues   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1971/01/21 Minnesota North Stars   5  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1970/12/26 Minnesota North Stars   1  -  St. Louis Blues   1      T                              </span>
+<span class="hovl"> A 1970/12/15 Minnesota North Stars   1  -  St. Louis Blues   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1970/11/17 Minnesota North Stars   5  -  St. Louis Blues   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1970/11/07 Minnesota North Stars   1  -  St. Louis Blues   1      T                              </span>
+<span class="hovl"> H 1970/04/16 Minnesota North Stars   2  -  St. Louis Blues   4      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1970/04/14 Minnesota North Stars   3  -  St. Louis Blues   6      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1970/04/12 Minnesota North Stars   4  -  St. Louis Blues   0      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1970/04/11 Minnesota North Stars   4  -  St. Louis Blues   2      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1970/04/09 Minnesota North Stars   1  -  St. Louis Blues   2      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1970/04/08 Minnesota North Stars   2  -  St. Louis Blues   6      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1970/03/17 Minnesota North Stars   5  -  St. Louis Blues   5      T                              </span>
+<span class="hovl"> H 1970/03/11 Minnesota North Stars   1  -  St. Louis Blues   9      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1970/02/15 Minnesota North Stars   3  -  St. Louis Blues   3      T                              </span>
+<span class="hovl"> H 1970/01/14 Minnesota North Stars   5  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1969/12/23 Minnesota North Stars   3  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1969/11/20 Minnesota North Stars   1  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1969/11/08 Minnesota North Stars   5  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1969/10/18 Minnesota North Stars   2  -  St. Louis Blues   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1969/03/16 Minnesota North Stars   3  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1969/03/09 Minnesota North Stars   2  -  St. Louis Blues   2      T                              </span>
+<span class="hovl"> A 1969/02/16 Minnesota North Stars   0  -  St. Louis Blues   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1969/01/19 Minnesota North Stars   1  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1969/01/12 Minnesota North Stars   0  -  St. Louis Blues   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1968/12/25 Minnesota North Stars   0  -  St. Louis Blues   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1968/11/17 Minnesota North Stars   3  -  St. Louis Blues   3      T                              </span>
+<span class="hovl"> A 1968/11/02 Minnesota North Stars   2  -  St. Louis Blues   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1968/05/03 Minnesota North Stars   1  -  St. Louis Blues   2 (OT) <b><font color="red">L</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> H 1968/05/01 Minnesota North Stars   5  -  St. Louis Blues   1      <b><font color="green">W</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> A 1968/04/29 Minnesota North Stars   2  -  St. Louis Blues   3 (OT) <b><font color="red">L</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> A 1968/04/27 Minnesota North Stars   3  -  St. Louis Blues   4 (OT) <b><font color="red">L</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> A 1968/04/25 Minnesota North Stars   5  -  St. Louis Blues   1      <b><font color="green">W</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> H 1968/04/22 Minnesota North Stars   3  -  St. Louis Blues   2 (OT) <b><font color="green">W</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> A 1968/04/21 Minnesota North Stars   3  -  St. Louis Blues   5      <b><font color="red">L</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> H 1968/03/31 Minnesota North Stars   3  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1968/03/30 Minnesota North Stars   2  -  St. Louis Blues   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1968/02/17 Minnesota North Stars   2  -  St. Louis Blues   2      T                              </span>
+<span class="hovl"> A 1968/01/24 Minnesota North Stars   2  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1968/01/17 Minnesota North Stars   0  -  St. Louis Blues   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1967/12/25 Minnesota North Stars   0  -  St. Louis Blues   1      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1967/12/02 Minnesota North Stars   5  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1967/11/08 Minnesota North Stars   5  -  St. Louis Blues   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1967/10/25 Minnesota North Stars   3  -  St. Louis Blues   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1967/10/11 Minnesota North Stars   2  -  St. Louis Blues   2      T                              </span>
     </pre></td>
   </tr>
 </tbody></table>
