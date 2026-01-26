@@ -2,9 +2,9 @@
 <script>var ezTcfConsent=window.ezTcfConsent?window.ezTcfConsent:{loaded:false,store_info:false,develop_and_improve_services:false,measure_ad_performance:false,measure_content_performance:false,select_basic_ads:false,create_ad_profile:false,select_personalized_ads:false,create_content_profile:false,select_personalized_content:false,understand_audiences:false,use_limited_data_to_select_content:false,};function getEzConsentData(){return new Promise(function(resolve){document.addEventListener("ezConsentEvent",function(event){var ezTcfConsent=event.detail.ezTcfConsent;resolve(ezTcfConsent);});});}</script>
 <script>if(typeof _setEzCookies!=='function'){function _setEzCookies(ezConsentData){var cookies=window.ezCookieQueue;for(var i=0;i<cookies.length;i++){var cookie=cookies[i];if(ezConsentData&&ezConsentData.loaded&&ezConsentData[cookie.tcfCategory]){document.cookie=cookie.name+"="+cookie.value;}}}}
 window.ezCookieQueue=window.ezCookieQueue||[];if(typeof addEzCookies!=='function'){function addEzCookies(arr){window.ezCookieQueue=[...window.ezCookieQueue,...arr];}}
-addEzCookies([{name:"ezoab_413175",value:"mod21-c; Path=/; Domain=mcubed.net; Max-Age=7200",tcfCategory:"store_info",isEzoic:"true",},{name:"ezosuibasgeneris-1",value:"3395a7cb-a74a-4e50-6bd1-0275a04dbbae; Path=/; Domain=mcubed.net; Expires=Sat, 23 Jan 2027 14:35:42 UTC; Secure; SameSite=None",tcfCategory:"understand_audiences",isEzoic:"true",}]);if(window.ezTcfConsent&&window.ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else if(typeof getEzConsentData==="function"){getEzConsentData().then(function(ezTcfConsent){if(ezTcfConsent&&ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else{console.error("cannot get ez consent data");_setEzCookies(window.ezTcfConsent);}});}else{console.error("getEzConsentData is not a function");_setEzCookies(window.ezTcfConsent);}</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window._ezaq = Object.assign({"edge_cache_status":11,"edge_response_time":101,"url":"https://mcubed.net/nhl/phi/col.shtml"}, typeof window._ezaq !== "undefined" ? window._ezaq : {});</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window._ezaq = Object.assign({"ab_test_id":"mod21-c"}, typeof window._ezaq !== "undefined" ? window._ezaq : {});window.__ez=window.__ez||{};window.__ez.tf={};</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window.ezDisableAds = true;</script><script src="https://cmp.gatekeeperconsent.com/min.js" async></script>
+addEzCookies([{name:"ezoab_413175",value:"mod10; Path=/; Domain=mcubed.net; Max-Age=7200",tcfCategory:"store_info",isEzoic:"true",},{name:"ezosuibasgeneris-1",value:"34fdda0f-62bc-4bba-6e5f-1d13c99389f2; Path=/; Domain=mcubed.net; Expires=Tue, 26 Jan 2027 13:30:03 UTC; Secure; SameSite=None",tcfCategory:"understand_audiences",isEzoic:"true",}]);if(window.ezTcfConsent&&window.ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else if(typeof getEzConsentData==="function"){getEzConsentData().then(function(ezTcfConsent){if(ezTcfConsent&&ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else{console.error("cannot get ez consent data");_setEzCookies(window.ezTcfConsent);}});}else{console.error("getEzConsentData is not a function");_setEzCookies(window.ezTcfConsent);}</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window._ezaq = Object.assign({"edge_cache_status":11,"edge_response_time":121,"url":"https://mcubed.net/nhl/bos/nyr.shtml"}, typeof window._ezaq !== "undefined" ? window._ezaq : {});</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window._ezaq = Object.assign({"ab_test_id":"mod10"}, typeof window._ezaq !== "undefined" ? window._ezaq : {});window.__ez=window.__ez||{};window.__ez.tf={"NewBanger":"lazyload"};</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window.ezDisableAds = true;</script><script src="https://cmp.gatekeeperconsent.com/min.js" async></script>
 <script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;window.__ezScriptHost="//www.ezojs.com";__ez.queue=__ez.queue||function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:w(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),m())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&m()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&m())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e,i,n,s,a,d,c,u,f){var m=new l(e,i,n,s,a,d,c,f);!0===u?o[e]=m:r[e]=m,t[e]=m,h(m)}function h(e){!0!==u(e)&&0!=s&&e.process()}function u(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(w(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function m(){++e>200||(f("let's go"),p(o),p(r))}function p(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||u(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function w(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),m()}),5e3)}),!1),{addFile:c,addFileOnce:function(e,i,n,o,r,s,a,l,d){t[e]||c(e,i,n,o,r,s,a,l,d)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,h(n)},addFunc:function(e,n,s,l,d,c,u,f,m,p){!0===c&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,u,f,p);!0===m?o[e]=w:r[e]=w,t[e]=w,h(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,h(o)},items:t,processAll:m,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&u(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot=__ez.dot||{};__ez.queue.addFileOnce('/detroitchicago/boise.js', '/detroitchicago/boise.js?gcb=195-2&cb=5', true, [], true, false, true, false);__ez.queue.addFileOnce('/parsonsmaize/abilene.js', '/parsonsmaize/abilene.js?gcb=195-2&cb=e80eca0cdb', true, [], true, false, true, false);__ez.queue.addFileOnce('/parsonsmaize/mulvane.js', '/parsonsmaize/mulvane.js?gcb=195-2&cb=e75e48eec0', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFileOnce('/detroitchicago/birmingham.js', '/detroitchicago/birmingham.js?gcb=195-2&cb=539c47377c', true, ['/parsonsmaize/abilene.js'], true, false, true, false);</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({"ad_cache_level":0,"adpicker_placement_cnt":0,"ai_placeholder_cache_level":0,"ai_placeholder_placement_cnt":-1,"domain":"mcubed.net","domain_id":413175,"ezcache_level":0,"ezcache_skip_code":14,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"response_size":64467,"response_size_orig":58604,"response_time_orig":99,"template_id":5,"url":"https://mcubed.net/nhl/phi/col.shtml","word_count":0,"worst_bad_word_level":0}, typeof window._ezaq !== "undefined" ? window._ezaq : {});__ez.queue.markLoaded('ezaqBaseReady');</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({"ad_cache_level":0,"adpicker_placement_cnt":0,"ai_placeholder_cache_level":0,"ai_placeholder_placement_cnt":-1,"domain":"mcubed.net","domain_id":413175,"ezcache_level":0,"ezcache_skip_code":14,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"response_size":164649,"response_size_orig":158786,"response_time_orig":143,"template_id":5,"url":"https://mcubed.net/nhl/bos/nyr.shtml","word_count":0,"worst_bad_word_level":0}, typeof window._ezaq !== "undefined" ? window._ezaq : {});__ez.queue.markLoaded('ezaqBaseReady');</script>
 <script type='text/javascript' data-ezscrex='false' data-cfasync='false'>
 window.ezAnalyticsStatic = true;
 
@@ -36,7 +36,7 @@ function getCookiesWithPrefix() {
     return cookiesWithPrefix;
 }
 function productAnalytics() {
-	var d = {"pr":[6],"omd5":"fa5421a26b6e90481d4be8ab9e1aee8c","nar":"risk score"};
+	var d = {"pr":[6],"omd5":"b55252d0bc405dd7e61410c9acf03c03","nar":"risk score"};
 	d.u = _ezaq.url;
 	d.p = _ezaq.page_view_id;
 	d.v = _ezaq.visit_uuid;
@@ -75,8 +75,8 @@ function productAnalytics() {
 	xhr.send(dataText);
 }
 __ez.queue.addFunc("productAnalytics", "productAnalytics", null, true, ['ezaqBaseReady'], false, false, false, true);
-</script><base href="https://mcubed.net/nhl/phi/col.shtml"/>
-  <title>mcubed.net : NHL : Series records : Philadelphia Flyers against Colorado Avalanche</title>
+</script><base href="https://mcubed.net/nhl/bos/nyr.shtml"/>
+  <title>mcubed.net : NHL : Series records : Boston Bruins against New York Rangers</title>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4TGVY1H9RZ"></script><script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -234,7 +234,7 @@ a:active {color: blue}
 	#sddm div a:hover
 	{	background: #000000;
 		color: #FFFFFF}
-</style><link rel='canonical' href='https://mcubed.net/nhl/phi/col.shtml' />
+</style><link rel='canonical' href='https://mcubed.net/nhl/bos/nyr.shtml' />
 <script type='text/javascript'>
 var ezoTemplate = 'orig_site';
 var ezouid = '1';
@@ -509,7 +509,7 @@ var ezoicSearchable = 1;
 <ul id="sddm">
 <table width="900" border="0" cellpadding="1" cellspacing="1">
   <tbody><tr>
-    <td height="20" bgcolor="#7D7D7D" align="left"><font size="2" face="arial" color="white">&nbsp;&nbsp;NHL : Flyers &gt;</font></td>
+    <td height="20" bgcolor="#7D7D7D" align="left"><font size="2" face="arial" color="white">&nbsp;&nbsp;NHL : Bruins &gt;</font></td>
     <td height="20" bgcolor="#7D7D7D" onmouseover="this.style.backgroundColor=&#39;#000000&#39;;" onmouseout="this.style.backgroundColor=&#39;#7D7D7D&#39;;" align="center"><font size="2" face="arial" color="white"><a href="index.shtml" style="color:#FFFFFF;text-decoration:none">Win chart</a></font></td>
     <td height="20" bgcolor="#7D7D7D" onmouseover="this.style.backgroundColor=&#39;#000000&#39;;" onmouseout="this.style.backgroundColor=&#39;#7D7D7D&#39;;" align="center"><font size="2" face="arial" color="white"><a href="series1.shtml" style="color:#FFFFFF;text-decoration:none">Series records</a></font></td>
     <td height="20" bgcolor="#7D7D7D" onmouseover="this.style.backgroundColor=&#39;#000000&#39;;" onmouseout="this.style.backgroundColor=&#39;#7D7D7D&#39;;" align="center"><font size="2" face="arial" color="white"><a href="cup.shtml" style="color:#FFFFFF;text-decoration:none">Stanley Cups</a></font></td>
@@ -538,201 +538,871 @@ var ezoicSearchable = 1;
     </td>
     <td valign="top"><pre>
 
- <b>Series records : Philadelphia Flyers(H)  against  Colorado Avalanche(A)</b>
+ <b>Series records : Boston Bruins(H)  against  New York Rangers(A)</b>
 
-Streaks:  <span class="hovl">All games:      All time :  Wins   :  6 games - 1990/10/18 .. 1992/02/13</span>
-          <span class="hovl">                            Losses :  5 games - 2003/03/08 .. 2008/10/16</span>
-          <span class="hovl">                Current  :  Losses :  4 games - 2024/01/20 .. 2025/12/07</span>
+Streaks:  <span class="hovl">All games:      All time :  Wins   :  9 games - 1929/01/15 .. 1930/01/07</span>
+          <span class="hovl">                            Losses :  8 games - 2005/11/20 .. 2007/03/24</span>
+          <span class="hovl">                Current  :  Wins   :  1 game  - 2026/01/10              </span>
 
-          <span class="hovl">Home games:     All time :  Wins   :  8 games - 1988/10/20 .. 1992/12/03</span>
-          <span class="hovl">                            Losses :  3 games - 2024/01/20 .. 2025/12/07</span>
-          <span class="hovl">                                      3 games - 2002/03/16 .. 2006/01/14</span>
-          <span class="hovl">                                      3 games - 1995/01/21 .. 1996/02/11</span>
-          <span class="hovl">                Current  :  Losses :  3 games - 2024/01/20 .. 2025/12/07</span>
+          <span class="hovl">Home games:     All time :  Wins   : 10 games - 1943/01/16 .. 1945/01/21</span>
+          <span class="hovl">                            Losses :  6 games - 1962/01/01 .. 1962/11/22</span>
+          <span class="hovl">                Current  :  Wins   :  1 game  - 2026/01/10              </span>
 
-          <span class="hovl">Away games:     All time :  Wins   :  3 games - 2016/03/24 .. 2018/03/28</span>
-          <span class="hovl">                                      3 games - 1985/05/07 .. 1985/11/02</span>
-          <span class="hovl">                            Losses :  7 games - 2003/12/27 .. 2014/12/31</span>
-          <span class="hovl">                Current  :  Losses :  1 game  - 2025/02/02              </span>
+          <span class="hovl">Away games:     All time :  Wins   :  9 games - 1975/11/26 .. 1978/12/17</span>
+          <span class="hovl">                            Losses :  5 games - 2015/02/04 .. 2017/11/08</span>
+          <span class="hovl">                                      5 games - 2008/03/09 .. 2010/01/04</span>
+          <span class="hovl">                                      5 games - 1969/02/23 .. 1970/01/24</span>
+          <span class="hovl">                                      5 games - 1939/03/28 .. 1940/01/21</span>
+          <span class="hovl">                Current  :  Losses :  3 games - 2023/11/25 .. 2025/02/05</span>
 
                  <b><u>A L L    G A M E S</u>                   <u>H O M E</u>                        <u>A W A Y</u>                    <u>P L A Y O F F S</u></b>
  <b>OVERALL:        W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG</b>
-<span class="hovl">               51-45-14  52.7  3.4  3.1 |       34-19-2  63.6  3.7  2.9 |      17-26-12  41.8  3.1  3.3 |         7-4-0  63.6  3.5  2.6</span>
+<span class="hovl">             333-289-99  53.1  3.1  2.9 |    195-124-43  59.8  3.5  2.7 |    138-165-56  46.2  2.8  3.0 |       26-19-2  57.4  2.8  2.4</span>
 
                  <b><u>A L L    G A M E S</u>                   <u>H O M E</u>                        <u>A W A Y</u>                    <u>P L A Y O F F S</u></b>
  <b>DECADE:         W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG</b>
-<span class="hovl"> 2020&#39;s:          3-8-0  27.3  3.2  3.8 |         2-4-0  33.3  4.0  4.3 |         1-4-0  20.0  2.2  3.2 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2010&#39;s:          7-8-0  46.7  2.8  2.9 |         4-3-0  57.1  2.9  2.7 |         3-5-0  37.5  2.8  3.1 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2000&#39;s:          4-7-1  37.5  2.6  2.8 |         2-3-0  40.0  3.0  2.8 |         2-4-1  35.7  2.3  2.7 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1990&#39;s:        12-12-5  50.0  3.4  3.5 |         9-6-0  60.0  3.1  2.8 |         3-6-5  39.3  3.6  4.3 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1980&#39;s:        25-10-8  67.4  3.8  2.8 |        17-3-2  81.8  4.4  2.7 |         8-7-6  52.4  3.2  3.0 |         7-4-0  63.6  3.5  2.6</span>
+<span class="hovl"> 2020&#39;s:        14-11-0  56.0  3.2  2.7 |         7-6-0  53.8  3.5  2.8 |         7-5-0  58.3  3.0  2.6 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2010&#39;s:        16-22-0  42.1  2.6  2.6 |       10-10-0  50.0  2.5  2.3 |        6-12-0  33.3  2.6  2.9 |         4-1-0  80.0  3.2  2.0</span>
+<span class="hovl"> 2000&#39;s:        16-19-1  45.8  2.5  2.9 |        10-7-1  58.3  2.7  2.4 |        6-12-0  33.3  2.3  3.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1990&#39;s:        14-17-5  45.8  3.0  3.3 |         5-9-3  38.2  2.9  3.2 |         9-8-2  52.6  3.2  3.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1980&#39;s:        16-11-5  57.8  3.7  2.9 |         9-4-3  65.6  4.1  2.9 |         7-7-2  50.0  3.4  2.9 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1970&#39;s:        44-24-3  64.1  3.9  3.0 |       23-11-1  67.1  4.6  3.0 |       21-13-2  61.1  3.3  2.9 |         9-8-0  52.9  3.2  3.2</span>
+<span class="hovl"> 1960&#39;s:       45-64-21  42.7  3.1  3.5 |      28-27-10  50.8  3.6  3.3 |      17-37-11  34.6  2.6  3.7 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1950&#39;s:       58-56-32  50.7  2.8  2.7 |      36-23-15  58.8  3.0  2.3 |      22-33-17  42.4  2.6  3.1 |         4-2-0  66.7  4.7  2.7</span>
+<span class="hovl"> 1940&#39;s:       60-31-15  63.7  4.0  3.0 |       38-10-5  76.4  4.8  3.1 |      22-21-10  50.9  3.2  2.9 |         2-4-0  33.3  1.5  2.5</span>
+<span class="hovl"> 1930&#39;s:       38-28-11  56.5  2.4  2.2 |       22-14-3  60.3  2.7  2.3 |       16-14-8  52.6  2.1  2.1 |         4-3-0  57.1  2.0  1.7</span>
+<span class="hovl"> 1920&#39;s:         12-6-6  62.5  2.0  1.5 |         7-3-2  66.7  2.4  1.6 |         5-3-4  58.3  1.7  1.5 |         3-1-2  66.7  1.5  1.2</span>
 
                  <b><u>A L L    G A M E S</u>                   <u>H O M E</u>                        <u>A W A Y</u>                    <u>P L A Y O F F S</u></b>
  <b>YEAR:           W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG</b>
-<span class="hovl"> 2026:            0-1-0   0.0  2.0  3.0 |         0-1-0   0.0  2.0  3.0 |         0-0-0   0.0  0.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2025:            0-2-0   0.0  1.0  2.5 |         0-1-0   0.0  2.0  3.0 |         0-1-0   0.0  0.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2024:            1-1-0  50.0  4.5  4.5 |         0-1-0   0.0  4.0  7.0 |         1-0-0 100.0  5.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2023:            1-1-0  50.0  3.5  3.0 |         1-0-0 100.0  5.0  3.0 |         0-1-0   0.0  2.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2022:            0-2-0   0.0  4.0  6.5 |         0-1-0   0.0  5.0  7.0 |         0-1-0   0.0  3.0  6.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2026:            1-1-0  50.0  6.0  4.0 |         1-1-0  50.0  6.0  4.0 |         0-0-0   0.0  0.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2025:            1-2-0  33.3  3.0  2.7 |         1-0-0 100.0  6.0  3.0 |         0-2-0   0.0  1.5  2.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2024:            0-3-0   0.0  2.3  4.7 |         0-2-0   0.0  1.5  3.5 |         0-1-0   0.0  4.0  7.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2023:            3-0-0 100.0  4.0  1.7 |         1-0-0 100.0  4.0  2.0 |         2-0-0 100.0  4.0  1.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2022:            1-2-0  33.3  2.0  2.7 |         1-1-0  50.0  2.5  3.0 |         0-1-0   0.0  1.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2021:            5-3-0  62.5  2.8  2.3 |         2-2-0  50.0  3.0  2.3 |         3-1-0  75.0  2.5  2.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2020:            3-0-0 100.0  4.3  2.3 |         1-0-0 100.0  3.0  2.0 |         2-0-0 100.0  5.0  2.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2019:            1-2-0  33.3  3.7  3.3 |         1-1-0  50.0  4.0  3.0 |         0-1-0   0.0  3.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2018:            1-2-0  33.3  3.3  2.7 |         0-1-0   0.0  2.0  3.0 |         1-1-0  50.0  4.0  2.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2017:            0-3-0   0.0  1.7  4.0 |         0-2-0   0.0  1.5  3.5 |         0-1-0   0.0  2.0  5.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2016:            1-2-0  33.3  2.3  3.3 |         1-0-0 100.0  4.0  3.0 |         0-2-0   0.0  1.5  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2015:            2-1-0  66.7  3.0  1.7 |         2-0-0 100.0  3.5  1.0 |         0-1-0   0.0  2.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2014:            3-0-0 100.0  3.7  2.0 |         1-0-0 100.0  3.0  2.0 |         2-0-0 100.0  4.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2013:            5-3-0  62.5  3.1  2.4 |         4-1-0  80.0  3.4  2.0 |         1-2-0  33.3  2.7  3.0 |         4-1-0  80.0  3.2  2.0</span>
+<span class="hovl"> 2012:            1-3-0  25.0  1.8  2.8 |         0-2-0   0.0  1.0  3.0 |         1-1-0  50.0  2.5  2.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2011:            1-3-0  25.0  2.0  2.8 |         0-2-0   0.0  1.0  2.0 |         1-1-0  50.0  3.0  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2010:            1-3-0  25.0  1.3  2.0 |         1-1-0  50.0  1.5  2.0 |         0-2-0   0.0  1.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2009:            2-2-0  50.0  1.8  1.8 |         2-0-0 100.0  1.0  0.0 |         0-2-0   0.0  2.5  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2008:            3-1-0  75.0  2.0  1.3 |         2-0-0 100.0  2.5  1.5 |         1-1-0  50.0  1.5  1.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2007:            0-4-0   0.0  0.8  4.5 |         0-2-0   0.0  1.0  4.0 |         0-2-0   0.0  0.5  5.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2006:            0-4-0   0.0  2.3  3.8 |         0-2-0   0.0  2.5  3.5 |         0-2-0   0.0  2.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
  .
-<span class="hovl"> 2020:            1-1-0  50.0  3.5  3.0 |         1-0-0 100.0  6.0  3.0 |         0-1-0   0.0  1.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2019:            0-2-0   0.0  1.5  4.5 |         0-1-0   0.0  1.0  4.0 |         0-1-0   0.0  2.0  5.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2018:            1-1-0  50.0  3.0  3.0 |         0-1-0   0.0  4.0  5.0 |         1-0-0 100.0  2.0  1.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2017:            2-0-0 100.0  4.0  1.5 |         1-0-0 100.0  4.0  0.0 |         1-0-0 100.0  4.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2016:            1-1-0  50.0  2.0  3.0 |         0-1-0   0.0  0.0  4.0 |         1-0-0 100.0  4.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2015:            1-1-0  50.0  3.5  3.5 |         1-0-0 100.0  4.0  3.0 |         0-1-0   0.0  3.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2014:            1-1-0  50.0  2.0  1.5 |         1-0-0 100.0  3.0  1.0 |         0-1-0   0.0  1.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
- .
-<span class="hovl"> 2012:            0-1-0   0.0  2.0  3.0 |         0-0-0   0.0  0.0  0.0 |         0-1-0   0.0  2.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2011:            1-0-0 100.0  4.0  2.0 |         1-0-0 100.0  4.0  2.0 |         0-0-0   0.0  0.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2010:            0-1-0   0.0  4.0  5.0 |         0-0-0   0.0  0.0  0.0 |         0-1-0   0.0  4.0  5.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2009:            1-1-0  50.0  3.5  3.5 |         1-0-0 100.0  5.0  2.0 |         0-1-0   0.0  2.0  5.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2008:            0-1-0   0.0  1.0  2.0 |         0-0-0   0.0  0.0  0.0 |         0-1-0   0.0  1.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
- .
-<span class="hovl"> 2006:            0-1-0   0.0  3.0  4.0 |         0-1-0   0.0  3.0  4.0 |         0-0-0   0.0  0.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
- .
-<span class="hovl"> 2004:            0-1-0   0.0  2.0  3.0 |         0-0-0   0.0  0.0  0.0 |         0-1-0   0.0  2.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2003:            1-1-0  50.0  1.5  1.5 |         0-1-0   0.0  1.0  2.0 |         1-0-0 100.0  2.0  1.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2002:            1-1-0  50.0  3.0  2.0 |         0-1-0   0.0  1.0  2.0 |         1-0-0 100.0  5.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
- .
-<span class="hovl"> 2000:            1-1-0  50.0  3.0  3.5 |         1-0-0 100.0  5.0  4.0 |         0-1-0   0.0  1.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1999:            0-1-1  25.0  3.5  4.5 |         0-1-0   0.0  3.0  5.0 |         0-0-1  50.0  4.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1998:            0-2-0   0.0  1.5  2.5 |         0-1-0   0.0  1.0  2.0 |         0-1-0   0.0  2.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1997:            1-0-1  75.0  3.0  2.0 |         1-0-0 100.0  2.0  0.0 |         0-0-1  50.0  4.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1996:            0-1-1  25.0  2.5  3.5 |         0-1-0   0.0  3.0  5.0 |         0-0-1  50.0  2.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1995:            0-3-1  12.5  2.8  4.5 |         0-2-0   0.0  1.5  3.5 |         0-1-1  25.0  4.0  5.5 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1994:            3-1-0  75.0  3.8  2.8 |         2-0-0 100.0  3.5  1.5 |         1-1-0  50.0  4.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1993:            1-3-0  25.0  3.0  5.5 |         1-1-0  50.0  3.0  4.0 |         0-2-0   0.0  3.0  7.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1992:            3-0-0 100.0  3.7  1.7 |         2-0-0 100.0  4.0  2.5 |         1-0-0 100.0  3.0  0.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1991:            3-0-0 100.0  5.0  2.3 |         2-0-0 100.0  5.0  2.5 |         1-0-0 100.0  5.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1990:            1-1-1  50.0  4.3  4.7 |         1-0-0 100.0  4.0  2.0 |         0-1-1  25.0  4.5  6.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1989:            2-1-0  66.7  5.7  3.3 |         2-0-0 100.0  6.0  2.0 |         0-1-0   0.0  5.0  6.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1988:            2-0-1  83.3  5.7  3.7 |         0-0-1  50.0  4.0  4.0 |         2-0-0 100.0  6.5  3.5 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1987:            2-0-1  83.3  3.7  2.3 |         2-0-0 100.0  4.5  2.5 |         0-0-1  50.0  2.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1986:            1-1-1  50.0  2.7  2.3 |         0-1-0   0.0  1.0  2.0 |         1-0-1  75.0  3.5  2.5 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1985:            5-3-1  61.1  2.9  2.2 |         3-1-1  70.0  3.4  2.2 |         2-2-0  50.0  2.3  2.3 |         4-2-0  66.7  2.8  2.0</span>
-<span class="hovl"> 1984:            2-0-1  83.3  3.7  2.7 |         1-0-0 100.0  4.0  3.0 |         1-0-1  75.0  3.5  2.5 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1983:            3-0-0 100.0  5.7  3.0 |         2-0-0 100.0  6.5  3.0 |         1-0-0 100.0  4.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1982:            1-1-1  50.0  2.7  2.7 |         1-0-0 100.0  3.0  2.0 |         0-1-1  25.0  2.5  3.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 1981:            4-4-1  50.0  3.6  3.3 |         4-1-0  80.0  4.6  3.2 |         0-3-1  12.5  2.3  3.5 |         3-2-0  60.0  4.4  3.4</span>
-<span class="hovl"> 1980:            3-0-1  87.5  4.5  3.0 |         2-0-0 100.0  5.5  3.0 |         1-0-1  75.0  3.5  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2004:            3-1-0  75.0  3.5  2.0 |         2-0-0 100.0  4.0  1.5 |         1-1-0  50.0  3.0  2.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2003:            2-2-0  50.0  2.3  2.5 |         1-1-0  50.0  2.0  2.5 |         1-1-0  50.0  2.5  2.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2002:            1-3-0  25.0  3.0  4.3 |         0-2-0   0.0  2.5  4.0 |         1-1-0  50.0  3.5  4.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2001:            3-1-0  75.0  3.5  3.0 |         2-0-0 100.0  5.0  2.5 |         1-1-0  50.0  2.0  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2000:            2-1-1  62.5  3.5  3.0 |         1-0-1  75.0  3.5  2.5 |         1-1-0  50.0  3.5  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1999:            2-1-1  62.5  3.0  3.0 |         1-1-0  50.0  2.0  2.5 |         1-0-1  75.0  4.0  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1998:            3-1-0  75.0  4.0  2.3 |         2-0-0 100.0  4.5  1.5 |         1-1-0  50.0  3.5  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1997:            1-2-1  37.5  3.3  4.0 |         0-1-1  25.0  3.0  4.5 |         1-1-0  50.0  3.5  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1996:            1-3-0  25.0  3.0  3.8 |         0-2-0   0.0  3.5  5.0 |         1-1-0  50.0  2.5  2.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1995:            2-2-0  50.0  3.0  3.3 |         1-1-0  50.0  3.5  3.5 |         1-1-0  50.0  2.5  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1994:            2-1-1  62.5  3.0  2.8 |         0-1-1  25.0  1.0  2.5 |         2-0-0 100.0  5.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1993:            1-1-1  50.0  3.3  3.0 |         0-0-1  50.0  2.0  2.0 |         1-1-0  50.0  4.0  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1992:            1-2-0  33.3  2.0  3.0 |         1-0-0 100.0  5.0  3.0 |         0-2-0   0.0  0.5  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1991:            1-1-1  50.0  4.0  4.0 |         0-1-0   0.0  4.0  5.0 |         1-0-1  75.0  4.0  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1990:            0-3-0   0.0  1.3  3.7 |         0-2-0   0.0  1.5  2.5 |         0-1-0   0.0  1.0  6.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1989:            1-0-2  66.7  3.3  1.7 |         0-0-1  50.0  1.0  1.0 |         1-0-1  75.0  4.5  2.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1988:            1-2-0  33.3  2.3  3.7 |         1-1-0  50.0  3.0  3.5 |         0-1-0   0.0  1.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1987:            1-2-0  33.3  3.3  3.0 |         1-0-0 100.0  4.0  1.0 |         0-2-0   0.0  3.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1986:            1-2-0  33.3  2.3  2.3 |         1-1-0  50.0  3.0  2.5 |         0-1-0   0.0  1.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1985:            1-0-2  66.7  4.0  3.3 |         0-0-1  50.0  3.0  3.0 |         1-0-1  75.0  4.5  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1984:            2-0-1  83.3  5.7  4.0 |         1-0-1  75.0  5.5  4.0 |         1-0-0 100.0  6.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1983:            3-0-0 100.0  3.0  0.3 |         1-0-0 100.0  2.0  0.0 |         2-0-0 100.0  3.5  0.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1982:            2-1-0  66.7  5.0  4.0 |         1-1-0  50.0  5.5  4.5 |         1-0-0 100.0  4.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1981:            2-2-0  50.0  4.8  3.5 |         2-0-0 100.0  6.5  2.5 |         0-2-0   0.0  3.0  4.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1980:            2-2-0  50.0  3.3  3.3 |         1-1-0  50.0  4.0  4.0 |         1-1-0  50.0  2.5  2.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1979:            3-2-0  60.0  3.2  3.2 |         1-1-0  50.0  4.0  4.0 |         2-1-0  66.7  2.7  2.7 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1978:            4-1-0  80.0  5.4  2.6 |         2-1-0  66.7  4.3  2.7 |         2-0-0 100.0  7.0  2.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1977:            4-0-1  90.0  5.2  2.2 |         1-0-1  75.0  6.5  3.0 |         3-0-0 100.0  4.3  1.7 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1976:            3-1-0  75.0  5.0  3.0 |         1-1-0  50.0  4.5  3.0 |         2-0-0 100.0  5.5  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1975:            3-1-0  75.0  6.8  3.8 |         2-0-0 100.0  8.5  3.0 |         1-1-0  50.0  5.0  4.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1974:            4-1-0  80.0  5.0  3.0 |         2-0-0 100.0  7.5  2.0 |         2-1-0  66.7  3.3  3.7 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1973:            4-7-0  36.4  2.7  4.1 |         2-4-0  33.3  2.8  4.2 |         2-3-0  40.0  2.6  4.0 |         1-4-0  20.0  2.2  4.4</span>
+<span class="hovl"> 1972:            9-3-0  75.0  3.6  2.0 |         4-2-0  66.7  3.8  2.5 |         5-1-0  83.3  3.3  1.5 |         4-2-0  66.7  3.0  2.7</span>
+<span class="hovl"> 1971:            2-2-2  50.0  3.5  2.7 |         2-1-0  66.7  5.0  3.0 |         0-1-2  33.3  2.0  2.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1970:            8-6-0  57.1  3.2  3.1 |         6-1-0  85.7  4.3  2.6 |         2-5-0  28.6  2.1  3.7 |         4-2-0  66.7  4.2  2.7</span>
+<span class="hovl"> 1969:            3-3-2  50.0  3.1  3.8 |         2-1-1  62.5  4.3  3.3 |         1-2-1  37.5  2.0  4.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1968:            6-2-2  70.0  3.5  2.3 |         3-1-1  70.0  3.4  2.4 |         3-1-1  70.0  3.6  2.2 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1967:            2-8-4  28.6  2.4  3.4 |         1-3-3  35.7  2.7  3.6 |         1-5-1  21.4  2.0  3.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1966:            7-6-1  53.6  3.4  3.9 |         5-2-0  71.4  4.3  3.7 |         2-4-1  35.7  2.6  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1965:            5-8-1  39.3  2.9  3.4 |         3-3-1  50.0  3.1  3.0 |         2-5-0  28.6  2.6  3.7 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1964:            5-7-2  42.9  3.0  3.3 |         3-4-0  42.9  3.3  3.3 |         2-3-2  42.9  2.7  3.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1963:            4-7-3  39.3  3.2  4.2 |         2-3-2  42.9  3.4  3.7 |         2-4-1  35.7  3.0  4.7 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1962:           2-10-2  21.4  2.7  4.1 |         1-6-0  14.3  2.7  4.1 |         1-4-2  28.6  2.7  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1961:            3-9-2  28.6  2.9  3.4 |         3-3-1  50.0  4.0  3.3 |         0-6-1   7.1  1.9  3.4 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1960:            8-4-2  64.3  3.9  3.2 |         5-1-1  78.6  4.6  2.4 |         3-3-1  50.0  3.1  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1959:            6-5-3  53.6  3.3  3.5 |         3-3-1  50.0  3.1  4.0 |         3-2-2  57.1  3.4  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1958:           10-7-3  57.5  3.2  2.5 |         6-4-1  59.1  3.1  2.3 |         4-3-2  55.6  3.2  2.9 |         4-2-0  66.7  4.7  2.7</span>
+<span class="hovl"> 1957:            5-8-1  39.3  2.7  2.9 |         3-4-0  42.9  3.3  3.0 |         2-4-1  35.7  2.1  2.7 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1956:            7-5-2  57.1  2.9  2.5 |         5-2-0  71.4  3.7  2.1 |         2-3-2  42.9  2.0  2.9 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1955:            5-4-5  53.6  2.7  2.8 |         4-1-2  71.4  3.6  2.3 |         1-3-3  35.7  1.9  3.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1954:            7-7-0  50.0  2.9  2.8 |         5-2-0  71.4  2.3  1.6 |         2-5-0  28.6  3.4  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1953:            5-7-2  42.9  2.6  2.4 |         3-3-1  50.0  3.1  1.9 |         2-4-1  35.7  2.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1952:            4-6-4  42.9  2.6  3.2 |         2-2-3  50.0  2.4  2.3 |         2-4-1  35.7  2.9  4.1 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1951:            4-2-8  57.1  2.6  2.4 |         2-1-4  57.1  2.6  2.0 |         2-1-4  57.1  2.7  2.7 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1950:            5-5-4  50.0  2.6  2.2 |         3-1-3  64.3  2.9  1.6 |         2-4-1  35.7  2.4  2.9 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1949:            8-2-2  75.0  3.5  2.0 |         5-1-0  83.3  4.3  2.0 |         3-1-2  66.7  2.7  2.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1948:            7-3-2  66.7  4.3  3.3 |         4-0-2  83.3  4.7  3.0 |         3-3-0  50.0  3.8  3.5 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1947:            8-2-2  75.0  3.6  2.3 |         5-1-0  83.3  4.7  2.2 |         3-1-2  66.7  2.5  2.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1946:            6-3-1  65.0  3.9  3.2 |         3-2-0  60.0  4.2  4.2 |         3-1-1  70.0  3.6  2.2 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1945:            4-3-3  55.0  5.1  3.5 |         4-0-1  90.0  7.6  3.2 |         0-3-2  20.0  2.6  3.8 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1944:            7-2-1  75.0  7.2  4.7 |         5-0-0 100.0  7.8  4.8 |         2-2-1  50.0  6.6  4.6 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1943:            8-2-0  80.0  5.7  3.6 |         4-1-0  80.0  6.2  4.4 |         4-1-0  80.0  5.2  2.8 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1942:            4-4-0  50.0  2.4  2.8 |         2-2-0  50.0  2.5  2.8 |         2-2-0  50.0  2.3  2.8 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1941:            4-2-2  62.5  3.0  2.5 |         2-1-1  62.5  3.0  2.3 |         2-1-1  62.5  3.0  2.8 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1940:            4-8-2  35.7  1.9  2.6 |         4-2-1  64.3  3.1  2.4 |         0-6-1   7.1  0.7  2.9 |         2-4-0  33.3  1.5  2.5</span>
+<span class="hovl"> 1939:            9-6-0  60.0  2.5  1.8 |         5-3-0  62.5  2.6  1.9 |         4-3-0  57.1  2.3  1.7 |         4-3-0  57.1  2.0  1.7</span>
+<span class="hovl"> 1938:            5-3-0  62.5  2.4  2.6 |         3-1-0  75.0  2.8  2.3 |         2-2-0  50.0  2.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1937:            3-2-3  56.3  1.6  2.3 |         2-2-0  50.0  1.8  3.3 |         1-0-3  62.5  1.5  1.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1936:            2-6-0  25.0  1.9  2.4 |         1-3-0  25.0  2.0  2.5 |         1-3-0  25.0  1.8  2.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1935:            3-1-2  66.7  2.3  1.3 |         3-0-0 100.0  4.3  2.0 |         0-1-2  33.3  0.3  0.7 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1934:            2-3-1  41.7  2.2  3.0 |         1-2-0  33.3  2.0  3.3 |         1-1-1  50.0  2.3  2.7 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1933:            3-3-0  50.0  2.2  2.7 |         2-1-0  66.7  3.0  3.0 |         1-2-0  33.3  1.3  2.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1932:            2-4-2  37.5  2.0  2.4 |         1-2-1  37.5  1.8  2.5 |         1-2-1  37.5  2.3  2.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1931:            4-0-2  83.3  3.3  2.2 |         1-0-2  66.7  2.7  1.7 |         3-0-0 100.0  4.0  2.7 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1930:            5-0-1  91.7  4.2  1.8 |         3-0-0 100.0  5.0  1.3 |         2-0-1  83.3  3.3  2.3 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 1929:            7-1-0  87.5  2.1  1.0 |         4-0-0 100.0  2.5  0.5 |         3-1-0  75.0  1.8  1.5 |         2-0-0 100.0  2.0  0.5</span>
+<span class="hovl"> 1928:            2-2-4  50.0  1.8  1.8 |         1-2-1  37.5  2.0  2.5 |         1-0-3  62.5  1.5  1.0 |         0-1-1  25.0  1.0  2.5</span>
+<span class="hovl"> 1927:            3-3-2  50.0  2.3  1.9 |         2-1-1  62.5  2.8  1.8 |         1-2-1  37.5  1.8  2.0 |         1-0-1  75.0  1.5  0.5</span>
 
 <b>ALL GAMES:</b>   <a href="../history.shtml">playoff round notes</a>
-<span class="hovl"> H 2025/12/07 Philadelphia Flyers   2  -  Colorado Avalanche   3      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> A 2025/02/02 Philadelphia Flyers   0  -  Colorado Avalanche   2      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 2024/11/18 Philadelphia Flyers   2  -  Colorado Avalanche   3      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 2024/01/20 Philadelphia Flyers   4  -  Colorado Avalanche   7      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> A 2023/12/09 Philadelphia Flyers   5  -  Colorado Avalanche   2      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 2022/12/13 Philadelphia Flyers   2  -  Colorado Avalanche   3      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 2022/12/05 Philadelphia Flyers   5  -  Colorado Avalanche   3      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 2022/03/25 Philadelphia Flyers   3  -  Colorado Avalanche   6      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 2021/12/06 Philadelphia Flyers   5  -  Colorado Avalanche   7      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 2020/02/01 Philadelphia Flyers   6  -  Colorado Avalanche   3      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 2019/12/11 Philadelphia Flyers   1  -  Colorado Avalanche   3      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 2018/10/22 Philadelphia Flyers   1  -  Colorado Avalanche   4      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> A 2018/10/06 Philadelphia Flyers   2  -  Colorado Avalanche   5      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> A 2018/03/28 Philadelphia Flyers   2  -  Colorado Avalanche   1      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 2017/11/04 Philadelphia Flyers   4  -  Colorado Avalanche   5 (SO) <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 2017/02/28 Philadelphia Flyers   4  -  Colorado Avalanche   0      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 2016/12/14 Philadelphia Flyers   4  -  Colorado Avalanche   3      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 2016/03/24 Philadelphia Flyers   4  -  Colorado Avalanche   2      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 2015/11/10 Philadelphia Flyers   0  -  Colorado Avalanche   4      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> A 2014/12/31 Philadelphia Flyers   3  -  Colorado Avalanche   4 (OT) <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 2014/11/08 Philadelphia Flyers   4  -  Colorado Avalanche   3      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 2014/02/06 Philadelphia Flyers   3  -  Colorado Avalanche   1      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 2014/01/02 Philadelphia Flyers   1  -  Colorado Avalanche   2      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> A 2011/12/19 Philadelphia Flyers   2  -  Colorado Avalanche   3 (SO) <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 2010/10/11 Philadelphia Flyers   4  -  Colorado Avalanche   2      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 2009/11/23 Philadelphia Flyers   4  -  Colorado Avalanche   5      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 2008/12/16 Philadelphia Flyers   5  -  Colorado Avalanche   2      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 2008/10/16 Philadelphia Flyers   2  -  Colorado Avalanche   5      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> A 2007/12/07 Philadelphia Flyers   1  -  Colorado Avalanche   2      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 2006/01/14 Philadelphia Flyers   3  -  Colorado Avalanche   4 (OT) <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> A 2003/12/27 Philadelphia Flyers   2  -  Colorado Avalanche   3 (OT) <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 2003/03/08 Philadelphia Flyers   1  -  Colorado Avalanche   2 (OT) <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> A 2002/12/27 Philadelphia Flyers   2  -  Colorado Avalanche   1 (OT) <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 2002/03/16 Philadelphia Flyers   1  -  Colorado Avalanche   2      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> A 2001/12/29 Philadelphia Flyers   5  -  Colorado Avalanche   2      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 2000/12/13 Philadelphia Flyers   3  -  Colorado Avalanche   3      T                         </span>
-<span class="hovl"> A 2000/03/12 Philadelphia Flyers   1  -  Colorado Avalanche   3      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 1999/10/28 Philadelphia Flyers   5  -  Colorado Avalanche   4 (OT) <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 1999/03/11 Philadelphia Flyers   3  -  Colorado Avalanche   5      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> A 1999/02/14 Philadelphia Flyers   4  -  Colorado Avalanche   4      T                         </span>
-<span class="hovl"> A 1998/02/07 Philadelphia Flyers   2  -  Colorado Avalanche   3      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 1997/11/13 Philadelphia Flyers   1  -  Colorado Avalanche   2      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 1997/03/23 Philadelphia Flyers   2  -  Colorado Avalanche   0      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 1997/01/04 Philadelphia Flyers   4  -  Colorado Avalanche   4      T                         </span>
-<span class="hovl"> H 1996/02/11 Philadelphia Flyers   3  -  Colorado Avalanche   5      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> A 1996/01/04 Philadelphia Flyers   2  -  Colorado Avalanche   2      T                         </span>
-<span class="hovl"> A 1995/02/23 Philadelphia Flyers   6  -  Quebec Nordiques     6      T                         </span>
-<span class="hovl"> H 1995/02/16 Philadelphia Flyers   2  -  Quebec Nordiques     4      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> A 1995/01/31 Philadelphia Flyers   2  -  Quebec Nordiques     5      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 1995/01/21 Philadelphia Flyers   1  -  Quebec Nordiques     3      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> A 1994/01/25 Philadelphia Flyers   4  -  Quebec Nordiques     6      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 1993/12/16 Philadelphia Flyers   3  -  Quebec Nordiques     2      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 1993/11/04 Philadelphia Flyers   4  -  Quebec Nordiques     1      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 1993/10/26 Philadelphia Flyers   4  -  Quebec Nordiques     2      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 1993/03/27 Philadelphia Flyers   3  -  Quebec Nordiques     8      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 1993/01/28 Philadelphia Flyers   3  -  Quebec Nordiques     6      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 1992/12/03 Philadelphia Flyers   3  -  Quebec Nordiques     2 (OT) <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 1992/10/13 Philadelphia Flyers   3  -  Quebec Nordiques     6      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 1992/02/13 Philadelphia Flyers   3  -  Quebec Nordiques     2      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 1992/02/08 Philadelphia Flyers   3  -  Quebec Nordiques     0      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 1991/10/17 Philadelphia Flyers   5  -  Quebec Nordiques     3      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 1991/01/17 Philadelphia Flyers   5  -  Quebec Nordiques     1      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 1990/11/10 Philadelphia Flyers   5  -  Quebec Nordiques     2      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 1990/10/18 Philadelphia Flyers   5  -  Quebec Nordiques     4      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 1990/03/17 Philadelphia Flyers   3  -  Quebec Nordiques     6      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> A 1989/12/09 Philadelphia Flyers   6  -  Quebec Nordiques     6      T                         </span>
-<span class="hovl"> H 1989/10/12 Philadelphia Flyers   4  -  Quebec Nordiques     2      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 1989/01/12 Philadelphia Flyers   7  -  Quebec Nordiques     2      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 1988/11/19 Philadelphia Flyers   5  -  Quebec Nordiques     6      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 1988/10/20 Philadelphia Flyers   5  -  Quebec Nordiques     2      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 1988/04/02 Philadelphia Flyers   7  -  Quebec Nordiques     4      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 1988/03/31 Philadelphia Flyers   4  -  Quebec Nordiques     4      T                         </span>
-<span class="hovl"> A 1987/11/28 Philadelphia Flyers   6  -  Quebec Nordiques     3      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 1987/03/26 Philadelphia Flyers   3  -  Quebec Nordiques     2 (OT) <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 1987/03/21 Philadelphia Flyers   2  -  Quebec Nordiques     2      T                         </span>
-<span class="hovl"> H 1986/10/30 Philadelphia Flyers   6  -  Quebec Nordiques     3      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 1986/02/01 Philadelphia Flyers   2  -  Quebec Nordiques     2      T                         </span>
-<span class="hovl"> A 1985/11/02 Philadelphia Flyers   5  -  Quebec Nordiques     3      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 1985/10/17 Philadelphia Flyers   1  -  Quebec Nordiques     2      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 1985/05/16 Philadelphia Flyers   3  -  Quebec Nordiques     0      <b><font color="green">W</font></b> !! Conference Finals !! </span>
-<span class="hovl"> A 1985/05/14 Philadelphia Flyers   2  -  Quebec Nordiques     1      <b><font color="green">W</font></b> !! Conference Finals !! </span>
-<span class="hovl"> H 1985/05/12 Philadelphia Flyers   3  -  Quebec Nordiques     5      <b><font color="red">L</font></b> !! Conference Finals !! </span>
-<span class="hovl"> H 1985/05/09 Philadelphia Flyers   4  -  Quebec Nordiques     2      <b><font color="green">W</font></b> !! Conference Finals !! </span>
-<span class="hovl"> A 1985/05/07 Philadelphia Flyers   4  -  Quebec Nordiques     2      <b><font color="green">W</font></b> !! Conference Finals !! </span>
-<span class="hovl"> A 1985/05/05 Philadelphia Flyers   1  -  Quebec Nordiques     2 (OT) <b><font color="red">L</font></b> !! Conference Finals !! </span>
-<span class="hovl"> A 1985/03/02 Philadelphia Flyers   2  -  Quebec Nordiques     4      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 1985/02/14 Philadelphia Flyers   6  -  Quebec Nordiques     3      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 1984/12/06 Philadelphia Flyers   1  -  Quebec Nordiques     1      T                         </span>
-<span class="hovl"> A 1984/01/14 Philadelphia Flyers   3  -  Quebec Nordiques     3      T                         </span>
-<span class="hovl"> H 1983/10/27 Philadelphia Flyers   4  -  Quebec Nordiques     3      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 1983/10/25 Philadelphia Flyers   4  -  Quebec Nordiques     2      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 1982/12/09 Philadelphia Flyers   4  -  Quebec Nordiques     1      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 1982/10/16 Philadelphia Flyers   4  -  Quebec Nordiques     3      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 1982/10/07 Philadelphia Flyers   9  -  Quebec Nordiques     5      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 1982/02/06 Philadelphia Flyers   3  -  Quebec Nordiques     4      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> A 1982/01/19 Philadelphia Flyers   2  -  Quebec Nordiques     2      T                         </span>
-<span class="hovl"> H 1981/10/22 Philadelphia Flyers   3  -  Quebec Nordiques     2      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 1981/04/14 Philadelphia Flyers   5  -  Quebec Nordiques     2      <b><font color="green">W</font></b> !! 1st Round !!         </span>
-<span class="hovl"> A 1981/04/12 Philadelphia Flyers   3  -  Quebec Nordiques     4 (OT) <b><font color="red">L</font></b> !! 1st Round !!         </span>
-<span class="hovl"> A 1981/04/11 Philadelphia Flyers   0  -  Quebec Nordiques     2      <b><font color="red">L</font></b> !! 1st Round !!         </span>
-<span class="hovl"> H 1981/04/09 Philadelphia Flyers   8  -  Quebec Nordiques     5      <b><font color="green">W</font></b> !! 1st Round !!         </span>
-<span class="hovl"> H 1981/04/08 Philadelphia Flyers   6  -  Quebec Nordiques     4      <b><font color="green">W</font></b> !! 1st Round !!         </span>
-<span class="hovl"> A 1981/02/07 Philadelphia Flyers   3  -  Quebec Nordiques     5      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 1981/01/15 Philadelphia Flyers   1  -  Quebec Nordiques     4      <b><font color="red">L</font></b>                         </span>
-<span class="hovl"> H 1980/11/09 Philadelphia Flyers   3  -  Quebec Nordiques     1      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 1980/11/01 Philadelphia Flyers   3  -  Quebec Nordiques     3      T                         </span>
-<span class="hovl"> A 1980/04/01 Philadelphia Flyers   3  -  Quebec Nordiques     3      T                         </span>
-<span class="hovl"> H 1980/03/27 Philadelphia Flyers   5  -  Quebec Nordiques     2      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> H 1979/12/13 Philadelphia Flyers   6  -  Quebec Nordiques     4      <b><font color="green">W</font></b>                         </span>
-<span class="hovl"> A 1979/11/07 Philadelphia Flyers   4  -  Quebec Nordiques     3      <b><font color="green">W</font></b>                         </span>
+<span class="hovl"> H 2026/01/10 Boston Bruins  10  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2025/11/28 Boston Bruins   2  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2025/02/05 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2025/02/01 Boston Bruins   6  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2025/01/02 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2024/03/21 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2023/12/16 Boston Bruins   1  -  New York Rangers   2 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2023/11/25 Boston Bruins   4  -  New York Rangers   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2023/03/04 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2023/01/19 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2022/11/03 Boston Bruins   5  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2022/04/23 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2022/02/15 Boston Bruins   1  -  New York Rangers   2 (SO) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2021/11/26 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2021/05/08 Boston Bruins   4  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2021/05/06 Boston Bruins   4  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2021/03/13 Boston Bruins   0  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2021/03/11 Boston Bruins   4  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2021/02/28 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2021/02/26 Boston Bruins   2  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2021/02/12 Boston Bruins   1  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2021/02/10 Boston Bruins   3  -  New York Rangers   2 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2020/02/16 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2019/11/29 Boston Bruins   3  -  New York Rangers   2 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2019/10/27 Boston Bruins   7  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2019/03/27 Boston Bruins   6  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2019/02/06 Boston Bruins   3  -  New York Rangers   4 (SO) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2019/01/19 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2018/02/07 Boston Bruins   6  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2017/12/16 Boston Bruins   2  -  New York Rangers   3 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2017/11/08 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2017/03/02 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2016/11/05 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2016/10/26 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2016/03/23 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2016/01/11 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2015/11/27 Boston Bruins   4  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2015/03/28 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2015/02/04 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2015/01/15 Boston Bruins   3  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2014/03/02 Boston Bruins   6  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2013/11/29 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2013/11/19 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2013/05/25 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 2013/05/23 Boston Bruins   3  -  New York Rangers   4 (OT) <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 2013/05/21 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 2013/05/19 Boston Bruins   5  -  New York Rangers   2      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 2013/05/16 Boston Bruins   3  -  New York Rangers   2 (OT) <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 2013/02/12 Boston Bruins   3  -  New York Rangers   4 (SO) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2013/01/23 Boston Bruins   3  -  New York Rangers   4 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2013/01/19 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2012/04/01 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2012/03/04 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2012/02/14 Boston Bruins   0  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2012/01/21 Boston Bruins   2  -  New York Rangers   3 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2011/04/04 Boston Bruins   3  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2011/03/26 Boston Bruins   0  -  New York Rangers   1      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2010/11/17 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2010/10/23 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2010/03/21 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2010/01/09 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2010/01/04 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2009/11/01 Boston Bruins   0  -  New York Rangers   1      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2009/04/04 Boston Bruins   1  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2009/03/08 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2009/01/31 Boston Bruins   1  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2008/11/15 Boston Bruins   2  -  New York Rangers   3 (SO) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2008/03/09 Boston Bruins   0  -  New York Rangers   1 (SO) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2008/01/20 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2008/01/19 Boston Bruins   4  -  New York Rangers   3 (SO) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2007/10/20 Boston Bruins   1  -  New York Rangers   0 (SO) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2007/03/24 Boston Bruins   1  -  New York Rangers   2 (SO) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2007/03/17 Boston Bruins   0  -  New York Rangers   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2007/01/29 Boston Bruins   1  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2007/01/13 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2006/04/08 Boston Bruins   3  -  New York Rangers   4 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2006/03/20 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2006/01/21 Boston Bruins   2  -  New York Rangers   3 (SO) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2005/11/20 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2004/03/04 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2004/01/20 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2004/01/19 Boston Bruins   5  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2003/12/22 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2003/03/29 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2003/02/27 Boston Bruins   1  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2002/12/08 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2002/11/02 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2002/04/06 Boston Bruins   4  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2002/03/13 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2002/01/23 Boston Bruins   4  -  New York Rangers   8      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2001/10/27 Boston Bruins   1  -  New York Rangers   2 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 2001/03/25 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2001/01/13 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 2000/12/09 Boston Bruins   6  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 2000/10/29 Boston Bruins   1  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 2000/04/01 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 2000/02/11 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1999/11/18 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1999/11/13 Boston Bruins   5  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1999/03/12 Boston Bruins   5  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1999/03/07 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1999/02/07 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1998/11/13 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> A 1998/04/01 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1998/03/14 Boston Bruins   5  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1998/01/31 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1997/12/28 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1997/04/03 Boston Bruins   4  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1997/02/02 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1996/11/02 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1996/10/05 Boston Bruins   4  -  New York Rangers   4      T                              </span>
+<span class="hovl"> H 1996/03/23 Boston Bruins   4  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1996/02/28 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1996/01/27 Boston Bruins   3  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1995/12/13 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1995/04/23 Boston Bruins   5  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1995/04/14 Boston Bruins   3  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1995/04/01 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1995/01/23 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1994/03/10 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1994/02/23 Boston Bruins   6  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1994/02/03 Boston Bruins   0  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1993/10/05 Boston Bruins   4  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1993/03/15 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1992/12/27 Boston Bruins   5  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1992/11/07 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1991/12/08 Boston Bruins   0  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1991/10/07 Boston Bruins   1  -  New York Rangers   2 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1991/10/03 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1990/12/23 Boston Bruins   5  -  New York Rangers   5      T                              </span>
+<span class="hovl"> H 1990/12/01 Boston Bruins   4  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1990/11/05 Boston Bruins   3  -  New York Rangers   2 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1990/02/26 Boston Bruins   1  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1990/02/03 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1990/01/13 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1989/03/05 Boston Bruins   5  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1988/12/10 Boston Bruins   1  -  New York Rangers   1      T                              </span>
+<span class="hovl"> A 1988/11/11 Boston Bruins   4  -  New York Rangers   4      T                              </span>
+<span class="hovl"> H 1988/01/30 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1987/12/27 Boston Bruins   1  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1987/12/03 Boston Bruins   4  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1987/03/11 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1987/02/01 Boston Bruins   4  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1987/01/12 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1986/02/08 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1985/12/14 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1985/10/27 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1985/01/05 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> A 1984/12/12 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> A 1984/10/28 Boston Bruins   6  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1984/03/20 Boston Bruins   6  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1984/01/07 Boston Bruins   5  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1983/11/19 Boston Bruins   6  -  New York Rangers   6      T                              </span>
+<span class="hovl"> A 1983/03/20 Boston Bruins   4  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1983/01/24 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1983/01/15 Boston Bruins   2  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1982/02/27 Boston Bruins   4  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1981/12/09 Boston Bruins   4  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1981/10/31 Boston Bruins   7  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1981/03/18 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1981/02/05 Boston Bruins   6  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1980/11/26 Boston Bruins   4  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1980/10/09 Boston Bruins   7  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1980/03/02 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1980/02/28 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1980/01/19 Boston Bruins   6  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1979/12/23 Boston Bruins   4  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1979/03/15 Boston Bruins   4  -  New York Rangers   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1979/02/14 Boston Bruins   1  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1978/12/17 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1978/12/16 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1978/12/03 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1978/04/02 Boston Bruins   8  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1978/03/18 Boston Bruins   6  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1978/01/10 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1977/12/11 Boston Bruins   8  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1977/11/26 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1977/03/10 Boston Bruins  10  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1977/03/03 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1976/12/23 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> A 1976/10/27 Boston Bruins   4  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1976/10/13 Boston Bruins   5  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1976/03/20 Boston Bruins   8  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1976/02/22 Boston Bruins   5  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1975/12/11 Boston Bruins   1  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1975/11/26 Boston Bruins   6  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1975/03/23 Boston Bruins   5  -  New York Rangers   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1975/03/11 Boston Bruins   6  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1974/12/19 Boston Bruins  11  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1974/11/23 Boston Bruins   5  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1974/03/27 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1974/03/17 Boston Bruins   5  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1974/01/04 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1973/11/15 Boston Bruins  10  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1973/11/07 Boston Bruins   3  -  New York Rangers   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1973/04/10 Boston Bruins   3  -  New York Rangers   6      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1973/04/08 Boston Bruins   0  -  New York Rangers   4      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1973/04/07 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1973/04/05 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1973/04/04 Boston Bruins   2  -  New York Rangers   6      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1973/03/28 Boston Bruins   6  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1973/03/24 Boston Bruins   3  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1973/02/03 Boston Bruins   3  -  New York Rangers   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1973/01/24 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1972/12/14 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1972/10/18 Boston Bruins   1  -  New York Rangers   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1972/05/11 Boston Bruins   3  -  New York Rangers   0      <b><font color="green">W</font></b> !! Stanley Cup Finals !!     </span>
+<span class="hovl"> H 1972/05/09 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b> !! Stanley Cup Finals !!     </span>
+<span class="hovl"> A 1972/05/07 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b> !! Stanley Cup Finals !!     </span>
+<span class="hovl"> A 1972/05/04 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b> !! Stanley Cup Finals !!     </span>
+<span class="hovl"> H 1972/05/02 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b> !! Stanley Cup Finals !!     </span>
+<span class="hovl"> H 1972/04/30 Boston Bruins   6  -  New York Rangers   5      <b><font color="green">W</font></b> !! Stanley Cup Finals !!     </span>
+<span class="hovl"> H 1972/03/23 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1972/02/02 Boston Bruins   2  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1972/01/02 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1971/12/16 Boston Bruins   8  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1971/10/13 Boston Bruins   6  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1971/10/10 Boston Bruins   1  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1971/03/28 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1971/03/27 Boston Bruins   3  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1971/02/09 Boston Bruins   6  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1971/01/27 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1970/11/28 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> H 1970/10/31 Boston Bruins   6  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1970/04/16 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1970/04/14 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1970/04/12 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1970/04/11 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1970/04/09 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> H 1970/04/08 Boston Bruins   8  -  New York Rangers   2      <b><font color="green">W</font></b> !! Conference Semi-Finals !! </span>
+<span class="hovl"> A 1970/03/25 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1970/02/26 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1970/01/24 Boston Bruins   1  -  New York Rangers   8      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1969/12/11 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1969/12/10 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1969/11/26 Boston Bruins   0  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1969/11/15 Boston Bruins   5  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1969/10/12 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1969/03/27 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> A 1969/03/23 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1969/03/01 Boston Bruins   8  -  New York Rangers   5      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1969/02/23 Boston Bruins   0  -  New York Rangers   9      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1969/01/02 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1968/12/11 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> H 1968/11/30 Boston Bruins   1  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1968/11/23 Boston Bruins   5  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1968/03/28 Boston Bruins   4  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1968/03/13 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1968/02/03 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> A 1968/01/24 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1968/01/03 Boston Bruins   5  -  New York Rangers   5      T                              </span>
+<span class="hovl"> A 1967/12/23 Boston Bruins   4  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1967/12/07 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1967/11/23 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1967/11/18 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1967/11/08 Boston Bruins   6  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1967/03/19 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1967/03/04 Boston Bruins   4  -  New York Rangers   4      T                              </span>
+<span class="hovl"> A 1967/02/08 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1967/02/04 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1967/01/25 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1967/01/21 Boston Bruins   6  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1967/01/12 Boston Bruins   0  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1966/12/21 Boston Bruins   1  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1966/12/07 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1966/12/03 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1966/11/23 Boston Bruins   4  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1966/11/19 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> A 1966/11/09 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> H 1966/11/03 Boston Bruins   1  -  New York Rangers   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1966/03/20 Boston Bruins   4  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1966/03/16 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1966/03/03 Boston Bruins   4  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1966/03/02 Boston Bruins   3  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1966/02/12 Boston Bruins   2  -  New York Rangers   9      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1966/02/05 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1966/01/22 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1966/01/09 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1965/12/26 Boston Bruins   4  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1965/12/25 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1965/11/25 Boston Bruins   6  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1965/11/24 Boston Bruins   1  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1965/11/10 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> H 1965/10/30 Boston Bruins   2  -  New York Rangers   8      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1965/03/04 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1965/03/03 Boston Bruins   6  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1965/02/07 Boston Bruins   3  -  New York Rangers   8      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1965/02/06 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1965/01/27 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1965/01/14 Boston Bruins   5  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1965/01/06 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1964/12/26 Boston Bruins   2  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1964/12/25 Boston Bruins   0  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1964/12/05 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> H 1964/11/26 Boston Bruins   6  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1964/11/11 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1964/10/28 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1964/10/12 Boston Bruins   2  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1964/03/11 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1964/02/27 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1964/02/06 Boston Bruins   4  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1964/02/05 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1964/01/30 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1964/01/22 Boston Bruins   4  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1964/01/09 Boston Bruins   3  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1963/12/08 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> H 1963/12/07 Boston Bruins   8  -  New York Rangers   6      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1963/11/28 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1963/11/20 Boston Bruins   1  -  New York Rangers   1      T                              </span>
+<span class="hovl"> A 1963/10/30 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1963/10/24 Boston Bruins   0  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1963/10/20 Boston Bruins   1  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1963/03/21 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1963/03/20 Boston Bruins   1  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1963/02/20 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> H 1963/02/12 Boston Bruins   6  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1963/02/03 Boston Bruins   6  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1963/01/19 Boston Bruins   3  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1962/12/27 Boston Bruins   3  -  New York Rangers   9      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1962/12/25 Boston Bruins   6  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1962/12/09 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1962/12/08 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> H 1962/11/22 Boston Bruins   1  -  New York Rangers   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1962/11/21 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1962/11/14 Boston Bruins   2  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1962/11/04 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1962/03/22 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1962/02/28 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1962/02/21 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1962/02/11 Boston Bruins   3  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1962/02/01 Boston Bruins   3  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1962/01/31 Boston Bruins   0  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1962/01/01 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1961/12/31 Boston Bruins   7  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1961/12/03 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1961/12/02 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1961/11/23 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1961/11/08 Boston Bruins   4  -  New York Rangers   4      T                              </span>
+<span class="hovl"> A 1961/10/12 Boston Bruins   3  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1961/10/11 Boston Bruins   2  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1961/03/15 Boston Bruins   6  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1961/03/01 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1961/02/12 Boston Bruins   8  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1961/02/05 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1961/02/04 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1961/01/25 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1961/01/12 Boston Bruins   4  -  New York Rangers   4      T                              </span>
+<span class="hovl"> A 1960/12/11 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> H 1960/12/10 Boston Bruins   0  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1960/11/24 Boston Bruins   3  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1960/11/23 Boston Bruins   3  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1960/11/16 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1960/10/27 Boston Bruins   6  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1960/10/05 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1960/03/16 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1960/03/10 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> A 1960/02/21 Boston Bruins   2  -  New York Rangers   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1960/02/14 Boston Bruins   3  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1960/01/14 Boston Bruins   6  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1960/01/01 Boston Bruins   7  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1959/12/29 Boston Bruins   4  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1959/12/13 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1959/12/12 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1959/11/26 Boston Bruins   4  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1959/11/25 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> A 1959/11/11 Boston Bruins   3  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1959/10/14 Boston Bruins   4  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1959/10/10 Boston Bruins   6  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1959/03/18 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1959/03/12 Boston Bruins   5  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1959/02/11 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1959/02/08 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1959/01/25 Boston Bruins   3  -  New York Rangers   8      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1959/01/01 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1958/12/31 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1958/11/29 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1958/11/27 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1958/11/15 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1958/11/09 Boston Bruins   1  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1958/10/29 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1958/10/15 Boston Bruins   4  -  New York Rangers   4      T                              </span>
+<span class="hovl"> H 1958/10/11 Boston Bruins   4  -  New York Rangers   4      T                              </span>
+<span class="hovl"> H 1958/04/05 Boston Bruins   8  -  New York Rangers   2      <b><font color="green">W</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> H 1958/04/03 Boston Bruins   6  -  New York Rangers   1      <b><font color="green">W</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> H 1958/04/01 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> H 1958/03/29 Boston Bruins   5  -  New York Rangers   0      <b><font color="green">W</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> A 1958/03/27 Boston Bruins   4  -  New York Rangers   3 (OT) <b><font color="green">W</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> A 1958/03/25 Boston Bruins   3  -  New York Rangers   5      <b><font color="red">L</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> A 1958/03/19 Boston Bruins   1  -  New York Rangers   1      T                              </span>
+<span class="hovl"> H 1958/03/15 Boston Bruins   0  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1958/02/16 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1958/02/02 Boston Bruins   4  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1958/01/29 Boston Bruins   1  -  New York Rangers   1      T                              </span>
+<span class="hovl"> H 1958/01/16 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1958/01/04 Boston Bruins   7  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1957/12/19 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> H 1957/11/28 Boston Bruins   1  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1957/11/27 Boston Bruins   5  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1957/11/02 Boston Bruins   0  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1957/10/31 Boston Bruins   0  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1957/10/16 Boston Bruins   6  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1957/10/13 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1957/03/23 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1957/03/13 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1957/03/02 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1957/02/20 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1957/02/06 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1957/02/03 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1957/01/26 Boston Bruins   3  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1957/01/01 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1956/11/28 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1956/11/22 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1956/11/17 Boston Bruins   4  -  New York Rangers   4      T                              </span>
+<span class="hovl"> A 1956/11/07 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1956/11/04 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1956/10/17 Boston Bruins   0  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1956/03/03 Boston Bruins   5  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1956/02/29 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1956/02/19 Boston Bruins   3  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1956/02/08 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> H 1956/02/04 Boston Bruins   7  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1956/01/22 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1956/01/01 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1955/12/31 Boston Bruins   2  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1955/12/21 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> H 1955/11/24 Boston Bruins   0  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1955/11/23 Boston Bruins   0  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1955/11/10 Boston Bruins   5  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1955/10/29 Boston Bruins   1  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1955/10/16 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1955/03/02 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1955/02/16 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> H 1955/02/12 Boston Bruins   5  -  New York Rangers   5      T                              </span>
+<span class="hovl"> H 1955/01/23 Boston Bruins   0  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1955/01/22 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1955/01/02 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> H 1955/01/01 Boston Bruins   4  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1954/12/30 Boston Bruins   1  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1954/12/04 Boston Bruins   6  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1954/11/25 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1954/11/24 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1954/11/17 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1954/10/20 Boston Bruins   2  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1954/10/14 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1954/03/11 Boston Bruins   1  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1954/02/24 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1954/02/17 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1954/02/13 Boston Bruins   1  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1954/01/24 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1954/01/23 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1954/01/20 Boston Bruins   3  -  New York Rangers   8      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1954/01/01 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1953/12/29 Boston Bruins   6  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1953/12/16 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1953/11/26 Boston Bruins   5  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1953/11/25 Boston Bruins   3  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1953/10/22 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1953/10/18 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1953/03/18 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1953/03/07 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1953/02/25 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1953/02/18 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1953/02/14 Boston Bruins   5  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1953/01/25 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1953/01/24 Boston Bruins   9  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1953/01/04 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1952/12/25 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1952/12/17 Boston Bruins   0  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1952/12/10 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1952/11/27 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1952/10/22 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> H 1952/10/19 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1952/03/19 Boston Bruins   4  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1952/03/04 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1952/02/24 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1952/02/13 Boston Bruins   2  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1952/02/09 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1952/01/22 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> H 1952/01/01 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1951/12/12 Boston Bruins   3  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1951/12/11 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1951/12/05 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1951/11/27 Boston Bruins   1  -  New York Rangers   1      T                              </span>
+<span class="hovl"> A 1951/11/21 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> A 1951/10/24 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1951/10/21 Boston Bruins   1  -  New York Rangers   1      T                              </span>
+<span class="hovl"> H 1951/03/03 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> A 1951/02/21 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> H 1951/02/07 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> H 1951/01/21 Boston Bruins   5  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1951/01/17 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> H 1951/01/01 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1950/12/31 Boston Bruins   0  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1950/12/20 Boston Bruins   4  -  New York Rangers   4      T                              </span>
+<span class="hovl"> A 1950/12/03 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1950/12/02 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1950/11/25 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> A 1950/11/15 Boston Bruins   4  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1950/10/25 Boston Bruins   1  -  New York Rangers   1      T                              </span>
+<span class="hovl"> H 1950/10/22 Boston Bruins   0  -  New York Rangers   0      T                              </span>
+<span class="hovl"> A 1950/03/15 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1950/03/04 Boston Bruins   5  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1950/02/26 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1950/02/15 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> H 1950/02/01 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1950/01/28 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1950/01/18 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1950/01/01 Boston Bruins   6  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1949/12/31 Boston Bruins   1  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1949/12/17 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1949/11/27 Boston Bruins   1  -  New York Rangers   1      T                              </span>
+<span class="hovl"> A 1949/11/16 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1949/10/26 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1949/10/16 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1949/03/15 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1949/03/09 Boston Bruins   8  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1949/02/23 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1949/02/12 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1949/02/02 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1949/01/19 Boston Bruins   5  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1949/01/01 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1948/12/31 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1948/12/07 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> H 1948/11/21 Boston Bruins   1  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1948/10/31 Boston Bruins   0  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1948/10/24 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1948/03/16 Boston Bruins   6  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1948/03/10 Boston Bruins   6  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1948/02/22 Boston Bruins   1  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1948/02/14 Boston Bruins   4  -  New York Rangers   4      T                              </span>
+<span class="hovl"> H 1948/01/25 Boston Bruins   6  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1948/01/01 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1947/12/31 Boston Bruins   3  -  New York Rangers   7      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1947/12/17 Boston Bruins   2  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1947/12/06 Boston Bruins   5  -  New York Rangers   5      T                              </span>
+<span class="hovl"> A 1947/11/12 Boston Bruins   8  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1947/10/29 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1947/10/19 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1947/03/02 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1947/02/19 Boston Bruins   0  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1947/02/12 Boston Bruins  10  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1947/01/08 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1947/01/01 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1946/12/29 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> H 1946/12/18 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1946/12/08 Boston Bruins   4  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1946/11/27 Boston Bruins   5  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1946/11/10 Boston Bruins   4  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1946/10/30 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> H 1946/10/26 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1946/03/13 Boston Bruins   3  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1946/03/12 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1946/02/16 Boston Bruins   2  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1946/02/14 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1946/01/17 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1946/01/16 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1946/01/06 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1945/12/19 Boston Bruins   8  -  New York Rangers   7      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1945/11/28 Boston Bruins   5  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1945/11/11 Boston Bruins   7  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1945/02/25 Boston Bruins   4  -  New York Rangers   4      T                              </span>
+<span class="hovl"> A 1945/02/18 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1945/02/17 Boston Bruins   6  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1945/02/04 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> H 1945/01/21 Boston Bruins  14  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1945/01/11 Boston Bruins   1  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1944/12/31 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1944/12/12 Boston Bruins   7  -  New York Rangers   5      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1944/11/26 Boston Bruins   8  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1944/11/12 Boston Bruins   5  -  New York Rangers   5      T                              </span>
+<span class="hovl"> A 1944/03/05 Boston Bruins   4  -  New York Rangers   4      T                              </span>
+<span class="hovl"> H 1944/03/04 Boston Bruins  10  -  New York Rangers   9      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1944/02/05 Boston Bruins   7  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1944/01/16 Boston Bruins   6  -  New York Rangers   8      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1944/01/15 Boston Bruins   7  -  New York Rangers   5      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1944/01/02 Boston Bruins  13  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1943/12/12 Boston Bruins   4  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1943/12/11 Boston Bruins   9  -  New York Rangers   6      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1943/11/25 Boston Bruins   6  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1943/11/13 Boston Bruins   6  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1943/03/16 Boston Bruins  11  -  New York Rangers   5      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1943/01/31 Boston Bruins   7  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1943/01/17 Boston Bruins   6  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1943/01/16 Boston Bruins   7  -  New York Rangers   5      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1942/12/29 Boston Bruins   3  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1942/12/17 Boston Bruins   7  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1942/12/06 Boston Bruins   5  -  New York Rangers   4      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1942/11/29 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1942/11/15 Boston Bruins   4  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1942/11/14 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1942/03/12 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1942/02/24 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1942/02/05 Boston Bruins   1  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1942/01/20 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1941/12/23 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1941/12/07 Boston Bruins   4  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1941/11/16 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1941/11/15 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1941/02/25 Boston Bruins   0  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1941/02/13 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1941/01/21 Boston Bruins   4  -  New York Rangers   3 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1941/01/16 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> H 1940/12/31 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1940/12/19 Boston Bruins   3  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1940/12/10 Boston Bruins   6  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1940/11/23 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1940/03/30 Boston Bruins   1  -  New York Rangers   4      <b><font color="red">L</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> H 1940/03/28 Boston Bruins   0  -  New York Rangers   1      <b><font color="red">L</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> A 1940/03/26 Boston Bruins   0  -  New York Rangers   1      <b><font color="red">L</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> H 1940/03/24 Boston Bruins   4  -  New York Rangers   3      <b><font color="green">W</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> H 1940/03/21 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> A 1940/03/19 Boston Bruins   0  -  New York Rangers   4      <b><font color="red">L</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> A 1940/03/14 Boston Bruins   0  -  New York Rangers   0      T                              </span>
+<span class="hovl"> H 1940/03/12 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1940/02/06 Boston Bruins   6  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1940/01/21 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1940/01/02 Boston Bruins   4  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1939/12/29 Boston Bruins   0  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1939/12/10 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1939/11/26 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> H 1939/04/02 Boston Bruins   2  -  New York Rangers   1 (OT) <b><font color="green">W</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> A 1939/04/01 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> H 1939/03/30 Boston Bruins   1  -  New York Rangers   2 (OT) <b><font color="red">L</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> A 1939/03/28 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> H 1939/03/26 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> H 1939/03/23 Boston Bruins   3  -  New York Rangers   2 (OT) <b><font color="green">W</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> A 1939/03/21 Boston Bruins   2  -  New York Rangers   1 (OT) <b><font color="green">W</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> A 1939/03/12 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1939/03/05 Boston Bruins   5  -  New York Rangers   3 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1939/02/12 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1939/02/09 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1938/12/31 Boston Bruins   1  -  New York Rangers   2 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1938/12/25 Boston Bruins   0  -  New York Rangers   1      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1938/12/11 Boston Bruins   3  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1938/11/22 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1938/03/13 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1938/02/20 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1938/02/17 Boston Bruins   3  -  New York Rangers   2 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1938/01/25 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1937/12/31 Boston Bruins   3  -  New York Rangers   5      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1937/12/28 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1937/12/05 Boston Bruins   0  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1937/11/14 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1937/03/07 Boston Bruins   1  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1937/02/16 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1937/01/28 Boston Bruins   1  -  New York Rangers   1      T                              </span>
+<span class="hovl"> H 1937/01/26 Boston Bruins   0  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1937/01/03 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1936/12/31 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1936/11/28 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> H 1936/11/17 Boston Bruins   1  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1936/03/22 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1936/02/23 Boston Bruins   3  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1936/02/09 Boston Bruins   0  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1936/01/12 Boston Bruins   6  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1935/12/25 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1935/12/22 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1935/12/01 Boston Bruins   2  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1935/11/24 Boston Bruins   0  -  New York Rangers   1      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1935/03/05 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1935/02/24 Boston Bruins   0  -  New York Rangers   0      T                              </span>
+<span class="hovl"> H 1935/01/01 Boston Bruins   5  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1934/12/30 Boston Bruins   0  -  New York Rangers   0      T                              </span>
+<span class="hovl"> H 1934/12/18 Boston Bruins   5  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1934/12/16 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1934/03/15 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1934/02/13 Boston Bruins   4  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1934/01/30 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1934/01/28 Boston Bruins   2  -  New York Rangers   4      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1933/12/17 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> H 1933/12/02 Boston Bruins   0  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1933/03/21 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1933/03/05 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1933/02/07 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1933/01/12 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1932/12/11 Boston Bruins   1  -  New York Rangers   3 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1932/11/29 Boston Bruins   4  -  New York Rangers   6      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1932/02/25 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> H 1932/02/23 Boston Bruins   0  -  New York Rangers   2 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1932/02/09 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1932/01/28 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1932/01/14 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1932/01/12 Boston Bruins   3  -  New York Rangers   5 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1931/12/15 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1931/11/19 Boston Bruins   1  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1931/03/03 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1931/01/29 Boston Bruins   4  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1931/01/13 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1931/01/01 Boston Bruins   4  -  New York Rangers   3 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1930/12/20 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> A 1930/12/18 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1930/03/18 Boston Bruins   9  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1930/02/23 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1930/02/02 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> H 1930/01/07 Boston Bruins   3  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1929/12/26 Boston Bruins   4  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1929/11/19 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1929/03/29 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b> !! Stanley Cup Finals !!     </span>
+<span class="hovl"> H 1929/03/28 Boston Bruins   2  -  New York Rangers   0      <b><font color="green">W</font></b> !! Stanley Cup Finals !!     </span>
+<span class="hovl"> A 1929/03/10 Boston Bruins   3  -  New York Rangers   2      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1929/03/05 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1929/01/27 Boston Bruins   2  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1929/01/15 Boston Bruins   4  -  New York Rangers   1      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1928/12/30 Boston Bruins   0  -  New York Rangers   2      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1928/12/04 Boston Bruins   2  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1928/04/03 Boston Bruins   1  -  New York Rangers   4      <b><font color="red">L</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> A 1928/03/31 Boston Bruins   1  -  New York Rangers   1      T !! Conference Finals !!      </span>
+<span class="hovl"> H 1928/03/10 Boston Bruins   3  -  New York Rangers   3      T                              </span>
+<span class="hovl"> A 1928/02/19 Boston Bruins   2  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1928/01/12 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> H 1927/12/27 Boston Bruins   2  -  New York Rangers   0      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> H 1927/12/13 Boston Bruins   2  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1927/11/27 Boston Bruins   1  -  New York Rangers   1      T                              </span>
+<span class="hovl"> A 1927/04/04 Boston Bruins   3  -  New York Rangers   1      <b><font color="green">W</font></b> !! Conference Finals !!      </span>
+<span class="hovl"> H 1927/04/02 Boston Bruins   0  -  New York Rangers   0      T !! Conference Finals !!      </span>
+<span class="hovl"> H 1927/03/26 Boston Bruins   4  -  New York Rangers   3 (OT) <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1927/02/20 Boston Bruins   1  -  New York Rangers   3      <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> A 1927/01/20 Boston Bruins   2  -  New York Rangers   2      T                              </span>
+<span class="hovl"> H 1927/01/18 Boston Bruins   7  -  New York Rangers   3      <b><font color="green">W</font></b>                              </span>
+<span class="hovl"> A 1926/12/12 Boston Bruins   1  -  New York Rangers   2 (OT) <b><font color="red">L</font></b>                              </span>
+<span class="hovl"> H 1926/12/07 Boston Bruins   0  -  New York Rangers   1      <b><font color="red">L</font></b>                              </span>
     </pre></td>
   </tr>
 </tbody></table>
 <font color="#000000" face="Arial" size="-3"><b><u>Last updated:</u></b> 
-January 23, 2026
+January 24, 2026
 </font>
 <br/><font color="#000000" face="Arial" size="-3">Copyright &copy; 2002-2026 - mcubed.net</font><br/>
 <font color="#000000" face="Arial" size="-3"><a href="https://mcubed.net/about.shtml">About mcubed.net</a> | <a href="https://mcubed.net/privacy.shtml">Privacy Policy</a></font>
