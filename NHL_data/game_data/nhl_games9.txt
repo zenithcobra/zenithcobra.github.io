@@ -2,9 +2,9 @@
 <script>var ezTcfConsent=window.ezTcfConsent?window.ezTcfConsent:{loaded:false,store_info:false,develop_and_improve_services:false,measure_ad_performance:false,measure_content_performance:false,select_basic_ads:false,create_ad_profile:false,select_personalized_ads:false,create_content_profile:false,select_personalized_content:false,understand_audiences:false,use_limited_data_to_select_content:false,};function getEzConsentData(){return new Promise(function(resolve){document.addEventListener("ezConsentEvent",function(event){var ezTcfConsent=event.detail.ezTcfConsent;resolve(ezTcfConsent);});});}</script>
 <script>if(typeof _setEzCookies!=='function'){function _setEzCookies(ezConsentData){var cookies=window.ezCookieQueue;for(var i=0;i<cookies.length;i++){var cookie=cookies[i];if(ezConsentData&&ezConsentData.loaded&&ezConsentData[cookie.tcfCategory]){document.cookie=cookie.name+"="+cookie.value;}}}}
 window.ezCookieQueue=window.ezCookieQueue||[];if(typeof addEzCookies!=='function'){function addEzCookies(arr){window.ezCookieQueue=[...window.ezCookieQueue,...arr];}}
-addEzCookies([{name:"ezoab_413175",value:"mod1; Path=/; Domain=mcubed.net; Max-Age=7200",tcfCategory:"store_info",isEzoic:"true",},{name:"ezosuibasgeneris-1",value:"ba78c9d1-878a-4e25-546d-af85c21cd86d; Path=/; Domain=mcubed.net; Expires=Tue, 26 Jan 2027 13:30:04 UTC; Secure; SameSite=None",tcfCategory:"understand_audiences",isEzoic:"true",}]);if(window.ezTcfConsent&&window.ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else if(typeof getEzConsentData==="function"){getEzConsentData().then(function(ezTcfConsent){if(ezTcfConsent&&ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else{console.error("cannot get ez consent data");_setEzCookies(window.ezTcfConsent);}});}else{console.error("getEzConsentData is not a function");_setEzCookies(window.ezTcfConsent);}</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window._ezaq = Object.assign({"edge_cache_status":11,"edge_response_time":79,"url":"https://mcubed.net/nhl/tb/uth.shtml"}, typeof window._ezaq !== "undefined" ? window._ezaq : {});</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window._ezaq = Object.assign({"ab_test_id":"mod1"}, typeof window._ezaq !== "undefined" ? window._ezaq : {});window.__ez=window.__ez||{};window.__ez.tf={};</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window.ezDisableAds = true;</script><script src="https://cmp.gatekeeperconsent.com/min.js" async></script>
+addEzCookies([{name:"ezoab_413175",value:"mod11-c; Path=/; Domain=mcubed.net; Max-Age=7200",tcfCategory:"store_info",isEzoic:"true",},{name:"ezosuibasgeneris-1",value:"1445bcb8-d74e-461e-45aa-37d839bd2592; Path=/; Domain=mcubed.net; Expires=Wed, 27 Jan 2027 12:10:57 UTC; Secure; SameSite=None",tcfCategory:"understand_audiences",isEzoic:"true",}]);if(window.ezTcfConsent&&window.ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else if(typeof getEzConsentData==="function"){getEzConsentData().then(function(ezTcfConsent){if(ezTcfConsent&&ezTcfConsent.loaded){_setEzCookies(window.ezTcfConsent);}else{console.error("cannot get ez consent data");_setEzCookies(window.ezTcfConsent);}});}else{console.error("getEzConsentData is not a function");_setEzCookies(window.ezTcfConsent);}</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window._ezaq = Object.assign({"edge_cache_status":11,"edge_response_time":76,"url":"https://mcubed.net/nhl/mon/vgk.shtml"}, typeof window._ezaq !== "undefined" ? window._ezaq : {});</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window._ezaq = Object.assign({"ab_test_id":"mod11-c"}, typeof window._ezaq !== "undefined" ? window._ezaq : {});window.__ez=window.__ez||{};window.__ez.tf={};</script><script type="text/javascript" data-ezscrex='false' data-cfasync='false'>window.ezDisableAds = true;</script><script src="https://cmp.gatekeeperconsent.com/min.js" async></script>
 <script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;window.__ezScriptHost="//www.ezojs.com";__ez.queue=__ez.queue||function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:w(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),m())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&m()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&m())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e,i,n,s,a,d,c,u,f){var m=new l(e,i,n,s,a,d,c,f);!0===u?o[e]=m:r[e]=m,t[e]=m,h(m)}function h(e){!0!==u(e)&&0!=s&&e.process()}function u(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(w(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function m(){++e>200||(f("let's go"),p(o),p(r))}function p(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||u(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function w(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),m()}),5e3)}),!1),{addFile:c,addFileOnce:function(e,i,n,o,r,s,a,l,d){t[e]||c(e,i,n,o,r,s,a,l,d)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,h(n)},addFunc:function(e,n,s,l,d,c,u,f,m,p){!0===c&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,u,f,p);!0===m?o[e]=w:r[e]=w,t[e]=w,h(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,h(o)},items:t,processAll:m,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&u(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot=__ez.dot||{};__ez.queue.addFileOnce('/detroitchicago/boise.js', '/detroitchicago/boise.js?gcb=195-2&cb=5', true, [], true, false, true, false);__ez.queue.addFileOnce('/parsonsmaize/abilene.js', '/parsonsmaize/abilene.js?gcb=195-2&cb=e80eca0cdb', true, [], true, false, true, false);__ez.queue.addFileOnce('/parsonsmaize/mulvane.js', '/parsonsmaize/mulvane.js?gcb=195-2&cb=e75e48eec0', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFileOnce('/detroitchicago/birmingham.js', '/detroitchicago/birmingham.js?gcb=195-2&cb=539c47377c', true, ['/parsonsmaize/abilene.js'], true, false, true, false);</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({"ad_cache_level":0,"adpicker_placement_cnt":0,"ai_placeholder_cache_level":0,"ai_placeholder_placement_cnt":-1,"domain":"mcubed.net","domain_id":413175,"ezcache_level":0,"ezcache_skip_code":14,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"response_size":40591,"response_size_orig":34729,"response_time_orig":89,"template_id":5,"url":"https://mcubed.net/nhl/tb/uth.shtml","word_count":0,"worst_bad_word_level":0}, typeof window._ezaq !== "undefined" ? window._ezaq : {});__ez.queue.markLoaded('ezaqBaseReady');</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({"ad_cache_level":0,"adpicker_placement_cnt":0,"ai_placeholder_cache_level":0,"ai_placeholder_placement_cnt":-1,"domain":"mcubed.net","domain_id":413175,"ezcache_level":0,"ezcache_skip_code":14,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"response_size":45129,"response_size_orig":39266,"response_time_orig":88,"template_id":5,"url":"https://mcubed.net/nhl/mon/vgk.shtml","word_count":0,"worst_bad_word_level":0}, typeof window._ezaq !== "undefined" ? window._ezaq : {});__ez.queue.markLoaded('ezaqBaseReady');</script>
 <script type='text/javascript' data-ezscrex='false' data-cfasync='false'>
 window.ezAnalyticsStatic = true;
 
@@ -36,7 +36,7 @@ function getCookiesWithPrefix() {
     return cookiesWithPrefix;
 }
 function productAnalytics() {
-	var d = {"pr":[6],"omd5":"ba81799e4dd895563e604691f68b84a3","nar":"risk score"};
+	var d = {"pr":[6],"omd5":"62cc51e6c2a5d1aeaabda0f4f26b3dcd","nar":"risk score"};
 	d.u = _ezaq.url;
 	d.p = _ezaq.page_view_id;
 	d.v = _ezaq.visit_uuid;
@@ -75,8 +75,8 @@ function productAnalytics() {
 	xhr.send(dataText);
 }
 __ez.queue.addFunc("productAnalytics", "productAnalytics", null, true, ['ezaqBaseReady'], false, false, false, true);
-</script><base href="https://mcubed.net/nhl/tb/uth.shtml"/>
-  <title>mcubed.net : NHL : Series records : Tampa Bay Lightning against Utah Mammoth</title>
+</script><base href="https://mcubed.net/nhl/mon/vgk.shtml"/>
+  <title>mcubed.net : NHL : Series records : Montreal Canadiens against Vegas Golden Knights</title>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4TGVY1H9RZ"></script><script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -234,7 +234,7 @@ a:active {color: blue}
 	#sddm div a:hover
 	{	background: #000000;
 		color: #FFFFFF}
-</style><link rel='canonical' href='https://mcubed.net/nhl/tb/uth.shtml' />
+</style><link rel='canonical' href='https://mcubed.net/nhl/mon/vgk.shtml' />
 <script type='text/javascript'>
 var ezoTemplate = 'orig_site';
 var ezouid = '1';
@@ -509,7 +509,7 @@ var ezoicSearchable = 1;
 <ul id="sddm">
 <table width="900" border="0" cellpadding="1" cellspacing="1">
   <tbody><tr>
-    <td height="20" bgcolor="#7D7D7D" align="left"><font size="2" face="arial" color="white">&nbsp;&nbsp;NHL : Lightning &gt;</font></td>
+    <td height="20" bgcolor="#7D7D7D" align="left"><font size="2" face="arial" color="white">&nbsp;&nbsp;NHL : Canadiens &gt;</font></td>
     <td height="20" bgcolor="#7D7D7D" onmouseover="this.style.backgroundColor=&#39;#000000&#39;;" onmouseout="this.style.backgroundColor=&#39;#7D7D7D&#39;;" align="center"><font size="2" face="arial" color="white"><a href="index.shtml" style="color:#FFFFFF;text-decoration:none">Win chart</a></font></td>
     <td height="20" bgcolor="#7D7D7D" onmouseover="this.style.backgroundColor=&#39;#000000&#39;;" onmouseout="this.style.backgroundColor=&#39;#7D7D7D&#39;;" align="center"><font size="2" face="arial" color="white"><a href="series1.shtml" style="color:#FFFFFF;text-decoration:none">Series records</a></font></td>
     <td height="20" bgcolor="#7D7D7D" onmouseover="this.style.backgroundColor=&#39;#000000&#39;;" onmouseout="this.style.backgroundColor=&#39;#7D7D7D&#39;;" align="center"><font size="2" face="arial" color="white"><a href="cup.shtml" style="color:#FFFFFF;text-decoration:none">Stanley Cups</a></font></td>
@@ -538,41 +538,70 @@ var ezoicSearchable = 1;
     </td>
     <td valign="top"><pre>
 
- <b>Series records : Tampa Bay Lightning(H)  against  Utah Mammoth(A)</b>
+ <b>Series records : Montreal Canadiens(H)  against  Vegas Golden Knights(A)</b>
 
-Streaks:  <span class="hovl">All games:      All time :  Wins   :  2 games - 2025/03/27 .. 2025/11/02</span>
-          <span class="hovl">                            Losses :  1 game  - 2025/03/22              </span>
-          <span class="hovl">                Current  :  Wins   :  2 games - 2025/03/27 .. 2025/11/02</span>
+Streaks:  <span class="hovl">All games:      All time :  Wins   :  4 games - 2018/11/10 .. 2020/01/18</span>
+          <span class="hovl">                            Losses :  7 games - 2021/11/06 .. 2024/11/23</span>
+          <span class="hovl">                Current  :  Wins   :  2 games - 2024/12/31 .. 2025/11/28</span>
 
-          <span class="hovl">Home games:     All time :  Wins   :  1 game  - 2025/03/27              </span>
-          <span class="hovl">                Current  :  Wins   :  1 game  - 2025/03/27              </span>
+          <span class="hovl">Home games:     All time :  Wins   :  4 games - 2017/11/07 .. 2021/06/18</span>
+          <span class="hovl">                            Losses :  4 games - 2021/11/06 .. 2024/11/23</span>
+          <span class="hovl">                Current  :  Losses :  4 games - 2021/11/06 .. 2024/11/23</span>
 
-          <span class="hovl">Away games:     All time :  Wins   :  1 game  - 2025/11/02              </span>
-          <span class="hovl">                            Losses :  1 game  - 2025/03/22              </span>
-          <span class="hovl">                Current  :  Wins   :  1 game  - 2025/11/02              </span>
+          <span class="hovl">Away games:     All time :  Wins   :  2 games - 2024/12/31 .. 2025/11/28</span>
+          <span class="hovl">                                      2 games - 2021/06/16 .. 2021/06/22</span>
+          <span class="hovl">                                      2 games - 2018/12/22 .. 2019/10/31</span>
+          <span class="hovl">                            Losses :  3 games - 2022/01/20 .. 2023/10/30</span>
+          <span class="hovl">                Current  :  Wins   :  2 games - 2024/12/31 .. 2025/11/28</span>
 
                  <b><u>A L L    G A M E S</u>                   <u>H O M E</u>                        <u>A W A Y</u>                    <u>P L A Y O F F S</u></b>
  <b>OVERALL:        W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG</b>
-<span class="hovl">                  2-1-0  66.7  5.3  2.7 |         1-0-0 100.0  8.0  0.0 |         1-1-0  50.0  4.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl">                11-10-0  52.4  3.2  3.5 |         5-5-0  50.0  3.3  3.9 |         6-5-0  54.5  3.2  3.1 |         4-2-0  66.7  2.5  2.2</span>
 
                  <b><u>A L L    G A M E S</u>                   <u>H O M E</u>                        <u>A W A Y</u>                    <u>P L A Y O F F S</u></b>
  <b>DECADE:         W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG</b>
-<span class="hovl"> 2020&#39;s:          2-1-0  66.7  5.3  2.7 |         1-0-0 100.0  8.0  0.0 |         1-1-0  50.0  4.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2020&#39;s:          8-9-0  47.1  3.1  3.4 |         3-5-0  37.5  3.1  4.1 |         5-4-0  55.6  3.1  2.8 |         4-2-0  66.7  2.5  2.2</span>
+<span class="hovl"> 2010&#39;s:          3-1-0  75.0  3.8  3.8 |         2-0-0 100.0  4.0  3.0 |         1-1-0  50.0  3.5  4.5 |         0-0-0   0.0  0.0  0.0</span>
 
                  <b><u>A L L    G A M E S</u>                   <u>H O M E</u>                        <u>A W A Y</u>                    <u>P L A Y O F F S</u></b>
  <b>YEAR:           W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG          W-L-T  Win % GFPG GAPG</b>
-<span class="hovl"> 2026:            1-0-0 100.0  4.0  2.0 |         0-0-0   0.0  0.0  0.0 |         1-0-0 100.0  4.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
-<span class="hovl"> 2025:            1-1-0  50.0  6.0  3.0 |         1-0-0 100.0  8.0  0.0 |         0-1-0   0.0  4.0  6.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2026:            1-0-0 100.0  4.0  1.0 |         0-0-0   0.0  0.0  0.0 |         1-0-0 100.0  4.0  1.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2025:            1-1-0  50.0  2.5  4.0 |         0-1-0   0.0  2.0  6.0 |         1-0-0 100.0  3.0  2.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2024:            0-2-0   0.0  3.5  4.5 |         0-1-0   0.0  5.0  6.0 |         0-1-0   0.0  2.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2023:            0-2-0   0.0  3.5  5.0 |         0-1-0   0.0  4.0  6.0 |         0-1-0   0.0  3.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2022:            0-2-0   0.0  2.5  4.5 |         0-1-0   0.0  2.0  5.0 |         0-1-0   0.0  3.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2021:            4-2-0  66.7  2.5  2.2 |         2-1-0  66.7  2.3  2.0 |         2-1-0  66.7  2.7  2.3 |         4-2-0  66.7  2.5  2.2</span>
+<span class="hovl"> 2020:            2-0-0 100.0  5.0  4.0 |         1-0-0 100.0  5.0  4.0 |         1-0-0 100.0  5.0  4.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2019:            2-0-0 100.0  4.5  3.5 |         1-0-0 100.0  5.0  4.0 |         1-0-0 100.0  4.0  3.0 |         0-0-0   0.0  0.0  0.0</span>
+<span class="hovl"> 2018:            1-1-0  50.0  3.0  4.0 |         1-0-0 100.0  3.0  2.0 |         0-1-0   0.0  3.0  6.0 |         0-0-0   0.0  0.0  0.0</span>
 
 <b>ALL GAMES:</b>   <a href="../history.shtml">playoff round notes</a>
-<span class="hovl"> A 2025/11/02 Tampa Bay Lightning   4  -  Utah Mammoth       2      <b><font color="green">W</font></b> </span>
-<span class="hovl"> H 2025/03/27 Tampa Bay Lightning   8  -  Utah Hockey Club   0      <b><font color="green">W</font></b> </span>
-<span class="hovl"> A 2025/03/22 Tampa Bay Lightning   4  -  Utah Hockey Club   6      <b><font color="red">L</font></b> </span>
+<span class="hovl"> A 2025/11/28 Montreal Canadiens   4  -  Vegas Golden Knights   1      <b><font color="green">W</font></b>                         </span>
+<span class="hovl"> A 2024/12/31 Montreal Canadiens   3  -  Vegas Golden Knights   2      <b><font color="green">W</font></b>                         </span>
+<span class="hovl"> H 2024/11/23 Montreal Canadiens   2  -  Vegas Golden Knights   6      <b><font color="red">L</font></b>                         </span>
+<span class="hovl"> H 2023/11/16 Montreal Canadiens   5  -  Vegas Golden Knights   6      <b><font color="red">L</font></b>                         </span>
+<span class="hovl"> A 2023/10/30 Montreal Canadiens   2  -  Vegas Golden Knights   3 (SO) <b><font color="red">L</font></b>                         </span>
+<span class="hovl"> A 2023/03/05 Montreal Canadiens   3  -  Vegas Golden Knights   4      <b><font color="red">L</font></b>                         </span>
+<span class="hovl"> H 2022/11/05 Montreal Canadiens   4  -  Vegas Golden Knights   6      <b><font color="red">L</font></b>                         </span>
+<span class="hovl"> A 2022/01/20 Montreal Canadiens   3  -  Vegas Golden Knights   4 (OT) <b><font color="red">L</font></b>                         </span>
+<span class="hovl"> H 2021/11/06 Montreal Canadiens   2  -  Vegas Golden Knights   5      <b><font color="red">L</font></b>                         </span>
+<span class="hovl"> H 2021/06/24 Montreal Canadiens   3  -  Vegas Golden Knights   2 (OT) <b><font color="green">W</font></b> !! Conference Finals !! </span>
+<span class="hovl"> A 2021/06/22 Montreal Canadiens   4  -  Vegas Golden Knights   1      <b><font color="green">W</font></b> !! Conference Finals !! </span>
+<span class="hovl"> H 2021/06/20 Montreal Canadiens   1  -  Vegas Golden Knights   2 (OT) <b><font color="red">L</font></b> !! Conference Finals !! </span>
+<span class="hovl"> H 2021/06/18 Montreal Canadiens   3  -  Vegas Golden Knights   2 (OT) <b><font color="green">W</font></b> !! Conference Finals !! </span>
+<span class="hovl"> A 2021/06/16 Montreal Canadiens   3  -  Vegas Golden Knights   2      <b><font color="green">W</font></b> !! Conference Finals !! </span>
+<span class="hovl"> A 2021/06/14 Montreal Canadiens   1  -  Vegas Golden Knights   4      <b><font color="red">L</font></b> !! Conference Finals !! </span>
+<span class="hovl"> H 2020/01/18 Montreal Canadiens   5  -  Vegas Golden Knights   4 (SO) <b><font color="green">W</font></b>                         </span>
+<span class="hovl"> A 2019/10/31 Montreal Canadiens   5  -  Vegas Golden Knights   4 (OT) <b><font color="green">W</font></b>                         </span>
+<span class="hovl"> A 2018/12/22 Montreal Canadiens   4  -  Vegas Golden Knights   3 (OT) <b><font color="green">W</font></b>                         </span>
+<span class="hovl"> H 2018/11/10 Montreal Canadiens   5  -  Vegas Golden Knights   4      <b><font color="green">W</font></b>                         </span>
+<span class="hovl"> A 2018/02/17 Montreal Canadiens   3  -  Vegas Golden Knights   6      <b><font color="red">L</font></b>                         </span>
+<span class="hovl"> H 2017/11/07 Montreal Canadiens   3  -  Vegas Golden Knights   2      <b><font color="green">W</font></b>                         </span>
     </pre></td>
   </tr>
 </tbody></table>
 <font color="#000000" face="Arial" size="-3"><b><u>Last updated:</u></b> 
-January 24, 2026
+January 26, 2026
 </font>
 <br/><font color="#000000" face="Arial" size="-3">Copyright &copy; 2002-2026 - mcubed.net</font><br/>
 <font color="#000000" face="Arial" size="-3"><a href="https://mcubed.net/about.shtml">About mcubed.net</a> | <a href="https://mcubed.net/privacy.shtml">Privacy Policy</a></font>
