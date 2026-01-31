@@ -1,0 +1,110 @@
+[
+    {
+        "date": "2026-01-30",
+        "home_team": "Blackhawks",
+        "away_team": "Blue Jackets",
+        "home_score": 2,
+        "away_score": 4,
+        "winner": "Blue Jackets",
+        "condensed_game": "https://www.nhl.com/video/cbj-at-chi-condensed-game-6388580091112",
+        "goals": [
+            {
+                "player_id": 8475745,
+                "name": "Charlie Coyle",
+                "team": "CBJ",
+                "goals_to_date": 13,
+                "assists": [
+                    {
+                        "name": "Z. Werenski",
+                        "assists_to_date": 39,
+                        "player_id": 8478460
+                    },
+                    {
+                        "name": "K. Marchenko",
+                        "assists_to_date": 26,
+                        "player_id": 8480893
+                    }
+                ]
+            },
+            {
+                "player_id": 8484144,
+                "name": "Connor Bedard",
+                "team": "CHI",
+                "goals_to_date": 22,
+                "assists": [
+                    {
+                        "name": "A. Vlasic",
+                        "assists_to_date": 12,
+                        "player_id": 8481568
+                    },
+                    {
+                        "name": "T. Bertuzzi",
+                        "assists_to_date": 15,
+                        "player_id": 8477479
+                    }
+                ]
+            },
+            {
+                "player_id": 8475745,
+                "name": "Charlie Coyle",
+                "team": "CBJ",
+                "goals_to_date": 14,
+                "assists": []
+            },
+            {
+                "player_id": 8479671,
+                "name": "Mathieu Olivier",
+                "team": "CBJ",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "C. Coyle",
+                        "assists_to_date": 24,
+                        "player_id": 8475745
+                    },
+                    {
+                        "name": "Z. Werenski",
+                        "assists_to_date": 40,
+                        "player_id": 8478460
+                    }
+                ]
+            },
+            {
+                "player_id": 8483493,
+                "name": "Frank Nazar",
+                "team": "CHI",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "C. Bedard",
+                        "assists_to_date": 30,
+                        "player_id": 8484144
+                    },
+                    {
+                        "name": "T. Bertuzzi",
+                        "assists_to_date": 16,
+                        "player_id": 8477479
+                    }
+                ]
+            },
+            {
+                "player_id": 8475745,
+                "name": "Charlie Coyle",
+                "team": "CBJ",
+                "goals_to_date": 15,
+                "assists": [
+                    {
+                        "name": "C. Sillinger",
+                        "assists_to_date": 18,
+                        "player_id": 8482705
+                    },
+                    {
+                        "name": "M. Olivier",
+                        "assists_to_date": 9,
+                        "player_id": 8479671
+                    }
+                ]
+            }
+        ]
+    }
+]
