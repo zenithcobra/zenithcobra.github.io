@@ -1,0 +1,213 @@
+[
+    {
+        "date": "2026-02-11",
+        "home_team": "Finland",
+        "away_team": "Slovakia",
+        "home_score": 1,
+        "away_score": 4,
+        "winner": "Slovakia",
+        "condensed_game": "https://www.nhl.com",
+        "goals": [
+            {
+                "player_id": 8483515,
+                "name": "Juraj Slafkovsk\u00fd",
+                "team": "SVK",
+                "goals_to_date": 1,
+                "assists": []
+            },
+            {
+                "player_id": 8480009,
+                "name": "Eeli Tolvanen",
+                "team": "FIN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "J. Armia",
+                        "assists_to_date": 1,
+                        "player_id": 8476469
+                    },
+                    {
+                        "name": "A. Lehkonen",
+                        "assists_to_date": 1,
+                        "player_id": 8477476
+                    }
+                ]
+            },
+            {
+                "player_id": 8484164,
+                "name": "Dalibor Dvorsky",
+                "team": "SVK",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Gernat",
+                        "assists_to_date": 1,
+                        "player_id": 8476364
+                    },
+                    {
+                        "name": "A. Liska",
+                        "assists_to_date": 1,
+                        "player_id": 8485960
+                    }
+                ]
+            },
+            {
+                "player_id": 8483515,
+                "name": "Juraj Slafkovsk\u00fd",
+                "team": "SVK",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "S. Nemec",
+                        "assists_to_date": 1,
+                        "player_id": 8483495
+                    },
+                    {
+                        "name": "D. Dvorsky",
+                        "assists_to_date": 1,
+                        "player_id": 8484164
+                    }
+                ]
+            },
+            {
+                "player_id": 8480008,
+                "name": "Adam Ruzicka",
+                "team": "SVK",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "T. Tatar",
+                        "assists_to_date": 1,
+                        "player_id": 8475193
+                    },
+                    {
+                        "name": "J. Slafkovsk\u00fd",
+                        "assists_to_date": 1,
+                        "player_id": 8483515
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-02-11",
+        "home_team": "Italy",
+        "away_team": "Sweden",
+        "home_score": 2,
+        "away_score": 5,
+        "winner": "Sweden",
+        "condensed_game": "https://www.nhl.com",
+        "goals": [
+            {
+                "player_id": 8485976,
+                "name": "Luca Frigo",
+                "team": "ITA",
+                "goals_to_date": 1,
+                "assists": []
+            },
+            {
+                "player_id": 8476455,
+                "name": "Gabriel Landeskog",
+                "team": "SWE",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Zibanejad",
+                        "assists_to_date": 1,
+                        "player_id": 8476459
+                    },
+                    {
+                        "name": "E. Karlsson",
+                        "assists_to_date": 1,
+                        "player_id": 8474578
+                    }
+                ]
+            },
+            {
+                "player_id": 8478055,
+                "name": "Gustav Forsling",
+                "team": "SWE",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "J. Bratt",
+                        "assists_to_date": 1,
+                        "player_id": 8479407
+                    },
+                    {
+                        "name": "R. Dahlin",
+                        "assists_to_date": 1,
+                        "player_id": 8480839
+                    }
+                ]
+            },
+            {
+                "player_id": 8478862,
+                "name": "Matthew Bradley",
+                "team": "ITA",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "D. Gazley",
+                        "assists_to_date": 1,
+                        "player_id": 8477139
+                    },
+                    {
+                        "name": "T. Larkin",
+                        "assists_to_date": 1,
+                        "player_id": 8475262
+                    }
+                ]
+            },
+            {
+                "player_id": 8477939,
+                "name": "William Nylander",
+                "team": "SWE",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "R. Dahlin",
+                        "assists_to_date": 2,
+                        "player_id": 8480839
+                    },
+                    {
+                        "name": "A. Kempe",
+                        "assists_to_date": 1,
+                        "player_id": 8477960
+                    }
+                ]
+            },
+            {
+                "player_id": 8476459,
+                "name": "Mika Zibanejad",
+                "team": "SWE",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "R. Dahlin",
+                        "assists_to_date": 3,
+                        "player_id": 8480839
+                    },
+                    {
+                        "name": "R. Rakell",
+                        "assists_to_date": 1,
+                        "player_id": 8476483
+                    }
+                ]
+            },
+            {
+                "player_id": 8475167,
+                "name": "Victor Hedman",
+                "team": "SWE",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "G. Forsling",
+                        "assists_to_date": 1,
+                        "player_id": 8478055
+                    }
+                ]
+            }
+        ]
+    }
+]
