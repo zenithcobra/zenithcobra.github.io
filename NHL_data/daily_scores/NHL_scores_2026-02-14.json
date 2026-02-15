@@ -1,0 +1,616 @@
+[
+    {
+        "date": "2026-02-14",
+        "home_team": "Slovakia",
+        "away_team": "Sweden",
+        "home_score": 3,
+        "away_score": 5,
+        "winner": "Sweden",
+        "condensed_game": "https://www.nhl.com",
+        "goals": [
+            {
+                "player_id": 8478493,
+                "name": "Joel Eriksson Ek",
+                "team": "SWE",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "A. Kempe",
+                        "assists_to_date": 2,
+                        "player_id": 8477960
+                    }
+                ]
+            },
+            {
+                "player_id": 8483515,
+                "name": "Juraj Slafkovsk\u00fd",
+                "team": "SVK",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "S. Nemec",
+                        "assists_to_date": 2,
+                        "player_id": 8483495
+                    },
+                    {
+                        "name": "M. Gernat",
+                        "assists_to_date": 3,
+                        "player_id": 8476364
+                    }
+                ]
+            },
+            {
+                "player_id": 8477960,
+                "name": "Adrian Kempe",
+                "team": "SWE",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "R. Dahlin",
+                        "assists_to_date": 4,
+                        "player_id": 8480839
+                    },
+                    {
+                        "name": "L. Raymond",
+                        "assists_to_date": 2,
+                        "player_id": 8482078
+                    }
+                ]
+            },
+            {
+                "player_id": 8476364,
+                "name": "Martin Gernat",
+                "team": "SVK",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "P. Ceresnak",
+                        "assists_to_date": 1,
+                        "player_id": 8476324
+                    },
+                    {
+                        "name": "A. Ruzicka",
+                        "assists_to_date": 1,
+                        "player_id": 8480008
+                    }
+                ]
+            },
+            {
+                "player_id": 8480012,
+                "name": "Elias Pettersson",
+                "team": "SWE",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "F. Forsberg",
+                        "assists_to_date": 1,
+                        "player_id": 8476887
+                    },
+                    {
+                        "name": "V. Hedman",
+                        "assists_to_date": 1,
+                        "player_id": 8475167
+                    }
+                ]
+            },
+            {
+                "player_id": 8480012,
+                "name": "Elias Pettersson",
+                "team": "SWE",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "L. Raymond",
+                        "assists_to_date": 3,
+                        "player_id": 8482078
+                    },
+                    {
+                        "name": "E. Karlsson",
+                        "assists_to_date": 2,
+                        "player_id": 8474578
+                    }
+                ]
+            },
+            {
+                "player_id": 8482078,
+                "name": "Lucas Raymond",
+                "team": "SWE",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Zibanejad",
+                        "assists_to_date": 2,
+                        "player_id": 8476459
+                    },
+                    {
+                        "name": "E. Karlsson",
+                        "assists_to_date": 3,
+                        "player_id": 8474578
+                    }
+                ]
+            },
+            {
+                "player_id": 8484164,
+                "name": "Dalibor Dvorsky",
+                "team": "SVK",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "J. Slafkovsk\u00fd",
+                        "assists_to_date": 3,
+                        "player_id": 8483515
+                    },
+                    {
+                        "name": "P. Ceresnak",
+                        "assists_to_date": 2,
+                        "player_id": 8476324
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-02-14",
+        "home_team": "Latvia",
+        "away_team": "Germany",
+        "home_score": 4,
+        "away_score": 3,
+        "winner": "Latvia",
+        "condensed_game": "https://www.nhl.com",
+        "goals": [
+            {
+                "player_id": 8482117,
+                "name": "Lukas Reichel",
+                "team": "GER",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "D. Kahun",
+                        "assists_to_date": 1,
+                        "player_id": 8480946
+                    },
+                    {
+                        "name": "L. K\u00e4lble",
+                        "assists_to_date": 1,
+                        "player_id": 8483835
+                    }
+                ]
+            },
+            {
+                "player_id": 8483704,
+                "name": "Dans Locmelis",
+                "team": "LAT",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "Z. Girgensons",
+                        "assists_to_date": 2,
+                        "player_id": 8476878
+                    },
+                    {
+                        "name": "R. Krastenbergs",
+                        "assists_to_date": 1,
+                        "player_id": 8481137
+                    }
+                ]
+            },
+            {
+                "player_id": 8483835,
+                "name": "Lukas K\u00e4lble",
+                "team": "GER",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "F. Tiffels",
+                        "assists_to_date": 2,
+                        "player_id": 8478890
+                    }
+                ]
+            },
+            {
+                "player_id": 8483704,
+                "name": "Dans Locmelis",
+                "team": "LAT",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "R. Balcers",
+                        "assists_to_date": 1,
+                        "player_id": 8478870
+                    },
+                    {
+                        "name": "U. Balinskis",
+                        "assists_to_date": 1,
+                        "player_id": 8484304
+                    }
+                ]
+            },
+            {
+                "player_id": 8482631,
+                "name": "Eduards Tralmaks",
+                "team": "LAT",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "Z. Girgensons",
+                        "assists_to_date": 3,
+                        "player_id": 8476878
+                    },
+                    {
+                        "name": "J. Jaks",
+                        "assists_to_date": 1,
+                        "player_id": 8482252
+                    }
+                ]
+            },
+            {
+                "player_id": 8481137,
+                "name": "Renars Krastenbergs",
+                "team": "LAT",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "K. Daugavins",
+                        "assists_to_date": 1,
+                        "player_id": 8473484
+                    },
+                    {
+                        "name": "A. Smits",
+                        "assists_to_date": 1,
+                        "player_id": 8485957
+                    }
+                ]
+            },
+            {
+                "player_id": 8482116,
+                "name": "Tim St\u00fctzle",
+                "team": "GER",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "L. Draisaitl",
+                        "assists_to_date": 2,
+                        "player_id": 8477934
+                    },
+                    {
+                        "name": "J. Peterka",
+                        "assists_to_date": 2,
+                        "player_id": 8482175
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-02-14",
+        "home_team": "Italy",
+        "away_team": "Finland",
+        "home_score": 0,
+        "away_score": 11,
+        "winner": "Finland",
+        "condensed_game": "https://www.nhl.com",
+        "goals": [
+            {
+                "player_id": 8478427,
+                "name": "Sebastian Aho",
+                "team": "FIN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Rantanen",
+                        "assists_to_date": 1,
+                        "player_id": 8478420
+                    },
+                    {
+                        "name": "A. Lehkonen",
+                        "assists_to_date": 2,
+                        "player_id": 8477476
+                    }
+                ]
+            },
+            {
+                "player_id": 8475798,
+                "name": "Mikael Granlund",
+                "team": "FIN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Rantanen",
+                        "assists_to_date": 2,
+                        "player_id": 8478420
+                    },
+                    {
+                        "name": "M. Heiskanen",
+                        "assists_to_date": 1,
+                        "player_id": 8480036
+                    }
+                ]
+            },
+            {
+                "player_id": 8481554,
+                "name": "Kaapo Kakko",
+                "team": "FIN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "N. Mikkola",
+                        "assists_to_date": 2,
+                        "player_id": 8478859
+                    },
+                    {
+                        "name": "R. Ristolainen",
+                        "assists_to_date": 1,
+                        "player_id": 8477499
+                    }
+                ]
+            },
+            {
+                "player_id": 8481641,
+                "name": "Joel Kiviranta",
+                "team": "FIN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "N. Mikkola",
+                        "assists_to_date": 3,
+                        "player_id": 8478859
+                    },
+                    {
+                        "name": "R. Ristolainen",
+                        "assists_to_date": 2,
+                        "player_id": 8477499
+                    }
+                ]
+            },
+            {
+                "player_id": 8481554,
+                "name": "Kaapo Kakko",
+                "team": "FIN",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "E. Luostarinen",
+                        "assists_to_date": 2,
+                        "player_id": 8480185
+                    }
+                ]
+            },
+            {
+                "player_id": 8475798,
+                "name": "Mikael Granlund",
+                "team": "FIN",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "K. Kakko",
+                        "assists_to_date": 2,
+                        "player_id": 8481554
+                    },
+                    {
+                        "name": "E. Luostarinen",
+                        "assists_to_date": 3,
+                        "player_id": 8480185
+                    }
+                ]
+            },
+            {
+                "player_id": 8480036,
+                "name": "Miro Heiskanen",
+                "team": "FIN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Rantanen",
+                        "assists_to_date": 3,
+                        "player_id": 8478420
+                    }
+                ]
+            },
+            {
+                "player_id": 8477476,
+                "name": "Artturi Lehkonen",
+                "team": "FIN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "T. Teravainen",
+                        "assists_to_date": 1,
+                        "player_id": 8476882
+                    }
+                ]
+            },
+            {
+                "player_id": 8478427,
+                "name": "Sebastian Aho",
+                "team": "FIN",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "A. Lehkonen",
+                        "assists_to_date": 3,
+                        "player_id": 8477476
+                    },
+                    {
+                        "name": "H. Jokiharju",
+                        "assists_to_date": 1,
+                        "player_id": 8480035
+                    }
+                ]
+            },
+            {
+                "player_id": 8476469,
+                "name": "Joel Armia",
+                "team": "FIN",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "E. Haula",
+                        "assists_to_date": 2,
+                        "player_id": 8475287
+                    }
+                ]
+            },
+            {
+                "player_id": 8481641,
+                "name": "Joel Kiviranta",
+                "team": "FIN",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "J. Armia",
+                        "assists_to_date": 2,
+                        "player_id": 8476469
+                    },
+                    {
+                        "name": "E. Haula",
+                        "assists_to_date": 3,
+                        "player_id": 8475287
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-02-14",
+        "home_team": "Denmark",
+        "away_team": "USA",
+        "home_score": 3,
+        "away_score": 6,
+        "winner": "USA",
+        "condensed_game": "https://www.nhl.com",
+        "goals": [
+            {
+                "player_id": 8485922,
+                "name": "Nick Olesen",
+                "team": "DEN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "O. Fisker Molgaard",
+                        "assists_to_date": 1,
+                        "player_id": 8484168
+                    }
+                ]
+            },
+            {
+                "player_id": 8481557,
+                "name": "Matt Boldy",
+                "team": "USA",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "Q. Hughes",
+                        "assists_to_date": 3,
+                        "player_id": 8480800
+                    },
+                    {
+                        "name": "J. Slavin",
+                        "assists_to_date": 1,
+                        "player_id": 8476958
+                    }
+                ]
+            },
+            {
+                "player_id": 8485917,
+                "name": "Nicholas Jensen",
+                "team": "DEN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Setkov",
+                        "assists_to_date": 1,
+                        "player_id": 8480197
+                    }
+                ]
+            },
+            {
+                "player_id": 8480801,
+                "name": "Brady Tkachuk",
+                "team": "USA",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "J. Eichel",
+                        "assists_to_date": 3,
+                        "player_id": 8478403
+                    }
+                ]
+            },
+            {
+                "player_id": 8478403,
+                "name": "Jack Eichel",
+                "team": "USA",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Tkachuk",
+                        "assists_to_date": 3,
+                        "player_id": 8479314
+                    }
+                ]
+            },
+            {
+                "player_id": 8478396,
+                "name": "Noah Hanifin",
+                "team": "USA",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "V. Trocheck",
+                        "assists_to_date": 2,
+                        "player_id": 8476389
+                    },
+                    {
+                        "name": "B. Faber",
+                        "assists_to_date": 1,
+                        "player_id": 8482122
+                    }
+                ]
+            },
+            {
+                "player_id": 8485918,
+                "name": "Phillip Bruggisser",
+                "team": "DEN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "N. Ehlers",
+                        "assists_to_date": 2,
+                        "player_id": 8477940
+                    },
+                    {
+                        "name": "A. True",
+                        "assists_to_date": 1,
+                        "player_id": 8480384
+                    }
+                ]
+            },
+            {
+                "player_id": 8477404,
+                "name": "Jake Guentzel",
+                "team": "USA",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "A. Matthews",
+                        "assists_to_date": 1,
+                        "player_id": 8479318
+                    }
+                ]
+            },
+            {
+                "player_id": 8481559,
+                "name": "Jack Hughes",
+                "team": "USA",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "B. Nelson",
+                        "assists_to_date": 1,
+                        "player_id": 8475754
+                    }
+                ]
+            }
+        ]
+    }
+]
