@@ -1,0 +1,440 @@
+[
+    {
+        "date": "2026-02-18",
+        "home_team": "Slovakia",
+        "away_team": "Germany",
+        "home_score": 6,
+        "away_score": 2,
+        "winner": "Slovakia",
+        "condensed_game": "https://www.nhl.com",
+        "goals": [
+            {
+                "player_id": 8483630,
+                "name": "Pavol Regenda",
+                "team": "SVK",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "E. Cernak",
+                        "assists_to_date": 1,
+                        "player_id": 8478416
+                    },
+                    {
+                        "name": "M. Feh\u00e9rv\u00e1ry",
+                        "assists_to_date": 1,
+                        "player_id": 8480796
+                    }
+                ]
+            },
+            {
+                "player_id": 8483597,
+                "name": "Milos Kelemen",
+                "team": "SVK",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "P. Regenda",
+                        "assists_to_date": 2,
+                        "player_id": 8483630
+                    }
+                ]
+            },
+            {
+                "player_id": 8484935,
+                "name": "Oliver Okuliar",
+                "team": "SVK",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "L. Hudacek",
+                        "assists_to_date": 1,
+                        "player_id": 8485959
+                    },
+                    {
+                        "name": "D. Dvorsky",
+                        "assists_to_date": 3,
+                        "player_id": 8484164
+                    }
+                ]
+            },
+            {
+                "player_id": 8484164,
+                "name": "Dalibor Dvorsky",
+                "team": "SVK",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "O. Okuliar",
+                        "assists_to_date": 1,
+                        "player_id": 8484935
+                    },
+                    {
+                        "name": "P. Koch",
+                        "assists_to_date": 1,
+                        "player_id": 8484326
+                    }
+                ]
+            },
+            {
+                "player_id": 8482117,
+                "name": "Lukas Reichel",
+                "team": "GER",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "L. Draisaitl",
+                        "assists_to_date": 5,
+                        "player_id": 8477934
+                    }
+                ]
+            },
+            {
+                "player_id": 8483630,
+                "name": "Pavol Regenda",
+                "team": "SVK",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "P. Koch",
+                        "assists_to_date": 2,
+                        "player_id": 8484326
+                    },
+                    {
+                        "name": "M. Pospisil",
+                        "assists_to_date": 1,
+                        "player_id": 8481028
+                    }
+                ]
+            },
+            {
+                "player_id": 8478890,
+                "name": "Frederik Tiffels",
+                "team": "GER",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "L. Reichel",
+                        "assists_to_date": 1,
+                        "player_id": 8482117
+                    },
+                    {
+                        "name": "M. M\u00fcller",
+                        "assists_to_date": 1,
+                        "player_id": 8485946
+                    }
+                ]
+            },
+            {
+                "player_id": 8475193,
+                "name": "Tomas Tatar",
+                "team": "SVK",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "A. Ruzicka",
+                        "assists_to_date": 2,
+                        "player_id": 8480008
+                    },
+                    {
+                        "name": "J. Slafkovsk\u00fd",
+                        "assists_to_date": 4,
+                        "player_id": 8483515
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-02-18",
+        "home_team": "Canada",
+        "away_team": "Czechia",
+        "home_score": 4,
+        "away_score": 3,
+        "winner": "Canada",
+        "condensed_game": "https://www.nhl.com",
+        "goals": [
+            {
+                "player_id": 8484801,
+                "name": "Macklin Celebrini",
+                "team": "CAN",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "C. McDavid",
+                        "assists_to_date": 8,
+                        "player_id": 8478402
+                    }
+                ]
+            },
+            {
+                "player_id": 8476310,
+                "name": "Lukas Sedlak",
+                "team": "CZE",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "R. Cervenka",
+                        "assists_to_date": 2,
+                        "player_id": 8476834
+                    },
+                    {
+                        "name": "R. Gudas",
+                        "assists_to_date": 1,
+                        "player_id": 8475462
+                    }
+                ]
+            },
+            {
+                "player_id": 8477956,
+                "name": "David Pastrnak",
+                "team": "CZE",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "F. Hronek",
+                        "assists_to_date": 5,
+                        "player_id": 8479425
+                    },
+                    {
+                        "name": "R. Cervenka",
+                        "assists_to_date": 3,
+                        "player_id": 8476834
+                    }
+                ]
+            },
+            {
+                "player_id": 8477492,
+                "name": "Nathan MacKinnon",
+                "team": "CAN",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "C. McDavid",
+                        "assists_to_date": 9,
+                        "player_id": 8478402
+                    },
+                    {
+                        "name": "M. Celebrini",
+                        "assists_to_date": 3,
+                        "player_id": 8484801
+                    }
+                ]
+            },
+            {
+                "player_id": 8476292,
+                "name": "Ondrej Palat",
+                "team": "CZE",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Necas",
+                        "assists_to_date": 5,
+                        "player_id": 8480039
+                    },
+                    {
+                        "name": "T. Hertl",
+                        "assists_to_date": 1,
+                        "player_id": 8476881
+                    }
+                ]
+            },
+            {
+                "player_id": 8480018,
+                "name": "Nick Suzuki",
+                "team": "CAN",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "D. Toews",
+                        "assists_to_date": 1,
+                        "player_id": 8478038
+                    },
+                    {
+                        "name": "S. Jarvis",
+                        "assists_to_date": 1,
+                        "player_id": 8482093
+                    }
+                ]
+            },
+            {
+                "player_id": 8478483,
+                "name": "Mitch Marner",
+                "team": "CAN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Celebrini",
+                        "assists_to_date": 4,
+                        "player_id": 8484801
+                    },
+                    {
+                        "name": "T. Harley",
+                        "assists_to_date": 3,
+                        "player_id": 8481581
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-02-18",
+        "home_team": "Finland",
+        "away_team": "Switzerland",
+        "home_score": 3,
+        "away_score": 2,
+        "winner": "Finland",
+        "condensed_game": "https://www.nhl.com",
+        "goals": [
+            {
+                "player_id": 8479584,
+                "name": "Damien Riat",
+                "team": "SUI",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "K. Jager",
+                        "assists_to_date": 2,
+                        "player_id": 8485966
+                    }
+                ]
+            },
+            {
+                "player_id": 8475799,
+                "name": "Nino Niederreiter",
+                "team": "SUI",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "P. Suter",
+                        "assists_to_date": 1,
+                        "player_id": 8480459
+                    },
+                    {
+                        "name": "P. Kurashev",
+                        "assists_to_date": 2,
+                        "player_id": 8480798
+                    }
+                ]
+            },
+            {
+                "player_id": 8478427,
+                "name": "Sebastian Aho",
+                "team": "FIN",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "E. Luostarinen",
+                        "assists_to_date": 4,
+                        "player_id": 8480185
+                    },
+                    {
+                        "name": "E. Lindell",
+                        "assists_to_date": 2,
+                        "player_id": 8476902
+                    }
+                ]
+            },
+            {
+                "player_id": 8480036,
+                "name": "Miro Heiskanen",
+                "team": "FIN",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "R. Hintz",
+                        "assists_to_date": 2,
+                        "player_id": 8478449
+                    },
+                    {
+                        "name": "M. Rantanen",
+                        "assists_to_date": 4,
+                        "player_id": 8478420
+                    }
+                ]
+            },
+            {
+                "player_id": 8477476,
+                "name": "Artturi Lehkonen",
+                "team": "FIN",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "A. Lundell",
+                        "assists_to_date": 1,
+                        "player_id": 8482113
+                    },
+                    {
+                        "name": "E. Lindell",
+                        "assists_to_date": 3,
+                        "player_id": 8476902
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-02-18",
+        "home_team": "USA",
+        "away_team": "Sweden",
+        "home_score": 2,
+        "away_score": 1,
+        "winner": "USA",
+        "condensed_game": "https://www.nhl.com",
+        "goals": [
+            {
+                "player_id": 8477946,
+                "name": "Dylan Larkin",
+                "team": "USA",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "J. Hughes",
+                        "assists_to_date": 3,
+                        "player_id": 8481559
+                    },
+                    {
+                        "name": "Q. Hughes",
+                        "assists_to_date": 5,
+                        "player_id": 8480800
+                    }
+                ]
+            },
+            {
+                "player_id": 8476459,
+                "name": "Mika Zibanejad",
+                "team": "SWE",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "L. Raymond",
+                        "assists_to_date": 8,
+                        "player_id": 8482078
+                    },
+                    {
+                        "name": "G. Landeskog",
+                        "assists_to_date": 2,
+                        "player_id": 8476455
+                    }
+                ]
+            },
+            {
+                "player_id": 8480800,
+                "name": "Quinn Hughes",
+                "team": "USA",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Boldy",
+                        "assists_to_date": 1,
+                        "player_id": 8481557
+                    },
+                    {
+                        "name": "A. Matthews",
+                        "assists_to_date": 3,
+                        "player_id": 8479318
+                    }
+                ]
+            }
+        ]
+    }
+]
