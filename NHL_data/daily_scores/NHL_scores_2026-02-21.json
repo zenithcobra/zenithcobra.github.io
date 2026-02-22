@@ -1,0 +1,118 @@
+[
+    {
+        "date": "2026-02-21",
+        "home_team": "Slovakia",
+        "away_team": "Finland",
+        "home_score": 1,
+        "away_score": 6,
+        "winner": "Finland",
+        "condensed_game": "https://www.nhl.com",
+        "goals": [
+            {
+                "player_id": 8478427,
+                "name": "Sebastian Aho",
+                "team": "FIN",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "A. Lehkonen",
+                        "assists_to_date": 4,
+                        "player_id": 8477476
+                    },
+                    {
+                        "name": "M. Heiskanen",
+                        "assists_to_date": 2,
+                        "player_id": 8480036
+                    }
+                ]
+            },
+            {
+                "player_id": 8475287,
+                "name": "Erik Haula",
+                "team": "FIN",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "J. Armia",
+                        "assists_to_date": 4,
+                        "player_id": 8476469
+                    },
+                    {
+                        "name": "E. Tolvanen",
+                        "assists_to_date": 1,
+                        "player_id": 8480009
+                    }
+                ]
+            },
+            {
+                "player_id": 8475193,
+                "name": "Tomas Tatar",
+                "team": "SVK",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "M. Feh\u00e9rv\u00e1ry",
+                        "assists_to_date": 4,
+                        "player_id": 8480796
+                    }
+                ]
+            },
+            {
+                "player_id": 8478449,
+                "name": "Roope Hintz",
+                "team": "FIN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Heiskanen",
+                        "assists_to_date": 3,
+                        "player_id": 8480036
+                    },
+                    {
+                        "name": "E. Tolvanen",
+                        "assists_to_date": 2,
+                        "player_id": 8480009
+                    }
+                ]
+            },
+            {
+                "player_id": 8481554,
+                "name": "Kaapo Kakko",
+                "team": "FIN",
+                "goals_to_date": 3,
+                "assists": []
+            },
+            {
+                "player_id": 8476469,
+                "name": "Joel Armia",
+                "team": "FIN",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "R. Hintz",
+                        "assists_to_date": 3,
+                        "player_id": 8478449
+                    }
+                ]
+            },
+            {
+                "player_id": 8475287,
+                "name": "Erik Haula",
+                "team": "FIN",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "J. Armia",
+                        "assists_to_date": 5,
+                        "player_id": 8476469
+                    },
+                    {
+                        "name": "R. Ristolainen",
+                        "assists_to_date": 3,
+                        "player_id": 8477499
+                    }
+                ]
+            }
+        ]
+    }
+]
