@@ -1,0 +1,62 @@
+[
+    {
+        "date": "2026-02-22",
+        "home_team": "Canada",
+        "away_team": "USA",
+        "home_score": 1,
+        "away_score": 2,
+        "winner": "USA",
+        "condensed_game": "https://www.nhl.com",
+        "goals": [
+            {
+                "player_id": 8481557,
+                "name": "Matt Boldy",
+                "team": "USA",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "A. Matthews",
+                        "assists_to_date": 4,
+                        "player_id": 8479318
+                    },
+                    {
+                        "name": "Q. Hughes",
+                        "assists_to_date": 7,
+                        "player_id": 8480800
+                    }
+                ]
+            },
+            {
+                "player_id": 8480069,
+                "name": "Cale Makar",
+                "team": "CAN",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "D. Toews",
+                        "assists_to_date": 2,
+                        "player_id": 8478038
+                    }
+                ]
+            },
+            {
+                "player_id": 8481559,
+                "name": "Jack Hughes",
+                "team": "USA",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "Z. Werenski",
+                        "assists_to_date": 5,
+                        "player_id": 8478460
+                    },
+                    {
+                        "name": "C. Hellebuyck",
+                        "assists_to_date": 1,
+                        "player_id": 8476945
+                    }
+                ]
+            }
+        ]
+    }
+]
