@@ -1,0 +1,204 @@
+[
+    {
+        "date": "2026-03-11",
+        "home_team": "Senators",
+        "away_team": "Canadiens",
+        "home_score": 2,
+        "away_score": 3,
+        "winner": "Canadiens",
+        "condensed_game": "https://www.nhl.com/video/mtl-at-ott-condensed-game-6390765471112",
+        "goals": [
+            {
+                "player_id": 8483515,
+                "name": "Juraj Slafkovsk\u00fd",
+                "team": "MTL",
+                "goals_to_date": 24,
+                "assists": [
+                    {
+                        "name": "I. Demidov",
+                        "assists_to_date": 37,
+                        "player_id": 8484984
+                    },
+                    {
+                        "name": "N. Suzuki",
+                        "assists_to_date": 54,
+                        "player_id": 8480018
+                    }
+                ]
+            },
+            {
+                "player_id": 8480208,
+                "name": "Drake Batherson",
+                "team": "OTT",
+                "goals_to_date": 24,
+                "assists": [
+                    {
+                        "name": "B. Tkachuk",
+                        "assists_to_date": 27,
+                        "player_id": 8480801
+                    },
+                    {
+                        "name": "T. St\u00fctzle",
+                        "assists_to_date": 39,
+                        "player_id": 8482116
+                    }
+                ]
+            },
+            {
+                "player_id": 8480208,
+                "name": "Drake Batherson",
+                "team": "OTT",
+                "goals_to_date": 25,
+                "assists": [
+                    {
+                        "name": "T. St\u00fctzle",
+                        "assists_to_date": 40,
+                        "player_id": 8482116
+                    },
+                    {
+                        "name": "C. Giroux",
+                        "assists_to_date": 29,
+                        "player_id": 8473512
+                    }
+                ]
+            },
+            {
+                "player_id": 8480074,
+                "name": "Alexandre Texier",
+                "team": "MTL",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "L. Hutson",
+                        "assists_to_date": 55,
+                        "player_id": 8483457
+                    },
+                    {
+                        "name": "J. Evans",
+                        "assists_to_date": 10,
+                        "player_id": 8478133
+                    }
+                ]
+            },
+            {
+                "player_id": 8484984,
+                "name": "Ivan Demidov",
+                "team": "MTL",
+                "goals_to_date": 14,
+                "assists": [
+                    {
+                        "name": "A. Newhook",
+                        "assists_to_date": 10,
+                        "player_id": 8481618
+                    },
+                    {
+                        "name": "K. Guhle",
+                        "assists_to_date": 6,
+                        "player_id": 8482087
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-03-11",
+        "home_team": "Flyers",
+        "away_team": "Capitals",
+        "home_score": 4,
+        "away_score": 1,
+        "winner": "Flyers",
+        "condensed_game": "https://www.nhl.com/video/wsh-at-phi-condensed-game-6390765460112",
+        "goals": [
+            {
+                "player_id": 8484186,
+                "name": "Ryan Leonard",
+                "team": "WSH",
+                "goals_to_date": 13,
+                "assists": [
+                    {
+                        "name": "A. Ovechkin",
+                        "assists_to_date": 27,
+                        "player_id": 8471214
+                    },
+                    {
+                        "name": "P. Dubois",
+                        "assists_to_date": 3,
+                        "player_id": 8479400
+                    }
+                ]
+            },
+            {
+                "player_id": 8478439,
+                "name": "Travis Konecny",
+                "team": "PHI",
+                "goals_to_date": 24,
+                "assists": [
+                    {
+                        "name": "T. Sanheim",
+                        "assists_to_date": 21,
+                        "player_id": 8477948
+                    },
+                    {
+                        "name": "A. Bump",
+                        "assists_to_date": 1,
+                        "player_id": 8483731
+                    }
+                ]
+            },
+            {
+                "player_id": 8481533,
+                "name": "Trevor Zegras",
+                "team": "PHI",
+                "goals_to_date": 22,
+                "assists": [
+                    {
+                        "name": "O. Tippett",
+                        "assists_to_date": 18,
+                        "player_id": 8480015
+                    },
+                    {
+                        "name": "C. Grundstrom",
+                        "assists_to_date": 3,
+                        "player_id": 8479336
+                    }
+                ]
+            },
+            {
+                "player_id": 8482142,
+                "name": "Jamie Drysdale",
+                "team": "PHI",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "N. Cates",
+                        "assists_to_date": 21,
+                        "player_id": 8480220
+                    },
+                    {
+                        "name": "C. York",
+                        "assists_to_date": 20,
+                        "player_id": 8481546
+                    }
+                ]
+            },
+            {
+                "player_id": 8480015,
+                "name": "Owen Tippett",
+                "team": "PHI",
+                "goals_to_date": 21,
+                "assists": [
+                    {
+                        "name": "C. Dvorak",
+                        "assists_to_date": 25,
+                        "player_id": 8477989
+                    },
+                    {
+                        "name": "N. Cates",
+                        "assists_to_date": 22,
+                        "player_id": 8480220
+                    }
+                ]
+            }
+        ]
+    }
+]
