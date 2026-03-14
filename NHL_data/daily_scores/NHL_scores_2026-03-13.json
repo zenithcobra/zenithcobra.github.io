@@ -1,0 +1,178 @@
+[
+    {
+        "date": "2026-03-13",
+        "home_team": "Islanders",
+        "away_team": "Kings",
+        "home_score": 2,
+        "away_score": 3,
+        "winner": "Kings",
+        "condensed_game": "https://www.nhl.com/video/lak-at-nyi-condensed-game-6390901468112",
+        "goals": [
+            {
+                "player_id": 8479675,
+                "name": "Trevor Moore",
+                "team": "LAK",
+                "goals_to_date": 8,
+                "assists": []
+            },
+            {
+                "player_id": 8471685,
+                "name": "Anze Kopitar",
+                "team": "LAK",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "M. Anderson",
+                        "assists_to_date": 10,
+                        "player_id": 8479998
+                    },
+                    {
+                        "name": "A. Turcotte",
+                        "assists_to_date": 11,
+                        "player_id": 8481532
+                    }
+                ]
+            },
+            {
+                "player_id": 8477960,
+                "name": "Adrian Kempe",
+                "team": "LAK",
+                "goals_to_date": 26,
+                "assists": [
+                    {
+                        "name": "A. Panarin",
+                        "assists_to_date": 45,
+                        "player_id": 8478550
+                    }
+                ]
+            },
+            {
+                "player_id": 8482476,
+                "name": "Emil Heineman",
+                "team": "NYI",
+                "goals_to_date": 17,
+                "assists": [
+                    {
+                        "name": "A. Pelech",
+                        "assists_to_date": 9,
+                        "player_id": 8476917
+                    },
+                    {
+                        "name": "B. Horvat",
+                        "assists_to_date": 18,
+                        "player_id": 8477500
+                    }
+                ]
+            },
+            {
+                "player_id": 8482476,
+                "name": "Emil Heineman",
+                "team": "NYI",
+                "goals_to_date": 18,
+                "assists": [
+                    {
+                        "name": "M. Schaefer",
+                        "assists_to_date": 28,
+                        "player_id": 8485366
+                    },
+                    {
+                        "name": "B. Horvat",
+                        "assists_to_date": 19,
+                        "player_id": 8477500
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-03-13",
+        "home_team": "Blues",
+        "away_team": "Oilers",
+        "home_score": 3,
+        "away_score": 2,
+        "winner": "Blues",
+        "condensed_game": "https://www.nhl.com/video/edm-at-stl-condensed-game-6390905475112",
+        "goals": [
+            {
+                "player_id": 8477953,
+                "name": "Kasperi Kapanen",
+                "team": "EDM",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "L. Draisaitl",
+                        "assists_to_date": 62,
+                        "player_id": 8477934
+                    },
+                    {
+                        "name": "V. Podkolzin",
+                        "assists_to_date": 15,
+                        "player_id": 8481617
+                    }
+                ]
+            },
+            {
+                "player_id": 8478402,
+                "name": "Connor McDavid",
+                "team": "EDM",
+                "goals_to_date": 37,
+                "assists": [
+                    {
+                        "name": "M. Savoie",
+                        "assists_to_date": 16,
+                        "player_id": 8483512
+                    },
+                    {
+                        "name": "C. Ingram",
+                        "assists_to_date": 2,
+                        "player_id": 8478971
+                    }
+                ]
+            },
+            {
+                "player_id": 8480459,
+                "name": "Pius Suter",
+                "team": "STL",
+                "goals_to_date": 10,
+                "assists": [
+                    {
+                        "name": "J. Berggren",
+                        "assists_to_date": 10,
+                        "player_id": 8481013
+                    }
+                ]
+            },
+            {
+                "player_id": 8475764,
+                "name": "Cam Fowler",
+                "team": "STL",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "O. Sundqvist",
+                        "assists_to_date": 11,
+                        "player_id": 8476897
+                    }
+                ]
+            },
+            {
+                "player_id": 8480023,
+                "name": "Robert Thomas",
+                "team": "STL",
+                "goals_to_date": 16,
+                "assists": [
+                    {
+                        "name": "C. Fowler",
+                        "assists_to_date": 23,
+                        "player_id": 8475764
+                    },
+                    {
+                        "name": "J. Kyrou",
+                        "assists_to_date": 20,
+                        "player_id": 8479385
+                    }
+                ]
+            }
+        ]
+    }
+]
