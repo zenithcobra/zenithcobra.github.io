@@ -1,0 +1,62 @@
+[
+    {
+        "date": "2026-03-23",
+        "home_team": "Rangers",
+        "away_team": "Senators",
+        "home_score": 1,
+        "away_score": 2,
+        "winner": "Senators",
+        "condensed_game": "https://www.nhl.com/video/ott-at-nyr-condensed-game-6391497459112",
+        "goals": [
+            {
+                "player_id": 8481596,
+                "name": "Shane Pinto",
+                "team": "OTT",
+                "goals_to_date": 19,
+                "assists": [
+                    {
+                        "name": "C. Giroux",
+                        "assists_to_date": 32,
+                        "player_id": 8473512
+                    },
+                    {
+                        "name": "J. Spence",
+                        "assists_to_date": 20,
+                        "player_id": 8481606
+                    }
+                ]
+            },
+            {
+                "player_id": 8477998,
+                "name": "Warren Foegele",
+                "team": "OTT",
+                "goals_to_date": 12,
+                "assists": [
+                    {
+                        "name": "L. Eller",
+                        "assists_to_date": 9,
+                        "player_id": 8474189
+                    }
+                ]
+            },
+            {
+                "player_id": 8477839,
+                "name": "Conor Sheary",
+                "team": "NYR",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "T. Kartye",
+                        "assists_to_date": 11,
+                        "player_id": 8481789
+                    },
+                    {
+                        "name": "M. Robertson",
+                        "assists_to_date": 11,
+                        "player_id": 8481525
+                    }
+                ]
+            }
+        ]
+    }
+]
