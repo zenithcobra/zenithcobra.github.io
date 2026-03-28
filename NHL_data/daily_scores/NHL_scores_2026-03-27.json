@@ -1,0 +1,261 @@
+[
+    {
+        "date": "2026-03-27",
+        "home_team": "Sabres",
+        "away_team": "Red Wings",
+        "home_score": 2,
+        "away_score": 5,
+        "winner": "Red Wings",
+        "condensed_game": "https://www.nhl.com/video/det-at-buf-condensed-game-6391903356112",
+        "goals": [
+            {
+                "player_id": 8479337,
+                "name": "Alex DeBrincat",
+                "team": "DET",
+                "goals_to_date": 36,
+                "assists": [
+                    {
+                        "name": "M. Seider",
+                        "assists_to_date": 41,
+                        "player_id": 8481542
+                    },
+                    {
+                        "name": "D. Larkin",
+                        "assists_to_date": 28,
+                        "player_id": 8477946
+                    }
+                ]
+            },
+            {
+                "player_id": 8482078,
+                "name": "Lucas Raymond",
+                "team": "DET",
+                "goals_to_date": 23,
+                "assists": [
+                    {
+                        "name": "M. Seider",
+                        "assists_to_date": 42,
+                        "player_id": 8481542
+                    }
+                ]
+            },
+            {
+                "player_id": 8483464,
+                "name": "Marco Kasper",
+                "team": "DET",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "E. Finnie",
+                        "assists_to_date": 15,
+                        "player_id": 8484471
+                    },
+                    {
+                        "name": "J. van Riemsdyk",
+                        "assists_to_date": 14,
+                        "player_id": 8474037
+                    }
+                ]
+            },
+            {
+                "player_id": 8479420,
+                "name": "Tage Thompson",
+                "team": "BUF",
+                "goals_to_date": 37,
+                "assists": [
+                    {
+                        "name": "P. Krebs",
+                        "assists_to_date": 25,
+                        "player_id": 8481522
+                    },
+                    {
+                        "name": "C. Timmins",
+                        "assists_to_date": 7,
+                        "player_id": 8479982
+                    }
+                ]
+            },
+            {
+                "player_id": 8480879,
+                "name": "Jacob Bernard-Docker",
+                "team": "DET",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "P. Kane",
+                        "assists_to_date": 31,
+                        "player_id": 8474141
+                    },
+                    {
+                        "name": "A. DeBrincat",
+                        "assists_to_date": 40,
+                        "player_id": 8479337
+                    }
+                ]
+            },
+            {
+                "player_id": 8480839,
+                "name": "Rasmus Dahlin",
+                "team": "BUF",
+                "goals_to_date": 16,
+                "assists": [
+                    {
+                        "name": "T. Pearson",
+                        "assists_to_date": 7,
+                        "player_id": 8476871
+                    },
+                    {
+                        "name": "B. Byram",
+                        "assists_to_date": 27,
+                        "player_id": 8481524
+                    }
+                ]
+            },
+            {
+                "player_id": 8474141,
+                "name": "Patrick Kane",
+                "team": "DET",
+                "goals_to_date": 13,
+                "assists": [
+                    {
+                        "name": "A. DeBrincat",
+                        "assists_to_date": 41,
+                        "player_id": 8479337
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-03-27",
+        "home_team": "Rangers",
+        "away_team": "Blackhawks",
+        "home_score": 6,
+        "away_score": 1,
+        "winner": "Rangers",
+        "condensed_game": "https://www.nhl.com/video/chi-at-nyr-condensed-game-6391905686112",
+        "goals": [
+            {
+                "player_id": 8484185,
+                "name": "Nick Lardis",
+                "team": "CHI",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "T. Bertuzzi",
+                        "assists_to_date": 24,
+                        "player_id": 8477479
+                    },
+                    {
+                        "name": "A. Vlasic",
+                        "assists_to_date": 18,
+                        "player_id": 8481568
+                    }
+                ]
+            },
+            {
+                "player_id": 8476468,
+                "name": "J.T. Miller",
+                "team": "NYR",
+                "goals_to_date": 15,
+                "assists": [
+                    {
+                        "name": "C. Sheary",
+                        "assists_to_date": 10,
+                        "player_id": 8477839
+                    },
+                    {
+                        "name": "B. Schneider",
+                        "assists_to_date": 14,
+                        "player_id": 8482073
+                    }
+                ]
+            },
+            {
+                "player_id": 8481525,
+                "name": "Matthew Robertson",
+                "team": "NYR",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "J. Miller",
+                        "assists_to_date": 29,
+                        "player_id": 8476468
+                    }
+                ]
+            },
+            {
+                "player_id": 8483669,
+                "name": "Adam Sykora",
+                "team": "NYR",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "W. Cuylle",
+                        "assists_to_date": 17,
+                        "player_id": 8482157
+                    },
+                    {
+                        "name": "V. Trocheck",
+                        "assists_to_date": 34,
+                        "player_id": 8476389
+                    }
+                ]
+            },
+            {
+                "player_id": 8477380,
+                "name": "Jonny Brodzinski",
+                "team": "NYR",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "W. Borgen",
+                        "assists_to_date": 8,
+                        "player_id": 8478840
+                    },
+                    {
+                        "name": "J. Chmelar",
+                        "assists_to_date": 1,
+                        "player_id": 8482877
+                    }
+                ]
+            },
+            {
+                "player_id": 8482109,
+                "name": "Alexis Lafreni\u00e8re",
+                "team": "NYR",
+                "goals_to_date": 22,
+                "assists": [
+                    {
+                        "name": "A. Fox",
+                        "assists_to_date": 35,
+                        "player_id": 8479323
+                    },
+                    {
+                        "name": "J. Miller",
+                        "assists_to_date": 30,
+                        "player_id": 8476468
+                    }
+                ]
+            },
+            {
+                "player_id": 8477380,
+                "name": "Jonny Brodzinski",
+                "team": "NYR",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "T. Raddysh",
+                        "assists_to_date": 10,
+                        "player_id": 8479390
+                    },
+                    {
+                        "name": "D. Fortescue",
+                        "assists_to_date": 1,
+                        "player_id": 8484169
+                    }
+                ]
+            }
+        ]
+    }
+]
