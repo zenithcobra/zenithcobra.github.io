@@ -1,0 +1,579 @@
+[
+    {
+        "date": "2026-03-29",
+        "home_team": "Rangers",
+        "away_team": "Panthers",
+        "home_score": 3,
+        "away_score": 1,
+        "winner": "Rangers",
+        "condensed_game": "https://www.nhl.com/video/fla-at-nyr-condensed-game-6392077472112",
+        "goals": [
+            {
+                "player_id": 8483669,
+                "name": "Adam Sykora",
+                "team": "NYR",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "A. Fox",
+                        "assists_to_date": 36,
+                        "player_id": 8479323
+                    },
+                    {
+                        "name": "N. Laba",
+                        "assists_to_date": 13,
+                        "player_id": 8483690
+                    }
+                ]
+            },
+            {
+                "player_id": 8477839,
+                "name": "Conor Sheary",
+                "team": "NYR",
+                "goals_to_date": 5,
+                "assists": [
+                    {
+                        "name": "J. Miller",
+                        "assists_to_date": 31,
+                        "player_id": 8476468
+                    }
+                ]
+            },
+            {
+                "player_id": 8479323,
+                "name": "Adam Fox",
+                "team": "NYR",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "W. Borgen",
+                        "assists_to_date": 9,
+                        "player_id": 8478840
+                    }
+                ]
+            },
+            {
+                "player_id": 8482713,
+                "name": "Mackie Samoskevich",
+                "team": "FLA",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "J. Boqvist",
+                        "assists_to_date": 8,
+                        "player_id": 8480003
+                    },
+                    {
+                        "name": "M. Benning",
+                        "assists_to_date": 4,
+                        "player_id": 8482107
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-03-29",
+        "home_team": "Lightning",
+        "away_team": "Predators",
+        "home_score": 3,
+        "away_score": 2,
+        "winner": "Lightning",
+        "condensed_game": "https://www.nhl.com/video/nsh-at-tbl-condensed-game-6392095330112",
+        "goals": [
+            {
+                "player_id": 8483465,
+                "name": "Joakim Kemell",
+                "team": "NSH",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "F. Forsberg",
+                        "assists_to_date": 33,
+                        "player_id": 8476887
+                    },
+                    {
+                        "name": "J. Barron",
+                        "assists_to_date": 8,
+                        "player_id": 8482111
+                    }
+                ]
+            },
+            {
+                "player_id": 8477404,
+                "name": "Jake Guentzel",
+                "team": "TBL",
+                "goals_to_date": 35,
+                "assists": [
+                    {
+                        "name": "D. Raddysh",
+                        "assists_to_date": 46,
+                        "player_id": 8478178
+                    },
+                    {
+                        "name": "C. D'Astous",
+                        "assists_to_date": 22,
+                        "player_id": 8480426
+                    }
+                ]
+            },
+            {
+                "player_id": 8479542,
+                "name": "Brandon Hagel",
+                "team": "TBL",
+                "goals_to_date": 35,
+                "assists": [
+                    {
+                        "name": "J. Guentzel",
+                        "assists_to_date": 44,
+                        "player_id": 8477404
+                    }
+                ]
+            },
+            {
+                "player_id": 8476887,
+                "name": "Filip Forsberg",
+                "team": "NSH",
+                "goals_to_date": 34,
+                "assists": [
+                    {
+                        "name": "F. Svechkov",
+                        "assists_to_date": 13,
+                        "player_id": 8482768
+                    },
+                    {
+                        "name": "A. Wilsby",
+                        "assists_to_date": 12,
+                        "player_id": 8482482
+                    }
+                ]
+            },
+            {
+                "player_id": 8470621,
+                "name": "Corey Perry",
+                "team": "TBL",
+                "goals_to_date": 15,
+                "assists": [
+                    {
+                        "name": "J. Guentzel",
+                        "assists_to_date": 45,
+                        "player_id": 8477404
+                    },
+                    {
+                        "name": "E. Lilleberg",
+                        "assists_to_date": 7,
+                        "player_id": 8482929
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-03-29",
+        "home_team": "Hurricanes",
+        "away_team": "Canadiens",
+        "home_score": 1,
+        "away_score": 3,
+        "winner": "Canadiens",
+        "condensed_game": "https://www.nhl.com/video/mtl-at-car-condensed-game-6392095301112",
+        "goals": [
+            {
+                "player_id": 8480830,
+                "name": "Andrei Svechnikov",
+                "team": "CAR",
+                "goals_to_date": 26,
+                "assists": [
+                    {
+                        "name": "S. Jarvis",
+                        "assists_to_date": 32,
+                        "player_id": 8482093
+                    },
+                    {
+                        "name": "S. Aho",
+                        "assists_to_date": 49,
+                        "player_id": 8478427
+                    }
+                ]
+            },
+            {
+                "player_id": 8480018,
+                "name": "Nick Suzuki",
+                "team": "MTL",
+                "goals_to_date": 25,
+                "assists": [
+                    {
+                        "name": "C. Caufield",
+                        "assists_to_date": 33,
+                        "player_id": 8481540
+                    },
+                    {
+                        "name": "L. Hutson",
+                        "assists_to_date": 61,
+                        "player_id": 8483457
+                    }
+                ]
+            },
+            {
+                "player_id": 8481540,
+                "name": "Cole Caufield",
+                "team": "MTL",
+                "goals_to_date": 46,
+                "assists": [
+                    {
+                        "name": "N. Suzuki",
+                        "assists_to_date": 65,
+                        "player_id": 8480018
+                    },
+                    {
+                        "name": "L. Hutson",
+                        "assists_to_date": 62,
+                        "player_id": 8483457
+                    }
+                ]
+            },
+            {
+                "player_id": 8480018,
+                "name": "Nick Suzuki",
+                "team": "MTL",
+                "goals_to_date": 26,
+                "assists": [
+                    {
+                        "name": "J. Slafkovsk\u00fd",
+                        "assists_to_date": 36,
+                        "player_id": 8483515
+                    },
+                    {
+                        "name": "I. Demidov",
+                        "assists_to_date": 41,
+                        "player_id": 8484984
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-03-29",
+        "home_team": "Blue Jackets",
+        "away_team": "Bruins",
+        "home_score": 3,
+        "away_score": 4,
+        "winner": "Bruins",
+        "condensed_game": "https://www.nhl.com/video/bos-at-cbj-condensed-game-6392098616112",
+        "goals": [
+            {
+                "player_id": 8476432,
+                "name": "Boone Jenner",
+                "team": "CBJ",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "C. Garland",
+                        "assists_to_date": 21,
+                        "player_id": 8478856
+                    }
+                ]
+            },
+            {
+                "player_id": 8478975,
+                "name": "Mason Marchment",
+                "team": "CBJ",
+                "goals_to_date": 18,
+                "assists": [
+                    {
+                        "name": "I. Provorov",
+                        "assists_to_date": 21,
+                        "player_id": 8478500
+                    },
+                    {
+                        "name": "K. Marchenko",
+                        "assists_to_date": 35,
+                        "player_id": 8480893
+                    }
+                ]
+            },
+            {
+                "player_id": 8475745,
+                "name": "Charlie Coyle",
+                "team": "CBJ",
+                "goals_to_date": 18,
+                "assists": [
+                    {
+                        "name": "K. Marchenko",
+                        "assists_to_date": 36,
+                        "player_id": 8480893
+                    },
+                    {
+                        "name": "M. Marchment",
+                        "assists_to_date": 20,
+                        "player_id": 8478975
+                    }
+                ]
+            },
+            {
+                "player_id": 8479325,
+                "name": "Charlie McAvoy",
+                "team": "BOS",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "P. Zacha",
+                        "assists_to_date": 31,
+                        "player_id": 8478401
+                    },
+                    {
+                        "name": "V. Arvidsson",
+                        "assists_to_date": 24,
+                        "player_id": 8478042
+                    }
+                ]
+            },
+            {
+                "player_id": 8478401,
+                "name": "Pavel Zacha",
+                "team": "BOS",
+                "goals_to_date": 27,
+                "assists": [
+                    {
+                        "name": "C. McAvoy",
+                        "assists_to_date": 46,
+                        "player_id": 8479325
+                    },
+                    {
+                        "name": "V. Arvidsson",
+                        "assists_to_date": 25,
+                        "player_id": 8478042
+                    }
+                ]
+            },
+            {
+                "player_id": 8478401,
+                "name": "Pavel Zacha",
+                "team": "BOS",
+                "goals_to_date": 28,
+                "assists": [
+                    {
+                        "name": "V. Arvidsson",
+                        "assists_to_date": 26,
+                        "player_id": 8478042
+                    }
+                ]
+            },
+            {
+                "player_id": 8478042,
+                "name": "Viktor Arvidsson",
+                "team": "BOS",
+                "goals_to_date": null,
+                "assists": []
+            }
+        ]
+    },
+    {
+        "date": "2026-03-29",
+        "home_team": "Devils",
+        "away_team": "Blackhawks",
+        "home_score": 5,
+        "away_score": 3,
+        "winner": "Devils",
+        "condensed_game": "https://www.nhl.com/video/chi-at-njd-condensed-game-6392102131112",
+        "goals": [
+            {
+                "player_id": 8481624,
+                "name": "Ilya Mikheyev",
+                "team": "CHI",
+                "goals_to_date": 15,
+                "assists": [
+                    {
+                        "name": "A. Frondell",
+                        "assists_to_date": 3,
+                        "player_id": 8485391
+                    },
+                    {
+                        "name": "L. Crevier",
+                        "assists_to_date": 14,
+                        "player_id": 8481806
+                    }
+                ]
+            },
+            {
+                "player_id": 8477015,
+                "name": "Connor Brown",
+                "team": "NJD",
+                "goals_to_date": 15,
+                "assists": [
+                    {
+                        "name": "L. Hughes",
+                        "assists_to_date": 28,
+                        "player_id": 8482684
+                    },
+                    {
+                        "name": "J. Hughes",
+                        "assists_to_date": 40,
+                        "player_id": 8481559
+                    }
+                ]
+            },
+            {
+                "player_id": 8483493,
+                "name": "Frank Nazar",
+                "team": "CHI",
+                "goals_to_date": 13,
+                "assists": [
+                    {
+                        "name": "R. Donato",
+                        "assists_to_date": 14,
+                        "player_id": 8477987
+                    },
+                    {
+                        "name": "A. Burakovsky",
+                        "assists_to_date": 21,
+                        "player_id": 8477444
+                    }
+                ]
+            },
+            {
+                "player_id": 8483495,
+                "name": "Simon Nemec",
+                "team": "NJD",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "D. Mercer",
+                        "assists_to_date": 21,
+                        "player_id": 8482110
+                    },
+                    {
+                        "name": "N. Hischier",
+                        "assists_to_date": 31,
+                        "player_id": 8480002
+                    }
+                ]
+            },
+            {
+                "player_id": 8483493,
+                "name": "Frank Nazar",
+                "team": "CHI",
+                "goals_to_date": 14,
+                "assists": [
+                    {
+                        "name": "C. Bedard",
+                        "assists_to_date": 38,
+                        "player_id": 8484144
+                    },
+                    {
+                        "name": "A. Frondell",
+                        "assists_to_date": 4,
+                        "player_id": 8485391
+                    }
+                ]
+            },
+            {
+                "player_id": 8476462,
+                "name": "Dougie Hamilton",
+                "team": "NJD",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "J. Hughes",
+                        "assists_to_date": 41,
+                        "player_id": 8481559
+                    },
+                    {
+                        "name": "T. Meier",
+                        "assists_to_date": 16,
+                        "player_id": 8478414
+                    }
+                ]
+            },
+            {
+                "player_id": 8481559,
+                "name": "Jack Hughes",
+                "team": "NJD",
+                "goals_to_date": 21,
+                "assists": [
+                    {
+                        "name": "J. Bratt",
+                        "assists_to_date": 42,
+                        "player_id": 8479407
+                    },
+                    {
+                        "name": "J. Siegenthaler",
+                        "assists_to_date": 12,
+                        "player_id": 8478399
+                    }
+                ]
+            },
+            {
+                "player_id": 8481559,
+                "name": "Jack Hughes",
+                "team": "NJD",
+                "goals_to_date": 22,
+                "assists": [
+                    {
+                        "name": "N. Hischier",
+                        "assists_to_date": 32,
+                        "player_id": 8480002
+                    },
+                    {
+                        "name": "J. Kovacevic",
+                        "assists_to_date": 6,
+                        "player_id": 8480192
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-03-29",
+        "home_team": "Flyers",
+        "away_team": "Stars",
+        "home_score": 2,
+        "away_score": 1,
+        "winner": "Flyers",
+        "condensed_game": "https://www.nhl.com/video/dal-at-phi-condensed-game-6392104009112",
+        "goals": [
+            {
+                "player_id": 8478439,
+                "name": "Travis Konecny",
+                "team": "PHI",
+                "goals_to_date": 26,
+                "assists": [
+                    {
+                        "name": "M. Michkov",
+                        "assists_to_date": 24,
+                        "player_id": 8484387
+                    },
+                    {
+                        "name": "R. Ristolainen",
+                        "assists_to_date": 9,
+                        "player_id": 8477499
+                    }
+                ]
+            },
+            {
+                "player_id": 8484938,
+                "name": "Arttu Hyry",
+                "team": "DAL",
+                "goals_to_date": 1,
+                "assists": []
+            },
+            {
+                "player_id": 8481533,
+                "name": "Trevor Zegras",
+                "team": "PHI",
+                "goals_to_date": 23,
+                "assists": [
+                    {
+                        "name": "C. York",
+                        "assists_to_date": 22,
+                        "player_id": 8481546
+                    },
+                    {
+                        "name": "S. Ersson",
+                        "assists_to_date": 1,
+                        "player_id": 8481035
+                    }
+                ]
+            }
+        ]
+    }
+]
