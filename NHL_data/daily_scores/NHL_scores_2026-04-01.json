@@ -1,0 +1,420 @@
+[
+    {
+        "date": "2026-04-01",
+        "home_team": "Avalanche",
+        "away_team": "Canucks",
+        "home_score": 6,
+        "away_score": 8,
+        "winner": "Canucks",
+        "condensed_game": "https://www.nhl.com/video/van-at-col-condensed-game-6392409822112",
+        "goals": [
+            {
+                "player_id": 8484136,
+                "name": "Max Sasson",
+                "team": "VAN",
+                "goals_to_date": 12,
+                "assists": [
+                    {
+                        "name": "F. Hronek",
+                        "assists_to_date": 35,
+                        "player_id": 8479425
+                    },
+                    {
+                        "name": "Z. Buium",
+                        "assists_to_date": 19,
+                        "player_id": 8484798
+                    }
+                ]
+            },
+            {
+                "player_id": 8477492,
+                "name": "Nathan MacKinnon",
+                "team": "COL",
+                "goals_to_date": 50,
+                "assists": [
+                    {
+                        "name": "D. Toews",
+                        "assists_to_date": 18,
+                        "player_id": 8478038
+                    },
+                    {
+                        "name": "S. Malinski",
+                        "assists_to_date": 30,
+                        "player_id": 8484258
+                    }
+                ]
+            },
+            {
+                "player_id": 8476927,
+                "name": "Teddy Blueger",
+                "team": "VAN",
+                "goals_to_date": 7,
+                "assists": [
+                    {
+                        "name": "L. Ohgren",
+                        "assists_to_date": 8,
+                        "player_id": 8483499
+                    }
+                ]
+            },
+            {
+                "player_id": 8478498,
+                "name": "Jake DeBrusk",
+                "team": "VAN",
+                "goals_to_date": 17,
+                "assists": [
+                    {
+                        "name": "E. Pettersson",
+                        "assists_to_date": 32,
+                        "player_id": 8480012
+                    },
+                    {
+                        "name": "M. Rossi",
+                        "assists_to_date": 20,
+                        "player_id": 8482079
+                    }
+                ]
+            },
+            {
+                "player_id": 8476455,
+                "name": "Gabriel Landeskog",
+                "team": "COL",
+                "goals_to_date": 12,
+                "assists": [
+                    {
+                        "name": "B. Burns",
+                        "assists_to_date": 20,
+                        "player_id": 8470613
+                    },
+                    {
+                        "name": "V. Nichushkin",
+                        "assists_to_date": 29,
+                        "player_id": 8477501
+                    }
+                ]
+            },
+            {
+                "player_id": 8476927,
+                "name": "Teddy Blueger",
+                "team": "VAN",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "M. Sasson",
+                        "assists_to_date": 5,
+                        "player_id": 8484136
+                    },
+                    {
+                        "name": "M. Pettersson",
+                        "assists_to_date": 14,
+                        "player_id": 8477969
+                    }
+                ]
+            },
+            {
+                "player_id": 8478444,
+                "name": "Brock Boeser",
+                "team": "VAN",
+                "goals_to_date": 19,
+                "assists": [
+                    {
+                        "name": "T. Willander",
+                        "assists_to_date": 15,
+                        "player_id": 8484240
+                    },
+                    {
+                        "name": "M. Rossi",
+                        "assists_to_date": 21,
+                        "player_id": 8482079
+                    }
+                ]
+            },
+            {
+                "player_id": 8478444,
+                "name": "Brock Boeser",
+                "team": "VAN",
+                "goals_to_date": 20,
+                "assists": [
+                    {
+                        "name": "D. O'Connor",
+                        "assists_to_date": 11,
+                        "player_id": 8482055
+                    }
+                ]
+            },
+            {
+                "player_id": 8484258,
+                "name": "Sam Malinski",
+                "team": "COL",
+                "goals_to_date": 6,
+                "assists": [
+                    {
+                        "name": "D. Toews",
+                        "assists_to_date": 19,
+                        "player_id": 8478038
+                    }
+                ]
+            },
+            {
+                "player_id": 8480448,
+                "name": "Parker Kelly",
+                "team": "COL",
+                "goals_to_date": 19,
+                "assists": [
+                    {
+                        "name": "J. Drury",
+                        "assists_to_date": 17,
+                        "player_id": 8480835
+                    },
+                    {
+                        "name": "J. Manson",
+                        "assists_to_date": 25,
+                        "player_id": 8476312
+                    }
+                ]
+            },
+            {
+                "player_id": 8470613,
+                "name": "Brent Burns",
+                "team": "COL",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "B. Nelson",
+                        "assists_to_date": 29,
+                        "player_id": 8475754
+                    },
+                    {
+                        "name": "V. Nichushkin",
+                        "assists_to_date": 30,
+                        "player_id": 8477501
+                    }
+                ]
+            },
+            {
+                "player_id": 8484258,
+                "name": "Sam Malinski",
+                "team": "COL",
+                "goals_to_date": 7,
+                "assists": []
+            },
+            {
+                "player_id": 8477969,
+                "name": "Marcus Pettersson",
+                "team": "VAN",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "B. Boeser",
+                        "assists_to_date": 22,
+                        "player_id": 8478444
+                    },
+                    {
+                        "name": "D. O'Connor",
+                        "assists_to_date": 12,
+                        "player_id": 8482055
+                    }
+                ]
+            },
+            {
+                "player_id": 8478444,
+                "name": "Brock Boeser",
+                "team": "VAN",
+                "goals_to_date": 21,
+                "assists": [
+                    {
+                        "name": "M. Pettersson",
+                        "assists_to_date": 15,
+                        "player_id": 8477969
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-04-01",
+        "home_team": "Kings",
+        "away_team": "Blues",
+        "home_score": 2,
+        "away_score": 1,
+        "winner": "Kings",
+        "condensed_game": "https://www.nhl.com/video/stl-at-lak-condensed-game-6392412339112",
+        "goals": [
+            {
+                "player_id": 8477960,
+                "name": "Adrian Kempe",
+                "team": "LAK",
+                "goals_to_date": 28,
+                "assists": [
+                    {
+                        "name": "A. Laferriere",
+                        "assists_to_date": 19,
+                        "player_id": 8482155
+                    },
+                    {
+                        "name": "A. Panarin",
+                        "assists_to_date": 50,
+                        "player_id": 8478550
+                    }
+                ]
+            },
+            {
+                "player_id": 8480023,
+                "name": "Robert Thomas",
+                "team": "STL",
+                "goals_to_date": 17,
+                "assists": [
+                    {
+                        "name": "P. Broberg",
+                        "assists_to_date": 23,
+                        "player_id": 8481598
+                    },
+                    {
+                        "name": "D. Holloway",
+                        "assists_to_date": 21,
+                        "player_id": 8482077
+                    }
+                ]
+            },
+            {
+                "player_id": 8479675,
+                "name": "Trevor Moore",
+                "team": "LAK",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "A. Kopitar",
+                        "assists_to_date": 23,
+                        "player_id": 8471685
+                    },
+                    {
+                        "name": "D. Doughty",
+                        "assists_to_date": 17,
+                        "player_id": 8474563
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-04-01",
+        "home_team": "Sharks",
+        "away_team": "Ducks",
+        "home_score": 4,
+        "away_score": 3,
+        "winner": "Sharks",
+        "condensed_game": "https://www.nhl.com/video/ana-at-sjs-condensed-game-6392411850112",
+        "goals": [
+            {
+                "player_id": 8484227,
+                "name": "Will Smith",
+                "team": "SJS",
+                "goals_to_date": 22,
+                "assists": [
+                    {
+                        "name": "M. Celebrini",
+                        "assists_to_date": 64,
+                        "player_id": 8484801
+                    }
+                ]
+            },
+            {
+                "player_id": 8480068,
+                "name": "Ryan Poehling",
+                "team": "ANA",
+                "goals_to_date": 10,
+                "assists": [
+                    {
+                        "name": "D. Helleson",
+                        "assists_to_date": 11,
+                        "player_id": 8481563
+                    },
+                    {
+                        "name": "L. Dostal",
+                        "assists_to_date": 1,
+                        "player_id": 8480843
+                    }
+                ]
+            },
+            {
+                "player_id": 8473986,
+                "name": "Alex Killorn",
+                "team": "ANA",
+                "goals_to_date": 13,
+                "assists": [
+                    {
+                        "name": "D. Helleson",
+                        "assists_to_date": 12,
+                        "player_id": 8481563
+                    },
+                    {
+                        "name": "J. LaCombe",
+                        "assists_to_date": 45,
+                        "player_id": 8481605
+                    }
+                ]
+            },
+            {
+                "player_id": 8484801,
+                "name": "Macklin Celebrini",
+                "team": "SJS",
+                "goals_to_date": 39,
+                "assists": [
+                    {
+                        "name": "W. Smith",
+                        "assists_to_date": 31,
+                        "player_id": 8484227
+                    },
+                    {
+                        "name": "C. Graf",
+                        "assists_to_date": 22,
+                        "player_id": 8484911
+                    }
+                ]
+            },
+            {
+                "player_id": 8478873,
+                "name": "Troy Terry",
+                "team": "ANA",
+                "goals_to_date": 18,
+                "assists": []
+            },
+            {
+                "player_id": 8484801,
+                "name": "Macklin Celebrini",
+                "team": "SJS",
+                "goals_to_date": 40,
+                "assists": [
+                    {
+                        "name": "D. Orlov",
+                        "assists_to_date": 29,
+                        "player_id": 8475200
+                    },
+                    {
+                        "name": "W. Smith",
+                        "assists_to_date": 32,
+                        "player_id": 8484227
+                    }
+                ]
+            },
+            {
+                "player_id": 8477505,
+                "name": "Alexander Wennberg",
+                "team": "SJS",
+                "goals_to_date": 17,
+                "assists": [
+                    {
+                        "name": "M. Celebrini",
+                        "assists_to_date": 65,
+                        "player_id": 8484801
+                    },
+                    {
+                        "name": "S. Dickinson",
+                        "assists_to_date": 12,
+                        "player_id": 8484806
+                    }
+                ]
+            }
+        ]
+    }
+]
