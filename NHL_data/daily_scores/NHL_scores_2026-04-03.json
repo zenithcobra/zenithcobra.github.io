@@ -1,0 +1,237 @@
+[
+    {
+        "date": "2026-04-03",
+        "home_team": "Islanders",
+        "away_team": "Flyers",
+        "home_score": 1,
+        "away_score": 4,
+        "winner": "Flyers",
+        "condensed_game": "https://www.nhl.com/video/phi-at-nyi-condensed-game-6392545381112",
+        "goals": [
+            {
+                "player_id": 8480015,
+                "name": "Owen Tippett",
+                "team": "PHI",
+                "goals_to_date": 28,
+                "assists": [
+                    {
+                        "name": "T. Sanheim",
+                        "assists_to_date": 25,
+                        "player_id": 8477948
+                    }
+                ]
+            },
+            {
+                "player_id": 8483731,
+                "name": "Alex Bump",
+                "team": "PHI",
+                "goals_to_date": 4,
+                "assists": [
+                    {
+                        "name": "M. Michkov",
+                        "assists_to_date": 25,
+                        "player_id": 8484387
+                    },
+                    {
+                        "name": "N. Cates",
+                        "assists_to_date": 26,
+                        "player_id": 8480220
+                    }
+                ]
+            },
+            {
+                "player_id": 8484387,
+                "name": "Matvei Michkov",
+                "team": "PHI",
+                "goals_to_date": 17,
+                "assists": []
+            },
+            {
+                "player_id": 8476419,
+                "name": "Jean-Gabriel Pageau",
+                "team": "NYI",
+                "goals_to_date": 16,
+                "assists": [
+                    {
+                        "name": "M. Barzal",
+                        "assists_to_date": 50,
+                        "player_id": 8478445
+                    },
+                    {
+                        "name": "S. Holmstrom",
+                        "assists_to_date": 21,
+                        "player_id": 8481601
+                    }
+                ]
+            },
+            {
+                "player_id": 8477948,
+                "name": "Travis Sanheim",
+                "team": "PHI",
+                "goals_to_date": 10,
+                "assists": [
+                    {
+                        "name": "M. Michkov",
+                        "assists_to_date": 26,
+                        "player_id": 8484387
+                    },
+                    {
+                        "name": "A. Bump",
+                        "assists_to_date": 4,
+                        "player_id": 8483731
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-04-03",
+        "home_team": "Ducks",
+        "away_team": "Blues",
+        "home_score": 2,
+        "away_score": 6,
+        "winner": "Blues",
+        "condensed_game": "https://www.nhl.com/video/stl-at-ana-condensed-game-6392550862112",
+        "goals": [
+            {
+                "player_id": 8480068,
+                "name": "Ryan Poehling",
+                "team": "ANA",
+                "goals_to_date": 11,
+                "assists": [
+                    {
+                        "name": "M. McTavish",
+                        "assists_to_date": 21,
+                        "player_id": 8482745
+                    },
+                    {
+                        "name": "O. Zellweger",
+                        "assists_to_date": 15,
+                        "player_id": 8482803
+                    }
+                ]
+            },
+            {
+                "player_id": 8480023,
+                "name": "Robert Thomas",
+                "team": "STL",
+                "goals_to_date": 18,
+                "assists": [
+                    {
+                        "name": "P. Broberg",
+                        "assists_to_date": 24,
+                        "player_id": 8481598
+                    },
+                    {
+                        "name": "C. Parayko",
+                        "assists_to_date": 14,
+                        "player_id": 8476892
+                    }
+                ]
+            },
+            {
+                "player_id": 8482077,
+                "name": "Dylan Holloway",
+                "team": "STL",
+                "goals_to_date": 18,
+                "assists": [
+                    {
+                        "name": "J. Neighbours",
+                        "assists_to_date": 17,
+                        "player_id": 8482089
+                    },
+                    {
+                        "name": "R. Thomas",
+                        "assists_to_date": 34,
+                        "player_id": 8480023
+                    }
+                ]
+            },
+            {
+                "player_id": 8479705,
+                "name": "Jeffrey Viel",
+                "team": "ANA",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "R. Poehling",
+                        "assists_to_date": 23,
+                        "player_id": 8480068
+                    },
+                    {
+                        "name": "D. Helleson",
+                        "assists_to_date": 13,
+                        "player_id": 8481563
+                    }
+                ]
+            },
+            {
+                "player_id": 8481013,
+                "name": "Jonatan Berggren",
+                "team": "STL",
+                "goals_to_date": 8,
+                "assists": [
+                    {
+                        "name": "P. Suter",
+                        "assists_to_date": 14,
+                        "player_id": 8480459
+                    }
+                ]
+            },
+            {
+                "player_id": 8480459,
+                "name": "Pius Suter",
+                "team": "STL",
+                "goals_to_date": 13,
+                "assists": [
+                    {
+                        "name": "T. Tucker",
+                        "assists_to_date": 11,
+                        "player_id": 8481006
+                    },
+                    {
+                        "name": "J. Neighbours",
+                        "assists_to_date": 18,
+                        "player_id": 8482089
+                    }
+                ]
+            },
+            {
+                "player_id": 8476892,
+                "name": "Colton Parayko",
+                "team": "STL",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "D. Dvorsky",
+                        "assists_to_date": 8,
+                        "player_id": 8484164
+                    },
+                    {
+                        "name": "J. Kyrou",
+                        "assists_to_date": 24,
+                        "player_id": 8479385
+                    }
+                ]
+            },
+            {
+                "player_id": 8482077,
+                "name": "Dylan Holloway",
+                "team": "STL",
+                "goals_to_date": 19,
+                "assists": [
+                    {
+                        "name": "R. Thomas",
+                        "assists_to_date": 35,
+                        "player_id": 8480023
+                    },
+                    {
+                        "name": "P. Broberg",
+                        "assists_to_date": 25,
+                        "player_id": 8481598
+                    }
+                ]
+            }
+        ]
+    }
+]
