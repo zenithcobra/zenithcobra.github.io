@@ -946,7 +946,7 @@ def get_yesterdays_report(date=None):
 
     return content
 
-def get_yesterdays_homers(batters_with_streaks):
+def get_yesterdays_homers():
     
     # Ensure the "text_output" folder exists
     os.makedirs("text_output", exist_ok=True)
@@ -1189,13 +1189,13 @@ def get_yesterdays_homers(batters_with_streaks):
         if not all(value == "" for value in x.values())
     ]
 
-    for x in filtered_stat_homers:
-        player_id = x.get('player_id')
-        for y in batters_with_streaks:
-            batter_id = y.get('player_id')
-            if batter_id == player_id:
-                hr_streak = y.get("HR_record")
-                x.update({'HR_record':hr_streak})
+    # for x in filtered_stat_homers:
+    #     player_id = x.get('player_id')
+    #     for y in batters_with_streaks:
+    #         batter_id = y.get('player_id')
+    #         if batter_id == player_id:
+    #             hr_streak = y.get("HR_record")
+    #             x.update({'HR_record':hr_streak})
 
     return filtered_stat_homers
 
@@ -2237,6 +2237,14 @@ def old_batter_vs_pitchers_get():
 
             BvP = []
             for y in x.get('home_team_leaders_hr', []):  # Default to an empty list if key is missing
+                
+
+                ##april13
+                if not mlb.get_people_id(y.get('name')):
+                    # Handle the missing case safely
+                    continue  # or set batter_id = None
+
+                
                 batter_id = mlb.get_people_id(y.get('name'))[0]
 
                 stats = ['vsPlayer']
