@@ -459,7 +459,7 @@ def get_roster_names(team_id):
     # return roster_list2
     return roster_list
 
-def get_homerun_leaders_by_team(team_id, season=2025, leaderGameTypes="R", limit=10):
+def get_homerun_leaders_by_team(team_id, season=2026, leaderGameTypes="R", limit=10):
     """
     Returns a list of home run leaders for a given team ID.
     Args:
@@ -1135,7 +1135,7 @@ def get_yesterdays_homers():
 
         try:
             # beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', season=2024) 
-            beans2 = statsapi.player_stat_data(player_id, group="hitting", type="season", sportId=1, season=2024) 
+            beans2 = statsapi.player_stat_data(player_id, group="hitting", type="season", sportId=1, season=2025) 
         except StopIteration:
             print(f"No player found with the name '{z}'.")
             beans2 = None  # Set beans to None or handle it appropriately
@@ -1145,7 +1145,7 @@ def get_yesterdays_homers():
         
         if beans2:
             beans2_id = beans2.get('id')
-            beans3 = statsapi.player_stat_data(beans2_id, group="hitting", type="season", sportId=1, season=2024)
+            beans3 = statsapi.player_stat_data(beans2_id, group="hitting", type="season", sportId=1, season=2025)
         
             for b in beans3.get('stats'):
                 hrs2 = float(int(b.get('stats').get('homeRuns')))
@@ -1807,7 +1807,7 @@ def get_team_history(teams_playing_today):
         # how to get the last 15 games for a team
         team_id = a.get("team_id")
         team_name = a.get("team_name")
-        sched = statsapi.schedule(start_date='03/27/2025',end_date=mlb_date,team=team_id)
+        sched = statsapi.schedule(start_date='03/27/2026',end_date=mlb_date,team=team_id)
         newlist = sorted(sched, key = lambda k: k["game_date"], reverse=True)
         game_data_list = []
         for game in newlist:
@@ -1842,7 +1842,7 @@ def get_player_position_2025(type_of_stat, player_id):
         dict: A dictionary containing player stats, or None if an error occurs or data is unavailable.
     """
     try:
-        stats = statsapi.player_stat_data(player_id, group=type_of_stat, type="season", sportId=1, season=2025)
+        stats = statsapi.player_stat_data(player_id, group=type_of_stat, type="season", sportId=1, season=2026)
         # print(stats)
     except Exception as e:
         print(f"An error occurred while fetching player stats: {e}")
@@ -1873,7 +1873,7 @@ def get_player_stats_2025(type_of_stat, player_id):
         dict: A dictionary containing player stats, or None if an error occurs or data is unavailable.
     """
     try:
-        stats = statsapi.player_stat_data(player_id, group=type_of_stat, type="season", sportId=1, season=2025)
+        stats = statsapi.player_stat_data(player_id, group=type_of_stat, type="season", sportId=1, season=2026)
         # print(stats)
     except Exception as e:
         print(f"An error occurred while fetching player stats: {e}")
@@ -1904,7 +1904,7 @@ def get_player_stats_2024(type_of_stat, player_id):
         dict: A dictionary containing player stats, or None if an error occurs or data is unavailable.
     """
     try:
-        stats = statsapi.player_stat_data(player_id, group=type_of_stat, type="season", sportId=1, season=2024)
+        stats = statsapi.player_stat_data(player_id, group=type_of_stat, type="season", sportId=1, season=2025)
         # print(stats)
     except Exception as e:
         print(f"An error occurred while fetching player stats: {e}")
@@ -2001,7 +2001,7 @@ def add_stats_to_batters(list_of_players):
             #     })
             try:
                 # beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', season=2024) 
-                beans2 = statsapi.player_stat_data(player_id, group="hitting", type="season", sportId=1, season=2024) 
+                beans2 = statsapi.player_stat_data(player_id, group="hitting", type="season", sportId=1, season=2025) 
             except StopIteration:
                 print(f"No player found with the name '{z}'.")
                 beans2 = None  # Set beans to None or handle it appropriately
@@ -2191,7 +2191,7 @@ def old_batter_vs_pitchers_get():
 
             away_team_leaders_hr = []
             # add top away team guys here
-            away_leaders = statsapi.team_leader_data(x.get('away_id'), 'homeRuns', season=2025, leaderGameTypes="R", limit=20)
+            away_leaders = statsapi.team_leader_data(x.get('away_id'), 'homeRuns', season=2026, leaderGameTypes="R", limit=20)
             for z in away_leaders:
                 away_team_leaders_hr.append({'name': z[1],'homeRuns': z[2]})
 
@@ -2199,7 +2199,7 @@ def old_batter_vs_pitchers_get():
 
             home_team_leaders_hr = []
             # add top away team guys here
-            home_leaders = statsapi.team_leader_data(x.get('home_id'), 'homeRuns', season=2025, leaderGameTypes="R", limit=20)
+            home_leaders = statsapi.team_leader_data(x.get('home_id'), 'homeRuns', season=2026, leaderGameTypes="R", limit=20)
             for z in home_leaders:
                 home_team_leaders_hr.append({'name': z[1],'homeRuns': z[2]})
 
@@ -2362,7 +2362,7 @@ def league_leaders_era():
     return eras_list
 
 def league_leaders_strikeouts_per_9_innings():
-    so9 =  statsapi.league_leader_data('strikeoutsPer9Inn',statGroup='pitching',limit=25,season=2025) 
+    so9 =  statsapi.league_leader_data('strikeoutsPer9Inn',statGroup='pitching',limit=25,season=2026) 
     # Convert to a list of dictionaries with "place" baked into each dictionary
     so9_list = [
         {
@@ -2480,7 +2480,7 @@ def find_dh_batters_add_stats_streaks(schedule, batters_with_streaks):
         try:
             # beans2 = statsapi.player_stat_data(next(x['id'] for x in statsapi.get('sports_players',{'season':2025,'gameType':'W'})['people'] if x['fullName']==z), 'hitting', season=2024) 
             player_id = beans.get('id')
-            beans2 = statsapi.player_stat_data(player_id, group="hitting", type="season", sportId=1, season=2024) 
+            beans2 = statsapi.player_stat_data(player_id, group="hitting", type="season", sportId=1, season=2025) 
         except StopIteration:
             print(f"No player found with the name beans2'{z}'.")
             beans2 = None  # Set beans to None or handle it appropriately
