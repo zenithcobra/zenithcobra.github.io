@@ -370,7 +370,7 @@ def save_to_html(content, supplied_filename):
         None
     """
     # Directories
-    data_dir = "docs"
+    data_dir = "data"
     archived_dir = os.path.join(data_dir, "archived_data")
     os.makedirs(data_dir, exist_ok=True)  # Ensure the 'data' directory exists
     os.makedirs(archived_dir, exist_ok=True)  # Ensure the 'archived_data' directory exists
