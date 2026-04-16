@@ -19,7 +19,60 @@ import html
 from typing import Union
 
 
-def json_to_html_table(json_input: Union[str, dict, list]) -> str:
+
+import json
+import html
+
+def json_to_html_table(json_path: str) -> str:
+    """
+    Reads a JSON file, finds the dictionary with the most keys,
+    uses those keys as table headers, and returns an HTML table.
+    """
+
+    with open(json_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    # Normalize to a list of dictionaries
+    if isinstance(data, dict):
+        records = [v for v in data.values() if isinstance(v, dict)]
+    elif isinstance(data, list):
+        records = [r for r in data if isinstance(r, dict)]
+    else:
+        raise ValueError("JSON must be a list or dictionary of dictionaries")
+
+    if not records:
+        raise ValueError("No dictionaries found in JSON")
+
+    # Find the dictionary with the most keys
+    header_source = max(records, key=lambda d: len(d.keys()))
+    headers = list(header_source.keys())
+
+    # Build HTML
+    lines = []
+    lines.append("<table border='1'>")
+
+    # Header row
+    lines.append("<thead><tr>")
+    for h in headers:
+        lines.append(f"<th>{html.escape(str(h))}</th>")
+    lines.append("</tr></thead>")
+
+    # Data rows
+    lines.append("<tbody>")
+    for record in records:
+        lines.append("<tr>")
+        for h in headers:
+            value = record.get(h, "")
+            lines.append(f"<td>{html.escape(str(value))}</td>")
+        lines.append("</tr>")
+    lines.append("</tbody>")
+
+    lines.append("</table>")
+
+    return "\n".join(lines)
+
+
+def json_to_html_table2(json_input: Union[str, dict, list]) -> str:
     """
     Convert JSON data into an HTML table string.
 
