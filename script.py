@@ -14,6 +14,65 @@ from bs4 import BeautifulSoup
 import json
 import numpy as np
 import matplotlib.pyplot as plt
+import json
+import html
+from typing import Union
+
+
+def json_to_html_table(json_input: Union[str, dict, list]) -> str:
+    """
+    Convert JSON data into an HTML table string.
+
+    Accepts:
+    - File path to a .json file
+    - JSON string
+    - dict
+    - list of dicts
+    """
+
+    # Load JSON if input is a file path or JSON string
+    if isinstance(json_input, str):
+        try:
+            # Try treating it as a file path
+            with open(json_input, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except FileNotFoundError:
+            # Otherwise treat it as a JSON string
+            data = json.loads(json_input)
+    else:
+        data = json_input
+
+    # Normalize to list of dicts
+    if isinstance(data, dict):
+        data = [data]
+
+    if not data or not isinstance(data, list):
+        raise ValueError("JSON data must be a dict or a list of dicts")
+
+    headers = data[0].keys()
+
+    # Start HTML table
+    html_table = ['<table border="1">']
+
+    # Header row
+    html_table.append("<thead><tr>")
+    for header in headers:
+        html_table.append(f"<th>{html.escape(str(header))}</th>")
+    html_table.append("</tr></thead>")
+
+    # Data rows
+    html_table.append("<tbody>")
+    for row in data:
+        html_table.append("<tr>")
+        for header in headers:
+            value = row.get(header, "")
+            html_table.append(f"<td>{html.escape(str(value))}</td>")
+        html_table.append("</tr>")
+    html_table.append("</tbody>")
+
+    html_table.append("</table>")
+
+    return "".join(html_table)
 
 def detect_current_streak(sequence):
     """
