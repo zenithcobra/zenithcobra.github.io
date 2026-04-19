@@ -1,0 +1,271 @@
+[
+    {
+        "date": "2026-04-18",
+        "home_team": "Hurricanes",
+        "away_team": "Senators",
+        "home_score": 2,
+        "away_score": 0,
+        "winner": "Hurricanes",
+        "condensed_game": "https://www.nhl.com/video/ott-at-car-condensed-game-6393386877112",
+        "goals": [
+            {
+                "player_id": 8482702,
+                "name": "Logan Stankoven",
+                "team": "CAR",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "J. Blake",
+                        "assists_to_date": 1,
+                        "player_id": 8482809
+                    },
+                    {
+                        "name": "T. Hall",
+                        "assists_to_date": 1,
+                        "player_id": 8475791
+                    }
+                ]
+            },
+            {
+                "player_id": 8475791,
+                "name": "Taylor Hall",
+                "team": "CAR",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "L. Stankoven",
+                        "assists_to_date": 1,
+                        "player_id": 8482702
+                    },
+                    {
+                        "name": "J. Blake",
+                        "assists_to_date": 2,
+                        "player_id": 8482809
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-04-18",
+        "home_team": "Stars",
+        "away_team": "Wild",
+        "home_score": 1,
+        "away_score": 6,
+        "winner": "Wild",
+        "condensed_game": "https://www.nhl.com/video/min-at-dal-condensed-game-6393393105112",
+        "goals": [
+            {
+                "player_id": 8478493,
+                "name": "Joel Eriksson Ek",
+                "team": "MIN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Boldy",
+                        "assists_to_date": 1,
+                        "player_id": 8481557
+                    },
+                    {
+                        "name": "M. Zuccarello",
+                        "assists_to_date": 1,
+                        "player_id": 8475692
+                    }
+                ]
+            },
+            {
+                "player_id": 8478864,
+                "name": "Kirill Kaprizov",
+                "team": "MIN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "R. Hartman",
+                        "assists_to_date": 1,
+                        "player_id": 8477451
+                    },
+                    {
+                        "name": "M. Zuccarello",
+                        "assists_to_date": 2,
+                        "player_id": 8475692
+                    }
+                ]
+            },
+            {
+                "player_id": 8477451,
+                "name": "Ryan Hartman",
+                "team": "MIN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "B. Faber",
+                        "assists_to_date": 1,
+                        "player_id": 8482122
+                    },
+                    {
+                        "name": "Q. Hughes",
+                        "assists_to_date": 1,
+                        "player_id": 8480800
+                    }
+                ]
+            },
+            {
+                "player_id": 8481557,
+                "name": "Matt Boldy",
+                "team": "MIN",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "K. Kaprizov",
+                        "assists_to_date": 1,
+                        "player_id": 8478864
+                    },
+                    {
+                        "name": "J. Eriksson Ek",
+                        "assists_to_date": 1,
+                        "player_id": 8478493
+                    }
+                ]
+            },
+            {
+                "player_id": 8480027,
+                "name": "Jason Robertson",
+                "team": "DAL",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "W. Johnston",
+                        "assists_to_date": 1,
+                        "player_id": 8482740
+                    },
+                    {
+                        "name": "M. Heiskanen",
+                        "assists_to_date": 1,
+                        "player_id": 8480036
+                    }
+                ]
+            },
+            {
+                "player_id": 8478493,
+                "name": "Joel Eriksson Ek",
+                "team": "MIN",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "K. Kaprizov",
+                        "assists_to_date": 2,
+                        "player_id": 8478864
+                    },
+                    {
+                        "name": "M. Zuccarello",
+                        "assists_to_date": 3,
+                        "player_id": 8475692
+                    }
+                ]
+            },
+            {
+                "player_id": 8481557,
+                "name": "Matt Boldy",
+                "team": "MIN",
+                "goals_to_date": 2,
+                "assists": []
+            }
+        ]
+    },
+    {
+        "date": "2026-04-18",
+        "home_team": "Penguins",
+        "away_team": "Flyers",
+        "home_score": 2,
+        "away_score": 3,
+        "winner": "Flyers",
+        "condensed_game": "https://www.nhl.com/video/phi-at-pit-condensed-game-6393402037112",
+        "goals": [
+            {
+                "player_id": 8482142,
+                "name": "Jamie Drysdale",
+                "team": "PHI",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "T. Zegras",
+                        "assists_to_date": 1,
+                        "player_id": 8481533
+                    },
+                    {
+                        "name": "D. Barkey",
+                        "assists_to_date": 1,
+                        "player_id": 8484142
+                    }
+                ]
+            },
+            {
+                "player_id": 8471215,
+                "name": "Evgeni Malkin",
+                "team": "PIT",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "T. Novak",
+                        "assists_to_date": 1,
+                        "player_id": 8478438
+                    },
+                    {
+                        "name": "R. Rakell",
+                        "assists_to_date": 1,
+                        "player_id": 8476483
+                    }
+                ]
+            },
+            {
+                "player_id": 8477948,
+                "name": "Travis Sanheim",
+                "team": "PHI",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "R. Ristolainen",
+                        "assists_to_date": 1,
+                        "player_id": 8477499
+                    },
+                    {
+                        "name": "C. Dvorak",
+                        "assists_to_date": 1,
+                        "player_id": 8477989
+                    }
+                ]
+            },
+            {
+                "player_id": 8485406,
+                "name": "Porter Martone",
+                "team": "PHI",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "T. Konecny",
+                        "assists_to_date": 1,
+                        "player_id": 8478439
+                    }
+                ]
+            },
+            {
+                "player_id": 8475810,
+                "name": "Bryan Rust",
+                "team": "PIT",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "E. Malkin",
+                        "assists_to_date": 1,
+                        "player_id": 8471215
+                    },
+                    {
+                        "name": "E. Karlsson",
+                        "assists_to_date": 1,
+                        "player_id": 8474578
+                    }
+                ]
+            }
+        ]
+    }
+]
