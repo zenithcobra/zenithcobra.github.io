@@ -1,0 +1,430 @@
+[
+    {
+        "date": "2026-04-19",
+        "home_team": "Avalanche",
+        "away_team": "Kings",
+        "home_score": 2,
+        "away_score": 1,
+        "winner": "Avalanche",
+        "condensed_game": "https://www.nhl.com/video/lak-at-col-condensed-game-6393438347112",
+        "goals": [
+            {
+                "player_id": 8477476,
+                "name": "Artturi Lehkonen",
+                "team": "COL",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "N. MacKinnon",
+                        "assists_to_date": 1,
+                        "player_id": 8477492
+                    }
+                ]
+            },
+            {
+                "player_id": 8481186,
+                "name": "Logan O'Connor",
+                "team": "COL",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "J. Drury",
+                        "assists_to_date": 1,
+                        "player_id": 8480835
+                    }
+                ]
+            },
+            {
+                "player_id": 8478550,
+                "name": "Artemi Panarin",
+                "team": "LAK",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "A. Laferriere",
+                        "assists_to_date": 1,
+                        "player_id": 8482155
+                    },
+                    {
+                        "name": "B. Clarke",
+                        "assists_to_date": 1,
+                        "player_id": 8482730
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-04-19",
+        "home_team": "Lightning",
+        "away_team": "Canadiens",
+        "home_score": 3,
+        "away_score": 4,
+        "winner": "Canadiens",
+        "condensed_game": "https://www.nhl.com/video/mtl-at-tbl-condensed-game-6393449030112",
+        "goals": [
+            {
+                "player_id": 8476981,
+                "name": "Josh Anderson",
+                "team": "MTL",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "A. Carrier",
+                        "assists_to_date": 1,
+                        "player_id": 8478851
+                    },
+                    {
+                        "name": "M. Matheson",
+                        "assists_to_date": 1,
+                        "player_id": 8476875
+                    }
+                ]
+            },
+            {
+                "player_id": 8478178,
+                "name": "Darren Raddysh",
+                "team": "TBL",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "N. Kucherov",
+                        "assists_to_date": 1,
+                        "player_id": 8476453
+                    },
+                    {
+                        "name": "J. Guentzel",
+                        "assists_to_date": 1,
+                        "player_id": 8477404
+                    }
+                ]
+            },
+            {
+                "player_id": 8479542,
+                "name": "Brandon Hagel",
+                "team": "TBL",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "J. Guentzel",
+                        "assists_to_date": 2,
+                        "player_id": 8477404
+                    },
+                    {
+                        "name": "R. McDonagh",
+                        "assists_to_date": 1,
+                        "player_id": 8474151
+                    }
+                ]
+            },
+            {
+                "player_id": 8483515,
+                "name": "Juraj Slafkovsk\u00fd",
+                "team": "MTL",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "I. Demidov",
+                        "assists_to_date": 1,
+                        "player_id": 8484984
+                    },
+                    {
+                        "name": "C. Caufield",
+                        "assists_to_date": 1,
+                        "player_id": 8481540
+                    }
+                ]
+            },
+            {
+                "player_id": 8483515,
+                "name": "Juraj Slafkovsk\u00fd",
+                "team": "MTL",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "C. Caufield",
+                        "assists_to_date": 2,
+                        "player_id": 8481540
+                    },
+                    {
+                        "name": "N. Suzuki",
+                        "assists_to_date": 1,
+                        "player_id": 8480018
+                    }
+                ]
+            },
+            {
+                "player_id": 8479542,
+                "name": "Brandon Hagel",
+                "team": "TBL",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "J. Guentzel",
+                        "assists_to_date": 3,
+                        "player_id": 8477404
+                    },
+                    {
+                        "name": "N. Kucherov",
+                        "assists_to_date": 2,
+                        "player_id": 8476453
+                    }
+                ]
+            },
+            {
+                "player_id": 8483515,
+                "name": "Juraj Slafkovsk\u00fd",
+                "team": "MTL",
+                "goals_to_date": 3,
+                "assists": [
+                    {
+                        "name": "L. Hutson",
+                        "assists_to_date": 1,
+                        "player_id": 8483457
+                    },
+                    {
+                        "name": "N. Suzuki",
+                        "assists_to_date": 2,
+                        "player_id": 8480018
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-04-19",
+        "home_team": "Sabres",
+        "away_team": "Bruins",
+        "home_score": 4,
+        "away_score": 3,
+        "winner": "Sabres",
+        "condensed_game": "https://www.nhl.com/video/bos-at-buf-condensed-game-6393452914112",
+        "goals": [
+            {
+                "player_id": 8479987,
+                "name": "Morgan Geekie",
+                "team": "BOS",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "D. Pastrnak",
+                        "assists_to_date": 1,
+                        "player_id": 8477956
+                    },
+                    {
+                        "name": "N. Zadorov",
+                        "assists_to_date": 1,
+                        "player_id": 8477507
+                    }
+                ]
+            },
+            {
+                "player_id": 8477496,
+                "name": "Elias Lindholm",
+                "team": "BOS",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "M. Geekie",
+                        "assists_to_date": 1,
+                        "player_id": 8479987
+                    },
+                    {
+                        "name": "D. Pastrnak",
+                        "assists_to_date": 2,
+                        "player_id": 8477956
+                    }
+                ]
+            },
+            {
+                "player_id": 8479420,
+                "name": "Tage Thompson",
+                "team": "BUF",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "P. Krebs",
+                        "assists_to_date": 1,
+                        "player_id": 8481522
+                    }
+                ]
+            },
+            {
+                "player_id": 8479420,
+                "name": "Tage Thompson",
+                "team": "BUF",
+                "goals_to_date": 2,
+                "assists": [
+                    {
+                        "name": "A. Tuch",
+                        "assists_to_date": 1,
+                        "player_id": 8477949
+                    }
+                ]
+            },
+            {
+                "player_id": 8480807,
+                "name": "Mattias Samuelsson",
+                "team": "BUF",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "J. Quinn",
+                        "assists_to_date": 1,
+                        "player_id": 8482097
+                    }
+                ]
+            },
+            {
+                "player_id": 8477949,
+                "name": "Alex Tuch",
+                "team": "BUF",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "T. Thompson",
+                        "assists_to_date": 1,
+                        "player_id": 8479420
+                    },
+                    {
+                        "name": "O. Power",
+                        "assists_to_date": 1,
+                        "player_id": 8482671
+                    }
+                ]
+            },
+            {
+                "player_id": 8477956,
+                "name": "David Pastrnak",
+                "team": "BOS",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "P. Zacha",
+                        "assists_to_date": 1,
+                        "player_id": 8478401
+                    },
+                    {
+                        "name": "M. Geekie",
+                        "assists_to_date": 2,
+                        "player_id": 8479987
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2026-04-19",
+        "home_team": "Golden Knights",
+        "away_team": "Mammoth",
+        "home_score": 4,
+        "away_score": 2,
+        "winner": "Golden Knights",
+        "condensed_game": "https://www.nhl.com/video/uta-at-vgk-condensed-game-6393458067112",
+        "goals": [
+            {
+                "player_id": 8483431,
+                "name": "Logan Cooley",
+                "team": "UTA",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "N. Schmidt",
+                        "assists_to_date": 1,
+                        "player_id": 8477220
+                    },
+                    {
+                        "name": "L. Crouse",
+                        "assists_to_date": 1,
+                        "player_id": 8478474
+                    }
+                ]
+            },
+            {
+                "player_id": 8476925,
+                "name": "Colton Sissons",
+                "team": "VGK",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "C. Smith",
+                        "assists_to_date": 1,
+                        "player_id": 8482062
+                    },
+                    {
+                        "name": "B. McNabb",
+                        "assists_to_date": 1,
+                        "player_id": 8475188
+                    }
+                ]
+            },
+            {
+                "player_id": 8478831,
+                "name": "Kevin Stenlund",
+                "team": "UTA",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "S. Durzi",
+                        "assists_to_date": 1,
+                        "player_id": 8480434
+                    },
+                    {
+                        "name": "I. Cole",
+                        "assists_to_date": 1,
+                        "player_id": 8474013
+                    }
+                ]
+            },
+            {
+                "player_id": 8475913,
+                "name": "Mark Stone",
+                "team": "VGK",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "T. Hertl",
+                        "assists_to_date": 1,
+                        "player_id": 8476881
+                    },
+                    {
+                        "name": "M. Marner",
+                        "assists_to_date": 1,
+                        "player_id": 8478483
+                    }
+                ]
+            },
+            {
+                "player_id": 8475343,
+                "name": "Nic Dowd",
+                "team": "VGK",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "N. Hanifin",
+                        "assists_to_date": 1,
+                        "player_id": 8478396
+                    },
+                    {
+                        "name": "C. Sissons",
+                        "assists_to_date": 1,
+                        "player_id": 8476925
+                    }
+                ]
+            },
+            {
+                "player_id": 8477964,
+                "name": "Ivan Barbashev",
+                "team": "VGK",
+                "goals_to_date": 1,
+                "assists": [
+                    {
+                        "name": "N. Hanifin",
+                        "assists_to_date": 2,
+                        "player_id": 8478396
+                    }
+                ]
+            }
+        ]
+    }
+]
