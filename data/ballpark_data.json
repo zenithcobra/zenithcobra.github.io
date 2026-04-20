@@ -1,13 +1,28 @@
 [
     {},
     {
-        "Venue": "American Family Field",
-        "Location": "Milwaukee",
-        "HR": "30"
+        "Venue": "Yankee Stadium",
+        "Location": "Bronx",
+        "HR": "41"
     },
     {
-        "Venue": "Dodger Stadium",
-        "Location": "Los Angeles",
+        "Venue": "Minute Maid Park",
+        "Location": "Houston",
+        "HR": "38"
+    },
+    {
+        "Venue": "Citizens Bank Park",
+        "Location": "Philadelphia",
+        "HR": "34"
+    },
+    {
+        "Venue": "Nationals Park",
+        "Location": "Washington",
+        "HR": "31"
+    },
+    {
+        "Venue": "American Family Field",
+        "Location": "Milwaukee",
         "HR": "30"
     },
     {
@@ -16,9 +31,9 @@
         "HR": "30"
     },
     {
-        "Venue": "Oriole Park at Camden Yards",
-        "Location": "Baltimore",
-        "HR": "29"
+        "Venue": "Dodger Stadium",
+        "Location": "Los Angeles",
+        "HR": "30"
     },
     {
         "Venue": "Great American Ball Park",
@@ -26,24 +41,24 @@
         "HR": "29"
     },
     {
-        "Venue": "Citizens Bank Park",
-        "Location": "Philadelphia",
-        "HR": "27"
+        "Venue": "Oriole Park at Camden Yards",
+        "Location": "Baltimore",
+        "HR": "29"
     },
     {
-        "Venue": "Minute Maid Park",
-        "Location": "Houston",
+        "Venue": "Sutter Health Park",
+        "Location": "Sacramento",
+        "HR": "28"
+    },
+    {
+        "Venue": "T-Mobile Park",
+        "Location": "Seattle",
+        "HR": "28"
+    },
+    {
+        "Venue": "Wrigley Field",
+        "Location": "Chicago",
         "HR": "26"
-    },
-    {
-        "Venue": "Yankee Stadium",
-        "Location": "Bronx",
-        "HR": "24"
-    },
-    {
-        "Venue": "Nationals Park",
-        "Location": "Washington",
-        "HR": "23"
     },
     {
         "Venue": "Truist Park",
@@ -56,8 +71,8 @@
         "HR": "22"
     },
     {
-        "Venue": "T-Mobile Park",
-        "Location": "Seattle",
+        "Venue": "Progressive Field",
+        "Location": "Cleveland",
         "HR": "22"
     },
     {
@@ -66,13 +81,33 @@
         "HR": "21"
     },
     {
-        "Venue": "Wrigley Field",
-        "Location": "Chicago",
+        "Venue": "PNC Park",
+        "Location": "Pittsburgh",
+        "HR": "20"
+    },
+    {
+        "Venue": "Coors Field",
+        "Location": "Denver",
         "HR": "19"
+    },
+    {
+        "Venue": "Chase Field",
+        "Location": "Phoenix",
+        "HR": "18"
+    },
+    {
+        "Venue": "Comerica Park",
+        "Location": "Detroit",
+        "HR": "17"
     },
     {
         "Venue": "Target Field",
         "Location": "Minneapolis",
+        "HR": "17"
+    },
+    {
+        "Venue": "Marlins Park",
+        "Location": "Miami",
         "HR": "17"
     },
     {
@@ -81,49 +116,19 @@
         "HR": "17"
     },
     {
-        "Venue": "Sutter Health Park",
-        "Location": "Sacramento",
-        "HR": "16"
-    },
-    {
-        "Venue": "Marlins Park",
-        "Location": "Miami",
-        "HR": "15"
-    },
-    {
         "Venue": "Citi Field",
         "Location": "New York",
         "HR": "15"
     },
     {
-        "Venue": "Comerica Park",
-        "Location": "Detroit",
+        "Venue": "Guaranteed Rate Field",
+        "Location": "Chicago",
         "HR": "14"
     },
     {
-        "Venue": "Chase Field",
-        "Location": "Phoenix",
-        "HR": "13"
-    },
-    {
-        "Venue": "Coors Field",
-        "Location": "Denver",
-        "HR": "13"
-    },
-    {
-        "Venue": "PNC Park",
-        "Location": "Pittsburgh",
+        "Venue": "Angel Stadium",
+        "Location": "Anaheim",
         "HR": "12"
-    },
-    {
-        "Venue": "Progressive Field",
-        "Location": "Cleveland",
-        "HR": "12"
-    },
-    {
-        "Venue": "Guaranteed Rate Field",
-        "Location": "Chicago",
-        "HR": "11"
     },
     {
         "Venue": "Tropicana Field",
@@ -131,23 +136,18 @@
         "HR": "11"
     },
     {
-        "Venue": "Angel Stadium",
-        "Location": "Anaheim",
-        "HR": "10"
-    },
-    {
         "Venue": "Oracle Park",
         "Location": "San Francisco",
         "HR": "10"
     },
     {
+        "Venue": "Fenway Park",
+        "Location": "Boston",
+        "HR": "9"
+    },
+    {
         "Venue": "Globe Life Field",
         "Location": "Arlington",
         "HR": "7"
-    },
-    {
-        "Venue": "Fenway Park",
-        "Location": "Boston",
-        "HR": "5"
     }
 ]
