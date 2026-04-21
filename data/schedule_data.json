@@ -16,21 +16,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
+        "home_score": 2,
+        "current_inning": 2,
         "inning_state": "Bottom",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "HOU leads 1-0",
-        "summary": "2026-04-21 - Houston Astros (0) @ Cleveland Guardians (0) (Bottom of the 1st)"
+        "summary": "2026-04-21 - Houston Astros (0) @ Cleveland Guardians (2) (Bottom of the 2nd)"
     },
     {
         "game_id": 822995,
         "game_datetime": "2026-04-21T22:40:00Z",
         "game_date": "2026-04-21",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Cincinnati Reds",
         "home_name": "Tampa Bay Rays",
         "away_id": 113,
@@ -41,7 +41,7 @@
         "away_probable_pitcher": "Chase Burns",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
         "current_inning": 1,
         "inning_state": "Top",
@@ -49,14 +49,14 @@
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "CIN leads 1-0",
-        "summary": "2026-04-21 - Cincinnati Reds @ Tampa Bay Rays (Warmup)"
+        "summary": "2026-04-21 - Cincinnati Reds (2) @ Tampa Bay Rays (0) (Top of the 1st)"
     },
     {
         "game_id": 823880,
         "game_datetime": "2026-04-21T22:40:00Z",
         "game_date": "2026-04-21",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "St. Louis Cardinals",
         "home_name": "Miami Marlins",
         "away_id": 138,
@@ -75,14 +75,14 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "MIA leads 1-0",
-        "summary": "2026-04-21 - St. Louis Cardinals @ Miami Marlins (Warmup)"
+        "summary": "2026-04-21 - St. Louis Cardinals (0) @ Miami Marlins (0) (Top of the 1st)"
     },
     {
         "game_id": 824290,
         "game_datetime": "2026-04-21T22:40:00Z",
         "game_date": "2026-04-21",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Milwaukee Brewers",
         "home_name": "Detroit Tigers",
         "away_id": 158,
@@ -101,14 +101,14 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-21 - Milwaukee Brewers @ Detroit Tigers (Warmup)"
+        "summary": "2026-04-21 - Milwaukee Brewers (0) @ Detroit Tigers (0) (Top of the 1st)"
     },
     {
         "game_id": 822747,
         "game_datetime": "2026-04-21T22:45:00Z",
         "game_date": "2026-04-21",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Atlanta Braves",
         "home_name": "Washington Nationals",
         "away_id": 144,
@@ -127,14 +127,14 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 1-0",
-        "summary": "2026-04-21 - Atlanta Braves @ Washington Nationals (Warmup)"
+        "summary": "2026-04-21 - Atlanta Braves (0) @ Washington Nationals (0) (Top of the 1st)"
     },
     {
         "game_id": 824773,
         "game_datetime": "2026-04-21T22:45:00Z",
         "game_date": "2026-04-21",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "New York Yankees",
         "home_name": "Boston Red Sox",
         "away_id": 147,
@@ -155,7 +155,7 @@
             "TBS"
         ],
         "series_status": null,
-        "summary": "2026-04-21 - New York Yankees @ Boston Red Sox (Warmup)"
+        "summary": "2026-04-21 - New York Yankees (0) @ Boston Red Sox (0) (Top of the 1st)"
     },
     {
         "game_id": 823640,
@@ -355,10 +355,10 @@
         "away_probable_pitcher": "Sean Burke",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
