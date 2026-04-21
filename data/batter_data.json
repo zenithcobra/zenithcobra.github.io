@@ -8482,6 +8482,12 @@
         "fHR24pg": "0"
     },
     {
+        "player_name": "Alex Hoppe",
+        "team": "Seattle Mariners",
+        "team_id": 136,
+        "player_id": 695380
+    },
+    {
         "player_name": "Andr\u00e9s Mu\u00f1oz",
         "team": "Seattle Mariners",
         "team_id": 136,
@@ -8512,12 +8518,6 @@
         "HR24": 60,
         "HR24pg": 0.38,
         "fHR24pg": "2/5"
-    },
-    {
-        "player_name": "Casey Legumina",
-        "team": "Seattle Mariners",
-        "team_id": 136,
-        "player_id": 668984
     },
     {
         "player_name": "Cole Wilcox",
@@ -9585,6 +9585,26 @@
         "player_id": 686218
     },
     {
+        "player_name": "Freddie Freeman",
+        "team": "Los Angeles Dodgers",
+        "team_id": 119,
+        "player_id": 518692,
+        "position": "1B",
+        "games_played": 20.0,
+        "H": 24.0,
+        "HR": 3.0,
+        "RBI": 14.0,
+        "HRpg": 0.15,
+        "fHRpg": "1/7",
+        "Hpg": 1.2,
+        "fHpg": "6/5",
+        "RBIpg": 0.7,
+        "fRBIpg": "5/7",
+        "HR24": 24,
+        "HR24pg": 0.16,
+        "fHR24pg": "1/6"
+    },
+    {
         "player_name": "Hyeseong Kim",
         "team": "Los Angeles Dodgers",
         "team_id": 119,
@@ -9693,23 +9713,6 @@
         "team": "Los Angeles Dodgers",
         "team_id": 119,
         "player_id": 808963
-    },
-    {
-        "player_name": "Ryan Ward",
-        "team": "Los Angeles Dodgers",
-        "team_id": 119,
-        "player_id": 669899,
-        "position": "LF",
-        "games_played": 2.0,
-        "H": 2.0,
-        "HR": 0.0,
-        "RBI": 1.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 1.0,
-        "fHpg": "1",
-        "RBIpg": 0.5,
-        "fRBIpg": "1/2"
     },
     {
         "player_name": "Santiago Espinal",
