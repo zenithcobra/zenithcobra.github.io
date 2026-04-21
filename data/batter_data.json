@@ -3988,12 +3988,6 @@
         "player_id": 670245
     },
     {
-        "player_name": "Sonny Gray",
-        "team": "Boston Red Sox",
-        "team_id": 111,
-        "player_id": 543243
-    },
-    {
         "player_name": "Trevor Story",
         "team": "Boston Red Sox",
         "team_id": 111,
@@ -4012,6 +4006,12 @@
         "HR24": 25,
         "HR24pg": 0.16,
         "fHR24pg": "1/6"
+    },
+    {
+        "player_name": "Tyler Samaniego",
+        "team": "Boston Red Sox",
+        "team_id": 111,
+        "player_id": 701719
     },
     {
         "player_name": "Willson Contreras",
@@ -4272,6 +4272,26 @@
         "HR24": 22,
         "HR24pg": 0.21,
         "fHR24pg": "1/5"
+    },
+    {
+        "player_name": "Royce Lewis",
+        "team": "Minnesota Twins",
+        "team_id": 142,
+        "player_id": 668904,
+        "position": "3B",
+        "games_played": 12.0,
+        "H": 8.0,
+        "HR": 2.0,
+        "RBI": 8.0,
+        "HRpg": 0.167,
+        "fHRpg": "1/6",
+        "Hpg": 0.667,
+        "fHpg": "2/3",
+        "RBIpg": 0.667,
+        "fRBIpg": "2/3",
+        "HR24": 13,
+        "HR24pg": 0.12,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Ryan Jeffers",
