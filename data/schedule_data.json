@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 2,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "current_inning": 4,
+        "inning_state": "End",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "HOU leads 1-0",
-        "summary": "2026-04-21 - Houston Astros (0) @ Cleveland Guardians (2) (Bottom of the 2nd)"
+        "summary": "2026-04-21 - Houston Astros (0) @ Cleveland Guardians (2) (End of the 4th)"
     },
     {
         "game_id": 822995,
@@ -41,15 +41,15 @@
         "away_probable_pitcher": "Chase Burns",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
+        "away_score": 4,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "CIN leads 1-0",
-        "summary": "2026-04-21 - Cincinnati Reds (2) @ Tampa Bay Rays (0) (Top of the 1st)"
+        "summary": "2026-04-21 - Cincinnati Reds (4) @ Tampa Bay Rays (0) (Top of the 3rd)"
     },
     {
         "game_id": 823880,
@@ -67,15 +67,15 @@
         "away_probable_pitcher": "Dustin May",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
+        "away_score": 1,
+        "home_score": 1,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "MIA leads 1-0",
-        "summary": "2026-04-21 - St. Louis Cardinals (0) @ Miami Marlins (0) (Top of the 1st)"
+        "summary": "2026-04-21 - St. Louis Cardinals (1) @ Miami Marlins (1) (Top of the 3rd)"
     },
     {
         "game_id": 824290,
@@ -93,15 +93,15 @@
         "away_probable_pitcher": "Kyle Harrison",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 3,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-21 - Milwaukee Brewers (0) @ Detroit Tigers (0) (Top of the 1st)"
+        "summary": "2026-04-21 - Milwaukee Brewers (3) @ Detroit Tigers (0) (Top of the 3rd)"
     },
     {
         "game_id": 822747,
@@ -119,15 +119,15 @@
         "away_probable_pitcher": "Reynaldo L\u00f3pez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "away_score": 1,
+        "home_score": 3,
+        "current_inning": 2,
+        "inning_state": "Middle",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 1-0",
-        "summary": "2026-04-21 - Atlanta Braves (0) @ Washington Nationals (0) (Top of the 1st)"
+        "summary": "2026-04-21 - Atlanta Braves (1) @ Washington Nationals (3) (Middle of the 2nd)"
     },
     {
         "game_id": 824773,
@@ -145,9 +145,9 @@
         "away_probable_pitcher": "Luis Gil",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 3,
         "venue_name": "Fenway Park",
@@ -155,14 +155,14 @@
             "TBS"
         ],
         "series_status": null,
-        "summary": "2026-04-21 - New York Yankees (0) @ Boston Red Sox (0) (Top of the 1st)"
+        "summary": "2026-04-21 - New York Yankees (1) @ Boston Red Sox (0) (Top of the 3rd)"
     },
     {
         "game_id": 823640,
         "game_datetime": "2026-04-21T23:10:00Z",
         "game_date": "2026-04-21",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Minnesota Twins",
         "home_name": "New York Mets",
         "away_id": 142,
@@ -176,19 +176,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-21 - Minnesota Twins @ New York Mets (Pre-Game)"
+        "summary": "2026-04-21 - Minnesota Twins (0) @ New York Mets (0) (End of the 1st)"
     },
     {
         "game_id": 824127,
         "game_datetime": "2026-04-21T23:40:00Z",
         "game_date": "2026-04-21",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Baltimore Orioles",
         "home_name": "Kansas City Royals",
         "away_id": 110,
@@ -207,14 +207,14 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-04-21 - Baltimore Orioles @ Kansas City Royals (Pre-Game)"
+        "summary": "2026-04-21 - Baltimore Orioles @ Kansas City Royals (Warmup)"
     },
     {
         "game_id": 824690,
         "game_datetime": "2026-04-21T23:40:00Z",
         "game_date": "2026-04-21",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Philadelphia Phillies",
         "home_name": "Chicago Cubs",
         "away_id": 143,
@@ -233,7 +233,7 @@
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 1-0",
-        "summary": "2026-04-21 - Philadelphia Phillies @ Chicago Cubs (Pre-Game)"
+        "summary": "2026-04-21 - Philadelphia Phillies @ Chicago Cubs (Warmup)"
     },
     {
         "game_id": 822914,
