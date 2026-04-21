@@ -18,10 +18,129 @@ import json
 import html
 from typing import Union
 
-
-
 import json
 import html
+import unicodedata
+import re
+import html
+
+def fix_escaped_links_in_file(file_name: str) -> None:
+    """
+    Reads an HTML file line by line.
+    If a line contains an escaped <a> tag wrapped in <td>...</td>,
+    it unescapes the <a> tag and removes the <td> wrapper.
+    Overwrites the original file.
+    """
+
+    fixed_lines = []
+
+    with open(file_name, "r", encoding="utf-8") as f:
+        for line in f:
+            stripped = line.strip()
+
+            # Target only <td> that contains an escaped <a> tag
+            if stripped.startswith("<td>") and "&lt;a " in stripped:
+                # Remove <td> and </td>
+                inner = stripped[len("<td>"):-len("</td>")]
+
+                # Unescape HTML entities
+                unescaped = html.unescape(inner)
+                unescaped = f"<td>{unescaped}</td>"
+                fixed_lines.append(unescaped + "\n")
+            else:
+                fixed_lines.append(line)
+
+    with open(file_name, "w", encoding="utf-8") as f:
+        f.writelines(fixed_lines)
+
+def name_to_baseball_reference_anchor(name: str) -> str:
+    """
+    Convert a player's name into a Baseball-Reference HTML <a> tag.
+    """
+
+    # Normalize accents (Ramón → Ramon)
+    normalized = unicodedata.normalize("NFKD", name)
+    normalized = normalized.encode("ASCII", "ignore").decode("ASCII")
+
+    parts = normalized.strip().split()
+    if len(parts) < 2:
+        raise ValueError("Name must include at least first and last name")
+
+    first_name = re.sub(r"[^a-z]", "", parts[0].lower())
+    last_name = re.sub(r"[^a-z]", "", parts[-1].lower())
+
+    last_initial = last_name[0]
+    slug = f"{last_name[:5]}{first_name[:2]}01"
+
+    url = f"https://www.baseball-reference.com/players/{last_initial}/{slug}.shtml"
+
+    return f'<a href="{url}" target="_blank">{name}</a>'
+
+def flatten_dict(
+    data,
+    parent_key="",
+    sep=".",
+    flatten_lists=True,
+    list_index=0
+):
+    """
+    Flattens a nested dictionary into a single-level dictionary.
+    Parameters
+    ----------
+    data : dict
+        Input dictionary
+    parent_key : str
+        Used internally for recursion
+    sep : str
+        Separator for nested keys
+    flatten_lists : bool
+        If True, lists are flattened by taking one element
+    list_index : int
+        Which index of a list to flatten (default = 0)
+
+    Returns
+    -------
+    dict
+        Flattened dictionary
+    """
+
+    items = {}
+
+    for key, value in data.items():
+        new_key = f"{parent_key}{sep}{key}" if parent_key else key
+
+        # Case 1: Nested dictionary
+        if isinstance(value, dict):
+            items.update(flatten_dict(value, new_key, sep, flatten_lists, list_index))
+
+        # Case 2: List (e.g. your "stats")
+        elif isinstance(value, list) and flatten_lists:
+            if value and isinstance(value[list_index], dict):
+                items.update(
+                    flatten_dict(
+                        value[list_index],
+                        new_key,
+                        sep,
+                        flatten_lists,
+                        list_index
+                    )
+                )
+            else:
+                items[new_key] = value
+
+        # Case 3: Base value
+        else:
+            items[new_key] = value
+
+    return items
+
+def get_season_stats(p_id):
+    try:
+        beans = statsapi.player_stat_data(p_id, group="hitting", type="season")
+    except:
+        beans = {}
+    # beans = statsapi.player_stat_data(p_id, group="[hitting]", type="season", sportId=1, season=2026)
+    return beans
 
 def json_to_html_table(json_path: str) -> str:
     """

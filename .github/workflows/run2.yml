@@ -2,7 +2,7 @@ name: Run2
 
 on:
   schedule:
-    - cron: "10 10 * * *"  # Runs at 10:10 UTC (6:10 AM EDT)
+    - cron: "30 10-23 * * *"  # Runs at 10:10 UTC (6:10 AM EDT)
 jobs:
   run-script:
     runs-on: ubuntu-latest
@@ -23,7 +23,7 @@ jobs:
 
       - name: Run the Python script
         run: |
-          python run_script2.py
+          python run_script_mlb.py
 
       - name: Commit and push changes
         run: |
