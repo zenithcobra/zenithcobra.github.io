@@ -35,7 +35,7 @@
         "game_datetime": "2026-04-22T17:10:00Z",
         "game_date": "2026-04-22",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Houston Astros",
         "home_name": "Cleveland Guardians",
         "away_id": 117,
@@ -59,7 +59,7 @@
         "winning_pitcher": "Peter Lambert",
         "losing_pitcher": "Tanner Bibee",
         "save_pitcher": "Enyel De Los Santos",
-        "summary": "2026-04-22 - Houston Astros (2) @ Cleveland Guardians (0) (Game Over)"
+        "summary": "2026-04-22 - Houston Astros (2) @ Cleveland Guardians (0) (Final)"
     },
     {
         "game_id": 822993,
@@ -109,14 +109,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 8,
-        "home_score": 4,
-        "current_inning": 6,
-        "inning_state": "Bottom",
+        "home_score": 6,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-22 - Baltimore Orioles (8) @ Kansas City Royals (4) (Bottom of the 6th)"
+        "summary": "2026-04-22 - Baltimore Orioles (8) @ Kansas City Royals (6) (Top of the 9th)"
     },
     {
         "game_id": 824044,
@@ -135,21 +135,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 3,
+        "home_score": 2,
+        "current_inning": 5,
         "inning_state": "Bottom",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
         "series_status": "TOR leads 2-0",
-        "summary": "2026-04-22 - Toronto Blue Jays (0) @ Los Angeles Angels (0) (Bottom of the 3rd)"
+        "summary": "2026-04-22 - Toronto Blue Jays (0) @ Los Angeles Angels (2) (Bottom of the 5th)"
     },
     {
         "game_id": 823147,
         "game_datetime": "2026-04-22T20:10:00Z",
         "game_date": "2026-04-22",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Athletics",
         "home_name": "Seattle Mariners",
         "away_id": 133,
@@ -160,15 +160,15 @@
         "away_probable_pitcher": "Aaron Civale",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "ATH leads 2-0",
-        "summary": "2026-04-22 - Athletics @ Seattle Mariners (Warmup)"
+        "summary": "2026-04-22 - Athletics (2) @ Seattle Mariners (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824286,
@@ -281,7 +281,7 @@
         "game_datetime": "2026-04-22T23:40:00Z",
         "game_date": "2026-04-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "Chicago Cubs",
         "away_id": 143,
@@ -300,14 +300,14 @@
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 2-0",
-        "summary": "2026-04-22 - Philadelphia Phillies @ Chicago Cubs (Scheduled)"
+        "summary": "2026-04-22 - Philadelphia Phillies @ Chicago Cubs (Pre-Game)"
     },
     {
         "game_id": 822913,
         "game_datetime": "2026-04-23T00:05:00Z",
         "game_date": "2026-04-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Texas Rangers",
         "away_id": 134,
@@ -325,15 +325,15 @@
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-22 - Pittsburgh Pirates @ Texas Rangers (Scheduled)"
+        "series_status": "TEX leads 1-0",
+        "summary": "2026-04-22 - Pittsburgh Pirates @ Texas Rangers (Pre-Game)"
     },
     {
         "game_id": 824367,
         "game_datetime": "2026-04-23T00:40:00Z",
         "game_date": "2026-04-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Diego Padres",
         "home_name": "Colorado Rockies",
         "away_id": 135,
@@ -351,15 +351,15 @@
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-22 - San Diego Padres @ Colorado Rockies (Scheduled)"
+        "series_status": "SD leads 1-0",
+        "summary": "2026-04-22 - San Diego Padres @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 825097,
         "game_datetime": "2026-04-23T01:40:00Z",
         "game_date": "2026-04-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago White Sox",
         "home_name": "Arizona Diamondbacks",
         "away_id": 145,
@@ -377,8 +377,8 @@
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-22 - Chicago White Sox @ Arizona Diamondbacks (Scheduled)"
+        "series_status": "CWS leads 1-0",
+        "summary": "2026-04-22 - Chicago White Sox @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 823231,
