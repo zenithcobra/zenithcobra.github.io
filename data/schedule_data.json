@@ -128,7 +128,7 @@
         "game_datetime": "2026-04-22T19:07:00Z",
         "game_date": "2026-04-22",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Toronto Blue Jays",
         "home_name": "Los Angeles Angels",
         "away_id": 141,
@@ -146,8 +146,13 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": "TOR leads 2-0",
-        "summary": "2026-04-22 - Toronto Blue Jays (3) @ Los Angeles Angels (7) (Top of the 9th)"
+        "series_status": "TOR wins 2-1",
+        "winning_team": "Los Angeles Angels",
+        "losing_team": "Toronto Blue Jays",
+        "winning_pitcher": "Brent Suter",
+        "losing_pitcher": "Tommy Nance",
+        "save_pitcher": null,
+        "summary": "2026-04-22 - Toronto Blue Jays (3) @ Los Angeles Angels (7) (Final)"
     },
     {
         "game_id": 823147,
@@ -166,21 +171,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 2,
-        "current_inning": 5,
-        "inning_state": "Top",
+        "home_score": 3,
+        "current_inning": 7,
+        "inning_state": "Bottom",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "ATH leads 2-0",
-        "summary": "2026-04-22 - Athletics (3) @ Seattle Mariners (2) (Top of the 5th)"
+        "summary": "2026-04-22 - Athletics (3) @ Seattle Mariners (3) (Bottom of the 7th)"
     },
     {
         "game_id": 824286,
         "game_datetime": "2026-04-22T22:40:00Z",
         "game_date": "2026-04-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Milwaukee Brewers",
         "home_name": "Detroit Tigers",
         "away_id": 158,
@@ -199,7 +204,7 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "MIL leads 1-0",
-        "summary": "2026-04-22 - Milwaukee Brewers @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-04-22 - Milwaukee Brewers @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 822748,
@@ -232,7 +237,7 @@
         "game_datetime": "2026-04-22T22:45:00Z",
         "game_date": "2026-04-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Yankees",
         "home_name": "Boston Red Sox",
         "away_id": 147,
@@ -253,7 +258,7 @@
             "MLB Network"
         ],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-04-22 - New York Yankees @ Boston Red Sox (Pre-Game)"
+        "summary": "2026-04-22 - New York Yankees @ Boston Red Sox (Warmup)"
     },
     {
         "game_id": 823641,
@@ -323,10 +328,10 @@
         "away_probable_pitcher": "Braxton Ashcraft",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
@@ -390,7 +395,7 @@
         "game_datetime": "2026-04-23T01:45:00Z",
         "game_date": "2026-04-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Dodgers",
         "home_name": "San Francisco Giants",
         "away_id": 119,
@@ -408,7 +413,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-22 - Los Angeles Dodgers @ San Francisco Giants (Scheduled)"
+        "series_status": "SF leads 1-0",
+        "summary": "2026-04-22 - Los Angeles Dodgers @ San Francisco Giants (Pre-Game)"
     }
 ]
