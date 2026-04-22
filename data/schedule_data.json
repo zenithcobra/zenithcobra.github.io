@@ -15,10 +15,10 @@
         "away_probable_pitcher": "Kyle Leahy",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
@@ -30,7 +30,7 @@
         "game_datetime": "2026-04-22T17:10:00Z",
         "game_date": "2026-04-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Houston Astros",
         "home_name": "Cleveland Guardians",
         "away_id": 117,
@@ -48,15 +48,15 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-22 - Houston Astros @ Cleveland Guardians (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-04-22 - Houston Astros @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 822993,
         "game_datetime": "2026-04-22T17:10:00Z",
         "game_date": "2026-04-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cincinnati Reds",
         "home_name": "Tampa Bay Rays",
         "away_id": 113,
@@ -67,15 +67,15 @@
         "away_probable_pitcher": "Brandon Williamson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-22 - Cincinnati Reds @ Tampa Bay Rays (Scheduled)"
+        "series_status": "CIN leads 2-0",
+        "summary": "2026-04-22 - Cincinnati Reds @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 824123,
@@ -232,7 +232,7 @@
         "national_broadcasts": [
             "MLB Network"
         ],
-        "series_status": "NYY leads 1-0",
+        "series_status": null,
         "summary": "2026-04-22 - New York Yankees @ Boston Red Sox (Scheduled)"
     },
     {
