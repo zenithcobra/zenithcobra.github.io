@@ -8,17 +8,17 @@
     {
         "Venue": "Nationals Park",
         "Location": "Washington",
+        "HR": "41"
+    },
+    {
+        "Venue": "T-Mobile Park",
+        "Location": "Seattle",
         "HR": "38"
     },
     {
         "Venue": "Minute Maid Park",
         "Location": "Houston",
         "HR": "38"
-    },
-    {
-        "Venue": "T-Mobile Park",
-        "Location": "Seattle",
-        "HR": "37"
     },
     {
         "Venue": "Citizens Bank Park",
@@ -111,6 +111,11 @@
         "HR": "19"
     },
     {
+        "Venue": "Comerica Park",
+        "Location": "Detroit",
+        "HR": "18"
+    },
+    {
         "Venue": "Citi Field",
         "Location": "New York",
         "HR": "17"
@@ -118,11 +123,6 @@
     {
         "Venue": "Target Field",
         "Location": "Minneapolis",
-        "HR": "17"
-    },
-    {
-        "Venue": "Comerica Park",
-        "Location": "Detroit",
         "HR": "17"
     },
     {
@@ -136,13 +136,13 @@
         "HR": "14"
     },
     {
-        "Venue": "Oracle Park",
-        "Location": "San Francisco",
-        "HR": "10"
-    },
-    {
         "Venue": "Fenway Park",
         "Location": "Boston",
+        "HR": "11"
+    },
+    {
+        "Venue": "Oracle Park",
+        "Location": "San Francisco",
         "HR": "10"
     },
     {
