@@ -4,7 +4,7 @@
         "game_datetime": "2026-04-22T16:10:00Z",
         "game_date": "2026-04-22",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "St. Louis Cardinals",
         "home_name": "Miami Marlins",
         "away_id": 138,
@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "home_score": 1,
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-22 - St. Louis Cardinals @ Miami Marlins (Warmup)"
+        "summary": "2026-04-22 - St. Louis Cardinals (0) @ Miami Marlins (1) (Bottom of the 2nd)"
     },
     {
         "game_id": 824449,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-04-22T19:07:00Z",
         "game_date": "2026-04-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "Los Angeles Angels",
         "away_id": 141,
@@ -126,8 +126,8 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-22 - Toronto Blue Jays @ Los Angeles Angels (Scheduled)"
+        "series_status": "TOR leads 2-0",
+        "summary": "2026-04-22 - Toronto Blue Jays @ Los Angeles Angels (Pre-Game)"
     },
     {
         "game_id": 823147,
@@ -152,7 +152,7 @@
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "ATH leads 2-0",
         "summary": "2026-04-22 - Athletics @ Seattle Mariners (Scheduled)"
     },
     {
@@ -232,7 +232,7 @@
         "national_broadcasts": [
             "MLB Network"
         ],
-        "series_status": null,
+        "series_status": "NYY leads 1-0",
         "summary": "2026-04-22 - New York Yankees @ Boston Red Sox (Scheduled)"
     },
     {
