@@ -202,16 +202,16 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 1,
-        "current_inning": 5,
-        "inning_state": "Bottom",
+        "home_score": 2,
+        "current_inning": 7,
+        "inning_state": "Top",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [
             "FS1"
         ],
         "series_status": "NYY leads 2-0",
-        "summary": "2026-04-23 - New York Yankees (1) @ Boston Red Sox (1) (Bottom of the 5th)"
+        "summary": "2026-04-23 - New York Yankees (1) @ Boston Red Sox (2) (Top of the 7th)"
     },
     {
         "game_id": 823639,
@@ -230,21 +230,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "home_score": 3,
+        "current_inning": 2,
+        "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-23 - Minnesota Twins (1) @ New York Mets (0) (Bottom of the 1st)"
+        "summary": "2026-04-23 - Minnesota Twins (1) @ New York Mets (3) (Top of the 2nd)"
     },
     {
         "game_id": 822912,
         "game_datetime": "2026-04-24T00:05:00Z",
         "game_date": "2026-04-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Texas Rangers",
         "away_id": 134,
@@ -263,6 +263,6 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-23 - Pittsburgh Pirates @ Texas Rangers (Pre-Game)"
+        "summary": "2026-04-23 - Pittsburgh Pirates @ Texas Rangers (Warmup)"
     }
 ]
