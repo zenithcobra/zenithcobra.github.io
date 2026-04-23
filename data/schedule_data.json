@@ -66,7 +66,7 @@
         "game_datetime": "2026-04-23T18:20:00Z",
         "game_date": "2026-04-23",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Philadelphia Phillies",
         "home_name": "Chicago Cubs",
         "away_id": 143,
@@ -90,7 +90,7 @@
         "winning_pitcher": "Javier Assad",
         "losing_pitcher": "Tanner Banks",
         "save_pitcher": null,
-        "summary": "2026-04-23 - Philadelphia Phillies (7) @ Chicago Cubs (8) (Game Over)"
+        "summary": "2026-04-23 - Philadelphia Phillies (7) @ Chicago Cubs (8) (Final)"
     },
     {
         "game_id": 824368,
@@ -108,15 +108,15 @@
         "away_probable_pitcher": "Matt Waldron",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 4,
+        "away_score": 5,
         "home_score": 8,
-        "current_inning": 7,
-        "inning_state": "Bottom",
+        "current_inning": 8,
+        "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-23 - San Diego Padres (4) @ Colorado Rockies (8) (Bottom of the 7th)"
+        "summary": "2026-04-23 - San Diego Padres (5) @ Colorado Rockies (8) (Top of the 8th)"
     },
     {
         "game_id": 825096,
@@ -136,13 +136,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 1,
-        "current_inning": 7,
-        "inning_state": "Top",
+        "current_inning": 8,
+        "inning_state": "Middle",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-23 - Chicago White Sox (1) @ Arizona Diamondbacks (1) (Top of the 7th)"
+        "summary": "2026-04-23 - Chicago White Sox (1) @ Arizona Diamondbacks (1) (Middle of the 8th)"
     },
     {
         "game_id": 823233,
@@ -162,13 +162,13 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 0,
-        "current_inning": 8,
-        "inning_state": "Top",
+        "current_inning": 9,
+        "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "SF leads 2-0",
-        "summary": "2026-04-23 - Los Angeles Dodgers (3) @ San Francisco Giants (0) (Top of the 8th)"
+        "summary": "2026-04-23 - Los Angeles Dodgers (3) @ San Francisco Giants (0) (Bottom of the 9th)"
     },
     {
         "game_id": 824770,
