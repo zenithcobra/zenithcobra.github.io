@@ -77,15 +77,15 @@
         "away_probable_pitcher": "Cristopher S\u00e1nchez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 6,
-        "home_score": 6,
-        "current_inning": 8,
+        "away_score": 7,
+        "home_score": 7,
+        "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 3-0",
-        "summary": "2026-04-23 - Philadelphia Phillies (6) @ Chicago Cubs (6) (Top of the 8th)"
+        "summary": "2026-04-23 - Philadelphia Phillies (7) @ Chicago Cubs (7) (Top of the 9th)"
     },
     {
         "game_id": 824368,
@@ -103,15 +103,15 @@
         "away_probable_pitcher": "Matt Waldron",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
-        "home_score": 5,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "away_score": 4,
+        "home_score": 6,
+        "current_inning": 5,
+        "inning_state": "Middle",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-23 - San Diego Padres (3) @ Colorado Rockies (5) (Bottom of the 4th)"
+        "summary": "2026-04-23 - San Diego Padres (4) @ Colorado Rockies (6) (Middle of the 5th)"
     },
     {
         "game_id": 825096,
@@ -131,13 +131,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 1,
-        "current_inning": 3,
-        "inning_state": "End",
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-23 - Chicago White Sox (1) @ Arizona Diamondbacks (1) (End of the 3rd)"
+        "summary": "2026-04-23 - Chicago White Sox (1) @ Arizona Diamondbacks (1) (Top of the 5th)"
     },
     {
         "game_id": 823233,
@@ -155,15 +155,15 @@
         "away_probable_pitcher": "Tyler Glasnow",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 3,
         "home_score": 0,
-        "current_inning": 3,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "SF leads 2-0",
-        "summary": "2026-04-23 - Los Angeles Dodgers (1) @ San Francisco Giants (0) (Bottom of the 3rd)"
+        "summary": "2026-04-23 - Los Angeles Dodgers (3) @ San Francisco Giants (0) (Bottom of the 4th)"
     },
     {
         "game_id": 824770,
@@ -224,7 +224,7 @@
         "game_datetime": "2026-04-24T00:05:00Z",
         "game_date": "2026-04-23",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Texas Rangers",
         "away_id": 134,
@@ -242,7 +242,7 @@
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-23 - Pittsburgh Pirates @ Texas Rangers (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-04-23 - Pittsburgh Pirates @ Texas Rangers (Pre-Game)"
     }
 ]
