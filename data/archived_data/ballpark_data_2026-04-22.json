@@ -1,13 +1,13 @@
 [
     {},
     {
-        "Venue": "Nationals Park",
-        "Location": "Washington",
-        "HR": "44"
-    },
-    {
         "Venue": "Yankee Stadium",
         "Location": "Bronx",
+        "HR": "41"
+    },
+    {
+        "Venue": "Nationals Park",
+        "Location": "Washington",
         "HR": "41"
     },
     {
@@ -28,7 +28,7 @@
     {
         "Venue": "Wrigley Field",
         "Location": "Chicago",
-        "HR": "33"
+        "HR": "31"
     },
     {
         "Venue": "American Family Field",
@@ -43,11 +43,6 @@
     {
         "Venue": "Rogers Centre",
         "Location": "Toronto",
-        "HR": "30"
-    },
-    {
-        "Venue": "Chase Field",
-        "Location": "Phoenix",
         "HR": "30"
     },
     {
@@ -71,14 +66,19 @@
         "HR": "27"
     },
     {
-        "Venue": "Coors Field",
-        "Location": "Denver",
-        "HR": "27"
-    },
-    {
         "Venue": "Kauffman Stadium",
         "Location": "Kansas City",
         "HR": "27"
+    },
+    {
+        "Venue": "Coors Field",
+        "Location": "Denver",
+        "HR": "25"
+    },
+    {
+        "Venue": "Chase Field",
+        "Location": "Phoenix",
+        "HR": "24"
     },
     {
         "Venue": "Truist Park",
@@ -91,13 +91,13 @@
         "HR": "22"
     },
     {
-        "Venue": "Busch Stadium",
-        "Location": "St. Louis",
+        "Venue": "Marlins Park",
+        "Location": "Miami",
         "HR": "21"
     },
     {
-        "Venue": "Marlins Park",
-        "Location": "Miami",
+        "Venue": "Busch Stadium",
+        "Location": "St. Louis",
         "HR": "21"
     },
     {
@@ -113,12 +113,12 @@
     {
         "Venue": "Comerica Park",
         "Location": "Detroit",
-        "HR": "19"
+        "HR": "18"
     },
     {
         "Venue": "Citi Field",
         "Location": "New York",
-        "HR": "18"
+        "HR": "17"
     },
     {
         "Venue": "Target Field",
@@ -136,18 +136,18 @@
         "HR": "14"
     },
     {
-        "Venue": "Oracle Park",
-        "Location": "San Francisco",
-        "HR": "11"
-    },
-    {
         "Venue": "Fenway Park",
         "Location": "Boston",
         "HR": "11"
     },
     {
+        "Venue": "Oracle Park",
+        "Location": "San Francisco",
+        "HR": "10"
+    },
+    {
         "Venue": "Globe Life Field",
         "Location": "Arlington",
-        "HR": "9"
+        "HR": "7"
     }
 ]
