@@ -15,15 +15,15 @@
         "away_probable_pitcher": "JR Ritchie",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 1,
-        "current_inning": 3,
-        "inning_state": "End",
+        "current_inning": 4,
+        "inning_state": "Middle",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 2-1",
-        "summary": "2026-04-23 - Atlanta Braves (0) @ Washington Nationals (1) (End of the 3rd)"
+        "summary": "2026-04-23 - Atlanta Braves (2) @ Washington Nationals (1) (Middle of the 4th)"
     },
     {
         "game_id": 824288,
@@ -41,22 +41,22 @@
         "away_probable_pitcher": "Brandon Sproat",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 2,
-        "current_inning": 3,
-        "inning_state": "Bottom",
+        "current_inning": 4,
+        "inning_state": "Middle",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-23 - Milwaukee Brewers (0) @ Detroit Tigers (2) (Bottom of the 3rd)"
+        "summary": "2026-04-23 - Milwaukee Brewers (1) @ Detroit Tigers (2) (Middle of the 4th)"
     },
     {
         "game_id": 824689,
         "game_datetime": "2026-04-23T18:20:00Z",
         "game_date": "2026-04-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Philadelphia Phillies",
         "home_name": "Chicago Cubs",
         "away_id": 143,
@@ -75,7 +75,7 @@
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 3-0",
-        "summary": "2026-04-23 - Philadelphia Phillies @ Chicago Cubs (Pre-Game)"
+        "summary": "2026-04-23 - Philadelphia Phillies @ Chicago Cubs (Warmup)"
     },
     {
         "game_id": 824368,
