@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 2,
-        "current_inning": 6,
-        "inning_state": "Bottom",
+        "current_inning": 7,
+        "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 2-1",
-        "summary": "2026-04-23 - Atlanta Braves (2) @ Washington Nationals (2) (Bottom of the 6th)"
+        "summary": "2026-04-23 - Atlanta Braves (2) @ Washington Nationals (2) (Top of the 7th)"
     },
     {
         "game_id": 824288,
@@ -43,13 +43,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 3,
-        "current_inning": 6,
-        "inning_state": "Bottom",
+        "current_inning": 7,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-23 - Milwaukee Brewers (1) @ Detroit Tigers (3) (Bottom of the 6th)"
+        "summary": "2026-04-23 - Milwaukee Brewers (1) @ Detroit Tigers (3) (Top of the 7th)"
     },
     {
         "game_id": 824689,
@@ -68,21 +68,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 0,
+        "home_score": 1,
         "current_inning": 2,
-        "inning_state": "Bottom",
+        "inning_state": "End",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 3-0",
-        "summary": "2026-04-23 - Philadelphia Phillies (1) @ Chicago Cubs (0) (Bottom of the 2nd)"
+        "summary": "2026-04-23 - Philadelphia Phillies (1) @ Chicago Cubs (1) (End of the 2nd)"
     },
     {
         "game_id": 824368,
         "game_datetime": "2026-04-23T19:10:00Z",
         "game_date": "2026-04-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "San Diego Padres",
         "home_name": "Colorado Rockies",
         "away_id": 135,
@@ -101,7 +101,7 @@
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-23 - San Diego Padres @ Colorado Rockies (Pre-Game)"
+        "summary": "2026-04-23 - San Diego Padres @ Colorado Rockies (Warmup)"
     },
     {
         "game_id": 825096,
