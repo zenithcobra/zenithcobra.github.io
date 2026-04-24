@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Framber Valdez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 4,
         "home_score": 0,
         "current_inning": 3,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-24 - Detroit Tigers (1) @ Cincinnati Reds (0) (Top of the 3rd)"
+        "summary": "2026-04-24 - Detroit Tigers (4) @ Cincinnati Reds (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 824854,
@@ -41,15 +41,15 @@
         "away_probable_pitcher": "Brayan Bello",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 4,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "away_score": 1,
+        "home_score": 5,
+        "current_inning": 2,
+        "inning_state": "End",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-24 - Boston Red Sox (0) @ Baltimore Orioles (4) (Bottom of the 1st)"
+        "summary": "2026-04-24 - Boston Red Sox (1) @ Baltimore Orioles (5) (End of the 2nd)"
     },
     {
         "game_id": 822827,
@@ -68,14 +68,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 5,
-        "home_score": 0,
-        "current_inning": 1,
+        "home_score": 2,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-24 - Cleveland Guardians (5) @ Toronto Blue Jays (0) (Top of the 1st)"
+        "summary": "2026-04-24 - Cleveland Guardians (5) @ Toronto Blue Jays (2) (Top of the 2nd)"
     },
     {
         "game_id": 823638,
@@ -94,14 +94,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "home_score": 1,
+        "current_inning": 3,
+        "inning_state": "Middle",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-24 - Colorado Rockies (0) @ New York Mets (0) (Top of the 2nd)"
+        "summary": "2026-04-24 - Colorado Rockies (0) @ New York Mets (1) (Middle of the 3rd)"
     },
     {
         "game_id": 822992,
@@ -121,13 +121,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 1,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-24 - Minnesota Twins (0) @ Tampa Bay Rays (1) (Top of the 2nd)"
+        "summary": "2026-04-24 - Minnesota Twins (0) @ Tampa Bay Rays (1) (Bottom of the 3rd)"
     },
     {
         "game_id": 824932,
@@ -145,24 +145,24 @@
         "away_probable_pitcher": "Andrew Painter",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-04-24 - Philadelphia Phillies (0) @ Atlanta Braves (0) (Bottom of the 1st)"
+        "summary": "2026-04-24 - Philadelphia Phillies (2) @ Atlanta Braves (0) (Top of the 3rd)"
     },
     {
         "game_id": 824124,
         "game_datetime": "2026-04-24T23:40:00Z",
         "game_date": "2026-04-24",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Los Angeles Angels",
         "home_name": "Kansas City Royals",
         "away_id": 108,
@@ -176,19 +176,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-24 - Los Angeles Angels @ Kansas City Royals (Warmup)"
+        "summary": "2026-04-24 - Los Angeles Angels (0) @ Kansas City Royals (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824611,
         "game_datetime": "2026-04-24T23:40:00Z",
         "game_date": "2026-04-24",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Washington Nationals",
         "home_name": "Chicago White Sox",
         "away_id": 120,
@@ -207,14 +207,14 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-24 - Washington Nationals @ Chicago White Sox (Pre-Game)"
+        "summary": "2026-04-24 - Washington Nationals (0) @ Chicago White Sox (0) (Top of the 1st)"
     },
     {
         "game_id": 823800,
         "game_datetime": "2026-04-24T23:40:00Z",
         "game_date": "2026-04-24",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Milwaukee Brewers",
         "away_id": 134,
@@ -228,12 +228,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-24 - Pittsburgh Pirates @ Milwaukee Brewers (Warmup)"
+        "summary": "2026-04-24 - Pittsburgh Pirates (0) @ Milwaukee Brewers (0) (Middle of the 1st)"
     },
     {
         "game_id": 822909,
@@ -266,7 +266,7 @@
         "game_datetime": "2026-04-25T00:10:00Z",
         "game_date": "2026-04-24",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Yankees",
         "home_name": "Houston Astros",
         "away_id": 147,
@@ -285,7 +285,7 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-24 - New York Yankees @ Houston Astros (Pre-Game)"
+        "summary": "2026-04-24 - New York Yankees @ Houston Astros (Warmup)"
     },
     {
         "game_id": 823069,
@@ -357,10 +357,10 @@
         "away_probable_pitcher": "Sandy Alcantara",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
