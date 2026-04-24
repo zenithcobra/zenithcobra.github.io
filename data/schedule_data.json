@@ -30,7 +30,7 @@
         "game_datetime": "2026-04-24T23:05:00Z",
         "game_date": "2026-04-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Baltimore Orioles",
         "away_id": 111,
@@ -49,14 +49,14 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-24 - Boston Red Sox @ Baltimore Orioles (Scheduled)"
+        "summary": "2026-04-24 - Boston Red Sox @ Baltimore Orioles (Pre-Game)"
     },
     {
         "game_id": 822827,
         "game_datetime": "2026-04-24T23:07:00Z",
         "game_date": "2026-04-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Toronto Blue Jays",
         "away_id": 114,
@@ -75,7 +75,7 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-24 - Cleveland Guardians @ Toronto Blue Jays (Scheduled)"
+        "summary": "2026-04-24 - Cleveland Guardians @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 823638,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-04-24T23:10:00Z",
         "game_date": "2026-04-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Tampa Bay Rays",
         "away_id": 142,
@@ -119,22 +119,22 @@
         "away_probable_pitcher": "Taj Bradley",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-24 - Minnesota Twins @ Tampa Bay Rays (Scheduled)"
+        "summary": "2026-04-24 - Minnesota Twins @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 824932,
         "game_datetime": "2026-04-24T23:15:00Z",
         "game_date": "2026-04-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "Atlanta Braves",
         "away_id": 143,
@@ -155,14 +155,14 @@
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-04-24 - Philadelphia Phillies @ Atlanta Braves (Scheduled)"
+        "summary": "2026-04-24 - Philadelphia Phillies @ Atlanta Braves (Pre-Game)"
     },
     {
         "game_id": 824124,
         "game_datetime": "2026-04-24T23:40:00Z",
         "game_date": "2026-04-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Kansas City Royals",
         "away_id": 108,
@@ -181,7 +181,7 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-24 - Los Angeles Angels @ Kansas City Royals (Scheduled)"
+        "summary": "2026-04-24 - Los Angeles Angels @ Kansas City Royals (Pre-Game)"
     },
     {
         "game_id": 824611,
@@ -292,7 +292,7 @@
         "game_datetime": "2026-04-25T00:15:00Z",
         "game_date": "2026-04-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "St. Louis Cardinals",
         "away_id": 136,
@@ -311,7 +311,7 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-24 - Seattle Mariners @ St. Louis Cardinals (Scheduled)"
+        "summary": "2026-04-24 - Seattle Mariners @ St. Louis Cardinals (Pre-Game)"
     },
     {
         "game_id": 823962,
