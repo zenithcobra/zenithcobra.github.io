@@ -111,21 +111,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 4,
-        "current_inning": 7,
+        "home_score": 5,
+        "current_inning": 8,
         "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "MIA leads 1-0",
-        "summary": "2026-04-25 - Miami Marlins (1) @ San Francisco Giants (4) (Bottom of the 7th)"
+        "summary": "2026-04-25 - Miami Marlins (1) @ San Francisco Giants (5) (Bottom of the 8th)"
     },
     {
         "game_id": 822989,
         "game_datetime": "2026-04-25T20:10:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Minnesota Twins",
         "home_name": "Tampa Bay Rays",
         "away_id": 142,
@@ -136,15 +136,20 @@
         "away_probable_pitcher": "Bailey Ober",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 5,
-        "current_inning": 8,
-        "inning_state": "Bottom",
+        "away_score": 1,
+        "home_score": 6,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
-        "series_status": "TB leads 1-0",
-        "summary": "2026-04-25 - Minnesota Twins (0) @ Tampa Bay Rays (5) (Bottom of the 8th)"
+        "series_status": "TB wins 2-0",
+        "winning_team": "Tampa Bay Rays",
+        "losing_team": "Minnesota Twins",
+        "winning_pitcher": "Shane McClanahan",
+        "losing_pitcher": "Bailey Ober",
+        "save_pitcher": null,
+        "summary": "2026-04-25 - Minnesota Twins (1) @ Tampa Bay Rays (6) (Final)"
     },
     {
         "game_id": 824613,
@@ -163,14 +168,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 1,
-        "current_inning": 8,
-        "inning_state": "Bottom",
+        "home_score": 2,
+        "current_inning": 10,
+        "inning_state": "Top",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-04-25 - Washington Nationals (2) @ Chicago White Sox (1) (Bottom of the 8th)"
+        "summary": "2026-04-25 - Washington Nationals (2) @ Chicago White Sox (2) (Top of the 10th)"
     },
     {
         "game_id": 825093,
@@ -189,21 +194,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "home_score": 4,
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 5340,
         "venue_name": "Estadio Alfredo Harp Helu",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-25 - San Diego Padres (0) @ Arizona Diamondbacks (0) (Bottom of the 1st)"
+        "summary": "2026-04-25 - San Diego Padres (0) @ Arizona Diamondbacks (4) (Top of the 3rd)"
     },
     {
         "game_id": 822910,
         "game_datetime": "2026-04-25T23:05:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Athletics",
         "home_name": "Texas Rangers",
         "away_id": 133,
@@ -222,14 +227,14 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "ATH leads 1-0",
-        "summary": "2026-04-25 - Athletics @ Texas Rangers (Pre-Game)"
+        "summary": "2026-04-25 - Athletics @ Texas Rangers (Warmup)"
     },
     {
         "game_id": 824121,
         "game_datetime": "2026-04-25T23:10:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Los Angeles Angels",
         "home_name": "Kansas City Royals",
         "away_id": 108,
@@ -248,7 +253,7 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "KC leads 1-0",
-        "summary": "2026-04-25 - Los Angeles Angels @ Kansas City Royals (Pre-Game)"
+        "summary": "2026-04-25 - Los Angeles Angels @ Kansas City Royals (Warmup)"
     },
     {
         "game_id": 824203,
@@ -281,7 +286,7 @@
         "game_datetime": "2026-04-25T23:10:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Milwaukee Brewers",
         "away_id": 134,
@@ -300,7 +305,7 @@
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "PIT leads 1-0",
-        "summary": "2026-04-25 - Pittsburgh Pirates @ Milwaukee Brewers (Pre-Game)"
+        "summary": "2026-04-25 - Pittsburgh Pirates @ Milwaukee Brewers (Warmup)"
     },
     {
         "game_id": 824527,

@@ -31,13 +31,13 @@
         "HR": "38"
     },
     {
-        "Venue": "Rogers Centre",
-        "Location": "Toronto",
+        "Venue": "Great American Ball Park",
+        "Location": "Cincinnati",
         "HR": "37"
     },
     {
-        "Venue": "Great American Ball Park",
-        "Location": "Cincinnati",
+        "Venue": "Rogers Centre",
+        "Location": "Toronto",
         "HR": "37"
     },
     {
@@ -51,11 +51,6 @@
         "HR": "33"
     },
     {
-        "Venue": "Chase Field",
-        "Location": "Phoenix",
-        "HR": "31"
-    },
-    {
         "Venue": "Coors Field",
         "Location": "Denver",
         "HR": "31"
@@ -63,6 +58,11 @@
     {
         "Venue": "American Family Field",
         "Location": "Milwaukee",
+        "HR": "31"
+    },
+    {
+        "Venue": "Chase Field",
+        "Location": "Phoenix",
         "HR": "31"
     },
     {
@@ -86,13 +86,13 @@
         "HR": "27"
     },
     {
-        "Venue": "Truist Park",
-        "Location": "Atlanta",
+        "Venue": "Tropicana Field",
+        "Location": "Tampa Bay",
         "HR": "26"
     },
     {
-        "Venue": "Tropicana Field",
-        "Location": "Tampa Bay",
+        "Venue": "Truist Park",
+        "Location": "Atlanta",
         "HR": "26"
     },
     {
@@ -121,8 +121,8 @@
         "HR": "20"
     },
     {
-        "Venue": "Globe Life Field",
-        "Location": "Arlington",
+        "Venue": "Oracle Park",
+        "Location": "San Francisco",
         "HR": "17"
     },
     {
@@ -131,14 +131,14 @@
         "HR": "17"
     },
     {
+        "Venue": "Globe Life Field",
+        "Location": "Arlington",
+        "HR": "17"
+    },
+    {
         "Venue": "Guaranteed Rate Field",
         "Location": "Chicago",
         "HR": "16"
-    },
-    {
-        "Venue": "Oracle Park",
-        "Location": "San Francisco",
-        "HR": "15"
     },
     {
         "Venue": "Angel Stadium",
@@ -149,5 +149,10 @@
         "Venue": "Fenway Park",
         "Location": "Boston",
         "HR": "13"
+    },
+    {
+        "Venue": "Unknown",
+        "Location": "",
+        "HR": "1"
     }
 ]
