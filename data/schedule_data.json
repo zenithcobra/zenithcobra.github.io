@@ -16,21 +16,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 7,
-        "home_score": 0,
-        "current_inning": 6,
-        "inning_state": "Top",
+        "home_score": 1,
+        "current_inning": 8,
+        "inning_state": "Bottom",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-04-25 - Boston Red Sox (7) @ Baltimore Orioles (0) (Top of the 6th)"
+        "summary": "2026-04-25 - Boston Red Sox (7) @ Baltimore Orioles (1) (Bottom of the 8th)"
     },
     {
         "game_id": 823070,
         "game_datetime": "2026-04-25T18:15:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Seattle Mariners",
         "home_name": "St. Louis Cardinals",
         "away_id": 136,
@@ -41,15 +41,15 @@
         "away_probable_pitcher": "Bryan Woo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "SEA leads 1-0",
-        "summary": "2026-04-25 - Seattle Mariners @ St. Louis Cardinals (Pre-Game)"
+        "summary": "2026-04-25 - Seattle Mariners (2) @ St. Louis Cardinals (0) (Middle of the 1st)"
     },
     {
         "game_id": 822826,
@@ -162,7 +162,7 @@
         "game_datetime": "2026-04-25T22:05:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Diego Padres",
         "home_name": "Arizona Diamondbacks",
         "away_id": 135,
@@ -173,15 +173,15 @@
         "away_probable_pitcher": "Germ\u00e1n M\u00e1rquez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5340,
         "venue_name": "Estadio Alfredo Harp Helu",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-25 - San Diego Padres @ Arizona Diamondbacks (Scheduled)"
+        "summary": "2026-04-25 - San Diego Padres @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 822910,
@@ -292,7 +292,7 @@
         "game_datetime": "2026-04-25T23:15:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Detroit Tigers",
         "home_name": "Cincinnati Reds",
         "away_id": 116,
@@ -312,8 +312,8 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": null,
-        "summary": "2026-04-25 - Detroit Tigers @ Cincinnati Reds (Scheduled)"
+        "series_status": "CIN leads 1-0",
+        "summary": "2026-04-25 - Detroit Tigers @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 823960,
