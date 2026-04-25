@@ -4,7 +4,7 @@
         "game_datetime": "2026-04-25T16:05:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Boston Red Sox",
         "home_name": "Baltimore Orioles",
         "away_id": 111,
@@ -18,12 +18,17 @@
         "away_score": 17,
         "home_score": 1,
         "current_inning": 9,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
-        "series_status": "BAL leads 1-0",
-        "summary": "2026-04-25 - Boston Red Sox (17) @ Baltimore Orioles (1) (Top of the 9th)"
+        "series_status": "Series tied 1-1",
+        "winning_team": "Boston Red Sox",
+        "losing_team": "Baltimore Orioles",
+        "winning_pitcher": "Garrett Crochet",
+        "losing_pitcher": "Trevor Rogers",
+        "save_pitcher": null,
+        "summary": "2026-04-25 - Boston Red Sox (17) @ Baltimore Orioles (1) (Final)"
     },
     {
         "game_id": 823070,
@@ -41,22 +46,22 @@
         "away_probable_pitcher": "Bryan Woo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 4,
-        "home_score": 3,
-        "current_inning": 2,
+        "away_score": 5,
+        "home_score": 7,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "SEA leads 1-0",
-        "summary": "2026-04-25 - Seattle Mariners (4) @ St. Louis Cardinals (3) (Bottom of the 2nd)"
+        "summary": "2026-04-25 - Seattle Mariners (5) @ St. Louis Cardinals (7) (Bottom of the 4th)"
     },
     {
         "game_id": 822826,
         "game_datetime": "2026-04-25T19:07:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Cleveland Guardians",
         "home_name": "Toronto Blue Jays",
         "away_id": 114,
@@ -69,15 +74,15 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [
             "FS1"
         ],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-04-25 - Cleveland Guardians @ Toronto Blue Jays (Pre-Game)"
+        "summary": "2026-04-25 - Cleveland Guardians (0) @ Toronto Blue Jays (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 823229,
@@ -188,7 +193,7 @@
         "game_datetime": "2026-04-25T23:05:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Athletics",
         "home_name": "Texas Rangers",
         "away_id": 133,
@@ -199,22 +204,22 @@
         "away_probable_pitcher": "Jeffrey Springs",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-25 - Athletics @ Texas Rangers (Scheduled)"
+        "series_status": "ATH leads 1-0",
+        "summary": "2026-04-25 - Athletics @ Texas Rangers (Pre-Game)"
     },
     {
         "game_id": 824121,
         "game_datetime": "2026-04-25T23:10:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Kansas City Royals",
         "away_id": 108,
@@ -232,15 +237,15 @@
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-25 - Los Angeles Angels @ Kansas City Royals (Scheduled)"
+        "series_status": "KC leads 1-0",
+        "summary": "2026-04-25 - Los Angeles Angels @ Kansas City Royals (Pre-Game)"
     },
     {
         "game_id": 824203,
         "game_datetime": "2026-04-25T23:10:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Yankees",
         "home_name": "Houston Astros",
         "away_id": 147,
@@ -258,8 +263,8 @@
         "venue_id": 2392,
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-25 - New York Yankees @ Houston Astros (Scheduled)"
+        "series_status": "NYY leads 1-0",
+        "summary": "2026-04-25 - New York Yankees @ Houston Astros (Pre-Game)"
     },
     {
         "game_id": 823799,
@@ -303,10 +308,10 @@
         "away_probable_pitcher": "Jack Flaherty",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [
@@ -320,7 +325,7 @@
         "game_datetime": "2026-04-25T23:15:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Los Angeles Dodgers",
         "away_id": 112,
@@ -340,8 +345,8 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": null,
-        "summary": "2026-04-25 - Chicago Cubs @ Los Angeles Dodgers (Scheduled)"
+        "series_status": "CHC leads 1-0",
+        "summary": "2026-04-25 - Chicago Cubs @ Los Angeles Dodgers (Pre-Game)"
     },
     {
         "game_id": 824933,
