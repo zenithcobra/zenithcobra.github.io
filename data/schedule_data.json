@@ -30,7 +30,7 @@
         "game_datetime": "2026-04-25T18:15:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "St. Louis Cardinals",
         "away_id": 136,
@@ -41,22 +41,22 @@
         "away_probable_pitcher": "Bryan Woo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-25 - Seattle Mariners @ St. Louis Cardinals (Scheduled)"
+        "series_status": "SEA leads 1-0",
+        "summary": "2026-04-25 - Seattle Mariners @ St. Louis Cardinals (Pre-Game)"
     },
     {
         "game_id": 822826,
         "game_datetime": "2026-04-25T19:07:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Toronto Blue Jays",
         "away_id": 114,
@@ -76,8 +76,8 @@
         "national_broadcasts": [
             "FS1"
         ],
-        "series_status": null,
-        "summary": "2026-04-25 - Cleveland Guardians @ Toronto Blue Jays (Scheduled)"
+        "series_status": "CLE leads 1-0",
+        "summary": "2026-04-25 - Cleveland Guardians @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 823229,
