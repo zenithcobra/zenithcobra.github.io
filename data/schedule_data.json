@@ -4,7 +4,7 @@
         "game_datetime": "2026-04-25T16:05:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Boston Red Sox",
         "home_name": "Baltimore Orioles",
         "away_id": 111,
@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-04-25 - Boston Red Sox @ Baltimore Orioles (Warmup)"
+        "summary": "2026-04-25 - Boston Red Sox (0) @ Baltimore Orioles (0) (Top of the 2nd)"
     },
     {
         "game_id": 823070,
@@ -84,7 +84,7 @@
         "game_datetime": "2026-04-25T20:05:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Miami Marlins",
         "home_name": "San Francisco Giants",
         "away_id": 146,
@@ -102,15 +102,15 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-25 - Miami Marlins @ San Francisco Giants (Scheduled)"
+        "series_status": "MIA leads 1-0",
+        "summary": "2026-04-25 - Miami Marlins @ San Francisco Giants (Pre-Game)"
     },
     {
         "game_id": 822989,
         "game_datetime": "2026-04-25T20:10:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Tampa Bay Rays",
         "away_id": 142,
@@ -121,22 +121,22 @@
         "away_probable_pitcher": "Bailey Ober",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-25 - Minnesota Twins @ Tampa Bay Rays (Scheduled)"
+        "series_status": "TB leads 1-0",
+        "summary": "2026-04-25 - Minnesota Twins @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 824613,
         "game_datetime": "2026-04-25T20:10:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Washington Nationals",
         "home_name": "Chicago White Sox",
         "away_id": 120,
@@ -154,8 +154,8 @@
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-25 - Washington Nationals @ Chicago White Sox (Scheduled)"
+        "series_status": "CWS leads 1-0",
+        "summary": "2026-04-25 - Washington Nationals @ Chicago White Sox (Pre-Game)"
     },
     {
         "game_id": 825093,
