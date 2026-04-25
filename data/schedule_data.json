@@ -66,7 +66,7 @@
         "game_datetime": "2026-04-25T19:07:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Cleveland Guardians",
         "home_name": "Toronto Blue Jays",
         "away_id": 114,
@@ -92,7 +92,7 @@
         "winning_pitcher": "Kevin Gausman",
         "losing_pitcher": "Joey Cantillo",
         "save_pitcher": "Louis Varland",
-        "summary": "2026-04-25 - Cleveland Guardians (3) @ Toronto Blue Jays (5) (Game Over)"
+        "summary": "2026-04-25 - Cleveland Guardians (3) @ Toronto Blue Jays (5) (Final)"
     },
     {
         "game_id": 823229,
@@ -111,14 +111,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 1,
-        "current_inning": 5,
-        "inning_state": "End",
+        "home_score": 4,
+        "current_inning": 7,
+        "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "MIA leads 1-0",
-        "summary": "2026-04-25 - Miami Marlins (1) @ San Francisco Giants (1) (End of the 5th)"
+        "summary": "2026-04-25 - Miami Marlins (1) @ San Francisco Giants (4) (Bottom of the 7th)"
     },
     {
         "game_id": 822989,
@@ -137,14 +137,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 2,
-        "current_inning": 7,
-        "inning_state": "Top",
+        "home_score": 5,
+        "current_inning": 8,
+        "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-04-25 - Minnesota Twins (0) @ Tampa Bay Rays (2) (Top of the 7th)"
+        "summary": "2026-04-25 - Minnesota Twins (0) @ Tampa Bay Rays (5) (Bottom of the 8th)"
     },
     {
         "game_id": 824613,
@@ -163,21 +163,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 0,
-        "current_inning": 6,
-        "inning_state": "End",
+        "home_score": 1,
+        "current_inning": 8,
+        "inning_state": "Bottom",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-04-25 - Washington Nationals (2) @ Chicago White Sox (0) (End of the 6th)"
+        "summary": "2026-04-25 - Washington Nationals (2) @ Chicago White Sox (1) (Bottom of the 8th)"
     },
     {
         "game_id": 825093,
         "game_datetime": "2026-04-25T22:05:00Z",
         "game_date": "2026-04-25",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "San Diego Padres",
         "home_name": "Arizona Diamondbacks",
         "away_id": 135,
@@ -191,12 +191,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 5340,
         "venue_name": "Estadio Alfredo Harp Helu",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-25 - San Diego Padres @ Arizona Diamondbacks (Warmup)"
+        "summary": "2026-04-25 - San Diego Padres (0) @ Arizona Diamondbacks (0) (Bottom of the 1st)"
     },
     {
         "game_id": 822910,
