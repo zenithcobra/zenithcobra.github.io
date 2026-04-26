@@ -4,7 +4,7 @@
         "game_datetime": "2026-04-26T17:35:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Boston Red Sox",
         "home_name": "Baltimore Orioles",
         "away_id": 111,
@@ -18,19 +18,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-26 - Boston Red Sox @ Baltimore Orioles (Warmup)"
+        "summary": "2026-04-26 - Boston Red Sox (0) @ Baltimore Orioles (0) (Middle of the 1st)"
     },
     {
         "game_id": 824934,
         "game_datetime": "2026-04-26T17:35:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Philadelphia Phillies",
         "home_name": "Atlanta Braves",
         "away_id": 143,
@@ -44,19 +44,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-26 - Philadelphia Phillies @ Atlanta Braves (Warmup)"
+        "summary": "2026-04-26 - Philadelphia Phillies (0) @ Atlanta Braves (0) (Bottom of the 1st)"
     },
     {
         "game_id": 822824,
         "game_datetime": "2026-04-26T17:37:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Cleveland Guardians",
         "home_name": "Toronto Blue Jays",
         "away_id": 114,
@@ -70,19 +70,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-26 - Cleveland Guardians @ Toronto Blue Jays (Warmup)"
+        "summary": "2026-04-26 - Cleveland Guardians (0) @ Toronto Blue Jays (0) (Middle of the 1st)"
     },
     {
         "game_id": 824528,
         "game_datetime": "2026-04-26T17:40:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Detroit Tigers",
         "home_name": "Cincinnati Reds",
         "away_id": 116,
@@ -101,14 +101,14 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "CIN leads 2-0",
-        "summary": "2026-04-26 - Detroit Tigers @ Cincinnati Reds (Warmup)"
+        "summary": "2026-04-26 - Detroit Tigers (0) @ Cincinnati Reds (0) (Top of the 1st)"
     },
     {
         "game_id": 823635,
         "game_datetime": "2026-04-26T17:40:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Colorado Rockies",
         "home_name": "New York Mets",
         "away_id": 115,
@@ -122,12 +122,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": "COL leads 1-0",
-        "summary": "2026-04-26 - Colorado Rockies @ New York Mets (Warmup)"
+        "summary": "2026-04-26 - Colorado Rockies (0) @ New York Mets (0) (Middle of the 1st)"
     },
     {
         "game_id": 823637,
@@ -160,7 +160,7 @@
         "game_datetime": "2026-04-26T17:40:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Minnesota Twins",
         "home_name": "Tampa Bay Rays",
         "away_id": 142,
@@ -174,19 +174,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TB leads 2-0",
-        "summary": "2026-04-26 - Minnesota Twins @ Tampa Bay Rays (Warmup)"
+        "summary": "2026-04-26 - Minnesota Twins (0) @ Tampa Bay Rays (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824612,
         "game_datetime": "2026-04-26T18:10:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Washington Nationals",
         "home_name": "Chicago White Sox",
         "away_id": 120,
@@ -205,14 +205,14 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-26 - Washington Nationals @ Chicago White Sox (Pre-Game)"
+        "summary": "2026-04-26 - Washington Nationals @ Chicago White Sox (Warmup)"
     },
     {
         "game_id": 824202,
         "game_datetime": "2026-04-26T18:10:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Yankees",
         "home_name": "Houston Astros",
         "away_id": 147,
@@ -231,14 +231,14 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": "NYY leads 2-0",
-        "summary": "2026-04-26 - New York Yankees @ Houston Astros (Pre-Game)"
+        "summary": "2026-04-26 - New York Yankees @ Houston Astros (Warmup)"
     },
     {
         "game_id": 823797,
         "game_datetime": "2026-04-26T18:10:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Milwaukee Brewers",
         "away_id": 134,
@@ -257,7 +257,7 @@
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "PIT leads 2-0",
-        "summary": "2026-04-26 - Pittsburgh Pirates @ Milwaukee Brewers (Pre-Game)"
+        "summary": "2026-04-26 - Pittsburgh Pirates @ Milwaukee Brewers (Warmup)"
     },
     {
         "game_id": 823068,
@@ -327,10 +327,10 @@
         "away_probable_pitcher": "Michael King",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5340,
         "venue_name": "Estadio Alfredo Harp Helu",
         "national_broadcasts": [],
@@ -353,10 +353,10 @@
         "away_probable_pitcher": "Max Meyer",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
@@ -396,7 +396,7 @@
         "game_datetime": "2026-04-26T20:10:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Los Angeles Dodgers",
         "away_id": 112,
@@ -414,7 +414,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-26 - Chicago Cubs @ Los Angeles Dodgers (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-04-26 - Chicago Cubs @ Los Angeles Dodgers (Pre-Game)"
     }
 ]
