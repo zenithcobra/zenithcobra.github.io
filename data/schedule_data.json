@@ -30,7 +30,7 @@
         "game_datetime": "2026-04-26T17:35:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "Atlanta Braves",
         "away_id": 143,
@@ -41,22 +41,22 @@
         "away_probable_pitcher": "Aaron Nola",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-26 - Philadelphia Phillies @ Atlanta Braves (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-04-26 - Philadelphia Phillies @ Atlanta Braves (Pre-Game)"
     },
     {
         "game_id": 822824,
         "game_datetime": "2026-04-26T17:37:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Toronto Blue Jays",
         "away_id": 114,
@@ -74,8 +74,8 @@
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
-        "series_status": "CLE leads 1-0",
-        "summary": "2026-04-26 - Cleveland Guardians @ Toronto Blue Jays (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-04-26 - Cleveland Guardians @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 824528,
@@ -160,7 +160,7 @@
         "game_datetime": "2026-04-26T17:40:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Tampa Bay Rays",
         "away_id": 142,
@@ -178,8 +178,8 @@
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-26 - Minnesota Twins @ Tampa Bay Rays (Scheduled)"
+        "series_status": "TB leads 2-0",
+        "summary": "2026-04-26 - Minnesota Twins @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 824612,
@@ -264,7 +264,7 @@
         "game_datetime": "2026-04-26T18:15:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "St. Louis Cardinals",
         "away_id": 136,
@@ -282,8 +282,8 @@
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-26 - Seattle Mariners @ St. Louis Cardinals (Scheduled)"
+        "series_status": "SEA leads 2-0",
+        "summary": "2026-04-26 - Seattle Mariners @ St. Louis Cardinals (Pre-Game)"
     },
     {
         "game_id": 822911,
