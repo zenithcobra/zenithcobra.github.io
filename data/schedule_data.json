@@ -170,15 +170,15 @@
         "away_probable_pitcher": "Chase Dollander",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 3,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": "COL leads 2-0",
-        "summary": "2026-04-26 - Colorado Rockies (0) @ New York Mets (0) (Top of the 2nd)"
+        "summary": "2026-04-26 - Colorado Rockies (3) @ New York Mets (0) (Top of the 3rd)"
     },
     {
         "game_id": 822991,
@@ -340,7 +340,7 @@
         "game_datetime": "2026-04-26T18:35:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Athletics",
         "home_name": "Texas Rangers",
         "away_id": 133,
@@ -358,8 +358,13 @@
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-04-26 - Athletics (2) @ Texas Rangers (1) (Bottom of the 9th)"
+        "series_status": "ATH wins 2-1",
+        "winning_team": "Athletics",
+        "losing_team": "Texas Rangers",
+        "winning_pitcher": "Justin Sterner",
+        "losing_pitcher": "Kumar Rocker",
+        "save_pitcher": "Jack Perkins",
+        "summary": "2026-04-26 - Athletics (2) @ Texas Rangers (1) (Final)"
     },
     {
         "game_id": 825094,
@@ -377,15 +382,15 @@
         "away_probable_pitcher": "Michael King",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
-        "home_score": 0,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "away_score": 7,
+        "home_score": 1,
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 5340,
         "venue_name": "Estadio Alfredo Harp Helu",
         "national_broadcasts": [],
         "series_status": "SD leads 1-0",
-        "summary": "2026-04-26 - San Diego Padres (3) @ Arizona Diamondbacks (0) (Bottom of the 4th)"
+        "summary": "2026-04-26 - San Diego Padres (7) @ Arizona Diamondbacks (1) (Top of the 6th)"
     },
     {
         "game_id": 823230,
@@ -404,14 +409,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 1,
-        "current_inning": 5,
+        "home_score": 3,
+        "current_inning": 7,
         "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-26 - Miami Marlins (3) @ San Francisco Giants (1) (Bottom of the 5th)"
+        "summary": "2026-04-26 - Miami Marlins (3) @ San Francisco Giants (3) (Bottom of the 7th)"
     },
     {
         "game_id": 824122,
@@ -430,16 +435,16 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 6,
-        "home_score": 0,
-        "current_inning": 5,
-        "inning_state": "Middle",
+        "home_score": 3,
+        "current_inning": 6,
+        "inning_state": "Bottom",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [
             "NBCSN / Peacock"
         ],
         "series_status": "KC leads 2-0",
-        "summary": "2026-04-26 - Los Angeles Angels (6) @ Kansas City Royals (0) (Middle of the 5th)"
+        "summary": "2026-04-26 - Los Angeles Angels (6) @ Kansas City Royals (3) (Bottom of the 6th)"
     },
     {
         "game_id": 823959,
@@ -459,12 +464,12 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 3,
-        "current_inning": 4,
-        "inning_state": "End",
+        "current_inning": 6,
+        "inning_state": "Bottom",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-26 - Chicago Cubs (0) @ Los Angeles Dodgers (3) (End of the 4th)"
+        "summary": "2026-04-26 - Chicago Cubs (0) @ Los Angeles Dodgers (3) (Bottom of the 6th)"
     }
 ]

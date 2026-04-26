@@ -143,9 +143,9 @@
         "name": "Casey Schmitt",
         "team": "San Francisco Giants",
         "player_id": 669477,
-        "HR": 3,
-        "HRpg": 0.14,
-        "fHRpg": "1/7",
+        "HR": 4,
+        "HRpg": 0.18,
+        "fHRpg": "1/6",
         "HR24": 12,
         "HR24pg": 0.13,
         "fHR24pg": "1/7"
@@ -401,5 +401,16 @@
         "HR24": 4,
         "HR24pg": 0.14,
         "fHR24pg": "1/7"
+    },
+    {
+        "name": "Hunter Goodman",
+        "team": "Colorado Rockies",
+        "player_id": 696100,
+        "HR": 7,
+        "HRpg": 0.27,
+        "fHRpg": "2/7",
+        "HR24": 31,
+        "HR24pg": 0.22,
+        "fHR24pg": "1/5"
     }
 ]
