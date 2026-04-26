@@ -334,7 +334,7 @@
         "venue_id": 5340,
         "venue_name": "Estadio Alfredo Harp Helu",
         "national_broadcasts": [],
-        "series_status": "SD leads 1-0",
+        "series_status": null,
         "summary": "2026-04-26 - San Diego Padres @ Arizona Diamondbacks (Scheduled)"
     },
     {
@@ -342,7 +342,7 @@
         "game_datetime": "2026-04-26T20:05:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Miami Marlins",
         "home_name": "San Francisco Giants",
         "away_id": 146,
@@ -360,15 +360,15 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-26 - Miami Marlins @ San Francisco Giants (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-04-26 - Miami Marlins @ San Francisco Giants (Pre-Game)"
     },
     {
         "game_id": 824122,
         "game_datetime": "2026-04-26T20:10:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Kansas City Royals",
         "away_id": 108,
@@ -389,7 +389,7 @@
             "NBCSN / Peacock"
         ],
         "series_status": "KC leads 2-0",
-        "summary": "2026-04-26 - Los Angeles Angels @ Kansas City Royals (Scheduled)"
+        "summary": "2026-04-26 - Los Angeles Angels @ Kansas City Royals (Pre-Game)"
     },
     {
         "game_id": 823959,
