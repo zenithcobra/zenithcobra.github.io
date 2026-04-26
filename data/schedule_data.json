@@ -4,7 +4,7 @@
         "game_datetime": "2026-04-26T17:35:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Baltimore Orioles",
         "away_id": 111,
@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Connelly Early",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-26 - Boston Red Sox @ Baltimore Orioles (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-04-26 - Boston Red Sox @ Baltimore Orioles (Pre-Game)"
     },
     {
         "game_id": 824934,
@@ -171,10 +171,10 @@
         "away_probable_pitcher": "Simeon Woods Richardson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
@@ -334,7 +334,7 @@
         "venue_id": 5340,
         "venue_name": "Estadio Alfredo Harp Helu",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "SD leads 1-0",
         "summary": "2026-04-26 - San Diego Padres @ Arizona Diamondbacks (Scheduled)"
     },
     {
@@ -364,6 +364,34 @@
         "summary": "2026-04-26 - Miami Marlins @ San Francisco Giants (Scheduled)"
     },
     {
+        "game_id": 824122,
+        "game_datetime": "2026-04-26T20:10:00Z",
+        "game_date": "2026-04-26",
+        "game_type": "R",
+        "status": "Scheduled",
+        "away_name": "Los Angeles Angels",
+        "home_name": "Kansas City Royals",
+        "away_id": 108,
+        "home_id": 118,
+        "doubleheader": "N",
+        "game_num": 1,
+        "home_probable_pitcher": "Seth Lugo",
+        "away_probable_pitcher": "Reid Detmers",
+        "home_pitcher_note": "",
+        "away_pitcher_note": "",
+        "away_score": "0",
+        "home_score": "0",
+        "current_inning": "",
+        "inning_state": "",
+        "venue_id": 7,
+        "venue_name": "Kauffman Stadium",
+        "national_broadcasts": [
+            "NBCSN / Peacock"
+        ],
+        "series_status": "KC leads 2-0",
+        "summary": "2026-04-26 - Los Angeles Angels @ Kansas City Royals (Scheduled)"
+    },
+    {
         "game_id": 823959,
         "game_datetime": "2026-04-26T20:10:00Z",
         "game_date": "2026-04-26",
@@ -388,33 +416,5 @@
         "national_broadcasts": [],
         "series_status": null,
         "summary": "2026-04-26 - Chicago Cubs @ Los Angeles Dodgers (Scheduled)"
-    },
-    {
-        "game_id": 824122,
-        "game_datetime": "2026-04-26T23:20:00Z",
-        "game_date": "2026-04-26",
-        "game_type": "R",
-        "status": "Scheduled",
-        "away_name": "Los Angeles Angels",
-        "home_name": "Kansas City Royals",
-        "away_id": 108,
-        "home_id": 118,
-        "doubleheader": "N",
-        "game_num": 1,
-        "home_probable_pitcher": "Seth Lugo",
-        "away_probable_pitcher": "Reid Detmers",
-        "home_pitcher_note": "",
-        "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
-        "venue_id": 7,
-        "venue_name": "Kauffman Stadium",
-        "national_broadcasts": [
-            "NBCSN / Peacock"
-        ],
-        "series_status": null,
-        "summary": "2026-04-26 - Los Angeles Angels @ Kansas City Royals (Scheduled)"
     }
 ]
