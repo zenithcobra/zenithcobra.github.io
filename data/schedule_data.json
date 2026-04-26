@@ -172,13 +172,13 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 0,
-        "current_inning": 5,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": "COL leads 2-0",
-        "summary": "2026-04-26 - Colorado Rockies (3) @ New York Mets (0) (Top of the 5th)"
+        "summary": "2026-04-26 - Colorado Rockies (3) @ New York Mets (0) (Top of the 7th)"
     },
     {
         "game_id": 822991,
@@ -383,21 +383,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 7,
-        "home_score": 6,
-        "current_inning": 7,
+        "home_score": 8,
+        "current_inning": 8,
         "inning_state": "Bottom",
         "venue_id": 5340,
         "venue_name": "Estadio Alfredo Harp Helu",
         "national_broadcasts": [],
         "series_status": "SD leads 1-0",
-        "summary": "2026-04-26 - San Diego Padres (7) @ Arizona Diamondbacks (6) (Bottom of the 7th)"
+        "summary": "2026-04-26 - San Diego Padres (7) @ Arizona Diamondbacks (8) (Bottom of the 8th)"
     },
     {
         "game_id": 823230,
         "game_datetime": "2026-04-26T20:05:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Miami Marlins",
         "home_name": "San Francisco Giants",
         "away_id": 146,
@@ -421,14 +421,14 @@
         "winning_pitcher": "Landen Roupp",
         "losing_pitcher": "Andrew Nardi",
         "save_pitcher": "Erik Miller",
-        "summary": "2026-04-26 - Miami Marlins (3) @ San Francisco Giants (6) (Game Over)"
+        "summary": "2026-04-26 - Miami Marlins (3) @ San Francisco Giants (6) (Final)"
     },
     {
         "game_id": 824122,
         "game_datetime": "2026-04-26T20:10:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Delayed",
         "away_name": "Los Angeles Angels",
         "home_name": "Kansas City Royals",
         "away_id": 108,
@@ -440,23 +440,23 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 7,
-        "home_score": 3,
+        "home_score": 4,
         "current_inning": 7,
-        "inning_state": "Middle",
+        "inning_state": "Bottom",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [
             "NBCSN / Peacock"
         ],
         "series_status": "KC leads 2-0",
-        "summary": "2026-04-26 - Los Angeles Angels (7) @ Kansas City Royals (3) (Middle of the 7th)"
+        "summary": "2026-04-26 - Los Angeles Angels @ Kansas City Royals (Delayed)"
     },
     {
         "game_id": 823959,
         "game_datetime": "2026-04-26T20:10:00Z",
         "game_date": "2026-04-26",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Chicago Cubs",
         "home_name": "Los Angeles Dodgers",
         "away_id": 112,
@@ -469,12 +469,17 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 6,
-        "current_inning": 7,
-        "inning_state": "Bottom",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-04-26 - Chicago Cubs (0) @ Los Angeles Dodgers (6) (Bottom of the 7th)"
+        "series_status": "LAD wins 2-1",
+        "winning_team": "Los Angeles Dodgers",
+        "losing_team": "Chicago Cubs",
+        "winning_pitcher": "Justin Wrobleski",
+        "losing_pitcher": "Shota Imanaga",
+        "save_pitcher": null,
+        "summary": "2026-04-26 - Chicago Cubs (0) @ Los Angeles Dodgers (6) (Game Over)"
     }
 ]
