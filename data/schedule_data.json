@@ -15,17 +15,17 @@
         "away_probable_pitcher": "Steven Matz",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Bottom",
+        "away_score": 1,
+        "home_score": 2,
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [
             "FS1"
         ],
         "series_status": null,
-        "summary": "2026-04-27 - Tampa Bay Rays (0) @ Cleveland Guardians (0) (Bottom of the 3rd)"
+        "summary": "2026-04-27 - Tampa Bay Rays (1) @ Cleveland Guardians (2) (Top of the 6th)"
     },
     {
         "game_id": 823395,
@@ -44,21 +44,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "home_score": 2,
+        "current_inning": 3,
+        "inning_state": "End",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-27 - St. Louis Cardinals (0) @ Pittsburgh Pirates (0) (Bottom of the 1st)"
+        "summary": "2026-04-27 - St. Louis Cardinals (0) @ Pittsburgh Pirates (2) (End of the 3rd)"
     },
     {
         "game_id": 822825,
         "game_datetime": "2026-04-27T23:07:00Z",
         "game_date": "2026-04-27",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Boston Red Sox",
         "home_name": "Toronto Blue Jays",
         "away_id": 111,
@@ -71,20 +71,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-27 - Boston Red Sox @ Toronto Blue Jays (Warmup)"
+        "summary": "2026-04-27 - Boston Red Sox (0) @ Toronto Blue Jays (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 823719,
         "game_datetime": "2026-04-27T23:40:00Z",
         "game_date": "2026-04-27",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Seattle Mariners",
         "home_name": "Minnesota Twins",
         "away_id": 136,
@@ -103,14 +103,14 @@
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-27 - Seattle Mariners @ Minnesota Twins (Pre-Game)"
+        "summary": "2026-04-27 - Seattle Mariners @ Minnesota Twins (Warmup)"
     },
     {
         "game_id": 824609,
         "game_datetime": "2026-04-27T23:40:00Z",
         "game_date": "2026-04-27",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "away_name": "Los Angeles Angels",
         "home_name": "Chicago White Sox",
         "away_id": 108,
@@ -129,7 +129,7 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-27 - Los Angeles Angels @ Chicago White Sox (Pre-Game)"
+        "summary": "2026-04-27 - Los Angeles Angels @ Chicago White Sox (Delayed Start)"
     },
     {
         "game_id": 822906,
@@ -199,10 +199,10 @@
         "away_probable_pitcher": "Chris Paddack",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
