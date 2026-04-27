@@ -17,22 +17,22 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [
             "FS1"
         ],
         "series_status": null,
-        "summary": "2026-04-27 - Tampa Bay Rays (0) @ Cleveland Guardians (0) (Top of the 2nd)"
+        "summary": "2026-04-27 - Tampa Bay Rays (0) @ Cleveland Guardians (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 823395,
         "game_datetime": "2026-04-27T22:40:00Z",
         "game_date": "2026-04-27",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "St. Louis Cardinals",
         "home_name": "Pittsburgh Pirates",
         "away_id": 138,
@@ -46,19 +46,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-27 - St. Louis Cardinals @ Pittsburgh Pirates (Warmup)"
+        "summary": "2026-04-27 - St. Louis Cardinals (0) @ Pittsburgh Pirates (0) (Bottom of the 1st)"
     },
     {
         "game_id": 822825,
         "game_datetime": "2026-04-27T23:07:00Z",
         "game_date": "2026-04-27",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Boston Red Sox",
         "home_name": "Toronto Blue Jays",
         "away_id": 111,
@@ -77,7 +77,7 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-27 - Boston Red Sox @ Toronto Blue Jays (Pre-Game)"
+        "summary": "2026-04-27 - Boston Red Sox @ Toronto Blue Jays (Warmup)"
     },
     {
         "game_id": 823719,
@@ -173,10 +173,10 @@
         "away_probable_pitcher": "Matthew Boyd",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
