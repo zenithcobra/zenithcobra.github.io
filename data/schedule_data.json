@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 5,
-        "inning_state": "Bottom",
+        "current_inning": 7,
+        "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-04-28 - Tampa Bay Rays (1) @ Cleveland Guardians (0) (Bottom of the 5th)"
+        "summary": "2026-04-28 - Tampa Bay Rays (1) @ Cleveland Guardians (0) (Top of the 7th)"
     },
     {
         "game_id": 824849,
@@ -43,13 +43,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 2,
-        "current_inning": 3,
+        "current_inning": 4,
         "inning_state": "End",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-28 - Houston Astros (0) @ Baltimore Orioles (2) (End of the 3rd)"
+        "summary": "2026-04-28 - Houston Astros (0) @ Baltimore Orioles (2) (End of the 4th)"
     },
     {
         "game_id": 824526,
@@ -68,14 +68,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 3,
-        "current_inning": 3,
+        "home_score": 4,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-28 - Colorado Rockies (1) @ Cincinnati Reds (3) (Bottom of the 3rd)"
+        "summary": "2026-04-28 - Colorado Rockies (1) @ Cincinnati Reds (4) (Bottom of the 4th)"
     },
     {
         "game_id": 823390,
@@ -93,15 +93,15 @@
         "away_probable_pitcher": "Kyle Leahy",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
+        "away_score": 4,
         "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "End",
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "STL leads 1-0",
-        "summary": "2026-04-28 - St. Louis Cardinals (3) @ Pittsburgh Pirates (0) (End of the 3rd)"
+        "summary": "2026-04-28 - St. Louis Cardinals (4) @ Pittsburgh Pirates (0) (Top of the 5th)"
     },
     {
         "game_id": 823473,
@@ -120,14 +120,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 4,
+        "home_score": 1,
+        "current_inning": 5,
         "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-28 - San Francisco Giants (0) @ Philadelphia Phillies (0) (Bottom of the 4th)"
+        "summary": "2026-04-28 - San Francisco Giants (0) @ Philadelphia Phillies (1) (Bottom of the 5th)"
     },
     {
         "game_id": 822823,
@@ -147,13 +147,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "BOS leads 1-0",
-        "summary": "2026-04-28 - Boston Red Sox (0) @ Toronto Blue Jays (0) (Top of the 2nd)"
+        "summary": "2026-04-28 - Boston Red Sox (0) @ Toronto Blue Jays (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 823636,
@@ -173,13 +173,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 1,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-28 - Washington Nationals (0) @ New York Mets (1) (Top of the 2nd)"
+        "summary": "2026-04-28 - Washington Nationals (0) @ New York Mets (1) (Bottom of the 3rd)"
     },
     {
         "game_id": 824931,
@@ -199,7 +199,7 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 4705,
         "venue_name": "Truist Park",
@@ -207,14 +207,14 @@
             "TBS"
         ],
         "series_status": null,
-        "summary": "2026-04-28 - Detroit Tigers (0) @ Atlanta Braves (0) (Top of the 2nd)"
+        "summary": "2026-04-28 - Detroit Tigers (0) @ Atlanta Braves (0) (Top of the 3rd)"
     },
     {
         "game_id": 823716,
         "game_datetime": "2026-04-28T23:40:00Z",
         "game_date": "2026-04-28",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Seattle Mariners",
         "home_name": "Minnesota Twins",
         "away_id": 136,
@@ -228,19 +228,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "MIN leads 1-0",
-        "summary": "2026-04-28 - Seattle Mariners @ Minnesota Twins (Warmup)"
+        "summary": "2026-04-28 - Seattle Mariners (0) @ Minnesota Twins (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824610,
         "game_datetime": "2026-04-28T23:40:00Z",
         "game_date": "2026-04-28",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Los Angeles Angels",
         "home_name": "Chicago White Sox",
         "away_id": 108,
@@ -254,19 +254,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-04-28 - Los Angeles Angels @ Chicago White Sox (Warmup)"
+        "summary": "2026-04-28 - Los Angeles Angels (0) @ Chicago White Sox (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823798,
         "game_datetime": "2026-04-28T23:40:00Z",
         "game_date": "2026-04-28",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Milwaukee Brewers",
         "away_id": 109,
@@ -280,19 +280,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-28 - Arizona Diamondbacks @ Milwaukee Brewers (Warmup)"
+        "summary": "2026-04-28 - Arizona Diamondbacks (0) @ Milwaukee Brewers (0) (Bottom of the 1st)"
     },
     {
         "game_id": 822908,
         "game_datetime": "2026-04-29T00:05:00Z",
         "game_date": "2026-04-28",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Yankees",
         "home_name": "Texas Rangers",
         "away_id": 147,
@@ -311,7 +311,7 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-04-28 - New York Yankees @ Texas Rangers (Pre-Game)"
+        "summary": "2026-04-28 - New York Yankees @ Texas Rangers (Warmup)"
     },
     {
         "game_id": 825017,
