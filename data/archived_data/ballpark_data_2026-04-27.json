@@ -26,18 +26,8 @@
         "HR": "41"
     },
     {
-        "Venue": "Rogers Centre",
-        "Location": "Toronto",
-        "HR": "39"
-    },
-    {
         "Venue": "Wrigley Field",
         "Location": "Chicago",
-        "HR": "39"
-    },
-    {
-        "Venue": "Dodger Stadium",
-        "Location": "Los Angeles",
         "HR": "39"
     },
     {
@@ -46,8 +36,18 @@
         "HR": "38"
     },
     {
-        "Venue": "Citizens Bank Park",
-        "Location": "Philadelphia",
+        "Venue": "Dodger Stadium",
+        "Location": "Los Angeles",
+        "HR": "38"
+    },
+    {
+        "Venue": "Rogers Centre",
+        "Location": "Toronto",
+        "HR": "38"
+    },
+    {
+        "Venue": "Busch Stadium",
+        "Location": "St. Louis",
         "HR": "34"
     },
     {
@@ -56,8 +56,8 @@
         "HR": "34"
     },
     {
-        "Venue": "Busch Stadium",
-        "Location": "St. Louis",
+        "Venue": "Citizens Bank Park",
+        "Location": "Philadelphia",
         "HR": "34"
     },
     {
@@ -81,11 +81,6 @@
         "HR": "29"
     },
     {
-        "Venue": "Progressive Field",
-        "Location": "Cleveland",
-        "HR": "29"
-    },
-    {
         "Venue": "Tropicana Field",
         "Location": "Tampa Bay",
         "HR": "28"
@@ -96,9 +91,9 @@
         "HR": "28"
     },
     {
-        "Venue": "Petco Park",
-        "Location": "San Diego",
-        "HR": "25"
+        "Venue": "Progressive Field",
+        "Location": "Cleveland",
+        "HR": "28"
     },
     {
         "Venue": "Citi Field",
@@ -106,8 +101,8 @@
         "HR": "24"
     },
     {
-        "Venue": "PNC Park",
-        "Location": "Pittsburgh",
+        "Venue": "Petco Park",
+        "Location": "San Diego",
         "HR": "22"
     },
     {
@@ -116,29 +111,34 @@
         "HR": "22"
     },
     {
-        "Venue": "Globe Life Field",
-        "Location": "Arlington",
-        "HR": "22"
-    },
-    {
         "Venue": "Marlins Park",
         "Location": "Miami",
         "HR": "21"
     },
     {
-        "Venue": "Guaranteed Rate Field",
-        "Location": "Chicago",
-        "HR": "20"
-    },
-    {
-        "Venue": "Target Field",
-        "Location": "Minneapolis",
+        "Venue": "PNC Park",
+        "Location": "Pittsburgh",
         "HR": "20"
     },
     {
         "Venue": "Oracle Park",
         "Location": "San Francisco",
         "HR": "19"
+    },
+    {
+        "Venue": "Globe Life Field",
+        "Location": "Arlington",
+        "HR": "18"
+    },
+    {
+        "Venue": "Target Field",
+        "Location": "Minneapolis",
+        "HR": "17"
+    },
+    {
+        "Venue": "Guaranteed Rate Field",
+        "Location": "Chicago",
+        "HR": "17"
     },
     {
         "Venue": "Angel Stadium",
