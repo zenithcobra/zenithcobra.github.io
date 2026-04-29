@@ -30,7 +30,7 @@
         "game_datetime": "2026-04-29T17:10:00Z",
         "game_date": "2026-04-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Los Angeles Angels",
         "home_name": "Chicago White Sox",
         "away_id": 108,
@@ -49,7 +49,7 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 2-0",
-        "summary": "2026-04-29 - Los Angeles Angels @ Chicago White Sox (Pre-Game)"
+        "summary": "2026-04-29 - Los Angeles Angels @ Chicago White Sox (Warmup)"
     },
     {
         "game_id": 823717,
@@ -160,7 +160,7 @@
         "game_datetime": "2026-04-29T20:10:00Z",
         "game_date": "2026-04-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "San Diego Padres",
         "away_id": 112,
@@ -171,15 +171,15 @@
         "away_probable_pitcher": "Jameson Taillon",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-29 - Chicago Cubs @ San Diego Padres (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-04-29 - Chicago Cubs @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 824850,
@@ -212,7 +212,7 @@
         "game_datetime": "2026-04-29T22:40:00Z",
         "game_date": "2026-04-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Cincinnati Reds",
         "away_id": 115,
@@ -230,8 +230,8 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-29 - Colorado Rockies @ Cincinnati Reds (Scheduled)"
+        "series_status": "CIN leads 1-0",
+        "summary": "2026-04-29 - Colorado Rockies @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 823392,
