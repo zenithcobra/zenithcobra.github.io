@@ -23,16 +23,16 @@
     {
         "Venue": "Rogers Centre",
         "Location": "Toronto",
+        "HR": "42"
+    },
+    {
+        "Venue": "Yankee Stadium",
+        "Location": "Bronx",
         "HR": "41"
     },
     {
         "Venue": "Dodger Stadium",
         "Location": "Los Angeles",
-        "HR": "41"
-    },
-    {
-        "Venue": "Yankee Stadium",
-        "Location": "Bronx",
         "HR": "41"
     },
     {
@@ -86,6 +86,11 @@
         "HR": "30"
     },
     {
+        "Venue": "Petco Park",
+        "Location": "San Diego",
+        "HR": "30"
+    },
+    {
         "Venue": "Progressive Field",
         "Location": "Cleveland",
         "HR": "29"
@@ -94,11 +99,6 @@
         "Venue": "Tropicana Field",
         "Location": "Tampa Bay",
         "HR": "28"
-    },
-    {
-        "Venue": "Petco Park",
-        "Location": "San Diego",
-        "HR": "27"
     },
     {
         "Venue": "PNC Park",

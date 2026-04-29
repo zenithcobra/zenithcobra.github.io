@@ -2962,416 +2962,6 @@
         ]
     },
     {
-        "team_id": 137,
-        "team_name": "San Francisco Giants",
-        "last_games": [
-            823473,
-            823230,
-            823229,
-            823232,
-            823233,
-            823231,
-            823236,
-            822750,
-            822751,
-            822752,
-            824530,
-            824532,
-            824531,
-            824859,
-            824857,
-            824858,
-            823234,
-            823235,
-            823237,
-            823238,
-            823239,
-            823240,
-            823242,
-            823321,
-            823322,
-            823320,
-            823241,
-            823243
-        ],
-        "team_record": "L-W-W-L-L-W-W-L-W-W-W-L-L-L-L-W-W-W-L-L-L-L-W-L-W-W-L-L-",
-        "team_record_plus": [
-            {
-                "game_id": 823473,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2026-04-28",
-                "result": "L"
-            },
-            {
-                "game_id": 823230,
-                "vs_team": "Miami Marlins",
-                "game_date": "2026-04-26",
-                "result": "W"
-            },
-            {
-                "game_id": 823229,
-                "vs_team": "Miami Marlins",
-                "game_date": "2026-04-25",
-                "result": "W"
-            },
-            {
-                "game_id": 823232,
-                "vs_team": "Miami Marlins",
-                "game_date": "2026-04-24",
-                "result": "L"
-            },
-            {
-                "game_id": 823233,
-                "vs_team": "Los Angeles Dodgers",
-                "game_date": "2026-04-23",
-                "result": "L"
-            },
-            {
-                "game_id": 823231,
-                "vs_team": "Los Angeles Dodgers",
-                "game_date": "2026-04-22",
-                "result": "W"
-            },
-            {
-                "game_id": 823236,
-                "vs_team": "Los Angeles Dodgers",
-                "game_date": "2026-04-21",
-                "result": "W"
-            },
-            {
-                "game_id": 822750,
-                "vs_team": "Washington Nationals",
-                "game_date": "2026-04-19",
-                "result": "L"
-            },
-            {
-                "game_id": 822751,
-                "vs_team": "Washington Nationals",
-                "game_date": "2026-04-18",
-                "result": "W"
-            },
-            {
-                "game_id": 822752,
-                "vs_team": "Washington Nationals",
-                "game_date": "2026-04-17",
-                "result": "W"
-            },
-            {
-                "game_id": 824530,
-                "vs_team": "Cincinnati Reds",
-                "game_date": "2026-04-16",
-                "result": "W"
-            },
-            {
-                "game_id": 824532,
-                "vs_team": "Cincinnati Reds",
-                "game_date": "2026-04-15",
-                "result": "L"
-            },
-            {
-                "game_id": 824531,
-                "vs_team": "Cincinnati Reds",
-                "game_date": "2026-04-14",
-                "result": "L"
-            },
-            {
-                "game_id": 824859,
-                "vs_team": "Baltimore Orioles",
-                "game_date": "2026-04-12",
-                "result": "L"
-            },
-            {
-                "game_id": 824857,
-                "vs_team": "Baltimore Orioles",
-                "game_date": "2026-04-11",
-                "result": "L"
-            },
-            {
-                "game_id": 824858,
-                "vs_team": "Baltimore Orioles",
-                "game_date": "2026-04-10",
-                "result": "W"
-            },
-            {
-                "game_id": 823234,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2026-04-08",
-                "result": "W"
-            },
-            {
-                "game_id": 823235,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2026-04-07",
-                "result": "W"
-            },
-            {
-                "game_id": 823237,
-                "vs_team": "Philadelphia Phillies",
-                "game_date": "2026-04-06",
-                "result": "L"
-            },
-            {
-                "game_id": 823238,
-                "vs_team": "New York Mets",
-                "game_date": "2026-04-05",
-                "result": "L"
-            },
-            {
-                "game_id": 823239,
-                "vs_team": "New York Mets",
-                "game_date": "2026-04-04",
-                "result": "L"
-            },
-            {
-                "game_id": 823240,
-                "vs_team": "New York Mets",
-                "game_date": "2026-04-03",
-                "result": "L"
-            },
-            {
-                "game_id": 823242,
-                "vs_team": "New York Mets",
-                "game_date": "2026-04-02",
-                "result": "W"
-            },
-            {
-                "game_id": 823321,
-                "vs_team": "San Diego Padres",
-                "game_date": "2026-04-01",
-                "result": "L"
-            },
-            {
-                "game_id": 823322,
-                "vs_team": "San Diego Padres",
-                "game_date": "2026-03-31",
-                "result": "W"
-            },
-            {
-                "game_id": 823320,
-                "vs_team": "San Diego Padres",
-                "game_date": "2026-03-30",
-                "result": "W"
-            },
-            {
-                "game_id": 823241,
-                "vs_team": "New York Yankees",
-                "game_date": "2026-03-28",
-                "result": "L"
-            },
-            {
-                "game_id": 823243,
-                "vs_team": "New York Yankees",
-                "game_date": "2026-03-27",
-                "result": "L"
-            }
-        ]
-    },
-    {
-        "team_id": 143,
-        "team_name": "Philadelphia Phillies",
-        "last_games": [
-            823473,
-            824934,
-            824933,
-            824932,
-            824689,
-            824688,
-            824690,
-            824692,
-            823475,
-            823474,
-            823476,
-            823477,
-            823478,
-            823481,
-            823479,
-            823480,
-            823482,
-            823234,
-            823235,
-            823237,
-            824379,
-            824378,
-            824377,
-            823483,
-            823485,
-            823484,
-            823487,
-            823488
-        ],
-        "team_record": "W-L-W-L-L-L-L-L-L-L-L-L-L-W-L-W-L-L-L-W-L-W-W-W-W-L-L-L-",
-        "team_record_plus": [
-            {
-                "game_id": 823473,
-                "vs_team": "San Francisco Giants",
-                "game_date": "2026-04-28",
-                "result": "W"
-            },
-            {
-                "game_id": 824934,
-                "vs_team": "Atlanta Braves",
-                "game_date": "2026-04-26",
-                "result": "L"
-            },
-            {
-                "game_id": 824933,
-                "vs_team": "Atlanta Braves",
-                "game_date": "2026-04-25",
-                "result": "W"
-            },
-            {
-                "game_id": 824932,
-                "vs_team": "Atlanta Braves",
-                "game_date": "2026-04-24",
-                "result": "L"
-            },
-            {
-                "game_id": 824689,
-                "vs_team": "Chicago Cubs",
-                "game_date": "2026-04-23",
-                "result": "L"
-            },
-            {
-                "game_id": 824688,
-                "vs_team": "Chicago Cubs",
-                "game_date": "2026-04-22",
-                "result": "L"
-            },
-            {
-                "game_id": 824690,
-                "vs_team": "Chicago Cubs",
-                "game_date": "2026-04-21",
-                "result": "L"
-            },
-            {
-                "game_id": 824692,
-                "vs_team": "Chicago Cubs",
-                "game_date": "2026-04-20",
-                "result": "L"
-            },
-            {
-                "game_id": 823475,
-                "vs_team": "Atlanta Braves",
-                "game_date": "2026-04-19",
-                "result": "L"
-            },
-            {
-                "game_id": 823474,
-                "vs_team": "Atlanta Braves",
-                "game_date": "2026-04-18",
-                "result": "L"
-            },
-            {
-                "game_id": 823476,
-                "vs_team": "Atlanta Braves",
-                "game_date": "2026-04-17",
-                "result": "L"
-            },
-            {
-                "game_id": 823477,
-                "vs_team": "Chicago Cubs",
-                "game_date": "2026-04-15",
-                "result": "L"
-            },
-            {
-                "game_id": 823478,
-                "vs_team": "Chicago Cubs",
-                "game_date": "2026-04-14",
-                "result": "L"
-            },
-            {
-                "game_id": 823481,
-                "vs_team": "Chicago Cubs",
-                "game_date": "2026-04-13",
-                "result": "W"
-            },
-            {
-                "game_id": 823479,
-                "vs_team": "Arizona Diamondbacks",
-                "game_date": "2026-04-12",
-                "result": "L"
-            },
-            {
-                "game_id": 823480,
-                "vs_team": "Arizona Diamondbacks",
-                "game_date": "2026-04-11",
-                "result": "W"
-            },
-            {
-                "game_id": 823482,
-                "vs_team": "Arizona Diamondbacks",
-                "game_date": "2026-04-10",
-                "result": "L"
-            },
-            {
-                "game_id": 823234,
-                "vs_team": "San Francisco Giants",
-                "game_date": "2026-04-08",
-                "result": "L"
-            },
-            {
-                "game_id": 823235,
-                "vs_team": "San Francisco Giants",
-                "game_date": "2026-04-07",
-                "result": "L"
-            },
-            {
-                "game_id": 823237,
-                "vs_team": "San Francisco Giants",
-                "game_date": "2026-04-06",
-                "result": "W"
-            },
-            {
-                "game_id": 824379,
-                "vs_team": "Colorado Rockies",
-                "game_date": "2026-04-05",
-                "result": "L"
-            },
-            {
-                "game_id": 824378,
-                "vs_team": "Colorado Rockies",
-                "game_date": "2026-04-04",
-                "result": "W"
-            },
-            {
-                "game_id": 824377,
-                "vs_team": "Colorado Rockies",
-                "game_date": "2026-04-03",
-                "result": "W"
-            },
-            {
-                "game_id": 823483,
-                "vs_team": "Washington Nationals",
-                "game_date": "2026-04-01",
-                "result": "W"
-            },
-            {
-                "game_id": 823485,
-                "vs_team": "Washington Nationals",
-                "game_date": "2026-03-31",
-                "result": "W"
-            },
-            {
-                "game_id": 823484,
-                "vs_team": "Washington Nationals",
-                "game_date": "2026-03-30",
-                "result": "L"
-            },
-            {
-                "game_id": 823487,
-                "vs_team": "Texas Rangers",
-                "game_date": "2026-03-29",
-                "result": "L"
-            },
-            {
-                "game_id": 823488,
-                "vs_team": "Texas Rangers",
-                "game_date": "2026-03-28",
-                "result": "L"
-            }
-        ]
-    },
-    {
         "team_id": 115,
         "team_name": "Colorado Rockies",
         "last_games": [
@@ -5856,6 +5446,416 @@
                 "game_id": 822839,
                 "vs_team": "Toronto Blue Jays",
                 "game_date": "2026-03-27",
+                "result": "L"
+            }
+        ]
+    },
+    {
+        "team_id": 137,
+        "team_name": "San Francisco Giants",
+        "last_games": [
+            823473,
+            823230,
+            823229,
+            823232,
+            823233,
+            823231,
+            823236,
+            822750,
+            822751,
+            822752,
+            824530,
+            824532,
+            824531,
+            824859,
+            824857,
+            824858,
+            823234,
+            823235,
+            823237,
+            823238,
+            823239,
+            823240,
+            823242,
+            823321,
+            823322,
+            823320,
+            823241,
+            823243
+        ],
+        "team_record": "L-W-W-L-L-W-W-L-W-W-W-L-L-L-L-W-W-W-L-L-L-L-W-L-W-W-L-L-",
+        "team_record_plus": [
+            {
+                "game_id": 823473,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2026-04-28",
+                "result": "L"
+            },
+            {
+                "game_id": 823230,
+                "vs_team": "Miami Marlins",
+                "game_date": "2026-04-26",
+                "result": "W"
+            },
+            {
+                "game_id": 823229,
+                "vs_team": "Miami Marlins",
+                "game_date": "2026-04-25",
+                "result": "W"
+            },
+            {
+                "game_id": 823232,
+                "vs_team": "Miami Marlins",
+                "game_date": "2026-04-24",
+                "result": "L"
+            },
+            {
+                "game_id": 823233,
+                "vs_team": "Los Angeles Dodgers",
+                "game_date": "2026-04-23",
+                "result": "L"
+            },
+            {
+                "game_id": 823231,
+                "vs_team": "Los Angeles Dodgers",
+                "game_date": "2026-04-22",
+                "result": "W"
+            },
+            {
+                "game_id": 823236,
+                "vs_team": "Los Angeles Dodgers",
+                "game_date": "2026-04-21",
+                "result": "W"
+            },
+            {
+                "game_id": 822750,
+                "vs_team": "Washington Nationals",
+                "game_date": "2026-04-19",
+                "result": "L"
+            },
+            {
+                "game_id": 822751,
+                "vs_team": "Washington Nationals",
+                "game_date": "2026-04-18",
+                "result": "W"
+            },
+            {
+                "game_id": 822752,
+                "vs_team": "Washington Nationals",
+                "game_date": "2026-04-17",
+                "result": "W"
+            },
+            {
+                "game_id": 824530,
+                "vs_team": "Cincinnati Reds",
+                "game_date": "2026-04-16",
+                "result": "W"
+            },
+            {
+                "game_id": 824532,
+                "vs_team": "Cincinnati Reds",
+                "game_date": "2026-04-15",
+                "result": "L"
+            },
+            {
+                "game_id": 824531,
+                "vs_team": "Cincinnati Reds",
+                "game_date": "2026-04-14",
+                "result": "L"
+            },
+            {
+                "game_id": 824859,
+                "vs_team": "Baltimore Orioles",
+                "game_date": "2026-04-12",
+                "result": "L"
+            },
+            {
+                "game_id": 824857,
+                "vs_team": "Baltimore Orioles",
+                "game_date": "2026-04-11",
+                "result": "L"
+            },
+            {
+                "game_id": 824858,
+                "vs_team": "Baltimore Orioles",
+                "game_date": "2026-04-10",
+                "result": "W"
+            },
+            {
+                "game_id": 823234,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2026-04-08",
+                "result": "W"
+            },
+            {
+                "game_id": 823235,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2026-04-07",
+                "result": "W"
+            },
+            {
+                "game_id": 823237,
+                "vs_team": "Philadelphia Phillies",
+                "game_date": "2026-04-06",
+                "result": "L"
+            },
+            {
+                "game_id": 823238,
+                "vs_team": "New York Mets",
+                "game_date": "2026-04-05",
+                "result": "L"
+            },
+            {
+                "game_id": 823239,
+                "vs_team": "New York Mets",
+                "game_date": "2026-04-04",
+                "result": "L"
+            },
+            {
+                "game_id": 823240,
+                "vs_team": "New York Mets",
+                "game_date": "2026-04-03",
+                "result": "L"
+            },
+            {
+                "game_id": 823242,
+                "vs_team": "New York Mets",
+                "game_date": "2026-04-02",
+                "result": "W"
+            },
+            {
+                "game_id": 823321,
+                "vs_team": "San Diego Padres",
+                "game_date": "2026-04-01",
+                "result": "L"
+            },
+            {
+                "game_id": 823322,
+                "vs_team": "San Diego Padres",
+                "game_date": "2026-03-31",
+                "result": "W"
+            },
+            {
+                "game_id": 823320,
+                "vs_team": "San Diego Padres",
+                "game_date": "2026-03-30",
+                "result": "W"
+            },
+            {
+                "game_id": 823241,
+                "vs_team": "New York Yankees",
+                "game_date": "2026-03-28",
+                "result": "L"
+            },
+            {
+                "game_id": 823243,
+                "vs_team": "New York Yankees",
+                "game_date": "2026-03-27",
+                "result": "L"
+            }
+        ]
+    },
+    {
+        "team_id": 143,
+        "team_name": "Philadelphia Phillies",
+        "last_games": [
+            823473,
+            824934,
+            824933,
+            824932,
+            824689,
+            824688,
+            824690,
+            824692,
+            823475,
+            823474,
+            823476,
+            823477,
+            823478,
+            823481,
+            823479,
+            823480,
+            823482,
+            823234,
+            823235,
+            823237,
+            824379,
+            824378,
+            824377,
+            823483,
+            823485,
+            823484,
+            823487,
+            823488
+        ],
+        "team_record": "W-L-W-L-L-L-L-L-L-L-L-L-L-W-L-W-L-L-L-W-L-W-W-W-W-L-L-L-",
+        "team_record_plus": [
+            {
+                "game_id": 823473,
+                "vs_team": "San Francisco Giants",
+                "game_date": "2026-04-28",
+                "result": "W"
+            },
+            {
+                "game_id": 824934,
+                "vs_team": "Atlanta Braves",
+                "game_date": "2026-04-26",
+                "result": "L"
+            },
+            {
+                "game_id": 824933,
+                "vs_team": "Atlanta Braves",
+                "game_date": "2026-04-25",
+                "result": "W"
+            },
+            {
+                "game_id": 824932,
+                "vs_team": "Atlanta Braves",
+                "game_date": "2026-04-24",
+                "result": "L"
+            },
+            {
+                "game_id": 824689,
+                "vs_team": "Chicago Cubs",
+                "game_date": "2026-04-23",
+                "result": "L"
+            },
+            {
+                "game_id": 824688,
+                "vs_team": "Chicago Cubs",
+                "game_date": "2026-04-22",
+                "result": "L"
+            },
+            {
+                "game_id": 824690,
+                "vs_team": "Chicago Cubs",
+                "game_date": "2026-04-21",
+                "result": "L"
+            },
+            {
+                "game_id": 824692,
+                "vs_team": "Chicago Cubs",
+                "game_date": "2026-04-20",
+                "result": "L"
+            },
+            {
+                "game_id": 823475,
+                "vs_team": "Atlanta Braves",
+                "game_date": "2026-04-19",
+                "result": "L"
+            },
+            {
+                "game_id": 823474,
+                "vs_team": "Atlanta Braves",
+                "game_date": "2026-04-18",
+                "result": "L"
+            },
+            {
+                "game_id": 823476,
+                "vs_team": "Atlanta Braves",
+                "game_date": "2026-04-17",
+                "result": "L"
+            },
+            {
+                "game_id": 823477,
+                "vs_team": "Chicago Cubs",
+                "game_date": "2026-04-15",
+                "result": "L"
+            },
+            {
+                "game_id": 823478,
+                "vs_team": "Chicago Cubs",
+                "game_date": "2026-04-14",
+                "result": "L"
+            },
+            {
+                "game_id": 823481,
+                "vs_team": "Chicago Cubs",
+                "game_date": "2026-04-13",
+                "result": "W"
+            },
+            {
+                "game_id": 823479,
+                "vs_team": "Arizona Diamondbacks",
+                "game_date": "2026-04-12",
+                "result": "L"
+            },
+            {
+                "game_id": 823480,
+                "vs_team": "Arizona Diamondbacks",
+                "game_date": "2026-04-11",
+                "result": "W"
+            },
+            {
+                "game_id": 823482,
+                "vs_team": "Arizona Diamondbacks",
+                "game_date": "2026-04-10",
+                "result": "L"
+            },
+            {
+                "game_id": 823234,
+                "vs_team": "San Francisco Giants",
+                "game_date": "2026-04-08",
+                "result": "L"
+            },
+            {
+                "game_id": 823235,
+                "vs_team": "San Francisco Giants",
+                "game_date": "2026-04-07",
+                "result": "L"
+            },
+            {
+                "game_id": 823237,
+                "vs_team": "San Francisco Giants",
+                "game_date": "2026-04-06",
+                "result": "W"
+            },
+            {
+                "game_id": 824379,
+                "vs_team": "Colorado Rockies",
+                "game_date": "2026-04-05",
+                "result": "L"
+            },
+            {
+                "game_id": 824378,
+                "vs_team": "Colorado Rockies",
+                "game_date": "2026-04-04",
+                "result": "W"
+            },
+            {
+                "game_id": 824377,
+                "vs_team": "Colorado Rockies",
+                "game_date": "2026-04-03",
+                "result": "W"
+            },
+            {
+                "game_id": 823483,
+                "vs_team": "Washington Nationals",
+                "game_date": "2026-04-01",
+                "result": "W"
+            },
+            {
+                "game_id": 823485,
+                "vs_team": "Washington Nationals",
+                "game_date": "2026-03-31",
+                "result": "W"
+            },
+            {
+                "game_id": 823484,
+                "vs_team": "Washington Nationals",
+                "game_date": "2026-03-30",
+                "result": "L"
+            },
+            {
+                "game_id": 823487,
+                "vs_team": "Texas Rangers",
+                "game_date": "2026-03-29",
+                "result": "L"
+            },
+            {
+                "game_id": 823488,
+                "vs_team": "Texas Rangers",
+                "game_date": "2026-03-28",
                 "result": "L"
             }
         ]
