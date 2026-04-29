@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 3,
-        "current_inning": 5,
+        "current_inning": 6,
         "inning_state": "Bottom",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "TB leads 2-0",
-        "summary": "2026-04-29 - Tampa Bay Rays (0) @ Cleveland Guardians (3) (Bottom of the 5th)"
+        "summary": "2026-04-29 - Tampa Bay Rays (0) @ Cleveland Guardians (3) (Bottom of the 6th)"
     },
     {
         "game_id": 824608,
@@ -42,14 +42,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 1,
-        "current_inning": 9,
-        "inning_state": "Bottom",
+        "home_score": 2,
+        "current_inning": 10,
+        "inning_state": "Top",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 2-0",
-        "summary": "2026-04-29 - Los Angeles Angels (2) @ Chicago White Sox (1) (Bottom of the 9th)"
+        "summary": "2026-04-29 - Los Angeles Angels (2) @ Chicago White Sox (2) (Top of the 10th)"
     },
     {
         "game_id": 823717,
@@ -69,13 +69,13 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 2,
-        "current_inning": 7,
+        "current_inning": 8,
         "inning_state": "Bottom",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-29 - Seattle Mariners (2) @ Minnesota Twins (2) (Bottom of the 7th)"
+        "summary": "2026-04-29 - Seattle Mariners (2) @ Minnesota Twins (2) (Bottom of the 8th)"
     },
     {
         "game_id": 822907,
@@ -95,13 +95,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 4,
-        "inning_state": "Middle",
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "NYY leads 2-0",
-        "summary": "2026-04-29 - New York Yankees (0) @ Texas Rangers (0) (Middle of the 4th)"
+        "summary": "2026-04-29 - New York Yankees (0) @ Texas Rangers (0) (Bottom of the 5th)"
     },
     {
         "game_id": 822821,
@@ -120,14 +120,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 0,
+        "home_score": 3,
         "current_inning": 3,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-29 - Boston Red Sox (1) @ Toronto Blue Jays (0) (Top of the 3rd)"
+        "summary": "2026-04-29 - Boston Red Sox (1) @ Toronto Blue Jays (3) (End of the 3rd)"
     },
     {
         "game_id": 823958,
@@ -147,20 +147,20 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 1,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "End",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-29 - Miami Marlins (1) @ Los Angeles Dodgers (1) (End of the 2nd)"
+        "summary": "2026-04-29 - Miami Marlins (1) @ Los Angeles Dodgers (1) (End of the 3rd)"
     },
     {
         "game_id": 823312,
         "game_datetime": "2026-04-29T20:10:00Z",
         "game_date": "2026-04-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago Cubs",
         "home_name": "San Diego Padres",
         "away_id": 112,
@@ -179,7 +179,7 @@
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-29 - Chicago Cubs @ San Diego Padres (Pre-Game)"
+        "summary": "2026-04-29 - Chicago Cubs @ San Diego Padres (Warmup)"
     },
     {
         "game_id": 823471,
