@@ -4,7 +4,7 @@
         "game_datetime": "2026-04-29T17:10:00Z",
         "game_date": "2026-04-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "away_name": "Tampa Bay Rays",
         "home_name": "Cleveland Guardians",
         "away_id": 139,
@@ -23,7 +23,7 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "TB leads 2-0",
-        "summary": "2026-04-29 - Tampa Bay Rays @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-04-29 - Tampa Bay Rays @ Cleveland Guardians (Delayed Start)"
     },
     {
         "game_id": 824608,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-04-29T19:07:00Z",
         "game_date": "2026-04-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Toronto Blue Jays",
         "away_id": 111,
@@ -127,14 +127,14 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-04-29 - Boston Red Sox @ Toronto Blue Jays (Scheduled)"
+        "summary": "2026-04-29 - Boston Red Sox @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 823958,
         "game_datetime": "2026-04-29T19:10:00Z",
         "game_date": "2026-04-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Miami Marlins",
         "home_name": "Los Angeles Dodgers",
         "away_id": 146,
@@ -145,15 +145,15 @@
         "away_probable_pitcher": "Sandy Alcantara",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-29 - Miami Marlins @ Los Angeles Dodgers (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-04-29 - Miami Marlins @ Los Angeles Dodgers (Pre-Game)"
     },
     {
         "game_id": 823312,
