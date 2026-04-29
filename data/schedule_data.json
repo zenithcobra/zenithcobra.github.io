@@ -4,7 +4,7 @@
         "game_datetime": "2026-04-29T17:10:00Z",
         "game_date": "2026-04-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Tampa Bay Rays",
         "home_name": "Cleveland Guardians",
         "away_id": 139,
@@ -22,15 +22,15 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-29 - Tampa Bay Rays @ Cleveland Guardians (Scheduled)"
+        "series_status": "TB leads 2-0",
+        "summary": "2026-04-29 - Tampa Bay Rays @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 824608,
         "game_datetime": "2026-04-29T17:10:00Z",
         "game_date": "2026-04-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Chicago White Sox",
         "away_id": 108,
@@ -48,15 +48,15 @@
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-29 - Los Angeles Angels @ Chicago White Sox (Scheduled)"
+        "series_status": "CWS leads 2-0",
+        "summary": "2026-04-29 - Los Angeles Angels @ Chicago White Sox (Pre-Game)"
     },
     {
         "game_id": 823717,
         "game_datetime": "2026-04-29T17:40:00Z",
         "game_date": "2026-04-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "Minnesota Twins",
         "away_id": 136,
@@ -74,8 +74,8 @@
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-04-29 - Seattle Mariners @ Minnesota Twins (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-04-29 - Seattle Mariners @ Minnesota Twins (Pre-Game)"
     },
     {
         "game_id": 822907,
