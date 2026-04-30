@@ -78,14 +78,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 11,
-        "home_score": 3,
-        "current_inning": 7,
-        "inning_state": "Top",
+        "home_score": 4,
+        "current_inning": 9,
+        "inning_state": "Bottom",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BAL leads 2-0",
-        "summary": "2026-04-30 - Houston Astros (11) @ Baltimore Orioles (3) (Top of the 7th)"
+        "summary": "2026-04-30 - Houston Astros (11) @ Baltimore Orioles (4) (Bottom of the 9th)"
     },
     {
         "game_id": 823391,
@@ -167,15 +167,15 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 2,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "End",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [
             "MLB Network"
         ],
         "series_status": "PHI leads 2-0",
-        "summary": "2026-04-30 - San Francisco Giants (0) @ Philadelphia Phillies (2) (Bottom of the 1st)"
+        "summary": "2026-04-30 - San Francisco Giants (0) @ Philadelphia Phillies (2) (End of the 3rd)"
     },
     {
         "game_id": 824524,
@@ -275,7 +275,7 @@
         "game_datetime": "2026-04-30T19:05:00Z",
         "game_date": "2026-04-30",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Kansas City Royals",
         "home_name": "Athletics",
         "away_id": 118,
@@ -299,7 +299,7 @@
         "winning_pitcher": "Luis Medina",
         "losing_pitcher": "Noah Cameron",
         "save_pitcher": "Jack Perkins",
-        "summary": "2026-04-30 - Kansas City Royals (3) @ Athletics (6) (Game Over)"
+        "summary": "2026-04-30 - Kansas City Royals (3) @ Athletics (6) (Final)"
     },
     {
         "game_id": 823714,
