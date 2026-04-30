@@ -159,7 +159,7 @@
         "game_datetime": "2026-04-30T21:35:00Z",
         "game_date": "2026-04-30",
         "game_type": "R",
-        "status": "Delayed",
+        "status": "In Progress",
         "away_name": "San Francisco Giants",
         "home_name": "Philadelphia Phillies",
         "away_id": 137,
@@ -170,7 +170,7 @@
         "away_probable_pitcher": "Adrian Houser",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
+        "away_score": 4,
         "home_score": 4,
         "current_inning": 6,
         "inning_state": "Top",
@@ -180,7 +180,7 @@
             "MLB Network"
         ],
         "series_status": "PHI leads 2-0",
-        "summary": "2026-04-30 - San Francisco Giants @ Philadelphia Phillies (Delayed)"
+        "summary": "2026-04-30 - San Francisco Giants (4) @ Philadelphia Phillies (4) (Top of the 6th)"
     },
     {
         "game_id": 824524,
@@ -311,7 +311,7 @@
         "game_datetime": "2026-04-30T23:40:00Z",
         "game_date": "2026-04-30",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Toronto Blue Jays",
         "home_name": "Minnesota Twins",
         "away_id": 141,
@@ -325,11 +325,11 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-30 - Toronto Blue Jays @ Minnesota Twins (Warmup)"
+        "summary": "2026-04-30 - Toronto Blue Jays (0) @ Minnesota Twins (0) (Middle of the 1st)"
     }
 ]
