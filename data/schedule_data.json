@@ -159,7 +159,7 @@
         "game_datetime": "2026-04-30T21:35:00Z",
         "game_date": "2026-04-30",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Delayed",
         "away_name": "San Francisco Giants",
         "home_name": "Philadelphia Phillies",
         "away_id": 137,
@@ -170,9 +170,9 @@
         "away_probable_pitcher": "Adrian Houser",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 2,
-        "current_inning": 5,
+        "away_score": 2,
+        "home_score": 4,
+        "current_inning": 6,
         "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
@@ -180,7 +180,7 @@
             "MLB Network"
         ],
         "series_status": "PHI leads 2-0",
-        "summary": "2026-04-30 - San Francisco Giants (1) @ Philadelphia Phillies (2) (Top of the 5th)"
+        "summary": "2026-04-30 - San Francisco Giants @ Philadelphia Phillies (Delayed)"
     },
     {
         "game_id": 824524,
@@ -311,7 +311,7 @@
         "game_datetime": "2026-04-30T23:40:00Z",
         "game_date": "2026-04-30",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Toronto Blue Jays",
         "home_name": "Minnesota Twins",
         "away_id": 141,
@@ -330,6 +330,6 @@
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-04-30 - Toronto Blue Jays @ Minnesota Twins (Pre-Game)"
+        "summary": "2026-04-30 - Toronto Blue Jays @ Minnesota Twins (Warmup)"
     }
 ]
