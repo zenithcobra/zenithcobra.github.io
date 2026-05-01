@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 5,
         "home_score": 6,
-        "current_inning": 6,
-        "inning_state": "Middle",
+        "current_inning": 8,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-01 - Arizona Diamondbacks (5) @ Chicago Cubs (6) (Middle of the 6th)"
+        "summary": "2026-05-01 - Arizona Diamondbacks (5) @ Chicago Cubs (6) (Top of the 8th)"
     },
     {
         "game_id": 824287,
@@ -225,10 +225,10 @@
         "away_probable_pitcher": "Patrick Corbin",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
@@ -251,10 +251,10 @@
         "away_probable_pitcher": "Emmet Sheehan",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
@@ -370,7 +370,7 @@
         "game_datetime": "2026-05-02T01:45:00Z",
         "game_date": "2026-05-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Kansas City Royals",
         "home_name": "Seattle Mariners",
         "away_id": 118,
@@ -391,6 +391,6 @@
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-05-01 - Kansas City Royals @ Seattle Mariners (Scheduled)"
+        "summary": "2026-05-01 - Kansas City Royals @ Seattle Mariners (Pre-Game)"
     }
 ]
