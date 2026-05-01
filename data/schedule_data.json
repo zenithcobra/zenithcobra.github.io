@@ -35,7 +35,7 @@
         "game_datetime": "2026-05-01T22:40:00Z",
         "game_date": "2026-05-01",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Texas Rangers",
         "home_name": "Detroit Tigers",
         "away_id": 140,
@@ -54,7 +54,7 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-01 - Texas Rangers @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-05-01 - Texas Rangers @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 823389,
@@ -89,7 +89,7 @@
         "game_datetime": "2026-05-01T22:45:00Z",
         "game_date": "2026-05-01",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Milwaukee Brewers",
         "home_name": "Washington Nationals",
         "away_id": 158,
@@ -108,7 +108,7 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-01 - Milwaukee Brewers @ Washington Nationals (Pre-Game)"
+        "summary": "2026-05-01 - Milwaukee Brewers @ Washington Nationals (Warmup)"
     },
     {
         "game_id": 823557,
@@ -297,7 +297,7 @@
         "game_datetime": "2026-05-02T01:38:00Z",
         "game_date": "2026-05-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "Los Angeles Angels",
         "away_id": 121,
@@ -308,15 +308,15 @@
         "away_probable_pitcher": "Christian Scott",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-01 - New York Mets @ Los Angeles Angels (Scheduled)"
+        "summary": "2026-05-01 - New York Mets @ Los Angeles Angels (Pre-Game)"
     },
     {
         "game_id": 825012,
@@ -360,10 +360,10 @@
         "away_probable_pitcher": "Noah Schultz",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
