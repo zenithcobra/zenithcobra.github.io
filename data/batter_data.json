@@ -212,15 +212,15 @@
         "team_id": 109,
         "player_id": 606466,
         "position": "2B",
-        "games_played": 29.0,
+        "games_played": 30.0,
         "H": 27.0,
         "HR": 5.0,
         "RBI": 11.0,
-        "HRpg": 0.172,
+        "HRpg": 0.167,
         "fHRpg": "1/6",
-        "Hpg": 0.931,
-        "fHpg": "1",
-        "RBIpg": 0.379,
+        "Hpg": 0.9,
+        "fHpg": "6/7",
+        "RBIpg": 0.367,
         "fRBIpg": "2/5",
         "HR24": 28,
         "HR24pg": 0.22,
@@ -448,18 +448,7 @@
         "player_name": "Jacob Webb",
         "team": "Chicago Cubs",
         "team_id": 112,
-        "player_id": 657097,
-        "position": "P",
-        "games_played": 14.0,
-        "H": 0.0,
-        "HR": 0.0,
-        "RBI": 0.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.0,
-        "fHpg": "0",
-        "RBIpg": 0.0,
-        "fRBIpg": "0"
+        "player_id": 657097
     },
     {
         "player_name": "Jameson Taillon",
@@ -2734,6 +2723,12 @@
         "fHR24pg": "1/7"
     },
     {
+        "player_name": "Albert Su\u00e1rez",
+        "team": "Baltimore Orioles",
+        "team_id": 110,
+        "player_id": 544150
+    },
+    {
         "player_name": "Andrew Kittredge",
         "team": "Baltimore Orioles",
         "team_id": 110,
@@ -2946,12 +2941,6 @@
         "team": "Baltimore Orioles",
         "team_id": 110,
         "player_id": 670329
-    },
-    {
-        "player_name": "Ryan Helsley",
-        "team": "Baltimore Orioles",
-        "team_id": 110,
-        "player_id": 664854
     },
     {
         "player_name": "Samuel Basallo",
@@ -8426,6 +8415,12 @@
         "team": "Cleveland Guardians",
         "team_id": 114,
         "player_id": 800048
+    },
+    {
+        "player_name": "Petey Halpin",
+        "team": "Cleveland Guardians",
+        "team_id": 114,
+        "player_id": 690984
     },
     {
         "player_name": "Peyton Pallette",
