@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Kyle Bradish",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 3,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "away_score": 3,
+        "home_score": 6,
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-05-02 - Baltimore Orioles (1) @ New York Yankees (3) (Bottom of the 4th)"
+        "summary": "2026-05-02 - Baltimore Orioles (3) @ New York Yankees (6) (Top of the 6th)"
     },
     {
         "game_id": 823715,
@@ -43,13 +43,13 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 3,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-02 - Toronto Blue Jays (2) @ Minnesota Twins (3) (Top of the 3rd)"
+        "summary": "2026-05-02 - Toronto Blue Jays (2) @ Minnesota Twins (3) (Bottom of the 5th)"
     },
     {
         "game_id": 824685,
@@ -69,13 +69,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 1,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "current_inning": 5,
+        "inning_state": "Middle",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 1-0",
-        "summary": "2026-05-02 - Arizona Diamondbacks (0) @ Chicago Cubs (1) (Top of the 3rd)"
+        "summary": "2026-05-02 - Arizona Diamondbacks (0) @ Chicago Cubs (1) (Middle of the 5th)"
     },
     {
         "game_id": 825014,
@@ -240,7 +240,7 @@
         "game_datetime": "2026-05-02T23:15:00Z",
         "game_date": "2026-05-02",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Dodgers",
         "home_name": "St. Louis Cardinals",
         "away_id": 119,
@@ -260,15 +260,15 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": null,
-        "summary": "2026-05-02 - Los Angeles Dodgers @ St. Louis Cardinals (Scheduled)"
+        "series_status": "STL leads 1-0",
+        "summary": "2026-05-02 - Los Angeles Dodgers @ St. Louis Cardinals (Pre-Game)"
     },
     {
         "game_id": 824284,
         "game_datetime": "2026-05-02T23:15:00Z",
         "game_date": "2026-05-02",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Texas Rangers",
         "home_name": "Detroit Tigers",
         "away_id": 140,
@@ -288,8 +288,8 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": null,
-        "summary": "2026-05-02 - Texas Rangers @ Detroit Tigers (Scheduled)"
+        "series_status": "TEX leads 1-0",
+        "summary": "2026-05-02 - Texas Rangers @ Detroit Tigers (Pre-Game)"
     },
     {
         "game_id": 824365,
@@ -366,7 +366,7 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "NYM leads 1-0",
         "summary": "2026-05-02 - New York Mets @ Los Angeles Angels (Scheduled)"
     },
     {
