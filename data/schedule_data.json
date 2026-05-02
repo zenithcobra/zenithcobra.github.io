@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-02T17:35:00Z",
         "game_date": "2026-05-02",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Baltimore Orioles",
         "home_name": "New York Yankees",
         "away_id": 110,
@@ -18,19 +18,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-05-02 - Baltimore Orioles @ New York Yankees (Warmup)"
+        "summary": "2026-05-02 - Baltimore Orioles (0) @ New York Yankees (0) (Middle of the 1st)"
     },
     {
         "game_id": 823715,
         "game_datetime": "2026-05-02T18:10:00Z",
         "game_date": "2026-05-02",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Toronto Blue Jays",
         "home_name": "Minnesota Twins",
         "away_id": 141,
@@ -49,7 +49,7 @@
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-02 - Toronto Blue Jays @ Minnesota Twins (Pre-Game)"
+        "summary": "2026-05-02 - Toronto Blue Jays @ Minnesota Twins (Warmup)"
     },
     {
         "game_id": 824685,
@@ -303,7 +303,7 @@
         "home_id": 115,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
+        "home_probable_pitcher": "Brennan Bernardino",
         "away_probable_pitcher": "Chris Sale",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
@@ -366,7 +366,7 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": "NYM leads 1-0",
+        "series_status": null,
         "summary": "2026-05-02 - New York Mets @ Los Angeles Angels (Scheduled)"
     },
     {
