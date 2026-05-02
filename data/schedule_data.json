@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-02T17:35:00Z",
         "game_date": "2026-05-02",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Baltimore Orioles",
         "home_name": "New York Yankees",
         "away_id": 110,
@@ -17,13 +17,18 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 9,
-        "current_inning": 8,
-        "inning_state": "Middle",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
-        "series_status": "NYY leads 1-0",
-        "summary": "2026-05-02 - Baltimore Orioles (4) @ New York Yankees (9) (Middle of the 8th)"
+        "series_status": "NYY leads 2-0",
+        "winning_team": "New York Yankees",
+        "losing_team": "Baltimore Orioles",
+        "winning_pitcher": "Ryan Weathers",
+        "losing_pitcher": "Kyle Bradish",
+        "save_pitcher": null,
+        "summary": "2026-05-02 - Baltimore Orioles (4) @ New York Yankees (9) (Final)"
     },
     {
         "game_id": 823715,
@@ -41,15 +46,15 @@
         "away_probable_pitcher": "Dylan Cease",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 6,
+        "away_score": 11,
         "home_score": 4,
-        "current_inning": 8,
-        "inning_state": "Top",
+        "current_inning": 9,
+        "inning_state": "Bottom",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-02 - Toronto Blue Jays (6) @ Minnesota Twins (4) (Top of the 8th)"
+        "summary": "2026-05-02 - Toronto Blue Jays (11) @ Minnesota Twins (4) (Bottom of the 9th)"
     },
     {
         "game_id": 824685,
@@ -68,14 +73,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 1,
-        "current_inning": 8,
+        "home_score": 2,
+        "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 1-0",
-        "summary": "2026-05-02 - Arizona Diamondbacks (0) @ Chicago Cubs (1) (Top of the 8th)"
+        "summary": "2026-05-02 - Arizona Diamondbacks (0) @ Chicago Cubs (2) (Top of the 9th)"
     },
     {
         "game_id": 825014,
@@ -93,15 +98,15 @@
         "away_probable_pitcher": "Slade Cecconi",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 2,
-        "current_inning": 2,
+        "current_inning": 4,
         "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-05-02 - Cleveland Guardians (0) @ Athletics (2) (Top of the 2nd)"
+        "summary": "2026-05-02 - Cleveland Guardians (1) @ Athletics (2) (Top of the 4th)"
     },
     {
         "game_id": 823388,
@@ -119,9 +124,9 @@
         "away_probable_pitcher": "Rhett Lowder",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
-        "home_score": 1,
-        "current_inning": 1,
+        "away_score": 3,
+        "home_score": 5,
+        "current_inning": 2,
         "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
@@ -129,7 +134,7 @@
             "FS1"
         ],
         "series_status": "PIT leads 1-0",
-        "summary": "2026-05-02 - Cincinnati Reds (2) @ Pittsburgh Pirates (1) (Bottom of the 1st)"
+        "summary": "2026-05-02 - Cincinnati Reds (3) @ Pittsburgh Pirates (5) (Bottom of the 2nd)"
     },
     {
         "game_id": 822746,
@@ -149,13 +154,13 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 3,
         "inning_state": "Bottom",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "MIL leads 1-0",
-        "summary": "2026-05-02 - Milwaukee Brewers (3) @ Washington Nationals (0) (Bottom of the 1st)"
+        "summary": "2026-05-02 - Milwaukee Brewers (3) @ Washington Nationals (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 824771,
@@ -175,13 +180,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "BOS leads 1-0",
-        "summary": "2026-05-02 - Houston Astros (1) @ Boston Red Sox (0) (Top of the 1st)"
+        "summary": "2026-05-02 - Houston Astros (1) @ Boston Red Sox (0) (Top of the 3rd)"
     },
     {
         "game_id": 823876,
@@ -201,13 +206,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "End",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-05-02 - Philadelphia Phillies (0) @ Miami Marlins (0) (End of the 1st)"
+        "summary": "2026-05-02 - Philadelphia Phillies (0) @ Miami Marlins (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 822988,
@@ -322,7 +327,7 @@
         "game_datetime": "2026-05-03T00:40:00Z",
         "game_date": "2026-05-02",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago White Sox",
         "home_name": "San Diego Padres",
         "away_id": 145,
@@ -340,8 +345,8 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-02 - Chicago White Sox @ San Diego Padres (Scheduled)"
+        "series_status": "CWS leads 1-0",
+        "summary": "2026-05-02 - Chicago White Sox @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 824042,
