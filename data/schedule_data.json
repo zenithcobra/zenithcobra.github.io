@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Kyle Bradish",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
+        "away_score": 4,
         "home_score": 6,
-        "current_inning": 6,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-05-02 - Baltimore Orioles (3) @ New York Yankees (6) (Top of the 6th)"
+        "summary": "2026-05-02 - Baltimore Orioles (4) @ New York Yankees (6) (Top of the 7th)"
     },
     {
         "game_id": 823715,
@@ -41,15 +41,15 @@
         "away_probable_pitcher": "Dylan Cease",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
-        "home_score": 3,
-        "current_inning": 5,
+        "away_score": 3,
+        "home_score": 4,
+        "current_inning": 6,
         "inning_state": "Bottom",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-02 - Toronto Blue Jays (2) @ Minnesota Twins (3) (Bottom of the 5th)"
+        "summary": "2026-05-02 - Toronto Blue Jays (3) @ Minnesota Twins (4) (Bottom of the 6th)"
     },
     {
         "game_id": 824685,
@@ -69,20 +69,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 1,
-        "current_inning": 5,
-        "inning_state": "Middle",
+        "current_inning": 6,
+        "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 1-0",
-        "summary": "2026-05-02 - Arizona Diamondbacks (0) @ Chicago Cubs (1) (Middle of the 5th)"
+        "summary": "2026-05-02 - Arizona Diamondbacks (0) @ Chicago Cubs (1) (Bottom of the 6th)"
     },
     {
         "game_id": 825014,
         "game_datetime": "2026-05-02T20:05:00Z",
         "game_date": "2026-05-02",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cleveland Guardians",
         "home_name": "Athletics",
         "away_id": 114,
@@ -101,14 +101,14 @@
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-05-02 - Cleveland Guardians @ Athletics (Pre-Game)"
+        "summary": "2026-05-02 - Cleveland Guardians @ Athletics (Warmup)"
     },
     {
         "game_id": 823388,
         "game_datetime": "2026-05-02T20:05:00Z",
         "game_date": "2026-05-02",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cincinnati Reds",
         "home_name": "Pittsburgh Pirates",
         "away_id": 113,
@@ -129,14 +129,14 @@
             "FS1"
         ],
         "series_status": "PIT leads 1-0",
-        "summary": "2026-05-02 - Cincinnati Reds @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-05-02 - Cincinnati Reds @ Pittsburgh Pirates (Warmup)"
     },
     {
         "game_id": 822746,
         "game_datetime": "2026-05-02T20:05:00Z",
         "game_date": "2026-05-02",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Milwaukee Brewers",
         "home_name": "Washington Nationals",
         "away_id": 158,
@@ -155,14 +155,14 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "MIL leads 1-0",
-        "summary": "2026-05-02 - Milwaukee Brewers @ Washington Nationals (Pre-Game)"
+        "summary": "2026-05-02 - Milwaukee Brewers @ Washington Nationals (Warmup)"
     },
     {
         "game_id": 824771,
         "game_datetime": "2026-05-02T20:10:00Z",
         "game_date": "2026-05-02",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Houston Astros",
         "home_name": "Boston Red Sox",
         "away_id": 117,
@@ -181,14 +181,14 @@
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "BOS leads 1-0",
-        "summary": "2026-05-02 - Houston Astros @ Boston Red Sox (Pre-Game)"
+        "summary": "2026-05-02 - Houston Astros @ Boston Red Sox (Warmup)"
     },
     {
         "game_id": 823876,
         "game_datetime": "2026-05-02T20:10:00Z",
         "game_date": "2026-05-02",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Philadelphia Phillies",
         "home_name": "Miami Marlins",
         "away_id": 143,
@@ -207,7 +207,7 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-05-02 - Philadelphia Phillies @ Miami Marlins (Pre-Game)"
+        "summary": "2026-05-02 - Philadelphia Phillies @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 822988,
@@ -296,7 +296,7 @@
         "game_datetime": "2026-05-03T00:10:00Z",
         "game_date": "2026-05-02",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Atlanta Braves",
         "home_name": "Colorado Rockies",
         "away_id": 144,
@@ -315,7 +315,7 @@
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "ATL leads 1-0",
-        "summary": "2026-05-02 - Atlanta Braves @ Colorado Rockies (Scheduled)"
+        "summary": "2026-05-02 - Atlanta Braves @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 823308,
@@ -366,7 +366,7 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": "NYM leads 1-0",
+        "series_status": null,
         "summary": "2026-05-02 - New York Mets @ Los Angeles Angels (Scheduled)"
     },
     {
