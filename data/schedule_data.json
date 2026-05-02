@@ -82,7 +82,7 @@
         "game_datetime": "2026-05-02T20:05:00Z",
         "game_date": "2026-05-02",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Athletics",
         "away_id": 114,
@@ -100,15 +100,15 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-02 - Cleveland Guardians @ Athletics (Scheduled)"
+        "series_status": "CLE leads 1-0",
+        "summary": "2026-05-02 - Cleveland Guardians @ Athletics (Pre-Game)"
     },
     {
         "game_id": 823388,
         "game_datetime": "2026-05-02T20:05:00Z",
         "game_date": "2026-05-02",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cincinnati Reds",
         "home_name": "Pittsburgh Pirates",
         "away_id": 113,
@@ -128,8 +128,8 @@
         "national_broadcasts": [
             "FS1"
         ],
-        "series_status": null,
-        "summary": "2026-05-02 - Cincinnati Reds @ Pittsburgh Pirates (Scheduled)"
+        "series_status": "PIT leads 1-0",
+        "summary": "2026-05-02 - Cincinnati Reds @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 822746,
