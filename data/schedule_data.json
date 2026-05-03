@@ -347,7 +347,7 @@
         "game_datetime": "2026-05-03T20:07:00Z",
         "game_date": "2026-05-03",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "New York Mets",
         "home_name": "Los Angeles Angels",
         "away_id": 121,
@@ -371,14 +371,14 @@
         "winning_pitcher": "Clay Holmes",
         "losing_pitcher": "Jack Kochanowicz",
         "save_pitcher": null,
-        "summary": "2026-05-03 - New York Mets (5) @ Los Angeles Angels (1) (Game Over)"
+        "summary": "2026-05-03 - New York Mets (5) @ Los Angeles Angels (1) (Final)"
     },
     {
         "game_id": 823145,
         "game_datetime": "2026-05-03T20:10:00Z",
         "game_date": "2026-05-03",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Kansas City Royals",
         "home_name": "Seattle Mariners",
         "away_id": 118,
@@ -402,14 +402,14 @@
         "winning_pitcher": "Kris Bubic",
         "losing_pitcher": "Luis Castillo",
         "save_pitcher": "Daniel Lynch IV",
-        "summary": "2026-05-03 - Kansas City Royals (4) @ Seattle Mariners (1) (Game Over)"
+        "summary": "2026-05-03 - Kansas City Royals (4) @ Seattle Mariners (1) (Final)"
     },
     {
         "game_id": 823307,
         "game_datetime": "2026-05-03T20:10:00Z",
         "game_date": "2026-05-03",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Chicago White Sox",
         "home_name": "San Diego Padres",
         "away_id": 145,
@@ -433,14 +433,14 @@
         "winning_pitcher": "Jason Adam",
         "losing_pitcher": "Tyler Davis",
         "save_pitcher": "Mason Miller",
-        "summary": "2026-05-03 - Chicago White Sox (3) @ San Diego Padres (4) (Game Over)"
+        "summary": "2026-05-03 - Chicago White Sox (3) @ San Diego Padres (4) (Final)"
     },
     {
         "game_id": 824285,
         "game_datetime": "2026-05-03T23:20:00Z",
         "game_date": "2026-05-03",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Texas Rangers",
         "home_name": "Detroit Tigers",
         "away_id": 140,
@@ -461,6 +461,6 @@
             "NBCSN / Peacock"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-03 - Texas Rangers @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-05-03 - Texas Rangers (0) @ Detroit Tigers (0) (Top of the 1st)"
     }
 ]
