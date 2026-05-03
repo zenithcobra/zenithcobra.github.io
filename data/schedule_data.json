@@ -32,7 +32,7 @@
         "game_datetime": "2026-05-03T17:35:00Z",
         "game_date": "2026-05-03",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Houston Astros",
         "home_name": "Boston Red Sox",
         "away_id": 117,
@@ -51,7 +51,7 @@
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-03 - Houston Astros @ Boston Red Sox (Scheduled)"
+        "summary": "2026-05-03 - Houston Astros @ Boston Red Sox (Pre-Game)"
     },
     {
         "game_id": 823387,
@@ -110,7 +110,7 @@
         "game_datetime": "2026-05-03T17:35:00Z",
         "game_date": "2026-05-03",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "Washington Nationals",
         "away_id": 158,
@@ -118,7 +118,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Zack Littell",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Logan Henderson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -129,14 +129,14 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "MIL leads 2-0",
-        "summary": "2026-05-03 - Milwaukee Brewers @ Washington Nationals (Scheduled)"
+        "summary": "2026-05-03 - Milwaukee Brewers @ Washington Nationals (Pre-Game)"
     },
     {
         "game_id": 822987,
         "game_datetime": "2026-05-03T17:40:00Z",
         "game_date": "2026-05-03",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Francisco Giants",
         "home_name": "Tampa Bay Rays",
         "away_id": 137,
@@ -154,8 +154,8 @@
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-03 - San Francisco Giants @ Tampa Bay Rays (Scheduled)"
+        "series_status": "TB leads 2-0",
+        "summary": "2026-05-03 - San Francisco Giants @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 823875,
