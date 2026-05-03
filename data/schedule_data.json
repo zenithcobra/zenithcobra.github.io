@@ -37,7 +37,7 @@
         "game_datetime": "2026-05-03T17:35:00Z",
         "game_date": "2026-05-03",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Houston Astros",
         "home_name": "Boston Red Sox",
         "away_id": 117,
@@ -61,7 +61,7 @@
         "winning_pitcher": "Bryan Abreu",
         "losing_pitcher": "Zack Kelly",
         "save_pitcher": null,
-        "summary": "2026-05-03 - Houston Astros (3) @ Boston Red Sox (1) (Game Over)"
+        "summary": "2026-05-03 - Houston Astros (3) @ Boston Red Sox (1) (Final)"
     },
     {
         "game_id": 823387,
@@ -298,13 +298,13 @@
         "away_pitcher_note": "",
         "away_score": 8,
         "home_score": 5,
-        "current_inning": 7,
+        "current_inning": 8,
         "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "ATL leads 2-0",
-        "summary": "2026-05-03 - Atlanta Braves (8) @ Colorado Rockies (5) (Top of the 7th)"
+        "summary": "2026-05-03 - Atlanta Braves (8) @ Colorado Rockies (5) (Top of the 8th)"
     },
     {
         "game_id": 825013,
@@ -323,14 +323,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 3,
-        "current_inning": 5,
+        "home_score": 4,
+        "current_inning": 6,
         "inning_state": "Bottom",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "CLE leads 2-0",
-        "summary": "2026-05-03 - Cleveland Guardians (1) @ Athletics (3) (Bottom of the 5th)"
+        "summary": "2026-05-03 - Cleveland Guardians (1) @ Athletics (4) (Bottom of the 6th)"
     },
     {
         "game_id": 824043,
@@ -350,13 +350,13 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 1,
-        "current_inning": 5,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-03 - New York Mets (2) @ Los Angeles Angels (1) (Top of the 5th)"
+        "summary": "2026-05-03 - New York Mets (2) @ Los Angeles Angels (1) (Top of the 7th)"
     },
     {
         "game_id": 823145,
@@ -374,15 +374,15 @@
         "away_probable_pitcher": "Kris Bubic",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
+        "away_score": 4,
         "home_score": 1,
-        "current_inning": 5,
-        "inning_state": "Top",
+        "current_inning": 6,
+        "inning_state": "Middle",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "KC leads 2-0",
-        "summary": "2026-05-03 - Kansas City Royals (3) @ Seattle Mariners (1) (Top of the 5th)"
+        "summary": "2026-05-03 - Kansas City Royals (4) @ Seattle Mariners (1) (Middle of the 6th)"
     },
     {
         "game_id": 823307,
@@ -402,13 +402,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 3,
-        "current_inning": 4,
-        "inning_state": "End",
+        "current_inning": 6,
+        "inning_state": "Bottom",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "CWS leads 2-0",
-        "summary": "2026-05-03 - Chicago White Sox (1) @ San Diego Padres (3) (End of the 4th)"
+        "summary": "2026-05-03 - Chicago White Sox (1) @ San Diego Padres (3) (Bottom of the 6th)"
     },
     {
         "game_id": 824285,
