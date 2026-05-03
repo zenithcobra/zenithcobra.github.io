@@ -50,13 +50,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 1,
-        "current_inning": 8,
-        "inning_state": "End",
+        "current_inning": 10,
+        "inning_state": "Top",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-03 - Houston Astros (1) @ Boston Red Sox (1) (End of the 8th)"
+        "summary": "2026-05-03 - Houston Astros (1) @ Boston Red Sox (1) (Top of the 10th)"
     },
     {
         "game_id": 823387,
@@ -106,14 +106,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 4,
-        "current_inning": 8,
-        "inning_state": "Middle",
+        "home_score": 11,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 2-0",
-        "summary": "2026-05-03 - Baltimore Orioles (3) @ New York Yankees (4) (Middle of the 8th)"
+        "summary": "2026-05-03 - Baltimore Orioles (3) @ New York Yankees (11) (Top of the 9th)"
     },
     {
         "game_id": 822742,
@@ -182,7 +182,7 @@
         "game_datetime": "2026-05-03T17:40:00Z",
         "game_date": "2026-05-03",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Philadelphia Phillies",
         "home_name": "Miami Marlins",
         "away_id": 143,
@@ -206,14 +206,14 @@
         "winning_pitcher": "Jes\u00fas Luzardo",
         "losing_pitcher": "Chris Paddack",
         "save_pitcher": null,
-        "summary": "2026-05-03 - Philadelphia Phillies (7) @ Miami Marlins (2) (Game Over)"
+        "summary": "2026-05-03 - Philadelphia Phillies (7) @ Miami Marlins (2) (Final)"
     },
     {
         "game_id": 823065,
         "game_datetime": "2026-05-03T18:15:00Z",
         "game_date": "2026-05-03",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Los Angeles Dodgers",
         "home_name": "St. Louis Cardinals",
         "away_id": 119,
@@ -224,15 +224,20 @@
         "away_probable_pitcher": "Justin Wrobleski",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
+        "away_score": 4,
         "home_score": 1,
-        "current_inning": 8,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
-        "series_status": "STL leads 2-0",
-        "summary": "2026-05-03 - Los Angeles Dodgers (3) @ St. Louis Cardinals (1) (Bottom of the 8th)"
+        "series_status": "STL wins 2-1",
+        "winning_team": "Los Angeles Dodgers",
+        "losing_team": "St. Louis Cardinals",
+        "winning_pitcher": "Justin Wrobleski",
+        "losing_pitcher": "Dustin May",
+        "save_pitcher": "Tanner Scott",
+        "summary": "2026-05-03 - Los Angeles Dodgers (4) @ St. Louis Cardinals (1) (Game Over)"
     },
     {
         "game_id": 824687,
@@ -251,14 +256,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 6,
-        "current_inning": 7,
+        "home_score": 8,
+        "current_inning": 8,
         "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 2-0",
-        "summary": "2026-05-03 - Arizona Diamondbacks (2) @ Chicago Cubs (6) (Bottom of the 7th)"
+        "summary": "2026-05-03 - Arizona Diamondbacks (2) @ Chicago Cubs (8) (Bottom of the 8th)"
     },
     {
         "game_id": 824364,
@@ -277,14 +282,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 2,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "home_score": 4,
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "ATL leads 2-0",
-        "summary": "2026-05-03 - Atlanta Braves (3) @ Colorado Rockies (2) (Bottom of the 4th)"
+        "summary": "2026-05-03 - Atlanta Braves (3) @ Colorado Rockies (4) (Top of the 5th)"
     },
     {
         "game_id": 825013,
@@ -303,14 +308,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "home_score": 1,
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "CLE leads 2-0",
-        "summary": "2026-05-03 - Cleveland Guardians (0) @ Athletics (0) (Top of the 2nd)"
+        "summary": "2026-05-03 - Cleveland Guardians (0) @ Athletics (1) (Bottom of the 3rd)"
     },
     {
         "game_id": 824043,
@@ -329,14 +334,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "home_score": 1,
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-03 - New York Mets (0) @ Los Angeles Angels (0) (Bottom of the 1st)"
+        "summary": "2026-05-03 - New York Mets (0) @ Los Angeles Angels (1) (Top of the 3rd)"
     },
     {
         "game_id": 823145,
@@ -356,13 +361,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "KC leads 2-0",
-        "summary": "2026-05-03 - Kansas City Royals (0) @ Seattle Mariners (0) (Top of the 2nd)"
+        "summary": "2026-05-03 - Kansas City Royals (0) @ Seattle Mariners (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 823307,
@@ -380,15 +385,15 @@
         "away_probable_pitcher": "Anthony Kay",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "Middle",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "CWS leads 2-0",
-        "summary": "2026-05-03 - Chicago White Sox (0) @ San Diego Padres (0) (Bottom of the 1st)"
+        "summary": "2026-05-03 - Chicago White Sox (1) @ San Diego Padres (0) (Middle of the 3rd)"
     },
     {
         "game_id": 824285,
