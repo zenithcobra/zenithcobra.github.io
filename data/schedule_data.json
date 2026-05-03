@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-03T16:45:00Z",
         "game_date": "2026-05-03",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Toronto Blue Jays",
         "home_name": "Minnesota Twins",
         "away_id": 141,
@@ -25,7 +25,7 @@
             "NBCSN / Peacock"
         ],
         "series_status": "TOR leads 2-1",
-        "summary": "2026-05-03 - Toronto Blue Jays @ Minnesota Twins (Pre-Game)"
+        "summary": "2026-05-03 - Toronto Blue Jays (0) @ Minnesota Twins (0) (Top of the 1st)"
     },
     {
         "game_id": 824769,
@@ -95,10 +95,10 @@
         "away_probable_pitcher": "Trey Gibson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
@@ -240,7 +240,7 @@
         "game_datetime": "2026-05-03T19:10:00Z",
         "game_date": "2026-05-03",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Atlanta Braves",
         "home_name": "Colorado Rockies",
         "away_id": 144,
@@ -251,15 +251,15 @@
         "away_probable_pitcher": "Spencer Strider",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-03 - Atlanta Braves @ Colorado Rockies (Scheduled)"
+        "series_status": "ATL leads 2-0",
+        "summary": "2026-05-03 - Atlanta Braves @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 825013,
@@ -310,7 +310,7 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": "NYM leads 1-0",
+        "series_status": null,
         "summary": "2026-05-03 - New York Mets @ Los Angeles Angels (Scheduled)"
     },
     {
@@ -318,7 +318,7 @@
         "game_datetime": "2026-05-03T20:10:00Z",
         "game_date": "2026-05-03",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Kansas City Royals",
         "home_name": "Seattle Mariners",
         "away_id": 118,
@@ -336,8 +336,8 @@
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-03 - Kansas City Royals @ Seattle Mariners (Scheduled)"
+        "series_status": "KC leads 2-0",
+        "summary": "2026-05-03 - Kansas City Royals @ Seattle Mariners (Pre-Game)"
     },
     {
         "game_id": 823307,
