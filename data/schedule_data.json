@@ -119,10 +119,10 @@
         "away_probable_pitcher": "Shane Baz",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
@@ -134,7 +134,7 @@
         "game_datetime": "2026-05-04T23:10:00Z",
         "game_date": "2026-05-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cincinnati Reds",
         "home_name": "Chicago Cubs",
         "away_id": 113,
@@ -153,7 +153,7 @@
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-04 - Cincinnati Reds @ Chicago Cubs (Scheduled)"
+        "summary": "2026-05-04 - Cincinnati Reds @ Chicago Cubs (Pre-Game)"
     },
     {
         "game_id": 824120,
