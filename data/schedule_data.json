@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Huascar Brazob\u00e1n",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
-        "current_inning": 4,
-        "inning_state": "End",
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-04 - New York Mets (0) @ Colorado Rockies (0) (End of the 4th)"
+        "summary": "2026-05-04 - New York Mets (2) @ Colorado Rockies (0) (Top of the 6th)"
     },
     {
         "game_id": 824283,
@@ -43,20 +43,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "Middle",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-04 - Boston Red Sox (0) @ Detroit Tigers (0) (Top of the 2nd)"
+        "summary": "2026-05-04 - Boston Red Sox (0) @ Detroit Tigers (0) (Middle of the 3rd)"
     },
     {
         "game_id": 822984,
         "game_datetime": "2026-05-04T22:40:00Z",
         "game_date": "2026-05-04",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Toronto Blue Jays",
         "home_name": "Tampa Bay Rays",
         "away_id": 141,
@@ -70,19 +70,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-04 - Toronto Blue Jays @ Tampa Bay Rays (Warmup)"
+        "summary": "2026-05-04 - Toronto Blue Jays (0) @ Tampa Bay Rays (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823874,
         "game_datetime": "2026-05-04T22:40:00Z",
         "game_date": "2026-05-04",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Philadelphia Phillies",
         "home_name": "Miami Marlins",
         "away_id": 143,
@@ -96,19 +96,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "PHI leads 2-1",
-        "summary": "2026-05-04 - Philadelphia Phillies @ Miami Marlins (Warmup)"
+        "summary": "2026-05-04 - Philadelphia Phillies (0) @ Miami Marlins (0) (Middle of the 1st)"
     },
     {
         "game_id": 823552,
         "game_datetime": "2026-05-04T23:05:00Z",
         "game_date": "2026-05-04",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Baltimore Orioles",
         "home_name": "New York Yankees",
         "away_id": 110,
@@ -127,14 +127,14 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 3-0",
-        "summary": "2026-05-04 - Baltimore Orioles @ New York Yankees (Pre-Game)"
+        "summary": "2026-05-04 - Baltimore Orioles @ New York Yankees (Warmup)"
     },
     {
         "game_id": 824684,
         "game_datetime": "2026-05-04T23:10:00Z",
         "game_date": "2026-05-04",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "away_name": "Cincinnati Reds",
         "home_name": "Chicago Cubs",
         "away_id": 113,
@@ -153,7 +153,7 @@
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-04 - Cincinnati Reds @ Chicago Cubs (Pre-Game)"
+        "summary": "2026-05-04 - Cincinnati Reds @ Chicago Cubs (Delayed Start)"
     },
     {
         "game_id": 824120,
@@ -292,7 +292,7 @@
         "game_datetime": "2026-05-05T01:45:00Z",
         "game_date": "2026-05-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Diego Padres",
         "home_name": "San Francisco Giants",
         "away_id": 135,
@@ -311,6 +311,6 @@
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-04 - San Diego Padres @ San Francisco Giants (Scheduled)"
+        "summary": "2026-05-04 - San Diego Padres @ San Francisco Giants (Pre-Game)"
     }
 ]
