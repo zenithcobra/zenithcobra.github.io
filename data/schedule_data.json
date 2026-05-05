@@ -30,7 +30,7 @@
         "game_datetime": "2026-05-05T22:40:00Z",
         "game_date": "2026-05-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "Tampa Bay Rays",
         "away_id": 141,
@@ -48,8 +48,8 @@
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-05 - Toronto Blue Jays @ Tampa Bay Rays (Scheduled)"
+        "series_status": "TB leads 1-0",
+        "summary": "2026-05-05 - Toronto Blue Jays @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 823469,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-05-05T22:45:00Z",
         "game_date": "2026-05-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Washington Nationals",
         "away_id": 142,
@@ -127,7 +127,7 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-05 - Minnesota Twins @ Washington Nationals (Scheduled)"
+        "summary": "2026-05-05 - Minnesota Twins @ Washington Nationals (Pre-Game)"
     },
     {
         "game_id": 823553,
