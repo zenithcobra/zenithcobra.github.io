@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Jovani Mor\u00e1n",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
+        "away_score": 8,
         "home_score": 2,
-        "current_inning": 3,
+        "current_inning": 4,
         "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "BOS leads 1-0",
-        "summary": "2026-05-05 - Boston Red Sox (3) @ Detroit Tigers (2) (Top of the 3rd)"
+        "summary": "2026-05-05 - Boston Red Sox (8) @ Detroit Tigers (2) (Top of the 4th)"
     },
     {
         "game_id": 822986,
@@ -42,14 +42,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 1,
-        "current_inning": 3,
+        "home_score": 2,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-05-05 - Toronto Blue Jays (2) @ Tampa Bay Rays (1) (Bottom of the 3rd)"
+        "summary": "2026-05-05 - Toronto Blue Jays (2) @ Tampa Bay Rays (2) (Bottom of the 4th)"
     },
     {
         "game_id": 823469,
@@ -68,14 +68,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 3,
+        "home_score": 1,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-05 - Athletics (0) @ Philadelphia Phillies (0) (Bottom of the 3rd)"
+        "summary": "2026-05-05 - Athletics (0) @ Philadelphia Phillies (1) (Bottom of the 4th)"
     },
     {
         "game_id": 823873,
@@ -93,15 +93,15 @@
         "away_probable_pitcher": "Chris Bassitt",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
-        "home_score": 3,
+        "away_score": 5,
+        "home_score": 4,
         "current_inning": 3,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-05 - Baltimore Orioles (3) @ Miami Marlins (3) (Top of the 3rd)"
+        "summary": "2026-05-05 - Baltimore Orioles (5) @ Miami Marlins (4) (End of the 3rd)"
     },
     {
         "game_id": 822743,
@@ -119,15 +119,15 @@
         "away_probable_pitcher": "Taj Bradley",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
+        "away_score": 4,
         "home_score": 1,
-        "current_inning": 3,
+        "current_inning": 4,
         "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-05 - Minnesota Twins (2) @ Washington Nationals (1) (Top of the 3rd)"
+        "summary": "2026-05-05 - Minnesota Twins (4) @ Washington Nationals (1) (Top of the 4th)"
     },
     {
         "game_id": 823553,
@@ -146,21 +146,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Middle",
+        "home_score": 1,
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-05 - Texas Rangers (3) @ New York Yankees (0) (Middle of the 1st)"
+        "summary": "2026-05-05 - Texas Rangers (3) @ New York Yankees (1) (Bottom of the 2nd)"
     },
     {
         "game_id": 824682,
         "game_datetime": "2026-05-05T23:40:00Z",
         "game_date": "2026-05-05",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Cincinnati Reds",
         "home_name": "Chicago Cubs",
         "away_id": 113,
@@ -171,22 +171,22 @@
         "away_probable_pitcher": "Andrew Abbott",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 1-0",
-        "summary": "2026-05-05 - Cincinnati Reds @ Chicago Cubs (Warmup)"
+        "summary": "2026-05-05 - Cincinnati Reds (1) @ Chicago Cubs (0) (Middle of the 1st)"
     },
     {
         "game_id": 824119,
         "game_datetime": "2026-05-05T23:40:00Z",
         "game_date": "2026-05-05",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Cleveland Guardians",
         "home_name": "Kansas City Royals",
         "away_id": 114,
@@ -200,19 +200,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "KC leads 1-0",
-        "summary": "2026-05-05 - Cleveland Guardians @ Kansas City Royals (Warmup)"
+        "summary": "2026-05-05 - Cleveland Guardians (0) @ Kansas City Royals (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824200,
         "game_datetime": "2026-05-06T00:10:00Z",
         "game_date": "2026-05-05",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Houston Astros",
         "away_id": 119,
@@ -233,7 +233,7 @@
             "TBS"
         ],
         "series_status": "LAD leads 1-0",
-        "summary": "2026-05-05 - Los Angeles Dodgers @ Houston Astros (Pre-Game)"
+        "summary": "2026-05-05 - Los Angeles Dodgers @ Houston Astros (Warmup)"
     },
     {
         "game_id": 824040,
