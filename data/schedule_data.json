@@ -171,10 +171,10 @@
         "away_probable_pitcher": "Andrew Abbott",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
@@ -266,7 +266,7 @@
         "game_datetime": "2026-05-06T01:38:00Z",
         "game_date": "2026-05-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago White Sox",
         "home_name": "Los Angeles Angels",
         "away_id": 145,
@@ -285,7 +285,7 @@
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-05-05 - Chicago White Sox @ Los Angeles Angels (Scheduled)"
+        "summary": "2026-05-05 - Chicago White Sox @ Los Angeles Angels (Pre-Game)"
     },
     {
         "game_id": 825092,
@@ -318,7 +318,7 @@
         "game_datetime": "2026-05-06T01:40:00Z",
         "game_date": "2026-05-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Atlanta Braves",
         "home_name": "Seattle Mariners",
         "away_id": 144,
@@ -336,8 +336,8 @@
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-05 - Atlanta Braves @ Seattle Mariners (Scheduled)"
+        "series_status": "SEA leads 1-0",
+        "summary": "2026-05-05 - Atlanta Braves @ Seattle Mariners (Pre-Game)"
     },
     {
         "game_id": 823227,
