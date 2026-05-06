@@ -66,7 +66,7 @@
         "game_datetime": "2026-05-06T18:10:00Z",
         "game_date": "2026-05-06",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Houston Astros",
         "away_id": 119,
@@ -90,7 +90,7 @@
         "winning_pitcher": "Jack Dreyer",
         "losing_pitcher": "Lance McCullers Jr.",
         "save_pitcher": null,
-        "summary": "2026-05-06 - Los Angeles Dodgers (12) @ Houston Astros (2) (Game Over)"
+        "summary": "2026-05-06 - Los Angeles Dodgers (12) @ Houston Astros (2) (Final)"
     },
     {
         "game_id": 823226,
@@ -108,15 +108,15 @@
         "away_probable_pitcher": "Bradgley Rodriguez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 3,
         "home_score": 1,
-        "current_inning": 6,
-        "inning_state": "Bottom",
+        "current_inning": 8,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-06 - San Diego Padres (1) @ San Francisco Giants (1) (Bottom of the 6th)"
+        "summary": "2026-05-06 - San Diego Padres (3) @ San Francisco Giants (1) (Top of the 8th)"
     },
     {
         "game_id": 824036,
@@ -135,14 +135,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 5,
-        "current_inning": 3,
+        "home_score": 7,
+        "current_inning": 5,
         "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-06 - Chicago White Sox (1) @ Los Angeles Angels (5) (Top of the 3rd)"
+        "summary": "2026-05-06 - Chicago White Sox (1) @ Los Angeles Angels (7) (Top of the 5th)"
     },
     {
         "game_id": 823141,
@@ -162,13 +162,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 1,
-        "current_inning": 4,
+        "current_inning": 6,
         "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-06 - Atlanta Braves (0) @ Seattle Mariners (1) (Top of the 4th)"
+        "summary": "2026-05-06 - Atlanta Braves (0) @ Seattle Mariners (1) (Top of the 6th)"
     },
     {
         "game_id": 824282,
