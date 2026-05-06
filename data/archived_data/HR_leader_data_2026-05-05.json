@@ -13,27 +13,21 @@
     },
     {
         "place": 3,
-        "player_name": "Matt Olson",
-        "team": "Atlanta Braves",
-        "HR": "13"
-    },
-    {
-        "place": 4,
         "player_name": "Yordan Alvarez",
         "team": "Houston Astros",
         "HR": "12"
     },
     {
-        "place": 4,
-        "player_name": "Ben Rice",
-        "team": "New York Yankees",
+        "place": 3,
+        "player_name": "Matt Olson",
+        "team": "Atlanta Braves",
         "HR": "12"
     },
     {
-        "place": 6,
-        "player_name": "Byron Buxton",
-        "team": "Minnesota Twins",
-        "HR": "11"
+        "place": 3,
+        "player_name": "Ben Rice",
+        "team": "New York Yankees",
+        "HR": "12"
     },
     {
         "place": 6,
@@ -48,37 +42,43 @@
         "HR": "11"
     },
     {
-        "place": 6,
-        "player_name": "Mike Trout",
-        "team": "Los Angeles Angels",
-        "HR": "11"
+        "place": 8,
+        "player_name": "Byron Buxton",
+        "team": "Minnesota Twins",
+        "HR": "10"
     },
     {
-        "place": 10,
+        "place": 8,
         "player_name": "Elly De La Cruz",
         "team": "Cincinnati Reds",
         "HR": "10"
     },
     {
-        "place": 10,
+        "place": 8,
         "player_name": "Shea Langeliers",
         "team": "Athletics",
         "HR": "10"
     },
     {
-        "place": 10,
+        "place": 8,
         "player_name": "Kazuma Okamoto",
         "team": "Toronto Blue Jays",
         "HR": "10"
     },
     {
-        "place": 10,
+        "place": 8,
+        "player_name": "Mike Trout",
+        "team": "Los Angeles Angels",
+        "HR": "10"
+    },
+    {
+        "place": 8,
         "player_name": "Jordan Walker",
         "team": "St. Louis Cardinals",
         "HR": "10"
     },
     {
-        "place": 10,
+        "place": 8,
         "player_name": "James Wood",
         "team": "Washington Nationals",
         "HR": "10"
@@ -109,12 +109,6 @@
     },
     {
         "place": 15,
-        "player_name": "Bryce Harper",
-        "team": "Philadelphia Phillies",
-        "HR": "9"
-    },
-    {
-        "place": 15,
         "player_name": "Gunnar Henderson",
         "team": "Baltimore Orioles",
         "HR": "9"
@@ -138,51 +132,39 @@
         "HR": "9"
     },
     {
-        "place": 15,
-        "player_name": "Christian Walker",
-        "team": "Houston Astros",
-        "HR": "9"
-    },
-    {
-        "place": 25,
+        "place": 23,
         "player_name": "CJ Abrams",
         "team": "Washington Nationals",
         "HR": "8"
     },
     {
-        "place": 25,
+        "place": 23,
         "player_name": "Ozzie Albies",
         "team": "Atlanta Braves",
         "HR": "8"
     },
     {
-        "place": 25,
-        "player_name": "Willson Contreras",
-        "team": "Boston Red Sox",
-        "HR": "8"
-    },
-    {
-        "place": 25,
+        "place": 23,
         "player_name": "Ian Happ",
         "team": "Chicago Cubs",
         "HR": "8"
     },
     {
-        "place": 25,
-        "player_name": "Liam Hicks",
-        "team": "Miami Marlins",
+        "place": 23,
+        "player_name": "Bryce Harper",
+        "team": "Philadelphia Phillies",
         "HR": "8"
     },
     {
-        "place": 25,
+        "place": 23,
         "player_name": "Brandon Lowe",
         "team": "Pittsburgh Pirates",
         "HR": "8"
     },
     {
-        "place": 25,
-        "player_name": "Jorge Soler",
-        "team": "Los Angeles Angels",
+        "place": 23,
+        "player_name": "Christian Walker",
+        "team": "Houston Astros",
         "HR": "8"
     }
 ]
