@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-06T17:10:00Z",
         "game_date": "2026-05-06",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "Tampa Bay Rays",
         "away_id": 141,
@@ -15,22 +15,22 @@
         "away_probable_pitcher": "Patrick Corbin",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-06 - Toronto Blue Jays @ Tampa Bay Rays (Scheduled)"
+        "series_status": "TB leads 2-0",
+        "summary": "2026-05-06 - Toronto Blue Jays @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 823063,
         "game_datetime": "2026-05-06T17:15:00Z",
         "game_date": "2026-05-06",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "St. Louis Cardinals",
         "away_id": 158,
@@ -49,7 +49,7 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "STL leads 1-0",
-        "summary": "2026-05-06 - Milwaukee Brewers @ St. Louis Cardinals (Scheduled)"
+        "summary": "2026-05-06 - Milwaukee Brewers @ St. Louis Cardinals (Pre-Game)"
     },
     {
         "game_id": 824198,
