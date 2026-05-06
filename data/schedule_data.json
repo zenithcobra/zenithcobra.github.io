@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Bottom",
+        "home_score": 2,
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TB leads 2-0",
-        "summary": "2026-05-06 - Toronto Blue Jays (0) @ Tampa Bay Rays (0) (Bottom of the 3rd)"
+        "summary": "2026-05-06 - Toronto Blue Jays (0) @ Tampa Bay Rays (2) (Top of the 5th)"
     },
     {
         "game_id": 823063,
@@ -43,20 +43,20 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Middle",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "STL leads 1-0",
-        "summary": "2026-05-06 - Milwaukee Brewers (4) @ St. Louis Cardinals (0) (Middle of the 2nd)"
+        "summary": "2026-05-06 - Milwaukee Brewers (4) @ St. Louis Cardinals (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 824198,
         "game_datetime": "2026-05-06T18:10:00Z",
         "game_date": "2026-05-06",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Houston Astros",
         "away_id": 119,
@@ -75,7 +75,7 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-06 - Los Angeles Dodgers @ Houston Astros (Pre-Game)"
+        "summary": "2026-05-06 - Los Angeles Dodgers @ Houston Astros (Warmup)"
     },
     {
         "game_id": 823226,
