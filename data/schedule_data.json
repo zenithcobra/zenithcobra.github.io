@@ -66,7 +66,7 @@
         "game_datetime": "2026-05-07T18:10:00Z",
         "game_date": "2026-05-07",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Cleveland Guardians",
         "home_name": "Kansas City Royals",
         "away_id": 114,
@@ -90,7 +90,7 @@
         "winning_pitcher": "Slade Cecconi",
         "losing_pitcher": "Seth Lugo",
         "save_pitcher": "Cade Smith",
-        "summary": "2026-05-07 - Cleveland Guardians (8) @ Kansas City Royals (5) (Game Over)"
+        "summary": "2026-05-07 - Cleveland Guardians (8) @ Kansas City Royals (5) (Final)"
     },
     {
         "game_id": 824681,
@@ -140,14 +140,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 2,
+        "home_score": 6,
         "current_inning": 8,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "NYM leads 2-0",
-        "summary": "2026-05-07 - New York Mets (2) @ Colorado Rockies (2) (Top of the 8th)"
+        "summary": "2026-05-07 - New York Mets (2) @ Colorado Rockies (6) (Bottom of the 8th)"
     },
     {
         "game_id": 825090,
@@ -167,13 +167,13 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 2,
-        "current_inning": 7,
+        "current_inning": 8,
         "inning_state": "Bottom",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-07 - Pittsburgh Pirates (4) @ Arizona Diamondbacks (2) (Bottom of the 7th)"
+        "summary": "2026-05-07 - Pittsburgh Pirates (4) @ Arizona Diamondbacks (2) (Bottom of the 8th)"
     },
     {
         "game_id": 823467,
@@ -260,7 +260,7 @@
         "game_datetime": "2026-05-08T02:10:00Z",
         "game_date": "2026-05-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "San Diego Padres",
         "away_id": 138,
@@ -281,6 +281,6 @@
             "ESPN/ESPN App"
         ],
         "series_status": null,
-        "summary": "2026-05-07 - St. Louis Cardinals @ San Diego Padres (Scheduled)"
+        "summary": "2026-05-07 - St. Louis Cardinals @ San Diego Padres (Pre-Game)"
     }
 ]
