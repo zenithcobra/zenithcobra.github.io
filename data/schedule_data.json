@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-07T16:35:00Z",
         "game_date": "2026-05-07",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Texas Rangers",
         "home_name": "New York Yankees",
         "away_id": 140,
@@ -23,14 +23,14 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-07 - Texas Rangers @ New York Yankees (Warmup)"
+        "summary": "2026-05-07 - Texas Rangers (0) @ New York Yankees (0) (Top of the 1st)"
     },
     {
         "game_id": 822741,
         "game_datetime": "2026-05-07T17:05:00Z",
         "game_date": "2026-05-07",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Minnesota Twins",
         "home_name": "Washington Nationals",
         "away_id": 142,
@@ -49,7 +49,7 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-07 - Minnesota Twins @ Washington Nationals (Pre-Game)"
+        "summary": "2026-05-07 - Minnesota Twins @ Washington Nationals (Warmup)"
     },
     {
         "game_id": 824117,
@@ -119,10 +119,10 @@
         "away_probable_pitcher": "Christian Scott",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
