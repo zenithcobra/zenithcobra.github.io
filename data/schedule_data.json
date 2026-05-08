@@ -240,7 +240,7 @@
         "game_datetime": "2026-05-08T23:40:00Z",
         "game_date": "2026-05-08",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Yankees",
         "home_name": "Milwaukee Brewers",
         "away_id": 147,
@@ -259,7 +259,7 @@
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-08 - New York Yankees @ Milwaukee Brewers (Scheduled)"
+        "summary": "2026-05-08 - New York Yankees @ Milwaukee Brewers (Pre-Game)"
     },
     {
         "game_id": 822904,
@@ -277,10 +277,10 @@
         "away_probable_pitcher": "Ben Brown",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
@@ -303,10 +303,10 @@
         "away_probable_pitcher": "Nolan McLean",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
@@ -318,7 +318,7 @@
         "game_datetime": "2026-05-09T01:45:00Z",
         "game_date": "2026-05-08",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "San Diego Padres",
         "away_id": 138,
@@ -338,8 +338,8 @@
         "national_broadcasts": [
             "Apple TV"
         ],
-        "series_status": null,
-        "summary": "2026-05-08 - St. Louis Cardinals @ San Diego Padres (Scheduled)"
+        "series_status": "STL leads 1-0",
+        "summary": "2026-05-08 - St. Louis Cardinals @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 823957,
