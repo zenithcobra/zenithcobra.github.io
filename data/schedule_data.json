@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-09T19:07:00Z",
         "game_date": "2026-05-09",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Los Angeles Angels",
         "home_name": "Toronto Blue Jays",
         "away_id": 108,
@@ -16,14 +16,19 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 12,
-        "current_inning": 8,
-        "inning_state": "Bottom",
+        "home_score": 14,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
-        "series_status": "TOR leads 1-0",
-        "summary": "2026-05-09 - Los Angeles Angels (1) @ Toronto Blue Jays (12) (Bottom of the 8th)"
+        "series_status": "TOR wins 2-0",
+        "winning_team": "Toronto Blue Jays",
+        "losing_team": "Los Angeles Angels",
+        "winning_pitcher": "Mason Fluharty",
+        "losing_pitcher": "Jack Kochanowicz",
+        "save_pitcher": null,
+        "summary": "2026-05-09 - Los Angeles Angels (1) @ Toronto Blue Jays (14) (Final)"
     },
     {
         "game_id": 824847,
@@ -43,13 +48,13 @@
         "away_pitcher_note": "",
         "away_score": 5,
         "home_score": 0,
-        "current_inning": 5,
-        "inning_state": "Bottom",
+        "current_inning": 8,
+        "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "ATH leads 1-0",
-        "summary": "2026-05-09 - Athletics (5) @ Baltimore Orioles (0) (Bottom of the 5th)"
+        "summary": "2026-05-09 - Athletics (5) @ Baltimore Orioles (0) (Top of the 8th)"
     },
     {
         "game_id": 824523,
@@ -69,7 +74,7 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 3,
-        "current_inning": 6,
+        "current_inning": 8,
         "inning_state": "Bottom",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
@@ -77,7 +82,7 @@
             "FS1"
         ],
         "series_status": "HOU leads 1-0",
-        "summary": "2026-05-09 - Houston Astros (1) @ Cincinnati Reds (3) (Bottom of the 6th)"
+        "summary": "2026-05-09 - Houston Astros (1) @ Cincinnati Reds (3) (Bottom of the 8th)"
     },
     {
         "game_id": 823869,
@@ -96,21 +101,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 4,
-        "home_score": 2,
-        "current_inning": 6,
+        "home_score": 4,
+        "current_inning": 8,
         "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "WSH leads 1-0",
-        "summary": "2026-05-09 - Washington Nationals (4) @ Miami Marlins (2) (Top of the 6th)"
+        "summary": "2026-05-09 - Washington Nationals (4) @ Miami Marlins (4) (Top of the 8th)"
     },
     {
         "game_id": 823468,
         "game_datetime": "2026-05-09T22:05:00Z",
         "game_date": "2026-05-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Colorado Rockies",
         "home_name": "Philadelphia Phillies",
         "away_id": 115,
@@ -129,7 +134,7 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "COL leads 1-0",
-        "summary": "2026-05-09 - Colorado Rockies @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-05-09 - Colorado Rockies @ Philadelphia Phillies (Warmup)"
     },
     {
         "game_id": 824444,
