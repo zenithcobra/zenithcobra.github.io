@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-09T19:07:00Z",
         "game_date": "2026-05-09",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Los Angeles Angels",
         "home_name": "Toronto Blue Jays",
         "away_id": 108,
@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "End",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-05-09 - Los Angeles Angels @ Toronto Blue Jays (Warmup)"
+        "summary": "2026-05-09 - Los Angeles Angels (0) @ Toronto Blue Jays (0) (End of the 2nd)"
     },
     {
         "game_id": 824847,
@@ -110,7 +110,7 @@
         "game_datetime": "2026-05-09T20:10:00Z",
         "game_date": "2026-05-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Washington Nationals",
         "home_name": "Miami Marlins",
         "away_id": 120,
@@ -129,7 +129,7 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "WSH leads 1-0",
-        "summary": "2026-05-09 - Washington Nationals @ Miami Marlins (Pre-Game)"
+        "summary": "2026-05-09 - Washington Nationals @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 823468,
@@ -147,10 +147,10 @@
         "away_probable_pitcher": "Kyle Freeland",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
@@ -188,7 +188,7 @@
         "game_datetime": "2026-05-09T23:05:00Z",
         "game_date": "2026-05-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Texas Rangers",
         "away_id": 112,
@@ -206,15 +206,15 @@
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-09 - Chicago Cubs @ Texas Rangers (Scheduled)"
+        "series_status": "CHC leads 1-0",
+        "summary": "2026-05-09 - Chicago Cubs @ Texas Rangers (Pre-Game)"
     },
     {
         "game_id": 824115,
         "game_datetime": "2026-05-09T23:10:00Z",
         "game_date": "2026-05-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Detroit Tigers",
         "home_name": "Kansas City Royals",
         "away_id": 116,
@@ -233,14 +233,14 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "KC leads 1-0",
-        "summary": "2026-05-09 - Detroit Tigers @ Kansas City Royals (Scheduled)"
+        "summary": "2026-05-09 - Detroit Tigers @ Kansas City Royals (Pre-Game)"
     },
     {
         "game_id": 824606,
         "game_datetime": "2026-05-09T23:10:00Z",
         "game_date": "2026-05-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "Chicago White Sox",
         "away_id": 136,
@@ -258,8 +258,8 @@
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-09 - Seattle Mariners @ Chicago White Sox (Scheduled)"
+        "series_status": "SEA leads 1-0",
+        "summary": "2026-05-09 - Seattle Mariners @ Chicago White Sox (Pre-Game)"
     },
     {
         "game_id": 823792,
@@ -303,10 +303,10 @@
         "away_probable_pitcher": "Clay Holmes",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [
