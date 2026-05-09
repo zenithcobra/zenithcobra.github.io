@@ -1,14 +1,14 @@
 [
     {},
     {
-        "Venue": "Great American Ball Park",
-        "Location": "Cincinnati",
-        "HR": "61"
-    },
-    {
         "Venue": "Minute Maid Park",
         "Location": "Houston",
         "HR": "61"
+    },
+    {
+        "Venue": "Great American Ball Park",
+        "Location": "Cincinnati",
+        "HR": "59"
     },
     {
         "Venue": "Yankee Stadium",
@@ -33,12 +33,12 @@
     {
         "Venue": "Citizens Bank Park",
         "Location": "Philadelphia",
-        "HR": "51"
+        "HR": "48"
     },
     {
         "Venue": "Oriole Park at Camden Yards",
         "Location": "Baltimore",
-        "HR": "50"
+        "HR": "48"
     },
     {
         "Venue": "Coors Field",
@@ -63,17 +63,12 @@
     {
         "Venue": "Dodger Stadium",
         "Location": "Los Angeles",
-        "HR": "42"
+        "HR": "41"
     },
     {
         "Venue": "Busch Stadium",
         "Location": "St. Louis",
         "HR": "39"
-    },
-    {
-        "Venue": "PNC Park",
-        "Location": "Pittsburgh",
-        "HR": "38"
     },
     {
         "Venue": "American Family Field",
@@ -86,9 +81,14 @@
         "HR": "38"
     },
     {
+        "Venue": "PNC Park",
+        "Location": "Pittsburgh",
+        "HR": "38"
+    },
+    {
         "Venue": "Chase Field",
         "Location": "Phoenix",
-        "HR": "37"
+        "HR": "35"
     },
     {
         "Venue": "Target Field",
@@ -111,11 +111,6 @@
         "HR": "32"
     },
     {
-        "Venue": "Guaranteed Rate Field",
-        "Location": "Chicago",
-        "HR": "32"
-    },
-    {
         "Venue": "Comerica Park",
         "Location": "Detroit",
         "HR": "31"
@@ -128,12 +123,17 @@
     {
         "Venue": "Progressive Field",
         "Location": "Cleveland",
-        "HR": "31"
+        "HR": "30"
     },
     {
         "Venue": "Oracle Park",
         "Location": "San Francisco",
-        "HR": "30"
+        "HR": "28"
+    },
+    {
+        "Venue": "Guaranteed Rate Field",
+        "Location": "Chicago",
+        "HR": "27"
     },
     {
         "Venue": "Angel Stadium",
@@ -143,12 +143,12 @@
     {
         "Venue": "Globe Life Field",
         "Location": "Arlington",
-        "HR": "25"
+        "HR": "24"
     },
     {
         "Venue": "Fenway Park",
         "Location": "Boston",
-        "HR": "21"
+        "HR": "19"
     },
     {
         "Venue": "Unknown",
