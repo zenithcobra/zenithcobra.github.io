@@ -17,20 +17,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "End",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-05-09 - Los Angeles Angels (0) @ Toronto Blue Jays (0) (End of the 2nd)"
+        "summary": "2026-05-09 - Los Angeles Angels (0) @ Toronto Blue Jays (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 824847,
         "game_datetime": "2026-05-09T20:05:00Z",
         "game_date": "2026-05-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Athletics",
         "home_name": "Baltimore Orioles",
         "away_id": 133,
@@ -49,14 +49,14 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "ATH leads 1-0",
-        "summary": "2026-05-09 - Athletics @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-05-09 - Athletics @ Baltimore Orioles (Warmup)"
     },
     {
         "game_id": 824523,
         "game_datetime": "2026-05-09T20:10:00Z",
         "game_date": "2026-05-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Houston Astros",
         "home_name": "Cincinnati Reds",
         "away_id": 117,
@@ -77,7 +77,7 @@
             "FS1"
         ],
         "series_status": "HOU leads 1-0",
-        "summary": "2026-05-09 - Houston Astros @ Cincinnati Reds (Pre-Game)"
+        "summary": "2026-05-09 - Houston Astros @ Cincinnati Reds (Warmup)"
     },
     {
         "game_id": 824766,
@@ -251,10 +251,10 @@
         "away_probable_pitcher": "Luis Castillo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
