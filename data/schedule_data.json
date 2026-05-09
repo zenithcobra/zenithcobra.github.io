@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 1,
-        "current_inning": 4,
-        "inning_state": "End",
+        "home_score": 5,
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-05-09 - Los Angeles Angels (0) @ Toronto Blue Jays (1) (End of the 4th)"
+        "summary": "2026-05-09 - Los Angeles Angels (0) @ Toronto Blue Jays (5) (Bottom of the 5th)"
     },
     {
         "game_id": 824847,
@@ -43,13 +43,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "End",
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "ATH leads 1-0",
-        "summary": "2026-05-09 - Athletics (1) @ Baltimore Orioles (0) (End of the 1st)"
+        "summary": "2026-05-09 - Athletics (1) @ Baltimore Orioles (0) (Top of the 3rd)"
     },
     {
         "game_id": 824523,
@@ -69,15 +69,15 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "End",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [
             "FS1"
         ],
         "series_status": "HOU leads 1-0",
-        "summary": "2026-05-09 - Houston Astros (0) @ Cincinnati Reds (0) (End of the 1st)"
+        "summary": "2026-05-09 - Houston Astros (0) @ Cincinnati Reds (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 823869,
@@ -97,13 +97,13 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "WSH leads 1-0",
-        "summary": "2026-05-09 - Washington Nationals (3) @ Miami Marlins (0) (Top of the 1st)"
+        "summary": "2026-05-09 - Washington Nationals (3) @ Miami Marlins (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 823468,
@@ -173,10 +173,10 @@
         "away_probable_pitcher": "Edward Cabrera",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
@@ -251,10 +251,10 @@
         "away_probable_pitcher": "Cam Schlittler",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
@@ -322,7 +322,7 @@
         "game_datetime": "2026-05-10T01:05:00Z",
         "game_date": "2026-05-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Pittsburgh Pirates",
         "home_name": "San Francisco Giants",
         "away_id": 134,
@@ -340,8 +340,8 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-09 - Pittsburgh Pirates @ San Francisco Giants (Scheduled)"
+        "series_status": "SF leads 1-0",
+        "summary": "2026-05-09 - Pittsburgh Pirates @ San Francisco Giants (Pre-Game)"
     },
     {
         "game_id": 823955,
