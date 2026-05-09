@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-09T19:07:00Z",
         "game_date": "2026-05-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Los Angeles Angels",
         "home_name": "Toronto Blue Jays",
         "away_id": 108,
@@ -23,7 +23,7 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-05-09 - Los Angeles Angels @ Toronto Blue Jays (Pre-Game)"
+        "summary": "2026-05-09 - Los Angeles Angels @ Toronto Blue Jays (Warmup)"
     },
     {
         "game_id": 824847,
@@ -292,7 +292,7 @@
         "game_datetime": "2026-05-09T23:15:00Z",
         "game_date": "2026-05-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "Arizona Diamondbacks",
         "away_id": 121,
@@ -312,8 +312,8 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": null,
-        "summary": "2026-05-09 - New York Mets @ Arizona Diamondbacks (Scheduled)"
+        "series_status": "NYM leads 1-0",
+        "summary": "2026-05-09 - New York Mets @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 823304,
