@@ -15,24 +15,24 @@
         "away_probable_pitcher": "Cade Cavalli",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "away_score": 1,
+        "home_score": 2,
+        "current_inning": 4,
+        "inning_state": "Bottom",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [
             "NBCSN / Peacock"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-10 - Washington Nationals (0) @ Miami Marlins (0) (Top of the 3rd)"
+        "summary": "2026-05-10 - Washington Nationals (1) @ Miami Marlins (2) (Bottom of the 4th)"
     },
     {
         "game_id": 824845,
         "game_datetime": "2026-05-10T17:35:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Athletics",
         "home_name": "Baltimore Orioles",
         "away_id": 133,
@@ -51,14 +51,14 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "ATH leads 2-0",
-        "summary": "2026-05-10 - Athletics @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-05-10 - Athletics @ Baltimore Orioles (Warmup)"
     },
     {
         "game_id": 824765,
         "game_datetime": "2026-05-10T17:35:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Tampa Bay Rays",
         "home_name": "Boston Red Sox",
         "away_id": 139,
@@ -77,14 +77,14 @@
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-10 - Tampa Bay Rays @ Boston Red Sox (Pre-Game)"
+        "summary": "2026-05-10 - Tampa Bay Rays @ Boston Red Sox (Warmup)"
     },
     {
         "game_id": 823463,
         "game_datetime": "2026-05-10T17:35:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Colorado Rockies",
         "home_name": "Philadelphia Phillies",
         "away_id": 115,
@@ -103,14 +103,14 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-10 - Colorado Rockies @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-05-10 - Colorado Rockies @ Philadelphia Phillies (Warmup)"
     },
     {
         "game_id": 822819,
         "game_datetime": "2026-05-10T17:37:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Los Angeles Angels",
         "home_name": "Toronto Blue Jays",
         "away_id": 108,
@@ -129,14 +129,14 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 2-0",
-        "summary": "2026-05-10 - Los Angeles Angels @ Toronto Blue Jays (Pre-Game)"
+        "summary": "2026-05-10 - Los Angeles Angels @ Toronto Blue Jays (Warmup)"
     },
     {
         "game_id": 824520,
         "game_datetime": "2026-05-10T17:40:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Houston Astros",
         "home_name": "Cincinnati Reds",
         "away_id": 117,
@@ -155,14 +155,14 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-10 - Houston Astros @ Cincinnati Reds (Pre-Game)"
+        "summary": "2026-05-10 - Houston Astros @ Cincinnati Reds (Warmup)"
     },
     {
         "game_id": 824440,
         "game_datetime": "2026-05-10T17:40:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Minnesota Twins",
         "home_name": "Cleveland Guardians",
         "away_id": 142,
@@ -181,7 +181,7 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-10 - Minnesota Twins @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-05-10 - Minnesota Twins @ Cleveland Guardians (Warmup)"
     },
     {
         "game_id": 824605,
@@ -266,7 +266,7 @@
         "game_datetime": "2026-05-10T20:05:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Pittsburgh Pirates",
         "home_name": "San Francisco Giants",
         "away_id": 134,
@@ -284,15 +284,15 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-10 - Pittsburgh Pirates @ San Francisco Giants (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-05-10 - Pittsburgh Pirates @ San Francisco Giants (Pre-Game)"
     },
     {
         "game_id": 825085,
         "game_datetime": "2026-05-10T20:10:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "Arizona Diamondbacks",
         "away_id": 121,
@@ -303,22 +303,22 @@
         "away_probable_pitcher": "Huascar Brazob\u00e1n",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-10 - New York Mets @ Arizona Diamondbacks (Scheduled)"
+        "summary": "2026-05-10 - New York Mets @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 823305,
         "game_datetime": "2026-05-10T20:10:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "San Diego Padres",
         "away_id": 138,
@@ -336,8 +336,8 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-10 - St. Louis Cardinals @ San Diego Padres (Scheduled)"
+        "series_status": "STL leads 2-1",
+        "summary": "2026-05-10 - St. Louis Cardinals @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 823954,
