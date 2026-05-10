@@ -15,10 +15,10 @@
         "away_probable_pitcher": "Cade Cavalli",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [
@@ -102,7 +102,7 @@
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
-        "series_status": "COL leads 1-0",
+        "series_status": null,
         "summary": "2026-05-10 - Colorado Rockies @ Philadelphia Phillies (Scheduled)"
     },
     {
