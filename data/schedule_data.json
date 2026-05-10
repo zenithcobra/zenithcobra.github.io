@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-10T16:15:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Washington Nationals",
         "home_name": "Miami Marlins",
         "away_id": 120,
@@ -16,16 +16,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 3,
-        "current_inning": 8,
-        "inning_state": "Bottom",
+        "home_score": 5,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [
             "NBCSN / Peacock"
         ],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-05-10 - Washington Nationals (2) @ Miami Marlins (3) (Bottom of the 8th)"
+        "series_status": "MIA wins 2-1",
+        "winning_team": "Miami Marlins",
+        "losing_team": "Washington Nationals",
+        "winning_pitcher": "Calvin Faucher",
+        "losing_pitcher": "Gus Varland",
+        "save_pitcher": "Josh Ekness",
+        "summary": "2026-05-10 - Washington Nationals (2) @ Miami Marlins (5) (Final)"
     },
     {
         "game_id": 824845,
@@ -44,14 +49,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 1,
-        "current_inning": 5,
+        "home_score": 2,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "ATH leads 2-0",
-        "summary": "2026-05-10 - Athletics (1) @ Baltimore Orioles (1) (Top of the 5th)"
+        "summary": "2026-05-10 - Athletics (1) @ Baltimore Orioles (2) (Top of the 7th)"
     },
     {
         "game_id": 824765,
@@ -69,15 +74,15 @@
         "away_probable_pitcher": "Nick Martinez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
-        "home_score": 0,
-        "current_inning": 5,
-        "inning_state": "Middle",
+        "away_score": 4,
+        "home_score": 1,
+        "current_inning": 7,
+        "inning_state": "Bottom",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-10 - Tampa Bay Rays (3) @ Boston Red Sox (0) (Middle of the 5th)"
+        "summary": "2026-05-10 - Tampa Bay Rays (4) @ Boston Red Sox (1) (Bottom of the 7th)"
     },
     {
         "game_id": 823463,
@@ -96,14 +101,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 5,
-        "current_inning": 5,
-        "inning_state": "Top",
+        "home_score": 6,
+        "current_inning": 7,
+        "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-10 - Colorado Rockies (0) @ Philadelphia Phillies (5) (Top of the 5th)"
+        "summary": "2026-05-10 - Colorado Rockies (0) @ Philadelphia Phillies (6) (Bottom of the 7th)"
     },
     {
         "game_id": 822819,
@@ -121,15 +126,15 @@
         "away_probable_pitcher": "Jos\u00e9 Soriano",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 4,
+        "away_score": 5,
         "home_score": 1,
-        "current_inning": 5,
+        "current_inning": 8,
         "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 2-0",
-        "summary": "2026-05-10 - Los Angeles Angels (4) @ Toronto Blue Jays (1) (Bottom of the 5th)"
+        "summary": "2026-05-10 - Los Angeles Angels (5) @ Toronto Blue Jays (1) (Bottom of the 8th)"
     },
     {
         "game_id": 824520,
@@ -148,14 +153,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 3,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "home_score": 5,
+        "current_inning": 7,
+        "inning_state": "Top",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-10 - Houston Astros (0) @ Cincinnati Reds (3) (Bottom of the 4th)"
+        "summary": "2026-05-10 - Houston Astros (0) @ Cincinnati Reds (5) (Top of the 7th)"
     },
     {
         "game_id": 824440,
@@ -173,15 +178,15 @@
         "away_probable_pitcher": "Andrew Morris",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 1,
-        "current_inning": 4,
+        "away_score": 5,
+        "home_score": 3,
+        "current_inning": 6,
         "inning_state": "Bottom",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-10 - Minnesota Twins (1) @ Cleveland Guardians (1) (Bottom of the 4th)"
+        "summary": "2026-05-10 - Minnesota Twins (5) @ Cleveland Guardians (3) (Bottom of the 6th)"
     },
     {
         "game_id": 824605,
@@ -201,13 +206,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "End",
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-10 - Seattle Mariners (1) @ Chicago White Sox (0) (End of the 2nd)"
+        "summary": "2026-05-10 - Seattle Mariners (1) @ Chicago White Sox (0) (Top of the 6th)"
     },
     {
         "game_id": 823793,
@@ -226,21 +231,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 0,
-        "current_inning": 2,
+        "home_score": 3,
+        "current_inning": 5,
         "inning_state": "Bottom",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 2-0",
-        "summary": "2026-05-10 - New York Yankees (2) @ Milwaukee Brewers (0) (Bottom of the 2nd)"
+        "summary": "2026-05-10 - New York Yankees (2) @ Milwaukee Brewers (3) (Bottom of the 5th)"
     },
     {
         "game_id": 822902,
         "game_datetime": "2026-05-10T18:35:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Manager challenge",
         "away_name": "Chicago Cubs",
         "home_name": "Texas Rangers",
         "away_id": 112,
@@ -252,14 +257,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
+        "home_score": 1,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-10 - Chicago Cubs (0) @ Texas Rangers (0) (Bottom of the 1st)"
+        "summary": "2026-05-10 - Chicago Cubs @ Texas Rangers (Manager challenge)"
     },
     {
         "game_id": 823221,
@@ -370,7 +375,7 @@
         "game_datetime": "2026-05-10T23:20:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Detroit Tigers",
         "home_name": "Kansas City Royals",
         "away_id": 116,
@@ -391,6 +396,6 @@
             "NBCSN / Peacock"
         ],
         "series_status": "KC leads 2-0",
-        "summary": "2026-05-10 - Detroit Tigers @ Kansas City Royals (Scheduled)"
+        "summary": "2026-05-10 - Detroit Tigers @ Kansas City Royals (Pre-Game)"
     }
 ]
