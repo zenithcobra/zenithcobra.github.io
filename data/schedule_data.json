@@ -84,7 +84,7 @@
         "game_datetime": "2026-05-10T17:35:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Philadelphia Phillies",
         "away_id": 115,
@@ -95,22 +95,22 @@
         "away_probable_pitcher": "Tomoyuki Sugano",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-10 - Colorado Rockies @ Philadelphia Phillies (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-05-10 - Colorado Rockies @ Philadelphia Phillies (Pre-Game)"
     },
     {
         "game_id": 822819,
         "game_datetime": "2026-05-10T17:37:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Toronto Blue Jays",
         "away_id": 108,
@@ -129,14 +129,14 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 2-0",
-        "summary": "2026-05-10 - Los Angeles Angels @ Toronto Blue Jays (Scheduled)"
+        "summary": "2026-05-10 - Los Angeles Angels @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 824520,
         "game_datetime": "2026-05-10T17:40:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Houston Astros",
         "home_name": "Cincinnati Reds",
         "away_id": 117,
@@ -155,14 +155,14 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-10 - Houston Astros @ Cincinnati Reds (Scheduled)"
+        "summary": "2026-05-10 - Houston Astros @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 824440,
         "game_datetime": "2026-05-10T17:40:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Cleveland Guardians",
         "away_id": 142,
@@ -181,7 +181,7 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-10 - Minnesota Twins @ Cleveland Guardians (Scheduled)"
+        "summary": "2026-05-10 - Minnesota Twins @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 824605,
