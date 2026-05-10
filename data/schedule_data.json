@@ -316,7 +316,7 @@
         "game_datetime": "2026-05-10T20:05:00Z",
         "game_date": "2026-05-10",
         "game_type": "R",
-        "status": "Player challenge",
+        "status": "In Progress",
         "away_name": "Pittsburgh Pirates",
         "home_name": "San Francisco Giants",
         "away_id": 134,
@@ -329,13 +329,13 @@
         "away_pitcher_note": "",
         "away_score": 6,
         "home_score": 6,
-        "current_inning": 11,
-        "inning_state": "Top",
+        "current_inning": 12,
+        "inning_state": "Middle",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-10 - Pittsburgh Pirates @ San Francisco Giants (Player challenge)"
+        "summary": "2026-05-10 - Pittsburgh Pirates (6) @ San Francisco Giants (6) (Middle of the 12th)"
     },
     {
         "game_id": 825085,
@@ -446,9 +446,9 @@
         "away_probable_pitcher": "Brenan Hanifee",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
@@ -456,6 +456,6 @@
             "NBCSN / Peacock"
         ],
         "series_status": "KC leads 2-0",
-        "summary": "2026-05-10 - Detroit Tigers (0) @ Kansas City Royals (0) (Top of the 1st)"
+        "summary": "2026-05-10 - Detroit Tigers (1) @ Kansas City Royals (0) (Top of the 2nd)"
     }
 ]
