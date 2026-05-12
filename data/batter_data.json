@@ -7232,6 +7232,26 @@
         "player_id": 694477
     },
     {
+        "player_name": "Christian Yelich",
+        "team": "Milwaukee Brewers",
+        "team_id": 158,
+        "player_id": 592885,
+        "position": "LF",
+        "games_played": 15.0,
+        "H": 16.0,
+        "HR": 1.0,
+        "RBI": 10.0,
+        "HRpg": 0.067,
+        "fHRpg": "0",
+        "Hpg": 1.067,
+        "fHpg": "1",
+        "RBIpg": 0.667,
+        "fRBIpg": "2/3",
+        "HR24": 29,
+        "HR24pg": 0.19,
+        "fHR24pg": "1/5"
+    },
+    {
         "player_name": "DL Hall",
         "team": "Milwaukee Brewers",
         "team_id": 158,
@@ -7449,26 +7469,6 @@
         "fHpg": "0",
         "RBIpg": 0.0,
         "fRBIpg": "0"
-    },
-    {
-        "player_name": "Tyler Black",
-        "team": "Milwaukee Brewers",
-        "team_id": 158,
-        "player_id": 672012,
-        "position": "DH",
-        "games_played": 9.0,
-        "H": 9.0,
-        "HR": 0.0,
-        "RBI": 7.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 1.0,
-        "fHpg": "1",
-        "RBIpg": 0.778,
-        "fRBIpg": "4/5",
-        "HR24": 0,
-        "HR24pg": 0.0,
-        "fHR24pg": "0"
     },
     {
         "player_name": "William Contreras",
@@ -8704,12 +8704,6 @@
         "player_id": 621121
     },
     {
-        "player_name": "Logan VanWey",
-        "team": "Houston Astros",
-        "team_id": 117,
-        "player_id": 701121
-    },
-    {
         "player_name": "Mike Burrows",
         "team": "Houston Astros",
         "team_id": 117,
@@ -8772,6 +8766,12 @@
         "team": "Houston Astros",
         "team_id": 117,
         "player_id": 595345
+    },
+    {
+        "player_name": "Tatsuya Imai",
+        "team": "Houston Astros",
+        "team_id": 117,
+        "player_id": 837227
     },
     {
         "player_name": "Yordan Alvarez",
