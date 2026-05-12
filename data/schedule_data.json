@@ -134,7 +134,7 @@
         "game_datetime": "2026-05-12T23:07:00Z",
         "game_date": "2026-05-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Tampa Bay Rays",
         "home_name": "Toronto Blue Jays",
         "away_id": 139,
@@ -152,8 +152,8 @@
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-12 - Tampa Bay Rays @ Toronto Blue Jays (Scheduled)"
+        "series_status": "TB leads 1-0",
+        "summary": "2026-05-12 - Tampa Bay Rays @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 823632,
@@ -186,7 +186,7 @@
         "game_datetime": "2026-05-12T23:15:00Z",
         "game_date": "2026-05-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Atlanta Braves",
         "away_id": 112,
@@ -207,7 +207,7 @@
             "TBS (out-of-market only)"
         ],
         "series_status": null,
-        "summary": "2026-05-12 - Chicago Cubs @ Atlanta Braves (Scheduled)"
+        "summary": "2026-05-12 - Chicago Cubs @ Atlanta Braves (Pre-Game)"
     },
     {
         "game_id": 824604,
