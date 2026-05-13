@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-13T17:05:00Z",
         "game_date": "2026-05-13",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "New York Yankees",
         "home_name": "Baltimore Orioles",
         "away_id": 147,
@@ -18,19 +18,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-13 - New York Yankees @ Baltimore Orioles (Warmup)"
+        "summary": "2026-05-13 - New York Yankees (0) @ Baltimore Orioles (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824438,
         "game_datetime": "2026-05-13T17:10:00Z",
         "game_date": "2026-05-13",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Los Angeles Angels",
         "home_name": "Cleveland Guardians",
         "away_id": 108,
@@ -44,12 +44,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "CLE leads 2-0",
-        "summary": "2026-05-13 - Los Angeles Angels @ Cleveland Guardians (Warmup)"
+        "summary": "2026-05-13 - Los Angeles Angels (0) @ Cleveland Guardians (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824519,
@@ -204,7 +204,7 @@
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "ATL leads 1-0",
         "summary": "2026-05-13 - Chicago Cubs @ Atlanta Braves (Scheduled)"
     },
     {
@@ -282,7 +282,7 @@
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "MIL leads 1-0",
         "summary": "2026-05-13 - San Diego Padres @ Milwaukee Brewers (Scheduled)"
     },
     {
