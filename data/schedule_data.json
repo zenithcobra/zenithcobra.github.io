@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-13T17:05:00Z",
         "game_date": "2026-05-13",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Yankees",
         "home_name": "Baltimore Orioles",
         "away_id": 147,
@@ -23,14 +23,14 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-13 - New York Yankees @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-05-13 - New York Yankees @ Baltimore Orioles (Warmup)"
     },
     {
         "game_id": 824438,
         "game_datetime": "2026-05-13T17:10:00Z",
         "game_date": "2026-05-13",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Los Angeles Angels",
         "home_name": "Cleveland Guardians",
         "away_id": 108,
@@ -41,15 +41,15 @@
         "away_probable_pitcher": "Reid Detmers",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "CLE leads 2-0",
-        "summary": "2026-05-13 - Los Angeles Angels @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-05-13 - Los Angeles Angels @ Cleveland Guardians (Warmup)"
     },
     {
         "game_id": 824519,
@@ -82,7 +82,7 @@
         "game_datetime": "2026-05-13T22:40:00Z",
         "game_date": "2026-05-13",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Pittsburgh Pirates",
         "away_id": 115,
@@ -100,8 +100,8 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-13 - Colorado Rockies @ Pittsburgh Pirates (Scheduled)"
+        "series_status": "PIT leads 1-0",
+        "summary": "2026-05-13 - Colorado Rockies @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 824763,
