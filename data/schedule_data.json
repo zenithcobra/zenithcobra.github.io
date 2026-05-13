@@ -30,7 +30,7 @@
         "game_datetime": "2026-05-13T17:10:00Z",
         "game_date": "2026-05-13",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Cleveland Guardians",
         "away_id": 108,
@@ -48,8 +48,8 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-13 - Los Angeles Angels @ Cleveland Guardians (Scheduled)"
+        "series_status": "CLE leads 2-0",
+        "summary": "2026-05-13 - Los Angeles Angels @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 824519,
@@ -100,7 +100,7 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": "PIT leads 1-0",
+        "series_status": null,
         "summary": "2026-05-13 - Colorado Rockies @ Pittsburgh Pirates (Scheduled)"
     },
     {
