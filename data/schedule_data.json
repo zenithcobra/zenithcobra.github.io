@@ -159,7 +159,7 @@
         "game_datetime": "2026-05-14T18:10:00Z",
         "game_date": "2026-05-14",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Seattle Mariners",
         "home_name": "Houston Astros",
         "away_id": 136,
@@ -173,12 +173,17 @@
         "away_score": 8,
         "home_score": 3,
         "current_inning": 9,
-        "inning_state": "Middle",
+        "inning_state": "Bottom",
         "venue_id": 2392,
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
-        "series_status": "SEA leads 2-1",
-        "summary": "2026-05-14 - Seattle Mariners (8) @ Houston Astros (3) (Middle of the 9th)"
+        "series_status": "SEA wins 3-1",
+        "winning_team": "Seattle Mariners",
+        "losing_team": "Houston Astros",
+        "winning_pitcher": "Luis Castillo",
+        "losing_pitcher": "Mike Burrows",
+        "save_pitcher": null,
+        "summary": "2026-05-14 - Seattle Mariners (8) @ Houston Astros (3) (Final)"
     },
     {
         "game_id": 825008,
@@ -197,14 +202,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 1,
-        "current_inning": 7,
-        "inning_state": "Bottom",
+        "home_score": 4,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-14 - St. Louis Cardinals (3) @ Athletics (1) (Bottom of the 7th)"
+        "summary": "2026-05-14 - St. Louis Cardinals (3) @ Athletics (4) (Top of the 9th)"
     },
     {
         "game_id": 824762,
@@ -289,7 +294,7 @@
         "game_datetime": "2026-05-15T02:10:00Z",
         "game_date": "2026-05-14",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Francisco Giants",
         "home_name": "Los Angeles Dodgers",
         "away_id": 137,
@@ -310,6 +315,6 @@
             "MLB Network"
         ],
         "series_status": "SF leads 2-1",
-        "summary": "2026-05-14 - San Francisco Giants @ Los Angeles Dodgers (Scheduled)"
+        "summary": "2026-05-14 - San Francisco Giants @ Los Angeles Dodgers (Pre-Game)"
     }
 ]
