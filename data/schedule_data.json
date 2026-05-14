@@ -221,7 +221,7 @@
         "game_datetime": "2026-05-14T22:45:00Z",
         "game_date": "2026-05-14",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Philadelphia Phillies",
         "home_name": "Boston Red Sox",
         "away_id": 143,
@@ -234,20 +234,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-14 - Philadelphia Phillies @ Boston Red Sox (Warmup)"
+        "summary": "2026-05-14 - Philadelphia Phillies (0) @ Boston Red Sox (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 824926,
         "game_datetime": "2026-05-14T23:15:00Z",
         "game_date": "2026-05-14",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Chicago Cubs",
         "home_name": "Atlanta Braves",
         "away_id": 112,
@@ -261,19 +261,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 2-0",
-        "summary": "2026-05-14 - Chicago Cubs @ Atlanta Braves (Pre-Game)"
+        "summary": "2026-05-14 - Chicago Cubs (0) @ Atlanta Braves (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824602,
         "game_datetime": "2026-05-14T23:40:00Z",
         "game_date": "2026-05-14",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Kansas City Royals",
         "home_name": "Chicago White Sox",
         "away_id": 118,
@@ -292,7 +292,7 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 2-0",
-        "summary": "2026-05-14 - Kansas City Royals @ Chicago White Sox (Pre-Game)"
+        "summary": "2026-05-14 - Kansas City Royals @ Chicago White Sox (Warmup)"
     },
     {
         "game_id": 823950,
