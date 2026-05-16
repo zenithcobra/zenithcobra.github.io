@@ -35,7 +35,7 @@
         "game_datetime": "2026-05-16T18:15:00Z",
         "game_date": "2026-05-16",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Kansas City Royals",
         "home_name": "St. Louis Cardinals",
         "away_id": 118,
@@ -46,15 +46,20 @@
         "away_probable_pitcher": "Noah Cameron",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 3,
-        "current_inning": 8,
-        "inning_state": "Middle",
+        "away_score": 2,
+        "home_score": 4,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
-        "series_status": "STL leads 1-0",
-        "summary": "2026-05-16 - Kansas City Royals (1) @ St. Louis Cardinals (3) (Middle of the 8th)"
+        "series_status": "STL wins 2-0",
+        "winning_team": "St. Louis Cardinals",
+        "losing_team": "Kansas City Royals",
+        "winning_pitcher": "Kyle Leahy",
+        "losing_pitcher": "Noah Cameron",
+        "save_pitcher": "George Soriano",
+        "summary": "2026-05-16 - Kansas City Royals (2) @ St. Louis Cardinals (4) (Final)"
     },
     {
         "game_id": 824359,
@@ -74,13 +79,13 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 3,
-        "current_inning": 5,
-        "inning_state": "Middle",
+        "current_inning": 7,
+        "inning_state": "Bottom",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "AZ leads 1-0",
-        "summary": "2026-05-16 - Arizona Diamondbacks (2) @ Colorado Rockies (3) (Middle of the 5th)"
+        "summary": "2026-05-16 - Arizona Diamondbacks (2) @ Colorado Rockies (3) (Bottom of the 7th)"
     },
     {
         "game_id": 822737,
@@ -99,16 +104,16 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 3,
-        "current_inning": 3,
-        "inning_state": "Middle",
+        "home_score": 4,
+        "current_inning": 5,
+        "inning_state": "End",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [
             "FS1"
         ],
         "series_status": "WSH leads 1-0",
-        "summary": "2026-05-16 - Baltimore Orioles (0) @ Washington Nationals (3) (Middle of the 3rd)"
+        "summary": "2026-05-16 - Baltimore Orioles (0) @ Washington Nationals (4) (End of the 5th)"
     },
     {
         "game_id": 823382,
@@ -128,13 +133,13 @@
         "away_pitcher_note": "",
         "away_score": 5,
         "home_score": 0,
-        "current_inning": 3,
+        "current_inning": 5,
         "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-05-16 - Philadelphia Phillies (5) @ Pittsburgh Pirates (0) (Top of the 3rd)"
+        "summary": "2026-05-16 - Philadelphia Phillies (5) @ Pittsburgh Pirates (0) (Top of the 5th)"
     },
     {
         "game_id": 822981,
@@ -153,14 +158,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "home_score": 1,
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-05-16 - Miami Marlins (0) @ Tampa Bay Rays (0) (Top of the 3rd)"
+        "summary": "2026-05-16 - Miami Marlins (0) @ Tampa Bay Rays (1) (Bottom of the 5th)"
     },
     {
         "game_id": 824435,
@@ -230,10 +235,10 @@
         "away_probable_pitcher": "Jameson Taillon",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
@@ -353,7 +358,7 @@
         "game_datetime": "2026-05-17T01:38:00Z",
         "game_date": "2026-05-16",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Los Angeles Angels",
         "away_id": 119,
@@ -371,8 +376,8 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-16 - Los Angeles Dodgers @ Los Angeles Angels (Scheduled)"
+        "series_status": "LAD leads 1-0",
+        "summary": "2026-05-16 - Los Angeles Dodgers @ Los Angeles Angels (Pre-Game)"
     },
     {
         "game_id": 825007,
