@@ -15,22 +15,22 @@
         "away_probable_pitcher": "Mason Fluharty",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 6,
+        "away_score": 1,
+        "home_score": 1,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "DET leads 1-0",
-        "summary": "2026-05-16 - Toronto Blue Jays (0) @ Detroit Tigers (0) (Top of the 6th)"
+        "summary": "2026-05-16 - Toronto Blue Jays (1) @ Detroit Tigers (1) (Top of the 7th)"
     },
     {
         "game_id": 823060,
         "game_datetime": "2026-05-16T18:15:00Z",
         "game_date": "2026-05-16",
         "game_type": "R",
-        "status": "Delayed Start",
+        "status": "Warmup",
         "away_name": "Kansas City Royals",
         "home_name": "St. Louis Cardinals",
         "away_id": 118,
@@ -49,14 +49,14 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "STL leads 1-0",
-        "summary": "2026-05-16 - Kansas City Royals @ St. Louis Cardinals (Delayed Start)"
+        "summary": "2026-05-16 - Kansas City Royals @ St. Louis Cardinals (Warmup)"
     },
     {
         "game_id": 824359,
         "game_datetime": "2026-05-16T19:10:00Z",
         "game_date": "2026-05-16",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Colorado Rockies",
         "away_id": 109,
@@ -75,7 +75,7 @@
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "AZ leads 1-0",
-        "summary": "2026-05-16 - Arizona Diamondbacks @ Colorado Rockies (Pre-Game)"
+        "summary": "2026-05-16 - Arizona Diamondbacks @ Colorado Rockies (Warmup)"
     },
     {
         "game_id": 822737,
@@ -294,7 +294,7 @@
         "game_datetime": "2026-05-16T23:15:00Z",
         "game_date": "2026-05-16",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Atlanta Braves",
         "away_id": 111,
@@ -312,8 +312,8 @@
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-16 - Boston Red Sox @ Atlanta Braves (Scheduled)"
+        "series_status": "ATL leads 1-0",
+        "summary": "2026-05-16 - Boston Red Sox @ Atlanta Braves (Pre-Game)"
     },
     {
         "game_id": 823627,
