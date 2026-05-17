@@ -39,7 +39,7 @@
         "home_id": 120,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "Miles Mikolas",
+        "home_probable_pitcher": "Richard Lovelady",
         "away_probable_pitcher": "Brandon Young",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
@@ -58,7 +58,7 @@
         "game_datetime": "2026-05-17T17:35:00Z",
         "game_date": "2026-05-17",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "Pittsburgh Pirates",
         "away_id": 143,
@@ -76,8 +76,8 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-17 - Philadelphia Phillies @ Pittsburgh Pirates (Scheduled)"
+        "series_status": "PHI leads 2-0",
+        "summary": "2026-05-17 - Philadelphia Phillies @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 824923,
@@ -240,7 +240,7 @@
         "game_datetime": "2026-05-17T18:10:00Z",
         "game_date": "2026-05-17",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "Minnesota Twins",
         "away_id": 158,
@@ -259,7 +259,7 @@
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 2-0",
-        "summary": "2026-05-17 - Milwaukee Brewers @ Minnesota Twins (Scheduled)"
+        "summary": "2026-05-17 - Milwaukee Brewers @ Minnesota Twins (Pre-Game)"
     },
     {
         "game_id": 823058,
