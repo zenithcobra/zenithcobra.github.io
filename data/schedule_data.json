@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-17T16:15:00Z",
         "game_date": "2026-05-17",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Miami Marlins",
         "home_name": "Tampa Bay Rays",
         "away_id": 146,
@@ -16,16 +16,16 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 1,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [
             "NBCSN / Peacock"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-17 - Miami Marlins @ Tampa Bay Rays (Pre-Game)"
+        "summary": "2026-05-17 - Miami Marlins (0) @ Tampa Bay Rays (1) (End of the 1st)"
     },
     {
         "game_id": 822738,
@@ -43,10 +43,10 @@
         "away_probable_pitcher": "Brandon Young",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
@@ -292,7 +292,7 @@
         "game_datetime": "2026-05-17T19:10:00Z",
         "game_date": "2026-05-17",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Colorado Rockies",
         "away_id": 109,
@@ -310,8 +310,8 @@
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-17 - Arizona Diamondbacks @ Colorado Rockies (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-05-17 - Arizona Diamondbacks @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 825006,
