@@ -17,15 +17,15 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 1,
-        "current_inning": 1,
-        "inning_state": "End",
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [
             "NBCSN / Peacock"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-17 - Miami Marlins (0) @ Tampa Bay Rays (1) (End of the 1st)"
+        "summary": "2026-05-17 - Miami Marlins (0) @ Tampa Bay Rays (1) (Top of the 3rd)"
     },
     {
         "game_id": 822738,
@@ -303,10 +303,10 @@
         "away_probable_pitcher": "Michael Soroka",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
@@ -318,7 +318,7 @@
         "game_datetime": "2026-05-17T20:05:00Z",
         "game_date": "2026-05-17",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Francisco Giants",
         "home_name": "Athletics",
         "away_id": 137,
@@ -336,8 +336,8 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-17 - San Francisco Giants @ Athletics (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-05-17 - San Francisco Giants @ Athletics (Pre-Game)"
     },
     {
         "game_id": 824034,
