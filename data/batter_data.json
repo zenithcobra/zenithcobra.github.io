@@ -1840,6 +1840,26 @@
         "player_id": 676755
     },
     {
+        "player_name": "Jake Mangum",
+        "team": "Pittsburgh Pirates",
+        "team_id": 134,
+        "player_id": 663968,
+        "position": "LF",
+        "games_played": 30.0,
+        "H": 19.0,
+        "HR": 0.0,
+        "RBI": 3.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.633,
+        "fHpg": "3/5",
+        "RBIpg": 0.1,
+        "fRBIpg": "1/7",
+        "HR24": 3,
+        "HR24pg": 0.03,
+        "fHR24pg": "0"
+    },
+    {
         "player_name": "Jared Triolo",
         "team": "Pittsburgh Pirates",
         "team_id": 134,
@@ -1979,26 +1999,6 @@
         "team": "Pittsburgh Pirates",
         "team_id": 134,
         "player_id": 694973
-    },
-    {
-        "player_name": "Ryan O'Hearn",
-        "team": "Pittsburgh Pirates",
-        "team_id": 134,
-        "player_id": 656811,
-        "position": "RF",
-        "games_played": 44.0,
-        "H": 46.0,
-        "HR": 7.0,
-        "RBI": 29.0,
-        "HRpg": 0.159,
-        "fHRpg": "1/6",
-        "Hpg": 1.045,
-        "fHpg": "1",
-        "RBIpg": 0.659,
-        "fRBIpg": "2/3",
-        "HR24": 4,
-        "HR24pg": 0.08,
-        "fHR24pg": "1/7"
     },
     {
         "player_name": "Spencer Horwitz",
@@ -2889,26 +2889,6 @@
         "player_id": 683742
     },
     {
-        "player_name": "Jose Trevino",
-        "team": "Cincinnati Reds",
-        "team_id": 113,
-        "player_id": 624431,
-        "position": "C",
-        "games_played": 14.0,
-        "H": 4.0,
-        "HR": 0.0,
-        "RBI": 2.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.286,
-        "fHpg": "2/7",
-        "RBIpg": 0.143,
-        "fRBIpg": "1/7",
-        "HR24": 4,
-        "HR24pg": 0.04,
-        "fHR24pg": "0"
-    },
-    {
         "player_name": "Ke'Bryan Hayes",
         "team": "Cincinnati Reds",
         "team_id": 113,
@@ -2927,12 +2907,6 @@
         "HR24": 2,
         "HR24pg": 0.02,
         "fHR24pg": "0"
-    },
-    {
-        "player_name": "Luis Mey",
-        "team": "Cincinnati Reds",
-        "team_id": 113,
-        "player_id": 682825
     },
     {
         "player_name": "Matt McLain",
@@ -4032,12 +4006,6 @@
         "fHR24pg": "1/5"
     },
     {
-        "player_name": "Ty Madden",
-        "team": "Detroit Tigers",
-        "team_id": 116,
-        "player_id": 680744
-    },
-    {
         "player_name": "Tyler Holton",
         "team": "Detroit Tigers",
         "team_id": 116,
@@ -4062,6 +4030,12 @@
         "HR24": 13,
         "HR24pg": 0.13,
         "fHR24pg": "1/7"
+    },
+    {
+        "player_name": "Will Vest",
+        "team": "Detroit Tigers",
+        "team_id": 116,
+        "player_id": 676684
     },
     {
         "player_name": "Zach McKinstry",
@@ -6460,10 +6434,10 @@
         "fHR24pg": "0"
     },
     {
-        "player_name": "Peter Strzelecki",
+        "player_name": "Robert Gasser",
         "team": "Milwaukee Brewers",
         "team_id": 158,
-        "player_id": 657265
+        "player_id": 688107
     },
     {
         "player_name": "Sal Frelick",
