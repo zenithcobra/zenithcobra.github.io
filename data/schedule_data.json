@@ -32,7 +32,7 @@
         "game_datetime": "2026-05-18T22:40:00Z",
         "game_date": "2026-05-18",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Baltimore Orioles",
         "home_name": "Tampa Bay Rays",
         "away_id": 110,
@@ -46,19 +46,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - Baltimore Orioles @ Tampa Bay Rays (Warmup)"
+        "summary": "2026-05-18 - Baltimore Orioles (0) @ Tampa Bay Rays (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823465,
         "game_datetime": "2026-05-18T22:40:00Z",
         "game_date": "2026-05-18",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Cincinnati Reds",
         "home_name": "Philadelphia Phillies",
         "away_id": 113,
@@ -72,19 +72,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - Cincinnati Reds @ Philadelphia Phillies (Warmup)"
+        "summary": "2026-05-18 - Cincinnati Reds (0) @ Philadelphia Phillies (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823867,
         "game_datetime": "2026-05-18T22:40:00Z",
         "game_date": "2026-05-18",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Atlanta Braves",
         "home_name": "Miami Marlins",
         "away_id": 144,
@@ -103,14 +103,14 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - Atlanta Braves @ Miami Marlins (Warmup)"
+        "summary": "2026-05-18 - Atlanta Braves (0) @ Miami Marlins (0) (Top of the 1st)"
     },
     {
         "game_id": 822734,
         "game_datetime": "2026-05-18T22:45:00Z",
         "game_date": "2026-05-18",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "New York Mets",
         "home_name": "Washington Nationals",
         "away_id": 121,
@@ -129,14 +129,14 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - New York Mets @ Washington Nationals (Warmup)"
+        "summary": "2026-05-18 - New York Mets (0) @ Washington Nationals (0) (Top of the 1st)"
     },
     {
         "game_id": 823549,
         "game_datetime": "2026-05-18T23:05:00Z",
         "game_date": "2026-05-18",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Toronto Blue Jays",
         "home_name": "New York Yankees",
         "away_id": 141,
@@ -155,14 +155,14 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - Toronto Blue Jays @ New York Yankees (Pre-Game)"
+        "summary": "2026-05-18 - Toronto Blue Jays @ New York Yankees (Warmup)"
     },
     {
         "game_id": 824114,
         "game_datetime": "2026-05-18T23:10:00Z",
         "game_date": "2026-05-18",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Boston Red Sox",
         "home_name": "Kansas City Royals",
         "away_id": 111,
@@ -181,7 +181,7 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - Boston Red Sox @ Kansas City Royals (Pre-Game)"
+        "summary": "2026-05-18 - Boston Red Sox @ Kansas City Royals (Warmup)"
     },
     {
         "game_id": 823705,
