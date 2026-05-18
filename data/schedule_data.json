@@ -16,8 +16,8 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
+        "home_score": 1,
+        "current_inning": 2,
         "inning_state": "Bottom",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
@@ -25,7 +25,7 @@
             "FS1"
         ],
         "series_status": null,
-        "summary": "2026-05-18 - Cleveland Guardians (0) @ Detroit Tigers (0) (Bottom of the 1st)"
+        "summary": "2026-05-18 - Cleveland Guardians (0) @ Detroit Tigers (1) (Bottom of the 2nd)"
     },
     {
         "game_id": 822980,
@@ -44,14 +44,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 6,
-        "current_inning": 3,
+        "home_score": 7,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - Baltimore Orioles (1) @ Tampa Bay Rays (6) (Bottom of the 3rd)"
+        "summary": "2026-05-18 - Baltimore Orioles (1) @ Tampa Bay Rays (7) (Bottom of the 4th)"
     },
     {
         "game_id": 823465,
@@ -71,13 +71,13 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 2,
-        "current_inning": 3,
-        "inning_state": "End",
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - Cincinnati Reds (2) @ Philadelphia Phillies (2) (End of the 3rd)"
+        "summary": "2026-05-18 - Cincinnati Reds (2) @ Philadelphia Phillies (2) (Bottom of the 5th)"
     },
     {
         "game_id": 823867,
@@ -96,14 +96,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "home_score": 1,
+        "current_inning": 3,
+        "inning_state": "End",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - Atlanta Braves (0) @ Miami Marlins (0) (Bottom of the 2nd)"
+        "summary": "2026-05-18 - Atlanta Braves (0) @ Miami Marlins (1) (End of the 3rd)"
     },
     {
         "game_id": 822734,
@@ -122,14 +122,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 2,
-        "current_inning": 3,
+        "home_score": 3,
+        "current_inning": 4,
         "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - New York Mets (1) @ Washington Nationals (2) (Top of the 3rd)"
+        "summary": "2026-05-18 - New York Mets (1) @ Washington Nationals (3) (Top of the 4th)"
     },
     {
         "game_id": 823549,
@@ -149,13 +149,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 1,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "Middle",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - Toronto Blue Jays (0) @ New York Yankees (1) (Bottom of the 2nd)"
+        "summary": "2026-05-18 - Toronto Blue Jays (0) @ New York Yankees (1) (Middle of the 3rd)"
     },
     {
         "game_id": 824114,
@@ -175,20 +175,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Bottom",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - Boston Red Sox (0) @ Kansas City Royals (0) (Bottom of the 2nd)"
+        "summary": "2026-05-18 - Boston Red Sox (0) @ Kansas City Royals (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 823705,
         "game_datetime": "2026-05-18T23:40:00Z",
         "game_date": "2026-05-18",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Houston Astros",
         "home_name": "Minnesota Twins",
         "away_id": 117,
@@ -202,19 +202,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - Houston Astros @ Minnesota Twins (Warmup)"
+        "summary": "2026-05-18 - Houston Astros (0) @ Minnesota Twins (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824680,
         "game_datetime": "2026-05-18T23:40:00Z",
         "game_date": "2026-05-18",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Milwaukee Brewers",
         "home_name": "Chicago Cubs",
         "away_id": 158,
@@ -228,12 +228,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - Milwaukee Brewers @ Chicago Cubs (Warmup)"
+        "summary": "2026-05-18 - Milwaukee Brewers (0) @ Chicago Cubs (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824357,
