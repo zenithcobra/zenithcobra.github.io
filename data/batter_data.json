@@ -1814,23 +1814,6 @@
         "fHR24pg": "1/7"
     },
     {
-        "player_name": "Felix Reyes",
-        "team": "Philadelphia Phillies",
-        "team_id": 143,
-        "player_id": 694025,
-        "position": "LF",
-        "games_played": 12.0,
-        "H": 6.0,
-        "HR": 1.0,
-        "RBI": 2.0,
-        "HRpg": 0.083,
-        "fHRpg": "1/7",
-        "Hpg": 0.5,
-        "fHpg": "1/2",
-        "RBIpg": 0.167,
-        "fRBIpg": "1/6"
-    },
-    {
         "player_name": "Garrett Stubbs",
         "team": "Philadelphia Phillies",
         "team_id": 143,
@@ -1936,6 +1919,26 @@
         "team": "Philadelphia Phillies",
         "team_id": 143,
         "player_id": 689147
+    },
+    {
+        "player_name": "Otto Kemp",
+        "team": "Philadelphia Phillies",
+        "team_id": 143,
+        "player_id": 805249,
+        "position": "OF",
+        "games_played": 10.0,
+        "H": 2.0,
+        "HR": 0.0,
+        "RBI": 0.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.2,
+        "fHpg": "1/5",
+        "RBIpg": 0.0,
+        "fRBIpg": "0",
+        "HR24": 8,
+        "HR24pg": 0.13,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Rafael March\u00e1n",
@@ -2831,6 +2834,12 @@
         "player_id": 518886
     },
     {
+        "player_name": "Daniel Duarte",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 650960
+    },
+    {
         "player_name": "David Peterson",
         "team": "New York Mets",
         "team_id": 121,
@@ -2884,12 +2893,6 @@
         "team": "New York Mets",
         "team_id": 121,
         "player_id": 623211
-    },
-    {
-        "player_name": "Joey Gerber",
-        "team": "New York Mets",
-        "team_id": 121,
-        "player_id": 680702
     },
     {
         "player_name": "Juan Soto",
