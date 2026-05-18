@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-18T22:40:00Z",
         "game_date": "2026-05-18",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "away_name": "Cleveland Guardians",
         "home_name": "Detroit Tigers",
         "away_id": 114,
@@ -25,7 +25,7 @@
             "FS1"
         ],
         "series_status": null,
-        "summary": "2026-05-18 - Cleveland Guardians @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-05-18 - Cleveland Guardians @ Detroit Tigers (Delayed Start)"
     },
     {
         "game_id": 822980,
@@ -277,10 +277,10 @@
         "away_probable_pitcher": "J.T. Ginn",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
@@ -292,7 +292,7 @@
         "game_datetime": "2026-05-19T01:40:00Z",
         "game_date": "2026-05-18",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Dodgers",
         "home_name": "San Diego Padres",
         "away_id": 119,
@@ -311,7 +311,7 @@
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - Los Angeles Dodgers @ San Diego Padres (Scheduled)"
+        "summary": "2026-05-18 - Los Angeles Dodgers @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 825087,
@@ -355,10 +355,10 @@
         "away_probable_pitcher": "Noah Schultz",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],

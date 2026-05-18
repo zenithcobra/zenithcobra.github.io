@@ -257,12 +257,12 @@
         "player_id": 656555,
         "position": "1B",
         "games_played": 37.0,
-        "H": 19.0,
+        "H": 18.0,
         "HR": 4.0,
         "RBI": 16.0,
         "HRpg": 0.108,
         "fHRpg": "1/7",
-        "Hpg": 0.514,
+        "Hpg": 0.486,
         "fHpg": "1/2",
         "RBIpg": 0.432,
         "fRBIpg": "3/7",
@@ -2172,26 +2172,6 @@
         "fHR24pg": "0"
     },
     {
-        "player_name": "Kyle Farmer",
-        "team": "Atlanta Braves",
-        "team_id": 144,
-        "player_id": 571657,
-        "position": "DH",
-        "games_played": 10.0,
-        "H": 4.0,
-        "HR": 0.0,
-        "RBI": 3.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.4,
-        "fHpg": "2/5",
-        "RBIpg": 0.3,
-        "fRBIpg": "2/7",
-        "HR24": 8,
-        "HR24pg": 0.08,
-        "fHR24pg": "1/7"
-    },
-    {
         "player_name": "Mart\u00edn P\u00e9rez",
         "team": "Atlanta Braves",
         "team_id": 144,
@@ -2347,6 +2327,26 @@
         "fHpg": "0",
         "RBIpg": 0.0,
         "fRBIpg": "0"
+    },
+    {
+        "player_name": "Ronald Acu\u00f1a Jr.",
+        "team": "Atlanta Braves",
+        "team_id": 144,
+        "player_id": 660670,
+        "position": "RF",
+        "games_played": 34.0,
+        "H": 32.0,
+        "HR": 2.0,
+        "RBI": 9.0,
+        "HRpg": 0.059,
+        "fHRpg": "0",
+        "Hpg": 0.941,
+        "fHpg": "1",
+        "RBIpg": 0.265,
+        "fRBIpg": "1/4",
+        "HR24": 21,
+        "HR24pg": 0.22,
+        "fHR24pg": "1/5"
     },
     {
         "player_name": "Sandy Le\u00f3n",
@@ -4933,12 +4933,6 @@
         "fHR24pg": "1/6"
     },
     {
-        "player_name": "Cody Bolton",
-        "team": "Houston Astros",
-        "team_id": 117,
-        "player_id": 675989
-    },
-    {
         "player_name": "Enyel De Los Santos",
         "team": "Houston Astros",
         "team_id": 117,
@@ -4965,30 +4959,36 @@
         "fHR24pg": "1/5"
     },
     {
+        "player_name": "Jason Alexander",
+        "team": "Houston Astros",
+        "team_id": 117,
+        "player_id": 669920
+    },
+    {
         "player_name": "Jayden Murray",
         "team": "Houston Astros",
         "team_id": 117,
         "player_id": 681151
     },
     {
-        "player_name": "Jose Altuve",
+        "player_name": "Jeremy Pe\u00f1a",
         "team": "Houston Astros",
         "team_id": 117,
-        "player_id": 514888,
-        "position": "2B",
-        "games_played": 42.0,
-        "H": 40.0,
-        "HR": 4.0,
-        "RBI": 12.0,
-        "HRpg": 0.095,
-        "fHRpg": "1/7",
-        "Hpg": 0.952,
-        "fHpg": "1",
-        "RBIpg": 0.286,
-        "fRBIpg": "2/7",
-        "HR24": 26,
-        "HR24pg": 0.17,
-        "fHR24pg": "1/6"
+        "player_id": 665161,
+        "position": "SS",
+        "games_played": 10.0,
+        "H": 11.0,
+        "HR": 0.0,
+        "RBI": 0.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 1.1,
+        "fHpg": "8/7",
+        "RBIpg": 0.0,
+        "fRBIpg": "0",
+        "HR24": 17,
+        "HR24pg": 0.14,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Kai-Wei Teng",
@@ -9328,12 +9328,6 @@
         "player_id": 681867
     },
     {
-        "player_name": "Domingo Gonzalez",
-        "team": "Seattle Mariners",
-        "team_id": 136,
-        "player_id": 682445
-    },
-    {
         "player_name": "Dominic Canzone",
         "team": "Seattle Mariners",
         "team_id": 136,
@@ -9458,26 +9452,6 @@
         "fHR24pg": "1/5"
     },
     {
-        "player_name": "Leo Rivas",
-        "team": "Seattle Mariners",
-        "team_id": 136,
-        "player_id": 660844,
-        "position": "3B",
-        "games_played": 38.0,
-        "H": 13.0,
-        "HR": 0.0,
-        "RBI": 7.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.342,
-        "fHpg": "1/3",
-        "RBIpg": 0.184,
-        "fRBIpg": "1/6",
-        "HR24": 2,
-        "HR24pg": 0.04,
-        "fHR24pg": "0"
-    },
-    {
         "player_name": "Logan Gilbert",
         "team": "Seattle Mariners",
         "team_id": 136,
@@ -9536,6 +9510,23 @@
         "player_id": 689546
     },
     {
+        "player_name": "Patrick Wisdom",
+        "team": "Seattle Mariners",
+        "team_id": 136,
+        "player_id": 621550,
+        "position": "1B",
+        "games_played": 1.0,
+        "H": 0.0,
+        "HR": 0.0,
+        "RBI": 0.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.0,
+        "fHpg": "0",
+        "RBIpg": 0.0,
+        "fRBIpg": "0"
+    },
+    {
         "player_name": "Randy Arozarena",
         "team": "Seattle Mariners",
         "team_id": 136,
@@ -9574,5 +9565,11 @@
         "HR24": 9,
         "HR24pg": 0.13,
         "fHR24pg": "1/7"
+    },
+    {
+        "player_name": "Robinson Ortiz",
+        "team": "Seattle Mariners",
+        "team_id": 136,
+        "player_id": 673662
     }
 ]
