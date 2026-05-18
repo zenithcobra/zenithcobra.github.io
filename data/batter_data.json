@@ -83,12 +83,6 @@
         "fRBIpg": "2/3"
     },
     {
-        "player_name": "Codi Heuer",
-        "team": "Cleveland Guardians",
-        "team_id": 114,
-        "player_id": 676051
-    },
-    {
         "player_name": "Colin Holderman",
         "team": "Cleveland Guardians",
         "team_id": 114,
@@ -275,6 +269,12 @@
         "HR24": 12,
         "HR24pg": 0.13,
         "fHR24pg": "1/7"
+    },
+    {
+        "player_name": "Shawn Armstrong",
+        "team": "Cleveland Guardians",
+        "team_id": 114,
+        "player_id": 542888
     },
     {
         "player_name": "Slade Cecconi",
@@ -1083,10 +1083,10 @@
         "fHR24pg": "0"
     },
     {
-        "player_name": "Cole Sulser",
+        "player_name": "Chase Solesky",
         "team": "Tampa Bay Rays",
         "team_id": 139,
-        "player_id": 642121
+        "player_id": 686678
     },
     {
         "player_name": "Drew Rasmussen",
@@ -3898,12 +3898,6 @@
         "player_id": 670280
     },
     {
-        "player_name": "Elmer Rodr\u00edguez",
-        "team": "New York Yankees",
-        "team_id": 147,
-        "player_id": 695684
-    },
-    {
         "player_name": "Fernando Cruz",
         "team": "New York Yankees",
         "team_id": 147,
@@ -4092,6 +4086,12 @@
         "team": "New York Yankees",
         "team_id": 147,
         "player_id": 701542
+    },
+    {
+        "player_name": "Yovanny Cruz",
+        "team": "New York Yankees",
+        "team_id": 147,
+        "player_id": 672442
     },
     {
         "player_name": "Andruw Monasterio",
@@ -4518,6 +4518,12 @@
         "player_id": 663738
     },
     {
+        "player_name": "Eli Morgan",
+        "team": "Kansas City Royals",
+        "team_id": 118,
+        "player_id": 669212
+    },
+    {
         "player_name": "Elias D\u00edaz",
         "team": "Kansas City Royals",
         "team_id": 118,
@@ -4582,12 +4588,6 @@
         "team": "Kansas City Royals",
         "team_id": 118,
         "player_id": 670167
-    },
-    {
-        "player_name": "Kris Bubic",
-        "team": "Kansas City Royals",
-        "team_id": 118,
-        "player_id": 663460
     },
     {
         "player_name": "Kyle Isbel",
