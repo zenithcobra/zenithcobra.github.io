@@ -32,7 +32,7 @@
         "game_datetime": "2026-05-18T22:40:00Z",
         "game_date": "2026-05-18",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Baltimore Orioles",
         "home_name": "Tampa Bay Rays",
         "away_id": 110,
@@ -51,14 +51,14 @@
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - Baltimore Orioles @ Tampa Bay Rays (Pre-Game)"
+        "summary": "2026-05-18 - Baltimore Orioles @ Tampa Bay Rays (Warmup)"
     },
     {
         "game_id": 823465,
         "game_datetime": "2026-05-18T22:40:00Z",
         "game_date": "2026-05-18",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cincinnati Reds",
         "home_name": "Philadelphia Phillies",
         "away_id": 113,
@@ -77,14 +77,14 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - Cincinnati Reds @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-05-18 - Cincinnati Reds @ Philadelphia Phillies (Warmup)"
     },
     {
         "game_id": 823867,
         "game_datetime": "2026-05-18T22:40:00Z",
         "game_date": "2026-05-18",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Atlanta Braves",
         "home_name": "Miami Marlins",
         "away_id": 144,
@@ -103,14 +103,14 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - Atlanta Braves @ Miami Marlins (Pre-Game)"
+        "summary": "2026-05-18 - Atlanta Braves @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 822734,
         "game_datetime": "2026-05-18T22:45:00Z",
         "game_date": "2026-05-18",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Mets",
         "home_name": "Washington Nationals",
         "away_id": 121,
@@ -129,7 +129,7 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - New York Mets @ Washington Nationals (Pre-Game)"
+        "summary": "2026-05-18 - New York Mets @ Washington Nationals (Warmup)"
     },
     {
         "game_id": 823549,
@@ -303,10 +303,10 @@
         "away_probable_pitcher": "Yoshinobu Yamamoto",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
@@ -318,7 +318,7 @@
         "game_datetime": "2026-05-19T01:40:00Z",
         "game_date": "2026-05-18",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Francisco Giants",
         "home_name": "Arizona Diamondbacks",
         "away_id": 137,
@@ -329,15 +329,15 @@
         "away_probable_pitcher": "Robbie Ray",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-18 - San Francisco Giants @ Arizona Diamondbacks (Scheduled)"
+        "summary": "2026-05-18 - San Francisco Giants @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 823137,
