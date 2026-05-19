@@ -30,7 +30,7 @@
         "game_datetime": "2026-05-19T22:40:00Z",
         "game_date": "2026-05-19",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Detroit Tigers",
         "away_id": 114,
@@ -48,8 +48,8 @@
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-19 - Cleveland Guardians @ Detroit Tigers (Scheduled)"
+        "series_status": "CLE leads 1-0",
+        "summary": "2026-05-19 - Cleveland Guardians @ Detroit Tigers (Pre-Game)"
     },
     {
         "game_id": 822979,
@@ -134,7 +134,7 @@
         "game_datetime": "2026-05-19T23:05:00Z",
         "game_date": "2026-05-19",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "New York Yankees",
         "away_id": 141,
@@ -154,8 +154,8 @@
         "national_broadcasts": [
             "TBS"
         ],
-        "series_status": null,
-        "summary": "2026-05-19 - Toronto Blue Jays @ New York Yankees (Scheduled)"
+        "series_status": "NYY leads 1-0",
+        "summary": "2026-05-19 - Toronto Blue Jays @ New York Yankees (Pre-Game)"
     },
     {
         "game_id": 824112,
