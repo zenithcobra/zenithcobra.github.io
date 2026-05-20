@@ -83,8 +83,9 @@ teams_today = script.get_teams_playing_today_from_processed_schedule(processed_s
 team_history = script.get_team_history(teams_today)
 team_wins = script.get_team_records(team_history)
 ballparks = script.scrape_ballparks_table_to_json()
+filtered_team_data = script.process_team_data(team_wins)
 script.save_to_json(teams_today, 'teams_playing_today_data')
-script.save_to_json(team_wins, 'team_data')
+script.save_to_json(filtered_team_data, 'team_data')
 script.save_to_json(ballparks, 'ballpark_data')
 
 
@@ -103,7 +104,8 @@ rooster = script.process_players_from_roster_into_list(processed_schedule)
 batters = script.add_stats_to_batters(rooster)
 script.save_to_json(batters,"batter_data")
 yesterdays_home_runs = script.get_yesterdays_homers()
-script.save_to_json(yesterdays_home_runs,'yesterday_home_run_data')
+yesterday_home_runs_2day = script.yesterday_hrs_2day(processed_schedule, yesterdays_home_runs)
+script.save_to_json(yesterday_home_runs_2day,'yesterday_home_run_data')
 
 
 # CONVERTS

@@ -2658,6 +2658,20 @@ def league_leaders_hrs_2day(schedule):
     #         print(f"{key} -> {value}")
     return sorted_hrs
 
+def yesterday_hrs_2day(schedule, yesterdays_hrs):
+    names_of_players_today = []
+    for x in schedule:
+        for y in x['away_team_roster']:
+            names_of_players_today.append(y)
+        for z in x['home_team_roster']:
+            names_of_players_today.append(z)
+
+    sorted_hrs = []
+    for x in yesterdays_hrs:
+        if x["name"] in names_of_players_today:
+            sorted_hrs.append(x)
+
+    return sorted_hrs
 
 def find_dh_batters_add_stats_streaks(schedule, batters_with_streaks):
     
@@ -2774,6 +2788,17 @@ def find_dh_batters_add_stats_streaks(schedule, batters_with_streaks):
         stat_homers.append(player_dict)
 
     return stat_homers
+
+def process_team_data(team_data):
+    team_data_holder = []
+    for x in team_data:
+        team_info = {
+            "team_name": x['team_name'],
+            "team_record": x['team_record']
+        }
+        team_data_holder.append(team_info)
+    return team_data_holder
+
 
 def scrape_ballparks_table_to_json():
     """
