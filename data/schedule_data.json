@@ -47,14 +47,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 2,
-        "current_inning": 4,
+        "home_score": 3,
+        "current_inning": 5,
         "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-05-19 - Cleveland Guardians (3) @ Detroit Tigers (2) (Top of the 4th)"
+        "summary": "2026-05-19 - Cleveland Guardians (3) @ Detroit Tigers (3) (Top of the 5th)"
     },
     {
         "game_id": 822979,
@@ -74,13 +74,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 1,
-        "current_inning": 3,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-05-19 - Baltimore Orioles (1) @ Tampa Bay Rays (1) (Bottom of the 3rd)"
+        "summary": "2026-05-19 - Baltimore Orioles (1) @ Tampa Bay Rays (1) (Bottom of the 4th)"
     },
     {
         "game_id": 823464,
@@ -100,13 +100,13 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 1,
-        "current_inning": 4,
+        "current_inning": 5,
         "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-05-19 - Cincinnati Reds (2) @ Philadelphia Phillies (1) (Bottom of the 4th)"
+        "summary": "2026-05-19 - Cincinnati Reds (2) @ Philadelphia Phillies (1) (Bottom of the 5th)"
     },
     {
         "game_id": 822736,
@@ -124,15 +124,15 @@
         "away_probable_pitcher": "Nolan McLean",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
+        "away_score": 3,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "NYM leads 1-0",
-        "summary": "2026-05-19 - New York Mets (2) @ Washington Nationals (0) (Top of the 1st)"
+        "summary": "2026-05-19 - New York Mets (3) @ Washington Nationals (0) (End of the 1st)"
     },
     {
         "game_id": 823548,
@@ -152,22 +152,22 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [
             "TBS"
         ],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-05-19 - Toronto Blue Jays (0) @ New York Yankees (0) (Top of the 2nd)"
+        "summary": "2026-05-19 - Toronto Blue Jays (0) @ New York Yankees (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 824112,
         "game_datetime": "2026-05-19T23:40:00Z",
         "game_date": "2026-05-19",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Boston Red Sox",
         "home_name": "Kansas City Royals",
         "away_id": 111,
@@ -178,22 +178,22 @@
         "away_probable_pitcher": "Ranger Suarez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "BOS leads 1-0",
-        "summary": "2026-05-19 - Boston Red Sox @ Kansas City Royals (Warmup)"
+        "summary": "2026-05-19 - Boston Red Sox (1) @ Kansas City Royals (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823704,
         "game_datetime": "2026-05-19T23:40:00Z",
         "game_date": "2026-05-19",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Houston Astros",
         "home_name": "Minnesota Twins",
         "away_id": 117,
@@ -204,22 +204,22 @@
         "away_probable_pitcher": "Jason Alexander",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "MIN leads 1-0",
-        "summary": "2026-05-19 - Houston Astros @ Minnesota Twins (Warmup)"
+        "summary": "2026-05-19 - Houston Astros (2) @ Minnesota Twins (0) (Middle of the 1st)"
     },
     {
         "game_id": 824677,
         "game_datetime": "2026-05-19T23:40:00Z",
         "game_date": "2026-05-19",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Milwaukee Brewers",
         "home_name": "Chicago Cubs",
         "away_id": 158,
@@ -230,22 +230,22 @@
         "away_probable_pitcher": "Jacob Misiorowski",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 1-0",
-        "summary": "2026-05-19 - Milwaukee Brewers @ Chicago Cubs (Warmup)"
+        "summary": "2026-05-19 - Milwaukee Brewers (1) @ Chicago Cubs (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823059,
         "game_datetime": "2026-05-19T23:45:00Z",
         "game_date": "2026-05-19",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Pittsburgh Pirates",
         "home_name": "St. Louis Cardinals",
         "away_id": 134,
@@ -259,12 +259,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-19 - Pittsburgh Pirates @ St. Louis Cardinals (Warmup)"
+        "summary": "2026-05-19 - Pittsburgh Pirates (0) @ St. Louis Cardinals (0) (Middle of the 1st)"
     },
     {
         "game_id": 824356,
