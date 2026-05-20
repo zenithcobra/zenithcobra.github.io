@@ -97,7 +97,7 @@
         "game_datetime": "2026-05-20T19:10:00Z",
         "game_date": "2026-05-20",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Texas Rangers",
         "home_name": "Colorado Rockies",
         "away_id": 140,
@@ -121,14 +121,14 @@
         "winning_pitcher": "Jacob Latz",
         "losing_pitcher": "Brennan Bernardino",
         "save_pitcher": null,
-        "summary": "2026-05-20 - Texas Rangers (5) @ Colorado Rockies (4) (Game Over)"
+        "summary": "2026-05-20 - Texas Rangers (5) @ Colorado Rockies (4) (Final)"
     },
     {
         "game_id": 825084,
         "game_datetime": "2026-05-20T19:40:00Z",
         "game_date": "2026-05-20",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "San Francisco Giants",
         "home_name": "Arizona Diamondbacks",
         "away_id": 137,
@@ -152,7 +152,7 @@
         "winning_pitcher": "Merrill Kelly",
         "losing_pitcher": "Tyler Mahle",
         "save_pitcher": "Paul Sewald",
-        "summary": "2026-05-20 - San Francisco Giants (3) @ Arizona Diamondbacks (6) (Game Over)"
+        "summary": "2026-05-20 - San Francisco Giants (3) @ Arizona Diamondbacks (6) (Final)"
     },
     {
         "game_id": 823134,
@@ -170,22 +170,22 @@
         "away_probable_pitcher": "Sean Burke",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
-        "home_score": 2,
-        "current_inning": 7,
-        "inning_state": "Top",
+        "away_score": 3,
+        "home_score": 5,
+        "current_inning": 8,
+        "inning_state": "End",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-20 - Chicago White Sox (2) @ Seattle Mariners (2) (Top of the 7th)"
+        "summary": "2026-05-20 - Chicago White Sox (3) @ Seattle Mariners (5) (End of the 8th)"
     },
     {
         "game_id": 824273,
         "game_datetime": "2026-05-20T22:40:00Z",
         "game_date": "2026-05-20",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Cleveland Guardians",
         "home_name": "Detroit Tigers",
         "away_id": 114,
@@ -204,14 +204,14 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "CLE leads 2-0",
-        "summary": "2026-05-20 - Cleveland Guardians @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-05-20 - Cleveland Guardians (0) @ Detroit Tigers (0) (Top of the 1st)"
     },
     {
         "game_id": 823866,
         "game_datetime": "2026-05-20T22:40:00Z",
         "game_date": "2026-05-20",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Atlanta Braves",
         "home_name": "Miami Marlins",
         "away_id": 144,
@@ -230,14 +230,14 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-20 - Atlanta Braves @ Miami Marlins (Pre-Game)"
+        "summary": "2026-05-20 - Atlanta Braves (0) @ Miami Marlins (0) (Top of the 1st)"
     },
     {
         "game_id": 822735,
         "game_datetime": "2026-05-20T22:45:00Z",
         "game_date": "2026-05-20",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Mets",
         "home_name": "Washington Nationals",
         "away_id": 121,
@@ -256,14 +256,14 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-20 - New York Mets @ Washington Nationals (Pre-Game)"
+        "summary": "2026-05-20 - New York Mets @ Washington Nationals (Warmup)"
     },
     {
         "game_id": 823547,
         "game_datetime": "2026-05-20T23:05:00Z",
         "game_date": "2026-05-20",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "away_name": "Toronto Blue Jays",
         "home_name": "New York Yankees",
         "away_id": 141,
@@ -284,7 +284,7 @@
             "MLB Network"
         ],
         "series_status": "NYY leads 2-0",
-        "summary": "2026-05-20 - Toronto Blue Jays @ New York Yankees (Pre-Game)"
+        "summary": "2026-05-20 - Toronto Blue Jays @ New York Yankees (Delayed Start)"
     },
     {
         "game_id": 824111,
@@ -395,7 +395,7 @@
         "game_datetime": "2026-05-21T01:38:00Z",
         "game_date": "2026-05-20",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Athletics",
         "home_name": "Los Angeles Angels",
         "away_id": 133,
@@ -406,14 +406,14 @@
         "away_probable_pitcher": "Aaron Civale",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-20 - Athletics @ Los Angeles Angels (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-05-20 - Athletics @ Los Angeles Angels (Pre-Game)"
     }
 ]
