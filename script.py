@@ -2628,6 +2628,37 @@ def league_leaders_hrs():
     #         print(f"{key} -> {value}")
     return hrs_list
 
+def league_leaders_hrs_2day(schedule):
+    names_of_players_today = []
+    for x in schedule:
+        for y in x['away_team_roster']:
+            names_of_players_today.append(y)
+        for z in x['home_team_roster']:
+            names_of_players_today.append(z)
+
+    hrs = statsapi.league_leader_data('homeRuns',statGroup='hitting',limit=25,sportId=1,statType='season') 
+    # Convert to dictionary
+    hrs_list = [
+        {
+            "place": entry[0],
+            "player_name": entry[1],
+            "team": entry[2],
+            "HR": entry[3]
+        }
+        for entry in hrs
+    ]
+    sorted_hrs = []
+    for x in hrs_list:
+        if x["player_name"] in names_of_players_today:
+            sorted_hrs.append(x)
+
+
+    # for x in hrs_list:
+    #     for key,value in x.items():
+    #         print(f"{key} -> {value}")
+    return sorted_hrs
+
+
 def find_dh_batters_add_stats_streaks(schedule, batters_with_streaks):
     
     games = []

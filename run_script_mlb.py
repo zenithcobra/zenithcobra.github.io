@@ -6,6 +6,18 @@ import NHL_script
 importlib.reload(script)
 
 # RUNNING THE SCRIPT 
+# =========================================
+# *****************************************
+# -----------------------------------------
+#
+# START HERE 
+# basically you run scripts that make json files of of the info you provide
+# then you convert those json scrits to html tables
+# then you open those html tables or just plain text files in the index.html file when you are done
+# -----------------------------------------
+# *****************************************
+# =========================================
+
 # yesterdays_report_text.txt
 # schedule_data.json
 # schedule_text.txt
@@ -57,9 +69,11 @@ print('script getting league leaders')
 eras_leaders = script.league_leaders_era()
 so9_leaders = script.league_leaders_strikeouts_per_9_innings()
 hr_leaders = script.league_leaders_hrs()
+hr_leaders = script.league_leaders_hrs_2day(processed_schedule)
 script.save_to_json(eras_leaders, 'ERA_leader_data')
 script.save_to_json(so9_leaders, 'SO9_leader_data')
 script.save_to_json(hr_leaders, 'HR_leader_data')
+script.save_to_json(hr_leaders, 'HR_leader_data_2day')
 
 
 # TEAMS PLAYING TODAY and History and Records
