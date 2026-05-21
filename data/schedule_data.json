@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 0,
-        "current_inning": 8,
-        "inning_state": "Top",
+        "home_score": 1,
+        "current_inning": 9,
+        "inning_state": "Bottom",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "CLE leads 3-0",
-        "summary": "2026-05-21 - Cleveland Guardians (3) @ Detroit Tigers (0) (Top of the 8th)"
+        "summary": "2026-05-21 - Cleveland Guardians (3) @ Detroit Tigers (1) (Bottom of the 9th)"
     },
     {
         "game_id": 823056,
@@ -42,21 +42,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 6,
-        "home_score": 1,
-        "current_inning": 7,
-        "inning_state": "End",
+        "home_score": 2,
+        "current_inning": 9,
+        "inning_state": "Bottom",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-21 - Pittsburgh Pirates (6) @ St. Louis Cardinals (1) (End of the 7th)"
+        "summary": "2026-05-21 - Pittsburgh Pirates (6) @ St. Louis Cardinals (2) (Bottom of the 9th)"
     },
     {
         "game_id": 822733,
         "game_datetime": "2026-05-21T20:05:00Z",
         "game_date": "2026-05-21",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Mets",
         "home_name": "Washington Nationals",
         "away_id": 121,
@@ -75,7 +75,7 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "WSH leads 2-1",
-        "summary": "2026-05-21 - New York Mets @ Washington Nationals (Pre-Game)"
+        "summary": "2026-05-21 - New York Mets @ Washington Nationals (Warmup)"
     },
     {
         "game_id": 823864,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-05-21T23:05:00Z",
         "game_date": "2026-05-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "New York Yankees",
         "away_id": 141,
@@ -129,7 +129,7 @@
             "MLB Network"
         ],
         "series_status": "NYY leads 2-1",
-        "summary": "2026-05-21 - Toronto Blue Jays @ New York Yankees (Scheduled)"
+        "summary": "2026-05-21 - Toronto Blue Jays @ New York Yankees (Pre-Game)"
     },
     {
         "game_id": 824031,
