@@ -79,20 +79,20 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 1,
-        "current_inning": 8,
-        "inning_state": "Top",
+        "current_inning": 9,
+        "inning_state": "Bottom",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "WSH leads 2-1",
-        "summary": "2026-05-21 - New York Mets (2) @ Washington Nationals (1) (Top of the 8th)"
+        "summary": "2026-05-21 - New York Mets (2) @ Washington Nationals (1) (Bottom of the 9th)"
     },
     {
         "game_id": 823864,
         "game_datetime": "2026-05-21T22:40:00Z",
         "game_date": "2026-05-21",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Atlanta Braves",
         "home_name": "Miami Marlins",
         "away_id": 144,
@@ -111,7 +111,7 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "ATL leads 2-1",
-        "summary": "2026-05-21 - Atlanta Braves @ Miami Marlins (Pre-Game)"
+        "summary": "2026-05-21 - Atlanta Braves @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 823545,
@@ -146,7 +146,7 @@
         "game_datetime": "2026-05-22T01:38:00Z",
         "game_date": "2026-05-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Athletics",
         "home_name": "Los Angeles Angels",
         "away_id": 133,
@@ -157,22 +157,22 @@
         "away_probable_pitcher": "Luis Severino",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-21 - Athletics @ Los Angeles Angels (Scheduled)"
+        "series_status": "ATH leads 2-1",
+        "summary": "2026-05-21 - Athletics @ Los Angeles Angels (Pre-Game)"
     },
     {
         "game_id": 825083,
         "game_datetime": "2026-05-22T01:40:00Z",
         "game_date": "2026-05-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Arizona Diamondbacks",
         "away_id": 115,
@@ -191,6 +191,6 @@
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-21 - Colorado Rockies @ Arizona Diamondbacks (Scheduled)"
+        "summary": "2026-05-21 - Colorado Rockies @ Arizona Diamondbacks (Pre-Game)"
     }
 ]
