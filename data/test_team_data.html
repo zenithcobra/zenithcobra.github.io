@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Starter Template</title> <!-- Link to your stylesheet -->
+    <link href="DataTables/datatables.min.css" rel="stylesheet">
+    <style>
+        div.dt-container {
+            margin: 0 auto;
+            width: 95%;
+        }
+    </style>
+</head>
+
+<body>
+<table border='1' id="myTable" class="display">
+    <thead><tr>
+    <th>team_name</th>
+    <th>team_record</th>
+    </tr></thead>
+    <tbody>
+    <tr>
+    <td>Cleveland Guardians</td>
+    <td>W-W-W-W-W-L-W-W-W-L-L-W-W-W-L-L-L-W-W-W-L-L-L-L-W-L-W-L-W-W-L-W-L-L-W-L-W-L-W-W-L-L-W-W-L-W-L-W-L-</td>
+    </tr>
+    <tr>
+    <td>Detroit Tigers</td>
+    <td>L-L-L-L-L-W-L-L-L-W-L-L-L-L-L-W-W-L-W-L-L-W-L-L-W-W-L-L-W-W-L-W-W-W-W-W-W-L-L-L-L-L-W-W-L-L-L-L-W-</td>
+    </tr>
+    <tr>
+    <td>Pittsburgh Pirates</td>
+    <td>W-L-L-L-L-W-L-W-L-W-L-W-W-L-W-W-W-L-L-L-L-L-W-W-L-W-L-W-L-W-L-W-L-W-L-W-W-L-W-L-W-W-W-W-W-L-W-L-</td>
+    </tr>
+    <tr>
+    <td>St. Louis Cardinals</td>
+    <td>L-W-L-W-W-W-L-W-L-L-W-W-L-W-L-W-W-W-W-W-W-L-L-L-L-W-L-W-W-W-W-W-L-L-L-W-W-W-L-W-L-L-W-W-L-L-W-</td>
+    </tr>
+    <tr>
+    <td>New York Mets</td>
+    <td>L-L-W-W-W-L-W-W-W-L-L-W-W-W-W-L-W-L-L-W-L-L-W-W-L-L-L-L-L-L-L-L-L-L-L-L-W-W-W-W-L-L-L-W-L-W-</td>
+    </tr>
+    <tr>
+    <td>Washington Nationals</td>
+    <td>W-W-L-L-W-W-L-W-W-L-L-W-W-W-L-W-L-L-W-W-L-W-W-L-L-L-W-L-W-L-L-W-L-W-L-W-W-W-L-L-W-L-L-L-L-L-W-W-L-</td>
+    </tr>
+    <tr>
+    <td>Atlanta Braves</td>
+    <td>W-W-L-W-L-W-L-W-W-W-W-L-L-W-L-W-W-W-L-W-W-W-L-W-W-W-L-W-W-W-W-W-W-L-W-L-W-W-W-L-L-L-W-W-W-L-W-L-W-W-</td>
+    </tr>
+    <tr>
+    <td>Miami Marlins</td>
+    <td>L-L-W-L-W-L-L-W-L-W-W-L-W-L-L-L-L-W-L-W-W-L-L-L-W-W-L-W-W-L-L-L-L-W-L-L-L-W-W-L-L-W-L-L-W-W-L-W-W-W-</td>
+    </tr>
+    <tr>
+    <td>Toronto Blue Jays</td>
+    <td>W-L-L-W-W-L-W-L-L-L-W-W-L-L-L-L-W-W-L-W-W-L-W-W-L-L-W-W-W-L-L-L-L-W-L-L-W-W-L-L-L-L-L-W-L-W-W-W-</td>
+    </tr>
+    <tr>
+    <td>New York Yankees</td>
+    <td>L-W-W-L-L-W-L-W-L-L-L-L-W-L-W-W-W-W-W-L-W-W-L-W-W-W-W-W-W-W-W-L-W-L-W-L-L-L-L-L-W-L-W-W-W-W-L-W-W-</td>
+    </tr>
+    <tr>
+    <td>Athletics</td>
+    <td>W-W-L-L-L-W-L-W-L-L-W-W-W-L-L-W-L-L-W-W-L-W-L-W-L-W-W-L-W-L-L-W-W-L-W-W-W-W-W-L-W-L-W-L-W-L-L-L-L-</td>
+    </tr>
+    <tr>
+    <td>Los Angeles Angels</td>
+    <td>L-L-W-L-L-L-L-L-L-W-L-L-W-W-L-L-W-L-L-L-L-L-L-L-W-L-L-L-L-W-W-L-W-L-W-L-W-L-L-W-W-W-L-L-W-L-L-L-W-</td>
+    </tr>
+    <tr>
+    <td>Colorado Rockies</td>
+    <td>L-L-W-L-W-L-L-W-L-L-L-W-L-L-L-L-L-L-W-L-W-W-L-W-L-L-W-W-L-W-L-L-L-L-L-L-W-W-W-W-L-L-W-L-W-L-L-L-</td>
+    </tr>
+    <tr>
+    <td>Arizona Diamondbacks</td>
+    <td>W-W-W-W-L-W-L-L-W-W-W-L-L-L-W-L-L-L-L-W-L-W-L-L-W-L-L-W-W-W-W-L-W-L-W-W-W-L-W-W-L-L-W-W-W-L-L-</td>
+    </tr>
+    </tbody>
+    </table>
+
+<script src="jquery/jquery.min.js"></script>
+<script src="DataTables/datatables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable( {
+            paging: false,
+            scrollY: 600,
+            select: true,
+            // fixedColumns: {
+            //     start: 2
+            // },
+        
+        
+            initComplete: function () {
+    this.api()
+        .columns([1,4])
+        .every(function () {
+            let column = this;
+
+            // Create select element
+            let select = document.createElement('select');
+            select.add(new Option(''));
+            // column.footer().replaceChildren(select);
+            // column.header().appendChild(document.createElement('br'));
+            column.header().appendChild(select);
+
+            // Apply listener for user change in value
+            select.addEventListener('change', function () {
+                column
+                    .search(select.value, {exact: true})
+                    .draw();
+            });
+
+            // Add list of options
+            column
+                .data()
+                .unique()
+                .sort()
+                .each(function (d, j) {
+                    select.add(new Option(d));
+                });
+        });
+}
+
+
+
+        
+        } );
+
+
+
+
+    });
+    
+</script>
+</body>
+
+</html>

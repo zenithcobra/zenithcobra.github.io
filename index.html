@@ -7,6 +7,13 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="DataTables/datatables.min.css" rel="stylesheet">
+    <style>
+        div.dt-container {
+            margin: 0 auto;
+            width: 95%;
+        }
+    </style>
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -201,28 +208,6 @@
 	</span>
 	<a href="#" data-load="data/hr_leader_text.html">
 		<h2>HR</h2>
-		<div class="content">
-			<!-- <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p> -->
-		</div>
-	</a>
-</article>
-
-
-<!-- ========================= -->
-<!-- ========================= -->
-<!-- ************************* -->
-<!-- ------------------------- -->
-<!-- HR 2DAY -->
-<!-- ------------------------- -->
-<!-- ************************* -->
-<!-- ========================= -->
-<!-- ========================= -->
-<article class="style3">
-	<span class="image">
-		<img src="images/pic01.jpg" alt="" />
-	</span>
-	<a href="#" data-load="data/hr_leader_text.html">
-		<h2>HR 2DAY</h2>
 		<div class="content">
 			<!-- <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p> -->
 		</div>
@@ -431,11 +416,65 @@
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/enhancements.js" defer></script>
 	<script src="assets/js/export.js" defer></script>
-	<script src="assets/js/headerscript.js" defer></script>
+	<!-- <script src="assets/js/headerscript.js" defer></script> -->
 	<script src="assets/js/theme-toggle.js" defer></script>
-	<script src="assets/js/checkbox-handler.js" defer></script>
+	<!-- <script src="assets/js/checkbox-handler.js" defer></script> -->
 	<script src="assets/js/n-back-game.js" defer></script>
-	<script src="assets/js/enhancements_two.js" defer></script>
+	<!-- <script src="assets/js/enhancements_two.js" defer></script> -->
 	<script src="assets/js/schedule.js" defer></script>
+	<script src="DataTables/datatables.min.js"></script>
+	<script>
+        $(document).ready(function () {
+            $('#myTable').DataTable( {
+                paging: false,
+                scrollY: 600,
+                select: true,
+                // fixedColumns: {
+                //     start: 2
+                // },
+            
+            
+                initComplete: function () {
+        this.api()
+            .columns([1,4])
+            .every(function () {
+                let column = this;
+ 
+                // Create select element
+                let select = document.createElement('select');
+                select.add(new Option(''));
+                // column.footer().replaceChildren(select);
+                // column.header().appendChild(document.createElement('br'));
+                column.header().appendChild(select);
+ 
+                // Apply listener for user change in value
+                select.addEventListener('change', function () {
+                    column
+                        .search(select.value, {exact: true})
+                        .draw();
+                });
+ 
+                // Add list of options
+                column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                        select.add(new Option(d));
+                    });
+            });
+    }
+
+
+
+            
+            } );
+
+
+
+
+        });
+        
+    </script>
 </body>
 </html>
