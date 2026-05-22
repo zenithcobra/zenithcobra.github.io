@@ -37,7 +37,7 @@
         "game_datetime": "2026-05-22T22:40:00Z",
         "game_date": "2026-05-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cleveland Guardians",
         "home_name": "Philadelphia Phillies",
         "away_id": 114,
@@ -56,7 +56,7 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-22 - Cleveland Guardians @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-05-22 - Cleveland Guardians @ Philadelphia Phillies (Warmup)"
     },
     {
         "game_id": 823546,
@@ -273,7 +273,7 @@
         "game_datetime": "2026-05-23T01:38:00Z",
         "game_date": "2026-05-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Texas Rangers",
         "home_name": "Los Angeles Angels",
         "away_id": 140,
@@ -284,15 +284,15 @@
         "away_probable_pitcher": "Jacob deGrom",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-22 - Texas Rangers @ Los Angeles Angels (Scheduled)"
+        "summary": "2026-05-22 - Texas Rangers @ Los Angeles Angels (Pre-Game)"
     },
     {
         "game_id": 825082,
@@ -336,10 +336,10 @@
         "away_probable_pitcher": "Jeffrey Springs",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
@@ -351,7 +351,7 @@
         "game_datetime": "2026-05-23T02:15:00Z",
         "game_date": "2026-05-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago White Sox",
         "home_name": "San Francisco Giants",
         "away_id": 145,
@@ -370,7 +370,7 @@
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-22 - Chicago White Sox @ San Francisco Giants (Scheduled)"
+        "summary": "2026-05-22 - Chicago White Sox @ San Francisco Giants (Pre-Game)"
     },
     {
         "game_id": 824518,
