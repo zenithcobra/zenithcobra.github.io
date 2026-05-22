@@ -37,7 +37,7 @@
         "game_datetime": "2026-05-22T22:40:00Z",
         "game_date": "2026-05-22",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Cleveland Guardians",
         "home_name": "Philadelphia Phillies",
         "away_id": 114,
@@ -51,19 +51,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-22 - Cleveland Guardians @ Philadelphia Phillies (Warmup)"
+        "summary": "2026-05-22 - Cleveland Guardians (0) @ Philadelphia Phillies (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823546,
         "game_datetime": "2026-05-22T23:05:00Z",
         "game_date": "2026-05-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Tampa Bay Rays",
         "home_name": "New York Yankees",
         "away_id": 139,
@@ -82,14 +82,14 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-22 - Tampa Bay Rays @ New York Yankees (Pre-Game)"
+        "summary": "2026-05-22 - Tampa Bay Rays @ New York Yankees (Warmup)"
     },
     {
         "game_id": 822816,
         "game_datetime": "2026-05-22T23:07:00Z",
         "game_date": "2026-05-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Toronto Blue Jays",
         "away_id": 134,
@@ -108,14 +108,14 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-22 - Pittsburgh Pirates @ Toronto Blue Jays (Pre-Game)"
+        "summary": "2026-05-22 - Pittsburgh Pirates @ Toronto Blue Jays (Warmup)"
     },
     {
         "game_id": 824761,
         "game_datetime": "2026-05-22T23:10:00Z",
         "game_date": "2026-05-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Minnesota Twins",
         "home_name": "Boston Red Sox",
         "away_id": 142,
@@ -134,7 +134,7 @@
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-22 - Minnesota Twins @ Boston Red Sox (Pre-Game)"
+        "summary": "2026-05-22 - Minnesota Twins @ Boston Red Sox (Warmup)"
     },
     {
         "game_id": 823863,
