@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-22T18:20:00Z",
         "game_date": "2026-05-22",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Houston Astros",
         "home_name": "Chicago Cubs",
         "away_id": 117,
@@ -17,15 +17,20 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 2,
-        "current_inning": 8,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [
             "Apple TV"
         ],
-        "series_status": null,
-        "summary": "2026-05-22 - Houston Astros (4) @ Chicago Cubs (2) (Bottom of the 8th)"
+        "series_status": "HOU leads 1-0",
+        "winning_team": "Houston Astros",
+        "losing_team": "Chicago Cubs",
+        "winning_pitcher": "Spencer Arrighetti",
+        "losing_pitcher": "Jameson Taillon",
+        "save_pitcher": "Bryan King",
+        "summary": "2026-05-22 - Houston Astros (4) @ Chicago Cubs (2) (Final)"
     },
     {
         "game_id": 823461,
@@ -320,7 +325,7 @@
         "game_datetime": "2026-05-23T01:40:00Z",
         "game_date": "2026-05-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Athletics",
         "home_name": "San Diego Padres",
         "away_id": 133,
@@ -339,7 +344,7 @@
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-22 - Athletics @ San Diego Padres (Scheduled)"
+        "summary": "2026-05-22 - Athletics @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 823223,
