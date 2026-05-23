@@ -105,15 +105,15 @@
         "away_probable_pitcher": "Paul Skenes",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 3,
-        "current_inning": 6,
-        "inning_state": "Bottom",
+        "away_score": 2,
+        "home_score": 5,
+        "current_inning": 8,
+        "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-05-23 - Pittsburgh Pirates (1) @ Toronto Blue Jays (3) (Bottom of the 6th)"
+        "summary": "2026-05-23 - Pittsburgh Pirates (2) @ Toronto Blue Jays (5) (Top of the 8th)"
     },
     {
         "game_id": 823458,
@@ -157,15 +157,15 @@
         "away_probable_pitcher": "Bryan Hudson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Bottom",
+        "away_score": 2,
+        "home_score": 3,
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-05-23 - Chicago White Sox (0) @ San Francisco Giants (0) (Bottom of the 3rd)"
+        "summary": "2026-05-23 - Chicago White Sox (2) @ San Francisco Giants (3) (Top of the 5th)"
     },
     {
         "game_id": 824109,
@@ -184,8 +184,8 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 3,
-        "current_inning": 3,
+        "home_score": 4,
+        "current_inning": 6,
         "inning_state": "Bottom",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
@@ -193,7 +193,7 @@
             "FS1"
         ],
         "series_status": "SEA leads 1-0",
-        "summary": "2026-05-23 - Seattle Mariners (0) @ Kansas City Royals (3) (Bottom of the 3rd)"
+        "summary": "2026-05-23 - Seattle Mariners (0) @ Kansas City Royals (4) (Bottom of the 6th)"
     },
     {
         "game_id": 824760,
@@ -212,21 +212,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 0,
-        "current_inning": 3,
+        "home_score": 1,
+        "current_inning": 5,
         "inning_state": "Top",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "MIN leads 1-0",
-        "summary": "2026-05-23 - Minnesota Twins (2) @ Boston Red Sox (0) (Top of the 3rd)"
+        "summary": "2026-05-23 - Minnesota Twins (2) @ Boston Red Sox (1) (Top of the 5th)"
     },
     {
         "game_id": 824920,
         "game_datetime": "2026-05-23T20:10:00Z",
         "game_date": "2026-05-23",
         "game_type": "R",
-        "status": "Delayed",
+        "status": "In Progress",
         "away_name": "Washington Nationals",
         "home_name": "Atlanta Braves",
         "away_id": 120,
@@ -239,13 +239,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 1-0",
-        "summary": "2026-05-23 - Washington Nationals @ Atlanta Braves (Delayed)"
+        "summary": "2026-05-23 - Washington Nationals (0) @ Atlanta Braves (0) (Top of the 3rd)"
     },
     {
         "game_id": 823862,
@@ -264,14 +264,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 2,
-        "current_inning": 3,
-        "inning_state": "Middle",
+        "home_score": 4,
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "MIA leads 1-0",
-        "summary": "2026-05-23 - New York Mets (0) @ Miami Marlins (2) (Middle of the 3rd)"
+        "summary": "2026-05-23 - New York Mets (0) @ Miami Marlins (4) (Bottom of the 5th)"
     },
     {
         "game_id": 823787,
@@ -358,7 +358,7 @@
         "game_datetime": "2026-05-24T02:10:00Z",
         "game_date": "2026-05-23",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Arizona Diamondbacks",
         "away_id": 115,
@@ -376,8 +376,8 @@
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-23 - Colorado Rockies @ Arizona Diamondbacks (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-05-23 - Colorado Rockies @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 823543,
