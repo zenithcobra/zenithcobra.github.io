@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 1,
-        "current_inning": 5,
+        "current_inning": 6,
         "inning_state": "Bottom",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-23 - St. Louis Cardinals (3) @ Cincinnati Reds (1) (Bottom of the 5th)"
+        "summary": "2026-05-23 - St. Louis Cardinals (3) @ Cincinnati Reds (1) (Bottom of the 6th)"
     },
     {
         "game_id": 824516,
@@ -71,20 +71,20 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "HOU leads 1-0",
-        "summary": "2026-05-23 - Houston Astros (2) @ Chicago Cubs (0) (Bottom of the 1st)"
+        "summary": "2026-05-23 - Houston Astros (2) @ Chicago Cubs (0) (Top of the 3rd)"
     },
     {
         "game_id": 822814,
         "game_datetime": "2026-05-23T19:07:00Z",
         "game_date": "2026-05-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Toronto Blue Jays",
         "away_id": 134,
@@ -103,7 +103,7 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-05-23 - Pittsburgh Pirates @ Toronto Blue Jays (Pre-Game)"
+        "summary": "2026-05-23 - Pittsburgh Pirates @ Toronto Blue Jays (Warmup)"
     },
     {
         "game_id": 823458,
