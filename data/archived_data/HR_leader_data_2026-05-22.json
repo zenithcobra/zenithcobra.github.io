@@ -13,12 +13,6 @@
     },
     {
         "place": 3,
-        "player_name": "Byron Buxton",
-        "team": "Minnesota Twins",
-        "HR": "16"
-    },
-    {
-        "place": 3,
         "player_name": "Aaron Judge",
         "team": "New York Yankees",
         "HR": "16"
@@ -30,9 +24,15 @@
         "HR": "16"
     },
     {
-        "place": 6,
+        "place": 5,
         "player_name": "Yordan Alvarez",
         "team": "Houston Astros",
+        "HR": "15"
+    },
+    {
+        "place": 5,
+        "player_name": "Byron Buxton",
+        "team": "Minnesota Twins",
         "HR": "15"
     },
     {
@@ -85,6 +85,12 @@
     },
     {
         "place": 14,
+        "player_name": "Mickey Moniak",
+        "team": "Colorado Rockies",
+        "HR": "12"
+    },
+    {
+        "place": 14,
         "player_name": "Max Muncy",
         "team": "Los Angeles Dodgers",
         "HR": "12"
@@ -100,12 +106,6 @@
         "player_name": "Mike Trout",
         "team": "Los Angeles Angels",
         "HR": "12"
-    },
-    {
-        "place": 20,
-        "player_name": "CJ Abrams",
-        "team": "Washington Nationals",
-        "HR": "11"
     },
     {
         "place": 20,
@@ -136,5 +136,59 @@
         "player_name": "Christian Walker",
         "team": "Houston Astros",
         "HR": "11"
+    },
+    {
+        "place": 25,
+        "player_name": "CJ Abrams",
+        "team": "Washington Nationals",
+        "HR": "10"
+    },
+    {
+        "place": 25,
+        "player_name": "Willson Contreras",
+        "team": "Boston Red Sox",
+        "HR": "10"
+    },
+    {
+        "place": 25,
+        "player_name": "Oneil Cruz",
+        "team": "Pittsburgh Pirates",
+        "HR": "10"
+    },
+    {
+        "place": 25,
+        "player_name": "Ian Happ",
+        "team": "Chicago Cubs",
+        "HR": "10"
+    },
+    {
+        "place": 25,
+        "player_name": "Gunnar Henderson",
+        "team": "Baltimore Orioles",
+        "HR": "10"
+    },
+    {
+        "place": 25,
+        "player_name": "Kazuma Okamoto",
+        "team": "Toronto Blue Jays",
+        "HR": "10"
+    },
+    {
+        "place": 25,
+        "player_name": "Andy Pages",
+        "team": "Los Angeles Dodgers",
+        "HR": "10"
+    },
+    {
+        "place": 25,
+        "player_name": "Luke Raley",
+        "team": "Seattle Mariners",
+        "HR": "10"
+    },
+    {
+        "place": 25,
+        "player_name": "Juan Soto",
+        "team": "New York Mets",
+        "HR": "10"
     }
 ]
