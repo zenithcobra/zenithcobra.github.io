@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Andre Pallante",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Middle",
+        "away_score": 3,
+        "home_score": 1,
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-23 - St. Louis Cardinals (0) @ Cincinnati Reds (0) (Middle of the 2nd)"
+        "summary": "2026-05-23 - St. Louis Cardinals (3) @ Cincinnati Reds (1) (Bottom of the 5th)"
     },
     {
         "game_id": 824516,
@@ -58,7 +58,7 @@
         "game_datetime": "2026-05-23T18:20:00Z",
         "game_date": "2026-05-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Houston Astros",
         "home_name": "Chicago Cubs",
         "away_id": 117,
@@ -69,15 +69,15 @@
         "away_probable_pitcher": "Kai-Wei Teng",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "HOU leads 1-0",
-        "summary": "2026-05-23 - Houston Astros @ Chicago Cubs (Pre-Game)"
+        "summary": "2026-05-23 - Houston Astros (2) @ Chicago Cubs (0) (Bottom of the 1st)"
     },
     {
         "game_id": 822814,
