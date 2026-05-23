@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Andre Pallante",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
+        "away_score": 8,
         "home_score": 1,
-        "current_inning": 6,
-        "inning_state": "Bottom",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-23 - St. Louis Cardinals (3) @ Cincinnati Reds (1) (Bottom of the 6th)"
+        "summary": "2026-05-23 - St. Louis Cardinals (8) @ Cincinnati Reds (1) (Top of the 9th)"
     },
     {
         "game_id": 824516,
@@ -69,22 +69,22 @@
         "away_probable_pitcher": "Kai-Wei Teng",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
+        "away_score": 3,
         "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "HOU leads 1-0",
-        "summary": "2026-05-23 - Houston Astros (2) @ Chicago Cubs (0) (Top of the 3rd)"
+        "summary": "2026-05-23 - Houston Astros (3) @ Chicago Cubs (0) (Bottom of the 5th)"
     },
     {
         "game_id": 822814,
         "game_datetime": "2026-05-23T19:07:00Z",
         "game_date": "2026-05-23",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Toronto Blue Jays",
         "away_id": 134,
@@ -96,21 +96,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "home_score": 1,
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-05-23 - Pittsburgh Pirates @ Toronto Blue Jays (Warmup)"
+        "summary": "2026-05-23 - Pittsburgh Pirates (0) @ Toronto Blue Jays (1) (Bottom of the 2nd)"
     },
     {
         "game_id": 823458,
         "game_datetime": "2026-05-23T20:05:00Z",
         "game_date": "2026-05-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "away_name": "Cleveland Guardians",
         "home_name": "Philadelphia Phillies",
         "away_id": 114,
@@ -129,7 +129,7 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-05-23 - Cleveland Guardians @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-05-23 - Cleveland Guardians @ Philadelphia Phillies (Delayed Start)"
     },
     {
         "game_id": 823222,
