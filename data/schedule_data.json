@@ -17,7 +17,7 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 1,
-        "current_inning": 8,
+        "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
@@ -25,7 +25,7 @@
             "NBCSN / Peacock"
         ],
         "series_status": "TOR leads 2-0",
-        "summary": "2026-05-24 - Pittsburgh Pirates (4) @ Toronto Blue Jays (1) (Top of the 8th)"
+        "summary": "2026-05-24 - Pittsburgh Pirates (4) @ Toronto Blue Jays (1) (Top of the 9th)"
     },
     {
         "game_id": 824839,
@@ -43,15 +43,15 @@
         "away_probable_pitcher": "Framber Valdez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
-        "home_score": 1,
+        "away_score": 3,
+        "home_score": 2,
         "current_inning": 8,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-05-24 - Detroit Tigers (2) @ Baltimore Orioles (1) (Top of the 8th)"
+        "summary": "2026-05-24 - Detroit Tigers (3) @ Baltimore Orioles (2) (Bottom of the 8th)"
     },
     {
         "game_id": 824840,
@@ -96,14 +96,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 1,
-        "current_inning": 3,
+        "home_score": 3,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "MIN leads 2-0",
-        "summary": "2026-05-24 - Minnesota Twins (3) @ Boston Red Sox (1) (Bottom of the 3rd)"
+        "summary": "2026-05-24 - Minnesota Twins (3) @ Boston Red Sox (3) (Bottom of the 4th)"
     },
     {
         "game_id": 823459,
@@ -121,15 +121,15 @@
         "away_probable_pitcher": "Parker Messick",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
         "current_inning": 5,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-24 - Cleveland Guardians (0) @ Philadelphia Phillies (0) (Top of the 5th)"
+        "summary": "2026-05-24 - Cleveland Guardians (1) @ Philadelphia Phillies (0) (Bottom of the 5th)"
     },
     {
         "game_id": 823544,
@@ -149,13 +149,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-05-24 - Tampa Bay Rays (0) @ New York Yankees (0) (Bottom of the 4th)"
+        "summary": "2026-05-24 - Tampa Bay Rays (0) @ New York Yankees (0) (Top of the 6th)"
     },
     {
         "game_id": 823861,
@@ -175,13 +175,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 4,
+        "current_inning": 5,
         "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "MIA leads 2-0",
-        "summary": "2026-05-24 - New York Mets (0) @ Miami Marlins (0) (Top of the 4th)"
+        "summary": "2026-05-24 - New York Mets (0) @ Miami Marlins (0) (Top of the 5th)"
     },
     {
         "game_id": 824108,
@@ -201,13 +201,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "current_inning": 4,
+        "inning_state": "Top",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-24 - Seattle Mariners (1) @ Kansas City Royals (0) (Bottom of the 2nd)"
+        "summary": "2026-05-24 - Seattle Mariners (1) @ Kansas City Royals (0) (Top of the 4th)"
     },
     {
         "game_id": 823786,
@@ -226,14 +226,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 1,
         "current_inning": 2,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-24 - Los Angeles Dodgers (0) @ Milwaukee Brewers (0) (Top of the 2nd)"
+        "summary": "2026-05-24 - Los Angeles Dodgers (0) @ Milwaukee Brewers (1) (Bottom of the 2nd)"
     },
     {
         "game_id": 824676,
@@ -251,15 +251,15 @@
         "away_probable_pitcher": "Peter Lambert",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "End",
+        "away_score": 1,
+        "home_score": 3,
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "HOU leads 2-0",
-        "summary": "2026-05-24 - Houston Astros (0) @ Chicago Cubs (0) (End of the 1st)"
+        "summary": "2026-05-24 - Houston Astros (1) @ Chicago Cubs (3) (Bottom of the 2nd)"
     },
     {
         "game_id": 823220,
