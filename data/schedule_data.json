@@ -110,7 +110,7 @@
         "game_datetime": "2026-05-24T17:35:00Z",
         "game_date": "2026-05-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Philadelphia Phillies",
         "away_id": 114,
@@ -121,22 +121,22 @@
         "away_probable_pitcher": "Parker Messick",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-24 - Cleveland Guardians @ Philadelphia Phillies (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-05-24 - Cleveland Guardians @ Philadelphia Phillies (Pre-Game)"
     },
     {
         "game_id": 823544,
         "game_datetime": "2026-05-24T17:35:00Z",
         "game_date": "2026-05-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Tampa Bay Rays",
         "home_name": "New York Yankees",
         "away_id": 139,
@@ -155,14 +155,14 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-05-24 - Tampa Bay Rays @ New York Yankees (Scheduled)"
+        "summary": "2026-05-24 - Tampa Bay Rays @ New York Yankees (Pre-Game)"
     },
     {
         "game_id": 824514,
         "game_datetime": "2026-05-24T17:40:00Z",
         "game_date": "2026-05-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "Cincinnati Reds",
         "away_id": 138,
@@ -180,15 +180,15 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-24 - St. Louis Cardinals @ Cincinnati Reds (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-05-24 - St. Louis Cardinals @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 823861,
         "game_datetime": "2026-05-24T17:40:00Z",
         "game_date": "2026-05-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "Miami Marlins",
         "away_id": 121,
@@ -207,14 +207,14 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "MIA leads 2-0",
-        "summary": "2026-05-24 - New York Mets @ Miami Marlins (Scheduled)"
+        "summary": "2026-05-24 - New York Mets @ Miami Marlins (Pre-Game)"
     },
     {
         "game_id": 824108,
         "game_datetime": "2026-05-24T18:10:00Z",
         "game_date": "2026-05-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "Kansas City Royals",
         "away_id": 136,
@@ -232,8 +232,8 @@
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-24 - Seattle Mariners @ Kansas City Royals (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-05-24 - Seattle Mariners @ Kansas City Royals (Pre-Game)"
     },
     {
         "game_id": 823786,
