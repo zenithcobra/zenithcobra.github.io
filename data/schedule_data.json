@@ -16,16 +16,16 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "home_score": 1,
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [
             "NBCSN / Peacock"
         ],
         "series_status": "TOR leads 2-0",
-        "summary": "2026-05-24 - Pittsburgh Pirates (2) @ Toronto Blue Jays (0) (Bottom of the 2nd)"
+        "summary": "2026-05-24 - Pittsburgh Pirates (2) @ Toronto Blue Jays (1) (Top of the 5th)"
     },
     {
         "game_id": 824839,
@@ -43,15 +43,15 @@
         "away_probable_pitcher": "Framber Valdez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "End",
+        "current_inning": 4,
+        "inning_state": "Middle",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-05-24 - Detroit Tigers (0) @ Baltimore Orioles (0) (End of the 1st)"
+        "summary": "2026-05-24 - Detroit Tigers (2) @ Baltimore Orioles (0) (Middle of the 4th)"
     },
     {
         "game_id": 824840,
@@ -84,7 +84,7 @@
         "game_datetime": "2026-05-24T17:35:00Z",
         "game_date": "2026-05-24",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Minnesota Twins",
         "home_name": "Boston Red Sox",
         "away_id": 142,
@@ -103,14 +103,14 @@
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "MIN leads 2-0",
-        "summary": "2026-05-24 - Minnesota Twins @ Boston Red Sox (Pre-Game)"
+        "summary": "2026-05-24 - Minnesota Twins @ Boston Red Sox (Warmup)"
     },
     {
         "game_id": 823459,
         "game_datetime": "2026-05-24T17:35:00Z",
         "game_date": "2026-05-24",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cleveland Guardians",
         "home_name": "Philadelphia Phillies",
         "away_id": 114,
@@ -129,14 +129,14 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-24 - Cleveland Guardians @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-05-24 - Cleveland Guardians @ Philadelphia Phillies (Warmup)"
     },
     {
         "game_id": 823544,
         "game_datetime": "2026-05-24T17:35:00Z",
         "game_date": "2026-05-24",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Tampa Bay Rays",
         "home_name": "New York Yankees",
         "away_id": 139,
@@ -155,14 +155,14 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-05-24 - Tampa Bay Rays @ New York Yankees (Pre-Game)"
+        "summary": "2026-05-24 - Tampa Bay Rays @ New York Yankees (Warmup)"
     },
     {
         "game_id": 824514,
         "game_datetime": "2026-05-24T17:40:00Z",
         "game_date": "2026-05-24",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "away_name": "St. Louis Cardinals",
         "home_name": "Cincinnati Reds",
         "away_id": 138,
@@ -181,14 +181,14 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-24 - St. Louis Cardinals @ Cincinnati Reds (Pre-Game)"
+        "summary": "2026-05-24 - St. Louis Cardinals @ Cincinnati Reds (Delayed Start)"
     },
     {
         "game_id": 823861,
         "game_datetime": "2026-05-24T17:40:00Z",
         "game_date": "2026-05-24",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Mets",
         "home_name": "Miami Marlins",
         "away_id": 121,
@@ -207,7 +207,7 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "MIA leads 2-0",
-        "summary": "2026-05-24 - New York Mets @ Miami Marlins (Pre-Game)"
+        "summary": "2026-05-24 - New York Mets @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 824108,
@@ -292,7 +292,7 @@
         "game_datetime": "2026-05-24T20:05:00Z",
         "game_date": "2026-05-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago White Sox",
         "home_name": "San Francisco Giants",
         "away_id": 145,
@@ -303,22 +303,22 @@
         "away_probable_pitcher": "Noah Schultz",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-24 - Chicago White Sox @ San Francisco Giants (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-05-24 - Chicago White Sox @ San Francisco Giants (Pre-Game)"
     },
     {
         "game_id": 825081,
         "game_datetime": "2026-05-24T20:10:00Z",
         "game_date": "2026-05-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Arizona Diamondbacks",
         "away_id": 115,
@@ -329,15 +329,15 @@
         "away_probable_pitcher": "Jose Quintana",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-24 - Colorado Rockies @ Arizona Diamondbacks (Scheduled)"
+        "series_status": "AZ leads 2-1",
+        "summary": "2026-05-24 - Colorado Rockies @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 823297,
@@ -355,10 +355,10 @@
         "away_probable_pitcher": "Luis Medina",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
@@ -370,7 +370,7 @@
         "game_datetime": "2026-05-24T20:10:00Z",
         "game_date": "2026-05-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Washington Nationals",
         "home_name": "Atlanta Braves",
         "away_id": 120,
@@ -388,8 +388,8 @@
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-24 - Washington Nationals @ Atlanta Braves (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-05-24 - Washington Nationals @ Atlanta Braves (Pre-Game)"
     },
     {
         "game_id": 824028,
