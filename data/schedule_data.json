@@ -15,24 +15,24 @@
         "away_probable_pitcher": "Mitch Keller",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 0,
         "current_inning": 2,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [
             "NBCSN / Peacock"
         ],
         "series_status": "TOR leads 2-0",
-        "summary": "2026-05-24 - Pittsburgh Pirates (1) @ Toronto Blue Jays (0) (Top of the 2nd)"
+        "summary": "2026-05-24 - Pittsburgh Pirates (2) @ Toronto Blue Jays (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 824839,
         "game_datetime": "2026-05-24T16:35:00Z",
         "game_date": "2026-05-24",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Detroit Tigers",
         "home_name": "Baltimore Orioles",
         "away_id": 116,
@@ -46,12 +46,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-05-24 - Detroit Tigers @ Baltimore Orioles (Warmup)"
+        "summary": "2026-05-24 - Detroit Tigers (0) @ Baltimore Orioles (0) (End of the 1st)"
     },
     {
         "game_id": 824840,
@@ -344,7 +344,7 @@
         "game_datetime": "2026-05-24T20:10:00Z",
         "game_date": "2026-05-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Athletics",
         "home_name": "San Diego Padres",
         "away_id": 133,
@@ -363,7 +363,7 @@
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "SD leads 2-0",
-        "summary": "2026-05-24 - Athletics @ San Diego Padres (Scheduled)"
+        "summary": "2026-05-24 - Athletics @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 824921,
