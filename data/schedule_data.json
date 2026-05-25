@@ -174,13 +174,13 @@
         "away_pitcher_note": "",
         "away_score": 7,
         "home_score": 2,
-        "current_inning": 7,
-        "inning_state": "End",
+        "current_inning": 8,
+        "inning_state": "Bottom",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Cincinnati Reds (7) @ New York Mets (2) (End of the 7th)"
+        "summary": "2026-05-25 - Cincinnati Reds (7) @ New York Mets (2) (Bottom of the 8th)"
     },
     {
         "game_id": 823219,
@@ -198,15 +198,15 @@
         "away_probable_pitcher": "Merrill Kelly",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 4,
+        "away_score": 6,
         "home_score": 2,
-        "current_inning": 5,
-        "inning_state": "End",
+        "current_inning": 6,
+        "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Arizona Diamondbacks (4) @ San Francisco Giants (2) (End of the 5th)"
+        "summary": "2026-05-25 - Arizona Diamondbacks (6) @ San Francisco Giants (2) (Bottom of the 6th)"
     },
     {
         "game_id": 824437,
@@ -224,22 +224,22 @@
         "away_probable_pitcher": "PJ Poulin",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
-        "home_score": 0,
+        "away_score": 6,
+        "home_score": 1,
         "current_inning": 2,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Washington Nationals (3) @ Cleveland Guardians (0) (Top of the 2nd)"
+        "summary": "2026-05-25 - Washington Nationals (6) @ Cleveland Guardians (1) (End of the 2nd)"
     },
     {
         "game_id": 823296,
         "game_datetime": "2026-05-25T22:40:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Philadelphia Phillies",
         "home_name": "San Diego Padres",
         "away_id": 143,
@@ -250,22 +250,22 @@
         "away_probable_pitcher": "Jes\u00fas Luzardo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Philadelphia Phillies @ San Diego Padres (Warmup)"
+        "summary": "2026-05-25 - Philadelphia Phillies (1) @ San Diego Padres (0) (Middle of the 1st)"
     },
     {
         "game_id": 822899,
         "game_datetime": "2026-05-25T23:05:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Houston Astros",
         "home_name": "Texas Rangers",
         "away_id": 117,
@@ -284,14 +284,14 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Houston Astros @ Texas Rangers (Pre-Game)"
+        "summary": "2026-05-25 - Houston Astros @ Texas Rangers (Warmup)"
     },
     {
         "game_id": 822812,
         "game_datetime": "2026-05-25T23:07:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Miami Marlins",
         "home_name": "Toronto Blue Jays",
         "away_id": 146,
@@ -310,7 +310,7 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Miami Marlins @ Toronto Blue Jays (Pre-Game)"
+        "summary": "2026-05-25 - Miami Marlins @ Toronto Blue Jays (Warmup)"
     },
     {
         "game_id": 823948,
