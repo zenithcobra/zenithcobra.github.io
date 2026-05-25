@@ -1853,26 +1853,6 @@
         "player_id": 691799
     },
     {
-        "player_name": "Jarred Kelenic",
-        "team": "Chicago White Sox",
-        "team_id": 145,
-        "player_id": 672284,
-        "position": "RF",
-        "games_played": 19.0,
-        "H": 12.0,
-        "HR": 1.0,
-        "RBI": 4.0,
-        "HRpg": 0.053,
-        "fHRpg": "0",
-        "Hpg": 0.632,
-        "fHpg": "3/5",
-        "RBIpg": 0.211,
-        "fRBIpg": "1/5",
-        "HR24": 2,
-        "HR24pg": 0.08,
-        "fHR24pg": "1/7"
-    },
-    {
         "player_name": "Jordan Leasure",
         "team": "Chicago White Sox",
         "team_id": 145,
@@ -1960,6 +1940,12 @@
         "HR24": 2,
         "HR24pg": 0.05,
         "fHR24pg": "0"
+    },
+    {
+        "player_name": "Rikuu Nishida",
+        "team": "Chicago White Sox",
+        "team_id": 145,
+        "player_id": 807747
     },
     {
         "player_name": "Sam Antonacci",
@@ -3519,7 +3505,7 @@
         "team": "Cincinnati Reds",
         "team_id": 113,
         "player_id": 553993,
-        "position": "3B",
+        "position": "DH",
         "games_played": 27.0,
         "H": 21.0,
         "HR": 3.0,

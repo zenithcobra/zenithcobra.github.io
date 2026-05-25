@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-25T17:35:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Pittsburgh Pirates",
         "away_id": 112,
@@ -15,22 +15,22 @@
         "away_probable_pitcher": "Ben Brown",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Chicago Cubs @ Pittsburgh Pirates (Scheduled)"
+        "summary": "2026-05-25 - Chicago Cubs @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 824838,
         "game_datetime": "2026-05-25T17:35:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Tampa Bay Rays",
         "home_name": "Baltimore Orioles",
         "away_id": 139,
@@ -41,22 +41,22 @@
         "away_probable_pitcher": "Shane McClanahan",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Tampa Bay Rays @ Baltimore Orioles (Scheduled)"
+        "summary": "2026-05-25 - Tampa Bay Rays @ Baltimore Orioles (Pre-Game)"
     },
     {
         "game_id": 824598,
         "game_datetime": "2026-05-25T18:10:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Chicago White Sox",
         "away_id": 142,
@@ -75,14 +75,14 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Minnesota Twins @ Chicago White Sox (Scheduled)"
+        "summary": "2026-05-25 - Minnesota Twins @ Chicago White Sox (Pre-Game)"
     },
     {
         "game_id": 823784,
         "game_datetime": "2026-05-25T18:10:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "Milwaukee Brewers",
         "away_id": 138,
@@ -101,14 +101,14 @@
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - St. Louis Cardinals @ Milwaukee Brewers (Scheduled)"
+        "summary": "2026-05-25 - St. Louis Cardinals @ Milwaukee Brewers (Pre-Game)"
     },
     {
         "game_id": 824107,
         "game_datetime": "2026-05-25T19:40:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Yankees",
         "home_name": "Kansas City Royals",
         "away_id": 147,
@@ -129,7 +129,7 @@
             "ESPN/ESPN App"
         ],
         "series_status": null,
-        "summary": "2026-05-25 - New York Yankees @ Kansas City Royals (Scheduled)"
+        "summary": "2026-05-25 - New York Yankees @ Kansas City Royals (Pre-Game)"
     },
     {
         "game_id": 823625,
