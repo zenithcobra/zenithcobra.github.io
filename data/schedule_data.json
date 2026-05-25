@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Chicago Cubs (0) @ Pittsburgh Pirates (0) (Bottom of the 1st)"
+        "summary": "2026-05-25 - Chicago Cubs (0) @ Pittsburgh Pirates (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 824838,
@@ -43,20 +43,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Tampa Bay Rays (0) @ Baltimore Orioles (0) (Bottom of the 1st)"
+        "summary": "2026-05-25 - Tampa Bay Rays (0) @ Baltimore Orioles (0) (Top of the 3rd)"
     },
     {
         "game_id": 824598,
         "game_datetime": "2026-05-25T18:10:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Minnesota Twins",
         "home_name": "Chicago White Sox",
         "away_id": 142,
@@ -75,14 +75,14 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Minnesota Twins @ Chicago White Sox (Pre-Game)"
+        "summary": "2026-05-25 - Minnesota Twins @ Chicago White Sox (Warmup)"
     },
     {
         "game_id": 823784,
         "game_datetime": "2026-05-25T18:10:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "St. Louis Cardinals",
         "home_name": "Milwaukee Brewers",
         "away_id": 138,
@@ -101,7 +101,7 @@
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - St. Louis Cardinals @ Milwaukee Brewers (Pre-Game)"
+        "summary": "2026-05-25 - St. Louis Cardinals @ Milwaukee Brewers (Warmup)"
     },
     {
         "game_id": 824107,
@@ -188,7 +188,7 @@
         "game_datetime": "2026-05-25T22:10:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Washington Nationals",
         "home_name": "Cleveland Guardians",
         "away_id": 120,
@@ -207,21 +207,21 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Washington Nationals @ Cleveland Guardians (Scheduled)"
+        "summary": "2026-05-25 - Washington Nationals @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 823296,
         "game_datetime": "2026-05-25T22:40:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "San Diego Padres",
         "away_id": 143,
         "home_id": 135,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "Randy V\u00e1squez",
+        "home_probable_pitcher": "Griffin Canning",
         "away_probable_pitcher": "Jes\u00fas Luzardo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
@@ -233,7 +233,7 @@
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Philadelphia Phillies @ San Diego Padres (Scheduled)"
+        "summary": "2026-05-25 - Philadelphia Phillies @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 822899,
