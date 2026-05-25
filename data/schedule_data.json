@@ -35,7 +35,7 @@
         "game_datetime": "2026-05-25T17:35:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Tampa Bay Rays",
         "home_name": "Baltimore Orioles",
         "away_id": 139,
@@ -46,15 +46,20 @@
         "away_probable_pitcher": "Shane McClanahan",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 5,
-        "home_score": 5,
+        "away_score": 7,
+        "home_score": 9,
         "current_inning": 13,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-25 - Tampa Bay Rays (5) @ Baltimore Orioles (5) (Top of the 13th)"
+        "series_status": "BAL leads 1-0",
+        "winning_team": "Baltimore Orioles",
+        "losing_team": "Tampa Bay Rays",
+        "winning_pitcher": "Dietrich Enns",
+        "losing_pitcher": "Jesse Scholtens",
+        "save_pitcher": null,
+        "summary": "2026-05-25 - Tampa Bay Rays (7) @ Baltimore Orioles (9) (Game Over)"
     },
     {
         "game_id": 824598,
@@ -135,16 +140,16 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 2,
-        "current_inning": 8,
-        "inning_state": "Middle",
+        "home_score": 3,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [
             "ESPN/ESPN App"
         ],
         "series_status": null,
-        "summary": "2026-05-25 - New York Yankees (2) @ Kansas City Royals (2) (Middle of the 8th)"
+        "summary": "2026-05-25 - New York Yankees (2) @ Kansas City Royals (3) (Top of the 9th)"
     },
     {
         "game_id": 823625,
@@ -164,13 +169,13 @@
         "away_pitcher_note": "",
         "away_score": 7,
         "home_score": 0,
-        "current_inning": 5,
+        "current_inning": 6,
         "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Cincinnati Reds (7) @ New York Mets (0) (Top of the 5th)"
+        "summary": "2026-05-25 - Cincinnati Reds (7) @ New York Mets (0) (Top of the 6th)"
     },
     {
         "game_id": 823219,
@@ -190,13 +195,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 3,
+        "current_inning": 4,
         "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Arizona Diamondbacks (1) @ San Francisco Giants (0) (Top of the 3rd)"
+        "summary": "2026-05-25 - Arizona Diamondbacks (1) @ San Francisco Giants (0) (Top of the 4th)"
     },
     {
         "game_id": 824437,
@@ -344,10 +349,10 @@
         "away_probable_pitcher": "Luis Castillo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
