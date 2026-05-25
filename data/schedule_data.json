@@ -192,7 +192,7 @@
         "game_datetime": "2026-05-25T21:05:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Arizona Diamondbacks",
         "home_name": "San Francisco Giants",
         "away_id": 109,
@@ -206,12 +206,17 @@
         "away_score": 6,
         "home_score": 2,
         "current_inning": 9,
-        "inning_state": "Middle",
+        "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-25 - Arizona Diamondbacks (6) @ San Francisco Giants (2) (Middle of the 9th)"
+        "series_status": "AZ leads 1-0",
+        "winning_team": "Arizona Diamondbacks",
+        "losing_team": "San Francisco Giants",
+        "winning_pitcher": "Merrill Kelly",
+        "losing_pitcher": "Landen Roupp",
+        "save_pitcher": null,
+        "summary": "2026-05-25 - Arizona Diamondbacks (6) @ San Francisco Giants (2) (Final)"
     },
     {
         "game_id": 824437,
@@ -229,15 +234,15 @@
         "away_probable_pitcher": "PJ Poulin",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 8,
+        "away_score": 10,
         "home_score": 2,
-        "current_inning": 5,
-        "inning_state": "Middle",
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Washington Nationals (8) @ Cleveland Guardians (2) (Middle of the 5th)"
+        "summary": "2026-05-25 - Washington Nationals (10) @ Cleveland Guardians (2) (Top of the 6th)"
     },
     {
         "game_id": 823296,
@@ -257,13 +262,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 4,
-        "inning_state": "Top",
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Philadelphia Phillies (1) @ San Diego Padres (0) (Top of the 4th)"
+        "summary": "2026-05-25 - Philadelphia Phillies (1) @ San Diego Padres (0) (Bottom of the 5th)"
     },
     {
         "game_id": 822899,
@@ -283,13 +288,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Houston Astros (1) @ Texas Rangers (0) (Top of the 2nd)"
+        "summary": "2026-05-25 - Houston Astros (1) @ Texas Rangers (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 822812,
@@ -309,13 +314,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Miami Marlins (1) @ Toronto Blue Jays (0) (Bottom of the 2nd)"
+        "summary": "2026-05-25 - Miami Marlins (1) @ Toronto Blue Jays (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 823948,
