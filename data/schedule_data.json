@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Ben Brown",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 1,
-        "current_inning": 4,
-        "inning_state": "End",
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Chicago Cubs (0) @ Pittsburgh Pirates (1) (End of the 4th)"
+        "summary": "2026-05-25 - Chicago Cubs (1) @ Pittsburgh Pirates (1) (Bottom of the 5th)"
     },
     {
         "game_id": 824838,
@@ -43,13 +43,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 5,
+        "current_inning": 6,
         "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Tampa Bay Rays (0) @ Baltimore Orioles (0) (Top of the 5th)"
+        "summary": "2026-05-25 - Tampa Bay Rays (0) @ Baltimore Orioles (0) (Top of the 6th)"
     },
     {
         "game_id": 824598,
@@ -69,13 +69,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 3,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "End",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Minnesota Twins (1) @ Chicago White Sox (3) (End of the 2nd)"
+        "summary": "2026-05-25 - Minnesota Twins (1) @ Chicago White Sox (3) (End of the 3rd)"
     },
     {
         "game_id": 823784,
@@ -95,13 +95,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 3,
-        "current_inning": 2,
-        "inning_state": "End",
+        "current_inning": 4,
+        "inning_state": "Top",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - St. Louis Cardinals (0) @ Milwaukee Brewers (3) (End of the 2nd)"
+        "summary": "2026-05-25 - St. Louis Cardinals (0) @ Milwaukee Brewers (3) (Top of the 4th)"
     },
     {
         "game_id": 824107,
@@ -240,7 +240,7 @@
         "game_datetime": "2026-05-25T23:05:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Houston Astros",
         "home_name": "Texas Rangers",
         "away_id": 117,
@@ -259,7 +259,7 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Houston Astros @ Texas Rangers (Scheduled)"
+        "summary": "2026-05-25 - Houston Astros @ Texas Rangers (Pre-Game)"
     },
     {
         "game_id": 822812,
