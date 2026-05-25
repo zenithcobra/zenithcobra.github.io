@@ -46,15 +46,15 @@
         "away_probable_pitcher": "Shane McClanahan",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 4,
-        "home_score": 2,
-        "current_inning": 11,
+        "away_score": 5,
+        "home_score": 5,
+        "current_inning": 13,
         "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Tampa Bay Rays (4) @ Baltimore Orioles (2) (Top of the 11th)"
+        "summary": "2026-05-25 - Tampa Bay Rays (5) @ Baltimore Orioles (5) (Top of the 13th)"
     },
     {
         "game_id": 824598,
@@ -135,16 +135,16 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 1,
-        "current_inning": 5,
-        "inning_state": "Bottom",
+        "home_score": 2,
+        "current_inning": 8,
+        "inning_state": "Middle",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [
             "ESPN/ESPN App"
         ],
         "series_status": null,
-        "summary": "2026-05-25 - New York Yankees (2) @ Kansas City Royals (1) (Bottom of the 5th)"
+        "summary": "2026-05-25 - New York Yankees (2) @ Kansas City Royals (2) (Middle of the 8th)"
     },
     {
         "game_id": 823625,
@@ -162,22 +162,22 @@
         "away_probable_pitcher": "Nick Lodolo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
+        "away_score": 7,
         "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Bottom",
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Cincinnati Reds (3) @ New York Mets (0) (Bottom of the 3rd)"
+        "summary": "2026-05-25 - Cincinnati Reds (7) @ New York Mets (0) (Top of the 5th)"
     },
     {
         "game_id": 823219,
         "game_datetime": "2026-05-25T21:05:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Arizona Diamondbacks",
         "home_name": "San Francisco Giants",
         "away_id": 109,
@@ -188,15 +188,15 @@
         "away_probable_pitcher": "Merrill Kelly",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Arizona Diamondbacks @ San Francisco Giants (Warmup)"
+        "summary": "2026-05-25 - Arizona Diamondbacks (1) @ San Francisco Giants (0) (Top of the 3rd)"
     },
     {
         "game_id": 824437,
@@ -318,10 +318,10 @@
         "away_probable_pitcher": "Tanner Gordon",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
@@ -333,7 +333,7 @@
         "game_datetime": "2026-05-26T01:40:00Z",
         "game_date": "2026-05-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "Athletics",
         "away_id": 136,
@@ -352,6 +352,6 @@
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-25 - Seattle Mariners @ Athletics (Scheduled)"
+        "summary": "2026-05-25 - Seattle Mariners @ Athletics (Pre-Game)"
     }
 ]
