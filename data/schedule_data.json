@@ -277,10 +277,10 @@
         "away_probable_pitcher": "Jason Alexander",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
@@ -292,7 +292,7 @@
         "game_datetime": "2026-05-27T01:40:00Z",
         "game_date": "2026-05-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "Athletics",
         "away_id": 136,
@@ -311,14 +311,14 @@
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "SEA leads 1-0",
-        "summary": "2026-05-26 - Seattle Mariners @ Athletics (Scheduled)"
+        "summary": "2026-05-26 - Seattle Mariners @ Athletics (Pre-Game)"
     },
     {
         "game_id": 823294,
         "game_datetime": "2026-05-27T01:40:00Z",
         "game_date": "2026-05-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "San Diego Padres",
         "away_id": 143,
@@ -336,8 +336,8 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-26 - Philadelphia Phillies @ San Diego Padres (Scheduled)"
+        "series_status": "PHI leads 1-0",
+        "summary": "2026-05-26 - Philadelphia Phillies @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 823216,
