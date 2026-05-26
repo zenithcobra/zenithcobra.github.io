@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-26T22:10:00Z",
         "game_date": "2026-05-26",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Washington Nationals",
         "home_name": "Cleveland Guardians",
         "away_id": 120,
@@ -17,20 +17,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "WSH leads 1-0",
-        "summary": "2026-05-26 - Washington Nationals @ Cleveland Guardians (Warmup)"
+        "summary": "2026-05-26 - Washington Nationals (0) @ Cleveland Guardians (0) (Top of the 2nd)"
     },
     {
         "game_id": 824837,
         "game_datetime": "2026-05-26T22:35:00Z",
         "game_date": "2026-05-26",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Tampa Bay Rays",
         "home_name": "Baltimore Orioles",
         "away_id": 139,
@@ -49,14 +49,14 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-05-26 - Tampa Bay Rays @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-05-26 - Tampa Bay Rays (0) @ Baltimore Orioles (0) (Top of the 1st)"
     },
     {
         "game_id": 824275,
         "game_datetime": "2026-05-26T22:40:00Z",
         "game_date": "2026-05-26",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Los Angeles Angels",
         "home_name": "Detroit Tigers",
         "away_id": 108,
@@ -75,14 +75,14 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-26 - Los Angeles Angels @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-05-26 - Los Angeles Angels @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 823379,
         "game_datetime": "2026-05-26T22:40:00Z",
         "game_date": "2026-05-26",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago Cubs",
         "home_name": "Pittsburgh Pirates",
         "away_id": 112,
@@ -101,14 +101,14 @@
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "PIT leads 1-0",
-        "summary": "2026-05-26 - Chicago Cubs @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-05-26 - Chicago Cubs @ Pittsburgh Pirates (Warmup)"
     },
     {
         "game_id": 824758,
         "game_datetime": "2026-05-26T22:45:00Z",
         "game_date": "2026-05-26",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Atlanta Braves",
         "home_name": "Boston Red Sox",
         "away_id": 144,
@@ -129,7 +129,7 @@
             "TBS"
         ],
         "series_status": null,
-        "summary": "2026-05-26 - Atlanta Braves @ Boston Red Sox (Pre-Game)"
+        "summary": "2026-05-26 - Atlanta Braves @ Boston Red Sox (Warmup)"
     },
     {
         "game_id": 822811,
@@ -329,10 +329,10 @@
         "away_probable_pitcher": "Aaron Nola",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
