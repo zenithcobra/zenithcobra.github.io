@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-26T22:10:00Z",
         "game_date": "2026-05-26",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Washington Nationals",
         "home_name": "Cleveland Guardians",
         "away_id": 120,
@@ -23,7 +23,7 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "WSH leads 1-0",
-        "summary": "2026-05-26 - Washington Nationals @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-05-26 - Washington Nationals @ Cleveland Guardians (Warmup)"
     },
     {
         "game_id": 824837,
@@ -303,10 +303,10 @@
         "away_probable_pitcher": "Emerson Hancock",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
@@ -355,10 +355,10 @@
         "away_probable_pitcher": "Eduardo Rodriguez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
@@ -370,7 +370,7 @@
         "game_datetime": "2026-05-27T02:10:00Z",
         "game_date": "2026-05-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Los Angeles Dodgers",
         "away_id": 115,
@@ -388,7 +388,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-26 - Colorado Rockies @ Los Angeles Dodgers (Scheduled)"
+        "series_status": "LAD leads 1-0",
+        "summary": "2026-05-26 - Colorado Rockies @ Los Angeles Dodgers (Pre-Game)"
     }
 ]
