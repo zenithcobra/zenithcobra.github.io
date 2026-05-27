@@ -110,13 +110,13 @@
         "away_pitcher_note": "",
         "away_score": 6,
         "home_score": 0,
-        "current_inning": 7,
+        "current_inning": 8,
         "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "SEA leads 2-0",
-        "summary": "2026-05-27 - Seattle Mariners (6) @ Athletics (0) (Top of the 7th)"
+        "summary": "2026-05-27 - Seattle Mariners (6) @ Athletics (0) (Top of the 8th)"
     },
     {
         "game_id": 823217,
@@ -134,15 +134,15 @@
         "away_probable_pitcher": "Michael Soroka",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 2,
-        "current_inning": 5,
-        "inning_state": "Middle",
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "AZ leads 2-0",
-        "summary": "2026-05-27 - Arizona Diamondbacks (0) @ San Francisco Giants (2) (Middle of the 5th)"
+        "summary": "2026-05-27 - Arizona Diamondbacks (2) @ San Francisco Giants (2) (Top of the 6th)"
     },
     {
         "game_id": 823295,
@@ -162,13 +162,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "End",
+        "current_inning": 5,
+        "inning_state": "Middle",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 2-0",
-        "summary": "2026-05-27 - Philadelphia Phillies (0) @ San Diego Padres (0) (End of the 3rd)"
+        "summary": "2026-05-27 - Philadelphia Phillies (0) @ San Diego Padres (0) (Middle of the 5th)"
     },
     {
         "game_id": 824836,
@@ -186,10 +186,10 @@
         "away_probable_pitcher": "Steven Matz",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [
@@ -344,10 +344,10 @@
         "away_probable_pitcher": "Gerrit Cole",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
@@ -403,7 +403,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": "LAD leads 1-0",
+        "series_status": "LAD leads 2-0",
         "summary": "2026-05-27 - Colorado Rockies @ Los Angeles Dodgers (Scheduled)"
     }
 ]
