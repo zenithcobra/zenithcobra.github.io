@@ -203,15 +203,15 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 6,
-        "current_inning": 4,
-        "inning_state": "Middle",
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [
             "FS1"
         ],
         "series_status": "BAL leads 2-0",
-        "summary": "2026-05-27 - Tampa Bay Rays (0) @ Baltimore Orioles (6) (Middle of the 4th)"
+        "summary": "2026-05-27 - Tampa Bay Rays (0) @ Baltimore Orioles (6) (Top of the 5th)"
     },
     {
         "game_id": 824270,
@@ -231,13 +231,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 2,
-        "current_inning": 4,
-        "inning_state": "Middle",
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "LAA leads 1-0",
-        "summary": "2026-05-27 - Los Angeles Angels (0) @ Detroit Tigers (2) (Middle of the 4th)"
+        "summary": "2026-05-27 - Los Angeles Angels (0) @ Detroit Tigers (2) (Top of the 5th)"
     },
     {
         "game_id": 823376,
@@ -255,15 +255,15 @@
         "away_probable_pitcher": "Jameson Taillon",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
-        "home_score": 3,
+        "away_score": 4,
+        "home_score": 4,
         "current_inning": 4,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "PIT leads 2-0",
-        "summary": "2026-05-27 - Chicago Cubs (3) @ Pittsburgh Pirates (3) (Top of the 4th)"
+        "summary": "2026-05-27 - Chicago Cubs (4) @ Pittsburgh Pirates (4) (Bottom of the 4th)"
     },
     {
         "game_id": 824756,
@@ -283,13 +283,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 3,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 1-0",
-        "summary": "2026-05-27 - Atlanta Braves (0) @ Boston Red Sox (0) (Bottom of the 3rd)"
+        "summary": "2026-05-27 - Atlanta Braves (0) @ Boston Red Sox (0) (Bottom of the 4th)"
     },
     {
         "game_id": 823626,
@@ -308,21 +308,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 1,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "home_score": 2,
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": "CIN leads 2-0",
-        "summary": "2026-05-27 - Cincinnati Reds (0) @ New York Mets (1) (Bottom of the 2nd)"
+        "summary": "2026-05-27 - Cincinnati Reds (0) @ New York Mets (2) (Top of the 3rd)"
     },
     {
         "game_id": 824596,
         "game_datetime": "2026-05-27T23:40:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Minnesota Twins",
         "home_name": "Chicago White Sox",
         "away_id": 142,
@@ -333,22 +333,22 @@
         "away_probable_pitcher": "Connor Prielipp",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-27 - Minnesota Twins @ Chicago White Sox (Warmup)"
+        "summary": "2026-05-27 - Minnesota Twins (1) @ Chicago White Sox (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824104,
         "game_datetime": "2026-05-27T23:40:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "New York Yankees",
         "home_name": "Kansas City Royals",
         "away_id": 147,
@@ -362,19 +362,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 2-0",
-        "summary": "2026-05-27 - New York Yankees @ Kansas City Royals (Warmup)"
+        "summary": "2026-05-27 - New York Yankees (0) @ Kansas City Royals (0) (Bottom of the 1st)"
     },
     {
         "game_id": 822897,
         "game_datetime": "2026-05-28T00:05:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Houston Astros",
         "home_name": "Texas Rangers",
         "away_id": 117,
@@ -393,7 +393,7 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-27 - Houston Astros @ Texas Rangers (Pre-Game)"
+        "summary": "2026-05-27 - Houston Astros @ Texas Rangers (Warmup)"
     },
     {
         "game_id": 823947,
