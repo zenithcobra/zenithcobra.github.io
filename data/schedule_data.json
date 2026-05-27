@@ -108,15 +108,15 @@
         "away_probable_pitcher": "Logan Gilbert",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 5,
+        "away_score": 6,
         "home_score": 0,
-        "current_inning": 5,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "SEA leads 2-0",
-        "summary": "2026-05-27 - Seattle Mariners (5) @ Athletics (0) (Top of the 5th)"
+        "summary": "2026-05-27 - Seattle Mariners (6) @ Athletics (0) (Top of the 7th)"
     },
     {
         "game_id": 823217,
@@ -135,14 +135,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Bottom",
+        "home_score": 2,
+        "current_inning": 5,
+        "inning_state": "Middle",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "AZ leads 2-0",
-        "summary": "2026-05-27 - Arizona Diamondbacks (0) @ San Francisco Giants (0) (Bottom of the 3rd)"
+        "summary": "2026-05-27 - Arizona Diamondbacks (0) @ San Francisco Giants (2) (Middle of the 5th)"
     },
     {
         "game_id": 823295,
@@ -162,13 +162,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "End",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 2-0",
-        "summary": "2026-05-27 - Philadelphia Phillies (0) @ San Diego Padres (0) (Bottom of the 1st)"
+        "summary": "2026-05-27 - Philadelphia Phillies (0) @ San Diego Padres (0) (End of the 3rd)"
     },
     {
         "game_id": 824836,
@@ -214,10 +214,10 @@
         "away_probable_pitcher": "Jos\u00e9 Soriano",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
@@ -359,7 +359,7 @@
         "game_datetime": "2026-05-28T00:05:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Houston Astros",
         "home_name": "Texas Rangers",
         "away_id": 117,
@@ -378,7 +378,7 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-27 - Houston Astros @ Texas Rangers (Scheduled)"
+        "summary": "2026-05-27 - Houston Astros @ Texas Rangers (Pre-Game)"
     },
     {
         "game_id": 823947,
@@ -403,7 +403,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": "LAD leads 2-0",
+        "series_status": "LAD leads 1-0",
         "summary": "2026-05-27 - Colorado Rockies @ Los Angeles Dodgers (Scheduled)"
     }
 ]
