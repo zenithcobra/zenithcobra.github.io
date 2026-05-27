@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-27T17:07:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Miami Marlins",
         "home_name": "Toronto Blue Jays",
         "away_id": 146,
@@ -23,14 +23,14 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-27 - Miami Marlins @ Toronto Blue Jays (Scheduled)"
+        "summary": "2026-05-27 - Miami Marlins @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 824432,
         "game_datetime": "2026-05-27T17:10:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Washington Nationals",
         "home_name": "Cleveland Guardians",
         "away_id": 120,
@@ -49,7 +49,7 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "WSH leads 2-0",
-        "summary": "2026-05-27 - Washington Nationals @ Cleveland Guardians (Scheduled)"
+        "summary": "2026-05-27 - Washington Nationals @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 823783,
@@ -74,7 +74,7 @@
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
-        "series_status": "MIL leads 2-0",
+        "series_status": null,
         "summary": "2026-05-27 - St. Louis Cardinals @ Milwaukee Brewers (Scheduled)"
     },
     {
@@ -100,7 +100,7 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": "SEA leads 2-0",
+        "series_status": "SEA leads 1-0",
         "summary": "2026-05-27 - Seattle Mariners @ Athletics (Scheduled)"
     },
     {
@@ -126,7 +126,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": "AZ leads 2-0",
+        "series_status": null,
         "summary": "2026-05-27 - Arizona Diamondbacks @ San Francisco Giants (Scheduled)"
     },
     {
@@ -152,7 +152,7 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": "PHI leads 2-0",
+        "series_status": null,
         "summary": "2026-05-27 - Philadelphia Phillies @ San Diego Padres (Scheduled)"
     },
     {
@@ -180,7 +180,7 @@
         "national_broadcasts": [
             "FS1"
         ],
-        "series_status": "BAL leads 2-0",
+        "series_status": "BAL leads 1-0",
         "summary": "2026-05-27 - Tampa Bay Rays @ Baltimore Orioles (Scheduled)"
     },
     {
@@ -206,7 +206,7 @@
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": "LAA leads 1-0",
+        "series_status": null,
         "summary": "2026-05-27 - Los Angeles Angels @ Detroit Tigers (Scheduled)"
     },
     {
@@ -232,7 +232,7 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": "PIT leads 2-0",
+        "series_status": null,
         "summary": "2026-05-27 - Chicago Cubs @ Pittsburgh Pirates (Scheduled)"
     },
     {
@@ -258,7 +258,7 @@
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
-        "series_status": "ATL leads 1-0",
+        "series_status": null,
         "summary": "2026-05-27 - Atlanta Braves @ Boston Red Sox (Scheduled)"
     },
     {
@@ -336,7 +336,7 @@
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
-        "series_status": "NYY leads 2-0",
+        "series_status": null,
         "summary": "2026-05-27 - New York Yankees @ Kansas City Royals (Scheduled)"
     },
     {
@@ -362,7 +362,7 @@
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
+        "series_status": null,
         "summary": "2026-05-27 - Houston Astros @ Texas Rangers (Scheduled)"
     },
     {
@@ -388,7 +388,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": "LAD leads 2-0",
+        "series_status": "LAD leads 1-0",
         "summary": "2026-05-27 - Colorado Rockies @ Los Angeles Dodgers (Scheduled)"
     }
 ]
