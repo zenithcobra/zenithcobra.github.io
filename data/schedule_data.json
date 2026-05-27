@@ -15,10 +15,10 @@
         "away_probable_pitcher": "Eury P\u00e9rez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
@@ -38,13 +38,13 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Gavin Williams",
-        "away_probable_pitcher": "Miles Mikolas",
+        "away_probable_pitcher": "PJ Poulin",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
@@ -56,26 +56,26 @@
         "game_datetime": "2026-05-27T17:40:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "Milwaukee Brewers",
         "away_id": 138,
         "home_id": 158,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
+        "home_probable_pitcher": "Chad Patrick",
         "away_probable_pitcher": "Dustin May",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-27 - St. Louis Cardinals @ Milwaukee Brewers (Scheduled)"
+        "series_status": "MIL leads 2-0",
+        "summary": "2026-05-27 - St. Louis Cardinals @ Milwaukee Brewers (Pre-Game)"
     },
     {
         "game_id": 825003,
@@ -100,7 +100,7 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": "SEA leads 1-0",
+        "series_status": "SEA leads 2-0",
         "summary": "2026-05-27 - Seattle Mariners @ Athletics (Scheduled)"
     },
     {
@@ -108,7 +108,7 @@
         "game_datetime": "2026-05-27T19:45:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Arizona Diamondbacks",
         "home_name": "San Francisco Giants",
         "away_id": 109,
@@ -126,8 +126,8 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-27 - Arizona Diamondbacks @ San Francisco Giants (Scheduled)"
+        "series_status": "AZ leads 2-0",
+        "summary": "2026-05-27 - Arizona Diamondbacks @ San Francisco Giants (Pre-Game)"
     },
     {
         "game_id": 823295,
@@ -152,7 +152,7 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "PHI leads 2-0",
         "summary": "2026-05-27 - Philadelphia Phillies @ San Diego Padres (Scheduled)"
     },
     {
@@ -180,7 +180,7 @@
         "national_broadcasts": [
             "FS1"
         ],
-        "series_status": "BAL leads 1-0",
+        "series_status": "BAL leads 2-0",
         "summary": "2026-05-27 - Tampa Bay Rays @ Baltimore Orioles (Scheduled)"
     },
     {
@@ -206,7 +206,7 @@
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "LAA leads 1-0",
         "summary": "2026-05-27 - Los Angeles Angels @ Detroit Tigers (Scheduled)"
     },
     {
@@ -232,7 +232,7 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "PIT leads 2-0",
         "summary": "2026-05-27 - Chicago Cubs @ Pittsburgh Pirates (Scheduled)"
     },
     {
@@ -258,7 +258,7 @@
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "ATL leads 1-0",
         "summary": "2026-05-27 - Atlanta Braves @ Boston Red Sox (Scheduled)"
     },
     {
@@ -336,7 +336,7 @@
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "NYY leads 2-0",
         "summary": "2026-05-27 - New York Yankees @ Kansas City Royals (Scheduled)"
     },
     {
@@ -362,7 +362,7 @@
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "Series tied 1-1",
         "summary": "2026-05-27 - Houston Astros @ Texas Rangers (Scheduled)"
     },
     {
@@ -388,7 +388,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": "LAD leads 1-0",
+        "series_status": "LAD leads 2-0",
         "summary": "2026-05-27 - Colorado Rockies @ Los Angeles Dodgers (Scheduled)"
     }
 ]
