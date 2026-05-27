@@ -97,7 +97,7 @@
         "game_datetime": "2026-05-27T19:05:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Seattle Mariners",
         "home_name": "Athletics",
         "away_id": 136,
@@ -121,14 +121,14 @@
         "winning_pitcher": "Logan Gilbert",
         "losing_pitcher": "Jeffrey Springs",
         "save_pitcher": null,
-        "summary": "2026-05-27 - Seattle Mariners (9) @ Athletics (1) (Game Over)"
+        "summary": "2026-05-27 - Seattle Mariners (9) @ Athletics (1) (Final)"
     },
     {
         "game_id": 823217,
         "game_datetime": "2026-05-27T19:45:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Arizona Diamondbacks",
         "home_name": "San Francisco Giants",
         "away_id": 109,
@@ -141,13 +141,18 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 2,
-        "current_inning": 8,
-        "inning_state": "Middle",
+        "current_inning": 9,
+        "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": "AZ leads 2-0",
-        "summary": "2026-05-27 - Arizona Diamondbacks (3) @ San Francisco Giants (2) (Middle of the 8th)"
+        "series_status": "AZ wins 3-0",
+        "winning_team": "Arizona Diamondbacks",
+        "losing_team": "San Francisco Giants",
+        "winning_pitcher": "Michael Soroka",
+        "losing_pitcher": "Trevor McDonald",
+        "save_pitcher": "Paul Sewald",
+        "summary": "2026-05-27 - Arizona Diamondbacks (3) @ San Francisco Giants (2) (Game Over)"
     },
     {
         "game_id": 823295,
@@ -167,13 +172,13 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 0,
-        "current_inning": 7,
-        "inning_state": "Top",
+        "current_inning": 8,
+        "inning_state": "Bottom",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 2-0",
-        "summary": "2026-05-27 - Philadelphia Phillies (2) @ San Diego Padres (0) (Top of the 7th)"
+        "summary": "2026-05-27 - Philadelphia Phillies (2) @ San Diego Padres (0) (Bottom of the 8th)"
     },
     {
         "game_id": 824836,
