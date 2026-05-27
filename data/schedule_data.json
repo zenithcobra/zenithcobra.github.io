@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 0,
-        "current_inning": 3,
+        "home_score": 1,
+        "current_inning": 5,
         "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-27 - Miami Marlins (1) @ Toronto Blue Jays (0) (Bottom of the 3rd)"
+        "summary": "2026-05-27 - Miami Marlins (1) @ Toronto Blue Jays (1) (Bottom of the 5th)"
     },
     {
         "game_id": 824432,
@@ -42,14 +42,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 0,
-        "current_inning": 4,
-        "inning_state": "Top",
+        "home_score": 3,
+        "current_inning": 7,
+        "inning_state": "Middle",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "WSH leads 2-0",
-        "summary": "2026-05-27 - Washington Nationals (1) @ Cleveland Guardians (0) (Top of the 4th)"
+        "summary": "2026-05-27 - Washington Nationals (1) @ Cleveland Guardians (3) (Middle of the 7th)"
     },
     {
         "game_id": 823783,
@@ -67,22 +67,22 @@
         "away_probable_pitcher": "Dustin May",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 5,
         "inning_state": "End",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 2-0",
-        "summary": "2026-05-27 - St. Louis Cardinals (0) @ Milwaukee Brewers (0) (End of the 2nd)"
+        "summary": "2026-05-27 - St. Louis Cardinals (1) @ Milwaukee Brewers (0) (End of the 5th)"
     },
     {
         "game_id": 825003,
         "game_datetime": "2026-05-27T19:05:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Seattle Mariners",
         "home_name": "Athletics",
         "away_id": 136,
@@ -101,7 +101,7 @@
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "SEA leads 2-0",
-        "summary": "2026-05-27 - Seattle Mariners @ Athletics (Pre-Game)"
+        "summary": "2026-05-27 - Seattle Mariners @ Athletics (Warmup)"
     },
     {
         "game_id": 823217,
@@ -188,7 +188,7 @@
         "game_datetime": "2026-05-27T22:40:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Detroit Tigers",
         "away_id": 108,
@@ -207,7 +207,7 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "LAA leads 1-0",
-        "summary": "2026-05-27 - Los Angeles Angels @ Detroit Tigers (Scheduled)"
+        "summary": "2026-05-27 - Los Angeles Angels @ Detroit Tigers (Pre-Game)"
     },
     {
         "game_id": 823376,
@@ -232,7 +232,7 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": "PIT leads 2-0",
+        "series_status": null,
         "summary": "2026-05-27 - Chicago Cubs @ Pittsburgh Pirates (Scheduled)"
     },
     {
@@ -240,7 +240,7 @@
         "game_datetime": "2026-05-27T22:45:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Atlanta Braves",
         "home_name": "Boston Red Sox",
         "away_id": 144,
@@ -251,15 +251,15 @@
         "away_probable_pitcher": "Bryce Elder",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 1-0",
-        "summary": "2026-05-27 - Atlanta Braves @ Boston Red Sox (Scheduled)"
+        "summary": "2026-05-27 - Atlanta Braves @ Boston Red Sox (Pre-Game)"
     },
     {
         "game_id": 823626,
@@ -292,7 +292,7 @@
         "game_datetime": "2026-05-27T23:40:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Chicago White Sox",
         "away_id": 142,
@@ -311,7 +311,7 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-27 - Minnesota Twins @ Chicago White Sox (Scheduled)"
+        "summary": "2026-05-27 - Minnesota Twins @ Chicago White Sox (Pre-Game)"
     },
     {
         "game_id": 824104,
@@ -336,7 +336,7 @@
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
-        "series_status": "NYY leads 2-0",
+        "series_status": null,
         "summary": "2026-05-27 - New York Yankees @ Kansas City Royals (Scheduled)"
     },
     {
@@ -362,7 +362,7 @@
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
+        "series_status": null,
         "summary": "2026-05-27 - Houston Astros @ Texas Rangers (Scheduled)"
     },
     {
@@ -388,7 +388,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": "LAD leads 2-0",
+        "series_status": "LAD leads 1-0",
         "summary": "2026-05-27 - Colorado Rockies @ Los Angeles Dodgers (Scheduled)"
     }
 ]
