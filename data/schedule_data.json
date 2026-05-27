@@ -128,7 +128,7 @@
         "game_datetime": "2026-05-27T19:45:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Arizona Diamondbacks",
         "home_name": "San Francisco Giants",
         "away_id": 109,
@@ -152,14 +152,14 @@
         "winning_pitcher": "Michael Soroka",
         "losing_pitcher": "Trevor McDonald",
         "save_pitcher": "Paul Sewald",
-        "summary": "2026-05-27 - Arizona Diamondbacks (3) @ San Francisco Giants (2) (Game Over)"
+        "summary": "2026-05-27 - Arizona Diamondbacks (3) @ San Francisco Giants (2) (Final)"
     },
     {
         "game_id": 823295,
         "game_datetime": "2026-05-27T20:10:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Philadelphia Phillies",
         "home_name": "San Diego Padres",
         "away_id": 143,
@@ -170,22 +170,27 @@
         "away_probable_pitcher": "Cristopher S\u00e1nchez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
+        "away_score": 3,
         "home_score": 0,
-        "current_inning": 8,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": "PHI leads 2-0",
-        "summary": "2026-05-27 - Philadelphia Phillies (2) @ San Diego Padres (0) (Bottom of the 8th)"
+        "series_status": "PHI wins 3-0",
+        "winning_team": "Philadelphia Phillies",
+        "losing_team": "San Diego Padres",
+        "winning_pitcher": "Cristopher S\u00e1nchez",
+        "losing_pitcher": "Walker Buehler",
+        "save_pitcher": "Jos\u00e9 Alvarado",
+        "summary": "2026-05-27 - Philadelphia Phillies (3) @ San Diego Padres (0) (Game Over)"
     },
     {
         "game_id": 824836,
         "game_datetime": "2026-05-27T22:35:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Tampa Bay Rays",
         "home_name": "Baltimore Orioles",
         "away_id": 139,
@@ -206,14 +211,14 @@
             "FS1"
         ],
         "series_status": "BAL leads 2-0",
-        "summary": "2026-05-27 - Tampa Bay Rays @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-05-27 - Tampa Bay Rays (0) @ Baltimore Orioles (0) (Top of the 1st)"
     },
     {
         "game_id": 824270,
         "game_datetime": "2026-05-27T22:40:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Los Angeles Angels",
         "home_name": "Detroit Tigers",
         "away_id": 108,
@@ -232,14 +237,14 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "LAA leads 1-0",
-        "summary": "2026-05-27 - Los Angeles Angels @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-05-27 - Los Angeles Angels (0) @ Detroit Tigers (0) (Top of the 1st)"
     },
     {
         "game_id": 823376,
         "game_datetime": "2026-05-27T22:40:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Chicago Cubs",
         "home_name": "Pittsburgh Pirates",
         "away_id": 112,
@@ -258,14 +263,14 @@
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "PIT leads 2-0",
-        "summary": "2026-05-27 - Chicago Cubs @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-05-27 - Chicago Cubs (0) @ Pittsburgh Pirates (0) (Top of the 1st)"
     },
     {
         "game_id": 824756,
         "game_datetime": "2026-05-27T22:45:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Atlanta Braves",
         "home_name": "Boston Red Sox",
         "away_id": 144,
@@ -284,7 +289,7 @@
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 1-0",
-        "summary": "2026-05-27 - Atlanta Braves @ Boston Red Sox (Pre-Game)"
+        "summary": "2026-05-27 - Atlanta Braves @ Boston Red Sox (Warmup)"
     },
     {
         "game_id": 823626,
@@ -395,7 +400,7 @@
         "game_datetime": "2026-05-28T02:10:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Los Angeles Dodgers",
         "away_id": 115,
@@ -413,7 +418,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": "LAD leads 1-0",
-        "summary": "2026-05-27 - Colorado Rockies @ Los Angeles Dodgers (Scheduled)"
+        "series_status": "LAD leads 2-0",
+        "summary": "2026-05-27 - Colorado Rockies @ Los Angeles Dodgers (Pre-Game)"
     }
 ]
