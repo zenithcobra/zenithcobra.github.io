@@ -159,7 +159,7 @@
         "game_datetime": "2026-05-27T20:10:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Philadelphia Phillies",
         "home_name": "San Diego Padres",
         "away_id": 143,
@@ -183,7 +183,7 @@
         "winning_pitcher": "Cristopher S\u00e1nchez",
         "losing_pitcher": "Walker Buehler",
         "save_pitcher": "Jos\u00e9 Alvarado",
-        "summary": "2026-05-27 - Philadelphia Phillies (3) @ San Diego Padres (0) (Game Over)"
+        "summary": "2026-05-27 - Philadelphia Phillies (3) @ San Diego Padres (0) (Final)"
     },
     {
         "game_id": 824836,
@@ -202,16 +202,16 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 5,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [
             "FS1"
         ],
         "series_status": "BAL leads 2-0",
-        "summary": "2026-05-27 - Tampa Bay Rays (0) @ Baltimore Orioles (0) (Top of the 1st)"
+        "summary": "2026-05-27 - Tampa Bay Rays (0) @ Baltimore Orioles (5) (Bottom of the 1st)"
     },
     {
         "game_id": 824270,
@@ -230,14 +230,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
+        "home_score": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "LAA leads 1-0",
-        "summary": "2026-05-27 - Los Angeles Angels (0) @ Detroit Tigers (0) (Top of the 1st)"
+        "summary": "2026-05-27 - Los Angeles Angels (0) @ Detroit Tigers (1) (Top of the 2nd)"
     },
     {
         "game_id": 823376,
@@ -255,22 +255,22 @@
         "away_probable_pitcher": "Jameson Taillon",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "PIT leads 2-0",
-        "summary": "2026-05-27 - Chicago Cubs (0) @ Pittsburgh Pirates (0) (Top of the 1st)"
+        "summary": "2026-05-27 - Chicago Cubs (2) @ Pittsburgh Pirates (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824756,
         "game_datetime": "2026-05-27T22:45:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Atlanta Braves",
         "home_name": "Boston Red Sox",
         "away_id": 144,
@@ -284,19 +284,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 1-0",
-        "summary": "2026-05-27 - Atlanta Braves @ Boston Red Sox (Warmup)"
+        "summary": "2026-05-27 - Atlanta Braves (0) @ Boston Red Sox (0) (End of the 1st)"
     },
     {
         "game_id": 823626,
         "game_datetime": "2026-05-27T23:10:00Z",
         "game_date": "2026-05-27",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cincinnati Reds",
         "home_name": "New York Mets",
         "away_id": 113,
@@ -315,7 +315,7 @@
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": "CIN leads 2-0",
-        "summary": "2026-05-27 - Cincinnati Reds @ New York Mets (Pre-Game)"
+        "summary": "2026-05-27 - Cincinnati Reds @ New York Mets (Warmup)"
     },
     {
         "game_id": 824596,
