@@ -111,12 +111,12 @@
         "away_score": 1,
         "home_score": 1,
         "current_inning": 5,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-28 - Toronto Blue Jays (1) @ Baltimore Orioles (1) (Top of the 5th)"
+        "summary": "2026-05-28 - Toronto Blue Jays (1) @ Baltimore Orioles (1) (Bottom of the 5th)"
     },
     {
         "game_id": 823378,
@@ -136,20 +136,20 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 4,
-        "inning_state": "Middle",
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "PIT leads 2-1",
-        "summary": "2026-05-28 - Chicago Cubs (1) @ Pittsburgh Pirates (0) (Middle of the 4th)"
+        "summary": "2026-05-28 - Chicago Cubs (1) @ Pittsburgh Pirates (0) (Top of the 5th)"
     },
     {
         "game_id": 822896,
         "game_datetime": "2026-05-29T00:05:00Z",
         "game_date": "2026-05-28",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Houston Astros",
         "home_name": "Texas Rangers",
         "away_id": 117,
@@ -168,6 +168,6 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "HOU leads 2-1",
-        "summary": "2026-05-28 - Houston Astros @ Texas Rangers (Pre-Game)"
+        "summary": "2026-05-28 - Houston Astros @ Texas Rangers (Warmup)"
     }
 ]
