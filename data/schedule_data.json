@@ -17,20 +17,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 1,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-28 - Los Angeles Angels (0) @ Detroit Tigers (1) (Bottom of the 2nd)"
+        "summary": "2026-05-28 - Los Angeles Angels (0) @ Detroit Tigers (1) (Top of the 5th)"
     },
     {
         "game_id": 824595,
         "game_datetime": "2026-05-28T18:10:00Z",
         "game_date": "2026-05-28",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Minnesota Twins",
         "home_name": "Chicago White Sox",
         "away_id": 142,
@@ -44,12 +44,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 2-1",
-        "summary": "2026-05-28 - Minnesota Twins @ Chicago White Sox (Pre-Game)"
+        "summary": "2026-05-28 - Minnesota Twins (0) @ Chicago White Sox (0) (Middle of the 1st)"
     },
     {
         "game_id": 824757,
@@ -126,7 +126,7 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "PIT leads 2-0",
         "summary": "2026-05-28 - Chicago Cubs @ Pittsburgh Pirates (Scheduled)"
     },
     {
@@ -152,7 +152,7 @@
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "HOU leads 2-1",
         "summary": "2026-05-28 - Houston Astros @ Texas Rangers (Scheduled)"
     }
 ]
