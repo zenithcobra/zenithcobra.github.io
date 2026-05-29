@@ -1,5 +1,11 @@
 [
     {
+        "player_name": "Anthony Molina",
+        "team": "Atlanta Braves",
+        "team_id": 144,
+        "player_id": 683627
+    },
+    {
         "player_name": "Austin Riley",
         "team": "Atlanta Braves",
         "team_id": 144,
@@ -24,12 +30,6 @@
         "team": "Atlanta Braves",
         "team_id": 144,
         "player_id": 693821
-    },
-    {
-        "player_name": "Carlos Carrasco",
-        "team": "Atlanta Braves",
-        "team_id": 144,
-        "player_id": 471911
     },
     {
         "player_name": "Chadwick Tromp",
@@ -509,12 +509,6 @@
         "fHR24pg": "1/4"
     },
     {
-        "player_name": "Graham Ashcraft",
-        "team": "Cincinnati Reds",
-        "team_id": 113,
-        "player_id": 668933
-    },
-    {
         "player_name": "JJ Bleday",
         "team": "Cincinnati Reds",
         "team_id": 113,
@@ -720,6 +714,12 @@
         "HR24": 12,
         "HR24pg": 0.13,
         "fHR24pg": "1/7"
+    },
+    {
+        "player_name": "Yunior Marte",
+        "team": "Cincinnati Reds",
+        "team_id": 113,
+        "player_id": 628708
     },
     {
         "player_name": "Zach Maxwell",
