@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-29T22:40:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Atlanta Braves",
         "home_name": "Cincinnati Reds",
         "away_id": 144,
@@ -23,14 +23,14 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-29 - Atlanta Braves @ Cincinnati Reds (Pre-Game)"
+        "summary": "2026-05-29 - Atlanta Braves (0) @ Cincinnati Reds (0) (Top of the 1st)"
     },
     {
         "game_id": 822732,
         "game_datetime": "2026-05-29T22:45:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "San Diego Padres",
         "home_name": "Washington Nationals",
         "away_id": 135,
@@ -49,14 +49,14 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-29 - San Diego Padres @ Washington Nationals (Pre-Game)"
+        "summary": "2026-05-29 - San Diego Padres @ Washington Nationals (Warmup)"
     },
     {
         "game_id": 823377,
         "game_datetime": "2026-05-29T22:45:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Minnesota Twins",
         "home_name": "Pittsburgh Pirates",
         "away_id": 142,
@@ -77,7 +77,7 @@
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-05-29 - Minnesota Twins @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-05-29 - Minnesota Twins @ Pittsburgh Pirates (Warmup)"
     },
     {
         "game_id": 824835,
@@ -381,10 +381,10 @@
         "away_probable_pitcher": "Zack Wheeler",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [
