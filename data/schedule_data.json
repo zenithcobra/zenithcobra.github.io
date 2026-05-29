@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-29T22:40:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Atlanta Braves",
         "home_name": "Cincinnati Reds",
         "away_id": 144,
@@ -15,22 +15,22 @@
         "away_probable_pitcher": "Grant Holmes",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-29 - Atlanta Braves @ Cincinnati Reds (Scheduled)"
+        "summary": "2026-05-29 - Atlanta Braves @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 822732,
         "game_datetime": "2026-05-29T22:45:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Diego Padres",
         "home_name": "Washington Nationals",
         "away_id": 135,
@@ -49,14 +49,14 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-29 - San Diego Padres @ Washington Nationals (Scheduled)"
+        "summary": "2026-05-29 - San Diego Padres @ Washington Nationals (Pre-Game)"
     },
     {
         "game_id": 823377,
         "game_datetime": "2026-05-29T22:45:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Pittsburgh Pirates",
         "away_id": 142,
@@ -77,7 +77,7 @@
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-05-29 - Minnesota Twins @ Pittsburgh Pirates (Scheduled)"
+        "summary": "2026-05-29 - Minnesota Twins @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 824835,
@@ -110,7 +110,7 @@
         "game_datetime": "2026-05-29T23:10:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Cleveland Guardians",
         "away_id": 111,
@@ -129,14 +129,14 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-29 - Boston Red Sox @ Cleveland Guardians (Scheduled)"
+        "summary": "2026-05-29 - Boston Red Sox @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 822978,
         "game_datetime": "2026-05-29T23:10:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Tampa Bay Rays",
         "away_id": 108,
@@ -155,7 +155,7 @@
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-29 - Los Angeles Angels @ Tampa Bay Rays (Scheduled)"
+        "summary": "2026-05-29 - Los Angeles Angels @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 823623,
@@ -188,7 +188,7 @@
         "game_datetime": "2026-05-29T23:15:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "St. Louis Cardinals",
         "away_id": 112,
@@ -207,7 +207,7 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-29 - Chicago Cubs @ St. Louis Cardinals (Scheduled)"
+        "summary": "2026-05-29 - Chicago Cubs @ St. Louis Cardinals (Pre-Game)"
     },
     {
         "game_id": 824594,
