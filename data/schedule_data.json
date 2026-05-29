@@ -173,10 +173,10 @@
         "away_probable_pitcher": "Max Meyer",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
@@ -318,7 +318,7 @@
         "game_datetime": "2026-05-30T01:40:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Yankees",
         "home_name": "Athletics",
         "away_id": 147,
@@ -337,7 +337,7 @@
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-29 - New York Yankees @ Athletics (Scheduled)"
+        "summary": "2026-05-29 - New York Yankees @ Athletics (Pre-Game)"
     },
     {
         "game_id": 823135,
