@@ -15,22 +15,22 @@
         "away_probable_pitcher": "Grant Holmes",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-29 - Atlanta Braves (0) @ Cincinnati Reds (0) (Top of the 1st)"
+        "summary": "2026-05-29 - Atlanta Braves (1) @ Cincinnati Reds (0) (Top of the 2nd)"
     },
     {
         "game_id": 822732,
         "game_datetime": "2026-05-29T22:45:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "San Diego Padres",
         "home_name": "Washington Nationals",
         "away_id": 135,
@@ -41,7 +41,7 @@
         "away_probable_pitcher": "Lucas Giolito",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
         "current_inning": 1,
         "inning_state": "Top",
@@ -49,14 +49,14 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-29 - San Diego Padres @ Washington Nationals (Warmup)"
+        "summary": "2026-05-29 - San Diego Padres (1) @ Washington Nationals (0) (Top of the 1st)"
     },
     {
         "game_id": 823377,
         "game_datetime": "2026-05-29T22:45:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Minnesota Twins",
         "home_name": "Pittsburgh Pirates",
         "away_id": 142,
@@ -67,24 +67,24 @@
         "away_probable_pitcher": "Taj Bradley",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-05-29 - Minnesota Twins @ Pittsburgh Pirates (Warmup)"
+        "summary": "2026-05-29 - Minnesota Twins (1) @ Pittsburgh Pirates (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824835,
         "game_datetime": "2026-05-29T23:05:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Toronto Blue Jays",
         "home_name": "Baltimore Orioles",
         "away_id": 141,
@@ -103,14 +103,14 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-05-29 - Toronto Blue Jays @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-05-29 - Toronto Blue Jays @ Baltimore Orioles (Warmup)"
     },
     {
         "game_id": 824433,
         "game_datetime": "2026-05-29T23:10:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Boston Red Sox",
         "home_name": "Cleveland Guardians",
         "away_id": 111,
@@ -129,14 +129,14 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-29 - Boston Red Sox @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-05-29 - Boston Red Sox @ Cleveland Guardians (Warmup)"
     },
     {
         "game_id": 822978,
         "game_datetime": "2026-05-29T23:10:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Los Angeles Angels",
         "home_name": "Tampa Bay Rays",
         "away_id": 108,
@@ -155,14 +155,14 @@
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-29 - Los Angeles Angels @ Tampa Bay Rays (Pre-Game)"
+        "summary": "2026-05-29 - Los Angeles Angels @ Tampa Bay Rays (Warmup)"
     },
     {
         "game_id": 823623,
         "game_datetime": "2026-05-29T23:10:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Miami Marlins",
         "home_name": "New York Mets",
         "away_id": 146,
@@ -181,14 +181,14 @@
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-29 - Miami Marlins @ New York Mets (Pre-Game)"
+        "summary": "2026-05-29 - Miami Marlins @ New York Mets (Warmup)"
     },
     {
         "game_id": 823055,
         "game_datetime": "2026-05-29T23:15:00Z",
         "game_date": "2026-05-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago Cubs",
         "home_name": "St. Louis Cardinals",
         "away_id": 112,
@@ -207,7 +207,7 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-05-29 - Chicago Cubs @ St. Louis Cardinals (Pre-Game)"
+        "summary": "2026-05-29 - Chicago Cubs @ St. Louis Cardinals (Warmup)"
     },
     {
         "game_id": 824594,
@@ -329,10 +329,10 @@
         "away_probable_pitcher": "Carlos Rod\u00f3n",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
@@ -355,10 +355,10 @@
         "away_probable_pitcher": "Zac Gallen",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
