@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-30T18:10:00Z",
         "game_date": "2026-05-30",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Detroit Tigers",
         "home_name": "Chicago White Sox",
         "away_id": 116,
@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
+        "home_score": 2,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-05-30 - Detroit Tigers @ Chicago White Sox (Warmup)"
+        "summary": "2026-05-30 - Detroit Tigers (0) @ Chicago White Sox (2) (Top of the 2nd)"
     },
     {
         "game_id": 822731,
@@ -268,7 +268,7 @@
         "game_datetime": "2026-05-30T23:15:00Z",
         "game_date": "2026-05-30",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Atlanta Braves",
         "home_name": "Cincinnati Reds",
         "away_id": 144,
@@ -288,8 +288,8 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": null,
-        "summary": "2026-05-30 - Atlanta Braves @ Cincinnati Reds (Scheduled)"
+        "series_status": "ATL leads 1-0",
+        "summary": "2026-05-30 - Atlanta Braves @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 824352,
