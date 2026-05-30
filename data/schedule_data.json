@@ -30,7 +30,7 @@
         "game_datetime": "2026-05-30T20:05:00Z",
         "game_date": "2026-05-30",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Diego Padres",
         "home_name": "Washington Nationals",
         "away_id": 135,
@@ -48,15 +48,15 @@
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-30 - San Diego Padres @ Washington Nationals (Scheduled)"
+        "series_status": "SD leads 1-0",
+        "summary": "2026-05-30 - San Diego Padres @ Washington Nationals (Pre-Game)"
     },
     {
         "game_id": 822893,
         "game_datetime": "2026-05-30T20:05:00Z",
         "game_date": "2026-05-30",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Kansas City Royals",
         "home_name": "Texas Rangers",
         "away_id": 118,
@@ -76,8 +76,8 @@
         "national_broadcasts": [
             "FS1"
         ],
-        "series_status": null,
-        "summary": "2026-05-30 - Kansas City Royals @ Texas Rangers (Scheduled)"
+        "series_status": "TEX leads 1-0",
+        "summary": "2026-05-30 - Kansas City Royals @ Texas Rangers (Pre-Game)"
     },
     {
         "game_id": 824833,
@@ -110,7 +110,7 @@
         "game_datetime": "2026-05-30T20:05:00Z",
         "game_date": "2026-05-30",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Pittsburgh Pirates",
         "away_id": 142,
@@ -128,15 +128,15 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-30 - Minnesota Twins @ Pittsburgh Pirates (Scheduled)"
+        "series_status": "PIT leads 1-0",
+        "summary": "2026-05-30 - Minnesota Twins @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 824431,
         "game_datetime": "2026-05-30T20:10:00Z",
         "game_date": "2026-05-30",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Cleveland Guardians",
         "away_id": 111,
@@ -154,15 +154,15 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-30 - Boston Red Sox @ Cleveland Guardians (Scheduled)"
+        "series_status": "CLE leads 1-0",
+        "summary": "2026-05-30 - Boston Red Sox @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 822975,
         "game_datetime": "2026-05-30T20:10:00Z",
         "game_date": "2026-05-30",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Tampa Bay Rays",
         "away_id": 108,
@@ -180,8 +180,8 @@
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-30 - Los Angeles Angels @ Tampa Bay Rays (Scheduled)"
+        "series_status": "TB leads 1-0",
+        "summary": "2026-05-30 - Los Angeles Angels @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 823622,
@@ -214,7 +214,7 @@
         "game_datetime": "2026-05-30T20:10:00Z",
         "game_date": "2026-05-30",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "Houston Astros",
         "away_id": 158,
@@ -233,7 +233,7 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": "MIL leads 1-0",
-        "summary": "2026-05-30 - Milwaukee Brewers @ Houston Astros (Scheduled)"
+        "summary": "2026-05-30 - Milwaukee Brewers @ Houston Astros (Pre-Game)"
     },
     {
         "game_id": 823054,
