@@ -6,13 +6,13 @@
         "HR": "86"
     },
     {
-        "Venue": "Minute Maid Park",
-        "Location": "Houston",
-        "HR": "80"
-    },
-    {
         "Venue": "Nationals Park",
         "Location": "Washington",
+        "HR": "82"
+    },
+    {
+        "Venue": "Minute Maid Park",
+        "Location": "Houston",
         "HR": "80"
     },
     {
@@ -24,6 +24,11 @@
         "Venue": "Dodger Stadium",
         "Location": "Los Angeles",
         "HR": "73"
+    },
+    {
+        "Venue": "Guaranteed Rate Field",
+        "Location": "Chicago",
+        "HR": "72"
     },
     {
         "Venue": "Sutter Health Park",
@@ -41,24 +46,19 @@
         "HR": "70"
     },
     {
-        "Venue": "Guaranteed Rate Field",
-        "Location": "Chicago",
-        "HR": "69"
-    },
-    {
         "Venue": "Yankee Stadium",
         "Location": "Bronx",
         "HR": "69"
     },
     {
+        "Venue": "PNC Park",
+        "Location": "Pittsburgh",
+        "HR": "68"
+    },
+    {
         "Venue": "Citizens Bank Park",
         "Location": "Philadelphia",
         "HR": "67"
-    },
-    {
-        "Venue": "PNC Park",
-        "Location": "Pittsburgh",
-        "HR": "65"
     },
     {
         "Venue": "Kauffman Stadium",
@@ -101,8 +101,18 @@
         "HR": "52"
     },
     {
+        "Venue": "Tropicana Field",
+        "Location": "Tampa Bay",
+        "HR": "52"
+    },
+    {
         "Venue": "American Family Field",
         "Location": "Milwaukee",
+        "HR": "51"
+    },
+    {
+        "Venue": "Globe Life Field",
+        "Location": "Arlington",
         "HR": "51"
     },
     {
@@ -111,18 +121,8 @@
         "HR": "51"
     },
     {
-        "Venue": "Globe Life Field",
-        "Location": "Arlington",
-        "HR": "50"
-    },
-    {
         "Venue": "Target Field",
         "Location": "Minneapolis",
-        "HR": "50"
-    },
-    {
-        "Venue": "Tropicana Field",
-        "Location": "Tampa Bay",
         "HR": "50"
     },
     {
@@ -131,13 +131,13 @@
         "HR": "48"
     },
     {
-        "Venue": "Oracle Park",
-        "Location": "San Francisco",
+        "Venue": "Chase Field",
+        "Location": "Phoenix",
         "HR": "47"
     },
     {
-        "Venue": "Chase Field",
-        "Location": "Phoenix",
+        "Venue": "Oracle Park",
+        "Location": "San Francisco",
         "HR": "47"
     },
     {
