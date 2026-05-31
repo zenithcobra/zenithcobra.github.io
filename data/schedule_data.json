@@ -99,7 +99,7 @@
         "game_datetime": "2026-05-31T17:40:00Z",
         "game_date": "2026-05-31",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Boston Red Sox",
         "home_name": "Cleveland Guardians",
         "away_id": 111,
@@ -113,12 +113,17 @@
         "away_score": 9,
         "home_score": 4,
         "current_inning": 9,
-        "inning_state": "End",
+        "inning_state": "Bottom",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-05-31 - Boston Red Sox (9) @ Cleveland Guardians (4) (End of the 9th)"
+        "series_status": "BOS wins 2-1",
+        "winning_team": "Boston Red Sox",
+        "losing_team": "Cleveland Guardians",
+        "winning_pitcher": "Jovani Mor\u00e1n",
+        "losing_pitcher": "Colin Holderman",
+        "save_pitcher": null,
+        "summary": "2026-05-31 - Boston Red Sox (9) @ Cleveland Guardians (4) (Final)"
     },
     {
         "game_id": 822976,
@@ -187,7 +192,7 @@
         "game_datetime": "2026-05-31T17:40:00Z",
         "game_date": "2026-05-31",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Miami Marlins",
         "home_name": "New York Mets",
         "away_id": 146,
@@ -205,15 +210,20 @@
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
-        "series_status": "NYM leads 2-0",
-        "summary": "2026-05-31 - Miami Marlins (1) @ New York Mets (10) (Top of the 9th)"
+        "series_status": "NYM wins 3-0",
+        "winning_team": "New York Mets",
+        "losing_team": "Miami Marlins",
+        "winning_pitcher": "Nolan McLean",
+        "losing_pitcher": "John King",
+        "save_pitcher": "David Peterson",
+        "summary": "2026-05-31 - Miami Marlins (1) @ New York Mets (10) (Final)"
     },
     {
         "game_id": 824592,
         "game_datetime": "2026-05-31T18:10:00Z",
         "game_date": "2026-05-31",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Detroit Tigers",
         "home_name": "Chicago White Sox",
         "away_id": 116,
@@ -237,14 +247,14 @@
         "winning_pitcher": "Brandon Eisert",
         "losing_pitcher": "Drew Anderson",
         "save_pitcher": "Tyler Davis",
-        "summary": "2026-05-31 - Detroit Tigers (1) @ Chicago White Sox (2) (Game Over)"
+        "summary": "2026-05-31 - Detroit Tigers (1) @ Chicago White Sox (2) (Final)"
     },
     {
         "game_id": 824187,
         "game_datetime": "2026-05-31T18:10:00Z",
         "game_date": "2026-05-31",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Milwaukee Brewers",
         "home_name": "Houston Astros",
         "away_id": 158,
@@ -262,8 +272,13 @@
         "venue_id": 2392,
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-05-31 - Milwaukee Brewers (2) @ Houston Astros (0) (Bottom of the 9th)"
+        "series_status": "MIL wins 2-1",
+        "winning_team": "Milwaukee Brewers",
+        "losing_team": "Houston Astros",
+        "winning_pitcher": "Jacob Misiorowski",
+        "losing_pitcher": "Tatsuya Imai",
+        "save_pitcher": "Trevor Megill",
+        "summary": "2026-05-31 - Milwaukee Brewers (2) @ Houston Astros (0) (Game Over)"
     },
     {
         "game_id": 822895,
@@ -281,15 +296,15 @@
         "away_probable_pitcher": "Michael Wacha",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 6,
         "current_inning": 7,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "TEX leads 2-0",
-        "summary": "2026-05-31 - Kansas City Royals (0) @ Texas Rangers (6) (Top of the 7th)"
+        "summary": "2026-05-31 - Kansas City Royals (1) @ Texas Rangers (6) (End of the 7th)"
     },
     {
         "game_id": 824354,
@@ -307,15 +322,15 @@
         "away_probable_pitcher": "Robbie Ray",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
+        "away_score": 4,
         "home_score": 1,
         "current_inning": 4,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "COL leads 2-0",
-        "summary": "2026-05-31 - San Francisco Giants (3) @ Colorado Rockies (1) (Top of the 4th)"
+        "summary": "2026-05-31 - San Francisco Giants (4) @ Colorado Rockies (1) (Bottom of the 4th)"
     },
     {
         "game_id": 825001,
@@ -335,13 +350,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 3,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-31 - New York Yankees (0) @ Athletics (3) (Top of the 2nd)"
+        "summary": "2026-05-31 - New York Yankees (0) @ Athletics (3) (Top of the 3rd)"
     },
     {
         "game_id": 823133,
@@ -360,14 +375,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 1,
         "current_inning": 2,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "SEA leads 2-0",
-        "summary": "2026-05-31 - Arizona Diamondbacks (0) @ Seattle Mariners (0) (Top of the 2nd)"
+        "summary": "2026-05-31 - Arizona Diamondbacks (0) @ Seattle Mariners (1) (Bottom of the 2nd)"
     },
     {
         "game_id": 823944,
@@ -386,14 +401,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 1,
         "current_inning": 2,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-05-31 - Philadelphia Phillies (0) @ Los Angeles Dodgers (0) (Top of the 2nd)"
+        "summary": "2026-05-31 - Philadelphia Phillies (0) @ Los Angeles Dodgers (1) (Bottom of the 2nd)"
     },
     {
         "game_id": 823053,
