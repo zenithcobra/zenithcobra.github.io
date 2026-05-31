@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-31T16:15:00Z",
         "game_date": "2026-05-31",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Toronto Blue Jays",
         "home_name": "Baltimore Orioles",
         "away_id": 141,
@@ -25,7 +25,7 @@
             "NBCSN / Peacock"
         ],
         "series_status": "TOR leads 2-1",
-        "summary": "2026-05-31 - Toronto Blue Jays @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-05-31 - Toronto Blue Jays @ Baltimore Orioles (Warmup)"
     },
     {
         "game_id": 822729,
@@ -251,10 +251,10 @@
         "away_probable_pitcher": "Michael Wacha",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
@@ -266,7 +266,7 @@
         "game_datetime": "2026-05-31T19:10:00Z",
         "game_date": "2026-05-31",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Francisco Giants",
         "home_name": "Colorado Rockies",
         "away_id": 137,
@@ -284,8 +284,8 @@
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-31 - San Francisco Giants @ Colorado Rockies (Scheduled)"
+        "series_status": "COL leads 2-0",
+        "summary": "2026-05-31 - San Francisco Giants @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 825001,
