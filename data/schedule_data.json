@@ -4,7 +4,7 @@
         "game_datetime": "2026-05-31T16:15:00Z",
         "game_date": "2026-05-31",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Toronto Blue Jays",
         "home_name": "Baltimore Orioles",
         "away_id": 141,
@@ -17,15 +17,15 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [
             "NBCSN / Peacock"
         ],
         "series_status": "TOR leads 2-1",
-        "summary": "2026-05-31 - Toronto Blue Jays @ Baltimore Orioles (Warmup)"
+        "summary": "2026-05-31 - Toronto Blue Jays (0) @ Baltimore Orioles (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 822729,
@@ -45,8 +45,8 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": "",
-        "inning_state": "",
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
@@ -58,7 +58,7 @@
         "game_datetime": "2026-05-31T17:35:00Z",
         "game_date": "2026-05-31",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Pittsburgh Pirates",
         "away_id": 142,
@@ -76,8 +76,8 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-05-31 - Minnesota Twins @ Pittsburgh Pirates (Scheduled)"
+        "series_status": "PIT leads 2-0",
+        "summary": "2026-05-31 - Minnesota Twins @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 824430,
@@ -277,10 +277,10 @@
         "away_probable_pitcher": "Robbie Ray",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
@@ -390,7 +390,7 @@
         "national_broadcasts": [
             "NBC/Peacock"
         ],
-        "series_status": "Series tied 1-1",
+        "series_status": null,
         "summary": "2026-05-31 - Chicago Cubs @ St. Louis Cardinals (Scheduled)"
     }
 ]
