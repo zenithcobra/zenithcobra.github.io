@@ -76,10 +76,24 @@
         "player_id": 664285
     },
     {
-        "player_name": "Hao-Yu Lee",
+        "player_name": "Gleyber Torres",
         "team": "Detroit Tigers",
         "team_id": 116,
-        "player_id": ""
+        "player_id": 650402,
+        "position": "2B",
+        "games_played": 32.0,
+        "H": 30.0,
+        "HR": 2.0,
+        "RBI": 11.0,
+        "HRpg": 0.062,
+        "fHRpg": "0",
+        "Hpg": 0.938,
+        "fHpg": "1",
+        "RBIpg": 0.344,
+        "fRBIpg": "1/3",
+        "HR24": 16,
+        "HR24pg": 0.11,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Jack Flaherty",
@@ -2991,26 +3005,6 @@
         "fHR24pg": "0"
     },
     {
-        "player_name": "Petey Halpin",
-        "team": "Cleveland Guardians",
-        "team_id": 114,
-        "player_id": 690984,
-        "position": "CF",
-        "games_played": 18.0,
-        "H": 5.0,
-        "HR": 0.0,
-        "RBI": 1.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.278,
-        "fHpg": "2/7",
-        "RBIpg": 0.056,
-        "fRBIpg": "0",
-        "HR24": 0,
-        "HR24pg": 0.0,
-        "fHR24pg": "0"
-    },
-    {
         "player_name": "Rhys Hoskins",
         "team": "Cleveland Guardians",
         "team_id": 114,
@@ -3041,6 +3035,26 @@
         "team": "Cleveland Guardians",
         "team_id": 114,
         "player_id": 677944
+    },
+    {
+        "player_name": "Steven Kwan",
+        "team": "Cleveland Guardians",
+        "team_id": 114,
+        "player_id": 680757,
+        "position": "CF",
+        "games_played": 54.0,
+        "H": 40.0,
+        "HR": 1.0,
+        "RBI": 12.0,
+        "HRpg": 0.019,
+        "fHRpg": "0",
+        "Hpg": 0.741,
+        "fHpg": "3/4",
+        "RBIpg": 0.222,
+        "fRBIpg": "1/5",
+        "HR24": 11,
+        "HR24pg": 0.07,
+        "fHR24pg": "0"
     },
     {
         "player_name": "Stuart Fairchild",
@@ -3453,6 +3467,12 @@
         "player_id": 656638
     },
     {
+        "player_name": "Beck Way",
+        "team": "Kansas City Royals",
+        "team_id": 118,
+        "player_id": 694360
+    },
+    {
         "player_name": "Bobby Witt Jr.",
         "team": "Kansas City Royals",
         "team_id": 118,
@@ -3497,12 +3517,6 @@
         "team": "Kansas City Royals",
         "team_id": 118,
         "player_id": 663738
-    },
-    {
-        "player_name": "Eli Morgan",
-        "team": "Kansas City Royals",
-        "team_id": 118,
-        "player_id": 669212
     },
     {
         "player_name": "Isaac Collins",
@@ -7035,12 +7049,6 @@
         "fRBIpg": "0"
     },
     {
-        "player_name": "Jacob Lopez",
-        "team": "Athletics",
-        "team_id": 133,
-        "player_id": 682052
-    },
-    {
         "player_name": "Jeff McNeil",
         "team": "Athletics",
         "team_id": 133,
@@ -7105,6 +7113,12 @@
         "player_id": 686993
     },
     {
+        "player_name": "Kade Morris",
+        "team": "Athletics",
+        "team_id": 133,
+        "player_id": 695034
+    },
+    {
         "player_name": "Lawrence Butler",
         "team": "Athletics",
         "team_id": 133,
@@ -7137,10 +7151,10 @@
         "player_id": 643410
     },
     {
-        "player_name": "Michael Kelly",
+        "player_name": "Mason Barnett",
         "team": "Athletics",
         "team_id": 133,
-        "player_id": 547184
+        "player_id": 686930
     },
     {
         "player_name": "Nick Kurtz",
@@ -7379,12 +7393,6 @@
         "player_id": 592791
     },
     {
-        "player_name": "Jordan Wicks",
-        "team": "Chicago Cubs",
-        "team_id": 112,
-        "player_id": 696136
-    },
-    {
         "player_name": "Kevin Alc\u00e1ntara",
         "team": "Chicago Cubs",
         "team_id": 112,
@@ -7595,6 +7603,12 @@
         "team": "Chicago Cubs",
         "team_id": 112,
         "player_id": 663423
+    },
+    {
+        "player_name": "Tyler Ferguson",
+        "team": "Chicago Cubs",
+        "team_id": 112,
+        "player_id": 621053
     },
     {
         "player_name": "Brandan Bidois",
