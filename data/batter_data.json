@@ -777,6 +777,12 @@
         "fHR24pg": "1/7"
     },
     {
+        "player_name": "Jase Bowen",
+        "team": "San Diego Padres",
+        "team_id": 135,
+        "player_id": 687749
+    },
+    {
         "player_name": "Jason Adam",
         "team": "San Diego Padres",
         "team_id": 135,
@@ -865,26 +871,6 @@
         "HR24": 17,
         "HR24pg": 0.12,
         "fHR24pg": "1/7"
-    },
-    {
-        "player_name": "Ram\u00f3n Laureano",
-        "team": "San Diego Padres",
-        "team_id": 135,
-        "player_id": 657656,
-        "position": "LF",
-        "games_played": 53.0,
-        "H": 37.0,
-        "HR": 7.0,
-        "RBI": 21.0,
-        "HRpg": 0.132,
-        "fHRpg": "1/7",
-        "Hpg": 0.698,
-        "fHpg": "5/7",
-        "RBIpg": 0.396,
-        "fRBIpg": "2/5",
-        "HR24": 9,
-        "HR24pg": 0.18,
-        "fHR24pg": "1/6"
     },
     {
         "player_name": "Randy V\u00e1squez",
@@ -989,6 +975,12 @@
         "team": "San Diego Padres",
         "team_id": 135,
         "player_id": 673513
+    },
+    {
+        "player_name": "Aaron Nola",
+        "team": "Philadelphia Phillies",
+        "team_id": 143,
+        "player_id": 605400
     },
     {
         "player_name": "Adolis Garc\u00eda",
@@ -1248,12 +1240,6 @@
         "HR24": 56,
         "HR24pg": 0.35,
         "fHR24pg": "1/3"
-    },
-    {
-        "player_name": "Nolan Hoffman",
-        "team": "Philadelphia Phillies",
-        "team_id": 143,
-        "player_id": 676510
     },
     {
         "player_name": "Orion Kerkering",
@@ -3132,6 +3118,26 @@
         "fHR24pg": "1/3"
     },
     {
+        "player_name": "Amed Rosario",
+        "team": "New York Yankees",
+        "team_id": 147,
+        "player_id": 642708,
+        "position": "3B",
+        "games_played": 31.0,
+        "H": 24.0,
+        "HR": 6.0,
+        "RBI": 20.0,
+        "HRpg": 0.194,
+        "fHRpg": "1/5",
+        "Hpg": 0.774,
+        "fHpg": "3/4",
+        "RBIpg": 0.645,
+        "fRBIpg": "2/3",
+        "HR24": 1,
+        "HR24pg": 0.06,
+        "fHR24pg": "0"
+    },
+    {
         "player_name": "Anthony Volpe",
         "team": "New York Yankees",
         "team_id": 147,
@@ -4451,12 +4457,6 @@
         "fRBIpg": "4/7"
     },
     {
-        "player_name": "Anthony Molina",
-        "team": "Atlanta Braves",
-        "team_id": 144,
-        "player_id": 683627
-    },
-    {
         "player_name": "Austin Riley",
         "team": "Atlanta Braves",
         "team_id": 144,
@@ -4481,6 +4481,12 @@
         "team": "Atlanta Braves",
         "team_id": 144,
         "player_id": 693821
+    },
+    {
+        "player_name": "Carlos Carrasco",
+        "team": "Atlanta Braves",
+        "team_id": 144,
+        "player_id": 471911
     },
     {
         "player_name": "Chadwick Tromp",
@@ -5347,12 +5353,6 @@
         "HR24": 0,
         "HR24pg": 0.0,
         "fHR24pg": "0"
-    },
-    {
-        "player_name": "Kody Funderburk",
-        "team": "Minnesota Twins",
-        "team_id": 142,
-        "player_id": 681892
     },
     {
         "player_name": "Luke Keaschall",
