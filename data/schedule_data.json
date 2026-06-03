@@ -97,7 +97,7 @@
         "game_datetime": "2026-06-03T19:40:00Z",
         "game_date": "2026-06-03",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "New York Mets",
         "home_name": "Seattle Mariners",
         "away_id": 121,
@@ -110,20 +110,25 @@
         "away_pitcher_note": "",
         "away_score": 7,
         "home_score": 1,
-        "current_inning": 8,
-        "inning_state": "End",
+        "current_inning": 9,
+        "inning_state": "Bottom",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": "SEA leads 2-0",
-        "summary": "2026-06-03 - New York Mets (7) @ Seattle Mariners (1) (End of the 8th)"
+        "series_status": "SEA wins 2-1",
+        "winning_team": "New York Mets",
+        "losing_team": "Seattle Mariners",
+        "winning_pitcher": "Freddy Peralta",
+        "losing_pitcher": "George Kirby",
+        "save_pitcher": null,
+        "summary": "2026-06-03 - New York Mets (7) @ Seattle Mariners (1) (Final)"
     },
     {
         "game_id": 823456,
         "game_datetime": "2026-06-03T22:40:00Z",
         "game_date": "2026-06-03",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "San Diego Padres",
         "home_name": "Philadelphia Phillies",
         "away_id": 135,
@@ -137,19 +142,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-06-03 - San Diego Padres @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-06-03 - San Diego Padres (0) @ Philadelphia Phillies (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824755,
         "game_datetime": "2026-06-03T22:45:00Z",
         "game_date": "2026-06-03",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Baltimore Orioles",
         "home_name": "Boston Red Sox",
         "away_id": 110,
@@ -168,14 +173,14 @@
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-06-03 - Baltimore Orioles @ Boston Red Sox (Pre-Game)"
+        "summary": "2026-06-03 - Baltimore Orioles (0) @ Boston Red Sox (0) (Top of the 1st)"
     },
     {
         "game_id": 823540,
         "game_datetime": "2026-06-03T23:05:00Z",
         "game_date": "2026-06-03",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cleveland Guardians",
         "home_name": "New York Yankees",
         "away_id": 114,
@@ -194,14 +199,14 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-06-03 - Cleveland Guardians @ New York Yankees (Pre-Game)"
+        "summary": "2026-06-03 - Cleveland Guardians @ New York Yankees (Warmup)"
     },
     {
         "game_id": 824509,
         "game_datetime": "2026-06-03T23:10:00Z",
         "game_date": "2026-06-03",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Kansas City Royals",
         "home_name": "Cincinnati Reds",
         "away_id": 118,
@@ -220,14 +225,14 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-03 - Kansas City Royals @ Cincinnati Reds (Pre-Game)"
+        "summary": "2026-06-03 - Kansas City Royals @ Cincinnati Reds (Warmup)"
     },
     {
         "game_id": 824917,
         "game_datetime": "2026-06-03T23:15:00Z",
         "game_date": "2026-06-03",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Toronto Blue Jays",
         "home_name": "Atlanta Braves",
         "away_id": 141,
@@ -246,7 +251,7 @@
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 1-0",
-        "summary": "2026-06-03 - Toronto Blue Jays @ Atlanta Braves (Pre-Game)"
+        "summary": "2026-06-03 - Toronto Blue Jays @ Atlanta Braves (Warmup)"
     },
     {
         "game_id": 823780,
