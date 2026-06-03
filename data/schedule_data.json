@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-03T17:05:00Z",
         "game_date": "2026-06-03",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Miami Marlins",
         "home_name": "Washington Nationals",
         "away_id": 146,
@@ -23,14 +23,14 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "MIA leads 2-0",
-        "summary": "2026-06-03 - Miami Marlins @ Washington Nationals (Pre-Game)"
+        "summary": "2026-06-03 - Miami Marlins @ Washington Nationals (Warmup)"
     },
     {
         "game_id": 822973,
         "game_datetime": "2026-06-03T17:10:00Z",
         "game_date": "2026-06-03",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Detroit Tigers",
         "home_name": "Tampa Bay Rays",
         "away_id": 116,
@@ -49,7 +49,7 @@
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "DET leads 2-0",
-        "summary": "2026-06-03 - Detroit Tigers @ Tampa Bay Rays (Pre-Game)"
+        "summary": "2026-06-03 - Detroit Tigers @ Tampa Bay Rays (Warmup)"
     },
     {
         "game_id": 823701,
@@ -82,7 +82,7 @@
         "game_datetime": "2026-06-03T19:40:00Z",
         "game_date": "2026-06-03",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "Seattle Mariners",
         "away_id": 121,
@@ -93,15 +93,15 @@
         "away_probable_pitcher": "Freddy Peralta",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-03 - New York Mets @ Seattle Mariners (Scheduled)"
+        "series_status": "SEA leads 2-0",
+        "summary": "2026-06-03 - New York Mets @ Seattle Mariners (Pre-Game)"
     },
     {
         "game_id": 823456,
