@@ -141,13 +141,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "current_inning": 2,
+        "inning_state": "End",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-06-03 - San Diego Padres (0) @ Philadelphia Phillies (0) (Bottom of the 1st)"
+        "summary": "2026-06-03 - San Diego Padres (0) @ Philadelphia Phillies (0) (End of the 2nd)"
     },
     {
         "game_id": 824755,
@@ -166,21 +166,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "home_score": 1,
+        "current_inning": 2,
+        "inning_state": "Middle",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-06-03 - Baltimore Orioles (0) @ Boston Red Sox (0) (Top of the 1st)"
+        "summary": "2026-06-03 - Baltimore Orioles (0) @ Boston Red Sox (1) (Middle of the 2nd)"
     },
     {
         "game_id": 823540,
         "game_datetime": "2026-06-03T23:05:00Z",
         "game_date": "2026-06-03",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Cleveland Guardians",
         "home_name": "New York Yankees",
         "away_id": 114,
@@ -194,19 +194,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-06-03 - Cleveland Guardians @ New York Yankees (Warmup)"
+        "summary": "2026-06-03 - Cleveland Guardians (0) @ New York Yankees (0) (Middle of the 1st)"
     },
     {
         "game_id": 824509,
         "game_datetime": "2026-06-03T23:10:00Z",
         "game_date": "2026-06-03",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Kansas City Royals",
         "home_name": "Cincinnati Reds",
         "away_id": 118,
@@ -225,7 +225,7 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-03 - Kansas City Royals @ Cincinnati Reds (Warmup)"
+        "summary": "2026-06-03 - Kansas City Royals (0) @ Cincinnati Reds (0) (Top of the 1st)"
     },
     {
         "game_id": 824917,
@@ -258,7 +258,7 @@
         "game_datetime": "2026-06-03T23:40:00Z",
         "game_date": "2026-06-03",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "San Francisco Giants",
         "home_name": "Milwaukee Brewers",
         "away_id": 137,
@@ -277,7 +277,7 @@
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 2-0",
-        "summary": "2026-06-03 - San Francisco Giants @ Milwaukee Brewers (Pre-Game)"
+        "summary": "2026-06-03 - San Francisco Giants @ Milwaukee Brewers (Warmup)"
     },
     {
         "game_id": 823051,
@@ -362,7 +362,7 @@
         "game_datetime": "2026-06-04T01:38:00Z",
         "game_date": "2026-06-03",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Los Angeles Angels",
         "away_id": 115,
@@ -373,15 +373,15 @@
         "away_probable_pitcher": "Michael Lorenzen",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-03 - Colorado Rockies @ Los Angeles Angels (Scheduled)"
+        "series_status": "COL leads 2-0",
+        "summary": "2026-06-03 - Colorado Rockies @ Los Angeles Angels (Pre-Game)"
     },
     {
         "game_id": 825077,
