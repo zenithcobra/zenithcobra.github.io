@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-04T17:05:00Z",
         "game_date": "2026-06-04",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "San Diego Padres",
         "home_name": "Philadelphia Phillies",
         "away_id": 135,
@@ -18,12 +18,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 2-0",
-        "summary": "2026-06-04 - San Diego Padres @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-06-04 - San Diego Padres (0) @ Philadelphia Phillies (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824753,
@@ -56,7 +56,7 @@
         "game_datetime": "2026-06-04T17:35:00Z",
         "game_date": "2026-06-04",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cleveland Guardians",
         "home_name": "New York Yankees",
         "away_id": 114,
@@ -75,7 +75,7 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "CLE leads 2-0",
-        "summary": "2026-06-04 - Cleveland Guardians @ New York Yankees (Pre-Game)"
+        "summary": "2026-06-04 - Cleveland Guardians @ New York Yankees (Warmup)"
     },
     {
         "game_id": 823779,
