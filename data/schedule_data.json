@@ -35,7 +35,7 @@
         "game_datetime": "2026-06-04T17:35:00Z",
         "game_date": "2026-06-04",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Baltimore Orioles",
         "home_name": "Boston Red Sox",
         "away_id": 110,
@@ -53,8 +53,13 @@
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-06-04 - Baltimore Orioles (8) @ Boston Red Sox (2) (Bottom of the 9th)"
+        "series_status": "BAL wins 2-1",
+        "winning_team": "Baltimore Orioles",
+        "losing_team": "Boston Red Sox",
+        "winning_pitcher": "Trevor Rogers",
+        "losing_pitcher": "Brayan Bello",
+        "save_pitcher": null,
+        "summary": "2026-06-04 - Baltimore Orioles (8) @ Boston Red Sox (2) (Final)"
     },
     {
         "game_id": 823542,
@@ -103,15 +108,15 @@
         "away_probable_pitcher": "Adrian Houser",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 6,
-        "home_score": 3,
-        "current_inning": 6,
+        "away_score": 12,
+        "home_score": 5,
+        "current_inning": 7,
         "inning_state": "End",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 2-1",
-        "summary": "2026-06-04 - San Francisco Giants (6) @ Milwaukee Brewers (3) (End of the 6th)"
+        "summary": "2026-06-04 - San Francisco Giants (12) @ Milwaukee Brewers (5) (End of the 7th)"
     },
     {
         "game_id": 824919,
@@ -170,7 +175,7 @@
         "game_datetime": "2026-06-05T00:05:00Z",
         "game_date": "2026-06-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Athletics",
         "home_name": "Chicago Cubs",
         "away_id": 133,
@@ -188,8 +193,8 @@
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
-        "series_status": "ATH leads 1-0",
-        "summary": "2026-06-04 - Athletics @ Chicago Cubs (Scheduled)"
+        "series_status": "ATH leads 2-0",
+        "summary": "2026-06-04 - Athletics @ Chicago Cubs (Pre-Game)"
     },
     {
         "game_id": 824185,
@@ -224,7 +229,7 @@
         "game_datetime": "2026-06-05T01:40:00Z",
         "game_date": "2026-06-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Arizona Diamondbacks",
         "away_id": 119,
@@ -242,7 +247,7 @@
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-04 - Los Angeles Dodgers @ Arizona Diamondbacks (Scheduled)"
+        "series_status": "LAD leads 2-1",
+        "summary": "2026-06-04 - Los Angeles Dodgers @ Arizona Diamondbacks (Pre-Game)"
     }
 ]
