@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-05T18:20:00Z",
         "game_date": "2026-06-05",
         "game_type": "R",
-        "status": "Delayed Start",
+        "status": "Warmup",
         "away_name": "San Francisco Giants",
         "home_name": "Chicago Cubs",
         "away_id": 137,
@@ -23,7 +23,7 @@
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-05 - San Francisco Giants @ Chicago Cubs (Delayed Start)"
+        "summary": "2026-06-05 - San Francisco Giants @ Chicago Cubs (Warmup)"
     },
     {
         "game_id": 824271,
@@ -56,7 +56,7 @@
         "game_datetime": "2026-06-05T22:40:00Z",
         "game_date": "2026-06-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago White Sox",
         "home_name": "Philadelphia Phillies",
         "away_id": 145,
@@ -67,15 +67,15 @@
         "away_probable_pitcher": "Anthony Kay",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-05 - Chicago White Sox @ Philadelphia Phillies (Scheduled)"
+        "summary": "2026-06-05 - Chicago White Sox @ Philadelphia Phillies (Pre-Game)"
     },
     {
         "game_id": 823538,
