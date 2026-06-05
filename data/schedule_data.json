@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-05T18:20:00Z",
         "game_date": "2026-06-05",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "San Francisco Giants",
         "home_name": "Chicago Cubs",
         "away_id": 137,
@@ -15,22 +15,27 @@
         "away_probable_pitcher": "Robbie Ray",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 16,
-        "home_score": 2,
-        "current_inning": 8,
+        "away_score": 18,
+        "home_score": 3,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-05 - San Francisco Giants (16) @ Chicago Cubs (2) (Bottom of the 8th)"
+        "series_status": "SF leads 1-0",
+        "winning_team": "San Francisco Giants",
+        "losing_team": "Chicago Cubs",
+        "winning_pitcher": "Robbie Ray",
+        "losing_pitcher": "Edward Cabrera",
+        "save_pitcher": null,
+        "summary": "2026-06-05 - San Francisco Giants (18) @ Chicago Cubs (3) (Final)"
     },
     {
         "game_id": 824271,
         "game_datetime": "2026-06-05T22:40:00Z",
         "game_date": "2026-06-05",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Seattle Mariners",
         "home_name": "Detroit Tigers",
         "away_id": 136,
@@ -49,14 +54,14 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-05 - Seattle Mariners @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-06-05 - Seattle Mariners @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 823455,
         "game_datetime": "2026-06-05T22:40:00Z",
         "game_date": "2026-06-05",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago White Sox",
         "home_name": "Philadelphia Phillies",
         "away_id": 145,
@@ -75,14 +80,14 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-05 - Chicago White Sox @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-06-05 - Chicago White Sox @ Philadelphia Phillies (Warmup)"
     },
     {
         "game_id": 823538,
         "game_datetime": "2026-06-05T23:05:00Z",
         "game_date": "2026-06-05",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Boston Red Sox",
         "home_name": "New York Yankees",
         "away_id": 111,
@@ -101,7 +106,7 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-05 - Boston Red Sox @ New York Yankees (Pre-Game)"
+        "summary": "2026-06-05 - Boston Red Sox @ New York Yankees (Warmup)"
     },
     {
         "game_id": 822810,
