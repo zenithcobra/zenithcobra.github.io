@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Robbie Ray",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 9,
-        "home_score": 0,
-        "current_inning": 5,
-        "inning_state": "End",
+        "away_score": 16,
+        "home_score": 1,
+        "current_inning": 7,
+        "inning_state": "Middle",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-05 - San Francisco Giants (9) @ Chicago Cubs (0) (End of the 5th)"
+        "summary": "2026-06-05 - San Francisco Giants (16) @ Chicago Cubs (1) (Middle of the 7th)"
     },
     {
         "game_id": 824271,
@@ -305,10 +305,10 @@
         "away_probable_pitcher": "Brandon Sproat",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
@@ -320,7 +320,7 @@
         "game_datetime": "2026-06-06T01:40:00Z",
         "game_date": "2026-06-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Washington Nationals",
         "home_name": "Arizona Diamondbacks",
         "away_id": 120,
@@ -339,14 +339,14 @@
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-05 - Washington Nationals @ Arizona Diamondbacks (Scheduled)"
+        "summary": "2026-06-05 - Washington Nationals @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 823293,
         "game_datetime": "2026-06-06T01:40:00Z",
         "game_date": "2026-06-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "San Diego Padres",
         "away_id": 121,
@@ -365,7 +365,7 @@
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-05 - New York Mets @ San Diego Padres (Scheduled)"
+        "summary": "2026-06-05 - New York Mets @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 823943,
