@@ -13,17 +13,12 @@
     {
         "Venue": "Minute Maid Park",
         "Location": "Houston",
-        "HR": "92"
+        "HR": "90"
     },
     {
         "Venue": "T-Mobile Park",
         "Location": "Seattle",
         "HR": "86"
-    },
-    {
-        "Venue": "Wrigley Field",
-        "Location": "Chicago",
-        "HR": "80"
     },
     {
         "Venue": "Dodger Stadium",
@@ -48,6 +43,11 @@
     {
         "Venue": "Citizens Bank Park",
         "Location": "Philadelphia",
+        "HR": "74"
+    },
+    {
+        "Venue": "Wrigley Field",
+        "Location": "Chicago",
         "HR": "74"
     },
     {
@@ -91,19 +91,9 @@
         "HR": "60"
     },
     {
-        "Venue": "Target Field",
-        "Location": "Minneapolis",
-        "HR": "60"
-    },
-    {
         "Venue": "Busch Stadium",
         "Location": "St. Louis",
         "HR": "59"
-    },
-    {
-        "Venue": "Truist Park",
-        "Location": "Atlanta",
-        "HR": "58"
     },
     {
         "Venue": "Progressive Field",
@@ -116,13 +106,18 @@
         "HR": "57"
     },
     {
+        "Venue": "Truist Park",
+        "Location": "Atlanta",
+        "HR": "57"
+    },
+    {
         "Venue": "Angel Stadium",
         "Location": "Anaheim",
         "HR": "56"
     },
     {
-        "Venue": "Chase Field",
-        "Location": "Phoenix",
+        "Venue": "Target Field",
+        "Location": "Minneapolis",
         "HR": "55"
     },
     {
@@ -133,6 +128,11 @@
     {
         "Venue": "Marlins Park",
         "Location": "Miami",
+        "HR": "53"
+    },
+    {
+        "Venue": "Chase Field",
+        "Location": "Phoenix",
         "HR": "53"
     },
     {
