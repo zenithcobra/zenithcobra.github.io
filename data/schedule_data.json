@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-06T17:10:00Z",
         "game_date": "2026-06-06",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Seattle Mariners",
         "home_name": "Detroit Tigers",
         "away_id": 136,
@@ -23,7 +23,7 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "DET leads 1-0",
-        "summary": "2026-06-06 - Seattle Mariners @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-06-06 - Seattle Mariners @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 823697,
@@ -312,7 +312,7 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": null,
+        "series_status": "BOS leads 1-0",
         "summary": "2026-06-06 - Boston Red Sox @ New York Yankees (Scheduled)"
     },
     {
@@ -390,7 +390,7 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "NYM leads 1-0",
         "summary": "2026-06-06 - New York Mets @ San Diego Padres (Scheduled)"
     }
 ]
