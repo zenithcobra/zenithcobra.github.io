@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-06T17:10:00Z",
         "game_date": "2026-06-06",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Seattle Mariners",
         "home_name": "Detroit Tigers",
         "away_id": 136,
@@ -18,12 +18,17 @@
         "away_score": 4,
         "home_score": 0,
         "current_inning": 9,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": "DET leads 1-0",
-        "summary": "2026-06-06 - Seattle Mariners (4) @ Detroit Tigers (0) (Top of the 9th)"
+        "series_status": "Series tied 1-1",
+        "winning_team": "Seattle Mariners",
+        "losing_team": "Detroit Tigers",
+        "winning_pitcher": "Bryce Miller",
+        "losing_pitcher": "Keider Montero",
+        "save_pitcher": null,
+        "summary": "2026-06-06 - Seattle Mariners (4) @ Detroit Tigers (0) (Game Over)"
     },
     {
         "game_id": 823697,
@@ -43,13 +48,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 1,
-        "current_inning": 6,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-06 - Kansas City Royals (1) @ Minnesota Twins (1) (Top of the 6th)"
+        "summary": "2026-06-06 - Kansas City Royals (1) @ Minnesota Twins (1) (Top of the 7th)"
     },
     {
         "game_id": 823048,
@@ -68,14 +73,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 5,
-        "home_score": 3,
+        "home_score": 4,
         "current_inning": 5,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "STL leads 1-0",
-        "summary": "2026-06-06 - Cincinnati Reds (5) @ St. Louis Cardinals (3) (Top of the 5th)"
+        "summary": "2026-06-06 - Cincinnati Reds (5) @ St. Louis Cardinals (4) (End of the 5th)"
     },
     {
         "game_id": 824669,
@@ -93,15 +98,15 @@
         "away_probable_pitcher": "Landen Roupp",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
+        "away_score": 1,
+        "home_score": 1,
         "current_inning": 6,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "SF leads 1-0",
-        "summary": "2026-06-06 - San Francisco Giants (0) @ Chicago Cubs (0) (Top of the 6th)"
+        "summary": "2026-06-06 - San Francisco Giants (1) @ Chicago Cubs (1) (Bottom of the 6th)"
     },
     {
         "game_id": 822808,
@@ -121,20 +126,20 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 1,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-06-06 - Baltimore Orioles (1) @ Toronto Blue Jays (1) (Bottom of the 2nd)"
+        "summary": "2026-06-06 - Baltimore Orioles (1) @ Toronto Blue Jays (1) (Bottom of the 3rd)"
     },
     {
         "game_id": 823454,
         "game_datetime": "2026-06-06T20:05:00Z",
         "game_date": "2026-06-06",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago White Sox",
         "home_name": "Philadelphia Phillies",
         "away_id": 145,
@@ -153,14 +158,14 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-06-06 - Chicago White Sox @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-06-06 - Chicago White Sox @ Philadelphia Phillies (Warmup)"
     },
     {
         "game_id": 825075,
         "game_datetime": "2026-06-06T20:10:00Z",
         "game_date": "2026-06-06",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Washington Nationals",
         "home_name": "Arizona Diamondbacks",
         "away_id": 120,
@@ -179,7 +184,7 @@
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": "WSH leads 1-0",
-        "summary": "2026-06-06 - Washington Nationals @ Arizona Diamondbacks (Pre-Game)"
+        "summary": "2026-06-06 - Washington Nationals @ Arizona Diamondbacks (Warmup)"
     },
     {
         "game_id": 824184,
@@ -212,7 +217,7 @@
         "game_datetime": "2026-06-06T20:10:00Z",
         "game_date": "2026-06-06",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Atlanta Braves",
         "away_id": 134,
@@ -231,7 +236,7 @@
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 1-0",
-        "summary": "2026-06-06 - Pittsburgh Pirates @ Atlanta Braves (Pre-Game)"
+        "summary": "2026-06-06 - Pittsburgh Pirates @ Atlanta Braves (Warmup)"
     },
     {
         "game_id": 823859,
@@ -292,7 +297,7 @@
         "game_datetime": "2026-06-06T23:35:00Z",
         "game_date": "2026-06-06",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "New York Yankees",
         "away_id": 111,
@@ -312,8 +317,8 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": null,
-        "summary": "2026-06-06 - Boston Red Sox @ New York Yankees (Scheduled)"
+        "series_status": "BOS leads 1-0",
+        "summary": "2026-06-06 - Boston Red Sox @ New York Yankees (Pre-Game)"
     },
     {
         "game_id": 824351,
