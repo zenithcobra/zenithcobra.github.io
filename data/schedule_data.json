@@ -15,22 +15,22 @@
         "away_probable_pitcher": "Bryce Miller",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 4,
         "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "DET leads 1-0",
-        "summary": "2026-06-06 - Seattle Mariners (1) @ Detroit Tigers (0) (Top of the 3rd)"
+        "summary": "2026-06-06 - Seattle Mariners (4) @ Detroit Tigers (0) (Bottom of the 5th)"
     },
     {
         "game_id": 823697,
         "game_datetime": "2026-06-06T18:10:00Z",
         "game_date": "2026-06-06",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Kansas City Royals",
         "home_name": "Minnesota Twins",
         "away_id": 118,
@@ -41,22 +41,22 @@
         "away_probable_pitcher": "Luinder Avila",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-06 - Kansas City Royals @ Minnesota Twins (Warmup)"
+        "summary": "2026-06-06 - Kansas City Royals (1) @ Minnesota Twins (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 823048,
         "game_datetime": "2026-06-06T18:15:00Z",
         "game_date": "2026-06-06",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Cincinnati Reds",
         "home_name": "St. Louis Cardinals",
         "away_id": 113,
@@ -69,20 +69,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "STL leads 1-0",
-        "summary": "2026-06-06 - Cincinnati Reds @ St. Louis Cardinals (Pre-Game)"
+        "summary": "2026-06-06 - Cincinnati Reds (0) @ St. Louis Cardinals (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 824669,
         "game_datetime": "2026-06-06T18:20:00Z",
         "game_date": "2026-06-06",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "San Francisco Giants",
         "home_name": "Chicago Cubs",
         "away_id": 137,
@@ -96,12 +96,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "SF leads 1-0",
-        "summary": "2026-06-06 - San Francisco Giants @ Chicago Cubs (Pre-Game)"
+        "summary": "2026-06-06 - San Francisco Giants (0) @ Chicago Cubs (0) (End of the 1st)"
     },
     {
         "game_id": 822808,
@@ -312,7 +312,7 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": "BOS leads 1-0",
+        "series_status": null,
         "summary": "2026-06-06 - Boston Red Sox @ New York Yankees (Scheduled)"
     },
     {
@@ -390,7 +390,7 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": "NYM leads 1-0",
+        "series_status": null,
         "summary": "2026-06-06 - New York Mets @ San Diego Padres (Scheduled)"
     }
 ]
