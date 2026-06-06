@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 0,
-        "current_inning": 6,
-        "inning_state": "Bottom",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "DET leads 1-0",
-        "summary": "2026-06-06 - Seattle Mariners (4) @ Detroit Tigers (0) (Bottom of the 6th)"
+        "summary": "2026-06-06 - Seattle Mariners (4) @ Detroit Tigers (0) (Top of the 9th)"
     },
     {
         "game_id": 823697,
@@ -42,14 +42,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 0,
-        "current_inning": 3,
+        "home_score": 1,
+        "current_inning": 6,
         "inning_state": "Top",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-06 - Kansas City Royals (1) @ Minnesota Twins (0) (Top of the 3rd)"
+        "summary": "2026-06-06 - Kansas City Royals (1) @ Minnesota Twins (1) (Top of the 6th)"
     },
     {
         "game_id": 823048,
@@ -67,15 +67,15 @@
         "away_probable_pitcher": "Nick Lodolo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 5,
         "home_score": 3,
-        "current_inning": 3,
+        "current_inning": 5,
         "inning_state": "Top",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "STL leads 1-0",
-        "summary": "2026-06-06 - Cincinnati Reds (0) @ St. Louis Cardinals (3) (Top of the 3rd)"
+        "summary": "2026-06-06 - Cincinnati Reds (5) @ St. Louis Cardinals (3) (Top of the 5th)"
     },
     {
         "game_id": 824669,
@@ -95,20 +95,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "End",
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "SF leads 1-0",
-        "summary": "2026-06-06 - San Francisco Giants (0) @ Chicago Cubs (0) (End of the 2nd)"
+        "summary": "2026-06-06 - San Francisco Giants (0) @ Chicago Cubs (0) (Top of the 6th)"
     },
     {
         "game_id": 822808,
         "game_datetime": "2026-06-06T19:07:00Z",
         "game_date": "2026-06-06",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Baltimore Orioles",
         "home_name": "Toronto Blue Jays",
         "away_id": 110,
@@ -119,15 +119,15 @@
         "away_probable_pitcher": "Kyle Bradish",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "away_score": 1,
+        "home_score": 1,
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-06-06 - Baltimore Orioles @ Toronto Blue Jays (Warmup)"
+        "summary": "2026-06-06 - Baltimore Orioles (1) @ Toronto Blue Jays (1) (Bottom of the 2nd)"
     },
     {
         "game_id": 823454,
@@ -186,7 +186,7 @@
         "game_datetime": "2026-06-06T20:10:00Z",
         "game_date": "2026-06-06",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Athletics",
         "home_name": "Houston Astros",
         "away_id": 133,
@@ -205,7 +205,7 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": "HOU leads 1-0",
-        "summary": "2026-06-06 - Athletics @ Houston Astros (Pre-Game)"
+        "summary": "2026-06-06 - Athletics @ Houston Astros (Warmup)"
     },
     {
         "game_id": 824915,
@@ -238,7 +238,7 @@
         "game_datetime": "2026-06-06T20:10:00Z",
         "game_date": "2026-06-06",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Tampa Bay Rays",
         "home_name": "Miami Marlins",
         "away_id": 139,
@@ -257,14 +257,14 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-06-06 - Tampa Bay Rays @ Miami Marlins (Pre-Game)"
+        "summary": "2026-06-06 - Tampa Bay Rays @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 822891,
         "game_datetime": "2026-06-06T23:35:00Z",
         "game_date": "2026-06-06",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Texas Rangers",
         "away_id": 114,
@@ -284,8 +284,8 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": null,
-        "summary": "2026-06-06 - Cleveland Guardians @ Texas Rangers (Scheduled)"
+        "series_status": "TEX leads 1-0",
+        "summary": "2026-06-06 - Cleveland Guardians @ Texas Rangers (Pre-Game)"
     },
     {
         "game_id": 823539,
@@ -320,14 +320,14 @@
         "game_datetime": "2026-06-07T01:10:00Z",
         "game_date": "2026-06-06",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "Colorado Rockies",
         "away_id": 158,
         "home_id": 115,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
+        "home_probable_pitcher": "Zach Agnos",
         "away_probable_pitcher": "Jacob Misiorowski",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
@@ -338,8 +338,8 @@
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-06 - Milwaukee Brewers @ Colorado Rockies (Scheduled)"
+        "series_status": "MIL leads 1-0",
+        "summary": "2026-06-06 - Milwaukee Brewers @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 823942,
