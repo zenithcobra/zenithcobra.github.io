@@ -314,7 +314,7 @@
         "game_datetime": "2026-06-07T19:10:00Z",
         "game_date": "2026-06-07",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Milwaukee Brewers",
         "home_name": "Colorado Rockies",
         "away_id": 158,
@@ -326,21 +326,26 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 12,
-        "home_score": 3,
+        "home_score": 4,
         "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": "MIL leads 2-0",
-        "summary": "2026-06-07 - Milwaukee Brewers (12) @ Colorado Rockies (3) (Bottom of the 9th)"
+        "series_status": "MIL wins 3-0",
+        "winning_team": "Milwaukee Brewers",
+        "losing_team": "Colorado Rockies",
+        "winning_pitcher": "Shane Drohan",
+        "losing_pitcher": "Jaden Hill",
+        "save_pitcher": null,
+        "summary": "2026-06-07 - Milwaukee Brewers (12) @ Colorado Rockies (4) (Final)"
     },
     {
         "game_id": 825074,
         "game_datetime": "2026-06-07T19:15:00Z",
         "game_date": "2026-06-07",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Washington Nationals",
         "home_name": "Arizona Diamondbacks",
         "away_id": 120,
@@ -366,7 +371,7 @@
         "winning_pitcher": "Michael Soroka",
         "losing_pitcher": "Cade Cavalli",
         "save_pitcher": null,
-        "summary": "2026-06-07 - Washington Nationals (1) @ Arizona Diamondbacks (5) (Game Over)"
+        "summary": "2026-06-07 - Washington Nationals (1) @ Arizona Diamondbacks (5) (Final)"
     },
     {
         "game_id": 823941,
@@ -384,15 +389,15 @@
         "away_probable_pitcher": "Jos\u00e9 Soriano",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 4,
-        "home_score": 1,
-        "current_inning": 5,
+        "away_score": 6,
+        "home_score": 5,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
         "series_status": "LAD leads 2-0",
-        "summary": "2026-06-07 - Los Angeles Angels (4) @ Los Angeles Dodgers (1) (Top of the 5th)"
+        "summary": "2026-06-07 - Los Angeles Angels (6) @ Los Angeles Dodgers (5) (Top of the 7th)"
     },
     {
         "game_id": 823291,
@@ -410,15 +415,15 @@
         "away_probable_pitcher": "Huascar Brazob\u00e1n",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 6,
+        "away_score": 7,
         "home_score": 2,
-        "current_inning": 6,
-        "inning_state": "Top",
+        "current_inning": 8,
+        "inning_state": "Middle",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-07 - New York Mets (6) @ San Diego Padres (2) (Top of the 6th)"
+        "summary": "2026-06-07 - New York Mets (7) @ San Diego Padres (2) (Middle of the 8th)"
     },
     {
         "game_id": 824670,
