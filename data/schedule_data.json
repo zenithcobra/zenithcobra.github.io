@@ -30,7 +30,7 @@
         "game_datetime": "2026-06-07T17:35:00Z",
         "game_date": "2026-06-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago White Sox",
         "home_name": "Philadelphia Phillies",
         "away_id": 145,
@@ -41,22 +41,22 @@
         "away_probable_pitcher": "Tyler Gilbert",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-07 - Chicago White Sox @ Philadelphia Phillies (Scheduled)"
+        "summary": "2026-06-07 - Chicago White Sox @ Philadelphia Phillies (Pre-Game)"
     },
     {
         "game_id": 823537,
         "game_datetime": "2026-06-07T17:35:00Z",
         "game_date": "2026-06-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "New York Yankees",
         "away_id": 111,
@@ -75,7 +75,7 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "BOS leads 1-0",
-        "summary": "2026-06-07 - Boston Red Sox @ New York Yankees (Scheduled)"
+        "summary": "2026-06-07 - Boston Red Sox @ New York Yankees (Pre-Game)"
     },
     {
         "game_id": 822807,
@@ -100,7 +100,7 @@
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "Series tied 1-1",
         "summary": "2026-06-07 - Baltimore Orioles @ Toronto Blue Jays (Scheduled)"
     },
     {
@@ -108,7 +108,7 @@
         "game_datetime": "2026-06-07T17:40:00Z",
         "game_date": "2026-06-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "Detroit Tigers",
         "away_id": 136,
@@ -126,8 +126,8 @@
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-07 - Seattle Mariners @ Detroit Tigers (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-06-07 - Seattle Mariners @ Detroit Tigers (Pre-Game)"
     },
     {
         "game_id": 823857,
@@ -152,7 +152,7 @@
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "Series tied 1-1",
         "summary": "2026-06-07 - Tampa Bay Rays @ Miami Marlins (Scheduled)"
     },
     {
