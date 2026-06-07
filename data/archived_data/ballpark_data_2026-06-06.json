@@ -31,13 +31,13 @@
         "HR": "83"
     },
     {
-        "Venue": "Dodger Stadium",
-        "Location": "Los Angeles",
-        "HR": "83"
-    },
-    {
         "Venue": "Yankee Stadium",
         "Location": "Bronx",
+        "HR": "80"
+    },
+    {
+        "Venue": "Dodger Stadium",
+        "Location": "Los Angeles",
         "HR": "80"
     },
     {
@@ -61,11 +61,6 @@
         "HR": "72"
     },
     {
-        "Venue": "Coors Field",
-        "Location": "Denver",
-        "HR": "71"
-    },
-    {
         "Venue": "Tropicana Field",
         "Location": "Tampa Bay",
         "HR": "70"
@@ -76,14 +71,24 @@
         "HR": "70"
     },
     {
+        "Venue": "Coors Field",
+        "Location": "Denver",
+        "HR": "66"
+    },
+    {
         "Venue": "Petco Park",
         "Location": "San Diego",
-        "HR": "66"
+        "HR": "64"
     },
     {
         "Venue": "Kauffman Stadium",
         "Location": "Kansas City",
         "HR": "64"
+    },
+    {
+        "Venue": "Chase Field",
+        "Location": "Phoenix",
+        "HR": "63"
     },
     {
         "Venue": "Busch Stadium",
@@ -93,11 +98,6 @@
     {
         "Venue": "Target Field",
         "Location": "Minneapolis",
-        "HR": "63"
-    },
-    {
-        "Venue": "Chase Field",
-        "Location": "Phoenix",
         "HR": "63"
     },
     {
@@ -111,14 +111,14 @@
         "HR": "60"
     },
     {
-        "Venue": "Globe Life Field",
-        "Location": "Arlington",
-        "HR": "59"
-    },
-    {
         "Venue": "Progressive Field",
         "Location": "Cleveland",
         "HR": "58"
+    },
+    {
+        "Venue": "Globe Life Field",
+        "Location": "Arlington",
+        "HR": "57"
     },
     {
         "Venue": "Citi Field",
