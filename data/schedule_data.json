@@ -30,7 +30,7 @@
         "game_datetime": "2026-06-08T22:40:00Z",
         "game_date": "2026-06-08",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Tampa Bay Rays",
         "away_id": 111,
@@ -41,22 +41,22 @@
         "away_probable_pitcher": "Connelly Early",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-08 - Boston Red Sox @ Tampa Bay Rays (Scheduled)"
+        "summary": "2026-06-08 - Boston Red Sox @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 824427,
         "game_datetime": "2026-06-08T22:40:00Z",
         "game_date": "2026-06-08",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Yankees",
         "home_name": "Cleveland Guardians",
         "away_id": 147,
@@ -77,7 +77,7 @@
             "FS1"
         ],
         "series_status": null,
-        "summary": "2026-06-08 - New York Yankees @ Cleveland Guardians (Scheduled)"
+        "summary": "2026-06-08 - New York Yankees @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 822806,
