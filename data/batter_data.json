@@ -122,26 +122,6 @@
         "player_id": 669923
     },
     {
-        "player_name": "J.P. Crawford",
-        "team": "Seattle Mariners",
-        "team_id": 136,
-        "player_id": 641487,
-        "position": "SS",
-        "games_played": 55.0,
-        "H": 44.0,
-        "HR": 10.0,
-        "RBI": 23.0,
-        "HRpg": 0.182,
-        "fHRpg": "1/6",
-        "Hpg": 0.8,
-        "fHpg": "4/5",
-        "RBIpg": 0.418,
-        "fRBIpg": "3/7",
-        "HR24": 12,
-        "HR24pg": 0.08,
-        "fHR24pg": "1/7"
-    },
-    {
         "player_name": "Jhonny Pereda",
         "team": "Seattle Mariners",
         "team_id": 136,
@@ -320,6 +300,26 @@
         "fRBIpg": "1/4",
         "HR24": 9,
         "HR24pg": 0.13,
+        "fHR24pg": "1/7"
+    },
+    {
+        "player_name": "Ryan Bliss",
+        "team": "Seattle Mariners",
+        "team_id": 136,
+        "player_id": 669208,
+        "position": "2B",
+        "games_played": 1.0,
+        "H": 0.0,
+        "HR": 0.0,
+        "RBI": 0.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.0,
+        "fHpg": "0",
+        "RBIpg": 0.0,
+        "fRBIpg": "0",
+        "HR24": 1,
+        "HR24pg": 0.09,
         "fHR24pg": "1/7"
     },
     {
@@ -885,12 +885,6 @@
         "fHR24pg": "1/7"
     },
     {
-        "player_name": "Joe La Sorsa",
-        "team": "Boston Red Sox",
-        "team_id": 111,
-        "player_id": 686747
-    },
-    {
         "player_name": "Justin Slaten",
         "team": "Boston Red Sox",
         "team_id": 111,
@@ -955,6 +949,12 @@
         "HR24": 2,
         "HR24pg": 0.04,
         "fHR24pg": "0"
+    },
+    {
+        "player_name": "Nate Eaton",
+        "team": "Boston Red Sox",
+        "team_id": 111,
+        "player_id": 681987
     },
     {
         "player_name": "Payton Tolle",
@@ -2649,6 +2649,12 @@
         "player_id": 693686
     },
     {
+        "player_name": "Tommy Nance",
+        "team": "Toronto Blue Jays",
+        "team_id": 141,
+        "player_id": 667297
+    },
+    {
         "player_name": "Trey Yesavage",
         "team": "Toronto Blue Jays",
         "team_id": 141,
@@ -2699,12 +2705,6 @@
         "HR24": 23,
         "HR24pg": 0.15,
         "fHR24pg": "1/7"
-    },
-    {
-        "player_name": "Yariel Rodr\u00edguez",
-        "team": "Toronto Blue Jays",
-        "team_id": 141,
-        "player_id": 684320
     },
     {
         "player_name": "Yohendrick Pi\u00f1ango",
