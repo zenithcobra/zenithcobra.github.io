@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-08T22:35:00Z",
         "game_date": "2026-06-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Seattle Mariners",
         "home_name": "Baltimore Orioles",
         "away_id": 136,
@@ -18,19 +18,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-08 - Seattle Mariners @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-06-08 - Seattle Mariners (0) @ Baltimore Orioles (0) (Bottom of the 1st)"
     },
     {
         "game_id": 822972,
         "game_datetime": "2026-06-08T22:40:00Z",
         "game_date": "2026-06-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Boston Red Sox",
         "home_name": "Tampa Bay Rays",
         "away_id": 111,
@@ -49,14 +49,14 @@
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-08 - Boston Red Sox @ Tampa Bay Rays (Pre-Game)"
+        "summary": "2026-06-08 - Boston Red Sox (0) @ Tampa Bay Rays (0) (Top of the 1st)"
     },
     {
         "game_id": 824427,
         "game_datetime": "2026-06-08T22:40:00Z",
         "game_date": "2026-06-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "New York Yankees",
         "home_name": "Cleveland Guardians",
         "away_id": 147,
@@ -77,14 +77,14 @@
             "FS1"
         ],
         "series_status": null,
-        "summary": "2026-06-08 - New York Yankees @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-06-08 - New York Yankees (0) @ Cleveland Guardians (0) (Top of the 1st)"
     },
     {
         "game_id": 822806,
         "game_datetime": "2026-06-08T23:07:00Z",
         "game_date": "2026-06-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Philadelphia Phillies",
         "home_name": "Toronto Blue Jays",
         "away_id": 143,
@@ -103,7 +103,7 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-08 - Philadelphia Phillies @ Toronto Blue Jays (Pre-Game)"
+        "summary": "2026-06-08 - Philadelphia Phillies @ Toronto Blue Jays (Warmup)"
     },
     {
         "game_id": 824025,
@@ -147,10 +147,10 @@
         "away_probable_pitcher": "Andrew Abbott",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
@@ -170,7 +170,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Logan Webb",
-        "away_probable_pitcher": "Miles Mikolas",
+        "away_probable_pitcher": "Richard Lovelady",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
