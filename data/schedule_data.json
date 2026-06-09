@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-09T22:35:00Z",
         "game_date": "2026-06-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Seattle Mariners",
         "home_name": "Baltimore Orioles",
         "away_id": 136,
@@ -18,19 +18,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "SEA leads 1-0",
-        "summary": "2026-06-09 - Seattle Mariners @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-06-09 - Seattle Mariners (0) @ Baltimore Orioles (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823374,
         "game_datetime": "2026-06-09T22:40:00Z",
         "game_date": "2026-06-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Pittsburgh Pirates",
         "away_id": 119,
@@ -49,14 +49,14 @@
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-09 - Los Angeles Dodgers @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-06-09 - Los Angeles Dodgers (0) @ Pittsburgh Pirates (0) (Top of the 1st)"
     },
     {
         "game_id": 822969,
         "game_datetime": "2026-06-09T22:40:00Z",
         "game_date": "2026-06-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Boston Red Sox",
         "home_name": "Tampa Bay Rays",
         "away_id": 111,
@@ -70,12 +70,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-06-09 - Boston Red Sox @ Tampa Bay Rays (Pre-Game)"
+        "summary": "2026-06-09 - Boston Red Sox (0) @ Tampa Bay Rays (0) (Middle of the 1st)"
     },
     {
         "game_id": 824267,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-06-09T22:40:00Z",
         "game_date": "2026-06-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Miami Marlins",
         "away_id": 109,
@@ -127,14 +127,14 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-09 - Arizona Diamondbacks @ Miami Marlins (Pre-Game)"
+        "summary": "2026-06-09 - Arizona Diamondbacks (0) @ Miami Marlins (0) (Top of the 1st)"
     },
     {
         "game_id": 824429,
         "game_datetime": "2026-06-09T22:40:00Z",
         "game_date": "2026-06-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "New York Yankees",
         "home_name": "Cleveland Guardians",
         "away_id": 147,
@@ -155,14 +155,14 @@
             "TBS"
         ],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-06-09 - New York Yankees @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-06-09 - New York Yankees (0) @ Cleveland Guardians (0) (Top of the 1st)"
     },
     {
         "game_id": 822805,
         "game_datetime": "2026-06-09T23:07:00Z",
         "game_date": "2026-06-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Philadelphia Phillies",
         "home_name": "Toronto Blue Jays",
         "away_id": 143,
@@ -181,7 +181,7 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-06-09 - Philadelphia Phillies @ Toronto Blue Jays (Pre-Game)"
+        "summary": "2026-06-09 - Philadelphia Phillies @ Toronto Blue Jays (Warmup)"
     },
     {
         "game_id": 823620,
@@ -303,10 +303,10 @@
         "away_probable_pitcher": "Kai-Wei Teng",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
