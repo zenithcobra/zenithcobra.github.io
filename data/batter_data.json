@@ -1377,26 +1377,6 @@
         "fHR24pg": "0"
     },
     {
-        "player_name": "Anthony Seigler",
-        "team": "Boston Red Sox",
-        "team_id": 111,
-        "player_id": 678011,
-        "position": "2B",
-        "games_played": 2.0,
-        "H": 1.0,
-        "HR": 0.0,
-        "RBI": 0.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.5,
-        "fHpg": "1/2",
-        "RBIpg": 0.0,
-        "fRBIpg": "0",
-        "HR24": 0,
-        "HR24pg": 0.0,
-        "fHR24pg": "0"
-    },
-    {
         "player_name": "Aroldis Chapman",
         "team": "Boston Red Sox",
         "team_id": 111,
@@ -1507,6 +1487,26 @@
         "team": "Boston Red Sox",
         "team_id": 111,
         "player_id": 543056
+    },
+    {
+        "player_name": "Garrett Whitlock",
+        "team": "Boston Red Sox",
+        "team_id": 111,
+        "player_id": 676477,
+        "position": "P",
+        "games_played": 20.0,
+        "H": 0.0,
+        "HR": 0.0,
+        "RBI": 0.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.0,
+        "fHpg": "0",
+        "RBIpg": 0.0,
+        "fRBIpg": "0",
+        "HR24": 0,
+        "HR24pg": 0.0,
+        "fHR24pg": "0"
     },
     {
         "player_name": "Greg Weissert",
@@ -4438,12 +4438,6 @@
         "player_id": 554430
     },
     {
-        "player_name": "Adam Macko",
-        "team": "Toronto Blue Jays",
-        "team_id": 141,
-        "player_id": 671936
-    },
-    {
         "player_name": "Andr\u00e9s Gim\u00e9nez",
         "team": "Toronto Blue Jays",
         "team_id": 141,
@@ -4528,6 +4522,12 @@
         "HR24": 20,
         "HR24pg": 0.28,
         "fHR24pg": "2/7"
+    },
+    {
+        "player_name": "Dylan Cease",
+        "team": "Toronto Blue Jays",
+        "team_id": 141,
+        "player_id": 656302
     },
     {
         "player_name": "Ernie Clement",
@@ -5015,6 +5015,26 @@
         "player_id": 700241
     },
     {
+        "player_name": "Nathan Church",
+        "team": "St. Louis Cardinals",
+        "team_id": 138,
+        "player_id": 701675,
+        "position": "LF",
+        "games_played": 45.0,
+        "H": 36.0,
+        "HR": 5.0,
+        "RBI": 18.0,
+        "HRpg": 0.111,
+        "fHRpg": "1/7",
+        "Hpg": 0.8,
+        "fHpg": "4/5",
+        "RBIpg": 0.4,
+        "fRBIpg": "2/5",
+        "HR24": 1,
+        "HR24pg": 0.04,
+        "fHR24pg": "0"
+    },
+    {
         "player_name": "Nelson Vel\u00e1zquez",
         "team": "St. Louis Cardinals",
         "team_id": 138,
@@ -5464,6 +5484,12 @@
         "player_id": 615698
     },
     {
+        "player_name": "Cole Winn",
+        "team": "Texas Rangers",
+        "team_id": 140,
+        "player_id": 668390
+    },
+    {
         "player_name": "Corey Seager",
         "team": "Texas Rangers",
         "team_id": 140,
@@ -5691,12 +5717,6 @@
         "fHR24pg": "1/7"
     },
     {
-        "player_name": "Luis Curvelo",
-        "team": "Texas Rangers",
-        "team_id": 140,
-        "player_id": 681168
-    },
-    {
         "player_name": "MacKenzie Gore",
         "team": "Texas Rangers",
         "team_id": 140,
@@ -5902,26 +5922,6 @@
         "player_id": 670167
     },
     {
-        "player_name": "Josh Rojas",
-        "team": "Kansas City Royals",
-        "team_id": 118,
-        "player_id": 668942,
-        "position": "3B",
-        "games_played": 2.0,
-        "H": 1.0,
-        "HR": 0.0,
-        "RBI": 2.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.5,
-        "fHpg": "1/2",
-        "RBIpg": 1.0,
-        "fRBIpg": "1",
-        "HR24": 2,
-        "HR24pg": 0.03,
-        "fHR24pg": "0"
-    },
-    {
         "player_name": "Kyle Isbel",
         "team": "Kansas City Royals",
         "team_id": 118,
@@ -6116,6 +6116,12 @@
         "HR24": 9,
         "HR24pg": 0.09,
         "fHR24pg": "1/7"
+    },
+    {
+        "player_name": "Stephen Kolek",
+        "team": "Kansas City Royals",
+        "team_id": 118,
+        "player_id": 663568
     },
     {
         "player_name": "Steven Cruz",
