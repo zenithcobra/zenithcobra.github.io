@@ -82,7 +82,7 @@
         "game_datetime": "2026-06-09T22:40:00Z",
         "game_date": "2026-06-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "away_name": "Minnesota Twins",
         "home_name": "Detroit Tigers",
         "away_id": 142,
@@ -101,7 +101,7 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-09 - Minnesota Twins @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-06-09 - Minnesota Twins @ Detroit Tigers (Delayed Start)"
     },
     {
         "game_id": 823858,
@@ -329,10 +329,10 @@
         "away_probable_pitcher": "Chase Burns",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
@@ -344,7 +344,7 @@
         "game_datetime": "2026-06-10T01:45:00Z",
         "game_date": "2026-06-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Washington Nationals",
         "home_name": "San Francisco Giants",
         "away_id": 120,
@@ -355,15 +355,15 @@
         "away_probable_pitcher": "Andrew Alvarez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-09 - Washington Nationals @ San Francisco Giants (Scheduled)"
+        "series_status": "WSH leads 1-0",
+        "summary": "2026-06-09 - Washington Nationals @ San Francisco Giants (Pre-Game)"
     },
     {
         "game_id": 824999,
@@ -388,7 +388,7 @@
         "venue_id": 5355,
         "venue_name": "Las Vegas Ballpark",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "MIL leads 1-0",
         "summary": "2026-06-09 - Milwaukee Brewers @ Athletics (Scheduled)"
     }
 ]
