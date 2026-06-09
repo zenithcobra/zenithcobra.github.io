@@ -145,10 +145,10 @@
         "away_probable_pitcher": "Gerrit Cole",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [
@@ -162,7 +162,7 @@
         "game_datetime": "2026-06-09T23:07:00Z",
         "game_date": "2026-06-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "Toronto Blue Jays",
         "away_id": 143,
@@ -181,7 +181,7 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-06-09 - Philadelphia Phillies @ Toronto Blue Jays (Scheduled)"
+        "summary": "2026-06-09 - Philadelphia Phillies @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 823620,
@@ -240,7 +240,7 @@
         "game_datetime": "2026-06-09T23:40:00Z",
         "game_date": "2026-06-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Atlanta Braves",
         "home_name": "Chicago White Sox",
         "away_id": 144,
@@ -259,7 +259,7 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-09 - Atlanta Braves @ Chicago White Sox (Scheduled)"
+        "summary": "2026-06-09 - Atlanta Braves @ Chicago White Sox (Pre-Game)"
     },
     {
         "game_id": 824347,
@@ -310,7 +310,7 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": "HOU leads 1-0",
+        "series_status": null,
         "summary": "2026-06-09 - Houston Astros @ Los Angeles Angels (Scheduled)"
     },
     {
@@ -336,7 +336,7 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": "SD leads 1-0",
+        "series_status": null,
         "summary": "2026-06-09 - Cincinnati Reds @ San Diego Padres (Scheduled)"
     },
     {
@@ -362,7 +362,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": "WSH leads 1-0",
+        "series_status": null,
         "summary": "2026-06-09 - Washington Nationals @ San Francisco Giants (Scheduled)"
     },
     {
@@ -388,7 +388,7 @@
         "venue_id": 5355,
         "venue_name": "Las Vegas Ballpark",
         "national_broadcasts": [],
-        "series_status": "MIL leads 1-0",
+        "series_status": null,
         "summary": "2026-06-09 - Milwaukee Brewers @ Athletics (Scheduled)"
     }
 ]
