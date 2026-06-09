@@ -15,10 +15,10 @@
         "away_probable_pitcher": "Logan Gilbert",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
@@ -41,10 +41,10 @@
         "away_probable_pitcher": "Eric Lauer",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
@@ -214,7 +214,7 @@
         "game_datetime": "2026-06-09T23:40:00Z",
         "game_date": "2026-06-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Texas Rangers",
         "home_name": "Kansas City Royals",
         "away_id": 140,
@@ -225,15 +225,15 @@
         "away_probable_pitcher": "Nathan Eovaldi",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-09 - Texas Rangers @ Kansas City Royals (Scheduled)"
+        "summary": "2026-06-09 - Texas Rangers @ Kansas City Royals (Pre-Game)"
     },
     {
         "game_id": 824591,
@@ -266,7 +266,7 @@
         "game_datetime": "2026-06-10T00:40:00Z",
         "game_date": "2026-06-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Colorado Rockies",
         "away_id": 112,
@@ -285,7 +285,7 @@
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-09 - Chicago Cubs @ Colorado Rockies (Scheduled)"
+        "summary": "2026-06-09 - Chicago Cubs @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 824023,
@@ -310,7 +310,7 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "HOU leads 1-0",
         "summary": "2026-06-09 - Houston Astros @ Los Angeles Angels (Scheduled)"
     },
     {
@@ -336,7 +336,7 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "SD leads 1-0",
         "summary": "2026-06-09 - Cincinnati Reds @ San Diego Padres (Scheduled)"
     },
     {
@@ -362,7 +362,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "WSH leads 1-0",
         "summary": "2026-06-09 - Washington Nationals @ San Francisco Giants (Scheduled)"
     },
     {
@@ -388,7 +388,7 @@
         "venue_id": 5355,
         "venue_name": "Las Vegas Ballpark",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "MIL leads 1-0",
         "summary": "2026-06-09 - Milwaukee Brewers @ Athletics (Scheduled)"
     }
 ]
