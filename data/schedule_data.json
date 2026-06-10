@@ -77,15 +77,15 @@
         "away_probable_pitcher": "Foster Griffin",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
+        "away_score": 3,
         "home_score": 0,
-        "current_inning": 5,
-        "inning_state": "Bottom",
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "WSH leads 2-0",
-        "summary": "2026-06-10 - Washington Nationals (2) @ San Francisco Giants (0) (Bottom of the 5th)"
+        "summary": "2026-06-10 - Washington Nationals (3) @ San Francisco Giants (0) (Top of the 6th)"
     },
     {
         "game_id": 823287,
@@ -105,13 +105,13 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 1,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "current_inning": 5,
+        "inning_state": "Middle",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-10 - Cincinnati Reds (2) @ San Diego Padres (1) (Bottom of the 4th)"
+        "summary": "2026-06-10 - Cincinnati Reds (2) @ San Diego Padres (1) (Middle of the 5th)"
     },
     {
         "game_id": 824831,
@@ -378,7 +378,7 @@
         "game_datetime": "2026-06-11T01:38:00Z",
         "game_date": "2026-06-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Houston Astros",
         "home_name": "Los Angeles Angels",
         "away_id": 117,
@@ -396,7 +396,7 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": "HOU leads 1-0",
-        "summary": "2026-06-10 - Houston Astros @ Los Angeles Angels (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-06-10 - Houston Astros @ Los Angeles Angels (Pre-Game)"
     }
 ]
