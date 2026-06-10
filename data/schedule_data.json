@@ -82,7 +82,7 @@
         "game_datetime": "2026-06-10T20:10:00Z",
         "game_date": "2026-06-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cincinnati Reds",
         "home_name": "San Diego Padres",
         "away_id": 113,
@@ -100,8 +100,8 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-10 - Cincinnati Reds @ San Diego Padres (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-06-10 - Cincinnati Reds @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 824831,
@@ -386,7 +386,7 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": "HOU leads 1-0",
+        "series_status": null,
         "summary": "2026-06-10 - Houston Astros @ Los Angeles Angels (Scheduled)"
     }
 ]
