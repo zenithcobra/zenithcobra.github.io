@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Jake Bennett",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 4,
         "home_score": 5,
         "current_inning": 8,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TB leads 2-0",
-        "summary": "2026-06-10 - Boston Red Sox (1) @ Tampa Bay Rays (5) (Top of the 8th)"
+        "summary": "2026-06-10 - Boston Red Sox (4) @ Tampa Bay Rays (5) (Bottom of the 8th)"
     },
     {
         "game_id": 824428,
@@ -41,15 +41,15 @@
         "away_probable_pitcher": "Carlos Rod\u00f3n",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 6,
+        "away_score": 8,
         "home_score": 3,
         "current_inning": 7,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "NYY leads 2-0",
-        "summary": "2026-06-10 - New York Yankees (6) @ Cleveland Guardians (3) (Top of the 7th)"
+        "summary": "2026-06-10 - New York Yankees (8) @ Cleveland Guardians (3) (Bottom of the 7th)"
     },
     {
         "game_id": 823215,
@@ -316,7 +316,7 @@
         "game_datetime": "2026-06-11T00:40:00Z",
         "game_date": "2026-06-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Colorado Rockies",
         "away_id": 112,
@@ -334,8 +334,8 @@
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-10 - Chicago Cubs @ Colorado Rockies (Scheduled)"
+        "series_status": "COL leads 1-0",
+        "summary": "2026-06-10 - Chicago Cubs @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 824996,
