@@ -43,7 +43,12 @@
     {
         "Venue": "Oriole Park at Camden Yards",
         "Location": "Baltimore",
-        "HR": "80"
+        "HR": "82"
+    },
+    {
+        "Venue": "Guaranteed Rate Field",
+        "Location": "Chicago",
+        "HR": "77"
     },
     {
         "Venue": "Sutter Health Park",
@@ -53,22 +58,22 @@
     {
         "Venue": "Rogers Centre",
         "Location": "Toronto",
-        "HR": "76"
-    },
-    {
-        "Venue": "Guaranteed Rate Field",
-        "Location": "Chicago",
-        "HR": "74"
-    },
-    {
-        "Venue": "PNC Park",
-        "Location": "Pittsburgh",
-        "HR": "74"
+        "HR": "77"
     },
     {
         "Venue": "Coors Field",
         "Location": "Denver",
-        "HR": "73"
+        "HR": "76"
+    },
+    {
+        "Venue": "PNC Park",
+        "Location": "Pittsburgh",
+        "HR": "75"
+    },
+    {
+        "Venue": "Petco Park",
+        "Location": "San Diego",
+        "HR": "72"
     },
     {
         "Venue": "Tropicana Field",
@@ -76,14 +81,14 @@
         "HR": "72"
     },
     {
-        "Venue": "Petco Park",
-        "Location": "San Diego",
-        "HR": "71"
-    },
-    {
         "Venue": "Busch Stadium",
         "Location": "St. Louis",
         "HR": "67"
+    },
+    {
+        "Venue": "Kauffman Stadium",
+        "Location": "Kansas City",
+        "HR": "66"
     },
     {
         "Venue": "Chase Field",
@@ -96,19 +101,14 @@
         "HR": "65"
     },
     {
-        "Venue": "Kauffman Stadium",
-        "Location": "Kansas City",
-        "HR": "64"
+        "Venue": "Progressive Field",
+        "Location": "Cleveland",
+        "HR": "63"
     },
     {
         "Venue": "Globe Life Field",
         "Location": "Arlington",
         "HR": "63"
-    },
-    {
-        "Venue": "Progressive Field",
-        "Location": "Cleveland",
-        "HR": "62"
     },
     {
         "Venue": "Truist Park",
@@ -121,9 +121,14 @@
         "HR": "60"
     },
     {
+        "Venue": "Comerica Park",
+        "Location": "Detroit",
+        "HR": "59"
+    },
+    {
         "Venue": "Citi Field",
         "Location": "New York",
-        "HR": "57"
+        "HR": "58"
     },
     {
         "Venue": "Marlins Park",
@@ -136,14 +141,9 @@
         "HR": "57"
     },
     {
-        "Venue": "Comerica Park",
-        "Location": "Detroit",
-        "HR": "51"
-    },
-    {
         "Venue": "Oracle Park",
         "Location": "San Francisco",
-        "HR": "47"
+        "HR": "49"
     },
     {
         "Venue": "Fenway Park",
@@ -153,6 +153,6 @@
     {
         "Venue": "Unknown",
         "Location": "",
-        "HR": "20"
+        "HR": "26"
     }
 ]
