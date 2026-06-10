@@ -30,7 +30,7 @@
         "game_datetime": "2026-06-10T17:10:00Z",
         "game_date": "2026-06-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Yankees",
         "home_name": "Cleveland Guardians",
         "away_id": 147,
@@ -48,8 +48,8 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-10 - New York Yankees @ Cleveland Guardians (Scheduled)"
+        "series_status": "NYY leads 2-0",
+        "summary": "2026-06-10 - New York Yankees @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 823215,
@@ -386,7 +386,7 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "HOU leads 1-0",
         "summary": "2026-06-10 - Houston Astros @ Los Angeles Angels (Scheduled)"
     }
 ]
