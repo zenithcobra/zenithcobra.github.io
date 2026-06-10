@@ -1,11 +1,5 @@
 [
     {
-        "player_name": "Alec Gamboa",
-        "team": "Boston Red Sox",
-        "team_id": 111,
-        "player_id": 687941
-    },
-    {
         "player_name": "Andruw Monasterio",
         "team": "Boston Red Sox",
         "team_id": 111,
@@ -182,6 +176,12 @@
         "HR24": 1,
         "HR24pg": 0.05,
         "fHR24pg": "0"
+    },
+    {
+        "player_name": "Jake Bennett",
+        "team": "Boston Red Sox",
+        "team_id": 111,
+        "player_id": 687562
     },
     {
         "player_name": "Jarren Duran",
@@ -7632,12 +7632,6 @@
         "player_id": 693821
     },
     {
-        "player_name": "Carlos Carrasco",
-        "team": "Atlanta Braves",
-        "team_id": 144,
-        "player_id": 471911
-    },
-    {
         "player_name": "Chris Sale",
         "team": "Atlanta Braves",
         "team_id": 144,
@@ -7737,6 +7731,18 @@
         "HR24": 3,
         "HR24pg": 0.12,
         "fHR24pg": "1/7"
+    },
+    {
+        "player_name": "JR Ritchie",
+        "team": "Atlanta Braves",
+        "team_id": 144,
+        "player_id": 702275
+    },
+    {
+        "player_name": "James Karinchak",
+        "team": "Atlanta Braves",
+        "team_id": 144,
+        "player_id": 675916
     },
     {
         "player_name": "Jorge Mateo",
@@ -7960,23 +7966,6 @@
         "team": "Atlanta Braves",
         "team_id": 144,
         "player_id": 675911
-    },
-    {
-        "player_name": "Tyler Kinley",
-        "team": "Atlanta Braves",
-        "team_id": 144,
-        "player_id": 641755,
-        "position": "P",
-        "games_played": 31.0,
-        "H": 0.0,
-        "HR": 0.0,
-        "RBI": 0.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.0,
-        "fHpg": "0",
-        "RBIpg": 0.0,
-        "fRBIpg": "0"
     },
     {
         "player_name": "Andrew Benintendi",
