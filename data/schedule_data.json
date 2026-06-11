@@ -97,7 +97,7 @@
         "game_datetime": "2026-06-11T18:10:00Z",
         "game_date": "2026-06-11",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Texas Rangers",
         "home_name": "Kansas City Royals",
         "away_id": 140,
@@ -111,12 +111,17 @@
         "away_score": 4,
         "home_score": 2,
         "current_inning": 9,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-06-11 - Texas Rangers (4) @ Kansas City Royals (2) (Top of the 9th)"
+        "series_status": "TEX wins 2-1",
+        "winning_team": "Texas Rangers",
+        "losing_team": "Kansas City Royals",
+        "winning_pitcher": "Jacob Latz",
+        "losing_pitcher": "Michael Wacha",
+        "save_pitcher": null,
+        "summary": "2026-06-11 - Texas Rangers (4) @ Kansas City Royals (2) (Final)"
     },
     {
         "game_id": 824346,
@@ -167,13 +172,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-11 - Los Angeles Dodgers (0) @ Pittsburgh Pirates (0) (Top of the 1st)"
+        "summary": "2026-06-11 - Los Angeles Dodgers (0) @ Pittsburgh Pirates (0) (Top of the 2nd)"
     },
     {
         "game_id": 824827,
