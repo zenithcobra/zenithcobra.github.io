@@ -108,7 +108,7 @@
         "game_datetime": "2026-06-11T19:10:00Z",
         "game_date": "2026-06-11",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Colorado Rockies",
         "away_id": 112,
@@ -126,8 +126,8 @@
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-11 - Chicago Cubs @ Colorado Rockies (Scheduled)"
+        "series_status": "COL leads 2-0",
+        "summary": "2026-06-11 - Chicago Cubs @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 823371,
@@ -180,7 +180,7 @@
         "national_broadcasts": [
             "ESPN/ESPN App"
         ],
-        "series_status": "SEA leads 1-0",
+        "series_status": null,
         "summary": "2026-06-11 - Seattle Mariners @ Baltimore Orioles (Scheduled)"
     },
     {
