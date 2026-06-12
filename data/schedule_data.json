@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-12 - Miami Marlins (0) @ Pittsburgh Pirates (0) (Top of the 1st)"
+        "summary": "2026-06-12 - Miami Marlins (0) @ Pittsburgh Pirates (0) (Top of the 2nd)"
     },
     {
         "game_id": 822726,
@@ -82,7 +82,7 @@
         "game_datetime": "2026-06-12T23:10:00Z",
         "game_date": "2026-06-12",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Detroit Tigers",
         "home_name": "Cleveland Guardians",
         "away_id": 116,
@@ -101,14 +101,14 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-12 - Detroit Tigers @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-06-12 - Detroit Tigers @ Cleveland Guardians (Warmup)"
     },
     {
         "game_id": 824752,
         "game_datetime": "2026-06-12T23:10:00Z",
         "game_date": "2026-06-12",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Texas Rangers",
         "home_name": "Boston Red Sox",
         "away_id": 140,
@@ -127,14 +127,14 @@
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-12 - Texas Rangers @ Boston Red Sox (Pre-Game)"
+        "summary": "2026-06-12 - Texas Rangers @ Boston Red Sox (Warmup)"
     },
     {
         "game_id": 824507,
         "game_datetime": "2026-06-12T23:15:00Z",
         "game_date": "2026-06-12",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Cincinnati Reds",
         "away_id": 109,
@@ -155,7 +155,7 @@
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-06-12 - Arizona Diamondbacks @ Cincinnati Reds (Pre-Game)"
+        "summary": "2026-06-12 - Arizona Diamondbacks @ Cincinnati Reds (Warmup)"
     },
     {
         "game_id": 823617,
@@ -331,10 +331,10 @@
         "away_probable_pitcher": "Shane McClanahan",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
@@ -354,7 +354,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Gage Jump",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Sean Sullivan",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
