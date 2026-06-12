@@ -82,7 +82,7 @@
         "game_datetime": "2026-06-12T23:10:00Z",
         "game_date": "2026-06-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Detroit Tigers",
         "home_name": "Cleveland Guardians",
         "away_id": 116,
@@ -101,14 +101,14 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-12 - Detroit Tigers @ Cleveland Guardians (Scheduled)"
+        "summary": "2026-06-12 - Detroit Tigers @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 824752,
         "game_datetime": "2026-06-12T23:10:00Z",
         "game_date": "2026-06-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Texas Rangers",
         "home_name": "Boston Red Sox",
         "away_id": 140,
@@ -127,14 +127,14 @@
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-12 - Texas Rangers @ Boston Red Sox (Scheduled)"
+        "summary": "2026-06-12 - Texas Rangers @ Boston Red Sox (Pre-Game)"
     },
     {
         "game_id": 824507,
         "game_datetime": "2026-06-12T23:15:00Z",
         "game_date": "2026-06-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Cincinnati Reds",
         "away_id": 109,
@@ -155,7 +155,7 @@
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-06-12 - Arizona Diamondbacks @ Cincinnati Reds (Scheduled)"
+        "summary": "2026-06-12 - Arizona Diamondbacks @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 823617,
@@ -197,7 +197,7 @@
         "home_id": 141,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
+        "home_probable_pitcher": "Trey Yesavage",
         "away_probable_pitcher": "Ryan Weathers",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
