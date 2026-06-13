@@ -56,7 +56,7 @@
         "game_datetime": "2026-06-13T20:05:00Z",
         "game_date": "2026-06-13",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Diego Padres",
         "home_name": "Baltimore Orioles",
         "away_id": 135,
@@ -75,7 +75,7 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-06-13 - San Diego Padres @ Baltimore Orioles (Scheduled)"
+        "summary": "2026-06-13 - San Diego Padres @ Baltimore Orioles (Pre-Game)"
     },
     {
         "game_id": 822725,
@@ -100,7 +100,7 @@
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
-        "series_status": "SEA leads 1-0",
+        "series_status": null,
         "summary": "2026-06-13 - Seattle Mariners @ Washington Nationals (Scheduled)"
     },
     {
@@ -230,7 +230,7 @@
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
-        "series_status": "NYM leads 1-0",
+        "series_status": null,
         "summary": "2026-06-13 - Atlanta Braves @ New York Mets (Scheduled)"
     },
     {
@@ -282,7 +282,7 @@
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
-        "series_status": "HOU leads 1-0",
+        "series_status": null,
         "summary": "2026-06-13 - Houston Astros @ Kansas City Royals (Scheduled)"
     },
     {
@@ -310,7 +310,7 @@
         "national_broadcasts": [
             "FS1"
         ],
-        "series_status": "MIL leads 1-0",
+        "series_status": null,
         "summary": "2026-06-13 - Philadelphia Phillies @ Milwaukee Brewers (Scheduled)"
     },
     {
