@@ -119,10 +119,10 @@
         "away_probable_pitcher": "Lake Bachar",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
@@ -282,7 +282,7 @@
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "HOU leads 1-0",
         "summary": "2026-06-13 - Houston Astros @ Kansas City Royals (Scheduled)"
     },
     {
@@ -310,7 +310,7 @@
         "national_broadcasts": [
             "FS1"
         ],
-        "series_status": null,
+        "series_status": "MIL leads 1-0",
         "summary": "2026-06-13 - Philadelphia Phillies @ Milwaukee Brewers (Scheduled)"
     },
     {
