@@ -843,6 +843,26 @@
         "player_id": 656234
     },
     {
+        "player_name": "Jasson Dom\u00ednguez",
+        "team": "New York Yankees",
+        "team_id": 147,
+        "player_id": 691176,
+        "position": "LF",
+        "games_played": 9.0,
+        "H": 6.0,
+        "HR": 1.0,
+        "RBI": 4.0,
+        "HRpg": 0.111,
+        "fHRpg": "1/7",
+        "Hpg": 0.667,
+        "fHpg": "2/3",
+        "RBIpg": 0.444,
+        "fRBIpg": "3/7",
+        "HR24": 10,
+        "HR24pg": 0.08,
+        "fHR24pg": "1/7"
+    },
+    {
         "player_name": "Jazz Chisholm Jr.",
         "team": "New York Yankees",
         "team_id": 147,
@@ -993,26 +1013,6 @@
         "team": "New York Yankees",
         "team_id": 147,
         "player_id": 657612
-    },
-    {
-        "player_name": "Trent Grisham",
-        "team": "New York Yankees",
-        "team_id": 147,
-        "player_id": 663757,
-        "position": "CF",
-        "games_played": 66.0,
-        "H": 52.0,
-        "HR": 8.0,
-        "RBI": 35.0,
-        "HRpg": 0.121,
-        "fHRpg": "1/7",
-        "Hpg": 0.788,
-        "fHpg": "4/5",
-        "RBIpg": 0.53,
-        "fRBIpg": "1/2",
-        "HR24": 34,
-        "HR24pg": 0.24,
-        "fHR24pg": "1/4"
     },
     {
         "player_name": "Will Warren",
@@ -5496,6 +5496,12 @@
         "fHR24pg": "1/5"
     },
     {
+        "player_name": "Anthony Molina",
+        "team": "Atlanta Braves",
+        "team_id": 144,
+        "player_id": 683627
+    },
+    {
         "player_name": "Austin Riley",
         "team": "Atlanta Braves",
         "team_id": 144,
@@ -5881,12 +5887,6 @@
         "HR24": 1,
         "HR24pg": 0.2,
         "fHR24pg": "1/5"
-    },
-    {
-        "player_name": "Spencer Strider",
-        "team": "Atlanta Braves",
-        "team_id": 144,
-        "player_id": 675911
     },
     {
         "player_name": "A.J. Ewing",
