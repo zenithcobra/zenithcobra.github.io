@@ -76,11 +76,6 @@
         "HR": "77"
     },
     {
-        "Venue": "Kauffman Stadium",
-        "Location": "Kansas City",
-        "HR": "77"
-    },
-    {
         "Venue": "Petco Park",
         "Location": "San Diego",
         "HR": "76"
@@ -96,13 +91,13 @@
         "HR": "75"
     },
     {
-        "Venue": "Progressive Field",
-        "Location": "Cleveland",
-        "HR": "67"
+        "Venue": "Kauffman Stadium",
+        "Location": "Kansas City",
+        "HR": "72"
     },
     {
-        "Venue": "Comerica Park",
-        "Location": "Detroit",
+        "Venue": "Progressive Field",
+        "Location": "Cleveland",
         "HR": "67"
     },
     {
@@ -111,9 +106,9 @@
         "HR": "67"
     },
     {
-        "Venue": "American Family Field",
-        "Location": "Milwaukee",
-        "HR": "66"
+        "Venue": "Comerica Park",
+        "Location": "Detroit",
+        "HR": "67"
     },
     {
         "Venue": "Chase Field",
@@ -126,8 +121,8 @@
         "HR": "63"
     },
     {
-        "Venue": "Angel Stadium",
-        "Location": "Anaheim",
+        "Venue": "American Family Field",
+        "Location": "Milwaukee",
         "HR": "62"
     },
     {
@@ -136,14 +131,19 @@
         "HR": "61"
     },
     {
-        "Venue": "Oracle Park",
-        "Location": "San Francisco",
-        "HR": "60"
+        "Venue": "Angel Stadium",
+        "Location": "Anaheim",
+        "HR": "61"
     },
     {
         "Venue": "Marlins Park",
         "Location": "Miami",
         "HR": "59"
+    },
+    {
+        "Venue": "Oracle Park",
+        "Location": "San Francisco",
+        "HR": "57"
     },
     {
         "Venue": "Fenway Park",
@@ -153,6 +153,6 @@
     {
         "Venue": "Unknown",
         "Location": "",
-        "HR": "35"
+        "HR": "33"
     }
 ]
