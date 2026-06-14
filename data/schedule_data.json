@@ -326,14 +326,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "home_score": 1,
+        "current_inning": 3,
+        "inning_state": "Middle",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "HOU leads 1-0",
-        "summary": "2026-06-13 - Houston Astros (0) @ Kansas City Royals (0) (Bottom of the 2nd)"
+        "summary": "2026-06-13 - Houston Astros (0) @ Kansas City Royals (1) (Middle of the 3rd)"
     },
     {
         "game_id": 823776,
@@ -353,7 +353,7 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Bottom",
         "venue_id": 32,
         "venue_name": "American Family Field",
@@ -361,7 +361,7 @@
             "FS1"
         ],
         "series_status": "MIL leads 1-0",
-        "summary": "2026-06-13 - Philadelphia Phillies (1) @ Milwaukee Brewers (0) (Bottom of the 2nd)"
+        "summary": "2026-06-13 - Philadelphia Phillies (1) @ Milwaukee Brewers (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 824995,
