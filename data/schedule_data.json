@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-14T16:15:00Z",
         "game_date": "2026-06-14",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Miami Marlins",
         "home_name": "Pittsburgh Pirates",
         "away_id": 146,
@@ -15,9 +15,9 @@
         "away_probable_pitcher": "Max Meyer",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
@@ -25,7 +25,7 @@
             "NBCSN / Peacock"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-14 - Miami Marlins @ Pittsburgh Pirates (Warmup)"
+        "summary": "2026-06-14 - Miami Marlins (2) @ Pittsburgh Pirates (0) (Top of the 2nd)"
     },
     {
         "game_id": 824823,
@@ -292,7 +292,7 @@
         "game_datetime": "2026-06-14T19:05:00Z",
         "game_date": "2026-06-14",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Athletics",
         "away_id": 115,
@@ -303,22 +303,22 @@
         "away_probable_pitcher": "Tomoyuki Sugano",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5355,
         "venue_name": "Las Vegas Ballpark",
         "national_broadcasts": [],
         "series_status": "ATH leads 2-0",
-        "summary": "2026-06-14 - Colorado Rockies @ Athletics (Scheduled)"
+        "summary": "2026-06-14 - Colorado Rockies @ Athletics (Pre-Game)"
     },
     {
         "game_id": 823212,
         "game_datetime": "2026-06-14T19:10:00Z",
         "game_date": "2026-06-14",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "San Francisco Giants",
         "away_id": 112,
@@ -329,17 +329,17 @@
         "away_probable_pitcher": "Ryan Rolison",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [
             "ABC/ESPN App"
         ],
         "series_status": "CHC leads 2-0",
-        "summary": "2026-06-14 - Chicago Cubs @ San Francisco Giants (Scheduled)"
+        "summary": "2026-06-14 - Chicago Cubs @ San Francisco Giants (Pre-Game)"
     },
     {
         "game_id": 824021,
@@ -392,7 +392,7 @@
         "national_broadcasts": [
             "NBC/Peacock"
         ],
-        "series_status": null,
+        "series_status": "BOS leads 1-0",
         "summary": "2026-06-14 - Texas Rangers @ Boston Red Sox (Scheduled)"
     }
 ]
