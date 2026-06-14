@@ -99,7 +99,7 @@
         "game_datetime": "2026-06-14T17:37:00Z",
         "game_date": "2026-06-14",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "New York Yankees",
         "home_name": "Toronto Blue Jays",
         "away_id": 147,
@@ -123,14 +123,14 @@
         "winning_pitcher": "Camilo Doval",
         "losing_pitcher": "Braydon Fisher",
         "save_pitcher": null,
-        "summary": "2026-06-14 - New York Yankees (8) @ Toronto Blue Jays (3) (Game Over)"
+        "summary": "2026-06-14 - New York Yankees (8) @ Toronto Blue Jays (3) (Final)"
     },
     {
         "game_id": 824506,
         "game_datetime": "2026-06-14T17:40:00Z",
         "game_date": "2026-06-14",
         "game_type": "R",
-        "status": "Delayed",
+        "status": "Game Over",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Cincinnati Reds",
         "away_id": 109,
@@ -141,15 +141,20 @@
         "away_probable_pitcher": "Zac Gallen",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 4,
+        "away_score": 5,
         "home_score": 3,
         "current_inning": 9,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-06-14 - Arizona Diamondbacks @ Cincinnati Reds (Delayed)"
+        "series_status": "AZ wins 2-1",
+        "winning_team": "Arizona Diamondbacks",
+        "losing_team": "Cincinnati Reds",
+        "winning_pitcher": "Juan Morillo",
+        "losing_pitcher": "Zach Maxwell",
+        "save_pitcher": "Paul Sewald",
+        "summary": "2026-06-14 - Arizona Diamondbacks (5) @ Cincinnati Reds (3) (Game Over)"
     },
     {
         "game_id": 823615,
@@ -218,7 +223,7 @@
         "game_datetime": "2026-06-14T18:10:00Z",
         "game_date": "2026-06-14",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "St. Louis Cardinals",
         "home_name": "Minnesota Twins",
         "away_id": 138,
@@ -242,7 +247,7 @@
         "winning_pitcher": "Andrew Morris",
         "losing_pitcher": "George Soriano",
         "save_pitcher": "Yoendrys G\u00f3mez",
-        "summary": "2026-06-14 - St. Louis Cardinals (4) @ Minnesota Twins (5) (Game Over)"
+        "summary": "2026-06-14 - St. Louis Cardinals (4) @ Minnesota Twins (5) (Final)"
     },
     {
         "game_id": 824586,
@@ -322,15 +327,15 @@
         "away_probable_pitcher": "Tomoyuki Sugano",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 14,
-        "home_score": 6,
-        "current_inning": 5,
-        "inning_state": "Top",
+        "away_score": 18,
+        "home_score": 8,
+        "current_inning": 7,
+        "inning_state": "Bottom",
         "venue_id": 5355,
         "venue_name": "Las Vegas Ballpark",
         "national_broadcasts": [],
         "series_status": "ATH leads 2-0",
-        "summary": "2026-06-14 - Colorado Rockies (14) @ Athletics (6) (Top of the 5th)"
+        "summary": "2026-06-14 - Colorado Rockies (18) @ Athletics (8) (Bottom of the 7th)"
     },
     {
         "game_id": 823212,
@@ -348,17 +353,17 @@
         "away_probable_pitcher": "Ryan Rolison",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 3,
-        "current_inning": 7,
-        "inning_state": "Top",
+        "away_score": 1,
+        "home_score": 5,
+        "current_inning": 8,
+        "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [
             "ABC/ESPN App"
         ],
         "series_status": "CHC leads 2-0",
-        "summary": "2026-06-14 - Chicago Cubs (0) @ San Francisco Giants (3) (Top of the 7th)"
+        "summary": "2026-06-14 - Chicago Cubs (1) @ San Francisco Giants (5) (Bottom of the 8th)"
     },
     {
         "game_id": 824021,
@@ -376,15 +381,15 @@
         "away_probable_pitcher": "Casey Legumina",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 1,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "away_score": 3,
+        "home_score": 2,
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
         "series_status": "LAA leads 2-0",
-        "summary": "2026-06-14 - Tampa Bay Rays (0) @ Los Angeles Angels (1) (Top of the 3rd)"
+        "summary": "2026-06-14 - Tampa Bay Rays (3) @ Los Angeles Angels (2) (Bottom of the 5th)"
     },
     {
         "game_id": 824751,
