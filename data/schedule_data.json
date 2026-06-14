@@ -110,7 +110,7 @@
         "game_datetime": "2026-06-14T17:40:00Z",
         "game_date": "2026-06-14",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Cincinnati Reds",
         "away_id": 109,
@@ -128,8 +128,8 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-14 - Arizona Diamondbacks @ Cincinnati Reds (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-06-14 - Arizona Diamondbacks @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 824424,
@@ -154,7 +154,7 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "CLE leads 2-0",
         "summary": "2026-06-14 - Detroit Tigers @ Cleveland Guardians (Scheduled)"
     },
     {
