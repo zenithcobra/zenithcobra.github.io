@@ -2247,6 +2247,12 @@
         "player_id": 592094
     },
     {
+        "player_name": "Kyle Hart",
+        "team": "San Diego Padres",
+        "team_id": 135,
+        "player_id": 606996
+    },
+    {
         "player_name": "Lucas Giolito",
         "team": "San Diego Padres",
         "team_id": 135,
@@ -2271,12 +2277,6 @@
         "HR24": 27,
         "HR24pg": 0.17,
         "fHR24pg": "1/6"
-    },
-    {
-        "player_name": "Mason Miller",
-        "team": "San Diego Padres",
-        "team_id": 135,
-        "player_id": 695243
     },
     {
         "player_name": "Michael King",
@@ -2881,12 +2881,6 @@
         "fHR24pg": "0"
     },
     {
-        "player_name": "Eiberson Castellano",
-        "team": "Colorado Rockies",
-        "team_id": 115,
-        "player_id": 682769
-    },
-    {
         "player_name": "Ezequiel Tovar",
         "team": "Colorado Rockies",
         "team_id": 115,
@@ -3097,6 +3091,26 @@
         "fRBIpg": "3/7",
         "HR24": 2,
         "HR24pg": 0.02,
+        "fHR24pg": "0"
+    },
+    {
+        "player_name": "Victor Vodnik",
+        "team": "Colorado Rockies",
+        "team_id": 115,
+        "player_id": 680767,
+        "position": "P",
+        "games_played": 18.0,
+        "H": 0.0,
+        "HR": 0.0,
+        "RBI": 0.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.0,
+        "fHpg": "0",
+        "RBIpg": 0.0,
+        "fRBIpg": "0",
+        "HR24": 0,
+        "HR24pg": 0.0,
         "fHR24pg": "0"
     },
     {
@@ -4840,6 +4854,12 @@
         "player_id": 608718
     },
     {
+        "player_name": "Brett Kerry",
+        "team": "Los Angeles Angels",
+        "team_id": 108,
+        "player_id": 695049
+    },
+    {
         "player_name": "Chase Silseth",
         "team": "Los Angeles Angels",
         "team_id": 108,
@@ -4886,18 +4906,6 @@
         "fHR24pg": "0"
     },
     {
-        "player_name": "Drew Pomeranz",
-        "team": "Los Angeles Angels",
-        "team_id": 108,
-        "player_id": 519141
-    },
-    {
-        "player_name": "Grayson Rodriguez",
-        "team": "Los Angeles Angels",
-        "team_id": 108,
-        "player_id": 680570
-    },
-    {
         "player_name": "Jo Adell",
         "team": "Los Angeles Angels",
         "team_id": 108,
@@ -4916,6 +4924,12 @@
         "HR24": 37,
         "HR24pg": 0.24,
         "fHR24pg": "1/4"
+    },
+    {
+        "player_name": "Jos\u00e9 Fermin",
+        "team": "Los Angeles Angels",
+        "team_id": 108,
+        "player_id": 820862
     },
     {
         "player_name": "Jose Siri",
@@ -5370,6 +5384,26 @@
         "player_id": 656464
     },
     {
+        "player_name": "Lourdes Gurriel Jr.",
+        "team": "Arizona Diamondbacks",
+        "team_id": 109,
+        "player_id": 666971,
+        "position": "LF",
+        "games_played": 25.0,
+        "H": 21.0,
+        "HR": 1.0,
+        "RBI": 11.0,
+        "HRpg": 0.04,
+        "fHRpg": "0",
+        "Hpg": 0.84,
+        "fHpg": "5/6",
+        "RBIpg": 0.44,
+        "fRBIpg": "3/7",
+        "HR24": 19,
+        "HR24pg": 0.15,
+        "fHR24pg": "1/7"
+    },
+    {
         "player_name": "LuJames Groover",
         "team": "Arizona Diamondbacks",
         "team_id": 109,
@@ -5449,23 +5483,6 @@
         "team": "Arizona Diamondbacks",
         "team_id": 109,
         "player_id": 657044
-    },
-    {
-        "player_name": "Ryan Waldschmidt",
-        "team": "Arizona Diamondbacks",
-        "team_id": 109,
-        "player_id": 814439,
-        "position": "CF",
-        "games_played": 33.0,
-        "H": 29.0,
-        "HR": 0.0,
-        "RBI": 8.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.879,
-        "fHpg": "6/7",
-        "RBIpg": 0.242,
-        "fRBIpg": "1/4"
     },
     {
         "player_name": "Ryne Nelson",
@@ -5855,12 +5872,6 @@
         "fRBIpg": "1/4"
     },
     {
-        "player_name": "Brady Basso",
-        "team": "Athletics",
-        "team_id": 133,
-        "player_id": 669620
-    },
-    {
         "player_name": "Carlos Cortes",
         "team": "Athletics",
         "team_id": 133,
@@ -6072,6 +6083,12 @@
         "team": "Athletics",
         "team_id": 133,
         "player_id": 665622
+    },
+    {
+        "player_name": "Luis Morales",
+        "team": "Athletics",
+        "team_id": 133,
+        "player_id": 806960
     },
     {
         "player_name": "Mark Leiter Jr.",
