@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-15T22:40:00Z",
         "game_date": "2026-06-15",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Miami Marlins",
         "home_name": "Philadelphia Phillies",
         "away_id": 146,
@@ -18,19 +18,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-15 - Miami Marlins @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-06-15 - Miami Marlins (0) @ Philadelphia Phillies (0) (Middle of the 1st)"
     },
     {
         "game_id": 822724,
         "game_datetime": "2026-06-15T22:45:00Z",
         "game_date": "2026-06-15",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Kansas City Royals",
         "home_name": "Washington Nationals",
         "away_id": 118,
@@ -49,14 +49,14 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-15 - Kansas City Royals @ Washington Nationals (Pre-Game)"
+        "summary": "2026-06-15 - Kansas City Royals (0) @ Washington Nationals (0) (Top of the 1st)"
     },
     {
         "game_id": 824505,
         "game_datetime": "2026-06-15T23:10:00Z",
         "game_date": "2026-06-15",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Mets",
         "home_name": "Cincinnati Reds",
         "away_id": 121,
@@ -75,7 +75,7 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-15 - New York Mets @ Cincinnati Reds (Pre-Game)"
+        "summary": "2026-06-15 - New York Mets @ Cincinnati Reds (Warmup)"
     },
     {
         "game_id": 823046,
@@ -223,10 +223,10 @@
         "away_probable_pitcher": "Jared Jones",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
