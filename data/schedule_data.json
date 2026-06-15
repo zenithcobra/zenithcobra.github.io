@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-15T22:40:00Z",
         "game_date": "2026-06-15",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Miami Marlins",
         "home_name": "Philadelphia Phillies",
         "away_id": 146,
@@ -23,14 +23,14 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-15 - Miami Marlins @ Philadelphia Phillies (Scheduled)"
+        "summary": "2026-06-15 - Miami Marlins @ Philadelphia Phillies (Pre-Game)"
     },
     {
         "game_id": 822724,
         "game_datetime": "2026-06-15T22:45:00Z",
         "game_date": "2026-06-15",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Kansas City Royals",
         "home_name": "Washington Nationals",
         "away_id": 118,
@@ -41,15 +41,15 @@
         "away_probable_pitcher": "Mitch Spence",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-15 - Kansas City Royals @ Washington Nationals (Scheduled)"
+        "summary": "2026-06-15 - Kansas City Royals @ Washington Nationals (Pre-Game)"
     },
     {
         "game_id": 824505,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-06-16T00:05:00Z",
         "game_date": "2026-06-15",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Chicago Cubs",
         "away_id": 115,
@@ -127,14 +127,14 @@
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-15 - Colorado Rockies @ Chicago Cubs (Scheduled)"
+        "summary": "2026-06-15 - Colorado Rockies @ Chicago Cubs (Pre-Game)"
     },
     {
         "game_id": 822887,
         "game_datetime": "2026-06-16T00:05:00Z",
         "game_date": "2026-06-15",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Texas Rangers",
         "away_id": 142,
@@ -153,7 +153,7 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-15 - Minnesota Twins @ Texas Rangers (Scheduled)"
+        "summary": "2026-06-15 - Minnesota Twins @ Texas Rangers (Pre-Game)"
     },
     {
         "game_id": 824181,
