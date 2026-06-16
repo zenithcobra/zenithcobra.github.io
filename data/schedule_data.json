@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-16T22:40:00Z",
         "game_date": "2026-06-16",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Miami Marlins",
         "home_name": "Philadelphia Phillies",
         "away_id": 146,
@@ -23,14 +23,14 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-06-16 - Miami Marlins @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-06-16 - Miami Marlins (0) @ Philadelphia Phillies (0) (Top of the 1st)"
     },
     {
         "game_id": 822723,
         "game_datetime": "2026-06-16T22:45:00Z",
         "game_date": "2026-06-16",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Kansas City Royals",
         "home_name": "Washington Nationals",
         "away_id": 118,
@@ -49,14 +49,14 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "WSH leads 1-0",
-        "summary": "2026-06-16 - Kansas City Royals @ Washington Nationals (Pre-Game)"
+        "summary": "2026-06-16 - Kansas City Royals (0) @ Washington Nationals (0) (Top of the 1st)"
     },
     {
         "game_id": 824750,
         "game_datetime": "2026-06-16T22:45:00Z",
         "game_date": "2026-06-16",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Toronto Blue Jays",
         "home_name": "Boston Red Sox",
         "away_id": 141,
@@ -75,7 +75,7 @@
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-16 - Toronto Blue Jays @ Boston Red Sox (Pre-Game)"
+        "summary": "2026-06-16 - Toronto Blue Jays (0) @ Boston Red Sox (0) (Top of the 1st)"
     },
     {
         "game_id": 823535,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-06-16T23:10:00Z",
         "game_date": "2026-06-16",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Mets",
         "home_name": "Cincinnati Reds",
         "away_id": 121,
@@ -127,7 +127,7 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "CIN leads 1-0",
-        "summary": "2026-06-16 - New York Mets @ Cincinnati Reds (Pre-Game)"
+        "summary": "2026-06-16 - New York Mets @ Cincinnati Reds (Warmup)"
     },
     {
         "game_id": 824912,
@@ -204,8 +204,8 @@
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [
-            "TBS",
-            "TBS (out-of-market only)"
+            "TBS (out-of-market only)",
+            "TBS"
         ],
         "series_status": "STL leads 1-0",
         "summary": "2026-06-16 - San Diego Padres @ St. Louis Cardinals (Pre-Game)"
@@ -304,10 +304,10 @@
         "away_probable_pitcher": "Reid Detmers",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
@@ -345,7 +345,7 @@
         "game_datetime": "2026-06-17T01:40:00Z",
         "game_date": "2026-06-16",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Baltimore Orioles",
         "home_name": "Seattle Mariners",
         "away_id": 110,
@@ -364,14 +364,14 @@
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-16 - Baltimore Orioles @ Seattle Mariners (Scheduled)"
+        "summary": "2026-06-16 - Baltimore Orioles @ Seattle Mariners (Pre-Game)"
     },
     {
         "game_id": 823939,
         "game_datetime": "2026-06-17T02:10:00Z",
         "game_date": "2026-06-16",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Tampa Bay Rays",
         "home_name": "Los Angeles Dodgers",
         "away_id": 139,
@@ -389,7 +389,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-16 - Tampa Bay Rays @ Los Angeles Dodgers (Scheduled)"
+        "series_status": "LAD leads 1-0",
+        "summary": "2026-06-16 - Tampa Bay Rays @ Los Angeles Dodgers (Pre-Game)"
     }
 ]
