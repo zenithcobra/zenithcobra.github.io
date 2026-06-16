@@ -3160,6 +3160,26 @@
         "player_id": 668964
     },
     {
+        "player_name": "Zack Short",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 670097,
+        "position": "SS",
+        "games_played": 23.0,
+        "H": 6.0,
+        "HR": 0.0,
+        "RBI": 2.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.261,
+        "fHpg": "1/4",
+        "RBIpg": 0.087,
+        "fRBIpg": "1/7",
+        "HR24": 2,
+        "HR24pg": 0.09,
+        "fHR24pg": "1/7"
+    },
+    {
         "player_name": "Andrew Abbott",
         "team": "Cincinnati Reds",
         "team_id": 113,
@@ -4239,26 +4259,6 @@
         "fHR24pg": "1/5"
     },
     {
-        "player_name": "Angel Mart\u00ednez",
-        "team": "Cleveland Guardians",
-        "team_id": 114,
-        "player_id": 682657,
-        "position": "LF",
-        "games_played": 66.0,
-        "H": 54.0,
-        "HR": 11.0,
-        "RBI": 33.0,
-        "HRpg": 0.167,
-        "fHRpg": "1/6",
-        "Hpg": 0.818,
-        "fHpg": "5/6",
-        "RBIpg": 0.5,
-        "fRBIpg": "1/2",
-        "HR24": 11,
-        "HR24pg": 0.08,
-        "fHR24pg": "1/7"
-    },
-    {
         "player_name": "Austin Hedges",
         "team": "Cleveland Guardians",
         "team_id": 114,
@@ -4472,6 +4472,26 @@
         "fRBIpg": "1/5",
         "HR24": 6,
         "HR24pg": 0.04,
+        "fHR24pg": "0"
+    },
+    {
+        "player_name": "Petey Halpin",
+        "team": "Cleveland Guardians",
+        "team_id": 114,
+        "player_id": 690984,
+        "position": "CF",
+        "games_played": 18.0,
+        "H": 5.0,
+        "HR": 0.0,
+        "RBI": 1.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.278,
+        "fHpg": "2/7",
+        "RBIpg": 0.056,
+        "fRBIpg": "0",
+        "HR24": 0,
+        "HR24pg": 0.0,
         "fHR24pg": "0"
     },
     {
@@ -4695,6 +4715,12 @@
         "HR24": 29,
         "HR24pg": 0.19,
         "fHR24pg": "1/5"
+    },
+    {
+        "player_name": "Cooper Pratt",
+        "team": "Milwaukee Brewers",
+        "team_id": 158,
+        "player_id": 806198
     },
     {
         "player_name": "Craig Yoho",
@@ -6017,23 +6043,6 @@
         "player_id": 607067
     },
     {
-        "player_name": "Daniel Palencia",
-        "team": "Chicago Cubs",
-        "team_id": 112,
-        "player_id": 694037,
-        "position": "P",
-        "games_played": 19.0,
-        "H": 0.0,
-        "HR": 0.0,
-        "RBI": 0.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.0,
-        "fHpg": "0",
-        "RBIpg": 0.0,
-        "fRBIpg": "0"
-    },
-    {
         "player_name": "Dansby Swanson",
         "team": "Chicago Cubs",
         "team_id": 112,
@@ -6064,6 +6073,12 @@
         "team": "Chicago Cubs",
         "team_id": 112,
         "player_id": 681799
+    },
+    {
+        "player_name": "Gavin Hollowell",
+        "team": "Chicago Cubs",
+        "team_id": 112,
+        "player_id": 668970
     },
     {
         "player_name": "Hoby Milner",
@@ -7433,27 +7448,16 @@
         "fHR24pg": "1/6"
     },
     {
-        "player_name": "Collin Price",
-        "team": "Houston Astros",
-        "team_id": 117,
-        "player_id": 805672,
-        "position": "C",
-        "games_played": 7.0,
-        "H": 2.0,
-        "HR": 0.0,
-        "RBI": 0.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.286,
-        "fHpg": "2/7",
-        "RBIpg": 0.0,
-        "fRBIpg": "0"
-    },
-    {
         "player_name": "Enyel De Los Santos",
         "team": "Houston Astros",
         "team_id": 117,
         "player_id": 660853
+    },
+    {
+        "player_name": "Hunter Brown",
+        "team": "Houston Astros",
+        "team_id": 117,
+        "player_id": 686613
     },
     {
         "player_name": "Isaac Paredes",
@@ -7494,12 +7498,6 @@
         "HR24": 3,
         "HR24pg": 0.03,
         "fHR24pg": "0"
-    },
-    {
-        "player_name": "Jayden Murray",
-        "team": "Houston Astros",
-        "team_id": 117,
-        "player_id": 681151
     },
     {
         "player_name": "Jeremy Pe\u00f1a",
@@ -7645,6 +7643,26 @@
         "HR24": 3,
         "HR24pg": 0.06,
         "fHR24pg": "0"
+    },
+    {
+        "player_name": "Yainer Diaz",
+        "team": "Houston Astros",
+        "team_id": 117,
+        "player_id": 673237,
+        "position": "C",
+        "games_played": 26.0,
+        "H": 24.0,
+        "HR": 2.0,
+        "RBI": 14.0,
+        "HRpg": 0.077,
+        "fHRpg": "1/7",
+        "Hpg": 0.923,
+        "fHpg": "6/7",
+        "RBIpg": 0.538,
+        "fRBIpg": "4/7",
+        "HR24": 20,
+        "HR24pg": 0.14,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Yordan Alvarez",
@@ -9390,6 +9408,26 @@
         "player_id": 682243
     },
     {
+        "player_name": "Cal Raleigh",
+        "team": "Seattle Mariners",
+        "team_id": 136,
+        "player_id": 663728,
+        "position": "C",
+        "games_played": 41.0,
+        "H": 26.0,
+        "HR": 7.0,
+        "RBI": 18.0,
+        "HRpg": 0.171,
+        "fHRpg": "1/6",
+        "Hpg": 0.634,
+        "fHpg": "3/5",
+        "RBIpg": 0.439,
+        "fRBIpg": "3/7",
+        "HR24": 60,
+        "HR24pg": 0.38,
+        "fHR24pg": "2/5"
+    },
+    {
         "player_name": "Cole Young",
         "team": "Seattle Mariners",
         "team_id": 136,
@@ -9482,24 +9520,24 @@
         "player_id": 669923
     },
     {
-        "player_name": "Jhonny Pereda",
+        "player_name": "J.P. Crawford",
         "team": "Seattle Mariners",
         "team_id": 136,
-        "player_id": 640902,
-        "position": "C",
-        "games_played": 19.0,
-        "H": 17.0,
-        "HR": 2.0,
-        "RBI": 4.0,
-        "HRpg": 0.105,
-        "fHRpg": "1/7",
-        "Hpg": 0.895,
-        "fHpg": "6/7",
-        "RBIpg": 0.211,
-        "fRBIpg": "1/5",
-        "HR24": 0,
-        "HR24pg": 0.0,
-        "fHR24pg": "0"
+        "player_id": 641487,
+        "position": "SS",
+        "games_played": 55.0,
+        "H": 44.0,
+        "HR": 10.0,
+        "RBI": 23.0,
+        "HRpg": 0.182,
+        "fHRpg": "1/6",
+        "Hpg": 0.8,
+        "fHpg": "4/5",
+        "RBIpg": 0.418,
+        "fRBIpg": "3/7",
+        "HR24": 12,
+        "HR24pg": 0.08,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Jos\u00e9 A. Ferrer",
