@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 1,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-06-16 - Miami Marlins (0) @ Philadelphia Phillies (0) (Top of the 1st)"
+        "summary": "2026-06-16 - Miami Marlins (0) @ Philadelphia Phillies (1) (Bottom of the 1st)"
     },
     {
         "game_id": 822723,
@@ -44,12 +44,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "WSH leads 1-0",
-        "summary": "2026-06-16 - Kansas City Royals (0) @ Washington Nationals (0) (Top of the 1st)"
+        "summary": "2026-06-16 - Kansas City Royals (0) @ Washington Nationals (0) (End of the 1st)"
     },
     {
         "game_id": 824750,
@@ -70,19 +70,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-16 - Toronto Blue Jays (0) @ Boston Red Sox (0) (Top of the 1st)"
+        "summary": "2026-06-16 - Toronto Blue Jays (0) @ Boston Red Sox (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823535,
         "game_datetime": "2026-06-16T23:05:00Z",
         "game_date": "2026-06-16",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago White Sox",
         "home_name": "New York Yankees",
         "away_id": 145,
@@ -101,7 +101,7 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-16 - Chicago White Sox @ New York Yankees (Pre-Game)"
+        "summary": "2026-06-16 - Chicago White Sox @ New York Yankees (Warmup)"
     },
     {
         "game_id": 824504,
@@ -134,7 +134,7 @@
         "game_datetime": "2026-06-16T23:15:00Z",
         "game_date": "2026-06-16",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "San Francisco Giants",
         "home_name": "Atlanta Braves",
         "away_id": 137,
@@ -153,7 +153,7 @@
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-16 - San Francisco Giants @ Atlanta Braves (Pre-Game)"
+        "summary": "2026-06-16 - San Francisco Giants @ Atlanta Braves (Warmup)"
     },
     {
         "game_id": 823775,
