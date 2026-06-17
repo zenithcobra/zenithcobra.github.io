@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-17T16:40:00Z",
         "game_date": "2026-06-17",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Mets",
         "home_name": "Cincinnati Reds",
         "away_id": 121,
@@ -23,7 +23,7 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "CIN leads 2-0",
-        "summary": "2026-06-17 - New York Mets @ Cincinnati Reds (Pre-Game)"
+        "summary": "2026-06-17 - New York Mets @ Cincinnati Reds (Warmup)"
     },
     {
         "game_id": 822721,
@@ -160,7 +160,7 @@
         "game_datetime": "2026-06-17T19:10:00Z",
         "game_date": "2026-06-17",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Tampa Bay Rays",
         "home_name": "Los Angeles Dodgers",
         "away_id": 139,
@@ -178,8 +178,8 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-17 - Tampa Bay Rays @ Los Angeles Dodgers (Scheduled)"
+        "series_status": "LAD leads 2-0",
+        "summary": "2026-06-17 - Tampa Bay Rays @ Los Angeles Dodgers (Pre-Game)"
     },
     {
         "game_id": 825072,
@@ -204,7 +204,7 @@
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "Series tied 1-1",
         "summary": "2026-06-17 - Los Angeles Angels @ Arizona Diamondbacks (Scheduled)"
     },
     {
