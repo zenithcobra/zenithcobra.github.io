@@ -221,7 +221,7 @@
         "game_datetime": "2026-06-17T19:40:00Z",
         "game_date": "2026-06-17",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Los Angeles Angels",
         "home_name": "Arizona Diamondbacks",
         "away_id": 108,
@@ -245,14 +245,14 @@
         "winning_pitcher": "Eduardo Rodriguez",
         "losing_pitcher": "Sam Aldegheri",
         "save_pitcher": null,
-        "summary": "2026-06-17 - Los Angeles Angels (1) @ Arizona Diamondbacks (8) (Game Over)"
+        "summary": "2026-06-17 - Los Angeles Angels (1) @ Arizona Diamondbacks (8) (Final)"
     },
     {
         "game_id": 824746,
         "game_datetime": "2026-06-17T22:45:00Z",
         "game_date": "2026-06-17",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Toronto Blue Jays",
         "home_name": "Boston Red Sox",
         "away_id": 141,
@@ -271,14 +271,14 @@
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-06-17 - Toronto Blue Jays @ Boston Red Sox (Pre-Game)"
+        "summary": "2026-06-17 - Toronto Blue Jays @ Boston Red Sox (Warmup)"
     },
     {
         "game_id": 823536,
         "game_datetime": "2026-06-17T23:05:00Z",
         "game_date": "2026-06-17",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago White Sox",
         "home_name": "New York Yankees",
         "away_id": 145,
@@ -297,7 +297,7 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-06-17 - Chicago White Sox @ New York Yankees (Pre-Game)"
+        "summary": "2026-06-17 - Chicago White Sox @ New York Yankees (Warmup)"
     },
     {
         "game_id": 824913,
