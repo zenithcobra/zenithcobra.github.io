@@ -139,9 +139,9 @@
         "away_probable_pitcher": "Sean Manaea",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 0,
-        "current_inning": 1,
+        "away_score": 2,
+        "home_score": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
@@ -149,14 +149,14 @@
             "MLB Network"
         ],
         "series_status": null,
-        "summary": "2026-06-18 - New York Mets (1) @ Philadelphia Phillies (0) (Top of the 1st)"
+        "summary": "2026-06-18 - New York Mets (2) @ Philadelphia Phillies (1) (Top of the 2nd)"
     },
     {
         "game_id": 823533,
         "game_datetime": "2026-06-18T23:05:00Z",
         "game_date": "2026-06-18",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Chicago White Sox",
         "home_name": "New York Yankees",
         "away_id": 145,
@@ -175,7 +175,7 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 2-0",
-        "summary": "2026-06-18 - Chicago White Sox @ New York Yankees (Pre-Game)"
+        "summary": "2026-06-18 - Chicago White Sox (0) @ New York Yankees (0) (Top of the 1st)"
     },
     {
         "game_id": 824098,
