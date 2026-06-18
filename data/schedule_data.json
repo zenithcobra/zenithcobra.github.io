@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 0,
-        "current_inning": 7,
+        "home_score": 1,
+        "current_inning": 8,
         "inning_state": "Top",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "TOR leads 2-0",
-        "summary": "2026-06-18 - Toronto Blue Jays (3) @ Boston Red Sox (0) (Top of the 7th)"
+        "summary": "2026-06-18 - Toronto Blue Jays (3) @ Boston Red Sox (1) (Top of the 8th)"
     },
     {
         "game_id": 823772,
@@ -43,13 +43,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 1,
-        "current_inning": 3,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 2-0",
-        "summary": "2026-06-18 - Cleveland Guardians (1) @ Milwaukee Brewers (1) (Bottom of the 3rd)"
+        "summary": "2026-06-18 - Cleveland Guardians (1) @ Milwaukee Brewers (1) (Bottom of the 4th)"
     },
     {
         "game_id": 822889,
@@ -70,12 +70,12 @@
         "away_score": 4,
         "home_score": 0,
         "current_inning": 2,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "MIN leads 2-0",
-        "summary": "2026-06-18 - Minnesota Twins (4) @ Texas Rangers (0) (Top of the 2nd)"
+        "summary": "2026-06-18 - Minnesota Twins (4) @ Texas Rangers (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 823125,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-06-18T22:40:00Z",
         "game_date": "2026-06-18",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "Philadelphia Phillies",
         "away_id": 121,
@@ -129,7 +129,7 @@
             "MLB Network"
         ],
         "series_status": null,
-        "summary": "2026-06-18 - New York Mets @ Philadelphia Phillies (Scheduled)"
+        "summary": "2026-06-18 - New York Mets @ Philadelphia Phillies (Pre-Game)"
     },
     {
         "game_id": 823533,
