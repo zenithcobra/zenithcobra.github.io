@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Trey Yesavage",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
-        "home_score": 1,
-        "current_inning": 8,
+        "away_score": 4,
+        "home_score": 3,
+        "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "TOR leads 2-0",
-        "summary": "2026-06-18 - Toronto Blue Jays (3) @ Boston Red Sox (1) (Top of the 8th)"
+        "summary": "2026-06-18 - Toronto Blue Jays (4) @ Boston Red Sox (3) (Top of the 9th)"
     },
     {
         "game_id": 823772,
@@ -41,15 +41,15 @@
         "away_probable_pitcher": "Parker Messick",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 1,
-        "current_inning": 4,
+        "away_score": 2,
+        "home_score": 2,
+        "current_inning": 6,
         "inning_state": "Bottom",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 2-0",
-        "summary": "2026-06-18 - Cleveland Guardians (1) @ Milwaukee Brewers (1) (Bottom of the 4th)"
+        "summary": "2026-06-18 - Cleveland Guardians (2) @ Milwaukee Brewers (2) (Bottom of the 6th)"
     },
     {
         "game_id": 822889,
@@ -69,20 +69,20 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "current_inning": 4,
+        "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "MIN leads 2-0",
-        "summary": "2026-06-18 - Minnesota Twins (4) @ Texas Rangers (0) (Bottom of the 2nd)"
+        "summary": "2026-06-18 - Minnesota Twins (4) @ Texas Rangers (0) (Top of the 4th)"
     },
     {
         "game_id": 823125,
         "game_datetime": "2026-06-18T20:10:00Z",
         "game_date": "2026-06-18",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Baltimore Orioles",
         "home_name": "Seattle Mariners",
         "away_id": 110,
@@ -101,7 +101,7 @@
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-18 - Baltimore Orioles @ Seattle Mariners (Pre-Game)"
+        "summary": "2026-06-18 - Baltimore Orioles @ Seattle Mariners (Warmup)"
     },
     {
         "game_id": 823448,
@@ -144,7 +144,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Ryan Weathers",
-        "away_probable_pitcher": "Sean Burke",
+        "away_probable_pitcher": "Bryan Hudson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
@@ -162,7 +162,7 @@
         "game_datetime": "2026-06-18T23:40:00Z",
         "game_date": "2026-06-18",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "Kansas City Royals",
         "away_id": 138,
@@ -173,15 +173,15 @@
         "away_probable_pitcher": "Matthew Liberatore",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-18 - St. Louis Cardinals @ Kansas City Royals (Scheduled)"
+        "summary": "2026-06-18 - St. Louis Cardinals @ Kansas City Royals (Pre-Game)"
     },
     {
         "game_id": 824989,
