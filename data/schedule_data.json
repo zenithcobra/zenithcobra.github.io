@@ -110,20 +110,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 3,
-        "current_inning": 7,
-        "inning_state": "Bottom",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-18 - Baltimore Orioles (0) @ Seattle Mariners (3) (Bottom of the 7th)"
+        "summary": "2026-06-18 - Baltimore Orioles (0) @ Seattle Mariners (3) (Top of the 9th)"
     },
     {
         "game_id": 823448,
         "game_datetime": "2026-06-18T22:40:00Z",
         "game_date": "2026-06-18",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Mets",
         "home_name": "Philadelphia Phillies",
         "away_id": 121,
@@ -144,7 +144,7 @@
             "MLB Network"
         ],
         "series_status": null,
-        "summary": "2026-06-18 - New York Mets @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-06-18 - New York Mets @ Philadelphia Phillies (Warmup)"
     },
     {
         "game_id": 823533,
