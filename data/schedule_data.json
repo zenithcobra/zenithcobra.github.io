@@ -139,9 +139,9 @@
         "away_probable_pitcher": "Sean Manaea",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
-        "home_score": 1,
-        "current_inning": 2,
+        "away_score": 3,
+        "home_score": 2,
+        "current_inning": 4,
         "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
@@ -149,7 +149,7 @@
             "MLB Network"
         ],
         "series_status": null,
-        "summary": "2026-06-18 - New York Mets (2) @ Philadelphia Phillies (1) (Top of the 2nd)"
+        "summary": "2026-06-18 - New York Mets (3) @ Philadelphia Phillies (2) (Top of the 4th)"
     },
     {
         "game_id": 823533,
@@ -167,22 +167,22 @@
         "away_probable_pitcher": "Bryan Hudson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 2-0",
-        "summary": "2026-06-18 - Chicago White Sox (0) @ New York Yankees (0) (Top of the 1st)"
+        "summary": "2026-06-18 - Chicago White Sox (1) @ New York Yankees (0) (Top of the 3rd)"
     },
     {
         "game_id": 824098,
         "game_datetime": "2026-06-18T23:40:00Z",
         "game_date": "2026-06-18",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "St. Louis Cardinals",
         "home_name": "Kansas City Royals",
         "away_id": 138,
@@ -193,7 +193,7 @@
         "away_probable_pitcher": "Matthew Liberatore",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
         "current_inning": 1,
         "inning_state": "Top",
@@ -201,7 +201,7 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-18 - St. Louis Cardinals @ Kansas City Royals (Pre-Game)"
+        "summary": "2026-06-18 - St. Louis Cardinals (1) @ Kansas City Royals (0) (Top of the 1st)"
     },
     {
         "game_id": 824989,
@@ -216,7 +216,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Gage Jump",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Ryan Johnson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
