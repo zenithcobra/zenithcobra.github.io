@@ -35,7 +35,7 @@
         "game_datetime": "2026-06-18T18:10:00Z",
         "game_date": "2026-06-18",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Cleveland Guardians",
         "home_name": "Milwaukee Brewers",
         "away_id": 114,
@@ -59,14 +59,14 @@
         "winning_pitcher": "Parker Messick",
         "losing_pitcher": "Grant Anderson",
         "save_pitcher": "Cade Smith",
-        "summary": "2026-06-18 - Cleveland Guardians (4) @ Milwaukee Brewers (2) (Game Over)"
+        "summary": "2026-06-18 - Cleveland Guardians (4) @ Milwaukee Brewers (2) (Final)"
     },
     {
         "game_id": 822889,
         "game_datetime": "2026-06-18T18:35:00Z",
         "game_date": "2026-06-18",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Minnesota Twins",
         "home_name": "Texas Rangers",
         "away_id": 142,
@@ -78,14 +78,19 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 9,
-        "home_score": 2,
-        "current_inning": 8,
+        "home_score": 3,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": "MIN leads 2-0",
-        "summary": "2026-06-18 - Minnesota Twins (9) @ Texas Rangers (2) (Bottom of the 8th)"
+        "series_status": "MIN wins 3-0",
+        "winning_team": "Minnesota Twins",
+        "losing_team": "Texas Rangers",
+        "winning_pitcher": "Joe Ryan",
+        "losing_pitcher": "Jack Leiter",
+        "save_pitcher": null,
+        "summary": "2026-06-18 - Minnesota Twins (9) @ Texas Rangers (3) (Final)"
     },
     {
         "game_id": 823125,
@@ -105,13 +110,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 3,
-        "current_inning": 5,
-        "inning_state": "Top",
+        "current_inning": 7,
+        "inning_state": "Bottom",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-18 - Baltimore Orioles (0) @ Seattle Mariners (3) (Top of the 5th)"
+        "summary": "2026-06-18 - Baltimore Orioles (0) @ Seattle Mariners (3) (Bottom of the 7th)"
     },
     {
         "game_id": 823448,
@@ -198,7 +203,7 @@
         "game_datetime": "2026-06-19T01:40:00Z",
         "game_date": "2026-06-18",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Athletics",
         "away_id": 108,
@@ -217,7 +222,7 @@
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-18 - Los Angeles Angels @ Athletics (Scheduled)"
+        "summary": "2026-06-18 - Los Angeles Angels @ Athletics (Pre-Game)"
     },
     {
         "game_id": 824911,
