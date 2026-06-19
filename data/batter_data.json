@@ -74,16 +74,16 @@
         "team_id": 141,
         "player_id": 807727,
         "position": "2B",
-        "games_played": 7.0,
+        "games_played": 8.0,
         "H": 4.0,
         "HR": 1.0,
         "RBI": 3.0,
-        "HRpg": 0.143,
+        "HRpg": 0.125,
         "fHRpg": "1/7",
-        "Hpg": 0.571,
-        "fHpg": "4/7",
-        "RBIpg": 0.429,
-        "fRBIpg": "3/7"
+        "Hpg": 0.5,
+        "fHpg": "1/2",
+        "RBIpg": 0.375,
+        "fRBIpg": "2/5"
     },
     {
         "player_name": "Davis Schneider",
@@ -138,14 +138,14 @@
         "player_id": 543807,
         "position": "DH",
         "games_played": 54.0,
-        "H": 45.0,
-        "HR": 7.0,
-        "RBI": 20.0,
-        "HRpg": 0.13,
+        "H": 46.0,
+        "HR": 8.0,
+        "RBI": 21.0,
+        "HRpg": 0.148,
         "fHRpg": "1/7",
-        "Hpg": 0.833,
-        "fHpg": "5/6",
-        "RBIpg": 0.37,
+        "Hpg": 0.852,
+        "fHpg": "6/7",
+        "RBIpg": 0.389,
         "fRBIpg": "2/5",
         "HR24": 32,
         "HR24pg": 0.23,
@@ -239,12 +239,12 @@
         "player_id": 664770,
         "position": "RF",
         "games_played": 42.0,
-        "H": 40.0,
+        "H": 41.0,
         "HR": 2.0,
         "RBI": 14.0,
         "HRpg": 0.048,
         "fHRpg": "0",
-        "Hpg": 0.952,
+        "Hpg": 0.976,
         "fHpg": "1",
         "RBIpg": 0.333,
         "fRBIpg": "1/3",
@@ -445,13 +445,13 @@
         "player_id": 664023,
         "position": "LF",
         "games_played": 72.0,
-        "H": 60.0,
+        "H": 61.0,
         "HR": 16.0,
         "RBI": 37.0,
         "HRpg": 0.222,
         "fHRpg": "1/5",
-        "Hpg": 0.833,
-        "fHpg": "5/6",
+        "Hpg": 0.847,
+        "fHpg": "6/7",
         "RBIpg": 0.514,
         "fRBIpg": "1/2",
         "HR24": 23,
@@ -600,12 +600,12 @@
         "player_id": 691718,
         "position": "CF",
         "games_played": 76.0,
-        "H": 79.0,
+        "H": 80.0,
         "HR": 15.0,
         "RBI": 37.0,
         "HRpg": 0.197,
         "fHRpg": "1/5",
-        "Hpg": 1.039,
+        "Hpg": 1.053,
         "fHpg": "1",
         "RBIpg": 0.487,
         "fRBIpg": "1/2",
@@ -1258,6 +1258,12 @@
         "player_id": 669373
     },
     {
+        "player_name": "Trei Cruz",
+        "team": "Detroit Tigers",
+        "team_id": 116,
+        "player_id": 669360
+    },
+    {
         "player_name": "Troy Melton",
         "team": "Detroit Tigers",
         "team_id": 116,
@@ -1268,26 +1274,6 @@
         "team": "Detroit Tigers",
         "team_id": 116,
         "player_id": 663947
-    },
-    {
-        "player_name": "Wenceel P\u00e9rez",
-        "team": "Detroit Tigers",
-        "team_id": 116,
-        "player_id": 672761,
-        "position": "RF",
-        "games_played": 53.0,
-        "H": 29.0,
-        "HR": 7.0,
-        "RBI": 17.0,
-        "HRpg": 0.132,
-        "fHRpg": "1/7",
-        "Hpg": 0.547,
-        "fHpg": "4/7",
-        "RBIpg": 0.321,
-        "fRBIpg": "1/3",
-        "HR24": 13,
-        "HR24pg": 0.13,
-        "fHR24pg": "1/7"
     },
     {
         "player_name": "Will Vest",
@@ -6086,12 +6072,6 @@
         "fHR24pg": "1/7"
     },
     {
-        "player_name": "Mason Black",
-        "team": "Kansas City Royals",
-        "team_id": 118,
-        "player_id": 696131
-    },
-    {
         "player_name": "Matt Strahm",
         "team": "Kansas City Royals",
         "team_id": 118,
@@ -6168,6 +6148,12 @@
         "HR24": 30,
         "HR24pg": 0.19,
         "fHR24pg": "1/5"
+    },
+    {
+        "player_name": "Seth Lugo",
+        "team": "Kansas City Royals",
+        "team_id": 118,
+        "player_id": 607625
     },
     {
         "player_name": "Starling Marte",
@@ -8237,12 +8223,6 @@
         "player_id": 657044
     },
     {
-        "player_name": "Ryne Nelson",
-        "team": "Arizona Diamondbacks",
-        "team_id": 109,
-        "player_id": 669194
-    },
-    {
         "player_name": "Taylor Clarke",
         "team": "Arizona Diamondbacks",
         "team_id": 109,
@@ -8264,6 +8244,12 @@
         "fHpg": "5/7",
         "RBIpg": 0.19,
         "fRBIpg": "1/5"
+    },
+    {
+        "player_name": "Yilber D\u00edaz",
+        "team": "Arizona Diamondbacks",
+        "team_id": 109,
+        "player_id": 700270
     },
     {
         "player_name": "Zac Gallen",

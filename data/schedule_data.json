@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Kevin Gausman",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 7,
-        "current_inning": 5,
+        "current_inning": 6,
         "inning_state": "Middle",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-19 - Toronto Blue Jays (1) @ Chicago Cubs (7) (Middle of the 5th)"
+        "summary": "2026-06-19 - Toronto Blue Jays (2) @ Chicago Cubs (7) (Middle of the 6th)"
     },
     {
         "game_id": 824264,
@@ -145,10 +145,10 @@
         "away_probable_pitcher": "Jacob Misiorowski",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
@@ -186,7 +186,7 @@
         "game_datetime": "2026-06-20T00:10:00Z",
         "game_date": "2026-06-19",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Houston Astros",
         "away_id": 114,
@@ -205,7 +205,7 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-19 - Cleveland Guardians @ Houston Astros (Scheduled)"
+        "summary": "2026-06-19 - Cleveland Guardians @ Houston Astros (Pre-Game)"
     },
     {
         "game_id": 824097,
