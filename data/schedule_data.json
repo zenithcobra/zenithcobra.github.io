@@ -35,7 +35,7 @@
         "game_datetime": "2026-06-19T22:40:00Z",
         "game_date": "2026-06-19",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago White Sox",
         "home_name": "Detroit Tigers",
         "away_id": 145,
@@ -54,7 +54,7 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-19 - Chicago White Sox @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-06-19 - Chicago White Sox @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 823534,
@@ -282,10 +282,10 @@
         "away_probable_pitcher": "Jos\u00e9 Soriano",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
@@ -297,7 +297,7 @@
         "game_datetime": "2026-06-20T01:45:00Z",
         "game_date": "2026-06-19",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Arizona Diamondbacks",
         "away_id": 142,
@@ -308,17 +308,17 @@
         "away_probable_pitcher": "Connor Prielipp",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-06-19 - Minnesota Twins @ Arizona Diamondbacks (Scheduled)"
+        "summary": "2026-06-19 - Minnesota Twins @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 823936,
@@ -351,7 +351,7 @@
         "game_datetime": "2026-06-20T02:10:00Z",
         "game_date": "2026-06-19",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Seattle Mariners",
         "away_id": 111,
@@ -370,6 +370,6 @@
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-19 - Boston Red Sox @ Seattle Mariners (Scheduled)"
+        "summary": "2026-06-19 - Boston Red Sox @ Seattle Mariners (Pre-Game)"
     }
 ]
