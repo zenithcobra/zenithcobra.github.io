@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-19T18:20:00Z",
         "game_date": "2026-06-19",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Toronto Blue Jays",
         "home_name": "Chicago Cubs",
         "away_id": 141,
@@ -17,13 +17,18 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 16,
-        "current_inning": 7,
-        "inning_state": "End",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-19 - Toronto Blue Jays (2) @ Chicago Cubs (16) (End of the 7th)"
+        "series_status": "CHC leads 1-0",
+        "winning_team": "Chicago Cubs",
+        "losing_team": "Toronto Blue Jays",
+        "winning_pitcher": "Ben Brown",
+        "losing_pitcher": "Kevin Gausman",
+        "save_pitcher": null,
+        "summary": "2026-06-19 - Toronto Blue Jays (2) @ Chicago Cubs (16) (Final)"
     },
     {
         "game_id": 824264,
@@ -266,7 +271,7 @@
         "game_datetime": "2026-06-20T01:40:00Z",
         "game_date": "2026-06-19",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Athletics",
         "away_id": 108,
@@ -284,8 +289,8 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-19 - Los Angeles Angels @ Athletics (Scheduled)"
+        "series_status": "ATH leads 1-0",
+        "summary": "2026-06-19 - Los Angeles Angels @ Athletics (Pre-Game)"
     },
     {
         "game_id": 825069,
