@@ -35,7 +35,7 @@
         "game_datetime": "2026-06-19T22:40:00Z",
         "game_date": "2026-06-19",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Chicago White Sox",
         "home_name": "Detroit Tigers",
         "away_id": 145,
@@ -46,22 +46,22 @@
         "away_probable_pitcher": "Brandon Eisert",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-19 - Chicago White Sox @ Detroit Tigers (Warmup)"
+        "summary": "2026-06-19 - Chicago White Sox (1) @ Detroit Tigers (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823534,
         "game_datetime": "2026-06-19T23:05:00Z",
         "game_date": "2026-06-19",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cincinnati Reds",
         "home_name": "New York Yankees",
         "away_id": 113,
@@ -80,7 +80,7 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-19 - Cincinnati Reds @ New York Yankees (Pre-Game)"
+        "summary": "2026-06-19 - Cincinnati Reds @ New York Yankees (Warmup)"
     },
     {
         "game_id": 822966,
@@ -113,7 +113,7 @@
         "game_datetime": "2026-06-19T23:10:00Z",
         "game_date": "2026-06-19",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "San Francisco Giants",
         "home_name": "Miami Marlins",
         "away_id": 137,
@@ -132,7 +132,7 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-19 - San Francisco Giants @ Miami Marlins (Pre-Game)"
+        "summary": "2026-06-19 - San Francisco Giants @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 824910,
@@ -362,10 +362,10 @@
         "away_probable_pitcher": "Ranger Suarez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
