@@ -471,6 +471,12 @@
         "player_id": 665871
     },
     {
+        "player_name": "Justin Dean",
+        "team": "Chicago Cubs",
+        "team_id": 112,
+        "player_id": 681909
+    },
+    {
         "player_name": "Matt Shaw",
         "team": "Chicago Cubs",
         "team_id": 112,
@@ -3618,7 +3624,7 @@
         "team": "Milwaukee Brewers",
         "team_id": 158,
         "player_id": 596142,
-        "position": "DH",
+        "position": "C",
         "games_played": 43.0,
         "H": 26.0,
         "HR": 7.0,
@@ -3961,6 +3967,26 @@
         "team": "Atlanta Braves",
         "team_id": 144,
         "player_id": 675916
+    },
+    {
+        "player_name": "Joey Bart",
+        "team": "Atlanta Braves",
+        "team_id": 144,
+        "player_id": 663698,
+        "position": "C",
+        "games_played": 21.0,
+        "H": 15.0,
+        "HR": 2.0,
+        "RBI": 6.0,
+        "HRpg": 0.095,
+        "fHRpg": "1/7",
+        "Hpg": 0.714,
+        "fHpg": "5/7",
+        "RBIpg": 0.286,
+        "fRBIpg": "2/7",
+        "HR24": 4,
+        "HR24pg": 0.04,
+        "fHR24pg": "0"
     },
     {
         "player_name": "Jorge Mateo",
