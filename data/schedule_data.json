@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 7,
-        "current_inning": 1,
-        "inning_state": "End",
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-19 - Toronto Blue Jays (0) @ Chicago Cubs (7) (End of the 1st)"
+        "summary": "2026-06-19 - Toronto Blue Jays (0) @ Chicago Cubs (7) (Top of the 3rd)"
     },
     {
         "game_id": 824264,
@@ -82,7 +82,7 @@
         "game_datetime": "2026-06-19T23:10:00Z",
         "game_date": "2026-06-19",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Washington Nationals",
         "home_name": "Tampa Bay Rays",
         "away_id": 120,
@@ -101,7 +101,7 @@
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-19 - Washington Nationals @ Tampa Bay Rays (Scheduled)"
+        "summary": "2026-06-19 - Washington Nationals @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 823853,
