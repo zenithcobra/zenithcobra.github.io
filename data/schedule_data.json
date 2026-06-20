@@ -46,15 +46,15 @@
         "away_probable_pitcher": "Brandon Eisert",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 2,
-        "current_inning": 4,
+        "current_inning": 5,
         "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-19 - Chicago White Sox (1) @ Detroit Tigers (2) (Top of the 4th)"
+        "summary": "2026-06-19 - Chicago White Sox (2) @ Detroit Tigers (2) (Top of the 5th)"
     },
     {
         "game_id": 823534,
@@ -73,14 +73,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Middle",
+        "home_score": 4,
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-19 - Cincinnati Reds (0) @ New York Yankees (0) (Middle of the 2nd)"
+        "summary": "2026-06-19 - Cincinnati Reds (0) @ New York Yankees (4) (Top of the 3rd)"
     },
     {
         "game_id": 822966,
@@ -98,15 +98,15 @@
         "away_probable_pitcher": "PJ Poulin",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Middle",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-19 - Washington Nationals (1) @ Tampa Bay Rays (0) (Middle of the 2nd)"
+        "summary": "2026-06-19 - Washington Nationals (2) @ Tampa Bay Rays (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 823853,
@@ -124,15 +124,15 @@
         "away_probable_pitcher": "Landen Roupp",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 1,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-19 - San Francisco Giants (0) @ Miami Marlins (1) (Top of the 2nd)"
+        "summary": "2026-06-19 - San Francisco Giants (1) @ Miami Marlins (1) (Top of the 3rd)"
     },
     {
         "game_id": 824910,
@@ -150,22 +150,22 @@
         "away_probable_pitcher": "Jacob Misiorowski",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Middle",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-19 - Milwaukee Brewers (0) @ Atlanta Braves (0) (Middle of the 2nd)"
+        "summary": "2026-06-19 - Milwaukee Brewers (1) @ Atlanta Braves (0) (Middle of the 3rd)"
     },
     {
         "game_id": 822886,
         "game_datetime": "2026-06-20T00:05:00Z",
         "game_date": "2026-06-19",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "San Diego Padres",
         "home_name": "Texas Rangers",
         "away_id": 135,
@@ -184,14 +184,14 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-19 - San Diego Padres @ Texas Rangers (Pre-Game)"
+        "summary": "2026-06-19 - San Diego Padres @ Texas Rangers (Warmup)"
     },
     {
         "game_id": 824179,
         "game_datetime": "2026-06-20T00:10:00Z",
         "game_date": "2026-06-19",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cleveland Guardians",
         "home_name": "Houston Astros",
         "away_id": 114,
@@ -210,14 +210,14 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-19 - Cleveland Guardians @ Houston Astros (Pre-Game)"
+        "summary": "2026-06-19 - Cleveland Guardians @ Houston Astros (Warmup)"
     },
     {
         "game_id": 824097,
         "game_datetime": "2026-06-20T00:15:00Z",
         "game_date": "2026-06-19",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "St. Louis Cardinals",
         "home_name": "Kansas City Royals",
         "away_id": 138,
@@ -238,7 +238,7 @@
             "Apple TV"
         ],
         "series_status": "KC leads 1-0",
-        "summary": "2026-06-19 - St. Louis Cardinals @ Kansas City Royals (Pre-Game)"
+        "summary": "2026-06-19 - St. Louis Cardinals @ Kansas City Royals (Warmup)"
     },
     {
         "game_id": 824345,
