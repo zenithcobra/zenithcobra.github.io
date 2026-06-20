@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-20T17:10:00Z",
         "game_date": "2026-06-20",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago White Sox",
         "home_name": "Detroit Tigers",
         "away_id": 145,
@@ -23,7 +23,7 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "DET leads 1-0",
-        "summary": "2026-06-20 - Chicago White Sox @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-06-20 - Chicago White Sox @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 823532,
@@ -93,10 +93,10 @@
         "away_probable_pitcher": "Walker Buehler",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
@@ -160,7 +160,7 @@
         "game_datetime": "2026-06-20T20:10:00Z",
         "game_date": "2026-06-20",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "Atlanta Braves",
         "away_id": 158,
@@ -178,8 +178,8 @@
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-20 - Milwaukee Brewers @ Atlanta Braves (Scheduled)"
+        "series_status": "ATL leads 1-0",
+        "summary": "2026-06-20 - Milwaukee Brewers @ Atlanta Braves (Pre-Game)"
     },
     {
         "game_id": 824180,
