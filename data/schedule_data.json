@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-20T17:10:00Z",
         "game_date": "2026-06-20",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Chicago White Sox",
         "home_name": "Detroit Tigers",
         "away_id": 145,
@@ -16,14 +16,19 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 3,
-        "current_inning": 7,
-        "inning_state": "Middle",
+        "home_score": 4,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": "DET leads 1-0",
-        "summary": "2026-06-20 - Chicago White Sox (1) @ Detroit Tigers (3) (Middle of the 7th)"
+        "series_status": "DET wins 2-0",
+        "winning_team": "Detroit Tigers",
+        "losing_team": "Chicago White Sox",
+        "winning_pitcher": "Troy Melton",
+        "losing_pitcher": "Joe Rock",
+        "save_pitcher": "Kenley Jansen",
+        "summary": "2026-06-20 - Chicago White Sox (1) @ Detroit Tigers (4) (Final)"
     },
     {
         "game_id": 823532,
@@ -41,22 +46,22 @@
         "away_probable_pitcher": "Andrew Abbott",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
+        "away_score": 6,
         "home_score": 1,
-        "current_inning": 5,
-        "inning_state": "Top",
+        "current_inning": 7,
+        "inning_state": "Middle",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-06-20 - Cincinnati Reds (3) @ New York Yankees (1) (Top of the 5th)"
+        "summary": "2026-06-20 - Cincinnati Reds (6) @ New York Yankees (1) (Middle of the 7th)"
     },
     {
         "game_id": 824665,
         "game_datetime": "2026-06-20T18:20:00Z",
         "game_date": "2026-06-20",
         "game_type": "R",
-        "status": "Player challenge",
+        "status": "In Progress",
         "away_name": "Toronto Blue Jays",
         "home_name": "Chicago Cubs",
         "away_id": 141,
@@ -69,20 +74,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 3,
-        "current_inning": 3,
+        "current_inning": 5,
         "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 1-0",
-        "summary": "2026-06-20 - Toronto Blue Jays @ Chicago Cubs (Player challenge)"
+        "summary": "2026-06-20 - Toronto Blue Jays (0) @ Chicago Cubs (3) (Top of the 5th)"
     },
     {
         "game_id": 822885,
         "game_datetime": "2026-06-20T20:05:00Z",
         "game_date": "2026-06-20",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "San Diego Padres",
         "home_name": "Texas Rangers",
         "away_id": 135,
@@ -101,7 +106,7 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "TEX leads 1-0",
-        "summary": "2026-06-20 - San Diego Padres @ Texas Rangers (Pre-Game)"
+        "summary": "2026-06-20 - San Diego Padres @ Texas Rangers (Warmup)"
     },
     {
         "game_id": 822967,
@@ -134,7 +139,7 @@
         "game_datetime": "2026-06-20T20:10:00Z",
         "game_date": "2026-06-20",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "San Francisco Giants",
         "home_name": "Miami Marlins",
         "away_id": 137,
@@ -153,14 +158,14 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "MIA leads 1-0",
-        "summary": "2026-06-20 - San Francisco Giants @ Miami Marlins (Pre-Game)"
+        "summary": "2026-06-20 - San Francisco Giants @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 824909,
         "game_datetime": "2026-06-20T20:10:00Z",
         "game_date": "2026-06-20",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Milwaukee Brewers",
         "home_name": "Atlanta Braves",
         "away_id": 158,
@@ -179,14 +184,14 @@
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 1-0",
-        "summary": "2026-06-20 - Milwaukee Brewers @ Atlanta Braves (Pre-Game)"
+        "summary": "2026-06-20 - Milwaukee Brewers @ Atlanta Braves (Warmup)"
     },
     {
         "game_id": 824180,
         "game_datetime": "2026-06-20T23:15:00Z",
         "game_date": "2026-06-20",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Houston Astros",
         "away_id": 114,
@@ -206,15 +211,15 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": null,
-        "summary": "2026-06-20 - Cleveland Guardians @ Houston Astros (Scheduled)"
+        "series_status": "HOU leads 1-0",
+        "summary": "2026-06-20 - Cleveland Guardians @ Houston Astros (Pre-Game)"
     },
     {
         "game_id": 823447,
         "game_datetime": "2026-06-20T23:15:00Z",
         "game_date": "2026-06-20",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "Philadelphia Phillies",
         "away_id": 121,
@@ -234,8 +239,8 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": null,
-        "summary": "2026-06-20 - New York Mets @ Philadelphia Phillies (Scheduled)"
+        "series_status": "NYM leads 1-0",
+        "summary": "2026-06-20 - New York Mets @ Philadelphia Phillies (Pre-Game)"
     },
     {
         "game_id": 824342,
