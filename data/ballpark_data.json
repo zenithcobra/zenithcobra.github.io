@@ -1,14 +1,14 @@
 [
     {},
     {
-        "Venue": "Great American Ball Park",
-        "Location": "Cincinnati",
+        "Venue": "Minute Maid Park",
+        "Location": "Houston",
         "HR": "117"
     },
     {
-        "Venue": "Minute Maid Park",
-        "Location": "Houston",
-        "HR": "116"
+        "Venue": "Great American Ball Park",
+        "Location": "Cincinnati",
+        "HR": "117"
     },
     {
         "Venue": "Nationals Park",
@@ -31,14 +31,14 @@
         "HR": "101"
     },
     {
+        "Venue": "Yankee Stadium",
+        "Location": "Bronx",
+        "HR": "100"
+    },
+    {
         "Venue": "Oriole Park at Camden Yards",
         "Location": "Baltimore",
         "HR": "99"
-    },
-    {
-        "Venue": "Yankee Stadium",
-        "Location": "Bronx",
-        "HR": "98"
     },
     {
         "Venue": "Dodger Stadium",
@@ -51,19 +51,14 @@
         "HR": "93"
     },
     {
-        "Venue": "PNC Park",
-        "Location": "Pittsburgh",
-        "HR": "89"
-    },
-    {
         "Venue": "Rogers Centre",
         "Location": "Toronto",
         "HR": "89"
     },
     {
-        "Venue": "Guaranteed Rate Field",
-        "Location": "Chicago",
-        "HR": "87"
+        "Venue": "PNC Park",
+        "Location": "Pittsburgh",
+        "HR": "89"
     },
     {
         "Venue": "Coors Field",
@@ -71,14 +66,19 @@
         "HR": "87"
     },
     {
-        "Venue": "Tropicana Field",
-        "Location": "Tampa Bay",
-        "HR": "82"
+        "Venue": "Guaranteed Rate Field",
+        "Location": "Chicago",
+        "HR": "87"
     },
     {
         "Venue": "Kauffman Stadium",
         "Location": "Kansas City",
-        "HR": "81"
+        "HR": "86"
+    },
+    {
+        "Venue": "Tropicana Field",
+        "Location": "Tampa Bay",
+        "HR": "82"
     },
     {
         "Venue": "Globe Life Field",
@@ -113,12 +113,12 @@
     {
         "Venue": "Truist Park",
         "Location": "Atlanta",
-        "HR": "72"
+        "HR": "73"
     },
     {
         "Venue": "Comerica Park",
         "Location": "Detroit",
-        "HR": "72"
+        "HR": "73"
     },
     {
         "Venue": "Busch Stadium",
@@ -138,7 +138,7 @@
     {
         "Venue": "Marlins Park",
         "Location": "Miami",
-        "HR": "63"
+        "HR": "64"
     },
     {
         "Venue": "Oracle Park",
