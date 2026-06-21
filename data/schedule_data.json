@@ -212,7 +212,7 @@
         "game_datetime": "2026-06-21T18:35:00Z",
         "game_date": "2026-06-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Diego Padres",
         "home_name": "Texas Rangers",
         "away_id": 135,
@@ -223,22 +223,22 @@
         "away_probable_pitcher": "Wandy Peralta",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-21 - San Diego Padres @ Texas Rangers (Scheduled)"
+        "summary": "2026-06-21 - San Diego Padres @ Texas Rangers (Pre-Game)"
     },
     {
         "game_id": 824343,
         "game_datetime": "2026-06-21T19:10:00Z",
         "game_date": "2026-06-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Colorado Rockies",
         "away_id": 134,
@@ -256,8 +256,8 @@
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-21 - Pittsburgh Pirates @ Colorado Rockies (Scheduled)"
+        "series_status": "COL leads 2-0",
+        "summary": "2026-06-21 - Pittsburgh Pirates @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 825067,
@@ -336,7 +336,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
+        "series_status": null,
         "summary": "2026-06-21 - Baltimore Orioles @ Los Angeles Dodgers (Scheduled)"
     },
     {
@@ -390,7 +390,7 @@
         "national_broadcasts": [
             "NBC/Peacock"
         ],
-        "series_status": "Series tied 1-1",
+        "series_status": "NYM leads 1-0",
         "summary": "2026-06-21 - New York Mets @ Philadelphia Phillies (Scheduled)"
     }
 ]
