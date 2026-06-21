@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "Middle",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-21 - Cincinnati Reds (0) @ New York Yankees (0) (Top of the 1st)"
+        "summary": "2026-06-21 - Cincinnati Reds (0) @ New York Yankees (0) (Middle of the 2nd)"
     },
     {
         "game_id": 824908,
@@ -41,15 +41,15 @@
         "away_probable_pitcher": "Robert Gasser",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "away_score": 4,
+        "home_score": 1,
+        "current_inning": 2,
+        "inning_state": "Top",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 2-0",
-        "summary": "2026-06-21 - Milwaukee Brewers (0) @ Atlanta Braves (0) (Bottom of the 1st)"
+        "summary": "2026-06-21 - Milwaukee Brewers (4) @ Atlanta Braves (1) (Top of the 2nd)"
     },
     {
         "game_id": 822968,
@@ -69,13 +69,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "End",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-21 - Washington Nationals (0) @ Tampa Bay Rays (0) (Top of the 1st)"
+        "summary": "2026-06-21 - Washington Nationals (0) @ Tampa Bay Rays (0) (End of the 2nd)"
     },
     {
         "game_id": 824260,
@@ -95,13 +95,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Middle",
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "DET leads 2-0",
-        "summary": "2026-06-21 - Chicago White Sox (0) @ Detroit Tigers (0) (Middle of the 1st)"
+        "summary": "2026-06-21 - Chicago White Sox (0) @ Detroit Tigers (0) (Top of the 3rd)"
     },
     {
         "game_id": 823852,
@@ -121,20 +121,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Middle",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "MIA leads 2-0",
-        "summary": "2026-06-21 - San Francisco Giants (0) @ Miami Marlins (0) (Middle of the 1st)"
+        "summary": "2026-06-21 - San Francisco Giants (0) @ Miami Marlins (0) (Middle of the 2nd)"
     },
     {
         "game_id": 824177,
         "game_datetime": "2026-06-21T18:10:00Z",
         "game_date": "2026-06-21",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cleveland Guardians",
         "home_name": "Houston Astros",
         "away_id": 114,
@@ -153,14 +153,14 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-21 - Cleveland Guardians @ Houston Astros (Pre-Game)"
+        "summary": "2026-06-21 - Cleveland Guardians @ Houston Astros (Warmup)"
     },
     {
         "game_id": 824095,
         "game_datetime": "2026-06-21T18:10:00Z",
         "game_date": "2026-06-21",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "St. Louis Cardinals",
         "home_name": "Kansas City Royals",
         "away_id": 138,
@@ -179,7 +179,7 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "KC leads 2-0",
-        "summary": "2026-06-21 - St. Louis Cardinals @ Kansas City Royals (Pre-Game)"
+        "summary": "2026-06-21 - St. Louis Cardinals @ Kansas City Royals (Warmup)"
     },
     {
         "game_id": 822883,
@@ -362,8 +362,8 @@
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [
-            "NBC/Peacock",
-            "NBCSN"
+            "NBCSN",
+            "NBC/Peacock"
         ],
         "series_status": "NYM leads 1-0",
         "summary": "2026-06-21 - New York Mets @ Philadelphia Phillies (Scheduled)"
