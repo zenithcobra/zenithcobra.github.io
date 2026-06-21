@@ -15,10 +15,10 @@
         "away_probable_pitcher": "Chase Burns",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
@@ -30,7 +30,7 @@
         "game_datetime": "2026-06-21T17:35:00Z",
         "game_date": "2026-06-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "Atlanta Braves",
         "away_id": 158,
@@ -41,22 +41,22 @@
         "away_probable_pitcher": "Robert Gasser",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-21 - Milwaukee Brewers @ Atlanta Braves (Scheduled)"
+        "series_status": "ATL leads 2-0",
+        "summary": "2026-06-21 - Milwaukee Brewers @ Atlanta Braves (Pre-Game)"
     },
     {
         "game_id": 822968,
         "game_datetime": "2026-06-21T17:40:00Z",
         "game_date": "2026-06-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Washington Nationals",
         "home_name": "Tampa Bay Rays",
         "away_id": 120,
@@ -67,15 +67,15 @@
         "away_probable_pitcher": "Andrew Alvarez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-21 - Washington Nationals @ Tampa Bay Rays (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-06-21 - Washington Nationals @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 824260,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-06-21T17:40:00Z",
         "game_date": "2026-06-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Francisco Giants",
         "home_name": "Miami Marlins",
         "away_id": 137,
@@ -126,8 +126,8 @@
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-21 - San Francisco Giants @ Miami Marlins (Scheduled)"
+        "series_status": "MIA leads 2-0",
+        "summary": "2026-06-21 - San Francisco Giants @ Miami Marlins (Pre-Game)"
     },
     {
         "game_id": 824177,
@@ -160,7 +160,7 @@
         "game_datetime": "2026-06-21T18:10:00Z",
         "game_date": "2026-06-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "Kansas City Royals",
         "away_id": 138,
@@ -178,8 +178,8 @@
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-21 - St. Louis Cardinals @ Kansas City Royals (Scheduled)"
+        "series_status": "KC leads 2-0",
+        "summary": "2026-06-21 - St. Louis Cardinals @ Kansas City Royals (Pre-Game)"
     },
     {
         "game_id": 824664,
@@ -204,7 +204,7 @@
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
+        "series_status": null,
         "summary": "2026-06-21 - Toronto Blue Jays @ Chicago Cubs (Scheduled)"
     },
     {
@@ -220,7 +220,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Nathan Eovaldi",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Wandy Peralta",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -336,7 +336,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
+        "series_status": null,
         "summary": "2026-06-21 - Baltimore Orioles @ Los Angeles Dodgers (Scheduled)"
     },
     {
@@ -390,7 +390,7 @@
         "national_broadcasts": [
             "NBC/Peacock"
         ],
-        "series_status": "Series tied 1-1",
+        "series_status": "NYM leads 1-0",
         "summary": "2026-06-21 - New York Mets @ Philadelphia Phillies (Scheduled)"
     }
 ]
