@@ -145,10 +145,10 @@
         "away_probable_pitcher": "Slade Cecconi",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2392,
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
@@ -186,7 +186,7 @@
         "game_datetime": "2026-06-21T18:20:00Z",
         "game_date": "2026-06-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "Chicago Cubs",
         "away_id": 141,
@@ -197,15 +197,15 @@
         "away_probable_pitcher": "Dylan Cease",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-21 - Toronto Blue Jays @ Chicago Cubs (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-06-21 - Toronto Blue Jays @ Chicago Cubs (Pre-Game)"
     },
     {
         "game_id": 822883,
@@ -264,7 +264,7 @@
         "game_datetime": "2026-06-21T19:15:00Z",
         "game_date": "2026-06-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Arizona Diamondbacks",
         "away_id": 142,
@@ -285,7 +285,7 @@
             "NBCSN / Peacock"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-21 - Minnesota Twins @ Arizona Diamondbacks (Scheduled)"
+        "summary": "2026-06-21 - Minnesota Twins @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 824987,
@@ -336,7 +336,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "Series tied 1-1",
         "summary": "2026-06-21 - Baltimore Orioles @ Los Angeles Dodgers (Scheduled)"
     },
     {
@@ -390,7 +390,7 @@
         "national_broadcasts": [
             "NBC/Peacock"
         ],
-        "series_status": "NYM leads 1-0",
+        "series_status": "Series tied 1-1",
         "summary": "2026-06-21 - New York Mets @ Philadelphia Phillies (Scheduled)"
     }
 ]
