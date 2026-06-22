@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Middle",
+        "home_score": 4,
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-22 - New York Yankees (1) @ Detroit Tigers (0) (Middle of the 3rd)"
+        "summary": "2026-06-22 - New York Yankees (1) @ Detroit Tigers (4) (Top of the 5th)"
     },
     {
         "game_id": 822964,
@@ -43,13 +43,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 5,
         "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-22 - Kansas City Royals (1) @ Tampa Bay Rays (0) (Top of the 2nd)"
+        "summary": "2026-06-22 - Kansas City Royals (1) @ Tampa Bay Rays (0) (Top of the 5th)"
     },
     {
         "game_id": 823851,
@@ -67,15 +67,15 @@
         "away_probable_pitcher": "Tyler Alexander",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-22 - Texas Rangers (0) @ Miami Marlins (0) (Bottom of the 2nd)"
+        "summary": "2026-06-22 - Texas Rangers (2) @ Miami Marlins (0) (Bottom of the 4th)"
     },
     {
         "game_id": 822720,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-06-22T23:07:00Z",
         "game_date": "2026-06-22",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Houston Astros",
         "home_name": "Toronto Blue Jays",
         "away_id": 117,
@@ -119,22 +119,22 @@
         "away_probable_pitcher": "Hunter Brown",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-22 - Houston Astros @ Toronto Blue Jays (Warmup)"
+        "summary": "2026-06-22 - Houston Astros (1) @ Toronto Blue Jays (0) (Top of the 2nd)"
     },
     {
         "game_id": 824502,
         "game_datetime": "2026-06-22T23:10:00Z",
         "game_date": "2026-06-22",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Milwaukee Brewers",
         "home_name": "Cincinnati Reds",
         "away_id": 158,
@@ -147,20 +147,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-22 - Milwaukee Brewers @ Cincinnati Reds (Warmup)"
+        "summary": "2026-06-22 - Milwaukee Brewers (0) @ Cincinnati Reds (0) (Top of the 3rd)"
     },
     {
         "game_id": 823692,
         "game_datetime": "2026-06-22T23:40:00Z",
         "game_date": "2026-06-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Minnesota Twins",
         "away_id": 119,
@@ -168,7 +168,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Zebby Matthews",
-        "away_probable_pitcher": "Eric Lauer",
+        "away_probable_pitcher": "Will Klein",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
@@ -179,14 +179,14 @@
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-22 - Los Angeles Dodgers @ Minnesota Twins (Pre-Game)"
+        "summary": "2026-06-22 - Los Angeles Dodgers (0) @ Minnesota Twins (0) (Top of the 1st)"
     },
     {
         "game_id": 824585,
         "game_datetime": "2026-06-22T23:40:00Z",
         "game_date": "2026-06-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cleveland Guardians",
         "home_name": "Chicago White Sox",
         "away_id": 114,
@@ -205,14 +205,14 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-22 - Cleveland Guardians @ Chicago White Sox (Pre-Game)"
+        "summary": "2026-06-22 - Cleveland Guardians @ Chicago White Sox (Warmup)"
     },
     {
         "game_id": 823040,
         "game_datetime": "2026-06-22T23:45:00Z",
         "game_date": "2026-06-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Arizona Diamondbacks",
         "home_name": "St. Louis Cardinals",
         "away_id": 109,
@@ -231,7 +231,7 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-22 - Arizona Diamondbacks @ St. Louis Cardinals (Pre-Game)"
+        "summary": "2026-06-22 - Arizona Diamondbacks @ St. Louis Cardinals (Warmup)"
     },
     {
         "game_id": 824344,
