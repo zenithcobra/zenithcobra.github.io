@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-22T22:10:00Z",
         "game_date": "2026-06-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Yankees",
         "home_name": "Detroit Tigers",
         "away_id": 147,
@@ -23,7 +23,7 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-22 - New York Yankees @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-06-22 - New York Yankees @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 822964,
@@ -82,7 +82,7 @@
         "game_datetime": "2026-06-22T22:45:00Z",
         "game_date": "2026-06-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "away_name": "Philadelphia Phillies",
         "home_name": "Washington Nationals",
         "away_id": 143,
@@ -101,7 +101,7 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-22 - Philadelphia Phillies @ Washington Nationals (Pre-Game)"
+        "summary": "2026-06-22 - Philadelphia Phillies @ Washington Nationals (Delayed Start)"
     },
     {
         "game_id": 822800,
@@ -316,7 +316,7 @@
         "game_datetime": "2026-06-23T02:10:00Z",
         "game_date": "2026-06-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Atlanta Braves",
         "home_name": "San Diego Padres",
         "away_id": 144,
@@ -337,6 +337,6 @@
             "ESPN/ESPN App"
         ],
         "series_status": null,
-        "summary": "2026-06-22 - Atlanta Braves @ San Diego Padres (Scheduled)"
+        "summary": "2026-06-22 - Atlanta Braves @ San Diego Padres (Pre-Game)"
     }
 ]
