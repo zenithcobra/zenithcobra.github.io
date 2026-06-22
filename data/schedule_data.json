@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "Middle",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-22 - New York Yankees (1) @ Detroit Tigers (0) (Bottom of the 2nd)"
+        "summary": "2026-06-22 - New York Yankees (1) @ Detroit Tigers (0) (Middle of the 3rd)"
     },
     {
         "game_id": 822964,
@@ -41,15 +41,15 @@
         "away_probable_pitcher": "Michael Wacha",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-22 - Kansas City Royals (0) @ Tampa Bay Rays (0) (Top of the 1st)"
+        "summary": "2026-06-22 - Kansas City Royals (1) @ Tampa Bay Rays (0) (Top of the 2nd)"
     },
     {
         "game_id": 823851,
@@ -69,13 +69,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Bottom",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-22 - Texas Rangers (0) @ Miami Marlins (0) (Bottom of the 1st)"
+        "summary": "2026-06-22 - Texas Rangers (0) @ Miami Marlins (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 822720,
@@ -134,7 +134,7 @@
         "game_datetime": "2026-06-22T23:10:00Z",
         "game_date": "2026-06-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Milwaukee Brewers",
         "home_name": "Cincinnati Reds",
         "away_id": 158,
@@ -153,7 +153,7 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-22 - Milwaukee Brewers @ Cincinnati Reds (Pre-Game)"
+        "summary": "2026-06-22 - Milwaukee Brewers @ Cincinnati Reds (Warmup)"
     },
     {
         "game_id": 823692,
