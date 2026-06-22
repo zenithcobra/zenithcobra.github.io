@@ -187,28 +187,6 @@
         "fHR24pg": "1/6"
     },
     {
-        "name": "Nick Gonzales",
-        "team": "Pittsburgh Pirates",
-        "player_id": 693304,
-        "HR": 3,
-        "HRpg": 0.04,
-        "fHRpg": "0",
-        "HR24": 5,
-        "HR24pg": 0.05,
-        "fHR24pg": "0"
-    },
-    {
-        "name": "Bryan Reynolds",
-        "team": "Pittsburgh Pirates",
-        "player_id": 668804,
-        "HR": 11,
-        "HRpg": 0.14,
-        "fHRpg": "1/7",
-        "HR24": 16,
-        "HR24pg": 0.1,
-        "fHR24pg": "1/7"
-    },
-    {
         "name": "Donovan Walton",
         "team": "Los Angeles Angels",
         "player_id": 622268,
@@ -218,17 +196,6 @@
         "HR24": 0,
         "HR24pg": 0.0,
         "fHR24pg": "0"
-    },
-    {
-        "name": "Nick Kurtz",
-        "team": "Athletics",
-        "player_id": 701762,
-        "HR": 19,
-        "HRpg": 0.25,
-        "fHRpg": "1/4",
-        "HR24": 36,
-        "HR24pg": 0.31,
-        "fHR24pg": "1/3"
     },
     {
         "name": "Denzer Guzman",
@@ -297,17 +264,6 @@
         "fHR24pg": "1/7"
     },
     {
-        "name": "Dominic Canzone",
-        "team": "Seattle Mariners",
-        "player_id": 686527,
-        "HR": 12,
-        "HRpg": 0.17,
-        "fHRpg": "1/6",
-        "HR24": 11,
-        "HR24pg": 0.13,
-        "fHR24pg": "1/7"
-    },
-    {
         "name": "Nate Eaton",
         "team": "Boston Red Sox",
         "player_id": 681987,
@@ -317,5 +273,27 @@
         "HR24": 1,
         "HR24pg": 0.02,
         "fHR24pg": "0"
+    },
+    {
+        "name": "Kyle Schwarber",
+        "team": "Philadelphia Phillies",
+        "player_id": 656941,
+        "HR": 29,
+        "HRpg": 0.39,
+        "fHRpg": "2/5",
+        "HR24": 56,
+        "HR24pg": 0.35,
+        "fHR24pg": "1/3"
+    },
+    {
+        "name": "Bryce Harper",
+        "team": "Philadelphia Phillies",
+        "player_id": 547180,
+        "HR": 17,
+        "HRpg": 0.22,
+        "fHRpg": "1/5",
+        "HR24": 27,
+        "HR24pg": 0.2,
+        "fHR24pg": "1/5"
     }
 ]
