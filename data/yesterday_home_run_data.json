@@ -11,12 +11,56 @@
         "fHR24pg": "1/4"
     },
     {
+        "name": "Amed Rosario",
+        "team": "New York Yankees",
+        "player_id": 642708,
+        "HR": 7,
+        "HRpg": 0.17,
+        "fHRpg": "1/6",
+        "HR24": 1,
+        "HR24pg": 0.06,
+        "fHR24pg": "0"
+    },
+    {
         "name": "Ezequiel Duran",
         "team": "Texas Rangers",
         "player_id": 677649,
         "HR": 6,
         "HRpg": 0.09,
         "fHRpg": "1/7",
+        "HR24": 0,
+        "HR24pg": 0.0,
+        "fHR24pg": "0"
+    },
+    {
+        "name": "Luis Garc\u00eda Jr.",
+        "team": "Washington Nationals",
+        "player_id": 671277,
+        "HR": 11,
+        "HRpg": 0.15,
+        "fHRpg": "1/7",
+        "HR24": 16,
+        "HR24pg": 0.12,
+        "fHR24pg": "1/7"
+    },
+    {
+        "name": "Brandon Marsh",
+        "team": "Philadelphia Phillies",
+        "player_id": 669016,
+        "HR": 10,
+        "HRpg": 0.14,
+        "fHRpg": "1/7",
+        "HR24": 11,
+        "HR24pg": 0.08,
+        "fHR24pg": "1/7"
+    },
+    {
+        "name": "Curtis Mead",
+        "team": "Washington Nationals",
+        "player_id": 678554,
+        "HR": 12,
+        "HRpg": 0.19,
+        "fHRpg": "1/5",
         "HR24": 0,
         "HR24pg": 0.0,
         "fHR24pg": "0"
@@ -42,5 +86,71 @@
         "HR24": 35,
         "HR24pg": 0.28,
         "fHR24pg": "2/7"
+    },
+    {
+        "name": "Freddie Freeman",
+        "team": "Los Angeles Dodgers",
+        "player_id": 518692,
+        "HR": 13,
+        "HRpg": 0.17,
+        "fHRpg": "1/6",
+        "HR24": 24,
+        "HR24pg": 0.16,
+        "fHR24pg": "1/6"
+    },
+    {
+        "name": "Randal Grichuk",
+        "team": "Chicago White Sox",
+        "player_id": 545341,
+        "HR": 0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "HR24": 2,
+        "HR24pg": 0.05,
+        "fHR24pg": "0"
+    },
+    {
+        "name": "Taylor Ward",
+        "team": "Baltimore Orioles",
+        "player_id": 621493,
+        "HR": 5,
+        "HRpg": 0.06,
+        "fHRpg": "0",
+        "HR24": 36,
+        "HR24pg": 0.23,
+        "fHR24pg": "1/4"
+    },
+    {
+        "name": "Coby Mayo",
+        "team": "Baltimore Orioles",
+        "player_id": 691723,
+        "HR": 10,
+        "HRpg": 0.16,
+        "fHRpg": "1/6",
+        "HR24": 11,
+        "HR24pg": 0.13,
+        "fHR24pg": "1/7"
+    },
+    {
+        "name": "Jorge Soler",
+        "team": "Los Angeles Angels",
+        "player_id": 624585,
+        "HR": 10,
+        "HRpg": 0.17,
+        "fHRpg": "1/6",
+        "HR24": 12,
+        "HR24pg": 0.15,
+        "fHR24pg": "1/7"
+    },
+    {
+        "name": "Manny Machado",
+        "team": "San Diego Padres",
+        "player_id": 592518,
+        "HR": 14,
+        "HRpg": 0.19,
+        "fHRpg": "1/5",
+        "HR24": 27,
+        "HR24pg": 0.17,
+        "fHR24pg": "1/6"
     }
 ]
