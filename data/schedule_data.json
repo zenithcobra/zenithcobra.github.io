@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-23T20:07:00Z",
         "game_date": "2026-06-23",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Houston Astros",
         "home_name": "Toronto Blue Jays",
         "away_id": 117,
@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Peter Lambert",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-06-23 - Houston Astros @ Toronto Blue Jays (Warmup)"
+        "summary": "2026-06-23 - Houston Astros (1) @ Toronto Blue Jays (0) (Middle of the 1st)"
     },
     {
         "game_id": 823365,
@@ -119,10 +119,10 @@
         "away_probable_pitcher": "Carlos Rod\u00f3n",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
@@ -212,7 +212,7 @@
         "game_datetime": "2026-06-23T23:40:00Z",
         "game_date": "2026-06-23",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Minnesota Twins",
         "away_id": 119,
@@ -233,7 +233,7 @@
             "TBS"
         ],
         "series_status": "LAD leads 1-0",
-        "summary": "2026-06-23 - Los Angeles Dodgers @ Minnesota Twins (Scheduled)"
+        "summary": "2026-06-23 - Los Angeles Dodgers @ Minnesota Twins (Pre-Game)"
     },
     {
         "game_id": 824584,
