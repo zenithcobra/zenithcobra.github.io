@@ -16,21 +16,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 4,
-        "home_score": 2,
-        "current_inning": 6,
-        "inning_state": "Bottom",
+        "home_score": 4,
+        "current_inning": 8,
+        "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-06-23 - Houston Astros (4) @ Toronto Blue Jays (2) (Bottom of the 6th)"
+        "summary": "2026-06-23 - Houston Astros (4) @ Toronto Blue Jays (4) (Top of the 8th)"
     },
     {
         "game_id": 823365,
         "game_datetime": "2026-06-23T22:40:00Z",
         "game_date": "2026-06-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Seattle Mariners",
         "home_name": "Pittsburgh Pirates",
         "away_id": 136,
@@ -49,14 +49,14 @@
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-23 - Seattle Mariners @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-06-23 - Seattle Mariners @ Pittsburgh Pirates (Warmup)"
     },
     {
         "game_id": 822963,
         "game_datetime": "2026-06-23T22:40:00Z",
         "game_date": "2026-06-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Kansas City Royals",
         "home_name": "Tampa Bay Rays",
         "away_id": 118,
@@ -75,14 +75,14 @@
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "KC leads 1-0",
-        "summary": "2026-06-23 - Kansas City Royals @ Tampa Bay Rays (Pre-Game)"
+        "summary": "2026-06-23 - Kansas City Royals @ Tampa Bay Rays (Warmup)"
     },
     {
         "game_id": 823849,
         "game_datetime": "2026-06-23T22:40:00Z",
         "game_date": "2026-06-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Texas Rangers",
         "home_name": "Miami Marlins",
         "away_id": 140,
@@ -101,14 +101,14 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "TEX leads 1-0",
-        "summary": "2026-06-23 - Texas Rangers @ Miami Marlins (Pre-Game)"
+        "summary": "2026-06-23 - Texas Rangers @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 824262,
         "game_datetime": "2026-06-23T22:40:00Z",
         "game_date": "2026-06-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Yankees",
         "home_name": "Detroit Tigers",
         "away_id": 147,
@@ -127,14 +127,14 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "DET leads 1-0",
-        "summary": "2026-06-23 - New York Yankees @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-06-23 - New York Yankees @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 822718,
         "game_datetime": "2026-06-23T22:45:00Z",
         "game_date": "2026-06-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Philadelphia Phillies",
         "home_name": "Washington Nationals",
         "away_id": 143,
@@ -153,7 +153,7 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "WSH leads 1-0",
-        "summary": "2026-06-23 - Philadelphia Phillies @ Washington Nationals (Pre-Game)"
+        "summary": "2026-06-23 - Philadelphia Phillies @ Washington Nationals (Warmup)"
     },
     {
         "game_id": 823614,
@@ -318,7 +318,7 @@
         "game_datetime": "2026-06-24T01:38:00Z",
         "game_date": "2026-06-23",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Baltimore Orioles",
         "home_name": "Los Angeles Angels",
         "away_id": 110,
@@ -336,8 +336,8 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-23 - Baltimore Orioles @ Los Angeles Angels (Scheduled)"
+        "series_status": "BAL leads 1-0",
+        "summary": "2026-06-23 - Baltimore Orioles @ Los Angeles Angels (Pre-Game)"
     },
     {
         "game_id": 823286,
@@ -381,10 +381,10 @@
         "away_probable_pitcher": "Aaron Civale",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
