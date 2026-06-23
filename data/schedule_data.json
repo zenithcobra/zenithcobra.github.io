@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-23T20:07:00Z",
         "game_date": "2026-06-23",
         "game_type": "R",
-        "status": "Player challenge",
+        "status": "In Progress",
         "away_name": "Houston Astros",
         "home_name": "Toronto Blue Jays",
         "away_id": 117,
@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 4,
-        "home_score": 0,
-        "current_inning": 4,
-        "inning_state": "Top",
+        "home_score": 2,
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-06-23 - Houston Astros @ Toronto Blue Jays (Player challenge)"
+        "summary": "2026-06-23 - Houston Astros (4) @ Toronto Blue Jays (2) (Bottom of the 5th)"
     },
     {
         "game_id": 823365,
@@ -303,10 +303,10 @@
         "away_probable_pitcher": "Sonny Gray",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
@@ -370,7 +370,7 @@
         "game_datetime": "2026-06-24T01:45:00Z",
         "game_date": "2026-06-23",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Athletics",
         "home_name": "San Francisco Giants",
         "away_id": 133,
@@ -389,6 +389,6 @@
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-23 - Athletics @ San Francisco Giants (Scheduled)"
+        "summary": "2026-06-23 - Athletics @ San Francisco Giants (Pre-Game)"
     }
 ]
