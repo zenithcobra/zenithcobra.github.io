@@ -105,20 +105,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 3,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 2-0",
-        "summary": "2026-06-24 - Cleveland Guardians (0) @ Chicago White Sox (0) (Bottom of the 3rd)"
+        "summary": "2026-06-24 - Cleveland Guardians (0) @ Chicago White Sox (0) (Bottom of the 4th)"
     },
     {
         "game_id": 824341,
         "game_datetime": "2026-06-24T19:10:00Z",
         "game_date": "2026-06-24",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Boston Red Sox",
         "home_name": "Colorado Rockies",
         "away_id": 111,
@@ -131,13 +131,18 @@
         "away_pitcher_note": "",
         "away_score": 6,
         "home_score": 8,
-        "current_inning": 8,
-        "inning_state": "End",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-06-24 - Boston Red Sox (6) @ Colorado Rockies (8) (End of the 8th)"
+        "series_status": "COL wins 2-1",
+        "winning_team": "Colorado Rockies",
+        "losing_team": "Boston Red Sox",
+        "winning_pitcher": "Antonio Senzatela",
+        "losing_pitcher": "Justin Slaten",
+        "save_pitcher": "Jimmy Herget",
+        "summary": "2026-06-24 - Boston Red Sox (6) @ Colorado Rockies (8) (Game Over)"
     },
     {
         "game_id": 824018,
@@ -157,13 +162,13 @@
         "away_pitcher_note": "",
         "away_score": 5,
         "home_score": 2,
-        "current_inning": 5,
+        "current_inning": 6,
         "inning_state": "Bottom",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-24 - Baltimore Orioles (5) @ Los Angeles Angels (2) (Bottom of the 5th)"
+        "summary": "2026-06-24 - Baltimore Orioles (5) @ Los Angeles Angels (2) (Bottom of the 6th)"
     },
     {
         "game_id": 823367,
