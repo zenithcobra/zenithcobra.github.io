@@ -207,12 +207,6 @@
         "player_id": 605452
     },
     {
-        "player_name": "Jose Corniell",
-        "team": "Texas Rangers",
-        "team_id": 140,
-        "player_id": 692030
-    },
-    {
         "player_name": "Josh Jung",
         "team": "Texas Rangers",
         "team_id": 140,
@@ -329,6 +323,12 @@
         "player_id": 641302
     },
     {
+        "player_name": "Winston Santos",
+        "team": "Texas Rangers",
+        "team_id": 140,
+        "player_id": 692437
+    },
+    {
         "player_name": "Wyatt Langford",
         "team": "Texas Rangers",
         "team_id": 140,
@@ -404,12 +404,6 @@
         "fHR24pg": "1/7"
     },
     {
-        "player_name": "Dax Fulton",
-        "team": "Miami Marlins",
-        "team_id": 146,
-        "player_id": 690978
-    },
-    {
         "player_name": "Esteury Ruiz",
         "team": "Miami Marlins",
         "team_id": 146,
@@ -428,6 +422,12 @@
         "HR24": 1,
         "HR24pg": 0.05,
         "fHR24pg": "0"
+    },
+    {
+        "player_name": "Eury P\u00e9rez",
+        "team": "Miami Marlins",
+        "team_id": 146,
+        "player_id": 691587
     },
     {
         "player_name": "Griffin Conine",
@@ -1082,7 +1082,7 @@
         "team": "New York Mets",
         "team_id": 121,
         "player_id": 666182,
-        "position": "3B",
+        "position": "SS",
         "games_played": 78.0,
         "H": 79.0,
         "HR": 9.0,
@@ -1240,6 +1240,12 @@
         "HR24": 4,
         "HR24pg": 0.17,
         "fHR24pg": "1/6"
+    },
+    {
+        "player_name": "Jonathan Pintaro",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 702752
     },
     {
         "player_name": "Juan Soto",
@@ -1793,7 +1799,7 @@
         "team": "New York Mets",
         "team_id": 121,
         "player_id": 666182,
-        "position": "3B",
+        "position": "SS",
         "games_played": 78.0,
         "H": 79.0,
         "HR": 9.0,
@@ -1951,6 +1957,12 @@
         "HR24": 4,
         "HR24pg": 0.17,
         "fHR24pg": "1/6"
+    },
+    {
+        "player_name": "Jonathan Pintaro",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 702752
     },
     {
         "player_name": "Juan Soto",
@@ -8078,7 +8090,7 @@
         "team": "Cincinnati Reds",
         "team_id": 113,
         "player_id": 694362,
-        "position": "RF",
+        "position": "CF",
         "games_played": 36.0,
         "H": 37.0,
         "HR": 2.0,
@@ -9741,7 +9753,7 @@
         "team": "St. Louis Cardinals",
         "team_id": 138,
         "player_id": 676369,
-        "position": "OF",
+        "position": "LF",
         "games_played": 14.0,
         "H": 10.0,
         "HR": 2.0,
@@ -10918,7 +10930,7 @@
         "team": "San Francisco Giants",
         "team_id": 137,
         "player_id": 669477,
-        "position": "DH",
+        "position": "LF",
         "games_played": 70.0,
         "H": 84.0,
         "HR": 16.0,
