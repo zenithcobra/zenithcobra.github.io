@@ -1226,6 +1226,12 @@
         "player_id": 676755
     },
     {
+        "player_name": "Jack Brannigan",
+        "team": "Pittsburgh Pirates",
+        "team_id": 134,
+        "player_id": 687394
+    },
+    {
         "player_name": "Jake Mangum",
         "team": "Pittsburgh Pirates",
         "team_id": 134,
@@ -1347,26 +1353,6 @@
         "fRBIpg": "2/3",
         "HR24": 4,
         "HR24pg": 0.08,
-        "fHR24pg": "1/7"
-    },
-    {
-        "player_name": "Spencer Horwitz",
-        "team": "Pittsburgh Pirates",
-        "team_id": 134,
-        "player_id": 687462,
-        "position": "1B",
-        "games_played": 74.0,
-        "H": 69.0,
-        "HR": 10.0,
-        "RBI": 33.0,
-        "HRpg": 0.135,
-        "fHRpg": "1/7",
-        "Hpg": 0.932,
-        "fHpg": "1",
-        "RBIpg": 0.446,
-        "fRBIpg": "3/7",
-        "HR24": 11,
-        "HR24pg": 0.1,
         "fHR24pg": "1/7"
     },
     {
@@ -2526,7 +2512,18 @@
         "player_name": "Hao-Yu Lee",
         "team": "Detroit Tigers",
         "team_id": 116,
-        "player_id": ""
+        "player_id": 701678,
+        "position": "2B",
+        "games_played": 42.0,
+        "H": 28.0,
+        "HR": 2.0,
+        "RBI": 10.0,
+        "HRpg": 0.048,
+        "fHRpg": "0",
+        "Hpg": 0.667,
+        "fHpg": "2/3",
+        "RBIpg": 0.238,
+        "fRBIpg": "1/4"
     },
     {
         "player_name": "Jacob Waguespack",
