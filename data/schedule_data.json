@@ -78,14 +78,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 0,
-        "current_inning": 2,
+        "home_score": 3,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 2-0",
-        "summary": "2026-06-24 - Chicago Cubs (1) @ New York Mets (0) (Top of the 2nd)"
+        "summary": "2026-06-24 - Chicago Cubs (1) @ New York Mets (3) (Top of the 3rd)"
     },
     {
         "game_id": 824583,
@@ -104,14 +104,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 1,
-        "current_inning": 9,
-        "inning_state": "Bottom",
+        "home_score": 3,
+        "current_inning": 10,
+        "inning_state": "Top",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 2-0",
-        "summary": "2026-06-24 - Cleveland Guardians (3) @ Chicago White Sox (1) (Bottom of the 9th)"
+        "summary": "2026-06-24 - Cleveland Guardians (3) @ Chicago White Sox (3) (Top of the 10th)"
     },
     {
         "game_id": 824341,
@@ -149,7 +149,7 @@
         "game_datetime": "2026-06-24T20:07:00Z",
         "game_date": "2026-06-24",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Baltimore Orioles",
         "home_name": "Los Angeles Angels",
         "away_id": 110,
@@ -173,7 +173,7 @@
         "winning_pitcher": "Chase Silseth",
         "losing_pitcher": "Keegan Akin",
         "save_pitcher": null,
-        "summary": "2026-06-24 - Baltimore Orioles (6) @ Los Angeles Angels (7) (Game Over)"
+        "summary": "2026-06-24 - Baltimore Orioles (6) @ Los Angeles Angels (7) (Final)"
     },
     {
         "game_id": 823367,
@@ -192,14 +192,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "End",
+        "home_score": 4,
+        "current_inning": 4,
+        "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "SEA leads 1-0",
-        "summary": "2026-06-24 - Seattle Mariners (1) @ Pittsburgh Pirates (0) (End of the 3rd)"
+        "summary": "2026-06-24 - Seattle Mariners (1) @ Pittsburgh Pirates (4) (Bottom of the 4th)"
     },
     {
         "game_id": 822965,
@@ -218,14 +218,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 3,
+        "home_score": 5,
         "current_inning": 4,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "KC leads 2-0",
-        "summary": "2026-06-24 - Kansas City Royals (0) @ Tampa Bay Rays (3) (Top of the 4th)"
+        "summary": "2026-06-24 - Kansas City Royals (0) @ Tampa Bay Rays (5) (Bottom of the 4th)"
     },
     {
         "game_id": 824259,
@@ -244,14 +244,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 1,
-        "current_inning": 4,
+        "home_score": 2,
+        "current_inning": 5,
         "inning_state": "Bottom",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-24 - New York Yankees (2) @ Detroit Tigers (1) (Bottom of the 4th)"
+        "summary": "2026-06-24 - New York Yankees (2) @ Detroit Tigers (2) (Bottom of the 5th)"
     },
     {
         "game_id": 822719,
@@ -269,15 +269,15 @@
         "away_probable_pitcher": "Aaron Nola",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 3,
         "home_score": 2,
-        "current_inning": 3,
-        "inning_state": "Bottom",
+        "current_inning": 4,
+        "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-24 - Philadelphia Phillies (0) @ Washington Nationals (2) (Bottom of the 3rd)"
+        "summary": "2026-06-24 - Philadelphia Phillies (3) @ Washington Nationals (2) (Top of the 4th)"
     },
     {
         "game_id": 822798,
@@ -297,13 +297,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 1,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-24 - Houston Astros (1) @ Toronto Blue Jays (1) (Bottom of the 2nd)"
+        "summary": "2026-06-24 - Houston Astros (1) @ Toronto Blue Jays (1) (Bottom of the 3rd)"
     },
     {
         "game_id": 824500,
@@ -323,20 +323,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Middle",
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "MIL leads 2-0",
-        "summary": "2026-06-24 - Milwaukee Brewers (0) @ Cincinnati Reds (0) (Middle of the 2nd)"
+        "summary": "2026-06-24 - Milwaukee Brewers (0) @ Cincinnati Reds (0) (Top of the 3rd)"
     },
     {
         "game_id": 823691,
         "game_datetime": "2026-06-24T23:40:00Z",
         "game_date": "2026-06-24",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Minnesota Twins",
         "away_id": 119,
@@ -350,19 +350,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "LAD leads 2-0",
-        "summary": "2026-06-24 - Los Angeles Dodgers @ Minnesota Twins (Warmup)"
+        "summary": "2026-06-24 - Los Angeles Dodgers (0) @ Minnesota Twins (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823041,
         "game_datetime": "2026-06-24T23:45:00Z",
         "game_date": "2026-06-24",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Arizona Diamondbacks",
         "home_name": "St. Louis Cardinals",
         "away_id": 109,
@@ -381,7 +381,7 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-24 - Arizona Diamondbacks @ St. Louis Cardinals (Warmup)"
+        "summary": "2026-06-24 - Arizona Diamondbacks (0) @ St. Louis Cardinals (0) (Top of the 1st)"
     },
     {
         "game_id": 823284,
