@@ -35,7 +35,7 @@
         "game_datetime": "2026-06-25T16:35:00Z",
         "game_date": "2026-06-25",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Seattle Mariners",
         "home_name": "Pittsburgh Pirates",
         "away_id": 136,
@@ -47,14 +47,19 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 3,
-        "current_inning": 8,
-        "inning_state": "Bottom",
+        "home_score": 5,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-06-25 - Seattle Mariners (1) @ Pittsburgh Pirates (3) (Bottom of the 8th)"
+        "series_status": "PIT wins 2-1",
+        "winning_team": "Pittsburgh Pirates",
+        "losing_team": "Seattle Mariners",
+        "winning_pitcher": "Bubba Chandler",
+        "losing_pitcher": "Bryce Miller",
+        "save_pitcher": null,
+        "summary": "2026-06-25 - Seattle Mariners (1) @ Pittsburgh Pirates (5) (Game Over)"
     },
     {
         "game_id": 823209,
@@ -191,7 +196,7 @@
         "game_datetime": "2026-06-25T23:10:00Z",
         "game_date": "2026-06-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Yankees",
         "home_name": "Boston Red Sox",
         "away_id": 147,
@@ -212,7 +217,7 @@
             "MLB Network"
         ],
         "series_status": null,
-        "summary": "2026-06-25 - New York Yankees @ Boston Red Sox (Scheduled)"
+        "summary": "2026-06-25 - New York Yankees @ Boston Red Sox (Pre-Game)"
     },
     {
         "game_id": 823042,
