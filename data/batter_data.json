@@ -1514,23 +1514,6 @@
         "player_id": 656492
     },
     {
-        "player_name": "Gus Varland",
-        "team": "Washington Nationals",
-        "team_id": 120,
-        "player_id": 681402,
-        "position": "P",
-        "games_played": 32.0,
-        "H": 0.0,
-        "HR": 0.0,
-        "RBI": 0.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.0,
-        "fHpg": "0",
-        "RBIpg": 0.0,
-        "fRBIpg": "0"
-    },
-    {
         "player_name": "Jacob Young",
         "team": "Washington Nationals",
         "team_id": 120,
@@ -1722,6 +1705,12 @@
         "team": "Washington Nationals",
         "team_id": 120,
         "player_id": 641793
+    },
+    {
+        "player_name": "Zak Kent",
+        "team": "Washington Nationals",
+        "team_id": 120,
+        "player_id": 687849
     },
     {
         "player_name": "Albert Su\u00e1rez",
@@ -2433,6 +2422,12 @@
         "fHR24pg": "1/6"
     },
     {
+        "player_name": "Adam Macko",
+        "team": "Toronto Blue Jays",
+        "team_id": 141,
+        "player_id": 671936
+    },
+    {
         "player_name": "Alejandro Kirk",
         "team": "Toronto Blue Jays",
         "team_id": 141,
@@ -2713,12 +2708,6 @@
         "team": "Toronto Blue Jays",
         "team_id": 141,
         "player_id": 669456
-    },
-    {
-        "player_name": "Simeon Woods Richardson",
-        "team": "Toronto Blue Jays",
-        "team_id": 141,
-        "player_id": 680573
     },
     {
         "player_name": "Spencer Miles",
@@ -5800,6 +5789,12 @@
         "player_id": 608379
     },
     {
+        "player_name": "Mitch Spence",
+        "team": "Kansas City Royals",
+        "team_id": 118,
+        "player_id": 687765
+    },
+    {
         "player_name": "Nick Loftin",
         "team": "Kansas City Royals",
         "team_id": 118,
@@ -5870,12 +5865,6 @@
         "HR24": 9,
         "HR24pg": 0.09,
         "fHR24pg": "1/7"
-    },
-    {
-        "player_name": "Stephen Kolek",
-        "team": "Kansas City Royals",
-        "team_id": 118,
-        "player_id": 663568
     },
     {
         "player_name": "Steven Cruz",
@@ -7709,6 +7698,26 @@
         "team": "Miami Marlins",
         "team_id": 146,
         "player_id": 691587
+    },
+    {
+        "player_name": "Graham Pauley",
+        "team": "Miami Marlins",
+        "team_id": 146,
+        "player_id": 688363,
+        "position": "3B",
+        "games_played": 33.0,
+        "H": 14.0,
+        "HR": 1.0,
+        "RBI": 9.0,
+        "HRpg": 0.03,
+        "fHRpg": "0",
+        "Hpg": 0.424,
+        "fHpg": "3/7",
+        "RBIpg": 0.273,
+        "fRBIpg": "2/7",
+        "HR24": 4,
+        "HR24pg": 0.06,
+        "fHR24pg": "0"
     },
     {
         "player_name": "Griffin Conine",
