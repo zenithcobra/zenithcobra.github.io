@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-26T22:40:00Z",
         "game_date": "2026-06-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Houston Astros",
         "home_name": "Detroit Tigers",
         "away_id": 117,
@@ -22,8 +22,8 @@
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-26 - Houston Astros @ Detroit Tigers (Scheduled)"
+        "series_status": "HOU leads 1-0",
+        "summary": "2026-06-26 - Houston Astros @ Detroit Tigers (Pre-Game)"
     },
     {
         "game_id": 823363,
@@ -41,10 +41,10 @@
         "away_probable_pitcher": "Andrew Abbott",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
@@ -108,7 +108,7 @@
         "game_datetime": "2026-06-26T23:10:00Z",
         "game_date": "2026-06-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "Cleveland Guardians",
         "away_id": 136,
@@ -127,14 +127,14 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-26 - Seattle Mariners @ Cleveland Guardians (Scheduled)"
+        "summary": "2026-06-26 - Seattle Mariners @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 822962,
         "game_datetime": "2026-06-26T23:10:00Z",
         "game_date": "2026-06-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Tampa Bay Rays",
         "away_id": 109,
@@ -153,7 +153,7 @@
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-26 - Arizona Diamondbacks @ Tampa Bay Rays (Scheduled)"
+        "summary": "2026-06-26 - Arizona Diamondbacks @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 823610,
