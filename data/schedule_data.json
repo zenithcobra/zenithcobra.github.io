@@ -58,7 +58,7 @@
         "game_datetime": "2026-06-27T19:07:00Z",
         "game_date": "2026-06-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Texas Rangers",
         "home_name": "Toronto Blue Jays",
         "away_id": 140,
@@ -77,14 +77,14 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TEX leads 2-0",
-        "summary": "2026-06-27 - Texas Rangers @ Toronto Blue Jays (Scheduled)"
+        "summary": "2026-06-27 - Texas Rangers @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 823364,
         "game_datetime": "2026-06-27T20:05:00Z",
         "game_date": "2026-06-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cincinnati Reds",
         "home_name": "Pittsburgh Pirates",
         "away_id": 113,
@@ -102,8 +102,8 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-27 - Cincinnati Reds @ Pittsburgh Pirates (Scheduled)"
+        "series_status": "CIN leads 1-0",
+        "summary": "2026-06-27 - Cincinnati Reds @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 823609,
@@ -136,7 +136,7 @@
         "game_datetime": "2026-06-27T20:10:00Z",
         "game_date": "2026-06-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Kansas City Royals",
         "home_name": "Chicago White Sox",
         "away_id": 118,
@@ -147,15 +147,15 @@
         "away_probable_pitcher": "Michael Wacha",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-27 - Kansas City Royals @ Chicago White Sox (Scheduled)"
+        "series_status": "CWS leads 1-0",
+        "summary": "2026-06-27 - Kansas City Royals @ Chicago White Sox (Pre-Game)"
     },
     {
         "game_id": 822960,
