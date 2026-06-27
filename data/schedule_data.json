@@ -17,20 +17,20 @@
         "away_pitcher_note": "",
         "away_score": 8,
         "home_score": 6,
-        "current_inning": 8,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-27 - Houston Astros (8) @ Detroit Tigers (6) (Bottom of the 8th)"
+        "summary": "2026-06-27 - Houston Astros (8) @ Detroit Tigers (6) (Bottom of the 9th)"
     },
     {
         "game_id": 824745,
         "game_datetime": "2026-06-27T17:10:00Z",
         "game_date": "2026-06-27",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "New York Yankees",
         "home_name": "Boston Red Sox",
         "away_id": 147,
@@ -56,7 +56,7 @@
         "winning_pitcher": "Jake Bennett",
         "losing_pitcher": "Gerrit Cole",
         "save_pitcher": "Aroldis Chapman",
-        "summary": "2026-06-27 - New York Yankees (1) @ Boston Red Sox (4) (Game Over)"
+        "summary": "2026-06-27 - New York Yankees (1) @ Boston Red Sox (4) (Final)"
     },
     {
         "game_id": 822794,
@@ -76,13 +76,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TEX leads 2-0",
-        "summary": "2026-06-27 - Texas Rangers (1) @ Toronto Blue Jays (0) (Bottom of the 2nd)"
+        "summary": "2026-06-27 - Texas Rangers (1) @ Toronto Blue Jays (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 823364,
@@ -141,7 +141,7 @@
         "game_datetime": "2026-06-27T20:10:00Z",
         "game_date": "2026-06-27",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Kansas City Royals",
         "home_name": "Chicago White Sox",
         "away_id": 118,
@@ -160,7 +160,7 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-06-27 - Kansas City Royals @ Chicago White Sox (Pre-Game)"
+        "summary": "2026-06-27 - Kansas City Royals @ Chicago White Sox (Warmup)"
     },
     {
         "game_id": 822960,
