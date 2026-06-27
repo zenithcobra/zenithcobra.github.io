@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Kai-Wei Teng",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
-        "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "away_score": 4,
+        "home_score": 5,
+        "current_inning": 5,
+        "inning_state": "Middle",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-27 - Houston Astros (3) @ Detroit Tigers (0) (Top of the 3rd)"
+        "summary": "2026-06-27 - Houston Astros (4) @ Detroit Tigers (5) (Middle of the 5th)"
     },
     {
         "game_id": 824745,
@@ -41,9 +41,9 @@
         "away_probable_pitcher": "Gerrit Cole",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 2,
-        "current_inning": 3,
+        "away_score": 1,
+        "home_score": 4,
+        "current_inning": 6,
         "inning_state": "Bottom",
         "venue_id": 3,
         "venue_name": "Fenway Park",
@@ -51,7 +51,7 @@
             "ABC/ESPN App"
         ],
         "series_status": "BOS leads 2-0",
-        "summary": "2026-06-27 - New York Yankees (0) @ Boston Red Sox (2) (Bottom of the 3rd)"
+        "summary": "2026-06-27 - New York Yankees (1) @ Boston Red Sox (4) (Bottom of the 6th)"
     },
     {
         "game_id": 822794,
@@ -173,10 +173,10 @@
         "away_probable_pitcher": "Jose Cabrera",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
@@ -364,7 +364,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": "ATL leads 1-0",
+        "series_status": null,
         "summary": "2026-06-27 - Atlanta Braves @ San Francisco Giants (Scheduled)"
     },
     {
@@ -390,7 +390,7 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": "ATH leads 1-0",
+        "series_status": null,
         "summary": "2026-06-27 - Athletics @ Los Angeles Angels (Scheduled)"
     }
 ]
