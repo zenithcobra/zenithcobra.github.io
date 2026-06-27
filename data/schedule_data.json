@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-27T17:10:00Z",
         "game_date": "2026-06-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Houston Astros",
         "home_name": "Detroit Tigers",
         "away_id": 117,
@@ -22,8 +22,8 @@
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": "HOU leads 1-0",
-        "summary": "2026-06-27 - Houston Astros @ Detroit Tigers (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-06-27 - Houston Astros @ Detroit Tigers (Pre-Game)"
     },
     {
         "game_id": 824745,
@@ -364,7 +364,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": "ATL leads 1-0",
+        "series_status": null,
         "summary": "2026-06-27 - Atlanta Braves @ San Francisco Giants (Scheduled)"
     },
     {
@@ -390,7 +390,7 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": "ATH leads 1-0",
+        "series_status": null,
         "summary": "2026-06-27 - Athletics @ Los Angeles Angels (Scheduled)"
     }
 ]
