@@ -35,7 +35,7 @@
         "game_datetime": "2026-06-28T17:35:00Z",
         "game_date": "2026-06-28",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Cincinnati Reds",
         "home_name": "Pittsburgh Pirates",
         "away_id": 113,
@@ -48,13 +48,18 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 9,
-        "current_inning": 8,
-        "inning_state": "End",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": "CIN leads 2-0",
-        "summary": "2026-06-28 - Cincinnati Reds (4) @ Pittsburgh Pirates (9) (End of the 8th)"
+        "series_status": "CIN wins 2-1",
+        "winning_team": "Pittsburgh Pirates",
+        "losing_team": "Cincinnati Reds",
+        "winning_pitcher": "Mitch Keller",
+        "losing_pitcher": "Brady Singer",
+        "save_pitcher": null,
+        "summary": "2026-06-28 - Cincinnati Reds (4) @ Pittsburgh Pirates (9) (Game Over)"
     },
     {
         "game_id": 822795,
@@ -340,7 +345,7 @@
         "game_datetime": "2026-06-28T19:15:00Z",
         "game_date": "2026-06-28",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Athletics",
         "home_name": "Los Angeles Angels",
         "away_id": 133,
@@ -353,15 +358,20 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 4,
-        "current_inning": 8,
-        "inning_state": "Middle",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [
             "NBCSN / Peacock"
         ],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-06-28 - Athletics (1) @ Los Angeles Angels (4) (Middle of the 8th)"
+        "series_status": "LAA wins 2-1",
+        "winning_team": "Los Angeles Angels",
+        "losing_team": "Athletics",
+        "winning_pitcher": "Sam Aldegheri",
+        "losing_pitcher": "Aaron Civale",
+        "save_pitcher": "Samy Natera Jr.",
+        "summary": "2026-06-28 - Athletics (1) @ Los Angeles Angels (4) (Game Over)"
     },
     {
         "game_id": 823204,
@@ -380,14 +390,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 1,
-        "current_inning": 6,
+        "home_score": 2,
+        "current_inning": 7,
         "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-28 - Atlanta Braves (0) @ San Francisco Giants (1) (Bottom of the 6th)"
+        "summary": "2026-06-28 - Atlanta Braves (0) @ San Francisco Giants (2) (Bottom of the 7th)"
     },
     {
         "game_id": 823281,
@@ -408,12 +418,12 @@
         "away_score": 4,
         "home_score": 1,
         "current_inning": 5,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-28 - Los Angeles Dodgers (4) @ San Diego Padres (1) (Top of the 5th)"
+        "summary": "2026-06-28 - Los Angeles Dodgers (4) @ San Diego Padres (1) (Bottom of the 5th)"
     },
     {
         "game_id": 824744,
