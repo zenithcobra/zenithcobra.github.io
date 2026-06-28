@@ -99,7 +99,7 @@
         "game_datetime": "2026-06-27T20:05:00Z",
         "game_date": "2026-06-27",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Cincinnati Reds",
         "home_name": "Pittsburgh Pirates",
         "away_id": 113,
@@ -110,15 +110,20 @@
         "away_probable_pitcher": "Chase Burns",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 6,
+        "away_score": 9,
         "home_score": 7,
         "current_inning": 9,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": "CIN leads 1-0",
-        "summary": "2026-06-27 - Cincinnati Reds (6) @ Pittsburgh Pirates (7) (Top of the 9th)"
+        "series_status": "CIN wins 2-0",
+        "winning_team": "Cincinnati Reds",
+        "losing_team": "Pittsburgh Pirates",
+        "winning_pitcher": "Caleb Ferguson",
+        "losing_pitcher": "Gregory Soto",
+        "save_pitcher": "Chase Petty",
+        "summary": "2026-06-27 - Cincinnati Reds (9) @ Pittsburgh Pirates (7) (Final)"
     },
     {
         "game_id": 823609,
@@ -138,13 +143,13 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 6,
-        "current_inning": 7,
+        "current_inning": 8,
         "inning_state": "Bottom",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-06-27 - Philadelphia Phillies (2) @ New York Mets (6) (Bottom of the 7th)"
+        "summary": "2026-06-27 - Philadelphia Phillies (2) @ New York Mets (6) (Bottom of the 8th)"
     },
     {
         "game_id": 824581,
@@ -194,14 +199,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 3,
+        "home_score": 4,
         "current_inning": 6,
-        "inning_state": "Middle",
+        "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-06-27 - Arizona Diamondbacks (1) @ Tampa Bay Rays (3) (Middle of the 6th)"
+        "summary": "2026-06-27 - Arizona Diamondbacks (1) @ Tampa Bay Rays (4) (Bottom of the 6th)"
     },
     {
         "game_id": 824825,
@@ -220,14 +225,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Middle",
+        "home_score": 1,
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-06-27 - Washington Nationals (1) @ Baltimore Orioles (0) (Middle of the 2nd)"
+        "summary": "2026-06-27 - Washington Nationals (1) @ Baltimore Orioles (1) (Top of the 3rd)"
     },
     {
         "game_id": 824421,
@@ -247,13 +252,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Bottom",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "SEA leads 1-0",
-        "summary": "2026-06-27 - Seattle Mariners (0) @ Cleveland Guardians (0) (Bottom of the 2nd)"
+        "summary": "2026-06-27 - Seattle Mariners (0) @ Cleveland Guardians (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 823689,
@@ -273,13 +278,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 1,
-        "current_inning": 1,
-        "inning_state": "End",
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "MIN leads 1-0",
-        "summary": "2026-06-27 - Colorado Rockies (1) @ Minnesota Twins (1) (End of the 1st)"
+        "summary": "2026-06-27 - Colorado Rockies (1) @ Minnesota Twins (1) (Top of the 3rd)"
     },
     {
         "game_id": 823770,
@@ -299,13 +304,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 1,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "current_inning": 4,
+        "inning_state": "Top",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 1-0",
-        "summary": "2026-06-27 - Chicago Cubs (0) @ Milwaukee Brewers (1) (Bottom of the 2nd)"
+        "summary": "2026-06-27 - Chicago Cubs (0) @ Milwaukee Brewers (1) (Top of the 4th)"
     },
     {
         "game_id": 823038,
@@ -325,13 +330,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "MIA leads 1-0",
-        "summary": "2026-06-27 - Miami Marlins (1) @ St. Louis Cardinals (0) (Top of the 2nd)"
+        "summary": "2026-06-27 - Miami Marlins (1) @ St. Louis Cardinals (0) (Top of the 3rd)"
     },
     {
         "game_id": 823283,
