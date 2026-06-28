@@ -409,7 +409,7 @@
         "game_datetime": "2026-06-28T20:10:00Z",
         "game_date": "2026-06-28",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Los Angeles Dodgers",
         "home_name": "San Diego Padres",
         "away_id": 119,
@@ -422,20 +422,25 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 2,
-        "current_inning": 8,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-06-28 - Los Angeles Dodgers (4) @ San Diego Padres (2) (Bottom of the 8th)"
+        "series_status": "LAD wins 2-1",
+        "winning_team": "Los Angeles Dodgers",
+        "losing_team": "San Diego Padres",
+        "winning_pitcher": "Emmet Sheehan",
+        "losing_pitcher": "Michael King",
+        "save_pitcher": "Edgardo Henriquez",
+        "summary": "2026-06-28 - Los Angeles Dodgers (4) @ San Diego Padres (2) (Final)"
     },
     {
         "game_id": 824744,
         "game_datetime": "2026-06-28T23:20:00Z",
         "game_date": "2026-06-28",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "New York Yankees",
         "home_name": "Boston Red Sox",
         "away_id": 147,
@@ -449,13 +454,13 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [
             "NBC/Peacock"
         ],
         "series_status": "BOS leads 3-0",
-        "summary": "2026-06-28 - New York Yankees @ Boston Red Sox (Pre-Game)"
+        "summary": "2026-06-28 - New York Yankees (0) @ Boston Red Sox (0) (Bottom of the 1st)"
     }
 ]
