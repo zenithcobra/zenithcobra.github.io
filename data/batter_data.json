@@ -737,26 +737,6 @@
         "player_id": 671096
     },
     {
-        "player_name": "Blake Dunn",
-        "team": "Cincinnati Reds",
-        "team_id": 113,
-        "player_id": 694362,
-        "position": "CF",
-        "games_played": 38.0,
-        "H": 40.0,
-        "HR": 2.0,
-        "RBI": 7.0,
-        "HRpg": 0.053,
-        "fHRpg": "0",
-        "Hpg": 1.053,
-        "fHpg": "1",
-        "RBIpg": 0.184,
-        "fRBIpg": "1/6",
-        "HR24": 1,
-        "HR24pg": 0.03,
-        "fHR24pg": "0"
-    },
-    {
         "player_name": "Brady Singer",
         "team": "Cincinnati Reds",
         "team_id": 113,
@@ -1031,6 +1011,26 @@
         "fRBIpg": "3/7",
         "HR24": 21,
         "HR24pg": 0.14,
+        "fHR24pg": "1/7"
+    },
+    {
+        "player_name": "TJ Friedl",
+        "team": "Cincinnati Reds",
+        "team_id": 113,
+        "player_id": 670770,
+        "position": "CF",
+        "games_played": 47.0,
+        "H": 28.0,
+        "HR": 2.0,
+        "RBI": 8.0,
+        "HRpg": 0.043,
+        "fHRpg": "0",
+        "Hpg": 0.596,
+        "fHpg": "3/5",
+        "RBIpg": 0.17,
+        "fRBIpg": "1/6",
+        "HR24": 14,
+        "HR24pg": 0.09,
         "fHR24pg": "1/7"
     },
     {
@@ -2287,6 +2287,12 @@
         "team": "Houston Astros",
         "team_id": 117,
         "player_id": 623352
+    },
+    {
+        "player_name": "Miguel Ullola",
+        "team": "Houston Astros",
+        "team_id": 117,
+        "player_id": 699044
     },
     {
         "player_name": "Mike Burrows",
