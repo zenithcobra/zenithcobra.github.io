@@ -35,7 +35,7 @@
         "game_datetime": "2026-06-28T17:35:00Z",
         "game_date": "2026-06-28",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Cincinnati Reds",
         "home_name": "Pittsburgh Pirates",
         "away_id": 113,
@@ -59,7 +59,7 @@
         "winning_pitcher": "Mitch Keller",
         "losing_pitcher": "Brady Singer",
         "save_pitcher": null,
-        "summary": "2026-06-28 - Cincinnati Reds (4) @ Pittsburgh Pirates (9) (Game Over)"
+        "summary": "2026-06-28 - Cincinnati Reds (4) @ Pittsburgh Pirates (9) (Final)"
     },
     {
         "game_id": 822795,
@@ -345,7 +345,7 @@
         "game_datetime": "2026-06-28T19:15:00Z",
         "game_date": "2026-06-28",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Athletics",
         "home_name": "Los Angeles Angels",
         "away_id": 133,
@@ -371,14 +371,14 @@
         "winning_pitcher": "Sam Aldegheri",
         "losing_pitcher": "Aaron Civale",
         "save_pitcher": "Samy Natera Jr.",
-        "summary": "2026-06-28 - Athletics (1) @ Los Angeles Angels (4) (Game Over)"
+        "summary": "2026-06-28 - Athletics (1) @ Los Angeles Angels (4) (Final)"
     },
     {
         "game_id": 823204,
         "game_datetime": "2026-06-28T20:05:00Z",
         "game_date": "2026-06-28",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Atlanta Braves",
         "home_name": "San Francisco Giants",
         "away_id": 144,
@@ -389,15 +389,20 @@
         "away_probable_pitcher": "Chris Sale",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 2,
-        "current_inning": 7,
-        "inning_state": "Bottom",
+        "away_score": 2,
+        "home_score": 3,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-06-28 - Atlanta Braves (0) @ San Francisco Giants (2) (Bottom of the 7th)"
+        "series_status": "SF wins 2-1",
+        "winning_team": "San Francisco Giants",
+        "losing_team": "Atlanta Braves",
+        "winning_pitcher": "Robbie Ray",
+        "losing_pitcher": "Chris Sale",
+        "save_pitcher": "Caleb Kilian",
+        "summary": "2026-06-28 - Atlanta Braves (2) @ San Francisco Giants (3) (Game Over)"
     },
     {
         "game_id": 823281,
@@ -416,14 +421,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 4,
-        "home_score": 1,
-        "current_inning": 5,
+        "home_score": 2,
+        "current_inning": 7,
         "inning_state": "Bottom",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-06-28 - Los Angeles Dodgers (4) @ San Diego Padres (1) (Bottom of the 5th)"
+        "summary": "2026-06-28 - Los Angeles Dodgers (4) @ San Diego Padres (2) (Bottom of the 7th)"
     },
     {
         "game_id": 824744,
