@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-29T22:35:00Z",
         "game_date": "2026-06-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago White Sox",
         "home_name": "Baltimore Orioles",
         "away_id": 145,
@@ -23,14 +23,14 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-29 - Chicago White Sox @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-06-29 - Chicago White Sox @ Baltimore Orioles (Warmup)"
     },
     {
         "game_id": 823444,
         "game_datetime": "2026-06-29T22:40:00Z",
         "game_date": "2026-06-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Philadelphia Phillies",
         "away_id": 134,
@@ -49,7 +49,7 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-29 - Pittsburgh Pirates @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-06-29 - Pittsburgh Pirates @ Philadelphia Phillies (Warmup)"
     },
     {
         "game_id": 823529,
@@ -277,10 +277,10 @@
         "away_probable_pitcher": "Eric Lauer",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
@@ -292,7 +292,7 @@
         "game_datetime": "2026-06-30T01:40:00Z",
         "game_date": "2026-06-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Seattle Mariners",
         "away_id": 108,
@@ -311,14 +311,14 @@
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-29 - Los Angeles Angels @ Seattle Mariners (Scheduled)"
+        "summary": "2026-06-29 - Los Angeles Angels @ Seattle Mariners (Pre-Game)"
     },
     {
         "game_id": 825065,
         "game_datetime": "2026-06-30T01:40:00Z",
         "game_date": "2026-06-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Francisco Giants",
         "home_name": "Arizona Diamondbacks",
         "away_id": 137,
@@ -329,14 +329,14 @@
         "away_probable_pitcher": "Tyler Mahle",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-29 - San Francisco Giants @ Arizona Diamondbacks (Scheduled)"
+        "summary": "2026-06-29 - San Francisco Giants @ Arizona Diamondbacks (Pre-Game)"
     }
 ]
