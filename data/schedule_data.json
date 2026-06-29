@@ -4,7 +4,7 @@
         "game_datetime": "2026-06-29T22:35:00Z",
         "game_date": "2026-06-29",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Chicago White Sox",
         "home_name": "Baltimore Orioles",
         "away_id": 145,
@@ -18,19 +18,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-29 - Chicago White Sox @ Baltimore Orioles (Warmup)"
+        "summary": "2026-06-29 - Chicago White Sox (0) @ Baltimore Orioles (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823444,
         "game_datetime": "2026-06-29T22:40:00Z",
         "game_date": "2026-06-29",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Philadelphia Phillies",
         "away_id": 134,
@@ -42,21 +42,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 1,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-29 - Pittsburgh Pirates @ Philadelphia Phillies (Warmup)"
+        "summary": "2026-06-29 - Pittsburgh Pirates (0) @ Philadelphia Phillies (1) (Bottom of the 1st)"
     },
     {
         "game_id": 823529,
         "game_datetime": "2026-06-29T23:05:00Z",
         "game_date": "2026-06-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Detroit Tigers",
         "home_name": "New York Yankees",
         "away_id": 116,
@@ -75,14 +75,14 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-29 - Detroit Tigers @ New York Yankees (Pre-Game)"
+        "summary": "2026-06-29 - Detroit Tigers @ New York Yankees (Warmup)"
     },
     {
         "game_id": 822792,
         "game_datetime": "2026-06-29T23:07:00Z",
         "game_date": "2026-06-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Mets",
         "home_name": "Toronto Blue Jays",
         "away_id": 121,
@@ -101,7 +101,7 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-06-29 - New York Mets @ Toronto Blue Jays (Pre-Game)"
+        "summary": "2026-06-29 - New York Mets @ Toronto Blue Jays (Warmup)"
     },
     {
         "game_id": 824741,
@@ -134,7 +134,7 @@
         "game_datetime": "2026-06-29T23:10:00Z",
         "game_date": "2026-06-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Texas Rangers",
         "home_name": "Cleveland Guardians",
         "away_id": 140,
@@ -155,7 +155,7 @@
             "ESPN/ESPN App"
         ],
         "series_status": null,
-        "summary": "2026-06-29 - Texas Rangers @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-06-29 - Texas Rangers @ Cleveland Guardians (Warmup)"
     },
     {
         "game_id": 823771,
@@ -303,10 +303,10 @@
         "away_probable_pitcher": "Ryan Johnson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
