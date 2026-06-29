@@ -2346,6 +2346,12 @@
         "fHR24pg": "1/6"
     },
     {
+        "player_name": "Joey Gerber",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 680702
+    },
+    {
         "player_name": "Juan Soto",
         "team": "New York Mets",
         "team_id": 121,
@@ -2459,12 +2465,6 @@
         "team": "New York Mets",
         "team_id": 121,
         "player_id": 640455
-    },
-    {
-        "player_name": "Tobias Myers",
-        "team": "New York Mets",
-        "team_id": 121,
-        "player_id": 668964
     },
     {
         "player_name": "Tyrone Taylor",
@@ -7313,23 +7313,6 @@
         "player_id": 808963
     },
     {
-        "player_name": "Ryan Ward",
-        "team": "Los Angeles Dodgers",
-        "team_id": 119,
-        "player_id": 669899,
-        "position": "LF",
-        "games_played": 20.0,
-        "H": 12.0,
-        "HR": 3.0,
-        "RBI": 12.0,
-        "HRpg": 0.15,
-        "fHRpg": "1/7",
-        "Hpg": 0.6,
-        "fHpg": "3/5",
-        "RBIpg": 0.6,
-        "fRBIpg": "3/5"
-    },
-    {
         "player_name": "Shohei Ohtani",
         "team": "Los Angeles Dodgers",
         "team_id": 119,
@@ -7354,6 +7337,26 @@
         "team": "Los Angeles Dodgers",
         "team_id": 119,
         "player_id": 656945
+    },
+    {
+        "player_name": "Teoscar Hern\u00e1ndez",
+        "team": "Los Angeles Dodgers",
+        "team_id": 119,
+        "player_id": 606192,
+        "position": "LF",
+        "games_played": 51.0,
+        "H": 50.0,
+        "HR": 7.0,
+        "RBI": 31.0,
+        "HRpg": 0.137,
+        "fHRpg": "1/7",
+        "Hpg": 0.98,
+        "fHpg": "1",
+        "RBIpg": 0.608,
+        "fRBIpg": "3/5",
+        "HR24": 25,
+        "HR24pg": 0.19,
+        "fHR24pg": "1/5"
     },
     {
         "player_name": "Tommy Edman",
