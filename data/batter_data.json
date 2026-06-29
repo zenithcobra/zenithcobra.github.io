@@ -3596,6 +3596,18 @@
         "player_id": 615698
     },
     {
+        "player_name": "Cameron Cauley",
+        "team": "Texas Rangers",
+        "team_id": 140,
+        "player_id": 695508
+    },
+    {
+        "player_name": "Chris Paddack",
+        "team": "Texas Rangers",
+        "team_id": 140,
+        "player_id": 663978
+    },
+    {
         "player_name": "Cole Winn",
         "team": "Texas Rangers",
         "team_id": 140,
@@ -3731,26 +3743,6 @@
         "player_id": 596001
     },
     {
-        "player_name": "Jarred Kelenic",
-        "team": "Texas Rangers",
-        "team_id": 140,
-        "player_id": 672284,
-        "position": "RF",
-        "games_played": 26.0,
-        "H": 13.0,
-        "HR": 1.0,
-        "RBI": 4.0,
-        "HRpg": 0.038,
-        "fHRpg": "0",
-        "Hpg": 0.5,
-        "fHpg": "1/2",
-        "RBIpg": 0.154,
-        "fRBIpg": "1/7",
-        "HR24": 2,
-        "HR24pg": 0.08,
-        "fHR24pg": "1/7"
-    },
-    {
         "player_name": "Joc Pederson",
         "team": "Texas Rangers",
         "team_id": 140,
@@ -3769,12 +3761,6 @@
         "HR24": 9,
         "HR24pg": 0.09,
         "fHR24pg": "1/7"
-    },
-    {
-        "player_name": "Joe Ross",
-        "team": "Texas Rangers",
-        "team_id": 140,
-        "player_id": 605452
     },
     {
         "player_name": "Josh Jung",
@@ -4934,10 +4920,10 @@
         "player_id": 670970
     },
     {
-        "player_name": "David Morgan",
+        "player_name": "Bradgley Rodriguez",
         "team": "San Diego Padres",
         "team_id": 135,
-        "player_id": 688158
+        "player_id": 699134
     },
     {
         "player_name": "Fernando Tatis Jr.",
@@ -5029,6 +5015,26 @@
         "fRBIpg": "2/5",
         "HR24": 16,
         "HR24pg": 0.14,
+        "fHR24pg": "1/7"
+    },
+    {
+        "player_name": "Jake Cronenworth",
+        "team": "San Diego Padres",
+        "team_id": 135,
+        "player_id": 630105,
+        "position": "2B",
+        "games_played": 32.0,
+        "H": 14.0,
+        "HR": 1.0,
+        "RBI": 4.0,
+        "HRpg": 0.031,
+        "fHRpg": "0",
+        "Hpg": 0.438,
+        "fHpg": "3/7",
+        "RBIpg": 0.125,
+        "fRBIpg": "1/7",
+        "HR24": 11,
+        "HR24pg": 0.08,
         "fHR24pg": "1/7"
     },
     {
@@ -5209,26 +5215,6 @@
         "team": "San Diego Padres",
         "team_id": 135,
         "player_id": 593974
-    },
-    {
-        "player_name": "Will Wagner",
-        "team": "San Diego Padres",
-        "team_id": 135,
-        "player_id": 695238,
-        "position": "DH",
-        "games_played": 16.0,
-        "H": 9.0,
-        "HR": 0.0,
-        "RBI": 0.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.562,
-        "fHpg": "4/7",
-        "RBIpg": 0.0,
-        "fRBIpg": "0",
-        "HR24": 0,
-        "HR24pg": 0.0,
-        "fHR24pg": "0"
     },
     {
         "player_name": "Xander Bogaerts",
@@ -5640,12 +5626,6 @@
         "player_id": 702193
     },
     {
-        "player_name": "Anthony Banda",
-        "team": "Minnesota Twins",
-        "team_id": 142,
-        "player_id": 607455
-    },
-    {
         "player_name": "Austin Martin",
         "team": "Minnesota Twins",
         "team_id": 142,
@@ -5704,6 +5684,12 @@
         "HR24": 35,
         "HR24pg": 0.28,
         "fHR24pg": "2/7"
+    },
+    {
+        "player_name": "Cody Laweryson",
+        "team": "Minnesota Twins",
+        "team_id": 142,
+        "player_id": 689520
     },
     {
         "player_name": "Connor Prielipp",
@@ -6183,27 +6169,30 @@
         "player_id": 663878
     },
     {
+        "player_name": "Nick Allen",
+        "team": "Houston Astros",
+        "team_id": 117,
+        "player_id": 669397,
+        "position": "SS",
+        "games_played": 37.0,
+        "H": 16.0,
+        "HR": 1.0,
+        "RBI": 5.0,
+        "HRpg": 0.027,
+        "fHRpg": "0",
+        "Hpg": 0.432,
+        "fHpg": "3/7",
+        "RBIpg": 0.135,
+        "fRBIpg": "1/7",
+        "HR24": 0,
+        "HR24pg": 0.0,
+        "fHR24pg": "0"
+    },
+    {
         "player_name": "Peter Lambert",
         "team": "Houston Astros",
         "team_id": 117,
         "player_id": 663567
-    },
-    {
-        "player_name": "Raynel Delgado",
-        "team": "Houston Astros",
-        "team_id": 117,
-        "player_id": 669384,
-        "position": "2B",
-        "games_played": 13.0,
-        "H": 7.0,
-        "HR": 1.0,
-        "RBI": 4.0,
-        "HRpg": 0.077,
-        "fHRpg": "1/7",
-        "Hpg": 0.538,
-        "fHpg": "4/7",
-        "RBIpg": 0.308,
-        "fRBIpg": "1/3"
     },
     {
         "player_name": "Spencer Arrighetti",
@@ -7454,6 +7443,26 @@
         "fHR24pg": "1/7"
     },
     {
+        "player_name": "Darell Hernaiz",
+        "team": "Athletics",
+        "team_id": 133,
+        "player_id": 687231,
+        "position": "SS",
+        "games_played": 47.0,
+        "H": 28.0,
+        "HR": 1.0,
+        "RBI": 7.0,
+        "HRpg": 0.021,
+        "fHRpg": "0",
+        "Hpg": 0.596,
+        "fHpg": "3/5",
+        "RBIpg": 0.149,
+        "fRBIpg": "1/7",
+        "HR24": 2,
+        "HR24pg": 0.04,
+        "fHR24pg": "0"
+    },
+    {
         "player_name": "Elvis Alvarado",
         "team": "Athletics",
         "team_id": 133,
@@ -7529,26 +7538,6 @@
         "fRBIpg": "0"
     },
     {
-        "player_name": "Jacob Wilson",
-        "team": "Athletics",
-        "team_id": 133,
-        "player_id": 805779,
-        "position": "SS",
-        "games_played": 50.0,
-        "H": 56.0,
-        "HR": 4.0,
-        "RBI": 26.0,
-        "HRpg": 0.08,
-        "fHRpg": "1/7",
-        "Hpg": 1.12,
-        "fHpg": "8/7",
-        "RBIpg": 0.52,
-        "fRBIpg": "1/2",
-        "HR24": 13,
-        "HR24pg": 0.1,
-        "fHR24pg": "1/7"
-    },
-    {
         "player_name": "Jeff McNeil",
         "team": "Athletics",
         "team_id": 133,
@@ -7612,16 +7601,22 @@
         "fHR24pg": "1/7"
     },
     {
-        "player_name": "Jos\u00e9 Suarez",
+        "player_name": "Joshua Kuroda-Grauer",
         "team": "Athletics",
         "team_id": 133,
-        "player_id": 660761
+        "player_id": 811965
     },
     {
         "player_name": "Justin Sterner",
         "team": "Athletics",
         "team_id": 133,
         "player_id": 686993
+    },
+    {
+        "player_name": "Kade Morris",
+        "team": "Athletics",
+        "team_id": 133,
+        "player_id": 695034
     },
     {
         "player_name": "Lawrence Butler",
@@ -7720,26 +7715,6 @@
         "HR24": 31,
         "HR24pg": 0.25,
         "fHR24pg": "1/4"
-    },
-    {
-        "player_name": "Tyler Soderstrom",
-        "team": "Athletics",
-        "team_id": 133,
-        "player_id": 691016,
-        "position": "LF",
-        "games_played": 80.0,
-        "H": 70.0,
-        "HR": 13.0,
-        "RBI": 41.0,
-        "HRpg": 0.163,
-        "fHRpg": "1/6",
-        "Hpg": 0.875,
-        "fHpg": "6/7",
-        "RBIpg": 0.512,
-        "fRBIpg": "1/2",
-        "HR24": 25,
-        "HR24pg": 0.16,
-        "fHR24pg": "1/6"
     },
     {
         "player_name": "Brent Suter",
