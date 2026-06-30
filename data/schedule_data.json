@@ -240,7 +240,7 @@
         "game_datetime": "2026-07-01T00:05:00Z",
         "game_date": "2026-06-30",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Diego Padres",
         "home_name": "Chicago Cubs",
         "away_id": 135,
@@ -251,15 +251,15 @@
         "away_probable_pitcher": "JP Sears",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-30 - San Diego Padres @ Chicago Cubs (Scheduled)"
+        "series_status": "CHC leads 1-0",
+        "summary": "2026-06-30 - San Diego Padres @ Chicago Cubs (Pre-Game)"
     },
     {
         "game_id": 824175,
@@ -344,7 +344,7 @@
         "game_datetime": "2026-07-01T01:40:00Z",
         "game_date": "2026-06-30",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Seattle Mariners",
         "away_id": 108,
@@ -362,8 +362,8 @@
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-30 - Los Angeles Angels @ Seattle Mariners (Scheduled)"
+        "series_status": "SEA leads 1-0",
+        "summary": "2026-06-30 - Los Angeles Angels @ Seattle Mariners (Pre-Game)"
     },
     {
         "game_id": 825066,
