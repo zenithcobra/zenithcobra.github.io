@@ -318,7 +318,7 @@
         "game_datetime": "2026-07-01T01:40:00Z",
         "game_date": "2026-06-30",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Athletics",
         "away_id": 119,
@@ -336,8 +336,8 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-30 - Los Angeles Dodgers @ Athletics (Scheduled)"
+        "series_status": "LAD leads 1-0",
+        "summary": "2026-06-30 - Los Angeles Dodgers @ Athletics (Pre-Game)"
     },
     {
         "game_id": 823122,
@@ -370,14 +370,14 @@
         "game_datetime": "2026-07-01T01:40:00Z",
         "game_date": "2026-06-30",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Francisco Giants",
         "home_name": "Arizona Diamondbacks",
         "away_id": 137,
         "home_id": 109,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
+        "home_probable_pitcher": "Brandon Pfaadt",
         "away_probable_pitcher": "Landen Roupp",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
@@ -388,7 +388,7 @@
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-06-30 - San Francisco Giants @ Arizona Diamondbacks (Scheduled)"
+        "series_status": "AZ leads 1-0",
+        "summary": "2026-06-30 - San Francisco Giants @ Arizona Diamondbacks (Pre-Game)"
     }
 ]
