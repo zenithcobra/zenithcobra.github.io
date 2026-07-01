@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-01T16:35:00Z",
         "game_date": "2026-07-01",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Chicago White Sox",
         "home_name": "Baltimore Orioles",
         "away_id": 145,
@@ -22,8 +22,13 @@
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
-        "series_status": "CWS leads 2-0",
-        "summary": "2026-07-01 - Chicago White Sox (1) @ Baltimore Orioles (6) (Top of the 9th)"
+        "series_status": "CWS wins 2-1",
+        "winning_team": "Baltimore Orioles",
+        "losing_team": "Chicago White Sox",
+        "winning_pitcher": "Dean Kremer",
+        "losing_pitcher": "Noah Schultz",
+        "save_pitcher": null,
+        "summary": "2026-07-01 - Chicago White Sox (1) @ Baltimore Orioles (6) (Final)"
     },
     {
         "game_id": 824419,
@@ -41,15 +46,15 @@
         "away_probable_pitcher": "MacKenzie Gore",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
-        "home_score": 5,
-        "current_inning": 7,
+        "away_score": 4,
+        "home_score": 7,
+        "current_inning": 8,
         "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "TEX leads 2-0",
-        "summary": "2026-07-01 - Texas Rangers (3) @ Cleveland Guardians (5) (Top of the 7th)"
+        "summary": "2026-07-01 - Texas Rangers (4) @ Cleveland Guardians (7) (Top of the 8th)"
     },
     {
         "game_id": 824740,
@@ -69,13 +74,13 @@
         "away_pitcher_note": "",
         "away_score": 7,
         "home_score": 0,
-        "current_inning": 5,
-        "inning_state": "Bottom",
+        "current_inning": 7,
+        "inning_state": "Top",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-01 - Washington Nationals (7) @ Boston Red Sox (0) (Bottom of the 5th)"
+        "summary": "2026-07-01 - Washington Nationals (7) @ Boston Red Sox (0) (Top of the 7th)"
     },
     {
         "game_id": 823530,
@@ -95,13 +100,13 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 0,
-        "current_inning": 6,
-        "inning_state": "Bottom",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "DET leads 2-0",
-        "summary": "2026-07-01 - Detroit Tigers (2) @ New York Yankees (0) (Bottom of the 6th)"
+        "summary": "2026-07-01 - Detroit Tigers (2) @ New York Yankees (0) (Top of the 9th)"
     },
     {
         "game_id": 824660,
@@ -119,22 +124,22 @@
         "away_probable_pitcher": "Walker Buehler",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 4,
-        "current_inning": 3,
-        "inning_state": "Bottom",
+        "away_score": 2,
+        "home_score": 9,
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 2-0",
-        "summary": "2026-07-01 - San Diego Padres (0) @ Chicago Cubs (4) (Bottom of the 3rd)"
+        "summary": "2026-07-01 - San Diego Padres (2) @ Chicago Cubs (9) (Top of the 5th)"
     },
     {
         "game_id": 822791,
         "game_datetime": "2026-07-01T19:07:00Z",
         "game_date": "2026-07-01",
         "game_type": "R",
-        "status": "Delayed Start",
+        "status": "In Progress",
         "away_name": "New York Mets",
         "home_name": "Toronto Blue Jays",
         "away_id": 121,
@@ -146,21 +151,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 1,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-01 - New York Mets @ Toronto Blue Jays (Delayed Start)"
+        "summary": "2026-07-01 - New York Mets (0) @ Toronto Blue Jays (1) (Bottom of the 1st)"
     },
     {
         "game_id": 823446,
         "game_datetime": "2026-07-01T22:40:00Z",
         "game_date": "2026-07-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Philadelphia Phillies",
         "away_id": 134,
@@ -179,14 +184,14 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-01 - Pittsburgh Pirates @ Philadelphia Phillies (Scheduled)"
+        "summary": "2026-07-01 - Pittsburgh Pirates @ Philadelphia Phillies (Pre-Game)"
     },
     {
         "game_id": 824905,
         "game_datetime": "2026-07-01T23:15:00Z",
         "game_date": "2026-07-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "Atlanta Braves",
         "away_id": 138,
@@ -205,14 +210,14 @@
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": "STL leads 1-0",
-        "summary": "2026-07-01 - St. Louis Cardinals @ Atlanta Braves (Scheduled)"
+        "summary": "2026-07-01 - St. Louis Cardinals @ Atlanta Braves (Pre-Game)"
     },
     {
         "game_id": 824094,
         "game_datetime": "2026-07-01T23:40:00Z",
         "game_date": "2026-07-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Tampa Bay Rays",
         "home_name": "Kansas City Royals",
         "away_id": 139,
@@ -231,7 +236,7 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-07-01 - Tampa Bay Rays @ Kansas City Royals (Scheduled)"
+        "summary": "2026-07-01 - Tampa Bay Rays @ Kansas City Royals (Pre-Game)"
     },
     {
         "game_id": 824174,
@@ -292,7 +297,7 @@
         "game_datetime": "2026-07-02T00:40:00Z",
         "game_date": "2026-07-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Miami Marlins",
         "home_name": "Colorado Rockies",
         "away_id": 146,
@@ -311,7 +316,7 @@
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "MIA leads 2-0",
-        "summary": "2026-07-01 - Miami Marlins @ Colorado Rockies (Scheduled)"
+        "summary": "2026-07-01 - Miami Marlins @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 824985,
