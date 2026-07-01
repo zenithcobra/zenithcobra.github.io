@@ -66,7 +66,7 @@
         "game_datetime": "2026-07-01T17:35:00Z",
         "game_date": "2026-07-01",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Washington Nationals",
         "home_name": "Boston Red Sox",
         "away_id": 120,
@@ -90,14 +90,14 @@
         "winning_pitcher": "Andrew Alvarez",
         "losing_pitcher": "Payton Tolle",
         "save_pitcher": null,
-        "summary": "2026-07-01 - Washington Nationals (10) @ Boston Red Sox (2) (Game Over)"
+        "summary": "2026-07-01 - Washington Nationals (10) @ Boston Red Sox (2) (Final)"
     },
     {
         "game_id": 823530,
         "game_datetime": "2026-07-01T17:35:00Z",
         "game_date": "2026-07-01",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Detroit Tigers",
         "home_name": "New York Yankees",
         "away_id": 116,
@@ -121,14 +121,14 @@
         "winning_pitcher": "Keider Montero",
         "losing_pitcher": "Camilo Doval",
         "save_pitcher": null,
-        "summary": "2026-07-01 - Detroit Tigers (6) @ New York Yankees (2) (Game Over)"
+        "summary": "2026-07-01 - Detroit Tigers (6) @ New York Yankees (2) (Final)"
     },
     {
         "game_id": 824660,
         "game_datetime": "2026-07-01T18:20:00Z",
         "game_date": "2026-07-01",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "San Diego Padres",
         "home_name": "Chicago Cubs",
         "away_id": 135,
@@ -140,14 +140,19 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 22,
-        "current_inning": 8,
-        "inning_state": "Bottom",
+        "home_score": 23,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
-        "series_status": "CHC leads 2-0",
-        "summary": "2026-07-01 - San Diego Padres (3) @ Chicago Cubs (22) (Bottom of the 8th)"
+        "series_status": "CHC wins 3-0",
+        "winning_team": "Chicago Cubs",
+        "losing_team": "San Diego Padres",
+        "winning_pitcher": "Colin Rea",
+        "losing_pitcher": "Walker Buehler",
+        "save_pitcher": "Jordan Wicks",
+        "summary": "2026-07-01 - San Diego Padres (3) @ Chicago Cubs (23) (Game Over)"
     },
     {
         "game_id": 822791,
@@ -167,13 +172,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 5,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-01 - New York Mets (0) @ Toronto Blue Jays (5) (Bottom of the 4th)"
+        "summary": "2026-07-01 - New York Mets (0) @ Toronto Blue Jays (5) (Top of the 6th)"
     },
     {
         "game_id": 823446,
