@@ -780,26 +780,6 @@
         "player_id": 668390
     },
     {
-        "player_name": "Corey Seager",
-        "team": "Texas Rangers",
-        "team_id": 140,
-        "player_id": 608369,
-        "position": "SS",
-        "games_played": 51.0,
-        "H": 34.0,
-        "HR": 10.0,
-        "RBI": 25.0,
-        "HRpg": 0.196,
-        "fHRpg": "1/5",
-        "Hpg": 0.667,
-        "fHpg": "2/3",
-        "RBIpg": 0.49,
-        "fRBIpg": "1/2",
-        "HR24": 21,
-        "HR24pg": 0.21,
-        "fHR24pg": "1/5"
-    },
-    {
         "player_name": "Elias D\u00edaz",
         "team": "Texas Rangers",
         "team_id": 140,
@@ -953,6 +933,26 @@
         "HR24": 14,
         "HR24pg": 0.11,
         "fHR24pg": "1/7"
+    },
+    {
+        "player_name": "Josh Smith",
+        "team": "Texas Rangers",
+        "team_id": 140,
+        "player_id": 669701,
+        "position": "2B",
+        "games_played": 34.0,
+        "H": 22.0,
+        "HR": 0.0,
+        "RBI": 6.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.647,
+        "fHpg": "2/3",
+        "RBIpg": 0.176,
+        "fRBIpg": "1/6",
+        "HR24": 10,
+        "HR24pg": 0.07,
+        "fHR24pg": "0"
     },
     {
         "player_name": "Justin Foscue",
@@ -2142,6 +2142,12 @@
         "fHR24pg": "1/5"
     },
     {
+        "player_name": "Beau Brieske",
+        "team": "Detroit Tigers",
+        "team_id": 116,
+        "player_id": 689225
+    },
+    {
         "player_name": "Ben Malgeri",
         "team": "Detroit Tigers",
         "team_id": 116,
@@ -2468,23 +2474,6 @@
         "team": "Detroit Tigers",
         "team_id": 116,
         "player_id": 663947
-    },
-    {
-        "player_name": "Will Vest",
-        "team": "Detroit Tigers",
-        "team_id": 116,
-        "player_id": 676684,
-        "position": "P",
-        "games_played": 27.0,
-        "H": 0.0,
-        "HR": 0.0,
-        "RBI": 0.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.0,
-        "fHpg": "0",
-        "RBIpg": 0.0,
-        "fRBIpg": "0"
     },
     {
         "player_name": "Zach McKinstry",
@@ -4019,30 +4008,16 @@
         "fHR24pg": "0"
     },
     {
-        "player_name": "George Springer",
-        "team": "Toronto Blue Jays",
-        "team_id": 141,
-        "player_id": 543807,
-        "position": "DH",
-        "games_played": 63.0,
-        "H": 54.0,
-        "HR": 8.0,
-        "RBI": 21.0,
-        "HRpg": 0.127,
-        "fHRpg": "1/7",
-        "Hpg": 0.857,
-        "fHpg": "6/7",
-        "RBIpg": 0.333,
-        "fRBIpg": "1/3",
-        "HR24": 32,
-        "HR24pg": 0.23,
-        "fHR24pg": "1/4"
-    },
-    {
         "player_name": "Jeff Hoffman",
         "team": "Toronto Blue Jays",
         "team_id": 141,
         "player_id": 656546
+    },
+    {
+        "player_name": "Jonatan Clase",
+        "team": "Toronto Blue Jays",
+        "team_id": 141,
+        "player_id": 682729
     },
     {
         "player_name": "Kazuma Okamoto",
