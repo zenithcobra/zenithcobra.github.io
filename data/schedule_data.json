@@ -190,7 +190,7 @@
         "game_datetime": "2026-07-01T22:40:00Z",
         "game_date": "2026-07-01",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Philadelphia Phillies",
         "away_id": 134,
@@ -204,19 +204,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-01 - Pittsburgh Pirates @ Philadelphia Phillies (Warmup)"
+        "summary": "2026-07-01 - Pittsburgh Pirates (0) @ Philadelphia Phillies (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824905,
         "game_datetime": "2026-07-01T23:15:00Z",
         "game_date": "2026-07-01",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "St. Louis Cardinals",
         "home_name": "Atlanta Braves",
         "away_id": 138,
@@ -235,7 +235,7 @@
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": "STL leads 1-0",
-        "summary": "2026-07-01 - St. Louis Cardinals @ Atlanta Braves (Pre-Game)"
+        "summary": "2026-07-01 - St. Louis Cardinals @ Atlanta Braves (Warmup)"
     },
     {
         "game_id": 824094,
