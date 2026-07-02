@@ -202,14 +202,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 5,
-        "current_inning": 3,
-        "inning_state": "Bottom",
+        "home_score": 6,
+        "current_inning": 4,
+        "inning_state": "Middle",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-01 - Pittsburgh Pirates (2) @ Philadelphia Phillies (5) (Bottom of the 3rd)"
+        "summary": "2026-07-01 - Pittsburgh Pirates (2) @ Philadelphia Phillies (6) (Middle of the 4th)"
     },
     {
         "game_id": 824905,
@@ -229,13 +229,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 1,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Bottom",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": "STL leads 1-0",
-        "summary": "2026-07-01 - St. Louis Cardinals (1) @ Atlanta Braves (1) (Bottom of the 2nd)"
+        "summary": "2026-07-01 - St. Louis Cardinals (1) @ Atlanta Braves (1) (Bottom of the 3rd)"
     },
     {
         "game_id": 824094,
@@ -253,22 +253,22 @@
         "away_probable_pitcher": "Shane McClanahan",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-07-01 - Tampa Bay Rays (0) @ Kansas City Royals (0) (Top of the 1st)"
+        "summary": "2026-07-01 - Tampa Bay Rays (2) @ Kansas City Royals (0) (End of the 1st)"
     },
     {
         "game_id": 824174,
         "game_datetime": "2026-07-02T00:10:00Z",
         "game_date": "2026-07-01",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Minnesota Twins",
         "home_name": "Houston Astros",
         "away_id": 142,
@@ -287,14 +287,14 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-01 - Minnesota Twins @ Houston Astros (Pre-Game)"
+        "summary": "2026-07-01 - Minnesota Twins @ Houston Astros (Warmup)"
     },
     {
         "game_id": 823767,
         "game_datetime": "2026-07-02T00:10:00Z",
         "game_date": "2026-07-01",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cincinnati Reds",
         "home_name": "Milwaukee Brewers",
         "away_id": 113,
@@ -315,7 +315,7 @@
             "ESPN/ESPN App"
         ],
         "series_status": "MIL leads 2-0",
-        "summary": "2026-07-01 - Cincinnati Reds @ Milwaukee Brewers (Pre-Game)"
+        "summary": "2026-07-01 - Cincinnati Reds @ Milwaukee Brewers (Warmup)"
     },
     {
         "game_id": 824337,
