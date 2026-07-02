@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Jared Jones",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 3,
         "home_score": 1,
         "current_inning": 7,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 2-1",
-        "summary": "2026-07-02 - Pittsburgh Pirates (1) @ Philadelphia Phillies (1) (Top of the 7th)"
+        "summary": "2026-07-02 - Pittsburgh Pirates (3) @ Philadelphia Phillies (1) (End of the 7th)"
     },
     {
         "game_id": 823765,
@@ -43,20 +43,20 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 3,
+        "current_inning": 4,
         "inning_state": "Top",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 3-0",
-        "summary": "2026-07-02 - Cincinnati Reds (1) @ Milwaukee Brewers (0) (Top of the 3rd)"
+        "summary": "2026-07-02 - Cincinnati Reds (1) @ Milwaukee Brewers (0) (Top of the 4th)"
     },
     {
         "game_id": 824335,
         "game_datetime": "2026-07-02T19:10:00Z",
         "game_date": "2026-07-02",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Miami Marlins",
         "home_name": "Colorado Rockies",
         "away_id": 146,
@@ -75,7 +75,7 @@
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "MIA leads 2-1",
-        "summary": "2026-07-02 - Miami Marlins @ Colorado Rockies (Pre-Game)"
+        "summary": "2026-07-02 - Miami Marlins @ Colorado Rockies (Warmup)"
     },
     {
         "game_id": 824416,
