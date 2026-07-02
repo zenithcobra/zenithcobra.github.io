@@ -66,7 +66,7 @@
         "game_datetime": "2026-07-02T19:10:00Z",
         "game_date": "2026-07-02",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Miami Marlins",
         "home_name": "Colorado Rockies",
         "away_id": 146,
@@ -78,21 +78,26 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 4,
-        "home_score": 12,
-        "current_inning": 8,
-        "inning_state": "Bottom",
+        "home_score": 14,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": "MIA leads 2-1",
-        "summary": "2026-07-02 - Miami Marlins (4) @ Colorado Rockies (12) (Bottom of the 8th)"
+        "series_status": "Series tied 2-2",
+        "winning_team": "Colorado Rockies",
+        "losing_team": "Miami Marlins",
+        "winning_pitcher": "Brennan Bernardino",
+        "losing_pitcher": "John King",
+        "save_pitcher": null,
+        "summary": "2026-07-02 - Miami Marlins (4) @ Colorado Rockies (14) (Final)"
     },
     {
         "game_id": 824416,
         "game_datetime": "2026-07-02T22:40:00Z",
         "game_date": "2026-07-02",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago White Sox",
         "home_name": "Cleveland Guardians",
         "away_id": 145,
@@ -111,7 +116,7 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-02 - Chicago White Sox @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-07-02 - Chicago White Sox @ Cleveland Guardians (Warmup)"
     },
     {
         "game_id": 824906,
@@ -222,7 +227,7 @@
         "game_datetime": "2026-07-03T02:10:00Z",
         "game_date": "2026-07-02",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Diego Padres",
         "home_name": "Los Angeles Dodgers",
         "away_id": 135,
@@ -243,6 +248,6 @@
             "MLB Network"
         ],
         "series_status": null,
-        "summary": "2026-07-02 - San Diego Padres @ Los Angeles Dodgers (Scheduled)"
+        "summary": "2026-07-02 - San Diego Padres @ Los Angeles Dodgers (Pre-Game)"
     }
 ]
