@@ -35,7 +35,7 @@
         "game_datetime": "2026-07-02T18:10:00Z",
         "game_date": "2026-07-02",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Cincinnati Reds",
         "home_name": "Milwaukee Brewers",
         "away_id": 113,
@@ -53,8 +53,13 @@
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
-        "series_status": "MIL leads 3-0",
-        "summary": "2026-07-02 - Cincinnati Reds (7) @ Milwaukee Brewers (2) (Bottom of the 9th)"
+        "series_status": "MIL wins 3-1",
+        "winning_team": "Cincinnati Reds",
+        "losing_team": "Milwaukee Brewers",
+        "winning_pitcher": "Chase Burns",
+        "losing_pitcher": "Jacob Misiorowski",
+        "save_pitcher": null,
+        "summary": "2026-07-02 - Cincinnati Reds (7) @ Milwaukee Brewers (2) (Final)"
     },
     {
         "game_id": 824335,
@@ -73,14 +78,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 4,
-        "home_score": 5,
-        "current_inning": 5,
+        "home_score": 12,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "MIA leads 2-1",
-        "summary": "2026-07-02 - Miami Marlins (4) @ Colorado Rockies (5) (Top of the 5th)"
+        "summary": "2026-07-02 - Miami Marlins (4) @ Colorado Rockies (12) (Top of the 7th)"
     },
     {
         "game_id": 824416,
@@ -150,10 +155,10 @@
         "away_probable_pitcher": "Ian Seymour",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
@@ -191,7 +196,7 @@
         "game_datetime": "2026-07-03T01:40:00Z",
         "game_date": "2026-07-02",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Seattle Mariners",
         "away_id": 108,
@@ -210,7 +215,7 @@
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "SEA leads 2-0",
-        "summary": "2026-07-02 - Los Angeles Angels @ Seattle Mariners (Scheduled)"
+        "summary": "2026-07-02 - Los Angeles Angels @ Seattle Mariners (Pre-Game)"
     },
     {
         "game_id": 823935,
