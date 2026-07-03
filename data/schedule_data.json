@@ -15,10 +15,10 @@
         "away_probable_pitcher": "Andre Pallante",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
@@ -56,7 +56,7 @@
         "game_datetime": "2026-07-03T23:05:00Z",
         "game_date": "2026-07-03",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "New York Yankees",
         "away_id": 142,
@@ -75,7 +75,7 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-03 - Minnesota Twins @ New York Yankees (Scheduled)"
+        "summary": "2026-07-03 - Minnesota Twins @ New York Yankees (Pre-Game)"
     },
     {
         "game_id": 824498,
