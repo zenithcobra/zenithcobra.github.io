@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-03T20:05:00Z",
         "game_date": "2026-07-03",
         "game_type": "R",
-        "status": "Delayed Start",
+        "status": "Warmup",
         "away_name": "St. Louis Cardinals",
         "home_name": "Chicago Cubs",
         "away_id": 138,
@@ -23,14 +23,14 @@
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-03 - St. Louis Cardinals @ Chicago Cubs (Delayed Start)"
+        "summary": "2026-07-03 - St. Louis Cardinals @ Chicago Cubs (Warmup)"
     },
     {
         "game_id": 822714,
         "game_datetime": "2026-07-03T22:45:00Z",
         "game_date": "2026-07-03",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Washington Nationals",
         "away_id": 134,
@@ -49,7 +49,7 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-03 - Pittsburgh Pirates @ Washington Nationals (Scheduled)"
+        "summary": "2026-07-03 - Pittsburgh Pirates @ Washington Nationals (Pre-Game)"
     },
     {
         "game_id": 823527,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-07-03T23:10:00Z",
         "game_date": "2026-07-03",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago White Sox",
         "home_name": "Cleveland Guardians",
         "away_id": 145,
@@ -127,7 +127,7 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-07-03 - Chicago White Sox @ Cleveland Guardians (Scheduled)"
+        "summary": "2026-07-03 - Chicago White Sox @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 824904,
@@ -145,10 +145,10 @@
         "away_probable_pitcher": "Christian Scott",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
@@ -186,7 +186,7 @@
         "game_datetime": "2026-07-04T00:15:00Z",
         "game_date": "2026-07-03",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Tampa Bay Rays",
         "home_name": "Houston Astros",
         "away_id": 139,
@@ -207,7 +207,7 @@
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-07-03 - Tampa Bay Rays @ Houston Astros (Scheduled)"
+        "summary": "2026-07-03 - Tampa Bay Rays @ Houston Astros (Pre-Game)"
     },
     {
         "game_id": 824013,
