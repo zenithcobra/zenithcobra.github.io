@@ -46,22 +46,22 @@
         "away_probable_pitcher": "Zebby Matthews",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 6,
+        "away_score": 8,
         "home_score": 4,
-        "current_inning": 6,
-        "inning_state": "Bottom",
+        "current_inning": 8,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-07-04 - Minnesota Twins (6) @ New York Yankees (4) (Bottom of the 6th)"
+        "summary": "2026-07-04 - Minnesota Twins (8) @ New York Yankees (4) (Top of the 8th)"
     },
     {
         "game_id": 822882,
         "game_datetime": "2026-07-04T20:05:00Z",
         "game_date": "2026-07-04",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Detroit Tigers",
         "home_name": "Texas Rangers",
         "away_id": 116,
@@ -72,22 +72,22 @@
         "away_probable_pitcher": "Jack Flaherty",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 3,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "TEX leads 1-0",
-        "summary": "2026-07-04 - Detroit Tigers @ Texas Rangers (Warmup)"
+        "summary": "2026-07-04 - Detroit Tigers (3) @ Texas Rangers (0) (Top of the 2nd)"
     },
     {
         "game_id": 823118,
         "game_datetime": "2026-07-04T20:10:00Z",
         "game_date": "2026-07-04",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Toronto Blue Jays",
         "home_name": "Seattle Mariners",
         "away_id": 141,
@@ -100,13 +100,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-07-04 - Toronto Blue Jays @ Seattle Mariners (Warmup)"
+        "summary": "2026-07-04 - Toronto Blue Jays (0) @ Seattle Mariners (0) (Top of the 2nd)"
     },
     {
         "game_id": 824499,
@@ -176,10 +176,10 @@
         "away_probable_pitcher": "Sean Burke",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
@@ -239,7 +239,7 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": null,
+        "series_status": "ATL leads 1-0",
         "summary": "2026-07-04 - New York Mets @ Atlanta Braves (Scheduled)"
     },
     {
@@ -273,7 +273,7 @@
         "game_datetime": "2026-07-05T00:10:00Z",
         "game_date": "2026-07-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "Kansas City Royals",
         "away_id": 143,
@@ -292,7 +292,7 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-04 - Philadelphia Phillies @ Kansas City Royals (Scheduled)"
+        "summary": "2026-07-04 - Philadelphia Phillies @ Kansas City Royals (Pre-Game)"
     },
     {
         "game_id": 824012,
@@ -369,7 +369,7 @@
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": "MIL leads 1-0",
+        "series_status": null,
         "summary": "2026-07-04 - Milwaukee Brewers @ Arizona Diamondbacks (Scheduled)"
     },
     {
