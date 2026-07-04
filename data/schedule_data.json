@@ -35,7 +35,7 @@
         "game_datetime": "2026-07-04T17:35:00Z",
         "game_date": "2026-07-04",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Minnesota Twins",
         "home_name": "New York Yankees",
         "away_id": 142,
@@ -49,12 +49,17 @@
         "away_score": 11,
         "home_score": 4,
         "current_inning": 9,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
-        "series_status": "NYY leads 1-0",
-        "summary": "2026-07-04 - Minnesota Twins (11) @ New York Yankees (4) (Top of the 9th)"
+        "series_status": "Series tied 1-1",
+        "winning_team": "Minnesota Twins",
+        "losing_team": "New York Yankees",
+        "winning_pitcher": "Taylor Rogers",
+        "losing_pitcher": "Brendan Beck",
+        "save_pitcher": null,
+        "summary": "2026-07-04 - Minnesota Twins (11) @ New York Yankees (4) (Final)"
     },
     {
         "game_id": 822882,
@@ -74,13 +79,13 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 0,
-        "current_inning": 3,
+        "current_inning": 6,
         "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "TEX leads 1-0",
-        "summary": "2026-07-04 - Detroit Tigers (3) @ Texas Rangers (0) (Top of the 3rd)"
+        "summary": "2026-07-04 - Detroit Tigers (3) @ Texas Rangers (0) (Top of the 6th)"
     },
     {
         "game_id": 823118,
@@ -100,13 +105,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 5,
-        "current_inning": 2,
+        "current_inning": 5,
         "inning_state": "Bottom",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-07-04 - Toronto Blue Jays (0) @ Seattle Mariners (5) (Bottom of the 2nd)"
+        "summary": "2026-07-04 - Toronto Blue Jays (0) @ Seattle Mariners (5) (Bottom of the 5th)"
     },
     {
         "game_id": 824499,
@@ -299,7 +304,7 @@
         "game_datetime": "2026-07-05T01:38:00Z",
         "game_date": "2026-07-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Los Angeles Angels",
         "away_id": 111,
@@ -317,15 +322,15 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-04 - Boston Red Sox @ Los Angeles Angels (Scheduled)"
+        "series_status": "BOS leads 1-0",
+        "summary": "2026-07-04 - Boston Red Sox @ Los Angeles Angels (Pre-Game)"
     },
     {
         "game_id": 824983,
         "game_datetime": "2026-07-05T01:40:00Z",
         "game_date": "2026-07-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Miami Marlins",
         "home_name": "Athletics",
         "away_id": 146,
@@ -343,15 +348,15 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-04 - Miami Marlins @ Athletics (Scheduled)"
+        "series_status": "MIA leads 1-0",
+        "summary": "2026-07-04 - Miami Marlins @ Athletics (Pre-Game)"
     },
     {
         "game_id": 825063,
         "game_datetime": "2026-07-05T01:40:00Z",
         "game_date": "2026-07-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "Arizona Diamondbacks",
         "away_id": 158,
@@ -370,7 +375,7 @@
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 1-0",
-        "summary": "2026-07-04 - Milwaukee Brewers @ Arizona Diamondbacks (Scheduled)"
+        "summary": "2026-07-04 - Milwaukee Brewers @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 823932,
