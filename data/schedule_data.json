@@ -47,14 +47,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 2,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "home_score": 5,
+        "current_inning": 4,
+        "inning_state": "Middle",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-03 - Pittsburgh Pirates (1) @ Washington Nationals (2) (Top of the 3rd)"
+        "summary": "2026-07-03 - Pittsburgh Pirates (1) @ Washington Nationals (5) (Middle of the 4th)"
     },
     {
         "game_id": 823527,
@@ -74,13 +74,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 1,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-03 - Minnesota Twins (1) @ New York Yankees (1) (Top of the 2nd)"
+        "summary": "2026-07-03 - Minnesota Twins (1) @ New York Yankees (1) (Top of the 3rd)"
     },
     {
         "game_id": 824498,
@@ -100,13 +100,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "current_inning": 2,
+        "inning_state": "End",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-03 - Baltimore Orioles (1) @ Cincinnati Reds (0) (Bottom of the 1st)"
+        "summary": "2026-07-03 - Baltimore Orioles (1) @ Cincinnati Reds (0) (End of the 2nd)"
     },
     {
         "game_id": 824417,
@@ -125,14 +125,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "home_score": 1,
+        "current_inning": 3,
+        "inning_state": "End",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-07-03 - Chicago White Sox (0) @ Cleveland Guardians (0) (Bottom of the 2nd)"
+        "summary": "2026-07-03 - Chicago White Sox (0) @ Cleveland Guardians (1) (End of the 3rd)"
     },
     {
         "game_id": 824904,
@@ -151,21 +151,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
+        "home_score": 2,
+        "current_inning": 2,
         "inning_state": "Bottom",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-03 - New York Mets (0) @ Atlanta Braves (0) (Bottom of the 1st)"
+        "summary": "2026-07-03 - New York Mets (0) @ Atlanta Braves (2) (Bottom of the 2nd)"
     },
     {
         "game_id": 824336,
         "game_datetime": "2026-07-04T00:10:00Z",
         "game_date": "2026-07-03",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "San Francisco Giants",
         "home_name": "Colorado Rockies",
         "away_id": 137,
@@ -184,14 +184,14 @@
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-03 - San Francisco Giants @ Colorado Rockies (Pre-Game)"
+        "summary": "2026-07-03 - San Francisco Giants @ Colorado Rockies (Warmup)"
     },
     {
         "game_id": 824173,
         "game_datetime": "2026-07-04T00:15:00Z",
         "game_date": "2026-07-03",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Tampa Bay Rays",
         "home_name": "Houston Astros",
         "away_id": 139,
@@ -212,7 +212,7 @@
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-07-03 - Tampa Bay Rays @ Houston Astros (Pre-Game)"
+        "summary": "2026-07-03 - Tampa Bay Rays @ Houston Astros (Warmup)"
     },
     {
         "game_id": 824013,
@@ -282,10 +282,10 @@
         "away_probable_pitcher": "Kyle Harrison",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [
