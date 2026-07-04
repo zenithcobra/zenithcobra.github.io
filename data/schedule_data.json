@@ -47,21 +47,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 6,
-        "home_score": 1,
-        "current_inning": 4,
-        "inning_state": "End",
+        "home_score": 4,
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-07-04 - Minnesota Twins (6) @ New York Yankees (1) (End of the 4th)"
+        "summary": "2026-07-04 - Minnesota Twins (6) @ New York Yankees (4) (Top of the 6th)"
     },
     {
         "game_id": 822882,
         "game_datetime": "2026-07-04T20:05:00Z",
         "game_date": "2026-07-04",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Detroit Tigers",
         "home_name": "Texas Rangers",
         "away_id": 116,
@@ -80,7 +80,7 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "TEX leads 1-0",
-        "summary": "2026-07-04 - Detroit Tigers @ Texas Rangers (Pre-Game)"
+        "summary": "2026-07-04 - Detroit Tigers @ Texas Rangers (Warmup)"
     },
     {
         "game_id": 823118,
@@ -113,7 +113,7 @@
         "game_datetime": "2026-07-04T23:10:00Z",
         "game_date": "2026-07-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Baltimore Orioles",
         "home_name": "Cincinnati Reds",
         "away_id": 110,
@@ -132,14 +132,14 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-07-04 - Baltimore Orioles @ Cincinnati Reds (Scheduled)"
+        "summary": "2026-07-04 - Baltimore Orioles @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 824171,
         "game_datetime": "2026-07-04T23:10:00Z",
         "game_date": "2026-07-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Tampa Bay Rays",
         "home_name": "Houston Astros",
         "away_id": 139,
@@ -157,15 +157,15 @@
         "venue_id": 2392,
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-04 - Tampa Bay Rays @ Houston Astros (Scheduled)"
+        "series_status": "TB leads 1-0",
+        "summary": "2026-07-04 - Tampa Bay Rays @ Houston Astros (Pre-Game)"
     },
     {
         "game_id": 824415,
         "game_datetime": "2026-07-04T23:10:00Z",
         "game_date": "2026-07-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago White Sox",
         "home_name": "Cleveland Guardians",
         "away_id": 145,
@@ -184,7 +184,7 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "CLE leads 2-0",
-        "summary": "2026-07-04 - Chicago White Sox @ Cleveland Guardians (Scheduled)"
+        "summary": "2026-07-04 - Chicago White Sox @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 824658,
@@ -369,7 +369,7 @@
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "MIL leads 1-0",
         "summary": "2026-07-04 - Milwaukee Brewers @ Arizona Diamondbacks (Scheduled)"
     },
     {
