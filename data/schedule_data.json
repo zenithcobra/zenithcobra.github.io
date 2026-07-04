@@ -46,15 +46,15 @@
         "away_probable_pitcher": "Zebby Matthews",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 8,
+        "away_score": 11,
         "home_score": 4,
-        "current_inning": 8,
+        "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-07-04 - Minnesota Twins (8) @ New York Yankees (4) (Top of the 8th)"
+        "summary": "2026-07-04 - Minnesota Twins (11) @ New York Yankees (4) (Top of the 9th)"
     },
     {
         "game_id": 822882,
@@ -74,13 +74,13 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "TEX leads 1-0",
-        "summary": "2026-07-04 - Detroit Tigers (3) @ Texas Rangers (0) (Top of the 2nd)"
+        "summary": "2026-07-04 - Detroit Tigers (3) @ Texas Rangers (0) (Top of the 3rd)"
     },
     {
         "game_id": 823118,
@@ -99,14 +99,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 5,
         "current_inning": 2,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-07-04 - Toronto Blue Jays (0) @ Seattle Mariners (0) (Top of the 2nd)"
+        "summary": "2026-07-04 - Toronto Blue Jays (0) @ Seattle Mariners (5) (Bottom of the 2nd)"
     },
     {
         "game_id": 824499,
@@ -191,7 +191,7 @@
         "game_datetime": "2026-07-05T00:08:00Z",
         "game_date": "2026-07-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "Chicago Cubs",
         "away_id": 138,
@@ -211,15 +211,15 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": null,
-        "summary": "2026-07-04 - St. Louis Cardinals @ Chicago Cubs (Scheduled)"
+        "series_status": "STL leads 1-0",
+        "summary": "2026-07-04 - St. Louis Cardinals @ Chicago Cubs (Pre-Game)"
     },
     {
         "game_id": 824903,
         "game_datetime": "2026-07-05T00:08:00Z",
         "game_date": "2026-07-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "Atlanta Braves",
         "away_id": 121,
@@ -240,14 +240,14 @@
             "FOX"
         ],
         "series_status": "ATL leads 1-0",
-        "summary": "2026-07-04 - New York Mets @ Atlanta Braves (Scheduled)"
+        "summary": "2026-07-04 - New York Mets @ Atlanta Braves (Pre-Game)"
     },
     {
         "game_id": 824334,
         "game_datetime": "2026-07-05T00:10:00Z",
         "game_date": "2026-07-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Francisco Giants",
         "home_name": "Colorado Rockies",
         "away_id": 137,
@@ -266,7 +266,7 @@
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "COL leads 1-0",
-        "summary": "2026-07-04 - San Francisco Giants @ Colorado Rockies (Scheduled)"
+        "summary": "2026-07-04 - San Francisco Giants @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 824092,
@@ -284,10 +284,10 @@
         "away_probable_pitcher": "Jes\u00fas Luzardo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
@@ -369,7 +369,7 @@
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "MIL leads 1-0",
         "summary": "2026-07-04 - Milwaukee Brewers @ Arizona Diamondbacks (Scheduled)"
     },
     {
