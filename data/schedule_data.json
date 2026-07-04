@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-04T15:05:00Z",
         "game_date": "2026-07-04",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Washington Nationals",
         "away_id": 134,
@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Braxton Ashcraft",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
+        "away_score": 1,
+        "home_score": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "WSH leads 1-0",
-        "summary": "2026-07-04 - Pittsburgh Pirates @ Washington Nationals (Warmup)"
+        "summary": "2026-07-04 - Pittsburgh Pirates (1) @ Washington Nationals (1) (Top of the 2nd)"
     },
     {
         "game_id": 823526,
@@ -178,7 +178,7 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": "CLE leads 1-0",
+        "series_status": "CLE leads 2-0",
         "summary": "2026-07-04 - Chicago White Sox @ Cleveland Guardians (Scheduled)"
     },
     {
@@ -249,7 +249,7 @@
         "home_id": 115,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "Tomoyuki Sugano",
+        "home_probable_pitcher": "Sean Sullivan",
         "away_probable_pitcher": "Robbie Ray",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
@@ -260,7 +260,7 @@
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "COL leads 1-0",
         "summary": "2026-07-04 - San Francisco Giants @ Colorado Rockies (Scheduled)"
     },
     {
@@ -364,7 +364,7 @@
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": "MIL leads 1-0",
+        "series_status": null,
         "summary": "2026-07-04 - Milwaukee Brewers @ Arizona Diamondbacks (Scheduled)"
     },
     {
