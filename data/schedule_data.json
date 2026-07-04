@@ -46,15 +46,15 @@
         "away_probable_pitcher": "Zebby Matthews",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 5,
-        "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Bottom",
+        "away_score": 6,
+        "home_score": 1,
+        "current_inning": 4,
+        "inning_state": "End",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-07-04 - Minnesota Twins (5) @ New York Yankees (0) (Bottom of the 3rd)"
+        "summary": "2026-07-04 - Minnesota Twins (6) @ New York Yankees (1) (End of the 4th)"
     },
     {
         "game_id": 822882,
@@ -131,7 +131,7 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "BAL leads 1-0",
         "summary": "2026-07-04 - Baltimore Orioles @ Cincinnati Reds (Scheduled)"
     },
     {
@@ -183,7 +183,7 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": "CLE leads 1-0",
+        "series_status": "CLE leads 2-0",
         "summary": "2026-07-04 - Chicago White Sox @ Cleveland Guardians (Scheduled)"
     },
     {
@@ -369,7 +369,7 @@
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": "MIL leads 1-0",
+        "series_status": null,
         "summary": "2026-07-04 - Milwaukee Brewers @ Arizona Diamondbacks (Scheduled)"
     },
     {
