@@ -15,10 +15,10 @@
         "away_probable_pitcher": "Nolan McLean",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [
@@ -99,10 +99,10 @@
         "away_probable_pitcher": "Joe Ryan",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [
@@ -116,7 +116,7 @@
         "game_datetime": "2026-07-05T18:00:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago White Sox",
         "home_name": "Cleveland Guardians",
         "away_id": 145,
@@ -127,17 +127,17 @@
         "away_probable_pitcher": "Chris Murphy",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
         "series_status": "CLE leads 2-1",
-        "summary": "2026-07-05 - Chicago White Sox @ Cleveland Guardians (Scheduled)"
+        "summary": "2026-07-05 - Chicago White Sox @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 824656,
@@ -164,7 +164,7 @@
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
-        "series_status": "STL leads 2-0",
+        "series_status": null,
         "summary": "2026-07-05 - St. Louis Cardinals @ Chicago Cubs (Scheduled)"
     },
     {
@@ -192,7 +192,7 @@
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
-        "series_status": "PHI leads 1-0",
+        "series_status": null,
         "summary": "2026-07-05 - Philadelphia Phillies @ Kansas City Royals (Scheduled)"
     },
     {
@@ -248,7 +248,7 @@
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
-        "series_status": "Series tied 1-1",
+        "series_status": "TEX leads 1-0",
         "summary": "2026-07-05 - Detroit Tigers @ Texas Rangers (Scheduled)"
     },
     {
@@ -276,7 +276,7 @@
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
-        "series_status": "Series tied 1-1",
+        "series_status": "COL leads 1-0",
         "summary": "2026-07-05 - San Francisco Giants @ Colorado Rockies (Scheduled)"
     },
     {
@@ -304,7 +304,7 @@
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
-        "series_status": "Series tied 1-1",
+        "series_status": null,
         "summary": "2026-07-05 - Milwaukee Brewers @ Arizona Diamondbacks (Scheduled)"
     },
     {
@@ -332,7 +332,7 @@
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
-        "series_status": "MIA leads 2-0",
+        "series_status": null,
         "summary": "2026-07-05 - Miami Marlins @ Athletics (Scheduled)"
     },
     {
@@ -388,7 +388,7 @@
         "national_broadcasts": [
             "NBC/Peacock"
         ],
-        "series_status": "LAD leads 3-0",
+        "series_status": null,
         "summary": "2026-07-05 - San Diego Padres @ Los Angeles Dodgers (Scheduled)"
     },
     {
@@ -416,7 +416,7 @@
         "national_broadcasts": [
             "NBC Sports Network"
         ],
-        "series_status": "BOS leads 2-0",
+        "series_status": null,
         "summary": "2026-07-05 - Boston Red Sox @ Los Angeles Angels (Scheduled)"
     }
 ]
