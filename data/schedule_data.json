@@ -15,17 +15,17 @@
         "away_probable_pitcher": "Nolan McLean",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "away_score": 5,
+        "home_score": 3,
+        "current_inning": 2,
+        "inning_state": "Middle",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [
             "NBC/Peacock"
         ],
         "series_status": "ATL leads 2-0",
-        "summary": "2026-07-05 - New York Mets (1) @ Atlanta Braves (0) (Bottom of the 1st)"
+        "summary": "2026-07-05 - New York Mets (5) @ Atlanta Braves (3) (Middle of the 2nd)"
     },
     {
         "game_id": 822715,
@@ -44,16 +44,16 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 4,
-        "home_score": 2,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "home_score": 3,
+        "current_inning": 5,
+        "inning_state": "Middle",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - Pittsburgh Pirates (4) @ Washington Nationals (2) (Bottom of the 4th)"
+        "summary": "2026-07-05 - Pittsburgh Pirates (4) @ Washington Nationals (3) (Middle of the 5th)"
     },
     {
         "game_id": 824497,
@@ -73,7 +73,7 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 2,
-        "current_inning": 6,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
@@ -81,7 +81,7 @@
             "Peacock / NBCSN Extra"
         ],
         "series_status": "BAL leads 2-0",
-        "summary": "2026-07-05 - Baltimore Orioles (1) @ Cincinnati Reds (2) (Top of the 6th)"
+        "summary": "2026-07-05 - Baltimore Orioles (1) @ Cincinnati Reds (2) (Top of the 7th)"
     },
     {
         "game_id": 823525,
@@ -99,24 +99,24 @@
         "away_probable_pitcher": "Joe Ryan",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "End",
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [
             "NBC Sports Network"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - Minnesota Twins (1) @ New York Yankees (0) (End of the 3rd)"
+        "summary": "2026-07-05 - Minnesota Twins (2) @ New York Yankees (0) (Top of the 5th)"
     },
     {
         "game_id": 824413,
         "game_datetime": "2026-07-05T18:00:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "Delayed Start",
         "away_name": "Chicago White Sox",
         "home_name": "Cleveland Guardians",
         "away_id": 145,
@@ -137,14 +137,14 @@
             "Peacock / NBCSN Extra"
         ],
         "series_status": "CLE leads 2-1",
-        "summary": "2026-07-05 - Chicago White Sox @ Cleveland Guardians (Warmup)"
+        "summary": "2026-07-05 - Chicago White Sox @ Cleveland Guardians (Delayed Start)"
     },
     {
         "game_id": 824656,
         "game_datetime": "2026-07-05T18:30:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "St. Louis Cardinals",
         "home_name": "Chicago Cubs",
         "away_id": 138,
@@ -156,23 +156,23 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 1,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
         "series_status": "STL leads 2-0",
-        "summary": "2026-07-05 - St. Louis Cardinals @ Chicago Cubs (Warmup)"
+        "summary": "2026-07-05 - St. Louis Cardinals (0) @ Chicago Cubs (1) (Bottom of the 1st)"
     },
     {
         "game_id": 824091,
         "game_datetime": "2026-07-05T19:00:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Philadelphia Phillies",
         "home_name": "Kansas City Royals",
         "away_id": 143,
@@ -193,7 +193,7 @@
             "Peacock / NBCSN Extra"
         ],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-07-05 - Philadelphia Phillies @ Kansas City Royals (Pre-Game)"
+        "summary": "2026-07-05 - Philadelphia Phillies @ Kansas City Royals (Warmup)"
     },
     {
         "game_id": 824172,
