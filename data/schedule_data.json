@@ -301,7 +301,7 @@
         "game_datetime": "2026-07-05T20:00:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "San Francisco Giants",
         "home_name": "Colorado Rockies",
         "away_id": 137,
@@ -321,15 +321,20 @@
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - San Francisco Giants (6) @ Colorado Rockies (7) (Top of the 9th)"
+        "series_status": "COL wins 2-1",
+        "winning_team": "Colorado Rockies",
+        "losing_team": "San Francisco Giants",
+        "winning_pitcher": "Victor Vodnik",
+        "losing_pitcher": "Dylan Smith",
+        "save_pitcher": "Jordan Romano",
+        "summary": "2026-07-05 - San Francisco Giants (6) @ Colorado Rockies (7) (Final)"
     },
     {
         "game_id": 825061,
         "game_datetime": "2026-07-05T20:00:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Milwaukee Brewers",
         "home_name": "Arizona Diamondbacks",
         "away_id": 158,
@@ -349,8 +354,13 @@
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - Milwaukee Brewers (3) @ Arizona Diamondbacks (2) (Bottom of the 9th)"
+        "series_status": "MIL wins 2-1",
+        "winning_team": "Milwaukee Brewers",
+        "losing_team": "Arizona Diamondbacks",
+        "winning_pitcher": "Drew Rom",
+        "losing_pitcher": "Eduardo Rodriguez",
+        "save_pitcher": "Trevor Megill",
+        "summary": "2026-07-05 - Milwaukee Brewers (3) @ Arizona Diamondbacks (2) (Final)"
     },
     {
         "game_id": 824980,
@@ -369,23 +379,23 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 8,
-        "home_score": 0,
-        "current_inning": 7,
-        "inning_state": "Bottom",
+        "home_score": 5,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
         "series_status": "MIA leads 2-0",
-        "summary": "2026-07-05 - Miami Marlins (8) @ Athletics (0) (Bottom of the 7th)"
+        "summary": "2026-07-05 - Miami Marlins (8) @ Athletics (5) (Top of the 9th)"
     },
     {
         "game_id": 823117,
         "game_datetime": "2026-07-05T21:00:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Toronto Blue Jays",
         "home_name": "Seattle Mariners",
         "away_id": 141,
@@ -397,23 +407,28 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 3,
-        "current_inning": 8,
+        "home_score": 4,
+        "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [
             "NBC Sports Network"
         ],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - Toronto Blue Jays (0) @ Seattle Mariners (3) (Top of the 8th)"
+        "series_status": "SEA wins 2-1",
+        "winning_team": "Seattle Mariners",
+        "losing_team": "Toronto Blue Jays",
+        "winning_pitcher": "Emerson Hancock",
+        "losing_pitcher": "Trey Yesavage",
+        "save_pitcher": null,
+        "summary": "2026-07-05 - Toronto Blue Jays (0) @ Seattle Mariners (4) (Final)"
     },
     {
         "game_id": 823931,
         "game_datetime": "2026-07-05T23:20:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "San Diego Padres",
         "home_name": "Los Angeles Dodgers",
         "away_id": 135,
@@ -427,14 +442,14 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [
             "NBC/Peacock"
         ],
         "series_status": "LAD leads 3-0",
-        "summary": "2026-07-05 - San Diego Padres @ Los Angeles Dodgers (Pre-Game)"
+        "summary": "2026-07-05 - San Diego Padres (0) @ Los Angeles Dodgers (0) (End of the 1st)"
     },
     {
         "game_id": 824010,
