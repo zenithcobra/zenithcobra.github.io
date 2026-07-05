@@ -136,7 +136,7 @@
         "game_datetime": "2026-07-05T18:00:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Chicago White Sox",
         "home_name": "Cleveland Guardians",
         "away_id": 145,
@@ -150,14 +150,19 @@
         "away_score": 7,
         "home_score": 6,
         "current_inning": 9,
-        "inning_state": "Middle",
+        "inning_state": "Bottom",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
-        "series_status": "CLE leads 2-1",
-        "summary": "2026-07-05 - Chicago White Sox (7) @ Cleveland Guardians (6) (Middle of the 9th)"
+        "series_status": "Series tied 2-2",
+        "winning_team": "Chicago White Sox",
+        "losing_team": "Cleveland Guardians",
+        "winning_pitcher": "Erick Fedde",
+        "losing_pitcher": "Colin Holderman",
+        "save_pitcher": "Sean Newcomb",
+        "summary": "2026-07-05 - Chicago White Sox (7) @ Cleveland Guardians (6) (Final)"
     },
     {
         "game_id": 824656,
@@ -230,7 +235,7 @@
         "game_datetime": "2026-07-05T19:30:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Tampa Bay Rays",
         "home_name": "Houston Astros",
         "away_id": 139,
@@ -256,7 +261,7 @@
         "winning_pitcher": "Peter Lambert",
         "losing_pitcher": "Mason Englert",
         "save_pitcher": "Josh Hader",
-        "summary": "2026-07-05 - Tampa Bay Rays (0) @ Houston Astros (2) (Game Over)"
+        "summary": "2026-07-05 - Tampa Bay Rays (0) @ Houston Astros (2) (Final)"
     },
     {
         "game_id": 822879,
@@ -308,8 +313,8 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 6,
-        "home_score": 4,
-        "current_inning": 8,
+        "home_score": 7,
+        "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
@@ -317,7 +322,7 @@
             "Peacock / NBCSN Extra"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - San Francisco Giants (6) @ Colorado Rockies (4) (Top of the 8th)"
+        "summary": "2026-07-05 - San Francisco Giants (6) @ Colorado Rockies (7) (Top of the 9th)"
     },
     {
         "game_id": 825061,
@@ -337,15 +342,15 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 2,
-        "current_inning": 8,
-        "inning_state": "Top",
+        "current_inning": 9,
+        "inning_state": "Bottom",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - Milwaukee Brewers (3) @ Arizona Diamondbacks (2) (Top of the 8th)"
+        "summary": "2026-07-05 - Milwaukee Brewers (3) @ Arizona Diamondbacks (2) (Bottom of the 9th)"
     },
     {
         "game_id": 824980,
@@ -365,7 +370,7 @@
         "away_pitcher_note": "",
         "away_score": 8,
         "home_score": 0,
-        "current_inning": 6,
+        "current_inning": 7,
         "inning_state": "Bottom",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
@@ -373,7 +378,7 @@
             "Peacock / NBCSN Extra"
         ],
         "series_status": "MIA leads 2-0",
-        "summary": "2026-07-05 - Miami Marlins (8) @ Athletics (0) (Bottom of the 6th)"
+        "summary": "2026-07-05 - Miami Marlins (8) @ Athletics (0) (Bottom of the 7th)"
     },
     {
         "game_id": 823117,
@@ -393,15 +398,15 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 3,
-        "current_inning": 6,
-        "inning_state": "Middle",
+        "current_inning": 8,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [
             "NBC Sports Network"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - Toronto Blue Jays (0) @ Seattle Mariners (3) (Middle of the 6th)"
+        "summary": "2026-07-05 - Toronto Blue Jays (0) @ Seattle Mariners (3) (Top of the 8th)"
     },
     {
         "game_id": 823931,
@@ -447,10 +452,10 @@
         "away_probable_pitcher": "Ranger Suarez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [
