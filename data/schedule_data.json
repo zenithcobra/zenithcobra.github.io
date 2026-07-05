@@ -17,15 +17,15 @@
         "away_pitcher_note": "",
         "away_score": 5,
         "home_score": 3,
-        "current_inning": 6,
-        "inning_state": "Top",
+        "current_inning": 8,
+        "inning_state": "Bottom",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [
             "NBC/Peacock"
         ],
         "series_status": "ATL leads 2-0",
-        "summary": "2026-07-05 - New York Mets (5) @ Atlanta Braves (3) (Top of the 6th)"
+        "summary": "2026-07-05 - New York Mets (5) @ Atlanta Braves (3) (Bottom of the 8th)"
     },
     {
         "game_id": 822715,
@@ -43,24 +43,24 @@
         "away_probable_pitcher": "Bubba Chandler",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 4,
-        "home_score": 4,
-        "current_inning": 8,
-        "inning_state": "Top",
+        "away_score": 11,
+        "home_score": 5,
+        "current_inning": 9,
+        "inning_state": "Bottom",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - Pittsburgh Pirates (4) @ Washington Nationals (4) (Top of the 8th)"
+        "summary": "2026-07-05 - Pittsburgh Pirates (11) @ Washington Nationals (5) (Bottom of the 9th)"
     },
     {
         "game_id": 824497,
         "game_datetime": "2026-07-05T17:05:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Baltimore Orioles",
         "home_name": "Cincinnati Reds",
         "away_id": 110,
@@ -86,7 +86,7 @@
         "winning_pitcher": "Nick Lodolo",
         "losing_pitcher": "Kyle Bradish",
         "save_pitcher": "Emilio Pag\u00e1n",
-        "summary": "2026-07-05 - Baltimore Orioles (2) @ Cincinnati Reds (3) (Game Over)"
+        "summary": "2026-07-05 - Baltimore Orioles (2) @ Cincinnati Reds (3) (Final)"
     },
     {
         "game_id": 823525,
@@ -106,7 +106,7 @@
         "away_pitcher_note": "",
         "away_score": 6,
         "home_score": 0,
-        "current_inning": 7,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
@@ -114,7 +114,7 @@
             "NBC Sports Network"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - Minnesota Twins (6) @ New York Yankees (0) (Bottom of the 7th)"
+        "summary": "2026-07-05 - Minnesota Twins (6) @ New York Yankees (0) (Bottom of the 9th)"
     },
     {
         "game_id": 824413,
@@ -132,9 +132,9 @@
         "away_probable_pitcher": "Chris Murphy",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
-        "home_score": 2,
-        "current_inning": 1,
+        "away_score": 6,
+        "home_score": 3,
+        "current_inning": 3,
         "inning_state": "Bottom",
         "venue_id": 5,
         "venue_name": "Progressive Field",
@@ -142,7 +142,7 @@
             "Peacock / NBCSN Extra"
         ],
         "series_status": "CLE leads 2-1",
-        "summary": "2026-07-05 - Chicago White Sox (2) @ Cleveland Guardians (2) (Bottom of the 1st)"
+        "summary": "2026-07-05 - Chicago White Sox (6) @ Cleveland Guardians (3) (Bottom of the 3rd)"
     },
     {
         "game_id": 824656,
@@ -160,9 +160,9 @@
         "away_probable_pitcher": "Matthew Liberatore",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 2,
-        "current_inning": 5,
+        "away_score": 3,
+        "home_score": 6,
+        "current_inning": 6,
         "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
@@ -170,7 +170,7 @@
             "Peacock / NBCSN Extra"
         ],
         "series_status": "STL leads 2-0",
-        "summary": "2026-07-05 - St. Louis Cardinals (0) @ Chicago Cubs (2) (Bottom of the 5th)"
+        "summary": "2026-07-05 - St. Louis Cardinals (3) @ Chicago Cubs (6) (Bottom of the 6th)"
     },
     {
         "game_id": 824091,
@@ -188,17 +188,17 @@
         "away_probable_pitcher": "Aaron Nola",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 2,
-        "current_inning": 3,
-        "inning_state": "End",
+        "away_score": 1,
+        "home_score": 3,
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-07-05 - Philadelphia Phillies (0) @ Kansas City Royals (2) (End of the 3rd)"
+        "summary": "2026-07-05 - Philadelphia Phillies (1) @ Kansas City Royals (3) (Top of the 6th)"
     },
     {
         "game_id": 824172,
@@ -218,7 +218,7 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 4,
         "inning_state": "Top",
         "venue_id": 2392,
         "venue_name": "Daikin Park",
@@ -226,7 +226,7 @@
             "Peacock / NBCSN Extra"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - Tampa Bay Rays (0) @ Houston Astros (0) (Top of the 2nd)"
+        "summary": "2026-07-05 - Tampa Bay Rays (0) @ Houston Astros (0) (Top of the 4th)"
     },
     {
         "game_id": 822879,
@@ -245,8 +245,8 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 2,
+        "home_score": 1,
+        "current_inning": 4,
         "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
@@ -254,14 +254,14 @@
             "Peacock / NBCSN Extra"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - Detroit Tigers (0) @ Texas Rangers (0) (Top of the 2nd)"
+        "summary": "2026-07-05 - Detroit Tigers (0) @ Texas Rangers (1) (Top of the 4th)"
     },
     {
         "game_id": 824333,
         "game_datetime": "2026-07-05T20:00:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "San Francisco Giants",
         "home_name": "Colorado Rockies",
         "away_id": 137,
@@ -272,9 +272,9 @@
         "away_probable_pitcher": "Tyler Mahle",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
+        "away_score": 2,
+        "home_score": 2,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
@@ -282,14 +282,14 @@
             "Peacock / NBCSN Extra"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - San Francisco Giants @ Colorado Rockies (Warmup)"
+        "summary": "2026-07-05 - San Francisco Giants (2) @ Colorado Rockies (2) (Top of the 2nd)"
     },
     {
         "game_id": 825061,
         "game_datetime": "2026-07-05T20:00:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Milwaukee Brewers",
         "home_name": "Arizona Diamondbacks",
         "away_id": 158,
@@ -301,23 +301,23 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "home_score": 1,
+        "current_inning": 2,
+        "inning_state": "Middle",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [
             "Peacock / NBCSN Extra"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - Milwaukee Brewers @ Arizona Diamondbacks (Warmup)"
+        "summary": "2026-07-05 - Milwaukee Brewers (0) @ Arizona Diamondbacks (1) (Middle of the 2nd)"
     },
     {
         "game_id": 824980,
         "game_datetime": "2026-07-05T20:30:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Miami Marlins",
         "home_name": "Athletics",
         "away_id": 146,
@@ -338,7 +338,7 @@
             "Peacock / NBCSN Extra"
         ],
         "series_status": "MIA leads 2-0",
-        "summary": "2026-07-05 - Miami Marlins @ Athletics (Pre-Game)"
+        "summary": "2026-07-05 - Miami Marlins @ Athletics (Warmup)"
     },
     {
         "game_id": 823117,
@@ -384,10 +384,10 @@
         "away_probable_pitcher": "JP Sears",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [
