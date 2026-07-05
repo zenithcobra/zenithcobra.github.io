@@ -32,7 +32,7 @@
         "game_datetime": "2026-07-05T17:00:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Washington Nationals",
         "away_id": 134,
@@ -43,9 +43,9 @@
         "away_probable_pitcher": "Bubba Chandler",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 3,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
@@ -53,14 +53,14 @@
             "Peacock / NBCSN Extra"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - Pittsburgh Pirates @ Washington Nationals (Warmup)"
+        "summary": "2026-07-05 - Pittsburgh Pirates (3) @ Washington Nationals (0) (Top of the 2nd)"
     },
     {
         "game_id": 824497,
         "game_datetime": "2026-07-05T17:05:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Baltimore Orioles",
         "home_name": "Cincinnati Reds",
         "away_id": 110,
@@ -73,7 +73,7 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
@@ -81,14 +81,14 @@
             "Peacock / NBCSN Extra"
         ],
         "series_status": "BAL leads 2-0",
-        "summary": "2026-07-05 - Baltimore Orioles @ Cincinnati Reds (Warmup)"
+        "summary": "2026-07-05 - Baltimore Orioles (0) @ Cincinnati Reds (0) (Top of the 3rd)"
     },
     {
         "game_id": 823525,
         "game_datetime": "2026-07-05T17:35:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Minnesota Twins",
         "home_name": "New York Yankees",
         "away_id": 142,
@@ -109,14 +109,14 @@
             "NBC Sports Network"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - Minnesota Twins @ New York Yankees (Pre-Game)"
+        "summary": "2026-07-05 - Minnesota Twins @ New York Yankees (Warmup)"
     },
     {
         "game_id": 824413,
         "game_datetime": "2026-07-05T18:00:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "away_name": "Chicago White Sox",
         "home_name": "Cleveland Guardians",
         "away_id": 145,
@@ -137,7 +137,7 @@
             "Peacock / NBCSN Extra"
         ],
         "series_status": "CLE leads 2-1",
-        "summary": "2026-07-05 - Chicago White Sox @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-07-05 - Chicago White Sox @ Cleveland Guardians (Delayed Start)"
     },
     {
         "game_id": 824656,
@@ -208,13 +208,13 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Peter Lambert",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Mason Englert",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2392,
         "venue_name": "Daikin Park",
         "national_broadcasts": [
@@ -267,10 +267,10 @@
         "away_probable_pitcher": "Tyler Mahle",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [
@@ -284,7 +284,7 @@
         "game_datetime": "2026-07-05T20:00:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "Arizona Diamondbacks",
         "away_id": 158,
@@ -305,14 +305,14 @@
             "Peacock / NBCSN Extra"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - Milwaukee Brewers @ Arizona Diamondbacks (Scheduled)"
+        "summary": "2026-07-05 - Milwaukee Brewers @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 824980,
         "game_datetime": "2026-07-05T20:30:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Miami Marlins",
         "home_name": "Athletics",
         "away_id": 146,
@@ -333,14 +333,14 @@
             "Peacock / NBCSN Extra"
         ],
         "series_status": "MIA leads 2-0",
-        "summary": "2026-07-05 - Miami Marlins @ Athletics (Scheduled)"
+        "summary": "2026-07-05 - Miami Marlins @ Athletics (Pre-Game)"
     },
     {
         "game_id": 823117,
         "game_datetime": "2026-07-05T21:00:00Z",
         "game_date": "2026-07-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "Seattle Mariners",
         "away_id": 141,
@@ -361,7 +361,7 @@
             "NBC Sports Network"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-05 - Toronto Blue Jays @ Seattle Mariners (Scheduled)"
+        "summary": "2026-07-05 - Toronto Blue Jays @ Seattle Mariners (Pre-Game)"
     },
     {
         "game_id": 823931,
