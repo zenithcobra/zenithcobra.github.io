@@ -139,7 +139,7 @@
         "game_datetime": "2026-07-07T01:40:00Z",
         "game_date": "2026-07-06",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Arizona Diamondbacks",
         "home_name": "San Diego Padres",
         "away_id": 109,
@@ -160,14 +160,14 @@
             "FS1"
         ],
         "series_status": null,
-        "summary": "2026-07-06 - Arizona Diamondbacks @ San Diego Padres (Scheduled)"
+        "summary": "2026-07-06 - Arizona Diamondbacks @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 823205,
         "game_datetime": "2026-07-07T01:45:00Z",
         "game_date": "2026-07-06",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "San Francisco Giants",
         "away_id": 141,
@@ -186,7 +186,7 @@
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-06 - Toronto Blue Jays @ San Francisco Giants (Scheduled)"
+        "summary": "2026-07-06 - Toronto Blue Jays @ San Francisco Giants (Pre-Game)"
     },
     {
         "game_id": 823930,
@@ -204,10 +204,10 @@
         "away_probable_pitcher": "Kyle Freeland",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
