@@ -35,7 +35,7 @@
         "game_datetime": "2026-07-06T22:40:00Z",
         "game_date": "2026-07-06",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "New York Yankees",
         "home_name": "Tampa Bay Rays",
         "away_id": 147,
@@ -48,20 +48,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-06 - New York Yankees @ Tampa Bay Rays (Warmup)"
+        "summary": "2026-07-06 - New York Yankees (0) @ Tampa Bay Rays (0) (Top of the 2nd)"
     },
     {
         "game_id": 822712,
         "game_datetime": "2026-07-06T22:45:00Z",
         "game_date": "2026-07-06",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Houston Astros",
         "home_name": "Washington Nationals",
         "away_id": 117,
@@ -80,14 +80,14 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-06 - Houston Astros @ Washington Nationals (Warmup)"
+        "summary": "2026-07-06 - Houston Astros (0) @ Washington Nationals (0) (Top of the 1st)"
     },
     {
         "game_id": 824900,
         "game_datetime": "2026-07-06T23:15:00Z",
         "game_date": "2026-07-06",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Mets",
         "home_name": "Atlanta Braves",
         "away_id": 121,
@@ -106,7 +106,7 @@
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 2-1",
-        "summary": "2026-07-06 - New York Mets @ Atlanta Braves (Pre-Game)"
+        "summary": "2026-07-06 - New York Mets @ Atlanta Braves (Warmup)"
     },
     {
         "game_id": 823036,
