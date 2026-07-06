@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 10,
-        "current_inning": 6,
-        "inning_state": "Top",
+        "home_score": 11,
+        "current_inning": 7,
+        "inning_state": "Bottom",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-06 - Philadelphia Phillies (1) @ Kansas City Royals (10) (Top of the 6th)"
+        "summary": "2026-07-06 - Philadelphia Phillies (1) @ Kansas City Royals (11) (Bottom of the 7th)"
     },
     {
         "game_id": 822958,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-07-06T23:45:00Z",
         "game_date": "2026-07-06",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "St. Louis Cardinals",
         "away_id": 158,
@@ -127,7 +127,7 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-06 - Milwaukee Brewers @ St. Louis Cardinals (Scheduled)"
+        "summary": "2026-07-06 - Milwaukee Brewers @ St. Louis Cardinals (Pre-Game)"
     },
     {
         "game_id": 823282,
@@ -188,7 +188,7 @@
         "game_datetime": "2026-07-07T02:10:00Z",
         "game_date": "2026-07-06",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Los Angeles Dodgers",
         "away_id": 115,
@@ -207,6 +207,6 @@
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-06 - Colorado Rockies @ Los Angeles Dodgers (Scheduled)"
+        "summary": "2026-07-06 - Colorado Rockies @ Los Angeles Dodgers (Pre-Game)"
     }
 ]
