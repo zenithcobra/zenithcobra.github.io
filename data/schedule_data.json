@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 3,
-        "current_inning": 7,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "MIL leads 1-0",
-        "summary": "2026-07-07 - Milwaukee Brewers (4) @ St. Louis Cardinals (3) (Bottom of the 7th)"
+        "summary": "2026-07-07 - Milwaukee Brewers (4) @ St. Louis Cardinals (3) (Bottom of the 9th)"
     },
     {
         "game_id": 823035,
@@ -221,7 +221,7 @@
         "home_id": 121,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
+        "home_probable_pitcher": "Cionel P\u00e9rez",
         "away_probable_pitcher": "Seth Lugo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
@@ -266,7 +266,7 @@
         "game_datetime": "2026-07-07T23:40:00Z",
         "game_date": "2026-07-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Minnesota Twins",
         "away_id": 114,
@@ -285,7 +285,7 @@
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-07 - Cleveland Guardians @ Minnesota Twins (Scheduled)"
+        "summary": "2026-07-07 - Cleveland Guardians @ Minnesota Twins (Pre-Game)"
     },
     {
         "game_id": 824579,
@@ -396,7 +396,7 @@
         "game_datetime": "2026-07-08T02:10:00Z",
         "game_date": "2026-07-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Los Angeles Dodgers",
         "away_id": 115,
@@ -414,7 +414,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-07 - Colorado Rockies @ Los Angeles Dodgers (Scheduled)"
+        "series_status": "LAD leads 1-0",
+        "summary": "2026-07-07 - Colorado Rockies @ Los Angeles Dodgers (Pre-Game)"
     }
 ]
