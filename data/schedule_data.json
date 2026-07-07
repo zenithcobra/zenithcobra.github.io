@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-07T18:15:00Z",
         "game_date": "2026-07-07",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Milwaukee Brewers",
         "home_name": "St. Louis Cardinals",
         "away_id": 158,
@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Jacob Misiorowski",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
+        "away_score": 2,
+        "home_score": 2,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "MIL leads 1-0",
-        "summary": "2026-07-07 - Milwaukee Brewers @ St. Louis Cardinals (Warmup)"
+        "summary": "2026-07-07 - Milwaukee Brewers (2) @ St. Louis Cardinals (2) (Top of the 3rd)"
     },
     {
         "game_id": 823035,
@@ -82,7 +82,7 @@
         "game_datetime": "2026-07-07T22:40:00Z",
         "game_date": "2026-07-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Athletics",
         "home_name": "Detroit Tigers",
         "away_id": 133,
@@ -101,7 +101,7 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-07 - Athletics @ Detroit Tigers (Scheduled)"
+        "summary": "2026-07-07 - Athletics @ Detroit Tigers (Pre-Game)"
     },
     {
         "game_id": 823361,
@@ -134,7 +134,7 @@
         "game_datetime": "2026-07-07T22:40:00Z",
         "game_date": "2026-07-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "Miami Marlins",
         "away_id": 136,
@@ -142,18 +142,18 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Max Meyer",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Bryan Woo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-07 - Seattle Mariners @ Miami Marlins (Scheduled)"
+        "summary": "2026-07-07 - Seattle Mariners @ Miami Marlins (Pre-Game)"
     },
     {
         "game_id": 822956,
@@ -240,7 +240,7 @@
         "game_datetime": "2026-07-07T23:10:00Z",
         "game_date": "2026-07-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "Cincinnati Reds",
         "away_id": 143,
@@ -259,7 +259,7 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-07 - Philadelphia Phillies @ Cincinnati Reds (Scheduled)"
+        "summary": "2026-07-07 - Philadelphia Phillies @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 823687,
