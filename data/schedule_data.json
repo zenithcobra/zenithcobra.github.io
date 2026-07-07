@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 2,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "home_score": 3,
+        "current_inning": 4,
+        "inning_state": "Middle",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "MIL leads 1-0",
-        "summary": "2026-07-07 - Milwaukee Brewers (2) @ St. Louis Cardinals (2) (Top of the 3rd)"
+        "summary": "2026-07-07 - Milwaukee Brewers (2) @ St. Louis Cardinals (3) (Middle of the 4th)"
     },
     {
         "game_id": 823035,
@@ -160,7 +160,7 @@
         "game_datetime": "2026-07-07T22:40:00Z",
         "game_date": "2026-07-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Yankees",
         "home_name": "Tampa Bay Rays",
         "away_id": 147,
@@ -181,14 +181,14 @@
             "TBS"
         ],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-07-07 - New York Yankees @ Tampa Bay Rays (Scheduled)"
+        "summary": "2026-07-07 - New York Yankees @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 822713,
         "game_datetime": "2026-07-07T22:45:00Z",
         "game_date": "2026-07-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Houston Astros",
         "home_name": "Washington Nationals",
         "away_id": 117,
@@ -206,15 +206,15 @@
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-07 - Houston Astros @ Washington Nationals (Scheduled)"
+        "series_status": "WSH leads 1-0",
+        "summary": "2026-07-07 - Houston Astros @ Washington Nationals (Pre-Game)"
     },
     {
         "game_id": 823607,
         "game_datetime": "2026-07-07T23:10:00Z",
         "game_date": "2026-07-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Kansas City Royals",
         "home_name": "New York Mets",
         "away_id": 118,
@@ -233,7 +233,7 @@
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-07 - Kansas City Royals @ New York Mets (Scheduled)"
+        "summary": "2026-07-07 - Kansas City Royals @ New York Mets (Pre-Game)"
     },
     {
         "game_id": 824495,
@@ -292,7 +292,7 @@
         "game_datetime": "2026-07-07T23:40:00Z",
         "game_date": "2026-07-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Chicago White Sox",
         "away_id": 111,
@@ -311,7 +311,7 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-07 - Boston Red Sox @ Chicago White Sox (Scheduled)"
+        "summary": "2026-07-07 - Boston Red Sox @ Chicago White Sox (Pre-Game)"
     },
     {
         "game_id": 822881,
