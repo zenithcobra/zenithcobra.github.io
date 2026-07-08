@@ -35,7 +35,7 @@
         "game_datetime": "2026-07-07T23:45:00Z",
         "game_date": "2026-07-07",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Milwaukee Brewers",
         "home_name": "St. Louis Cardinals",
         "away_id": 158,
@@ -54,14 +54,14 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "MIL leads 2-0",
-        "summary": "2026-07-07 - Milwaukee Brewers @ St. Louis Cardinals (Warmup)"
+        "summary": "2026-07-07 - Milwaukee Brewers (0) @ St. Louis Cardinals (0) (Top of the 1st)"
     },
     {
         "game_id": 824820,
         "game_datetime": "2026-07-07T22:35:00Z",
         "game_date": "2026-07-07",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Chicago Cubs",
         "home_name": "Baltimore Orioles",
         "away_id": 112,
@@ -74,13 +74,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-07 - Chicago Cubs @ Baltimore Orioles (Warmup)"
+        "summary": "2026-07-07 - Chicago Cubs (0) @ Baltimore Orioles (0) (Top of the 2nd)"
     },
     {
         "game_id": 824254,
@@ -100,13 +100,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 2,
-        "current_inning": 3,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-07 - Athletics (1) @ Detroit Tigers (2) (Bottom of the 3rd)"
+        "summary": "2026-07-07 - Athletics (1) @ Detroit Tigers (2) (Bottom of the 4th)"
     },
     {
         "game_id": 823361,
@@ -125,14 +125,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 4,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "home_score": 7,
+        "current_inning": 4,
+        "inning_state": "Middle",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-07 - Atlanta Braves (2) @ Pittsburgh Pirates (4) (Top of the 3rd)"
+        "summary": "2026-07-07 - Atlanta Braves (2) @ Pittsburgh Pirates (7) (Middle of the 4th)"
     },
     {
         "game_id": 823847,
@@ -151,14 +151,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 2,
-        "current_inning": 3,
+        "home_score": 3,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-07 - Seattle Mariners (0) @ Miami Marlins (2) (Bottom of the 3rd)"
+        "summary": "2026-07-07 - Seattle Mariners (0) @ Miami Marlins (3) (Bottom of the 4th)"
     },
     {
         "game_id": 822956,
@@ -176,17 +176,17 @@
         "away_probable_pitcher": "Will Warren",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 3,
         "home_score": 2,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "current_inning": 4,
+        "inning_state": "Middle",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [
             "TBS"
         ],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-07-07 - New York Yankees (0) @ Tampa Bay Rays (2) (Top of the 3rd)"
+        "summary": "2026-07-07 - New York Yankees (3) @ Tampa Bay Rays (2) (Middle of the 4th)"
     },
     {
         "game_id": 822713,
@@ -205,14 +205,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 1,
+        "home_score": 2,
         "current_inning": 3,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "WSH leads 1-0",
-        "summary": "2026-07-07 - Houston Astros (1) @ Washington Nationals (1) (Top of the 3rd)"
+        "summary": "2026-07-07 - Houston Astros (1) @ Washington Nationals (2) (Bottom of the 3rd)"
     },
     {
         "game_id": 823607,
@@ -230,15 +230,15 @@
         "away_probable_pitcher": "Seth Lugo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "away_score": 2,
+        "home_score": 5,
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-07 - Kansas City Royals (0) @ New York Mets (0) (Bottom of the 1st)"
+        "summary": "2026-07-07 - Kansas City Royals (2) @ New York Mets (5) (Top of the 3rd)"
     },
     {
         "game_id": 824495,
@@ -256,22 +256,22 @@
         "away_probable_pitcher": "Zack Wheeler",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-07 - Philadelphia Phillies (0) @ Cincinnati Reds (0) (Top of the 2nd)"
+        "summary": "2026-07-07 - Philadelphia Phillies (1) @ Cincinnati Reds (0) (Top of the 3rd)"
     },
     {
         "game_id": 823687,
         "game_datetime": "2026-07-07T23:40:00Z",
         "game_date": "2026-07-07",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Cleveland Guardians",
         "home_name": "Minnesota Twins",
         "away_id": 114,
@@ -285,19 +285,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-07 - Cleveland Guardians @ Minnesota Twins (Warmup)"
+        "summary": "2026-07-07 - Cleveland Guardians (0) @ Minnesota Twins (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824579,
         "game_datetime": "2026-07-07T23:40:00Z",
         "game_date": "2026-07-07",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "Player challenge",
         "away_name": "Boston Red Sox",
         "home_name": "Chicago White Sox",
         "away_id": 111,
@@ -316,14 +316,14 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-07 - Boston Red Sox @ Chicago White Sox (Warmup)"
+        "summary": "2026-07-07 - Boston Red Sox @ Chicago White Sox (Player challenge)"
     },
     {
         "game_id": 822881,
         "game_datetime": "2026-07-08T00:05:00Z",
         "game_date": "2026-07-07",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Los Angeles Angels",
         "home_name": "Texas Rangers",
         "away_id": 108,
@@ -342,7 +342,7 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-07 - Los Angeles Angels @ Texas Rangers (Pre-Game)"
+        "summary": "2026-07-07 - Los Angeles Angels @ Texas Rangers (Warmup)"
     },
     {
         "game_id": 823280,
