@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-08T19:45:00Z",
         "game_date": "2026-07-08",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Toronto Blue Jays",
         "home_name": "San Francisco Giants",
         "away_id": 141,
@@ -15,22 +15,27 @@
         "away_probable_pitcher": "Dylan Cease",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 7,
+        "away_score": 10,
         "home_score": 0,
-        "current_inning": 8,
-        "inning_state": "Middle",
+        "current_inning": 9,
+        "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-07-08 - Toronto Blue Jays (7) @ San Francisco Giants (0) (Middle of the 8th)"
+        "series_status": "TOR wins 2-1",
+        "winning_team": "Toronto Blue Jays",
+        "losing_team": "San Francisco Giants",
+        "winning_pitcher": "Dylan Cease",
+        "losing_pitcher": "Logan Webb",
+        "save_pitcher": null,
+        "summary": "2026-07-08 - Toronto Blue Jays (10) @ San Francisco Giants (0) (Final)"
     },
     {
         "game_id": 824815,
         "game_datetime": "2026-07-08T22:35:00Z",
         "game_date": "2026-07-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago Cubs",
         "home_name": "Baltimore Orioles",
         "away_id": 112,
@@ -49,14 +54,14 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "CHC leads 1-0",
-        "summary": "2026-07-08 - Chicago Cubs @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-07-08 - Chicago Cubs @ Baltimore Orioles (Warmup)"
     },
     {
         "game_id": 824253,
         "game_datetime": "2026-07-08T22:40:00Z",
         "game_date": "2026-07-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Athletics",
         "home_name": "Detroit Tigers",
         "away_id": 133,
@@ -75,14 +80,14 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "DET leads 1-0",
-        "summary": "2026-07-08 - Athletics @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-07-08 - Athletics @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 823360,
         "game_datetime": "2026-07-08T22:40:00Z",
         "game_date": "2026-07-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Atlanta Braves",
         "home_name": "Pittsburgh Pirates",
         "away_id": 144,
@@ -101,14 +106,14 @@
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "PIT leads 1-0",
-        "summary": "2026-07-08 - Atlanta Braves @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-07-08 - Atlanta Braves @ Pittsburgh Pirates (Warmup)"
     },
     {
         "game_id": 823848,
         "game_datetime": "2026-07-08T22:40:00Z",
         "game_date": "2026-07-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Seattle Mariners",
         "home_name": "Miami Marlins",
         "away_id": 136,
@@ -127,14 +132,14 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "MIA leads 1-0",
-        "summary": "2026-07-08 - Seattle Mariners @ Miami Marlins (Pre-Game)"
+        "summary": "2026-07-08 - Seattle Mariners @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 822957,
         "game_datetime": "2026-07-08T22:40:00Z",
         "game_date": "2026-07-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Yankees",
         "home_name": "Tampa Bay Rays",
         "away_id": 147,
@@ -153,14 +158,14 @@
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-08 - New York Yankees @ Tampa Bay Rays (Pre-Game)"
+        "summary": "2026-07-08 - New York Yankees @ Tampa Bay Rays (Warmup)"
     },
     {
         "game_id": 822710,
         "game_datetime": "2026-07-08T22:45:00Z",
         "game_date": "2026-07-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Houston Astros",
         "home_name": "Washington Nationals",
         "away_id": 117,
@@ -179,7 +184,7 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-08 - Houston Astros @ Washington Nationals (Pre-Game)"
+        "summary": "2026-07-08 - Houston Astros @ Washington Nationals (Warmup)"
     },
     {
         "game_id": 823605,
@@ -344,7 +349,7 @@
         "game_datetime": "2026-07-09T02:10:00Z",
         "game_date": "2026-07-08",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Los Angeles Dodgers",
         "away_id": 115,
@@ -355,15 +360,15 @@
         "away_probable_pitcher": "Gabriel Hughes",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-08 - Colorado Rockies @ Los Angeles Dodgers (Scheduled)"
+        "summary": "2026-07-08 - Colorado Rockies @ Los Angeles Dodgers (Pre-Game)"
     },
     {
         "game_id": 823279,
