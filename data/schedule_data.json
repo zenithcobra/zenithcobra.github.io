@@ -159,7 +159,7 @@
         "game_datetime": "2026-07-09T18:10:00Z",
         "game_date": "2026-07-09",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Boston Red Sox",
         "home_name": "Chicago White Sox",
         "away_id": 111,
@@ -183,7 +183,7 @@
         "winning_pitcher": "Tyron Guerrero",
         "losing_pitcher": "Anthony Kay",
         "save_pitcher": "Aroldis Chapman",
-        "summary": "2026-07-09 - Boston Red Sox (2) @ Chicago White Sox (1) (Game Over)"
+        "summary": "2026-07-09 - Boston Red Sox (2) @ Chicago White Sox (1) (Final)"
     },
     {
         "game_id": 824251,
@@ -305,10 +305,10 @@
         "away_probable_pitcher": "Reid Detmers",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
