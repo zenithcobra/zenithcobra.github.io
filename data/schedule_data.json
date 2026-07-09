@@ -190,7 +190,7 @@
         "game_datetime": "2026-07-09T22:40:00Z",
         "game_date": "2026-07-09",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Athletics",
         "home_name": "Detroit Tigers",
         "away_id": 133,
@@ -204,12 +204,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "DET leads 2-0",
-        "summary": "2026-07-09 - Athletics @ Detroit Tigers (Warmup)"
+        "summary": "2026-07-09 - Athletics (0) @ Detroit Tigers (0) (End of the 1st)"
     },
     {
         "game_id": 823846,
@@ -230,19 +230,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "MIA leads 2-0",
-        "summary": "2026-07-09 - Seattle Mariners (0) @ Miami Marlins (0) (Top of the 1st)"
+        "summary": "2026-07-09 - Seattle Mariners (0) @ Miami Marlins (0) (End of the 1st)"
     },
     {
         "game_id": 824494,
         "game_datetime": "2026-07-09T23:10:00Z",
         "game_date": "2026-07-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Philadelphia Phillies",
         "home_name": "Cincinnati Reds",
         "away_id": 143,
@@ -261,7 +261,7 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-09 - Philadelphia Phillies @ Cincinnati Reds (Pre-Game)"
+        "summary": "2026-07-09 - Philadelphia Phillies @ Cincinnati Reds (Warmup)"
     },
     {
         "game_id": 823034,
