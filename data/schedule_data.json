@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-10T22:40:00Z",
         "game_date": "2026-07-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "Detroit Tigers",
         "away_id": 143,
@@ -23,7 +23,7 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-10 - Philadelphia Phillies @ Detroit Tigers (Scheduled)"
+        "summary": "2026-07-10 - Philadelphia Phillies @ Detroit Tigers (Pre-Game)"
     },
     {
         "game_id": 823357,
@@ -56,7 +56,7 @@
         "game_datetime": "2026-07-10T22:45:00Z",
         "game_date": "2026-07-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Yankees",
         "home_name": "Washington Nationals",
         "away_id": 147,
@@ -75,7 +75,7 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-10 - New York Yankees @ Washington Nationals (Scheduled)"
+        "summary": "2026-07-10 - New York Yankees @ Washington Nationals (Pre-Game)"
     },
     {
         "game_id": 824817,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-07-10T23:10:00Z",
         "game_date": "2026-07-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Cincinnati Reds",
         "away_id": 112,
@@ -127,14 +127,14 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-10 - Chicago Cubs @ Cincinnati Reds (Scheduled)"
+        "summary": "2026-07-10 - Chicago Cubs @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 822955,
         "game_datetime": "2026-07-10T23:10:00Z",
         "game_date": "2026-07-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "Tampa Bay Rays",
         "away_id": 136,
@@ -145,15 +145,15 @@
         "away_probable_pitcher": "Luis Castillo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-10 - Seattle Mariners @ Tampa Bay Rays (Scheduled)"
+        "summary": "2026-07-10 - Seattle Mariners @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 823845,
@@ -214,7 +214,7 @@
         "game_datetime": "2026-07-10T23:40:00Z",
         "game_date": "2026-07-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Athletics",
         "home_name": "Chicago White Sox",
         "away_id": 133,
@@ -233,7 +233,7 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-10 - Athletics @ Chicago White Sox (Scheduled)"
+        "summary": "2026-07-10 - Athletics @ Chicago White Sox (Pre-Game)"
     },
     {
         "game_id": 822878,
