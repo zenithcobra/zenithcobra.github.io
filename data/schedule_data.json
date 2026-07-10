@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-10T22:40:00Z",
         "game_date": "2026-07-10",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Philadelphia Phillies",
         "home_name": "Detroit Tigers",
         "away_id": 143,
@@ -18,12 +18,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-10 - Philadelphia Phillies @ Detroit Tigers (Warmup)"
+        "summary": "2026-07-10 - Philadelphia Phillies (0) @ Detroit Tigers (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823357,
@@ -82,7 +82,7 @@
         "game_datetime": "2026-07-10T23:05:00Z",
         "game_date": "2026-07-10",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Kansas City Royals",
         "home_name": "Baltimore Orioles",
         "away_id": 118,
@@ -101,14 +101,14 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-10 - Kansas City Royals @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-07-10 - Kansas City Royals @ Baltimore Orioles (Warmup)"
     },
     {
         "game_id": 824493,
         "game_datetime": "2026-07-10T23:10:00Z",
         "game_date": "2026-07-10",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago Cubs",
         "home_name": "Cincinnati Reds",
         "away_id": 112,
@@ -127,7 +127,7 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-10 - Chicago Cubs @ Cincinnati Reds (Pre-Game)"
+        "summary": "2026-07-10 - Chicago Cubs @ Cincinnati Reds (Warmup)"
     },
     {
         "game_id": 822955,
@@ -160,7 +160,7 @@
         "game_datetime": "2026-07-10T23:10:00Z",
         "game_date": "2026-07-10",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cleveland Guardians",
         "home_name": "Miami Marlins",
         "away_id": 114,
@@ -179,7 +179,7 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-10 - Cleveland Guardians @ Miami Marlins (Pre-Game)"
+        "summary": "2026-07-10 - Cleveland Guardians @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 823604,
@@ -331,10 +331,10 @@
         "away_probable_pitcher": "Shane Bieber",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
