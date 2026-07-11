@@ -262,12 +262,6 @@
         "fHR24pg": "0"
     },
     {
-        "player_name": "Kyle Harrison",
-        "team": "Milwaukee Brewers",
-        "team_id": 158,
-        "player_id": 690986
-    },
-    {
         "player_name": "Logan Henderson",
         "team": "Milwaukee Brewers",
         "team_id": 158,
@@ -289,6 +283,12 @@
         "fHpg": "1",
         "RBIpg": 1.0,
         "fRBIpg": "1"
+    },
+    {
+        "player_name": "Robert Gasser",
+        "team": "Milwaukee Brewers",
+        "team_id": 158,
+        "player_id": 688107
     },
     {
         "player_name": "Sal Frelick",
@@ -948,12 +948,6 @@
         "fHR24pg": "0"
     },
     {
-        "player_name": "Kyle Harrison",
-        "team": "Milwaukee Brewers",
-        "team_id": 158,
-        "player_id": 690986
-    },
-    {
         "player_name": "Logan Henderson",
         "team": "Milwaukee Brewers",
         "team_id": 158,
@@ -975,6 +969,12 @@
         "fHpg": "1",
         "RBIpg": 1.0,
         "fRBIpg": "1"
+    },
+    {
+        "player_name": "Robert Gasser",
+        "team": "Milwaukee Brewers",
+        "team_id": 158,
+        "player_id": 688107
     },
     {
         "player_name": "Sal Frelick",
@@ -2708,6 +2708,12 @@
         "team": "Chicago White Sox",
         "team_id": 145,
         "player_id": 699823
+    },
+    {
+        "player_name": "Tyler Schweitzer",
+        "team": "Chicago White Sox",
+        "team_id": 145,
+        "player_id": 805326
     },
     {
         "player_name": "Antonio Senzatela",
@@ -7919,7 +7925,7 @@
         "team": "Houston Astros",
         "team_id": 117,
         "player_id": 664774,
-        "position": "1B",
+        "position": "LF",
         "games_played": 8.0,
         "H": 6.0,
         "HR": 1.0,
