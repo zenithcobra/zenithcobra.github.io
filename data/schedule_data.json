@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-11T16:05:00Z",
         "game_date": "2026-07-11",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Milwaukee Brewers",
         "home_name": "Pittsburgh Pirates",
         "away_id": 158,
@@ -23,7 +23,7 @@
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-11 - Milwaukee Brewers @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-07-11 - Milwaukee Brewers @ Pittsburgh Pirates (Warmup)"
     },
     {
         "game_id": 823356,
@@ -67,10 +67,10 @@
         "away_probable_pitcher": "Ryan Johnson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
@@ -126,7 +126,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
+        "series_status": "SF leads 1-0",
         "summary": "2026-07-11 - Colorado Rockies @ San Francisco Giants (Scheduled)"
     },
     {
@@ -168,7 +168,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Freddy Peralta",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Eduardo Rivera",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -180,7 +180,7 @@
         "national_broadcasts": [
             "FS1"
         ],
-        "series_status": null,
+        "series_status": "BOS leads 1-0",
         "summary": "2026-07-11 - Boston Red Sox @ New York Mets (Scheduled)"
     },
     {
@@ -258,7 +258,7 @@
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": "DET leads 1-0",
+        "series_status": null,
         "summary": "2026-07-11 - Philadelphia Phillies @ Detroit Tigers (Scheduled)"
     },
     {
