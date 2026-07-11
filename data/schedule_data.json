@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-11T16:05:00Z",
         "game_date": "2026-07-11",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Milwaukee Brewers",
         "home_name": "Pittsburgh Pirates",
         "away_id": 158,
@@ -22,15 +22,20 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-11 - Milwaukee Brewers (6) @ Pittsburgh Pirates (7) (Top of the 9th)"
+        "series_status": "PIT leads 1-0",
+        "winning_team": "Pittsburgh Pirates",
+        "losing_team": "Milwaukee Brewers",
+        "winning_pitcher": "Carmen Mlodzinski",
+        "losing_pitcher": "Aaron Ashby",
+        "save_pitcher": "Gregory Soto",
+        "summary": "2026-07-11 - Milwaukee Brewers (6) @ Pittsburgh Pirates (7) (Final)"
     },
     {
         "game_id": 823356,
         "game_datetime": "2026-07-11T20:05:00Z",
         "game_date": "2026-07-11",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "Pittsburgh Pirates",
         "away_id": 158,
@@ -48,8 +53,8 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-11 - Milwaukee Brewers @ Pittsburgh Pirates (Scheduled)"
+        "series_status": "PIT leads 1-0",
+        "summary": "2026-07-11 - Milwaukee Brewers @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 823682,
@@ -67,15 +72,15 @@
         "away_probable_pitcher": "Ryan Johnson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "away_score": 2,
+        "home_score": 3,
+        "current_inning": 4,
+        "inning_state": "Top",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "LAA leads 1-0",
-        "summary": "2026-07-11 - Los Angeles Angels (0) @ Minnesota Twins (0) (Bottom of the 1st)"
+        "summary": "2026-07-11 - Los Angeles Angels (2) @ Minnesota Twins (3) (Top of the 4th)"
     },
     {
         "game_id": 824576,
@@ -95,13 +100,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 3,
+        "current_inning": 6,
         "inning_state": "Bottom",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-07-11 - Athletics (0) @ Chicago White Sox (0) (Bottom of the 3rd)"
+        "summary": "2026-07-11 - Athletics (0) @ Chicago White Sox (0) (Bottom of the 6th)"
     },
     {
         "game_id": 823198,
@@ -240,7 +245,7 @@
         "game_datetime": "2026-07-11T22:10:00Z",
         "game_date": "2026-07-11",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "Detroit Tigers",
         "away_id": 143,
@@ -258,15 +263,15 @@
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-11 - Philadelphia Phillies @ Detroit Tigers (Scheduled)"
+        "series_status": "DET leads 1-0",
+        "summary": "2026-07-11 - Philadelphia Phillies @ Detroit Tigers (Pre-Game)"
     },
     {
         "game_id": 824813,
         "game_datetime": "2026-07-11T23:05:00Z",
         "game_date": "2026-07-11",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Kansas City Royals",
         "home_name": "Baltimore Orioles",
         "away_id": 118,
@@ -284,8 +289,8 @@
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-11 - Kansas City Royals @ Baltimore Orioles (Scheduled)"
+        "series_status": "BAL leads 1-0",
+        "summary": "2026-07-11 - Kansas City Royals @ Baltimore Orioles (Pre-Game)"
     },
     {
         "game_id": 822875,
