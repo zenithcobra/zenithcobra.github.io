@@ -48,13 +48,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "PIT leads 1-0",
-        "summary": "2026-07-11 - Milwaukee Brewers (0) @ Pittsburgh Pirates (0) (Top of the 1st)"
+        "summary": "2026-07-11 - Milwaukee Brewers (0) @ Pittsburgh Pirates (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 823682,
@@ -72,22 +72,22 @@
         "away_probable_pitcher": "Ryan Johnson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
-        "home_score": 3,
-        "current_inning": 7,
+        "away_score": 3,
+        "home_score": 5,
+        "current_inning": 8,
         "inning_state": "Top",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "LAA leads 1-0",
-        "summary": "2026-07-11 - Los Angeles Angels (2) @ Minnesota Twins (3) (Top of the 7th)"
+        "summary": "2026-07-11 - Los Angeles Angels (3) @ Minnesota Twins (5) (Top of the 8th)"
     },
     {
         "game_id": 824576,
         "game_datetime": "2026-07-11T18:10:00Z",
         "game_date": "2026-07-11",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Athletics",
         "home_name": "Chicago White Sox",
         "away_id": 133,
@@ -105,8 +105,13 @@
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
-        "series_status": "CWS leads 1-0",
-        "summary": "2026-07-11 - Athletics (0) @ Chicago White Sox (1) (Top of the 9th)"
+        "series_status": "CWS wins 2-0",
+        "winning_team": "Chicago White Sox",
+        "losing_team": "Athletics",
+        "winning_pitcher": "Erick Fedde",
+        "losing_pitcher": "Gage Jump",
+        "save_pitcher": "Grant Taylor",
+        "summary": "2026-07-11 - Athletics (0) @ Chicago White Sox (1) (Final)"
     },
     {
         "game_id": 823198,
@@ -124,15 +129,15 @@
         "away_probable_pitcher": "Kyle Freeland",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-11 - Colorado Rockies (0) @ San Francisco Giants (0) (Bottom of the 2nd)"
+        "summary": "2026-07-11 - Colorado Rockies (1) @ San Francisco Giants (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 822711,
@@ -152,13 +157,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 2,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-07-11 - New York Yankees (0) @ Washington Nationals (2) (Bottom of the 1st)"
+        "summary": "2026-07-11 - New York Yankees (0) @ Washington Nationals (2) (Top of the 3rd)"
     },
     {
         "game_id": 823603,
@@ -179,21 +184,21 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 2,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [
             "FS1"
         ],
         "series_status": "BOS leads 1-0",
-        "summary": "2026-07-11 - Boston Red Sox (0) @ New York Mets (0) (Top of the 2nd)"
+        "summary": "2026-07-11 - Boston Red Sox (0) @ New York Mets (0) (End of the 2nd)"
     },
     {
         "game_id": 822953,
         "game_datetime": "2026-07-11T20:10:00Z",
         "game_date": "2026-07-11",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Seattle Mariners",
         "home_name": "Tampa Bay Rays",
         "away_id": 136,
@@ -207,12 +212,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-07-11 - Seattle Mariners @ Tampa Bay Rays (Warmup)"
+        "summary": "2026-07-11 - Seattle Mariners (0) @ Tampa Bay Rays (0) (Middle of the 1st)"
     },
     {
         "game_id": 823844,
@@ -232,13 +237,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "current_inning": 2,
+        "inning_state": "End",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-07-11 - Cleveland Guardians (0) @ Miami Marlins (0) (Bottom of the 1st)"
+        "summary": "2026-07-11 - Cleveland Guardians (0) @ Miami Marlins (0) (End of the 2nd)"
     },
     {
         "game_id": 824249,
@@ -360,10 +365,10 @@
         "away_probable_pitcher": "Reynaldo L\u00f3pez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
