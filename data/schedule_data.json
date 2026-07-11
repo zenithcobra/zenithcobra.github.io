@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Brandon Sproat",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 5,
+        "away_score": 6,
         "home_score": 3,
-        "current_inning": 6,
-        "inning_state": "Top",
+        "current_inning": 7,
+        "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-11 - Milwaukee Brewers (5) @ Pittsburgh Pirates (3) (Top of the 6th)"
+        "summary": "2026-07-11 - Milwaukee Brewers (6) @ Pittsburgh Pirates (3) (Bottom of the 7th)"
     },
     {
         "game_id": 823356,
@@ -56,7 +56,7 @@
         "game_datetime": "2026-07-11T18:10:00Z",
         "game_date": "2026-07-11",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Los Angeles Angels",
         "home_name": "Minnesota Twins",
         "away_id": 108,
@@ -75,14 +75,14 @@
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "LAA leads 1-0",
-        "summary": "2026-07-11 - Los Angeles Angels @ Minnesota Twins (Pre-Game)"
+        "summary": "2026-07-11 - Los Angeles Angels @ Minnesota Twins (Warmup)"
     },
     {
         "game_id": 824576,
         "game_datetime": "2026-07-11T18:10:00Z",
         "game_date": "2026-07-11",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Athletics",
         "home_name": "Chicago White Sox",
         "away_id": 133,
@@ -95,13 +95,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-07-11 - Athletics @ Chicago White Sox (Warmup)"
+        "summary": "2026-07-11 - Athletics (0) @ Chicago White Sox (0) (Top of the 2nd)"
     },
     {
         "game_id": 823198,
@@ -145,10 +145,10 @@
         "away_probable_pitcher": "Cam Schlittler",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
@@ -258,7 +258,7 @@
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "DET leads 1-0",
         "summary": "2026-07-11 - Philadelphia Phillies @ Detroit Tigers (Scheduled)"
     },
     {
@@ -318,7 +318,7 @@
         "game_datetime": "2026-07-11T23:10:00Z",
         "game_date": "2026-07-11",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Cincinnati Reds",
         "away_id": 112,
@@ -336,8 +336,8 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-11 - Chicago Cubs @ Cincinnati Reds (Scheduled)"
+        "series_status": "CIN leads 1-0",
+        "summary": "2026-07-11 - Chicago Cubs @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 823030,
