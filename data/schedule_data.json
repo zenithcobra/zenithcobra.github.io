@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-11T16:05:00Z",
         "game_date": "2026-07-11",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Milwaukee Brewers",
         "home_name": "Pittsburgh Pirates",
         "away_id": 158,
@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 1,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-11 - Milwaukee Brewers @ Pittsburgh Pirates (Warmup)"
+        "summary": "2026-07-11 - Milwaukee Brewers (0) @ Pittsburgh Pirates (1) (Bottom of the 1st)"
     },
     {
         "game_id": 823356,
@@ -126,7 +126,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": "SF leads 1-0",
+        "series_status": "Series tied 1-1",
         "summary": "2026-07-11 - Colorado Rockies @ San Francisco Giants (Scheduled)"
     },
     {
@@ -258,7 +258,7 @@
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "DET leads 1-0",
         "summary": "2026-07-11 - Philadelphia Phillies @ Detroit Tigers (Scheduled)"
     },
     {
