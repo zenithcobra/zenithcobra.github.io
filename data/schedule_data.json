@@ -46,15 +46,15 @@
         "away_probable_pitcher": "Shane Drohan",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 2,
         "current_inning": 5,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "PIT leads 1-0",
-        "summary": "2026-07-11 - Milwaukee Brewers (0) @ Pittsburgh Pirates (2) (Top of the 5th)"
+        "summary": "2026-07-11 - Milwaukee Brewers (2) @ Pittsburgh Pirates (2) (End of the 5th)"
     },
     {
         "game_id": 823682,
@@ -135,14 +135,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 0,
-        "current_inning": 5,
+        "home_score": 4,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-11 - Colorado Rockies (1) @ San Francisco Giants (0) (Top of the 5th)"
+        "summary": "2026-07-11 - Colorado Rockies (1) @ San Francisco Giants (4) (Top of the 7th)"
     },
     {
         "game_id": 822711,
@@ -162,20 +162,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 2,
-        "current_inning": 5,
+        "current_inning": 6,
         "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-07-11 - New York Yankees (0) @ Washington Nationals (2) (Top of the 5th)"
+        "summary": "2026-07-11 - New York Yankees (0) @ Washington Nationals (2) (Top of the 6th)"
     },
     {
         "game_id": 823603,
         "game_datetime": "2026-07-11T20:10:00Z",
         "game_date": "2026-07-11",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Manager challenge",
         "away_name": "Boston Red Sox",
         "home_name": "New York Mets",
         "away_id": 111,
@@ -188,7 +188,7 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 0,
-        "current_inning": 4,
+        "current_inning": 5,
         "inning_state": "Bottom",
         "venue_id": 3289,
         "venue_name": "Citi Field",
@@ -196,7 +196,7 @@
             "FS1"
         ],
         "series_status": "BOS leads 1-0",
-        "summary": "2026-07-11 - Boston Red Sox (2) @ New York Mets (0) (Bottom of the 4th)"
+        "summary": "2026-07-11 - Boston Red Sox @ New York Mets (Manager challenge)"
     },
     {
         "game_id": 822953,
@@ -216,13 +216,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 2,
-        "current_inning": 3,
-        "inning_state": "Bottom",
+        "current_inning": 4,
+        "inning_state": "End",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-07-11 - Seattle Mariners (1) @ Tampa Bay Rays (2) (Bottom of the 3rd)"
+        "summary": "2026-07-11 - Seattle Mariners (1) @ Tampa Bay Rays (2) (End of the 4th)"
     },
     {
         "game_id": 823844,
@@ -242,20 +242,20 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 0,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "current_inning": 5,
+        "inning_state": "End",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-07-11 - Cleveland Guardians (2) @ Miami Marlins (0) (Bottom of the 4th)"
+        "summary": "2026-07-11 - Cleveland Guardians (2) @ Miami Marlins (0) (End of the 5th)"
     },
     {
         "game_id": 824249,
         "game_datetime": "2026-07-11T22:10:00Z",
         "game_date": "2026-07-11",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Philadelphia Phillies",
         "home_name": "Detroit Tigers",
         "away_id": 143,
@@ -274,7 +274,7 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "DET leads 1-0",
-        "summary": "2026-07-11 - Philadelphia Phillies @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-07-11 - Philadelphia Phillies @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 824813,
@@ -396,10 +396,10 @@
         "away_probable_pitcher": "Trey Yesavage",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
