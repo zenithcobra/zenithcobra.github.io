@@ -15,24 +15,24 @@
         "away_probable_pitcher": "Robert Gasser",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 4,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "away_score": 2,
+        "home_score": 6,
+        "current_inning": 4,
+        "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [
             "NBCSN / Peacock"
         ],
         "series_status": "PIT leads 2-0",
-        "summary": "2026-07-12 - Milwaukee Brewers (0) @ Pittsburgh Pirates (4) (Top of the 3rd)"
+        "summary": "2026-07-12 - Milwaukee Brewers (2) @ Pittsburgh Pirates (6) (Bottom of the 4th)"
     },
     {
         "game_id": 824814,
         "game_datetime": "2026-07-12T17:35:00Z",
         "game_date": "2026-07-12",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Kansas City Royals",
         "home_name": "Baltimore Orioles",
         "away_id": 118,
@@ -51,14 +51,14 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BAL leads 2-0",
-        "summary": "2026-07-12 - Kansas City Royals @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-07-12 - Kansas City Royals @ Baltimore Orioles (Warmup)"
     },
     {
         "game_id": 822708,
         "game_datetime": "2026-07-12T17:35:00Z",
         "game_date": "2026-07-12",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Yankees",
         "home_name": "Washington Nationals",
         "away_id": 147,
@@ -77,14 +77,14 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "NYY leads 2-0",
-        "summary": "2026-07-12 - New York Yankees @ Washington Nationals (Pre-Game)"
+        "summary": "2026-07-12 - New York Yankees @ Washington Nationals (Warmup)"
     },
     {
         "game_id": 824491,
         "game_datetime": "2026-07-12T17:40:00Z",
         "game_date": "2026-07-12",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago Cubs",
         "home_name": "Cincinnati Reds",
         "away_id": 112,
@@ -103,14 +103,14 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-12 - Chicago Cubs @ Cincinnati Reds (Pre-Game)"
+        "summary": "2026-07-12 - Chicago Cubs @ Cincinnati Reds (Warmup)"
     },
     {
         "game_id": 823602,
         "game_datetime": "2026-07-12T17:40:00Z",
         "game_date": "2026-07-12",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Boston Red Sox",
         "home_name": "New York Mets",
         "away_id": 111,
@@ -129,14 +129,14 @@
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": "BOS leads 2-0",
-        "summary": "2026-07-12 - Boston Red Sox @ New York Mets (Pre-Game)"
+        "summary": "2026-07-12 - Boston Red Sox @ New York Mets (Warmup)"
     },
     {
         "game_id": 822951,
         "game_datetime": "2026-07-12T17:40:00Z",
         "game_date": "2026-07-12",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Seattle Mariners",
         "home_name": "Tampa Bay Rays",
         "away_id": 136,
@@ -155,14 +155,14 @@
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TB leads 2-0",
-        "summary": "2026-07-12 - Seattle Mariners @ Tampa Bay Rays (Pre-Game)"
+        "summary": "2026-07-12 - Seattle Mariners @ Tampa Bay Rays (Warmup)"
     },
     {
         "game_id": 824250,
         "game_datetime": "2026-07-12T17:40:00Z",
         "game_date": "2026-07-12",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Philadelphia Phillies",
         "home_name": "Detroit Tigers",
         "away_id": 143,
@@ -181,14 +181,14 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-12 - Philadelphia Phillies @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-07-12 - Philadelphia Phillies @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 823842,
         "game_datetime": "2026-07-12T17:40:00Z",
         "game_date": "2026-07-12",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cleveland Guardians",
         "home_name": "Miami Marlins",
         "away_id": 114,
@@ -207,7 +207,7 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "CLE leads 2-0",
-        "summary": "2026-07-12 - Cleveland Guardians @ Miami Marlins (Pre-Game)"
+        "summary": "2026-07-12 - Cleveland Guardians @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 823681,
@@ -329,10 +329,10 @@
         "away_probable_pitcher": "Michael Lorenzen",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
@@ -344,7 +344,7 @@
         "game_datetime": "2026-07-12T20:10:00Z",
         "game_date": "2026-07-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Los Angeles Dodgers",
         "away_id": 109,
@@ -362,15 +362,15 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": "AZ leads 1-0",
-        "summary": "2026-07-12 - Arizona Diamondbacks @ Los Angeles Dodgers (Scheduled)"
+        "series_status": "AZ leads 2-0",
+        "summary": "2026-07-12 - Arizona Diamondbacks @ Los Angeles Dodgers (Pre-Game)"
     },
     {
         "game_id": 823274,
         "game_datetime": "2026-07-12T20:10:00Z",
         "game_date": "2026-07-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "San Diego Padres",
         "away_id": 141,
@@ -381,14 +381,14 @@
         "away_probable_pitcher": "Kevin Gausman",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-12 - Toronto Blue Jays @ San Diego Padres (Scheduled)"
+        "summary": "2026-07-12 - Toronto Blue Jays @ San Diego Padres (Pre-Game)"
     }
 ]
