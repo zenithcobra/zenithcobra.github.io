@@ -316,7 +316,7 @@
         "game_datetime": "2026-07-12T18:15:00Z",
         "game_date": "2026-07-12",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Atlanta Braves",
         "home_name": "St. Louis Cardinals",
         "away_id": 144,
@@ -340,14 +340,14 @@
         "winning_pitcher": "Tyler Kinley",
         "losing_pitcher": "JoJo Romero",
         "save_pitcher": "Raisel Iglesias",
-        "summary": "2026-07-12 - Atlanta Braves (4) @ St. Louis Cardinals (3) (Game Over)"
+        "summary": "2026-07-12 - Atlanta Braves (4) @ St. Louis Cardinals (3) (Final)"
     },
     {
         "game_id": 822876,
         "game_datetime": "2026-07-12T18:35:00Z",
         "game_date": "2026-07-12",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Houston Astros",
         "home_name": "Texas Rangers",
         "away_id": 117,
@@ -359,14 +359,19 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 5,
-        "home_score": 5,
+        "home_score": 6,
         "current_inning": 9,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-07-12 - Houston Astros (5) @ Texas Rangers (5) (Top of the 9th)"
+        "series_status": "TEX wins 2-1",
+        "winning_team": "Texas Rangers",
+        "losing_team": "Houston Astros",
+        "winning_pitcher": "Jacob Latz",
+        "losing_pitcher": "Josh Hader",
+        "save_pitcher": null,
+        "summary": "2026-07-12 - Houston Astros (5) @ Texas Rangers (6) (Final)"
     },
     {
         "game_id": 823199,
@@ -386,13 +391,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 1,
-        "current_inning": 6,
-        "inning_state": "Middle",
+        "current_inning": 7,
+        "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "SF leads 2-1",
-        "summary": "2026-07-12 - Colorado Rockies (1) @ San Francisco Giants (1) (Middle of the 6th)"
+        "summary": "2026-07-12 - Colorado Rockies (1) @ San Francisco Giants (1) (Bottom of the 7th)"
     },
     {
         "game_id": 823925,
@@ -410,15 +415,15 @@
         "away_probable_pitcher": "Mitch Bratt",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 3,
-        "current_inning": 4,
+        "current_inning": 5,
         "inning_state": "Bottom",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
         "series_status": "AZ leads 2-0",
-        "summary": "2026-07-12 - Arizona Diamondbacks (0) @ Los Angeles Dodgers (3) (Bottom of the 4th)"
+        "summary": "2026-07-12 - Arizona Diamondbacks (2) @ Los Angeles Dodgers (3) (Bottom of the 5th)"
     },
     {
         "game_id": 823274,
@@ -438,12 +443,12 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 3,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-12 - Toronto Blue Jays (3) @ San Diego Padres (3) (Bottom of the 4th)"
+        "summary": "2026-07-12 - Toronto Blue Jays (3) @ San Diego Padres (3) (Top of the 6th)"
     }
 ]
