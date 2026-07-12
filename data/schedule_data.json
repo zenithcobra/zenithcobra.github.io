@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-12T16:15:00Z",
         "game_date": "2026-07-12",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Milwaukee Brewers",
         "home_name": "Pittsburgh Pirates",
         "away_id": 158,
@@ -18,14 +18,14 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [
             "NBCSN / Peacock"
         ],
         "series_status": "PIT leads 2-0",
-        "summary": "2026-07-12 - Milwaukee Brewers @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-07-12 - Milwaukee Brewers (0) @ Pittsburgh Pirates (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824814,
@@ -303,10 +303,10 @@
         "away_probable_pitcher": "Cristian Javier",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
@@ -318,7 +318,7 @@
         "game_datetime": "2026-07-12T20:05:00Z",
         "game_date": "2026-07-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "San Francisco Giants",
         "away_id": 115,
@@ -336,8 +336,8 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-12 - Colorado Rockies @ San Francisco Giants (Scheduled)"
+        "series_status": "SF leads 2-1",
+        "summary": "2026-07-12 - Colorado Rockies @ San Francisco Giants (Pre-Game)"
     },
     {
         "game_id": 823925,
