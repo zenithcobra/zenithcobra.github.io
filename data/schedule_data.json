@@ -409,7 +409,7 @@
         "game_datetime": "2026-07-12T20:10:00Z",
         "game_date": "2026-07-12",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Los Angeles Dodgers",
         "away_id": 109,
@@ -420,22 +420,27 @@
         "away_probable_pitcher": "Mitch Bratt",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 4,
+        "away_score": 5,
         "home_score": 3,
-        "current_inning": 8,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": "AZ leads 2-0",
-        "summary": "2026-07-12 - Arizona Diamondbacks (4) @ Los Angeles Dodgers (3) (Bottom of the 8th)"
+        "series_status": "AZ wins 3-0",
+        "winning_team": "Arizona Diamondbacks",
+        "losing_team": "Los Angeles Dodgers",
+        "winning_pitcher": "Ryan Thompson",
+        "losing_pitcher": "Edgardo Henriquez",
+        "save_pitcher": "Paul Sewald",
+        "summary": "2026-07-12 - Arizona Diamondbacks (5) @ Los Angeles Dodgers (3) (Final)"
     },
     {
         "game_id": 823274,
         "game_datetime": "2026-07-12T20:10:00Z",
         "game_date": "2026-07-12",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Toronto Blue Jays",
         "home_name": "San Diego Padres",
         "away_id": 141,
@@ -459,6 +464,6 @@
         "winning_pitcher": "Adrian Morejon",
         "losing_pitcher": "Jeff Hoffman",
         "save_pitcher": "Mason Miller",
-        "summary": "2026-07-12 - Toronto Blue Jays (4) @ San Diego Padres (5) (Game Over)"
+        "summary": "2026-07-12 - Toronto Blue Jays (4) @ San Diego Padres (5) (Final)"
     }
 ]
