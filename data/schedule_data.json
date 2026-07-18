@@ -47,14 +47,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 0,
-        "current_inning": 1,
+        "home_score": 3,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "BOS leads 1-0",
-        "summary": "2026-07-17 - Tampa Bay Rays (2) @ Boston Red Sox (0) (Top of the 1st)"
+        "summary": "2026-07-17 - Tampa Bay Rays (2) @ Boston Red Sox (3) (Top of the 2nd)"
     },
     {
         "game_id": 823524,
@@ -74,7 +74,7 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
@@ -82,14 +82,14 @@
             "MLB Network"
         ],
         "series_status": null,
-        "summary": "2026-07-17 - Los Angeles Dodgers (0) @ New York Yankees (0) (Top of the 2nd)"
+        "summary": "2026-07-17 - Los Angeles Dodgers (0) @ New York Yankees (0) (Top of the 3rd)"
     },
     {
         "game_id": 824901,
         "game_datetime": "2026-07-17T23:15:00Z",
         "game_date": "2026-07-17",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Player challenge",
         "away_name": "Texas Rangers",
         "home_name": "Atlanta Braves",
         "away_id": 140,
@@ -102,13 +102,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Bottom",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-17 - Texas Rangers (0) @ Atlanta Braves (0) (Bottom of the 1st)"
+        "summary": "2026-07-17 - Texas Rangers @ Atlanta Braves (Player challenge)"
     },
     {
         "game_id": 822789,
@@ -126,9 +126,9 @@
         "away_probable_pitcher": "Anthony Kay",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 5,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
@@ -136,14 +136,14 @@
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-07-17 - Chicago White Sox (0) @ Toronto Blue Jays (0) (Bottom of the 1st)"
+        "summary": "2026-07-17 - Chicago White Sox (5) @ Toronto Blue Jays (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 823766,
         "game_datetime": "2026-07-17T23:40:00Z",
         "game_date": "2026-07-17",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Miami Marlins",
         "home_name": "Milwaukee Brewers",
         "away_id": 146,
@@ -157,19 +157,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-17 - Miami Marlins @ Milwaukee Brewers (Warmup)"
+        "summary": "2026-07-17 - Miami Marlins (0) @ Milwaukee Brewers (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824655,
         "game_datetime": "2026-07-18T00:05:00Z",
         "game_date": "2026-07-17",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Minnesota Twins",
         "home_name": "Chicago Cubs",
         "away_id": 142,
@@ -188,14 +188,14 @@
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-17 - Minnesota Twins @ Chicago Cubs (Pre-Game)"
+        "summary": "2026-07-17 - Minnesota Twins @ Chicago Cubs (Warmup)"
     },
     {
         "game_id": 824170,
         "game_datetime": "2026-07-18T00:10:00Z",
         "game_date": "2026-07-17",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Baltimore Orioles",
         "home_name": "Houston Astros",
         "away_id": 110,
@@ -214,7 +214,7 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-17 - Baltimore Orioles @ Houston Astros (Pre-Game)"
+        "summary": "2026-07-17 - Baltimore Orioles @ Houston Astros (Warmup)"
     },
     {
         "game_id": 824090,

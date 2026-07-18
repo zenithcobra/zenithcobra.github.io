@@ -1,5 +1,11 @@
 [
     {
+        "place": 1,
+        "player_name": "Kyle Schwarber",
+        "team": "Philadelphia Phillies",
+        "HR": "32"
+    },
+    {
         "place": 2,
         "player_name": "Yordan Alvarez",
         "team": "Houston Astros",
@@ -67,12 +73,6 @@
     },
     {
         "place": 13,
-        "player_name": "Willson Contreras",
-        "team": "Boston Red Sox",
-        "HR": "21"
-    },
-    {
-        "place": 13,
         "player_name": "Pete Crow-Armstrong",
         "team": "Chicago Cubs",
         "HR": "21"
@@ -91,30 +91,42 @@
     },
     {
         "place": 13,
+        "player_name": "Juan Soto",
+        "team": "New York Mets",
+        "HR": "21"
+    },
+    {
+        "place": 13,
         "player_name": "Miguel Vargas",
         "team": "Chicago White Sox",
         "HR": "21"
     },
     {
-        "place": 20,
+        "place": 19,
         "player_name": "CJ Abrams",
         "team": "Washington Nationals",
         "HR": "20"
     },
     {
-        "place": 20,
+        "place": 19,
         "player_name": "Luis Garc\u00eda Jr.",
         "team": "Washington Nationals",
         "HR": "20"
     },
     {
-        "place": 20,
+        "place": 19,
+        "player_name": "Bryce Harper",
+        "team": "Philadelphia Phillies",
+        "HR": "20"
+    },
+    {
+        "place": 19,
         "player_name": "Munetaka Murakami",
         "team": "Chicago White Sox",
         "HR": "20"
     },
     {
-        "place": 20,
+        "place": 19,
         "player_name": "Christian Walker",
         "team": "Houston Astros",
         "HR": "20"
