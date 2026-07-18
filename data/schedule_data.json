@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Jared Jones",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 4,
+        "away_score": 5,
         "home_score": 1,
-        "current_inning": 6,
-        "inning_state": "Top",
+        "current_inning": 7,
+        "inning_state": "Middle",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-18 - Pittsburgh Pirates (4) @ Cleveland Guardians (1) (Top of the 6th)"
+        "summary": "2026-07-18 - Pittsburgh Pirates (5) @ Cleveland Guardians (1) (Middle of the 7th)"
     },
     {
         "game_id": 824412,
@@ -67,22 +67,22 @@
         "away_probable_pitcher": "Taj Bradley",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
+        "away_score": 1,
+        "home_score": 1,
+        "current_inning": 2,
         "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "MIN leads 1-0",
-        "summary": "2026-07-18 - Minnesota Twins (0) @ Chicago Cubs (0) (Bottom of the 1st)"
+        "summary": "2026-07-18 - Minnesota Twins (1) @ Chicago Cubs (1) (Bottom of the 2nd)"
     },
     {
         "game_id": 823441,
         "game_datetime": "2026-07-18T19:05:00Z",
         "game_date": "2026-07-18",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Mets",
         "home_name": "Philadelphia Phillies",
         "away_id": 121,
@@ -101,7 +101,7 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "NYM leads 1-0",
-        "summary": "2026-07-18 - New York Mets @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-07-18 - New York Mets @ Philadelphia Phillies (Warmup)"
     },
     {
         "game_id": 822790,
@@ -134,7 +134,7 @@
         "game_datetime": "2026-07-18T19:10:00Z",
         "game_date": "2026-07-18",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cincinnati Reds",
         "home_name": "Colorado Rockies",
         "away_id": 113,
@@ -153,7 +153,7 @@
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "CIN leads 1-0",
-        "summary": "2026-07-18 - Cincinnati Reds @ Colorado Rockies (Pre-Game)"
+        "summary": "2026-07-18 - Cincinnati Reds @ Colorado Rockies (Warmup)"
     },
     {
         "game_id": 824169,
