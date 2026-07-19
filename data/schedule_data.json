@@ -15,17 +15,17 @@
         "away_probable_pitcher": "Sean Burke",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Bottom",
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [
             "NBCSN / Peacock"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - Chicago White Sox (0) @ Toronto Blue Jays (0) (Bottom of the 3rd)"
+        "summary": "2026-07-19 - Chicago White Sox (1) @ Toronto Blue Jays (0) (Top of the 6th)"
     },
     {
         "game_id": 823523,
@@ -43,15 +43,15 @@
         "away_probable_pitcher": "Yoshinobu Yamamoto",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 3,
         "inning_state": "Bottom",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "LAD leads 1-0",
-        "summary": "2026-07-19 - Los Angeles Dodgers (0) @ New York Yankees (0) (Bottom of the 1st)"
+        "summary": "2026-07-19 - Los Angeles Dodgers (2) @ New York Yankees (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 823521,
@@ -86,7 +86,7 @@
         "game_datetime": "2026-07-19T17:35:00Z",
         "game_date": "2026-07-19",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Tampa Bay Rays",
         "home_name": "Boston Red Sox",
         "away_id": 139,
@@ -105,14 +105,14 @@
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "BOS leads 3-0",
-        "summary": "2026-07-19 - Tampa Bay Rays @ Boston Red Sox (Pre-Game)"
+        "summary": "2026-07-19 - Tampa Bay Rays @ Boston Red Sox (Warmup)"
     },
     {
         "game_id": 823439,
         "game_datetime": "2026-07-19T17:35:00Z",
         "game_date": "2026-07-19",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Mets",
         "home_name": "Philadelphia Phillies",
         "away_id": 121,
@@ -131,14 +131,14 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - New York Mets @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-07-19 - New York Mets @ Philadelphia Phillies (Warmup)"
     },
     {
         "game_id": 824897,
         "game_datetime": "2026-07-19T17:35:00Z",
         "game_date": "2026-07-19",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Texas Rangers",
         "home_name": "Atlanta Braves",
         "away_id": 140,
@@ -157,14 +157,14 @@
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - Texas Rangers @ Atlanta Braves (Pre-Game)"
+        "summary": "2026-07-19 - Texas Rangers @ Atlanta Braves (Warmup)"
     },
     {
         "game_id": 824411,
         "game_datetime": "2026-07-19T17:40:00Z",
         "game_date": "2026-07-19",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Cleveland Guardians",
         "away_id": 134,
@@ -183,7 +183,7 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - Pittsburgh Pirates @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-07-19 - Pittsburgh Pirates @ Cleveland Guardians (Warmup)"
     },
     {
         "game_id": 824168,
@@ -346,7 +346,7 @@
         "game_datetime": "2026-07-19T20:07:00Z",
         "game_date": "2026-07-19",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Detroit Tigers",
         "home_name": "Los Angeles Angels",
         "away_id": 116,
@@ -357,15 +357,15 @@
         "away_probable_pitcher": "Casey Mize",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-19 - Detroit Tigers @ Los Angeles Angels (Scheduled)"
+        "series_status": "DET leads 2-0",
+        "summary": "2026-07-19 - Detroit Tigers @ Los Angeles Angels (Pre-Game)"
     },
     {
         "game_id": 823113,
@@ -383,10 +383,10 @@
         "away_probable_pitcher": "Robbie Ray",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
