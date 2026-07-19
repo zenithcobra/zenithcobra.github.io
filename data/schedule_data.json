@@ -127,7 +127,7 @@
         "game_datetime": "2026-07-19T17:35:00Z",
         "game_date": "2026-07-19",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "New York Mets",
         "home_name": "Philadelphia Phillies",
         "away_id": 121,
@@ -141,19 +141,24 @@
         "away_score": 6,
         "home_score": 1,
         "current_inning": 9,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - New York Mets (6) @ Philadelphia Phillies (1) (Top of the 9th)"
+        "series_status": "NYM wins 2-1",
+        "winning_team": "New York Mets",
+        "losing_team": "Philadelphia Phillies",
+        "winning_pitcher": "Nolan McLean",
+        "losing_pitcher": "Alan Rangel",
+        "save_pitcher": null,
+        "summary": "2026-07-19 - New York Mets (6) @ Philadelphia Phillies (1) (Game Over)"
     },
     {
         "game_id": 824897,
         "game_datetime": "2026-07-19T17:35:00Z",
         "game_date": "2026-07-19",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Texas Rangers",
         "home_name": "Atlanta Braves",
         "away_id": 140,
@@ -167,19 +172,24 @@
         "away_score": 5,
         "home_score": 8,
         "current_inning": 9,
-        "inning_state": "Middle",
+        "inning_state": "Top",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - Texas Rangers (5) @ Atlanta Braves (8) (Middle of the 9th)"
+        "series_status": "ATL wins 2-1",
+        "winning_team": "Atlanta Braves",
+        "losing_team": "Texas Rangers",
+        "winning_pitcher": "Grant Holmes",
+        "losing_pitcher": "Nathan Eovaldi",
+        "save_pitcher": null,
+        "summary": "2026-07-19 - Texas Rangers (5) @ Atlanta Braves (8) (Final)"
     },
     {
         "game_id": 824411,
         "game_datetime": "2026-07-19T17:40:00Z",
         "game_date": "2026-07-19",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Cleveland Guardians",
         "away_id": 134,
@@ -203,7 +213,7 @@
         "winning_pitcher": "Paul Skenes",
         "losing_pitcher": "Joey Cantillo",
         "save_pitcher": null,
-        "summary": "2026-07-19 - Pittsburgh Pirates (7) @ Cleveland Guardians (1) (Game Over)"
+        "summary": "2026-07-19 - Pittsburgh Pirates (7) @ Cleveland Guardians (1) (Final)"
     },
     {
         "game_id": 824168,
@@ -222,14 +232,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 5,
-        "home_score": 1,
-        "current_inning": 7,
-        "inning_state": "Middle",
+        "home_score": 2,
+        "current_inning": 8,
+        "inning_state": "Bottom",
         "venue_id": 2392,
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": "BAL leads 2-0",
-        "summary": "2026-07-19 - Baltimore Orioles (5) @ Houston Astros (1) (Middle of the 7th)"
+        "summary": "2026-07-19 - Baltimore Orioles (5) @ Houston Astros (2) (Bottom of the 8th)"
     },
     {
         "game_id": 824086,
@@ -247,15 +257,15 @@
         "away_probable_pitcher": "Germ\u00e1n M\u00e1rquez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 8,
+        "away_score": 13,
         "home_score": 2,
         "current_inning": 8,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "KC leads 2-0",
-        "summary": "2026-07-19 - San Diego Padres (8) @ Kansas City Royals (2) (Top of the 8th)"
+        "summary": "2026-07-19 - San Diego Padres (13) @ Kansas City Royals (2) (Middle of the 8th)"
     },
     {
         "game_id": 823764,
@@ -275,13 +285,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 7,
-        "inning_state": "End",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 2-0",
-        "summary": "2026-07-19 - Miami Marlins (1) @ Milwaukee Brewers (0) (End of the 7th)"
+        "summary": "2026-07-19 - Miami Marlins (1) @ Milwaukee Brewers (0) (Top of the 9th)"
     },
     {
         "game_id": 824653,
@@ -299,15 +309,15 @@
         "away_probable_pitcher": "Zebby Matthews",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 10,
-        "current_inning": 7,
-        "inning_state": "Middle",
+        "current_inning": 8,
+        "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - Minnesota Twins (0) @ Chicago Cubs (10) (Middle of the 7th)"
+        "summary": "2026-07-19 - Minnesota Twins (1) @ Chicago Cubs (10) (Bottom of the 8th)"
     },
     {
         "game_id": 824330,
@@ -325,15 +335,15 @@
         "away_probable_pitcher": "Hunter Greene",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 8,
+        "away_score": 9,
         "home_score": 1,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "current_inning": 6,
+        "inning_state": "Middle",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - Cincinnati Reds (8) @ Colorado Rockies (1) (Bottom of the 4th)"
+        "summary": "2026-07-19 - Cincinnati Reds (9) @ Colorado Rockies (1) (Middle of the 6th)"
     },
     {
         "game_id": 824978,
@@ -351,15 +361,15 @@
         "away_probable_pitcher": "Foster Griffin",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - Washington Nationals (0) @ Athletics (0) (Top of the 2nd)"
+        "summary": "2026-07-19 - Washington Nationals (1) @ Athletics (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 824007,
@@ -378,14 +388,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 0,
-        "current_inning": 1,
+        "home_score": 1,
+        "current_inning": 2,
         "inning_state": "End",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
         "series_status": "DET leads 2-0",
-        "summary": "2026-07-19 - Detroit Tigers (1) @ Los Angeles Angels (0) (End of the 1st)"
+        "summary": "2026-07-19 - Detroit Tigers (1) @ Los Angeles Angels (1) (End of the 2nd)"
     },
     {
         "game_id": 823113,
@@ -405,13 +415,13 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - San Francisco Giants (2) @ Seattle Mariners (0) (Bottom of the 1st)"
+        "summary": "2026-07-19 - San Francisco Giants (2) @ Seattle Mariners (0) (Top of the 3rd)"
     },
     {
         "game_id": 825057,
@@ -429,14 +439,14 @@
         "away_probable_pitcher": "Andre Pallante",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - St. Louis Cardinals (0) @ Arizona Diamondbacks (0) (Top of the 2nd)"
+        "summary": "2026-07-19 - St. Louis Cardinals (2) @ Arizona Diamondbacks (0) (Top of the 3rd)"
     }
 ]
