@@ -68,7 +68,7 @@
         "game_datetime": "2026-07-19T23:20:00Z",
         "game_date": "2026-07-19",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Los Angeles Dodgers",
         "home_name": "New York Yankees",
         "away_id": 119,
@@ -82,14 +82,14 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [
             "NBC/Peacock"
         ],
         "series_status": "LAD leads 2-0",
-        "summary": "2026-07-19 - Los Angeles Dodgers @ New York Yankees (Pre-Game)"
+        "summary": "2026-07-19 - Los Angeles Dodgers (0) @ New York Yankees (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824739,
@@ -375,7 +375,7 @@
         "game_datetime": "2026-07-19T20:05:00Z",
         "game_date": "2026-07-19",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Washington Nationals",
         "home_name": "Athletics",
         "away_id": 120,
@@ -387,21 +387,26 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 5,
-        "home_score": 1,
+        "home_score": 2,
         "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - Washington Nationals (5) @ Athletics (1) (Bottom of the 9th)"
+        "series_status": "WSH wins 2-1",
+        "winning_team": "Washington Nationals",
+        "losing_team": "Athletics",
+        "winning_pitcher": "Foster Griffin",
+        "losing_pitcher": "Jacob Lopez",
+        "save_pitcher": "Clayton Beeter",
+        "summary": "2026-07-19 - Washington Nationals (5) @ Athletics (2) (Final)"
     },
     {
         "game_id": 824007,
         "game_datetime": "2026-07-19T20:07:00Z",
         "game_date": "2026-07-19",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Detroit Tigers",
         "home_name": "Los Angeles Angels",
         "away_id": 116,
@@ -412,22 +417,27 @@
         "away_probable_pitcher": "Casey Mize",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 3,
-        "current_inning": 8,
-        "inning_state": "End",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": "DET leads 2-0",
-        "summary": "2026-07-19 - Detroit Tigers (1) @ Los Angeles Angels (3) (End of the 8th)"
+        "series_status": "DET wins 2-1",
+        "winning_team": "Los Angeles Angels",
+        "losing_team": "Detroit Tigers",
+        "winning_pitcher": "Ryan Johnson",
+        "losing_pitcher": "Drew Anderson",
+        "save_pitcher": "Ryan Zeferjahn",
+        "summary": "2026-07-19 - Detroit Tigers (2) @ Los Angeles Angels (3) (Final)"
     },
     {
         "game_id": 823113,
         "game_datetime": "2026-07-19T20:10:00Z",
         "game_date": "2026-07-19",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "San Francisco Giants",
         "home_name": "Seattle Mariners",
         "away_id": 137,
@@ -451,7 +461,7 @@
         "winning_pitcher": "Logan Gilbert",
         "losing_pitcher": "Adrian Houser",
         "save_pitcher": "Andr\u00e9s Mu\u00f1oz",
-        "summary": "2026-07-19 - San Francisco Giants (3) @ Seattle Mariners (6) (Game Over)"
+        "summary": "2026-07-19 - San Francisco Giants (3) @ Seattle Mariners (6) (Final)"
     },
     {
         "game_id": 825057,
@@ -470,13 +480,13 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 7,
-        "home_score": 5,
-        "current_inning": 8,
-        "inning_state": "Top",
+        "home_score": 7,
+        "current_inning": 10,
+        "inning_state": "Middle",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - St. Louis Cardinals (7) @ Arizona Diamondbacks (5) (Top of the 8th)"
+        "summary": "2026-07-19 - St. Louis Cardinals (7) @ Arizona Diamondbacks (7) (Middle of the 10th)"
     }
 ]
