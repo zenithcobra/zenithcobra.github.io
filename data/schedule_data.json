@@ -80,16 +80,16 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "home_score": 1,
+        "current_inning": 2,
+        "inning_state": "End",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [
             "NBC/Peacock"
         ],
         "series_status": "LAD leads 2-0",
-        "summary": "2026-07-19 - Los Angeles Dodgers (0) @ New York Yankees (0) (Bottom of the 1st)"
+        "summary": "2026-07-19 - Los Angeles Dodgers (0) @ New York Yankees (1) (End of the 2nd)"
     },
     {
         "game_id": 824739,
@@ -468,7 +468,7 @@
         "game_datetime": "2026-07-19T20:10:00Z",
         "game_date": "2026-07-19",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "St. Louis Cardinals",
         "home_name": "Arizona Diamondbacks",
         "away_id": 138,
@@ -480,13 +480,18 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 7,
-        "home_score": 7,
+        "home_score": 8,
         "current_inning": 10,
-        "inning_state": "Middle",
+        "inning_state": "Bottom",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - St. Louis Cardinals (7) @ Arizona Diamondbacks (7) (Middle of the 10th)"
+        "series_status": "AZ wins 2-1",
+        "winning_team": "Arizona Diamondbacks",
+        "losing_team": "St. Louis Cardinals",
+        "winning_pitcher": "Juan Morillo",
+        "losing_pitcher": "Luis Gastelum",
+        "save_pitcher": null,
+        "summary": "2026-07-19 - St. Louis Cardinals (7) @ Arizona Diamondbacks (8) (Final)"
     }
 ]
