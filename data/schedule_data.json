@@ -388,13 +388,13 @@
         "away_pitcher_note": "",
         "away_score": 5,
         "home_score": 1,
-        "current_inning": 8,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - Washington Nationals (5) @ Athletics (1) (Bottom of the 8th)"
+        "summary": "2026-07-19 - Washington Nationals (5) @ Athletics (1) (Bottom of the 9th)"
     },
     {
         "game_id": 824007,
@@ -414,20 +414,20 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 3,
-        "current_inning": 7,
-        "inning_state": "Bottom",
+        "current_inning": 8,
+        "inning_state": "End",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
         "series_status": "DET leads 2-0",
-        "summary": "2026-07-19 - Detroit Tigers (1) @ Los Angeles Angels (3) (Bottom of the 7th)"
+        "summary": "2026-07-19 - Detroit Tigers (1) @ Los Angeles Angels (3) (End of the 8th)"
     },
     {
         "game_id": 823113,
         "game_datetime": "2026-07-19T20:10:00Z",
         "game_date": "2026-07-19",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "San Francisco Giants",
         "home_name": "Seattle Mariners",
         "away_id": 137,
@@ -440,13 +440,18 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 6,
-        "current_inning": 8,
+        "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - San Francisco Giants (3) @ Seattle Mariners (6) (Top of the 8th)"
+        "series_status": "SEA wins 2-1",
+        "winning_team": "Seattle Mariners",
+        "losing_team": "San Francisco Giants",
+        "winning_pitcher": "Logan Gilbert",
+        "losing_pitcher": "Adrian Houser",
+        "save_pitcher": "Andr\u00e9s Mu\u00f1oz",
+        "summary": "2026-07-19 - San Francisco Giants (3) @ Seattle Mariners (6) (Game Over)"
     },
     {
         "game_id": 825057,
@@ -465,13 +470,13 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 7,
-        "home_score": 3,
-        "current_inning": 7,
+        "home_score": 5,
+        "current_inning": 8,
         "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - St. Louis Cardinals (7) @ Arizona Diamondbacks (3) (Top of the 7th)"
+        "summary": "2026-07-19 - St. Louis Cardinals (7) @ Arizona Diamondbacks (5) (Top of the 8th)"
     }
 ]
