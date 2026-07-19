@@ -27,7 +27,7 @@
         "place": 5,
         "player_name": "Sonny Gray",
         "team": "Boston Red Sox",
-        "ERA": "2.54"
+        "ERA": "2.48"
     },
     {
         "place": 6,
@@ -67,15 +67,15 @@
     },
     {
         "place": 12,
-        "player_name": "Yoshinobu Yamamoto",
-        "team": "Los Angeles Dodgers",
-        "ERA": "2.75"
-    },
-    {
-        "place": 13,
         "player_name": "Foster Griffin",
         "team": "Washington Nationals",
         "ERA": "2.77"
+    },
+    {
+        "place": 13,
+        "player_name": "Yoshinobu Yamamoto",
+        "team": "Los Angeles Dodgers",
+        "ERA": "2.78"
     },
     {
         "place": 14,
@@ -132,21 +132,27 @@
         "ERA": "3.34"
     },
     {
-        "place": 23,
+        "place": 22,
+        "player_name": "Nolan McLean",
+        "team": "New York Mets",
+        "ERA": "3.34"
+    },
+    {
+        "place": 24,
         "player_name": "Robbie Ray",
         "team": "San Francisco Giants",
         "ERA": "3.38"
     },
     {
-        "place": 24,
-        "player_name": "Nolan McLean",
-        "team": "New York Mets",
-        "ERA": "3.40"
-    },
-    {
         "place": 25,
         "player_name": "Jes\u00fas Luzardo",
         "team": "Philadelphia Phillies",
+        "ERA": "3.43"
+    },
+    {
+        "place": 25,
+        "player_name": "Paul Skenes",
+        "team": "Pittsburgh Pirates",
         "ERA": "3.43"
     }
 ]
