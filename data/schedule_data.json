@@ -344,7 +344,7 @@
         "game_datetime": "2026-07-19T19:10:00Z",
         "game_date": "2026-07-19",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Cincinnati Reds",
         "home_name": "Colorado Rockies",
         "away_id": 113,
@@ -362,8 +362,13 @@
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - Cincinnati Reds (9) @ Colorado Rockies (6) (Bottom of the 9th)"
+        "series_status": "CIN wins 2-1",
+        "winning_team": "Cincinnati Reds",
+        "losing_team": "Colorado Rockies",
+        "winning_pitcher": "Hunter Greene",
+        "losing_pitcher": "Ryan Feltner",
+        "save_pitcher": null,
+        "summary": "2026-07-19 - Cincinnati Reds (9) @ Colorado Rockies (6) (Final)"
     },
     {
         "game_id": 824978,
@@ -383,13 +388,13 @@
         "away_pitcher_note": "",
         "away_score": 5,
         "home_score": 1,
-        "current_inning": 6,
-        "inning_state": "Middle",
+        "current_inning": 8,
+        "inning_state": "Bottom",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - Washington Nationals (5) @ Athletics (1) (Middle of the 6th)"
+        "summary": "2026-07-19 - Washington Nationals (5) @ Athletics (1) (Bottom of the 8th)"
     },
     {
         "game_id": 824007,
@@ -408,14 +413,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 2,
-        "current_inning": 5,
+        "home_score": 3,
+        "current_inning": 7,
         "inning_state": "Bottom",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
         "series_status": "DET leads 2-0",
-        "summary": "2026-07-19 - Detroit Tigers (1) @ Los Angeles Angels (2) (Bottom of the 5th)"
+        "summary": "2026-07-19 - Detroit Tigers (1) @ Los Angeles Angels (3) (Bottom of the 7th)"
     },
     {
         "game_id": 823113,
@@ -434,14 +439,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 3,
-        "current_inning": 6,
+        "home_score": 6,
+        "current_inning": 8,
         "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - San Francisco Giants (3) @ Seattle Mariners (3) (Top of the 6th)"
+        "summary": "2026-07-19 - San Francisco Giants (3) @ Seattle Mariners (6) (Top of the 8th)"
     },
     {
         "game_id": 825057,
@@ -460,13 +465,13 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 7,
-        "home_score": 0,
-        "current_inning": 5,
-        "inning_state": "End",
+        "home_score": 3,
+        "current_inning": 7,
+        "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-19 - St. Louis Cardinals (7) @ Arizona Diamondbacks (0) (End of the 5th)"
+        "summary": "2026-07-19 - St. Louis Cardinals (7) @ Arizona Diamondbacks (3) (Top of the 7th)"
     }
 ]
