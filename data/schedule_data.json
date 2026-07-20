@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-20T22:40:00Z",
         "game_date": "2026-07-20",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Minnesota Twins",
         "home_name": "Cleveland Guardians",
         "away_id": 142,
@@ -23,7 +23,7 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-20 - Minnesota Twins @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-07-20 - Minnesota Twins @ Cleveland Guardians (Warmup)"
     },
     {
         "game_id": 823522,
@@ -318,7 +318,7 @@
         "game_datetime": "2026-07-21T01:40:00Z",
         "game_date": "2026-07-20",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Athletics",
         "home_name": "Arizona Diamondbacks",
         "away_id": 133,
@@ -337,7 +337,7 @@
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-20 - Athletics @ Arizona Diamondbacks (Scheduled)"
+        "summary": "2026-07-20 - Athletics @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 823112,
@@ -370,7 +370,7 @@
         "game_datetime": "2026-07-21T02:10:00Z",
         "game_date": "2026-07-20",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "Los Angeles Angels",
         "away_id": 138,
@@ -381,16 +381,16 @@
         "away_probable_pitcher": "Kyle Leahy",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [
             "ESPN/ESPN App"
         ],
         "series_status": null,
-        "summary": "2026-07-20 - St. Louis Cardinals @ Los Angeles Angels (Scheduled)"
+        "summary": "2026-07-20 - St. Louis Cardinals @ Los Angeles Angels (Pre-Game)"
     }
 ]
