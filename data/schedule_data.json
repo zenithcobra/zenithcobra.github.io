@@ -15,10 +15,10 @@
         "away_probable_pitcher": "Kendry Rojas",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
@@ -206,7 +206,7 @@
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
-        "series_status": "DET leads 1-0",
+        "series_status": null,
         "summary": "2026-07-21 - Detroit Tigers @ Chicago Cubs (Scheduled)"
     },
     {
@@ -310,7 +310,7 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": "LAA leads 1-0",
+        "series_status": null,
         "summary": "2026-07-21 - St. Louis Cardinals @ Los Angeles Angels (Scheduled)"
     },
     {
@@ -362,7 +362,7 @@
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": "SEA leads 1-0",
+        "series_status": null,
         "summary": "2026-07-21 - Cincinnati Reds @ Seattle Mariners (Scheduled)"
     },
     {
