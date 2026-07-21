@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-21T22:40:00Z",
         "game_date": "2026-07-21",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Minnesota Twins",
         "home_name": "Cleveland Guardians",
         "away_id": 142,
@@ -23,14 +23,14 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-07-21 - Minnesota Twins @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-07-21 - Minnesota Twins @ Cleveland Guardians (Warmup)"
     },
     {
         "game_id": 823437,
         "game_datetime": "2026-07-21T22:40:00Z",
         "game_date": "2026-07-21",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Philadelphia Phillies",
         "away_id": 119,
@@ -51,7 +51,7 @@
             "TBS"
         ],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-07-21 - Los Angeles Dodgers @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-07-21 - Los Angeles Dodgers @ Philadelphia Phillies (Delayed Start)"
     },
     {
         "game_id": 822787,
@@ -292,7 +292,7 @@
         "game_datetime": "2026-07-22T01:40:00Z",
         "game_date": "2026-07-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Athletics",
         "home_name": "Arizona Diamondbacks",
         "away_id": 133,
@@ -311,7 +311,7 @@
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": "ATH leads 1-0",
-        "summary": "2026-07-21 - Athletics @ Arizona Diamondbacks (Scheduled)"
+        "summary": "2026-07-21 - Athletics @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 823114,
@@ -329,10 +329,10 @@
         "away_probable_pitcher": "Chase Burns",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
