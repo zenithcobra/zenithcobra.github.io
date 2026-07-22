@@ -15,22 +15,22 @@
         "away_probable_pitcher": "Kendry Rojas",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 2,
-        "current_inning": 4,
+        "current_inning": 5,
         "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-07-21 - Minnesota Twins (1) @ Cleveland Guardians (2) (Top of the 4th)"
+        "summary": "2026-07-21 - Minnesota Twins (2) @ Cleveland Guardians (2) (Top of the 5th)"
     },
     {
         "game_id": 823437,
         "game_datetime": "2026-07-21T22:40:00Z",
         "game_date": "2026-07-21",
         "game_type": "R",
-        "status": "Delayed Start",
+        "status": "Warmup",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Philadelphia Phillies",
         "away_id": 119,
@@ -51,7 +51,7 @@
             "TBS"
         ],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-07-21 - Los Angeles Dodgers @ Philadelphia Phillies (Delayed Start)"
+        "summary": "2026-07-21 - Los Angeles Dodgers @ Philadelphia Phillies (Warmup)"
     },
     {
         "game_id": 822787,
@@ -71,13 +71,13 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-07-21 - Tampa Bay Rays (3) @ Toronto Blue Jays (0) (Bottom of the 1st)"
+        "summary": "2026-07-21 - Tampa Bay Rays (3) @ Toronto Blue Jays (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 824895,
@@ -97,20 +97,20 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Bottom",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 1-0",
-        "summary": "2026-07-21 - San Diego Padres (1) @ Atlanta Braves (0) (Bottom of the 1st)"
+        "summary": "2026-07-21 - San Diego Padres (1) @ Atlanta Braves (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 824085,
         "game_datetime": "2026-07-21T23:40:00Z",
         "game_date": "2026-07-21",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "San Francisco Giants",
         "home_name": "Kansas City Royals",
         "away_id": 137,
@@ -124,19 +124,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "KC leads 1-0",
-        "summary": "2026-07-21 - San Francisco Giants @ Kansas City Royals (Warmup)"
+        "summary": "2026-07-21 - San Francisco Giants (0) @ Kansas City Royals (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823760,
         "game_datetime": "2026-07-21T23:40:00Z",
         "game_date": "2026-07-21",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "New York Mets",
         "home_name": "Milwaukee Brewers",
         "away_id": 121,
@@ -155,14 +155,14 @@
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 1-0",
-        "summary": "2026-07-21 - New York Mets @ Milwaukee Brewers (Warmup)"
+        "summary": "2026-07-21 - New York Mets (0) @ Milwaukee Brewers (0) (Top of the 1st)"
     },
     {
         "game_id": 824652,
         "game_datetime": "2026-07-22T00:05:00Z",
         "game_date": "2026-07-21",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Detroit Tigers",
         "home_name": "Chicago Cubs",
         "away_id": 116,
@@ -181,14 +181,14 @@
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "DET leads 1-0",
-        "summary": "2026-07-21 - Detroit Tigers @ Chicago Cubs (Pre-Game)"
+        "summary": "2026-07-21 - Detroit Tigers @ Chicago Cubs (Warmup)"
     },
     {
         "game_id": 822871,
         "game_datetime": "2026-07-22T00:05:00Z",
         "game_date": "2026-07-21",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago White Sox",
         "home_name": "Texas Rangers",
         "away_id": 145,
@@ -207,14 +207,14 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-07-21 - Chicago White Sox @ Texas Rangers (Pre-Game)"
+        "summary": "2026-07-21 - Chicago White Sox @ Texas Rangers (Warmup)"
     },
     {
         "game_id": 824165,
         "game_datetime": "2026-07-22T00:10:00Z",
         "game_date": "2026-07-21",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Miami Marlins",
         "home_name": "Houston Astros",
         "away_id": 146,
@@ -233,7 +233,7 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": "HOU leads 1-0",
-        "summary": "2026-07-21 - Miami Marlins @ Houston Astros (Pre-Game)"
+        "summary": "2026-07-21 - Miami Marlins @ Houston Astros (Warmup)"
     },
     {
         "game_id": 824329,
