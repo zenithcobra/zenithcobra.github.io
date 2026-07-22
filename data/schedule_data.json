@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Bottom",
+        "current_inning": 4,
+        "inning_state": "Middle",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-07-22 - Pittsburgh Pirates (0) @ New York Yankees (0) (Bottom of the 3rd)"
+        "summary": "2026-07-22 - Pittsburgh Pirates (0) @ New York Yankees (0) (Middle of the 4th)"
     },
     {
         "game_id": 823519,
@@ -68,14 +68,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 4,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "BOS leads 1-0",
-        "summary": "2026-07-22 - Baltimore Orioles (0) @ Boston Red Sox (0) (Top of the 1st)"
+        "summary": "2026-07-22 - Baltimore Orioles (0) @ Boston Red Sox (4) (End of the 1st)"
     },
     {
         "game_id": 824732,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-07-22T18:10:00Z",
         "game_date": "2026-07-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "San Francisco Giants",
         "home_name": "Kansas City Royals",
         "away_id": 137,
@@ -127,14 +127,14 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "KC leads 2-0",
-        "summary": "2026-07-22 - San Francisco Giants @ Kansas City Royals (Pre-Game)"
+        "summary": "2026-07-22 - San Francisco Giants @ Kansas City Royals (Warmup)"
     },
     {
         "game_id": 823761,
         "game_datetime": "2026-07-22T18:10:00Z",
         "game_date": "2026-07-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Mets",
         "home_name": "Milwaukee Brewers",
         "away_id": 121,
@@ -153,7 +153,7 @@
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-22 - New York Mets @ Milwaukee Brewers (Pre-Game)"
+        "summary": "2026-07-22 - New York Mets @ Milwaukee Brewers (Warmup)"
     },
     {
         "game_id": 824327,
