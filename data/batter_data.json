@@ -265,6 +265,12 @@
         "fHR24pg": "0"
     },
     {
+        "player_name": "Noah Murdock",
+        "team": "Pittsburgh Pirates",
+        "team_id": 134,
+        "player_id": 668716
+    },
+    {
         "player_name": "Paul Skenes",
         "team": "Pittsburgh Pirates",
         "team_id": 134,
@@ -994,6 +1000,12 @@
         "HR24": 5,
         "HR24pg": 0.05,
         "fHR24pg": "0"
+    },
+    {
+        "player_name": "Noah Murdock",
+        "team": "Pittsburgh Pirates",
+        "team_id": 134,
+        "player_id": 668716
     },
     {
         "player_name": "Paul Skenes",
@@ -3321,30 +3333,16 @@
         "fRBIpg": "0"
     },
     {
+        "player_name": "Andrew Velazquez",
+        "team": "Kansas City Royals",
+        "team_id": 118,
+        "player_id": 623205
+    },
+    {
         "player_name": "Beck Way",
         "team": "Kansas City Royals",
         "team_id": 118,
         "player_id": 694360
-    },
-    {
-        "player_name": "Bobby Witt Jr.",
-        "team": "Kansas City Royals",
-        "team_id": 118,
-        "player_id": 677951,
-        "position": "SS",
-        "games_played": 94.0,
-        "H": 103.0,
-        "HR": 13.0,
-        "RBI": 39.0,
-        "HRpg": 0.138,
-        "fHRpg": "1/7",
-        "Hpg": 1.096,
-        "fHpg": "8/7",
-        "RBIpg": 0.415,
-        "fRBIpg": "2/5",
-        "HR24": 23,
-        "HR24pg": 0.15,
-        "fHR24pg": "1/7"
     },
     {
         "player_name": "Carter Jensen",
@@ -6578,6 +6576,12 @@
         "player_id": 700669
     },
     {
+        "player_name": "Hunter Dobbins",
+        "team": "St. Louis Cardinals",
+        "team_id": 138,
+        "player_id": 690928
+    },
+    {
         "player_name": "Iv\u00e1n Herrera",
         "team": "St. Louis Cardinals",
         "team_id": 138,
@@ -6818,12 +6822,6 @@
         "team": "St. Louis Cardinals",
         "team_id": 138,
         "player_id": 592773
-    },
-    {
-        "player_name": "Scott Blewett",
-        "team": "St. Louis Cardinals",
-        "team_id": 138,
-        "player_id": 656240
     },
     {
         "player_name": "Brent Suter",
