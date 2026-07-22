@@ -103,7 +103,7 @@
         "team": "New York Mets",
         "player_id": 676724,
         "HR": 7,
-        "HRpg": 0.13,
+        "HRpg": 0.12,
         "fHRpg": "1/7",
         "HR24": 4,
         "HR24pg": 0.17,
@@ -316,6 +316,28 @@
         "fHRpg": "1/6",
         "HR24": 16,
         "HR24pg": 0.13,
+        "fHR24pg": "1/7"
+    },
+    {
+        "name": "Christian Encarnacion-Strand",
+        "team": "Baltimore Orioles",
+        "player_id": 687952,
+        "HR": 2,
+        "HRpg": 0.67,
+        "fHRpg": "2/3",
+        "HR24": 6,
+        "HR24pg": 0.17,
+        "fHR24pg": "1/6"
+    },
+    {
+        "name": "Ceddanne Rafaela",
+        "team": "Boston Red Sox",
+        "player_id": 678882,
+        "HR": 9,
+        "HRpg": 0.09,
+        "fHRpg": "1/7",
+        "HR24": 16,
+        "HR24pg": 0.1,
         "fHR24pg": "1/7"
     }
 ]
