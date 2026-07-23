@@ -35,7 +35,7 @@
         "game_datetime": "2026-07-23T17:10:00Z",
         "game_date": "2026-07-23",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Minnesota Twins",
         "home_name": "Cleveland Guardians",
         "away_id": 142,
@@ -53,8 +53,13 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": "CLE leads 2-1",
-        "summary": "2026-07-23 - Minnesota Twins (3) @ Cleveland Guardians (1) (Bottom of the 12th)"
+        "series_status": "Series tied 2-2",
+        "winning_team": "Minnesota Twins",
+        "losing_team": "Cleveland Guardians",
+        "winning_pitcher": "Taylor Rogers",
+        "losing_pitcher": "Erik Sabrowski",
+        "save_pitcher": "Jack Anderson",
+        "summary": "2026-07-23 - Minnesota Twins (3) @ Cleveland Guardians (1) (Final)"
     },
     {
         "game_id": 822785,
@@ -74,13 +79,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 2,
-        "current_inning": 6,
-        "inning_state": "Top",
+        "current_inning": 7,
+        "inning_state": "Middle",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TB leads 3-0",
-        "summary": "2026-07-23 - Tampa Bay Rays (1) @ Toronto Blue Jays (2) (Top of the 6th)"
+        "summary": "2026-07-23 - Tampa Bay Rays (1) @ Toronto Blue Jays (2) (Middle of the 7th)"
     },
     {
         "game_id": 823042,
