@@ -48,13 +48,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Middle",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-22 - Pittsburgh Pirates (0) @ New York Yankees (0) (Middle of the 2nd)"
+        "summary": "2026-07-22 - Pittsburgh Pirates (0) @ New York Yankees (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 824735,
@@ -105,13 +105,13 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "BOS leads 2-0",
-        "summary": "2026-07-22 - Baltimore Orioles (4) @ Boston Red Sox (0) (Top of the 1st)"
+        "summary": "2026-07-22 - Baltimore Orioles (4) @ Boston Red Sox (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 824083,
@@ -315,15 +315,15 @@
         "away_probable_pitcher": "Bailey Ober",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 3,
         "home_score": 3,
-        "current_inning": 3,
+        "current_inning": 4,
         "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "CLE leads 2-0",
-        "summary": "2026-07-22 - Minnesota Twins (1) @ Cleveland Guardians (3) (Top of the 3rd)"
+        "summary": "2026-07-22 - Minnesota Twins (3) @ Cleveland Guardians (3) (Top of the 4th)"
     },
     {
         "game_id": 823438,
@@ -343,13 +343,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 2,
-        "current_inning": 3,
-        "inning_state": "Bottom",
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-22 - Los Angeles Dodgers (1) @ Philadelphia Phillies (2) (Bottom of the 3rd)"
+        "summary": "2026-07-22 - Los Angeles Dodgers (1) @ Philadelphia Phillies (2) (Top of the 5th)"
     },
     {
         "game_id": 822784,
@@ -367,15 +367,15 @@
         "away_probable_pitcher": "Griffin Jax",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 1,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TB leads 2-0",
-        "summary": "2026-07-22 - Tampa Bay Rays (0) @ Toronto Blue Jays (1) (Top of the 2nd)"
+        "summary": "2026-07-22 - Tampa Bay Rays (1) @ Toronto Blue Jays (1) (Top of the 3rd)"
     },
     {
         "game_id": 824896,
@@ -394,21 +394,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "home_score": 1,
+        "current_inning": 2,
+        "inning_state": "Top",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-22 - San Diego Padres (0) @ Atlanta Braves (0) (Bottom of the 1st)"
+        "summary": "2026-07-22 - San Diego Padres (0) @ Atlanta Braves (1) (Top of the 2nd)"
     },
     {
         "game_id": 822873,
         "game_datetime": "2026-07-23T00:05:00Z",
         "game_date": "2026-07-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago White Sox",
         "home_name": "Texas Rangers",
         "away_id": 145,
@@ -427,14 +427,14 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-22 - Chicago White Sox @ Texas Rangers (Pre-Game)"
+        "summary": "2026-07-22 - Chicago White Sox @ Texas Rangers (Warmup)"
     },
     {
         "game_id": 824650,
         "game_datetime": "2026-07-23T00:10:00Z",
         "game_date": "2026-07-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Detroit Tigers",
         "home_name": "Chicago Cubs",
         "away_id": 116,
@@ -455,14 +455,14 @@
             "ESPN/ESPN App"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-22 - Detroit Tigers @ Chicago Cubs (Pre-Game)"
+        "summary": "2026-07-22 - Detroit Tigers @ Chicago Cubs (Warmup)"
     },
     {
         "game_id": 824166,
         "game_datetime": "2026-07-23T00:10:00Z",
         "game_date": "2026-07-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Miami Marlins",
         "home_name": "Houston Astros",
         "away_id": 146,
@@ -481,6 +481,6 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": "HOU leads 2-0",
-        "summary": "2026-07-22 - Miami Marlins @ Houston Astros (Pre-Game)"
+        "summary": "2026-07-22 - Miami Marlins @ Houston Astros (Warmup)"
     }
 ]
