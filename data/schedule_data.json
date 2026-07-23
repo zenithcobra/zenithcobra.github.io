@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-23T16:15:00Z",
         "game_date": "2026-07-23",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "San Diego Padres",
         "home_name": "Atlanta Braves",
         "away_id": 135,
@@ -28,7 +28,7 @@
         "winning_pitcher": "Chris Sale",
         "losing_pitcher": "Griffin Canning",
         "save_pitcher": "Raisel Iglesias",
-        "summary": "2026-07-23 - San Diego Padres (5) @ Atlanta Braves (6) (Game Over)"
+        "summary": "2026-07-23 - San Diego Padres (5) @ Atlanta Braves (6) (Final)"
     },
     {
         "game_id": 824406,
@@ -46,22 +46,22 @@
         "away_probable_pitcher": "Taj Bradley",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 1,
-        "current_inning": 7,
-        "inning_state": "Bottom",
+        "current_inning": 10,
+        "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "CLE leads 2-1",
-        "summary": "2026-07-23 - Minnesota Twins (0) @ Cleveland Guardians (1) (Bottom of the 7th)"
+        "summary": "2026-07-23 - Minnesota Twins (1) @ Cleveland Guardians (1) (Top of the 10th)"
     },
     {
         "game_id": 822785,
         "game_datetime": "2026-07-23T19:07:00Z",
         "game_date": "2026-07-23",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Tampa Bay Rays",
         "home_name": "Toronto Blue Jays",
         "away_id": 139,
@@ -73,14 +73,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "home_score": 1,
+        "current_inning": 2,
+        "inning_state": "End",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TB leads 3-0",
-        "summary": "2026-07-23 - Tampa Bay Rays @ Toronto Blue Jays (Warmup)"
+        "summary": "2026-07-23 - Tampa Bay Rays (0) @ Toronto Blue Jays (1) (End of the 2nd)"
     },
     {
         "game_id": 823042,
@@ -113,7 +113,7 @@
         "game_datetime": "2026-07-23T22:40:00Z",
         "game_date": "2026-07-23",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Kansas City Royals",
         "home_name": "Detroit Tigers",
         "away_id": 118,
@@ -124,16 +124,16 @@
         "away_probable_pitcher": "Randy Dobnak",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [
             "MLB Network"
         ],
         "series_status": null,
-        "summary": "2026-07-23 - Kansas City Royals @ Detroit Tigers (Scheduled)"
+        "summary": "2026-07-23 - Kansas City Royals @ Detroit Tigers (Pre-Game)"
     }
 ]
