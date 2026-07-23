@@ -108,22 +108,22 @@
         "away_probable_pitcher": "Brandon Pfaadt",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
+        "away_score": 4,
         "home_score": 2,
-        "current_inning": 4,
-        "inning_state": "End",
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-23 - Arizona Diamondbacks (3) @ St. Louis Cardinals (2) (End of the 4th)"
+        "summary": "2026-07-23 - Arizona Diamondbacks (4) @ St. Louis Cardinals (2) (Top of the 6th)"
     },
     {
         "game_id": 824247,
         "game_datetime": "2026-07-23T22:40:00Z",
         "game_date": "2026-07-23",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Kansas City Royals",
         "home_name": "Detroit Tigers",
         "away_id": 118,
@@ -144,6 +144,6 @@
             "MLB Network"
         ],
         "series_status": null,
-        "summary": "2026-07-23 - Kansas City Royals @ Detroit Tigers (Warmup)"
+        "summary": "2026-07-23 - Kansas City Royals (0) @ Detroit Tigers (0) (Top of the 1st)"
     }
 ]
