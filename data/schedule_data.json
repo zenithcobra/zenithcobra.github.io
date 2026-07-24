@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-24T20:10:00Z",
         "game_date": "2026-07-24",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Milwaukee Brewers",
         "away_id": 115,
@@ -23,7 +23,7 @@
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-24 - Colorado Rockies @ Milwaukee Brewers (Scheduled)"
+        "summary": "2026-07-24 - Colorado Rockies @ Milwaukee Brewers (Pre-Game)"
     },
     {
         "game_id": 824248,
@@ -143,7 +143,7 @@
         "home_id": 110,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
+        "home_probable_pitcher": "Trevor Rogers",
         "away_probable_pitcher": "Grant Holmes",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
