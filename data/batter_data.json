@@ -799,12 +799,6 @@
         "player_id": 663738
     },
     {
-        "player_name": "Eli Morgan",
-        "team": "Kansas City Royals",
-        "team_id": 118,
-        "player_id": 669212
-    },
-    {
         "player_name": "Isaac Collins",
         "team": "Kansas City Royals",
         "team_id": 118,
@@ -967,6 +961,12 @@
         "team": "Kansas City Royals",
         "team_id": 118,
         "player_id": 608379
+    },
+    {
+        "player_name": "Nate Pearson",
+        "team": "Kansas City Royals",
+        "team_id": 118,
+        "player_id": 663878
     },
     {
         "player_name": "Nick Loftin",
@@ -1572,6 +1572,12 @@
         "team": "Chicago Cubs",
         "team_id": 112,
         "player_id": 657097
+    },
+    {
+        "player_name": "James Triantos",
+        "team": "Chicago Cubs",
+        "team_id": 112,
+        "player_id": 701649
     },
     {
         "player_name": "Jameson Taillon",
@@ -3508,24 +3514,10 @@
         "fRBIpg": "0"
     },
     {
-        "player_name": "Rafael March\u00e1n",
+        "player_name": "Payton Henry",
         "team": "Philadelphia Phillies",
         "team_id": 143,
-        "player_id": 665561,
-        "position": "C",
-        "games_played": 32.0,
-        "H": 9.0,
-        "HR": 2.0,
-        "RBI": 6.0,
-        "HRpg": 0.062,
-        "fHRpg": "0",
-        "Hpg": 0.281,
-        "fHpg": "2/7",
-        "RBIpg": 0.188,
-        "fRBIpg": "1/5",
-        "HR24": 2,
-        "HR24pg": 0.05,
-        "fHR24pg": "0"
+        "player_id": 668721
     },
     {
         "player_name": "Seth Johnson",
@@ -5038,6 +5030,26 @@
         "player_id": 804267
     },
     {
+        "player_name": "Angel Mart\u00ednez",
+        "team": "Cleveland Guardians",
+        "team_id": 114,
+        "player_id": 682657,
+        "position": "LF",
+        "games_played": 66.0,
+        "H": 54.0,
+        "HR": 11.0,
+        "RBI": 33.0,
+        "HRpg": 0.167,
+        "fHRpg": "1/6",
+        "Hpg": 0.818,
+        "fHpg": "5/6",
+        "RBIpg": 0.5,
+        "fRBIpg": "1/2",
+        "HR24": 11,
+        "HR24pg": 0.08,
+        "fHR24pg": "1/7"
+    },
+    {
         "player_name": "Austin Hedges",
         "team": "Cleveland Guardians",
         "team_id": 114,
@@ -5116,26 +5128,6 @@
         "team": "Cleveland Guardians",
         "team_id": 114,
         "player_id": 670059
-    },
-    {
-        "player_name": "Daniel Schneemann",
-        "team": "Cleveland Guardians",
-        "team_id": 114,
-        "player_id": 682177,
-        "position": "CF",
-        "games_played": 83.0,
-        "H": 52.0,
-        "HR": 6.0,
-        "RBI": 28.0,
-        "HRpg": 0.072,
-        "fHRpg": "0",
-        "Hpg": 0.627,
-        "fHpg": "3/5",
-        "RBIpg": 0.337,
-        "fRBIpg": "1/3",
-        "HR24": 12,
-        "HR24pg": 0.09,
-        "fHR24pg": "1/7"
     },
     {
         "player_name": "David Fry",
@@ -5358,6 +5350,12 @@
         "player_id": 676440
     },
     {
+        "player_name": "Tim Herrin",
+        "team": "Cleveland Guardians",
+        "team_id": 114,
+        "player_id": 682120
+    },
+    {
         "player_name": "Travis Bazzana",
         "team": "Cleveland Guardians",
         "team_id": 114,
@@ -5373,12 +5371,6 @@
         "fHpg": "6/7",
         "RBIpg": 0.458,
         "fRBIpg": "3/7"
-    },
-    {
-        "player_name": "Will Dion",
-        "team": "Cleveland Guardians",
-        "team_id": 114,
-        "player_id": 702021
     },
     {
         "player_name": "Ben Williamson",
@@ -8738,6 +8730,12 @@
         "team": "Athletics",
         "team_id": 133,
         "player_id": 665622
+    },
+    {
+        "player_name": "Luis Morales",
+        "team": "Athletics",
+        "team_id": 133,
+        "player_id": 806960
     },
     {
         "player_name": "Mason Barnett",
