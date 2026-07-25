@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-25T17:10:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Kansas City Royals",
         "home_name": "Detroit Tigers",
         "away_id": 118,
@@ -23,7 +23,7 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "DET leads 2-0",
-        "summary": "2026-07-25 - Kansas City Royals @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-07-25 - Kansas City Royals @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 822704,
@@ -41,10 +41,10 @@
         "away_probable_pitcher": "Mitch Bratt",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
@@ -82,7 +82,7 @@
         "game_datetime": "2026-07-25T20:10:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "Boston Red Sox",
         "away_id": 141,
@@ -100,8 +100,8 @@
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-25 - Toronto Blue Jays @ Boston Red Sox (Scheduled)"
+        "series_status": "BOS leads 1-0",
+        "summary": "2026-07-25 - Toronto Blue Jays @ Boston Red Sox (Pre-Game)"
     },
     {
         "game_id": 823841,
