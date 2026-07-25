@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-25T17:10:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Kansas City Royals",
         "home_name": "Detroit Tigers",
         "away_id": 118,
@@ -15,15 +15,20 @@
         "away_probable_pitcher": "Michael Wacha",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 3,
         "home_score": 2,
-        "current_inning": 6,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": "DET leads 2-0",
-        "summary": "2026-07-25 - Kansas City Royals (1) @ Detroit Tigers (2) (Bottom of the 6th)"
+        "series_status": "DET leads 2-1",
+        "winning_team": "Kansas City Royals",
+        "losing_team": "Detroit Tigers",
+        "winning_pitcher": "Daniel Lynch IV",
+        "losing_pitcher": "Jacob Waguespack",
+        "save_pitcher": "Alex Lange",
+        "summary": "2026-07-25 - Kansas City Royals (3) @ Detroit Tigers (2) (Game Over)"
     },
     {
         "game_id": 822704,
@@ -147,10 +152,10 @@
         "away_probable_pitcher": "Ryan Weathers",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
@@ -173,10 +178,10 @@
         "away_probable_pitcher": "Tanner Bibee",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
@@ -214,7 +219,7 @@
         "game_datetime": "2026-07-25T23:05:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Atlanta Braves",
         "home_name": "Baltimore Orioles",
         "away_id": 144,
@@ -225,22 +230,22 @@
         "away_probable_pitcher": "Bryce Elder",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-25 - Atlanta Braves @ Baltimore Orioles (Scheduled)"
+        "series_status": "ATL leads 1-0",
+        "summary": "2026-07-25 - Atlanta Braves @ Baltimore Orioles (Pre-Game)"
     },
     {
         "game_id": 823679,
         "game_datetime": "2026-07-25T23:10:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Athletics",
         "home_name": "Minnesota Twins",
         "away_id": 133,
@@ -259,14 +264,14 @@
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "ATH leads 1-0",
-        "summary": "2026-07-25 - Athletics @ Minnesota Twins (Scheduled)"
+        "summary": "2026-07-25 - Athletics @ Minnesota Twins (Pre-Game)"
     },
     {
         "game_id": 824571,
         "game_datetime": "2026-07-25T23:10:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Houston Astros",
         "home_name": "Chicago White Sox",
         "away_id": 117,
@@ -284,8 +289,8 @@
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-25 - Houston Astros @ Chicago White Sox (Scheduled)"
+        "series_status": "HOU leads 1-0",
+        "summary": "2026-07-25 - Houston Astros @ Chicago White Sox (Pre-Game)"
     },
     {
         "game_id": 823758,
@@ -318,7 +323,7 @@
         "game_datetime": "2026-07-25T23:15:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Dodgers",
         "home_name": "New York Mets",
         "away_id": 119,
@@ -338,8 +343,8 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": null,
-        "summary": "2026-07-25 - Los Angeles Dodgers @ New York Mets (Scheduled)"
+        "series_status": "LAD leads 1-0",
+        "summary": "2026-07-25 - Los Angeles Dodgers @ New York Mets (Pre-Game)"
     },
     {
         "game_id": 823027,
@@ -372,7 +377,7 @@
         "game_datetime": "2026-07-25T23:15:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "Texas Rangers",
         "away_id": 136,
@@ -392,7 +397,7 @@
         "national_broadcasts": [
             "FOX"
         ],
-        "series_status": null,
-        "summary": "2026-07-25 - Seattle Mariners @ Texas Rangers (Scheduled)"
+        "series_status": "TEX leads 1-0",
+        "summary": "2026-07-25 - Seattle Mariners @ Texas Rangers (Pre-Game)"
     }
 ]
