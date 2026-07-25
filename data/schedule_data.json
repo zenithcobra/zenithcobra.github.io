@@ -35,7 +35,7 @@
         "game_datetime": "2026-07-25T20:05:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Washington Nationals",
         "away_id": 109,
@@ -48,20 +48,25 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 5,
-        "current_inning": 8,
-        "inning_state": "Middle",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
-        "series_status": "AZ leads 1-0",
-        "summary": "2026-07-25 - Arizona Diamondbacks (3) @ Washington Nationals (5) (Middle of the 8th)"
+        "series_status": "Series tied 1-1",
+        "winning_team": "Washington Nationals",
+        "losing_team": "Arizona Diamondbacks",
+        "winning_pitcher": "Foster Griffin",
+        "losing_pitcher": "Mitch Bratt",
+        "save_pitcher": "Clayton Beeter",
+        "summary": "2026-07-25 - Arizona Diamondbacks (3) @ Washington Nationals (5) (Game Over)"
     },
     {
         "game_id": 823197,
         "game_datetime": "2026-07-25T20:05:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "Umpire review",
+        "status": "Game Over",
         "away_name": "Los Angeles Angels",
         "home_name": "San Francisco Giants",
         "away_id": 108,
@@ -72,22 +77,27 @@
         "away_probable_pitcher": "Ryan Johnson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 9,
         "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": "SF leads 1-0",
-        "summary": "2026-07-25 - Los Angeles Angels @ San Francisco Giants (Umpire review)"
+        "series_status": "SF wins 2-0",
+        "winning_team": "San Francisco Giants",
+        "losing_team": "Los Angeles Angels",
+        "winning_pitcher": "Robbie Ray",
+        "losing_pitcher": "Ryan Johnson",
+        "save_pitcher": null,
+        "summary": "2026-07-25 - Los Angeles Angels (2) @ San Francisco Giants (9) (Game Over)"
     },
     {
         "game_id": 824734,
         "game_datetime": "2026-07-25T20:10:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Toronto Blue Jays",
         "home_name": "Boston Red Sox",
         "away_id": 141,
@@ -105,8 +115,13 @@
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
-        "series_status": "BOS leads 1-0",
-        "summary": "2026-07-25 - Toronto Blue Jays (6) @ Boston Red Sox (0) (Bottom of the 9th)"
+        "series_status": "Series tied 1-1",
+        "winning_team": "Toronto Blue Jays",
+        "losing_team": "Boston Red Sox",
+        "winning_pitcher": "Dylan Cease",
+        "losing_pitcher": "Sonny Gray",
+        "save_pitcher": null,
+        "summary": "2026-07-25 - Toronto Blue Jays (6) @ Boston Red Sox (0) (Final)"
     },
     {
         "game_id": 823841,
@@ -124,17 +139,17 @@
         "away_probable_pitcher": "Randy V\u00e1squez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
+        "away_score": 4,
         "home_score": 1,
-        "current_inning": 7,
-        "inning_state": "Bottom",
+        "current_inning": 8,
+        "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [
             "FS1"
         ],
         "series_status": "SD leads 1-0",
-        "summary": "2026-07-25 - San Diego Padres (3) @ Miami Marlins (1) (Bottom of the 7th)"
+        "summary": "2026-07-25 - San Diego Padres (4) @ Miami Marlins (1) (Top of the 8th)"
     },
     {
         "game_id": 823435,
@@ -152,15 +167,15 @@
         "away_probable_pitcher": "Ryan Weathers",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 1,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-07-25 - New York Yankees (0) @ Philadelphia Phillies (1) (Bottom of the 2nd)"
+        "summary": "2026-07-25 - New York Yankees (1) @ Philadelphia Phillies (1) (Bottom of the 3rd)"
     },
     {
         "game_id": 822948,
@@ -180,20 +195,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "Middle",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-07-25 - Cleveland Guardians (0) @ Tampa Bay Rays (0) (Top of the 2nd)"
+        "summary": "2026-07-25 - Cleveland Guardians (0) @ Tampa Bay Rays (0) (Middle of the 3rd)"
     },
     {
         "game_id": 823355,
         "game_datetime": "2026-07-25T22:40:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Chicago Cubs",
         "home_name": "Pittsburgh Pirates",
         "away_id": 112,
@@ -207,19 +222,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "CHC leads 1-0",
-        "summary": "2026-07-25 - Chicago Cubs @ Pittsburgh Pirates (Warmup)"
+        "summary": "2026-07-25 - Chicago Cubs (0) @ Pittsburgh Pirates (0) (Middle of the 1st)"
     },
     {
         "game_id": 824811,
         "game_datetime": "2026-07-25T23:05:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Atlanta Braves",
         "home_name": "Baltimore Orioles",
         "away_id": 144,
@@ -238,14 +253,14 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "ATL leads 1-0",
-        "summary": "2026-07-25 - Atlanta Braves @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-07-25 - Atlanta Braves @ Baltimore Orioles (Warmup)"
     },
     {
         "game_id": 823679,
         "game_datetime": "2026-07-25T23:10:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Athletics",
         "home_name": "Minnesota Twins",
         "away_id": 133,
@@ -264,14 +279,14 @@
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "ATH leads 1-0",
-        "summary": "2026-07-25 - Athletics @ Minnesota Twins (Pre-Game)"
+        "summary": "2026-07-25 - Athletics @ Minnesota Twins (Warmup)"
     },
     {
         "game_id": 824571,
         "game_datetime": "2026-07-25T23:10:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Houston Astros",
         "home_name": "Chicago White Sox",
         "away_id": 117,
@@ -290,14 +305,14 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "HOU leads 1-0",
-        "summary": "2026-07-25 - Houston Astros @ Chicago White Sox (Pre-Game)"
+        "summary": "2026-07-25 - Houston Astros @ Chicago White Sox (Warmup)"
     },
     {
         "game_id": 823758,
         "game_datetime": "2026-07-25T23:10:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Colorado Rockies",
         "home_name": "Milwaukee Brewers",
         "away_id": 115,
@@ -316,14 +331,14 @@
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "COL leads 1-0",
-        "summary": "2026-07-25 - Colorado Rockies @ Milwaukee Brewers (Pre-Game)"
+        "summary": "2026-07-25 - Colorado Rockies @ Milwaukee Brewers (Warmup)"
     },
     {
         "game_id": 823600,
         "game_datetime": "2026-07-25T23:15:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Los Angeles Dodgers",
         "home_name": "New York Mets",
         "away_id": 119,
@@ -344,14 +359,14 @@
             "FOX"
         ],
         "series_status": "LAD leads 1-0",
-        "summary": "2026-07-25 - Los Angeles Dodgers @ New York Mets (Pre-Game)"
+        "summary": "2026-07-25 - Los Angeles Dodgers @ New York Mets (Warmup)"
     },
     {
         "game_id": 823027,
         "game_datetime": "2026-07-25T23:15:00Z",
         "game_date": "2026-07-25",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cincinnati Reds",
         "home_name": "St. Louis Cardinals",
         "away_id": 113,
@@ -370,7 +385,7 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "CIN leads 1-0",
-        "summary": "2026-07-25 - Cincinnati Reds @ St. Louis Cardinals (Pre-Game)"
+        "summary": "2026-07-25 - Cincinnati Reds @ St. Louis Cardinals (Warmup)"
     },
     {
         "game_id": 822869,
