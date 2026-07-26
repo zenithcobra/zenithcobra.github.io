@@ -58,7 +58,7 @@
         "game_datetime": "2026-07-26T17:35:00Z",
         "game_date": "2026-07-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Pittsburgh Pirates",
         "away_id": 112,
@@ -69,15 +69,15 @@
         "away_probable_pitcher": "Jameson Taillon",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-26 - Chicago Cubs @ Pittsburgh Pirates (Scheduled)"
+        "series_status": "CHC leads 2-0",
+        "summary": "2026-07-26 - Chicago Cubs @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 824730,
@@ -318,7 +318,7 @@
         "game_datetime": "2026-07-26T18:35:00Z",
         "game_date": "2026-07-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "Texas Rangers",
         "away_id": 136,
@@ -336,8 +336,8 @@
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-26 - Seattle Mariners @ Texas Rangers (Scheduled)"
+        "series_status": "TEX leads 2-0",
+        "summary": "2026-07-26 - Seattle Mariners @ Texas Rangers (Pre-Game)"
     },
     {
         "game_id": 823194,
