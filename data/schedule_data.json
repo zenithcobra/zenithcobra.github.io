@@ -17,15 +17,15 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [
             "NBCSN / Peacock"
         ],
         "series_status": "TB leads 2-0",
-        "summary": "2026-07-26 - Cleveland Guardians (0) @ Tampa Bay Rays (0) (Top of the 2nd)"
+        "summary": "2026-07-26 - Cleveland Guardians (0) @ Tampa Bay Rays (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 822706,
@@ -344,7 +344,7 @@
         "game_datetime": "2026-07-26T20:05:00Z",
         "game_date": "2026-07-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "San Francisco Giants",
         "away_id": 108,
@@ -362,8 +362,8 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": "SF leads 1-0",
-        "summary": "2026-07-26 - Los Angeles Angels @ San Francisco Giants (Scheduled)"
+        "series_status": "SF leads 2-0",
+        "summary": "2026-07-26 - Los Angeles Angels @ San Francisco Giants (Pre-Game)"
     },
     {
         "game_id": 823433,
