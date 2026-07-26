@@ -4,7 +4,7 @@
         "game_datetime": "2026-07-26T16:15:00Z",
         "game_date": "2026-07-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Tampa Bay Rays",
         "away_id": 114,
@@ -15,24 +15,24 @@
         "away_probable_pitcher": "Parker Messick",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [
             "NBCSN / Peacock"
         ],
-        "series_status": null,
-        "summary": "2026-07-26 - Cleveland Guardians @ Tampa Bay Rays (Scheduled)"
+        "series_status": "TB leads 2-0",
+        "summary": "2026-07-26 - Cleveland Guardians @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 822706,
         "game_datetime": "2026-07-26T17:35:00Z",
         "game_date": "2026-07-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Washington Nationals",
         "away_id": 109,
@@ -50,8 +50,8 @@
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-26 - Arizona Diamondbacks @ Washington Nationals (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-07-26 - Arizona Diamondbacks @ Washington Nationals (Pre-Game)"
     },
     {
         "game_id": 823354,
@@ -232,7 +232,7 @@
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
-        "series_status": "ATH leads 1-0",
+        "series_status": "Series tied 1-1",
         "summary": "2026-07-26 - Athletics @ Minnesota Twins (Scheduled)"
     },
     {
@@ -258,7 +258,7 @@
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "HOU leads 1-0",
         "summary": "2026-07-26 - Houston Astros @ Chicago White Sox (Scheduled)"
     },
     {
@@ -284,7 +284,7 @@
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "COL leads 1-0",
         "summary": "2026-07-26 - Colorado Rockies @ Milwaukee Brewers (Scheduled)"
     },
     {
@@ -362,7 +362,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": "SF leads 1-0",
+        "series_status": "SF leads 2-0",
         "summary": "2026-07-26 - Los Angeles Angels @ San Francisco Giants (Scheduled)"
     },
     {
@@ -390,7 +390,7 @@
         "national_broadcasts": [
             "NBC/Peacock"
         ],
-        "series_status": null,
+        "series_status": "NYY leads 1-0",
         "summary": "2026-07-26 - New York Yankees @ Philadelphia Phillies (Scheduled)"
     }
 ]
