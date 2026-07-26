@@ -254,7 +254,7 @@
         "game_datetime": "2026-07-26T18:10:00Z",
         "game_date": "2026-07-26",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Athletics",
         "home_name": "Minnesota Twins",
         "away_id": 133,
@@ -278,7 +278,7 @@
         "winning_pitcher": "Connor Prielipp",
         "losing_pitcher": "Jeffrey Springs",
         "save_pitcher": null,
-        "summary": "2026-07-26 - Athletics (8) @ Minnesota Twins (11) (Game Over)"
+        "summary": "2026-07-26 - Athletics (8) @ Minnesota Twins (11) (Final)"
     },
     {
         "game_id": 824572,
@@ -347,7 +347,7 @@
         "game_datetime": "2026-07-26T18:15:00Z",
         "game_date": "2026-07-26",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Cincinnati Reds",
         "home_name": "St. Louis Cardinals",
         "away_id": 113,
@@ -371,14 +371,14 @@
         "winning_pitcher": "Brock Burke",
         "losing_pitcher": "Matt Svanson",
         "save_pitcher": "Julian Garcia",
-        "summary": "2026-07-26 - Cincinnati Reds (5) @ St. Louis Cardinals (3) (Game Over)"
+        "summary": "2026-07-26 - Cincinnati Reds (5) @ St. Louis Cardinals (3) (Final)"
     },
     {
         "game_id": 822870,
         "game_datetime": "2026-07-26T18:35:00Z",
         "game_date": "2026-07-26",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Seattle Mariners",
         "home_name": "Texas Rangers",
         "away_id": 136,
@@ -389,15 +389,20 @@
         "away_probable_pitcher": "Logan Gilbert",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 5,
+        "away_score": 6,
         "home_score": 4,
         "current_inning": 9,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": "TEX leads 2-0",
-        "summary": "2026-07-26 - Seattle Mariners (5) @ Texas Rangers (4) (Top of the 9th)"
+        "series_status": "TEX leads 2-1",
+        "winning_team": "Seattle Mariners",
+        "losing_team": "Texas Rangers",
+        "winning_pitcher": "Gabe Speier",
+        "losing_pitcher": "Cole Winn",
+        "save_pitcher": "Andr\u00e9s Mu\u00f1oz",
+        "summary": "2026-07-26 - Seattle Mariners (6) @ Texas Rangers (4) (Final)"
     },
     {
         "game_id": 823194,
@@ -417,13 +422,13 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 1,
-        "current_inning": 6,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "SF leads 2-0",
-        "summary": "2026-07-26 - Los Angeles Angels (4) @ San Francisco Giants (1) (Top of the 6th)"
+        "summary": "2026-07-26 - Los Angeles Angels (4) @ San Francisco Giants (1) (Top of the 7th)"
     },
     {
         "game_id": 823433,
