@@ -35,7 +35,7 @@
         "game_datetime": "2026-07-27T22:40:00Z",
         "game_date": "2026-07-27",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Baltimore Orioles",
         "home_name": "Detroit Tigers",
         "away_id": 110,
@@ -54,14 +54,14 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-27 - Baltimore Orioles @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-07-27 - Baltimore Orioles @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 823353,
         "game_datetime": "2026-07-27T22:40:00Z",
         "game_date": "2026-07-27",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Pittsburgh Pirates",
         "away_id": 109,
@@ -80,14 +80,14 @@
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-27 - Arizona Diamondbacks @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-07-27 - Arizona Diamondbacks @ Pittsburgh Pirates (Warmup)"
     },
     {
         "game_id": 823839,
         "game_datetime": "2026-07-27T22:40:00Z",
         "game_date": "2026-07-27",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Philadelphia Phillies",
         "home_name": "Miami Marlins",
         "away_id": 143,
@@ -106,14 +106,14 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-27 - Philadelphia Phillies @ Miami Marlins (Pre-Game)"
+        "summary": "2026-07-27 - Philadelphia Phillies @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 822705,
         "game_datetime": "2026-07-27T22:45:00Z",
         "game_date": "2026-07-27",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Toronto Blue Jays",
         "home_name": "Washington Nationals",
         "away_id": 141,
@@ -132,14 +132,14 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-27 - Toronto Blue Jays @ Washington Nationals (Pre-Game)"
+        "summary": "2026-07-27 - Toronto Blue Jays @ Washington Nationals (Warmup)"
     },
     {
         "game_id": 824490,
         "game_datetime": "2026-07-27T23:10:00Z",
         "game_date": "2026-07-27",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "away_name": "Cleveland Guardians",
         "home_name": "Cincinnati Reds",
         "away_id": 114,
@@ -160,7 +160,7 @@
             "ESPN/ESPN App"
         ],
         "series_status": null,
-        "summary": "2026-07-27 - Cleveland Guardians @ Cincinnati Reds (Pre-Game)"
+        "summary": "2026-07-27 - Cleveland Guardians @ Cincinnati Reds (Delayed Start)"
     },
     {
         "game_id": 823597,
@@ -282,10 +282,10 @@
         "away_probable_pitcher": "Payton Tolle",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
@@ -308,10 +308,10 @@
         "away_probable_pitcher": "Brandon Sproat",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
