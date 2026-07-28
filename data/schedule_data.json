@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 4,
-        "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Middle",
+        "home_score": 1,
+        "current_inning": 4,
+        "inning_state": "Bottom",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-28 - Cleveland Guardians (4) @ Cincinnati Reds (0) (Middle of the 3rd)"
+        "summary": "2026-07-28 - Cleveland Guardians (4) @ Cincinnati Reds (1) (Bottom of the 4th)"
     },
     {
         "game_id": 824489,
@@ -82,7 +82,7 @@
         "game_datetime": "2026-07-28T22:40:00Z",
         "game_date": "2026-07-28",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Pittsburgh Pirates",
         "away_id": 109,
@@ -100,8 +100,8 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-28 - Arizona Diamondbacks @ Pittsburgh Pirates (Scheduled)"
+        "series_status": "PIT leads 1-0",
+        "summary": "2026-07-28 - Arizona Diamondbacks @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 822949,
@@ -152,7 +152,7 @@
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "MIA leads 1-0",
         "summary": "2026-07-28 - Philadelphia Phillies @ Miami Marlins (Pre-Game)"
     },
     {
