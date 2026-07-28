@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "Middle",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-28 - Cleveland Guardians (4) @ Cincinnati Reds (0) (Bottom of the 1st)"
+        "summary": "2026-07-28 - Cleveland Guardians (4) @ Cincinnati Reds (0) (Middle of the 3rd)"
     },
     {
         "game_id": 824489,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-07-28T22:40:00Z",
         "game_date": "2026-07-28",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Texas Rangers",
         "home_name": "Tampa Bay Rays",
         "away_id": 140,
@@ -127,14 +127,14 @@
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-28 - Texas Rangers @ Tampa Bay Rays (Scheduled)"
+        "summary": "2026-07-28 - Texas Rangers @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 823838,
         "game_datetime": "2026-07-28T22:40:00Z",
         "game_date": "2026-07-28",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "Miami Marlins",
         "away_id": 143,
@@ -153,7 +153,7 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-28 - Philadelphia Phillies @ Miami Marlins (Scheduled)"
+        "summary": "2026-07-28 - Philadelphia Phillies @ Miami Marlins (Pre-Game)"
     },
     {
         "game_id": 822703,
@@ -362,7 +362,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "SF leads 1-0",
         "summary": "2026-07-28 - Milwaukee Brewers @ San Francisco Giants (Scheduled)"
     },
     {
