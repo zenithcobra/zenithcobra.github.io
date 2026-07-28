@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Slade Cecconi",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 5,
+        "away_score": 6,
         "home_score": 5,
-        "current_inning": 8,
-        "inning_state": "Top",
+        "current_inning": 9,
+        "inning_state": "Bottom",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-28 - Cleveland Guardians (5) @ Cincinnati Reds (5) (Top of the 8th)"
+        "summary": "2026-07-28 - Cleveland Guardians (6) @ Cincinnati Reds (5) (Bottom of the 9th)"
     },
     {
         "game_id": 824489,
@@ -318,7 +318,7 @@
         "game_datetime": "2026-07-29T01:40:00Z",
         "game_date": "2026-07-28",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "San Diego Padres",
         "away_id": 115,
@@ -337,7 +337,7 @@
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-28 - Colorado Rockies @ San Diego Padres (Scheduled)"
+        "summary": "2026-07-28 - Colorado Rockies @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 823193,
