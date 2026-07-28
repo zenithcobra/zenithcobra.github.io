@@ -61,7 +61,7 @@
         "game_datetime": "2026-07-28T22:40:00Z",
         "game_date": "2026-07-28",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Baltimore Orioles",
         "home_name": "Detroit Tigers",
         "away_id": 110,
@@ -80,14 +80,14 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-07-28 - Baltimore Orioles @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-07-28 - Baltimore Orioles @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 823350,
         "game_datetime": "2026-07-28T22:40:00Z",
         "game_date": "2026-07-28",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Pittsburgh Pirates",
         "away_id": 109,
@@ -106,14 +106,14 @@
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "PIT leads 1-0",
-        "summary": "2026-07-28 - Arizona Diamondbacks @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-07-28 - Arizona Diamondbacks @ Pittsburgh Pirates (Warmup)"
     },
     {
         "game_id": 822949,
         "game_datetime": "2026-07-28T22:40:00Z",
         "game_date": "2026-07-28",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Texas Rangers",
         "home_name": "Tampa Bay Rays",
         "away_id": 140,
@@ -132,14 +132,14 @@
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-28 - Texas Rangers @ Tampa Bay Rays (Pre-Game)"
+        "summary": "2026-07-28 - Texas Rangers @ Tampa Bay Rays (Warmup)"
     },
     {
         "game_id": 823838,
         "game_datetime": "2026-07-28T22:40:00Z",
         "game_date": "2026-07-28",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Philadelphia Phillies",
         "home_name": "Miami Marlins",
         "away_id": 143,
@@ -158,14 +158,14 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "MIA leads 1-0",
-        "summary": "2026-07-28 - Philadelphia Phillies @ Miami Marlins (Pre-Game)"
+        "summary": "2026-07-28 - Philadelphia Phillies @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 822703,
         "game_datetime": "2026-07-28T22:45:00Z",
         "game_date": "2026-07-28",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "away_name": "Toronto Blue Jays",
         "home_name": "Washington Nationals",
         "away_id": 141,
@@ -184,7 +184,7 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-07-28 - Toronto Blue Jays @ Washington Nationals (Pre-Game)"
+        "summary": "2026-07-28 - Toronto Blue Jays @ Washington Nationals (Delayed Start)"
     },
     {
         "game_id": 823676,
@@ -271,7 +271,7 @@
         "game_datetime": "2026-07-29T01:38:00Z",
         "game_date": "2026-07-28",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Houston Astros",
         "home_name": "Los Angeles Angels",
         "away_id": 117,
@@ -289,15 +289,15 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-28 - Houston Astros @ Los Angeles Angels (Scheduled)"
+        "series_status": "HOU leads 1-0",
+        "summary": "2026-07-28 - Houston Astros @ Los Angeles Angels (Pre-Game)"
     },
     {
         "game_id": 824976,
         "game_datetime": "2026-07-29T01:40:00Z",
         "game_date": "2026-07-28",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Athletics",
         "away_id": 111,
@@ -308,15 +308,15 @@
         "away_probable_pitcher": "Jake Bennett",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-28 - Boston Red Sox @ Athletics (Scheduled)"
+        "series_status": "BOS leads 1-0",
+        "summary": "2026-07-28 - Boston Red Sox @ Athletics (Pre-Game)"
     },
     {
         "game_id": 823275,
@@ -375,7 +375,7 @@
         "game_datetime": "2026-07-29T02:10:00Z",
         "game_date": "2026-07-28",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "Los Angeles Dodgers",
         "away_id": 136,
@@ -386,15 +386,15 @@
         "away_probable_pitcher": "Luis Castillo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-28 - Seattle Mariners @ Los Angeles Dodgers (Scheduled)"
+        "summary": "2026-07-28 - Seattle Mariners @ Los Angeles Dodgers (Pre-Game)"
     },
     {
         "game_id": 823598,
