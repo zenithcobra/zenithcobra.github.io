@@ -35,7 +35,7 @@
         "game_datetime": "2026-07-29T16:35:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Pittsburgh Pirates",
         "away_id": 109,
@@ -59,7 +59,7 @@
         "winning_pitcher": "Eduardo Rodriguez",
         "losing_pitcher": "Jared Jones",
         "save_pitcher": "Brandyn Garcia",
-        "summary": "2026-07-29 - Arizona Diamondbacks (3) @ Pittsburgh Pirates (0) (Game Over)"
+        "summary": "2026-07-29 - Arizona Diamondbacks (3) @ Pittsburgh Pirates (0) (Final)"
     },
     {
         "game_id": 822702,
@@ -77,15 +77,15 @@
         "away_probable_pitcher": "Trey Yesavage",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 5,
         "home_score": 1,
-        "current_inning": 6,
-        "inning_state": "Bottom",
+        "current_inning": 8,
+        "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-29 - Toronto Blue Jays (1) @ Washington Nationals (1) (Bottom of the 6th)"
+        "summary": "2026-07-29 - Toronto Blue Jays (5) @ Washington Nationals (1) (Top of the 8th)"
     },
     {
         "game_id": 824242,
@@ -103,15 +103,15 @@
         "away_probable_pitcher": "Trevor Rogers",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 7,
         "home_score": 7,
-        "current_inning": 7,
+        "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-29 - Baltimore Orioles (1) @ Detroit Tigers (7) (Top of the 7th)"
+        "summary": "2026-07-29 - Baltimore Orioles (7) @ Detroit Tigers (7) (Top of the 9th)"
     },
     {
         "game_id": 823596,
@@ -130,14 +130,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 2,
-        "current_inning": 6,
-        "inning_state": "Bottom",
+        "home_score": 3,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": "NYM leads 1-0",
-        "summary": "2026-07-29 - Atlanta Braves (2) @ New York Mets (2) (Bottom of the 6th)"
+        "summary": "2026-07-29 - Atlanta Braves (2) @ New York Mets (3) (Top of the 9th)"
     },
     {
         "game_id": 823598,
@@ -170,7 +170,7 @@
         "game_datetime": "2026-07-29T19:45:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Milwaukee Brewers",
         "home_name": "San Francisco Giants",
         "away_id": 158,
@@ -189,7 +189,7 @@
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-29 - Milwaukee Brewers @ San Francisco Giants (Pre-Game)"
+        "summary": "2026-07-29 - Milwaukee Brewers @ San Francisco Giants (Warmup)"
     },
     {
         "game_id": 823273,
@@ -207,10 +207,10 @@
         "away_probable_pitcher": "Gabriel Hughes",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
@@ -233,10 +233,10 @@
         "away_probable_pitcher": "MacKenzie Gore",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
@@ -248,7 +248,7 @@
         "game_datetime": "2026-07-29T23:10:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Cincinnati Reds",
         "away_id": 114,
@@ -266,8 +266,8 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-29 - Cleveland Guardians @ Cincinnati Reds (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-07-29 - Cleveland Guardians @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 823677,
@@ -320,7 +320,7 @@
         "national_broadcasts": [
             "MLB Network"
         ],
-        "series_status": null,
+        "series_status": "NYY leads 1-0",
         "summary": "2026-07-29 - New York Yankees @ Chicago White Sox (Scheduled)"
     },
     {
@@ -398,7 +398,7 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "BOS leads 1-0",
         "summary": "2026-07-29 - Boston Red Sox @ Athletics (Scheduled)"
     },
     {
