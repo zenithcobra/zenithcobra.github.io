@@ -78,14 +78,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 5,
-        "home_score": 1,
-        "current_inning": 8,
+        "home_score": 2,
+        "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-29 - Toronto Blue Jays (5) @ Washington Nationals (1) (Top of the 8th)"
+        "summary": "2026-07-29 - Toronto Blue Jays (5) @ Washington Nationals (2) (Top of the 9th)"
     },
     {
         "game_id": 824242,
@@ -105,20 +105,20 @@
         "away_pitcher_note": "",
         "away_score": 7,
         "home_score": 7,
-        "current_inning": 9,
-        "inning_state": "Top",
+        "current_inning": 10,
+        "inning_state": "Bottom",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-29 - Baltimore Orioles (7) @ Detroit Tigers (7) (Top of the 9th)"
+        "summary": "2026-07-29 - Baltimore Orioles (7) @ Detroit Tigers (7) (Bottom of the 10th)"
     },
     {
         "game_id": 823596,
         "game_datetime": "2026-07-29T17:10:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Atlanta Braves",
         "home_name": "New York Mets",
         "away_id": 144,
@@ -136,8 +136,13 @@
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
-        "series_status": "NYM leads 1-0",
-        "summary": "2026-07-29 - Atlanta Braves (2) @ New York Mets (3) (Top of the 9th)"
+        "series_status": "NYM wins 2-0",
+        "winning_team": "New York Mets",
+        "losing_team": "Atlanta Braves",
+        "winning_pitcher": "Huascar Brazob\u00e1n",
+        "losing_pitcher": "Dylan Dodd",
+        "save_pitcher": "Devin Williams",
+        "summary": "2026-07-29 - Atlanta Braves (2) @ New York Mets (3) (Final)"
     },
     {
         "game_id": 823598,
@@ -170,7 +175,7 @@
         "game_datetime": "2026-07-29T19:45:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Milwaukee Brewers",
         "home_name": "San Francisco Giants",
         "away_id": 158,
@@ -184,19 +189,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-29 - Milwaukee Brewers @ San Francisco Giants (Warmup)"
+        "summary": "2026-07-29 - Milwaukee Brewers (0) @ San Francisco Giants (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823273,
         "game_datetime": "2026-07-29T20:10:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Colorado Rockies",
         "home_name": "San Diego Padres",
         "away_id": 115,
@@ -215,7 +220,7 @@
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "SD leads 1-0",
-        "summary": "2026-07-29 - Colorado Rockies @ San Diego Padres (Pre-Game)"
+        "summary": "2026-07-29 - Colorado Rockies @ San Diego Padres (Warmup)"
     },
     {
         "game_id": 822947,
@@ -259,10 +264,10 @@
         "away_probable_pitcher": "Joey Cantillo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
@@ -300,7 +305,7 @@
         "game_datetime": "2026-07-29T23:40:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Yankees",
         "home_name": "Chicago White Sox",
         "away_id": 147,
@@ -320,8 +325,8 @@
         "national_broadcasts": [
             "MLB Network"
         ],
-        "series_status": "NYY leads 1-0",
-        "summary": "2026-07-29 - New York Yankees @ Chicago White Sox (Scheduled)"
+        "series_status": "NYY leads 2-0",
+        "summary": "2026-07-29 - New York Yankees @ Chicago White Sox (Pre-Game)"
     },
     {
         "game_id": 823022,
@@ -398,7 +403,7 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": "BOS leads 1-0",
+        "series_status": null,
         "summary": "2026-07-29 - Boston Red Sox @ Athletics (Scheduled)"
     },
     {
