@@ -159,7 +159,7 @@
         "game_datetime": "2026-07-29T23:10:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Atlanta Braves",
         "home_name": "New York Mets",
         "away_id": 144,
@@ -172,20 +172,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": "NYM leads 2-0",
-        "summary": "2026-07-29 - Atlanta Braves @ New York Mets (Warmup)"
+        "summary": "2026-07-29 - Atlanta Braves (0) @ New York Mets (0) (Top of the 2nd)"
     },
     {
         "game_id": 823192,
         "game_datetime": "2026-07-29T19:45:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Milwaukee Brewers",
         "home_name": "San Francisco Giants",
         "away_id": 158,
@@ -209,14 +209,14 @@
         "winning_pitcher": "Logan Webb",
         "losing_pitcher": "Thomas Pannone",
         "save_pitcher": null,
-        "summary": "2026-07-29 - Milwaukee Brewers (3) @ San Francisco Giants (16) (Game Over)"
+        "summary": "2026-07-29 - Milwaukee Brewers (3) @ San Francisco Giants (16) (Final)"
     },
     {
         "game_id": 823273,
         "game_datetime": "2026-07-29T20:10:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Colorado Rockies",
         "home_name": "San Diego Padres",
         "away_id": 115,
@@ -240,7 +240,7 @@
         "winning_pitcher": "Griffin Canning",
         "losing_pitcher": "Gabriel Hughes",
         "save_pitcher": "Mason Miller",
-        "summary": "2026-07-29 - Colorado Rockies (1) @ San Diego Padres (3) (Game Over)"
+        "summary": "2026-07-29 - Colorado Rockies (1) @ San Diego Padres (3) (Final)"
     },
     {
         "game_id": 822947,
@@ -259,21 +259,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 1,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "home_score": 3,
+        "current_inning": 4,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TEX leads 1-0",
-        "summary": "2026-07-29 - Texas Rangers (0) @ Tampa Bay Rays (1) (Bottom of the 1st)"
+        "summary": "2026-07-29 - Texas Rangers (0) @ Tampa Bay Rays (3) (Top of the 4th)"
     },
     {
         "game_id": 824487,
         "game_datetime": "2026-07-29T23:10:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Cleveland Guardians",
         "home_name": "Cincinnati Reds",
         "away_id": 114,
@@ -287,19 +287,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-29 - Cleveland Guardians @ Cincinnati Reds (Warmup)"
+        "summary": "2026-07-29 - Cleveland Guardians (0) @ Cincinnati Reds (0) (End of the 1st)"
     },
     {
         "game_id": 823677,
         "game_datetime": "2026-07-29T23:40:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Kansas City Royals",
         "home_name": "Minnesota Twins",
         "away_id": 118,
@@ -318,14 +318,14 @@
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "MIN leads 1-0",
-        "summary": "2026-07-29 - Kansas City Royals @ Minnesota Twins (Pre-Game)"
+        "summary": "2026-07-29 - Kansas City Royals @ Minnesota Twins (Warmup)"
     },
     {
         "game_id": 824567,
         "game_datetime": "2026-07-29T23:40:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Yankees",
         "home_name": "Chicago White Sox",
         "away_id": 147,
@@ -346,14 +346,14 @@
             "MLB Network"
         ],
         "series_status": "NYY leads 2-0",
-        "summary": "2026-07-29 - New York Yankees @ Chicago White Sox (Pre-Game)"
+        "summary": "2026-07-29 - New York Yankees @ Chicago White Sox (Warmup)"
     },
     {
         "game_id": 823022,
         "game_datetime": "2026-07-29T23:45:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago Cubs",
         "home_name": "St. Louis Cardinals",
         "away_id": 112,
@@ -372,7 +372,7 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "CHC leads 2-0",
-        "summary": "2026-07-29 - Chicago Cubs @ St. Louis Cardinals (Pre-Game)"
+        "summary": "2026-07-29 - Chicago Cubs @ St. Louis Cardinals (Warmup)"
     },
     {
         "game_id": 824002,
