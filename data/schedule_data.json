@@ -197,14 +197,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 3,
+        "home_score": 8,
         "current_inning": 6,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-29 - Milwaukee Brewers (2) @ San Francisco Giants (3) (Top of the 6th)"
+        "summary": "2026-07-29 - Milwaukee Brewers (2) @ San Francisco Giants (8) (Bottom of the 6th)"
     },
     {
         "game_id": 823273,
@@ -224,13 +224,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 3,
-        "current_inning": 5,
-        "inning_state": "Top",
+        "current_inning": 6,
+        "inning_state": "Middle",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "SD leads 1-0",
-        "summary": "2026-07-29 - Colorado Rockies (0) @ San Diego Padres (3) (Top of the 5th)"
+        "summary": "2026-07-29 - Colorado Rockies (0) @ San Diego Padres (3) (Middle of the 6th)"
     },
     {
         "game_id": 822947,
@@ -369,7 +369,7 @@
         "game_datetime": "2026-07-30T01:38:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Houston Astros",
         "home_name": "Los Angeles Angels",
         "away_id": 117,
@@ -387,15 +387,15 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": "HOU leads 1-0",
-        "summary": "2026-07-29 - Houston Astros @ Los Angeles Angels (Scheduled)"
+        "series_status": "HOU leads 2-0",
+        "summary": "2026-07-29 - Houston Astros @ Los Angeles Angels (Pre-Game)"
     },
     {
         "game_id": 824973,
         "game_datetime": "2026-07-30T01:40:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Athletics",
         "away_id": 111,
@@ -413,8 +413,8 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-07-29 - Boston Red Sox @ Athletics (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-07-29 - Boston Red Sox @ Athletics (Pre-Game)"
     },
     {
         "game_id": 823924,
