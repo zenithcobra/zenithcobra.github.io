@@ -172,13 +172,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": "NYM leads 2-0",
-        "summary": "2026-07-29 - Atlanta Braves (0) @ New York Mets (0) (Top of the 2nd)"
+        "summary": "2026-07-29 - Atlanta Braves (0) @ New York Mets (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 823192,
@@ -260,13 +260,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 3,
-        "current_inning": 4,
-        "inning_state": "Top",
+        "current_inning": 5,
+        "inning_state": "Middle",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TEX leads 1-0",
-        "summary": "2026-07-29 - Texas Rangers (0) @ Tampa Bay Rays (3) (Top of the 4th)"
+        "summary": "2026-07-29 - Texas Rangers (0) @ Tampa Bay Rays (3) (Middle of the 5th)"
     },
     {
         "game_id": 824487,
@@ -286,20 +286,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "End",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-07-29 - Cleveland Guardians (0) @ Cincinnati Reds (0) (End of the 1st)"
+        "summary": "2026-07-29 - Cleveland Guardians (0) @ Cincinnati Reds (0) (End of the 2nd)"
     },
     {
         "game_id": 823677,
         "game_datetime": "2026-07-29T23:40:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Kansas City Royals",
         "home_name": "Minnesota Twins",
         "away_id": 118,
@@ -313,19 +313,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "MIN leads 1-0",
-        "summary": "2026-07-29 - Kansas City Royals @ Minnesota Twins (Warmup)"
+        "summary": "2026-07-29 - Kansas City Royals (0) @ Minnesota Twins (0) (Middle of the 1st)"
     },
     {
         "game_id": 824567,
         "game_datetime": "2026-07-29T23:40:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "New York Yankees",
         "home_name": "Chicago White Sox",
         "away_id": 147,
@@ -336,7 +336,7 @@
         "away_probable_pitcher": "Cam Schlittler",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 4,
         "home_score": 0,
         "current_inning": 1,
         "inning_state": "Top",
@@ -346,14 +346,14 @@
             "MLB Network"
         ],
         "series_status": "NYY leads 2-0",
-        "summary": "2026-07-29 - New York Yankees @ Chicago White Sox (Warmup)"
+        "summary": "2026-07-29 - New York Yankees (4) @ Chicago White Sox (0) (Top of the 1st)"
     },
     {
         "game_id": 823022,
         "game_datetime": "2026-07-29T23:45:00Z",
         "game_date": "2026-07-29",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Chicago Cubs",
         "home_name": "St. Louis Cardinals",
         "away_id": 112,
@@ -372,7 +372,7 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "CHC leads 2-0",
-        "summary": "2026-07-29 - Chicago Cubs @ St. Louis Cardinals (Warmup)"
+        "summary": "2026-07-29 - Chicago Cubs (0) @ St. Louis Cardinals (0) (Top of the 1st)"
     },
     {
         "game_id": 824002,
