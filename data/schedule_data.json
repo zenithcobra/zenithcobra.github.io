@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-31 - New York Yankees (0) @ Chicago Cubs (0) (Top of the 2nd)"
+        "summary": "2026-07-31 - New York Yankees (0) @ Chicago Cubs (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 824486,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-07-31T23:10:00Z",
         "game_date": "2026-07-31",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Cleveland Guardians",
         "away_id": 109,
@@ -127,7 +127,7 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-07-31 - Arizona Diamondbacks @ Cleveland Guardians (Scheduled)"
+        "summary": "2026-07-31 - Arizona Diamondbacks @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 822945,
