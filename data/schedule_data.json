@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-01T19:07:00Z",
         "game_date": "2026-08-01",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "St. Louis Cardinals",
         "home_name": "Toronto Blue Jays",
         "away_id": 138,
@@ -23,7 +23,7 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-08-01 - St. Louis Cardinals @ Toronto Blue Jays (Pre-Game)"
+        "summary": "2026-08-01 - St. Louis Cardinals @ Toronto Blue Jays (Warmup)"
     },
     {
         "game_id": 823109,
@@ -128,7 +128,7 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": "CIN leads 1-0",
+        "series_status": null,
         "summary": "2026-08-01 - Pittsburgh Pirates @ Cincinnati Reds (Scheduled)"
     },
     {
@@ -136,7 +136,7 @@
         "game_datetime": "2026-08-01T23:05:00Z",
         "game_date": "2026-08-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "Baltimore Orioles",
         "away_id": 143,
@@ -155,7 +155,7 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-08-01 - Philadelphia Phillies @ Baltimore Orioles (Scheduled)"
+        "summary": "2026-08-01 - Philadelphia Phillies @ Baltimore Orioles (Pre-Game)"
     },
     {
         "game_id": 824162,
@@ -234,7 +234,7 @@
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
-        "series_status": "ATL leads 2-0",
+        "series_status": null,
         "summary": "2026-08-01 - Washington Nationals @ Atlanta Braves (Scheduled)"
     },
     {
@@ -314,7 +314,7 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": "SF leads 1-0",
+        "series_status": "Series tied 1-1",
         "summary": "2026-08-01 - San Francisco Giants @ San Diego Padres (Scheduled)"
     },
     {
