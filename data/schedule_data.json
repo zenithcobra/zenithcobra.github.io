@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 5,
-        "current_inning": 7,
-        "inning_state": "End",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-08-01 - St. Louis Cardinals (1) @ Toronto Blue Jays (5) (End of the 7th)"
+        "summary": "2026-08-01 - St. Louis Cardinals (1) @ Toronto Blue Jays (5) (Top of the 9th)"
     },
     {
         "game_id": 823109,
@@ -41,9 +41,9 @@
         "away_probable_pitcher": "Connor Prielipp",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 3,
-        "current_inning": 5,
+        "current_inning": 6,
         "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
@@ -51,7 +51,7 @@
             "FS1"
         ],
         "series_status": "MIN leads 1-0",
-        "summary": "2026-08-01 - Minnesota Twins (1) @ Seattle Mariners (3) (Top of the 5th)"
+        "summary": "2026-08-01 - Minnesota Twins (2) @ Seattle Mariners (3) (Top of the 6th)"
     },
     {
         "game_id": 822944,
@@ -71,13 +71,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 1,
-        "current_inning": 6,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-08-01 - Chicago White Sox (0) @ Tampa Bay Rays (1) (Top of the 6th)"
+        "summary": "2026-08-01 - Chicago White Sox (0) @ Tampa Bay Rays (1) (Top of the 7th)"
     },
     {
         "game_id": 823594,
@@ -95,15 +95,15 @@
         "away_probable_pitcher": "Tyler Phillips",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
+        "away_score": 4,
         "home_score": 2,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "current_inning": 4,
+        "inning_state": "End",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-01 - Miami Marlins (3) @ New York Mets (2) (Top of the 3rd)"
+        "summary": "2026-08-01 - Miami Marlins (4) @ New York Mets (2) (End of the 4th)"
     },
     {
         "game_id": 824485,
@@ -296,7 +296,7 @@
         "game_datetime": "2026-08-02T00:40:00Z",
         "game_date": "2026-08-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Francisco Giants",
         "home_name": "San Diego Padres",
         "away_id": 137,
@@ -315,7 +315,7 @@
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-01 - San Francisco Giants @ San Diego Padres (Scheduled)"
+        "summary": "2026-08-01 - San Francisco Giants @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 823920,
@@ -333,10 +333,10 @@
         "away_probable_pitcher": "Payton Tolle",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
@@ -374,7 +374,7 @@
         "game_datetime": "2026-08-02T01:40:00Z",
         "game_date": "2026-08-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Detroit Tigers",
         "home_name": "Athletics",
         "away_id": 116,
@@ -392,7 +392,7 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-01 - Detroit Tigers @ Athletics (Scheduled)"
+        "series_status": "DET leads 1-0",
+        "summary": "2026-08-01 - Detroit Tigers @ Athletics (Pre-Game)"
     }
 ]
