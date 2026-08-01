@@ -15,10 +15,10 @@
         "away_probable_pitcher": "Quinn Mathews",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
@@ -58,7 +58,7 @@
         "game_datetime": "2026-08-01T20:10:00Z",
         "game_date": "2026-08-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago White Sox",
         "home_name": "Tampa Bay Rays",
         "away_id": 145,
@@ -77,7 +77,7 @@
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-08-01 - Chicago White Sox @ Tampa Bay Rays (Scheduled)"
+        "summary": "2026-08-01 - Chicago White Sox @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 823594,
