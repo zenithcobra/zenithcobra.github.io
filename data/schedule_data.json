@@ -30,7 +30,7 @@
         "game_datetime": "2026-08-01T20:10:00Z",
         "game_date": "2026-08-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Seattle Mariners",
         "away_id": 142,
@@ -50,8 +50,8 @@
         "national_broadcasts": [
             "FS1"
         ],
-        "series_status": null,
-        "summary": "2026-08-01 - Minnesota Twins @ Seattle Mariners (Scheduled)"
+        "series_status": "MIN leads 1-0",
+        "summary": "2026-08-01 - Minnesota Twins @ Seattle Mariners (Pre-Game)"
     },
     {
         "game_id": 822944,
@@ -69,10 +69,10 @@
         "away_probable_pitcher": "Jordan Hicks",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
