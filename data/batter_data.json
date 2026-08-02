@@ -2593,6 +2593,12 @@
         "player_id": 670059
     },
     {
+        "player_name": "Craig Yoho",
+        "team": "Cleveland Guardians",
+        "team_id": 114,
+        "player_id": 684974
+    },
+    {
         "player_name": "David Fry",
         "team": "Cleveland Guardians",
         "team_id": 114,
@@ -2830,32 +2836,6 @@
         "fRBIpg": "3/7"
     },
     {
-        "player_name": "Will Dion",
-        "team": "Cleveland Guardians",
-        "team_id": 114,
-        "player_id": 702021
-    },
-    {
-        "player_name": "Billy Cook",
-        "team": "Pittsburgh Pirates",
-        "team_id": 134,
-        "player_id": 695257,
-        "position": "CF",
-        "games_played": 66.0,
-        "H": 9.0,
-        "HR": 0.0,
-        "RBI": 2.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.136,
-        "fHpg": "1/7",
-        "RBIpg": 0.03,
-        "fRBIpg": "0",
-        "HR24": 0,
-        "HR24pg": 0.0,
-        "fHR24pg": "0"
-    },
-    {
         "player_name": "Brandon Lowe",
         "team": "Pittsburgh Pirates",
         "team_id": 134,
@@ -2906,6 +2886,12 @@
         "team": "Pittsburgh Pirates",
         "team_id": 134,
         "player_id": 696149
+    },
+    {
+        "player_name": "Camilo Doval",
+        "team": "Pittsburgh Pirates",
+        "team_id": 134,
+        "player_id": 666808
     },
     {
         "player_name": "Carmen Mlodzinski",
@@ -2975,12 +2961,6 @@
         "HR24": 7,
         "HR24pg": 0.08,
         "fHR24pg": "1/7"
-    },
-    {
-        "player_name": "Isaac Mattson",
-        "team": "Pittsburgh Pirates",
-        "team_id": 134,
-        "player_id": 676755
     },
     {
         "player_name": "Jacob Gonzalez",
@@ -3154,6 +3134,26 @@
         "team": "Pittsburgh Pirates",
         "team_id": 134,
         "player_id": 676760
+    },
+    {
+        "player_name": "Spencer Horwitz",
+        "team": "Pittsburgh Pirates",
+        "team_id": 134,
+        "player_id": 687462,
+        "position": "1B",
+        "games_played": 74.0,
+        "H": 69.0,
+        "HR": 10.0,
+        "RBI": 33.0,
+        "HRpg": 0.135,
+        "fHRpg": "1/7",
+        "Hpg": 0.932,
+        "fHpg": "1",
+        "RBIpg": 0.446,
+        "fRBIpg": "3/7",
+        "HR24": 11,
+        "HR24pg": 0.1,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Wilber Dotel",
@@ -3624,6 +3624,12 @@
         "fHR24pg": "0"
     },
     {
+        "player_name": "Duncan Davitt",
+        "team": "Chicago White Sox",
+        "team_id": 145,
+        "player_id": 701474
+    },
+    {
         "player_name": "Edgar Quero",
         "team": "Chicago White Sox",
         "team_id": 145,
@@ -3680,12 +3686,6 @@
         "team": "Chicago White Sox",
         "team_id": 145,
         "player_id": 663855
-    },
-    {
-        "player_name": "Luis Castillo",
-        "team": "Chicago White Sox",
-        "team_id": 145,
-        "player_id": 622491
     },
     {
         "player_name": "Luisangel Acu\u00f1a",
@@ -4604,6 +4604,12 @@
         "player_id": 548384
     },
     {
+        "player_name": "Bryce Conley",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 676785
+    },
+    {
         "player_name": "Carson Benge",
         "team": "New York Mets",
         "team_id": 121,
@@ -4768,12 +4774,6 @@
         "fHR24pg": "1/5"
     },
     {
-        "player_name": "Kevin Herget",
-        "team": "New York Mets",
-        "team_id": 121,
-        "player_id": 643361
-    },
-    {
         "player_name": "Kodai Senga",
         "team": "New York Mets",
         "team_id": 121,
@@ -4861,6 +4861,12 @@
         "team": "New York Mets",
         "team_id": 121,
         "player_id": 690997
+    },
+    {
+        "player_name": "Robert Stock",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 476594
     },
     {
         "player_name": "Sean Manaea",
