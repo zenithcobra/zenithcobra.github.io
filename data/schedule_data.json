@@ -353,15 +353,15 @@
         "away_probable_pitcher": "Keider Montero",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 6,
+        "away_score": 9,
         "home_score": 0,
-        "current_inning": 7,
-        "inning_state": "Bottom",
+        "current_inning": 8,
+        "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "DET leads 2-0",
-        "summary": "2026-08-02 - Detroit Tigers (6) @ Athletics (0) (Bottom of the 7th)"
+        "summary": "2026-08-02 - Detroit Tigers (9) @ Athletics (0) (Top of the 8th)"
     },
     {
         "game_id": 823270,
@@ -379,15 +379,15 @@
         "away_probable_pitcher": "Landen Roupp",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
+        "away_score": 4,
         "home_score": 5,
-        "current_inning": 7,
-        "inning_state": "End",
+        "current_inning": 8,
+        "inning_state": "Bottom",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "SD leads 2-1",
-        "summary": "2026-08-02 - San Francisco Giants (3) @ San Diego Padres (5) (End of the 7th)"
+        "summary": "2026-08-02 - San Francisco Giants (4) @ San Diego Padres (5) (Bottom of the 8th)"
     },
     {
         "game_id": 823107,
@@ -405,22 +405,22 @@
         "away_probable_pitcher": "Taj Bradley",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 5,
+        "away_score": 6,
         "home_score": 6,
-        "current_inning": 8,
-        "inning_state": "Bottom",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-02 - Minnesota Twins (5) @ Seattle Mariners (6) (Bottom of the 8th)"
+        "summary": "2026-08-02 - Minnesota Twins (6) @ Seattle Mariners (6) (Top of the 9th)"
     },
     {
         "game_id": 823919,
         "game_datetime": "2026-08-02T23:20:00Z",
         "game_date": "2026-08-02",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Boston Red Sox",
         "home_name": "Los Angeles Dodgers",
         "away_id": 111,
@@ -441,6 +441,6 @@
             "NBC/Peacock"
         ],
         "series_status": "BOS leads 2-0",
-        "summary": "2026-08-02 - Boston Red Sox @ Los Angeles Dodgers (Pre-Game)"
+        "summary": "2026-08-02 - Boston Red Sox @ Los Angeles Dodgers (Warmup)"
     }
 ]
