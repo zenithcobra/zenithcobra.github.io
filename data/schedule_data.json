@@ -22,7 +22,7 @@
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
+        "series_status": null,
         "summary": "2026-08-02 - Philadelphia Phillies @ Baltimore Orioles (Scheduled)"
     },
     {
@@ -37,7 +37,7 @@
         "home_id": 144,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
+        "home_probable_pitcher": "JR Ritchie",
         "away_probable_pitcher": "Cade Cavalli",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
@@ -48,7 +48,7 @@
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
-        "series_status": "ATL leads 2-0",
+        "series_status": "ATL leads 3-0",
         "summary": "2026-08-02 - Washington Nationals @ Atlanta Braves (Scheduled)"
     },
     {
@@ -56,7 +56,7 @@
         "game_datetime": "2026-08-02T17:37:00Z",
         "game_date": "2026-08-02",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "Toronto Blue Jays",
         "away_id": 138,
@@ -75,7 +75,7 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 2-0",
-        "summary": "2026-08-02 - St. Louis Cardinals @ Toronto Blue Jays (Scheduled)"
+        "summary": "2026-08-02 - St. Louis Cardinals @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 824404,
@@ -126,7 +126,7 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": "CIN leads 1-0",
+        "series_status": null,
         "summary": "2026-08-02 - Pittsburgh Pirates @ Cincinnati Reds (Scheduled)"
     },
     {
@@ -230,7 +230,7 @@
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
-        "series_status": "NYY leads 1-0",
+        "series_status": null,
         "summary": "2026-08-02 - New York Yankees @ Chicago Cubs (Scheduled)"
     },
     {
@@ -310,7 +310,7 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": "DET leads 2-0",
+        "series_status": null,
         "summary": "2026-08-02 - Detroit Tigers @ Athletics (Scheduled)"
     },
     {
@@ -336,7 +336,7 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": "SF leads 1-0",
+        "series_status": "Series tied 1-1",
         "summary": "2026-08-02 - San Francisco Giants @ San Diego Padres (Scheduled)"
     },
     {
@@ -390,7 +390,7 @@
         "national_broadcasts": [
             "NBC/Peacock"
         ],
-        "series_status": "BOS leads 2-0",
+        "series_status": null,
         "summary": "2026-08-02 - Boston Red Sox @ Los Angeles Dodgers (Scheduled)"
     }
 ]
