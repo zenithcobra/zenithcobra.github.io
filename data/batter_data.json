@@ -318,6 +318,32 @@
         "player_id": 687064
     },
     {
+        "player_name": "Cade Povich",
+        "team": "Baltimore Orioles",
+        "team_id": 110,
+        "player_id": 700249
+    },
+    {
+        "player_name": "Carlos Narv\u00e1ez",
+        "team": "Baltimore Orioles",
+        "team_id": 110,
+        "player_id": 665966,
+        "position": "C",
+        "games_played": 62.0,
+        "H": 32.0,
+        "HR": 3.0,
+        "RBI": 10.0,
+        "HRpg": 0.048,
+        "fHRpg": "0",
+        "Hpg": 0.516,
+        "fHpg": "1/2",
+        "RBIpg": 0.161,
+        "fRBIpg": "1/6",
+        "HR24": 15,
+        "HR24pg": 0.13,
+        "fHR24pg": "1/7"
+    },
+    {
         "player_name": "Christian Encarnacion-Strand",
         "team": "Baltimore Orioles",
         "team_id": 110,
@@ -336,6 +362,12 @@
         "HR24": 6,
         "HR24pg": 0.17,
         "fHR24pg": "1/6"
+    },
+    {
+        "player_name": "Christian Franklin",
+        "team": "Baltimore Orioles",
+        "team_id": 110,
+        "player_id": 681047
     },
     {
         "player_name": "Coby Mayo",
@@ -665,12 +697,6 @@
         "fHR24pg": "1/7"
     },
     {
-        "player_name": "Bryce Conley",
-        "team": "New York Mets",
-        "team_id": 121,
-        "player_id": 676785
-    },
-    {
         "player_name": "Carson Benge",
         "team": "New York Mets",
         "team_id": 121,
@@ -688,16 +714,34 @@
         "fRBIpg": "2/5"
     },
     {
+        "player_name": "Chayce McDermott",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 694646
+    },
+    {
         "player_name": "Christian Scott",
         "team": "New York Mets",
         "team_id": 121,
         "player_id": 681035
     },
     {
+        "player_name": "Cristian Pache",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 665506
+    },
+    {
         "player_name": "Daniel Duarte",
         "team": "New York Mets",
         "team_id": 121,
         "player_id": 650960
+    },
+    {
+        "player_name": "Dedniel N\u00fa\u00f1ez",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 673380
     },
     {
         "player_name": "Devin Williams",
@@ -797,6 +841,12 @@
         "fHR24pg": "1/6"
     },
     {
+        "player_name": "Jefry Yan",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 642376
+    },
+    {
         "player_name": "Jorge Polanco",
         "team": "New York Mets",
         "team_id": 121,
@@ -881,6 +931,12 @@
         "HR24": 15,
         "HR24pg": 0.12,
         "fHR24pg": "1/7"
+    },
+    {
+        "player_name": "Nate Lavender",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 681320
     },
     {
         "player_name": "Nolan McLean",
@@ -1025,10 +1081,10 @@
         "player_id": 681870
     },
     {
-        "player_name": "Franco Aleman",
+        "player_name": "Foster Griffin",
         "team": "Cleveland Guardians",
         "team_id": 114,
-        "player_id": 680916
+        "player_id": 656492
     },
     {
         "player_name": "Gabriel Arias",
@@ -1063,6 +1119,26 @@
         "player_id": 683769
     },
     {
+        "player_name": "Jo Adell",
+        "team": "Cleveland Guardians",
+        "team_id": 114,
+        "player_id": 666176,
+        "position": "RF",
+        "games_played": 111.0,
+        "H": 101.0,
+        "HR": 16.0,
+        "RBI": 62.0,
+        "HRpg": 0.144,
+        "fHRpg": "1/7",
+        "Hpg": 0.91,
+        "fHpg": "6/7",
+        "RBIpg": 0.559,
+        "fRBIpg": "4/7",
+        "HR24": 37,
+        "HR24pg": 0.24,
+        "fHR24pg": "1/4"
+    },
+    {
         "player_name": "Joey Cantillo",
         "team": "Cleveland Guardians",
         "team_id": 114,
@@ -1093,6 +1169,26 @@
         "team": "Cleveland Guardians",
         "team_id": 114,
         "player_id": 670036
+    },
+    {
+        "player_name": "Nathaniel Lowe",
+        "team": "Cleveland Guardians",
+        "team_id": 114,
+        "player_id": 663993,
+        "position": "DH",
+        "games_played": 83.0,
+        "H": 66.0,
+        "HR": 12.0,
+        "RBI": 37.0,
+        "HRpg": 0.145,
+        "fHRpg": "1/7",
+        "Hpg": 0.795,
+        "fHpg": "4/5",
+        "RBIpg": 0.446,
+        "fRBIpg": "3/7",
+        "HR24": 16,
+        "HR24pg": 0.13,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Parker Messick",
@@ -1233,12 +1329,6 @@
         "fRBIpg": "1/5"
     },
     {
-        "player_name": "Ben Bowden",
-        "team": "Athletics",
-        "team_id": 133,
-        "player_id": 641386
-    },
-    {
         "player_name": "Brady Basso",
         "team": "Athletics",
         "team_id": 133,
@@ -1343,6 +1433,23 @@
         "player_id": 663687
     },
     {
+        "player_name": "J.T. Ginn",
+        "team": "Athletics",
+        "team_id": 133,
+        "player_id": 669372,
+        "position": "P",
+        "games_played": 22.0,
+        "H": 0.0,
+        "HR": 0.0,
+        "RBI": 0.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.0,
+        "fHpg": "0",
+        "RBIpg": 0.0,
+        "fRBIpg": "0"
+    },
+    {
         "player_name": "Jack Perkins",
         "team": "Athletics",
         "team_id": 133,
@@ -1404,12 +1511,6 @@
         "HR24": 12,
         "HR24pg": 0.1,
         "fHR24pg": "1/7"
-    },
-    {
-        "player_name": "Jeffrey Springs",
-        "team": "Athletics",
-        "team_id": 133,
-        "player_id": 605488
     },
     {
         "player_name": "Jonah Heim",
@@ -1490,24 +1591,24 @@
         "player_id": 686930
     },
     {
-        "player_name": "Nick Kurtz",
+        "player_name": "Max Muncy",
         "team": "Athletics",
         "team_id": 133,
-        "player_id": 701762,
-        "position": "1B",
-        "games_played": 99.0,
-        "H": 90.0,
+        "player_id": 571970,
+        "position": "3B",
+        "games_played": 103.0,
+        "H": 87.0,
         "HR": 21.0,
-        "RBI": 69.0,
-        "HRpg": 0.212,
+        "RBI": 49.0,
+        "HRpg": 0.204,
         "fHRpg": "1/5",
-        "Hpg": 0.909,
-        "fHpg": "6/7",
-        "RBIpg": 0.697,
-        "fRBIpg": "5/7",
-        "HR24": 36,
-        "HR24pg": 0.31,
-        "fHR24pg": "1/3"
+        "Hpg": 0.845,
+        "fHpg": "5/6",
+        "RBIpg": 0.476,
+        "fRBIpg": "1/2",
+        "HR24": 19,
+        "HR24pg": 0.19,
+        "fHR24pg": "1/5"
     },
     {
         "player_name": "Scott Blewett",
@@ -2283,6 +2384,12 @@
         "fHR24pg": "1/7"
     },
     {
+        "player_name": "Brooks Raley",
+        "team": "Philadelphia Phillies",
+        "team_id": 143,
+        "player_id": 548384
+    },
+    {
         "player_name": "Bryan De La Cruz",
         "team": "Philadelphia Phillies",
         "team_id": 143,
@@ -2341,6 +2448,12 @@
         "HR24": 13,
         "HR24pg": 0.09,
         "fHR24pg": "1/7"
+    },
+    {
+        "player_name": "Caleb Kilian",
+        "team": "Philadelphia Phillies",
+        "team_id": 143,
+        "player_id": 668873
     },
     {
         "player_name": "Chase Shugart",
@@ -2404,23 +2517,6 @@
         "HR24": 11,
         "HR24pg": 0.12,
         "fHR24pg": "1/7"
-    },
-    {
-        "player_name": "Gabriel Rincones Jr.",
-        "team": "Philadelphia Phillies",
-        "team_id": 143,
-        "player_id": 687282,
-        "position": "RF",
-        "games_played": 29.0,
-        "H": 14.0,
-        "HR": 2.0,
-        "RBI": 7.0,
-        "HRpg": 0.069,
-        "fHRpg": "0",
-        "Hpg": 0.483,
-        "fHpg": "1/2",
-        "RBIpg": 0.241,
-        "fRBIpg": "1/4"
     },
     {
         "player_name": "Garrett Stubbs",
@@ -2518,12 +2614,6 @@
         "fRBIpg": "1/4"
     },
     {
-        "player_name": "Kyle Backhus",
-        "team": "Philadelphia Phillies",
-        "team_id": 143,
-        "player_id": 679775
-    },
-    {
         "player_name": "Kyle Schwarber",
         "team": "Philadelphia Phillies",
         "team_id": 143,
@@ -2542,6 +2632,26 @@
         "HR24": 56,
         "HR24pg": 0.35,
         "fHR24pg": "1/3"
+    },
+    {
+        "player_name": "Luis Arraez",
+        "team": "Philadelphia Phillies",
+        "team_id": 143,
+        "player_id": 650333,
+        "position": "2B",
+        "games_played": 105.0,
+        "H": 136.0,
+        "HR": 4.0,
+        "RBI": 43.0,
+        "HRpg": 0.038,
+        "fHRpg": "0",
+        "Hpg": 1.295,
+        "fHpg": "9/7",
+        "RBIpg": 0.41,
+        "fRBIpg": "2/5",
+        "HR24": 8,
+        "HR24pg": 0.05,
+        "fHR24pg": "0"
     },
     {
         "player_name": "Orion Kerkering",
@@ -2651,6 +2761,32 @@
         "fHpg": "1/2",
         "RBIpg": 0.295,
         "fRBIpg": "2/7"
+    },
+    {
+        "player_name": "Caleb Ferguson",
+        "team": "St. Louis Cardinals",
+        "team_id": 138,
+        "player_id": 657571
+    },
+    {
+        "player_name": "C\u00e9sar Prieto",
+        "team": "St. Louis Cardinals",
+        "team_id": 138,
+        "player_id": 693409,
+        "position": "3B",
+        "games_played": 6.0,
+        "H": 0.0,
+        "HR": 0.0,
+        "RBI": 0.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.0,
+        "fHpg": "0",
+        "RBIpg": 0.0,
+        "fRBIpg": "0",
+        "HR24": 0,
+        "HR24pg": 0.0,
+        "fHR24pg": "0"
     },
     {
         "player_name": "George Soriano",
@@ -2890,12 +3026,6 @@
         "team": "St. Louis Cardinals",
         "team_id": 138,
         "player_id": 657265
-    },
-    {
-        "player_name": "Quinn Mathews",
-        "team": "St. Louis Cardinals",
-        "team_id": 138,
-        "player_id": 687273
     },
     {
         "player_name": "Riley O'Brien",
@@ -6911,6 +7041,12 @@
         "fHpg": "0",
         "RBIpg": 0.0,
         "fRBIpg": "0"
+    },
+    {
+        "player_name": "Eddys Leonard",
+        "team": "San Francisco Giants",
+        "team_id": 137,
+        "player_id": 678760
     },
     {
         "player_name": "Grant McCray",
