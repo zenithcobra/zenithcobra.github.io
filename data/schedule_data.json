@@ -35,7 +35,7 @@
         "game_datetime": "2026-08-05T18:20:00Z",
         "game_date": "2026-08-05",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Chicago Cubs",
         "away_id": 119,
@@ -55,8 +55,13 @@
         "national_broadcasts": [
             "MLB Network"
         ],
-        "series_status": "CHC leads 2-0",
-        "summary": "2026-08-05 - Los Angeles Dodgers (6) @ Chicago Cubs (7) (Top of the 9th)"
+        "series_status": "CHC wins 3-0",
+        "winning_team": "Chicago Cubs",
+        "losing_team": "Los Angeles Dodgers",
+        "winning_pitcher": "Shota Imanaga",
+        "losing_pitcher": "Eric Lauer",
+        "save_pitcher": "Jacob Webb",
+        "summary": "2026-08-05 - Los Angeles Dodgers (6) @ Chicago Cubs (7) (Final)"
     },
     {
         "game_id": 822866,
@@ -94,7 +99,7 @@
         "game_datetime": "2026-08-05T19:10:00Z",
         "game_date": "2026-08-05",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Tampa Bay Rays",
         "home_name": "Colorado Rockies",
         "away_id": 139,
@@ -107,20 +112,25 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 0,
-        "current_inning": 8,
-        "inning_state": "Top",
+        "current_inning": 9,
+        "inning_state": "Bottom",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": "TB leads 2-0",
-        "summary": "2026-08-05 - Tampa Bay Rays (4) @ Colorado Rockies (0) (Top of the 8th)"
+        "series_status": "TB wins 3-0",
+        "winning_team": "Tampa Bay Rays",
+        "losing_team": "Colorado Rockies",
+        "winning_pitcher": "Nick Martinez",
+        "losing_pitcher": "Tomoyuki Sugano",
+        "save_pitcher": null,
+        "summary": "2026-08-05 - Tampa Bay Rays (4) @ Colorado Rockies (0) (Final)"
     },
     {
         "game_id": 824806,
         "game_datetime": "2026-08-05T22:35:00Z",
         "game_date": "2026-08-05",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Los Angeles Angels",
         "home_name": "Baltimore Orioles",
         "away_id": 108,
@@ -139,14 +149,14 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-08-05 - Los Angeles Angels @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-08-05 - Los Angeles Angels (0) @ Baltimore Orioles (0) (Top of the 1st)"
     },
     {
         "game_id": 824402,
         "game_datetime": "2026-08-05T22:40:00Z",
         "game_date": "2026-08-05",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Mets",
         "home_name": "Cleveland Guardians",
         "away_id": 121,
@@ -165,14 +175,14 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "NYM leads 1-0",
-        "summary": "2026-08-05 - New York Mets @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-08-05 - New York Mets @ Cleveland Guardians (Warmup)"
     },
     {
         "game_id": 824482,
         "game_datetime": "2026-08-05T22:40:00Z",
         "game_date": "2026-08-05",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Athletics",
         "home_name": "Cincinnati Reds",
         "away_id": 133,
@@ -191,14 +201,14 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "CIN leads 1-0",
-        "summary": "2026-08-05 - Athletics @ Cincinnati Reds (Pre-Game)"
+        "summary": "2026-08-05 - Athletics @ Cincinnati Reds (Warmup)"
     },
     {
         "game_id": 823429,
         "game_datetime": "2026-08-05T22:40:00Z",
         "game_date": "2026-08-05",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Washington Nationals",
         "home_name": "Philadelphia Phillies",
         "away_id": 120,
@@ -217,7 +227,7 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 2-0",
-        "summary": "2026-08-05 - Washington Nationals @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-08-05 - Washington Nationals @ Philadelphia Phillies (Warmup)"
     },
     {
         "game_id": 823516,
@@ -339,10 +349,10 @@
         "away_probable_pitcher": "Paul Skenes",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [
@@ -356,7 +366,7 @@
         "game_datetime": "2026-08-06T01:40:00Z",
         "game_date": "2026-08-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Diego Padres",
         "home_name": "Arizona Diamondbacks",
         "away_id": 135,
@@ -374,15 +384,15 @@
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": "AZ leads 1-0",
-        "summary": "2026-08-05 - San Diego Padres @ Arizona Diamondbacks (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-08-05 - San Diego Padres @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 823106,
         "game_datetime": "2026-08-06T01:40:00Z",
         "game_date": "2026-08-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Detroit Tigers",
         "home_name": "Seattle Mariners",
         "away_id": 116,
@@ -393,14 +403,14 @@
         "away_probable_pitcher": "Drew Anderson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-05 - Detroit Tigers @ Seattle Mariners (Scheduled)"
+        "series_status": "DET leads 1-0",
+        "summary": "2026-08-05 - Detroit Tigers @ Seattle Mariners (Pre-Game)"
     }
 ]
