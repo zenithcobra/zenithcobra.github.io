@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-05T18:10:00Z",
         "game_date": "2026-08-05",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Toronto Blue Jays",
         "home_name": "Houston Astros",
         "away_id": 141,
@@ -23,7 +23,7 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-05 - Toronto Blue Jays @ Houston Astros (Pre-Game)"
+        "summary": "2026-08-05 - Toronto Blue Jays @ Houston Astros (Warmup)"
     },
     {
         "game_id": 824646,
@@ -95,10 +95,10 @@
         "away_probable_pitcher": "Nick Martinez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
