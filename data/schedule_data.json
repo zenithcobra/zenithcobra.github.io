@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-07T22:40:00Z",
         "game_date": "2026-08-07",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "New York Mets",
         "home_name": "Pittsburgh Pirates",
         "away_id": 121,
@@ -23,14 +23,14 @@
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-07 - New York Mets @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-08-07 - New York Mets (0) @ Pittsburgh Pirates (0) (Top of the 1st)"
     },
     {
         "game_id": 823428,
         "game_datetime": "2026-08-07T22:40:00Z",
         "game_date": "2026-08-07",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "away_name": "Toronto Blue Jays",
         "home_name": "Philadelphia Phillies",
         "away_id": 141,
@@ -49,7 +49,7 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-07 - Toronto Blue Jays @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-08-07 - Toronto Blue Jays @ Philadelphia Phillies (Delayed Start)"
     },
     {
         "game_id": 822699,
@@ -82,7 +82,7 @@
         "game_datetime": "2026-08-07T23:05:00Z",
         "game_date": "2026-08-07",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "away_name": "Atlanta Braves",
         "home_name": "New York Yankees",
         "away_id": 144,
@@ -101,14 +101,14 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-07 - Atlanta Braves @ New York Yankees (Pre-Game)"
+        "summary": "2026-08-07 - Atlanta Braves @ New York Yankees (Delayed Start)"
     },
     {
         "game_id": 824727,
         "game_datetime": "2026-08-07T23:10:00Z",
         "game_date": "2026-08-07",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Athletics",
         "home_name": "Boston Red Sox",
         "away_id": 133,
@@ -127,14 +127,14 @@
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-07 - Athletics @ Boston Red Sox (Pre-Game)"
+        "summary": "2026-08-07 - Athletics @ Boston Red Sox (Warmup)"
     },
     {
         "game_id": 823836,
         "game_datetime": "2026-08-07T23:10:00Z",
         "game_date": "2026-08-07",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Los Angeles Angels",
         "home_name": "Miami Marlins",
         "away_id": 108,
@@ -153,7 +153,7 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-07 - Los Angeles Angels @ Miami Marlins (Pre-Game)"
+        "summary": "2026-08-07 - Los Angeles Angels @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 824566,
@@ -303,10 +303,10 @@
         "away_probable_pitcher": "Roki Sasaki",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
@@ -318,7 +318,7 @@
         "game_datetime": "2026-08-08T01:40:00Z",
         "game_date": "2026-08-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Houston Astros",
         "home_name": "San Diego Padres",
         "away_id": 117,
@@ -329,22 +329,22 @@
         "away_probable_pitcher": "Ronel Blanco",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-07 - Houston Astros @ San Diego Padres (Scheduled)"
+        "summary": "2026-08-07 - Houston Astros @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 823103,
         "game_datetime": "2026-08-08T01:45:00Z",
         "game_date": "2026-08-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Tampa Bay Rays",
         "home_name": "Seattle Mariners",
         "away_id": 139,
@@ -355,24 +355,24 @@
         "away_probable_pitcher": "Drew Rasmussen",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-08-07 - Tampa Bay Rays @ Seattle Mariners (Scheduled)"
+        "summary": "2026-08-07 - Tampa Bay Rays @ Seattle Mariners (Pre-Game)"
     },
     {
         "game_id": 823191,
         "game_datetime": "2026-08-08T02:15:00Z",
         "game_date": "2026-08-07",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Detroit Tigers",
         "home_name": "San Francisco Giants",
         "away_id": 116,
@@ -391,6 +391,6 @@
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-07 - Detroit Tigers @ San Francisco Giants (Scheduled)"
+        "summary": "2026-08-07 - Detroit Tigers @ San Francisco Giants (Pre-Game)"
     }
 ]
