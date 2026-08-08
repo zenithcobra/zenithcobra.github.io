@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-08T19:05:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Atlanta Braves",
         "home_name": "New York Yankees",
         "away_id": 144,
@@ -23,7 +23,7 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-08-08 - Atlanta Braves @ New York Yankees (Pre-Game)"
+        "summary": "2026-08-08 - Atlanta Braves @ New York Yankees (Warmup)"
     },
     {
         "game_id": 824726,
@@ -84,7 +84,7 @@
         "game_datetime": "2026-08-08T22:05:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "Philadelphia Phillies",
         "away_id": 141,
@@ -102,8 +102,8 @@
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-08 - Toronto Blue Jays @ Philadelphia Phillies (Scheduled)"
+        "series_status": "TOR leads 1-0",
+        "summary": "2026-08-08 - Toronto Blue Jays @ Philadelphia Phillies (Pre-Game)"
     },
     {
         "game_id": 823348,
@@ -240,7 +240,7 @@
         "game_datetime": "2026-08-08T23:15:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Detroit Tigers",
         "home_name": "San Francisco Giants",
         "away_id": 116,
@@ -260,8 +260,8 @@
         "national_broadcasts": [
             "FOX / FOX ONE"
         ],
-        "series_status": null,
-        "summary": "2026-08-08 - Detroit Tigers @ San Francisco Giants (Scheduled)"
+        "series_status": "SF leads 1-0",
+        "summary": "2026-08-08 - Detroit Tigers @ San Francisco Giants (Pre-Game)"
     },
     {
         "game_id": 823021,
