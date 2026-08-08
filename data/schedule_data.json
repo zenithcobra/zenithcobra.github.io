@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-08T19:05:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Atlanta Braves",
         "home_name": "New York Yankees",
         "away_id": 144,
@@ -22,8 +22,13 @@
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
-        "series_status": "NYY leads 1-0",
-        "summary": "2026-08-08 - Atlanta Braves (4) @ New York Yankees (5) (Top of the 9th)"
+        "series_status": "NYY wins 2-0",
+        "winning_team": "New York Yankees",
+        "losing_team": "Atlanta Braves",
+        "winning_pitcher": "Gerrit Cole",
+        "losing_pitcher": "Chris Sale",
+        "save_pitcher": "David Bednar",
+        "summary": "2026-08-08 - Atlanta Braves (4) @ New York Yankees (5) (Final)"
     },
     {
         "game_id": 824726,
@@ -41,9 +46,9 @@
         "away_probable_pitcher": "Gage Jump",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 5,
+        "away_score": 6,
         "home_score": 2,
-        "current_inning": 6,
+        "current_inning": 8,
         "inning_state": "Bottom",
         "venue_id": 3,
         "venue_name": "Fenway Park",
@@ -51,7 +56,7 @@
             "FS1"
         ],
         "series_status": "BOS leads 1-0",
-        "summary": "2026-08-08 - Athletics (5) @ Boston Red Sox (2) (Bottom of the 6th)"
+        "summary": "2026-08-08 - Athletics (6) @ Boston Red Sox (2) (Bottom of the 8th)"
     },
     {
         "game_id": 823834,
@@ -71,20 +76,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 7,
-        "current_inning": 6,
-        "inning_state": "Top",
+        "current_inning": 8,
+        "inning_state": "Bottom",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "LAA leads 1-0",
-        "summary": "2026-08-08 - Los Angeles Angels (0) @ Miami Marlins (7) (Top of the 6th)"
+        "summary": "2026-08-08 - Los Angeles Angels (0) @ Miami Marlins (7) (Bottom of the 8th)"
     },
     {
         "game_id": 823426,
         "game_datetime": "2026-08-08T22:05:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Toronto Blue Jays",
         "home_name": "Philadelphia Phillies",
         "away_id": 141,
@@ -95,22 +100,22 @@
         "away_probable_pitcher": "Max Scherzer",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-08-08 - Toronto Blue Jays @ Philadelphia Phillies (Warmup)"
+        "summary": "2026-08-08 - Toronto Blue Jays (1) @ Philadelphia Phillies (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 823348,
         "game_datetime": "2026-08-08T22:40:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Mets",
         "home_name": "Pittsburgh Pirates",
         "away_id": 121,
@@ -129,14 +134,14 @@
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "NYM leads 1-0",
-        "summary": "2026-08-08 - New York Mets @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-08-08 - New York Mets @ Pittsburgh Pirates (Warmup)"
     },
     {
         "game_id": 822701,
         "game_datetime": "2026-08-08T22:45:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cincinnati Reds",
         "home_name": "Washington Nationals",
         "away_id": 113,
@@ -155,7 +160,7 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "WSH leads 1-0",
-        "summary": "2026-08-08 - Cincinnati Reds @ Washington Nationals (Pre-Game)"
+        "summary": "2026-08-08 - Cincinnati Reds @ Washington Nationals (Warmup)"
     },
     {
         "game_id": 824079,
