@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "home_score": 1,
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-08-08 - Atlanta Braves (0) @ New York Yankees (0) (Top of the 1st)"
+        "summary": "2026-08-08 - Atlanta Braves (0) @ New York Yankees (1) (Bottom of the 2nd)"
     },
     {
         "game_id": 824726,
@@ -95,10 +95,10 @@
         "away_probable_pitcher": "Max Scherzer",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
@@ -110,7 +110,7 @@
         "game_datetime": "2026-08-08T22:40:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "Pittsburgh Pirates",
         "away_id": 121,
@@ -121,15 +121,15 @@
         "away_probable_pitcher": "Robert Stock",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-08 - New York Mets @ Pittsburgh Pirates (Scheduled)"
+        "series_status": "NYM leads 1-0",
+        "summary": "2026-08-08 - New York Mets @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 822701,
@@ -251,10 +251,10 @@
         "away_probable_pitcher": "Jackson Jobe",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [
@@ -268,7 +268,7 @@
         "game_datetime": "2026-08-08T23:15:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "St. Louis Cardinals",
         "away_id": 115,
@@ -286,15 +286,15 @@
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-08 - Colorado Rockies @ St. Louis Cardinals (Scheduled)"
+        "series_status": "STL leads 1-0",
+        "summary": "2026-08-08 - Colorado Rockies @ St. Louis Cardinals (Pre-Game)"
     },
     {
         "game_id": 822864,
         "game_datetime": "2026-08-08T23:15:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Baltimore Orioles",
         "home_name": "Texas Rangers",
         "away_id": 110,
@@ -314,8 +314,8 @@
         "national_broadcasts": [
             "FOX / FOX ONE"
         ],
-        "series_status": null,
-        "summary": "2026-08-08 - Baltimore Orioles @ Texas Rangers (Scheduled)"
+        "series_status": "TEX leads 1-0",
+        "summary": "2026-08-08 - Baltimore Orioles @ Texas Rangers (Pre-Game)"
     },
     {
         "game_id": 824565,
