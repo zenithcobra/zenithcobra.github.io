@@ -46,9 +46,9 @@
         "away_probable_pitcher": "Gage Jump",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 6,
-        "home_score": 2,
-        "current_inning": 8,
+        "away_score": 7,
+        "home_score": 3,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 3,
         "venue_name": "Fenway Park",
@@ -56,14 +56,14 @@
             "FS1"
         ],
         "series_status": "BOS leads 1-0",
-        "summary": "2026-08-08 - Athletics (6) @ Boston Red Sox (2) (Bottom of the 8th)"
+        "summary": "2026-08-08 - Athletics (7) @ Boston Red Sox (3) (Bottom of the 9th)"
     },
     {
         "game_id": 823834,
         "game_datetime": "2026-08-08T20:10:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Los Angeles Angels",
         "home_name": "Miami Marlins",
         "away_id": 108,
@@ -76,13 +76,18 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 7,
-        "current_inning": 8,
-        "inning_state": "Bottom",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
-        "series_status": "LAA leads 1-0",
-        "summary": "2026-08-08 - Los Angeles Angels (0) @ Miami Marlins (7) (Bottom of the 8th)"
+        "series_status": "Series tied 1-1",
+        "winning_team": "Miami Marlins",
+        "losing_team": "Los Angeles Angels",
+        "winning_pitcher": "Sandy Alcantara",
+        "losing_pitcher": "Walbert Ure\u00f1a",
+        "save_pitcher": null,
+        "summary": "2026-08-08 - Los Angeles Angels (0) @ Miami Marlins (7) (Final)"
     },
     {
         "game_id": 823426,
@@ -100,22 +105,22 @@
         "away_probable_pitcher": "Max Scherzer",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-08-08 - Toronto Blue Jays (1) @ Philadelphia Phillies (0) (Bottom of the 2nd)"
+        "summary": "2026-08-08 - Toronto Blue Jays (2) @ Philadelphia Phillies (0) (Top of the 3rd)"
     },
     {
         "game_id": 823348,
         "game_datetime": "2026-08-08T22:40:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "New York Mets",
         "home_name": "Pittsburgh Pirates",
         "away_id": 121,
@@ -127,21 +132,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 3,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "NYM leads 1-0",
-        "summary": "2026-08-08 - New York Mets @ Pittsburgh Pirates (Warmup)"
+        "summary": "2026-08-08 - New York Mets (0) @ Pittsburgh Pirates (3) (Bottom of the 1st)"
     },
     {
         "game_id": 822701,
         "game_datetime": "2026-08-08T22:45:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Cincinnati Reds",
         "home_name": "Washington Nationals",
         "away_id": 113,
@@ -155,19 +160,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "WSH leads 1-0",
-        "summary": "2026-08-08 - Cincinnati Reds @ Washington Nationals (Warmup)"
+        "summary": "2026-08-08 - Cincinnati Reds (0) @ Washington Nationals (0) (Bottom of the 1st)"
     },
     {
         "game_id": 824079,
         "game_datetime": "2026-08-08T23:10:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago Cubs",
         "home_name": "Kansas City Royals",
         "away_id": 112,
@@ -186,14 +191,14 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "CHC leads 1-0",
-        "summary": "2026-08-08 - Chicago Cubs @ Kansas City Royals (Pre-Game)"
+        "summary": "2026-08-08 - Chicago Cubs @ Kansas City Royals (Warmup)"
     },
     {
         "game_id": 823752,
         "game_datetime": "2026-08-08T23:10:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Minnesota Twins",
         "home_name": "Milwaukee Brewers",
         "away_id": 142,
@@ -212,14 +217,14 @@
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "MIN leads 1-0",
-        "summary": "2026-08-08 - Minnesota Twins @ Milwaukee Brewers (Pre-Game)"
+        "summary": "2026-08-08 - Minnesota Twins @ Milwaukee Brewers (Warmup)"
     },
     {
         "game_id": 823267,
         "game_datetime": "2026-08-08T23:15:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Houston Astros",
         "home_name": "San Diego Padres",
         "away_id": 117,
@@ -238,14 +243,14 @@
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "HOU leads 1-0",
-        "summary": "2026-08-08 - Houston Astros @ San Diego Padres (Pre-Game)"
+        "summary": "2026-08-08 - Houston Astros @ San Diego Padres (Warmup)"
     },
     {
         "game_id": 823188,
         "game_datetime": "2026-08-08T23:15:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Detroit Tigers",
         "home_name": "San Francisco Giants",
         "away_id": 116,
@@ -266,14 +271,14 @@
             "FOX / FOX ONE"
         ],
         "series_status": "SF leads 1-0",
-        "summary": "2026-08-08 - Detroit Tigers @ San Francisco Giants (Pre-Game)"
+        "summary": "2026-08-08 - Detroit Tigers @ San Francisco Giants (Warmup)"
     },
     {
         "game_id": 823021,
         "game_datetime": "2026-08-08T23:15:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Colorado Rockies",
         "home_name": "St. Louis Cardinals",
         "away_id": 115,
@@ -292,14 +297,14 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "STL leads 1-0",
-        "summary": "2026-08-08 - Colorado Rockies @ St. Louis Cardinals (Pre-Game)"
+        "summary": "2026-08-08 - Colorado Rockies @ St. Louis Cardinals (Warmup)"
     },
     {
         "game_id": 822864,
         "game_datetime": "2026-08-08T23:15:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Baltimore Orioles",
         "home_name": "Texas Rangers",
         "away_id": 110,
@@ -320,14 +325,14 @@
             "FOX / FOX ONE"
         ],
         "series_status": "TEX leads 1-0",
-        "summary": "2026-08-08 - Baltimore Orioles @ Texas Rangers (Pre-Game)"
+        "summary": "2026-08-08 - Baltimore Orioles @ Texas Rangers (Warmup)"
     },
     {
         "game_id": 824565,
         "game_datetime": "2026-08-08T23:15:00Z",
         "game_date": "2026-08-08",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cleveland Guardians",
         "home_name": "Chicago White Sox",
         "away_id": 114,
@@ -348,7 +353,7 @@
             "FOX / FOX ONE"
         ],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-08-08 - Cleveland Guardians @ Chicago White Sox (Pre-Game)"
+        "summary": "2026-08-08 - Cleveland Guardians @ Chicago White Sox (Warmup)"
     },
     {
         "game_id": 825049,
@@ -392,10 +397,10 @@
         "away_probable_pitcher": "Griffin Jax",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
