@@ -16,23 +16,23 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 2,
-        "current_inning": 3,
-        "inning_state": "Middle",
+        "home_score": 3,
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [
             "Peacock/NBCSN"
         ],
         "series_status": "WSH leads 2-0",
-        "summary": "2026-08-09 - Cincinnati Reds (1) @ Washington Nationals (2) (Middle of the 3rd)"
+        "summary": "2026-08-09 - Cincinnati Reds (1) @ Washington Nationals (3) (Bottom of the 5th)"
     },
     {
         "game_id": 824724,
         "game_datetime": "2026-08-09T17:35:00Z",
         "game_date": "2026-08-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Athletics",
         "home_name": "Boston Red Sox",
         "away_id": 133,
@@ -43,7 +43,7 @@
         "away_probable_pitcher": "J.T. Ginn",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
         "current_inning": 1,
         "inning_state": "Top",
@@ -51,14 +51,14 @@
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-09 - Athletics @ Boston Red Sox (Pre-Game)"
+        "summary": "2026-08-09 - Athletics (1) @ Boston Red Sox (0) (Top of the 1st)"
     },
     {
         "game_id": 823345,
         "game_datetime": "2026-08-09T17:35:00Z",
         "game_date": "2026-08-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "New York Mets",
         "home_name": "Pittsburgh Pirates",
         "away_id": 121,
@@ -77,14 +77,14 @@
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-09 - New York Mets @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-08-09 - New York Mets (0) @ Pittsburgh Pirates (0) (Top of the 1st)"
     },
     {
         "game_id": 823425,
         "game_datetime": "2026-08-09T17:35:00Z",
         "game_date": "2026-08-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Toronto Blue Jays",
         "home_name": "Philadelphia Phillies",
         "away_id": 141,
@@ -98,19 +98,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "TOR leads 2-0",
-        "summary": "2026-08-09 - Toronto Blue Jays @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-08-09 - Toronto Blue Jays (0) @ Philadelphia Phillies (0) (Middle of the 1st)"
     },
     {
         "game_id": 823513,
         "game_datetime": "2026-08-09T17:35:00Z",
         "game_date": "2026-08-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Atlanta Braves",
         "home_name": "New York Yankees",
         "away_id": 144,
@@ -129,14 +129,14 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 2-0",
-        "summary": "2026-08-09 - Atlanta Braves @ New York Yankees (Pre-Game)"
+        "summary": "2026-08-09 - Atlanta Braves (0) @ New York Yankees (0) (Top of the 1st)"
     },
     {
         "game_id": 823835,
         "game_datetime": "2026-08-09T17:40:00Z",
         "game_date": "2026-08-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Los Angeles Angels",
         "home_name": "Miami Marlins",
         "away_id": 108,
@@ -155,14 +155,14 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-09 - Los Angeles Angels @ Miami Marlins (Pre-Game)"
+        "summary": "2026-08-09 - Los Angeles Angels (0) @ Miami Marlins (0) (Top of the 1st)"
     },
     {
         "game_id": 824078,
         "game_datetime": "2026-08-09T18:10:00Z",
         "game_date": "2026-08-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago Cubs",
         "home_name": "Kansas City Royals",
         "away_id": 112,
@@ -181,7 +181,7 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-09 - Chicago Cubs @ Kansas City Royals (Pre-Game)"
+        "summary": "2026-08-09 - Chicago Cubs @ Kansas City Royals (Warmup)"
     },
     {
         "game_id": 824564,
@@ -303,10 +303,10 @@
         "away_probable_pitcher": "Troy Melton",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
@@ -344,7 +344,7 @@
         "game_datetime": "2026-08-09T20:10:00Z",
         "game_date": "2026-08-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Tampa Bay Rays",
         "home_name": "Seattle Mariners",
         "away_id": 139,
@@ -363,7 +363,7 @@
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "TB leads 2-0",
-        "summary": "2026-08-09 - Tampa Bay Rays @ Seattle Mariners (Scheduled)"
+        "summary": "2026-08-09 - Tampa Bay Rays @ Seattle Mariners (Pre-Game)"
     },
     {
         "game_id": 823268,
