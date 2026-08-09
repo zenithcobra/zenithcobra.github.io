@@ -110,15 +110,15 @@
         "away_probable_pitcher": "Shane Bieber",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 5,
-        "home_score": 5,
+        "away_score": 6,
+        "home_score": 6,
         "current_inning": 12,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "TOR leads 2-0",
-        "summary": "2026-08-09 - Toronto Blue Jays (5) @ Philadelphia Phillies (5) (Top of the 12th)"
+        "summary": "2026-08-09 - Toronto Blue Jays (6) @ Philadelphia Phillies (6) (Bottom of the 12th)"
     },
     {
         "game_id": 823513,
@@ -187,7 +187,7 @@
         "game_datetime": "2026-08-09T18:10:00Z",
         "game_date": "2026-08-09",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Chicago Cubs",
         "home_name": "Kansas City Royals",
         "away_id": 112,
@@ -201,19 +201,24 @@
         "away_score": 10,
         "home_score": 2,
         "current_inning": 9,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-08-09 - Chicago Cubs (10) @ Kansas City Royals (2) (Top of the 9th)"
+        "series_status": "CHC wins 2-1",
+        "winning_team": "Chicago Cubs",
+        "losing_team": "Kansas City Royals",
+        "winning_pitcher": "Matthew Boyd",
+        "losing_pitcher": "Randy Dobnak",
+        "save_pitcher": null,
+        "summary": "2026-08-09 - Chicago Cubs (10) @ Kansas City Royals (2) (Game Over)"
     },
     {
         "game_id": 824564,
         "game_datetime": "2026-08-09T18:10:00Z",
         "game_date": "2026-08-09",
         "game_type": "R",
-        "status": "Delayed",
+        "status": "In Progress",
         "away_name": "Cleveland Guardians",
         "home_name": "Chicago White Sox",
         "away_id": 114,
@@ -232,7 +237,7 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-09 - Cleveland Guardians @ Chicago White Sox (Delayed)"
+        "summary": "2026-08-09 - Cleveland Guardians (2) @ Chicago White Sox (1) (Top of the 2nd)"
     },
     {
         "game_id": 823751,
@@ -252,13 +257,13 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 3,
-        "current_inning": 8,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-09 - Minnesota Twins (3) @ Milwaukee Brewers (3) (Bottom of the 8th)"
+        "summary": "2026-08-09 - Minnesota Twins (3) @ Milwaukee Brewers (3) (Bottom of the 9th)"
     },
     {
         "game_id": 823020,
@@ -277,14 +282,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 4,
-        "home_score": 4,
+        "home_score": 6,
         "current_inning": 8,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-09 - Colorado Rockies (4) @ St. Louis Cardinals (4) (Top of the 8th)"
+        "summary": "2026-08-09 - Colorado Rockies (4) @ St. Louis Cardinals (6) (Bottom of the 8th)"
     },
     {
         "game_id": 822862,
@@ -305,12 +310,12 @@
         "away_score": 9,
         "home_score": 3,
         "current_inning": 7,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "TEX leads 2-0",
-        "summary": "2026-08-09 - Baltimore Orioles (9) @ Texas Rangers (3) (Top of the 7th)"
+        "summary": "2026-08-09 - Baltimore Orioles (9) @ Texas Rangers (3) (End of the 7th)"
     },
     {
         "game_id": 823190,
@@ -330,13 +335,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 4,
+        "current_inning": 5,
         "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-09 - Detroit Tigers (0) @ San Francisco Giants (0) (Top of the 4th)"
+        "summary": "2026-08-09 - Detroit Tigers (0) @ San Francisco Giants (0) (Top of the 5th)"
     },
     {
         "game_id": 825050,
@@ -354,15 +359,15 @@
         "away_probable_pitcher": "Justin Wrobleski",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 4,
-        "current_inning": 2,
-        "inning_state": "End",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-09 - Los Angeles Dodgers (0) @ Arizona Diamondbacks (4) (End of the 2nd)"
+        "summary": "2026-08-09 - Los Angeles Dodgers (1) @ Arizona Diamondbacks (4) (Bottom of the 3rd)"
     },
     {
         "game_id": 823104,
@@ -382,13 +387,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 1,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "TB leads 2-0",
-        "summary": "2026-08-09 - Tampa Bay Rays (0) @ Seattle Mariners (1) (Bottom of the 2nd)"
+        "summary": "2026-08-09 - Tampa Bay Rays (0) @ Seattle Mariners (1) (Top of the 3rd)"
     },
     {
         "game_id": 823268,
