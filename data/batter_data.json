@@ -455,12 +455,6 @@
         "player_id": 676917
     },
     {
-        "player_name": "Carson Palmquist",
-        "team": "Washington Nationals",
-        "team_id": 120,
-        "player_id": 687223
-    },
-    {
         "player_name": "Clayton Beeter",
         "team": "Washington Nationals",
         "team_id": 120,
@@ -556,6 +550,12 @@
         "HR24": 2,
         "HR24pg": 0.02,
         "fHR24pg": "0"
+    },
+    {
+        "player_name": "Jake Bird",
+        "team": "Washington Nationals",
+        "team_id": 120,
+        "player_id": 656234
     },
     {
         "player_name": "Jake Irvin",
@@ -1364,10 +1364,10 @@
         "player_id": 624133
     },
     {
-        "player_name": "Raymond Burgos",
+        "player_name": "Seth Martinez",
         "team": "Boston Red Sox",
         "team_id": 111,
-        "player_id": 670103
+        "player_id": 661527
     },
     {
         "player_name": "Sonny Gray",
@@ -1614,6 +1614,12 @@
         "fHR24pg": "1/7"
     },
     {
+        "player_name": "Jack Weisenburger",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 674073
+    },
+    {
         "player_name": "Jared Young",
         "team": "New York Mets",
         "team_id": 121,
@@ -1748,12 +1754,6 @@
         "team": "New York Mets",
         "team_id": 121,
         "player_id": 640455
-    },
-    {
-        "player_name": "Xzavion Curry",
-        "team": "New York Mets",
-        "team_id": 121,
-        "player_id": 675540
     },
     {
         "player_name": "Zac Thornton",
@@ -2440,6 +2440,12 @@
         "player_id": 605400
     },
     {
+        "player_name": "Alan Rangel",
+        "team": "Philadelphia Phillies",
+        "team_id": 143,
+        "player_id": 660604
+    },
+    {
         "player_name": "Alec Bohm",
         "team": "Philadelphia Phillies",
         "team_id": 143,
@@ -2556,23 +2562,6 @@
         "team": "Philadelphia Phillies",
         "team_id": 143,
         "player_id": 668873
-    },
-    {
-        "player_name": "Chase Shugart",
-        "team": "Philadelphia Phillies",
-        "team_id": 143,
-        "player_id": 663767,
-        "position": "P",
-        "games_played": 33.0,
-        "H": 0.0,
-        "HR": 0.0,
-        "RBI": 0.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.0,
-        "fHpg": "0",
-        "RBIpg": 0.0,
-        "fRBIpg": "0"
     },
     {
         "player_name": "Cristopher S\u00e1nchez",
@@ -3581,12 +3570,6 @@
         "player_id": 676620
     },
     {
-        "player_name": "Brett Kerry",
-        "team": "Los Angeles Angels",
-        "team_id": 108,
-        "player_id": 695049
-    },
-    {
         "player_name": "Denzer Guzman",
         "team": "Los Angeles Angels",
         "team_id": 108,
@@ -3761,6 +3744,12 @@
         "team": "Los Angeles Angels",
         "team_id": 108,
         "player_id": 696270
+    },
+    {
+        "player_name": "Ryan Watson",
+        "team": "Los Angeles Angels",
+        "team_id": 108,
+        "player_id": 670245
     },
     {
         "player_name": "Samy Natera Jr.",
@@ -6509,7 +6498,7 @@
         "team": "Colorado Rockies",
         "team_id": 115,
         "player_id": 664983,
-        "position": "CF",
+        "position": "LF",
         "games_played": 102.0,
         "H": 111.0,
         "HR": 13.0,
@@ -8415,7 +8404,7 @@
         "team": "San Francisco Giants",
         "team_id": 137,
         "player_id": 678545,
-        "position": "SS",
+        "position": "2B",
         "games_played": 9.0,
         "H": 8.0,
         "HR": 3.0,
