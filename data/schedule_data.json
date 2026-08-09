@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-09T16:15:00Z",
         "game_date": "2026-08-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cincinnati Reds",
         "home_name": "Washington Nationals",
         "away_id": 113,
@@ -25,7 +25,7 @@
             "Peacock/NBCSN"
         ],
         "series_status": "WSH leads 2-0",
-        "summary": "2026-08-09 - Cincinnati Reds @ Washington Nationals (Pre-Game)"
+        "summary": "2026-08-09 - Cincinnati Reds @ Washington Nationals (Warmup)"
     },
     {
         "game_id": 824724,
@@ -69,10 +69,10 @@
         "away_probable_pitcher": "Sean Manaea",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
@@ -266,7 +266,7 @@
         "game_datetime": "2026-08-09T18:35:00Z",
         "game_date": "2026-08-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Baltimore Orioles",
         "home_name": "Texas Rangers",
         "away_id": 110,
@@ -285,7 +285,7 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "TEX leads 2-0",
-        "summary": "2026-08-09 - Baltimore Orioles @ Texas Rangers (Scheduled)"
+        "summary": "2026-08-09 - Baltimore Orioles @ Texas Rangers (Pre-Game)"
     },
     {
         "game_id": 823190,
