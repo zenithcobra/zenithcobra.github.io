@@ -16,16 +16,16 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 1,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "home_score": 2,
+        "current_inning": 3,
+        "inning_state": "Middle",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [
             "Peacock/NBCSN"
         ],
         "series_status": "WSH leads 2-0",
-        "summary": "2026-08-09 - Cincinnati Reds (1) @ Washington Nationals (1) (Bottom of the 2nd)"
+        "summary": "2026-08-09 - Cincinnati Reds (1) @ Washington Nationals (2) (Middle of the 3rd)"
     },
     {
         "game_id": 824724,
@@ -277,10 +277,10 @@
         "away_probable_pitcher": "Cade Povich",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
@@ -318,7 +318,7 @@
         "game_datetime": "2026-08-09T20:10:00Z",
         "game_date": "2026-08-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Arizona Diamondbacks",
         "away_id": 119,
@@ -336,8 +336,8 @@
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-09 - Los Angeles Dodgers @ Arizona Diamondbacks (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-08-09 - Los Angeles Dodgers @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 823104,
