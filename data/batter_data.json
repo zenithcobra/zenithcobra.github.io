@@ -807,23 +807,6 @@
         "player_id": 673380
     },
     {
-        "player_name": "Devin Williams",
-        "team": "New York Mets",
-        "team_id": 121,
-        "player_id": 642207,
-        "position": "P",
-        "games_played": 42.0,
-        "H": 0.0,
-        "HR": 0.0,
-        "RBI": 0.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.0,
-        "fHpg": "0",
-        "RBIpg": 0.0,
-        "fRBIpg": "0"
-    },
-    {
         "player_name": "Francisco Alvarez",
         "team": "New York Mets",
         "team_id": 121,
@@ -914,6 +897,12 @@
         "team": "New York Mets",
         "team_id": 121,
         "player_id": 642376
+    },
+    {
+        "player_name": "Jonathan Pintaro",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 702752
     },
     {
         "player_name": "Jorge Polanco",
@@ -1435,10 +1424,10 @@
         "player_id": 687064
     },
     {
-        "player_name": "Cade Povich",
+        "player_name": "Cam Sanders",
         "team": "Baltimore Orioles",
         "team_id": 110,
-        "player_id": 700249
+        "player_id": 676742
     },
     {
         "player_name": "Carlos Narv\u00e1ez",
@@ -2227,10 +2216,21 @@
         "fHR24pg": "1/7"
     },
     {
-        "player_name": "Caleb Kilian",
+        "player_name": "Chase Shugart",
         "team": "Philadelphia Phillies",
         "team_id": 143,
-        "player_id": 668873
+        "player_id": 663767,
+        "position": "P",
+        "games_played": 33.0,
+        "H": 0.0,
+        "HR": 0.0,
+        "RBI": 0.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.0,
+        "fHpg": "0",
+        "RBIpg": 0.0,
+        "fRBIpg": "0"
     },
     {
         "player_name": "Cristopher S\u00e1nchez",
@@ -6076,12 +6076,12 @@
         "player_id": 687551,
         "position": "CF",
         "games_played": 94.0,
-        "H": 58.0,
+        "H": 57.0,
         "HR": 4.0,
         "RBI": 22.0,
         "HRpg": 0.043,
         "fHRpg": "0",
-        "Hpg": 0.617,
+        "Hpg": 0.606,
         "fHpg": "3/5",
         "RBIpg": 0.234,
         "fRBIpg": "1/4",
@@ -6365,16 +6365,16 @@
         "fHR24pg": "1/7"
     },
     {
+        "player_name": "Craig Kimbrel",
+        "team": "Kansas City Royals",
+        "team_id": 118,
+        "player_id": 518886
+    },
+    {
         "player_name": "Daniel Lynch IV",
         "team": "Kansas City Royals",
         "team_id": 118,
         "player_id": 663738
-    },
-    {
-        "player_name": "Easton McGee",
-        "team": "Kansas City Royals",
-        "team_id": 118,
-        "player_id": 668834
     },
     {
         "player_name": "Isaac Collins",
