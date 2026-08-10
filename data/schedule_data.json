@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-10T23:07:00Z",
         "game_date": "2026-08-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Toronto Blue Jays",
         "away_id": 111,
@@ -15,22 +15,22 @@
         "away_probable_pitcher": "Sonny Gray",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-10 - Boston Red Sox @ Toronto Blue Jays (Scheduled)"
+        "summary": "2026-08-10 - Boston Red Sox @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 824887,
         "game_datetime": "2026-08-10T23:15:00Z",
         "game_date": "2026-08-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "Atlanta Braves",
         "away_id": 121,
@@ -49,7 +49,7 @@
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-10 - New York Mets @ Atlanta Braves (Scheduled)"
+        "summary": "2026-08-10 - New York Mets @ Atlanta Braves (Pre-Game)"
     },
     {
         "game_id": 823675,
@@ -82,7 +82,7 @@
         "game_datetime": "2026-08-10T23:45:00Z",
         "game_date": "2026-08-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "St. Louis Cardinals",
         "away_id": 143,
@@ -103,7 +103,7 @@
             "FS1"
         ],
         "series_status": null,
-        "summary": "2026-08-10 - Philadelphia Phillies @ St. Louis Cardinals (Scheduled)"
+        "summary": "2026-08-10 - Philadelphia Phillies @ St. Louis Cardinals (Pre-Game)"
     },
     {
         "game_id": 823998,
