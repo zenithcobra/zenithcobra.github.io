@@ -147,10 +147,10 @@
         "away_probable_pitcher": "Gabriel Hughes",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
@@ -162,7 +162,7 @@
         "game_datetime": "2026-08-11T01:40:00Z",
         "game_date": "2026-08-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Tampa Bay Rays",
         "home_name": "Athletics",
         "away_id": 139,
@@ -181,7 +181,7 @@
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-10 - Tampa Bay Rays @ Athletics (Scheduled)"
+        "summary": "2026-08-10 - Tampa Bay Rays @ Athletics (Pre-Game)"
     },
     {
         "game_id": 823265,
@@ -240,7 +240,7 @@
         "game_datetime": "2026-08-11T02:10:00Z",
         "game_date": "2026-08-10",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Kansas City Royals",
         "home_name": "Los Angeles Dodgers",
         "away_id": 118,
@@ -259,6 +259,6 @@
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-10 - Kansas City Royals @ Los Angeles Dodgers (Scheduled)"
+        "summary": "2026-08-10 - Kansas City Royals @ Los Angeles Dodgers (Pre-Game)"
     }
 ]
