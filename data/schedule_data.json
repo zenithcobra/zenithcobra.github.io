@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Tanner Bibee",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 1,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-11 - Cleveland Guardians (0) @ Detroit Tigers (1) (Top of the 3rd)"
+        "summary": "2026-08-11 - Cleveland Guardians (1) @ Detroit Tigers (1) (Bottom of the 5th)"
     },
     {
         "game_id": 823832,
@@ -42,14 +42,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "home_score": 1,
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-11 - Pittsburgh Pirates (0) @ Miami Marlins (0) (Top of the 3rd)"
+        "summary": "2026-08-11 - Pittsburgh Pirates (0) @ Miami Marlins (1) (Bottom of the 5th)"
     },
     {
         "game_id": 822697,
@@ -67,15 +67,15 @@
         "away_probable_pitcher": "Shota Imanaga",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 2,
-        "current_inning": 2,
+        "away_score": 4,
+        "home_score": 3,
+        "current_inning": 4,
         "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-11 - Chicago Cubs (1) @ Washington Nationals (2) (Top of the 2nd)"
+        "summary": "2026-08-11 - Chicago Cubs (4) @ Washington Nationals (3) (Top of the 4th)"
     },
     {
         "game_id": 823512,
@@ -95,15 +95,15 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [
             "TBS"
         ],
         "series_status": null,
-        "summary": "2026-08-11 - Seattle Mariners (0) @ New York Yankees (0) (Top of the 1st)"
+        "summary": "2026-08-11 - Seattle Mariners (0) @ New York Yankees (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 822778,
@@ -121,22 +121,22 @@
         "away_probable_pitcher": "Patrick Sandoval",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Middle",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-08-11 - Boston Red Sox (0) @ Toronto Blue Jays (0) (Middle of the 1st)"
+        "summary": "2026-08-11 - Boston Red Sox (1) @ Toronto Blue Jays (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 824886,
         "game_datetime": "2026-08-11T23:15:00Z",
         "game_date": "2026-08-11",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "New York Mets",
         "home_name": "Atlanta Braves",
         "away_id": 121,
@@ -149,20 +149,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "Middle",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": "NYM leads 1-0",
-        "summary": "2026-08-11 - New York Mets @ Atlanta Braves (Warmup)"
+        "summary": "2026-08-11 - New York Mets (0) @ Atlanta Braves (0) (Middle of the 3rd)"
     },
     {
         "game_id": 823673,
         "game_datetime": "2026-08-11T23:40:00Z",
         "game_date": "2026-08-11",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Baltimore Orioles",
         "home_name": "Minnesota Twins",
         "away_id": 110,
@@ -173,22 +173,22 @@
         "away_probable_pitcher": "Brandon Young",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "MIN leads 1-0",
-        "summary": "2026-08-11 - Baltimore Orioles @ Minnesota Twins (Pre-Game)"
+        "summary": "2026-08-11 - Baltimore Orioles (2) @ Minnesota Twins (0) (Middle of the 1st)"
     },
     {
         "game_id": 824563,
         "game_datetime": "2026-08-11T23:40:00Z",
         "game_date": "2026-08-11",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Cincinnati Reds",
         "home_name": "Chicago White Sox",
         "away_id": 113,
@@ -200,21 +200,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 1,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-11 - Cincinnati Reds @ Chicago White Sox (Pre-Game)"
+        "summary": "2026-08-11 - Cincinnati Reds (0) @ Chicago White Sox (1) (End of the 1st)"
     },
     {
         "game_id": 823019,
         "game_datetime": "2026-08-11T23:45:00Z",
         "game_date": "2026-08-11",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Philadelphia Phillies",
         "home_name": "St. Louis Cardinals",
         "away_id": 143,
@@ -233,7 +233,7 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-08-11 - Philadelphia Phillies @ St. Louis Cardinals (Pre-Game)"
+        "summary": "2026-08-11 - Philadelphia Phillies (0) @ St. Louis Cardinals (0) (Top of the 1st)"
     },
     {
         "game_id": 823997,
