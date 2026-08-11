@@ -426,12 +426,6 @@
         "fRBIpg": "6/7"
     },
     {
-        "player_name": "Enmanuel De Jesus",
-        "team": "Detroit Tigers",
-        "team_id": 116,
-        "player_id": 646241
-    },
-    {
         "player_name": "Framber Valdez",
         "team": "Detroit Tigers",
         "team_id": 116,
@@ -642,6 +636,12 @@
         "HR24": 31,
         "HR24pg": 0.2,
         "fHR24pg": "1/5"
+    },
+    {
+        "player_name": "Tanner Rainey",
+        "team": "Detroit Tigers",
+        "team_id": 116,
+        "player_id": 663432
     },
     {
         "player_name": "Troy Melton",
@@ -1120,6 +1120,26 @@
         "player_id": 691587
     },
     {
+        "player_name": "Graham Pauley",
+        "team": "Miami Marlins",
+        "team_id": 146,
+        "player_id": 688363,
+        "position": "3B",
+        "games_played": 41.0,
+        "H": 19.0,
+        "HR": 1.0,
+        "RBI": 12.0,
+        "HRpg": 0.024,
+        "fHRpg": "0",
+        "Hpg": 0.463,
+        "fHpg": "3/7",
+        "RBIpg": 0.293,
+        "fRBIpg": "2/7",
+        "HR24": 4,
+        "HR24pg": 0.06,
+        "fHR24pg": "0"
+    },
+    {
         "player_name": "Griffin Conine",
         "team": "Miami Marlins",
         "team_id": 146,
@@ -1233,26 +1253,6 @@
         "team": "Miami Marlins",
         "team_id": 146,
         "player_id": 694795
-    },
-    {
-        "player_name": "Kyle Stowers",
-        "team": "Miami Marlins",
-        "team_id": 146,
-        "player_id": 669065,
-        "position": "1B",
-        "games_played": 94.0,
-        "H": 85.0,
-        "HR": 16.0,
-        "RBI": 52.0,
-        "HRpg": 0.17,
-        "fHRpg": "1/6",
-        "Hpg": 0.904,
-        "fHpg": "6/7",
-        "RBIpg": 0.553,
-        "fRBIpg": "4/7",
-        "HR24": 25,
-        "HR24pg": 0.21,
-        "fHR24pg": "1/5"
     },
     {
         "player_name": "Leo Jim\u00e9nez",
@@ -2306,6 +2306,23 @@
         "player_id": 676106
     },
     {
+        "player_name": "Gabe Speier",
+        "team": "Seattle Mariners",
+        "team_id": 136,
+        "player_id": 642100,
+        "position": "P",
+        "games_played": 36.0,
+        "H": 0.0,
+        "HR": 0.0,
+        "RBI": 0.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.0,
+        "fHpg": "0",
+        "RBIpg": 0.0,
+        "fRBIpg": "0"
+    },
+    {
         "player_name": "George Kirby",
         "team": "Seattle Mariners",
         "team_id": 136,
@@ -3342,6 +3359,12 @@
         "fRBIpg": "3/7"
     },
     {
+        "player_name": "Chase Lee",
+        "team": "Toronto Blue Jays",
+        "team_id": 141,
+        "player_id": 695445
+    },
+    {
         "player_name": "Dylan Cease",
         "team": "Toronto Blue Jays",
         "team_id": 141,
@@ -3386,12 +3409,6 @@
         "HR24": 32,
         "HR24pg": 0.23,
         "fHR24pg": "1/4"
-    },
-    {
-        "player_name": "Jameson Taillon",
-        "team": "Toronto Blue Jays",
-        "team_id": 141,
-        "player_id": 592791
     },
     {
         "player_name": "Jes\u00fas S\u00e1nchez",
