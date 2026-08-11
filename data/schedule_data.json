@@ -240,7 +240,7 @@
         "game_datetime": "2026-08-12T01:38:00Z",
         "game_date": "2026-08-11",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Texas Rangers",
         "home_name": "Los Angeles Angels",
         "away_id": 140,
@@ -258,8 +258,8 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-11 - Texas Rangers @ Los Angeles Angels (Scheduled)"
+        "series_status": "TEX leads 1-0",
+        "summary": "2026-08-11 - Texas Rangers @ Los Angeles Angels (Pre-Game)"
     },
     {
         "game_id": 825046,
@@ -318,7 +318,7 @@
         "game_datetime": "2026-08-12T01:40:00Z",
         "game_date": "2026-08-11",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "San Diego Padres",
         "away_id": 158,
@@ -336,8 +336,8 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-11 - Milwaukee Brewers @ San Diego Padres (Scheduled)"
+        "series_status": "SD leads 1-0",
+        "summary": "2026-08-11 - Milwaukee Brewers @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 823186,
