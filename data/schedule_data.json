@@ -15,22 +15,22 @@
         "away_probable_pitcher": "Shane Baz",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 1,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "away_score": 4,
+        "home_score": 5,
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-12 - Baltimore Orioles (1) @ Minnesota Twins (1) (Bottom of the 1st)"
+        "summary": "2026-08-12 - Baltimore Orioles (4) @ Minnesota Twins (5) (Top of the 5th)"
     },
     {
         "game_id": 823017,
         "game_datetime": "2026-08-12T18:15:00Z",
         "game_date": "2026-08-12",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Philadelphia Phillies",
         "home_name": "St. Louis Cardinals",
         "away_id": 143,
@@ -41,22 +41,22 @@
         "away_probable_pitcher": "Zack Wheeler",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "away_score": 1,
+        "home_score": 1,
+        "current_inning": 4,
+        "inning_state": "Bottom",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-12 - Philadelphia Phillies @ St. Louis Cardinals (Warmup)"
+        "summary": "2026-08-12 - Philadelphia Phillies (1) @ St. Louis Cardinals (1) (Bottom of the 4th)"
     },
     {
         "game_id": 824967,
         "game_datetime": "2026-08-12T19:05:00Z",
         "game_date": "2026-08-12",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Tampa Bay Rays",
         "home_name": "Athletics",
         "away_id": 139,
@@ -70,12 +70,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "TB leads 2-0",
-        "summary": "2026-08-12 - Tampa Bay Rays @ Athletics (Pre-Game)"
+        "summary": "2026-08-12 - Tampa Bay Rays (0) @ Athletics (0) (Bottom of the 1st)"
     },
     {
         "game_id": 825047,
@@ -186,7 +186,7 @@
         "game_datetime": "2026-08-12T22:40:00Z",
         "game_date": "2026-08-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Miami Marlins",
         "away_id": 134,
@@ -197,15 +197,15 @@
         "away_probable_pitcher": "Carmen Mlodzinski",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "MIA leads 1-0",
-        "summary": "2026-08-12 - Pittsburgh Pirates @ Miami Marlins (Scheduled)"
+        "summary": "2026-08-12 - Pittsburgh Pirates @ Miami Marlins (Pre-Game)"
     },
     {
         "game_id": 822698,
@@ -238,7 +238,7 @@
         "game_datetime": "2026-08-12T23:05:00Z",
         "game_date": "2026-08-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "New York Yankees",
         "away_id": 136,
@@ -258,15 +258,15 @@
         "national_broadcasts": [
             "ESPN/ESPN App"
         ],
-        "series_status": null,
-        "summary": "2026-08-12 - Seattle Mariners @ New York Yankees (Scheduled)"
+        "series_status": "NYY leads 1-0",
+        "summary": "2026-08-12 - Seattle Mariners @ New York Yankees (Pre-Game)"
     },
     {
         "game_id": 822779,
         "game_datetime": "2026-08-12T23:07:00Z",
         "game_date": "2026-08-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Toronto Blue Jays",
         "away_id": 111,
@@ -284,8 +284,8 @@
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-12 - Boston Red Sox @ Toronto Blue Jays (Scheduled)"
+        "series_status": "TOR leads 2-0",
+        "summary": "2026-08-12 - Boston Red Sox @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 824883,
