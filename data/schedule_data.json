@@ -56,7 +56,7 @@
         "game_datetime": "2026-08-12T19:05:00Z",
         "game_date": "2026-08-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Tampa Bay Rays",
         "home_name": "Athletics",
         "away_id": 139,
@@ -67,22 +67,22 @@
         "away_probable_pitcher": "Drew Rasmussen",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "TB leads 2-0",
-        "summary": "2026-08-12 - Tampa Bay Rays @ Athletics (Scheduled)"
+        "summary": "2026-08-12 - Tampa Bay Rays @ Athletics (Pre-Game)"
     },
     {
         "game_id": 825047,
         "game_datetime": "2026-08-12T19:40:00Z",
         "game_date": "2026-08-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Arizona Diamondbacks",
         "away_id": 115,
@@ -100,15 +100,15 @@
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-12 - Colorado Rockies @ Arizona Diamondbacks (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-08-12 - Colorado Rockies @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 823187,
         "game_datetime": "2026-08-12T19:45:00Z",
         "game_date": "2026-08-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Houston Astros",
         "home_name": "San Francisco Giants",
         "away_id": 117,
@@ -127,14 +127,14 @@
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-12 - Houston Astros @ San Francisco Giants (Scheduled)"
+        "summary": "2026-08-12 - Houston Astros @ San Francisco Giants (Pre-Game)"
     },
     {
         "game_id": 823263,
         "game_datetime": "2026-08-12T20:10:00Z",
         "game_date": "2026-08-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "San Diego Padres",
         "away_id": 158,
@@ -152,8 +152,8 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-12 - Milwaukee Brewers @ San Diego Padres (Scheduled)"
+        "series_status": "SD leads 2-0",
+        "summary": "2026-08-12 - Milwaukee Brewers @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 824241,
