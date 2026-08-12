@@ -109,14 +109,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 6,
-        "home_score": 2,
-        "current_inning": 7,
-        "inning_state": "Bottom",
+        "home_score": 3,
+        "current_inning": 8,
+        "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-12 - Colorado Rockies (6) @ Arizona Diamondbacks (2) (Bottom of the 7th)"
+        "summary": "2026-08-12 - Colorado Rockies (6) @ Arizona Diamondbacks (3) (Top of the 8th)"
     },
     {
         "game_id": 823187,
@@ -136,13 +136,13 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 1,
-        "current_inning": 8,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-12 - Houston Astros (2) @ San Francisco Giants (1) (Bottom of the 8th)"
+        "summary": "2026-08-12 - Houston Astros (2) @ San Francisco Giants (1) (Bottom of the 9th)"
     },
     {
         "game_id": 823263,
@@ -163,12 +163,12 @@
         "away_score": 2,
         "home_score": 1,
         "current_inning": 7,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "SD leads 2-0",
-        "summary": "2026-08-12 - Milwaukee Brewers (2) @ San Diego Padres (1) (Top of the 7th)"
+        "summary": "2026-08-12 - Milwaukee Brewers (2) @ San Diego Padres (1) (End of the 7th)"
     },
     {
         "game_id": 824241,
@@ -359,7 +359,7 @@
         "game_datetime": "2026-08-13T02:10:00Z",
         "game_date": "2026-08-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Kansas City Royals",
         "home_name": "Los Angeles Dodgers",
         "away_id": 118,
@@ -370,15 +370,15 @@
         "away_probable_pitcher": "Daniel Lynch IV",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": "LAD leads 1-0",
-        "summary": "2026-08-12 - Kansas City Royals @ Los Angeles Dodgers (Scheduled)"
+        "series_status": "LAD leads 2-0",
+        "summary": "2026-08-12 - Kansas City Royals @ Los Angeles Dodgers (Pre-Game)"
     },
     {
         "game_id": 823994,
