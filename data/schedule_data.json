@@ -66,7 +66,7 @@
         "game_datetime": "2026-08-12T19:05:00Z",
         "game_date": "2026-08-12",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Tampa Bay Rays",
         "home_name": "Athletics",
         "away_id": 139,
@@ -77,15 +77,20 @@
         "away_probable_pitcher": "Drew Rasmussen",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 7,
-        "home_score": 2,
-        "current_inning": 8,
-        "inning_state": "Top",
+        "away_score": 8,
+        "home_score": 4,
+        "current_inning": 9,
+        "inning_state": "Bottom",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": "TB leads 2-0",
-        "summary": "2026-08-12 - Tampa Bay Rays (7) @ Athletics (2) (Top of the 8th)"
+        "series_status": "TB wins 3-0",
+        "winning_team": "Tampa Bay Rays",
+        "losing_team": "Athletics",
+        "winning_pitcher": "Drew Rasmussen",
+        "losing_pitcher": "Jack Perkins",
+        "save_pitcher": null,
+        "summary": "2026-08-12 - Tampa Bay Rays (8) @ Athletics (4) (Final)"
     },
     {
         "game_id": 825047,
@@ -105,13 +110,13 @@
         "away_pitcher_note": "",
         "away_score": 6,
         "home_score": 2,
-        "current_inning": 6,
-        "inning_state": "Top",
+        "current_inning": 7,
+        "inning_state": "Bottom",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-12 - Colorado Rockies (6) @ Arizona Diamondbacks (2) (Top of the 6th)"
+        "summary": "2026-08-12 - Colorado Rockies (6) @ Arizona Diamondbacks (2) (Bottom of the 7th)"
     },
     {
         "game_id": 823187,
@@ -129,15 +134,15 @@
         "away_probable_pitcher": "Bryan King",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 1,
-        "current_inning": 6,
+        "current_inning": 8,
         "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-12 - Houston Astros (0) @ San Francisco Giants (1) (Bottom of the 6th)"
+        "summary": "2026-08-12 - Houston Astros (2) @ San Francisco Giants (1) (Bottom of the 8th)"
     },
     {
         "game_id": 823263,
@@ -157,13 +162,13 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 1,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "current_inning": 7,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "SD leads 2-0",
-        "summary": "2026-08-12 - Milwaukee Brewers (2) @ San Diego Padres (1) (Bottom of the 4th)"
+        "summary": "2026-08-12 - Milwaukee Brewers (2) @ San Diego Padres (1) (Top of the 7th)"
     },
     {
         "game_id": 824241,
