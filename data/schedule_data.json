@@ -173,12 +173,12 @@
         "away_score": 2,
         "home_score": 2,
         "current_inning": 9,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "SD leads 2-0",
-        "summary": "2026-08-12 - Milwaukee Brewers (2) @ San Diego Padres (2) (Top of the 9th)"
+        "summary": "2026-08-12 - Milwaukee Brewers (2) @ San Diego Padres (2) (Bottom of the 9th)"
     },
     {
         "game_id": 824241,
@@ -197,14 +197,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Middle",
+        "home_score": 2,
+        "current_inning": 2,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "DET leads 1-0",
-        "summary": "2026-08-12 - Cleveland Guardians (2) @ Detroit Tigers (0) (Middle of the 1st)"
+        "summary": "2026-08-12 - Cleveland Guardians (2) @ Detroit Tigers (2) (Top of the 2nd)"
     },
     {
         "game_id": 823833,
@@ -222,15 +222,15 @@
         "away_probable_pitcher": "Carmen Mlodzinski",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Bottom",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "MIA leads 1-0",
-        "summary": "2026-08-12 - Pittsburgh Pirates (0) @ Miami Marlins (0) (Bottom of the 1st)"
+        "summary": "2026-08-12 - Pittsburgh Pirates (1) @ Miami Marlins (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 822698,
@@ -250,20 +250,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "Bottom",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "CHC leads 1-0",
-        "summary": "2026-08-12 - Chicago Cubs (0) @ Washington Nationals (0) (Top of the 1st)"
+        "summary": "2026-08-12 - Chicago Cubs (0) @ Washington Nationals (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 823511,
         "game_datetime": "2026-08-12T23:05:00Z",
         "game_date": "2026-08-12",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Seattle Mariners",
         "home_name": "New York Yankees",
         "away_id": 136,
@@ -284,14 +284,14 @@
             "ESPN/ESPN App"
         ],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-08-12 - Seattle Mariners @ New York Yankees (Warmup)"
+        "summary": "2026-08-12 - Seattle Mariners (0) @ New York Yankees (0) (Top of the 1st)"
     },
     {
         "game_id": 822779,
         "game_datetime": "2026-08-12T23:07:00Z",
         "game_date": "2026-08-12",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Boston Red Sox",
         "home_name": "Toronto Blue Jays",
         "away_id": 111,
@@ -305,12 +305,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 2-0",
-        "summary": "2026-08-12 - Boston Red Sox @ Toronto Blue Jays (Warmup)"
+        "summary": "2026-08-12 - Boston Red Sox (0) @ Toronto Blue Jays (0) (Middle of the 1st)"
     },
     {
         "game_id": 824883,
