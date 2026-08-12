@@ -158,15 +158,15 @@
         "team_id": 110,
         "player_id": 683002,
         "position": "SS",
-        "games_played": 119.0,
+        "games_played": 120.0,
         "H": 104.0,
         "HR": 19.0,
         "RBI": 49.0,
-        "HRpg": 0.16,
+        "HRpg": 0.158,
         "fHRpg": "1/6",
-        "Hpg": 0.874,
+        "Hpg": 0.867,
         "fHpg": "6/7",
-        "RBIpg": 0.412,
+        "RBIpg": 0.408,
         "fRBIpg": "2/5",
         "HR24": 17,
         "HR24pg": 0.11,
@@ -665,15 +665,15 @@
         "team_id": 142,
         "player_id": 605170,
         "position": "C",
-        "games_played": 88.0,
+        "games_played": 89.0,
         "H": 62.0,
         "HR": 7.0,
         "RBI": 37.0,
-        "HRpg": 0.08,
+        "HRpg": 0.079,
         "fHRpg": "1/7",
-        "Hpg": 0.705,
+        "Hpg": 0.697,
         "fHpg": "5/7",
-        "RBIpg": 0.42,
+        "RBIpg": 0.416,
         "fRBIpg": "3/7",
         "HR24": 12,
         "HR24pg": 0.11,
@@ -689,7 +689,18 @@
         "player_name": "Zebby Matthews",
         "team": "Minnesota Twins",
         "team_id": 142,
-        "player_id": 805673
+        "player_id": 805673,
+        "position": "P",
+        "games_played": 16.0,
+        "H": 0.0,
+        "HR": 0.0,
+        "RBI": 0.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.0,
+        "fHpg": "0",
+        "RBIpg": 0.0,
+        "fRBIpg": "0"
     },
     {
         "player_name": "Aaron Nola",
@@ -1821,6 +1832,12 @@
         "fHR24pg": "0"
     },
     {
+        "player_name": "Drew Rom",
+        "team": "Athletics",
+        "team_id": 133,
+        "player_id": 680723
+    },
+    {
         "player_name": "Elvis Alvarado",
         "team": "Athletics",
         "team_id": 133,
@@ -1831,6 +1848,12 @@
         "team": "Athletics",
         "team_id": 133,
         "player_id": 695611
+    },
+    {
+        "player_name": "Hayden Juenger",
+        "team": "Athletics",
+        "team_id": 133,
+        "player_id": 696522
     },
     {
         "player_name": "Henry Bolte",
@@ -1956,12 +1979,6 @@
         "fHR24pg": "1/7"
     },
     {
-        "player_name": "Jos\u00e9 Suarez",
-        "team": "Athletics",
-        "team_id": 133,
-        "player_id": 660761
-    },
-    {
         "player_name": "Lawrence Butler",
         "team": "Athletics",
         "team_id": 133,
@@ -2061,12 +2078,6 @@
         "HR24": 25,
         "HR24pg": 0.16,
         "fHR24pg": "1/6"
-    },
-    {
-        "player_name": "Yunior Tur",
-        "team": "Athletics",
-        "team_id": 133,
-        "player_id": 814305
     },
     {
         "player_name": "Zack Gelof",
