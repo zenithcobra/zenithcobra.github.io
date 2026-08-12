@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-12T17:40:00Z",
         "game_date": "2026-08-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Baltimore Orioles",
         "home_name": "Minnesota Twins",
         "away_id": 110,
@@ -22,15 +22,15 @@
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-12 - Baltimore Orioles @ Minnesota Twins (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-08-12 - Baltimore Orioles @ Minnesota Twins (Pre-Game)"
     },
     {
         "game_id": 823017,
         "game_datetime": "2026-08-12T18:15:00Z",
         "game_date": "2026-08-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "St. Louis Cardinals",
         "away_id": 143,
@@ -48,8 +48,8 @@
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-12 - Philadelphia Phillies @ St. Louis Cardinals (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-08-12 - Philadelphia Phillies @ St. Louis Cardinals (Pre-Game)"
     },
     {
         "game_id": 824967,
@@ -100,7 +100,7 @@
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "Series tied 1-1",
         "summary": "2026-08-12 - Colorado Rockies @ Arizona Diamondbacks (Scheduled)"
     },
     {
