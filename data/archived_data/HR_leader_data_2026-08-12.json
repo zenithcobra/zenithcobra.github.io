@@ -1,9 +1,33 @@
 [
     {
         "place": 1,
+        "player_name": "Yordan Alvarez",
+        "team": "Houston Astros",
+        "HR": "35"
+    },
+    {
+        "place": 1,
+        "player_name": "Junior Caminero",
+        "team": "Tampa Bay Rays",
+        "HR": "35"
+    },
+    {
+        "place": 1,
+        "player_name": "Matt Olson",
+        "team": "Atlanta Braves",
+        "HR": "35"
+    },
+    {
+        "place": 1,
         "player_name": "Kyle Schwarber",
         "team": "Philadelphia Phillies",
         "HR": "35"
+    },
+    {
+        "place": 5,
+        "player_name": "Hunter Goodman",
+        "team": "Colorado Rockies",
+        "HR": "34"
     },
     {
         "place": 6,
@@ -22,6 +46,12 @@
         "player_name": "Pete Crow-Armstrong",
         "team": "Chicago Cubs",
         "HR": "27"
+    },
+    {
+        "place": 10,
+        "player_name": "Pete Alonso",
+        "team": "Baltimore Orioles",
+        "HR": "26"
     },
     {
         "place": 10,
@@ -73,6 +103,12 @@
     },
     {
         "place": 20,
+        "player_name": "Rafael Devers",
+        "team": "San Francisco Giants",
+        "HR": "24"
+    },
+    {
+        "place": 20,
         "player_name": "Luis Garc\u00eda Jr.",
         "team": "New York Yankees",
         "HR": "24"
@@ -87,6 +123,18 @@
         "place": 23,
         "player_name": "Willson Contreras",
         "team": "Boston Red Sox",
+        "HR": "23"
+    },
+    {
+        "place": 23,
+        "player_name": "Manny Machado",
+        "team": "San Diego Padres",
+        "HR": "23"
+    },
+    {
+        "place": 23,
+        "player_name": "Jordan Walker",
+        "team": "St. Louis Cardinals",
         "HR": "23"
     }
 ]
