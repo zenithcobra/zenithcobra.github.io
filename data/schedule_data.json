@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-14T18:20:00Z",
         "game_date": "2026-08-14",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "St. Louis Cardinals",
         "home_name": "Chicago Cubs",
         "away_id": 138,
@@ -25,14 +25,14 @@
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-08-14 - St. Louis Cardinals @ Chicago Cubs (Pre-Game)"
+        "summary": "2026-08-14 - St. Louis Cardinals @ Chicago Cubs (Warmup)"
     },
     {
         "game_id": 824479,
         "game_datetime": "2026-08-14T22:10:00Z",
         "game_date": "2026-08-14",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Miami Marlins",
         "home_name": "Cincinnati Reds",
         "away_id": 146,
@@ -51,7 +51,7 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-14 - Miami Marlins @ Cincinnati Reds (Scheduled)"
+        "summary": "2026-08-14 - Miami Marlins @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 823346,
@@ -170,7 +170,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Steven Matz",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Chris Bassitt",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
