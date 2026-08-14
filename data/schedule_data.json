@@ -16,16 +16,16 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 6,
-        "inning_state": "Bottom",
+        "home_score": 3,
+        "current_inning": 7,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-08-14 - St. Louis Cardinals (0) @ Chicago Cubs (0) (Bottom of the 6th)"
+        "summary": "2026-08-14 - St. Louis Cardinals (0) @ Chicago Cubs (3) (Top of the 7th)"
     },
     {
         "game_id": 824479,
@@ -147,10 +147,10 @@
         "away_probable_pitcher": "Michael King",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
@@ -242,7 +242,7 @@
         "game_datetime": "2026-08-15T00:10:00Z",
         "game_date": "2026-08-14",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "Houston Astros",
         "away_id": 136,
@@ -261,7 +261,7 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-14 - Seattle Mariners @ Houston Astros (Scheduled)"
+        "summary": "2026-08-14 - Seattle Mariners @ Houston Astros (Pre-Game)"
     },
     {
         "game_id": 823993,
