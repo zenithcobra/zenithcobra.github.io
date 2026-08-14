@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-14T18:20:00Z",
         "game_date": "2026-08-14",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "St. Louis Cardinals",
         "home_name": "Chicago Cubs",
         "away_id": 138,
@@ -17,15 +17,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 3,
-        "current_inning": 8,
-        "inning_state": "Bottom",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [
             "Apple TV"
         ],
-        "series_status": null,
-        "summary": "2026-08-14 - St. Louis Cardinals (0) @ Chicago Cubs (3) (Bottom of the 8th)"
+        "series_status": "CHC leads 1-0",
+        "winning_team": "Chicago Cubs",
+        "losing_team": "St. Louis Cardinals",
+        "winning_pitcher": "Clay Holmes",
+        "losing_pitcher": "Matthew Liberatore",
+        "save_pitcher": "Jacob Webb",
+        "summary": "2026-08-14 - St. Louis Cardinals (0) @ Chicago Cubs (3) (Game Over)"
     },
     {
         "game_id": 824479,
@@ -346,7 +351,7 @@
         "game_datetime": "2026-08-15T02:15:00Z",
         "game_date": "2026-08-14",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "San Francisco Giants",
         "away_id": 115,
@@ -365,6 +370,6 @@
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-14 - Colorado Rockies @ San Francisco Giants (Scheduled)"
+        "summary": "2026-08-14 - Colorado Rockies @ San Francisco Giants (Pre-Game)"
     }
 ]
