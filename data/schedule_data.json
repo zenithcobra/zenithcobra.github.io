@@ -37,7 +37,7 @@
         "game_datetime": "2026-08-14T22:10:00Z",
         "game_date": "2026-08-14",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Miami Marlins",
         "home_name": "Cincinnati Reds",
         "away_id": 146,
@@ -50,20 +50,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "Middle",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-14 - Miami Marlins @ Cincinnati Reds (Warmup)"
+        "summary": "2026-08-14 - Miami Marlins (0) @ Cincinnati Reds (0) (Middle of the 2nd)"
     },
     {
         "game_id": 823346,
         "game_datetime": "2026-08-14T22:40:00Z",
         "game_date": "2026-08-14",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Boston Red Sox",
         "home_name": "Pittsburgh Pirates",
         "away_id": 111,
@@ -82,14 +82,14 @@
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-14 - Boston Red Sox @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-08-14 - Boston Red Sox @ Pittsburgh Pirates (Warmup)"
     },
     {
         "game_id": 824237,
         "game_datetime": "2026-08-14T22:40:00Z",
         "game_date": "2026-08-14",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago White Sox",
         "home_name": "Detroit Tigers",
         "away_id": 145,
@@ -108,7 +108,7 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-14 - Chicago White Sox @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-08-14 - Chicago White Sox @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 823591,
@@ -325,7 +325,7 @@
         "game_datetime": "2026-08-15T02:10:00Z",
         "game_date": "2026-08-14",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "Los Angeles Dodgers",
         "away_id": 158,
@@ -343,8 +343,8 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-14 - Milwaukee Brewers @ Los Angeles Dodgers (Scheduled)"
+        "series_status": "MIL leads 1-0",
+        "summary": "2026-08-14 - Milwaukee Brewers @ Los Angeles Dodgers (Pre-Game)"
     },
     {
         "game_id": 823185,
@@ -362,10 +362,10 @@
         "away_probable_pitcher": "Kyle Freeland",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
