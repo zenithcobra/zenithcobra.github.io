@@ -129,26 +129,6 @@
         "fHR24pg": "0"
     },
     {
-        "player_name": "Edgar Quero",
-        "team": "Chicago White Sox",
-        "team_id": 145,
-        "player_id": 700337,
-        "position": "C",
-        "games_played": 65.0,
-        "H": 38.0,
-        "HR": 3.0,
-        "RBI": 19.0,
-        "HRpg": 0.046,
-        "fHRpg": "0",
-        "Hpg": 0.585,
-        "fHpg": "4/7",
-        "RBIpg": 0.292,
-        "fRBIpg": "2/7",
-        "HR24": 5,
-        "HR24pg": 0.05,
-        "fHR24pg": "0"
-    },
-    {
         "player_name": "Erick Fedde",
         "team": "Chicago White Sox",
         "team_id": 145,
@@ -171,6 +151,26 @@
         "team": "Chicago White Sox",
         "team_id": 145,
         "player_id": 623211
+    },
+    {
+        "player_name": "Jake Rogers",
+        "team": "Chicago White Sox",
+        "team_id": 145,
+        "player_id": 668670,
+        "position": "C",
+        "games_played": 42.0,
+        "H": 19.0,
+        "HR": 3.0,
+        "RBI": 11.0,
+        "HRpg": 0.071,
+        "fHRpg": "0",
+        "Hpg": 0.452,
+        "fHpg": "3/7",
+        "RBIpg": 0.262,
+        "fRBIpg": "1/4",
+        "HR24": 3,
+        "HR24pg": 0.06,
+        "fHR24pg": "0"
     },
     {
         "player_name": "Jordan Hicks",
@@ -898,6 +898,12 @@
         "HR24": 1,
         "HR24pg": 0.03,
         "fHR24pg": "0"
+    },
+    {
+        "player_name": "Joshua B\u00e1ez",
+        "team": "St. Louis Cardinals",
+        "team_id": 138,
+        "player_id": 695491
     },
     {
         "player_name": "Justin Bruihl",
