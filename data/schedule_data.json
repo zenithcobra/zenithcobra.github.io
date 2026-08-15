@@ -15,22 +15,22 @@
         "away_probable_pitcher": "Anthony Kay",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 0,
-        "current_inning": 1,
+        "away_score": 3,
+        "home_score": 2,
+        "current_inning": 5,
         "inning_state": "Bottom",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-08-15 - Chicago White Sox (1) @ Detroit Tigers (0) (Bottom of the 1st)"
+        "summary": "2026-08-15 - Chicago White Sox (3) @ Detroit Tigers (2) (Bottom of the 5th)"
     },
     {
         "game_id": 824644,
         "game_datetime": "2026-08-15T18:20:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "St. Louis Cardinals",
         "home_name": "Chicago Cubs",
         "away_id": 138,
@@ -41,15 +41,15 @@
         "away_probable_pitcher": "Michael McGreevy",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 3,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "Middle",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 1-0",
-        "summary": "2026-08-15 - St. Louis Cardinals @ Chicago Cubs (Pre-Game)"
+        "summary": "2026-08-15 - St. Louis Cardinals (3) @ Chicago Cubs (0) (Middle of the 2nd)"
     },
     {
         "game_id": 822775,
@@ -119,10 +119,10 @@
         "away_probable_pitcher": "Brad Lord",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [
@@ -136,7 +136,7 @@
         "game_datetime": "2026-08-15T22:10:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Baltimore Orioles",
         "home_name": "Tampa Bay Rays",
         "away_id": 110,
@@ -147,22 +147,22 @@
         "away_probable_pitcher": "Kyle Bradish",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-15 - Baltimore Orioles @ Tampa Bay Rays (Scheduled)"
+        "series_status": "BAL leads 1-0",
+        "summary": "2026-08-15 - Baltimore Orioles @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 824480,
         "game_datetime": "2026-08-15T22:40:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Miami Marlins",
         "home_name": "Cincinnati Reds",
         "away_id": 146,
@@ -180,8 +180,8 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-15 - Miami Marlins @ Cincinnati Reds (Scheduled)"
+        "series_status": "CIN leads 1-0",
+        "summary": "2026-08-15 - Miami Marlins @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 824400,
@@ -206,7 +206,7 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": "SD leads 1-0",
+        "series_status": null,
         "summary": "2026-08-15 - San Diego Padres @ Cleveland Guardians (Scheduled)"
     },
     {
@@ -240,7 +240,7 @@
         "game_datetime": "2026-08-15T23:10:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "Minnesota Twins",
         "away_id": 143,
@@ -258,8 +258,8 @@
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-15 - Philadelphia Phillies @ Minnesota Twins (Scheduled)"
+        "series_status": "PHI leads 1-0",
+        "summary": "2026-08-15 - Philadelphia Phillies @ Minnesota Twins (Pre-Game)"
     },
     {
         "game_id": 823347,
@@ -286,7 +286,7 @@
         "national_broadcasts": [
             "FOX / FOX ONE"
         ],
-        "series_status": null,
+        "series_status": "PIT leads 1-0",
         "summary": "2026-08-15 - Boston Red Sox @ Pittsburgh Pirates (Scheduled)"
     },
     {
@@ -342,7 +342,7 @@
         "national_broadcasts": [
             "FOX / FOX ONE"
         ],
-        "series_status": "MIL leads 1-0",
+        "series_status": null,
         "summary": "2026-08-15 - Milwaukee Brewers @ Los Angeles Dodgers (Scheduled)"
     },
     {
@@ -394,7 +394,7 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": "ATH leads 1-0",
+        "series_status": null,
         "summary": "2026-08-15 - Texas Rangers @ Athletics (Scheduled)"
     }
 ]
