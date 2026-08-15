@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 2,
-        "current_inning": 5,
+        "home_score": 3,
+        "current_inning": 6,
         "inning_state": "Bottom",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-08-15 - Chicago White Sox (3) @ Detroit Tigers (2) (Bottom of the 5th)"
+        "summary": "2026-08-15 - Chicago White Sox (3) @ Detroit Tigers (3) (Bottom of the 6th)"
     },
     {
         "game_id": 824644,
@@ -42,21 +42,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 0,
+        "home_score": 3,
         "current_inning": 2,
-        "inning_state": "Middle",
+        "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 1-0",
-        "summary": "2026-08-15 - St. Louis Cardinals (3) @ Chicago Cubs (0) (Middle of the 2nd)"
+        "summary": "2026-08-15 - St. Louis Cardinals (3) @ Chicago Cubs (3) (Bottom of the 2nd)"
     },
     {
         "game_id": 822775,
         "game_datetime": "2026-08-15T19:07:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Yankees",
         "home_name": "Toronto Blue Jays",
         "away_id": 147,
@@ -75,7 +75,7 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-08-15 - New York Yankees @ Toronto Blue Jays (Pre-Game)"
+        "summary": "2026-08-15 - New York Yankees @ Toronto Blue Jays (Warmup)"
     },
     {
         "game_id": 823184,
@@ -206,7 +206,7 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "SD leads 1-0",
         "summary": "2026-08-15 - San Diego Padres @ Cleveland Guardians (Scheduled)"
     },
     {
@@ -286,7 +286,7 @@
         "national_broadcasts": [
             "FOX / FOX ONE"
         ],
-        "series_status": "PIT leads 1-0",
+        "series_status": null,
         "summary": "2026-08-15 - Boston Red Sox @ Pittsburgh Pirates (Scheduled)"
     },
     {
@@ -294,7 +294,7 @@
         "game_datetime": "2026-08-15T23:15:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Atlanta Braves",
         "away_id": 109,
@@ -314,8 +314,8 @@
         "national_broadcasts": [
             "FOX / FOX ONE"
         ],
-        "series_status": null,
-        "summary": "2026-08-15 - Arizona Diamondbacks @ Atlanta Braves (Scheduled)"
+        "series_status": "AZ leads 1-0",
+        "summary": "2026-08-15 - Arizona Diamondbacks @ Atlanta Braves (Pre-Game)"
     },
     {
         "game_id": 823914,
@@ -342,7 +342,7 @@
         "national_broadcasts": [
             "FOX / FOX ONE"
         ],
-        "series_status": null,
+        "series_status": "MIL leads 1-0",
         "summary": "2026-08-15 - Milwaukee Brewers @ Los Angeles Dodgers (Scheduled)"
     },
     {
@@ -394,7 +394,7 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "ATH leads 1-0",
         "summary": "2026-08-15 - Texas Rangers @ Athletics (Scheduled)"
     }
 ]
