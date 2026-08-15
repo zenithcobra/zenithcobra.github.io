@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-15T17:10:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Chicago White Sox",
         "home_name": "Detroit Tigers",
         "away_id": 145,
@@ -17,13 +17,18 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 3,
-        "current_inning": 8,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": "CWS leads 1-0",
-        "summary": "2026-08-15 - Chicago White Sox (4) @ Detroit Tigers (3) (Bottom of the 8th)"
+        "series_status": "CWS wins 2-0",
+        "winning_team": "Chicago White Sox",
+        "losing_team": "Detroit Tigers",
+        "winning_pitcher": "Jordan Hicks",
+        "losing_pitcher": "Drew Sommers",
+        "save_pitcher": "Bryan Hudson",
+        "summary": "2026-08-15 - Chicago White Sox (4) @ Detroit Tigers (3) (Game Over)"
     },
     {
         "game_id": 824644,
@@ -43,13 +48,13 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 3,
-        "current_inning": 4,
+        "current_inning": 5,
         "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 1-0",
-        "summary": "2026-08-15 - St. Louis Cardinals (4) @ Chicago Cubs (3) (Bottom of the 4th)"
+        "summary": "2026-08-15 - St. Louis Cardinals (4) @ Chicago Cubs (3) (Bottom of the 5th)"
     },
     {
         "game_id": 822775,
@@ -67,22 +72,22 @@
         "away_probable_pitcher": "Cam Schlittler",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-08-15 - New York Yankees (0) @ Toronto Blue Jays (0) (Top of the 2nd)"
+        "summary": "2026-08-15 - New York Yankees (1) @ Toronto Blue Jays (0) (Top of the 3rd)"
     },
     {
         "game_id": 823184,
         "game_datetime": "2026-08-15T20:05:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Colorado Rockies",
         "home_name": "San Francisco Giants",
         "away_id": 115,
@@ -101,7 +106,7 @@
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "COL leads 1-0",
-        "summary": "2026-08-15 - Colorado Rockies @ San Francisco Giants (Pre-Game)"
+        "summary": "2026-08-15 - Colorado Rockies @ San Francisco Giants (Warmup)"
     },
     {
         "game_id": 823588,
@@ -266,7 +271,7 @@
         "game_datetime": "2026-08-15T23:15:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Pittsburgh Pirates",
         "away_id": 111,
@@ -287,7 +292,7 @@
             "FOX / FOX ONE"
         ],
         "series_status": "PIT leads 1-0",
-        "summary": "2026-08-15 - Boston Red Sox @ Pittsburgh Pirates (Scheduled)"
+        "summary": "2026-08-15 - Boston Red Sox @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 824884,
