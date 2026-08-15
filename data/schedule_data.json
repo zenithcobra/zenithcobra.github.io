@@ -78,14 +78,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 2,
-        "current_inning": 8,
-        "inning_state": "Bottom",
+        "home_score": 4,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-08-15 - New York Yankees (1) @ Toronto Blue Jays (2) (Bottom of the 8th)"
+        "summary": "2026-08-15 - New York Yankees (1) @ Toronto Blue Jays (4) (Top of the 9th)"
     },
     {
         "game_id": 823184,
@@ -105,13 +105,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 7,
-        "current_inning": 4,
-        "inning_state": "End",
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "COL leads 1-0",
-        "summary": "2026-08-15 - Colorado Rockies (1) @ San Francisco Giants (7) (End of the 4th)"
+        "summary": "2026-08-15 - Colorado Rockies (1) @ San Francisco Giants (7) (Top of the 6th)"
     },
     {
         "game_id": 823588,
@@ -131,7 +131,7 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 2,
-        "current_inning": 5,
+        "current_inning": 6,
         "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
@@ -139,7 +139,7 @@
             "FS1"
         ],
         "series_status": "NYM leads 1-0",
-        "summary": "2026-08-15 - Washington Nationals (1) @ New York Mets (2) (Top of the 5th)"
+        "summary": "2026-08-15 - Washington Nationals (1) @ New York Mets (2) (Top of the 6th)"
     },
     {
         "game_id": 822941,
@@ -360,7 +360,7 @@
         "game_datetime": "2026-08-16T01:38:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Kansas City Royals",
         "home_name": "Los Angeles Angels",
         "away_id": 118,
@@ -378,15 +378,15 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-15 - Kansas City Royals @ Los Angeles Angels (Scheduled)"
+        "series_status": "KC leads 1-0",
+        "summary": "2026-08-15 - Kansas City Royals @ Los Angeles Angels (Pre-Game)"
     },
     {
         "game_id": 824966,
         "game_datetime": "2026-08-16T01:40:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Texas Rangers",
         "home_name": "Athletics",
         "away_id": 140,
@@ -405,6 +405,6 @@
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "ATH leads 1-0",
-        "summary": "2026-08-15 - Texas Rangers @ Athletics (Scheduled)"
+        "summary": "2026-08-15 - Texas Rangers @ Athletics (Pre-Game)"
     }
 ]
