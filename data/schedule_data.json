@@ -97,7 +97,7 @@
         "game_datetime": "2026-08-15T20:05:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Colorado Rockies",
         "home_name": "San Francisco Giants",
         "away_id": 115,
@@ -121,14 +121,14 @@
         "winning_pitcher": "Logan Webb",
         "losing_pitcher": "Michael Lorenzen",
         "save_pitcher": null,
-        "summary": "2026-08-15 - Colorado Rockies (1) @ San Francisco Giants (7) (Game Over)"
+        "summary": "2026-08-15 - Colorado Rockies (1) @ San Francisco Giants (7) (Final)"
     },
     {
         "game_id": 823588,
         "game_datetime": "2026-08-15T20:10:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Player challenge",
         "away_name": "Washington Nationals",
         "home_name": "New York Mets",
         "away_id": 120,
@@ -141,15 +141,15 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 3,
-        "current_inning": 8,
-        "inning_state": "Bottom",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [
             "FS1"
         ],
         "series_status": "NYM leads 1-0",
-        "summary": "2026-08-15 - Washington Nationals (4) @ New York Mets (3) (Bottom of the 8th)"
+        "summary": "2026-08-15 - Washington Nationals @ New York Mets (Player challenge)"
     },
     {
         "game_id": 822941,
@@ -167,22 +167,22 @@
         "away_probable_pitcher": "Kyle Bradish",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "Middle",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-08-15 - Baltimore Orioles (0) @ Tampa Bay Rays (0) (Top of the 2nd)"
+        "summary": "2026-08-15 - Baltimore Orioles (1) @ Tampa Bay Rays (0) (Middle of the 3rd)"
     },
     {
         "game_id": 824480,
         "game_datetime": "2026-08-15T22:40:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Miami Marlins",
         "home_name": "Cincinnati Reds",
         "away_id": 146,
@@ -201,14 +201,14 @@
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "CIN leads 1-0",
-        "summary": "2026-08-15 - Miami Marlins @ Cincinnati Reds (Warmup)"
+        "summary": "2026-08-15 - Miami Marlins (0) @ Cincinnati Reds (0) (Top of the 1st)"
     },
     {
         "game_id": 824400,
         "game_datetime": "2026-08-15T23:10:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "San Diego Padres",
         "home_name": "Cleveland Guardians",
         "away_id": 135,
@@ -227,14 +227,14 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "SD leads 1-0",
-        "summary": "2026-08-15 - San Diego Padres @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-08-15 - San Diego Padres @ Cleveland Guardians (Warmup)"
     },
     {
         "game_id": 824157,
         "game_datetime": "2026-08-15T23:10:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Seattle Mariners",
         "home_name": "Houston Astros",
         "away_id": 136,
@@ -253,14 +253,14 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": "HOU leads 1-0",
-        "summary": "2026-08-15 - Seattle Mariners @ Houston Astros (Pre-Game)"
+        "summary": "2026-08-15 - Seattle Mariners @ Houston Astros (Warmup)"
     },
     {
         "game_id": 823671,
         "game_datetime": "2026-08-15T23:10:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Philadelphia Phillies",
         "home_name": "Minnesota Twins",
         "away_id": 143,
@@ -279,14 +279,14 @@
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-08-15 - Philadelphia Phillies @ Minnesota Twins (Pre-Game)"
+        "summary": "2026-08-15 - Philadelphia Phillies @ Minnesota Twins (Warmup)"
     },
     {
         "game_id": 823347,
         "game_datetime": "2026-08-15T23:15:00Z",
         "game_date": "2026-08-15",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Boston Red Sox",
         "home_name": "Pittsburgh Pirates",
         "away_id": 111,
@@ -307,7 +307,7 @@
             "FOX / FOX ONE"
         ],
         "series_status": "PIT leads 1-0",
-        "summary": "2026-08-15 - Boston Red Sox @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-08-15 - Boston Red Sox @ Pittsburgh Pirates (Warmup)"
     },
     {
         "game_id": 824884,
@@ -407,10 +407,10 @@
         "away_probable_pitcher": "MacKenzie Gore",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
