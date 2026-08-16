@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-16T16:15:00Z",
         "game_date": "2026-08-16",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Baltimore Orioles",
         "home_name": "Tampa Bay Rays",
         "away_id": 110,
@@ -25,7 +25,7 @@
             "Peacock/NBCSN"
         ],
         "series_status": "BAL leads 2-0",
-        "summary": "2026-08-16 - Baltimore Orioles @ Tampa Bay Rays (Pre-Game)"
+        "summary": "2026-08-16 - Baltimore Orioles @ Tampa Bay Rays (Warmup)"
     },
     {
         "game_id": 823344,
@@ -286,7 +286,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": "COL leads 1-0",
+        "series_status": null,
         "summary": "2026-08-16 - Colorado Rockies @ San Francisco Giants (Scheduled)"
     },
     {
@@ -364,7 +364,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": "MIL leads 1-0",
+        "series_status": null,
         "summary": "2026-08-16 - Milwaukee Brewers @ Los Angeles Dodgers (Scheduled)"
     },
     {
