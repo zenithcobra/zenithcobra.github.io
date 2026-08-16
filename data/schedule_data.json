@@ -15,10 +15,10 @@
         "away_probable_pitcher": "Trevor Rogers",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [
@@ -128,7 +128,7 @@
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "NYM leads 2-0",
         "summary": "2026-08-16 - Washington Nationals @ New York Mets (Scheduled)"
     },
     {
@@ -136,7 +136,7 @@
         "game_datetime": "2026-08-16T17:40:00Z",
         "game_date": "2026-08-16",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Diego Padres",
         "home_name": "Cleveland Guardians",
         "away_id": 135,
@@ -147,15 +147,15 @@
         "away_probable_pitcher": "Casey Mize",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-16 - San Diego Padres @ Cleveland Guardians (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-08-16 - San Diego Padres @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 824236,
@@ -214,7 +214,7 @@
         "game_datetime": "2026-08-16T18:10:00Z",
         "game_date": "2026-08-16",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Philadelphia Phillies",
         "home_name": "Minnesota Twins",
         "away_id": 143,
@@ -232,8 +232,8 @@
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-16 - Philadelphia Phillies @ Minnesota Twins (Scheduled)"
+        "series_status": "PHI leads 2-0",
+        "summary": "2026-08-16 - Philadelphia Phillies @ Minnesota Twins (Pre-Game)"
     },
     {
         "game_id": 824642,
@@ -286,7 +286,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "COL leads 1-0",
         "summary": "2026-08-16 - Colorado Rockies @ San Francisco Giants (Scheduled)"
     },
     {
@@ -364,7 +364,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "MIL leads 1-0",
         "summary": "2026-08-16 - Milwaukee Brewers @ Los Angeles Dodgers (Scheduled)"
     },
     {
