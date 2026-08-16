@@ -15,17 +15,17 @@
         "away_probable_pitcher": "Trevor Rogers",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
-        "home_score": 1,
-        "current_inning": 6,
-        "inning_state": "Top",
+        "away_score": 10,
+        "home_score": 2,
+        "current_inning": 7,
+        "inning_state": "End",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [
             "Peacock/NBCSN"
         ],
         "series_status": "BAL leads 2-0",
-        "summary": "2026-08-16 - Baltimore Orioles (3) @ Tampa Bay Rays (1) (Top of the 6th)"
+        "summary": "2026-08-16 - Baltimore Orioles (10) @ Tampa Bay Rays (2) (End of the 7th)"
     },
     {
         "game_id": 823344,
@@ -44,14 +44,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "home_score": 7,
+        "current_inning": 3,
+        "inning_state": "End",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-16 - Boston Red Sox (0) @ Pittsburgh Pirates (0) (Bottom of the 1st)"
+        "summary": "2026-08-16 - Boston Red Sox (0) @ Pittsburgh Pirates (7) (End of the 3rd)"
     },
     {
         "game_id": 824880,
@@ -69,15 +69,15 @@
         "away_probable_pitcher": "Michael Soroka",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "away_score": 1,
+        "home_score": 1,
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
         "series_status": "AZ leads 2-0",
-        "summary": "2026-08-16 - Arizona Diamondbacks (0) @ Atlanta Braves (0) (Bottom of the 1st)"
+        "summary": "2026-08-16 - Arizona Diamondbacks (1) @ Atlanta Braves (1) (Top of the 5th)"
     },
     {
         "game_id": 822774,
@@ -95,15 +95,15 @@
         "away_probable_pitcher": "Ryan Weathers",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 2-0",
-        "summary": "2026-08-16 - New York Yankees (0) @ Toronto Blue Jays (0) (Bottom of the 1st)"
+        "summary": "2026-08-16 - New York Yankees (1) @ Toronto Blue Jays (0) (Top of the 5th)"
     },
     {
         "game_id": 823590,
@@ -121,15 +121,15 @@
         "away_probable_pitcher": "Jake Irvin",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Middle",
+        "current_inning": 4,
+        "inning_state": "Bottom",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": "NYM leads 2-0",
-        "summary": "2026-08-16 - Washington Nationals (0) @ New York Mets (0) (Middle of the 1st)"
+        "summary": "2026-08-16 - Washington Nationals (2) @ New York Mets (0) (Bottom of the 4th)"
     },
     {
         "game_id": 824397,
@@ -173,15 +173,15 @@
         "away_probable_pitcher": "Sean Burke",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Middle",
+        "away_score": 1,
+        "home_score": 4,
+        "current_inning": 4,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "CWS leads 2-0",
-        "summary": "2026-08-16 - Chicago White Sox (0) @ Detroit Tigers (0) (Middle of the 1st)"
+        "summary": "2026-08-16 - Chicago White Sox (1) @ Detroit Tigers (4) (Top of the 4th)"
     },
     {
         "game_id": 824477,
@@ -201,20 +201,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 4,
+        "inning_state": "Middle",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-16 - Miami Marlins (0) @ Cincinnati Reds (0) (Top of the 1st)"
+        "summary": "2026-08-16 - Miami Marlins (0) @ Cincinnati Reds (0) (Middle of the 4th)"
     },
     {
         "game_id": 823670,
         "game_datetime": "2026-08-16T18:10:00Z",
         "game_date": "2026-08-16",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Philadelphia Phillies",
         "home_name": "Minnesota Twins",
         "away_id": 143,
@@ -226,14 +226,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
+        "home_score": 4,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "PHI leads 2-0",
-        "summary": "2026-08-16 - Philadelphia Phillies @ Minnesota Twins (Warmup)"
+        "summary": "2026-08-16 - Philadelphia Phillies (0) @ Minnesota Twins (4) (Top of the 2nd)"
     },
     {
         "game_id": 824642,
