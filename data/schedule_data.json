@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-16T16:15:00Z",
         "game_date": "2026-08-16",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Baltimore Orioles",
         "home_name": "Tampa Bay Rays",
         "away_id": 110,
@@ -24,15 +24,15 @@
         "national_broadcasts": [
             "Peacock/NBCSN"
         ],
-        "series_status": null,
-        "summary": "2026-08-16 - Baltimore Orioles @ Tampa Bay Rays (Scheduled)"
+        "series_status": "BAL leads 2-0",
+        "summary": "2026-08-16 - Baltimore Orioles @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 823344,
         "game_datetime": "2026-08-16T17:35:00Z",
         "game_date": "2026-08-16",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Pittsburgh Pirates",
         "away_id": 111,
@@ -51,14 +51,14 @@
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-16 - Boston Red Sox @ Pittsburgh Pirates (Scheduled)"
+        "summary": "2026-08-16 - Boston Red Sox @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 824880,
         "game_datetime": "2026-08-16T17:35:00Z",
         "game_date": "2026-08-16",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Atlanta Braves",
         "away_id": 109,
@@ -76,15 +76,15 @@
         "venue_id": 4705,
         "venue_name": "Truist Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-16 - Arizona Diamondbacks @ Atlanta Braves (Scheduled)"
+        "series_status": "AZ leads 2-0",
+        "summary": "2026-08-16 - Arizona Diamondbacks @ Atlanta Braves (Pre-Game)"
     },
     {
         "game_id": 822774,
         "game_datetime": "2026-08-16T17:37:00Z",
         "game_date": "2026-08-16",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Yankees",
         "home_name": "Toronto Blue Jays",
         "away_id": 147,
@@ -102,8 +102,8 @@
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-16 - New York Yankees @ Toronto Blue Jays (Scheduled)"
+        "series_status": "TOR leads 2-0",
+        "summary": "2026-08-16 - New York Yankees @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 823590,
@@ -162,7 +162,7 @@
         "game_datetime": "2026-08-16T17:40:00Z",
         "game_date": "2026-08-16",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago White Sox",
         "home_name": "Detroit Tigers",
         "away_id": 145,
@@ -173,22 +173,22 @@
         "away_probable_pitcher": "Sean Burke",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-16 - Chicago White Sox @ Detroit Tigers (Scheduled)"
+        "series_status": "CWS leads 2-0",
+        "summary": "2026-08-16 - Chicago White Sox @ Detroit Tigers (Pre-Game)"
     },
     {
         "game_id": 824477,
         "game_datetime": "2026-08-16T17:40:00Z",
         "game_date": "2026-08-16",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Miami Marlins",
         "home_name": "Cincinnati Reds",
         "away_id": 146,
@@ -206,8 +206,8 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-16 - Miami Marlins @ Cincinnati Reds (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-08-16 - Miami Marlins @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 823670,
