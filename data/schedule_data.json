@@ -17,7 +17,7 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
@@ -25,7 +25,7 @@
             "Peacock/NBCSN"
         ],
         "series_status": "BAL leads 2-0",
-        "summary": "2026-08-16 - Baltimore Orioles (0) @ Tampa Bay Rays (0) (Bottom of the 2nd)"
+        "summary": "2026-08-16 - Baltimore Orioles (0) @ Tampa Bay Rays (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 823344,
@@ -240,7 +240,7 @@
         "game_datetime": "2026-08-16T19:15:00Z",
         "game_date": "2026-08-16",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "Chicago Cubs",
         "away_id": 138,
@@ -260,8 +260,8 @@
         "national_broadcasts": [
             "ABC/ESPN App"
         ],
-        "series_status": null,
-        "summary": "2026-08-16 - St. Louis Cardinals @ Chicago Cubs (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-08-16 - St. Louis Cardinals @ Chicago Cubs (Pre-Game)"
     },
     {
         "game_id": 823182,
@@ -320,7 +320,7 @@
         "game_datetime": "2026-08-16T20:07:00Z",
         "game_date": "2026-08-16",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Kansas City Royals",
         "home_name": "Los Angeles Angels",
         "away_id": 118,
@@ -338,8 +338,8 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-16 - Kansas City Royals @ Los Angeles Angels (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-08-16 - Kansas City Royals @ Los Angeles Angels (Pre-Game)"
     },
     {
         "game_id": 823912,
@@ -364,7 +364,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": "MIL leads 1-0",
+        "series_status": null,
         "summary": "2026-08-16 - Milwaukee Brewers @ Los Angeles Dodgers (Scheduled)"
     },
     {
