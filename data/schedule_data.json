@@ -35,7 +35,7 @@
         "game_datetime": "2026-08-17T22:40:00Z",
         "game_date": "2026-08-17",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "St. Louis Cardinals",
         "home_name": "Cincinnati Reds",
         "away_id": 138,
@@ -49,12 +49,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "STL leads 1-0",
-        "summary": "2026-08-17 - St. Louis Cardinals @ Cincinnati Reds (Warmup)"
+        "summary": "2026-08-17 - St. Louis Cardinals (0) @ Cincinnati Reds (0) (Bottom of the 1st)"
     },
     {
         "game_id": 822939,
@@ -73,21 +73,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 0,
+        "home_score": 1,
         "current_inning": 3,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "BAL leads 3-0",
-        "summary": "2026-08-17 - Baltimore Orioles (1) @ Tampa Bay Rays (0) (Top of the 3rd)"
+        "summary": "2026-08-17 - Baltimore Orioles (1) @ Tampa Bay Rays (1) (Bottom of the 3rd)"
     },
     {
         "game_id": 823427,
         "game_datetime": "2026-08-17T22:40:00Z",
         "game_date": "2026-08-17",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Miami Marlins",
         "home_name": "Philadelphia Phillies",
         "away_id": 146,
@@ -101,19 +101,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-17 - Miami Marlins @ Philadelphia Phillies (Warmup)"
+        "summary": "2026-08-17 - Miami Marlins (0) @ Philadelphia Phillies (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823343,
         "game_datetime": "2026-08-17T23:05:00Z",
         "game_date": "2026-08-17",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Detroit Tigers",
         "home_name": "Pittsburgh Pirates",
         "away_id": 116,
@@ -134,7 +134,7 @@
             "ESPN/ESPN App"
         ],
         "series_status": null,
-        "summary": "2026-08-17 - Detroit Tigers @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-08-17 - Detroit Tigers @ Pittsburgh Pirates (Warmup)"
     },
     {
         "game_id": 824725,
@@ -167,7 +167,7 @@
         "game_datetime": "2026-08-17T23:10:00Z",
         "game_date": "2026-08-17",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "San Diego Padres",
         "home_name": "New York Mets",
         "away_id": 135,
@@ -186,7 +186,7 @@
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-17 - San Diego Padres @ New York Mets (Pre-Game)"
+        "summary": "2026-08-17 - San Diego Padres @ New York Mets (Warmup)"
     },
     {
         "game_id": 824077,
