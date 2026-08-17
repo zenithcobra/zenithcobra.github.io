@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 0,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "home_score": 1,
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-17 - St. Louis Cardinals (2) @ Cincinnati Reds (0) (Bottom of the 4th)"
+        "summary": "2026-08-17 - St. Louis Cardinals (2) @ Cincinnati Reds (1) (Top of the 5th)"
     },
     {
         "game_id": 824478,
@@ -56,7 +56,7 @@
         "game_datetime": "2026-08-17T22:05:00Z",
         "game_date": "2026-08-17",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Baltimore Orioles",
         "home_name": "Tampa Bay Rays",
         "away_id": 110,
@@ -75,14 +75,14 @@
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "BAL leads 3-0",
-        "summary": "2026-08-17 - Baltimore Orioles @ Tampa Bay Rays (Scheduled)"
+        "summary": "2026-08-17 - Baltimore Orioles @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 823427,
         "game_datetime": "2026-08-17T22:40:00Z",
         "game_date": "2026-08-17",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Miami Marlins",
         "home_name": "Philadelphia Phillies",
         "away_id": 146,
@@ -101,7 +101,7 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-17 - Miami Marlins @ Philadelphia Phillies (Scheduled)"
+        "summary": "2026-08-17 - Miami Marlins @ Philadelphia Phillies (Pre-Game)"
     },
     {
         "game_id": 823343,
