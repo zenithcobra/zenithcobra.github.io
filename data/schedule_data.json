@@ -82,7 +82,7 @@
         "game_datetime": "2026-08-18T22:40:00Z",
         "game_date": "2026-08-18",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "Cincinnati Reds",
         "away_id": 138,
@@ -100,15 +100,15 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-18 - St. Louis Cardinals @ Cincinnati Reds (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-08-18 - St. Louis Cardinals @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 822938,
         "game_datetime": "2026-08-18T22:40:00Z",
         "game_date": "2026-08-18",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "Tampa Bay Rays",
         "away_id": 141,
@@ -127,14 +127,14 @@
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-18 - Toronto Blue Jays @ Tampa Bay Rays (Scheduled)"
+        "summary": "2026-08-18 - Toronto Blue Jays @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 823423,
         "game_datetime": "2026-08-18T22:40:00Z",
         "game_date": "2026-08-18",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Miami Marlins",
         "home_name": "Philadelphia Phillies",
         "away_id": 146,
@@ -153,14 +153,14 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-08-18 - Miami Marlins @ Philadelphia Phillies (Scheduled)"
+        "summary": "2026-08-18 - Miami Marlins @ Philadelphia Phillies (Pre-Game)"
     },
     {
         "game_id": 824723,
         "game_datetime": "2026-08-18T23:10:00Z",
         "game_date": "2026-08-18",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Boston Red Sox",
         "away_id": 109,
@@ -178,15 +178,15 @@
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-18 - Arizona Diamondbacks @ Boston Red Sox (Scheduled)"
+        "series_status": "BOS leads 1-0",
+        "summary": "2026-08-18 - Arizona Diamondbacks @ Boston Red Sox (Pre-Game)"
     },
     {
         "game_id": 823586,
         "game_datetime": "2026-08-18T23:10:00Z",
         "game_date": "2026-08-18",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Diego Padres",
         "home_name": "New York Mets",
         "away_id": 135,
@@ -204,8 +204,8 @@
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-18 - San Diego Padres @ New York Mets (Scheduled)"
+        "series_status": "NYM leads 1-0",
+        "summary": "2026-08-18 - San Diego Padres @ New York Mets (Pre-Game)"
     },
     {
         "game_id": 824075,
