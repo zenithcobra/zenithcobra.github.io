@@ -46,15 +46,15 @@
         "away_probable_pitcher": "Andre Pallante",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 1,
-        "current_inning": 4,
+        "current_inning": 5,
         "inning_state": "Top",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "STL leads 1-0",
-        "summary": "2026-08-17 - St. Louis Cardinals (1) @ Cincinnati Reds (1) (Top of the 4th)"
+        "summary": "2026-08-17 - St. Louis Cardinals (2) @ Cincinnati Reds (1) (Top of the 5th)"
     },
     {
         "game_id": 822939,
@@ -72,15 +72,15 @@
         "away_probable_pitcher": "Brandon Young",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 4,
+        "away_score": 6,
         "home_score": 4,
-        "current_inning": 5,
+        "current_inning": 6,
         "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "BAL leads 3-0",
-        "summary": "2026-08-17 - Baltimore Orioles (4) @ Tampa Bay Rays (4) (Top of the 5th)"
+        "summary": "2026-08-17 - Baltimore Orioles (6) @ Tampa Bay Rays (4) (Top of the 6th)"
     },
     {
         "game_id": 823427,
@@ -99,14 +99,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 1,
-        "current_inning": 3,
-        "inning_state": "Bottom",
+        "home_score": 2,
+        "current_inning": 4,
+        "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-17 - Miami Marlins (0) @ Philadelphia Phillies (1) (Bottom of the 3rd)"
+        "summary": "2026-08-17 - Miami Marlins (0) @ Philadelphia Phillies (2) (Top of the 4th)"
     },
     {
         "game_id": 823343,
@@ -124,17 +124,17 @@
         "away_probable_pitcher": "Framber Valdez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
+        "away_score": 4,
         "home_score": 0,
         "current_inning": 2,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [
             "ESPN/ESPN App"
         ],
         "series_status": null,
-        "summary": "2026-08-17 - Detroit Tigers (2) @ Pittsburgh Pirates (0) (Top of the 2nd)"
+        "summary": "2026-08-17 - Detroit Tigers (4) @ Pittsburgh Pirates (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 824725,
@@ -155,12 +155,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 2,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-17 - Arizona Diamondbacks (0) @ Boston Red Sox (0) (Top of the 2nd)"
+        "summary": "2026-08-17 - Arizona Diamondbacks (0) @ Boston Red Sox (0) (Bottom of the 2nd)"
     },
     {
         "game_id": 823589,
@@ -178,22 +178,22 @@
         "away_probable_pitcher": "Walker Buehler",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 1,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "away_score": 1,
+        "home_score": 2,
+        "current_inning": 2,
+        "inning_state": "Middle",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-17 - San Diego Padres (0) @ New York Mets (1) (Bottom of the 1st)"
+        "summary": "2026-08-17 - San Diego Padres (1) @ New York Mets (2) (Middle of the 2nd)"
     },
     {
         "game_id": 824077,
         "game_datetime": "2026-08-17T23:40:00Z",
         "game_date": "2026-08-17",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Athletics",
         "home_name": "Kansas City Royals",
         "away_id": 133,
@@ -204,22 +204,22 @@
         "away_probable_pitcher": "Mason Barnett",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-17 - Athletics @ Kansas City Royals (Warmup)"
+        "summary": "2026-08-17 - Athletics (1) @ Kansas City Royals (0) (Middle of the 1st)"
     },
     {
         "game_id": 823668,
         "game_datetime": "2026-08-17T23:40:00Z",
         "game_date": "2026-08-17",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "away_name": "Atlanta Braves",
         "home_name": "Minnesota Twins",
         "away_id": 144,
@@ -238,14 +238,14 @@
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-17 - Atlanta Braves @ Minnesota Twins (Pre-Game)"
+        "summary": "2026-08-17 - Atlanta Braves @ Minnesota Twins (Delayed Start)"
     },
     {
         "game_id": 824641,
         "game_datetime": "2026-08-18T00:05:00Z",
         "game_date": "2026-08-17",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Chicago White Sox",
         "home_name": "Chicago Cubs",
         "away_id": 145,
@@ -264,7 +264,7 @@
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-17 - Chicago White Sox @ Chicago Cubs (Pre-Game)"
+        "summary": "2026-08-17 - Chicago White Sox @ Chicago Cubs (Warmup)"
     },
     {
         "game_id": 824320,
