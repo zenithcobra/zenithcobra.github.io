@@ -2857,14 +2857,14 @@
         "player_id": 672515,
         "position": "C",
         "games_played": 99.0,
-        "H": 108.0,
+        "H": 109.0,
         "HR": 10.0,
-        "RBI": 60.0,
+        "RBI": 62.0,
         "HRpg": 0.101,
         "fHRpg": "1/7",
-        "Hpg": 1.091,
+        "Hpg": 1.101,
         "fHpg": "8/7",
-        "RBIpg": 0.606,
+        "RBIpg": 0.626,
         "fRBIpg": "3/5",
         "HR24": 9,
         "HR24pg": 0.11,
@@ -2994,12 +2994,12 @@
         "player_id": 699912,
         "position": "DH",
         "games_played": 58.0,
-        "H": 45.0,
+        "H": 46.0,
         "HR": 3.0,
         "RBI": 15.0,
         "HRpg": 0.052,
         "fHRpg": "0",
-        "Hpg": 0.776,
+        "Hpg": 0.793,
         "fHpg": "4/5",
         "RBIpg": 0.259,
         "fRBIpg": "1/4"
@@ -3028,16 +3028,16 @@
         "team_id": 109,
         "player_id": 663457,
         "position": "LF",
-        "games_played": 59.0,
-        "H": 42.0,
-        "HR": 3.0,
-        "RBI": 17.0,
-        "HRpg": 0.051,
+        "games_played": 60.0,
+        "H": 43.0,
+        "HR": 4.0,
+        "RBI": 19.0,
+        "HRpg": 0.067,
         "fHRpg": "0",
-        "Hpg": 0.712,
+        "Hpg": 0.717,
         "fHpg": "5/7",
-        "RBIpg": 0.288,
-        "fRBIpg": "2/7",
+        "RBIpg": 0.317,
+        "fRBIpg": "1/3",
         "HR24": 13,
         "HR24pg": 0.1,
         "fHR24pg": "1/7"
@@ -3087,12 +3087,12 @@
         "player_id": 571448,
         "position": "3B",
         "games_played": 119.0,
-        "H": 98.0,
+        "H": 99.0,
         "HR": 20.0,
         "RBI": 62.0,
         "HRpg": 0.168,
         "fHRpg": "1/6",
-        "Hpg": 0.824,
+        "Hpg": 0.832,
         "fHpg": "5/6",
         "RBIpg": 0.521,
         "fRBIpg": "1/2",
@@ -3107,15 +3107,15 @@
         "player_id": 814439,
         "position": "CF",
         "games_played": 61.0,
-        "H": 54.0,
+        "H": 55.0,
         "HR": 2.0,
-        "RBI": 16.0,
+        "RBI": 17.0,
         "HRpg": 0.033,
         "fHRpg": "0",
-        "Hpg": 0.885,
+        "Hpg": 0.902,
         "fHpg": "6/7",
-        "RBIpg": 0.262,
-        "fRBIpg": "1/4"
+        "RBIpg": 0.279,
+        "fRBIpg": "2/7"
     },
     {
         "player_name": "Taylor Clarke",
@@ -3366,12 +3366,12 @@
         "player_id": 680776,
         "position": "LF",
         "games_played": 119.0,
-        "H": 93.0,
+        "H": 94.0,
         "HR": 17.0,
         "RBI": 62.0,
         "HRpg": 0.143,
         "fHRpg": "1/7",
-        "Hpg": 0.782,
+        "Hpg": 0.79,
         "fHpg": "4/5",
         "RBIpg": 0.521,
         "fRBIpg": "1/2",
@@ -7853,6 +7853,12 @@
         "player_id": 669923
     },
     {
+        "player_name": "Jhonathan D\u00edaz",
+        "team": "Seattle Mariners",
+        "team_id": 136,
+        "player_id": 646242
+    },
+    {
         "player_name": "Jhonny Pereda",
         "team": "Seattle Mariners",
         "team_id": 136,
@@ -7897,12 +7903,6 @@
         "HR24": 9,
         "HR24pg": 0.17,
         "fHR24pg": "1/6"
-    },
-    {
-        "player_name": "Josh Simpson",
-        "team": "Seattle Mariners",
-        "team_id": 136,
-        "player_id": 681006
     },
     {
         "player_name": "Julio Rodr\u00edguez",
@@ -9917,6 +9917,12 @@
         "player_id": 605483
     },
     {
+        "player_name": "Brock Stewart",
+        "team": "Los Angeles Dodgers",
+        "team_id": 119,
+        "player_id": 592779
+    },
+    {
         "player_name": "Edgardo Henriquez",
         "team": "Los Angeles Dodgers",
         "team_id": 119,
@@ -10027,12 +10033,6 @@
         "fHpg": "0",
         "RBIpg": 0.0,
         "fRBIpg": "0"
-    },
-    {
-        "player_name": "Jonathan Hern\u00e1ndez",
-        "team": "Los Angeles Dodgers",
-        "team_id": 119,
-        "player_id": 642546
     },
     {
         "player_name": "Kyle Hurt",
@@ -10334,6 +10334,12 @@
         "player_id": 687312
     },
     {
+        "player_name": "Jaden Hill",
+        "team": "Colorado Rockies",
+        "team_id": 115,
+        "player_id": 677955
+    },
+    {
         "player_name": "Jake McCarthy",
         "team": "Colorado Rockies",
         "team_id": 115,
@@ -10420,6 +10426,12 @@
         "fRBIpg": "0"
     },
     {
+        "player_name": "Mark Manfredi",
+        "team": "Colorado Rockies",
+        "team_id": 115,
+        "player_id": 815081
+    },
+    {
         "player_name": "Mickey Moniak",
         "team": "Colorado Rockies",
         "team_id": 115,
@@ -10446,12 +10458,6 @@
         "player_id": 693308
     },
     {
-        "player_name": "Parker Mushinski",
-        "team": "Colorado Rockies",
-        "team_id": 115,
-        "player_id": 656786
-    },
-    {
         "player_name": "Ryan Feltner",
         "team": "Colorado Rockies",
         "team_id": 115,
@@ -10473,12 +10479,6 @@
         "fHpg": "1",
         "RBIpg": 0.492,
         "fRBIpg": "1/2"
-    },
-    {
-        "player_name": "TJ Shook",
-        "team": "Colorado Rockies",
-        "team_id": 115,
-        "player_id": 669298
     },
     {
         "player_name": "Tanner Gordon",
