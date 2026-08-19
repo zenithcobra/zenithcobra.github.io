@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-19T16:35:00Z",
         "game_date": "2026-08-19",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Detroit Tigers",
         "home_name": "Pittsburgh Pirates",
         "away_id": 116,
@@ -16,14 +16,19 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 2,
-        "current_inning": 8,
+        "home_score": 4,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-08-19 - Detroit Tigers (3) @ Pittsburgh Pirates (2) (Bottom of the 8th)"
+        "series_status": "PIT wins 2-1",
+        "winning_team": "Pittsburgh Pirates",
+        "losing_team": "Detroit Tigers",
+        "winning_pitcher": "Mason Montgomery",
+        "losing_pitcher": "Kenley Jansen",
+        "save_pitcher": null,
+        "summary": "2026-08-19 - Detroit Tigers (3) @ Pittsburgh Pirates (4) (Game Over)"
     },
     {
         "game_id": 823587,
@@ -43,13 +48,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 2,
-        "current_inning": 7,
-        "inning_state": "Top",
+        "current_inning": 8,
+        "inning_state": "Bottom",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-19 - San Diego Padres (1) @ New York Mets (2) (Top of the 7th)"
+        "summary": "2026-08-19 - San Diego Padres (1) @ New York Mets (2) (Bottom of the 8th)"
     },
     {
         "game_id": 823664,
@@ -67,15 +72,15 @@
         "away_probable_pitcher": "AJ Smith-Shawver",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 1,
-        "current_inning": 5,
+        "away_score": 4,
+        "home_score": 4,
+        "current_inning": 6,
         "inning_state": "Bottom",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "MIN leads 2-0",
-        "summary": "2026-08-19 - Atlanta Braves (1) @ Minnesota Twins (1) (Bottom of the 5th)"
+        "summary": "2026-08-19 - Atlanta Braves (4) @ Minnesota Twins (4) (Bottom of the 6th)"
     },
     {
         "game_id": 824640,
@@ -95,13 +100,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 3,
+        "current_inning": 5,
         "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 2-0",
-        "summary": "2026-08-19 - Chicago White Sox (0) @ Chicago Cubs (0) (Bottom of the 3rd)"
+        "summary": "2026-08-19 - Chicago White Sox (0) @ Chicago Cubs (0) (Bottom of the 5th)"
     },
     {
         "game_id": 824722,
@@ -145,10 +150,10 @@
         "away_probable_pitcher": "Sandy Alcantara",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
@@ -266,7 +271,7 @@
         "game_datetime": "2026-08-19T23:40:00Z",
         "game_date": "2026-08-19",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Athletics",
         "home_name": "Kansas City Royals",
         "away_id": 133,
@@ -285,7 +290,7 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "KC leads 2-0",
-        "summary": "2026-08-19 - Athletics @ Kansas City Royals (Scheduled)"
+        "summary": "2026-08-19 - Athletics @ Kansas City Royals (Pre-Game)"
     },
     {
         "game_id": 823748,
