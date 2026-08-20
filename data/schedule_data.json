@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-20T16:40:00Z",
         "game_date": "2026-08-20",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "St. Louis Cardinals",
         "home_name": "Cincinnati Reds",
         "away_id": 138,
@@ -28,7 +28,7 @@
         "winning_pitcher": "Peter Strzelecki",
         "losing_pitcher": "Brock Burke",
         "save_pitcher": "Riley O'Brien",
-        "summary": "2026-08-20 - St. Louis Cardinals (10) @ Cincinnati Reds (9) (Game Over)"
+        "summary": "2026-08-20 - St. Louis Cardinals (10) @ Cincinnati Reds (9) (Final)"
     },
     {
         "game_id": 824395,
@@ -108,22 +108,22 @@
         "away_probable_pitcher": "Gage Jump",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 5,
-        "current_inning": 5,
+        "away_score": 2,
+        "home_score": 6,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "KC leads 3-0",
-        "summary": "2026-08-20 - Athletics (0) @ Kansas City Royals (5) (Top of the 5th)"
+        "summary": "2026-08-20 - Athletics (2) @ Kansas City Royals (6) (Top of the 7th)"
     },
     {
         "game_id": 824589,
         "game_datetime": "2026-08-20T18:10:00Z",
         "game_date": "2026-08-20",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Atlanta Braves",
         "home_name": "Chicago White Sox",
         "away_id": 144,
@@ -136,13 +136,18 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 0,
-        "current_inning": 7,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-20 - Atlanta Braves (2) @ Chicago White Sox (0) (Bottom of the 7th)"
+        "series_status": "ATL wins Season",
+        "winning_team": "Atlanta Braves",
+        "losing_team": "Chicago White Sox",
+        "winning_pitcher": "Grant Holmes",
+        "losing_pitcher": "Anthony Kay",
+        "save_pitcher": "Raisel Iglesias",
+        "summary": "2026-08-20 - Atlanta Braves (2) @ Chicago White Sox (0) (Game Over)"
     },
     {
         "game_id": 823747,
@@ -162,13 +167,13 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 6,
-        "current_inning": 5,
-        "inning_state": "Top",
+        "current_inning": 7,
+        "inning_state": "End",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-20 - Seattle Mariners (4) @ Milwaukee Brewers (6) (Top of the 5th)"
+        "summary": "2026-08-20 - Seattle Mariners (4) @ Milwaukee Brewers (6) (End of the 7th)"
     },
     {
         "game_id": 824802,
@@ -186,10 +191,10 @@
         "away_probable_pitcher": "Gerrit Cole",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
@@ -201,7 +206,7 @@
         "game_datetime": "2026-08-21T00:05:00Z",
         "game_date": "2026-08-20",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Washington Nationals",
         "home_name": "Texas Rangers",
         "away_id": 120,
@@ -212,24 +217,24 @@
         "away_probable_pitcher": "Andrew Alvarez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [
             "FS1"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-20 - Washington Nationals @ Texas Rangers (Scheduled)"
+        "summary": "2026-08-20 - Washington Nationals @ Texas Rangers (Pre-Game)"
     },
     {
         "game_id": 824153,
         "game_datetime": "2026-08-21T00:10:00Z",
         "game_date": "2026-08-20",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Houston Astros",
         "away_id": 108,
@@ -248,6 +253,6 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-20 - Los Angeles Angels @ Houston Astros (Scheduled)"
+        "summary": "2026-08-20 - Los Angeles Angels @ Houston Astros (Pre-Game)"
     }
 ]
