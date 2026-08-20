@@ -128,7 +128,7 @@
         "game_datetime": "2026-08-19T20:10:00Z",
         "game_date": "2026-08-19",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Boston Red Sox",
         "away_id": 109,
@@ -142,12 +142,17 @@
         "away_score": 7,
         "home_score": 6,
         "current_inning": 10,
-        "inning_state": "End",
+        "inning_state": "Bottom",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "BOS wins 2-1",
-        "summary": "2026-08-19 - Arizona Diamondbacks (7) @ Boston Red Sox (6) (End of the 10th)"
+        "winning_team": "Arizona Diamondbacks",
+        "losing_team": "Boston Red Sox",
+        "winning_pitcher": "Jonathan Lo\u00e1isiga",
+        "losing_pitcher": "Jovani Mor\u00e1n",
+        "save_pitcher": null,
+        "summary": "2026-08-19 - Arizona Diamondbacks (7) @ Boston Red Sox (6) (Final)"
     },
     {
         "game_id": 823424,
@@ -168,12 +173,12 @@
         "away_score": 1,
         "home_score": 3,
         "current_inning": 6,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 2-0",
-        "summary": "2026-08-19 - Miami Marlins (1) @ Philadelphia Phillies (3) (Top of the 6th)"
+        "summary": "2026-08-19 - Miami Marlins (1) @ Philadelphia Phillies (3) (End of the 6th)"
     },
     {
         "game_id": 824801,
@@ -192,16 +197,16 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 1,
+        "home_score": 2,
         "current_inning": 3,
-        "inning_state": "Middle",
+        "inning_state": "Bottom",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [
             "MLB Network"
         ],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-08-19 - New York Yankees (3) @ Baltimore Orioles (1) (Middle of the 3rd)"
+        "summary": "2026-08-19 - New York Yankees (3) @ Baltimore Orioles (2) (Bottom of the 3rd)"
     },
     {
         "game_id": 824394,
@@ -221,13 +226,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "current_inning": 5,
+        "inning_state": "End",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-08-19 - San Francisco Giants (1) @ Cleveland Guardians (0) (Bottom of the 4th)"
+        "summary": "2026-08-19 - San Francisco Giants (1) @ Cleveland Guardians (0) (End of the 5th)"
     },
     {
         "game_id": 824476,
@@ -245,15 +250,15 @@
         "away_probable_pitcher": "Matthew Liberatore",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
         "current_inning": 4,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "STL leads 2-1",
-        "summary": "2026-08-19 - St. Louis Cardinals (0) @ Cincinnati Reds (0) (Top of the 4th)"
+        "summary": "2026-08-19 - St. Louis Cardinals (2) @ Cincinnati Reds (0) (Bottom of the 4th)"
     },
     {
         "game_id": 822937,
@@ -272,21 +277,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 2,
+        "home_score": 6,
         "current_inning": 4,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-08-19 - Toronto Blue Jays (1) @ Tampa Bay Rays (2) (Top of the 4th)"
+        "summary": "2026-08-19 - Toronto Blue Jays (1) @ Tampa Bay Rays (6) (Bottom of the 4th)"
     },
     {
         "game_id": 824076,
         "game_datetime": "2026-08-19T23:40:00Z",
         "game_date": "2026-08-19",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Athletics",
         "home_name": "Kansas City Royals",
         "away_id": 133,
@@ -297,7 +302,7 @@
         "away_probable_pitcher": "Jeffrey Springs",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
         "current_inning": 1,
         "inning_state": "Top",
@@ -305,14 +310,14 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "KC leads 2-0",
-        "summary": "2026-08-19 - Athletics @ Kansas City Royals (Warmup)"
+        "summary": "2026-08-19 - Athletics (2) @ Kansas City Royals (0) (Top of the 1st)"
     },
     {
         "game_id": 823748,
         "game_datetime": "2026-08-19T23:40:00Z",
         "game_date": "2026-08-19",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Seattle Mariners",
         "home_name": "Milwaukee Brewers",
         "away_id": 136,
@@ -323,7 +328,7 @@
         "away_probable_pitcher": "Logan Gilbert",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
         "current_inning": 1,
         "inning_state": "Top",
@@ -331,14 +336,14 @@
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 1-0",
-        "summary": "2026-08-19 - Seattle Mariners @ Milwaukee Brewers (Warmup)"
+        "summary": "2026-08-19 - Seattle Mariners (2) @ Milwaukee Brewers (0) (Top of the 1st)"
     },
     {
         "game_id": 822860,
         "game_datetime": "2026-08-20T00:05:00Z",
         "game_date": "2026-08-19",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Washington Nationals",
         "home_name": "Texas Rangers",
         "away_id": 120,
@@ -357,14 +362,14 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "TEX leads 1-0",
-        "summary": "2026-08-19 - Washington Nationals @ Texas Rangers (Pre-Game)"
+        "summary": "2026-08-19 - Washington Nationals @ Texas Rangers (Warmup)"
     },
     {
         "game_id": 824155,
         "game_datetime": "2026-08-20T00:10:00Z",
         "game_date": "2026-08-19",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Los Angeles Angels",
         "home_name": "Houston Astros",
         "away_id": 108,
@@ -383,7 +388,7 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": "LAA leads 1-0",
-        "summary": "2026-08-19 - Los Angeles Angels @ Houston Astros (Pre-Game)"
+        "summary": "2026-08-19 - Los Angeles Angels @ Houston Astros (Warmup)"
     },
     {
         "game_id": 824318,
