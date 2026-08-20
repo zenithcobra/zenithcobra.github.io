@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Michael McGreevy",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 4,
-        "home_score": 5,
+        "away_score": 10,
+        "home_score": 8,
         "current_inning": 9,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "Series tied 2-2",
-        "summary": "2026-08-20 - St. Louis Cardinals (4) @ Cincinnati Reds (5) (Top of the 9th)"
+        "summary": "2026-08-20 - St. Louis Cardinals (10) @ Cincinnati Reds (8) (Bottom of the 9th)"
     },
     {
         "game_id": 824395,
@@ -42,14 +42,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 2,
-        "home_score": 4,
-        "current_inning": 7,
-        "inning_state": "Bottom",
+        "home_score": 5,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-20 - San Francisco Giants (2) @ Cleveland Guardians (4) (Bottom of the 7th)"
+        "summary": "2026-08-20 - San Francisco Giants (2) @ Cleveland Guardians (5) (Top of the 9th)"
     },
     {
         "game_id": 822934,
@@ -69,13 +69,13 @@
         "away_pitcher_note": "",
         "away_score": 5,
         "home_score": 1,
-        "current_inning": 7,
-        "inning_state": "Bottom",
+        "current_inning": 9,
+        "inning_state": "Middle",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-20 - Toronto Blue Jays (5) @ Tampa Bay Rays (1) (Bottom of the 7th)"
+        "summary": "2026-08-20 - Toronto Blue Jays (5) @ Tampa Bay Rays (1) (Middle of the 9th)"
     },
     {
         "game_id": 824074,
@@ -94,14 +94,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 1,
-        "current_inning": 3,
+        "home_score": 4,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "KC leads 3-0",
-        "summary": "2026-08-20 - Athletics (0) @ Kansas City Royals (1) (Bottom of the 3rd)"
+        "summary": "2026-08-20 - Athletics (0) @ Kansas City Royals (4) (Bottom of the 4th)"
     },
     {
         "game_id": 824589,
@@ -121,13 +121,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 5,
-        "inning_state": "Top",
+        "current_inning": 6,
+        "inning_state": "Bottom",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-20 - Atlanta Braves (1) @ Chicago White Sox (0) (Top of the 5th)"
+        "summary": "2026-08-20 - Atlanta Braves (1) @ Chicago White Sox (0) (Bottom of the 6th)"
     },
     {
         "game_id": 823747,
@@ -145,22 +145,22 @@
         "away_probable_pitcher": "George Kirby",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
+        "away_score": 4,
         "home_score": 6,
-        "current_inning": 3,
-        "inning_state": "Top",
+        "current_inning": 4,
+        "inning_state": "Middle",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-20 - Seattle Mariners (2) @ Milwaukee Brewers (6) (Top of the 3rd)"
+        "summary": "2026-08-20 - Seattle Mariners (4) @ Milwaukee Brewers (6) (Middle of the 4th)"
     },
     {
         "game_id": 824802,
         "game_datetime": "2026-08-20T22:35:00Z",
         "game_date": "2026-08-20",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Yankees",
         "home_name": "Baltimore Orioles",
         "away_id": 147,
@@ -179,7 +179,7 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "NYY leads 2-0",
-        "summary": "2026-08-20 - New York Yankees @ Baltimore Orioles (Scheduled)"
+        "summary": "2026-08-20 - New York Yankees @ Baltimore Orioles (Pre-Game)"
     },
     {
         "game_id": 822861,
