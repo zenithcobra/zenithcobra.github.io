@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 0,
-        "current_inning": 4,
-        "inning_state": "Middle",
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "Series tied 2-2",
-        "summary": "2026-08-20 - St. Louis Cardinals (4) @ Cincinnati Reds (0) (Middle of the 4th)"
+        "summary": "2026-08-20 - St. Louis Cardinals (4) @ Cincinnati Reds (0) (Top of the 5th)"
     },
     {
         "game_id": 824395,
@@ -43,13 +43,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 3,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "End",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-20 - San Francisco Giants (0) @ Cleveland Guardians (3) (Bottom of the 2nd)"
+        "summary": "2026-08-20 - San Francisco Giants (0) @ Cleveland Guardians (3) (End of the 3rd)"
     },
     {
         "game_id": 822934,
@@ -69,20 +69,20 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "End",
+        "current_inning": 4,
+        "inning_state": "Top",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-20 - Toronto Blue Jays (1) @ Tampa Bay Rays (0) (End of the 2nd)"
+        "summary": "2026-08-20 - Toronto Blue Jays (1) @ Tampa Bay Rays (0) (Top of the 4th)"
     },
     {
         "game_id": 824074,
         "game_datetime": "2026-08-20T18:10:00Z",
         "game_date": "2026-08-20",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Athletics",
         "home_name": "Kansas City Royals",
         "away_id": 133,
@@ -101,14 +101,14 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "KC leads 3-0",
-        "summary": "2026-08-20 - Athletics @ Kansas City Royals (Pre-Game)"
+        "summary": "2026-08-20 - Athletics @ Kansas City Royals (Warmup)"
     },
     {
         "game_id": 824589,
         "game_datetime": "2026-08-20T18:10:00Z",
         "game_date": "2026-08-20",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Atlanta Braves",
         "home_name": "Chicago White Sox",
         "away_id": 144,
@@ -127,14 +127,14 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-20 - Atlanta Braves @ Chicago White Sox (Pre-Game)"
+        "summary": "2026-08-20 - Atlanta Braves @ Chicago White Sox (Warmup)"
     },
     {
         "game_id": 823747,
         "game_datetime": "2026-08-20T18:10:00Z",
         "game_date": "2026-08-20",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Seattle Mariners",
         "home_name": "Milwaukee Brewers",
         "away_id": 136,
@@ -153,7 +153,7 @@
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-20 - Seattle Mariners @ Milwaukee Brewers (Pre-Game)"
+        "summary": "2026-08-20 - Seattle Mariners @ Milwaukee Brewers (Warmup)"
     },
     {
         "game_id": 824802,
