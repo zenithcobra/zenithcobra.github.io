@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-21T20:10:00Z",
         "game_date": "2026-08-21",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Atlanta Braves",
         "home_name": "Milwaukee Brewers",
         "away_id": 144,
@@ -28,14 +28,14 @@
         "winning_pitcher": "Jacob Misiorowski",
         "losing_pitcher": "Chris Sale",
         "save_pitcher": "Trevor Megill",
-        "summary": "2026-08-21 - Atlanta Braves (1) @ Milwaukee Brewers (2) (Game Over)"
+        "summary": "2026-08-21 - Atlanta Braves (1) @ Milwaukee Brewers (2) (Final)"
     },
     {
         "game_id": 823420,
         "game_datetime": "2026-08-21T22:40:00Z",
         "game_date": "2026-08-21",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "St. Louis Cardinals",
         "home_name": "Philadelphia Phillies",
         "away_id": 138,
@@ -46,22 +46,22 @@
         "away_probable_pitcher": "Hunter Dobbins",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-21 - St. Louis Cardinals @ Philadelphia Phillies (Warmup)"
+        "summary": "2026-08-21 - St. Louis Cardinals (2) @ Philadelphia Phillies (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823510,
         "game_datetime": "2026-08-21T23:05:00Z",
         "game_date": "2026-08-21",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Toronto Blue Jays",
         "home_name": "New York Yankees",
         "away_id": 141,
@@ -80,14 +80,14 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-21 - Toronto Blue Jays @ New York Yankees (Pre-Game)"
+        "summary": "2026-08-21 - Toronto Blue Jays @ New York Yankees (Warmup)"
     },
     {
         "game_id": 824721,
         "game_datetime": "2026-08-21T23:10:00Z",
         "game_date": "2026-08-21",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "San Francisco Giants",
         "home_name": "Boston Red Sox",
         "away_id": 137,
@@ -106,14 +106,14 @@
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-21 - San Francisco Giants @ Boston Red Sox (Pre-Game)"
+        "summary": "2026-08-21 - San Francisco Giants @ Boston Red Sox (Warmup)"
     },
     {
         "game_id": 823830,
         "game_datetime": "2026-08-21T23:10:00Z",
         "game_date": "2026-08-21",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Washington Nationals",
         "home_name": "Miami Marlins",
         "away_id": 120,
@@ -132,7 +132,7 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-21 - Washington Nationals @ Miami Marlins (Pre-Game)"
+        "summary": "2026-08-21 - Washington Nationals @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 824800,
