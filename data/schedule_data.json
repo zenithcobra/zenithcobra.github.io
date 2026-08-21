@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-21T20:10:00Z",
         "game_date": "2026-08-21",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Atlanta Braves",
         "home_name": "Milwaukee Brewers",
         "away_id": 144,
@@ -15,22 +15,27 @@
         "away_probable_pitcher": "Chris Sale",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 2,
-        "current_inning": 7,
+        "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-21 - Atlanta Braves (0) @ Milwaukee Brewers (2) (Top of the 7th)"
+        "series_status": "MIL leads 1-0",
+        "winning_team": "Milwaukee Brewers",
+        "losing_team": "Atlanta Braves",
+        "winning_pitcher": "Jacob Misiorowski",
+        "losing_pitcher": "Chris Sale",
+        "save_pitcher": "Trevor Megill",
+        "summary": "2026-08-21 - Atlanta Braves (1) @ Milwaukee Brewers (2) (Game Over)"
     },
     {
         "game_id": 823420,
         "game_datetime": "2026-08-21T22:40:00Z",
         "game_date": "2026-08-21",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "St. Louis Cardinals",
         "home_name": "Philadelphia Phillies",
         "away_id": 138,
@@ -49,7 +54,7 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-21 - St. Louis Cardinals @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-08-21 - St. Louis Cardinals @ Philadelphia Phillies (Warmup)"
     },
     {
         "game_id": 823510,
@@ -346,7 +351,7 @@
         "game_datetime": "2026-08-22T02:10:00Z",
         "game_date": "2026-08-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Los Angeles Dodgers",
         "away_id": 134,
@@ -365,7 +370,7 @@
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-21 - Pittsburgh Pirates @ Los Angeles Dodgers (Scheduled)"
+        "summary": "2026-08-21 - Pittsburgh Pirates @ Los Angeles Dodgers (Pre-Game)"
     },
     {
         "game_id": 823101,
