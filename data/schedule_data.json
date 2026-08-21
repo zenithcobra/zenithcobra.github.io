@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-21T20:10:00Z",
         "game_date": "2026-08-21",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Atlanta Braves",
         "home_name": "Milwaukee Brewers",
         "away_id": 144,
@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 2,
+        "inning_state": "Middle",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-21 - Atlanta Braves @ Milwaukee Brewers (Warmup)"
+        "summary": "2026-08-21 - Atlanta Braves (0) @ Milwaukee Brewers (0) (Middle of the 2nd)"
     },
     {
         "game_id": 823420,
@@ -56,7 +56,7 @@
         "game_datetime": "2026-08-21T23:05:00Z",
         "game_date": "2026-08-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "New York Yankees",
         "away_id": 141,
@@ -67,15 +67,15 @@
         "away_probable_pitcher": "Mason Fluharty",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-21 - Toronto Blue Jays @ New York Yankees (Scheduled)"
+        "summary": "2026-08-21 - Toronto Blue Jays @ New York Yankees (Pre-Game)"
     },
     {
         "game_id": 824721,
@@ -145,10 +145,10 @@
         "away_probable_pitcher": "Freddy Peralta",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [
@@ -188,7 +188,7 @@
         "game_datetime": "2026-08-22T00:10:00Z",
         "game_date": "2026-08-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Detroit Tigers",
         "home_name": "Kansas City Royals",
         "away_id": 116,
@@ -207,7 +207,7 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-21 - Detroit Tigers @ Kansas City Royals (Scheduled)"
+        "summary": "2026-08-21 - Detroit Tigers @ Kansas City Royals (Pre-Game)"
     },
     {
         "game_id": 824152,
@@ -240,7 +240,7 @@
         "game_datetime": "2026-08-22T00:15:00Z",
         "game_date": "2026-08-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Texas Rangers",
         "away_id": 108,
@@ -261,14 +261,14 @@
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-08-21 - Los Angeles Angels @ Texas Rangers (Scheduled)"
+        "summary": "2026-08-21 - Los Angeles Angels @ Texas Rangers (Pre-Game)"
     },
     {
         "game_id": 824317,
         "game_datetime": "2026-08-22T00:40:00Z",
         "game_date": "2026-08-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Colorado Rockies",
         "away_id": 114,
@@ -287,14 +287,14 @@
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-21 - Cleveland Guardians @ Colorado Rockies (Scheduled)"
+        "summary": "2026-08-21 - Cleveland Guardians @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 825045,
         "game_datetime": "2026-08-22T01:40:00Z",
         "game_date": "2026-08-21",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cincinnati Reds",
         "home_name": "Arizona Diamondbacks",
         "away_id": 113,
@@ -313,7 +313,7 @@
         "venue_name": "Chase Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-21 - Cincinnati Reds @ Arizona Diamondbacks (Scheduled)"
+        "summary": "2026-08-21 - Cincinnati Reds @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 823262,
