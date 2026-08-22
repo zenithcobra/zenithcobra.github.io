@@ -79,7 +79,7 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 4,
-        "current_inning": 8,
+        "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
@@ -87,7 +87,7 @@
             "FS1"
         ],
         "series_status": "MIA leads 1-0",
-        "summary": "2026-08-22 - Washington Nationals (2) @ Miami Marlins (4) (Top of the 8th)"
+        "summary": "2026-08-22 - Washington Nationals (2) @ Miami Marlins (4) (Top of the 9th)"
     },
     {
         "game_id": 823422,
@@ -107,20 +107,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 3,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-08-22 - St. Louis Cardinals (0) @ Philadelphia Phillies (3) (Bottom of the 2nd)"
+        "summary": "2026-08-22 - St. Louis Cardinals (0) @ Philadelphia Phillies (3) (Top of the 3rd)"
     },
     {
         "game_id": 824798,
         "game_datetime": "2026-08-22T23:05:00Z",
         "game_date": "2026-08-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Tampa Bay Rays",
         "home_name": "Baltimore Orioles",
         "away_id": 139,
@@ -139,14 +139,14 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-08-22 - Tampa Bay Rays @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-08-22 - Tampa Bay Rays @ Baltimore Orioles (Warmup)"
     },
     {
         "game_id": 822858,
         "game_datetime": "2026-08-22T23:05:00Z",
         "game_date": "2026-08-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Los Angeles Angels",
         "home_name": "Texas Rangers",
         "away_id": 108,
@@ -165,14 +165,14 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "TEX leads 1-0",
-        "summary": "2026-08-22 - Los Angeles Angels @ Texas Rangers (Pre-Game)"
+        "summary": "2026-08-22 - Los Angeles Angels @ Texas Rangers (Warmup)"
     },
     {
         "game_id": 824151,
         "game_datetime": "2026-08-22T23:10:00Z",
         "game_date": "2026-08-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Athletics",
         "home_name": "Houston Astros",
         "away_id": 133,
@@ -191,14 +191,14 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": "HOU leads 1-0",
-        "summary": "2026-08-22 - Athletics @ Houston Astros (Pre-Game)"
+        "summary": "2026-08-22 - Athletics @ Houston Astros (Warmup)"
     },
     {
         "game_id": 824560,
         "game_datetime": "2026-08-22T23:10:00Z",
         "game_date": "2026-08-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "New York Mets",
         "home_name": "Chicago White Sox",
         "away_id": 121,
@@ -217,14 +217,14 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-08-22 - New York Mets @ Chicago White Sox (Pre-Game)"
+        "summary": "2026-08-22 - New York Mets @ Chicago White Sox (Warmup)"
     },
     {
         "game_id": 824073,
         "game_datetime": "2026-08-22T23:15:00Z",
         "game_date": "2026-08-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Detroit Tigers",
         "home_name": "Kansas City Royals",
         "away_id": 116,
@@ -243,7 +243,7 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "KC leads 1-0",
-        "summary": "2026-08-22 - Detroit Tigers @ Kansas City Royals (Pre-Game)"
+        "summary": "2026-08-22 - Detroit Tigers @ Kansas City Royals (Warmup)"
     },
     {
         "game_id": 823910,
