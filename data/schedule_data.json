@@ -18,12 +18,12 @@
         "away_score": 2,
         "home_score": 0,
         "current_inning": 4,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-08-22 - Toronto Blue Jays (2) @ New York Yankees (0) (Top of the 4th)"
+        "summary": "2026-08-22 - Toronto Blue Jays (2) @ New York Yankees (0) (Bottom of the 4th)"
     },
     {
         "game_id": 823743,
@@ -43,13 +43,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "End",
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 1-0",
-        "summary": "2026-08-22 - Atlanta Braves (1) @ Milwaukee Brewers (0) (End of the 2nd)"
+        "summary": "2026-08-22 - Atlanta Braves (1) @ Milwaukee Brewers (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 823831,
@@ -214,7 +214,7 @@
         "game_datetime": "2026-08-22T23:15:00Z",
         "game_date": "2026-08-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Detroit Tigers",
         "home_name": "Kansas City Royals",
         "away_id": 116,
@@ -232,8 +232,8 @@
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-22 - Detroit Tigers @ Kansas City Royals (Scheduled)"
+        "series_status": "KC leads 1-0",
+        "summary": "2026-08-22 - Detroit Tigers @ Kansas City Royals (Pre-Game)"
     },
     {
         "game_id": 823910,
