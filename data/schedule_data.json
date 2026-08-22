@@ -77,24 +77,24 @@
         "away_probable_pitcher": "Jake Irvin",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 4,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "current_inning": 5,
+        "inning_state": "Middle",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [
             "FS1"
         ],
         "series_status": "MIA leads 1-0",
-        "summary": "2026-08-22 - Washington Nationals (1) @ Miami Marlins (4) (Bottom of the 4th)"
+        "summary": "2026-08-22 - Washington Nationals (2) @ Miami Marlins (4) (Middle of the 5th)"
     },
     {
         "game_id": 823422,
         "game_datetime": "2026-08-22T22:05:00Z",
         "game_date": "2026-08-22",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "St. Louis Cardinals",
         "home_name": "Philadelphia Phillies",
         "away_id": 138,
@@ -113,7 +113,7 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 1-0",
-        "summary": "2026-08-22 - St. Louis Cardinals @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-08-22 - St. Louis Cardinals @ Philadelphia Phillies (Warmup)"
     },
     {
         "game_id": 824798,
@@ -345,10 +345,10 @@
         "away_probable_pitcher": "Rhett Lowder",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
@@ -386,7 +386,7 @@
         "game_datetime": "2026-08-23T00:40:00Z",
         "game_date": "2026-08-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "San Diego Padres",
         "away_id": 142,
@@ -404,7 +404,7 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-22 - Minnesota Twins @ San Diego Padres (Scheduled)"
+        "series_status": "SD leads 1-0",
+        "summary": "2026-08-22 - Minnesota Twins @ San Diego Padres (Pre-Game)"
     }
 ]
