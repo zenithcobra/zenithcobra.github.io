@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 0,
-        "current_inning": 6,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-08-22 - Toronto Blue Jays (3) @ New York Yankees (0) (Top of the 6th)"
+        "summary": "2026-08-22 - Toronto Blue Jays (3) @ New York Yankees (0) (Top of the 7th)"
     },
     {
         "game_id": 823743,
@@ -42,14 +42,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 3,
-        "current_inning": 4,
+        "home_score": 4,
+        "current_inning": 5,
         "inning_state": "Bottom",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 1-0",
-        "summary": "2026-08-22 - Atlanta Braves (1) @ Milwaukee Brewers (3) (Bottom of the 4th)"
+        "summary": "2026-08-22 - Atlanta Braves (1) @ Milwaukee Brewers (4) (Bottom of the 5th)"
     },
     {
         "game_id": 823831,
@@ -92,7 +92,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Andrew Painter",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Quinn Mathews",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
@@ -110,7 +110,7 @@
         "game_datetime": "2026-08-22T23:05:00Z",
         "game_date": "2026-08-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Tampa Bay Rays",
         "home_name": "Baltimore Orioles",
         "away_id": 139,
@@ -129,7 +129,7 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-08-22 - Tampa Bay Rays @ Baltimore Orioles (Scheduled)"
+        "summary": "2026-08-22 - Tampa Bay Rays @ Baltimore Orioles (Pre-Game)"
     },
     {
         "game_id": 822858,
@@ -307,10 +307,10 @@
         "away_probable_pitcher": "Blade Tidwell",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [
