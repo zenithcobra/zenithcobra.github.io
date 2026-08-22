@@ -1,5 +1,60 @@
 [
     {
+        "name": "Jordan Walker",
+        "team": "St. Louis Cardinals",
+        "player_id": 691023,
+        "HR": 27,
+        "HRpg": 0.21,
+        "fHRpg": "1/5",
+        "HR24": 6,
+        "HR24pg": 0.05,
+        "fHR24pg": "0"
+    },
+    {
+        "name": "Willson Contreras",
+        "team": "Boston Red Sox",
+        "player_id": 575929,
+        "HR": 26,
+        "HRpg": 0.22,
+        "fHRpg": "1/5",
+        "HR24": 20,
+        "HR24pg": 0.15,
+        "fHR24pg": "1/7"
+    },
+    {
+        "name": "Drew Gilbert",
+        "team": "San Francisco Giants",
+        "player_id": 687551,
+        "HR": 7,
+        "HRpg": 0.07,
+        "fHRpg": "0",
+        "HR24": 3,
+        "HR24pg": 0.08,
+        "fHR24pg": "1/7"
+    },
+    {
+        "name": "Rafael Devers",
+        "team": "San Francisco Giants",
+        "player_id": 646240,
+        "HR": 26,
+        "HRpg": 0.2,
+        "fHRpg": "1/5",
+        "HR24": 20,
+        "HR24pg": 0.22,
+        "fHR24pg": "1/5"
+    },
+    {
+        "name": "Keibert Ruiz",
+        "team": "Washington Nationals",
+        "player_id": 660688,
+        "HR": 8,
+        "HRpg": 0.1,
+        "fHRpg": "1/7",
+        "HR24": 2,
+        "HR24pg": 0.03,
+        "fHR24pg": "0"
+    },
+    {
         "name": "Dylan Beavers",
         "team": "Baltimore Orioles",
         "player_id": 687637,
@@ -9,5 +64,225 @@
         "HR24": 4,
         "HR24pg": 0.11,
         "fHR24pg": "1/7"
+    },
+    {
+        "name": "Pete Alonso",
+        "team": "Baltimore Orioles",
+        "player_id": 624413,
+        "HR": 30,
+        "HRpg": 0.23,
+        "fHRpg": "1/4",
+        "HR24": 38,
+        "HR24pg": 0.23,
+        "fHR24pg": "1/4"
+    },
+    {
+        "name": "Bo Bichette",
+        "team": "New York Mets",
+        "player_id": 666182,
+        "HR": 13,
+        "HRpg": 0.1,
+        "fHRpg": "1/7",
+        "HR24": 18,
+        "HR24pg": 0.13,
+        "fHR24pg": "1/7"
+    },
+    {
+        "name": "Miguel Vargas",
+        "team": "Chicago White Sox",
+        "player_id": 678246,
+        "HR": 29,
+        "HRpg": 0.23,
+        "fHRpg": "1/4",
+        "HR24": 16,
+        "HR24pg": 0.12,
+        "fHR24pg": "1/7"
+    },
+    {
+        "name": "Randal Grichuk",
+        "team": "Chicago White Sox",
+        "player_id": 545341,
+        "HR": 0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "HR24": 2,
+        "HR24pg": 0.05,
+        "fHR24pg": "0"
+    },
+    {
+        "name": "Colson Montgomery",
+        "team": "Chicago White Sox",
+        "player_id": 695657,
+        "HR": 27,
+        "HRpg": 0.22,
+        "fHRpg": "1/5",
+        "HR24": 21,
+        "HR24pg": 0.3,
+        "fHR24pg": "2/7"
+    },
+    {
+        "name": "Jake Rogers",
+        "team": "Chicago White Sox",
+        "player_id": 668670,
+        "HR": 1,
+        "HRpg": 0.17,
+        "fHRpg": "1/6",
+        "HR24": 3,
+        "HR24pg": 0.06,
+        "fHR24pg": "0"
+    },
+    {
+        "name": "Kyle Isbel",
+        "team": "Kansas City Royals",
+        "player_id": 664728,
+        "HR": 5,
+        "HRpg": 0.07,
+        "fHRpg": "0",
+        "HR24": 4,
+        "HR24pg": 0.03,
+        "fHR24pg": "0"
+    },
+    {
+        "name": "Vinnie Pasquantino",
+        "team": "Kansas City Royals",
+        "player_id": 686469,
+        "HR": 8,
+        "HRpg": 0.1,
+        "fHRpg": "1/7",
+        "HR24": 32,
+        "HR24pg": 0.2,
+        "fHR24pg": "1/5"
+    },
+    {
+        "name": "Carter Jensen",
+        "team": "Kansas City Royals",
+        "player_id": 695600,
+        "HR": 17,
+        "HRpg": 0.14,
+        "fHRpg": "1/7",
+        "HR24": 3,
+        "HR24pg": 0.15,
+        "fHR24pg": "1/7"
+    },
+    {
+        "name": "Petey Halpin",
+        "team": "Cleveland Guardians",
+        "player_id": 690984,
+        "HR": 3,
+        "HRpg": 0.05,
+        "fHRpg": "0",
+        "HR24": 0,
+        "HR24pg": 0.0,
+        "fHR24pg": "0"
+    },
+    {
+        "name": "Patrick Bailey",
+        "team": "Cleveland Guardians",
+        "player_id": 672275,
+        "HR": 1,
+        "HRpg": 0.03,
+        "fHRpg": "0",
+        "HR24": 6,
+        "HR24pg": 0.04,
+        "fHR24pg": "0"
+    },
+    {
+        "name": "Jordan Lawlar",
+        "team": "Arizona Diamondbacks",
+        "player_id": 691783,
+        "HR": 2,
+        "HRpg": 0.12,
+        "fHRpg": "1/7",
+        "HR24": 0,
+        "HR24pg": 0.0,
+        "fHR24pg": "0"
+    },
+    {
+        "name": "Ty France",
+        "team": "San Diego Padres",
+        "player_id": 664034,
+        "HR": 18,
+        "HRpg": 0.17,
+        "fHRpg": "1/6",
+        "HR24": 6,
+        "HR24pg": 0.06,
+        "fHR24pg": "0"
+    },
+    {
+        "name": "Max Muncy",
+        "team": "Los Angeles Dodgers",
+        "player_id": 571970,
+        "HR": 26,
+        "HRpg": 0.22,
+        "fHRpg": "1/5",
+        "HR24": 19,
+        "HR24pg": 0.19,
+        "fHR24pg": "1/5"
+    },
+    {
+        "name": "Oneil Cruz",
+        "team": "Pittsburgh Pirates",
+        "player_id": 665833,
+        "HR": 16,
+        "HRpg": 0.24,
+        "fHRpg": "1/4",
+        "HR24": 20,
+        "HR24pg": 0.15,
+        "fHR24pg": "1/7"
+    },
+    {
+        "name": "Pete Crow-Armstrong",
+        "team": "Chicago Cubs",
+        "player_id": 691718,
+        "HR": 32,
+        "HRpg": 0.25,
+        "fHRpg": "1/4",
+        "HR24": 31,
+        "HR24pg": 0.2,
+        "fHR24pg": "1/5"
+    },
+    {
+        "name": "Alex Bregman",
+        "team": "Chicago Cubs",
+        "player_id": 608324,
+        "HR": 18,
+        "HRpg": 0.14,
+        "fHRpg": "1/7",
+        "HR24": 18,
+        "HR24pg": 0.16,
+        "fHR24pg": "1/6"
+    },
+    {
+        "name": "Cal Raleigh",
+        "team": "Seattle Mariners",
+        "player_id": 663728,
+        "HR": 14,
+        "HRpg": 0.15,
+        "fHRpg": "1/7",
+        "HR24": 60,
+        "HR24pg": 0.38,
+        "fHR24pg": "2/5"
+    },
+    {
+        "name": "Ian Happ",
+        "team": "Chicago Cubs",
+        "player_id": 664023,
+        "HR": 21,
+        "HRpg": 0.17,
+        "fHRpg": "1/6",
+        "HR24": 23,
+        "HR24pg": 0.15,
+        "fHR24pg": "1/7"
+    },
+    {
+        "name": "Alex Bregman",
+        "team": "Chicago Cubs",
+        "player_id": 608324,
+        "HR": 18,
+        "HRpg": 0.14,
+        "fHRpg": "1/7",
+        "HR24": 18,
+        "HR24pg": 0.16,
+        "fHR24pg": "1/6"
     }
 ]
