@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Dylan Cease",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
+        "away_score": 3,
         "home_score": 0,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-08-22 - Toronto Blue Jays (2) @ New York Yankees (0) (Bottom of the 4th)"
+        "summary": "2026-08-22 - Toronto Blue Jays (3) @ New York Yankees (0) (Top of the 6th)"
     },
     {
         "game_id": 823743,
@@ -42,14 +42,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 0,
-        "current_inning": 3,
+        "home_score": 3,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
         "series_status": "MIL leads 1-0",
-        "summary": "2026-08-22 - Atlanta Braves (1) @ Milwaukee Brewers (0) (Bottom of the 3rd)"
+        "summary": "2026-08-22 - Atlanta Braves (1) @ Milwaukee Brewers (3) (Bottom of the 4th)"
     },
     {
         "game_id": 823831,
@@ -95,10 +95,10 @@
         "away_probable_pitcher": "",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
@@ -128,7 +128,7 @@
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "BAL leads 1-0",
         "summary": "2026-08-22 - Tampa Bay Rays @ Baltimore Orioles (Scheduled)"
     },
     {
@@ -136,7 +136,7 @@
         "game_datetime": "2026-08-22T23:05:00Z",
         "game_date": "2026-08-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Texas Rangers",
         "away_id": 108,
@@ -154,8 +154,8 @@
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-22 - Los Angeles Angels @ Texas Rangers (Scheduled)"
+        "series_status": "TEX leads 1-0",
+        "summary": "2026-08-22 - Los Angeles Angels @ Texas Rangers (Pre-Game)"
     },
     {
         "game_id": 824151,
@@ -188,7 +188,7 @@
         "game_datetime": "2026-08-22T23:10:00Z",
         "game_date": "2026-08-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "Chicago White Sox",
         "away_id": 121,
@@ -206,8 +206,8 @@
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-22 - New York Mets @ Chicago White Sox (Scheduled)"
+        "series_status": "CWS leads 1-0",
+        "summary": "2026-08-22 - New York Mets @ Chicago White Sox (Pre-Game)"
     },
     {
         "game_id": 824073,
@@ -240,7 +240,7 @@
         "game_datetime": "2026-08-22T23:15:00Z",
         "game_date": "2026-08-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Los Angeles Dodgers",
         "away_id": 134,
@@ -260,15 +260,15 @@
         "national_broadcasts": [
             "FOX / FOX ONE"
         ],
-        "series_status": null,
-        "summary": "2026-08-22 - Pittsburgh Pirates @ Los Angeles Dodgers (Scheduled)"
+        "series_status": "LAD leads 1-0",
+        "summary": "2026-08-22 - Pittsburgh Pirates @ Los Angeles Dodgers (Pre-Game)"
     },
     {
         "game_id": 823100,
         "game_datetime": "2026-08-22T23:15:00Z",
         "game_date": "2026-08-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Seattle Mariners",
         "away_id": 112,
@@ -289,14 +289,14 @@
             "FOX / FOX ONE"
         ],
         "series_status": "SEA leads 1-0",
-        "summary": "2026-08-22 - Chicago Cubs @ Seattle Mariners (Scheduled)"
+        "summary": "2026-08-22 - Chicago Cubs @ Seattle Mariners (Pre-Game)"
     },
     {
         "game_id": 824718,
         "game_datetime": "2026-08-22T23:15:00Z",
         "game_date": "2026-08-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Francisco Giants",
         "home_name": "Boston Red Sox",
         "away_id": 137,
@@ -316,8 +316,8 @@
         "national_broadcasts": [
             "FOX / FOX ONE"
         ],
-        "series_status": null,
-        "summary": "2026-08-22 - San Francisco Giants @ Boston Red Sox (Scheduled)"
+        "series_status": "BOS leads 1-0",
+        "summary": "2026-08-22 - San Francisco Giants @ Boston Red Sox (Pre-Game)"
     },
     {
         "game_id": 825044,
@@ -350,7 +350,7 @@
         "game_datetime": "2026-08-23T00:10:00Z",
         "game_date": "2026-08-22",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Colorado Rockies",
         "away_id": 114,
@@ -368,8 +368,8 @@
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-22 - Cleveland Guardians @ Colorado Rockies (Scheduled)"
+        "series_status": "CLE leads 1-0",
+        "summary": "2026-08-22 - Cleveland Guardians @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 823261,
