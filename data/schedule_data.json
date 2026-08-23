@@ -252,7 +252,7 @@
         "game_datetime": "2026-08-23T19:10:00Z",
         "game_date": "2026-08-23",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Cleveland Guardians",
         "home_name": "Colorado Rockies",
         "away_id": 114,
@@ -276,7 +276,7 @@
         "winning_pitcher": "Foster Griffin",
         "losing_pitcher": "Tomoyuki Sugano",
         "save_pitcher": null,
-        "summary": "2026-08-23 - Cleveland Guardians (7) @ Colorado Rockies (2) (Game Over)"
+        "summary": "2026-08-23 - Cleveland Guardians (7) @ Colorado Rockies (2) (Final)"
     },
     {
         "game_id": 824720,
@@ -316,7 +316,7 @@
         "game_datetime": "2026-08-23T20:10:00Z",
         "game_date": "2026-08-23",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Los Angeles Dodgers",
         "away_id": 134,
@@ -334,8 +334,13 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": "LAD leads 2-0",
-        "summary": "2026-08-23 - Pittsburgh Pirates (0) @ Los Angeles Dodgers (4) (Top of the 9th)"
+        "series_status": "LAD wins 3-0",
+        "winning_team": "Los Angeles Dodgers",
+        "losing_team": "Pittsburgh Pirates",
+        "winning_pitcher": "Blake Snell",
+        "losing_pitcher": "Lake Bachar",
+        "save_pitcher": null,
+        "summary": "2026-08-23 - Pittsburgh Pirates (0) @ Los Angeles Dodgers (4) (Game Over)"
     },
     {
         "game_id": 823099,
@@ -353,15 +358,15 @@
         "away_probable_pitcher": "Shota Imanaga",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 7,
+        "away_score": 8,
         "home_score": 2,
-        "current_inning": 7,
+        "current_inning": 8,
         "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "SEA leads 2-0",
-        "summary": "2026-08-23 - Chicago Cubs (7) @ Seattle Mariners (2) (Top of the 7th)"
+        "summary": "2026-08-23 - Chicago Cubs (8) @ Seattle Mariners (2) (Top of the 8th)"
     },
     {
         "game_id": 823258,
@@ -380,14 +385,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 7,
-        "current_inning": 8,
+        "home_score": 8,
+        "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "SD leads 2-0",
-        "summary": "2026-08-23 - Minnesota Twins (1) @ San Diego Padres (7) (Top of the 8th)"
+        "summary": "2026-08-23 - Minnesota Twins (1) @ San Diego Padres (8) (Top of the 9th)"
     },
     {
         "game_id": 825043,
@@ -407,22 +412,22 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 5,
-        "current_inning": 7,
-        "inning_state": "Bottom",
+        "current_inning": 8,
+        "inning_state": "End",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [
             "Peacock/NBCSN"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-23 - Cincinnati Reds (3) @ Arizona Diamondbacks (5) (Bottom of the 7th)"
+        "summary": "2026-08-23 - Cincinnati Reds (3) @ Arizona Diamondbacks (5) (End of the 8th)"
     },
     {
         "game_id": 823745,
         "game_datetime": "2026-08-23T23:10:00Z",
         "game_date": "2026-08-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Atlanta Braves",
         "home_name": "Milwaukee Brewers",
         "away_id": 144,
@@ -443,6 +448,6 @@
             "ESPN/ESPN App"
         ],
         "series_status": "MIL leads 2-0",
-        "summary": "2026-08-23 - Atlanta Braves @ Milwaukee Brewers (Pre-Game)"
+        "summary": "2026-08-23 - Atlanta Braves @ Milwaukee Brewers (Warmup)"
     }
 ]
