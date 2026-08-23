@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-23T17:35:00Z",
         "game_date": "2026-08-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Tampa Bay Rays",
         "home_name": "Baltimore Orioles",
         "away_id": 139,
@@ -23,14 +23,14 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BAL leads 2-0",
-        "summary": "2026-08-23 - Tampa Bay Rays @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-08-23 - Tampa Bay Rays @ Baltimore Orioles (Warmup)"
     },
     {
         "game_id": 823421,
         "game_datetime": "2026-08-23T17:35:00Z",
         "game_date": "2026-08-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "St. Louis Cardinals",
         "home_name": "Philadelphia Phillies",
         "away_id": 138,
@@ -49,14 +49,14 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 2-0",
-        "summary": "2026-08-23 - St. Louis Cardinals @ Philadelphia Phillies (Pre-Game)"
+        "summary": "2026-08-23 - St. Louis Cardinals @ Philadelphia Phillies (Warmup)"
     },
     {
         "game_id": 823507,
         "game_datetime": "2026-08-23T17:35:00Z",
         "game_date": "2026-08-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Toronto Blue Jays",
         "home_name": "New York Yankees",
         "away_id": 141,
@@ -75,14 +75,14 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-23 - Toronto Blue Jays @ New York Yankees (Pre-Game)"
+        "summary": "2026-08-23 - Toronto Blue Jays @ New York Yankees (Warmup)"
     },
     {
         "game_id": 823827,
         "game_datetime": "2026-08-23T17:40:00Z",
         "game_date": "2026-08-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Washington Nationals",
         "home_name": "Miami Marlins",
         "away_id": 120,
@@ -101,7 +101,7 @@
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "MIA leads 2-0",
-        "summary": "2026-08-23 - Washington Nationals @ Miami Marlins (Pre-Game)"
+        "summary": "2026-08-23 - Washington Nationals @ Miami Marlins (Warmup)"
     },
     {
         "game_id": 824071,
@@ -223,10 +223,10 @@
         "away_probable_pitcher": "Foster Griffin",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
@@ -266,7 +266,7 @@
         "game_datetime": "2026-08-23T20:10:00Z",
         "game_date": "2026-08-23",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Los Angeles Dodgers",
         "away_id": 134,
@@ -285,14 +285,14 @@
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
         "series_status": "LAD leads 2-0",
-        "summary": "2026-08-23 - Pittsburgh Pirates @ Los Angeles Dodgers (Scheduled)"
+        "summary": "2026-08-23 - Pittsburgh Pirates @ Los Angeles Dodgers (Pre-Game)"
     },
     {
         "game_id": 823099,
         "game_datetime": "2026-08-23T20:10:00Z",
         "game_date": "2026-08-23",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Seattle Mariners",
         "away_id": 112,
@@ -310,8 +310,8 @@
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": "SEA leads 1-0",
-        "summary": "2026-08-23 - Chicago Cubs @ Seattle Mariners (Scheduled)"
+        "series_status": "SEA leads 2-0",
+        "summary": "2026-08-23 - Chicago Cubs @ Seattle Mariners (Pre-Game)"
     },
     {
         "game_id": 823258,
@@ -344,7 +344,7 @@
         "game_datetime": "2026-08-23T20:15:00Z",
         "game_date": "2026-08-23",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cincinnati Reds",
         "home_name": "Arizona Diamondbacks",
         "away_id": 113,
@@ -364,8 +364,8 @@
         "national_broadcasts": [
             "Peacock/NBCSN"
         ],
-        "series_status": null,
-        "summary": "2026-08-23 - Cincinnati Reds @ Arizona Diamondbacks (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-08-23 - Cincinnati Reds @ Arizona Diamondbacks (Pre-Game)"
     },
     {
         "game_id": 823745,
