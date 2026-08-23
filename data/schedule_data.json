@@ -18,12 +18,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 5,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BAL leads 2-0",
-        "summary": "2026-08-23 - Tampa Bay Rays (0) @ Baltimore Orioles (0) (Top of the 5th)"
+        "summary": "2026-08-23 - Tampa Bay Rays (0) @ Baltimore Orioles (0) (Bottom of the 5th)"
     },
     {
         "game_id": 823421,
@@ -41,15 +41,15 @@
         "away_probable_pitcher": "Kyle Leahy",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
+        "away_score": 3,
         "home_score": 0,
-        "current_inning": 5,
+        "current_inning": 6,
         "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "PHI leads 2-0",
-        "summary": "2026-08-23 - St. Louis Cardinals (2) @ Philadelphia Phillies (0) (Top of the 5th)"
+        "summary": "2026-08-23 - St. Louis Cardinals (3) @ Philadelphia Phillies (0) (Top of the 6th)"
     },
     {
         "game_id": 823507,
@@ -67,15 +67,15 @@
         "away_probable_pitcher": "Jos\u00e9 Soriano",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 2,
         "current_inning": 4,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-23 - Toronto Blue Jays (1) @ New York Yankees (2) (Top of the 4th)"
+        "summary": "2026-08-23 - Toronto Blue Jays (2) @ New York Yankees (2) (Bottom of the 4th)"
     },
     {
         "game_id": 823827,
@@ -95,13 +95,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 1,
-        "current_inning": 4,
-        "inning_state": "Middle",
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "MIA leads 2-0",
-        "summary": "2026-08-23 - Washington Nationals (1) @ Miami Marlins (1) (Middle of the 4th)"
+        "summary": "2026-08-23 - Washington Nationals (1) @ Miami Marlins (1) (Top of the 5th)"
     },
     {
         "game_id": 824071,
@@ -120,14 +120,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "home_score": 5,
+        "current_inning": 3,
+        "inning_state": "Middle",
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": "KC leads 2-0",
-        "summary": "2026-08-23 - Detroit Tigers (1) @ Kansas City Royals (0) (Bottom of the 2nd)"
+        "summary": "2026-08-23 - Detroit Tigers (1) @ Kansas City Royals (5) (Middle of the 3rd)"
     },
     {
         "game_id": 824150,
@@ -174,12 +174,12 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 3,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-23 - New York Mets (0) @ Chicago White Sox (0) (Top of the 3rd)"
+        "summary": "2026-08-23 - New York Mets (0) @ Chicago White Sox (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 822856,
@@ -199,20 +199,20 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-23 - Los Angeles Angels (0) @ Texas Rangers (0) (Top of the 1st)"
+        "summary": "2026-08-23 - Los Angeles Angels (0) @ Texas Rangers (0) (Top of the 2nd)"
     },
     {
         "game_id": 824315,
         "game_datetime": "2026-08-23T19:10:00Z",
         "game_date": "2026-08-23",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cleveland Guardians",
         "home_name": "Colorado Rockies",
         "away_id": 114,
@@ -231,7 +231,7 @@
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "CLE leads 2-0",
-        "summary": "2026-08-23 - Cleveland Guardians @ Colorado Rockies (Pre-Game)"
+        "summary": "2026-08-23 - Cleveland Guardians @ Colorado Rockies (Warmup)"
     },
     {
         "game_id": 824720,
