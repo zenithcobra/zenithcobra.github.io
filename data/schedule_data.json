@@ -252,7 +252,7 @@
         "game_datetime": "2026-08-23T19:10:00Z",
         "game_date": "2026-08-23",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Cleveland Guardians",
         "home_name": "Colorado Rockies",
         "away_id": 114,
@@ -263,22 +263,27 @@
         "away_probable_pitcher": "Foster Griffin",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 6,
+        "away_score": 7,
         "home_score": 2,
-        "current_inning": 7,
+        "current_inning": 9,
         "inning_state": "Bottom",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": "CLE leads 2-0",
-        "summary": "2026-08-23 - Cleveland Guardians (6) @ Colorado Rockies (2) (Bottom of the 7th)"
+        "series_status": "CLE wins 3-0",
+        "winning_team": "Cleveland Guardians",
+        "losing_team": "Colorado Rockies",
+        "winning_pitcher": "Foster Griffin",
+        "losing_pitcher": "Tomoyuki Sugano",
+        "save_pitcher": null,
+        "summary": "2026-08-23 - Cleveland Guardians (7) @ Colorado Rockies (2) (Game Over)"
     },
     {
         "game_id": 824720,
         "game_datetime": "2026-08-23T19:15:00Z",
         "game_date": "2026-08-23",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "San Francisco Giants",
         "home_name": "Boston Red Sox",
         "away_id": 137,
@@ -298,8 +303,13 @@
         "national_broadcasts": [
             "NBC/Peacock"
         ],
-        "series_status": "BOS leads 2-0",
-        "summary": "2026-08-23 - San Francisco Giants (4) @ Boston Red Sox (5) (Top of the 9th)"
+        "series_status": "BOS wins 3-0",
+        "winning_team": "Boston Red Sox",
+        "losing_team": "San Francisco Giants",
+        "winning_pitcher": "Jake Bennett",
+        "losing_pitcher": "Matt Wilkinson",
+        "save_pitcher": "Aroldis Chapman",
+        "summary": "2026-08-23 - San Francisco Giants (4) @ Boston Red Sox (5) (Final)"
     },
     {
         "game_id": 823909,
@@ -319,13 +329,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 4,
-        "current_inning": 5,
-        "inning_state": "End",
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
         "series_status": "LAD leads 2-0",
-        "summary": "2026-08-23 - Pittsburgh Pirates (0) @ Los Angeles Dodgers (4) (End of the 5th)"
+        "summary": "2026-08-23 - Pittsburgh Pirates (0) @ Los Angeles Dodgers (4) (Top of the 9th)"
     },
     {
         "game_id": 823099,
@@ -343,15 +353,15 @@
         "away_probable_pitcher": "Shota Imanaga",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 5,
+        "away_score": 7,
         "home_score": 2,
-        "current_inning": 5,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "SEA leads 2-0",
-        "summary": "2026-08-23 - Chicago Cubs (5) @ Seattle Mariners (2) (Top of the 5th)"
+        "summary": "2026-08-23 - Chicago Cubs (7) @ Seattle Mariners (2) (Top of the 7th)"
     },
     {
         "game_id": 823258,
@@ -370,14 +380,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 1,
-        "current_inning": 6,
-        "inning_state": "Bottom",
+        "home_score": 7,
+        "current_inning": 8,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "SD leads 2-0",
-        "summary": "2026-08-23 - Minnesota Twins (1) @ San Diego Padres (1) (Bottom of the 6th)"
+        "summary": "2026-08-23 - Minnesota Twins (1) @ San Diego Padres (7) (Top of the 8th)"
     },
     {
         "game_id": 825043,
@@ -396,16 +406,16 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 0,
-        "current_inning": 5,
-        "inning_state": "Middle",
+        "home_score": 5,
+        "current_inning": 7,
+        "inning_state": "Bottom",
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [
             "Peacock/NBCSN"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-08-23 - Cincinnati Reds (3) @ Arizona Diamondbacks (0) (Middle of the 5th)"
+        "summary": "2026-08-23 - Cincinnati Reds (3) @ Arizona Diamondbacks (5) (Bottom of the 7th)"
     },
     {
         "game_id": 823745,
