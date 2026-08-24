@@ -347,7 +347,7 @@
         "game_datetime": "2026-08-23T20:10:00Z",
         "game_date": "2026-08-23",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Chicago Cubs",
         "home_name": "Seattle Mariners",
         "away_id": 112,
@@ -371,7 +371,7 @@
         "winning_pitcher": "Aaron Civale",
         "losing_pitcher": "Bryce Miller",
         "save_pitcher": null,
-        "summary": "2026-08-23 - Chicago Cubs (19) @ Seattle Mariners (2) (Game Over)"
+        "summary": "2026-08-23 - Chicago Cubs (19) @ Seattle Mariners (2) (Final)"
     },
     {
         "game_id": 823258,
@@ -456,13 +456,13 @@
         "away_score": 1,
         "home_score": 0,
         "current_inning": 2,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2735,
         "venue_name": "Journey Bank Ballpark",
         "national_broadcasts": [
             "ESPN/ESPN App"
         ],
         "series_status": "MIL leads 2-0",
-        "summary": "2026-08-23 - Atlanta Braves (1) @ Milwaukee Brewers (0) (Top of the 2nd)"
+        "summary": "2026-08-23 - Atlanta Braves (1) @ Milwaukee Brewers (0) (Bottom of the 2nd)"
     }
 ]
