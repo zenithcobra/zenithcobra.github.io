@@ -329,10 +329,10 @@
         "away_probable_pitcher": "Taj Bradley",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
@@ -370,7 +370,7 @@
         "game_datetime": "2026-08-26T01:45:00Z",
         "game_date": "2026-08-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cincinnati Reds",
         "home_name": "San Francisco Giants",
         "away_id": 113,
@@ -388,7 +388,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-25 - Cincinnati Reds @ San Francisco Giants (Scheduled)"
+        "series_status": "SF leads 1-0",
+        "summary": "2026-08-25 - Cincinnati Reds @ San Francisco Giants (Pre-Game)"
     }
 ]
