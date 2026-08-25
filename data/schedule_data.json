@@ -145,10 +145,10 @@
         "away_probable_pitcher": "Kyle Harrison",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
@@ -214,7 +214,7 @@
         "game_datetime": "2026-08-25T23:45:00Z",
         "game_date": "2026-08-25",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Baltimore Orioles",
         "home_name": "St. Louis Cardinals",
         "away_id": 110,
@@ -233,7 +233,7 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-08-25 - Baltimore Orioles @ St. Louis Cardinals (Scheduled)"
+        "summary": "2026-08-25 - Baltimore Orioles @ St. Louis Cardinals (Pre-Game)"
     },
     {
         "game_id": 823989,
@@ -362,7 +362,7 @@
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "SEA leads 1-0",
         "summary": "2026-08-25 - Philadelphia Phillies @ Seattle Mariners (Scheduled)"
     },
     {
@@ -388,7 +388,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "SF leads 1-0",
         "summary": "2026-08-25 - Cincinnati Reds @ San Francisco Giants (Scheduled)"
     }
 ]

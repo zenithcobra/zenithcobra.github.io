@@ -2078,6 +2078,12 @@
         "fHR24pg": "0"
     },
     {
+        "player_name": "Matt Waldron",
+        "team": "Washington Nationals",
+        "team_id": 120,
+        "player_id": 663362
+    },
+    {
         "player_name": "Max Kranick",
         "team": "Washington Nationals",
         "team_id": 120,
@@ -2125,12 +2131,6 @@
         "team": "Washington Nationals",
         "team_id": 120,
         "player_id": 676680
-    },
-    {
-        "player_name": "Trevor Williams",
-        "team": "Washington Nationals",
-        "team_id": 120,
-        "player_id": 592866
     },
     {
         "player_name": "Will Dion",
@@ -3803,26 +3803,6 @@
         "fHR24pg": "0"
     },
     {
-        "player_name": "Jonathan Ornelas",
-        "team": "Milwaukee Brewers",
-        "team_id": 158,
-        "player_id": 680716,
-        "position": "SS",
-        "games_played": 9.0,
-        "H": 4.0,
-        "HR": 0.0,
-        "RBI": 1.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.444,
-        "fHpg": "3/7",
-        "RBIpg": 0.111,
-        "fRBIpg": "1/7",
-        "HR24": 0,
-        "HR24pg": 0.0,
-        "fHR24pg": "0"
-    },
-    {
         "player_name": "Kyle Harrison",
         "team": "Milwaukee Brewers",
         "team_id": 158,
@@ -3856,6 +3836,26 @@
         "team": "Milwaukee Brewers",
         "team_id": 158,
         "player_id": 688107
+    },
+    {
+        "player_name": "Sal Frelick",
+        "team": "Milwaukee Brewers",
+        "team_id": 158,
+        "player_id": 686217,
+        "position": "RF",
+        "games_played": 90.0,
+        "H": 65.0,
+        "HR": 4.0,
+        "RBI": 34.0,
+        "HRpg": 0.044,
+        "fHRpg": "0",
+        "Hpg": 0.722,
+        "fHpg": "5/7",
+        "RBIpg": 0.378,
+        "fRBIpg": "2/5",
+        "HR24": 12,
+        "HR24pg": 0.08,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Shane Drohan",
@@ -5332,26 +5332,6 @@
         "fHR24pg": "1/6"
     },
     {
-        "player_name": "Andrew Benintendi",
-        "team": "Chicago White Sox",
-        "team_id": 145,
-        "player_id": 643217,
-        "position": "DH",
-        "games_played": 116.0,
-        "H": 86.0,
-        "HR": 13.0,
-        "RBI": 65.0,
-        "HRpg": 0.112,
-        "fHRpg": "1/7",
-        "Hpg": 0.741,
-        "fHpg": "3/4",
-        "RBIpg": 0.56,
-        "fRBIpg": "4/7",
-        "HR24": 20,
-        "HR24pg": 0.17,
-        "fHR24pg": "1/6"
-    },
-    {
         "player_name": "Anthony Kay",
         "team": "Chicago White Sox",
         "team_id": 145,
@@ -5598,6 +5578,23 @@
         "HR24": 2,
         "HR24pg": 0.05,
         "fHR24pg": "0"
+    },
+    {
+        "player_name": "Rikuu Nishida",
+        "team": "Chicago White Sox",
+        "team_id": 145,
+        "player_id": 807747,
+        "position": "RF",
+        "games_played": 12.0,
+        "H": 7.0,
+        "HR": 0.0,
+        "RBI": 2.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.583,
+        "fHpg": "4/7",
+        "RBIpg": 0.167,
+        "fRBIpg": "1/6"
     },
     {
         "player_name": "Sam Antonacci",
@@ -6247,26 +6244,6 @@
         "player_id": 703725
     },
     {
-        "player_name": "Masyn Winn",
-        "team": "St. Louis Cardinals",
-        "team_id": 138,
-        "player_id": 691026,
-        "position": "SS",
-        "games_played": 122.0,
-        "H": 103.0,
-        "HR": 5.0,
-        "RBI": 51.0,
-        "HRpg": 0.041,
-        "fHRpg": "0",
-        "Hpg": 0.844,
-        "fHpg": "5/6",
-        "RBIpg": 0.418,
-        "fRBIpg": "3/7",
-        "HR24": 9,
-        "HR24pg": 0.07,
-        "fHR24pg": "0"
-    },
-    {
         "player_name": "Matthew Liberatore",
         "team": "St. Louis Cardinals",
         "team_id": 138,
@@ -6297,6 +6274,26 @@
         "HR24": 1,
         "HR24pg": 0.04,
         "fHR24pg": "0"
+    },
+    {
+        "player_name": "Nolan Gorman",
+        "team": "St. Louis Cardinals",
+        "team_id": 138,
+        "player_id": 669357,
+        "position": "3B",
+        "games_played": 62.0,
+        "H": 39.0,
+        "HR": 7.0,
+        "RBI": 26.0,
+        "HRpg": 0.113,
+        "fHRpg": "1/7",
+        "Hpg": 0.629,
+        "fHpg": "3/5",
+        "RBIpg": 0.419,
+        "fRBIpg": "3/7",
+        "HR24": 14,
+        "HR24pg": 0.13,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Pedro Pag\u00e9s",
