@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-26T17:10:00Z",
         "game_date": "2026-08-26",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Game Over",
         "away_name": "Tampa Bay Rays",
         "home_name": "Detroit Tigers",
         "away_id": 139,
@@ -15,15 +15,20 @@
         "away_probable_pitcher": "Freddy Peralta",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
+        "away_score": 3,
         "home_score": 0,
-        "current_inning": 5,
-        "inning_state": "End",
+        "current_inning": 9,
+        "inning_state": "Bottom",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-08-26 - Tampa Bay Rays (2) @ Detroit Tigers (0) (End of the 5th)"
+        "series_status": "TB wins 2-1",
+        "winning_team": "Tampa Bay Rays",
+        "losing_team": "Detroit Tigers",
+        "winning_pitcher": "Freddy Peralta",
+        "losing_pitcher": "Troy Melton",
+        "save_pitcher": "Tyler Wells",
+        "summary": "2026-08-26 - Tampa Bay Rays (3) @ Detroit Tigers (0) (Game Over)"
     },
     {
         "game_id": 825039,
@@ -93,10 +98,10 @@
         "away_probable_pitcher": "Joey Cantillo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
@@ -160,7 +165,7 @@
         "game_datetime": "2026-08-26T22:40:00Z",
         "game_date": "2026-08-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Miami Marlins",
         "away_id": 111,
@@ -171,22 +176,22 @@
         "away_probable_pitcher": "Sonny Gray",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-26 - Boston Red Sox @ Miami Marlins (Scheduled)"
+        "series_status": "BOS leads 2-0",
+        "summary": "2026-08-26 - Boston Red Sox @ Miami Marlins (Pre-Game)"
     },
     {
         "game_id": 822692,
         "game_datetime": "2026-08-26T22:45:00Z",
         "game_date": "2026-08-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Washington Nationals",
         "away_id": 115,
@@ -204,8 +209,8 @@
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-26 - Colorado Rockies @ Washington Nationals (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-08-26 - Colorado Rockies @ Washington Nationals (Pre-Game)"
     },
     {
         "game_id": 823506,
@@ -238,7 +243,7 @@
         "game_datetime": "2026-08-26T23:07:00Z",
         "game_date": "2026-08-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Kansas City Royals",
         "home_name": "Toronto Blue Jays",
         "away_id": 118,
@@ -257,7 +262,7 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "KC leads 1-0",
-        "summary": "2026-08-26 - Kansas City Royals @ Toronto Blue Jays (Scheduled)"
+        "summary": "2026-08-26 - Kansas City Royals @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 823584,
@@ -290,7 +295,7 @@
         "game_datetime": "2026-08-26T23:15:00Z",
         "game_date": "2026-08-26",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Atlanta Braves",
         "away_id": 119,
@@ -310,8 +315,8 @@
         "national_broadcasts": [
             "MLB Network"
         ],
-        "series_status": null,
-        "summary": "2026-08-26 - Los Angeles Dodgers @ Atlanta Braves (Scheduled)"
+        "series_status": "ATL leads 1-0",
+        "summary": "2026-08-26 - Los Angeles Dodgers @ Atlanta Braves (Pre-Game)"
     },
     {
         "game_id": 824555,
