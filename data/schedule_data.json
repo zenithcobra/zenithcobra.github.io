@@ -17,7 +17,7 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 0,
-        "current_inning": 6,
+        "current_inning": 8,
         "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
@@ -25,7 +25,7 @@
             "MLB Network"
         ],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-08-29 - Boston Red Sox (2) @ New York Yankees (0) (Top of the 6th)"
+        "summary": "2026-08-29 - Boston Red Sox (2) @ New York Yankees (0) (Top of the 8th)"
     },
     {
         "game_id": 823501,
@@ -73,13 +73,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 1,
-        "current_inning": 6,
+        "current_inning": 8,
         "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "LAD leads 1-0",
-        "summary": "2026-08-29 - Los Angeles Dodgers (1) @ Detroit Tigers (1) (Top of the 6th)"
+        "summary": "2026-08-29 - Los Angeles Dodgers (1) @ Detroit Tigers (1) (Top of the 8th)"
     },
     {
         "game_id": 823665,
@@ -97,15 +97,15 @@
         "away_probable_pitcher": "Erick Fedde",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 1,
-        "current_inning": 2,
+        "away_score": 2,
+        "home_score": 2,
+        "current_inning": 4,
         "inning_state": "Bottom",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-08-29 - Chicago White Sox (1) @ Minnesota Twins (1) (Bottom of the 2nd)"
+        "summary": "2026-08-29 - Chicago White Sox (2) @ Minnesota Twins (2) (Bottom of the 4th)"
     },
     {
         "game_id": 823011,
@@ -123,15 +123,15 @@
         "away_probable_pitcher": "Lake Bachar",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "away_score": 2,
+        "home_score": 1,
+        "current_inning": 4,
+        "inning_state": "Middle",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": "STL leads 1-0",
-        "summary": "2026-08-29 - Pittsburgh Pirates (1) @ St. Louis Cardinals (0) (Bottom of the 2nd)"
+        "summary": "2026-08-29 - Pittsburgh Pirates (2) @ St. Louis Cardinals (1) (Middle of the 4th)"
     },
     {
         "game_id": 824637,
@@ -149,22 +149,22 @@
         "away_probable_pitcher": "Andrew Abbott",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 2,
-        "home_score": 3,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "away_score": 4,
+        "home_score": 6,
+        "current_inning": 4,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CIN leads 1-0",
-        "summary": "2026-08-29 - Cincinnati Reds (2) @ Chicago Cubs (3) (Bottom of the 2nd)"
+        "summary": "2026-08-29 - Cincinnati Reds (4) @ Chicago Cubs (6) (Top of the 4th)"
     },
     {
         "game_id": 822770,
         "game_datetime": "2026-08-29T19:07:00Z",
         "game_date": "2026-08-29",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Seattle Mariners",
         "home_name": "Toronto Blue Jays",
         "away_id": 136,
@@ -183,7 +183,7 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-08-29 - Seattle Mariners @ Toronto Blue Jays (Pre-Game)"
+        "summary": "2026-08-29 - Seattle Mariners @ Toronto Blue Jays (Warmup)"
     },
     {
         "game_id": 823177,
@@ -392,7 +392,7 @@
         "national_broadcasts": [
             "FOX / FOX ONE"
         ],
-        "series_status": null,
+        "series_status": "MIL leads 1-0",
         "summary": "2026-08-29 - Texas Rangers @ Milwaukee Brewers (Scheduled)"
     },
     {
