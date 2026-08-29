@@ -4,7 +4,7 @@
         "game_datetime": "2026-08-29T17:05:00Z",
         "game_date": "2026-08-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "New York Yankees",
         "away_id": 111,
@@ -15,17 +15,17 @@
         "away_probable_pitcher": "Jake Bennett",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [
             "MLB Network"
         ],
         "series_status": "NYY leads 1-0",
-        "summary": "2026-08-29 - Boston Red Sox @ New York Yankees (Scheduled)"
+        "summary": "2026-08-29 - Boston Red Sox @ New York Yankees (Pre-Game)"
     },
     {
         "game_id": 823501,
@@ -60,7 +60,7 @@
         "game_datetime": "2026-08-29T17:10:00Z",
         "game_date": "2026-08-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Dodgers",
         "home_name": "Detroit Tigers",
         "away_id": 119,
@@ -71,22 +71,22 @@
         "away_probable_pitcher": "Blake Snell",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-29 - Los Angeles Dodgers @ Detroit Tigers (Scheduled)"
+        "series_status": "LAD leads 1-0",
+        "summary": "2026-08-29 - Los Angeles Dodgers @ Detroit Tigers (Pre-Game)"
     },
     {
         "game_id": 823665,
         "game_datetime": "2026-08-29T18:10:00Z",
         "game_date": "2026-08-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago White Sox",
         "home_name": "Minnesota Twins",
         "away_id": 145,
@@ -104,8 +104,8 @@
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-29 - Chicago White Sox @ Minnesota Twins (Scheduled)"
+        "series_status": "CWS leads 1-0",
+        "summary": "2026-08-29 - Chicago White Sox @ Minnesota Twins (Pre-Game)"
     },
     {
         "game_id": 823011,
@@ -120,7 +120,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Kyle Leahy",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Lake Bachar",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -130,7 +130,7 @@
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "STL leads 1-0",
         "summary": "2026-08-29 - Pittsburgh Pirates @ St. Louis Cardinals (Scheduled)"
     },
     {
@@ -138,7 +138,7 @@
         "game_datetime": "2026-08-29T18:20:00Z",
         "game_date": "2026-08-29",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cincinnati Reds",
         "home_name": "Chicago Cubs",
         "away_id": 113,
@@ -156,8 +156,8 @@
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-08-29 - Cincinnati Reds @ Chicago Cubs (Scheduled)"
+        "series_status": "CIN leads 1-0",
+        "summary": "2026-08-29 - Cincinnati Reds @ Chicago Cubs (Pre-Game)"
     },
     {
         "game_id": 822770,
@@ -198,7 +198,7 @@
         "doubleheader": "S",
         "game_num": 1,
         "home_probable_pitcher": "",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Merrill Kelly",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -208,7 +208,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "Series tied 1-1",
         "summary": "2026-08-29 - Arizona Diamondbacks @ San Francisco Giants (Scheduled)"
     },
     {
@@ -224,7 +224,7 @@
         "doubleheader": "S",
         "game_num": 2,
         "home_probable_pitcher": "",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Mitch Bratt",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -234,7 +234,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "Series tied 1-1",
         "summary": "2026-08-29 - Arizona Diamondbacks @ San Francisco Giants (Scheduled)"
     },
     {
@@ -260,7 +260,7 @@
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "WSH leads 1-0",
         "summary": "2026-08-29 - Miami Marlins @ Washington Nationals (Scheduled)"
     },
     {
@@ -392,7 +392,7 @@
         "national_broadcasts": [
             "FOX / FOX ONE"
         ],
-        "series_status": null,
+        "series_status": "MIL leads 1-0",
         "summary": "2026-08-29 - Texas Rangers @ Milwaukee Brewers (Scheduled)"
     },
     {
@@ -407,7 +407,7 @@
         "home_id": 133,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
+        "home_probable_pitcher": "Jack Perkins",
         "away_probable_pitcher": "Shane Baz",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
@@ -418,7 +418,7 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "BAL leads 1-0",
         "summary": "2026-08-29 - Baltimore Orioles @ Athletics (Scheduled)"
     },
     {
