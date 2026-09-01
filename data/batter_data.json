@@ -782,6 +782,12 @@
         "player_id": 693313
     },
     {
+        "player_name": "Cesar Perdomo",
+        "team": "San Francisco Giants",
+        "team_id": 137,
+        "player_id": 702885
+    },
+    {
         "player_name": "Christian Koss",
         "team": "San Francisco Giants",
         "team_id": 137,
@@ -1050,6 +1056,12 @@
         "team": "San Francisco Giants",
         "team_id": 137,
         "player_id": 805074
+    },
+    {
+        "player_name": "Zach Morgan",
+        "team": "San Francisco Giants",
+        "team_id": 137,
+        "player_id": 681439
     },
     {
         "player_name": "Billy Cook",
@@ -1559,6 +1571,12 @@
         "player_id": 673380
     },
     {
+        "player_name": "Dylan Ross",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 697811
+    },
+    {
         "player_name": "Francisco Alvarez",
         "team": "New York Mets",
         "team_id": 121,
@@ -1721,6 +1739,23 @@
         "team": "New York Mets",
         "team_id": 121,
         "player_id": 681320
+    },
+    {
+        "player_name": "Nick Morabito",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 703492,
+        "position": "LF",
+        "games_played": 5.0,
+        "H": 0.0,
+        "HR": 0.0,
+        "RBI": 0.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.0,
+        "fHpg": "0",
+        "RBIpg": 0.0,
+        "fRBIpg": "0"
     },
     {
         "player_name": "Nolan McLean",
@@ -2225,26 +2260,6 @@
         "fRBIpg": "3/7"
     },
     {
-        "player_name": "Daz Cameron",
-        "team": "Toronto Blue Jays",
-        "team_id": 141,
-        "player_id": 663662,
-        "position": "LF",
-        "games_played": 8.0,
-        "H": 5.0,
-        "HR": 1.0,
-        "RBI": 3.0,
-        "HRpg": 0.125,
-        "fHRpg": "1/7",
-        "Hpg": 0.625,
-        "fHpg": "3/5",
-        "RBIpg": 0.375,
-        "fRBIpg": "2/5",
-        "HR24": 1,
-        "HR24pg": 0.05,
-        "fHR24pg": "0"
-    },
-    {
         "player_name": "Dylan Cease",
         "team": "Toronto Blue Jays",
         "team_id": 141,
@@ -2311,10 +2326,36 @@
         "fHR24pg": "1/7"
     },
     {
+        "player_name": "Joe Mantiply",
+        "team": "Toronto Blue Jays",
+        "team_id": 141,
+        "player_id": 573009
+    },
+    {
         "player_name": "Jos\u00e9 Soriano",
         "team": "Toronto Blue Jays",
         "team_id": 141,
         "player_id": 667755
+    },
+    {
+        "player_name": "Josh Smith",
+        "team": "Toronto Blue Jays",
+        "team_id": 141,
+        "player_id": 669701,
+        "position": "2B",
+        "games_played": 59.0,
+        "H": 36.0,
+        "HR": 3.0,
+        "RBI": 11.0,
+        "HRpg": 0.051,
+        "fHRpg": "0",
+        "Hpg": 0.61,
+        "fHpg": "3/5",
+        "RBIpg": 0.186,
+        "fRBIpg": "1/5",
+        "HR24": 10,
+        "HR24pg": 0.07,
+        "fHR24pg": "0"
     },
     {
         "player_name": "Kazuma Okamoto",
@@ -2402,6 +2443,29 @@
         "team": "Toronto Blue Jays",
         "team_id": 141,
         "player_id": 623149
+    },
+    {
+        "player_name": "Ricky Tiedemann",
+        "team": "Toronto Blue Jays",
+        "team_id": 141,
+        "player_id": 694357
+    },
+    {
+        "player_name": "Sean Keys",
+        "team": "Toronto Blue Jays",
+        "team_id": 141,
+        "player_id": 815873,
+        "position": "DH",
+        "games_played": 12.0,
+        "H": 6.0,
+        "HR": 1.0,
+        "RBI": 5.0,
+        "HRpg": 0.083,
+        "fHRpg": "1/7",
+        "Hpg": 0.5,
+        "fHpg": "1/2",
+        "RBIpg": 0.417,
+        "fRBIpg": "3/7"
     },
     {
         "player_name": "Spencer Arrighetti",
@@ -4201,6 +4265,12 @@
         "player_id": 663623
     },
     {
+        "player_name": "Jared Simpson",
+        "team": "Washington Nationals",
+        "team_id": 120,
+        "player_id": 688692
+    },
+    {
         "player_name": "Jorbit Vivas",
         "team": "Washington Nationals",
         "team_id": 120,
@@ -4328,10 +4398,22 @@
         "player_id": 702021
     },
     {
+        "player_name": "Yohandy Morales",
+        "team": "Washington Nationals",
+        "team_id": 120,
+        "player_id": 691002
+    },
+    {
         "player_name": "Andrew Sears",
         "team": "Detroit Tigers",
         "team_id": 116,
         "player_id": 808825
+    },
+    {
+        "player_name": "Beau Brieske",
+        "team": "Detroit Tigers",
+        "team_id": 116,
+        "player_id": 689225
     },
     {
         "player_name": "Ben Malgeri",
@@ -4604,6 +4686,26 @@
         "fHpg": "5/6",
         "RBIpg": 0.464,
         "fRBIpg": "3/7"
+    },
+    {
+        "player_name": "Riley Greene",
+        "team": "Detroit Tigers",
+        "team_id": 116,
+        "player_id": 682985,
+        "position": "LF",
+        "games_played": 117.0,
+        "H": 115.0,
+        "HR": 16.0,
+        "RBI": 54.0,
+        "HRpg": 0.137,
+        "fHRpg": "1/7",
+        "Hpg": 0.983,
+        "fHpg": "1",
+        "RBIpg": 0.462,
+        "fRBIpg": "3/7",
+        "HR24": 36,
+        "HR24pg": 0.23,
+        "fHR24pg": "1/4"
     },
     {
         "player_name": "Spencer Torkelson",
@@ -5475,6 +5577,18 @@
         "player_id": 663738
     },
     {
+        "player_name": "Drew Waters",
+        "team": "Kansas City Royals",
+        "team_id": 118,
+        "player_id": 671221
+    },
+    {
+        "player_name": "Easton McGee",
+        "team": "Kansas City Royals",
+        "team_id": 118,
+        "player_id": 668834
+    },
+    {
         "player_name": "Isaac Collins",
         "team": "Kansas City Royals",
         "team_id": 118,
@@ -5670,6 +5784,12 @@
         "player_id": 702070
     },
     {
+        "player_name": "Nolan Hoffman",
+        "team": "Kansas City Royals",
+        "team_id": 118,
+        "player_id": 676510
+    },
+    {
         "player_name": "Randy Dobnak",
         "team": "Kansas City Royals",
         "team_id": 118,
@@ -5795,6 +5915,26 @@
         "fHpg": "0",
         "RBIpg": 0.0,
         "fRBIpg": "0"
+    },
+    {
+        "player_name": "Bo Naylor",
+        "team": "Milwaukee Brewers",
+        "team_id": 158,
+        "player_id": 666310,
+        "position": "C",
+        "games_played": 28.0,
+        "H": 12.0,
+        "HR": 2.0,
+        "RBI": 7.0,
+        "HRpg": 0.071,
+        "fHRpg": "0",
+        "Hpg": 0.429,
+        "fHpg": "3/7",
+        "RBIpg": 0.25,
+        "fRBIpg": "1/4",
+        "HR24": 14,
+        "HR24pg": 0.11,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Brice Turang",
@@ -6006,6 +6146,12 @@
         "fHR24pg": "1/7"
     },
     {
+        "player_name": "JoJo Romero",
+        "team": "Milwaukee Brewers",
+        "team_id": 158,
+        "player_id": 668941
+    },
+    {
         "player_name": "Joey Ortiz",
         "team": "Milwaukee Brewers",
         "team_id": 158,
@@ -6159,6 +6305,12 @@
         "HR24": 18,
         "HR24pg": 0.16,
         "fHR24pg": "1/6"
+    },
+    {
+        "player_name": "BJ Murray Jr.",
+        "team": "Chicago Cubs",
+        "team_id": 112,
+        "player_id": 681230
     },
     {
         "player_name": "Caleb Thielbar",
@@ -6494,6 +6646,12 @@
         "player_id": 663423
     },
     {
+        "player_name": "Tyler Ferguson",
+        "team": "Chicago Cubs",
+        "team_id": 112,
+        "player_id": 621053
+    },
+    {
         "player_name": "Tyrone Taylor",
         "team": "Chicago Cubs",
         "team_id": 112,
@@ -6597,6 +6755,26 @@
         "fRBIpg": "1/6",
         "HR24": 2,
         "HR24pg": 0.04,
+        "fHR24pg": "0"
+    },
+    {
+        "player_name": "Denzel Clarke",
+        "team": "Athletics",
+        "team_id": 133,
+        "player_id": 672016,
+        "position": "CF",
+        "games_played": 22.0,
+        "H": 9.0,
+        "HR": 0.0,
+        "RBI": 6.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.409,
+        "fHpg": "2/5",
+        "RBIpg": 0.273,
+        "fRBIpg": "2/7",
+        "HR24": 3,
+        "HR24pg": 0.06,
         "fHR24pg": "0"
     },
     {
@@ -6840,6 +7018,12 @@
         "fHpg": "1",
         "RBIpg": 0.205,
         "fRBIpg": "1/5"
+    },
+    {
+        "player_name": "Yunior Tur",
+        "team": "Athletics",
+        "team_id": 133,
+        "player_id": 814305
     },
     {
         "player_name": "Zack Gelof",
@@ -7762,6 +7946,26 @@
         "fHR24pg": "1/5"
     },
     {
+        "player_name": "Jake Meyers",
+        "team": "Houston Astros",
+        "team_id": 117,
+        "player_id": 676694,
+        "position": "CF",
+        "games_played": 54.0,
+        "H": 30.0,
+        "HR": 3.0,
+        "RBI": 11.0,
+        "HRpg": 0.056,
+        "fHRpg": "0",
+        "Hpg": 0.556,
+        "fHpg": "4/7",
+        "RBIpg": 0.204,
+        "fRBIpg": "1/5",
+        "HR24": 3,
+        "HR24pg": 0.03,
+        "fHR24pg": "0"
+    },
+    {
         "player_name": "Jeremy Pe\u00f1a",
         "team": "Houston Astros",
         "team_id": 117,
@@ -7891,6 +8095,12 @@
         "player_id": 663567
     },
     {
+        "player_name": "Ronel Blanco",
+        "team": "Houston Astros",
+        "team_id": 117,
+        "player_id": 669854
+    },
+    {
         "player_name": "Steven Okert",
         "team": "Houston Astros",
         "team_id": 117,
@@ -7963,6 +8173,12 @@
         "fHR24pg": "1/7"
     },
     {
+        "player_name": "Albert Su\u00e1rez",
+        "team": "Baltimore Orioles",
+        "team_id": 110,
+        "player_id": 544150
+    },
+    {
         "player_name": "Alex Hoppe",
         "team": "Baltimore Orioles",
         "team_id": 110,
@@ -7999,12 +8215,6 @@
         "team": "Baltimore Orioles",
         "team_id": 110,
         "player_id": 687064
-    },
-    {
-        "player_name": "Cade Povich",
-        "team": "Baltimore Orioles",
-        "team_id": 110,
-        "player_id": 700249
     },
     {
         "player_name": "Cam Sanders",
@@ -8057,23 +8267,6 @@
         "HR24": 6,
         "HR24pg": 0.17,
         "fHR24pg": "1/6"
-    },
-    {
-        "player_name": "Christian Franklin",
-        "team": "Baltimore Orioles",
-        "team_id": 110,
-        "player_id": 681047,
-        "position": "CF",
-        "games_played": 16.0,
-        "H": 5.0,
-        "HR": 0.0,
-        "RBI": 0.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.312,
-        "fHpg": "1/3",
-        "RBIpg": 0.0,
-        "fRBIpg": "0"
     },
     {
         "player_name": "Coby Mayo",
@@ -8162,6 +8355,12 @@
         "fHR24pg": "1/7"
     },
     {
+        "player_name": "Heston Kjerstad",
+        "team": "Baltimore Orioles",
+        "team_id": 110,
+        "player_id": 677008
+    },
+    {
         "player_name": "Jackson Holliday",
         "team": "Baltimore Orioles",
         "team_id": 110,
@@ -8223,6 +8422,32 @@
         "HR24": 1,
         "HR24pg": 0.03,
         "fHR24pg": "0"
+    },
+    {
+        "player_name": "Luis De Le\u00f3n",
+        "team": "Baltimore Orioles",
+        "team_id": 110,
+        "player_id": 801725
+    },
+    {
+        "player_name": "Luis Robert Jr.",
+        "team": "Baltimore Orioles",
+        "team_id": 110,
+        "player_id": 673357,
+        "position": "CF",
+        "games_played": 58.0,
+        "H": 43.0,
+        "HR": 10.0,
+        "RBI": 23.0,
+        "HRpg": 0.172,
+        "fHRpg": "1/6",
+        "Hpg": 0.741,
+        "fHpg": "3/4",
+        "RBIpg": 0.397,
+        "fRBIpg": "2/5",
+        "HR24": 14,
+        "HR24pg": 0.13,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Pete Alonso",
@@ -8318,6 +8543,32 @@
         "HR24": 5,
         "HR24pg": 0.07,
         "fHR24pg": "0"
+    },
+    {
+        "player_name": "Adael Amador",
+        "team": "Colorado Rockies",
+        "team_id": 115,
+        "player_id": 691182,
+        "position": "2B",
+        "games_played": 5.0,
+        "H": 3.0,
+        "HR": 1.0,
+        "RBI": 6.0,
+        "HRpg": 0.2,
+        "fHRpg": "1/5",
+        "Hpg": 0.6,
+        "fHpg": "3/5",
+        "RBIpg": 1.2,
+        "fRBIpg": "6/5",
+        "HR24": 1,
+        "HR24pg": 0.02,
+        "fHR24pg": "0"
+    },
+    {
+        "player_name": "Blas Casta\u00f1o",
+        "team": "Colorado Rockies",
+        "team_id": 115,
+        "player_id": 680604
     },
     {
         "player_name": "Brennan Bernardino",
@@ -8867,6 +9118,12 @@
         "fHR24pg": "1/4"
     },
     {
+        "player_name": "John Schreiber",
+        "team": "New York Yankees",
+        "team_id": 147,
+        "player_id": 670167
+    },
+    {
         "player_name": "Jos\u00e9 Caballero",
         "team": "New York Yankees",
         "team_id": 147,
@@ -8958,6 +9215,26 @@
         "RBIpg": 0.516,
         "fRBIpg": "1/2",
         "HR24": 10,
+        "HR24pg": 0.07,
+        "fHR24pg": "0"
+    },
+    {
+        "player_name": "Ryan McMahon",
+        "team": "New York Yankees",
+        "team_id": 147,
+        "player_id": 641857,
+        "position": "3B",
+        "games_played": 106.0,
+        "H": 60.0,
+        "HR": 10.0,
+        "RBI": 32.0,
+        "HRpg": 0.094,
+        "fHRpg": "1/7",
+        "Hpg": 0.566,
+        "fHpg": "4/7",
+        "RBIpg": 0.302,
+        "fRBIpg": "2/7",
+        "HR24": 4,
         "HR24pg": 0.07,
         "fHR24pg": "0"
     },
@@ -9141,6 +9418,12 @@
         "fHR24pg": "1/7"
     },
     {
+        "player_name": "Kyren Paris",
+        "team": "Los Angeles Angels",
+        "team_id": 108,
+        "player_id": 677347
+    },
+    {
         "player_name": "Luke Murphy",
         "team": "Los Angeles Angels",
         "team_id": 108,
@@ -9235,6 +9518,12 @@
         "team": "Los Angeles Angels",
         "team_id": 108,
         "player_id": 671111
+    },
+    {
+        "player_name": "Samy Natera Jr.",
+        "team": "Los Angeles Angels",
+        "team_id": 108,
+        "player_id": 696519
     },
     {
         "player_name": "Tayler Saucedo",
@@ -9556,6 +9845,12 @@
         "fHR24pg": "0"
     },
     {
+        "player_name": "Grant Holman",
+        "team": "Philadelphia Phillies",
+        "team_id": 143,
+        "player_id": 680880
+    },
+    {
         "player_name": "J.T. Realmuto",
         "team": "Philadelphia Phillies",
         "team_id": 143,
@@ -9688,6 +9983,26 @@
         "fRBIpg": "0"
     },
     {
+        "player_name": "Rafael March\u00e1n",
+        "team": "Philadelphia Phillies",
+        "team_id": 143,
+        "player_id": 665561,
+        "position": "C",
+        "games_played": 32.0,
+        "H": 9.0,
+        "HR": 2.0,
+        "RBI": 6.0,
+        "HRpg": 0.062,
+        "fHRpg": "0",
+        "Hpg": 0.281,
+        "fHpg": "2/7",
+        "RBIpg": 0.188,
+        "fRBIpg": "1/5",
+        "HR24": 2,
+        "HR24pg": 0.05,
+        "fHR24pg": "0"
+    },
+    {
         "player_name": "Tim Mayza",
         "team": "Philadelphia Phillies",
         "team_id": 143,
@@ -9718,6 +10033,12 @@
         "team": "Philadelphia Phillies",
         "team_id": 143,
         "player_id": 554430
+    },
+    {
+        "player_name": "Blake Walston",
+        "team": "Arizona Diamondbacks",
+        "team_id": 109,
+        "player_id": 686796
     },
     {
         "player_name": "Brandon Pfaadt",
@@ -9988,6 +10309,26 @@
         "fRBIpg": "2/5",
         "HR24": 13,
         "HR24pg": 0.1,
+        "fHR24pg": "1/7"
+    },
+    {
+        "player_name": "Lourdes Gurriel Jr.",
+        "team": "Arizona Diamondbacks",
+        "team_id": 109,
+        "player_id": 666971,
+        "position": "LF",
+        "games_played": 47.0,
+        "H": 36.0,
+        "HR": 2.0,
+        "RBI": 21.0,
+        "HRpg": 0.043,
+        "fHRpg": "0",
+        "Hpg": 0.766,
+        "fHpg": "3/4",
+        "RBIpg": 0.447,
+        "fRBIpg": "3/7",
+        "HR24": 19,
+        "HR24pg": 0.15,
         "fHR24pg": "1/7"
     },
     {
@@ -10460,26 +10801,6 @@
         "fHR24pg": "0"
     },
     {
-        "player_name": "Alek Thomas",
-        "team": "Los Angeles Dodgers",
-        "team_id": 119,
-        "player_id": 677950,
-        "position": "CF",
-        "games_played": 35.0,
-        "H": 21.0,
-        "HR": 2.0,
-        "RBI": 13.0,
-        "HRpg": 0.057,
-        "fHRpg": "0",
-        "Hpg": 0.6,
-        "fHpg": "3/5",
-        "RBIpg": 0.371,
-        "fRBIpg": "2/5",
-        "HR24": 9,
-        "HR24pg": 0.06,
-        "fHR24pg": "0"
-    },
-    {
         "player_name": "Alex Call",
         "team": "Los Angeles Dodgers",
         "team_id": 119,
@@ -10500,6 +10821,26 @@
         "fHR24pg": "0"
     },
     {
+        "player_name": "Alex Freeland",
+        "team": "Los Angeles Dodgers",
+        "team_id": 119,
+        "player_id": 690976,
+        "position": "2B",
+        "games_played": 72.0,
+        "H": 45.0,
+        "HR": 3.0,
+        "RBI": 19.0,
+        "HRpg": 0.042,
+        "fHRpg": "0",
+        "Hpg": 0.625,
+        "fHpg": "3/5",
+        "RBIpg": 0.264,
+        "fRBIpg": "1/4",
+        "HR24": 2,
+        "HR24pg": 0.07,
+        "fHR24pg": "0"
+    },
+    {
         "player_name": "Alex Vesia",
         "team": "Los Angeles Dodgers",
         "team_id": 119,
@@ -10517,26 +10858,6 @@
         "fRBIpg": "0"
     },
     {
-        "player_name": "Ben Rortvedt",
-        "team": "Los Angeles Dodgers",
-        "team_id": 119,
-        "player_id": 666163,
-        "position": "C",
-        "games_played": 16.0,
-        "H": 5.0,
-        "HR": 0.0,
-        "RBI": 1.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.312,
-        "fHpg": "1/3",
-        "RBIpg": 0.062,
-        "fRBIpg": "0",
-        "HR24": 0,
-        "HR24pg": 0.0,
-        "fHR24pg": "0"
-    },
-    {
         "player_name": "Blake Snell",
         "team": "Los Angeles Dodgers",
         "team_id": 119,
@@ -10547,6 +10868,26 @@
         "team": "Los Angeles Dodgers",
         "team_id": 119,
         "player_id": 592779
+    },
+    {
+        "player_name": "Dalton Rushing",
+        "team": "Los Angeles Dodgers",
+        "team_id": 119,
+        "player_id": 687221,
+        "position": "C",
+        "games_played": 74.0,
+        "H": 55.0,
+        "HR": 12.0,
+        "RBI": 36.0,
+        "HRpg": 0.162,
+        "fHRpg": "1/6",
+        "Hpg": 0.743,
+        "fHpg": "3/4",
+        "RBIpg": 0.486,
+        "fRBIpg": "1/2",
+        "HR24": 4,
+        "HR24pg": 0.08,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Edgardo Henriquez",
@@ -10653,6 +10994,12 @@
         "fHpg": "0",
         "RBIpg": 0.0,
         "fRBIpg": "0"
+    },
+    {
+        "player_name": "Justin Wrobleski",
+        "team": "Los Angeles Dodgers",
+        "team_id": 119,
+        "player_id": 680736
     },
     {
         "player_name": "Kyle Hurt",
@@ -10823,6 +11170,26 @@
         "team": "Los Angeles Dodgers",
         "team_id": 119,
         "player_id": 607192
+    },
+    {
+        "player_name": "Will Smith",
+        "team": "Los Angeles Dodgers",
+        "team_id": 119,
+        "player_id": 669257,
+        "position": "C",
+        "games_played": 52.0,
+        "H": 43.0,
+        "HR": 6.0,
+        "RBI": 23.0,
+        "HRpg": 0.115,
+        "fHRpg": "1/7",
+        "Hpg": 0.827,
+        "fHpg": "5/6",
+        "RBIpg": 0.442,
+        "fRBIpg": "3/7",
+        "HR24": 17,
+        "HR24pg": 0.15,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Yoshinobu Yamamoto",
