@@ -4,7 +4,7 @@
         "game_datetime": "2026-09-01T22:40:00Z",
         "game_date": "2026-09-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Diego Padres",
         "home_name": "Cincinnati Reds",
         "away_id": 135,
@@ -22,8 +22,8 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-01 - San Diego Padres @ Cincinnati Reds (Scheduled)"
+        "series_status": "SD leads 1-0",
+        "summary": "2026-09-01 - San Diego Padres @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 823340,
@@ -82,7 +82,7 @@
         "game_datetime": "2026-09-01T22:40:00Z",
         "game_date": "2026-09-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "Cleveland Guardians",
         "away_id": 141,
@@ -101,7 +101,7 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-01 - Toronto Blue Jays @ Cleveland Guardians (Scheduled)"
+        "summary": "2026-09-01 - Toronto Blue Jays @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 824716,
@@ -115,7 +115,7 @@
         "home_id": 111,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
+        "home_probable_pitcher": "Jedixson Paez",
         "away_probable_pitcher": "Bryan Woo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
@@ -126,7 +126,7 @@
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "BOS leads 1-0",
         "summary": "2026-09-01 - Seattle Mariners @ Boston Red Sox (Scheduled)"
     },
     {
@@ -160,7 +160,7 @@
         "game_datetime": "2026-09-01T23:40:00Z",
         "game_date": "2026-09-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Detroit Tigers",
         "home_name": "Minnesota Twins",
         "away_id": 116,
@@ -179,7 +179,7 @@
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "MIN leads 1-0",
-        "summary": "2026-09-01 - Detroit Tigers @ Minnesota Twins (Scheduled)"
+        "summary": "2026-09-01 - Detroit Tigers @ Minnesota Twins (Pre-Game)"
     },
     {
         "game_id": 824070,
