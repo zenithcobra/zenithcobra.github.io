@@ -30,7 +30,7 @@
         "game_datetime": "2026-09-01T22:40:00Z",
         "game_date": "2026-09-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Francisco Giants",
         "home_name": "Pittsburgh Pirates",
         "away_id": 137,
@@ -49,14 +49,14 @@
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-01 - San Francisco Giants @ Pittsburgh Pirates (Scheduled)"
+        "summary": "2026-09-01 - San Francisco Giants @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 822929,
         "game_datetime": "2026-09-01T22:40:00Z",
         "game_date": "2026-09-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "Tampa Bay Rays",
         "away_id": 121,
@@ -74,8 +74,8 @@
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-01 - New York Mets @ Tampa Bay Rays (Scheduled)"
+        "series_status": "NYM leads 1-0",
+        "summary": "2026-09-01 - New York Mets @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 824391,
@@ -108,7 +108,7 @@
         "game_datetime": "2026-09-01T22:45:00Z",
         "game_date": "2026-09-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Seattle Mariners",
         "home_name": "Boston Red Sox",
         "away_id": 136,
@@ -119,22 +119,22 @@
         "away_probable_pitcher": "Bryan Woo",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "BOS leads 1-0",
-        "summary": "2026-09-01 - Seattle Mariners @ Boston Red Sox (Scheduled)"
+        "summary": "2026-09-01 - Seattle Mariners @ Boston Red Sox (Pre-Game)"
     },
     {
         "game_id": 822687,
         "game_datetime": "2026-09-01T22:45:00Z",
         "game_date": "2026-09-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Atlanta Braves",
         "home_name": "Washington Nationals",
         "away_id": 144,
@@ -153,7 +153,7 @@
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-01 - Atlanta Braves @ Washington Nationals (Scheduled)"
+        "summary": "2026-09-01 - Atlanta Braves @ Washington Nationals (Pre-Game)"
     },
     {
         "game_id": 823661,
@@ -186,7 +186,7 @@
         "game_datetime": "2026-09-01T23:40:00Z",
         "game_date": "2026-09-01",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Miami Marlins",
         "home_name": "Kansas City Royals",
         "away_id": 146,
@@ -205,7 +205,7 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-01 - Miami Marlins @ Kansas City Royals (Scheduled)"
+        "summary": "2026-09-01 - Miami Marlins @ Kansas City Royals (Pre-Game)"
     },
     {
         "game_id": 824633,
