@@ -109,21 +109,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 2,
-        "current_inning": 9,
-        "inning_state": "Bottom",
+        "home_score": 3,
+        "current_inning": 10,
+        "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-09-02 - Baltimore Orioles (3) @ Colorado Rockies (2) (Bottom of the 9th)"
+        "summary": "2026-09-02 - Baltimore Orioles (3) @ Colorado Rockies (3) (Top of the 10th)"
     },
     {
         "game_id": 825037,
         "game_datetime": "2026-09-02T19:40:00Z",
         "game_date": "2026-09-02",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Philadelphia Phillies",
         "home_name": "Arizona Diamondbacks",
         "away_id": 143,
@@ -147,7 +147,7 @@
         "winning_pitcher": "Jonathan Lo\u00e1isiga",
         "losing_pitcher": "Jonathan Bowlan",
         "save_pitcher": "Juan Morillo",
-        "summary": "2026-09-02 - Philadelphia Phillies (0) @ Arizona Diamondbacks (1) (Game Over)"
+        "summary": "2026-09-02 - Philadelphia Phillies (0) @ Arizona Diamondbacks (1) (Final)"
     },
     {
         "game_id": 824717,
@@ -167,13 +167,13 @@
         "away_pitcher_note": "",
         "away_score": 4,
         "home_score": 1,
-        "current_inning": 5,
-        "inning_state": "Bottom",
+        "current_inning": 6,
+        "inning_state": "Top",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-09-02 - Seattle Mariners (4) @ Boston Red Sox (1) (Bottom of the 5th)"
+        "summary": "2026-09-02 - Seattle Mariners (4) @ Boston Red Sox (1) (Top of the 6th)"
     },
     {
         "game_id": 823339,
