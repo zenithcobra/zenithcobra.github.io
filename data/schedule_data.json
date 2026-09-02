@@ -16,14 +16,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 4,
-        "current_inning": 6,
-        "inning_state": "Bottom",
+        "home_score": 5,
+        "current_inning": 7,
+        "inning_state": "Top",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-09-02 - San Diego Padres (3) @ Cincinnati Reds (4) (Bottom of the 6th)"
+        "summary": "2026-09-02 - San Diego Padres (3) @ Cincinnati Reds (5) (Top of the 7th)"
     },
     {
         "game_id": 822686,
@@ -56,7 +56,7 @@
         "game_datetime": "2026-09-02T18:35:00Z",
         "game_date": "2026-09-02",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Athletics",
         "home_name": "Texas Rangers",
         "away_id": 133,
@@ -68,21 +68,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 1,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "TEX leads 2-0",
-        "summary": "2026-09-02 - Athletics @ Texas Rangers (Warmup)"
+        "summary": "2026-09-02 - Athletics (0) @ Texas Rangers (1) (Bottom of the 1st)"
     },
     {
         "game_id": 824312,
         "game_datetime": "2026-09-02T19:10:00Z",
         "game_date": "2026-09-02",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Baltimore Orioles",
         "home_name": "Colorado Rockies",
         "away_id": 110,
@@ -101,7 +101,7 @@
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-09-02 - Baltimore Orioles @ Colorado Rockies (Pre-Game)"
+        "summary": "2026-09-02 - Baltimore Orioles @ Colorado Rockies (Warmup)"
     },
     {
         "game_id": 825037,
@@ -160,7 +160,7 @@
         "game_datetime": "2026-09-02T22:40:00Z",
         "game_date": "2026-09-02",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Francisco Giants",
         "home_name": "Pittsburgh Pirates",
         "away_id": 137,
@@ -179,14 +179,14 @@
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "PIT leads 1-0",
-        "summary": "2026-09-02 - San Francisco Giants @ Pittsburgh Pirates (Scheduled)"
+        "summary": "2026-09-02 - San Francisco Giants @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 822931,
         "game_datetime": "2026-09-02T22:40:00Z",
         "game_date": "2026-09-02",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "Tampa Bay Rays",
         "away_id": 121,
@@ -204,15 +204,15 @@
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
-        "series_status": "NYM leads 1-0",
-        "summary": "2026-09-02 - New York Mets @ Tampa Bay Rays (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-09-02 - New York Mets @ Tampa Bay Rays (Pre-Game)"
     },
     {
         "game_id": 824390,
         "game_datetime": "2026-09-02T22:40:00Z",
         "game_date": "2026-09-02",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "Cleveland Guardians",
         "away_id": 141,
@@ -230,8 +230,8 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-02 - Toronto Blue Jays @ Cleveland Guardians (Scheduled)"
+        "series_status": "CLE leads 1-0",
+        "summary": "2026-09-02 - Toronto Blue Jays @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 823660,
@@ -310,7 +310,7 @@
         "national_broadcasts": [
             "MLB Network"
         ],
-        "series_status": "Series tied 1-1",
+        "series_status": null,
         "summary": "2026-09-02 - Milwaukee Brewers @ Chicago Cubs (Scheduled)"
     },
     {
@@ -362,7 +362,7 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": "LAA leads 1-0",
+        "series_status": null,
         "summary": "2026-09-02 - New York Yankees @ Los Angeles Angels (Scheduled)"
     },
     {
