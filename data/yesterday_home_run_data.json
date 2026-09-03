@@ -91,9 +91,9 @@
         "name": "Josh Smith",
         "team": "Toronto Blue Jays",
         "player_id": 669701,
-        "HR": 2,
-        "HRpg": 0.13,
-        "fHRpg": "1/7",
+        "HR": 3,
+        "HRpg": 0.2,
+        "fHRpg": "1/5",
         "HR24": 10,
         "HR24pg": 0.07,
         "fHR24pg": "0"
@@ -102,9 +102,9 @@
         "name": "Carter Jensen",
         "team": "Kansas City Royals",
         "player_id": 695600,
-        "HR": 20,
-        "HRpg": 0.15,
-        "fHRpg": "1/7",
+        "HR": 21,
+        "HRpg": 0.16,
+        "fHRpg": "1/6",
         "HR24": 3,
         "HR24pg": 0.15,
         "fHR24pg": "1/7"
@@ -143,6 +143,28 @@
         "fHR24pg": "1/7"
     },
     {
+        "name": "Javier Sanoja",
+        "team": "Miami Marlins",
+        "player_id": 691594,
+        "HR": 7,
+        "HRpg": 0.06,
+        "fHRpg": "0",
+        "HR24": 6,
+        "HR24pg": 0.05,
+        "fHR24pg": "0"
+    },
+    {
+        "name": "Jakob Marsee",
+        "team": "Miami Marlins",
+        "player_id": 805300,
+        "HR": 9,
+        "HRpg": 0.07,
+        "fHRpg": "0",
+        "HR24": 5,
+        "HR24pg": 0.09,
+        "fHR24pg": "1/7"
+    },
+    {
         "name": "Alex Bregman",
         "team": "Chicago Cubs",
         "player_id": 608324,
@@ -163,5 +185,38 @@
         "HR24": 21,
         "HR24pg": 0.16,
         "fHR24pg": "1/6"
+    },
+    {
+        "name": "Freddie Freeman",
+        "team": "Los Angeles Dodgers",
+        "player_id": 518692,
+        "HR": 16,
+        "HRpg": 0.12,
+        "fHRpg": "1/7",
+        "HR24": 24,
+        "HR24pg": 0.16,
+        "fHR24pg": "1/6"
+    },
+    {
+        "name": "Thomas Saggese",
+        "team": "St. Louis Cardinals",
+        "player_id": 695336,
+        "HR": 4,
+        "HRpg": 0.11,
+        "fHRpg": "1/7",
+        "HR24": 2,
+        "HR24pg": 0.02,
+        "fHR24pg": "0"
+    },
+    {
+        "name": "Mookie Betts",
+        "team": "Los Angeles Dodgers",
+        "player_id": 605141,
+        "HR": 17,
+        "HRpg": 0.17,
+        "fHRpg": "1/6",
+        "HR24": 20,
+        "HR24pg": 0.13,
+        "fHR24pg": "1/7"
     }
 ]
