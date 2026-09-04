@@ -35,7 +35,7 @@
         "game_datetime": "2026-09-04T23:15:00Z",
         "game_date": "2026-09-04",
         "game_type": "R",
-        "status": "Delayed Start",
+        "status": "In Progress",
         "away_name": "Detroit Tigers",
         "home_name": "Cleveland Guardians",
         "away_id": 116,
@@ -48,7 +48,7 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 2,
         "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
@@ -56,7 +56,7 @@
             "Apple TV"
         ],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-09-04 - Detroit Tigers @ Cleveland Guardians (Delayed Start)"
+        "summary": "2026-09-04 - Detroit Tigers (0) @ Cleveland Guardians (0) (Top of the 2nd)"
     },
     {
         "game_id": 824471,
@@ -74,15 +74,15 @@
         "away_probable_pitcher": "Shane Drohan",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
+        "away_score": 4,
+        "home_score": 3,
+        "current_inning": 3,
         "inning_state": "Bottom",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-04 - Milwaukee Brewers (0) @ Cincinnati Reds (0) (Bottom of the 1st)"
+        "summary": "2026-09-04 - Milwaukee Brewers (4) @ Cincinnati Reds (3) (Bottom of the 3rd)"
     },
     {
         "game_id": 823418,
@@ -101,14 +101,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 3,
-        "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "home_score": 2,
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-04 - Atlanta Braves (3) @ Philadelphia Phillies (0) (Bottom of the 2nd)"
+        "summary": "2026-09-04 - Atlanta Braves (3) @ Philadelphia Phillies (2) (Top of the 5th)"
     },
     {
         "game_id": 823338,
@@ -127,16 +127,16 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "home_score": 1,
+        "current_inning": 3,
+        "inning_state": "Bottom",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [
             "Apple TV"
         ],
         "series_status": null,
-        "summary": "2026-09-04 - Los Angeles Angels (0) @ Pittsburgh Pirates (0) (Top of the 1st)"
+        "summary": "2026-09-04 - Los Angeles Angels (0) @ Pittsburgh Pirates (1) (Bottom of the 3rd)"
     },
     {
         "game_id": 824797,
@@ -156,13 +156,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 4,
         "inning_state": "Top",
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BOS leads 1-0",
-        "summary": "2026-09-04 - Boston Red Sox (1) @ Baltimore Orioles (0) (Top of the 1st)"
+        "summary": "2026-09-04 - Boston Red Sox (1) @ Baltimore Orioles (0) (Top of the 4th)"
     },
     {
         "game_id": 823579,
@@ -180,15 +180,15 @@
         "away_probable_pitcher": "Matt Wilkinson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
+        "away_score": 2,
+        "home_score": 7,
+        "current_inning": 3,
         "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-04 - San Francisco Giants (0) @ New York Mets (0) (Top of the 1st)"
+        "summary": "2026-09-04 - San Francisco Giants (2) @ New York Mets (7) (Top of the 3rd)"
     },
     {
         "game_id": 823824,
@@ -206,22 +206,22 @@
         "away_probable_pitcher": "Shota Imanaga",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Top",
+        "current_inning": 3,
+        "inning_state": "End",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-04 - Chicago Cubs (0) @ Miami Marlins (0) (Top of the 1st)"
+        "summary": "2026-09-04 - Chicago Cubs (1) @ Miami Marlins (0) (End of the 3rd)"
     },
     {
         "game_id": 824554,
         "game_datetime": "2026-09-04T23:40:00Z",
         "game_date": "2026-09-04",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Minnesota Twins",
         "home_name": "Chicago White Sox",
         "away_id": 142,
@@ -233,21 +233,21 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 1,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-04 - Minnesota Twins @ Chicago White Sox (Pre-Game)"
+        "summary": "2026-09-04 - Minnesota Twins (0) @ Chicago White Sox (1) (End of the 1st)"
     },
     {
         "game_id": 822852,
         "game_datetime": "2026-09-05T00:05:00Z",
         "game_date": "2026-09-04",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Tampa Bay Rays",
         "home_name": "Texas Rangers",
         "away_id": 139,
@@ -266,14 +266,14 @@
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "TEX leads 1-0",
-        "summary": "2026-09-04 - Tampa Bay Rays @ Texas Rangers (Pre-Game)"
+        "summary": "2026-09-04 - Tampa Bay Rays @ Texas Rangers (Warmup)"
     },
     {
         "game_id": 824146,
         "game_datetime": "2026-09-05T00:10:00Z",
         "game_date": "2026-09-04",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Houston Astros",
         "away_id": 109,
@@ -292,14 +292,14 @@
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-04 - Arizona Diamondbacks @ Houston Astros (Pre-Game)"
+        "summary": "2026-09-04 - Arizona Diamondbacks @ Houston Astros (Warmup)"
     },
     {
         "game_id": 824067,
         "game_datetime": "2026-09-05T00:10:00Z",
         "game_date": "2026-09-04",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Toronto Blue Jays",
         "home_name": "Kansas City Royals",
         "away_id": 141,
@@ -318,7 +318,7 @@
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-04 - Toronto Blue Jays @ Kansas City Royals (Pre-Game)"
+        "summary": "2026-09-04 - Toronto Blue Jays @ Kansas City Royals (Warmup)"
     },
     {
         "game_id": 824311,
