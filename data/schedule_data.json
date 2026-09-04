@@ -17,13 +17,13 @@
         "away_pitcher_note": "",
         "away_score": 6,
         "home_score": 6,
-        "current_inning": 6,
-        "inning_state": "Top",
+        "current_inning": 7,
+        "inning_state": "Bottom",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-04 - Detroit Tigers (6) @ Cleveland Guardians (6) (Top of the 6th)"
+        "summary": "2026-09-04 - Detroit Tigers (6) @ Cleveland Guardians (6) (Bottom of the 7th)"
     },
     {
         "game_id": 824387,
@@ -121,10 +121,10 @@
         "away_probable_pitcher": "Ryan Johnson",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [
@@ -346,7 +346,7 @@
         "game_datetime": "2026-09-05T01:40:00Z",
         "game_date": "2026-09-04",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Yankees",
         "home_name": "San Diego Padres",
         "away_id": 147,
@@ -365,7 +365,7 @@
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-04 - New York Yankees @ San Diego Padres (Scheduled)"
+        "summary": "2026-09-04 - New York Yankees @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 823905,
