@@ -15,10 +15,10 @@
         "away_probable_pitcher": "Anthony Molina",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
@@ -30,7 +30,7 @@
         "game_datetime": "2026-09-05T20:10:00Z",
         "game_date": "2026-09-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago Cubs",
         "home_name": "Miami Marlins",
         "away_id": 112,
@@ -41,22 +41,22 @@
         "away_probable_pitcher": "Javier Assad",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "CHC leads 1-0",
-        "summary": "2026-09-05 - Chicago Cubs @ Miami Marlins (Scheduled)"
+        "summary": "2026-09-05 - Chicago Cubs @ Miami Marlins (Pre-Game)"
     },
     {
         "game_id": 823419,
         "game_datetime": "2026-09-05T22:05:00Z",
         "game_date": "2026-09-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Atlanta Braves",
         "home_name": "Philadelphia Phillies",
         "away_id": 144,
@@ -75,7 +75,7 @@
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
         "series_status": "ATL leads 1-0",
-        "summary": "2026-09-05 - Atlanta Braves @ Philadelphia Phillies (Scheduled)"
+        "summary": "2026-09-05 - Atlanta Braves @ Philadelphia Phillies (Pre-Game)"
     },
     {
         "game_id": 824389,
@@ -100,7 +100,7 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": "CLE leads 2-0",
+        "series_status": null,
         "summary": "2026-09-05 - Detroit Tigers @ Cleveland Guardians (Scheduled)"
     },
     {
@@ -126,7 +126,7 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": "PIT leads 1-0",
+        "series_status": null,
         "summary": "2026-09-05 - Los Angeles Angels @ Pittsburgh Pirates (Scheduled)"
     },
     {
@@ -152,7 +152,7 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": "MIL leads 1-0",
+        "series_status": null,
         "summary": "2026-09-05 - Milwaukee Brewers @ Cincinnati Reds (Scheduled)"
     },
     {
@@ -178,7 +178,7 @@
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
-        "series_status": "BOS leads 2-0",
+        "series_status": null,
         "summary": "2026-09-05 - Boston Red Sox @ Baltimore Orioles (Scheduled)"
     },
     {
@@ -204,7 +204,7 @@
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
+        "series_status": null,
         "summary": "2026-09-05 - Tampa Bay Rays @ Texas Rangers (Scheduled)"
     },
     {
@@ -230,7 +230,7 @@
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
-        "series_status": "TOR leads 1-0",
+        "series_status": null,
         "summary": "2026-09-05 - Toronto Blue Jays @ Kansas City Royals (Scheduled)"
     },
     {
@@ -284,7 +284,7 @@
         "national_broadcasts": [
             "FOX / FOX ONE"
         ],
-        "series_status": "HOU leads 1-0",
+        "series_status": null,
         "summary": "2026-09-05 - Arizona Diamondbacks @ Houston Astros (Scheduled)"
     },
     {
@@ -312,7 +312,7 @@
         "national_broadcasts": [
             "FOX / FOX ONE"
         ],
-        "series_status": "SD leads 1-0",
+        "series_status": null,
         "summary": "2026-09-05 - New York Yankees @ San Diego Padres (Scheduled)"
     },
     {
@@ -338,7 +338,7 @@
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": "STL leads 1-0",
+        "series_status": null,
         "summary": "2026-09-05 - St. Louis Cardinals @ Colorado Rockies (Scheduled)"
     },
     {
@@ -364,7 +364,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": "LAD leads 1-0",
+        "series_status": null,
         "summary": "2026-09-05 - Washington Nationals @ Los Angeles Dodgers (Scheduled)"
     },
     {
@@ -390,7 +390,7 @@
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": "ATH leads 2-0",
+        "series_status": "ATH leads 1-0",
         "summary": "2026-09-05 - Athletics @ Seattle Mariners (Scheduled)"
     }
 ]

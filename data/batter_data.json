@@ -170,6 +170,12 @@
         "player_id": 671345
     },
     {
+        "player_name": "Joel Kuhnel",
+        "team": "San Francisco Giants",
+        "team_id": 137,
+        "player_id": 669270
+    },
+    {
         "player_name": "Jonah Cox",
         "team": "San Francisco Giants",
         "team_id": 137,
@@ -283,12 +289,6 @@
         "team": "San Francisco Giants",
         "team_id": 137,
         "player_id": 665665
-    },
-    {
-        "player_name": "Ryan Walker",
-        "team": "San Francisco Giants",
-        "team_id": 137,
-        "player_id": 676254
     },
     {
         "player_name": "Shay Whitcomb",
@@ -881,6 +881,23 @@
         "fRBIpg": "0"
     },
     {
+        "player_name": "Javier Assad",
+        "team": "Chicago Cubs",
+        "team_id": 112,
+        "player_id": 665871,
+        "position": "P",
+        "games_played": 22.0,
+        "H": 0.0,
+        "HR": 0.0,
+        "RBI": 0.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.0,
+        "fHpg": "0",
+        "RBIpg": 0.0,
+        "fRBIpg": "0"
+    },
+    {
         "player_name": "Kevin Gausman",
         "team": "Chicago Cubs",
         "team_id": 112,
@@ -1083,12 +1100,6 @@
         "team": "Chicago Cubs",
         "team_id": 112,
         "player_id": 663423
-    },
-    {
-        "player_name": "Tyler Ferguson",
-        "team": "Chicago Cubs",
-        "team_id": 112,
-        "player_id": 621053
     },
     {
         "player_name": "Tyrone Taylor",
