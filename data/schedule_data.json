@@ -67,10 +67,10 @@
         "away_probable_pitcher": "Mart\u00edn P\u00e9rez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
@@ -82,7 +82,7 @@
         "game_datetime": "2026-09-05T22:10:00Z",
         "game_date": "2026-09-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Detroit Tigers",
         "home_name": "Cleveland Guardians",
         "away_id": 116,
@@ -100,15 +100,15 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-05 - Detroit Tigers @ Cleveland Guardians (Scheduled)"
+        "series_status": "CLE leads 2-0",
+        "summary": "2026-09-05 - Detroit Tigers @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 823335,
         "game_datetime": "2026-09-05T22:40:00Z",
         "game_date": "2026-09-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Pittsburgh Pirates",
         "away_id": 108,
@@ -126,15 +126,15 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-05 - Los Angeles Angels @ Pittsburgh Pirates (Scheduled)"
+        "series_status": "PIT leads 1-0",
+        "summary": "2026-09-05 - Los Angeles Angels @ Pittsburgh Pirates (Pre-Game)"
     },
     {
         "game_id": 824468,
         "game_datetime": "2026-09-05T22:40:00Z",
         "game_date": "2026-09-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "Cincinnati Reds",
         "away_id": 158,
@@ -152,8 +152,8 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-05 - Milwaukee Brewers @ Cincinnati Reds (Scheduled)"
+        "series_status": "MIL leads 1-0",
+        "summary": "2026-09-05 - Milwaukee Brewers @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 824795,
@@ -238,7 +238,7 @@
         "game_datetime": "2026-09-05T23:10:00Z",
         "game_date": "2026-09-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Chicago White Sox",
         "away_id": 142,
@@ -257,14 +257,14 @@
         "venue_name": "Rate Field",
         "national_broadcasts": [],
         "series_status": "CWS leads 1-0",
-        "summary": "2026-09-05 - Minnesota Twins @ Chicago White Sox (Scheduled)"
+        "summary": "2026-09-05 - Minnesota Twins @ Chicago White Sox (Pre-Game)"
     },
     {
         "game_id": 824145,
         "game_datetime": "2026-09-05T23:15:00Z",
         "game_date": "2026-09-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Houston Astros",
         "away_id": 109,
@@ -284,8 +284,8 @@
         "national_broadcasts": [
             "FOX / FOX ONE"
         ],
-        "series_status": null,
-        "summary": "2026-09-05 - Arizona Diamondbacks @ Houston Astros (Scheduled)"
+        "series_status": "HOU leads 1-0",
+        "summary": "2026-09-05 - Arizona Diamondbacks @ Houston Astros (Pre-Game)"
     },
     {
         "game_id": 823257,
@@ -320,7 +320,7 @@
         "game_datetime": "2026-09-06T00:10:00Z",
         "game_date": "2026-09-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "Colorado Rockies",
         "away_id": 138,
@@ -338,8 +338,8 @@
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-05 - St. Louis Cardinals @ Colorado Rockies (Scheduled)"
+        "series_status": "STL leads 1-0",
+        "summary": "2026-09-05 - St. Louis Cardinals @ Colorado Rockies (Pre-Game)"
     },
     {
         "game_id": 823904,
