@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Anthony Molina",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
-        "home_score": 0,
-        "current_inning": 2,
-        "inning_state": "Bottom",
+        "away_score": 3,
+        "home_score": 2,
+        "current_inning": 4,
+        "inning_state": "Middle",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": "NYM leads 1-0",
-        "summary": "2026-09-05 - San Francisco Giants (1) @ New York Mets (0) (Bottom of the 2nd)"
+        "summary": "2026-09-05 - San Francisco Giants (3) @ New York Mets (2) (Middle of the 4th)"
     },
     {
         "game_id": 823823,
@@ -41,15 +41,15 @@
         "away_probable_pitcher": "Javier Assad",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 3,
         "home_score": 0,
-        "current_inning": 2,
+        "current_inning": 3,
         "inning_state": "Bottom",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "CHC leads 1-0",
-        "summary": "2026-09-05 - Chicago Cubs (0) @ Miami Marlins (0) (Bottom of the 2nd)"
+        "summary": "2026-09-05 - Chicago Cubs (3) @ Miami Marlins (0) (Bottom of the 3rd)"
     },
     {
         "game_id": 823419,
@@ -197,10 +197,10 @@
         "away_probable_pitcher": "Drew Rasmussen",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
@@ -346,7 +346,7 @@
         "game_datetime": "2026-09-06T01:10:00Z",
         "game_date": "2026-09-05",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Washington Nationals",
         "home_name": "Los Angeles Dodgers",
         "away_id": 120,
@@ -365,7 +365,7 @@
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
         "series_status": "LAD leads 1-0",
-        "summary": "2026-09-05 - Washington Nationals @ Los Angeles Dodgers (Scheduled)"
+        "summary": "2026-09-05 - Washington Nationals @ Los Angeles Dodgers (Pre-Game)"
     },
     {
         "game_id": 823094,
