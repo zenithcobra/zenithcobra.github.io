@@ -4,7 +4,7 @@
         "game_datetime": "2026-09-06T16:10:00Z",
         "game_date": "2026-09-06",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Milwaukee Brewers",
         "home_name": "Cincinnati Reds",
         "away_id": 158,
@@ -22,8 +22,8 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-06 - Milwaukee Brewers @ Cincinnati Reds (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-09-06 - Milwaukee Brewers @ Cincinnati Reds (Pre-Game)"
     },
     {
         "game_id": 823417,
@@ -50,7 +50,7 @@
         "national_broadcasts": [
             "NBC/Peacock"
         ],
-        "series_status": null,
+        "series_status": "Series tied 1-1",
         "summary": "2026-09-06 - Atlanta Braves @ Philadelphia Phillies (Scheduled)"
     },
     {
@@ -58,7 +58,7 @@
         "game_datetime": "2026-09-06T17:35:00Z",
         "game_date": "2026-09-06",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Boston Red Sox",
         "home_name": "Baltimore Orioles",
         "away_id": 111,
@@ -76,8 +76,8 @@
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-06 - Boston Red Sox @ Baltimore Orioles (Scheduled)"
+        "series_status": "BOS leads 3-0",
+        "summary": "2026-09-06 - Boston Red Sox @ Baltimore Orioles (Pre-Game)"
     },
     {
         "game_id": 823336,
@@ -102,7 +102,7 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "Series tied 1-1",
         "summary": "2026-09-06 - Los Angeles Angels @ Pittsburgh Pirates (Scheduled)"
     },
     {
@@ -128,7 +128,7 @@
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "CLE leads 2-1",
         "summary": "2026-09-06 - Detroit Tigers @ Cleveland Guardians (Scheduled)"
     },
     {
@@ -222,7 +222,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Randy Dobnak",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Spencer Arrighetti",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -232,7 +232,7 @@
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "TOR leads 2-0",
         "summary": "2026-09-06 - Toronto Blue Jays @ Kansas City Royals (Scheduled)"
     },
     {
@@ -248,7 +248,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "MacKenzie Gore",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Ian Seymour",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -258,7 +258,7 @@
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "TB leads 2-1",
         "summary": "2026-09-06 - Tampa Bay Rays @ Texas Rangers (Scheduled)"
     },
     {
@@ -284,7 +284,7 @@
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "STL leads 1-0",
         "summary": "2026-09-06 - St. Louis Cardinals @ Colorado Rockies (Scheduled)"
     },
     {
@@ -310,7 +310,7 @@
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "ATH leads 2-0",
         "summary": "2026-09-06 - Athletics @ Seattle Mariners (Scheduled)"
     },
     {
@@ -336,7 +336,7 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "SD leads 1-0",
         "summary": "2026-09-06 - New York Yankees @ San Diego Padres (Scheduled)"
     },
     {
@@ -351,7 +351,7 @@
         "home_id": 145,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
+        "home_probable_pitcher": "Bryan Hudson",
         "away_probable_pitcher": "Bailey Ober",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
@@ -364,7 +364,7 @@
         "national_broadcasts": [
             "Peacock/NBCSN"
         ],
-        "series_status": "CWS leads 1-0",
+        "series_status": "Series tied 1-1",
         "summary": "2026-09-06 - Minnesota Twins @ Chicago White Sox (Scheduled)"
     },
     {
@@ -379,7 +379,7 @@
         "home_id": 119,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
+        "home_probable_pitcher": "Justin Wrobleski",
         "away_probable_pitcher": "Andrew Alvarez",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
@@ -390,7 +390,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "LAD leads 2-0",
         "summary": "2026-09-06 - Washington Nationals @ Los Angeles Dodgers (Scheduled)"
     }
 ]
