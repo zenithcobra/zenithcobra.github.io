@@ -15,22 +15,22 @@
         "away_probable_pitcher": "Kyle Harrison",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
-        "home_score": 3,
-        "current_inning": 3,
-        "inning_state": "Bottom",
+        "away_score": 3,
+        "home_score": 4,
+        "current_inning": 4,
+        "inning_state": "Top",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-09-06 - Milwaukee Brewers (0) @ Cincinnati Reds (3) (Bottom of the 3rd)"
+        "summary": "2026-09-06 - Milwaukee Brewers (3) @ Cincinnati Reds (4) (Top of the 4th)"
     },
     {
         "game_id": 823417,
         "game_datetime": "2026-09-06T17:10:00Z",
         "game_date": "2026-09-06",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Atlanta Braves",
         "home_name": "Philadelphia Phillies",
         "away_id": 144,
@@ -44,21 +44,21 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Middle",
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [
             "NBC/Peacock"
         ],
         "series_status": "Series tied 1-1",
-        "summary": "2026-09-06 - Atlanta Braves @ Philadelphia Phillies (Warmup)"
+        "summary": "2026-09-06 - Atlanta Braves (0) @ Philadelphia Phillies (0) (Middle of the 1st)"
     },
     {
         "game_id": 824794,
         "game_datetime": "2026-09-06T17:35:00Z",
         "game_date": "2026-09-06",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Boston Red Sox",
         "home_name": "Baltimore Orioles",
         "away_id": 111,
@@ -77,14 +77,14 @@
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
         "series_status": "BOS leads 3-0",
-        "summary": "2026-09-06 - Boston Red Sox @ Baltimore Orioles (Pre-Game)"
+        "summary": "2026-09-06 - Boston Red Sox @ Baltimore Orioles (Warmup)"
     },
     {
         "game_id": 823336,
         "game_datetime": "2026-09-06T17:35:00Z",
         "game_date": "2026-09-06",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Los Angeles Angels",
         "home_name": "Pittsburgh Pirates",
         "away_id": 108,
@@ -103,14 +103,14 @@
         "venue_name": "PNC Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-09-06 - Los Angeles Angels @ Pittsburgh Pirates (Pre-Game)"
+        "summary": "2026-09-06 - Los Angeles Angels @ Pittsburgh Pirates (Warmup)"
     },
     {
         "game_id": 824385,
         "game_datetime": "2026-09-06T17:40:00Z",
         "game_date": "2026-09-06",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Detroit Tigers",
         "home_name": "Cleveland Guardians",
         "away_id": 116,
@@ -129,7 +129,7 @@
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": "CLE leads 2-1",
-        "summary": "2026-09-06 - Detroit Tigers @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-09-06 - Detroit Tigers @ Cleveland Guardians (Warmup)"
     },
     {
         "game_id": 823578,
@@ -292,7 +292,7 @@
         "game_datetime": "2026-09-06T20:10:00Z",
         "game_date": "2026-09-06",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Athletics",
         "home_name": "Seattle Mariners",
         "away_id": 133,
@@ -310,8 +310,8 @@
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-06 - Athletics @ Seattle Mariners (Scheduled)"
+        "series_status": "ATH leads 3-0",
+        "summary": "2026-09-06 - Athletics @ Seattle Mariners (Pre-Game)"
     },
     {
         "game_id": 823253,
@@ -329,10 +329,10 @@
         "away_probable_pitcher": "Gerrit Cole",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
