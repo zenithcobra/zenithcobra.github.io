@@ -223,7 +223,7 @@
         "game_datetime": "2026-09-06T18:10:00Z",
         "game_date": "2026-09-06",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Arizona Diamondbacks",
         "home_name": "Houston Astros",
         "away_id": 109,
@@ -247,7 +247,7 @@
         "winning_pitcher": "Eduardo Rodriguez",
         "losing_pitcher": "Peter Lambert",
         "save_pitcher": "Kevin Ginkel",
-        "summary": "2026-09-06 - Arizona Diamondbacks (3) @ Houston Astros (2) (Game Over)"
+        "summary": "2026-09-06 - Arizona Diamondbacks (3) @ Houston Astros (2) (Final)"
     },
     {
         "game_id": 824065,
@@ -297,14 +297,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 6,
-        "home_score": 7,
-        "current_inning": 7,
+        "home_score": 8,
+        "current_inning": 8,
         "inning_state": "Bottom",
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
         "series_status": "TB leads 2-1",
-        "summary": "2026-09-06 - Tampa Bay Rays (6) @ Texas Rangers (7) (Bottom of the 7th)"
+        "summary": "2026-09-06 - Tampa Bay Rays (6) @ Texas Rangers (8) (Bottom of the 8th)"
     },
     {
         "game_id": 824309,
@@ -324,13 +324,13 @@
         "away_pitcher_note": "",
         "away_score": 7,
         "home_score": 5,
-        "current_inning": 7,
+        "current_inning": 8,
         "inning_state": "Top",
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-09-06 - St. Louis Cardinals (7) @ Colorado Rockies (5) (Top of the 7th)"
+        "summary": "2026-09-06 - St. Louis Cardinals (7) @ Colorado Rockies (5) (Top of the 8th)"
     },
     {
         "game_id": 823091,
@@ -350,13 +350,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 2,
-        "current_inning": 4,
+        "current_inning": 5,
         "inning_state": "Bottom",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "ATH leads 3-0",
-        "summary": "2026-09-06 - Athletics (0) @ Seattle Mariners (2) (Bottom of the 4th)"
+        "summary": "2026-09-06 - Athletics (0) @ Seattle Mariners (2) (Bottom of the 5th)"
     },
     {
         "game_id": 823253,
@@ -376,13 +376,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 3,
-        "current_inning": 4,
-        "inning_state": "End",
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-09-06 - New York Yankees (0) @ San Diego Padres (3) (End of the 4th)"
+        "summary": "2026-09-06 - New York Yankees (0) @ San Diego Padres (3) (Bottom of the 5th)"
     },
     {
         "game_id": 824552,
