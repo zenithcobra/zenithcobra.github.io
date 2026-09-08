@@ -4795,6 +4795,23 @@
         "fHR24pg": "0"
     },
     {
+        "player_name": "Nick Madrigal",
+        "team": "Tampa Bay Rays",
+        "team_id": 139,
+        "player_id": 663611,
+        "position": "3B",
+        "games_played": 15.0,
+        "H": 12.0,
+        "HR": 0.0,
+        "RBI": 2.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.8,
+        "fHpg": "4/5",
+        "RBIpg": 0.133,
+        "fRBIpg": "1/7"
+    },
+    {
         "player_name": "Nick Martinez",
         "team": "Tampa Bay Rays",
         "team_id": 139,
@@ -4845,26 +4862,6 @@
         "team": "Tampa Bay Rays",
         "team_id": 139,
         "player_id": 571927
-    },
-    {
-        "player_name": "Taylor Walls",
-        "team": "Tampa Bay Rays",
-        "team_id": 139,
-        "player_id": 670764,
-        "position": "SS",
-        "games_played": 117.0,
-        "H": 76.0,
-        "HR": 2.0,
-        "RBI": 33.0,
-        "HRpg": 0.017,
-        "fHRpg": "0",
-        "Hpg": 0.65,
-        "fHpg": "2/3",
-        "RBIpg": 0.282,
-        "fRBIpg": "2/7",
-        "HR24": 4,
-        "HR24pg": 0.04,
-        "fHR24pg": "0"
     },
     {
         "player_name": "Ty Johnson",
@@ -5368,6 +5365,12 @@
         "fHR24pg": "0"
     },
     {
+        "player_name": "Corbin Burnes",
+        "team": "Arizona Diamondbacks",
+        "team_id": 109,
+        "player_id": 669203
+    },
+    {
         "player_name": "Corbin Carroll",
         "team": "Arizona Diamondbacks",
         "team_id": 109,
@@ -5444,12 +5447,6 @@
         "HR24": 20,
         "HR24pg": 0.12,
         "fHR24pg": "1/7"
-    },
-    {
-        "player_name": "Gerardo Carrillo",
-        "team": "Arizona Diamondbacks",
-        "team_id": 109,
-        "player_id": 672629
     },
     {
         "player_name": "Ildemaro Vargas",
@@ -5529,12 +5526,6 @@
         "fHR24pg": "0"
     },
     {
-        "player_name": "Jose Cabrera",
-        "team": "Arizona Diamondbacks",
-        "team_id": 109,
-        "player_id": 703615
-    },
-    {
         "player_name": "Juan Morillo",
         "team": "Arizona Diamondbacks",
         "team_id": 109,
@@ -5545,6 +5536,12 @@
         "team": "Arizona Diamondbacks",
         "team_id": 109,
         "player_id": 679885
+    },
+    {
+        "player_name": "Kade Strowd",
+        "team": "Arizona Diamondbacks",
+        "team_id": 109,
+        "player_id": 669704
     },
     {
         "player_name": "Ketel Marte",
@@ -9944,26 +9941,6 @@
         "player_id": 685464
     },
     {
-        "player_name": "C\u00e9sar Prieto",
-        "team": "St. Louis Cardinals",
-        "team_id": 138,
-        "player_id": 693409,
-        "position": "3B",
-        "games_played": 14.0,
-        "H": 2.0,
-        "HR": 0.0,
-        "RBI": 0.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.143,
-        "fHpg": "1/7",
-        "RBIpg": 0.0,
-        "fRBIpg": "0",
-        "HR24": 0,
-        "HR24pg": 0.0,
-        "fHR24pg": "0"
-    },
-    {
         "player_name": "Cooper Hjerpe",
         "team": "St. Louis Cardinals",
         "team_id": 138,
@@ -10103,6 +10080,26 @@
         "team": "St. Louis Cardinals",
         "team_id": 138,
         "player_id": 703725
+    },
+    {
+        "player_name": "Masyn Winn",
+        "team": "St. Louis Cardinals",
+        "team_id": 138,
+        "player_id": 691026,
+        "position": "SS",
+        "games_played": 122.0,
+        "H": 103.0,
+        "HR": 5.0,
+        "RBI": 51.0,
+        "HRpg": 0.041,
+        "fHRpg": "0",
+        "Hpg": 0.844,
+        "fHpg": "5/6",
+        "RBIpg": 0.418,
+        "fRBIpg": "3/7",
+        "HR24": 9,
+        "HR24pg": 0.07,
+        "fHR24pg": "0"
     },
     {
         "player_name": "Matthew Liberatore",
@@ -10310,6 +10307,26 @@
         "team": "San Francisco Giants",
         "team_id": 137,
         "player_id": 694918
+    },
+    {
+        "player_name": "Brett Harris",
+        "team": "San Francisco Giants",
+        "team_id": 137,
+        "player_id": 695391,
+        "position": "3B",
+        "games_played": 6.0,
+        "H": 0.0,
+        "HR": 0.0,
+        "RBI": 0.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.0,
+        "fHpg": "0",
+        "RBIpg": 0.0,
+        "fRBIpg": "0",
+        "HR24": 0,
+        "HR24pg": 0.0,
+        "fHR24pg": "0"
     },
     {
         "player_name": "Bryce Eldridge",
@@ -10618,12 +10635,6 @@
         "team": "San Francisco Giants",
         "team_id": 137,
         "player_id": 805074
-    },
-    {
-        "player_name": "Zach Morgan",
-        "team": "San Francisco Giants",
-        "team_id": 137,
-        "player_id": 681439
     },
     {
         "player_name": "Andrew Abbott",
