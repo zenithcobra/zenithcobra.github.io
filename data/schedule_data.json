@@ -4,7 +4,7 @@
         "game_datetime": "2026-09-09T17:10:00Z",
         "game_date": "2026-09-09",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Minnesota Twins",
         "home_name": "Detroit Tigers",
         "away_id": 142,
@@ -23,14 +23,14 @@
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-09-09 - Minnesota Twins @ Detroit Tigers (Pre-Game)"
+        "summary": "2026-09-09 - Minnesota Twins @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 824956,
         "game_datetime": "2026-09-09T19:05:00Z",
         "game_date": "2026-09-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Toronto Blue Jays",
         "home_name": "Athletics",
         "away_id": 141,
@@ -41,22 +41,22 @@
         "away_probable_pitcher": "Braydon Fisher",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-09-09 - Toronto Blue Jays @ Athletics (Scheduled)"
+        "summary": "2026-09-09 - Toronto Blue Jays @ Athletics (Pre-Game)"
     },
     {
         "game_id": 823172,
         "game_datetime": "2026-09-09T19:45:00Z",
         "game_date": "2026-09-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "St. Louis Cardinals",
         "home_name": "San Francisco Giants",
         "away_id": 138,
@@ -67,22 +67,22 @@
         "away_probable_pitcher": "Andre Pallante",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": "SF leads 1-0",
-        "summary": "2026-09-09 - St. Louis Cardinals @ San Francisco Giants (Scheduled)"
+        "series_status": "SF leads 2-0",
+        "summary": "2026-09-09 - St. Louis Cardinals @ San Francisco Giants (Pre-Game)"
     },
     {
         "game_id": 823251,
         "game_datetime": "2026-09-09T20:10:00Z",
         "game_date": "2026-09-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Washington Nationals",
         "home_name": "San Diego Padres",
         "away_id": 120,
@@ -93,22 +93,22 @@
         "away_probable_pitcher": "Jackson Kent",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-09 - Washington Nationals @ San Diego Padres (Scheduled)"
+        "series_status": "SD leads 2-0",
+        "summary": "2026-09-09 - Washington Nationals @ San Diego Padres (Pre-Game)"
     },
     {
         "game_id": 823090,
         "game_datetime": "2026-09-09T20:10:00Z",
         "game_date": "2026-09-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Texas Rangers",
         "home_name": "Seattle Mariners",
         "away_id": 140,
@@ -119,15 +119,15 @@
         "away_probable_pitcher": "Cody Bradford",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-09 - Texas Rangers @ Seattle Mariners (Scheduled)"
+        "series_status": "TEX leads 1-0",
+        "summary": "2026-09-09 - Texas Rangers @ Seattle Mariners (Pre-Game)"
     },
     {
         "game_id": 824791,
@@ -152,7 +152,7 @@
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
-        "series_status": "BAL leads 1-0",
+        "series_status": "Series tied 1-1",
         "summary": "2026-09-09 - Cleveland Guardians @ Baltimore Orioles (Scheduled)"
     },
     {
@@ -178,7 +178,7 @@
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "HOU leads 1-0",
         "summary": "2026-09-09 - Houston Astros @ Philadelphia Phillies (Scheduled)"
     },
     {
@@ -204,7 +204,7 @@
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "NYM leads 2-0",
         "summary": "2026-09-09 - New York Mets @ Miami Marlins (Scheduled)"
     },
     {
@@ -212,7 +212,7 @@
         "game_datetime": "2026-09-09T22:45:00Z",
         "game_date": "2026-09-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Los Angeles Angels",
         "home_name": "Boston Red Sox",
         "away_id": 108,
@@ -230,8 +230,8 @@
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-09 - Los Angeles Angels @ Boston Red Sox (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-09-09 - Los Angeles Angels @ Boston Red Sox (Pre-Game)"
     },
     {
         "game_id": 823497,
@@ -256,7 +256,7 @@
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "NYY leads 1-0",
         "summary": "2026-09-09 - Colorado Rockies @ New York Yankees (Scheduled)"
     },
     {
@@ -284,7 +284,7 @@
         "national_broadcasts": [
             "MLB Network"
         ],
-        "series_status": null,
+        "series_status": "TB leads 1-0",
         "summary": "2026-09-09 - Tampa Bay Rays @ Atlanta Braves (Scheduled)"
     },
     {
@@ -362,7 +362,7 @@
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
-        "series_status": "MIL leads 1-0",
+        "series_status": "MIL leads 2-0",
         "summary": "2026-09-09 - Chicago Cubs @ Milwaukee Brewers (Scheduled)"
     },
     {
