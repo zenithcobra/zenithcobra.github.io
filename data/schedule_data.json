@@ -4,7 +4,7 @@
         "game_datetime": "2026-09-09T17:10:00Z",
         "game_date": "2026-09-09",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Minnesota Twins",
         "home_name": "Detroit Tigers",
         "away_id": 142,
@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Zebby Matthews",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-09 - Minnesota Twins @ Detroit Tigers (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-09-09 - Minnesota Twins @ Detroit Tigers (Pre-Game)"
     },
     {
         "game_id": 824956,
@@ -37,8 +37,8 @@
         "home_id": 133,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
-        "away_probable_pitcher": "",
+        "home_probable_pitcher": "Brady Basso",
+        "away_probable_pitcher": "Braydon Fisher",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -48,7 +48,7 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": "ATH leads 1-0",
+        "series_status": "Series tied 1-1",
         "summary": "2026-09-09 - Toronto Blue Jays @ Athletics (Scheduled)"
     },
     {
@@ -152,7 +152,7 @@
         "venue_id": 2,
         "venue_name": "Oriole Park at Camden Yards",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "BAL leads 1-0",
         "summary": "2026-09-09 - Cleveland Guardians @ Baltimore Orioles (Scheduled)"
     },
     {
@@ -230,7 +230,7 @@
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
-        "series_status": "BOS leads 1-0",
+        "series_status": null,
         "summary": "2026-09-09 - Los Angeles Angels @ Boston Red Sox (Scheduled)"
     },
     {
@@ -300,7 +300,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Daniel Lynch IV",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Zac Gallen",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -310,7 +310,7 @@
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
-        "series_status": "AZ leads 1-0",
+        "series_status": "AZ leads 2-0",
         "summary": "2026-09-09 - Arizona Diamondbacks @ Kansas City Royals (Scheduled)"
     },
     {
@@ -326,7 +326,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Davis Martin",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Lake Bachar",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -336,7 +336,7 @@
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "PIT leads 1-0",
         "summary": "2026-09-09 - Pittsburgh Pirates @ Chicago White Sox (Scheduled)"
     },
     {
@@ -388,7 +388,7 @@
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "LAD leads 2-0",
         "summary": "2026-09-09 - Cincinnati Reds @ Los Angeles Dodgers (Scheduled)"
     }
 ]
