@@ -4,7 +4,7 @@
         "game_datetime": "2026-09-09T17:10:00Z",
         "game_date": "2026-09-09",
         "game_type": "R",
-        "status": "In Progress",
+        "status": "Final",
         "away_name": "Minnesota Twins",
         "home_name": "Detroit Tigers",
         "away_id": 142,
@@ -22,8 +22,13 @@
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": "Series tied 1-1",
-        "summary": "2026-09-09 - Minnesota Twins (2) @ Detroit Tigers (7) (Top of the 9th)"
+        "series_status": "DET wins 2-1",
+        "winning_team": "Detroit Tigers",
+        "losing_team": "Minnesota Twins",
+        "winning_pitcher": "Tyler Holton",
+        "losing_pitcher": "Zebby Matthews",
+        "save_pitcher": null,
+        "summary": "2026-09-09 - Minnesota Twins (2) @ Detroit Tigers (7) (Final)"
     },
     {
         "game_id": 824956,
@@ -74,13 +79,13 @@
         "away_pitcher_note": "",
         "away_score": 6,
         "home_score": 1,
-        "current_inning": 7,
-        "inning_state": "Bottom",
+        "current_inning": 8,
+        "inning_state": "Top",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "SF leads 2-0",
-        "summary": "2026-09-09 - St. Louis Cardinals (6) @ San Francisco Giants (1) (Bottom of the 7th)"
+        "summary": "2026-09-09 - St. Louis Cardinals (6) @ San Francisco Giants (1) (Top of the 8th)"
     },
     {
         "game_id": 823251,
@@ -100,13 +105,13 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 5,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "current_inning": 5,
+        "inning_state": "Middle",
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
         "series_status": "SD leads 2-0",
-        "summary": "2026-09-09 - Washington Nationals (2) @ San Diego Padres (5) (Bottom of the 4th)"
+        "summary": "2026-09-09 - Washington Nationals (2) @ San Diego Padres (5) (Middle of the 5th)"
     },
     {
         "game_id": 823090,
@@ -126,13 +131,13 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 3,
-        "current_inning": 6,
-        "inning_state": "Bottom",
+        "current_inning": 7,
+        "inning_state": "Top",
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
         "series_status": "TEX leads 1-0",
-        "summary": "2026-09-09 - Texas Rangers (1) @ Seattle Mariners (3) (Bottom of the 6th)"
+        "summary": "2026-09-09 - Texas Rangers (1) @ Seattle Mariners (3) (Top of the 7th)"
     },
     {
         "game_id": 824791,
