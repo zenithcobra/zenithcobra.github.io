@@ -4,7 +4,7 @@
         "game_datetime": "2026-09-12T17:10:00Z",
         "game_date": "2026-09-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Warmup",
         "away_name": "Colorado Rockies",
         "home_name": "Detroit Tigers",
         "away_id": 115,
@@ -15,22 +15,22 @@
         "away_probable_pitcher": "Tanner Gordon",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "DET leads 1-0",
-        "summary": "2026-09-12 - Colorado Rockies @ Detroit Tigers (Scheduled)"
+        "summary": "2026-09-12 - Colorado Rockies @ Detroit Tigers (Warmup)"
     },
     {
         "game_id": 823496,
         "game_datetime": "2026-09-12T17:35:00Z",
         "game_date": "2026-09-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "New York Yankees",
         "away_id": 121,
@@ -41,24 +41,24 @@
         "away_probable_pitcher": "Zac Thornton",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3313,
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [
             "MLB Network"
         ],
-        "series_status": null,
-        "summary": "2026-09-12 - New York Mets @ New York Yankees (Scheduled)"
+        "series_status": "NYY leads 1-0",
+        "summary": "2026-09-12 - New York Mets @ New York Yankees (Pre-Game)"
     },
     {
         "game_id": 824630,
         "game_datetime": "2026-09-12T18:20:00Z",
         "game_date": "2026-09-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Chicago Cubs",
         "away_id": 134,
@@ -69,22 +69,22 @@
         "away_probable_pitcher": "Paul Skenes",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
         "series_status": "CHC leads 1-0",
-        "summary": "2026-09-12 - Pittsburgh Pirates @ Chicago Cubs (Scheduled)"
+        "summary": "2026-09-12 - Pittsburgh Pirates @ Chicago Cubs (Pre-Game)"
     },
     {
         "game_id": 822768,
         "game_datetime": "2026-09-12T19:07:00Z",
         "game_date": "2026-09-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Baltimore Orioles",
         "home_name": "Toronto Blue Jays",
         "away_id": 110,
@@ -95,15 +95,15 @@
         "away_probable_pitcher": "Kyle Bradish",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "BAL leads 1-0",
-        "summary": "2026-09-12 - Baltimore Orioles @ Toronto Blue Jays (Scheduled)"
+        "summary": "2026-09-12 - Baltimore Orioles @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 822685,
@@ -128,7 +128,7 @@
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "WSH leads 1-0",
         "summary": "2026-09-12 - Los Angeles Angels @ Washington Nationals (Scheduled)"
     },
     {
@@ -136,7 +136,7 @@
         "game_datetime": "2026-09-12T20:05:00Z",
         "game_date": "2026-09-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Diego Padres",
         "home_name": "San Francisco Giants",
         "away_id": 135,
@@ -154,15 +154,15 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-12 - San Diego Padres @ San Francisco Giants (Scheduled)"
+        "series_status": "SD leads 1-0",
+        "summary": "2026-09-12 - San Diego Padres @ San Francisco Giants (Pre-Game)"
     },
     {
         "game_id": 824712,
         "game_datetime": "2026-09-12T20:10:00Z",
         "game_date": "2026-09-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Kansas City Royals",
         "home_name": "Boston Red Sox",
         "away_id": 118,
@@ -173,22 +173,22 @@
         "away_probable_pitcher": "Randy Dobnak",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-12 - Kansas City Royals @ Boston Red Sox (Scheduled)"
+        "series_status": "KC leads 1-0",
+        "summary": "2026-09-12 - Kansas City Royals @ Boston Red Sox (Pre-Game)"
     },
     {
         "game_id": 823657,
         "game_datetime": "2026-09-12T20:10:00Z",
         "game_date": "2026-09-12",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Minnesota Twins",
         "away_id": 114,
@@ -207,7 +207,7 @@
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-09-12 - Cleveland Guardians @ Minnesota Twins (Scheduled)"
+        "summary": "2026-09-12 - Cleveland Guardians @ Minnesota Twins (Pre-Game)"
     },
     {
         "game_id": 823819,
@@ -232,7 +232,7 @@
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "LAD leads 1-0",
         "summary": "2026-09-12 - Los Angeles Dodgers @ Miami Marlins (Scheduled)"
     },
     {
@@ -258,7 +258,7 @@
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "TB leads 1-0",
         "summary": "2026-09-12 - Houston Astros @ Tampa Bay Rays (Scheduled)"
     },
     {
@@ -362,7 +362,7 @@
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "AZ leads 1-0",
         "summary": "2026-09-12 - Texas Rangers @ Arizona Diamondbacks (Scheduled)"
     },
     {
@@ -388,7 +388,7 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "ATH leads 1-0",
         "summary": "2026-09-12 - Seattle Mariners @ Athletics (Scheduled)"
     }
 ]
