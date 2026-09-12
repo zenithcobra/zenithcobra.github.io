@@ -99,7 +99,7 @@
         "game_datetime": "2026-09-12T19:07:00Z",
         "game_date": "2026-09-12",
         "game_type": "R",
-        "status": "Game Over",
+        "status": "Final",
         "away_name": "Baltimore Orioles",
         "home_name": "Toronto Blue Jays",
         "away_id": 110,
@@ -123,7 +123,7 @@
         "winning_pitcher": "Spencer Arrighetti",
         "losing_pitcher": "Kyle Bradish",
         "save_pitcher": null,
-        "summary": "2026-09-12 - Baltimore Orioles (3) @ Toronto Blue Jays (7) (Game Over)"
+        "summary": "2026-09-12 - Baltimore Orioles (3) @ Toronto Blue Jays (7) (Final)"
     },
     {
         "game_id": 822685,
@@ -141,15 +141,15 @@
         "away_probable_pitcher": "Walbert Ure\u00f1a",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 3,
+        "away_score": 4,
         "home_score": 4,
-        "current_inning": 8,
+        "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "WSH leads 1-0",
-        "summary": "2026-09-12 - Los Angeles Angels (3) @ Washington Nationals (4) (Top of the 8th)"
+        "summary": "2026-09-12 - Los Angeles Angels (4) @ Washington Nationals (4) (Top of the 9th)"
     },
     {
         "game_id": 823170,
@@ -168,14 +168,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 7,
-        "home_score": 3,
+        "home_score": 6,
         "current_inning": 8,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "SD leads 1-0",
-        "summary": "2026-09-12 - San Diego Padres (7) @ San Francisco Giants (3) (Top of the 8th)"
+        "summary": "2026-09-12 - San Diego Padres (7) @ San Francisco Giants (6) (Bottom of the 8th)"
     },
     {
         "game_id": 824712,
@@ -194,14 +194,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 4,
-        "current_inning": 8,
-        "inning_state": "Bottom",
+        "home_score": 5,
+        "current_inning": 9,
+        "inning_state": "Top",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "KC leads 1-0",
-        "summary": "2026-09-12 - Kansas City Royals (1) @ Boston Red Sox (4) (Bottom of the 8th)"
+        "summary": "2026-09-12 - Kansas City Royals (1) @ Boston Red Sox (5) (Top of the 9th)"
     },
     {
         "game_id": 823657,
@@ -221,13 +221,13 @@
         "away_pitcher_note": "",
         "away_score": 3,
         "home_score": 4,
-        "current_inning": 7,
+        "current_inning": 8,
         "inning_state": "Top",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": "CLE leads 1-0",
-        "summary": "2026-09-12 - Cleveland Guardians (3) @ Minnesota Twins (4) (Top of the 7th)"
+        "summary": "2026-09-12 - Cleveland Guardians (3) @ Minnesota Twins (4) (Top of the 8th)"
     },
     {
         "game_id": 823819,
@@ -247,13 +247,13 @@
         "away_pitcher_note": "",
         "away_score": 2,
         "home_score": 4,
-        "current_inning": 6,
+        "current_inning": 7,
         "inning_state": "Bottom",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "LAD leads 1-0",
-        "summary": "2026-09-12 - Los Angeles Dodgers (2) @ Miami Marlins (4) (Bottom of the 6th)"
+        "summary": "2026-09-12 - Los Angeles Dodgers (2) @ Miami Marlins (4) (Bottom of the 7th)"
     },
     {
         "game_id": 822927,
@@ -274,12 +274,12 @@
         "away_score": 1,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
         "series_status": "TB leads 1-0",
-        "summary": "2026-09-12 - Houston Astros (1) @ Tampa Bay Rays (0) (Top of the 1st)"
+        "summary": "2026-09-12 - Houston Astros (1) @ Tampa Bay Rays (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823737,
