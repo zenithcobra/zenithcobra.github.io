@@ -357,14 +357,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 1,
-        "home_score": 2,
-        "current_inning": 7,
-        "inning_state": "End",
+        "home_score": 4,
+        "current_inning": 8,
+        "inning_state": "Bottom",
         "venue_id": 3,
         "venue_name": "Fenway Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-09-13 - Kansas City Royals (1) @ Boston Red Sox (2) (End of the 7th)"
+        "summary": "2026-09-13 - Kansas City Royals (1) @ Boston Red Sox (4) (Bottom of the 8th)"
     },
     {
         "game_id": 824952,
@@ -382,15 +382,15 @@
         "away_probable_pitcher": "Bryce Miller",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 6,
+        "away_score": 7,
         "home_score": 6,
-        "current_inning": 8,
+        "current_inning": 9,
         "inning_state": "Top",
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-09-13 - Seattle Mariners (6) @ Athletics (6) (Top of the 8th)"
+        "summary": "2026-09-13 - Seattle Mariners (7) @ Athletics (6) (Top of the 9th)"
     },
     {
         "game_id": 825033,
@@ -428,7 +428,7 @@
         "game_datetime": "2026-09-13T23:20:00Z",
         "game_date": "2026-09-13",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "San Diego Padres",
         "home_name": "San Francisco Giants",
         "away_id": 135,
@@ -449,6 +449,6 @@
             "Peacock/NBCSN"
         ],
         "series_status": "SD leads 2-0",
-        "summary": "2026-09-13 - San Diego Padres @ San Francisco Giants (Warmup)"
+        "summary": "2026-09-13 - San Diego Padres (0) @ San Francisco Giants (0) (Top of the 1st)"
     }
 ]
