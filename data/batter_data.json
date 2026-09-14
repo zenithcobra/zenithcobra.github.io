@@ -1934,6 +1934,12 @@
         "player_id": 680755
     },
     {
+        "player_name": "Brendan Cellucci",
+        "team": "Toronto Blue Jays",
+        "team_id": 141,
+        "player_id": 676454
+    },
+    {
         "player_name": "Brendon Little",
         "team": "Toronto Blue Jays",
         "team_id": 141,
@@ -1972,6 +1978,26 @@
         "fHpg": "5/7",
         "RBIpg": 0.333,
         "fRBIpg": "1/3"
+    },
+    {
+        "player_name": "Davis Schneider",
+        "team": "Toronto Blue Jays",
+        "team_id": 141,
+        "player_id": 676914,
+        "position": "LF",
+        "games_played": 62.0,
+        "H": 16.0,
+        "HR": 3.0,
+        "RBI": 12.0,
+        "HRpg": 0.048,
+        "fHRpg": "0",
+        "Hpg": 0.258,
+        "fHpg": "1/4",
+        "RBIpg": 0.194,
+        "fRBIpg": "1/5",
+        "HR24": 11,
+        "HR24pg": 0.13,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Dylan Cease",
@@ -2139,29 +2165,6 @@
         "player_id": 623149
     },
     {
-        "player_name": "Ricky Tiedemann",
-        "team": "Toronto Blue Jays",
-        "team_id": 141,
-        "player_id": 694357
-    },
-    {
-        "player_name": "Rudy Martin Jr.",
-        "team": "Toronto Blue Jays",
-        "team_id": 141,
-        "player_id": 657675,
-        "position": "RF",
-        "games_played": 2.0,
-        "H": 0.0,
-        "HR": 0.0,
-        "RBI": 0.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.0,
-        "fHpg": "0",
-        "RBIpg": 0.0,
-        "fRBIpg": "0"
-    },
-    {
         "player_name": "Sean Keys",
         "team": "Toronto Blue Jays",
         "team_id": 141,
@@ -2311,6 +2314,12 @@
         "HR24": 11,
         "HR24pg": 0.13,
         "fHR24pg": "1/7"
+    },
+    {
+        "player_name": "Codi Heuer",
+        "team": "Baltimore Orioles",
+        "team_id": 110,
+        "player_id": 676051
     },
     {
         "player_name": "Colton Cowser",
@@ -2558,12 +2567,6 @@
         "team": "Baltimore Orioles",
         "team_id": 110,
         "player_id": 669432
-    },
-    {
-        "player_name": "Yaramil Hiraldo",
-        "team": "Baltimore Orioles",
-        "team_id": 110,
-        "player_id": 682274
     },
     {
         "player_name": "Yennier Cano",
@@ -5500,12 +5503,6 @@
         "fHR24pg": "1/6"
     },
     {
-        "player_name": "Mason McCoy",
-        "team": "San Diego Padres",
-        "team_id": 135,
-        "player_id": 669200
-    },
-    {
         "player_name": "Mason Miller",
         "team": "San Diego Padres",
         "team_id": 135,
@@ -5582,6 +5579,26 @@
         "fHpg": "1/3",
         "RBIpg": 0.229,
         "fRBIpg": "1/4"
+    },
+    {
+        "player_name": "Ty France",
+        "team": "San Diego Padres",
+        "team_id": 135,
+        "player_id": 664034,
+        "position": "1B",
+        "games_played": 120.0,
+        "H": 114.0,
+        "HR": 20.0,
+        "RBI": 63.0,
+        "HRpg": 0.167,
+        "fHRpg": "1/6",
+        "Hpg": 0.95,
+        "fHpg": "1",
+        "RBIpg": 0.525,
+        "fRBIpg": "1/2",
+        "HR24": 6,
+        "HR24pg": 0.06,
+        "fHR24pg": "0"
     },
     {
         "player_name": "Walker Buehler",
