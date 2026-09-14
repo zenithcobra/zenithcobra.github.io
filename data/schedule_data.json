@@ -15,15 +15,15 @@
         "away_probable_pitcher": "Tarik Skubal",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 1,
+        "away_score": 3,
         "home_score": 0,
-        "current_inning": 4,
-        "inning_state": "Top",
+        "current_inning": 5,
+        "inning_state": "Bottom",
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-14 - Los Angeles Dodgers (1) @ Cincinnati Reds (0) (Top of the 4th)"
+        "summary": "2026-09-14 - Los Angeles Dodgers (3) @ Cincinnati Reds (0) (Bottom of the 5th)"
     },
     {
         "game_id": 824386,
@@ -43,13 +43,13 @@
         "away_pitcher_note": "",
         "away_score": 0,
         "home_score": 0,
-        "current_inning": 3,
-        "inning_state": "Middle",
+        "current_inning": 4,
+        "inning_state": "Bottom",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-14 - Chicago White Sox (0) @ Cleveland Guardians (0) (Middle of the 3rd)"
+        "summary": "2026-09-14 - Chicago White Sox (0) @ Cleveland Guardians (0) (Bottom of the 4th)"
     },
     {
         "game_id": 822765,
@@ -68,14 +68,14 @@
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": 0,
-        "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "home_score": 2,
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-14 - Detroit Tigers (0) @ Toronto Blue Jays (0) (Bottom of the 1st)"
+        "summary": "2026-09-14 - Detroit Tigers (0) @ Toronto Blue Jays (2) (Top of the 3rd)"
     },
     {
         "game_id": 823575,
@@ -93,22 +93,22 @@
         "away_probable_pitcher": "Brandon Young",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "current_inning": 1,
-        "inning_state": "Bottom",
+        "current_inning": 3,
+        "inning_state": "Top",
         "venue_id": 3289,
         "venue_name": "Citi Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-14 - Baltimore Orioles (0) @ New York Mets (0) (Bottom of the 1st)"
+        "summary": "2026-09-14 - Baltimore Orioles (1) @ New York Mets (0) (Top of the 3rd)"
     },
     {
         "game_id": 824629,
         "game_datetime": "2026-09-14T23:40:00Z",
         "game_date": "2026-09-14",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "Atlanta Braves",
         "home_name": "Chicago Cubs",
         "away_id": 144,
@@ -122,21 +122,21 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [
             "MLB Network"
         ],
         "series_status": null,
-        "summary": "2026-09-14 - Atlanta Braves @ Chicago Cubs (Warmup)"
+        "summary": "2026-09-14 - Atlanta Braves (0) @ Chicago Cubs (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823656,
         "game_datetime": "2026-09-14T23:40:00Z",
         "game_date": "2026-09-14",
         "game_type": "R",
-        "status": "Warmup",
+        "status": "In Progress",
         "away_name": "New York Yankees",
         "home_name": "Minnesota Twins",
         "away_id": 147,
@@ -150,19 +150,19 @@
         "away_score": 0,
         "home_score": 0,
         "current_inning": 1,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-14 - New York Yankees @ Minnesota Twins (Warmup)"
+        "summary": "2026-09-14 - New York Yankees (0) @ Minnesota Twins (0) (Bottom of the 1st)"
     },
     {
         "game_id": 823006,
         "game_datetime": "2026-09-14T23:45:00Z",
         "game_date": "2026-09-14",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "San Francisco Giants",
         "home_name": "St. Louis Cardinals",
         "away_id": 137,
@@ -181,7 +181,7 @@
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
         "series_status": null,
-        "summary": "2026-09-14 - San Francisco Giants @ St. Louis Cardinals (Pre-Game)"
+        "summary": "2026-09-14 - San Francisco Giants (0) @ St. Louis Cardinals (0) (Top of the 1st)"
     },
     {
         "game_id": 824308,
