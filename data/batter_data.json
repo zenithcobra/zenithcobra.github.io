@@ -853,12 +853,6 @@
         "player_id": 665660
     },
     {
-        "player_name": "Gage Jump",
-        "team": "Athletics",
-        "team_id": 133,
-        "player_id": 695611
-    },
-    {
         "player_name": "Geoff Hartlieb",
         "team": "Athletics",
         "team_id": 133,
@@ -935,6 +929,12 @@
         "team": "Athletics",
         "team_id": 133,
         "player_id": 605488
+    },
+    {
+        "player_name": "Joe Rock",
+        "team": "Athletics",
+        "team_id": 133,
+        "player_id": 697812
     },
     {
         "player_name": "Jonah Heim",
@@ -1098,6 +1098,12 @@
         "fHR24pg": "0"
     },
     {
+        "player_name": "Alex Cook",
+        "team": "Tampa Bay Rays",
+        "team_id": 139,
+        "player_id": 702047
+    },
+    {
         "player_name": "Brody Hopkins",
         "team": "Tampa Bay Rays",
         "team_id": 139,
@@ -1206,6 +1212,26 @@
         "player_id": 693855
     },
     {
+        "player_name": "Jake Fraley",
+        "team": "Tampa Bay Rays",
+        "team_id": 139,
+        "player_id": 641584,
+        "position": "RF",
+        "games_played": 28.0,
+        "H": 19.0,
+        "HR": 2.0,
+        "RBI": 5.0,
+        "HRpg": 0.071,
+        "fHRpg": "0",
+        "Hpg": 0.679,
+        "fHpg": "2/3",
+        "RBIpg": 0.179,
+        "fRBIpg": "1/6",
+        "HR24": 0,
+        "HR24pg": 0.0,
+        "fHR24pg": "0"
+    },
+    {
         "player_name": "Jonathan Aranda",
         "team": "Tampa Bay Rays",
         "team_id": 139,
@@ -1284,23 +1310,6 @@
         "HR24": 45,
         "HR24pg": 0.29,
         "fHR24pg": "2/7"
-    },
-    {
-        "player_name": "Kenny Piper",
-        "team": "Tampa Bay Rays",
-        "team_id": 139,
-        "player_id": 700652,
-        "position": "C",
-        "games_played": 14.0,
-        "H": 2.0,
-        "HR": 1.0,
-        "RBI": 2.0,
-        "HRpg": 0.071,
-        "fHRpg": "0",
-        "Hpg": 0.143,
-        "fHpg": "1/7",
-        "RBIpg": 0.143,
-        "fRBIpg": "1/7"
     },
     {
         "player_name": "Kevin Kelly",
@@ -1661,12 +1670,6 @@
         "player_id": 663855
     },
     {
-        "player_name": "Jos\u00e9 Urquidy",
-        "team": "Chicago White Sox",
-        "team_id": 145,
-        "player_id": 664353
-    },
-    {
         "player_name": "Kyle Teel",
         "team": "Chicago White Sox",
         "team_id": 145,
@@ -1748,6 +1751,12 @@
         "fHpg": "5/7",
         "RBIpg": 0.565,
         "fRBIpg": "4/7"
+    },
+    {
+        "player_name": "Noah Schultz",
+        "team": "Chicago White Sox",
+        "team_id": 145,
+        "player_id": 702273
     },
     {
         "player_name": "Randal Grichuk",
@@ -5403,6 +5412,23 @@
         "fHR24pg": "1/7"
     },
     {
+        "player_name": "JR Ritchie",
+        "team": "Atlanta Braves",
+        "team_id": 144,
+        "player_id": 702275,
+        "position": "P",
+        "games_played": 14.0,
+        "H": 0.0,
+        "HR": 0.0,
+        "RBI": 0.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.0,
+        "fHpg": "0",
+        "RBIpg": 0.0,
+        "fRBIpg": "0"
+    },
+    {
         "player_name": "Kyle Farmer",
         "team": "Atlanta Braves",
         "team_id": 144,
@@ -5567,23 +5593,6 @@
         "team": "Atlanta Braves",
         "team_id": 144,
         "player_id": 678061
-    },
-    {
-        "player_name": "Reynaldo L\u00f3pez",
-        "team": "Atlanta Braves",
-        "team_id": 144,
-        "player_id": 625643,
-        "position": "P",
-        "games_played": 26.0,
-        "H": 0.0,
-        "HR": 0.0,
-        "RBI": 0.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.0,
-        "fHpg": "0",
-        "RBIpg": 0.0,
-        "fRBIpg": "0"
     },
     {
         "player_name": "Ronald Acu\u00f1a Jr.",
