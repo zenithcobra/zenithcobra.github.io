@@ -4,7 +4,7 @@
         "game_datetime": "2026-09-16T17:10:00Z",
         "game_date": "2026-09-16",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Chicago White Sox",
         "home_name": "Cleveland Guardians",
         "away_id": 145,
@@ -12,27 +12,27 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Parker Messick",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Anthony Kay",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [
             "ESPN/ESPN App"
         ],
-        "series_status": null,
-        "summary": "2026-09-16 - Chicago White Sox @ Cleveland Guardians (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-09-16 - Chicago White Sox @ Cleveland Guardians (Pre-Game)"
     },
     {
         "game_id": 823004,
         "game_datetime": "2026-09-16T17:15:00Z",
         "game_date": "2026-09-16",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "San Francisco Giants",
         "home_name": "St. Louis Cardinals",
         "away_id": 137,
@@ -43,15 +43,15 @@
         "away_probable_pitcher": "Anthony Molina",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 2889,
         "venue_name": "Busch Stadium",
         "national_broadcasts": [],
-        "series_status": "STL leads 1-0",
-        "summary": "2026-09-16 - San Francisco Giants @ St. Louis Cardinals (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-09-16 - San Francisco Giants @ St. Louis Cardinals (Pre-Game)"
     },
     {
         "game_id": 823655,
@@ -76,7 +76,7 @@
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "NYY leads 2-0",
         "summary": "2026-09-16 - New York Yankees @ Minnesota Twins (Scheduled)"
     },
     {
@@ -102,7 +102,7 @@
         "venue_id": 14,
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
-        "series_status": "DET leads 1-0",
+        "series_status": "DET leads 2-0",
         "summary": "2026-09-16 - Detroit Tigers @ Toronto Blue Jays (Scheduled)"
     },
     {
@@ -128,7 +128,7 @@
         "venue_id": 2602,
         "venue_name": "Great American Ball Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "LAD leads 2-0",
         "summary": "2026-09-16 - Los Angeles Dodgers @ Cincinnati Reds (Scheduled)"
     },
     {
@@ -154,7 +154,7 @@
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "TB leads 1-0",
         "summary": "2026-09-16 - Athletics @ Tampa Bay Rays (Scheduled)"
     },
     {
@@ -180,7 +180,7 @@
         "venue_id": 31,
         "venue_name": "PNC Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "MIL leads 1-0",
         "summary": "2026-09-16 - Milwaukee Brewers @ Pittsburgh Pirates (Scheduled)"
     },
     {
@@ -195,7 +195,7 @@
         "home_id": 120,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "Cade Cavalli",
+        "home_probable_pitcher": "Jared Simpson",
         "away_probable_pitcher": "Zack Wheeler",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
@@ -206,7 +206,7 @@
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "WSH leads 1-0",
         "summary": "2026-09-16 - Philadelphia Phillies @ Washington Nationals (Scheduled)"
     },
     {
@@ -234,7 +234,7 @@
         "national_broadcasts": [
             "ESPN/ESPN App"
         ],
-        "series_status": null,
+        "series_status": "BAL leads 2-0",
         "summary": "2026-09-16 - Baltimore Orioles @ New York Mets (Scheduled)"
     },
     {
@@ -260,7 +260,7 @@
         "venue_id": 17,
         "venue_name": "Wrigley Field",
         "national_broadcasts": [],
-        "series_status": "CHC leads 1-0",
+        "series_status": "Series tied 1-1",
         "summary": "2026-09-16 - Atlanta Braves @ Chicago Cubs (Scheduled)"
     },
     {
@@ -286,7 +286,7 @@
         "venue_id": 5325,
         "venue_name": "Globe Life Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "TEX leads 1-0",
         "summary": "2026-09-16 - Boston Red Sox @ Texas Rangers (Scheduled)"
     },
     {
@@ -312,7 +312,7 @@
         "venue_id": 2392,
         "venue_name": "Daikin Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "HOU leads 1-0",
         "summary": "2026-09-16 - Kansas City Royals @ Houston Astros (Scheduled)"
     },
     {
@@ -338,7 +338,7 @@
         "venue_id": 19,
         "venue_name": "Coors Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "Series tied 1-1",
         "summary": "2026-09-16 - San Diego Padres @ Colorado Rockies (Scheduled)"
     },
     {
@@ -364,7 +364,7 @@
         "venue_id": 1,
         "venue_name": "Angel Stadium",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "LAA leads 2-0",
         "summary": "2026-09-16 - Seattle Mariners @ Los Angeles Angels (Scheduled)"
     },
     {
@@ -390,7 +390,7 @@
         "venue_id": 15,
         "venue_name": "Chase Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "Series tied 1-1",
         "summary": "2026-09-16 - Miami Marlins @ Arizona Diamondbacks (Scheduled)"
     }
 ]
