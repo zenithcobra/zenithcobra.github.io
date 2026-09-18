@@ -37,23 +37,6 @@
         "fHR24pg": "1/6"
     },
     {
-        "player_name": "BJ Murray Jr.",
-        "team": "Chicago Cubs",
-        "team_id": 112,
-        "player_id": 681230,
-        "position": "3B",
-        "games_played": 7.0,
-        "H": 1.0,
-        "HR": 0.0,
-        "RBI": 0.0,
-        "HRpg": 0.0,
-        "fHRpg": "0",
-        "Hpg": 0.143,
-        "fHpg": "1/7",
-        "RBIpg": 0.0,
-        "fRBIpg": "0"
-    },
-    {
         "player_name": "Caleb Thielbar",
         "team": "Chicago Cubs",
         "team_id": 112,
@@ -118,6 +101,26 @@
         "fHpg": "0",
         "RBIpg": 0.0,
         "fRBIpg": "0"
+    },
+    {
+        "player_name": "Dansby Swanson",
+        "team": "Chicago Cubs",
+        "team_id": 112,
+        "player_id": 621020,
+        "position": "SS",
+        "games_played": 119.0,
+        "H": 87.0,
+        "HR": 18.0,
+        "RBI": 66.0,
+        "HRpg": 0.151,
+        "fHRpg": "1/7",
+        "Hpg": 0.731,
+        "fHpg": "5/7",
+        "RBIpg": 0.555,
+        "fRBIpg": "4/7",
+        "HR24": 24,
+        "HR24pg": 0.15,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "David Peterson",
@@ -617,10 +620,10 @@
         "fRBIpg": "1/2"
     },
     {
-        "player_name": "Julian Garcia",
+        "player_name": "Julian Aguiar",
         "team": "Cincinnati Reds",
         "team_id": 113,
-        "player_id": 670062
+        "player_id": 687924
     },
     {
         "player_name": "Ke'Bryan Hayes",
@@ -1685,6 +1688,12 @@
         "fHR24pg": "1/5"
     },
     {
+        "player_name": "Colton Gordon",
+        "team": "Milwaukee Brewers",
+        "team_id": 158,
+        "player_id": 676467
+    },
+    {
         "player_name": "Cooper Pratt",
         "team": "Milwaukee Brewers",
         "team_id": 158,
@@ -1763,12 +1772,6 @@
         "HR24": 0,
         "HR24pg": 0.0,
         "fHR24pg": "0"
-    },
-    {
-        "player_name": "Garrett Stallings",
-        "team": "Milwaukee Brewers",
-        "team_id": 158,
-        "player_id": 668831
     },
     {
         "player_name": "Gary S\u00e1nchez",
@@ -4091,6 +4094,12 @@
         "player_id": 621237
     },
     {
+        "player_name": "Jos\u00e9 Urquidy",
+        "team": "Philadelphia Phillies",
+        "team_id": 143,
+        "player_id": 664353
+    },
+    {
         "player_name": "Justin Crawford",
         "team": "Philadelphia Phillies",
         "team_id": 143,
@@ -4106,12 +4115,6 @@
         "fHpg": "3/4",
         "RBIpg": 0.27,
         "fRBIpg": "2/7"
-    },
-    {
-        "player_name": "Kyle Backhus",
-        "team": "Philadelphia Phillies",
-        "team_id": 143,
-        "player_id": 679775
     },
     {
         "player_name": "Kyle Schwarber",
@@ -4410,26 +4413,6 @@
         "player_id": 674073
     },
     {
-        "player_name": "Jared Young",
-        "team": "New York Mets",
-        "team_id": 121,
-        "player_id": 676724,
-        "position": "1B",
-        "games_played": 103.0,
-        "H": 82.0,
-        "HR": 9.0,
-        "RBI": 39.0,
-        "HRpg": 0.087,
-        "fHRpg": "1/7",
-        "Hpg": 0.796,
-        "fHpg": "4/5",
-        "RBIpg": 0.379,
-        "fRBIpg": "2/5",
-        "HR24": 4,
-        "HR24pg": 0.17,
-        "fHR24pg": "1/6"
-    },
-    {
         "player_name": "Jefry Yan",
         "team": "New York Mets",
         "team_id": 121,
@@ -4561,6 +4544,26 @@
         "team": "New York Mets",
         "team_id": 121,
         "player_id": 690997
+    },
+    {
+        "player_name": "Ronny Mauricio",
+        "team": "New York Mets",
+        "team_id": 121,
+        "player_id": 677595,
+        "position": "SS",
+        "games_played": 17.0,
+        "H": 9.0,
+        "HR": 1.0,
+        "RBI": 2.0,
+        "HRpg": 0.059,
+        "fHRpg": "0",
+        "Hpg": 0.529,
+        "fHpg": "1/2",
+        "RBIpg": 0.118,
+        "fRBIpg": "1/7",
+        "HR24": 6,
+        "HR24pg": 0.1,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Sean Manaea",
@@ -5521,6 +5524,12 @@
         "player_id": 573009
     },
     {
+        "player_name": "Jos\u00e9 Rodr\u00edguez",
+        "team": "Toronto Blue Jays",
+        "team_id": 141,
+        "player_id": 692064
+    },
+    {
         "player_name": "Jos\u00e9 Soriano",
         "team": "Toronto Blue Jays",
         "team_id": 141,
@@ -5580,12 +5589,6 @@
         "team": "Toronto Blue Jays",
         "team_id": 141,
         "player_id": 453286
-    },
-    {
-        "player_name": "Michael Lorenzen",
-        "team": "Toronto Blue Jays",
-        "team_id": 141,
-        "player_id": 547179
     },
     {
         "player_name": "Myles Straw",
@@ -8061,6 +8064,26 @@
         "player_id": 685464
     },
     {
+        "player_name": "C\u00e9sar Prieto",
+        "team": "St. Louis Cardinals",
+        "team_id": 138,
+        "player_id": 693409,
+        "position": "3B",
+        "games_played": 14.0,
+        "H": 2.0,
+        "HR": 0.0,
+        "RBI": 0.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.143,
+        "fHpg": "1/7",
+        "RBIpg": 0.0,
+        "fRBIpg": "0",
+        "HR24": 0,
+        "HR24pg": 0.0,
+        "fHR24pg": "0"
+    },
+    {
         "player_name": "Cooper Hjerpe",
         "team": "St. Louis Cardinals",
         "team_id": 138,
@@ -8165,23 +8188,6 @@
         "HR24": 1,
         "HR24pg": 0.03,
         "fHR24pg": "0"
-    },
-    {
-        "player_name": "Joshua B\u00e1ez",
-        "team": "St. Louis Cardinals",
-        "team_id": 138,
-        "player_id": 695491,
-        "position": "LF",
-        "games_played": 29.0,
-        "H": 23.0,
-        "HR": 7.0,
-        "RBI": 18.0,
-        "HRpg": 0.241,
-        "fHRpg": "1/4",
-        "Hpg": 0.793,
-        "fHpg": "4/5",
-        "RBIpg": 0.621,
-        "fRBIpg": "3/5"
     },
     {
         "player_name": "Justin Bruihl",
@@ -8398,6 +8404,26 @@
         "team": "Minnesota Twins",
         "team_id": 142,
         "player_id": 621345
+    },
+    {
+        "player_name": "Alan Roden",
+        "team": "Minnesota Twins",
+        "team_id": 142,
+        "player_id": 702176,
+        "position": "RF",
+        "games_played": 28.0,
+        "H": 17.0,
+        "HR": 0.0,
+        "RBI": 10.0,
+        "HRpg": 0.0,
+        "fHRpg": "0",
+        "Hpg": 0.607,
+        "fHpg": "3/5",
+        "RBIpg": 0.357,
+        "fRBIpg": "1/3",
+        "HR24": 1,
+        "HR24pg": 0.08,
+        "fHR24pg": "1/7"
     },
     {
         "player_name": "Alex Jackson",
@@ -8678,26 +8704,6 @@
         "team": "Minnesota Twins",
         "team_id": 142,
         "player_id": 701519
-    },
-    {
-        "player_name": "Trevor Larnach",
-        "team": "Minnesota Twins",
-        "team_id": 142,
-        "player_id": 663616,
-        "position": "LF",
-        "games_played": 122.0,
-        "H": 103.0,
-        "HR": 13.0,
-        "RBI": 48.0,
-        "HRpg": 0.107,
-        "fHRpg": "1/7",
-        "Hpg": 0.844,
-        "fHpg": "5/6",
-        "RBIpg": 0.393,
-        "fRBIpg": "2/5",
-        "HR24": 17,
-        "HR24pg": 0.12,
-        "fHR24pg": "1/7"
     },
     {
         "player_name": "Victor Caratini",
@@ -11084,6 +11090,12 @@
         "player_id": 592779
     },
     {
+        "player_name": "Edwin D\u00edaz",
+        "team": "Los Angeles Dodgers",
+        "team_id": 119,
+        "player_id": 621242
+    },
+    {
         "player_name": "Eliezer Alfonzo",
         "team": "Los Angeles Dodgers",
         "team_id": 119,
@@ -11231,12 +11243,6 @@
         "HR24": 22,
         "HR24pg": 0.16,
         "fHR24pg": "1/6"
-    },
-    {
-        "player_name": "Landon Knack",
-        "team": "Los Angeles Dodgers",
-        "team_id": 119,
-        "player_id": 689017
     },
     {
         "player_name": "Max Muncy",
