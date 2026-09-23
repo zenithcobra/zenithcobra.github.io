@@ -13,24 +13,24 @@
     },
     {
         "place": 3,
+        "player_name": "Pete Alonso",
+        "team": "Baltimore Orioles",
+        "HR": "41"
+    },
+    {
+        "place": 3,
+        "player_name": "Yordan Alvarez",
+        "team": "Houston Astros",
+        "HR": "41"
+    },
+    {
+        "place": 3,
         "player_name": "Junior Caminero",
         "team": "Tampa Bay Rays",
         "HR": "41"
     },
     {
-        "place": 4,
-        "player_name": "Pete Alonso",
-        "team": "Baltimore Orioles",
-        "HR": "40"
-    },
-    {
-        "place": 4,
-        "player_name": "Yordan Alvarez",
-        "team": "Houston Astros",
-        "HR": "40"
-    },
-    {
-        "place": 4,
+        "place": 6,
         "player_name": "Matt Olson",
         "team": "Atlanta Braves",
         "HR": "40"
@@ -61,6 +61,12 @@
     },
     {
         "place": 10,
+        "player_name": "Munetaka Murakami",
+        "team": "Chicago White Sox",
+        "HR": "33"
+    },
+    {
+        "place": 10,
         "player_name": "Kazuma Okamoto",
         "team": "Toronto Blue Jays",
         "HR": "33"
@@ -72,13 +78,7 @@
         "HR": "33"
     },
     {
-        "place": 14,
-        "player_name": "Munetaka Murakami",
-        "team": "Chicago White Sox",
-        "HR": "32"
-    },
-    {
-        "place": 14,
+        "place": 15,
         "player_name": "Sal Stewart",
         "team": "Cincinnati Reds",
         "HR": "32"
@@ -115,6 +115,12 @@
     },
     {
         "place": 22,
+        "player_name": "Nolan Arenado",
+        "team": "Arizona Diamondbacks",
+        "HR": "28"
+    },
+    {
+        "place": 22,
         "player_name": "Bryce Harper",
         "team": "Philadelphia Phillies",
         "HR": "28"
@@ -130,29 +136,5 @@
         "player_name": "Jordan Walker",
         "team": "St. Louis Cardinals",
         "HR": "28"
-    },
-    {
-        "place": 25,
-        "player_name": "Nolan Arenado",
-        "team": "Arizona Diamondbacks",
-        "HR": "27"
-    },
-    {
-        "place": 25,
-        "player_name": "Jake Burger",
-        "team": "Texas Rangers",
-        "HR": "27"
-    },
-    {
-        "place": 25,
-        "player_name": "Willson Contreras",
-        "team": "Boston Red Sox",
-        "HR": "27"
-    },
-    {
-        "place": 25,
-        "player_name": "Dillon Dingler",
-        "team": "Detroit Tigers",
-        "HR": "27"
     }
 ]
