@@ -111,12 +111,12 @@
         "away_score": 3,
         "home_score": 1,
         "current_inning": 7,
-        "inning_state": "Top",
+        "inning_state": "Bottom",
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
         "series_status": "LAD leads 1-0",
-        "summary": "2026-09-26 - Los Angeles Dodgers (3) @ San Francisco Giants (1) (Top of the 7th)"
+        "summary": "2026-09-26 - Los Angeles Dodgers (3) @ San Francisco Giants (1) (Bottom of the 7th)"
     },
     {
         "game_id": 823653,
@@ -162,13 +162,13 @@
         "away_pitcher_note": "",
         "away_score": 6,
         "home_score": 2,
-        "current_inning": 6,
+        "current_inning": 7,
         "inning_state": "Top",
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
         "series_status": "MIA leads 1-0",
-        "summary": "2026-09-26 - Atlanta Braves (6) @ Miami Marlins (2) (Top of the 6th)"
+        "summary": "2026-09-26 - Atlanta Braves (6) @ Miami Marlins (2) (Top of the 7th)"
     },
     {
         "game_id": 824057,
@@ -351,7 +351,7 @@
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "LAA leads 1-0",
         "summary": "2026-09-26 - Los Angeles Angels @ Seattle Mariners (Scheduled)"
     }
 ]
