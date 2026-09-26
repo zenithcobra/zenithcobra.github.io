@@ -18,12 +18,12 @@
         "away_score": 4,
         "home_score": 1,
         "current_inning": 7,
-        "inning_state": "Top",
+        "inning_state": "End",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "WSH leads 1-0",
-        "summary": "2026-09-26 - New York Mets (4) @ Washington Nationals (1) (Top of the 7th)"
+        "summary": "2026-09-26 - New York Mets (4) @ Washington Nationals (1) (End of the 7th)"
     },
     {
         "game_id": 824219,
@@ -43,20 +43,20 @@
         "away_pitcher_note": "",
         "away_score": 1,
         "home_score": 0,
-        "current_inning": 4,
-        "inning_state": "Bottom",
+        "current_inning": 5,
+        "inning_state": "Top",
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
         "series_status": "DET leads 1-0",
-        "summary": "2026-09-26 - Pittsburgh Pirates (1) @ Detroit Tigers (0) (Bottom of the 4th)"
+        "summary": "2026-09-26 - Pittsburgh Pirates (1) @ Detroit Tigers (0) (Top of the 5th)"
     },
     {
         "game_id": 822759,
         "game_datetime": "2026-09-26T19:07:00Z",
         "game_date": "2026-09-26",
         "game_type": "R",
-        "status": "Pre-Game",
+        "status": "Warmup",
         "away_name": "Cincinnati Reds",
         "home_name": "Toronto Blue Jays",
         "away_id": 113,
@@ -75,7 +75,7 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "TOR leads 1-0",
-        "summary": "2026-09-26 - Cincinnati Reds @ Toronto Blue Jays (Pre-Game)"
+        "summary": "2026-09-26 - Cincinnati Reds @ Toronto Blue Jays (Warmup)"
     },
     {
         "game_id": 823165,
