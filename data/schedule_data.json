@@ -4,7 +4,7 @@
         "game_datetime": "2026-09-27T17:05:00Z",
         "game_date": "2026-09-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "New York Mets",
         "home_name": "Washington Nationals",
         "away_id": 121,
@@ -15,22 +15,22 @@
         "away_probable_pitcher": "Sean Manaea",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 3309,
         "venue_name": "Nationals Park",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-09-27 - New York Mets @ Washington Nationals (Scheduled)"
+        "summary": "2026-09-27 - New York Mets @ Washington Nationals (Pre-Game)"
     },
     {
         "game_id": 823490,
         "game_datetime": "2026-09-27T17:05:00Z",
         "game_date": "2026-09-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Baltimore Orioles",
         "home_name": "New York Yankees",
         "away_id": 110,
@@ -49,7 +49,7 @@
         "venue_name": "Yankee Stadium",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-09-27 - Baltimore Orioles @ New York Yankees (Scheduled)"
+        "summary": "2026-09-27 - Baltimore Orioles @ New York Yankees (Pre-Game)"
     },
     {
         "game_id": 824705,
@@ -64,7 +64,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Shota Imanaga",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -74,7 +74,7 @@
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [],
-        "series_status": "BOS leads 1-0",
+        "series_status": "BOS leads 2-0",
         "summary": "2026-09-27 - Chicago Cubs @ Boston Red Sox (Scheduled)"
     },
     {
@@ -89,8 +89,8 @@
         "home_id": 133,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
-        "away_probable_pitcher": "",
+        "home_probable_pitcher": "Seth Johnson",
+        "away_probable_pitcher": "Peter Lambert",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -100,7 +100,7 @@
         "venue_id": 2529,
         "venue_name": "Sutter Health Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "HOU leads 2-1",
         "summary": "2026-09-27 - Houston Astros @ Athletics (Scheduled)"
     },
     {
@@ -115,7 +115,7 @@
         "home_id": 137,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
+        "home_probable_pitcher": "Carson Seymour",
         "away_probable_pitcher": "",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
@@ -126,7 +126,7 @@
         "venue_id": 2395,
         "venue_name": "Oracle Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "LAD leads 2-0",
         "summary": "2026-09-27 - Los Angeles Dodgers @ San Francisco Giants (Scheduled)"
     },
     {
@@ -152,7 +152,7 @@
         "venue_id": 2681,
         "venue_name": "Citizens Bank Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "TB leads 2-0",
         "summary": "2026-09-27 - Tampa Bay Rays @ Philadelphia Phillies (Scheduled)"
     },
     {
@@ -160,7 +160,7 @@
         "game_datetime": "2026-09-27T19:07:00Z",
         "game_date": "2026-09-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cincinnati Reds",
         "home_name": "Toronto Blue Jays",
         "away_id": 113,
@@ -179,14 +179,14 @@
         "venue_name": "Rogers Centre",
         "national_broadcasts": [],
         "series_status": "Series tied 1-1",
-        "summary": "2026-09-27 - Cincinnati Reds @ Toronto Blue Jays (Scheduled)"
+        "summary": "2026-09-27 - Cincinnati Reds @ Toronto Blue Jays (Pre-Game)"
     },
     {
         "game_id": 824055,
         "game_datetime": "2026-09-27T19:10:00Z",
         "game_date": "2026-09-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Cleveland Guardians",
         "home_name": "Kansas City Royals",
         "away_id": 114,
@@ -194,7 +194,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Daniel Lynch IV",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Parker Messick",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -204,15 +204,15 @@
         "venue_id": 7,
         "venue_name": "Kauffman Stadium",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-27 - Cleveland Guardians @ Kansas City Royals (Scheduled)"
+        "series_status": "CLE leads 2-0",
+        "summary": "2026-09-27 - Cleveland Guardians @ Kansas City Royals (Pre-Game)"
     },
     {
         "game_id": 824217,
         "game_datetime": "2026-09-27T19:10:00Z",
         "game_date": "2026-09-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Pittsburgh Pirates",
         "home_name": "Detroit Tigers",
         "away_id": 134,
@@ -230,8 +230,8 @@
         "venue_id": 2394,
         "venue_name": "Comerica Park",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-27 - Pittsburgh Pirates @ Detroit Tigers (Scheduled)"
+        "series_status": "DET leads 2-0",
+        "summary": "2026-09-27 - Pittsburgh Pirates @ Detroit Tigers (Pre-Game)"
     },
     {
         "game_id": 823246,
@@ -245,7 +245,7 @@
         "home_id": 135,
         "doubleheader": "N",
         "game_num": 1,
-        "home_probable_pitcher": "",
+        "home_probable_pitcher": "Randy V\u00e1squez",
         "away_probable_pitcher": "Michael Soroka",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
@@ -256,7 +256,7 @@
         "venue_id": 2680,
         "venue_name": "Petco Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "Series tied 1-1",
         "summary": "2026-09-27 - Arizona Diamondbacks @ San Diego Padres (Scheduled)"
     },
     {
@@ -282,7 +282,7 @@
         "venue_id": 680,
         "venue_name": "T-Mobile Park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "LAA leads 2-1",
         "summary": "2026-09-27 - Los Angeles Angels @ Seattle Mariners (Scheduled)"
     },
     {
@@ -298,7 +298,7 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Dean Kremer",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "MacKenzie Gore",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
         "away_score": "0",
@@ -308,7 +308,7 @@
         "venue_id": 3312,
         "venue_name": "Target Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "Series tied 1-1",
         "summary": "2026-09-27 - Texas Rangers @ Minnesota Twins (Scheduled)"
     },
     {
@@ -316,7 +316,7 @@
         "game_datetime": "2026-09-27T19:10:00Z",
         "game_date": "2026-09-27",
         "game_type": "R",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Colorado Rockies",
         "home_name": "Chicago White Sox",
         "away_id": 115,
@@ -334,8 +334,8 @@
         "venue_id": 4,
         "venue_name": "Rate Field",
         "national_broadcasts": [],
-        "series_status": null,
-        "summary": "2026-09-27 - Colorado Rockies @ Chicago White Sox (Scheduled)"
+        "series_status": "Series tied 1-1",
+        "summary": "2026-09-27 - Colorado Rockies @ Chicago White Sox (Pre-Game)"
     },
     {
         "game_id": 823814,
@@ -360,7 +360,7 @@
         "venue_id": 4169,
         "venue_name": "loanDepot park",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "Series tied 1-1",
         "summary": "2026-09-27 - Atlanta Braves @ Miami Marlins (Scheduled)"
     },
     {
@@ -386,7 +386,7 @@
         "venue_id": 32,
         "venue_name": "American Family Field",
         "national_broadcasts": [],
-        "series_status": null,
+        "series_status": "MIL leads 2-0",
         "summary": "2026-09-27 - St. Louis Cardinals @ Milwaukee Brewers (Scheduled)"
     }
 ]
