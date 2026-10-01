@@ -1608,9 +1608,9 @@ def get_nhl_skaters():
 
     # Define the file path and URL
     folder_path = "NHL_data/daily_skaters"
-    file_name = f"nhl_skaters_2025_{yesterday}.csv"
+    file_name = f"nhl_skaters_2026_{yesterday}.csv"
     file_path = os.path.join(folder_path, file_name)
-    url = "https://moneypuck.com/moneypuck/playerData/seasonSummary/2025/regular/skaters.csv"
+    url = "https://moneypuck.com/moneypuck/playerData/seasonSummary/2026/regular/skaters.csv"
 
     # Check if the file exists
     if os.path.exists(file_path):

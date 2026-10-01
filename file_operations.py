@@ -3,12 +3,12 @@ from datetime import datetime, timedelta
 from fractions import Fraction
 import csv
 import json
-import mlbstatsapi
+# import mlbstatsapi
 import os
 import pytz
 import re
 import requests
-import statsapi
+# import statsapi
 import requests
 from bs4 import BeautifulSoup
 import json
