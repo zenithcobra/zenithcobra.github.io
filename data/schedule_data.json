@@ -4,7 +4,7 @@
         "game_datetime": "2026-10-03T17:00:00Z",
         "game_date": "2026-10-03",
         "game_type": "D",
-        "status": "Pre-Game",
+        "status": "In Progress",
         "away_name": "Chicago White Sox",
         "home_name": "Cleveland Guardians",
         "away_id": 145,
@@ -15,27 +15,27 @@
         "away_probable_pitcher": "Hagen Smith",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
-        "current_inning": 1,
+        "current_inning": 5,
         "inning_state": "Top",
         "venue_id": 5,
         "venue_name": "Progressive Field",
         "national_broadcasts": [
-            "TBS/HBO MAX",
-            "TruTV",
             "ESPN Radio",
-            "Univision/ TUDN"
+            "Univision/ TUDN",
+            "TruTV",
+            "TBS/HBO MAX"
         ],
         "series_status": null,
-        "summary": "2026-10-03 - Chicago White Sox @ Cleveland Guardians (Pre-Game)"
+        "summary": "2026-10-03 - Chicago White Sox (2) @ Cleveland Guardians (0) (Top of the 5th)"
     },
     {
         "game_id": 849828,
         "game_datetime": "2026-10-03T20:00:00Z",
         "game_date": "2026-10-03",
         "game_type": "D",
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "away_name": "Atlanta Braves",
         "home_name": "Los Angeles Dodgers",
         "away_id": 144,
@@ -43,13 +43,13 @@
         "doubleheader": "N",
         "game_num": 1,
         "home_probable_pitcher": "Tarik Skubal",
-        "away_probable_pitcher": "",
+        "away_probable_pitcher": "Dylan Dodd",
         "home_pitcher_note": "",
         "away_pitcher_note": "",
-        "away_score": "0",
-        "home_score": "0",
-        "current_inning": "",
-        "inning_state": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
         "venue_id": 22,
         "venue_name": "UNIQLO Field at Dodger Stadium",
         "national_broadcasts": [
@@ -58,7 +58,7 @@
             "FOX/ FOX ONE"
         ],
         "series_status": null,
-        "summary": "2026-10-03 - Atlanta Braves @ Los Angeles Dodgers (Scheduled)"
+        "summary": "2026-10-03 - Atlanta Braves @ Los Angeles Dodgers (Pre-Game)"
     },
     {
         "game_id": 849835,
@@ -83,10 +83,10 @@
         "venue_id": 12,
         "venue_name": "Tropicana Field",
         "national_broadcasts": [
-            "TBS/HBO MAX",
-            "TruTV",
             "ESPN Radio",
-            "Univision/ TUDN"
+            "Univision/ TUDN",
+            "TruTV",
+            "TBS/HBO MAX"
         ],
         "series_status": null,
         "summary": "2026-10-03 - New York Yankees @ Tampa Bay Rays (Scheduled)"
