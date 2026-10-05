@@ -1,0 +1,62 @@
+[
+    {
+        "game_id": 849825,
+        "game_datetime": "2026-10-04T20:00:00Z",
+        "game_date": "2026-10-04",
+        "game_type": "D",
+        "status": "In Progress",
+        "away_name": "San Diego Padres",
+        "home_name": "Milwaukee Brewers",
+        "away_id": 135,
+        "home_id": 158,
+        "doubleheader": "N",
+        "game_num": 1,
+        "home_probable_pitcher": "Logan Henderson",
+        "away_probable_pitcher": "Michael King",
+        "home_pitcher_note": "",
+        "away_pitcher_note": "",
+        "away_score": 3,
+        "home_score": 2,
+        "current_inning": 9,
+        "inning_state": "Top",
+        "venue_id": 32,
+        "venue_name": "American Family Field",
+        "national_broadcasts": [
+            "Fox Deportes / FOX ONE",
+            "FS1 / FOX ONE",
+            "ESPN Radio"
+        ],
+        "series_status": "MIL leads 1-0",
+        "summary": "2026-10-04 - San Diego Padres (3) @ Milwaukee Brewers (2) (Top of the 9th)"
+    },
+    {
+        "game_id": 849823,
+        "game_datetime": "2026-10-05T00:00:00Z",
+        "game_date": "2026-10-04",
+        "game_type": "D",
+        "status": "Pre-Game",
+        "away_name": "Atlanta Braves",
+        "home_name": "Los Angeles Dodgers",
+        "away_id": 144,
+        "home_id": 119,
+        "doubleheader": "N",
+        "game_num": 1,
+        "home_probable_pitcher": "Blake Snell",
+        "away_probable_pitcher": "Ray Kerr",
+        "home_pitcher_note": "",
+        "away_pitcher_note": "",
+        "away_score": 0,
+        "home_score": 0,
+        "current_inning": 1,
+        "inning_state": "Top",
+        "venue_id": 22,
+        "venue_name": "UNIQLO Field at Dodger Stadium",
+        "national_broadcasts": [
+            "Fox Deportes / FOX ONE",
+            "FS1 / FOX ONE",
+            "ESPN Radio"
+        ],
+        "series_status": "LAD leads 1-0",
+        "summary": "2026-10-04 - Atlanta Braves @ Los Angeles Dodgers (Pre-Game)"
+    }
+]
